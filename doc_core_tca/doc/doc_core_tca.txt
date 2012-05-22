@@ -1,9 +1,9 @@
 ﻿TCA Reference
 Extension Key: doc_core_tca
 Language: en
-Version: 4.6.0
+Version: 4.7.0
 Keywords: forAdmins, forDevelopers, forIntermediates
-Copyright 2000-2011, Documentation Team, <documentation@typo3.org>
+Copyright 2000-2012, Documentation Team, <documentation@typo3.org>
 
 This document is published under the Open Content License
 available from http://www.opencontent.org/opl.shtml
@@ -32,39 +32,39 @@ Credits	3
 Feedback	3
 What is $TCA?	4
 Structure of the $TCA array	4
-Glossary	5
+Glossary	6
 The [ctrl] section vs. the other sections	6
 $TCA array reference	7
 ['ctrl'] section	7
-['interface'] section	22
-['feInterface'] section	24
-['columns'][field name] section	24
-['columns'][field name]['config'] / Common properties	28
+['interface'] section	23
+['feInterface'] section	23
+['columns'][field name] section	23
+['columns'][field name]['config'] / Common properties	27
 ['columns'][field name]['config'] / TYPE: "input"	28
-['columns'][field name]['config'] / TYPE: "text"	34
-['columns'][field name]['config'] / TYPE: "check"	35
-['columns'][field name]['config'] / TYPE: "radio"	37
-['columns'][field name]['config'] / TYPE: "select"	37
-['columns'][field name]['config'] / TYPE: "group"	55
-['columns'][field name]['config'] / TYPE: "none"	64
-['columns'][field name]['config'] / TYPE: "passthrough"	64
-['columns'][field name]['config'] / TYPE: "user"	64
-['columns'][field name]['config'] / TYPE: "flex"	66
-['columns'][field name]['config'] / TYPE: "inline"	79
-['types'][key] section	85
-['palettes'][key] section	89
-Additional $TCA features	91
-Special Configuration introduction	91
-Special Configuration options	92
-Soft References	95
-Wizards Configuration	96
-Wizard scripts in the core	105
-Extending the $TCA array	113
-Storing the changes	113
-Customization examples	113
-Verifying the $TCA	115
-Appendix A – Skinning considerations	117
-Visual style of TCEforms	117
+['columns'][field name]['config'] / TYPE: "text"	33
+['columns'][field name]['config'] / TYPE: "check"	34
+['columns'][field name]['config'] / TYPE: "radio"	36
+['columns'][field name]['config'] / TYPE: "select"	36
+['columns'][field name]['config'] / TYPE: "group"	53
+['columns'][field name]['config'] / TYPE: "none"	62
+['columns'][field name]['config'] / TYPE: "passthrough"	62
+['columns'][field name]['config'] / TYPE: "user"	63
+['columns'][field name]['config'] / TYPE: "flex"	64
+['columns'][field name]['config'] / TYPE: "inline"	77
+['types'][key] section	84
+['palettes'][key] section	88
+Additional $TCA features	90
+Special Configuration introduction	90
+Special Configuration options	91
+Soft References	94
+Wizards Configuration	95
+Wizard scripts in the core	103
+Extending the $TCA array	112
+Storing the changes	112
+Customization examples	112
+Verifying the $TCA	114
+Appendix A – Skinning considerations	116
+Visual style of TCEforms	116
 Appendix B - Performance considerations	123
 Loading the full $TCA dynamically	123
 Benchmarks on dynamic tables:	123
@@ -75,8 +75,9 @@ This document aims to describe the global array called $TCA. This array describe
 All code examples used in this manual come either from the TYPO3 source code itself or from the extension "examples", which can be downloaded from the TER.
 This document used to be a chapter inside "TYPO3 Core APIs".
 What's new
-This document has been updated with changes and features introduced in TYPO3 4.4 and 4.5.
+This document has been updated with changes and features introduced in TYPO3 4.7. Most of the new features revolve around IRRE and foreign relations.
 The list of new features for TYPO3 4.6 can be found at http://wiki.typo3.org/Documentation_changes_in_4.6#TCA_reference_.28doc_core_tca.29
+The list of new features for TYPO3 4.7 can be found at http://forge.typo3.org/projects/typo3v4-doc_core_tca/versions/1457
 Credits
 The original reference to the TCA was written by Kasper Skårhøj. This version has been updated by François Suter.
 Feedback
@@ -167,6 +168,7 @@ A palette is just a list of fields which will be arranged horizontally side-by-s
 Deeper levels
 All properties on the second level either have their own properties or contain a further hierarchy.
 In the case of the [columns] section, this will be the fields themselves. For the [types] and [palettes] section this will be the list of all possible types and palettes.
+
 Glossary
 Before you read on, let's just refresh the meaning of a few concepts mentioned on the next pages:
 TCE: Short for "TYPO3 Core Engine". Also referred to as "TCEmain". This class (class.t3lib_tcemain) should ideally handle all updates to records made in the backend of TYPO3. The class will handle all the rules which may be applied to each table correctly. It will also handle logging, versioning, history/undo features, copying/moving/deleting etc.
@@ -232,6 +234,7 @@ See t3lib_BEfunc::getRecordTitle()
 Also see "label_alt_force"
 
 Note: label_userFunc overrides this property.
+
 Display
 label_alt_force
 boolean
@@ -287,6 +290,7 @@ public function haikuTitle(&$parameters, $parentObject) {
 	$newTitle .= ' (' . substr(strip_tags($record['poem']), 0, 10) . '...)';
 	$parameters['title'] = $newTitle;
 }
+
 Display
 type
 string
@@ -309,10 +313,16 @@ The "record_type" field can takes values ranging from 0 to 2. Accordingly we def
 	'1' => array('showitem' => 'record_type, title '),
 	'2' => array('showitem' => 'title, some_date, hidden, record_type '),
 ),
+
+Since TYPO3 4.7, it is also possible to make the type depend on the value of a related record, i.e. switch using the type field of a foreign table. The syntax is "relation_field:foreign_type_field".
+
+Example
+Imagine two tables, related as parent and child. The child table has a relation to the parent table using a "select" field called "myparent" with "foreign_table" set to the parent table. Now, if you want the fields displayed in the child table to depend on a field called "parenttype" of the parent table, you can define the [ctrl][type] of the child table like "myparent:parenttype".
 Display / Proc.
 hideTable
 boolean
 Hide this table in record listings.
+
 
 requestUpdate
 string
@@ -1009,6 +1019,7 @@ $TCA['tt_content'] = array (
 of particular note is the "enablecolumns" property. It is quite extensive for this table since it is a frontend-related table. Thus proper access rights, publications dates, etc. must be enforced.
 every type of content element has its own icon and its own class, used in conjunction with the skinning API to visually represent that type in the TYPO3 backend.
 the column "image" is defined as the one to use to fetch any thumbnails related to the record.
+
 ['interface'] section
 Contains configuration for display and listing in various parts of the core backend:
 Key
@@ -1054,6 +1065,7 @@ List of fields allowed for editing/creation with the fe_adminLib module, see med
 The "columns" section contains configuration for each table field (also called "column") which can be edited by the backend.
 The configuration includes both properties for the display in the backend as well as the processing of the submitted data.
 Each field can be configured as a certain "type" (e.g. checkbox, selector, input field, text area, file or db-relation field, user defined etc.) and for each type a separate set of additional properties applies. These properties are clearly explained below for each type.
+
 This table shows the keys of the ['columns'][field name] array:
 Key
 Datatype
@@ -1234,6 +1246,7 @@ $TCA['tt_content'] = array(
 
 This means that the "bodytext" field of the "tt_content" table will be searched in only for elements of type Text and Text with image. This helps make any search more relevant.
 Search
+
 
 ['columns'][field name]['config'] / TYPE: "input"
 The type "input" generates an <input> field, possibly with additional features applied.
@@ -1890,10 +1903,10 @@ Proc.
 MM_opposite_field
 string
 (field name)
-If you want to make an mm relation editable from the foreign side (bidirectional) of the relation as well, you need to set MM_opposite_field on the foreign side to the field name on the local side.
+If you want to make a MM relation editable from the foreign side (bidirectional) of the relation as well, you need to set MM_opposite_field on the foreign side to the field name on the local side.
 E.g. if the field "companies.employees" is your local side and you want to make the same relation editable from the foreign side of the relation in a field called persons.employers, you would need to set the MM_opposite_field value of the TCA configuration of the persons.employers field to the string "employees".
 
-Notice: Bidirectional references only gets registered once on the native side in sys_refindex
+Notice: Bidirectional references only get registered once on the native side in sys_refindex
 Proc.
 MM_match_fields
 array
@@ -2181,7 +2194,7 @@ $TCA['pages']['columns']['storage_pid']['config'] = array_merge(
 );
 
 
-Will transform the General Record Storage Page selector into:
+will transform the General Record Storage Page selector into:
 Example - Adding wizards
 This example shows how wizards can be added to a selector box. The three typical wizards for a selector box is edit, add and list items. This enables the user to create new items in the look up table while being right at the selector box where he want to select them:
 The configuration is rather long and looks like this (notice, that wizards are not exclusively available for selector boxes!):
@@ -2445,6 +2458,7 @@ Example: 'uploads' or 'uploads/pictures'
 Notice: TYPO3 does NOT create a reference to the file in its original position! It makes a copy of the file into this folder and from that moment that file is not supposed to be manipulated from outside. Being in the upload folder means that files are understood as a part of the database content and should be managed by TYPO3 only.
 
 Warning: do NOT add a trailing slash (/) to the upload folder otherwise the full path stored in the references will contain a double slash (e.g. “uploads/pictures//stuff.png”).
+
 Proc.
 prepend_tname 
 boolean
@@ -2569,6 +2583,7 @@ Notice how all the image names end with "_0" and some number. This happens becau
 ),
 
 Notice how the "group" type is defined to contain files.  Next the list of allowed file extensions are defined (here, taking the default list of image types for TYPO3).  A maximum size (in kilobytes) for files is also defined.  The "uploadfolder" property indicates that all files will be copied to the "uploads/pics" folder. Notice that this path is relative to the PATH_site of TYPO3, one directory below PATH_typo3.
+
 Data format of "group" elements
 Since the "group" element allows to store references to multiple elements we might want to look at how these references are stored internally. 
 Storage methods
@@ -2712,6 +2727,7 @@ string
 Example: 
 This field is found in a number of table, e.g. the "pages" table. It is used by the system extension "impexp" to store some information.
 'tx_impexp_origuid' => array('config' => array('type' => 'passthrough'))
+
 ['columns'][field name]['config'] / TYPE: "user"
 Allows you to render a whole form field by a user function or class method.
 Key
@@ -2771,7 +2787,7 @@ class tx_examples_tca {
 This is not the place to dig into more details about user-defined forms. By this example you can start yourself up but you will have to figure out by yourself what options are available in the $PA array and how to use them.
 Note in particular how the "parameters" array declared in the TCA configuration can be retrieved as part of the first argument ($PA) received by the method invoked.
 ['columns'][field name]['config'] / TYPE: "flex"
-Rendering a FlexForm element - essentially this consists of a hierarchically organized set of fields which will have their values saved into a single field in the database, stored as XML.
+Rendering a FlexForm element - essentially this consists in a hierarchically organized set of fields which will have their values saved into a single field in the database, stored as XML.
 Key
 Datatype
 Description
@@ -2874,7 +2890,7 @@ FlexForms create a form-in-a-form. The content coming from this form is still st
 The “TCA” information needed to generate the FlexForm fields are found inside a <T3DataStructure> XML document. When you configure a FlexForm field in a Data Structure (DS) you can use basically all column types documented here for TCA. The limitations are:
 “unique” and “uniqueInPid” evaluation is not available
 You cannot nest FlexForm configurations inside of FlexForms.
-Charset follows that of the current backend (that is “forceCharset” or the backend users language selection)
+Charset follows that of the current backend (since TYPO3 4.7, the only accepted character encoding is UTF-8. When storing FlexForm information in external files, make sure that they are using UTF-8 too).
 <T3DataStructure> extensions for “<TCEforms>”
 For FlexForms the DS is extended with a tag, “<TCEforms>” which define all settings specific to the FlexForms usage.
 Also a few meta tag features are used.
@@ -2969,6 +2985,7 @@ Content of the field in default or localized versions
 <currentSheetId>
 string
 Points to the currently shown sheet in the DS.
+
 Example: Simple FlexForm
 The extension “examples” provides some sample FlexForms. The “simple FlexForm” plugin provides a very basic configuration with just a select-type field to choose a page from the “pages” table.
 The DS used to render this field is found in the file “flexform_ds1.xml” inside the “examples” extension. Notice the <TCEforms> tags:
@@ -3302,6 +3319,8 @@ showSynchronizationLink (boolean)
 Defines whether to show a "synchronize" link to update to a 1:1 translation with the original language.
 enabledControls (array)
 Associative array with the keys 'info', 'new', 'dragdrop', 'sort', 'hide', 'delete', 'localize'. If the accordant values are set to a boolean value (true or false), the control is shown or hidden in the header of each record.
+showPossibleRecordsSelector (boolean) (since TYPO3 4.7)
+Can be used to hide the foreign record selector from the interface, even if you have a foreign_selector configured. This can be used to keep the technical functionality of the foreign_selector but is useful if you want to replace it with your own implementation using a custom control (see "customControls").
 Display
 behaviour
 array
@@ -3315,6 +3334,15 @@ Defines whether children should be localized when the localization of the parent
 disableMovingChildrenWithParent (boolean)
 Disables that child records get moved along with their parent records.
 Display / Proc.
+customControls
+array
+(Since TYPO3 4.7) Numerical array containing definitions of custom header controls for IRRE fields. This makes it possible to create special controls by calling user-defined functions (userFuncs). Each item in the array item must be an array itself, with at least on key "userFunc" pointing to the user function to call.
+The userFunc string is defined as usual in TYPO3 as [file-reference":"]["&"]class/function["->"method-name], e.g.
+
+EXT:myext/class.tx_myext_myclass:tx_myext_myclass->myUserFuncMethod
+
+For more details, see the implementation in "t3lib/class.t3lib_tceforms_inline.php" and search for "customControls".
+Display
 foreign_field
 string
 The foreign_field is the field of the child record pointing to the parent record. This defines where to store the uid of the parent record.
@@ -3359,6 +3387,47 @@ sorting is a required field used for ordering the items.
 The field which is configured as “inline” is not used for data-storage any more but rather it's set to the number of records in the relation on each update, so the field should be an integer.
 Notice: Using MM relations you can ONLY store real relations for foreign tables in the list - no additional string values or non-record values (so no attributes).
 Proc.
+foreign_table_match
+array
+(Since TYPO3 4.7) Array of field-value pairs to both insert and match against when writing/reading IRRE relations. Using the match fields, it is possible to re-use the same child table in more than one field of the parent table by using a match field with different values for each of the use cases.
+
+Example
+
+Imagine you have a parent table called "company" and a child table called "persons". Now, if you want the company table to have two fields of type "inline", one called "employees" and one called "customers", both containing "persons". Then you could use a (hidden) field called "role" on the child (person) table to keep them apart. The match TCA configuration of the parent table would then look like this:
+
+$TCA['ty_myext_company'] = array (
+	...
+	'columns' => array (
+		...
+		'employees' => array (
+			'config' => array (
+				'type' => 'inline',
+				'foreign_table' => 'ty_myext_person',
+				'foreign_field' => 'company',
+				'foreign_match_fields' => array(
+					'role' => 'employee',
+				),
+			),
+		),
+		'customers' => array (
+			'config' => array (
+				'type' => 'inline',
+				'foreign_table' => 'ty_myext_person',
+				'foreign_field' => 'company',
+				'foreign_match_fields' => array(
+					'role' => 'customer',
+				),
+			),
+		),
+	),
+	...
+);
+
+Proc.
+foreign_types
+array
+(Since TYPO3 4.7) This can be used to control which fields of the child table are displayed. You can override the "showitem", etc. settings of the child table here, by supplying an override for the "types" array of that table. For details on how the types array is constructed, see the chapter "['types'][key] section" later in this manual.
+Display
 size
 integer
 Height of the selector box in TCEforms.
@@ -3689,7 +3758,7 @@ Clicking on this icon, the palette is revealed:
 
 Palette display can be activated permanently by checking the “Show secondary options” box at the bottom of any forms screen:
 Note
-This checkbox may by hidden par TSConfig, so it may not appear all the time.
+This checkbox may be hidden per TSConfig, so it may not appear all the time.
 Key
 Datatype
 Description
@@ -3702,6 +3771,11 @@ canNotCollapse
 boolean
 If set, then this palette is not allowed to 'collapse' in the TCEforms-display. 
 This basically means that if "Show secondary options" is not on, this palette is still displayed in the main form and not linked with an icon.
+isHiddenPalette
+boolean
+(Since TYPO3 4.7) If set, then this palette will never be shown, but the fields of the palette are technically rendered as hidden elements in the TCEForm.
+
+This is sometimes useful when you want to set a field's value by JavaScript from another user-defined field. You can also use it along with the IRRE (TCA type "inline") foreign_selector feature if you don't want the relation field to be displayed (it must be technically present and rendered though, that's why you should put it to a hidden palette in that case).
 
 All fields in a palette are shown on a single line. Since TYPO3 4.3, it is possible to place them on several lines by using the --linebreak-- keyword.
 Example
@@ -4342,7 +4416,6 @@ setValue
 You must set one of these values.
 
 As an example, let's look at BE user records where one can see several wizards in use:
-
 The wizard appears as a “+” icon. When clicked, the user is directed to a form where a new BE user group can be created:
 
 When the new template is saved and the user clicks the close button of the form the new group is automatically inserted as the list of selected groups.
@@ -4416,7 +4489,6 @@ When a record is selected and the Edit-wizard button is clicked, that record ope
 ),
 
 The wizard is set to type “popup” which makes it so that the selected record will open in a new window. There are no parameters to pass along like there were for the Add-wizard.
-
 wizard_list.php
 This links to the Web>List module for only one table and allows the user to manipulate stuff there. Again, the BE user records have it:
 By clicking the icon the user gets taken to the Web>List module. Notice the "Back" link found in the upper left corner, which leads back to the edit form.
@@ -4464,6 +4536,7 @@ The type is also the "script" type. In the "params" array the table and pid pass
 wizard_colorpicker.php
 The colorpicker wizard allows you to select a HTML color value from a user-friendly pop-up box. The wizard type is "colorbox" which will first of all add a colored box next to an input field. Here's how it looks in a “haiku” record of the “examples” extension:
 The color of the box is set to the value of the text field. Clicking the box will open a popup window with the full color picker wizard:
+
 Here you can select from the web-color matrix, pick a color from the sample image or select a HTML-color name from a selector box.
 The corresponding TCA configuration looks like this:
 'color' => array(
@@ -4520,7 +4593,6 @@ If set, the output from the wizard is XML instead of the TypoScript table config
 numNewRows
 integer
 Setting the number of blank rows that will be added in the bottom of the table when the plus-icon is pressed. The default is 5, the range is 1-50.
-
 
 This is the configuration code used for the table wizard in the Content Elements:
 'table' => array(
