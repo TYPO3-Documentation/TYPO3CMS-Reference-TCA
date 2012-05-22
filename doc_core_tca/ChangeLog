@@ -1,0 +1,50 @@
+2011-1-04  Francois Suter  <francois.suter@typo3.org>
+
+	* More corrections related to rendering issues
+	* Released to TER as version 4.5.2
+
+2011-10-30  Francois Suter  <francois.suter@typo3.org>
+
+	* Added example using TSconfig markers for select-type fields, resolves #26653
+	* Released to TER as version 4.5.1
+
+2011-10-28  Francois Suter  <francois.suter@typo3.org>
+
+	* Added tree render mode for select-type field
+	* Updated notes about t3ver_stage field
+
+2011-10-14  Francois Suter  <francois.suter@typo3.org>
+
+	* Finished updating screenshots in all non-obsolete parts of the manual
+
+2011-05-22  Francois Suter  <francois.suter@typo3.org>
+
+	* Refreshed the chapter about the "ctrl" section, updated screenshots, resolves #25953
+
+2011-04-03  Francois Suter  <francois.suter@typo3.org>
+
+	* Improved the first chapter about structure of the TCA
+	* Moved information about extending the TCA to the end of the manual
+
+2011-04-01  Francois Suter  <francois.suter@typo3.org>
+
+	* Moved obsolete information to appendices, resolves #25707
+
+2011-02-04  Francois Suter  <francois.suter@typo3.org>
+
+	* Removed section about $LANG_GENERAL_LABELS, resolves #12776
+	* Corrected description of "maxitems" for inline-type fields, resolves #12760
+	* Marked "newRecordLinkPosition" property of inline-type fields as deprecated, replaced by "levelLinksPosition", resolves #7581
+
+2011-02-01  Francois Suter  <francois.suter@typo3.org>
+
+	* Removed all references to "language-splitted" strings, resolves #12617
+	* Added missing property "eval" to text-type field description, resolves #11665
+
+2011-01-31  Francois Suter  <francois.suter@typo3.org>
+
+	* Applied new documentation template, resolves #12603
+
+2011-01-28  Francois Suter  <francois.suter@typo3.org>
+
+	* Imported content from Core APIs
