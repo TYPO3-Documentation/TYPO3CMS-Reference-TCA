@@ -1,4 +1,24 @@
-2011-1-04  Francois Suter  <francois.suter@typo3.org>
+2011-11-21  Francois Suter  <francois.suter@typo3.org>
+
+	* Released to TER as version 4.6.0
+
+2011-11-18  Francois Suter  <francois.suter@typo3.org>
+
+	* Extended and improved the "Extending the TCA" chapter, resolves #31403
+
+2011-11-14  Francois Suter  <francois.suter@typo3.org>
+
+	* Added new search-related properties
+
+2011-11-13  Francois Suter  <francois.suter@typo3.org>
+
+	* Added slider wizard documentation
+
+2011-11-10  Francois Suter  <francois.suter@typo3.org>
+
+	* Moved common TCA config properties to their own chapter, resolves #31726
+
+2011-11-04  Francois Suter  <francois.suter@typo3.org>
 
 	* More corrections related to rendering issues
 	* Released to TER as version 4.5.2

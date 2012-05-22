@@ -1,7 +1,7 @@
 ﻿TCA Reference
 Extension Key: doc_core_tca
 Language: en
-Version: 4.5.2
+Version: 4.6.0
 Keywords: forAdmins, forDevelopers, forIntermediates
 Copyright 2000-2011, Documentation Team, <documentation@typo3.org>
 
@@ -37,33 +37,37 @@ The [ctrl] section vs. the other sections	6
 $TCA array reference	7
 ['ctrl'] section	7
 ['interface'] section	22
-['feInterface'] section	23
-['columns'][field name] section	23
-['columns'][field name]['config'] / TYPE: "input"	27
-['columns'][field name]['config'] / TYPE: "text"	32
-['columns'][field name]['config'] / TYPE: "check"	33
-['columns'][field name]['config'] / TYPE: "radio"	35
-['columns'][field name]['config'] / TYPE: "select"	35
-['columns'][field name]['config'] / TYPE: "group"	52
-['columns'][field name]['config'] / TYPE: "none"	60
-['columns'][field name]['config'] / TYPE: "passthrough"	60
-['columns'][field name]['config'] / TYPE: "user"	60
-['columns'][field name]['config'] / TYPE: "flex"	61
-['columns'][field name]['config'] / TYPE: "inline"	74
-['types'][key] section	80
-['palettes'][key] section	84
-Additional $TCA features	86
-Special Configuration introduction	86
-Special Configuration options	87
-Soft References	90
-Wizards Configuration	91
-Wizard scripts in the core	99
-Extending the $TCA array	108
-Appendix A – Skinning considerations	109
-Visual style of TCEforms	109
-Appendix B - Performance considerations	115
-Loading the full $TCA dynamically	115
-Benchmarks on dynamic tables:	115
+['feInterface'] section	24
+['columns'][field name] section	24
+['columns'][field name]['config'] / Common properties	28
+['columns'][field name]['config'] / TYPE: "input"	28
+['columns'][field name]['config'] / TYPE: "text"	34
+['columns'][field name]['config'] / TYPE: "check"	35
+['columns'][field name]['config'] / TYPE: "radio"	37
+['columns'][field name]['config'] / TYPE: "select"	37
+['columns'][field name]['config'] / TYPE: "group"	55
+['columns'][field name]['config'] / TYPE: "none"	64
+['columns'][field name]['config'] / TYPE: "passthrough"	64
+['columns'][field name]['config'] / TYPE: "user"	64
+['columns'][field name]['config'] / TYPE: "flex"	66
+['columns'][field name]['config'] / TYPE: "inline"	79
+['types'][key] section	85
+['palettes'][key] section	89
+Additional $TCA features	91
+Special Configuration introduction	91
+Special Configuration options	92
+Soft References	95
+Wizards Configuration	96
+Wizard scripts in the core	105
+Extending the $TCA array	113
+Storing the changes	113
+Customization examples	113
+Verifying the $TCA	115
+Appendix A – Skinning considerations	117
+Visual style of TCEforms	117
+Appendix B - Performance considerations	123
+Loading the full $TCA dynamically	123
+Benchmarks on dynamic tables:	123
 
 Introduction
 About this document
@@ -72,14 +76,15 @@ All code examples used in this manual come either from the TYPO3 source code its
 This document used to be a chapter inside "TYPO3 Core APIs".
 What's new
 This document has been updated with changes and features introduced in TYPO3 4.4 and 4.5.
+The list of new features for TYPO3 4.6 can be found at http://wiki.typo3.org/Documentation_changes_in_4.6#TCA_reference_.28doc_core_tca.29
 Credits
-The original reference to the TCA was written by Kasper Skårhøj. This version had been updated by François Suter.
+The original reference to the TCA was written by Kasper Skårhøj. This version has been updated by François Suter.
 Feedback
 For general questions about the documentation get in touch by writing to documentation@typo3.org.
 If you find a bug in this manual, please file an issue in this manual's bug tracker: http://forge.typo3.org/projects/typo3v4-doc_core_tca/issues
 Maintaining quality documentation is hard work and the Documentation Team is always looking for volunteers. If you feel like helping please join the documentation mailing list (typo3.projects.documentation on lists.typo3.org).
 What is $TCA?
-The Table Control Array (or $TCA) is a global array in TYPO3 which extends the definition of tables beyond what can be done strictly with SQL. First and foremost $TCA defines which tables are editable in the TYPO3 backend. Database tables with no corresponding entry in $TCA are "invisible" to the TYPO3 backend. The $TCA definition of a table also covers the following:
+The Table Configuration Array (or $TCA) is a global array in TYPO3 which extends the definition of tables beyond what can be done strictly with SQL. First and foremost $TCA defines which tables are editable in the TYPO3 backend. Database tables with no corresponding entry in $TCA are "invisible" to the TYPO3 backend. The $TCA definition of a table also covers the following:
 the relations between that table and other tables
 what fields should be displayed in the backend and with which layout
 how should a field be validated (e.g. required, integer, etc.)
@@ -586,6 +591,27 @@ Typically the "enablecolumns" could be configured like this (here for the "tt_co
 ),
 
 Proc. / Display
+searchFields
+string
+Comma-separated list of fields from the table that will be included when searching for records in the TYPO3 backend. Starting with TYPO3 4.6, no record from a table will ever be found if that table does not have "searchFields" defined.
+
+There are finer controls per column, see the "search" property in the list of "Common properties" further in this manual.
+
+Example:
+The "tt_content" table has the following definition:
+
+$TCA['pages'] = array(
+	'ctrl' => array(
+		...
+		'searchFields' => 'title,alias,nav_title,subtitle,url,keywords,description,abstract,author,author_email',
+		...
+	),
+);
+Search
+groupName
+string
+This option can be used to group records in the new record wizard. If you define a new table and set its "groupName" to the key of another extension, your table will appear in the list of records from that other extension in the new record wizard.
+Special
 hideAtCopy
 boolean
 If set, and the "disabled" field from "enablecolumns" (see above) is specified, then records will be disabled/hidden when they are copied.
@@ -1090,14 +1116,7 @@ config
 array
 Contains the actual configuration properties of the fields display and processing behavior. 
 The possibilities for this array depend on the value of the array key "type" within the array. Each valid value for "type" is shown below in a separate table.
-
-Notice: For all configuration types, the 
-"default" key in the array can be used to set the default value of the field.
-“softref” key in the array can be used to attach “soft reference parsers”. See under “Additional TCA features” for information about softref keys. The syntax for this value is “key1,key2[parameter1;parameter2;...],...”.
-“type” key is used to denote the field type from a set of keywords, e.g. input, text, check, select, group, user. These are documented in individual sections below. Notice: The value of the 'form_type' key overrides this during form rendering, see below.
-“form_type” key is used to set an alternative field type which is used when the field is drawn in the form but not when processed elsewhere in the system.
-“readOnly” key is used to render the form in a way that the user can see the values but cannot edit them. The rendering is similar to the editable variants but not necessarily the same and might differ in layout and size.
-Notice: Read only rendering might not be implemented by user defined form items!
+Furthermore there are some properties common to all field types, described in the next chapter "['columns'][field name]['config'] / Common properties".
 -
 displayCond
 string
@@ -1154,6 +1173,67 @@ Example value:
 
 richtext[cut|copy|paste|formatblock|textcolor|bold|italic|underline|left|center|right|orderedlist|unorderedlist|outdent|indent|link|table|image|line|chMode]:rte_transform[mode=ts_css|imgpath=uploads/tx_mininews/rte/]
 
+
+['columns'][field name]['config'] / Common properties
+There are a number of properties which are common to all field types. They are described below.
+Key
+Datatype
+Description
+Scope
+type
+string
+This defines the type of field. It must one of the values described in the following chapters.
+Display
+/ Proc.
+form_type
+string
+This will override the field type when displaying it as a form. It can take any of the values available for "type" above.
+Display
+default
+-
+This property can be used to set a default value for the field. Its data type is whatever is appropriate for the given field.
+Display
+/ Proc.
+softref
+string
+Used to attach "soft reference parsers". See under "Additional TCA features" for information about softref keys. The syntax for this value is key1,key2[parameter1;parameter2;...],...
+Proc.
+readOnly
+boolean
+Renders the form in a way that the user can see the values but cannot edit them. The rendering is as similar as possible to the normal rendering but may differ in layout and size.
+Notice: Read-only rendering might not be implemented by user defined form items! It is up to each developer to implement read-only rendering for its own user-types.
+Display
+search
+array
+Defines additional search-related options for a given field.
+
+pidonly (boolean): searches in the column only if search happens on the single page (does not search the field if searching in the whole table)
+case (boolean): makes the search case-sensitive. This requires a proper database collation for the field (see your database documentation)
+andWhere (string): additional SQL WHERE statement without 'AND'. With this it is possible to place an additional condition on the field when it is searched (see example below).
+
+Example:
+The "tt_content" table has the following definition:
+
+$TCA['tt_content'] = array(
+	...
+	'columns' => array(
+		...
+		'bodytext' => array(
+			...
+			'config' => array(
+				...
+			),
+			'search' => array(
+				'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
+			)
+		),
+		...
+	),
+	...
+);
+
+This means that the "bodytext" field of the "tt_content" table will be searched in only for elements of type Text and Text with image. This helps make any search more relevant.
+Search
 
 ['columns'][field name]['config'] / TYPE: "input"
 The type "input" generates an <input> field, possibly with additional features applied.
@@ -1249,6 +1329,7 @@ class tx_exampleextraevaluations_extraeval1 {
 	}
 }
 ?>
+
 ext_localconf.php
 
 <?php
@@ -1303,13 +1384,16 @@ Example:
 Limits an integer to be within the range 10 to 1000:
 
 'eval' => 'int',
-'range' => array('lower' => 10,'upper' => 1000),
+'range' => array(
+	'lower' => 10,
+	'upper' => 1000
+),
 
 In this example the upper limit is set to the last day in year 2020 while the lowest possible value is set to the date of yesterday.
 
 'range' => array(
 	'upper' => mktime(0, 0, 0, 12, 31, 2020),
-	lower' => mktime(0,0,0,date('m'), date('d'), date('Y'))
+	'lower' => mktime(0,0,0,date('m'), date('d'), date('Y'))
 )
 Proc.
 wizards 
@@ -2407,7 +2491,9 @@ Minimum number of items in the selector box. (Default = 0)
 Display / Proc?
 disable_controls
 string
-Disables sub-controls inside "group" control. Comma-separated list of values. Possible values are: browser (disabled browse button for list control), list (disables list and browse button) and upload (disables upload control). See example image below.
+Disables sub-controls inside "group" control. Comma-separated list of values. Possible values are: browser (disables browse button for list control), list (disables list and browse button, but not delete button), upload (disables upload control) and delete (disables the delete button). See example image below.
+
+NOTE: if you use the delete button when the list is disabled, all entries in the list will be deleted.
 
 Display / Proc.
 wizards
@@ -2642,7 +2728,14 @@ If you want to call a method in a class, enter "[classname]->[methodname]". The 
 
 Two arguments will be passed to the function/method: The first argument is an array (passed by reference) which contains the current information about the current field being rendered. The second argument is a reference to the parent object (an instance of the t3lib_TCEforms class).
 
-Notice: You must include the class manually on beforehand!
+The array with the current information will contain any parameters declared with the "parameters" property described below.
+
+Notice: The class must be registered with the TYPO3 autoloader. It's also possible to include it manually, but using the autoloader is the preferred way.
+parameters
+array
+Array that will be passed as is to the userFunc as the "parameters" key of the first argument received by the user function.
+
+See example below.
 noTableWrapping
 boolean
 If set, then the output from the user function will not be wrapped in the usual table - you will have to do that yourself.
@@ -2655,15 +2748,18 @@ The configuration in TCA is as simple as this:
 	'config' => array (
 		'type' => 'user',
 		'size' => '30',
-		'userFunc' => 'EXT:examples/class.tx_examples_tca.php:tx_examples_tca-> specialField'
+		'userFunc' => 'EXT:examples/class.tx_examples_tca.php:tx_examples_tca-> specialField',
+		'parameters' => array(
+			'color' => 'blue'
+		)
 	)
 ),
 
 This is how the corresponding PHP class looks like:
 class tx_examples_tca {
 	function specialField($PA, $fObj) {
-		$formField  = '<div style="padding: 5px; background-color: yellow;">';
-		$formField .= '<input type="text" name="' . $PA['itemFormElName'] . '"';
+		$color = (isset($PA['parameters']['color'])) ? $PA['parameters']['color']:'red';
+		$formField  = '<div style="padding: 5px; background-color: ' . $color . ';">';		$formField .= '<input type="text" name="' . $PA['itemFormElName'] . '"';
 		$formField .= ' value="' . htmlspecialchars($PA['itemFormElValue']) . '"';
 		$formField .= ' onchange="' . htmlspecialchars(implode('', $PA['fieldChangeFunc'])) . '"';
 		$formField .= $PA['onFocus'];
@@ -2673,6 +2769,7 @@ class tx_examples_tca {
 }
 
 This is not the place to dig into more details about user-defined forms. By this example you can start yourself up but you will have to figure out by yourself what options are available in the $PA array and how to use them.
+Note in particular how the "parameters" array declared in the TCA configuration can be retrieved as part of the first argument ($PA) received by the method invoked.
 ['columns'][field name]['config'] / TYPE: "flex"
 Rendering a FlexForm element - essentially this consists of a hierarchically organized set of fields which will have their values saved into a single field in the database, stored as XML.
 Key
@@ -3797,7 +3894,7 @@ url
 URL highlights (with a scheme)
 
 These are by default set up in the config_default.php file:
-	'SC_OPTIONS' => Array(
+	'SC_OPTIONS' => array(
 		'GLOBAL' => array(
 			'softRefParser' => array(
 				'substitute' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
@@ -4087,8 +4184,17 @@ PHP class alternative receiver class - the file that holds the class needs to be
 renderFunc
 string
 User function to manipulate the displayed records in the results.
+Type: slider
+This renders a slider next to the field. It works for either input-type fields or select-type fields. For select-type fields, the wizard will "slide" through the items making up the field. For input-type fields, it will work only for fields evaluated to integer, float and time. It is advised to also define a "range" property, otherwise the slider will go from 0 to 10000.
+Note: the range is properly taken into account only as of TYPO3 4.6.1.
+step
+integer/float
+Sets the step size the slider will use. For floating point values this can itself be a floating point value.
+width
+pixels
+Defines the width of the slider
 
-In the next section all the default core wizard scripts are demonstrated with examples. Before that, here are a few examples of wizards that do call on a script from the Core.
+In the next section the more complex core wizard scripts are demonstrated with examples. Before that, here are a few examples of simpler core wizards.
 Example - Selector box of preset values
 You can add a selector box containing preset values next to a field:
 When an option from the selector box is selected it will be transferred to the input field of the element. The mode of transfer can be either substitution (default) or prepending or appending the value to the existing value.
@@ -4182,6 +4288,31 @@ $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
 
 The tables that are queried are the ones used in $TCA['pages']['columns']['storage_pid']['config']['allowed'].
 The wizard can be configured differently for each of these tables. The settings in "default" is applied to all tables. In the example above, there's a special setting for the “pages” table.
+Example – Add a slider wizard
+The "haiku" table in the "examples" extension implements a slider wizard for the "Angle" field. The field configuration looks like this:
+'angle' => array(
+	'exclude' => 0,
+	'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.angle',
+	'config' => array(
+		'type' => 'input',
+		'size' => 5,
+		'eval' => 'trim,int',
+		'range' => array(
+			'lower' => -90,
+			'upper' => 90
+		),
+		'default' => 0,
+		'wizards' => array(
+			'angle' => array(
+				'type' => 'slider',
+				'step' => 10,
+				'width' => 200
+			)
+		)
+	)
+),
+
+Note the range which defines the possible values as varying from -90 to 90. With the step property we indicate that we want to progress by increments of 10. The slider wizard is rendered like this:
 Wizard scripts in the core
 The wizard interface allows you to use any PHP-script for your wizards but there is a useful set of default wizard scripts available in the core of TYPO3. These are found in PATH_typo3 and are all prefixed "wizard_" (except "browse_links.php").
 Below is a description of each of them including a description of their special parameters and an example of usage.
@@ -4455,9 +4586,20 @@ Such a wizard can be configured like this:
 
 Notice how the "browse_links.php" script requires an extra parameter since it has to return content back to the input field (and not the RTE for instance which it also supports).
 Extending the $TCA array
-Changes to the $TCA are generally packaged into extensions and – more precisely – reside in the "ext_tables.php" file. For more details about extension structure, please refer to the "Core APIs" manual.
-Here's a global example, taken from the "ext_tables.php" file from the "examples" extension. The various pieces of code will be looked at into more details later.
-$tempColumns = array (
+Being a PHP array, the Table Configuration Array can be easily extended. TYPO3 also provides APIs for making this simpler.
+Storing the changes
+Changes to the $TCA are generally packaged into extensions and – more precisely – reside in the "ext_tables.php" file (more details about extension structure can be found in the "Core APIs" manual).
+They can also be written in the "typo3conf/extTables.php" file. The name of this file can be changed – if you so wish – by changing the value of the global variable $typo_db_extTableDef_script in the "typo3conf/localconf.php" file. It's also possible to remove the "typo3conf/extTables.php" file by setting:
+$typo_db_extTableDef_script = 1;
+
+also in "typo3conf/localconf.php". This variable is then stored into the constant TYPO3_extTableDef_script.
+The advantage of the TYPO3_extTableDef_script file is that it is loaded last. This means that you are sure that your changes are not overridden by some other customizations.
+The advantage of putting your changes inside an extension is that they are nicely packaged in a self-contained entity which can be easily deployed on multiple servers. The drawback is that the extension loading order cannot be finely controlled, except by editing the loaded extension list manually. At a somewhat coarser level, setting the "priority" property in the "ext_emconf.php" file can help (a "bottom" extension will load last, but its exact load order may vary if there are several "bottom"-priority extensions).
+Customization examples
+Many extracts can be found throughout the manual, but this section provides more complete examples.
+Example 1: extending the fe_users table
+The "examples" extension adds two fields to the "fe_users" table. Here's the complete code:
+$temporaryColumns = array (
 	'tx_examples_options' => array (
 		'exclude' => 0,
 		'label' => 'LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options',
@@ -4485,11 +4627,58 @@ $tempColumns = array (
 );
 
 t3lib_div::loadTCA('fe_users');
-t3lib_extMgm::addTCAcolumns('fe_users', $tempColumns,1);
+t3lib_extMgm::addTCAcolumns('fe_users', $temporaryColumns,1);
 t3lib_extMgm::addToAllTCAtypes('fe_users', 'tx_examples_options;;;;1-1-1, tx_examples_special');
 
-The above code adds two columns to the "fe_users" table. The example below shows instead...
-This chapter will be expanded in future versions.
+First of all, the fields that we want to add are detailed according to the $TCA syntax for columns. This configuration is stored in the $temporaryColumns array.
+After that come three precise steps:
+first we load the full $TCA for the "fe_users" table. This is necessary so that all columns definition are loaded. Otherwise the new columns cannot be added properly.
+second the columns are actually added to the table by using t3lib_extMgm::addTCAcolumns().
+lastly the fields are added to the "types" definition of the "fe_users" table by using t3lib_extMgm::addToAllTCAtypes(). It is possible to be more fine-grained.
+This does not create the corresponding fields in the database. The new fields must also be defined in the "ext_tables.sql" file of the extension:
+CREATE TABLE fe_users (
+	tx_examples_options int(11) DEFAULT '0' NOT NULL,
+	tx_examples_special varchar(255) DEFAULT '' NOT NULL
+);
+
+Caution
+The above statement uses the SQL CREATE TABLE statement. This is the way TYPO3 expects it to be. The Extension Manager will automatically transform this into a ALTER TABLE statement when it detects that the table already exists.
+By default new fields are added at the bottom of the form when editing a record from that table. If the table uses tabs, new fields are added at the bottom of the "Extended" tab (this tab is created if it does not exist). The following screenshot shows the placement of the two new fields when editing a "fe_users" record:
+The next example shows how to place a field more precisely.
+Example 2: extending the tt_content table
+In this second example, we will add a "No print" field to all content element types. First of all, we add its SQL definition in "ext_tables.sql":
+CREATE TABLE tt_content (
+	tx_examples_noprint tinyint(4) DEFAULT '0' NOT NULL
+);
+
+Then we add it to the $TCA in "ext_tables.php":
+$temporaryColumn = array(
+	'tx_examples_noprint' => array (
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/locallang_db.xml:tt_content.tx_examples_noprint',
+		'config' => array (
+			'type' => 'check',
+		)
+	)
+);
+t3lib_extMgm::addTCAcolumns('tt_content', $temporaryColumn, 1);
+t3lib_extMgm::addFieldsToPalette('tt_content', 'visibility', 'tx_examples_noprint', 'after:linkToTop');
+
+The code is mostly the same as in the first example, but the last line is very different and requires an explanation. Since TYPO3 4.5 the "pages" and "tt_content" input forms were totally reorganized for increased usability. For reasons of flexibility, palettes were used intensively for all fields and not just for secondary options. This led to the introduction of new API methods for manipulating the content of palettes. The syntax is similar to the one we saw in the first example, but we have to additionally specify the palette's key, in this case "visibility".
+The result is the following:
+Because we added the field into an existing palette and after a specific field (as per the "after:linkToTop" directive), it gets added "inside" the form and not in the "Extended" tab.
+Obviously this new field will no magically exclude a content element from being printed. For it to have any effect, it must be used during the rendering by modifying the TypoScript used to render the "tt_content" table. Although this is outside the scope of this manual, here is an example of what you could do, for the sake of showing a complete process.
+Assuming you are using "css_styled_content" (which is installed by default), you could add the following TypoScript to your template:
+tt_content.stdWrap.outerWrap = <div class="noprint">|</div>
+tt_content.stdWrap.outerWrap.if.isTrue.field = tx_examples_noprint
+
+This will wrap a "div" tag with a "noprint" class around any content element that has its "No print" checkbox checked. The final step would be to declare the appropriate selector in the print-media CSS file so that "noprint" elements don't get displayed.
+This is just an example of how the effect of the "No print" checkbox can be ultimately implemented. It is meant to show that just adding the field to the $TCA is not enough.
+Verifying the $TCA
+You may find it necessary – at some point – to verify the full structure of the $TCA in your TYPO3 installation. The Admin Tools > Configuration module makes it possible to have an overview of the complete $TCA, with all customizations taken into account.
+
+If you cannot find your new field, it probably means that you have made some mistake.
+This view is also useful when trying to find out where to insert a new field, to explore the combination of types and palettes that may be used for the table that we want to extend.
 Appendix A – Skinning considerations
 The new reference for skinning is the "Core Skinning Guidelines" manual. However the reference below has been kept as an appendix since it contains information that is not yet available elsewhere, even though a part of it is obsolete. So read it if you are interested but note that not everything may work as described below.
 Visual style of TCEforms
