@@ -1,0 +1,16 @@
+﻿.. |img-61|     image:: ../../../img/manual_html_787f5dd8.png
+   :height: 498
+   :width: 485
+.. :align: left
+.. :border: 0
+.. :name: graphics60
+.. :vspace: 8
+
+.. |img-62|     image:: ../../../img/manual_html_m6d42d94.png
+   :height: 469
+   :width: 476
+.. :align: left
+.. :border: 0
+.. :name: graphics62
+.. :vspace: 8
+
