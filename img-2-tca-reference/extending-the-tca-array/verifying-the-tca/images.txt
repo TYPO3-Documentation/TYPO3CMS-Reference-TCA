@@ -1,8 +1,0 @@
-﻿.. |img-84|     image:: ../../../img/manual_html_m4680e5c5.png
-   :height: 449
-   :width: 628
-.. :align: left
-.. :border: 0
-.. :name: graphics88
-.. :vspace: 8
-

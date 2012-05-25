@@ -1,0 +1,45 @@
+﻿.. include:: Images.txt
+
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. ==================================================
+.. DEFINE SOME TEXTROLES
+.. --------------------------------------------------
+.. role::   underline
+.. role::   typoscript(code)
+.. role::   ts(typoscript)
+   :class:  typoscript
+.. role::   php(code)
+
+
+$TCA array reference
+--------------------
+
+
+.. toctree::
+   :maxdepth: 5
+   :titlesonly:
+   :glob:
+
+   Ctrl/Index
+   Interface/Index
+   Feinterface/Index
+   Columns/Index
+   ColumnsCommon/Index
+   ColumnsInput/Index
+   ColumnsText/Index
+   ColumnsCheck/Index
+   ColumnsRadio/Index
+   ColumnsSelect/Index
+   ColumnsGroup/Index
+   ColumnsNone/Index
+   ColumnsPassthrough/Index
+   ColumnsUser/Index
+   ColumnsFlex/Index
+   ColumnsInline/Index
+   Types/Index
+   Palettes/Index
+

@@ -1,8 +1,0 @@
-﻿.. |img-60|     image:: ../../../img/manual_html_m686232d8.png
-   :height: 71
-   :width: 619
-.. :align: left
-.. :border: 0
-.. :name: graphics58
-.. :vspace: 8
-
