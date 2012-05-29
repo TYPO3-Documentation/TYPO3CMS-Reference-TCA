@@ -1,0 +1,48 @@
+﻿.. |img-3|      image:: ../../Images/manual_html_m1aa6f302.png
+   :height: 313
+   :width: 355
+.. :align: left
+.. :border: 0
+.. :name: graphics14
+.. :vspace: 8
+
+.. |img-4|      image:: ../../Images/manual_html_3e681582.png
+   :height: 186
+   :width: 353
+.. :align: left
+.. :border: 0
+.. :name: graphics12
+.. :vspace: 8
+
+.. |img-5|      image:: ../../Images/manual_html_m1591c36c.png
+   :height: 26
+   :width: 203
+.. :align: left
+.. :border: 0
+.. :name: graphics13
+.. :vspace: 8
+
+.. |img-6|      image:: ../../Images/manual_html_m9184ef5.png
+   :height: 192
+   :width: 257
+.. :align: left
+.. :border: 0
+.. :name: graphics15
+.. :vspace: 8
+
+.. |img-7|      image:: ../../Images/manual_html_1c566143.png
+   :height: 107
+   :width: 332
+.. :align: left
+.. :border: 0
+.. :name: graphics16
+.. :vspace: 8
+
+.. |img-8|      image:: ../../Images/manual_html_m4802b923.png
+   :height: 107
+   :width: 332
+.. :align: left
+.. :border: 0
+.. :name: graphics17
+.. :vspace: 8
+

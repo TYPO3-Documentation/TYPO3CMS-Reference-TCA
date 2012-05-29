@@ -1,0 +1,16 @@
+﻿.. |img-16|     image:: ../../Images/manual_html_ef04660.png
+   :height: 43
+   :width: 63
+.. :align: left
+.. :border: 0
+.. :name: graphics20
+.. :vspace: 8
+
+.. |img-17|     image:: ../../Images/manual_html_5dc5812d.png
+   :height: 72
+   :width: 290
+.. :align: left
+.. :border: 0
+.. :name: graphics21
+.. :vspace: 8
+

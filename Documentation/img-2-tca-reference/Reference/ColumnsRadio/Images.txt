@@ -1,8 +1,0 @@
-﻿.. |img-18|     image:: ../../../Images/manual_html_6d796493.png
-   :height: 50
-   :width: 131
-.. :align: left
-.. :border: 0
-.. :name: graphics22
-.. :vspace: 8
-

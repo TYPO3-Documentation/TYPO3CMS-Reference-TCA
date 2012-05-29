@@ -1,8 +1,0 @@
-﻿.. |img-15|     image:: ../../../Images/manual_html_m712dc7fd.png
-   :height: 90
-   :width: 546
-.. :align: left
-.. :border: 0
-.. :name: graphics19
-.. :vspace: 4
-
