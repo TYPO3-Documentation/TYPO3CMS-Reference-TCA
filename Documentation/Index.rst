@@ -18,7 +18,7 @@
 TCA Reference
 =============
 
-:Former Extension Key:
+:Previous Key:
       doc_core_tca
 
 :Version:
@@ -33,7 +33,7 @@ TCA Reference
 :Keywords:
       forAdmins, forDevelopers, forIntermediates
 
-:Copyright
+:Copyright:
       2000-2012
 
 :Author:
