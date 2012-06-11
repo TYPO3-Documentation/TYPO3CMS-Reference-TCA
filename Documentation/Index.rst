@@ -18,20 +18,23 @@
 TCA Reference
 =============
 
-:Author:
-      Francois Suter
-
-:Created:
-      2011-01-28 11::0:8:
-
-:Changed:
-      2012-04-23 22::0:8:
-
-:Classification:
+:Former Extension Key:
       doc_core_tca
+
+:Version:
+      4.7.1
+
+:Language:
+      en
+
+:Description:
+      Complete reference to the Table Configuration Array ($TCA).
 
 :Keywords:
       forAdmins, forDevelopers, forIntermediates
+
+:Copyright
+      2000-2012
 
 :Author:
       Documentation Team
@@ -39,30 +42,15 @@ TCA Reference
 :Email:
       documentation@typo3.org
 
-:Language:
-      en
+:License:
+      Open Content License available from `www.opencontent.org/opl.shtml
+      <http://www.opencontent.org/opl.shtml>`_
 
+The content of this document is related to TYPO3,
 
-|img-1| |img-2| TCA Reference
-=============================
+a GNU/GPL CMS/Framework available from `www.typo3.org
+<http://www.typo3.org/>`_
 
-Extension Key: doc\_core\_tca
-
-Language: en
-
-Version: 4.7.0
-
-Keywords: forAdmins, forDevelopers, forIntermediates
-
-Copyright 2000-2012, Documentation Team, <documentation@typo3.org>
-
-This document is published under the Open Content License
-
-available from http://www.opencontent.org/opl.shtml
-
-The content of this document is related to TYPO3
-
-\- a GNU/GPL CMS/Framework available from www.typo3.org
 
 **Official documentation**
 
@@ -72,6 +60,7 @@ review process. The reader should expect the information in this
 document to be accurate - please report discrepancies to the
 Documentation Team (documentation@typo3.org). Official documents are
 kept up-to-date to the best of the Documentation Team's abilities.
+
 
 **Core Manual**
 
@@ -86,6 +75,8 @@ Core Manuals are written as reference manuals. The reader should rely
 on the Table of Contents to identify what particular section will best
 address the task at hand.
 
+
+**Table of Contents**
 
 .. toctree::
    :maxdepth: 5
