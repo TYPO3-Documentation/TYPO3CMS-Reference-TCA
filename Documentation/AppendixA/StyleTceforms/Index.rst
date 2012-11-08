@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Visual style of TCEforms
@@ -57,10 +49,10 @@ a certain meaning which you are encouraged to follow as well:
 
    Int. pointer
          Int. pointer
-   
+
    Title
          Title
-   
+
    Description
          Description
 
@@ -69,10 +61,10 @@ a certain meaning which you are encouraged to follow as well:
 
    Int. pointer
          0
-   
+
    Title
          Default
-   
+
    Description
          Default index. Always used on main-palettes in the bottom of the
          forms.
@@ -82,10 +74,10 @@ a certain meaning which you are encouraged to follow as well:
 
    Int. pointer
          1
-   
+
    Title
          Meta fields
-   
+
    Description
          Typically used for "Hidden", "Type" and other primary "meta" fields
 
@@ -94,10 +86,10 @@ a certain meaning which you are encouraged to follow as well:
 
    Int. pointer
          2
-   
+
    Title
          Headers
-   
+
    Description
          For fields related to header information
 
@@ -106,10 +98,10 @@ a certain meaning which you are encouraged to follow as well:
 
    Int. pointer
          3
-   
+
    Title
          Main content
-   
+
    Description
          For main content
 
@@ -118,10 +110,10 @@ a certain meaning which you are encouraged to follow as well:
 
    Int. pointer
          4
-   
+
    Title
          Extras
-   
+
    Description
          For extra content, like images, files etc.
 
@@ -130,10 +122,10 @@ a certain meaning which you are encouraged to follow as well:
 
    Int. pointer
          5
-   
+
    Title
          Advanced
-   
+
    Description
          For special content
 
@@ -143,9 +135,7 @@ a certain meaning which you are encouraged to follow as well:
 
 Even if these pointers are used in the core of TYPO3 the default
 configuration as found in t3lib/stddb/tables.php includes only a
-definition of the default "0" (zero) pointer:
-
-::
+definition of the default "0" (zero) pointer::
 
    $TBE_STYLES = array(
            'colorschemes' => array(
@@ -167,10 +157,10 @@ Reference table:
 
    Key
          Key
-   
+
    Sub-keys
          Sub-keys
-   
+
    Description
          Description
 
@@ -179,54 +169,48 @@ Reference table:
 
    Key
          colorschemes
-   
+
    Sub-keys
          [0-x]
-   
+
    Description
          This value is a comma separated list of five color/class definitions.
          The meaning of each color/class is defined as:
-         
+
          [general cell] , [header cell] , [palette header cell] , [header
          label] , [palette header label]
-         
+
          Each composite color/class value is split with a "\|" (vertical bar).
          The first part is a color value, typically setting a background color
          or font color. The second part is a class attribute value which will
          be set either for the table cell (td) or the span-tag around text
-         
+
          For both color and class values these facts apply:
-         
+
          - Omitting a color (blank value) will use the default value (from index
            "0" and if index "0" is not defined, based on the general mainColors
            in $TBE\_STYLES)
-         
+
          - Setting a color value to dash (“-”) will make it transparent (or just
            not set).
-         
+
          Class attributes are set only if there was a class value set. There
          are no default class values.
-         
-         **Example:**
-         
-         ::
-         
+
+         **Example:** ::
+
             $TBE_STYLES['colorschemes'][0]='red,yellow,blue,olive,green';
-         
+
          |img-85|
-         
-         **Example:**
-         
-         ::
-         
+
+         **Example:** ::
+
             $TBE_STYLES['colorschemes'][0]='-|class-red,-|class-yellow,-|class-blue,-|class-olive,-|class-green';
-         
+
          This sets class attribute values instead. If you add this to the
          stylesheet you will get the same result as entering the real color
-         values:
-         
-         ::
-         
+         values::
+
             TABLE.typo3-TCEforms .class-red { background-color: red; }
             TABLE.typo3-TCEforms .class-yellow { background-color: yellow; }
             TABLE.typo3-TCEforms .class-blue { background-color: blue; }
@@ -238,42 +222,36 @@ Reference table:
 
    Key
          styleschemes
-   
+
    Sub-keys
          [0-x][elementKey]
-   
+
    Description
          This value is the content of the "style" attribute of a form element
          (defined by "elementKey").
-         
+
          If the value is prefixed "CLASS:" then it will set the class attribute
          instead to the value after the prefix.
-         
+
          "elementKey" is the value of a ['columns']['field name']['config'] /
          TYPE (e.g. "text", "group", "check", "flex" etc.) or the string "all"
          (for defining a default value)
-         
-         **Example:**
-         
-         ::
-         
+
+         **Example:** ::
+
             $TBE_STYLES['styleschemes'][0]['all'] = 'background-color:#F7F7F3;';
             $TBE_STYLES['styleschemes'][0]['check'] = '';
-         
+
          This (above) sets the background-color CSS attribute of all form
          elements  *except* checkboxes!
-         
-         **Example:**
-         
-         ::
-         
+
+         **Example:** ::
+
             $TBE_STYLES['styleschemes'][0]['all'] = 'CLASS: formField';
-         
+
          This will set the class attribute to 'formField' for all elements. The
-         associated stylesheet could look like:
-         
-         ::
-         
+         associated stylesheet could look like::
+
             TABLE.typo3-TCEforms .formField { background-color: #F7F7F3; }
 
 
@@ -281,53 +259,47 @@ Reference table:
 
    Key
          borderschemes
-   
+
    Sub-keys
          [0-x][key]
-   
+
    Description
          This value defines the border style of the group of fields.
-         
+
          Technically the group of fields are wrapped into a table.
-         
+
          "key" is an index defining various values:
-         
+
          - "0" : "style" attribute of the table wrapping the section
-         
+
          - "1" : Distance in pixels after the wrapping table
-         
+
          - "2" : "background" attribute of table wrapping the section: Reference
            to background image is relative to typo3/ folder (prefixed with
            ->backPath)
-         
+
          - "3" : "class" attribute of table wrapping the section.
-         
-         **Example:**
-         
-         ::
-         
+
+         **Example:** ::
+
             $TBE_STYLES['borderschemes'][0][0] = 'border:solid 1px black;';
             $TBE_STYLES['borderschemes'][0][1] = 5;
             $TBE_STYLES['borderschemes'][0][2] = '../typo3conf/freestyler_transp.gif';
-         
+
          This renders the form fields like this:
-         
+
          |img-86|
-         
+
          (Black border, the distance to the next section is 5 pixels and there
          is a background image)
-         
-         **Example:**
-         
-         ::
-         
+
+         **Example:** ::
+
             $TBE_STYLES['borderschemes'][0]= array('','','','wrapperTable');
-         
+
          With an associated stylesheet you can get the same result (image not
-         included):
-         
-         ::
-         
+         included)::
+
             TABLE.typo3-TCEforms .wrapperTable { border: 1px solid black; margin-top: 5px; }
 
 
@@ -346,12 +318,10 @@ out how the features described in the reference table above is
 implemented.
 
 In the examples below the $TBE\_STYLES configuration includes the
-following:
-
-::
+following::
 
    $TBE_STYLES['colorschemes'] = Array (
-       '0' => '#F7F7F3,#E3E3DF,#EDEDE9', 
+       '0' => '#F7F7F3,#E3E3DF,#EDEDE9',
        '1' => '#94A19A,#7C8D84,#7C8D84',
        '2' => '#E4D69E,#E7DBA8,#E9DEAF',
        '3' => '#C2BFC0,#C7C5C5,#C7C5C5',
@@ -380,31 +350,25 @@ Examples
 ~~~~~~~~
 
 First, lets look at a plain types-configuration which merely renders a
-list of fields:
-
-::
+list of fields::
 
    'types' => Array (
-       '0' => Array('showitem' => 'title;;1,photodate,description,images,fe_cruser_id')        
+       '0' => Array('showitem' => 'title;;1,photodate,description,images,fe_cruser_id')
    ),
 
 It renders this form:
 
 |img-87| Now I modify the types config to include the fifth parameters (in
-red):
-
-::
+red)::
 
    'types' => Array (
-           '0' => Array('showitem' => 'title;;1;;1--0,photodate;;;;-4-,description;;;;2-0-,images;;;;1--0,fe_cruser_id') 
+           '0' => Array('showitem' => 'title;;1;;1--0,photodate;;;;-4-,description;;;;2-0-,images;;;;1--0,fe_cruser_id')
    ),
 
 And this looks like:
 
 |img-88| To understand how the style pointers works, lets organize them into a
-table. This is the "types"-configuration string:
-
-::
+table. This is the "types"-configuration string::
 
    title;;1;;1--0,photodate;;;;-4-,description;;;;2-0-,images;;;;1--0,fe_cruser_id
 
@@ -417,16 +381,16 @@ Splitting this information into a table looks like this:
 
    Fieldname
          Fieldname
-   
+
    5th param
          5th param:
-   
+
    'colorscheme' pnt
          'colorscheme' pnt:
-   
+
    'stylescheme' pnt
          'stylescheme' pnt:
-   
+
    'borderscheme' pnt
          'borderscheme' pnt:
 
@@ -435,18 +399,18 @@ Splitting this information into a table looks like this:
 
    Fieldname
          title
-   
+
    5th param
          ::
-         
+
             1--0
-   
+
    'colorscheme' pnt
          1
-   
+
    'stylescheme' pnt
          [blank]
-   
+
    'borderscheme' pnt
          0
 
@@ -455,18 +419,18 @@ Splitting this information into a table looks like this:
 
    Fieldname
          photodate
-   
+
    5th param
          ::
-         
+
             -4-
-   
+
    'colorscheme' pnt
          [blank]
-   
+
    'stylescheme' pnt
          4
-   
+
    'borderscheme' pnt
          [blank]
 
@@ -475,18 +439,18 @@ Splitting this information into a table looks like this:
 
    Fieldname
          description
-   
+
    5th param
          ::
-         
+
             2-0-
-   
+
    'colorscheme' pnt
          2
-   
+
    'stylescheme' pnt
          0
-   
+
    'borderscheme' pnt
          [blank]
 
@@ -495,18 +459,18 @@ Splitting this information into a table looks like this:
 
    Fieldname
          images
-   
+
    5th param
          ::
-         
+
             1--0
-   
+
    'colorscheme' pnt
          1
-   
+
    'stylescheme' pnt
          [blank]
-   
+
    'borderscheme' pnt
          0
 
@@ -515,18 +479,18 @@ Splitting this information into a table looks like this:
 
    Fieldname
          fe\_cruser\_id
-   
+
    5th param
          ::
-         
+
             [blank]
-   
+
    'colorscheme' pnt
          [blank]
-   
+
    'stylescheme' pnt
          [blank]
-   
+
    'borderscheme' pnt
          [blank]
 
@@ -565,13 +529,11 @@ string) will just let the former value pass through.
 
 The three schemes are designed to go in pairs. It is most likely that
 all three pointers should be set each time you apply the fifth
-parameter value. Example:
-
-::
+parameter value. Example::
 
    'types' => Array (
-           '0' => Array('showitem' => 'title;;1;;1-1-1,photodate;;;;2-2-2,description;;;;3-3-3,images,fe_cruser_id;;;;5-5-5')    
+           '0' => Array('showitem' => 'title;;1;;1-1-1,photodate;;;;2-2-2,description;;;;3-3-3,images,fe_cruser_id;;;;5-5-5')
    ),
-   |img-89| 
-   
+   |img-89|
+
 

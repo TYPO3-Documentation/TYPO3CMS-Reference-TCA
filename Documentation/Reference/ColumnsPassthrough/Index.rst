@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 ['columns'][ *field name* ]['config'] / TYPE: "passthrough"
@@ -35,10 +27,10 @@ specifically fitted for direct API usage with the TCEmain class.
 
    Key
          Key
-   
+
    Datatype
          Datatype
-   
+
    Description
          Description
 
@@ -47,10 +39,10 @@ specifically fitted for direct API usage with the TCEmain class.
 
    Key
          type
-   
+
    Datatype
          string
-   
+
    Description
          *[Must be set to "passthrough"]*
 
@@ -65,9 +57,7 @@ Example:
 ~~~~~~~~
 
 This field is found in a number of table, e.g. the "pages" table. It
-is used by the system extension "impexp" to store some information.
-
-::
+is used by the system extension "impexp" to store some information. ::
 
    'tx_impexp_origuid' => array('config' => array('type' => 'passthrough'))
 

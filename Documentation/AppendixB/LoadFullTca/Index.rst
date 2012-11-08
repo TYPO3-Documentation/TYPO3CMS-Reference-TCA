@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Loading the full $TCA dynamically
@@ -51,16 +43,12 @@ To find places in your backend code where this should probably be
 implemented search for:
 
 **"each($TCA)"** - This is potentially dangerous in a construction
-like this:
-
-::
+like this::
 
       while(list($table,$config)=each($TCA))
 
 where $config would obtain non-complete content. Hopefully there are
-none left. Instead it should look like:
-
-::
+none left. Instead it should look like::
 
       while(list($table)=each($TCA))  {
                    t3lib_div::loadTCA($table);

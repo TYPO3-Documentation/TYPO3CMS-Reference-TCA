@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Customization examples
@@ -26,9 +18,7 @@ Example 1: extending the fe\_users table
 """"""""""""""""""""""""""""""""""""""""
 
 The "examples" extension adds two fields to the "fe\_users" table.
-Here's the complete code:
-
-::
+Here's the complete code::
 
    $temporaryColumns = array (
            'tx_examples_options' => array (
@@ -56,7 +46,7 @@ Here's the complete code:
                    )
            ),
    );
-   
+
    t3lib_div::loadTCA('fe_users');
    t3lib_extMgm::addTCAcolumns('fe_users', $temporaryColumns,1);
    t3lib_extMgm::addToAllTCAtypes('fe_users', 'tx_examples_options;;;;1-1-1, tx_examples_special');
@@ -80,15 +70,13 @@ After that come three precise steps:
 
 This does not create the corresponding fields in the database. The new
 fields must also be defined in the "ext\_tables.sql" file of the
-extension:
-
-::
+extension::
 
    CREATE TABLE fe_users (
            tx_examples_options int(11) DEFAULT '0' NOT NULL,
            tx_examples_special varchar(255) DEFAULT '' NOT NULL
    );
-   |img-81| 
+   |img-81|
 
 **Caution**
 
@@ -111,17 +99,13 @@ Example 2: extending the tt\_content table
 
 In this second example, we will add a "No print" field to all content
 element types. First of all, we add its SQL definition in
-"ext\_tables.sql":
-
-::
+"ext\_tables.sql"::
 
    CREATE TABLE tt_content (
            tx_examples_noprint tinyint(4) DEFAULT '0' NOT NULL
    );
 
-Then we add it to the $TCAin "ext\_tables.php":
-
-::
+Then we add it to the $TCAin "ext\_tables.php"::
 
    $temporaryColumn = array(
            'tx_examples_noprint' => array (
@@ -159,9 +143,7 @@ manual, here is an example of what you could do, for the sake of
 showing a complete process.
 
 Assuming you are using "css\_styled\_content" (which is installed by
-default), you could add the following TypoScript to your template:
-
-::
+default), you could add the following TypoScript to your template::
 
    tt_content.stdWrap.outerWrap = <div class="noprint">|</div>
    tt_content.stdWrap.outerWrap.if.isTrue.field = tx_examples_noprint

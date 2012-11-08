@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 ['columns'][ *field name* ]['config'] / TYPE: "check"
@@ -36,13 +28,13 @@ fields and not just whether it is true or false!).
 
    Key
          Key
-   
+
    Datatype
          Datatype
-   
+
    Description
          Description
-   
+
    Scope
          Scope
 
@@ -51,13 +43,13 @@ fields and not just whether it is true or false!).
 
    Key
          type
-   
+
    Datatype
          string
-   
+
    Description
          *[Must be set to "check"]*
-   
+
    Scope
          Display / Proc.
 
@@ -66,32 +58,30 @@ fields and not just whether it is true or false!).
 
    Key
          items
-   
+
    Datatype
          array
-   
+
    Description
          If set, this array will create an array of checkboxes instead of just
          a single "on/off" checkbox.
-         
+
          **Notice:** You can have a maximum of 10 checkboxes in such an array
          and each element is represented by a single bit in the integer value
          which ultimately goes into the database.
-         
+
          In this array each entry is itself an array where the first entry is
          the label (string or LLL reference) and the second entry is a blank
          value. The value sent to the database will be an integer where each
          bit represents the state of a checkbox in this array.
-         
-         **Example:**
-         
-         ::
-         
+
+         **Example:** ::
+
             'items' => array(
                 array('Green tomatoes', ''),
                 array('Red peppers', '')
             ),
-   
+
    Scope
          Display
 
@@ -100,17 +90,17 @@ fields and not just whether it is true or false!).
 
    Key
          cols
-   
+
    Datatype
          integer
-   
+
    Description
          How many columns the checkbox array are shown in.
-         
+
          Range is 1-10, 1 being default.
-         
+
          (Makes sense only if the 'array' key is defining a checkbox array)
-   
+
    Scope
          Display
 
@@ -119,14 +109,14 @@ fields and not just whether it is true or false!).
 
    Key
          showIfRTE
-   
+
    Datatype
          boolean
-   
+
    Description
          If set, this field will show  *only* if the RTE editor is enabled
          (which includes correct browser version and user-rights altogether.)
-   
+
    Scope
          Display
 
@@ -135,16 +125,16 @@ fields and not just whether it is true or false!).
 
    Key
          default
-   
+
    Datatype
          integer
-   
+
    Description
          Setting the default value of the checkbox(es).
-         
+
          **Notice:** Each bit corresponds to a check box (even if only one
          checkbox which maps to bit-0).
-   
+
    Scope
          Display / Proc.
 
@@ -153,23 +143,23 @@ fields and not just whether it is true or false!).
 
    Key
          itemsProcFunc
-   
+
    Datatype
          string
-         
+
          (function reference)
-   
+
    Description
          PHP function which is called to fill / manipulate the array with
          elements.
-         
+
          The function/method will have an array of parameters passed to it
          (where the item-array is passed by reference in the key 'items'). By
          modifying the array of items, you alter the list of items.
-         
+
          For more information, see how user-functions are specified in the
          section about 'wizards' some pages below here.
-   
+
    Scope
          Display
 
@@ -186,9 +176,7 @@ Now follows some code listings as examples:
 Example: A single checkbox
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A plain vanilla checkbox:
-
-::
+A plain vanilla checkbox::
 
    'enforce_date' => array(
            'exclude' => 0,
@@ -203,9 +191,7 @@ Example: A checkbox array
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is an example of a checkbox array with two checkboxes in it. The
-first checkbox will have bit-0 and the second bit-1:
-
-::
+first checkbox will have bit-0 and the second bit-1::
 
    'l18n_cfg' => array(
            'exclude' => 1,

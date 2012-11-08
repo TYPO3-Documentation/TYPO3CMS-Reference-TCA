@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 ['columns'][ *field name* ]['config'] / TYPE: "radio"
@@ -23,7 +15,7 @@ attractive than their more popular sisters (selector boxes).
 
 Here you see radio buttons in action for the "Filemounts" records:
 
-|img-18| 
+|img-18|
 
 .. ### BEGIN~OF~TABLE ###
 
@@ -31,13 +23,13 @@ Here you see radio buttons in action for the "Filemounts" records:
 
    Key
          Key
-   
+
    Datatype
          Datatype
-   
+
    Description
          Description
-   
+
    Scope
          Scope
 
@@ -46,13 +38,13 @@ Here you see radio buttons in action for the "Filemounts" records:
 
    Key
          type
-   
+
    Datatype
          string
-   
+
    Description
          *[Must be set to "radio"]*
-   
+
    Scope
          *Display / Proc.*
 
@@ -61,21 +53,21 @@ Here you see radio buttons in action for the "Filemounts" records:
 
    Key
          items
-   
+
    Datatype
          array
-   
+
    Description
          **Required.**
-         
+
          An array of the values which can be selected.
-         
+
          Each entry is in itself an array where the  *first entry* is the
          *title* (string or LLL reference) and the  *second entry* is the
          *value* of the radio button.
-         
+
          See example below.
-   
+
    Scope
          Display
 
@@ -84,13 +76,13 @@ Here you see radio buttons in action for the "Filemounts" records:
 
    Key
          default
-   
+
    Datatype
          mixed
-   
+
    Description
          Default value.
-   
+
    Scope
          Display / Proc.
 
@@ -99,23 +91,23 @@ Here you see radio buttons in action for the "Filemounts" records:
 
    Key
          itemsProcFunc
-   
+
    Datatype
          string
-         
+
          (function reference)
-   
+
    Description
          PHP function which is called to fill / manipulate the array with
          elements.
-         
+
          The function/method will have an array of parameters passed to it
          (where the item-array is passed by reference in the key 'items'). By
          modifying the array of items, you alter the list of items.
-         
+
          For more information, see how user-functions are specified in the
          section about 'wizards' some pages below here.
-   
+
    Scope
          Display
 
@@ -130,9 +122,7 @@ Example:
 ~~~~~~~~
 
 An example of radio buttons configuration from "sys\_filemounts" (see
-above):
-
-::
+above)::
 
    'base' => array(
            'label' => 'LLL:EXT:lang/locallang_tca.xml:sys_filemounts.base',

@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 ['columns'][ *field name* ]['config'] / TYPE: "group"
@@ -39,13 +31,13 @@ It does not create references to the files' original positions!
 
    Key
          Key
-   
+
    Datatype
          Datatype
-   
+
    Description
          Description
-   
+
    Scope
          Scope
 
@@ -54,13 +46,13 @@ It does not create references to the files' original positions!
 
    Key
          type
-   
+
    Datatype
          string
-   
+
    Description
          *[Must be set to "group"]*
-   
+
    Scope
          Display / Proc.
 
@@ -69,35 +61,35 @@ It does not create references to the files' original positions!
 
    Key
          internal\_type
-   
+
    Datatype
          string
-   
+
    Description
          **Required!**
-         
+
          Configures the internal type of the "group" type of element.
-         
+
          There are four possible options to choose from:
-         
+
          - "file" - this will create a field where files can be attached to the
            record
-         
+
          - "file\_reference" - this will create a field where files can be
            referenced. In contrast to "file", referenced files (usually from
            fileadmin/) will not be copied to the upload folder.  **Warning:** use
            this carefully.  *Your references will be broken if you delete
            referenced files in the filesystem!*
-         
+
          - “folder” - this will create a field where folders can be attached to
            the record
-         
+
          - "db" - this will create a field where database records can be attached
            as references.
-         
+
          The default value is none of them - you must specify one of the values
          correctly!
-   
+
    Scope
          Display / Proc.
 
@@ -106,37 +98,37 @@ It does not create references to the files' original positions!
 
    Key
          allowed
-   
+
    Datatype
          string
-         
+
          (list of)
-   
+
    Description
          **For the "file" internal type (Optional):**
-         
+
          A lowercase comma list of file extensions that are permitted. E.g.
          'jpg,gif,txt'. Also see 'disallowed'.
-         
+
          **For the "db" internal type (Required!):**
-         
+
          A comma list of tables from $TCA.
-         
+
          For example the value could be "pages,be\_users".
-         
+
          Value from these tables are always the 'uid' field.
-         
+
          First table in list is understood as the  *default table* , if a
          table-name is not prepended to the value.
-         
+
          If the value is '\*' then all tables are allowed (in this case  *you
          should set "prepend\_tname"* so all tables are prepended with their
          table name for sure).
-         
+
          *Notice* , if the field is the foreign side of a bidirectional MM
          relation, only the first table is used and that must be the table of
          the records on the native side of the relation.
-   
+
    Scope
          Proc. / Display
 
@@ -145,34 +137,34 @@ It does not create references to the files' original positions!
 
    Key
          disallowed
-   
+
    Datatype
          string
-         
+
          (list of)
-   
+
    Description
          *[internal\_type =  **file** ONLY]*
-         
+
          Default value is '\*' which means that anything file-extension which
          is not allowed is denied.
-         
+
          If you set this value (to for example "php,php3") AND the "allowed"
          key is an empty string all extensions are permitted  *except* ".php"
          and ".php3" files (works like the [BE][fileExtensions] config option).
-         
+
          In other words:
-         
+
          - If you want to permit  *only certain* file-extensions, use 'allowed'
            and not disallowed.
-         
+
          - If you want to permit  *all file-extensions* except a few, set
            'allowed' to blank ("") and enter the list of denied extensions in
            'disallowed'.
-         
+
          - If you wish to  *allow all extensions* with no exceptions, set
            'allowed' to '\*' and disallowed to ''
-   
+
    Scope
          Proc. / Display
 
@@ -181,36 +173,36 @@ It does not create references to the files' original positions!
 
    Key
          MM
-   
+
    Datatype
          string
-         
+
          (table name)
-   
+
    Description
          Defines MM relation table to use.
-         
+
          Means that the relation to the files/db is done with a M-M relation
          through a third "join" table.
-         
+
          A MM-table must have these four columns:
-         
+
          - **uid\_local** - for the local uid.
-         
+
          - **uid\_foreign** - for the foreign uid.If the "internal\_type" is
            "file" then the "uid\_foreign" should be a varchar or 60 or so (for
            the filename) instead of an unsigned integer as you would use for the
            uid.
-         
+
          - **tablenames** - is required if you use multi-table relations and this
            field must be a varchar of approx. 30In case of files, the tablenames
            field is never used.
-         
+
          - **sorting** - is a required field used for ordering the items.
-         
+
          *see ['columns'][fieldname]['config'] / TYPE: "select" => MM for
          additional features.*
-   
+
    Scope
          Proc.
 
@@ -219,16 +211,16 @@ It does not create references to the files' original positions!
 
    Key
          MM\_opposite\_field
-   
+
    Datatype
          string
-         
+
          (field name)
-   
+
    Description
          *see ['columns'][fieldname]['config'] / TYPE: "select" =>
          MM\_opposite\_field*
-   
+
    Scope
          Proc.
 
@@ -237,14 +229,14 @@ It does not create references to the files' original positions!
 
    Key
          MM\_match\_fields
-   
+
    Datatype
          array
-   
+
    Description
          *see ['columns'][fieldname]['config'] / TYPE: "select" =>
          MM\_match\_fields*
-   
+
    Scope
 
 
@@ -252,14 +244,14 @@ It does not create references to the files' original positions!
 
    Key
          MM\_insert\_fields
-   
+
    Datatype
          array
-   
+
    Description
          *see ['columns'][fieldname]['config'] / TYPE: "select" =>
          MM\_insert\_fields*
-   
+
    Scope
 
 
@@ -267,14 +259,14 @@ It does not create references to the files' original positions!
 
    Key
          MM\_table\_where
-   
+
    Datatype
          string (SQL WHERE)
-   
+
    Description
          *see ['columns'][fieldname]['config'] / TYPE: "select" =>
          MM\_table\_where*
-   
+
    Scope
 
 
@@ -282,14 +274,14 @@ It does not create references to the files' original positions!
 
    Key
          MM\_hasUidField
-   
+
    Datatype
          boolean
-   
+
    Description
          *see ['columns'][fieldname]['config'] / TYPE: "select" =>
          MM\_hasUidField*
-   
+
    Scope
 
 
@@ -297,15 +289,15 @@ It does not create references to the files' original positions!
 
    Key
          max\_size
-   
+
    Datatype
          integer
-   
+
    Description
          *[internal\_type =  **file** ONLY]*
-         
+
          Files: Maximum file size allowed in KB
-   
+
    Scope
          Proc.
 
@@ -314,27 +306,27 @@ It does not create references to the files' original positions!
 
    Key
          uploadfolder
-   
+
    Datatype
          string
-   
+
    Description
          *[internal\_type =  **file** ONLY]*
-         
+
          Path to folder under PATH\_site in which the files are stored.
-         
+
          Example: 'uploads' or 'uploads/pictures'
-         
+
          **Notice:** TYPO3 does NOT create a reference to the file in its
          original position! It makes a  *copy* of the file into this folder and
          from that moment that file is not supposed to be manipulated from
          outside. Being in the upload folder means that files are understood as
          a part of the database content and should be managed by TYPO3 only.
-         
+
          **Warning:** do NOT add a trailing slash (/) to the upload folder
          otherwise the full path stored in the references will contain a double
          slash (e.g. “uploads/pictures//stuff.png”).
-   
+
    Scope
          Proc.
 
@@ -343,16 +335,16 @@ It does not create references to the files' original positions!
 
    Key
          prepend\_tname
-   
+
    Datatype
          boolean
-   
+
    Description
          *[internal\_type =  **db** ONLY]*
-         
+
          Will prepend the table name to the stored relations (so instead of
          storing "23" you will store e.g. "tt\_content\_23").
-   
+
    Scope
          Proc.
 
@@ -361,18 +353,18 @@ It does not create references to the files' original positions!
 
    Key
          dontRemapTablesOnCopy
-   
+
    Datatype
          string
-         
+
          (list of tables)
-   
+
    Description
          *[internal\_type =  **db** ONLY]*
-         
+
          A list of tables which should  *not* be remapped to the new element
          uids if the field holds elements that are copied in the session.
-   
+
    Scope
          Proc.
 
@@ -381,13 +373,13 @@ It does not create references to the files' original positions!
 
    Key
          show\_thumbs
-   
+
    Datatype
          boolean
-   
+
    Description
          Show thumbnails for the field in the TCEform
-   
+
    Scope
          Display
 
@@ -396,13 +388,13 @@ It does not create references to the files' original positions!
 
    Key
          size
-   
+
    Datatype
          integer
-   
+
    Description
          Height of the selector box in TCEforms.
-   
+
    Scope
          Display
 
@@ -411,17 +403,17 @@ It does not create references to the files' original positions!
 
    Key
          autoSizeMax
-   
+
    Datatype
          integer
-   
+
    Description
          If set, then the height of element listing selector box will
          automatically be adjusted to the number of selected elements, however
          never less than "size" and never larger than the integer value of
          "autoSizeMax" itself (takes precedence over "size"). So "autoSizeMax"
          is the maximum height the selector can ever reach.
-   
+
    Scope
          Display
 
@@ -430,14 +422,14 @@ It does not create references to the files' original positions!
 
    Key
          selectedListStyle
-   
+
    Datatype
          string
-   
+
    Description
          If set, this will override the default style of element selector box
          (which is “width:200px”).
-   
+
    Scope
          Display
 
@@ -446,18 +438,18 @@ It does not create references to the files' original positions!
 
    Key
          multiple
-   
+
    Datatype
          boolean
-   
+
    Description
          Allows the  *same item* more than once in a list.
-         
+
          If used with bidirectional MM relations it must be set for both the
          native and foreign field configuration. Also, with MM relations in
          general you must use a UID field in the join table, see description
          for “MM”
-   
+
    Scope
          Display / Proc.
 
@@ -466,13 +458,13 @@ It does not create references to the files' original positions!
 
    Key
          maxitems
-   
+
    Datatype
          integer > 0
-   
+
    Description
          Maximum number of items in the selector box. (Default = 1)
-   
+
    Scope
          Display / Proc?
 
@@ -481,13 +473,13 @@ It does not create references to the files' original positions!
 
    Key
          minitems
-   
+
    Datatype
          integer > 0
-   
+
    Description
          Minimum number of items in the selector box. (Default = 0)
-   
+
    Scope
          Display / Proc?
 
@@ -496,22 +488,22 @@ It does not create references to the files' original positions!
 
    Key
          disable\_controls
-   
+
    Datatype
          string
-   
+
    Description
          Disables sub-controls inside "group" control. Comma-separated list of
          values. Possible values are: browser (disables browse button for list
          control), list (disables list and browse button, but not delete
          button), upload (disables upload control) and delete (disables the
          delete button). See example image below.
-         
+
          **NOTE:** if you use the delete button when the list is disabled,
          **all** entries in the list will be deleted.
-         
+
          |img-37|
-   
+
    Scope
          Display / Proc.
 
@@ -520,13 +512,13 @@ It does not create references to the files' original positions!
 
    Key
          wizards
-   
+
    Datatype
          array
-   
+
    Description
          [See section later for options]
-   
+
    Scope
          Display
 
@@ -544,9 +536,7 @@ The "Insert records" content element can be used to reference records
 from the "tt\_content" table (and possibly others, like "tt\_news" in
 the screenshot below):
 
-|img-35| The corresponding TCA code:
-
-::
+|img-35| The corresponding TCA code::
 
    'records' => array(
            'label' => 'LLL:EXT:cms/locallang_ttc.xml:records',
@@ -590,9 +580,7 @@ presented effectively in a big selector box and thus the Element
 Browser that follows the "group" type fields is useful. An example is
 the "General Record Storage page" reference:
 
-|img-38| The configuration looks like:
-
-::
+|img-38| The configuration looks like::
 
    'storage_pid' => array(
            'exclude' => 1,
@@ -629,9 +617,7 @@ happens because all files attached to records through a group-type
 field are copied to a location defined by the "uploadfolder" setting
 in the configuration (see below). When a file is referenced several
 times, it is also copied several times. TYPO3 automatically appends a
-number so that each reference is unique.
-
-::
+number so that each reference is unique. ::
 
    'image' => array(
            'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.images',
@@ -733,13 +719,13 @@ an MM table:
 
    uid\_local
          uid\_local
-   
+
    uid\_foreign
          uid\_foreign
-   
+
    tablename
          tablename
-   
+
    sorting
          sorting
 
@@ -748,13 +734,13 @@ an MM table:
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          26
-   
+
    tablename
          tt\_content
-   
+
    sorting
          1
 
@@ -763,13 +749,13 @@ an MM table:
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          45
-   
+
    tablename
          tt\_content
-   
+
    sorting
          2
 
@@ -778,13 +764,13 @@ an MM table:
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          49
-   
+
    tablename
          tt\_content
-   
+
    sorting
          3
 
@@ -793,13 +779,13 @@ an MM table:
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          1
-   
+
    tablename
          tt\_content
-   
+
    sorting
          4
 
@@ -816,13 +802,13 @@ Or for "tt\_content\_26,pages\_123":
 
    uid\_local
          uid\_local
-   
+
    uid\_foreign
          uid\_foreign
-   
+
    tablename
          tablename
-   
+
    sorting
          sorting
 
@@ -831,13 +817,13 @@ Or for "tt\_content\_26,pages\_123":
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          26
-   
+
    tablename
          tt\_content
-   
+
    sorting
          1
 
@@ -846,13 +832,13 @@ Or for "tt\_content\_26,pages\_123":
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          123
-   
+
    tablename
          pages
-   
+
    sorting
          2
 
@@ -870,13 +856,13 @@ _01.jpg":
 
    uid\_local
          uid\_local
-   
+
    uid\_foreign
          uid\_foreign
-   
+
    tablename
          tablename
-   
+
    sorting
          sorting
 
@@ -885,13 +871,13 @@ _01.jpg":
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          DSC\_7102\_background.jpg
-   
+
    tablename
          N/A
-   
+
    sorting
          1
 
@@ -900,13 +886,13 @@ _01.jpg":
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          DSC\_7181.jpg
-   
+
    tablename
          N/A
-   
+
    sorting
          2
 
@@ -915,13 +901,13 @@ _01.jpg":
 
    uid\_local
          [uid of the record you are editing]
-   
+
    uid\_foreign
          DSC\_7102\_background\_01.jpg
-   
+
    tablename
          N/A
-   
+
    sorting
          3
 
@@ -959,10 +945,10 @@ The t3lib/ class "t3lib\_transferdata" is doing such transformations
 
    Int. type
          Int. type:
-   
+
    In Database
          In Database:
-   
+
    When given to TCEforms
          When given to TCEforms:
 
@@ -971,10 +957,10 @@ The t3lib/ class "t3lib\_transferdata" is doing such transformations
 
    Int. type
          "db"
-   
+
    In Database
          26,45,49,1
-   
+
    When given to TCEforms
          tt\_content\_26\|%20adfs%20asdf%20asdf%20,tt\_content\_45\|This%20is%2
          0a%20test%20%28copy%203%29,tt\_content\_49\|%5B...%5D,tt\_content\_1\|
@@ -985,10 +971,10 @@ The t3lib/ class "t3lib\_transferdata" is doing such transformations
 
    Int. type
          "file"
-   
+
    In Database
          DSC\_7102\_background.jpg,DSC\_7181.jpg,DSC\_7102\_background\_01.jpg
-   
+
    When given to TCEforms
          DSC\_7102\_background.jpg\|DSC\_7102\_background.jpg,DSC\_7181.jpg\|DS
          C\_7181.jpg,DSC\_7102\_background\_01.jpg\|DSC\_7102\_background\_01.j
@@ -998,9 +984,7 @@ The t3lib/ class "t3lib\_transferdata" is doing such transformations
 .. ###### END~OF~TABLE ######
 
 
-The syntax is:
-
-::
+The syntax is::
 
    [ref. value]|[ref. label rawurlencoded],[ref. value]|[ref. label rawurlencoded],....
 
@@ -1036,13 +1020,13 @@ Examples:
 
    Current DB value
          Current DB value
-   
+
    Submitted data from TCEforms
          Submitted data from TCEforms
-   
+
    New DB value
          New DB value
-   
+
    Processing done
          Processing done
 
@@ -1051,13 +1035,13 @@ Examples:
 
    Current DB value
          first.jpg,second.jpg
-   
+
    Submitted data from TCEforms
          first.jpg,/www/typo3/fileadmin/newfile.jpg,second.jpg
-   
+
    New DB value
          first.jpg,newfile\_01.jpg,second.jpg
-   
+
    Processing done
          /www/typo3/fileadmin/newfile.jpg was copied to "uploads/[some-
          dir]/newfile\_01.jpg". The filename was appended with "\_01" because
@@ -1069,13 +1053,13 @@ Examples:
 
    Current DB value
          first.jpg,second.jpg
-   
+
    Submitted data from TCEforms
          first.jpg
-   
+
    New DB value
          first.jpg
-   
+
    Processing done
          "uploads/[some-dir]/second.jpg" was deleted from the location.
 

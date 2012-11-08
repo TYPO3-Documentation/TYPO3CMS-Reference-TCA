@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Special Configuration introduction
@@ -23,16 +15,12 @@ parameters to a field only for certain “types”-configurations. For
 instance you can define that a text field should not wrap text lines
 for certain types. Let's add the “description” field to our previous
 example, a field which was not displayed until now. The configuration
-for type “0” becomes:
-
-::
+for type “0” becomes::
 
    '0' => array('showitem' => 'hidden;;;;1-1-1, record_type;;;;2-2-2, title;;;;3-3-3, description;;;nowrap, some_date;;1 '),
 
 Notice the keyword "nowrap" in position 4 for the field "description".
-The field itself is defined like this in the columns section:
-
-::
+The field itself is defined like this in the columns section::
 
    'description' => array(
            'exclude' => 0,
@@ -61,9 +49,7 @@ feature available as special configuration is sometimes needed
 regardless of type value you can also configure the default value of
 the special configuration. This is done with a key in the ['columns'][
 *field name* ] array. Thus, the alternative configuration for the
-example above could be:
-
-::
+example above could be::
 
    'description' => array(
            'exclude' => 0,
@@ -77,9 +63,7 @@ example above could be:
    )
 
 and the “nowrap” parameter doesn't appear in the “types”-configuration
-anymore:
-
-::
+anymore::
 
    '0' => array('showitem' => 'hidden;;;;1-1-1, record_type;;;;2-2-2, title;;;;3-3-3, description, some_date;;1 '),
 

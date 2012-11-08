@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Structure of the $TCA array
@@ -23,9 +15,7 @@ The table entries (first level)
 """""""""""""""""""""""""""""""
 
 The "first level" of the $TCA array is made of the table names (as
-they appear in the database):
-
-::
+they appear in the database)::
 
    $TCA['pages'] = array(
        ...
@@ -48,9 +38,7 @@ Each table is further defined by an array which configures how the
 system handles the table, both for display and processing in the
 backend. The various parts on this second level are called "sections".
 
-The general structure (looking at a single table) is as follows:
-
-::
+The general structure (looking at a single table) is as follows::
 
    $TCA['tx_examples_haiku'] = array(
        'ctrl' => array(
@@ -84,7 +72,7 @@ chapter.
 
    Section
          Section
-   
+
    Description
          Description
 
@@ -93,19 +81,19 @@ chapter.
 
    Section
          ctrl
-   
+
    Description
          **The table**
-         
+
          The "ctrl" section contains properties for the table in general.
-         
+
          These are basically divided in two main categories:
-         
+
          - properties which affect how the table is  *displayed* and handled in
            the backend  *interface* .This includes which icon, what name, which
            columns contains the title value, which column defines the type value
            etc.
-         
+
          - properties which determines how it is processed by the system
            (TCE).This includes publishing control, "deleted" flag, if the table
            can only be edited by admin-users, may only exist in the tree root
@@ -116,10 +104,10 @@ chapter.
 
    Section
          interface
-   
+
    Description
          **The backend interface handling**
-         
+
          The "interface" section contains properties related to the tables
          display in the backend, mostly the Web > List module.
 
@@ -128,13 +116,13 @@ chapter.
 
    Section
          feInterface
-   
+
    Description
          **Frontend Editing**
-         
+
          The "feInterface" section contains properties related to Front End
          editing of the table, mostly related to the feAdmin\_lib.
-         
+
          Is deprecated in the sense that it will still exist, but will not be
          (and should not be) extended further.
 
@@ -143,16 +131,16 @@ chapter.
 
    Section
          columns
-   
+
    Description
          **The individual fields**
-         
+
          The "columns" section contains configuration for each table  *field*
          (also called "column") which can be edited by the backend.
-         
+
          The configuration includes both properties for the display in the
          backend as well as the processing of the submitted data.
-         
+
          Each field can be configured as a certain "type" (e.g. checkbox,
          selector, input field, text area, file or db-relation field, user
          defined etc.) and for each type a separate set of additional
@@ -164,10 +152,10 @@ chapter.
 
    Section
          types
-   
+
    Description
          **The form layout for editing**
-         
+
          The "types" section defines how the fields in the table (configured in
          the "columns" section) should be arranged inside the editing form; in
          which order, with which "palettes" (see below) and with which possible
@@ -178,10 +166,10 @@ chapter.
 
    Section
          palettes
-   
+
    Description
          **The palette fields order**
-         
+
          A palette is just a list of fields which will be arranged horizontally
          side-by-side. But the main idea is that these fields can be displayed
          in the top-frame of the backend interface on request so they don't

@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Soft References
@@ -42,7 +34,7 @@ is the list of the possible keys:
 
    softref key
          “softref” key
-   
+
    Description
          Description
 
@@ -51,7 +43,7 @@ is the list of the possible keys:
 
    softref key
          substitute
-   
+
    Description
          A full field value targeted for manual substitution (for import
          /export features)
@@ -61,7 +53,7 @@ is the list of the possible keys:
 
    softref key
          notify
-   
+
    Description
          Just report if a value is found, nothing more.
 
@@ -70,7 +62,7 @@ is the list of the possible keys:
 
    softref key
          images
-   
+
    Description
          HTML <img> tags for RTE images / images from fileadmin/
 
@@ -79,7 +71,7 @@ is the list of the possible keys:
 
    softref key
          typolink
-   
+
    Description
          References to page id or file, possibly with anchor/target, possibly
          comma-separated list.
@@ -89,7 +81,7 @@ is the list of the possible keys:
 
    softref key
          typolink\_tag
-   
+
    Description
          As typolink, but searching for <link> tag to encapsulate it.
 
@@ -98,7 +90,7 @@ is the list of the possible keys:
 
    softref key
          TSconfig
-   
+
    Description
          Processing (filerefs? Domains? what do we know...)
 
@@ -107,7 +99,7 @@ is the list of the possible keys:
 
    softref key
          TStemplate
-   
+
    Description
          Free text references to "fileadmin/" files. HTML resource links like
          <a>, <img>, <form>
@@ -117,7 +109,7 @@ is the list of the possible keys:
 
    softref key
          ext\_fileref
-   
+
    Description
          Relative file reference, prefixed "EXT:[extkey]/" - for finding
          extension dependencies
@@ -127,7 +119,7 @@ is the list of the possible keys:
 
    softref key
          email
-   
+
    Description
          Email highlight
 
@@ -136,7 +128,7 @@ is the list of the possible keys:
 
    softref key
          url
-   
+
    Description
          URL highlights (with a scheme)
 
@@ -144,9 +136,7 @@ is the list of the possible keys:
 .. ###### END~OF~TABLE ######
 
 
-These are by default set up in the config\_default.php file:
-
-::
+These are by default set up in the config\_default.php file::
 
       'SC_OPTIONS' => array(
                    'GLOBAL' => array(

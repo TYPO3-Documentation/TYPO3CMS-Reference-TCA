@@ -1,14 +1,14 @@
 ﻿.. |img-51|     image:: ../../Images/manual_html_m49179185.png
-   :height: 531
-   :width: 506
+.. :height: 531
+.. :width: 506
 .. :align: left
 .. :border: 0
 .. :name: graphics1
 .. :vspace: 8
 
 .. |img-52|     image:: ../../Images/manual_html_f1a6686.png
-   :height: 28
-   :width: 28
+.. :height: 28
+.. :width: 28
 .. :align: left
 .. :border: 0
 .. :name: graphics44

@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 ['feInterface'] section
@@ -31,10 +23,10 @@ Is deprecated in the sense that it will still exist, but will not be
 
    Key
          Key
-   
+
    Datatype
          Datatype
-   
+
    Description
          Description
 
@@ -43,12 +35,12 @@ Is deprecated in the sense that it will still exist, but will not be
 
    Key
          editableRecordFields
-   
+
    Datatype
          string
-         
+
          (list of field names)
-   
+
    Description
          List of fields, example: '\*name, \*type, biography, filmography'.
          Used for front-end edit module created by Rene Fritz
@@ -59,12 +51,12 @@ Is deprecated in the sense that it will still exist, but will not be
 
    Key
          fe\_admin\_fieldList
-   
+
    Datatype
          string
-         
+
          (list of field names)
-   
+
    Description
          List of fields allowed for editing/creation with the fe\_adminLib
          module, see media/scripts/fe\_adminLib, example:

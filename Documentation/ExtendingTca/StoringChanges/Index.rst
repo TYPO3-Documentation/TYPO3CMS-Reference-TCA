@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Storing the changes
@@ -26,9 +18,7 @@ They can also be written in the "typo3conf/extTables.php" file. The
 name of this file can be changed – if you so wish – by changing the
 value of the global variable $typo\_db\_extTableDef\_scriptin the
 "typo3conf/localconf.php" file. It's also possible to remove the
-"typo3conf/extTables.php" file by setting:
-
-::
+"typo3conf/extTables.php" file by setting::
 
    $typo_db_extTableDef_script = 1;
 

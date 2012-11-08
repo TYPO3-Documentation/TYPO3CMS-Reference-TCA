@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 ['columns'][ *field name* ]['config'] / TYPE: "flex"
@@ -29,10 +21,10 @@ saved into a single field in the database, stored as XML.
 
    Key
          Key
-   
+
    Datatype
          Datatype
-   
+
    Description
          Description
 
@@ -41,10 +33,10 @@ saved into a single field in the database, stored as XML.
 
    Key
          type
-   
+
    Datatype
          string
-   
+
    Description
          *[Must be set to "flex"]*
 
@@ -53,10 +45,10 @@ saved into a single field in the database, stored as XML.
 
    Key
          ds\_pointerField
-   
+
    Datatype
          string
-   
+
    Description
          Field name(s) in the record which point to the field where the key for
          “ds” is found. Up to two field names can be specified comma separated.
@@ -66,17 +58,17 @@ saved into a single field in the database, stored as XML.
 
    Key
          ds
-   
+
    Datatype
          array
-   
+
    Description
          Data Structure(s) defined in an array.
-         
+
          Each key is a value that can be pointed to by “ds\_pointerField”.
          Default key is “default” which is what you should use if you do not
          have a “ds\_pointerField” value of course.
-         
+
          If you specified more than one ds\_pointerField, the keys in this “ds”
          array should contain comma-separated value pairs where the asterisk \*
          matches all values (see the example below). If you don't need to
@@ -84,17 +76,15 @@ saved into a single field in the database, stored as XML.
          the first ds\_pointerField's value as a key in the "ds" array without
          necessarily suffixing it with ",\*" for a catch-all on the second
          ds\_pointerField.
-         
+
          For each value in the array there are two options:
-         
+
          - Either enter XML directly
-         
+
          - Make a reference to an external XML file
-         
-         **Example with XML directly entered:**
-         
-         ::
-         
+
+         **Example with XML directly entered:** ::
+
             'config' => array(
                 'type' => 'flex',
                 'ds_pointerField' => 'list_type',
@@ -119,13 +109,11 @@ saved into a single field in the database, stored as XML.
                     ',
                 )
             )
-         
+
          **Example with XML in external file:**
-         
-         (File reference is relative)
-         
-         ::
-         
+
+         (File reference is relative) ::
+
             'config' => array(
                 'type' => 'flex',
                 'ds_pointerField' => 'list_type',
@@ -133,12 +121,10 @@ saved into a single field in the database, stored as XML.
                     'default' => 'FILE:EXT:mininews/flexform_ds.xml',
                 )
             )
-         
+
          **Example using two ds\_pointerFields** (as used for
-         tt\_content.pi\_flexform since TYPO3 4.2.0):
-         
-         ::
-         
+         tt\_content.pi\_flexform since TYPO3 4.2.0)::
+
             'config' => array(
                 'type' => 'flex',
                 'ds_pointerField' => 'list_type,CType',
@@ -155,28 +141,26 @@ saved into a single field in the database, stored as XML.
 
    Key
          ds\_tableField
-   
+
    Datatype
          string
-   
+
    Description
          Contains the value “[table]:[field name]” from which to fetch Data
          Structure XML.
-         
+
          “ds\_pointerField” is in this case the pointer which should contain
          the uid of a record from that table.
-         
+
          This is used by TemplaVoila extension for instance where a field in
-         the tt\_content table points to a TemplaVoila Data Structure record:
-         
-         ::
-         
-            'tx_templavoila_flex' => array(        
+         the tt\_content table points to a TemplaVoila Data Structure record::
+
+            'tx_templavoila_flex' => array(
                 'exclude' => 1,
                 'label' => '...',
                 'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
                 'config' => array(
-                    'type' => 'flex',    
+                    'type' => 'flex',
                     'ds_pointerField' => 'tx_templavoila_ds',
                     'ds_tableField' => 'tx_templavoila_datastructure:dataprot',
                 )
@@ -187,15 +171,15 @@ saved into a single field in the database, stored as XML.
 
    Key
          ds\_pointerField\_searchParent
-   
+
    Datatype
          string
-   
+
    Description
          Used to search for Data Structure recursively back in the table
          assuming that the table is a tree table. This value points to the
          “pid” field.
-         
+
          See “templavoila” for example - uses this for the Page Template.
 
 
@@ -203,14 +187,14 @@ saved into a single field in the database, stored as XML.
 
    Key
          ds\_pointerField\_searchParent\_subField
-   
+
    Datatype
          string
-   
+
    Description
          Points to a field in the “rootline” which may contain a pointer to the
          “next-level” template.
-         
+
          See “templavoila” for example - uses this for the Page Template.
 
 
@@ -281,10 +265,10 @@ The tables below document the extension elements:
 
    Element
          Element
-   
+
    Description
          Description
-   
+
    Child elements
          Child elements
 
@@ -293,14 +277,14 @@ The tables below document the extension elements:
 
    Element
          <meta>
-   
+
    Description
          Can contain application specific meta settings. For FlexForms this
          means a definition of how languages are handled in the form.
-   
+
    Child elements
          <langChildren>
-         
+
          <langDisable>
 
 
@@ -308,10 +292,10 @@ The tables below document the extension elements:
 
    Element
          <[application tag]>
-   
+
    Description
          In this case the application tag is “<TCEforms>”
-   
+
    Child elements
          *A direct reflection of a ['columns']['field name']['config'] PHP
          array configuring a field in TCA. As XML this is expressed by
@@ -322,16 +306,16 @@ The tables below document the extension elements:
 
    Element
          <ROOT><TCEforms>
-   
+
    Description
          For <ROOT> elements in the DS you can add application specific
          information about the sheet that the <ROOT> element represents.
-   
+
    Child elements
          <sheetTitle>
-         
+
          <sheetDescription>
-         
+
          <sheetShortDescr>
 
 
@@ -347,10 +331,10 @@ The tables below document the extension elements:
 
    Element
          Element
-   
+
    Format
          Format
-   
+
    Description
          Description
 
@@ -359,15 +343,15 @@ The tables below document the extension elements:
 
    Element
          <langDisable>
-   
+
    Format
          boolean, 0/1
-   
+
    Description
          If set, then handling of localizations is disabled. Otherwise
          FlexForms will allow editing of additional languages than the default
          according to “sys\_languages” table contents.
-         
+
          The language you can select from is the language configured in
          “sys\_languages” but they  *must* have ISO country codes set - see
          example below.
@@ -377,10 +361,10 @@ The tables below document the extension elements:
 
    Element
          <langChildren>
-   
+
    Format
          boolean, 0/1
-   
+
    Description
          If set, then localizations are bound to the default values 1-1
          (“value” level). Otherwise localizations are handled on “structure
@@ -391,10 +375,10 @@ The tables below document the extension elements:
 
    Element
          <sheetTitle>
-   
+
    Format
          string or LLL reference
-   
+
    Description
          Specifies the title of the sheet.
 
@@ -403,10 +387,10 @@ The tables below document the extension elements:
 
    Element
          <sheetDescription>
-   
+
    Format
          string or LLL reference
-   
+
    Description
          Specifies a description for the sheet shown in the flexform.
 
@@ -415,10 +399,10 @@ The tables below document the extension elements:
 
    Element
          <sheetShortDescr>
-   
+
    Format
          string or LLL reference
-   
+
    Description
          Specifies a short description of the sheet used in the tab-menu.
 
@@ -450,10 +434,10 @@ format. The structure is as follows:
 
    Element
          Element
-   
+
    Description
          Description
-   
+
    Child elements
          Child elements
 
@@ -462,13 +446,13 @@ format. The structure is as follows:
 
    Element
          <T3FlexForms>
-   
+
    Description
          Document tag
-   
+
    Child elements
          <meta>
-         
+
          <data>
 
 
@@ -476,14 +460,14 @@ format. The structure is as follows:
 
    Element
          <meta>
-   
+
    Description
          Meta data for the content. For instance information about which sheet
          is active etc.
-   
+
    Child elements
          <currentSheetId>
-         
+
          <currentLangId>
 
 
@@ -491,10 +475,10 @@ format. The structure is as follows:
 
    Element
          <data>
-   
+
    Description
          Contains the data; sheets, language sections, field and values
-   
+
    Child elements
          <sheet>
 
@@ -503,14 +487,14 @@ format. The structure is as follows:
 
    Element
          <sheet>
-   
+
    Description
          Contains the data for each sheet in the form. If there are no sheets,
          the default sheet “<sDEF>” is always used.
-   
+
    Child elements
          <sDEF>
-         
+
          <s\_[sheet keys]>
 
 
@@ -518,17 +502,17 @@ format. The structure is as follows:
 
    Element
          <sDEF>
-         
+
          <[sheet keys]>
-   
+
    Description
          For each sheet it contains elements for each language. If
          <meta><langChildren> is false then all languages are stored on this
          level, otherwise only the <lDEF> tag is used.
-   
+
    Child elements
          <lDEF>
-         
+
          <l[ISO language code]>
 
 
@@ -536,13 +520,13 @@ format. The structure is as follows:
 
    Element
          <lDEF>
-         
+
          <[language keys]>
-   
+
    Description
          For each language the fields in the form will be available on this
          level.
-   
+
    Child elements
          <[field name]>
 
@@ -551,15 +535,15 @@ format. The structure is as follows:
 
    Element
          <[field name]>
-   
+
    Description
          For each field name there is at least one element with the value,
          <vDEF>. If <meta><langChildren> is true then there will be a <v\*> tag
          for each language holding localized values.
-   
+
    Child elements
          <vDEF>
-         
+
          <v[ISO language code]>
 
 
@@ -567,11 +551,11 @@ format. The structure is as follows:
 
    Element
          <currentLangId>
-   
+
    Description
          Numerical array of language ISO codes + “DEF” for default which are
          currently displayed for editing.
-   
+
    Child elements
          <n[0-x]>
 
@@ -588,10 +572,10 @@ format. The structure is as follows:
 
    Element
          Element
-   
+
    Format
          Format
-   
+
    Description
          Description
 
@@ -600,12 +584,12 @@ format. The structure is as follows:
 
    Element
          <vDEF>
-         
+
          <v[ISO language code]>
-   
+
    Format
          string
-   
+
    Description
          Content of the field in default or localized versions
 
@@ -614,10 +598,10 @@ format. The structure is as follows:
 
    Element
          <currentSheetId>
-   
+
    Format
          string
-   
+
    Description
          Points to the currently shown sheet in the DS.
 
@@ -634,9 +618,7 @@ select-type field to choose a page from the “pages” table.
 
 |img-40| The DS used to render this field is found in the file
 “flexform\_ds1.xml” inside the “examples” extension. Notice the
-<TCEforms> tags:
-
-::
+<TCEforms> tags::
 
    <T3DataStructure>
            <meta>
@@ -679,9 +661,7 @@ the field configurations we normally set up in the $TCA array.
 
 The Data Structure for this FlexForm is loaded in the “pi\_flexform”
 field of the “tt\_content” table by adding the following to the
-ext\_tables.php file of the “examples” extension:
-
-::
+ext\_tables.php file of the “examples” extension::
 
    $TCA['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi_flexform';
    t3lib_extMgm::addPiFlexFormValue($_EXTKEY . '_pi1', 'FILE:EXT:examples/flexform_ds1.xml');
@@ -707,9 +687,7 @@ In this example we create a FlexForm field with two “sheets”. Each
 sheet can contain a separate FlexForm structure. We build it up on top
 of the previous example, so the first sheet still has a select-type
 field related to the “pages” table. In the second sheet, we add a
-simple input field and a text field.
-
-::
+simple input field and a text field. ::
 
    <T3DataStructure>
            <meta>
@@ -785,9 +763,7 @@ tab. Clicking on “Message”, we can access the second sheet which shows
 some other fields:
 
 |img-43| |img-44| If you look at the XML stored in the database field “pi\_flexform”
-this is how it looks:
-
-::
+this is how it looks::
 
    <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
    <T3FlexForms>
@@ -806,7 +782,7 @@ this is how it looks:
                    </field>
                    <field index="message">
                        <value index="vDEF">And my message.
-   
+
    On several lines.</value>
                    </field>
                </language>
@@ -822,9 +798,7 @@ Example: Rich Text Editor in FlexForms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creating a RTE in FlexForms is done by adding “defaultExtras” content
-to the <TCEforms> tag:
-
-::
+to the <TCEforms> tag::
 
    <TCEforms>
            <config>
@@ -853,9 +827,7 @@ to the right ISO code:
 
 |img-47| By default, you will not see any changes. Indeed if you look at the
 example XML displayed above, you will notice the following line, at
-the top, in the “meta” section:
-
-::
+the top, in the “meta” section::
 
    <langDisable>1</langDisable>
 
@@ -870,18 +842,14 @@ Localization method #1
 ~~~~~~~~~~~~~~~~~~~~~~
 
 The first localization method just requires to change the
-“langDisable” flag mentioned above to 0:
-
-::
+“langDisable” flag mentioned above to 0::
 
    <langDisable>0</langDisable>
 
 This means that translations are now allowed for that FlexForm. This
 is how it looks like:
 
-|img-48| The data XML in the data base looks like this:
-
-::
+|img-48| The data XML in the data base looks like this::
 
    <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
    <T3FlexForms>
@@ -910,7 +878,7 @@ is how it looks like:
                    </field>
                    <field index="message">
                        <value index="vDEF">And my message.
-   
+
    On several lines.</value>
                    </field>
                </language>
@@ -950,9 +918,7 @@ objects can be individual!
 The second method of localization handles each language on the
 *value* level instead, thus requiring a translation for each and every
 field in the default language! You enable this by setting the
-“langChildren” tag to “1” in the “meta” section:
-
-::
+“langChildren” tag to “1” in the “meta” section::
 
    <meta>
            <langDisable>0</langDisable>
@@ -964,9 +930,7 @@ The editing form will now look like this:
 |img-49| You can see how all translation fields for the “Header” are grouped
 together with the default header. Likewise for the “Message” field.
 
-The difference is also seen in the <T3FlexForms> content:
-
-::
+The difference is also seen in the <T3FlexForms> content::
 
    <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
    <T3FlexForms>
@@ -993,15 +957,15 @@ The difference is also seen in the <T3FlexForms> content:
                    </field>
                    <field index="message">
                        <value index="vDEF">And my message.
-   
+
    On several lines.</value>
                        <value index="vDE">Das is auf Deutsch!</value>
                        <value index="vEN"></value>
                        <value index="vDE.vDEFbase">And my message.
-   
+
    On several lines.</value>
                        <value index="vEN.vDEFbase">And my message.
-   
+
    On several lines.</value>
                    </field>
                </language>

@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Benchmarks on dynamic tables:
@@ -25,10 +17,10 @@ Benchmarks on dynamic tables:
 
    Module
          Module
-   
+
    tables.php with all configuration
          tables.php with all configuration
-   
+
    Dynamic loading
          Dynamic loading
 
@@ -36,17 +28,17 @@ Benchmarks on dynamic tables:
 .. container:: table-row
 
    Module
-   
-   
+
+
    tables.php with all configuration
          Cache
-   
+
    Dynamic loading
          No cache
-   
+
    d
          Cache
-   
+
    e
          No cache
 
@@ -55,16 +47,16 @@ Benchmarks on dynamic tables:
 
    Module
          Web>List (loads all)
-   
+
    tables.php with all configuration
          173 ms
-   
+
    Dynamic loading
          322 ms
-   
+
    d
          177 ms
-   
+
    e
          328 ms
 
@@ -73,16 +65,16 @@ Benchmarks on dynamic tables:
 
    Module
          Web>Info (loads none)
-   
+
    tables.php with all configuration
          72 ms
-   
+
    Dynamic loading
          174 ms
-   
+
    d
          66 ms
-   
+
    e
          136 ms
 
@@ -126,7 +118,7 @@ the tt\_content table added to the default number of configured tables
 
    Module
          Module
-   
+
    Dynamic loading
          Dynamic loading
 
@@ -134,11 +126,11 @@ the tt\_content table added to the default number of configured tables
 .. container:: table-row
 
    Module
-   
-   
+
+
    Dynamic loading
          Cache
-   
+
    c
          No cache
 
@@ -147,10 +139,10 @@ the tt\_content table added to the default number of configured tables
 
    Module
          Web>List (loads all)
-   
+
    Dynamic loading
          580 ms
-   
+
    c
          1090 ms
 
@@ -159,10 +151,10 @@ the tt\_content table added to the default number of configured tables
 
    Module
          Web>Info (loads none)
-   
+
    Dynamic loading
          67 ms
-   
+
    c
          139 ms
 
@@ -191,13 +183,13 @@ these results:
 
    Number of tt\_content dupl.
          Number of tt\_content dupl.
-   
+
    Serialized size of $TCA
          Serialized size of $TCA
-   
+
    Max size of httpd process (from top)
          Max size of httpd process (from “top”)
-   
+
    Parse time of the included documents
          Parse time of the included documents
 
@@ -206,13 +198,13 @@ these results:
 
    Number of tt\_content dupl.
          100
-   
+
    Serialized size of $TCA
          5,9 MB
-   
+
    Max size of httpd process (from top)
          23 MB
-   
+
    Parse time of the included documents
          380 ms
 
@@ -221,13 +213,13 @@ these results:
 
    Number of tt\_content dupl.
          250
-   
+
    Serialized size of $TCA
          14,5 MB
-   
+
    Max size of httpd process (from top)
          52 MB
-   
+
    Parse time of the included documents
          12000 ms
 
@@ -236,13 +228,13 @@ these results:
 
    Number of tt\_content dupl.
          500
-   
+
    Serialized size of $TCA
          28,8 MB
-   
+
    Max size of httpd process (from top)
          100 MB
-   
+
    Parse time of the included documents
          x
 
@@ -259,7 +251,7 @@ This was to expect of course.
 From this table we learn, that PHP does not crash testing this.
 However it makes not much sense to use 500 tables of this size. 250
 tables might be alright and 100 tables is a more realistic roof over
-the number of tables in TYPO3 :underline:`of the size of tt\_content!`
+the number of tables in TYPO3 *of the size of tt\_content!*
 
 Conducting the same experiment with a table configuration of only 8 kb
 with 9 fields configured (a reduced configuration for the tt\_content
@@ -273,16 +265,16 @@ results:
 
    Number of tables
          Number of tables
-   
+
    Serialized size of $TCA
          Serialized size of $TCA
-   
+
    Max size of httpd process (from top)
          Max size of httpd process (from “top”)
-   
+
    Parse time of the included documents
          Parse time of the included documents
-   
+
    Web>List listing
          Web>List listing
 
@@ -291,16 +283,16 @@ results:
 
    Number of tables
          1
-   
+
    Serialized size of $TCA
          240 kB
-   
+
    Max size of httpd process (from top)
          12 MB
-   
+
    Parse time of the included documents
          0 ms
-   
+
    Web>List listing
          174 ms (12 MB)
 
@@ -309,16 +301,16 @@ results:
 
    Number of tables
          100
-   
+
    Serialized size of $TCA
          1,0 MB
-   
+
    Max size of httpd process (from top)
          12 MB
-   
+
    Parse time of the included documents
          77 ms
-   
+
    Web>List listing
          550 ms (12 MB)
 
@@ -327,16 +319,16 @@ results:
 
    Number of tables
          250
-   
+
    Serialized size of $TCA
          2,4 MB
-   
+
    Max size of httpd process (from top)
          12 MB
-   
+
    Parse time of the included documents
          200 ms
-   
+
    Web>List listing
          1050 ms (12 MB)
 
@@ -345,16 +337,16 @@ results:
 
    Number of tables
          500
-   
+
    Serialized size of $TCA
          4,7 MB
-   
+
    Max size of httpd process (from top)
          22 MB
-   
+
    Parse time of the included documents
          450 ms
-   
+
    Web>List listing
          1900 ms (20 MB)
 
@@ -363,16 +355,16 @@ results:
 
    Number of tables
          1000
-   
+
    Serialized size of $TCA
          9,3 MB
-   
+
    Max size of httpd process (from top)
          33 MB
-   
+
    Parse time of the included documents
          900 ms
-   
+
    Web>List listing
          5000 ms (34 MB)
 
@@ -381,16 +373,16 @@ results:
 
    Number of tables
          2000
-   
+
    Serialized size of $TCA
          18,6 MB
-   
+
    Max size of httpd process (from top)
          51 MB
-   
+
    Parse time of the included documents
          2000 ms
-   
+
    Web>List listing
          18000 ms (60 MB)
 

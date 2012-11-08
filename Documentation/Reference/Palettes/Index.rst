@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 ['palettes'][ *key* ] section
@@ -25,18 +17,14 @@ palette fields are displayed. In the backend, “palettes” are known as
 "secondary options".
 
 Let's add a palette to the example from the previous section. The
-palette itself is defined like this:
-
-::
+palette itself is defined like this::
 
    'palettes' => array(
            '1' => array('showitem' => 'enforce_date'),
    ),
 
 Now we change the “types” configuration to link the palette to the
-“some\_date” field:
-
-::
+“some\_date” field::
 
    '0' => array('showitem' => 'hidden, record_type, title, some_date;;1 '),
 
@@ -59,10 +47,10 @@ time.
 
    Key
          Key
-   
+
    Datatype
          Datatype
-   
+
    Description
          Description
 
@@ -71,15 +59,15 @@ time.
 
    Key
          showitem
-   
+
    Datatype
          string
-         
+
          (list of field names)
-   
+
    Description
          **Required.**
-         
+
          Configuration of the displayed order of fields in the palette.
          Remember that a field name must not appear in more than one palette
          and not more than one time!. E.g. 'hidden,starttime,endtime'
@@ -89,14 +77,14 @@ time.
 
    Key
          canNotCollapse
-   
+
    Datatype
          boolean
-   
+
    Description
          If set, then this palette is not allowed to 'collapse' in the
          TCEforms-display.
-         
+
          This basically means that if "Show secondary options" is not on, this
          palette is  *still* displayed in the main form and not linked with an
          icon.
@@ -106,15 +94,15 @@ time.
 
    Key
          isHiddenPalette
-   
+
    Datatype
          boolean
-   
+
    Description
          (Since TYPO3 4.7) If set, then this palette will never be shown, but
          the fields of the palette are technically rendered as hidden elements
          in the TCEForm.
-         
+
          This is sometimes useful when you want to set a field's value by
          JavaScript from another user-defined field. You can also use it along
          with the IRRE (TCA type "inline") foreign\_selector feature if you

@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 |img-70| Wizard scripts in the core
@@ -41,10 +33,10 @@ the real form.
 
    Key
          Key
-   
+
    Type
          Type
-   
+
    Description
          Description
 
@@ -53,10 +45,10 @@ the real form.
 
    Key
          table
-   
+
    Type
          string
-   
+
    Description
          Table to add record in.
 
@@ -65,22 +57,20 @@ the real form.
 
    Key
          pid
-   
+
    Type
          int
-   
+
    Description
          pid of the new record.
-         
-         You can use the “markers” (constants) as values instead if you wish:
-         
-         ::
-         
+
+         You can use the “markers” (constants) as values instead if you wish::
+
             ###CURRENT_PID###
             ###THIS_UID###
             ###STORAGE_PID###
             ###SITEROOT###
-         
+
          (see TCA/select for description)
 
 
@@ -88,15 +78,15 @@ the real form.
 
    Key
          setValue
-   
+
    Type
          “prepend”, “set”, “append”
-   
+
    Description
          “set” = the field will be forced to have the new value on return
-         
+
          “append”/“prepend” = the field will have the value appended/prepended.
-         
+
          You must set one of these values.
 
 
@@ -113,9 +103,7 @@ to a form where a new BE user group can be created:
 the form the new group is automatically inserted as the list of
 selected groups.
 
-The configuration looks like this:
-
-::
+The configuration looks like this::
 
    'usergroup' => array(
            'label' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup',
@@ -179,9 +167,7 @@ The Edit wizard gives you a shortcut to edit references in "select" or
 
 |img-73| When a record is selected and the Edit-wizard button is clicked, that
 record opens in a new window for modification. Let's look again at the
-configuration (just the Edit-wizard part):
-
-::
+configuration (just the Edit-wizard part)::
 
    'usergroup' => array(
            'label' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup',
@@ -226,10 +212,10 @@ back to the edit form.
 
    Key
          Key
-   
+
    Type
          Type
-   
+
    Description
          Description
 
@@ -238,10 +224,10 @@ back to the edit form.
 
    Key
          table
-   
+
    Type
          string
-   
+
    Description
          Table to manage records for
 
@@ -250,22 +236,20 @@ back to the edit form.
 
    Key
          pid
-   
+
    Type
          int
-   
+
    Description
          id of the records you wish to list.
-         
-         You can use the “markers” (constants) as values instead if you wish:
-         
-         ::
-         
+
+         You can use the “markers” (constants) as values instead if you wish::
+
             ###CURRENT_PID###
             ###THIS_UID###
             ###STORAGE_PID###
             ###SITEROOT###
-         
+
          (see TCA/select for description)
 
 
@@ -273,9 +257,7 @@ back to the edit form.
 
 
 For the BE users table, the configuration look like this (just the
-List-wizard part):
-
-::
+List-wizard part)::
 
    'usergroup' => array(
            'label' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup',
@@ -315,9 +297,7 @@ the box will open a popup window with the full color picker wizard:
 |img-77| Here you can select from the web-color matrix, pick a color from the
 sample image or select a HTML-color name from a selector box.
 
-The corresponding TCA configuration looks like this:
-
-::
+The corresponding TCA configuration looks like this::
 
    'color' => array(
            'exclude' => 0,
@@ -360,10 +340,10 @@ This is the available parameters:
 
    Key
          Key
-   
+
    Type
          Type
-   
+
    Description
          Description
 
@@ -372,10 +352,10 @@ This is the available parameters:
 
    Key
          xmlOutput
-   
+
    Type
          boolean
-   
+
    Description
          If set, the output from the wizard is XML instead of the strangely
          formatted TypoScript form-configuration code.
@@ -385,9 +365,7 @@ This is the available parameters:
 
 
 The configuration used for the editor in Content Elements looks like
-this:
-
-::
+this::
 
    'forms' => array(
            'notNewRecords' => 1,
@@ -416,10 +394,10 @@ with a visual editor.
 
    Key
          Key
-   
+
    Type
          Type
-   
+
    Description
          Description
 
@@ -428,10 +406,10 @@ with a visual editor.
 
    Key
          xmlOutput
-   
+
    Type
          boolean
-   
+
    Description
          If set, the output from the wizard is XML instead of the TypoScript
          table configuration code.
@@ -441,10 +419,10 @@ with a visual editor.
 
    Key
          numNewRows
-   
+
    Type
          integer
-   
+
    Description
          Setting the number of blank rows that will be added in the bottom of
          the table when the plus-icon is pressed. The default is 5, the range
@@ -455,9 +433,7 @@ with a visual editor.
 
 
 This is the configuration code used for the table wizard in the
-Content Elements:
-
-::
+Content Elements::
 
    'table' => array(
            'notNewRecords' => 1,
@@ -475,9 +451,7 @@ wizard\_rte.php
 
 This wizard is used to show a "full-screen" Rich Text Editor field.
 The configuration below shows an example taken from the Text field in
-Content Elements:
-
-::
+Content Elements::
 
    'RTE' => array(
            'notNewRecords' => 1,
@@ -510,10 +484,10 @@ references.
 
    Key
          Key
-   
+
    Type
          Type
-   
+
    Description
          Description
 
@@ -522,10 +496,10 @@ references.
 
    Key
          allowedExtensions
-   
+
    Type
          string
-   
+
    Description
          Comma separated list of allowed file extensions. By default, all
          extensions are allowed.
@@ -535,10 +509,10 @@ references.
 
    Key
          blindLinkOptions
-   
+
    Type
          string
-   
+
    Description
          Comma separated list of link options that should not be displayed.
          Possible values are file, mail, page, spec, and url. By default, all
@@ -553,9 +527,7 @@ fields. Here's an example from tt\_content:
 
 |img-79| Clicking the wizard icons opens the Element Browser window:
 
-|img-80| Such a wizard can be configured like this:
-
-::
+|img-80| Such a wizard can be configured like this::
 
    'image_link' => array(
            'exclude' => 1,

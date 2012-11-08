@@ -1,6 +1,6 @@
 ﻿.. |img-10|     image:: ../../Images/manual_html_m4a39df5c.png
-   :height: 187
-   :width: 358
+.. :height: 187
+.. :width: 358
 .. :align: left
 .. :border: 0
 .. :name: graphics18
