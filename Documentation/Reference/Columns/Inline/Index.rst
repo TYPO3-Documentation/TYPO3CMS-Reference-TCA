@@ -7,7 +7,7 @@
 .. include:: Images.txt
 
 
-.. _columns-check-inline:
+.. _columns-inline:
 
 TYPE: "inline"
 ^^^^^^^^^^^^^^
@@ -254,6 +254,8 @@ on a per-table-basis.
 .. container:: table-row
 
    Key
+         .. _columns-inline-foreign-selector:
+
          foreign\_selector
 
    Datatype
@@ -267,6 +269,36 @@ on a per-table-basis.
          foreign\_table that is responsible for providing a selector-box – this
          field on the foreign\_table usually has the type “select” and also has
          a “foreign\_table” defined.
+
+   Scope
+         Display / Proc.
+
+
+.. container:: table-row
+
+   Key
+         foreign\_selector\_fieldTcaOverride
+
+   Datatype
+         array
+
+   Description
+         *(Available since TYPO3 CMS 6.0)*
+
+         TCA file configuration that overrides the configuration of the field defined
+         in the :ref:`foreign_selector<columns-inline-foreign-selector>` property.
+
+         **Example** ::
+
+            'foreign_selector_fieldTcaOverride' => array(
+            	'config' => array(
+            		'appearance' => array(
+            			'elementBrowserType' => 'file',
+            			'elementBrowserAllowed' => $allowedFileExtensions
+            		)
+            	)
+            ),
+
 
    Scope
          Display / Proc.
@@ -364,6 +396,8 @@ on a per-table-basis.
          array
 
    Description
+         *(Available since TYPO3 CMS 6.0)*
+
          Possibility to define user functions to filter out child items.
 
          This is useful in special scenarios when used in conjunction
