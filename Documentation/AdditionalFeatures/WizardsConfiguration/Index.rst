@@ -330,6 +330,12 @@ Specific wizard configuration options based on type
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+.. _wizards-configuration-script:
+
+Script wizard
+~~~~~~~~~~~~~
+
+
 .. ### BEGIN~OF~TABLE ###
 
 .. container:: table-row
@@ -347,8 +353,6 @@ Specific wizard configuration options based on type
 .. container:: table-row
 
    Key
-         ***Type: script***
-
          Creates a link to an external script which can do "context sensitive"
          processing of the field. This is how the Form and Table wizards are
          used.
@@ -413,11 +417,20 @@ Specific wizard configuration options based on type
          for editing records in "group" type fields.
 
 
+.. ###### END~OF~TABLE ######
+
+
+.. _wizards-configuration-popup:
+
+Popup and colorbox wizards
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. ### BEGIN~OF~TABLE ###
+
 .. container:: table-row
 
    Key
-         ***Type: popup (+colorbox)***
-
          Creates a link to an external script opened in a pop-up window.
 
 
@@ -468,16 +481,25 @@ Specific wizard configuration options based on type
    Description
          Parameters to open JS window:
 
-         **Example:** ::
+         **Example** ::
 
             "JSopenParams" => "height=300,width=250,status=0,menubar=0,scrollbars=1",
 
 
+.. ###### END~OF~TABLE ######
+
+
+.. _wizards-configuration-user:
+
+User-defined wizards
+~~~~~~~~~~~~~~~~~~~~
+
+
+.. ### BEGIN~OF~TABLE ###
+
 .. container:: table-row
 
    Key
-         ***Type: userFunc***
-
          Calls a user function/method to produce the wizard or whatever they
          are up to.
 
@@ -522,11 +544,20 @@ Specific wizard configuration options based on type
          position where the the icon/title would normally go.
 
 
+.. ###### END~OF~TABLE ######
+
+
+.. _wizards-configuration-colorbox:
+
+Colorbox wizards
+~~~~~~~~~~~~~~~~
+
+
+.. ### BEGIN~OF~TABLE ###
+
 .. container:: table-row
 
    Key
-         ***Type: colorbox***
-
          Renders a square box (table) with the background color set to the
          value of the field. The id-attribute is set to a md5-hash so you might
          change the color dynamically from pop-up- wizard.
@@ -578,16 +609,25 @@ Specific wizard configuration options based on type
 
          An image width of 350 is optimal for display.
 
-         **Example:**
+         **Example**
 
          'exampleImg' => 'gfx/wizard\_colorpickerex.jpg'
 
 
+.. ###### END~OF~TABLE ######
+
+
+.. _wizards-configuration-select:
+
+Select wizards
+~~~~~~~~~~~~~~
+
+
+.. ### BEGIN~OF~TABLE ###
+
 .. container:: table-row
 
    Key
-         ***Type: select***
-
          This renders a selector box. When a value is selected in the box, the
          value is transferred to the field and the field (default) element is
          thereafter selected (this is a blank value and the label is the wizard
@@ -628,7 +668,7 @@ Specific wizard configuration options based on type
          element type in $TCA.
 
    Description
-         **Example:** ::
+         **Example** ::
 
             'items' => array(
                     array('8 px', '8'),
@@ -642,11 +682,20 @@ Specific wizard configuration options based on type
             )
 
 
+.. ###### END~OF~TABLE ######
+
+
+.. _wizards-configuration-suggest:
+
+Suggest wizards
+~~~~~~~~~~~~~~~
+
+
+.. ### BEGIN~OF~TABLE ###
+
 .. container:: table-row
 
    Key
-         ***Type: suggest***
-
          This renders an input field next to a select field of type "group"
          (internal\_type=db) or of type "select" (using foreign\_table). After
          the user has typed at least 2 (minimumCharacters) characters in this
@@ -675,7 +724,7 @@ Specific wizard configuration options based on type
          is empty all pages will be included in the search (as long as the
          be\_user is allowed to see them).
 
-         **Example:** ::
+         **Example** ::
 
             $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
@@ -697,7 +746,7 @@ Specific wizard configuration options based on type
          Expand pidList by this number of levels. Has an effect only if pidList
          has a value.
 
-         **Example:** ::
+         **Example** ::
 
             $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
@@ -746,7 +795,7 @@ Specific wizard configuration options based on type
          Whether to do a LIKE=%mystring% (searchWholePhrase = 1) or a
          LIKE=mystring% (to do a real find as you type), default: 0
 
-         **Example:** ::
+         **Example** ::
 
             $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
@@ -767,7 +816,7 @@ Specific wizard configuration options based on type
    Description
          Additional WHERE clause (no AND needed to prepend)
 
-         **Example:** ::
+         **Example** ::
 
             // configures the suggest wizard for the field "storage_pid" in table "pages" to search only for pages with doktype=1
             $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
@@ -776,6 +825,20 @@ Specific wizard configuration options based on type
                             'searchCondition' => 'doktype=1',
                     ),
             );
+
+
+.. container:: table-row
+
+   Key
+         additionalSearchFields
+
+   Type
+         string
+
+   Description
+         Comma-separated list of fields the suggest wizard should also search in.
+         By default the wizard looks only in the fields listed in the "label" and "label_alt"
+         properties.
 
 
 .. container:: table-row
@@ -817,11 +880,20 @@ Specific wizard configuration options based on type
          User function to manipulate the displayed records in the results.
 
 
+.. ###### END~OF~TABLE ######
+
+
+.. _wizards-configuration-slider:
+
+Slider wizards
+~~~~~~~~~~~~~~
+
+
+.. ### BEGIN~OF~TABLE ###
+
 .. container:: table-row
 
    Key
-         ***Type: slider***
-
          This renders a slider next to the field. It works for either input-
          type fields or select-type fields. For select-type fields, the wizard
          will "slide" through the items making up the field. For input-type
@@ -866,10 +938,16 @@ demonstrated with examples. Before that, here are a few examples of
 simpler core wizards.
 
 
-.. _wizards-configuration-specific-example-preset:
+.. _wizards-configuration-examples:
 
-Example - Selector box of preset values
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Examples
+""""""""
+
+
+.. _wizards-configuration-examples-preset:
+
+Selector box of preset values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can add a selector box containing preset values next to a field:
 
@@ -903,10 +981,10 @@ This is the corresponding TCA configuration::
    ),
 
 
-.. _wizards-configuration-specific-example-user:
+.. _wizards-configuration-examples-user:
 
-Example - User defined wizard (processing with PHP function)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+User defined wizard (processing with PHP function)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The "userFunc" type of wizard allows you to render all the wizard code
 yourself. Theoretically, you could produce all of the other wizard
@@ -978,10 +1056,10 @@ Use the debug() function to find more about what is available in the
 $PA array.
 
 
-.. _wizards-configuration-specific-example-suggest:
+.. _wizards-configuration-examples-suggest:
 
-Example - add a suggest wizard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add a suggest wizard
+~~~~~~~~~~~~~~~~~~~~
 
 As an example, let's look at the suggest wizard setup for the “General
 Record Storage page”. The wizard looks like this:
@@ -1010,10 +1088,10 @@ settings in "default" is applied to all tables. In the example above,
 there's a special setting for the “pages” table.
 
 
-.. _wizards-configuration-specific-example-slider:
+.. _wizards-configuration-examples-slider:
 
-Example – Add a slider wizard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add a slider wizard
+~~~~~~~~~~~~~~~~~~~
 
 The "haiku" table in the "examples" extension implements a slider
 wizard for the "Angle" field. The field configuration looks like this::
