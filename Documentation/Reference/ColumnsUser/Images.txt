@@ -1,8 +1,0 @@
-﻿.. |img-39|     image:: ../../Images/manual_html_mb6306c6.png
-.. :height: 51
-.. :width: 253
-.. :align: left
-.. :border: 0
-.. :name: graphics33
-.. :vspace: 8
-

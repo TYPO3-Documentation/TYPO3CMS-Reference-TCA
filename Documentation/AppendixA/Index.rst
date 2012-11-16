@@ -4,8 +4,9 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
-.. include:: Images.txt
 
+
+.. _appendix-a:
 
 Appendix A – Skinning considerations
 ------------------------------------

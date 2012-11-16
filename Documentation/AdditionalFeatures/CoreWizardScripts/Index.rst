@@ -7,8 +7,10 @@
 .. include:: Images.txt
 
 
-|img-70| Wizard scripts in the core
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _core-wizards:
+
+Wizard scripts in the core
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The wizard interface allows you to use any PHP-script for your wizards
 but there is a useful set of default wizard scripts available in the
@@ -18,6 +20,8 @@ core of TYPO3. These are found in PATH\_typo3 and are all prefixed
 Below is a description of each of them including a description of
 their special parameters and an example of usage.
 
+
+.. _core-wizards-add:
 
 wizard\_add.php
 """""""""""""""
@@ -159,6 +163,8 @@ inserted in the relations field of the original record (the one where
 we clicked the Add-wizard's icon).
 
 
+.. _core-wizards-edit:
+
 wizard\_edit.php
 """"""""""""""""
 
@@ -192,6 +198,8 @@ The wizard is set to type “popup” which makes it so that the selected
 record will open in a new window. There are no parameters to pass
 along like there were for the Add-wizard.
 
+
+.. _core-wizards-list:
 
 wizard\_list.php
 """"""""""""""""
@@ -283,6 +291,8 @@ The type is also the "script" type. In the "params" array the table
 and pid passed to the script is set.
 
 
+.. _core-wizards-colorpicker:
+
 wizard\_colorpicker.php
 """""""""""""""""""""""
 
@@ -322,6 +332,8 @@ The corresponding TCA configuration looks like this::
 
 Notice the wizard type which is "colorbox".
 
+
+.. _core-wizards-forms:
 
 wizard\_forms.php
 """""""""""""""""
@@ -377,6 +389,8 @@ this::
            'params' => array('xmlOutput' => 0)
    )
 
+
+.. _core-wizards-table:
 
 wizard\_table.php
 """""""""""""""""
@@ -446,6 +460,8 @@ Content Elements::
    ),
 
 
+.. _core-wizards-rte:
+
 wizard\_rte.php
 """""""""""""""
 
@@ -463,6 +479,8 @@ Content Elements::
    ),
 
 
+.. _core-wizards-tsconfig:
+
 wizard\_tsconfig.php
 """"""""""""""""""""
 
@@ -470,6 +488,8 @@ This wizard is used for the TSconfig fields and TypoScript Template
 "Setup" fields. It is specialized for that particular situations and
 it is not likely you will need it for anything on your own.
 
+
+.. _core-wizards-browse:
 
 browse\_links.php
 """""""""""""""""

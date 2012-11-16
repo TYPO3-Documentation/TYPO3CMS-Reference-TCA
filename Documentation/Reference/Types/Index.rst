@@ -7,13 +7,17 @@
 .. include:: Images.txt
 
 
-['types'][ *key* ] section
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _types:
 
-You have to add  *at least* one entry in the "types"-configuration
+['types'] section
+^^^^^^^^^^^^^^^^^
+
+You have to add *at least* one entry in the "types"-configuration
 before any of the configured fields from the ['columns'] section will
 show up in TCEforms.
 
+
+.. _types-required:
 
 Required configuration
 """"""""""""""""""""""
@@ -30,6 +34,8 @@ form looks like this:
 The key "showitem" lists the order in which to define the fields:
 "category, author, email, personal, subject, message".
 
+
+.. _types-optional:
 
 Optional possibilities
 """"""""""""""""""""""
@@ -92,6 +98,8 @@ The result if the following display when type “Normal” is chosen:
 |img-55| |img-56| And finally, type “Weird” also shows all fields, but in a different
 order:
 
+
+.. _types-default:
 
 Default values
 """"""""""""""

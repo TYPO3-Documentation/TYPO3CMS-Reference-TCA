@@ -17,7 +17,7 @@ TCA Reference
       doc_core_tca
 
 :Version:
-      4.7.1
+      6.0.0
 
 :Language:
       en

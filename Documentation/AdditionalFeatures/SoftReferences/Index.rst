@@ -4,8 +4,9 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
+
+.. _soft-references:
 
 Soft References
 ^^^^^^^^^^^^^^^
@@ -19,6 +20,8 @@ references and process them accordingly in import/export actions and
 copy operations. Also, the soft references are utilized by integrity
 checking functions.
 
+
+.. _soft-references-default-parsers:
 
 Default soft reference parsers
 """"""""""""""""""""""""""""""
@@ -155,6 +158,8 @@ These are by default set up in the config\_default.php file::
                    )
            ),
 
+
+.. _soft-references-custom-parsers:
 
 User-defined soft reference parsers
 """""""""""""""""""""""""""""""""""

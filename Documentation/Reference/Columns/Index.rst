@@ -7,8 +7,10 @@
 .. include:: Images.txt
 
 
-['columns'][ *field name* ] section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _columns:
+
+['columns'] section
+^^^^^^^^^^^^^^^^^^^
 
 The "columns" section contains configuration for each table  *field*
 (also called "column") which can be edited by the backend.
@@ -356,3 +358,26 @@ This table shows the keys of the ['columns'][ *field name* ] array:
 
 .. ###### END~OF~TABLE ######
 
+
+.. _columns-types:
+
+Column types
+""""""""""""
+
+.. toctree::
+   :maxdepth: 5
+   :titlesonly:
+   :glob:
+
+   Common/Index
+   Input/Index
+   Text/Index
+   Check/Index
+   Radio/Index
+   Select/Index
+   Group/Index
+   None/Index
+   Passthrough/Index
+   User/Index
+   Flex/Index
+   Inline/Index

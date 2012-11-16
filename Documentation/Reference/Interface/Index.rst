@@ -7,6 +7,8 @@
 .. include:: Images.txt
 
 
+.. _interface:
+
 ['interface'] section
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -87,11 +89,10 @@ core backend:
 .. ###### END~OF~TABLE ######
 
 
-((generated))
-"""""""""""""
+.. _interface-examples:
 
 Example
-~~~~~~~
+"""""""
 
 This is how the "pages" table is configured for these settings (in
 t3lib/stddb/tables.php)::

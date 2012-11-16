@@ -7,6 +7,8 @@
 .. include:: Images.txt
 
 
+.. _verifying:
+
 Verifying the $TCA
 ^^^^^^^^^^^^^^^^^^
 

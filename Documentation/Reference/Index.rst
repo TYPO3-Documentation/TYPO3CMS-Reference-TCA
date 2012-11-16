@@ -20,18 +20,6 @@ $TCA array reference
    Interface/Index
    Feinterface/Index
    Columns/Index
-   ColumnsCommon/Index
-   ColumnsInput/Index
-   ColumnsText/Index
-   ColumnsCheck/Index
-   ColumnsRadio/Index
-   ColumnsSelect/Index
-   ColumnsGroup/Index
-   ColumnsNone/Index
-   ColumnsPassthrough/Index
-   ColumnsUser/Index
-   ColumnsFlex/Index
-   ColumnsInline/Index
    Types/Index
    Palettes/Index
 

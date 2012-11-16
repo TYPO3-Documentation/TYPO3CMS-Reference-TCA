@@ -7,6 +7,8 @@
 .. include:: Images.txt
 
 
+.. _special-configuration:
+
 Special Configuration introduction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -40,6 +42,8 @@ under other "types"-configurations the field  *will* wrap lines.
 Likewise you can configure an RTE to appear for a field only if a
 certain type of the record is set and in other cases not.
 
+
+.. _special-configuration-default:
 
 Default Special Configuration (defaultExtras)
 """""""""""""""""""""""""""""""""""""""""""""

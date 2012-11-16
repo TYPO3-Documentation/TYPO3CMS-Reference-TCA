@@ -7,8 +7,10 @@
 .. include:: Images.txt
 
 
-['palettes'][ *key* ] section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _palettes:
+
+['palettes'] section
+^^^^^^^^^^^^^^^^^^^^
 
 "Palettes" represent a way to move less frequently used form fields
 out of sight. Palettes are groups of field which are associated with
@@ -119,11 +121,10 @@ it is possible to place them on several lines by using the
 :code:`--linebreak--` keyword.
 
 
-((generated))
-"""""""""""""
+.. _palette-examples:
 
 Example
-~~~~~~~
+"""""""
 
 ::
 

@@ -7,6 +7,8 @@
 .. include:: Images.txt
 
 
+.. _wizards:
+
 Wizards Configuration
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -25,6 +27,10 @@ interface:
 are available for "group" or "select" type fields:
 
 |img-65|
+
+
+.. _wizards-configuration:
+
 Configuration of wizards
 """"""""""""""""""""""""
 
@@ -82,6 +88,8 @@ The part specific to the wizards configuration is highlighted in bold.
 The first two lines of this configuration make use of two reserved
 keywords to define settings for the display of icons.
 
+
+.. _wizards-reserved:
 
 Reserved keys
 """""""""""""
@@ -198,6 +206,8 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
 .. ###### END~OF~TABLE ######
 
 
+.. _wizards-configuration-general:
+
 General configuration options
 """""""""""""""""""""""""""""
 
@@ -313,6 +323,8 @@ because it denotes what additional options are available.
 
 .. ###### END~OF~TABLE ######
 
+
+.. _wizards-configuration-specific:
 
 Specific wizard configuration options based on type
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -854,6 +866,8 @@ demonstrated with examples. Before that, here are a few examples of
 simpler core wizards.
 
 
+.. _wizards-configuration-specific-example-preset:
+
 Example - Selector box of preset values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -888,6 +902,8 @@ This is the corresponding TCA configuration::
            )
    ),
 
+
+.. _wizards-configuration-specific-example-user:
 
 Example - User defined wizard (processing with PHP function)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -962,6 +978,8 @@ Use the debug() function to find more about what is available in the
 $PA array.
 
 
+.. _wizards-configuration-specific-example-suggest:
+
 Example - add a suggest wizard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -991,6 +1009,8 @@ The wizard can be configured differently for each of these tables. The
 settings in "default" is applied to all tables. In the example above,
 there's a special setting for the “pages” table.
 
+
+.. _wizards-configuration-specific-example-slider:
 
 Example – Add a slider wizard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1024,3 +1044,4 @@ Note the range which defines the possible values as varying from -90
 to 90. With the step property we indicate that we want to progress by
 increments of 10. The slider wizard is rendered like this:
 
+|img-70|

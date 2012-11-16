@@ -1,12 +1,4 @@
-﻿.. |img-70|     image:: ../../Images/manual_html_727823c8.png
-.. :height: 60
-.. :width: 259
-.. :align: left
-.. :border: 0
-.. :name: graphics84
-.. :vspace: 8
-
-.. |img-71|     image:: ../../Images/manual_html_m15d2b8c3.png
+﻿.. |img-71|     image:: ../../Images/manual_html_m15d2b8c3.png
 .. :height: 119
 .. :width: 490
 .. :align: left

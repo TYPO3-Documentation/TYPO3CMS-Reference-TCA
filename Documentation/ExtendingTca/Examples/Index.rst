@@ -7,12 +7,16 @@
 .. include:: Images.txt
 
 
+.. _extending-examples:
+
 Customization examples
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Many extracts can be found throughout the manual, but this section
 provides more complete examples.
 
+
+.. _extending-examples-feusers:
 
 Example 1: extending the fe\_users table
 """"""""""""""""""""""""""""""""""""""""
@@ -93,6 +97,8 @@ new fields when editing a "fe\_users" record:
 
 |img-82| The next example shows how to place a field more precisely.
 
+
+.. _extending-examples-ttcontent:
 
 Example 2: extending the tt\_content table
 """"""""""""""""""""""""""""""""""""""""""

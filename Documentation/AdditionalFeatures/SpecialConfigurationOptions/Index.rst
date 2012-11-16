@@ -7,9 +7,13 @@
 .. include:: Images.txt
 
 
+.. _special-configuration-options:
+
 Special Configuration options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+.. _special-configuration-options-keywords:
 
 Keywords
 """"""""
@@ -173,6 +177,8 @@ colon (:). See examples below.
 .. ###### END~OF~TABLE ######
 
 
+.. _special-configuration-options-rte:
+
 rte\_transform[] key/value pairs
 """"""""""""""""""""""""""""""""
 
@@ -252,6 +258,8 @@ rte\_transform[] key/value pairs
 .. ###### END~OF~TABLE ######
 
 
+.. _special-configuration-options-rte-example:
+
 Example - Setting up Rich Text Editors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -279,6 +287,8 @@ the RTE will inherit from the TYPO3-wide configuration (as defined by
 Page and User TSconfig). This may look like this (depending on your
 local RTE configuration):
 
+
+.. _special-configuration-options-static:
 
 static\_write[] parameters
 """"""""""""""""""""""""""
@@ -363,6 +373,8 @@ static\_write[] parameters
 
 .. ###### END~OF~TABLE ######
 
+
+.. _special-configuration-options-static-example:
 
 Example - Write to static file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

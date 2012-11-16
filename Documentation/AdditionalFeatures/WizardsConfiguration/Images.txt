@@ -54,3 +54,11 @@
 .. :name: graphics68
 .. :vspace: 8
 
+.. |img-70|     image:: ../../Images/manual_html_727823c8.png
+.. :height: 60
+.. :width: 259
+.. :align: left
+.. :border: 0
+.. :name: graphics84
+.. :vspace: 8
+

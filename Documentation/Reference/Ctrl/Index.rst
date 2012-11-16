@@ -7,6 +7,8 @@
 .. include:: Images.txt
 
 
+.. _ctrl:
+
 ['ctrl'] section
 ^^^^^^^^^^^^^^^^
 
@@ -25,8 +27,10 @@ These properties are basically divided into two main categories:
   etc.
 
 
-Reference for the ['ctrl'] section:
-"""""""""""""""""""""""""""""""""""
+.. _ctrl-reference:
+
+Reference
+"""""""""
 
 
 .. ### BEGIN~OF~TABLE ###
@@ -1725,6 +1729,8 @@ Reference for the ['ctrl'] section:
 
 .. ###### END~OF~TABLE ######
 
+
+.. _ctrl-examples:
 
 Examples
 """"""""

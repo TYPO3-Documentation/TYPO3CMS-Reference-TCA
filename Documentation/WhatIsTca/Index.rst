@@ -4,8 +4,9 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
-.. include:: Images.txt
 
+
+.. _tca-what-is:
 
 What is $TCA?
 -------------

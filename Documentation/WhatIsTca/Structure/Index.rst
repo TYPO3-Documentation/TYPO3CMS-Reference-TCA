@@ -4,12 +4,15 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
+
+.. _tca-structure:
 
 Structure of the $TCA array
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+.. _tca-structure-level1:
 
 The table entries (first level)
 """""""""""""""""""""""""""""""
@@ -30,6 +33,8 @@ they appear in the database)::
 Here three tables, "pages", "tt\_content" and "tt\_myext" is shown as
 examples.
 
+
+.. _tca-structure-level2:
 
 Inside the table entries (second level)
 """""""""""""""""""""""""""""""""""""""
@@ -182,13 +187,15 @@ chapter.
 .. ###### END~OF~TABLE ######
 
 
+.. _tca-structure-deeper:
+
 Deeper levels
 """""""""""""
 
 All properties on the second level either have their own properties or
 contain a further hierarchy.
 
-In the case of the [columns]section, this will be the fields
-themselves. For the [types]and [palettes]section this will be the list
+In the case of the :ref:`[columns]<columns>` section, this will be the fields
+themselves. For the :ref:`[types]<types>` and :ref:`[palettes]<palettes>` section this will be the list
 of all possible types and palettes.
 
