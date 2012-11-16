@@ -390,7 +390,7 @@ on a per-table-basis.
 .. container:: table-row
 
    Key
-         foreign\_table\_match
+         foreign\_match\_fields
 
    Datatype
          array
