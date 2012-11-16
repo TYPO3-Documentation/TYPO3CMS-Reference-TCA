@@ -146,7 +146,7 @@ It does not create references to the files' original positions!
          (list of)
 
    Description
-         *[internal\_type =  **file** ONLY]*
+         *[internal\_type =  "file" ONLY]*
 
          Default value is '\*' which means that anything file-extension which
          is not allowed is denied.
@@ -166,6 +166,96 @@ It does not create references to the files' original positions!
 
          - If you wish to  *allow all extensions* with no exceptions, set
            'allowed' to '\*' and disallowed to ''
+
+   Scope
+         Proc. / Display
+
+
+.. container:: table-row
+
+   Key
+         .. _columns-group-filter:
+
+         filter
+
+   Datatype
+         array
+
+   Description
+         *[internal\_type =  "db" ONLY]*
+
+         Define filters for item values.
+
+         This is useful when only foreign records matching certain criteria
+         should be allowed to be used as values in the group field.
+         The values are filtered in the Element Browser as well as during processing in TCEMain.
+         Filter userFuncs should have two input arguments ($parameters and $parentObject).
+         The first argument ($parameters) is an array with the parameters of the filter
+         as configured in the TCA, but with the additional parameter "values",
+         which contains the array of values which should be filtered by the userFunc.
+         The function must return the filtered array of values.
+
+         Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied.
+
+         ::
+
+            'filter' => array (
+            	array(
+            		'userFunc' => 'EXT:myext/class.tx_myext_filter.php:tx_myext_filter->doFilter',
+            		'parameters' => array(
+            			// optional parameters for the filter go here
+            		),
+            	),
+            	array(
+            		'userFunc' => 'EXT:foo/class.tx_foo_filter.php:tx_foo_filter->myFilter',
+            		'parameters' => array(
+            			// optional parameters for the filter go here
+            		),
+            	),
+            ),
+
+
+         **Example**
+
+         Say you have a "person" table with fields "gender" (radio buttons) as well as "mother" and "father"
+         (both group fields with relations to the same table.
+
+         Now, in the field "mother" it should certainly only be possible to create relations to female persons.
+         In that case, you could use the filter functionality to make sure only females can be selected
+         in that field.
+
+         The field configuration for the "mother" field could look like::
+
+            'mother' => array (
+            	'label' => 'Mother',
+            	'config' => array (
+            		'type' => 'group',
+            		'internal_type' => 'db',
+            		'allowed' => 'tx_myext_person',
+            		'size' => 1,
+            		'filter' => array (
+            			array(
+            				'userFunc' => 'EXT:myext/class.tx_myext_filter.php:tx_myext_filter->doFilter',
+            				'parameters' => array(
+            					'evaluateGender' => 'female',						),
+            			),
+            		),
+            	)
+            ),
+
+         The corresponding filter class would look like::
+
+            class tx_myext_filter {
+
+            	public function doFilter(array $parameters, $parentObject) {
+            		$fieldValues = $parameters['values'];
+
+            		// do the filtering here
+            		...
+
+            		return $fieldValues;
+            	}
+            }
 
    Scope
          Proc. / Display

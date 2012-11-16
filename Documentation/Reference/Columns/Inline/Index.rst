@@ -358,6 +358,28 @@ on a per-table-basis.
 .. container:: table-row
 
    Key
+         filter
+
+   Datatype
+         array
+
+   Description
+         Possibility to define user functions to filter out child items.
+
+         This is useful in special scenarios when used in conjunction
+         with a foreign_selector where only certain foreign records are allowed
+         to be related to.
+
+         For further documentation on this feature, see the
+         :ref:`"filter" documentation under TYPE: "group"<columns-group-filter>`.
+
+   Scope
+         Display / Proc.
+
+
+.. container:: table-row
+
+   Key
          MM
 
    Datatype
