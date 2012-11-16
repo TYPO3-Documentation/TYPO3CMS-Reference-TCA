@@ -130,7 +130,7 @@ on a per-table-basis.
            "localize all records" link to fetch untranslated records from the
            original language.
 
-         - *showSynchronizationLink* (boolean)Defines whether to show a
+         - *showSynchronizationLink* (boolean) Defines whether to show a
            "synchronize" link to update to a 1:1 translation with the original
            language.
 
@@ -145,6 +145,11 @@ on a per-table-basis.
            technical functionality of the foreign\_selector but is useful if you
            want to replace it with your own implementation using a custom control
            (see "customControls").
+
+         - *headerThumbnail* (boolean) (since TYPO3 CMS 6.0) Defines whether a
+           thumbnail should be rendered in the inline elements' header. This is
+           used by the File Abstraction Layer to render a preview of the related
+           image.
 
    Scope
          Display
