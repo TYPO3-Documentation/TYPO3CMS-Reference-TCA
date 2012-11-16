@@ -92,21 +92,21 @@ on a per-table-basis.
    Description
          Has information about the appearance of child-records, namely:
 
-         - collapseAll (boolean)Show all child-records collapsed (if false, all
+         - *collapseAll* (boolean) Show all child-records collapsed (if false, all
            are expanded)
 
-         - *expandSingle* (boolean)Show only one child-record expanded each time.
+         - *expandSingle* (boolean) Show only one child-record expanded each time.
            If a collapsed record is clicked, the currently open one collapses and
            the clicked one expands.
 
-         - *newRecordLinkAddTitle* (boolean)Adds the title of the foreign\_table
+         - *newRecordLinkAddTitle* (boolean) Adds the title of the foreign\_table
            to the “New record” link.false: “Create new”true: “Create new <title
            of foreign\_table>”, e.g. “Create new address”
 
          - *newRecordLinkPosition* (string) **Deprecated** : use
            *levelLinksPosition* instead
 
-         - *levelLinksPosition* (string)Values: 'top', 'bottom', 'both', 'none' –
+         - *levelLinksPosition* (string) Values: 'top', 'bottom', 'both', 'none' –
            default: 'top'Defines where to show the “New record” link in relation
            to the child records.
 
@@ -117,16 +117,16 @@ on a per-table-basis.
            foreign\_unique property  **must** be set to the same field as the
            foreign\_selector.
 
-         - *useSortable* (boolean)Active Drag&Drop Sorting by the script.aculo.us
+         - *useSortable* (boolean) Active Drag&Drop Sorting by the script.aculo.us
            Sortable object.
 
-         - *showPossibleLocalizationRecords* (boolean)Show unlocalized records
+         - *showPossibleLocalizationRecords* (boolean) Show unlocalized records
            which are in the original language, but not yet localized.
 
-         - *showRemovedLocalizationRecords* (boolean)Show records which were once
+         - *showRemovedLocalizationRecords* (boolean) Show records which were once
            localized but do not exist in the original language anymore.
 
-         - *showAllLocalizationLink* (boolean)Defines whether to show the
+         - *showAllLocalizationLink* (boolean) Defines whether to show the
            "localize all records" link to fetch untranslated records from the
            original language.
 
@@ -134,12 +134,12 @@ on a per-table-basis.
            "synchronize" link to update to a 1:1 translation with the original
            language.
 
-         - *enabledControls* (array)Associative array with the keys 'info',
+         - *enabledControls* (array) Associative array with the keys 'info',
            'new', 'dragdrop', 'sort', 'hide', 'delete', 'localize'. If the
            accordant values are set to a boolean value (true or false), the
            control is shown or hidden in the header of each record.
 
-         - *showPossibleRecordsSelector* (boolean) (since TYPO3 4.7)Can be used
+         - *showPossibleRecordsSelector* (boolean) (since TYPO3 4.7) Can be used
            to hide the foreign record selector from the interface, even if you
            have a foreign\_selector configured. This can be used to keep the
            technical functionality of the foreign\_selector but is useful if you
