@@ -182,6 +182,8 @@ It does not create references to the files' original positions!
          array
 
    Description
+         *(Available since TYPO3 CMS 6.0)*
+
          *[internal\_type =  "db" ONLY]*
 
          Define filters for item values.

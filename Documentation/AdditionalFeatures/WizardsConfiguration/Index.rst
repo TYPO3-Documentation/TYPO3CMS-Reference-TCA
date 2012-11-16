@@ -836,6 +836,8 @@ Suggest wizards
          string
 
    Description
+         *(Available since TYPO3 CMS 6.0)*
+
          Comma-separated list of fields the suggest wizard should also search in.
          By default the wizard looks only in the fields listed in the "label" and "label_alt"
          properties.
