@@ -880,6 +880,8 @@ like.
            levels that will not be selectable, by default the root node (which is
            "0") cannot be selected
 
+         - **width** : Set a custom width of the tree select field in pixels.
+
    Scope
 
 
