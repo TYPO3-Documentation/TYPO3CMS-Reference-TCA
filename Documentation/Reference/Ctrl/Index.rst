@@ -1637,6 +1637,7 @@ Reference
          of tabs for improved usability.
 
    Scope
+         Display
 
 
 .. container:: table-row
@@ -1706,6 +1707,21 @@ Reference
 .. container:: table-row
 
    Key
+         security
+
+   Datatype
+         array
+
+   Description
+         Array of sub-properties, see :ref:`ctrl-security`.
+
+   Scope
+         Display
+
+
+.. container:: table-row
+
+   Key
          EXT[ *extension\_key* ]
 
    Datatype
@@ -1725,6 +1741,78 @@ Reference
 
    Scope
          Ext.
+
+
+.. ###### END~OF~TABLE ######
+
+
+.. _ctrl-security:
+
+Security-related configuration
+""""""""""""""""""""""""""""""
+
+This section describes "sub-properties" of the "security" property. They
+are meant to be used as keys of the "security" property array::
+
+   $TCA['sys_file'] = array(
+      'ctrl' => array(
+         ...
+         'security' => array(
+            'ignoreWebMountRestriction' => 1,
+            'ignoreRootLevelRestriction' => 1,
+         ),
+         ...
+      )
+   );
+
+
+.. ### BEGIN~OF~TABLE ###
+
+.. container:: table-row
+
+   Key
+         Key
+
+   Datatype
+         Datatype
+
+   Description
+         Description
+
+   Scope
+         Scope
+
+
+.. container:: table-row
+
+   Key
+         ignoreWebMountRestriction
+
+   Datatype
+         boolean
+
+   Description
+         Allows users to access records that are not in their defined web-mount,
+         thus bypassing this restriction.
+
+   Scope
+         Display
+
+
+.. container:: table-row
+
+   Key
+         ignoreRootLevelRestriction
+
+   Datatype
+         boolean
+
+   Description
+         Allows non-admin users to access records that on the root-level (page-id 0),
+         thus bypassing this usual restriction.
+
+   Scope
+         Display
 
 
 .. ###### END~OF~TABLE ######
