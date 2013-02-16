@@ -1087,6 +1087,8 @@ Here follow some code listings as examples:
 Examples
 """"""""
 
+.. _columns-select-examples-simple:
+
 Example - A simple selector box:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1117,6 +1119,8 @@ third entry of the “items” array. It defines a  *divider* . This value
 cannot be selected. It only helps to divide the list of options with a
 label indicating a new section.
 
+
+.. _columns-select-examples-simple-markers:
 
 Example - Simple selector box with TSconfig markers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1151,6 +1155,9 @@ Without any TSconfig, the selector will display a full list of pages:
 The list of pages that we can select from is now reduced to:
 
 |img-23|
+
+.. _columns-select-examples-multiple:
+
 Example - A multiple value selector with contents from a database table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1193,6 +1200,8 @@ The interesting point of this example is that it shows that static
 values can be mixed with values fetched from a database table.
 
 
+.. _columns-select-examples-lookup:
+
 Example - Using a look up table for single value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1223,6 +1232,8 @@ Notice how a condition is set that this box should only be displayed
 otherwise the table will not be in the database and we will get SQL
 errors.
 
+
+.. _columns-select-examples-icons:
 
 Example - Adding icons for selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1272,6 +1283,8 @@ third position. Towards the bottom the layout of the icons is defined
 as being arranged in 6 columns.
 
 
+.. _columns-select-examples-grsp:
+
 Example - Render the General Record Storage Page selector as a tree of page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1299,6 +1312,9 @@ The following configuration change::
 will transform the General Record Storage Page selector into:
 
 |img-26|
+
+.. _columns-select-examples-wizards:
+
 Example - Adding wizards
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1363,6 +1379,8 @@ section in this document for more information.
 height of the selector boxes adjust themselves automatically depending
 on the content in them. The result is as follows:
 
+
+.. _columns-select-examples-mm:
 
 Example – Bidirectional MM relations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1444,6 +1462,8 @@ made from “TWO (1)”:
 |img-29| |img-30| In the database it looks like this:
 
 
+.. _columns-select-examples-flexforms:
+
 Example – FlexForms and MM relations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1505,11 +1525,12 @@ used outside sections of flexform fields which could only occur one
 time per record, but here it's not possible.
 
 
+.. _columns-select-data-format:
+
 Data format of "select" elements
 """"""""""""""""""""""""""""""""
 
 Since the "select" element allows to store references to multiple
 elements we might want to look at how these references are stored
-internally. The principle is the same as with the "group" type (see
-below).
-
+internally. The principle is the same as with the
+:ref:`"group" type <columns-group-data>`.
