@@ -1,9 +1,8 @@
 # Settings.yml
-
 ---
 conf.py:
-  copyright: 2000-2013
   project: TCA Reference
+  copyright: 2000-2013
   version: 6.0.0
   release: 6.0.0
 ...

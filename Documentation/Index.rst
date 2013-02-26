@@ -29,7 +29,7 @@ TCA Reference
       forAdmins, forDevelopers, forIntermediates
 
 :Copyright:
-      2000-2012
+      2000-2013
 
 :Author:
       Documentation Team
