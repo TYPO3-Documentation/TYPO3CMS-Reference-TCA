@@ -51,7 +51,6 @@ Here's the complete code::
            ),
    );
 
-   t3lib_div::loadTCA('fe_users');
    t3lib_extMgm::addTCAcolumns('fe_users', $temporaryColumns,1);
    t3lib_extMgm::addToAllTCAtypes('fe_users', 'tx_examples_options;;;;1-1-1, tx_examples_special');
 
@@ -60,10 +59,6 @@ the $TCAsyntax for columns. This configuration is stored in the
 $temporaryColumns array.
 
 After that come three precise steps:
-
-- first we load the full $TCA for the "fe\_users" table. This is
-  necessary so that all columns definition are loaded. Otherwise the new
-  columns cannot be added properly.
 
 - second the columns are actually added to the table by using
   t3lib\_extMgm::addTCAcolumns().

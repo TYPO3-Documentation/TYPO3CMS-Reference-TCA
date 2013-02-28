@@ -134,7 +134,7 @@ a certain meaning which you are encouraged to follow as well:
 
 
 Even if these pointers are used in the core of TYPO3 the default
-configuration as found in t3lib/stddb/tables.php includes only a
+configuration as found in typo3/sysext/core/ext_tables.php includes only a
 definition of the default "0" (zero) pointer::
 
    $TBE_STYLES = array(

@@ -83,8 +83,7 @@ core backend:
 Example
 """""""
 
-This is how the "pages" table is configured for these settings (in
-t3lib/stddb/tables.php)::
+This is how the "pages" table is configured for these settings::
 
        'interface' => array(
            'showRecordFieldList' => 'doktype,title',

@@ -104,6 +104,8 @@ chapter.
            can only be edited by admin-users, may only exist in the tree root
            etc.
 
+         -  For all tables configured in $TCA this section must exist.
+
 
 .. container:: table-row
 

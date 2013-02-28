@@ -1640,70 +1640,6 @@ Reference
 .. container:: table-row
 
    Key
-         dynamicConfigFile
-
-   Datatype
-         string
-
-   Description
-         Reference to the complete $TCA entry content.
-
-         Filename of the PHP file which contains the  *full configuration* of
-         the table in $TCA. The [ctrl]part (and [feInterface]if used) are
-         always mandatory, but the rest may be placed in such a file in order
-         to limit the amount of memory consumed by the $TCA array (when e.g.
-         the columns definitions are not needed).
-
-         The format of the value may be:
-
-         - an absolute path (this is used for extensions, see example below).
-
-         - **prefixed with "T3LIB:"** This indicates that it's located in
-           t3lib/install/
-
-         - any other path is considered to be relative to "typo3conf/"
-
-         **Example:**
-
-         Looking at the definition of the "haikus" table, we find the following
-         in the "ext\_tables.php" file::
-
-            $TCA['tx_examples_haiku'] = array(
-                    'ctrl' => array(
-                            ...
-                            'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY) . 'tca.php',
-                            ...
-                    )
-            );
-
-         Then in the file "tca.php" is PHP code which completes the $TCA entry
-         for the table::
-
-            <?php
-            $TCA['tx_examples_haiku'] = array(
-                    'ctrl' => $TCA['tx_examples_haiku']['ctrl'],
-                    'columns' => array(
-                            'hidden' => array(
-                                    'exclude' => 1,
-                                    'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
-                                    'config'  => array(
-                                            'type'    => 'check',
-                                            'default' => '0'
-                                    )
-                            ),
-                            …
-
-         Note how the [ctrl] section is referenced so as not to be lost.
-
-         See Appendix B for a detailed discussion of dynamically loading $TCA.
-
-   Scope
-         API
-
-
-.. container:: table-row
-
-   Key
          security
 
    Datatype
@@ -1846,11 +1782,10 @@ sections. ::
                       '254' => 'sysf.gif',
                       '255' => 'recycler.gif',
               ),
-              'dynamicConfigFile' => 'T3LIB:tbl_pages.php',
       )
    );
 
-This is found in file "t3lib/stddb/tables.php". Here are a few notes:
+This is found in file "typo3/sysext/core/Configuration/TCA/pages.php". Here are a few notes:
 
 - When pages are displayed in the backend, the "label" property
   indicates that you will see the content from the field named "title"
@@ -1866,15 +1801,9 @@ This is found in file "t3lib/stddb/tables.php". Here are a few notes:
 - The "type" field will be the one named "doktype". This determines the
   set of fields shown in the edit forms in the backend.
 
-- Note on the last line how the dynamic configuration file is
-  referenced.
-
 Configuration for the tt\_content table (Content Elements) is no less
-complete. It can be found in file "typo3/sysext/cms/ext\_tables.php"::
+complete. It can be found in file "typo3/sysext/cms/Configuration/TCA/tt_content.php"::
 
-   // ******************************************************************
-   // This is the standard TypoScript content table, tt_content
-   // ******************************************************************
    $TCA['tt_content'] = array (
       'ctrl' => array (
               'label' => 'header',
@@ -1916,9 +1845,9 @@ complete. It can be found in file "typo3/sysext/cms/ext\_tables.php"::
               ),
               'thumbnail' => 'image',
               'requestUpdate' => 'list_type,rte_enabled',
-              'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tbl_tt_content.php',
               'dividers2tabs' => 1
-      )
+      ),
+      ...
    );
 
 - of particular note is the "enablecolumns" property. It is quite

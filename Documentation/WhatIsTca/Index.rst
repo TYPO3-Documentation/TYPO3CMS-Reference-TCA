@@ -24,34 +24,18 @@ definition of a table also covers the following:
 
 - how should a field be validated (e.g. required, integer, etc.)
 
-This array is highly extendable using extensions. As a matter of fact
-– if you consider an absolutely bare bones installation of TYPO3 (that
-would without even the required extensions) – only a few tables are
-configured by default in TYPO3. They are to be found in the file
-t3lib/stddb/tables.phpand are:
+This array is highly extendable using extensions. Extensions can add fields
+to existing tables and add new tables. Several required extions that are
+always loaded already deliver some TCA in their Configuration/TCA directories.
+Most importandly, extension 'core' comes with a definition of pages,
+be_users and further tables needed by the whole system.
 
-- the "pages" table containing the page tree of TYPO3
-
-- the "be\_users" table containing backend users
-
-- the "be\_groups" table containing backend user groups
-
-- the "sys\_filemounts" table containing file mounts for backend users
-
-- the "sys\_language" table containing the languages in which various
-  elements can be translated
-
-- the "sys\_news" table (since version 4.5) which is used to display
-  information in the backend login screen.
-
-All other tables are configured in extensions.
-
-The file "t3lib/stddb/tables.php" contains not only the $TCA
-definition. You can also find other global core variables defined
-there, but they are not discussed in this document. Some of them are
-explained in the "Core APIs" manual, those related to skinning in the
-"Core Skinning Guidelines" manual.
-
+Since TYPO3 CMS 6.1, TCA definition of a new table must be done in the
+extension directory "Configuration/TCA/" with database-table-name.php as filename.
+An example is EXT:sys_note/Configration/TCA/sys_note.php. This file will be
+found by the bootstrap code (if starting a TYPO3 request) and must return an
+array with the content of the TCA setting. The return value of any loaded
+file will be cached, so there must be no dynamic PHP code in it.
 
 .. toctree::
    :maxdepth: 5
@@ -60,5 +44,4 @@ explained in the "Core APIs" manual, those related to skinning in the
 
    Structure/Index
    Glossary/Index
-   CtrlSection/Index
 

@@ -1279,7 +1279,6 @@ Example - Render the General Record Storage Page selector as a tree of page
 
 The following configuration change::
 
-   t3lib_div::loadTCA('pages');
    $tempConfiguration = array(
       'type' => 'select',
       'foreign_table' => 'pages',

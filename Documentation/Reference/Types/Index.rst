@@ -58,7 +58,6 @@ Let's look at the “dummy” table from the “examples” extension. The
                    'enablecolumns' => array(
                            'disabled' => 'hidden',
                    ),
-                   'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY) . 'tca.php',
                    'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_examples_dummy.gif',
            )
    );

@@ -87,6 +87,5 @@ address the task at hand.
    AdditionalFeatures/Index
    ExtendingTca/Index
    AppendixA/Index
-   AppendixB/Index
    Targets
 
