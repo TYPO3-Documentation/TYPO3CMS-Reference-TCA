@@ -383,25 +383,18 @@ Reference
          (field name)
 
    Description
-         Field name, whose value decides  *alternative icons* for the table
+         Field name, whose value decides *alternative icons* for the table records
          (The default icon is the one defined with the 'iconfile' value.)
 
-         An icon in the 'typeicons' array may override the default icon if an
-         entry is found for the key having the value of the field pointed to by
-         "typeicon\_column" (this feature).
+         The values in the field referenced by this property must match entries
+         in the array defined either in the :code:`typeicons` or :code:`typeicon_classes`
+         properties. If no match is found, the default icon is used.
 
-         **Notice:** These options ("typeicon\_column" and "typeicons") do not
-         work for the pages-table, which is configured by the $PAGES\_TYPES
-         array.
+         .. note::
+            These options do not work for the pages-table, which is configured using
+            the :code:`$PAGES_TYPES` array.
 
-         Related "typeicons"
-
-         This feature is used by for instance the "tt\_content" table (Content
-         Elements) where each type of content element has its own icon.
-
-         **Example:**
-
-         See "typeicons"
+         See examples in the related :code:`typeicons` or :code:`typeicon_classes` features.
 
    Scope
          Display
@@ -416,30 +409,48 @@ Reference
          array
 
    Description
-         (See "typeicon\_column")
+         Array of icons to use for the records. The keys must correspond
+         to the values found in the column referenced in the
+         :code:`typeicon_column` property.
 
-         **Example of configuration (from the "tt\_content" table):** ::
+         .. note::
+            Usage of this property is deprecated, please favor :code:`typeicon_classes`.
 
-                    'typeicon_column' => 'CType',
-                    'typeicons' => array(
-                        'header' => 'tt_content_header.gif',
-                        'textpic' => 'tt_content_textpic.gif',
-                        'image' => 'tt_content_image.gif',
-                        'bullets' => 'tt_content_bullets.gif',
-                        'table' => 'tt_content_table.gif',
-                        'splash' => 'tt_content_news.gif',
-                        'uploads' => 'tt_content_uploads.gif',
-                        'multimedia' => 'tt_content_mm.gif',
-                        'menu' => 'tt_content_menu.gif',
-                        'list' => 'tt_content_list.gif',
-                        'mailform' => 'tt_content_form.gif',
-                        'search' => 'tt_content_search.gif',
-                        'login' => 'tt_content_login.gif',
-                        'shortcut' => 'tt_content_shortcut.gif',
-                        'script' => 'tt_content_script.gif',
-                        'div' => 'tt_content_div.gif',
-                        'html' => 'tt_content_html.gif'
-                    ),
+   Scope
+         Display
+
+
+.. container:: table-row
+
+   Key
+         typeicon_classes
+
+   Datatype
+         array
+
+   Description
+         Array of class names to use for the recordsThe keys must correspond
+         to the values found in the column referenced in the
+         :code:`typeicon_column` property. The class names correspond to
+         the backend's sprite icons.
+
+         .. tip::
+            The best way to view all available icons and their corresponding
+            class names is to use extension "extdeveval", choose the function
+            "Sprite Management" and click on "Available sprite icons".
+
+            To register your own icons with the global backend sprite, use
+            method :code:`\TYPO3\CMS\Backend\Sprite\SpriteManager::addSingleIcons()`.
+
+         **Example:**
+
+         Taken from the configuration of the "tt\_content" table::
+
+              'typeicon_classes' => array(
+                      'header' => 'mimetypes-x-content-header',
+                      ...
+                      'default' => 'mimetypes-x-content-text',
+              ),
 
    Scope
          Display

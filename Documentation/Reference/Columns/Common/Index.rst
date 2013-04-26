@@ -79,7 +79,7 @@ They are described below.
 
          This is currently only supported for "date" or "datetime" fields
          (i.e. :ref:`input-type fields <columns-input>` with the "eval" property set to "date" or "datetime")
-         and the :code:`db_type` can be set only to "date" or "datetime".
+         and the :code:`dbType` can be set only to "date" or "datetime".
 
    Scope
          Database
