@@ -11,31 +11,31 @@
 Storing the changes
 ^^^^^^^^^^^^^^^^^^^
 
-Changes to the $TCAare generally packaged into extensions and – more
-precisely – reside in the "ext\_tables.php" file (more details about
-extension structure can be found in the "Core APIs" manual).
+Changes to the $TCA are generally packaged into extensions and – more
+precisely – reside in the :file:`ext_tables.php` file (more details about
+extension structure can be found :ref:`in the Core APIs manual <extension-architecture>`).
 
-They can also be written in the "typo3conf/extTables.php" file. The
-name of this file can be changed – if you so wish – by changing the
-value of the global variable $typo\_db\_extTableDef\_scriptin the
-"typo3conf/localconf.php" file. It's also possible to remove the
-"typo3conf/extTables.php" file by setting::
+They can also be written to a general file in the :file:`typo3conf`directory.
+The name of this file is defined by the configuration variable
+:code:`$GLOBALS['TYPO3_CONF_VARS']['DB']['extTablesDefinitionScript']`.
+TYPO3 official packages (like the dummy or the Introduction Pacakage)
+predefine the name as :file:`extTables.php`.
 
-   $typo_db_extTableDef_script = 1;
+It's perfectly possible to work without that file by not defining it at all
+or unsetting existing definitions.
 
-also in "typo3conf/localconf.php". This variable is then stored into
-the constant TYPO3\_extTableDef\_script.
-
-The advantage of the TYPO3\_extTableDef\_scriptfile is that it is
+The advantage of using the "extTablesDefinitionScript" file is that it is
 loaded last. This means that you are sure that your changes are not
-overridden by some other customizations.
+overridden by some other customizations. Also editing the :code:`$TCA`
+from the Admin Tools > Configuration module will only work if such a file
+is defined (and writable, of course).
 
 The advantage of putting your changes inside an extension is that they
 are nicely packaged in a self-contained entity which can be easily
 deployed on multiple servers. The drawback is that the extension
 loading order cannot be finely controlled, except by editing the
 loaded extension list manually. At a somewhat coarser level, setting
-the "priority" property in the "ext\_emconf.php" file can help (a
+the "priority" property in the :code:`ext_emconf.php` file can help (a
 "bottom" extension will load last, but its exact load order may vary
 if there are several "bottom"-priority extensions).
 
