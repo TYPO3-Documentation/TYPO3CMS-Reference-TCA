@@ -7,7 +7,7 @@
 .. include:: Images.txt
 
 
-.. _columns-check-input:
+.. _columns-input:
 
 TYPE: "input"
 ^^^^^^^^^^^^^
