@@ -45,17 +45,6 @@ time.
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
 
 .. container:: table-row
 

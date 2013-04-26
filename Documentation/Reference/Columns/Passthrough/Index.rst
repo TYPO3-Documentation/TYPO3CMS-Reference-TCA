@@ -24,17 +24,6 @@ specifically fitted for direct API usage with the TCEmain class.
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
 
 .. container:: table-row
 

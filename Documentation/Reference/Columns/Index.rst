@@ -29,20 +29,6 @@ This table shows the keys of the ['columns'][ *field name* ] array:
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
-   Scope
-         Scope
-
 
 .. container:: table-row
 
@@ -354,6 +340,7 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          th=uploads/tx\_mininews/rte/]
 
    Scope
+         Display
 
 
 .. ###### END~OF~TABLE ######

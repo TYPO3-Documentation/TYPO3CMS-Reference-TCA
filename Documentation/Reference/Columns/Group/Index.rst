@@ -29,20 +29,6 @@ It does not create references to the files' original positions!
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
-   Scope
-         Scope
-
 
 .. container:: table-row
 
@@ -332,6 +318,7 @@ It does not create references to the files' original positions!
          MM\_match\_fields*
 
    Scope
+         Proc.
 
 
 .. container:: table-row
@@ -347,6 +334,7 @@ It does not create references to the files' original positions!
          MM\_insert\_fields*
 
    Scope
+         Proc.
 
 
 .. container:: table-row
@@ -362,6 +350,7 @@ It does not create references to the files' original positions!
          MM\_table\_where*
 
    Scope
+         Proc.
 
 
 .. container:: table-row
@@ -377,6 +366,7 @@ It does not create references to the files' original positions!
          MM\_hasUidField*
 
    Scope
+         Proc.
 
 
 .. container:: table-row

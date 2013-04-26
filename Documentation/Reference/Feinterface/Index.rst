@@ -20,17 +20,6 @@ Is deprecated in the sense that it will still exist, but will not be
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
 
 .. container:: table-row
 
@@ -44,8 +33,6 @@ Is deprecated in the sense that it will still exist, but will not be
 
    Description
          List of fields, example: '\*name, \*type, biography, filmography'.
-         Used for front-end edit module created by Rene Fritz
-         <r.fritz@colorcube.de>
 
 
 .. container:: table-row

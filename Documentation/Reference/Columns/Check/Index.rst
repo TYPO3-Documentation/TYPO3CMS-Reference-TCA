@@ -26,20 +26,6 @@ fields and not just whether it is true or false!).
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
-   Scope
-         Scope
-
 
 .. container:: table-row
 

@@ -19,17 +19,6 @@ saved into a single field in the database, stored as XML.
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
 
 .. container:: table-row
 
@@ -263,17 +252,6 @@ The tables below document the extension elements:
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Element
-         Element
-
-   Description
-         Description
-
-   Child elements
-         Child elements
-
 
 .. container:: table-row
 
@@ -328,17 +306,6 @@ The tables below document the extension elements:
 
 
 .. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   Element
-         Element
-
-   Format
-         Format
-
-   Description
-         Description
 
 
 .. container:: table-row
@@ -431,17 +398,6 @@ format. The structure is as follows:
 
 
 .. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   Element
-         Element
-
-   Description
-         Description
-
-   Child elements
-         Child elements
 
 
 .. container:: table-row
@@ -569,17 +525,6 @@ format. The structure is as follows:
 
 
 .. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   Element
-         Element
-
-   Format
-         Format
-
-   Description
-         Description
 
 
 .. container:: table-row

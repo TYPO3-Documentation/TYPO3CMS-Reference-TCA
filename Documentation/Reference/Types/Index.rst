@@ -116,17 +116,6 @@ editing form. If you do, the field will not detect the value properly.
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
 
 .. container:: table-row
 

@@ -21,20 +21,6 @@ Such a field looks like this:
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
-   Scope
-         Scope
-
 
 .. container:: table-row
 

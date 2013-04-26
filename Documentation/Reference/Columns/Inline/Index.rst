@@ -30,20 +30,6 @@ on a per-table-basis.
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
-   Scope
-         Scope
-
 
 .. container:: table-row
 
@@ -646,8 +632,12 @@ on a per-table-basis.
 .. ###### END~OF~TABLE ######
 
 
-((generated))
-"""""""""""""
+.. _columns-inline-examples:
+
+Examples
+""""""""
+
+.. _columns-inline-examples-comma-list:
 
 Example “comma-separated list”:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -679,6 +669,8 @@ separated list, so no “foreign\_field” is used here. ::
      'palettes' => ...
    );
 
+
+.. _columns-inline-examples-asymmetric-mm:
 
 Example “attributes on anti-symmetric intermediate table”:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -753,6 +745,8 @@ relation from both sides (parent and child). ::
      ),
    );
 
+
+.. _columns-inline-examples-symmetric-mm:
 
 Example “attributes on symmetric intermediate table”:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

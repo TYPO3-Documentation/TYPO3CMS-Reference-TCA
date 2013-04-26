@@ -26,20 +26,6 @@ like.
 
 .. ### BEGIN~OF~TABLE ###
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
-   Scope
-         Scope
-
 
 .. container:: table-row
 
@@ -838,6 +824,7 @@ like.
          (for instance set it to 1000 or so).
 
    Scope
+         Display
 
 
 .. container:: table-row
@@ -883,6 +870,7 @@ like.
          - **width** (since TYPO3 CMS 6.0): Set a custom width of the tree select field in pixels.
 
    Scope
+         Display
 
 
 .. container:: table-row
@@ -1057,6 +1045,7 @@ like.
          is an example where such a configuration is used.
 
    Scope
+         Display / Proc.
 
 
 .. container:: table-row

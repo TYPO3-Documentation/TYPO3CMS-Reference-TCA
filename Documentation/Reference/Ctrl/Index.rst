@@ -38,21 +38,6 @@ Reference
 .. container:: table-row
 
    Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
-   Scope
-         Scope
-
-
-.. container:: table-row
-
-   Key
          title
 
    Datatype
@@ -309,6 +294,7 @@ Reference
          Hide this table in record listings.
 
    Scope
+         Display
 
 
 .. container:: table-row
@@ -868,7 +854,7 @@ Reference
          records (including pages) can be created on the page.
 
    Scope
-         Proc / Display
+         Proc. / Display
 
 
 .. container:: table-row
@@ -890,7 +876,7 @@ Reference
          original.
 
    Scope
-         Proc
+         Proc.
 
 
 .. container:: table-row
@@ -1298,7 +1284,7 @@ Reference
          (maxitems <=1) saving its value into an integer field in the database.
 
    Scope
-         Proc / Display
+         Proc. / Display
 
 
 .. container:: table-row
@@ -1323,9 +1309,7 @@ Reference
          passthrough type.
 
    Scope
-         Proc /
-
-         Display
+         Proc. / Display
 
 
 .. container:: table-row
@@ -1368,6 +1352,7 @@ Reference
          using this translation method.*
 
    Scope
+         Proc.
 
 
 .. container:: table-row
@@ -1383,7 +1368,7 @@ Reference
          explanations.
 
    Scope
-         Proc / Display
+         Proc. / Display
 
 
 .. container:: table-row
@@ -1411,7 +1396,7 @@ Reference
          the undo function to also work on this field.
 
    Scope
-         Proc / Display
+         Proc. / Display
 
 
 .. container:: table-row
@@ -1553,6 +1538,7 @@ Reference
          editing backend users without having to go to the Live workspace.
 
    Scope
+        Special
 
 
 .. container:: table-row
@@ -1778,20 +1764,6 @@ are meant to be used as keys of the "security" property array::
 
 
 .. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   Key
-         Key
-
-   Datatype
-         Datatype
-
-   Description
-         Description
-
-   Scope
-         Scope
 
 
 .. container:: table-row
