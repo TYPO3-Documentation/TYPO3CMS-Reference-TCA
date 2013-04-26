@@ -69,6 +69,25 @@ They are described below.
 .. container:: table-row
 
    Key
+         dbType
+
+   Datatype
+         string
+
+   Description
+         This defines a specific database field type for the given field.
+
+         This is currently only supported for "date" or "datetime" fields
+         (i.e. :ref:`input-type fields <columns-input>` with the "eval" property set to "date" or "datetime")
+         and the :code:`db_type` can be set only to "date" or "datetime".
+
+   Scope
+         Database
+
+
+.. container:: table-row
+
+   Key
          default
 
    Datatype
