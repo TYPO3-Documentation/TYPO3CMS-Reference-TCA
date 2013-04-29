@@ -1,11 +1,4 @@
-﻿.. |img-81|     image:: ../../Images/manual_html_3cd9b3b7.png
-.. :height: 28
-.. :width: 28
-.. :align: left
-.. :border: 0
-.. :name: graphics85
-
-.. |img-82|     image:: ../../Images/manual_html_m32aedfa0.png
+﻿.. |img-82|     image:: ../../Images/manual_html_m32aedfa0.png
 .. :height: 276
 .. :width: 448
 .. :align: left

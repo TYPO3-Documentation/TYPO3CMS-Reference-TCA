@@ -55,16 +55,16 @@ Here's the complete code::
    t3lib_extMgm::addToAllTCAtypes('fe_users', 'tx_examples_options;;;;1-1-1, tx_examples_special');
 
 First of all, the fields that we want to add are detailed according to
-the $TCAsyntax for columns. This configuration is stored in the
-$temporaryColumns array.
+the :code:`$TCAsyntax` for columns. This configuration is stored in the
+:code:`$temporaryColumns` array.
 
-After that come three precise steps:
+After that come two additional steps:
 
-- second the columns are actually added to the table by using
-  t3lib\_extMgm::addTCAcolumns().
+- first the columns are actually added to the table by using
+  :code:`t3lib_extMgm::addTCAcolumns()`.
 
-- lastly the fields are added to the "types" definition of the
-  "fe\_users" table by using t3lib\_extMgm::addToAllTCAtypes(). It is
+- then the fields are added to the "types" definition of the
+  "fe\_users" table by using :code:`t3lib_extMgm::addToAllTCAtypes()`. It is
   possible to be more fine-grained.
 
 This does not create the corresponding fields in the database. The new
@@ -75,14 +75,15 @@ extension::
            tx_examples_options int(11) DEFAULT '0' NOT NULL,
            tx_examples_special varchar(255) DEFAULT '' NOT NULL
    );
-   |img-81|
 
-**Caution**
 
-The above statement uses the SQL CREATE TABLE statement. This is the
-way TYPO3 expects it to be. The Extension Manager will automatically
-transform this into a ALTER TABLE statement when it detects that the
-table already exists.
+.. warning::
+
+   The above statement uses the SQL CREATE TABLE statement. This is the
+   way TYPO3 expects it to be. The Extension Manager will automatically
+   transform this into a ALTER TABLE statement when it detects that the
+   table already exists.
+
 
 By default new fields are added at the bottom of the form when editing
 a record from that table. If the table uses tabs, new fields are added
@@ -90,7 +91,9 @@ at the bottom of the "Extended" tab (this tab is created if it does
 not exist). The following screenshot shows the placement of the two
 new fields when editing a "fe\_users" record:
 
-|img-82| The next example shows how to place a field more precisely.
+|img-82|
+
+The next example shows how to place a field more precisely.
 
 
 .. _extending-examples-ttcontent:
@@ -132,7 +135,9 @@ in this case "visibility".
 
 The result is the following:
 
-|img-83| Because we added the field into an existing palette and after a
+|img-83|
+
+Because we added the field into an existing palette and after a
 specific field (as per the "after:linkToTop" directive), it gets added
 "inside" the form and not in the "Extended" tab.
 
