@@ -205,10 +205,16 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          displayCond
 
    Datatype
-         string
+         string/array
 
    Description
-         Contains a condition rule for whether to display the field or not.
+         Contains one or more condition rules for whether to display the field or not.
+         Conditions can be grouped and nested using boolean operators :code:`AND`
+         or :code:`OR` as array keys. See examples below.
+
+         .. note::
+
+            Multiple conditions are possible only since TYPO3 CMS 6.1.
 
          A rule is a string divided into several parts by ":" (colons).
 
@@ -287,10 +293,9 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          level is taken from the same language.
 
          The field-values of the FlexForm-parent record are prefixed with
-         "parentRec.". These fields can be used like every other field (since
-         TYPO3 4.3).
+         "parentRec.". These fields can be used like every other field.
 
-         **Example:**
+         **Examples:**
 
          This example will require the field named "tx\_templavoila\_ds" to be
          true, otherwise the field for which this rule is set will not be
@@ -304,9 +309,20 @@ This table shows the keys of the ['columns'][ *field name* ] array:
 
             'displayCond' => 'EXT:static_info_tables:LOADED:true',
 
-         This example would require the header-field of the FlexForm-parent
+         The two above conditions could be combined to be both required::
+
+            'displayCond' => array(
+            	AND => array(
+            		'FIELD:tx_templavoila_ds:REQ:true',
+            		'EXT:static_info_tables:LOADED:true',
+            	)
+            )
+
+         This last example would require the header-field of the FlexForm-parent
          record to be true, otherwise the FlexForm field is not displayed
-         (works only within FlexForm datastructure definitions)::
+         (works only within FlexForm datastructure definitions):
+
+         .. code-block:: xml
 
             <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
 
