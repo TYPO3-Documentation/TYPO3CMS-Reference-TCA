@@ -30,7 +30,7 @@ they appear in the database)::
        ...
    );
 
-Here three tables, "pages", "tt\_content" and "tt\_myext" is shown as
+Here three tables, "pages", "tt\_content" and "tt\_myext", are shown as
 examples.
 
 
@@ -67,20 +67,11 @@ The general structure (looking at a single table) is as follows::
    );
 
 The following table provides a brief description of each the various
-sections of $TCA. Each table is covered in more details in its own
+sections of $TCA. Each section is covered in more details in its own
 chapter.
 
 
 .. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   Section
-         Section
-
-   Description
-         Description
-
 
 .. container:: table-row
 
@@ -99,8 +90,8 @@ chapter.
            columns contains the title value, which column defines the type value
            etc.
 
-         - properties which determines how it is processed by the system
-           (TCE).This includes publishing control, "deleted" flag, if the table
+         - properties which determine how it is processed by the system
+           (TCE).This includes publishing control, "deleted" flag, whether the table
            can only be edited by admin-users, may only exist in the tree root
            etc.
 
@@ -130,7 +121,7 @@ chapter.
          The "feInterface" section contains properties related to Front End
          editing of the table, mostly related to the feAdmin\_lib.
 
-         Is deprecated in the sense that it will still exist, but will not be
+         It is deprecated in the sense that it will still exist, but will not be
          (and should not be) extended further.
 
 
@@ -182,7 +173,7 @@ chapter.
          in the top-frame of the backend interface on request so they don't
          display inside the main form. In this way they are kind of hidden
          fields which are brought forth either by clicking an icon in the main
-         form or (more usually) when you place the cursor in a form field of
+         form or (more usual) when you place the cursor in a form field of
          the main form).
 
 

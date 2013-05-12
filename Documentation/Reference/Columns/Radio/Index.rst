@@ -86,7 +86,7 @@ Here you see radio buttons in action for the "Filemounts" records:
          (function reference)
 
    Description
-         PHP function which is called to fill / manipulate the array with
+         PHP function which is called to fill or manipulate the array with
          elements.
 
          The function/method will have an array of parameters passed to it

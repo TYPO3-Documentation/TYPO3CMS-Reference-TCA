@@ -292,8 +292,8 @@ features applied.
          this:
 
          |img-12| But if you either uncheck the checkbox or just enter the
-         value "123" you will an empty input field and no checkbox set -
-         however the value of the field  *will be* "123":
+         value "123" you will see an empty input field and no checkbox set -
+         however the value of the field *will be* "123":
 
          |img-13| This feature is useful for date-fields for instance. In such
          cases the checkbox will allow people to quickly remove the date

@@ -17,12 +17,12 @@ The [ctrl]section contains properties for the table in general.
 These properties are basically divided into two main categories:
 
 - properties which affect how the table is  *displayed* and handled in
-  the backend  *interface* .This includes which icon, what name, which
-  columns contains the title value, which column defines the type value
+  the backend  *interface*. This includes which icon, what name, which
+  column contains the title value, which column defines the type value
   etc.
 
-- properties which determines how it is processed by the system
-  (TCE).This includes publishing control, "deleted" flag, if the table
+- properties which determine how it is processed by the system
+  (TCE). This includes publishing control, "deleted" flag, whether the table
   can only be edited by admin-users, may only exist in the tree root
   etc.
 
@@ -55,7 +55,7 @@ Reference
 
          You can insert plain text values, but the preferred way is to enter a
          reference to a localized string. See the example below. Refer to the
-         localization section in " `Inside TYPO3 <#Localization%7Coutline>`_ "
+         localization section in `Inside TYPO3 <#Localization%7Coutline>`_
          for more details.
 
          **Example:** ::
@@ -164,7 +164,7 @@ Reference
          settings.
 
          When calling a method from a class, enter"[classname]->[methodname]".
-         The class name must be prefixed "user\_" or "tx\_". When using a
+         The class name must be prefixed with "user\_" or "tx\_". When using a
          function, just enter the function name. The function name must be
          prefixed "user\_" or "tx\_". The preferred way is to use a class and a
          method.
@@ -176,12 +176,12 @@ Reference
             $params['table'] = $table;
             $params['row'] = $row;
 
-         The resulting title must be written to$params['title']which is passed
+         The resulting title must be written to $params['title'] which is passed
          by reference.
 
          The second argument is a reference to the parent object.
 
-         **Note** : The function file must be included manually (e.g. include
+         **Note**: The function file must be included manually (e.g. include
          it in your ext\_tables.php file). When using a class, the preferred
          way is to declare it with the autoloader.
 
@@ -239,7 +239,7 @@ Reference
          will probably also affect how the record is used in the context where
          it belongs.
 
-         The most widely known usage of this feature is the Content Elements
+         The most widely known usage of this feature is the case of *Content Elements*
          where the "Type:" selector is defined as the "type" field and when you
          change that selector you will also get another rendering of the form:
 
@@ -254,7 +254,7 @@ Reference
 
             'type' => 'record_type'
 
-         The "record\_type" field can takes values ranging from 0 to 2.
+         The "record\_type" field can take values ranging from 0 to 2.
          Accordingly we define types for the same values. Each type defines
          which fields will be displayed in the BE form. Types are discussed in
          more details later on. ::
@@ -269,7 +269,7 @@ Reference
          value of a related record, i.e. switch using the type field of a
          foreign table. The syntax is "relation\_field:foreign\_type\_field".
 
-         **Example**
+         **Example:**
 
          Imagine two tables, related as parent and child. The child table has a
          relation to the parent table using a "select" field called "myparent"
@@ -328,7 +328,7 @@ Reference
    Description
          Pointing to the icon file to use for the table.
 
-         Icons should be dimensioned 16x16 pixels and of the GIF or PNG file
+         Icons should be dimensioned 16x16 pixels and of GIF or PNG file
          type.
 
          The value of the option can be any of these:
@@ -415,7 +415,7 @@ Reference
          array
 
    Description
-         Array of class names to use for the recordsThe keys must correspond
+         Array of class names to use for the records. The keys must correspond
          to the values found in the column referenced in the
          :code:`typeicon_column` property. The class names correspond to
          the backend's sprite icons.
@@ -467,7 +467,7 @@ Reference
 
             'thumbnail' => 'image',
 
-         The effect of the field can be see in listings in e.g. the "List"
+         The effect of the field can be seen in listings in e.g. the "List"
          module:
 
          |img-4| (You might have to enable "Show Thumbnails by default" in the
@@ -760,11 +760,11 @@ Reference
 
          - **-1: Can exist in both page tree and root.** Records can belong
            either to a page (positive "pid" field value) or exist in the root of
-           the page tree (where the "pid" field value will be 0 (zero))
+           the page tree (where the "pid" field value will be 0 (zero)).
            **Notice:** the -1 value will still select foreign\_table records for
            selector boxes only from root (pid=0)
 
-         **Notice** : The setting for "rootLevel" is ignored for records in the
+         **Notice**: The setting for "rootLevel" is ignored for records in the
          "pages" table (they are hardcoded to be allowed anywhere, equal to a
          "-1" setting of rootLevel).
 
@@ -925,16 +925,16 @@ Reference
          detects which of these fields are configured for a table and returns
          the proper WHERE clause SQL code for creating select queries.
 
-         There are the keys in the array you can use. Each of the values must
+         These are the keys in the array you can use. Each of the values must
          be a field name in the table which should be used for the feature:
 
-         **"disabled":** defining hidden-field of record
+         **"disabled":** defines hidden-field of record
 
-         **"starttime":** defining start time-field of record
+         **"starttime":** defines start time-field of record
 
-         **"endtime":** defining end time-field of record
+         **"endtime":** defines end time-field of record
 
-         **"fe\_group":** defining fe\_group-field of record
+         **"fe\_group":** defines fe\_group-field of record
 
          **Notice:** In general these fields do  *not* affect the access or
          display in the backend! They are primarily related to the frontend.
@@ -1202,7 +1202,7 @@ Reference
 
    Description
          Field name which is used to store the uid of a frontend user if the
-         record is created through fe\_adminLib
+         record is created through fe\_adminLib.
 
    Scope
          FE
@@ -1220,7 +1220,7 @@ Reference
 
    Description
          Field name which is used for storing the uid of a frontend group whose
-         members are allowed to edit through fe\_adminLib .
+         members are allowed to edit through fe\_adminLib.
 
    Scope
          FE
@@ -1303,7 +1303,7 @@ Reference
          If this value is found being set together with “languageField” then
          TCEforms will show the default translation value under the fields in
          the main form. This is very neat if translators are to see what they
-         are translating of course...
+         are translating.
 
          Must be configured in $TCA[<table>]['columns'], at least as a
          passthrough type.
@@ -1392,7 +1392,7 @@ Reference
          (clob/blob).
 
          You don't have to configure this field in $TCA[<table>]['columns'],
-         but if you do, select the “passthrough” type. That will enable that
+         but if you do, select the “passthrough” type. That will enable 
          the undo function to also work on this field.
 
    Scope

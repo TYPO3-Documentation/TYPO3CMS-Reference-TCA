@@ -1309,7 +1309,7 @@ Example - Adding wizards
 This example shows how wizards can be added to a selector box. The
 three typical wizards for a selector box is edit, add and list items.
 This enables the user to create new items in the look up table while
-being right at the selector box where he want to select them:
+being right at the selector box where he wants to select them:
 
 The configuration is rather long and looks like this (notice, that
 wizards are not exclusively available for selector boxes!)::
@@ -1360,8 +1360,7 @@ wizards are not exclusively available for selector boxes!)::
            )
    ),
 
-The part with the wizards is highlighted in bold. See the wizard
-section in this document for more information.
+See the wizard section in this document for more information.
 
 |img-27| Notice the configuration of "autoSizeMax". This value will make the
 height of the selector boxes adjust themselves automatically depending

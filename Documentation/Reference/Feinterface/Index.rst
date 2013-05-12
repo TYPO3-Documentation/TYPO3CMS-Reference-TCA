@@ -14,7 +14,7 @@
 The "feInterface" section contains properties related to Front End
 Editing of the table, mostly related to the feAdmin\_lib.
 
-Is deprecated in the sense that it will still exist, but will not be
+It is deprecated in the sense that it will still exist, but will not be
 (and should not be) extended further.
 
 

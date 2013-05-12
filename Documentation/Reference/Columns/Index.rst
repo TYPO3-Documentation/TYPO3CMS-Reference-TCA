@@ -90,13 +90,13 @@ This table shows the keys of the ['columns'][ *field name* ] array:
 
          - **exclude** – Field will not be shown in TCEforms if this record is a
            localization of the default language. (Works basically like a display
-           condition.)Excluded fields will not be copied when a language-copy is
-           made.May have frontend implications similar to “mergeIfNotBlank”.
+           condition.) Excluded fields will not be copied when a language-copy is
+           made. May have frontend implications similar to “mergeIfNotBlank”.
 
          - **mergeIfNotBlank** – Field will be editable but if the field value is
            blank the value from the default translation is used (this can be very
            useful for images shared from the default record). Requires frontend
-           support.In the backend the effect is that the field content is not
+           support. In the backend the effect is that the field content is not
            copied when a new “localization copy” is made.
 
          - **noCopy** – Like mergeIfNotBlank but without the implications for the
@@ -232,7 +232,7 @@ This table shows the keys of the ['columns'][ *field name* ] array:
 
              - **REQ** : Requires the field to have a "true" value. False values are
                "" (blank string) and 0 (zero) or if the field does not exist at all.
-               All else is true.For the REQ evaluation type Part3 of the rules string
+               All else is true. For the REQ evaluation type Part3 of the rules string
                must be the string "true" or "false". If "true" then the rules returns
                "true" if the evaluation is true. If "false" then the rules returns
                "true" if the evaluation is false.

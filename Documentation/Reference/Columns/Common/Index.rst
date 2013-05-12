@@ -27,8 +27,8 @@ They are described below.
          string
 
    Description
-         This defines the type of field. It must one of the values described in
-         the following chapters.
+         This defines the type of the field. It has to be one of the values
+         described in the following chapters.
 
    Scope
          Display

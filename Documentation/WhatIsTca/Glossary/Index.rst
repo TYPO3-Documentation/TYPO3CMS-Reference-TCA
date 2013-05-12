@@ -18,8 +18,8 @@ mentioned on the next pages:
   This class (class.t3lib\_tcemain) should ideally handle all updates to
   records made in the backend of TYPO3. The class will handle all the
   rules which may be applied to each table correctly. It will also
-  handle logging, versioning, history/undo features,
-  copying/moving/deleting etc.
+  handle logging, versioning, history and undo features,
+  and copying, moving, deleting etc.
 
 - **"list of":** Typically used like "list of field names". Whenever
   "list of" is used it means  *a list of strings separated by comma and

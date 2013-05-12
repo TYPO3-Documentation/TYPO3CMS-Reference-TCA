@@ -207,6 +207,6 @@ first checkbox will have bit-0 and the second bit-1::
            ),
    ),
 
-If we wanted both checkboxes to checked by default, we would set the
+If we wanted both checkboxes to be checked by default, we would set the
 "default" property to '3' (since this contains both bit-0 and bit-1).
 

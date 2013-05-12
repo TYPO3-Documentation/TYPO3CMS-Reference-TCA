@@ -23,8 +23,9 @@ records" content element):
 records in TYPO3. In this case image files:
 
 |img-36| One thing to notice about such a field is that the files that are
-referenced actually get moved into an internal file folder for TYPO3!
-It does not create references to the files' original positions!
+referenced actually get copied to an internal file folder (usually "uploads/...")
+which is managed by TYPO3 only. It does not create references to the 
+location of the original files!
 
 
 .. ### BEGIN~OF~TABLE ###
