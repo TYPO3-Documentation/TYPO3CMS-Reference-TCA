@@ -17,7 +17,7 @@ TCA Reference
       doc_core_tca
 
 :Version:
-      6.1.0
+      6.2.0-dev
 
 :Language:
       en
@@ -48,6 +48,12 @@ The content of this document is related to TYPO3,
 
 a GNU/GPL CMS/Framework available from `www.typo3.org
 <http://www.typo3.org/>`_
+
+.. warning::
+
+   Development of TYPO3 CMS is still a work in progress. This manual
+   incorporates the latest features, but should not be considered final yet.
+   Use with care.
 
 
 **Official documentation**
