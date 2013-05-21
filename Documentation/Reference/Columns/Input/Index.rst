@@ -110,6 +110,9 @@ features applied.
          - **trim** : The value in the field will have white spaces around it
            trimmed away.
 
+         - **null** : An empty value(string) will be stored as NULL in the database.
+           (requires a proper sql definition)
+
          - **date** : The field will evaluate the input as a date, automatically
            converting the input to a UNIX-time in seconds. The display will be
            like "12-8-2003" while the database value stored will be "1060639200".
