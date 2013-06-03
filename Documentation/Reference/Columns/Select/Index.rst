@@ -470,7 +470,7 @@ like.
          dontRemapTablesOnCopy
 
    Datatype
-
+         string
 
    Description
          (See same feature for type="group", internal\_type="db")
@@ -624,6 +624,7 @@ like.
          writing/reading MM relations
 
    Scope
+         Display / Proc.
 
 
 .. container:: table-row
@@ -638,6 +639,7 @@ like.
          Array of field=>value pairs to insert when writing new MM relations
 
    Scope
+         Proc.
 
 
 .. container:: table-row
@@ -652,6 +654,7 @@ like.
          Additional where clause used when reading MM relations.
 
    Scope
+         Display
 
 
 .. container:: table-row
@@ -668,6 +671,7 @@ like.
          relations will be buggy.
 
    Scope
+         Proc.
 
 
 .. container:: table-row
