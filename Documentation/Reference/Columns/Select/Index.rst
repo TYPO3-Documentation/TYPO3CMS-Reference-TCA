@@ -66,7 +66,7 @@ like.
            <=1)
 
          - Values must not contain "," (comma) and "\|" (vertical bar). If you
-           want to use “authMode” you should also refrain from using “:” (colon).
+           want to use "authMode" you should also refrain from using ":" (colon).
 
          - Third value is an optional icon.Default from "t3lib/gfx/" but if
            prepended with "../" it will be taken from any PATH\_site directory.
@@ -78,8 +78,8 @@ like.
          - Fourth value is an optional description text. This is only shown when
            the list is shown by renderMode "checkbox".
 
-         - Fifth value is reserved as keyword “EXPL\_ALLOW” or “EXPL\_DENY”. See
-           option “authMode” / “individual” for more details.
+         - Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
+           option "authMode" / "individual" for more details.
 
          **Example:**
 
@@ -526,8 +526,8 @@ like.
          - *tablenames* is used if multiple tables are allowed in the relation.
 
          - *uid* (auto-incremented and PRIMARY KEY) may be used if you need the
-           “multiple” feature (which allows the same record to be references
-           multiple times in the box. See “MM\_hasUidField”
+           "multiple" feature (which allows the same record to be references
+           multiple times in the box. See "MM\_hasUidField"
 
          - Other fields may exist, in particular if MM\_match\_fields is involved
            in the set up.
@@ -543,7 +543,7 @@ like.
               KEY uid_foreign (uid_foreign)
             );
 
-         **Example SQL #2** (Advanced with UID field, “ident” used with
+         **Example SQL #2** (Advanced with UID field, "ident" used with
          MM\_match\_fields and sorting\_foreign for bidirectional MM
          relations)::
 
@@ -666,7 +666,7 @@ like.
          boolean
 
    Description
-         If the “multiple” feature is used with MM relations you MUST set this
+         If the "multiple" feature is used with MM relations you MUST set this
          value to true and include a UID field! Otherwise sorting and removing
          relations will be buggy.
 
@@ -700,7 +700,7 @@ like.
          - **modListUser** - module-lists added for users.
 
          - **explicitValues** – List values that require explicit permissions to
-           be allowed or denied. (See “authMode” directive for the “select”
+           be allowed or denied. (See "authMode" directive for the "select"
            type).
 
          - **languages** – List system languages (sys\_language records from page
@@ -760,7 +760,7 @@ like.
 
    Description
          If set, this will override the default style of the selector box with
-         selected items (which is “width:200px”).
+         selected items (which is "width:200px").
 
          Applies for when maxitems is > 1
 
@@ -778,7 +778,7 @@ like.
 
    Description
          If set, this will override the default style of the selector box with
-         available items to select (which is “width:200px”).
+         available items to select (which is "width:200px").
 
          Applies for when maxitems is > 1
 
@@ -816,14 +816,14 @@ like.
            "foreign\_table" property is set. See "treeConfig" property
            configuration options.
 
-         When renderMode is “checkbox” or “singlebox” all values selected by
-         “foreign\_table” settings will automatically have their icon part in
+         When renderMode is "checkbox" or "singlebox" all values selected by
+         "foreign\_table" settings will automatically have their icon part in
          the items array set to the record icon (unless overruled by
-         “selicon\_field” of that table).
+         "selicon\_field" of that table).
 
-         **Notice:** “maxitems” and “minitems” are not enforced in the browser
+         **Notice:** "maxitems" and "minitems" are not enforced in the browser
          for any of the render modes here! However they will be on the server.
-         It is recommended to set “minitems” to zero and “maxitems” to a very
+         It is recommended to set "minitems" to zero and "maxitems" to a very
          large number exceeding the possible number of values you can select
          (for instance set it to 1000 or so).
 
@@ -891,7 +891,7 @@ like.
          If used with bidirectional MM relations it must be set for both the
          native and foreign field configuration. Also, with MM relations in
          general you must use a UID field in the join table, see description
-         for “MM”
+         for "MM"
 
    Scope
          Display / Proc.
@@ -970,30 +970,30 @@ like.
    Description
          Authorization mode for the selector box. Keywords are:
 
-         - **explicitAllow** – All static values from the “items” array of the
+         - **explicitAllow** – All static values from the "items" array of the
            selector box will be added to a matrix in the backend user
            configuration where a value must be explicitlyselected if a user
            (other than admin) is allowed to use it!)
 
-         - **explicitDeny** – All static values from the “items” array of the
+         - **explicitDeny** – All static values from the "items" array of the
            selector box will be added to a matrix in the backend user
            configuration where a value must be explicitlyselected if a user
            should be denied access.
 
          - **individual** – State is individually set for each item in the
-           selector box. This is done by the keywords “ **EXPL\_ALLOW** ” and “
-           **EXPL\_DENY** ” entered at the 5. position in the item array (see
-           “items” configuration above). Items without any of these keywords can
+           selector box. This is done by the keywords " **EXPL\_ALLOW** " and "
+           **EXPL\_DENY** " entered at the 5. position in the item array (see
+           "items" configuration above). Items without any of these keywords can
            be selected as usual without any access restrictions applied.
 
          **Notice:** The authentication modes will work only with values that
-         are statically present in the “items” configuration. Any values added
+         are statically present in the "items" configuration. Any values added
          from foreign tables, file folder or by user processing will  *not* be
          configurable and the evaluation of such values is not guaranteed for!
 
          **maxitems > 1**
 
-         “authMode” works also for selector boxes with maxitems > 1. In this
+         "authMode" works also for selector boxes with maxitems > 1. In this
          case the list of values is traversed and each value is evaluated. Any
          disallowed values will be removed.
 
@@ -1022,11 +1022,11 @@ like.
          Keywords are:
 
          - **strict** - If set, then permission to edit the record will be
-           granted only if the “authMode” evaluates OK. The default is that a
-           record having an authMode configured field with a “non-allowed” value
+           granted only if the "authMode" evaluates OK. The default is that a
+           record having an authMode configured field with a "non-allowed" value
            can be edited – just the value of the authMode field cannot be set to
            a value that is not allowed. **Notice:** This works only when maxitems
-           <=1 (and no MM relations) since the “raw” value in the record is all
+           <=1 (and no MM relations) since the "raw" value in the record is all
            that is evaluated!
 
    Scope
@@ -1108,7 +1108,7 @@ set of options you can select from:
 
 In the configuration the elements are configured by the "items" array.
 Each entry in the array contains pairs of label/value. Notice the
-third entry of the “items” array. It defines a  *divider* . This value
+third entry of the "items" array. It defines a  *divider* . This value
 cannot be selected. It only helps to divide the list of options with a
 label indicating a new section.
 
@@ -1376,7 +1376,7 @@ on the content in them. The result is as follows:
 Example – Bidirectional MM relations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For a table, “user\_testmmrelations\_two”, we have a field “rel” with
+For a table, "user\_testmmrelations\_two", we have a field "rel" with
 configured with MM relations::
 
               "rel" => Array (
@@ -1394,12 +1394,12 @@ configured with MM relations::
                            )
                    ),
 
-The MM table is called “user\_testmmrelations\_two\_rel\_mm”, and the
-field “ident” is used to match on with the word “table\_two”. Doing
+The MM table is called "user\_testmmrelations\_two\_rel\_mm", and the
+field "ident" is used to match on with the word "table\_two". Doing
 this enables us to use the  *same MM* table for other fields using
-other keywords for the “ident” field.
+other keywords for the "ident" field.
 
-In another table “user\_testmmrelations\_one” a field called “rel2”
+In another table "user\_testmmrelations\_one" a field called "rel2"
 constitutes the foreign side of the bidirectional relation::
 
               "rel2" => Array (
@@ -1417,10 +1417,10 @@ constitutes the foreign side of the bidirectional relation::
                            )
                    ),
 
-Notice how in both cases “ foreign\_table” points to the table name of
+Notice how in both cases " foreign\_table" points to the table name of
 the other. Also they use the exact same set up except in the foreign
-side case above the field “MM\_opposite\_field” is set to “rel” - the
-name of the field in table “user\_testmmrelations\_two"!
+side case above the field "MM\_opposite\_field" is set to "rel" - the
+name of the field in table "user\_testmmrelations\_two"!
 
 The SQL looks like::
 
@@ -1448,7 +1448,7 @@ In the backend the form could look like:
 to records in table one.
 
 If we look at one of the records from table one we see the relation
-made from “TWO (1)”:
+made from "TWO (1)":
 
 |img-29| |img-30| In the database it looks like this:
 
@@ -1482,8 +1482,8 @@ MM relations can be used with flexforms. Here is an example:
        </TCEforms>
    </rel1>
 
-As you can see the same element (titled “3-3 (UID-3)”) is selected
-twice (the “<multiple>” flag has been set) – and as a consequence
+As you can see the same element (titled "3-3 (UID-3)") is selected
+twice (the "<multiple>" flag has been set) – and as a consequence
 <MM\_hasUidField>1</MM\_hasUidField> is set as well. In fact this
 configuration is  *sharing the MM table* with another field (see the
 previous example) so the configuration ::
@@ -1493,7 +1493,7 @@ previous example) so the configuration ::
                </MM_match_fields>
 
 makes sure all MM relations for this flexform field is marked with the
-string “table\_one\_flex”.
+string "table\_one\_flex".
 
 In the database the entry looks like:
 

@@ -79,7 +79,7 @@ This table shows the keys of the ['columns'][ *field name* ] array:
    Description
          Localization mode.
 
-         Only active if the ctrl-directive “languageField” is set.
+         Only active if the ctrl-directive "languageField" is set.
 
          The main relevance is when a record is localized by an API call in
          TCEmain that makes a copy of the default language record. You can
@@ -91,22 +91,22 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          - **exclude** – Field will not be shown in TCEforms if this record is a
            localization of the default language. (Works basically like a display
            condition.) Excluded fields will not be copied when a language-copy is
-           made. May have frontend implications similar to “mergeIfNotBlank”.
+           made. May have frontend implications similar to "mergeIfNotBlank".
 
          - **mergeIfNotBlank** – Field will be editable but if the field value is
            blank the value from the default translation is used (this can be very
            useful for images shared from the default record). Requires frontend
            support. In the backend the effect is that the field content is not
-           copied when a new “localization copy” is made.
+           copied when a new "localization copy" is made.
 
          - **noCopy** – Like mergeIfNotBlank but without the implications for the
            frontend; The field is just not copied.
 
          - **prefixLangTitle** – The field will get copied, but the content is
            prefixed with the title of the language. Works only for field types
-           like “text” and “input”
+           like "text" and "input"
 
-         As mentioned above if “l10n\_mode” is not set for a given field, that
+         As mentioned above if "l10n\_mode" is not set for a given field, that
          field is just copied as is to the translated record.
 
          (Doesn't apply to flexform fields.)
@@ -272,7 +272,7 @@ This table shows the keys of the ['columns'][ *field name* ] array:
            alternative language. Works only for <langChildren>=1, otherwise it
            has no effect.
 
-           - Part 1: Keywords: “except\_admin” = will still show field to admin
+           - Part 1: Keywords: "except\_admin" = will still show field to admin
              users
 
          - **HIDE\_FOR\_NON\_ADMINS:** This will hide the field for all non-admin
@@ -285,7 +285,7 @@ This table shows the keys of the ['columns'][ *field name* ] array:
 
            - Part 1 is the type:
 
-             - **IS** : Part 2 is “true” or “false”: If true, the field is shown only
+             - **IS** : Part 2 is "true" or "false": If true, the field is shown only
                if the record is a version (pid == -1)
 
          For FlexForm elements the fields are tags on same level. If
@@ -339,11 +339,11 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          string
 
    Description
-         In the “types” configuration of a field you can specify on position 4
+         In the "types" configuration of a field you can specify on position 4
          a string of "extra configuration". This string will be the default
          string of extra options for a field regardless of types configuration.
          For instance this can be used to create an RTE field without having to
-         worry about special configuration in “types” config.
+         worry about special configuration in "types" config.
 
          This is also the way by which you can enable the RTE for FlexForm
          fields.

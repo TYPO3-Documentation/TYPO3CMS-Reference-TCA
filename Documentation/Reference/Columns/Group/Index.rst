@@ -70,7 +70,7 @@ location of the original files!
            this carefully.  *Your references will be broken if you delete
            referenced files in the filesystem!*
 
-         - “folder” - this will create a field where folders can be attached to
+         - "folder" - this will create a field where folders can be attached to
            the record
 
          - "db" - this will create a field where database records can be attached
@@ -410,7 +410,7 @@ location of the original files!
 
          **Warning:** do NOT add a trailing slash (/) to the upload folder
          otherwise the full path stored in the references will contain a double
-         slash (e.g. “uploads/pictures//stuff.png”).
+         slash (e.g. "uploads/pictures//stuff.png").
 
    Scope
          Proc.
@@ -513,7 +513,7 @@ location of the original files!
 
    Description
          If set, this will override the default style of element selector box
-         (which is “width:200px”).
+         (which is "width:200px").
 
    Scope
          Display
@@ -533,7 +533,7 @@ location of the original files!
          If used with bidirectional MM relations it must be set for both the
          native and foreign field configuration. Also, with MM relations in
          general you must use a UID field in the join table, see description
-         for “MM”
+         for "MM"
 
    Scope
          Display / Proc.

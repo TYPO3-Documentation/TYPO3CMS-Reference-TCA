@@ -15,7 +15,7 @@
 "Palettes" represent a way to move less frequently used form fields
 out of sight. Palettes are groups of field which are associated with
 another field in the main form. When this field is activated the
-palette fields are displayed. In the backend, “palettes” are known as
+palette fields are displayed. In the backend, "palettes" are known as
 "secondary options".
 
 Let's add a palette to the example from the previous section. The
@@ -25,8 +25,8 @@ palette itself is defined like this::
            '1' => array('showitem' => 'enforce_date'),
    ),
 
-Now we change the “types” configuration to link the palette to the
-“some\_date” field::
+Now we change the "types" configuration to link the palette to the
+"some\_date" field::
 
    '0' => array('showitem' => 'hidden, record_type, title, some_date;;1 '),
 
@@ -34,8 +34,8 @@ When a palette exists, an icon appears next to the relevant field:
 
 |img-57| Clicking on this icon, the palette is revealed:
 
-|img-58| |img-59| Palette display can be activated permanently by checking the “Show
-secondary options” box at the bottom of any forms screen:
+|img-58| |img-59| Palette display can be activated permanently by checking the "Show
+secondary options" box at the bottom of any forms screen:
 
 |img-52| **Note**
 

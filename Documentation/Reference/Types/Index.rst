@@ -25,7 +25,7 @@ Required configuration
 Let's take the internal notes (sys\_note) as an example. The input
 form looks like this:
 
-|img-53| It corresponds to the following “types” configuration::
+|img-53| It corresponds to the following "types" configuration::
 
    'types' => array(
            '0' => array('showitem' => 'category;;;;2-2-2, author, email, personal, subject;;;;3-3-3, message')
@@ -42,8 +42,8 @@ Optional possibilities
 
 The power of the "types"-configuration becomes clear when you want the
 form composition of a record to depend on a value from the record.
-Let's look at the “dummy” table from the “examples” extension. The
-“ctrl” section of its TCA looks like this::
+Let's look at the "dummy" table from the "examples" extension. The
+"ctrl" section of its TCA looks like this::
 
    $TCA['tx_examples_dummy'] = array(
            'ctrl' => array(
@@ -62,8 +62,8 @@ Let's look at the “dummy” table from the “examples” extension. The
            )
    );
 
-The line in bold indicates that the field called “record\_type” will
-used to indicate the “type” of any given record of the table. Let's
+The line in bold indicates that the field called "record\_type" will
+used to indicate the "type" of any given record of the table. Let's
 look at how this field is defined::
 
    'record_type' => array(
@@ -80,9 +80,9 @@ look at how this field is defined::
    ),
 
 There's nothing unusual here. It's a pretty straightforward select
-field, with three options. Finally, in the “types” section, we defined
+field, with three options. Finally, in the "types" section, we defined
 what fields should appear and in what order for every value of the
-“type” field::
+"type" field::
 
    'types' => array(
            '0' => array('showitem' => 'hidden, record_type, title, some_date '),
@@ -90,11 +90,11 @@ what fields should appear and in what order for every value of the
            '2' => array('showitem' => 'title, some_date, hidden, record_type '),
    ),
 
-The result if the following display when type “Normal” is chosen:
+The result if the following display when type "Normal" is chosen:
 
-|img-54| Changing to type “Short” reloads the form and displays the following:
+|img-54| Changing to type "Short" reloads the form and displays the following:
 
-|img-55| |img-56| And finally, type “Weird” also shows all fields, but in a different
+|img-55| |img-56| And finally, type "Weird" also shows all fields, but in a different
 order:
 
 
@@ -148,10 +148,10 @@ editing form. If you do, the field will not detect the value properly.
              section).
 
            - Part 4: Special configuration (split by colon ( : )), e.g. 'nowrap'
-             and 'richtext[ *(list of keys or \*)* ]' (see “Additional $TCA
-             features”)
+             and 'richtext[ *(list of keys or \*)* ]' (see "Additional $TCA
+             features")
 
-           - Part 5: Form style codes (see “Visual style of TCEforms”)
+           - Part 5: Form style codes (see "Visual style of TCEforms")
 
          Notice: Instead of a real field name you can insert "--div--" and you
          should have a divider line shown. However this is not rendered by
@@ -211,8 +211,8 @@ editing form. If you do, the field will not detect the value properly.
 
          **Syntax:**
 
-         “[field value]” => “[comma-separated list of fields (from the main
-         types-config) which are excluded]”
+         "[field value]" => "[comma-separated list of fields (from the main
+         types-config) which are excluded]"
 
 
 .. container:: table-row
@@ -231,12 +231,12 @@ editing form. If you do, the field will not detect the value properly.
 
          **Syntax:**
 
-         “[value]” => “[ comma-separated list of fields which are added]
+         "[value]" => "[ comma-separated list of fields which are added]
 
          **Notice:** that any transformation configuration used by TCE will NOT
          work because that configuration is visible for the TCEforms class only
          during the drawing of fields. In other words any configuration in this
-         list of fields will work for display only.”
+         list of fields will work for display only."
 
 
 .. container:: table-row
@@ -280,8 +280,8 @@ editing form. If you do, the field will not detect the value properly.
    Description
          See "bitmask\_value\_field"
 
-         “[+/-][bit-number]” => “[comma-separated list of fields (from the main
-         types-config) excluded]”
+         "[+/-][bit-number]" => "[comma-separated list of fields (from the main
+         types-config) excluded]"
 
 
 .. ###### END~OF~TABLE ######

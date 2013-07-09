@@ -15,7 +15,7 @@ as "TCEforms") can be controlled down to fine detail. The fifth
 parameter in the $TCA/types configuration is used for this.
 
 The value consists of three integer pointers separated by a dash
-(“-”). The first parameter points to a color scheme, the second points
+("-"). The first parameter points to a color scheme, the second points
 to a style scheme for the form elements and the third points to the a
 border scheme for the table surrounding all form elements until the
 next border is defined.
@@ -191,7 +191,7 @@ Reference table:
            "0" and if index "0" is not defined, based on the general mainColors
            in $TBE\_STYLES)
 
-         - Setting a color value to dash (“-”) will make it transparent (or just
+         - Setting a color value to dash ("-") will make it transparent (or just
            not set).
 
          Class attributes are set only if there was a class value set. There

@@ -26,7 +26,7 @@ checking functions.
 Default soft reference parsers
 """"""""""""""""""""""""""""""
 
-The class “t3lib\_softrefproc” contains generic parsers for the most
+The class "t3lib\_softrefproc" contains generic parsers for the most
 well-known types which are default for most TYPO3 installations. This
 is the list of the possible keys:
 
@@ -36,7 +36,7 @@ is the list of the possible keys:
 .. container:: table-row
 
    softref key
-         “softref” key
+         "softref" key
 
    Description
          Description
@@ -167,9 +167,9 @@ User-defined soft reference parsers
 Soft References can also be user-defined. It is easy to set them up by
 simply adding new keys in
 $TYPO3\_CONF\_VARS['SC\_OPTIONS']['GLOBAL']['softRefParser']. Use key
-names based on the extension you put it in, e.g. “tx\_myextensionkey”.
+names based on the extension you put it in, e.g. "tx\_myextensionkey".
 
 The class containing the soft reference parser must have a function
-named “findRef”. Please refer to the class “t3lib\_softrefproc” from
+named "findRef". Please refer to the class "t3lib\_softrefproc" from
 t3lib/ for the API to use and return.
 

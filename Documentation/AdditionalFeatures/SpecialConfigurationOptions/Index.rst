@@ -105,7 +105,7 @@ colon (:). See examples below.
          fixed-font
 
    Description
-         Use a monospace font in “textarea” type fields.
+         Use a monospace font in "textarea" type fields.
 
    Value syntax
          [no options]
@@ -119,7 +119,7 @@ colon (:). See examples below.
          enable-tab
 
    Description
-         Enable tabulator inside “textarea” type fields.
+         Enable tabulator inside "textarea" type fields.
 
    Value syntax
          [no options]
@@ -247,10 +247,10 @@ rte\_transform[] key/value pairs
          This sets an alternative path for Rich Text Editor images. Default is
          configured by the value
          TYPO3\_CONF\_VARS["BE"]["RTE\_imageStorageDir"] (default is
-         “uploads/”)
+         "uploads/")
 
    Value syntax
-         path relative to PATH\_site, e.g. “uploads/rte\_test/”
+         path relative to PATH\_site, e.g. "uploads/rte\_test/"
 
    Examples
 
@@ -263,9 +263,9 @@ rte\_transform[] key/value pairs
 Example - Setting up Rich Text Editors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let's take another table from the “examples” extension to look at how
+Let's take another table from the "examples" extension to look at how
 to set up a text will with a RTE. The table is called
-“tx\_examples\_haiku” and it contains a column called “poem” on which
+"tx\_examples\_haiku" and it contains a column called "poem" on which
 we want to have the RTE. Its configuration looks like this::
 
    'poem' => array(
@@ -313,7 +313,7 @@ static\_write[] parameters
    Description
          The field name which contains the name of the file being edited. This
          filename should be relative to the path configured in
-         $TYPO3\_CONF\_VARS[“BE”][“staticFileEditPath”] (which is
+         $TYPO3\_CONF\_VARS["BE"]["staticFileEditPath"] (which is
          "fileadmin/static/" by default).
 
          The file  **must** exist and be writable.
@@ -380,7 +380,7 @@ Example - Write to static file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's go back to the above example and look at the second part of the
-“defaultExtras” configuration (in bold)::
+"defaultExtras" configuration (in bold)::
 
    'poem' => array(
            'exclude' => 0,
@@ -393,8 +393,8 @@ Let's go back to the above example and look at the second part of the
            'defaultExtras' => 'richtext[]:static_write[filename|poem]'
    )
 
-This configuration means that the content of the “poem” field will be
-written to the file given in “filename”. It looks like this in the BE:
+This configuration means that the content of the "poem" field will be
+written to the file given in "filename". It looks like this in the BE:
 
 |img-62| Before saving the content of "fileadmin/static/myhaiku.txt" must be::
 

@@ -12,7 +12,7 @@
 Wizards Configuration
 ^^^^^^^^^^^^^^^^^^^^^
 
-Wizards are configurable for some field types, namely “input”, “text”,
+Wizards are configurable for some field types, namely "input", "text",
 "select" and "group" types. They provide a way to insert helper-
 elements, links to wizard scripts etc.
 
@@ -34,7 +34,7 @@ are available for "group" or "select" type fields:
 Configuration of wizards
 """"""""""""""""""""""""
 
-The value of the “wizards” key in the field config-array is an array.
+The value of the "wizards" key in the field config-array is an array.
 Each key is yet another array which configures the individual wizards
 for a field. The order of the keys determines the order the wizards
 are displayed in. The key-values themselves play no important role
@@ -124,9 +124,9 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
    Description
          Determines the position of the wizard-icons/titles.
 
-         Default is “right”.
+         Default is "right".
 
-         Possible values are “left”, “top”, “bottom”.
+         Possible values are "left", "top", "bottom".
 
 
 .. container:: table-row
@@ -270,8 +270,8 @@ because it denotes what additional options are available.
    Description
          This is the icon representing the wizard.
 
-         If the first 3 chars are NOT “../” then the file is expected to be in
-         “t3lib/gfx/”. So to insert custom images, put them in “../typo3conf/”
+         If the first 3 chars are NOT "../" then the file is expected to be in
+         "t3lib/gfx/". So to insert custom images, put them in "../typo3conf/"
          or so. You can also prefix icons from extensions with
          "EXT:ext/[extension key]/directory.../". Generally, the format is the
          same as for referring to icons for selector box options.
@@ -289,8 +289,8 @@ because it denotes what additional options are available.
 
    Description
          If set, then the wizard is enabled only if declared in the Special
-         Configuration of specific types (using “wizards[ *list of wizard-keys*
-         ]”). See wizard section.
+         Configuration of specific types (using "wizards[ *list of wizard-keys*
+         ]"). See wizard section.
 
 
 .. container:: table-row
@@ -316,9 +316,9 @@ because it denotes what additional options are available.
 
    Description
          If set, then the real field will not be shown (but rendered as a
-         hidden field). In “hideParent” you can configure the non-editable
-         display of the content as if it was a field of the “none” type. The
-         options are the same as for the “config” key for “none” types.
+         hidden field). In "hideParent" you can configure the non-editable
+         display of the content as if it was a field of the "none" type. The
+         options are the same as for the "config" key for "none" types.
 
 
 .. ###### END~OF~TABLE ######
@@ -380,8 +380,8 @@ Script wizard
          PHP-script filename
 
    Description
-         If the first 3 chars are NOT “../” then the file is expected to be in
-         “typo3/”. So to link to custom script, put it in “../typo3conf/”. File
+         If the first 3 chars are NOT "../" then the file is expected to be in
+         "typo3/". So to link to custom script, put it in "../typo3conf/". File
          reference can be prefixed "EXT:[extension key]/" to point to a file
          inside an extension.
 
@@ -443,7 +443,7 @@ Popup and colorbox wizards
          boolean
 
    Description
-         See above, type “script”
+         See above, type "script"
 
 
 .. container:: table-row
@@ -455,7 +455,7 @@ Popup and colorbox wizards
          PHP-script filename
 
    Description
-         See above, type “script”
+         See above, type "script"
 
 
 .. container:: table-row
@@ -467,7 +467,7 @@ Popup and colorbox wizards
 
 
    Description
-         See above, type “script”
+         See above, type "script"
 
 
 .. container:: table-row
@@ -513,7 +513,7 @@ User-defined wizards
          boolean
 
    Description
-         See above, type “script”
+         See above, type "script"
 
 
 .. container:: table-row
@@ -536,7 +536,7 @@ User-defined wizards
 
          Two parameters are passed to the function/method: 1) An array with
          parameters, much like the ones passed to scripts. One key is special
-         though: the “item” key, which is passed by reference. So if you alter
+         though: the "item" key, which is passed by reference. So if you alter
          that value it is reflected  *back* ! 2) $this (reference to the
          TCEform-object).
 
@@ -633,12 +633,12 @@ Select wizards
          thereafter selected (this is a blank value and the label is the wizard
          title).
 
-         “select” wizards make no use of the icon.
+         "select" wizards make no use of the icon.
 
-         The “select” wizard's select-properties can be manipulated with the
-         same number of TSconfig options which are available for “real” select-
+         The "select" wizard's select-properties can be manipulated with the
+         same number of TSconfig options which are available for "real" select-
          types in TCEFORM.[table].[field]. The position of these properties is
-         “TCEFORM.[ *table* ].[ *field* ].wizards.[ *wizard-key* ]”.
+         "TCEFORM.[ *table* ].[ *field* ].wizards.[ *wizard-key* ]".
 
 
 .. container:: table-row
@@ -664,7 +664,7 @@ Select wizards
          etc...
 
    Type
-         Options related to the selection of elements known from “select” form-
+         Options related to the selection of elements known from "select" form-
          element type in $TCA.
 
    Description
@@ -705,7 +705,7 @@ Suggest wizards
          TCEFORM.suggest.[queryTable], see TSconfig manual).
 
          The configuration options are applied to each table queried by the
-         suggest wizard. There's a general “default” configuration that applies
+         suggest wizard. There's a general "default" configuration that applies
          to all tables. On top of that, there can be specific configurations
          for each table (use the table's name as a key). See wizard example
          below.
@@ -1019,9 +1019,9 @@ how it looks:
            )
    ),
 
-Notice the “params” array, which is passed to the user function that
+Notice the "params" array, which is passed to the user function that
 handles the wizard. And here's the code of the user function (from
-file class.tx\_examples\_tca.php of the “examples” extension)::
+file class.tx\_examples\_tca.php of the "examples" extension)::
 
    function someWizard($PA, $fObj) {
                    // Note that the information is passed by reference,
@@ -1051,8 +1051,8 @@ value of $PA['item'] since that value is passed by reference to the
 function and therefore doesn't need a return value - only to be
 changed. In that div, we use the color received as parameter.
 
-After that we create the JavaScript and the links for both the “+” and
-“-” buttons and we return the resulting HTML code.
+After that we create the JavaScript and the links for both the "+" and
+"-" buttons and we return the resulting HTML code.
 
 Use the debug() function to find more about what is available in the
 $PA array.
@@ -1063,8 +1063,8 @@ $PA array.
 Add a suggest wizard
 ~~~~~~~~~~~~~~~~~~~~
 
-As an example, let's look at the suggest wizard setup for the “General
-Record Storage page”. The wizard looks like this:
+As an example, let's look at the suggest wizard setup for the "General
+Record Storage page". The wizard looks like this:
 
 |img-68| And here's the wizard in action:
 
@@ -1087,7 +1087,7 @@ $TCA['pages']['columns']['storage\_pid']['config']['allowed'].
 
 The wizard can be configured differently for each of these tables. The
 settings in "default" is applied to all tables. In the example above,
-there's a special setting for the “pages” table.
+there's a special setting for the "pages" table.
 
 
 .. _wizards-configuration-examples-slider:

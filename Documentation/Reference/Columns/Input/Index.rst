@@ -169,7 +169,7 @@ features applied.
 
          - **unique** : Requires the field to be unique for the  *whole* table.
            (Evaluated on the server only). NOTICE: When selecting on unique-
-           fields, make sure to select using “AND pid>=0” since the field CAN
+           fields, make sure to select using "AND pid>=0" since the field CAN
            contain duplicate values in other versions of records (always having
            PID = -1). This also means that if you are using versioning on a table
            where the unique-feature is used you cannot set the field to be truly

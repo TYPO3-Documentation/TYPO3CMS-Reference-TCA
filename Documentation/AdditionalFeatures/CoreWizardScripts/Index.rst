@@ -68,7 +68,7 @@ the real form.
    Description
          pid of the new record.
 
-         You can use the “markers” (constants) as values instead if you wish::
+         You can use the "markers" (constants) as values instead if you wish::
 
             ###CURRENT_PID###
             ###THIS_UID###
@@ -84,12 +84,12 @@ the real form.
          setValue
 
    Type
-         “prepend”, “set”, “append”
+         "prepend", "set", "append"
 
    Description
-         “set” = the field will be forced to have the new value on return
+         "set" = the field will be forced to have the new value on return
 
-         “append”/“prepend” = the field will have the value appended/prepended.
+         "append"/"prepend" = the field will have the value appended/prepended.
 
          You must set one of these values.
 
@@ -100,7 +100,7 @@ the real form.
 As an example, let's look at BE user records where one can see several
 wizards in use:
 
-|img-71| The wizard appears as a “+” icon. When clicked, the user is directed
+|img-71| The wizard appears as a "+" icon. When clicked, the user is directed
 to a form where a new BE user group can be created:
 
 |img-72| When the new template is saved and the user clicks the close button of
@@ -155,7 +155,7 @@ The configuration looks like this::
    ),
 
 The part in bold is related to the Add-wizard. Note how it points to
-the "wizard\_add.php" script. The “params” array instructs the Add-
+the "wizard\_add.php" script. The "params" array instructs the Add-
 wizard how to handle the creation of the new record, i.e. which table,
 where to store it, etc.. In particular the "setValue" parameter tells
 the wizard script that the uid of the newly created record should be
@@ -194,7 +194,7 @@ configuration (just the Edit-wizard part)::
            )
    ),
 
-The wizard is set to type “popup” which makes it so that the selected
+The wizard is set to type "popup" which makes it so that the selected
 record will open in a new window. There are no parameters to pass
 along like there were for the Add-wizard.
 
@@ -251,7 +251,7 @@ back to the edit form.
    Description
          id of the records you wish to list.
 
-         You can use the “markers” (constants) as values instead if you wish::
+         You can use the "markers" (constants) as values instead if you wish::
 
             ###CURRENT_PID###
             ###THIS_UID###
@@ -299,7 +299,7 @@ wizard\_colorpicker.php
 The colorpicker wizard allows you to select a HTML color value from a
 user-friendly pop-up box. The wizard type is "colorbox" which will
 first of all add a colored box next to an input field. Here's how it
-looks in a “haiku” record of the “examples” extension:
+looks in a "haiku" record of the "examples" extension:
 
 |img-76| The color of the box is set to the value of the text field. Clicking
 the box will open a popup window with the full color picker wizard:

@@ -57,7 +57,7 @@ on a per-table-basis.
          (table name)
 
    Description
-         *[Must be set, there is no type “inline” without a foreign table]* The
+         *[Must be set, there is no type "inline" without a foreign table]* The
          table name of the child records is defined here. The table must be
          configured in $TCA.
 
@@ -86,19 +86,19 @@ on a per-table-basis.
            the clicked one expands.
 
          - *newRecordLinkAddTitle* (boolean) Adds the title of the foreign\_table
-           to the “New record” link.false: “Create new”true: “Create new <title
-           of foreign\_table>”, e.g. “Create new address”
+           to the "New record" link.false: "Create new"true: "Create new <title
+           of foreign\_table>", e.g. "Create new address"
 
          - *newRecordLinkPosition* (string) **Deprecated** : use
            *levelLinksPosition* instead
 
          - *levelLinksPosition* (string) Values: 'top', 'bottom', 'both', 'none' –
-           default: 'top'Defines where to show the “New record” link in relation
+           default: 'top'Defines where to show the "New record" link in relation
            to the child records.
 
          - *useCombination* (boolean)This is only useful on bidirectional
            relations using an intermediate table with attributes. In a
-           “combination” it is possible to edit the attributes AND the related
+           "combination" it is possible to edit the attributes AND the related
            child record itself.If using a foreign\_selector in such a case, the
            foreign\_unique property  **must** be set to the same field as the
            foreign\_selector.
@@ -258,8 +258,8 @@ on a per-table-basis.
          as a multi-select-box. On clicking on an item inside the selector a
          new relation is created.The foreign\_selector points to a field of the
          foreign\_table that is responsible for providing a selector-box – this
-         field on the foreign\_table usually has the type “select” and also has
-         a “foreign\_table” defined.
+         field on the foreign\_table usually has the type "select" and also has
+         a "foreign\_table" defined.
 
    Scope
          Display / Proc.
@@ -325,7 +325,7 @@ on a per-table-basis.
          If a field name for  *foreign\_sortby* is defined, then this is
          ignored.
 
-         Otherwise this is used as the “ORDER BY” statement to sort the records
+         Otherwise this is used as the "ORDER BY" statement to sort the records
          in the table when listed.
 
    Scope
@@ -346,7 +346,7 @@ on a per-table-basis.
          the parent record. On setting this configuration key together with
          *foreign\_field* , the child record knows what its parent record is –
          so the child record could also be used on other parent tables.This
-         issue is also known as “weak entity”.Do not confuse with
+         issue is also known as "weak entity".Do not confuse with
          *foreign\_table* or  *foreign\_field* . It has its own behavior.
 
    Scope
@@ -371,7 +371,7 @@ on a per-table-basis.
          when you edit a product, but of course you don't want to specify
          contradicting prices for one product (i.e. two different prices for
          the same customer\_group). That's why you would set foreign\_unique to
-         the field name “customer\_group”, to prevent that two prices for the
+         the field name "customer\_group", to prevent that two prices for the
          same customer group can be created for one product.
 
    Scope
@@ -422,7 +422,7 @@ on a per-table-basis.
 
          - *sorting* is a required field used for ordering the items.
 
-         The field which is configured as “inline” is not used for data-storage
+         The field which is configured as "inline" is not used for data-storage
          any more but rather it's set to the number of records in the relation
          on each update, so the field should be an integer.
 
@@ -588,7 +588,7 @@ on a per-table-basis.
    Description
          This works like foreign\_field, but in case of using bidirectional
          symmetric relations. symmetric\_field defines in which field on the
-         foreign\_table the uid of the “other” parent is stored.
+         foreign\_table the uid of the "other" parent is stored.
 
    Scope
          Display / Proc.
@@ -605,7 +605,7 @@ on a per-table-basis.
    Description
          If set, it overrides the label set in
          $TCA[<foreign\_table>]['ctrl']['label'] for the inline-view and only
-         if looking to a symmetric relation from the “other” side.
+         if looking to a symmetric relation from the "other" side.
 
    Scope
          Display / Proc.
@@ -623,7 +623,7 @@ on a per-table-basis.
          This works like foreign\_sortby, but in case of using bidirectional
          symmetric relations. Each side of a symmetric relation could have its
          own sorting, so symmetric\_sortby defines a field on the
-         foreign\_table where the sorting of the “other” side is stored.
+         foreign\_table where the sorting of the "other" side is stored.
 
    Scope
          Display / Proc.
@@ -639,11 +639,11 @@ Examples
 
 .. _columns-inline-examples-comma-list:
 
-Example “comma-separated list”:
+Example "comma-separated list":
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This combines companies with persons (employees) using a comma
-separated list, so no “foreign\_field” is used here. ::
+separated list, so no "foreign\_field" is used here. ::
 
    $TCA['company'] = array(
      'ctrl' => ...,
@@ -672,13 +672,13 @@ separated list, so no “foreign\_field” is used here. ::
 
 .. _columns-inline-examples-asymmetric-mm:
 
-Example “attributes on anti-symmetric intermediate table”:
+Example "attributes on anti-symmetric intermediate table":
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example combines companies with persons (employees) using an
 intermediate table. It is also possible to add attributes to every
-relation – in this example, an attribute “jobtype” on the
-“person\_company” table is defined. It is also possible to look at the
+relation – in this example, an attribute "jobtype" on the
+"person\_company" table is defined. It is also possible to look at the
 relation from both sides (parent and child). ::
 
    $TCA['person'] = array(
@@ -748,12 +748,12 @@ relation from both sides (parent and child). ::
 
 .. _columns-inline-examples-symmetric-mm:
 
-Example “attributes on symmetric intermediate table”:
+Example "attributes on symmetric intermediate table":
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example combines two persons with each other – imagine they are
 married. One person on the first side is the husband, and one person
-on the other side is the wife (or generally “spouse” in the example
+on the other side is the wife (or generally "spouse" in the example
 below). Symmetric relations combine object of the same with each other
 and it does not depend, from which side someone is looking to the
 relation – so the husband knows it's wife and the wife also know it's
