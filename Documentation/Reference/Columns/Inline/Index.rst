@@ -21,11 +21,11 @@ backend view. This type was first integrated in TYPO3 4.1.
 versioning. Only 1:n relationships are supported in workspaces (since
 TYPO3 4.5).
 
-|img-52| **Note**
+.. note::
 
-TCAdefaults.<table>.pid = <page id>can be used to define the pid of
-new child records. Thus, it's possible to have special storage folders
-on a per-table-basis.
+   TCAdefaults.<table>.pid = <page id> can be used to define the pid of
+   new child records. Thus, it's possible to have special storage folders
+   on a per-table-basis.
 
 
 .. ### BEGIN~OF~TABLE ###

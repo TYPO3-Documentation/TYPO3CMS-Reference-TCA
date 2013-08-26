@@ -6,10 +6,3 @@
 .. :name: graphics1
 .. :vspace: 8
 
-.. |img-52|     image:: ../../../Images/manual_html_f1a6686.png
-.. :height: 28
-.. :width: 28
-.. :align: left
-.. :border: 0
-.. :name: graphics44
-
