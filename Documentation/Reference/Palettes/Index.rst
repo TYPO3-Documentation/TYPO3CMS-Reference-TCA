@@ -37,10 +37,10 @@ When a palette exists, an icon appears next to the relevant field:
 |img-58| |img-59| Palette display can be activated permanently by checking the “Show
 secondary options” box at the bottom of any forms screen:
 
-|img-52| **Note**
+.. note::
 
-This checkbox may be hidden per TSConfig, so it may not appear all the
-time.
+   This checkbox may be hidden per TSconfig, so it may not appear all the
+   time.
 
 
 .. ### BEGIN~OF~TABLE ###

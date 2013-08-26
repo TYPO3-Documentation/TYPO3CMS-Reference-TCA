@@ -1,11 +1,4 @@
-﻿.. |img-52|     image:: ../../Images/manual_html_f1a6686.png
-.. :height: 28
-.. :width: 28
-.. :align: left
-.. :border: 0
-.. :name: graphics44
-
-.. |img-57|     image:: ../../Images/manual_html_m70879278.png
+﻿.. |img-57|     image:: ../../Images/manual_html_m70879278.png
 .. :height: 220
 .. :width: 373
 .. :align: left
