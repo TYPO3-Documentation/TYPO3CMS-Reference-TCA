@@ -701,7 +701,7 @@ Suggest wizards
          the user has typed at least 2 (minimumCharacters) characters in this
          field, a search will start and show a list of records matching the
          search word. The "suggest" wizard's properties can be configured
-         directly in TCA or in page TSConfig (TCEFORM.suggest.default,
+         directly in TCA or in page TSconfig (TCEFORM.suggest.default,
          TCEFORM.suggest.[queryTable], see TSconfig manual).
 
          The configuration options are applied to each table queried by the
