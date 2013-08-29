@@ -37,6 +37,7 @@ Properties
    `default`_     string
    `eval`_        string
    `is\_in`_      string
+   `mode`_        string
    `placeholder`_ string
    `rows`_        integer
    `type`_        string
@@ -279,6 +280,28 @@ placeholder
 
    Scope
          Display
+
+
+.. _columns-text-properties-mode:
+
+mode
+~~~~
+
+.. container:: table-row
+
+   Key
+         mode
+
+   Datatype
+         string (keywords)
+
+   Description
+         *(Since TYPO3 CMS 6.0)*
+
+         :ref:`See description for input-type field. <columns-input-properties-mode>`
+
+   Scope
+         Display / Proc.
 
 
 
