@@ -177,6 +177,9 @@ TYPO3 4.5).
          - *disableMovingChildrenWithParent* (boolean)Disables that child records
            get moved along with their parent records.
 
+         - *enableCascadingDelete* (boolean) Enables the deletion of child records
+           along with their parent record.
+
    Scope
          Display / Proc.
 
