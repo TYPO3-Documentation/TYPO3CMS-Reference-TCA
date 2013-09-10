@@ -857,21 +857,21 @@ like.
 
          - **appearance (array, optional)** :
 
-         - **showHeader (boolean)** : Whether to show the header of the tree that
-           contains a field to filter the records and allows to expand or
-           collapse all nodes
+           - **showHeader (boolean)** : Whether to show the header of the tree that
+             contains a field to filter the records and allows to expand or
+             collapse all nodes
 
-         - **expandAll (boolean)** : Whether to show the tree with all nodes
-           expanded
+           - **expandAll (boolean)** : Whether to show the tree with all nodes
+             expanded
 
-         - **maxLevels (integer)** : The maximal amount of levels to be rendered
-           (can be used to stop possible recursions)
+           - **maxLevels (integer)** : The maximal amount of levels to be rendered
+             (can be used to stop possible recursions)
 
-         - **nonSelectableLevels (list, default "0")** : Comma-separated list of
-           levels that will not be selectable, by default the root node (which is
-           "0") cannot be selected
+           - **nonSelectableLevels (list, default "0")** : Comma-separated list of
+             levels that will not be selectable, by default the root node (which is
+             "0") cannot be selected
 
-         - **width** (since TYPO3 CMS 6.0): Set a custom width of the tree select field in pixels.
+           - **width** (since TYPO3 CMS 6.0): Set a custom width of the tree select field in pixels.
 
    Scope
          Display
