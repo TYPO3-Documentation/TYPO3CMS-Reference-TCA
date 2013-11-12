@@ -122,6 +122,8 @@ like.
          The function/method will have an array of parameters passed to it
          (where the item-array is passed by reference in the key 'items'). By
          modifying the array of items, you alter the list of items.
+         Since TYPO3 CMS 6.2, your function/method may throw an exception which
+         will be displayed as a proper error message.
 
          For more information, see how user-functions are specified in the
          section about 'wizards' some pages below here.
