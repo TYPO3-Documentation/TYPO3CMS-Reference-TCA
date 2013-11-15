@@ -49,7 +49,7 @@ Reference
 
          For instance the "tt\_content" table is of course named "tt\_content"
          technically. However in the backend display it will be shown as
-         "Pagecontent" when the backend language is English. When another
+         "Page Content" when the backend language is English. When another
          language is chosen, like Danish, then the label "Sideindhold" is shown
          instead. This value is managed by the "title" value.
 

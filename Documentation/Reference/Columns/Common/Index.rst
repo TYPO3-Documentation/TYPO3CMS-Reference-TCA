@@ -172,7 +172,7 @@ They are described below.
             );
 
          This means that the "bodytext" field of the "tt\_content" table will
-         be searched in only for elements of type Text and Text with image.
+         be searched in only for elements of type Text and Text & Images.
          This helps make any search more relevant.
 
    Scope
