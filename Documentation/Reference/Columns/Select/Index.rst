@@ -49,6 +49,7 @@ Properties
    `default`_                                string
    `disableNoMatchingValueElement`_          boolean
    `dontRemapTablesOnCopy`_                  string
+   `enableMultiSelectFilterTextfield`_       boolean
    `exclusiveKeys`_                          string
    `localizeReferencesAtParentLocalization`_ boolean
    `items`_                                  array
@@ -71,6 +72,7 @@ Properties
    `MM\_table\_where`_                       string
    `MM\_hasUidField`_                        boolean
    `multiple`_                               boolean
+   `multiSelectFilterItems`_                 array
    `neg\_foreign\_table`_                    string
    `noIconsBelowSelect`_                     boolean
    `renderMode`_                             string
@@ -1266,6 +1268,104 @@ disableNoMatchingValueElement
    Scope
          Display
 
+
+
+.. _columns-select-properties-enablemultiselectfiltertextfield:
+
+enableMultiSelectFilterTextfield
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         enableMultiSelectFilterTextfield
+
+   Datatype
+         boolean
+
+   Description
+         *(Since TYPO3 CMS 6.2)*
+
+         If set, a textual field is shown above the available
+         items in which one can type words to filter the list
+         of available items.
+
+         Applies only when :ref:`maxitems <columns-select-properties-maxitems>` is > 1.
+
+         See :ref:`example and screenshot below <columns-select-properties-multiselectfilteritems>`.
+
+   Scope
+         Display
+
+
+
+.. _columns-select-properties-multiselectfilteritems:
+
+multiSelectFilterItems
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         multiSelectFilterItems
+
+   Datatype
+         array
+
+   Description
+         *(Since TYPO3 CMS 6.2)*
+
+         Contains predefined elements for the filter field enabled by
+         :ref:`enableMultiSelectFilterTextfield <columns-select-properties-enablemultiselectfiltertextfield>`.
+         On selecting a item, the list of available items
+         gets automatically filtered.
+
+         Each element in this array is in itself an array where:
+
+         - First value is the  **filter value of the item** .
+
+         - Second value is the  **item label** (string or LLL reference)
+
+         **Example:**
+
+         A configuration could look like this:
+
+         .. code-block:: php
+
+			'related_content' => array(
+				'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_content',
+				'config' => array(
+					'type' => 'select',
+					'foreign_table' => 'tt_content',
+					'foreign_table_where' => 'ORDER BY header ASC',
+					'size' => 5,
+					'minitems' => 0,
+					'maxitems' => 999,
+					'enableMultiSelectFilterTextfield' => TRUE,
+					'multiSelectFilterItems' => array(
+						array(
+							'image',
+							'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_content.image'
+						),
+						array(
+							'typo3',
+							'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_content.typo3'
+						),
+					)
+				)
+			)
+
+         And this is the result:
+
+         .. figure:: ../../../Images/TypeSelectItemsFilter.png
+            :alt: Filtering available items
+
+            Filtering available items with both predefined keywords and free input
+
+         Applies only when :ref:`maxitems <columns-select-properties-maxitems>` is > 1.
+
+   Scope
+         Display
 
 
 .. _columns-select-properties-authmode:
