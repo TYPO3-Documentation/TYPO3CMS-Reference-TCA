@@ -204,10 +204,10 @@ along like there were for the Add-wizard.
 wizard\_list.php
 """"""""""""""""
 
-This links to the Web>List module for only one table and allows the
+This links to the Web > List module for only one table and allows the
 user to manipulate stuff there. Again, the BE user records have it:
 
-|img-74| By clicking the icon the user gets taken to the Web>List module.
+|img-74| By clicking the icon the user gets taken to the Web > List module.
 Notice the "Back" link found in the upper left corner, which leads
 back to the edit form.
 

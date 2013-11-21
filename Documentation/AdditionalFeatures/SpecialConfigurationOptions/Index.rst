@@ -246,7 +246,7 @@ rte\_transform[] key/value pairs
    Description
          This sets an alternative path for Rich Text Editor images. Default is
          configured by the value
-         TYPO3\_CONF\_VARS["BE"]["RTE\_imageStorageDir"] (default is
+         TYPO3\_CONF\_VARS['BE']['RTE_imageStorageDir'] (default is
          "uploads/")
 
    Value syntax
@@ -313,7 +313,7 @@ static\_write[] parameters
    Description
          The field name which contains the name of the file being edited. This
          filename should be relative to the path configured in
-         $TYPO3\_CONF\_VARS["BE"]["staticFileEditPath"] (which is
+         $TYPO3\_CONF\_VARS['BE']['staticFileEditPath'] (which is
          "fileadmin/static/" by default).
 
          The file  **must** exist and be writable.
