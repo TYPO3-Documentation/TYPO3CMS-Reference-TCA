@@ -21,7 +21,7 @@ Example 1: extending the fe\_users table
 """"""""""""""""""""""""""""""""""""""""
 
 The "examples" extension adds two fields to the "fe\_users" table.
-Here's the complete code:
+Here's the complete code, taken from the :file:`ext_tables.php` file:
 
 .. code-block:: php
 
