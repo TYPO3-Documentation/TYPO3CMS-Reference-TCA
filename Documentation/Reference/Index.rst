@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
-.. include:: Images.txt
 
 
 $TCA array reference
@@ -18,7 +17,6 @@ $TCA array reference
 
    Ctrl/Index
    Interface/Index
-   Feinterface/Index
    Columns/Index
    Types/Index
    Palettes/Index

@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _ctrl:
@@ -16,8 +15,8 @@ The [ctrl]section contains properties for the table in general.
 
 These properties are basically divided into two main categories:
 
-- properties which affect how the table is  *displayed* and handled in
-  the backend  *interface*. This includes which icon, what name, which
+- properties which affect how the table is *displayed* and handled in
+  the backend *interface*. This includes which icon, what name, which
   column contains the title value, which column defines the type value
   etc.
 
@@ -32,8 +31,79 @@ These properties are basically divided into two main categories:
 Reference
 """""""""
 
+.. container:: ts-properties
 
-.. ### BEGIN~OF~TABLE ###
+   ==================================== ===========
+   Property                             Data Type
+   ==================================== ===========
+   `adminOnly`_                         boolean
+   `canNotCollapse`_                    boolean
+   `copyAfterDuplFields`_               string
+   `crdate`_                            string
+   `cruser\_id`_                        string
+   `default\_sortby`_                   string
+   `delete`_                            string
+   `dividers2tabs`_                     integer
+   `editlock`_                          string
+   `enablecolumns`_                     array
+   `EXT[extension\_key]`_               array
+   `fe\_cruser\_id`_                    string
+   `fe\_crgroup\_id`_                   string
+   `fe\_admin\_lock`_                   string
+   `groupName`_                         string
+   `hideAtCopy`_                        boolean
+   `hideTable`_                         boolean
+   `iconfile`_                          string
+   `is\_static`_                        boolean
+   `label`_                             string
+   `label\_alt`_                        string
+   `label\_alt\_force`_                 boolean
+   `label\_userFunc`_                   string
+   `languageField`_                     string
+   `mainpalette`_                       string
+   `origUid`_                           string
+   `prependAtCopy`_                     string
+   `readOnly`_                          boolean
+   `requestUpdate`_                     string
+   `rootLevel`_                         [0, 1, -1]
+   `thumbnail`_                         string
+   `searchFields`_                      string
+   `security`_                          array
+   `selicon\_field`_                    string
+   `selicon\_field\_path`_              string
+   `setToDefaultOnCopy`_                string
+   `shadowColumnsForNewPlaceholders`_   string
+   `sortby`_                            string
+   `title`_                             string
+   `transForeignTable`_                 string
+   `transOrigDiffSourceField`_          string
+   `transOrigPointerField`_             string
+   `transOrigPointerTable`_             string
+   `tstamp`_                            string
+   `type`_                              string
+   `typeicon\_column`_                  string
+   `typeicon_classes`_                  array
+   `typeicons`_                         array
+   `useColumnsForDefaultValues`_        string
+   `versioning\_followPages`_           boolean
+   `versioningWS`_                      boolean
+   `versioningWS\_alwaysAllowLiveEdit`_ boolean
+   ==================================== ===========
+
+Reference details
+"""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _ctrl-reference-title:
+
+title
+~~~~~
 
 .. container:: table-row
 
@@ -44,7 +114,7 @@ Reference
          string or LLL reference
 
    Description
-         Contains the  *system name* of the table. Is used for display in the
+         Contains the *system name* of the table. Is used for display in the
          backend.
 
          For instance the "tt\_content" table is of course named "tt\_content"
@@ -54,20 +124,23 @@ Reference
          instead. This value is managed by the "title" value.
 
          You can insert plain text values, but the preferred way is to enter a
-         reference to a localized string. See the example below. Refer to the
-         localization section in `Inside TYPO3 <#Localization%7Coutline>`_
+         reference to a localized string. See the :ref:`examples <ctrl-examples>`. Refer to the
+         Localization section in :ref:`Inside TYPO3 <t3inside:start>`.
          for more details.
 
-         **Example:** ::
+         **Example:**
 
-            $TCA['sys_template'] = array(
-                    'ctrl' => array(
-                            'title' => 'LLL:EXT:cms/locallang_tca.xml:sys_template',
+         For table "sys\_template".
 
-         In the above example the "LLL:" prefix tells the system to look up a
-         label from a localized file. The next prefix "EXT:cms" will look for
+         .. code-block:: php
+
+            'ctrl' => array(
+            	'title' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template',
+
+         In the above example the :code:`LLL:` prefix tells the system to look up a
+         label from a localized file. The next prefix code:`EXT:cms` will look for
          the data in the extension with the key "cms". In that extension the
-         file "locallang\_tca.xml" contains a XML structure inside of which one
+         file :file:`locallang_tca.xlf` contains a XML structure inside of which one
          label tag has an index attribute named "sys\_template". This tag
          contains the value to display in the default language. Other languages
          are provided by the language packs.
@@ -75,6 +148,12 @@ Reference
    Scope
          Display
 
+
+
+.. _ctrl-reference-label:
+
+label
+~~~~~
 
 .. container:: table-row
 
@@ -90,12 +169,20 @@ Reference
          Points to the field name of the table which should be used as the
          "title" when the record is displayed in the system.
 
-         **Note:** label\_userFunc overrides this property (but it is still
-         required).
+         .. note::
+
+            :ref:`label_userFunc <ctrl-reference-label-userfunc>`
+            overrides this property (but it is still required).
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-label-alt:
+
+label\_alt
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -111,22 +198,34 @@ Reference
          if that value is empty. May not be used consistently in the system,
          but should apply in most cases.
 
-         **Example:** ::
+         **Example:**
 
-            $TCA['tt_content'] = array(
-                    'ctrl' => array(
-                            'label' => 'header',
-                            'label_alt' => 'subheader,bodytext',
+         For table "tt\_content":
 
-         See t3lib\_BEfunc::getRecordTitle()
+         .. code-block:: php
 
-         Also see "label\_alt\_force"
+            'ctrl' => array(
+				'label' => 'header',
+				'label_alt' => 'subheader,bodytext',
 
-         **Note:** label\_userFunc overrides this property.
+         See t3lib\_BEfunc::getRecordTitle().
+
+         Also see :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
+
+         .. note::
+
+            :ref:`label_userFunc <ctrl-reference-label-userfunc>`
+            overrides this property.
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-label-alt-force:
+
+label\_alt\_force
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -137,16 +236,25 @@ Reference
          boolean
 
    Description
-         If set, then the "label\_alt" fields are always shown in the title
-         separated by comma.
+         If set, then the :ref:`label_alt <ctrl-reference-label-alt>` fields
+         are always shown in the title separated by comma.
 
          See t3lib\_BEfunc::getRecordTitle()
 
-         **Note:** label\_userFunc overrides this property.
+         .. note::
+
+            :ref:`label_userFunc <ctrl-reference-label-userfunc>`
+            overrides this property.
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-label-userfunc:
+
+label\_userFunc
+~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -158,10 +266,10 @@ Reference
 
    Description
          Function or method reference. This can be used whenever the label or
-         label\_alt options don't offer enough flexibility, e.g. when you want
+         :ref:`label_alt <ctrl-reference-label-alt>` options don't offer enough flexibility, e.g. when you want
          to look up another table to create your label. The result of this
-         function overrules the "label", "label\_alt" or "label\_alt\_force"
-         settings.
+         function overrules the :ref:`label <ctrl-reference-label>`, :ref:`label_alt <ctrl-reference-label-alt>`
+         or :ref:`label_alt_force <ctrl-reference-label-alt-force>` settings.
 
          When calling a method from a class, enter"[classname]->[methodname]".
          The class name must be prefixed with "user\_" or "tx\_". When using a
@@ -181,45 +289,46 @@ Reference
 
          The second argument is a reference to the parent object.
 
-         **Note**: The function file must be included manually (e.g. include
-         it in your ext\_tables.php file). When using a class, the preferred
-         way is to declare it with the autoloader.
+         .. note::
+
+            The function file must be included manually (e.g. include
+            it in your ext\_tables.php file). When using a class, the preferred
+            way is to declare it with the autoloader.
 
          **Example:**
 
          Let's look at what is done for the "haiku" table of the "examples"
-         extension. First, in the ext\_autoload.php file::
+         extension. The call to the user function appears
+         in the :file:`EXT:examples/Configuration/TCA/tx_examples_haiku.php` file:
 
-            $extensionPath = t3lib_extMgm::extPath('examples');
-            return array(
-                    'tx_examples_tca' => $extensionPath . 'class.tx_examples_tca.php',
-            );
+         .. code-block:: php
 
-         the necessary class is declared. The call to the user function appears
-         in the ext\_tables.php file::
+            'ctrl' => array(
+            	...
+            	'label'     => 'title',
+            	'label_userFunc' => 'Documentation\\Examples\\Userfuncs\\Tca->haikuTitle',
+            	...
 
-            $TCA['tx_examples_haiku'] = array(
-                    'ctrl' => array(
-                            ...
-                            'label'     => 'title',
-                            'label_userFunc' => 'tx_examples_tca
-            ->haikuTitle',
-                            ...
-                    )
-            );
+         In class :code:`Documentation\Examples\Userfuncs\Tca` is the code itself:
 
-         Finally in class.tx\_examples\_tca.php is the code itself::
+         .. code-block:: php
 
             public function haikuTitle(&$parameters, $parentObject) {
-                    $record = t3lib_BEfunc::getRecord($parameters['table'], $parameters['row']['uid']);
-                    $newTitle = $record['title'];
-                    $newTitle .= ' (' . substr(strip_tags($record['poem']), 0, 10) . '...)';
-                    $parameters['title'] = $newTitle;
+            	$record = \TYPO3\CMS\Backend\Utility\BackendUtility::getRecord($parameters['table'], $parameters['row']['uid']);
+            	$newTitle = $record['title'];
+            	$newTitle .= ' (' . substr(strip_tags($record['poem']), 0, 10) . '...)';
+            	$parameters['title'] = $newTitle;
             }
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -243,21 +352,29 @@ Reference
          where the "Type:" selector is defined as the "type" field and when you
          change that selector you will also get another rendering of the form:
 
-         |img-3| It is also used by the "doktype" field in the "pages" table.
+         .. figure:: ../../Images/CtrlType.png
+            :alt: The type selector
+
+            The type selector of content elements
+
+         It is also used by the "doktype" field in the "pages" table.
 
          **Example:**
 
          The "dummy" table from the "examples" extension defines different
          types. The field used for differentiating the types is the
-         "record\_type" field. Hence we have the following in the [ctrl]section
-         of the tx\_examples\_dummy table::
+         "record\_type" field. Hence we have the following in the :code:`['ctrl']` section
+         of the tx\_examples\_dummy table:
+
+         .. code-block:: php
 
             'type' => 'record_type'
 
          The "record\_type" field can take values ranging from 0 to 2.
          Accordingly we define types for the same values. Each type defines
-         which fields will be displayed in the BE form. Types are discussed in
-         more details later on. ::
+         which fields will be displayed in the BE form:
+
+         .. code-block:: php
 
             'types' => array(
                     '0' => array('showitem' => 'hidden, record_type, title, some_date '),
@@ -265,7 +382,9 @@ Reference
                     '2' => array('showitem' => 'title, some_date, hidden, record_type '),
             ),
 
-         Since TYPO3 4.7, it is also possible to make the type depend on the
+         See the :ref:`section about types <types>` for more details.
+
+         Since TYPO3 CMS 4.7, it is also possible to make the type depend on the
          value of a related record, i.e. switch using the type field of a
          foreign table. The syntax is "relation\_field:foreign\_type\_field".
 
@@ -275,12 +394,18 @@ Reference
          relation to the parent table using a "select" field called "myparent"
          with "foreign\_table" set to the parent table. Now, if you want the
          fields displayed in the child table to depend on a field called
-         "parenttype" of the parent table, you can define the [ctrl][type]of
+         "parenttype" of the parent table, you can define the :code:`['ctrl']['type']` of
          the child table like "myparent:parenttype".
 
    Scope
          Display / Proc.
 
+
+
+.. _ctrl-reference-hidetable:
+
+hideTable
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -296,6 +421,12 @@ Reference
    Scope
          Display
 
+
+
+.. _ctrl-reference-requestupdate:
+
+requestUpdate
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -316,6 +447,12 @@ Reference
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-iconfile:
+
+iconfile
+~~~~~~~~
 
 .. container:: table-row
 
@@ -338,8 +475,6 @@ Reference
            You may start that path with '../' if you like to get your icon from a
            folder in the PATH\_site path.
 
-         - For extensions, see example below.
-
          - **If there is just a filename:** It must exist in the "typo3/gfx/i/"
            folder.
 
@@ -347,16 +482,26 @@ Reference
            "gfx/i/[table\_name].gif". (This is an obsolete approach to use since
            the content of the "gfx/i/" folder should not be changed.)
 
+         - For extensions, see example below.
+
          **Example: How to assign an icon from an extension**
 
          For haikus from the "examples" extension, the icon is defined this
-         way::
+         way:
 
-            'iconfile' => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_examples_haiku.gif',
+         .. code-block:: php
+
+            'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('examples') . 'Resources/Public/Images/Haiku.png',
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-typeicon-column:
+
+typeicon\_column
+~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -373,18 +518,26 @@ Reference
          (The default icon is the one defined with the 'iconfile' value.)
 
          The values in the field referenced by this property must match entries
-         in the array defined either in the :code:`typeicons` or :code:`typeicon_classes`
+         in the array defined either in the :ref:`typeicon <ctrl-reference-typeicons>`
+         or :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`
          properties. If no match is found, the default icon is used.
 
          .. note::
+
             These options do not work for the pages-table, which is configured using
             the :code:`$PAGES_TYPES` array.
 
-         See examples in the related :code:`typeicons` or :code:`typeicon_classes` features.
+         See example in the related :ref:`typeicon_classes <ctrl-reference-typeicon-classes>` feature.
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-typeicons:
+
+typeicons
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -397,19 +550,27 @@ Reference
    Description
          Array of icons to use for the records. The keys must correspond
          to the values found in the column referenced in the
-         :code:`typeicon_column` property.
+         :ref:`typeicon_column <ctrl-reference-typeicon-column>` property.
 
          .. note::
-            Usage of this property is deprecated, please favor :code:`typeicon_classes`.
+
+            Usage of this property is deprecated, please favor
+            :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`.
 
    Scope
          Display
 
 
+
+.. _ctrl-reference-typeicon-classes:
+
+typeicon_classes
+~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
-         typeicon_classes
+         typeicon\_classes
 
    Datatype
          array
@@ -417,10 +578,11 @@ Reference
    Description
          Array of class names to use for the records. The keys must correspond
          to the values found in the column referenced in the
-         :code:`typeicon_column` property. The class names correspond to
-         the backend's sprite icons.
+         :ref:`typeicon_column <ctrl-reference-typeicon-column>` property.
+         The class names correspond to the backend's sprite icons.
 
          .. tip::
+
             The best way to view all available icons and their corresponding
             class names is to use extension "extdeveval", choose the function
             "Sprite Management" and click on "Available sprite icons".
@@ -430,7 +592,9 @@ Reference
 
          **Example:**
 
-         Taken from the configuration of the "tt\_content" table::
+         Taken from the configuration of the "tt\_content" table:
+
+         .. code-block:: php
 
               'typeicon_classes' => array(
                       'header' => 'mimetypes-x-content-header',
@@ -441,6 +605,12 @@ Reference
    Scope
          Display
 
+
+
+.. _ctrl-reference-thumbnail:
+
+thumbnail
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -463,20 +633,33 @@ Reference
 
          For the "tt\_content" table this option points to the field "image"
          which contains the list of images that can be attached to the content
-         element::
+         element:
+
+         .. code-block:: php
 
             'thumbnail' => 'image',
 
-         The effect of the field can be seen in listings in e.g. the "List"
+         The effect of the field can be seen in listings in e.g. the "Web > List"
          module:
 
-         |img-4| (You might have to enable "Show Thumbnails by default" in the
+         .. figure:: ../../Images/CtrlThumbnail.png
+            :alt: Thumbnails in the list view
+
+            Thumbnails in the List module
+
+         (You might have to enable "Show Thumbnails by default" in the
          "Startup" tab of the User Settings module first in order to see this
          display).
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-selicon-field:
+
+selicon\_field
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -505,22 +688,28 @@ Reference
          **Example:**
 
          The "backend\_layout" table defines the "icon" field as being the one
-         containing reference icons::
+         containing reference icons:
 
-            $TCA['backend_layout'] = array (
-                    'ctrl' => array (
-                            ...
-                            'selicon_field' => 'icon',
-                            'selicon_field_path' => 'uploads/media',
-                            ...
-                    )
-            );
+         .. code-block:: php
 
-         Also see "selicon\_field\_path" below.
+         	'ctrl' => array(
+         		...
+         		'selicon_field' => 'icon',
+         		'selicon_field_path' => 'uploads/media',
+         		...
+         	),
+
+         Also see :ref:`selicon_field_path <ctrl-reference-selicon-field-path>`.
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-selicon-field-path:
+
+selicon\_field\_path
+~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -531,14 +720,20 @@ Reference
          string
 
    Description
-         The path prefix of the value from 'selicon\_field'. This must the same
-         as the "upload\_path" of that field.
+         The path prefix of the value from :ref:`selicon_field <ctrl-reference-selicon-field>`.
+         This must the same as the "upload\_path" of that field.
 
          See example above.
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-sortby:
+
+sortby
+~~~~~~
 
 .. container:: table-row
 
@@ -551,28 +746,36 @@ Reference
          (field name)
 
    Description
-         Field name, which is used to manage the  *order* of the records.
+         Field name, which is used to manage the *order* of the records.
 
          The field will contain an integer value which positions it at the
          correct position between other records from the same table on the
          current page.
 
-         **NOTICE:** The field should  *not* be editable by the user since the
-         TCE will manage the content automatically in order to manage the order
-         of records.
+         .. note::
+
+            The field should *not* be editable by the user since the
+            TCE will manage the content automatically in order to manage the order
+            of records.
 
          This feature is used by e.g. the "pages" table and "tt\_content" table
          (Content Elements) in order to output the pages or the content
          elements in the order expected by the editors. Extensions are expected
          to respect this field.
 
-         Typically the field name "sorting" is dedicated to this feature.
+         Typically the field name :code:`sorting` is dedicated to this feature.
 
-         Also see "default\_sortby" below.
+         Also see :ref:`default_sortby <ctrl-reference-default-sortby>`.
 
    Scope
-         Display/Proc.
+         Proc. / Display
 
+
+
+.. _ctrl-reference-default-sortby:
+
+default\_sortby
+~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -583,7 +786,7 @@ Reference
          string
 
    Description
-         If a field name for "sortby" is defined, then this is ignored.
+         If a field name for :ref:`sortby <ctrl-reference-sortby>` is defined, then this is ignored.
 
          Otherwise this is used as the 'ORDER BY' statement to sort the records
          in the table when listed in the TYPO3 backend.
@@ -591,19 +794,25 @@ Reference
          **Example:**
 
          For the "haikus" table of the "examples" extension, records are listed
-         alphabetically, based on their title::
+         alphabetically, based on their title:
 
-            $TCA['tx_examples_haiku'] = array(
-                    'ctrl' => array(
-                            ...
-                            'default_sortby' => 'ORDER BY title',
-                            ...
-                    )
-            );
+         .. code-block:: php
+
+         	'ctrl' => array(
+         		...
+         		'default_sortby' => 'ORDER BY title',
+         		...
+         	),
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-mainpalette:
+
+mainpalette
+~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -619,24 +828,36 @@ Reference
 
          **Example:**
 
-         The [ctrl]section looks like this::
+         The [ctrl]section looks like this:
+
+         .. code-block:: php
 
             'mainpalette' => '1',
 
          The number "1" references a palette. This palette could be something
-         like::
+         like:
+
+         .. code-block:: php
 
             'palettes' => array(
                 '1' => array('showitem' => 'hidden,starttime,endtime,fe_group'),
 
-         Note that "mainpalette" is not much used anymore. It has the drawback
-         of positioning the related fields weirdly when tabs are added to
-         existing tables via extensions (the fields come at the end of the new
-         tabs, which may be disturbing for editors).
+         .. note::
+
+            This feature is not much used anymore. It has the drawback
+            of positioning the related fields weirdly when tabs are added to
+            existing tables via extensions (the fields come at the end of the new
+            tabs, which may be disturbing for editors).
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-cannotcollapse:
+
+canNotCollapse
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -651,7 +872,12 @@ Reference
          palettes) are not shown by TCEforms. They appear only once the "Show
          secondary options" checkbox at the bottom of the screen is checked.
 
-         |img-5| By setting "canNotCollapse" to true, the palettes of this
+         .. figure:: ../../Images/CtrlSecondaryOptions.png
+            :alt: Checkbox to activate palettes
+
+            Checkbox to make palettes visible by default
+
+         By setting "canNotCollapse" to true, the palettes of this
          table will always be displayed, as if the above-mentioned option was
          always checked. This setting can also be defined per palette (see
          later).
@@ -659,6 +885,12 @@ Reference
    Scope
          Display
 
+
+
+.. _ctrl-reference-tstamp:
+
+tstamp
+~~~~~~
 
 .. container:: table-row
 
@@ -677,23 +909,30 @@ Reference
 
          **Example:**
 
-         from the[ctrl]section of the "haikus" table::
+         from the :code:`['ctrl']` section of the "haikus" table:
 
-            $TCA['tx_examples_haiku'] = array(
-                            ...
-                            'tstamp'    => 'tstamp',
-                            'crdate'    => 'crdate',
-                            'cruser_id' => 'cruser_id',
-                            ...
-                    )
-            );
+         .. code-block:: php
 
-         The above example shows the same definition for the "crdate" and
-         "cruser\_id" fields described below.
+         	'ctrl' => array(
+         		...
+         		'tstamp'    => 'tstamp',
+         		'crdate'    => 'crdate',
+         		'cruser_id' => 'cruser_id',
+         		...
+         	),
+
+         The above example shows the same definition for the :ref:`crdate <ctrl-reference-crdate>` and
+         :ref:`cruser_id <ctrl-reference-cruser-id>` fields described below.
 
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-crdate:
+
+crdate
+~~~~~~
 
 .. container:: table-row
 
@@ -715,6 +954,12 @@ Reference
          Proc.
 
 
+
+.. _ctrl-reference-cruser-id:
+
+cruser\_id
+~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -735,6 +980,12 @@ Reference
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-rootlevel:
+
+rootLevel
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -764,23 +1015,33 @@ Reference
            **Notice:** the -1 value will still select foreign\_table records for
            selector boxes only from root (pid=0)
 
-         **Notice**: The setting for "rootLevel" is ignored for records in the
-         "pages" table (they are hardcoded to be allowed anywhere, equal to a
-         "-1" setting of rootLevel).
+         .. note::
 
-         **Warning:** this property does not tell the whole story. If set to
-         "0" or "-1", it allows records from the table in the page tree, but
-         **not** on any kind of page. By default records can be created only in
-         "Folder"-type pages. To enable the creation of records on any kind of
-         page, an additional call must be made::
+            The setting for "rootLevel" is ignored for records in the
+            "pages" table (they are hardcoded to be allowed anywhere, equal to a
+            "-1" setting of rootLevel).
+
+         .. warning::
+
+            This property does not tell the whole story. If set to
+            "0" or "-1", it allows records from the table in the page tree, but
+            **not** on any kind of page. By default records can be created only in
+            "Folder"-type pages. To enable the creation of records on any kind of
+            page, an additional call must be made:
+
+         .. code-block:: php
 
             t3lib_extMgm::allowTableOnStandardPages('tx_examples_haiku');
 
    Scope
-         Proc. /
+         Proc. / Display
 
-         Display
 
+
+.. _ctrl-reference-readonly:
+
+readOnly
+~~~~~~~~
 
 .. container:: table-row
 
@@ -795,10 +1056,14 @@ Reference
          tables are usually called "static".
 
    Scope
-         Proc. /
+         Proc. / Display
 
-         Display
 
+
+.. _ctrl-reference-adminonly:
+
+adminOnly
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -815,19 +1080,25 @@ Reference
          **Example:**
 
          The "cms" system extension defines the table "sys\_template" as being
-         editable only by admin users::
+         editable only by admin users:
 
-            $TCA['sys_template'] = array (
-                    'ctrl' => array (
-                            ...
-                            'adminOnly' => 1,
-                            ...
-                    )
-            );
+         .. code-block:: php
+
+         	'ctrl' => array(
+         		...
+         		'adminOnly' => 1,
+         		...
+         	),
 
    Scope
          Proc. / Display
 
+
+
+.. _ctrl-reference-editlock:
+
+editlock
+~~~~~~~~
 
 .. container:: table-row
 
@@ -857,6 +1128,12 @@ Reference
          Proc. / Display
 
 
+
+.. _ctrl-reference-origuid:
+
+origUid
+~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -879,6 +1156,12 @@ Reference
          Proc.
 
 
+
+.. _ctrl-reference-delete:
+
+delete
+~~~~~~
+
 .. container:: table-row
 
    Key
@@ -894,7 +1177,7 @@ Reference
 
          If this feature is used, then records are not really deleted, but just
          marked 'deleted' by setting the value of the field name to "1". And in
-         turn the whole system  *must* strictly respect the record as deleted.
+         turn the whole system *must* strictly respect the record as deleted.
          This means that any SQL query must exclude records where this field is
          true.
 
@@ -905,6 +1188,12 @@ Reference
          Proc. / Display
 
 
+
+.. _ctrl-reference-enablecolumns:
+
+enablecolumns
+~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -914,7 +1203,7 @@ Reference
          array
 
    Description
-         Specifies which  *publishing control features* are automatically
+         Specifies which *publishing control features* are automatically
          implemented for the table.
 
          This includes that records can be "disabled" or "hidden", have a
@@ -928,37 +1217,63 @@ Reference
          These are the keys in the array you can use. Each of the values must
          be a field name in the table which should be used for the feature:
 
-         **"disabled":** defines hidden-field of record
+         disabled
+           Defines which field serves as hidden/disabled flag.
 
-         **"starttime":** defines start time-field of record
+         starttime
+           Defines which field contains the starting time.
 
-         **"endtime":** defines end time-field of record
+         endtime
+           Defines which field contains the ending time.
 
-         **"fe\_group":** defines fe\_group-field of record
+         fe\_group
+           Defines which field is used for access control via a selection
+           of FE user groups.
 
-         **Notice:** In general these fields do  *not* affect the access or
-         display in the backend! They are primarily related to the frontend.
-         However the icon of records having these features enabled will
-         normally change as these examples show:
+         .. note::
 
-         |img-6| See also the "delete" feature which is related, but is active
-         for both frontend and backend.
+            In general these fields do *not* affect the access or
+            display in the backend! They are primarily related to the frontend.
+            However the icon of records having these features enabled will
+            normally change as these examples show:
+
+
+            .. figure:: ../../Images/CtrlEnableFields.png
+               :alt: Enable fields show up as icon overlays
+
+               FE group restricted access showing up on modified record icons
+
+         See also the :ref:`delete <ctrl-reference-delete>` feature which is related,
+         but is active for both frontend and backend.
 
          **Example:**
 
          Typically the "enablecolumns" could be configured like this (here for
-         the "tt\_content" table)::
+         the "tt\_content" table):
 
-            'enablecolumns' => array(
-                    'disabled' => 'hidden',
-                    'starttime' => 'starttime',
-                    'endtime' => 'endtime',
-                    'fe_group' => 'fe_group',
-            ),
+         .. code-block:: php
+
+			'enablecolumns' => array(
+				'disabled' => 'hidden',
+				'starttime' => 'starttime',
+				'endtime' => 'endtime',
+				'fe_group' => 'fe_group'
+			),
+
+         .. tip::
+
+            The :code:`$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_page.php']['addEnableColumns']`
+            hook makes it possible to define custom enable fields.
 
    Scope
          Proc. / Display
 
+
+
+.. _ctrl-reference-searchfields:
+
+searchFields
+~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -971,7 +1286,7 @@ Reference
    Description
          Comma-separated list of fields from the table that will be included
          when searching for records in the TYPO3 backend. Starting with TYPO3
-         4.6, no record from a table will ever be found if that table does not
+         CMS 4.6, no record from a table will ever be found if that table does not
          have "searchFields" defined.
 
          There are finer controls per column, see the "search" property in the
@@ -979,19 +1294,23 @@ Reference
 
          **Example:**
 
-         The "tt\_content" table has the following definition::
+         The "tt\_content" table has the following definition:
 
-            $TCA['pages'] = array(
-                    'ctrl' => array(
-                            ...
-                            'searchFields' => 'title,alias,nav_title,subtitle,url,keywords,description,abstract,author,author_email',
-                            ...
-                    ),
-            );
+         .. code-block:: php
+
+         	'ctrl' => array(
+         		'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform'
+         	),
 
    Scope
          Search
 
+
+
+.. _ctrl-reference-groupname:
+
+groupName
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -1011,6 +1330,12 @@ Reference
          Special
 
 
+
+.. _ctrl-reference-hideatcopy:
+
+hideAtCopy
+~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1020,12 +1345,18 @@ Reference
          boolean
 
    Description
-         If set, and the "disabled" field from "enablecolumns" (see above) is
+         If set, and the "disabled" field from :ref:`enablecolumns <ctrl-reference-enablecolumns>` is
          specified, then records will be disabled/hidden when they are copied.
 
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-prependatcopy:
+
+prependAtCopy
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1048,6 +1379,12 @@ Reference
          Proc.
 
 
+
+.. _ctrl-reference-copyafterduplfields:
+
+copyAfterDuplFields
+~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1060,16 +1397,26 @@ Reference
 
    Description
          The fields in this list will automatically have the value of the same
-         field from the 'previous' record transferred when they are  *copied or
-         moved* to the position  *after* another record from same table.
+         field from the "previous" record transferred when they are *copied or
+         moved* to the position *after* another record from same table.
 
-         **Example:** ::
+         **Example:**
 
-            'copyAfterDuplFields' => 'colPos, sys_language_uid',
+         Take from the "tt_content" table.
+
+         .. code-block:: php
+
+         	'copyAfterDuplFields' => 'colPos, sys_language_uid',
 
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-settodefaultoncopy:
+
+setToDefaultOnCopy
+~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1085,15 +1432,25 @@ Reference
          These fields are restored to the default value of the record when they
          are copied.
 
-         **Example:** ::
+         **Example:**
 
-            $TCA['sys_action'] = array(
-                    'ctrl' => array(
-                            'setToDefaultOnCopy' => 'assign_to_groups',
+         Take from the "sys_action" table.
+
+         .. code-block:: php
+
+         	'ctrl' => array(
+         		'setToDefaultOnCopy' => 'assign_to_groups',
+         	),
 
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-usecolumnsfordefaultvalues:
+
+useColumnsForDefaultValues
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1109,15 +1466,27 @@ Reference
          When a new record is created, this defines the fields from the
          'previous' record that should be used as default values.
 
-         **Example:** ::
+         **Example:**
 
-            $TCA['sys_filemounts'] = array(
-                    'ctrl' => array(
-                            'useColumnsForDefaultValues' => 'path,base',
+         Take from the "sys_filemounts" table.
+
+         .. code-block:: php
+
+         	'ctrl' => array(
+         		...
+         		'useColumnsForDefaultValues' => 'path,base',
+         		...
+         	),
 
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-shadowcolumnsfornewplaceholders:
+
+shadowColumnsForNewPlaceholders
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1133,25 +1502,38 @@ Reference
          When a new element is created in a draft workspace a placeholder
          element is created in the Live workspace. Some values must be stored
          in this placeholder and not just in the overlay record. A typical
-         example would be "sys\_language\_uid". This property defines the list
+         example would be :code:`sys_language_uid`. This property defines the list
          of fields whose values are "shadowed" to the Live record.
 
          All fields listed for this option must be defined in
-         $TCA[<table>]['columns']as well.
+         :code:`$TCA[<table>]['columns']` as well.
 
-         Furthermore fields which are listed in "transOrigPointerField",
-         "languageField", "label" and "type" are automatically added to this
-         list of fields and do not have to mentioned again here.
+         Furthermore fields which are listed in :ref:`transOrigPointerField <ctrl-reference-transorigpointerfield>`,
+         :ref:`languageField <ctrl-reference-languageField>`, :ref:`label <ctrl-reference-label>`
+         and :ref:`type <ctrl-reference-type>` are automatically added to this
+         list of fields and do not have to be mentioned again here.
 
-         **Example:** ::
+         **Example:**
 
-            $TCA['tt_content'] = array(
-                    'ctrl' => array(
-                            'shadowColumnsForNewPlaceholders' => 'sys_language_uid,l18n_parent,colPos',
+         Take from the "sys_filemounts" table.
+
+         .. code-block:: php
+
+			'ctrl' => array(
+		  		...
+		  		'shadowColumnsForNewPlaceholders' => 'sys_language_uid,l18n_parent,colPos',
+		  		...
+		  	),
 
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-is-static:
+
+is\_static
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1173,22 +1555,15 @@ Reference
          SAME across systems. Import/Export of records expect static records to
          be common for two systems.
 
-         **Example (also including the features "rootLevel", "readOnly" and
-         "adminOnly" above):** ::
-
-            $TCA['static_template'] = array(
-                    'ctrl' => array(
-                            'label' => 'title',
-                            'tstamp' => 'tstamp',
-                            'title' => 'LLL:EXT:statictemplates/locallang_tca.xml:static_template',
-                            'readOnly' => 1,// Prevents the table from being altered
-                            'adminOnly' => 1, // Only admin, if any
-                            'rootLevel' => 1,
-                            'is_static' => 1,
-
    Scope
          Used by import/export
 
+
+
+.. _ctrl-reference-fe-cruser-id:
+
+fe\_cruser\_id
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1208,6 +1583,12 @@ Reference
          FE
 
 
+
+.. _ctrl-reference-fe-crgroup-id:
+
+fe\_crgroup\_id
+~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1225,6 +1606,12 @@ Reference
    Scope
          FE
 
+
+
+.. _ctrl-reference-fe-admin-lock:
+
+fe\_admin\_lock
+~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1246,6 +1633,12 @@ Reference
    Scope
          FE
 
+
+
+.. _ctrl-reference-languagefield:
+
+languageField
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1287,6 +1680,12 @@ Reference
          Proc. / Display
 
 
+
+.. _ctrl-reference-transorigpointerfield:
+
+transOrigPointerField
+~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1300,17 +1699,24 @@ Reference
          record (i.e. the record in the default language of which they are a
          translation).
 
-         If this value is found being set together with "languageField" then
+         If this value is found being set together with
+         :ref:`languageField <ctrl-reference-languagefield>` then
          TCEforms will show the default translation value under the fields in
          the main form. This is very neat if translators are to see what they
          are translating.
 
-         Must be configured in $TCA[<table>]['columns'], at least as a
+         Must be configured in :code:`$TCA[<table>]['columns']`, at least as a
          passthrough type.
 
    Scope
          Proc. / Display
 
+
+
+.. _ctrl-reference-transforeigntable:
+
+transForeignTable
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1324,36 +1730,53 @@ Reference
          Translations may be stored in a separate table, instead of the same
          one. In such a case, the name of the translation table is stored in
          this property. The translation table in turn will use the
-         "transOrigPointerTable" property to point back to this table.
+         :ref:`transOrigPointerTable <ctrl-reference-transorigpointertable>`
+         property to point back to this table.
 
          This is used in the TYPO3 Core for the "pages" table, which uses the
          "pages\_language\_overlay" table to hold the translations.
 
-         **Example:** ::
+         **Example:**
 
-            $TCA['pages'] = array(
-                    'ctrl' => array(
-                            ...
-                            'transForeignTable' => 'pages_language_overlay',
+         In the "pages" table:
 
-         ::
+         .. code-block:: php
 
-            $TCA['pages_language_overlay'] = array (
-                    'ctrl' => array (
-                            ...
-                            'transOrigPointerField' => 'pid',
-                            'transOrigPointerTable' => 'pages',
+			'ctrl' => array(
+				...
+				'transForeignTable' => 'pages_language_overlay',
+				...
+			),
 
-         Note that the "transOrigPointerField" is still used, but within the
-         table holding the translations.
+         In "pages\_language\_overlay" table:
 
-         *WARNING: This is still not fully for all other tables than the
-         "pages" table. You should expect some issues and inconsistencies when
-         using this translation method.*
+         .. code-block:: php
+
+         	'ctrl' => array(
+         		...
+         		'transOrigPointerField' => 'pid',
+         		'transOrigPointerTable' => 'pages',
+         		...
+         	),
+
+         Note that the :ref:`transOrigPointerField <ctrl-reference-transorigpointerfield>`
+         is still used, but within the table holding the translations.
+
+         .. warning::
+
+            This is still not fully for all other tables than the
+            "pages" table. You should expect some issues and inconsistencies when
+            using this translation method.
 
    Scope
          Proc.
 
+
+
+.. _ctrl-reference-transorigpointertable:
+
+transOrigPointerTable
+~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1370,6 +1793,12 @@ Reference
    Scope
          Proc. / Display
 
+
+
+.. _ctrl-reference-transorigdiffsourcefield:
+
+transOrigDiffSourceField
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1391,13 +1820,19 @@ Reference
          The field type in the database should be a large text field
          (clob/blob).
 
-         You don't have to configure this field in $TCA[<table>]['columns'],
-         but if you do, select the "passthrough" type. That will enable 
+         You don't have to configure this field in :code:`$TCA[<table>]['columns']`,
+         but if you do, select the "passthrough" type. That will enable
          the undo function to also work on this field.
 
    Scope
          Proc. / Display
 
+
+
+.. _ctrl-reference-versioningws:
+
+versioningWS
+~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1434,15 +1869,18 @@ Reference
          In order for versioning to work on a table there are certain
          requirements; Tables supporting versioning must have these fields:
 
-         - " **t3ver\_oid"** - For offline versions; pointing back to online
+         t3ver\_oid
+           For offline versions; pointing back to online
            version uid. For online: 0 (zero)
 
-         - " **t3ver\_id"** - Incremental integer (version number)
+         t3ver\_id
+           Incremental integer (version number)
 
-         - " **t3ver\_label"** - Version label, e.g. "1.1.1" or "Christmas
-           edition"
+         t3ver\_label
+           Version label, e.g. "1.1.1" or "Christmas edition"
 
-         - " **t3ver\_wsid"** - For offline versions: Workspace ID of version.
+         t3ver\_wsid
+           For offline versions: Workspace ID of version.
            For all workspace Ids apart from 0 (zero) there can be only one
            version of an element per ID. For online: 0 (zero) unless t3ver\_state
            is set in which case it plays a role for previews in the backend (to
@@ -1450,7 +1888,8 @@ Reference
            t3lib\_BEfunc::versioningPlaceholderClause()) and for publishing of
            move-to-actions (see t3lib\_BEfunc::getMovePlaceholder())
 
-         - " **t3ver\_state"** - Contains special states of a version used when
+         t3ver\_state
+           Contains special states of a version used when
            new, deleted, moved content requires versioning.
 
            - For an  **online** version:
@@ -1479,26 +1918,32 @@ Reference
                an online "move-to-location" (t3ver\_state=3) record exists. (V2
                feature)
 
-         - " **t3ver\_stage"** - Contains the ID of the stage at which the record
+         t3ver\_stage
+           Contains the ID of the stage at which the record
            is. Special values are "0" which still refers to "edit", "-10" refers
            to "ready to publish".
 
-         - " **t3ver\_count"** - 0/offline=draft/never published,
+         t3ver\_count
+           0/offline=draft/never published,
            0/online=current, 1/offline=archive, 1+=multiple online/offline
            occurrences (incrementation happens when versions are swapped
            offline.)
 
-         - " **t3ver\_tstamp"** - Timestamp of last swap/publish action.
+         t3ver\_tstamp
+           Timestamp of last swap/publish action.
 
-         - " **t3ver\_move\_id"** - For online records with t3ver\_state=3 this
+         t3ver\_move\_id
+           For online records with t3ver\_state=3 this
            indicates the online record to move to this location upon publishing
            of the offline version of the online record "t3ver\_move\_id" points
            to.
 
-         - The fields  **pid** and  **uid** should have "signed" attributes in
-           MySQL (so their content can be negative!)
+         The fields  **pid** and  **uid** should have "signed" attributes in
+         MySQL (so their content can be negative!)
 
-         **Corresponding SQL definitions:** ::
+         **Corresponding SQL definitions:**
+
+         .. code-block:: mysql
 
               t3ver_oid int(11) DEFAULT '0' NOT NULL,
               t3ver_id int(11) DEFAULT '0' NOT NULL,
@@ -1522,6 +1967,12 @@ Reference
          Proc.
 
 
+
+.. _ctrl-reference-versioningws-alwaysallowliveedit:
+
+versioningWS\_alwaysAllowLiveEdit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1540,6 +1991,12 @@ Reference
    Scope
         Special
 
+
+
+.. _ctrl-reference-versioning-followpages:
+
+versioning\_followPages
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1566,6 +2023,12 @@ Reference
          Proc.
 
 
+
+.. _ctrl-reference-dividers2tabs:
+
+dividers2tabs
+~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1584,58 +2047,79 @@ Reference
 
          2: activated, empty tabs are disabled
 
-         When tabs are activated, the special field name "--div--" used in the
+         When tabs are activated, the special field name :code:`--div--` used in the
          types configuration will be interpreted as starting a new tab in a
-         tab-menu for the record. The second part after "--div--" is the title
+         tab-menu for the record. The second part after :code:`--div--` is the title
          of the tab.
 
-         If you place a "--div--" field as the very first element in the types
+         If you place a :code:`--div--` field as the very first element in the types
          configuration it will just be used to set the title of the first tab
          (which is by default "General").
 
          **Example:**
 
-         The [ctrl] section of table "tt\_content" contains the following::
+         The :code:`['ctrl']` section of table "tt\_content" contains the following:
 
-            $TCA['tt_content'] = array (
-                    'ctrl' => array (
-                            'dividers2tabs' => 1
+         .. code-block:: php
 
-         Then the types make use of "--div--" fields. Example for the
-         "text"-type (usage of "--div--" highlighted in bold)::
+			'ctrl' => array(
+				...
+				'transForeignTable' => 'pages_language_overlay',
+				...
+			),
 
-            'types' => array(
-                    '1' =>       array(
-                            'showitem' => 'CType',
-                    ),
-                    ...
-                    'text' => array(
-                            'showitem' =>
-                                    '--palette--;LLL:EXT:cms/ locallang_ttc.xml:palette.general;general,
-                                    --palette--;LLL:EXT:cms/ locallang_ttc.xml:palette.header;header,
-                                    bodytext;LLL:EXT:cms/ locallang_ttc.xml:bodytext_formlabel;;richtext:rte_transform[flag=rte_enabled|mode=ts_css],
-                                    rte_enabled;LLL:EXT:cms/ locallang_ttc.xml:rte_enabled_formlabel,
-                            --div--;LLL:EXT:cms/ locallang_ttc.xml:tabs.access,
-                                    --palette--;LLL:EXT:cms/ locallang_ttc.xml:palette.visibility;visibility,
-                                    --palette--;LLL:EXT:cms/ locallang_ttc.xml:palette.access;access,
-                            --div--;LLL:EXT:cms/ locallang_ttc.xml:tabs.appearance,
-                                    --palette--;LLL:EXT:cms/ locallang_ttc.xml:palette.frames;frames,
-                                    --palette--;LLL:EXT:cms/ locallang_ttc.xml:palette.textlayout;textlayout,
-                            --div--;LLL:EXT:cms/ locallang_ttc.xml:tabs.extended',
-                    ),
+         Then the types make use of :code:`--div--` fields. Example for the
+         "text"-type (usage of :code:`--div--` is highlighted):
+
+         .. code-block:: php
+            :emphasize-lines: 8,11,14
+
+         	'types' => array(
+         		...
+         		'text' => array(
+         			'showitem' => '--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.general;general,
+         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.header;header,
+         					bodytext;LLL:EXT:cms/locallang_ttc.xlf:bodytext_formlabel;;richtext:rte_transform[flag=rte_enabled|mode=ts_css],
+         					rte_enabled;LLL:EXT:cms/locallang_ttc.xlf:rte_enabled_formlabel,
+         					--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.appearance,
+         						--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.frames;frames,
+         						--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.textlayout;textlayout,
+         				--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,
+         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.visibility;visibility,
+         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.access;access,
+         				--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.extended'
+         		),
+         		...
+         	),
 
          This will render a tab menu for the record where the fields are
          distributed on the various tabs:
 
-         |img-7| Here another tab is activated and another part of the form is
-         shown:
+         .. figure:: ../../Images/CtrlDivider2TabsGeneralTab.png
+            :alt: Tabs for content element, first tab activated
 
-         |img-8| Since TYPO3 4.3, it is customary for most tables to make use
-         of tabs for improved usability.
+            The tabs for a text-type content element, with the "General" tab activated
+
+         Here another tab is activated and another part of the form is shown:
+
+         .. figure:: ../../Images/CtrlDivider2TabsAppearanceTab.png
+            :alt: Tabs for content element, second tab activated
+
+            The same text-type content element, with the "Appearance" tab activated
+
+         .. note::
+
+            Usage of tabs is recommended for improved usability.
 
    Scope
          Display
 
+
+
+.. _ctrl-reference-security:
+
+security
+~~~~~~~~
 
 .. container:: table-row
 
@@ -1652,6 +2136,12 @@ Reference
          Display
 
 
+
+.. _ctrl-reference-ext-extension-key:
+
+EXT[extension\_key]
+~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1664,19 +2154,18 @@ Reference
          User-defined content for extensions. You can use this as you like.
 
          Let's say that you have an extension with the key "myext", then you
-         have the right to define properties for::
+         have the right to define properties for:
+
+         .. code-block:: php
 
             ...['ctrl']['EXT']['myext'] = ... (whatever you define)
 
          Note that this is just a convention. You can use some other syntax but
          with the risk that it conflicts with some other extension or future
-         changes in the TYPO3 Core.
+         changes in the TYPO3 CMS Core.
 
    Scope
-         Ext.
-
-
-.. ###### END~OF~TABLE ######
+         (variable, depends on extension)
 
 
 .. _ctrl-security:
@@ -1699,8 +2188,11 @@ are meant to be used as keys of the "security" property array::
    );
 
 
-.. ### BEGIN~OF~TABLE ###
 
+.. _ctrl-security-ignorewebmountrestriction:
+
+ignoreWebMountRestriction
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1718,6 +2210,12 @@ are meant to be used as keys of the "security" property array::
          Display
 
 
+
+.. _ctrl-security-ignorerootlevelrestriction:
+
+ignoreRootLevelRestriction
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1734,58 +2232,58 @@ are meant to be used as keys of the "security" property array::
          Display
 
 
-.. ###### END~OF~TABLE ######
-
 
 .. _ctrl-examples:
 
 Examples
 """"""""
 
-Here are a couple examples of complete configurations of [ctrl]
-sections. ::
+Here are a couple examples of complete configurations of :code:`['ctrl']`
+sections.
 
-   $TCA['pages'] = array(
-      'ctrl' => array(
-              'label' => 'title',
-              'tstamp' => 'tstamp',
-              'sortby' => 'sorting',
-              'title' => 'LLL:EXT:lang/locallang_tca.xml:pages',
-              'type' => 'doktype',
-              'versioningWS' => 2,
-              'origUid' => 't3_origuid',
-              'delete' => 'deleted',
-              'crdate' => 'crdate',
-              'hideAtCopy' => 1,
-              'prependAtCopy' => 'LLL:EXT:lang/locallang_general.xml:LGL.prependAtCopy',
-              'cruser_id' => 'cruser_id',
-              'editlock' => 'editlock',
-              'useColumnsForDefaultValues' => 'doktype,fe_group,hidden',
-              'dividers2tabs' => 1,
-              'enablecolumns' => array(
-                      'disabled' => 'hidden',
-                      'starttime' => 'starttime',
-                      'endtime' => 'endtime',
-                      'fe_group' => 'fe_group',
-              ),
-              'transForeignTable' => 'pages_language_overlay',
-              'typeicon_column' => 'doktype',
-              'typeicon_classes' => array(
-                      '1' => 'apps-pagetree-page-default',
-                      '1-hideinmenu' => 'apps-pagetree-page-not-in-menu',
-                      ...
-                      'contains-news' => 'apps-pagetree-folder-contains-news',
-                      'default' => 'apps-pagetree-page-default',
-              ),
-              'typeicons' => array(
-                      '1' => 'pages.gif',
-                      '254' => 'sysf.gif',
-                      '255' => 'recycler.gif',
-              ),
-      )
-   );
+The first one is from the "pages" table:
 
-This is found in file "typo3/sysext/core/Configuration/TCA/pages.php". Here are a few notes:
+.. code-block:: php
+
+	'ctrl' => array(
+		'label' => 'title',
+		'tstamp' => 'tstamp',
+		'sortby' => 'sorting',
+		'title' => 'LLL:EXT:lang/locallang_tca.xlf:pages',
+		'type' => 'doktype',
+		'versioningWS' => 2,
+		'origUid' => 't3_origuid',
+		'delete' => 'deleted',
+		'crdate' => 'crdate',
+		'hideAtCopy' => 1,
+		'prependAtCopy' => 'LLL:EXT:lang/locallang_general.xlf:LGL.prependAtCopy',
+		'cruser_id' => 'cruser_id',
+		'editlock' => 'editlock',
+		'useColumnsForDefaultValues' => 'doktype,fe_group,hidden',
+		'dividers2tabs' => 1,
+		'enablecolumns' => array(
+			'disabled' => 'hidden',
+			'starttime' => 'starttime',
+			'endtime' => 'endtime',
+			'fe_group' => 'fe_group'
+		),
+		'transForeignTable' => 'pages_language_overlay',
+		'typeicon_column' => 'doktype',
+		'typeicon_classes' => array(
+			'1' => 'apps-pagetree-page-default',
+			'1-hideinmenu' => 'apps-pagetree-page-not-in-menu',
+			...
+			'default' => 'apps-pagetree-page-default'
+		),
+		'typeicons' => array(
+			'1' => 'pages.gif',
+			'254' => 'sysf.gif',
+			'255' => 'recycler.gif'
+		),
+		'searchFields' => 'title,alias,nav_title,subtitle,url,keywords,description,abstract,author,author_email'
+	),
+
+A few remarks:
 
 - When pages are displayed in the backend, the "label" property
   indicates that you will see the content from the field named "title"
@@ -1801,54 +2299,56 @@ This is found in file "typo3/sysext/core/Configuration/TCA/pages.php". Here are 
 - The "type" field will be the one named "doktype". This determines the
   set of fields shown in the edit forms in the backend.
 
-Configuration for the tt\_content table (Content Elements) is no less
-complete. It can be found in file "typo3/sysext/cms/Configuration/TCA/tt_content.php"::
+Similarly for the "tt\_content" table:
 
-   $TCA['tt_content'] = array (
-      'ctrl' => array (
-              'label' => 'header',
-              'label_alt' => 'subheader,bodytext',
-              'sortby' => 'sorting',
-              'tstamp' => 'tstamp',
-              'crdate' => 'crdate',
-              'cruser_id' => 'cruser_id',
-              'title' => 'LLL:EXT:cms/locallang_tca.xml:tt_content',
-              'delete' => 'deleted',
-              'versioningWS' => 2,
-              'versioning_followPages' => true,
-              'origUid' => 't3_origuid',
-              'type' => 'CType',
-              'hideAtCopy' => true,
-              'prependAtCopy' => 'LLL:EXT:lang/locallang_general.xml:LGL.prependAtCopy',
-              'copyAfterDuplFields' => 'colPos,sys_language_uid',
-              'useColumnsForDefaultValues' => 'colPos,sys_language_uid',
-              'shadowColumnsForNewPlaceholders' => 'colPos',
-              'transOrigPointerField' => 'l18n_parent',
-              'transOrigDiffSourceField' => 'l18n_diffsource',
-              'languageField' => 'sys_language_uid',
-              'enablecolumns' => array (
-                      'disabled' => 'hidden',
-                      'starttime' => 'starttime',
-                      'endtime' => 'endtime',
-                      'fe_group' => 'fe_group',
-              ),
-              'typeicon_column' => 'CType',
-              'typeicon_classes' => array(
-                      'header' => 'mimetypes-x-content-header',
-                      ...
-                      'default' => 'mimetypes-x-content-text',
-              ),
-              'typeicons' => array (
-                      'header' => 'tt_content_header.gif',
-                      ...
-                      'html' => 'tt_content_html.gif'
-              ),
-              'thumbnail' => 'image',
-              'requestUpdate' => 'list_type,rte_enabled',
-              'dividers2tabs' => 1
-      ),
-      ...
-   );
+.. code-block:: php
+
+	'ctrl' => array(
+		'label' => 'header',
+		'label_alt' => 'subheader,bodytext',
+		'sortby' => 'sorting',
+		'tstamp' => 'tstamp',
+		'crdate' => 'crdate',
+		'cruser_id' => 'cruser_id',
+		'title' => 'LLL:EXT:cms/locallang_tca.xlf:tt_content',
+		'delete' => 'deleted',
+		'versioningWS' => 2,
+		'versioning_followPages' => TRUE,
+		'origUid' => 't3_origuid',
+		'type' => 'CType',
+		'hideAtCopy' => TRUE,
+		'prependAtCopy' => 'LLL:EXT:lang/locallang_general.xlf:LGL.prependAtCopy',
+		'copyAfterDuplFields' => 'colPos,sys_language_uid',
+		'useColumnsForDefaultValues' => 'colPos,sys_language_uid',
+		'shadowColumnsForNewPlaceholders' => 'colPos',
+		'transOrigPointerField' => 'l18n_parent',
+		'transOrigDiffSourceField' => 'l18n_diffsource',
+		'languageField' => 'sys_language_uid',
+		'enablecolumns' => array(
+			'disabled' => 'hidden',
+			'starttime' => 'starttime',
+			'endtime' => 'endtime',
+			'fe_group' => 'fe_group'
+		),
+		'typeicon_column' => 'CType',
+		'typeicon_classes' => array(
+			'header' => 'mimetypes-x-content-header',
+			'textpic' => 'mimetypes-x-content-text-picture',
+			...
+			'default' => 'mimetypes-x-content-text'
+		),
+		'typeicons' => array(
+			'header' => 'tt_content_header.gif',
+			'textpic' => 'tt_content_textpic.gif',
+			...
+		),
+		'thumbnail' => 'image',
+		'requestUpdate' => 'list_type,rte_enabled,menu_type',
+		'dividers2tabs' => 1,
+		'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform'
+	),
+
+A few remarks:
 
 - of particular note is the "enablecolumns" property. It is quite
   extensive for this table since it is a frontend-related table. Thus
@@ -1860,4 +2360,3 @@ complete. It can be found in file "typo3/sysext/cms/Configuration/TCA/tt_content
 
 - the column "image" is defined as the one to use to fetch any
   thumbnails related to the record.
-

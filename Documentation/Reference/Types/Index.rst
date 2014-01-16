@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _types:
@@ -25,14 +24,19 @@ Required configuration
 Let's take the internal notes (sys\_note) as an example. The input
 form looks like this:
 
-|img-53| It corresponds to the following "types" configuration::
+.. figure:: ../../Images/TypesSysNote.png
+   :alt: The internal note input form
+
+   The internal note form showing four input fields
+
+It corresponds to the following "types" configuration::
 
    'types' => array(
-           '0' => array('showitem' => 'category;;;;2-2-2, author, email, personal, subject;;;;3-3-3, message')
+		'0' => array('showitem' => 'category;;;;2-2-2, personal, subject;;;;3-3-3, message')
    )
 
 The key "showitem" lists the order in which to define the fields:
-"category, author, email, personal, subject, message".
+"category, personal, subject, message".
 
 
 .. _types-optional:
@@ -46,20 +50,20 @@ Let's look at the "dummy" table from the "examples" extension. The
 "ctrl" section of its TCA looks like this::
 
    $TCA['tx_examples_dummy'] = array(
-           'ctrl' => array(
-                   'title'     => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy',
-                   'label'     => 'title',
-                   'tstamp'    => 'tstamp',
-                   'crdate'    => 'crdate',
-                   'cruser_id' => 'cruser_id',
-                   'type'       => 'record_type',
-                   'default_sortby' => 'ORDER BY title',
-                   'delete' => 'deleted',
-                   'enablecolumns' => array(
-                           'disabled' => 'hidden',
-                   ),
-                   'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_examples_dummy.gif',
-           )
+	   'ctrl' => array(
+		   'title'     => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy',
+		   'label'     => 'title',
+		   'tstamp'    => 'tstamp',
+		   'crdate'    => 'crdate',
+		   'cruser_id' => 'cruser_id',
+		   'type'       => 'record_type',
+		   'default_sortby' => 'ORDER BY title',
+		   'delete' => 'deleted',
+		   'enablecolumns' => array(
+			   'disabled' => 'hidden',
+		   ),
+		   'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_examples_dummy.gif',
+	   )
    );
 
 The line in bold indicates that the field called "record\_type" will
@@ -67,16 +71,16 @@ used to indicate the "type" of any given record of the table. Let's
 look at how this field is defined::
 
    'record_type' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type',
-           'config' => array(
-                   'type' => 'select',
-                   'items' => array(
-                           array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.0', 0),
-                           array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.1', 1),
-                           array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.2', 2),
-                   )
-           )
+	   'exclude' => 0,
+	   'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type',
+	   'config' => array(
+		   'type' => 'select',
+		   'items' => array(
+			   array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.0', 0),
+			   array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.1', 1),
+			   array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.2', 2),
+		   )
+	   )
    ),
 
 There's nothing unusual here. It's a pretty straightforward select
@@ -92,10 +96,25 @@ what fields should appear and in what order for every value of the
 
 The result if the following display when type "Normal" is chosen:
 
-|img-54| Changing to type "Short" reloads the form and displays the following:
+.. figure:: ../../Images/TypesDummyNormal.png
+   :alt: The "normal" layout of dummy records
 
-|img-55| |img-56| And finally, type "Weird" also shows all fields, but in a different
+   The "normal" layout of dummy records
+
+Changing to type "Short" reloads the form and displays the following:
+
+.. figure:: ../../Images/TypesDummyShort.png
+   :alt: The "short" layout of dummy records
+
+   The "short" layout displays less fields
+
+And finally, type "Weird" also shows all fields, but in a different
 order:
+
+.. figure:: ../../Images/TypesDummyWeird.png
+   :alt: The "weird" layout of dummy records
+
+   The "weird" layout displays the fields in a totally different order
 
 
 .. _types-default:
@@ -109,12 +128,51 @@ default) does not point to a defined index in the
 "types"-configuration, the configuration for key "1" will be used by
 default.
 
-**Notice:** You must not show the same field more than once in the
-editing form. If you do, the field will not detect the value properly.
+.. warning::
+
+   You must not show the same field more than once in the
+   editing form. If you do, the field will not detect the value properly.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _types-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ============================= =========
+   Property                      Data Type
+   ============================= =========
+   `bitmask\_value\_field`_      string
+   `bitmask\_excludelist\_bits`_ string
+   `showitem`_                   string
+   `subtype\_value\_field`_      string
+   `subtypes\_excludelist`_      string
+   `subtypes\_addlist`_          string
+   ============================= =========
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _types-properties-showitem:
+
+showitem
+~~~~~~~~
 
 .. container:: table-row
 
@@ -153,21 +211,31 @@ editing form. If you do, the field will not detect the value properly.
 
            - Part 5: Form style codes (see "Visual style of TCEforms")
 
-         Notice: Instead of a real field name you can insert "--div--" and you
-         should have a divider line shown. However this is not rendered by
-         default. If you set the dividers2tabsoption (see ['ctrl'] section),
-         each –div-- will define a new tab. Furthermore using a value "newline"
-         for Part 3, will start a newline with this tab.
+         .. note::
 
-         **Example:** ::
+            Instead of a real field name you can insert :code:`--div--` and you
+            should have a divider line shown. However this is not rendered by
+            default. If you set the dividers2tabs option (see ['ctrl'] section),
+            each :code:`--div--` will define a new tab. Furthermore using value
+            :code:`--newline--` for Part 3, will start a newline with this tab.
+
+         **Example:**
+
+         .. code-block:: php
 
             'types' => array(
                     '0' => array('showitem' => 'hidden;;;;1-1-1, title;;;;2-2-2, poem, filename;;;;3-3-3, season;;;;4-4-4, weirdness, color, --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2, image3, image4, image5'),
             ),
 
-         Another special field name, '--palette--', will insert a link to a
-         palette (of course you need to specify a palette and title then...)
+         Another special field name, :code:`--palette--`, will insert a link to a
+         :ref:`palette <palettes>` (of course you need to specify a palette and title then...)
 
+
+
+.. _types-properties-subtype-value-field:
+
+subtype\_value\_field
+~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -186,7 +254,9 @@ editing form. If you do, the field will not detect the value properly.
          the types-configuration, based on the value of another field in the
          row.
 
-         **Example (from sysext/cms/tbl\_tt\_content.php):** ::
+         **Example (from typo3/sysext/frontend/Configuration/TCA/tt_content.php):**
+
+         .. code-block:: php
 
             'subtype_value_field' => 'list_type',
             'subtypes_excludelist' => array(
@@ -198,6 +268,12 @@ editing form. If you do, the field will not detect the value properly.
             ),
 
 
+
+.. _types-properties-subtypes-excludelist:
+
+subtypes\_excludelist
+~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -207,13 +283,19 @@ editing form. If you do, the field will not detect the value properly.
          array
 
    Description
-         See "subtype\_value\_field".
+         See :ref:`types-properties-subtype-value-field`.
 
          **Syntax:**
 
          "[field value]" => "[comma-separated list of fields (from the main
          types-config) which are excluded]"
 
+
+
+.. _types-properties-subtypes-addlist:
+
+subtypes\_addlist
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -227,17 +309,18 @@ editing form. If you do, the field will not detect the value properly.
          A list of fields to add when the "subtype\_value\_field" matches a key
          in this array.
 
-         See "subtype\_value\_field".
+         See :ref:`types-properties-subtype-value-field`.
 
          **Syntax:**
 
-         "[value]" => "[ comma-separated list of fields which are added]
+         "[value]" => "[comma-separated list of fields which are added]"
 
-         **Notice:** that any transformation configuration used by TCE will NOT
-         work because that configuration is visible for the TCEforms class only
-         during the drawing of fields. In other words any configuration in this
-         list of fields will work for display only."
 
+
+.. _types-properties-bitmask-value-field:
+
+bitmask\_value\_field
+~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -269,6 +352,12 @@ editing form. If you do, the field will not detect the value properly.
             )
 
 
+
+.. _types-properties-bitmask-excludelist-bits:
+
+bitmask\_excludelist\_bits
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -282,7 +371,3 @@ editing form. If you do, the field will not detect the value properly.
 
          "[+/-][bit-number]" => "[comma-separated list of fields (from the main
          types-config) excluded]"
-
-
-.. ###### END~OF~TABLE ######
-

@@ -5,4 +5,20 @@ conf.py:
   copyright: 2000-2013
   version: 6.2.0-dev
   release: 6.2.0-dev
+  intersphinx_mapping:
+    t3cmsapi:
+    - http://typo3.org/api/typo3cms/
+    - null
+    t3inside:
+    - http://docs.typo3.org/typo3cms/InsideTypo3Reference/
+    - null
+    t3api:
+    - http://docs.typo3.org/TYPO3/CoreApiReference
+    - null
+    t3fal:
+    - http://docs.typo3.org/typo3cms/FileAbstractionLayerReference/
+    - null
+    t3tsconfig:
+    - http://docs.typo3.org/typo3cms/TSconfigReference
+    - null
 ...

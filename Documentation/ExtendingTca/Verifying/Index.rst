@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _verifying:
@@ -13,11 +12,16 @@ Verifying the $TCA
 ^^^^^^^^^^^^^^^^^^
 
 You may find it necessary – at some point – to verify the full
-structure of the $TCAin your TYPO3 installation. The Admin Tools >
+structure of the :code:`$TCA` in your TYPO3 installation. The System >
 Configuration module makes it possible to have an overview of the
-complete $TCA, with all customizations taken into account.
+complete :code:`$TCA`, with all customizations taken into account.
 
-|img-84| If you cannot find your new field, it probably means that you have
+.. figure:: ../../Images/VerifyingTca.png
+   :alt: The Configuration module
+
+   Checking the existence of the new field via the Configuration module
+
+If you cannot find your new field, it probably means that you have
 made some mistake.
 
 This view is also useful when trying to find out where to insert a new

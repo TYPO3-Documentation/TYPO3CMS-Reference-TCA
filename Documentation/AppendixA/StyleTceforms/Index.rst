@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 Visual style of TCEforms
@@ -201,7 +200,11 @@ Reference table:
 
             $TBE_STYLES['colorschemes'][0]='red,yellow,blue,olive,green';
 
-         |img-85|
+
+         .. figure:: ../../Images/StyleTceFormsColors.png
+            :alt: Setting any color in forms
+
+            Setting any color in forms
 
          **Example:** ::
 
@@ -288,7 +291,11 @@ Reference table:
 
          This renders the form fields like this:
 
-         |img-86|
+
+         .. figure:: ../../Images/StyleTceFormsBackground.png
+            :alt: Setting a background in forms
+
+            Setting a background in forms
 
          (Black border, the distance to the next section is 5 pixels and there
          is a background image)
@@ -358,7 +365,12 @@ list of fields::
 
 It renders this form:
 
-|img-87| Now I modify the types config to include the fifth parameters (in
+.. figure:: ../../Images/StyleTceFormsNormal.png
+   :alt: The forms standard look
+
+   The forms standard look
+
+Now I modify the types config to include the fifth parameters (in
 red)::
 
    'types' => Array (
@@ -367,7 +379,12 @@ red)::
 
 And this looks like:
 
-|img-88| To understand how the style pointers works, lets organize them into a
+.. figure:: ../../Images/StyleTceFormsDark.png
+   :alt: The forms dark look
+
+   The forms dark look
+
+To understand how the style pointers works, lets organize them into a
 table. This is the "types"-configuration string::
 
    title;;1;;1--0,photodate;;;;-4-,description;;;;2-0-,images;;;;1--0,fe_cruser_id
@@ -534,6 +551,9 @@ parameter value. Example::
    'types' => Array (
            '0' => Array('showitem' => 'title;;1;;1-1-1,photodate;;;;2-2-2,description;;;;3-3-3,images,fe_cruser_id;;;;5-5-5')
    ),
-   |img-89|
 
 
+.. figure:: ../../Images/StyleTceFormsAllSchemes.png
+   :alt: All forms color schemes
+
+   All forms color schemes

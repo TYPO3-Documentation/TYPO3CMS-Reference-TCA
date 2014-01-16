@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns-flex:
@@ -17,8 +16,45 @@ hierarchically organized set of fields which will have their values
 saved into a single field in the database, stored as XML.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-flex-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   =========================================== =========
+   Property                                    Data Type
+   =========================================== =========
+   `ds`_                                       array
+   `ds\_tableField`_                           string
+   `ds\_pointerField`_                         string
+   `ds\_pointerField\_searchParent`_           string
+   `ds\_pointerField\_searchParent\_subField`_ string
+   `type`_                                     string
+   =========================================== =========
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-flex-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -31,6 +67,12 @@ saved into a single field in the database, stored as XML.
    Description
          *[Must be set to "flex"]*
 
+
+
+.. _columns-flex-properties-ds-pointerfield:
+
+ds\_pointerField
+~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -45,6 +87,12 @@ saved into a single field in the database, stored as XML.
          "ds" is found. Up to two field names can be specified comma separated.
 
 
+
+.. _columns-flex-properties-ds:
+
+ds
+~~
+
 .. container:: table-row
 
    Key
@@ -56,17 +104,18 @@ saved into a single field in the database, stored as XML.
    Description
          Data Structure(s) defined in an array.
 
-         Each key is a value that can be pointed to by "ds\_pointerField".
+         Each key is a value that can be pointed to by
+         :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>`.
          Default key is "default" which is what you should use if you do not
-         have a "ds\_pointerField" value of course.
+         have a :code:`ds_pointerField` value of course.
 
-         If you specified more than one ds\_pointerField, the keys in this "ds"
+         If you specified more than one :code:`ds_pointerField`, the keys in this "ds"
          array should contain comma-separated value pairs where the asterisk \*
          matches all values (see the example below). If you don't need to
          switch for the second ds\_pointerField, it's also possible to use only
-         the first ds\_pointerField's value as a key in the "ds" array without
+         the first :code:`ds_pointerField`'s value as a key in the "ds" array without
          necessarily suffixing it with ",\*" for a catch-all on the second
-         ds\_pointerField.
+         :code:`ds_pointerField`.
 
          For each value in the array there are two options:
 
@@ -74,7 +123,9 @@ saved into a single field in the database, stored as XML.
 
          - Make a reference to an external XML file
 
-         **Example with XML directly entered:** ::
+         **Example with XML directly entered:**
+
+         .. code-block:: php
 
             'config' => array(
                 'type' => 'flex',
@@ -103,7 +154,9 @@ saved into a single field in the database, stored as XML.
 
          **Example with XML in external file:**
 
-         (File reference is relative) ::
+         (File reference is relative)
+
+         .. code-block:: php
 
             'config' => array(
                 'type' => 'flex',
@@ -113,8 +166,9 @@ saved into a single field in the database, stored as XML.
                 )
             )
 
-         **Example using two ds\_pointerFields** (as used for
-         tt\_content.pi\_flexform since TYPO3 4.2.0)::
+         **Example using two ds\_pointerFields:**
+
+         .. code-block:: php
 
             'config' => array(
                 'type' => 'flex',
@@ -128,6 +182,12 @@ saved into a single field in the database, stored as XML.
             )
 
 
+
+.. _columns-flex-properties-ds-tablefield:
+
+ds\_tableField
+~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -140,11 +200,14 @@ saved into a single field in the database, stored as XML.
          Contains the value "[table]:[field name]" from which to fetch Data
          Structure XML.
 
-         "ds\_pointerField" is in this case the pointer which should contain
+         :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>`
+         is in this case the pointer which should contain
          the uid of a record from that table.
 
          This is used by TemplaVoila extension for instance where a field in
-         the tt\_content table points to a TemplaVoila Data Structure record::
+         the "tt\_content" table points to a TemplaVoila Data Structure record:
+
+         .. code-block:: php
 
             'tx_templavoila_flex' => array(
                 'exclude' => 1,
@@ -157,6 +220,12 @@ saved into a single field in the database, stored as XML.
                 )
             ),
 
+
+
+.. _columns-flex-properties-ds-pointerfield-searchparent:
+
+ds\_pointerField\_searchParent
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -174,6 +243,12 @@ saved into a single field in the database, stored as XML.
          See "templavoila" for example - uses this for the Page Template.
 
 
+
+.. _columns-flex-properties-ds-pointerfield-searchparent-subfield:
+
+ds\_pointerField\_searchParent\_subField
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -189,8 +264,8 @@ saved into a single field in the database, stored as XML.
          See "templavoila" for example - uses this for the Page Template.
 
 
-.. ###### END~OF~TABLE ######
 
+.. _columns-flex-ds-pointer:
 
 Pointing to a Data Structure
 """"""""""""""""""""""""""""
@@ -200,8 +275,10 @@ to the Data Structure which will contain form rendering information in
 the application specific tag "<TCEforms>".
 
 For general information about the backbone of a Data Structure, please
-see the <T3DataStructure> chapter in the Data Formats section.
+refer to the `<T3DataStructure> chapter in the Core API manual <t3api:t3ds>`.
 
+
+.. _columns-flex-facts:
 
 FlexForm facts
 """"""""""""""
@@ -219,11 +296,13 @@ documented here for TCA. The limitations are:
 
 - You cannot nest FlexForm configurations inside of FlexForms.
 
-- Charset follows that of the current backend (since TYPO3 4.7, the only
+- Charset follows that of the current backend (since TYPO3 CMS 4.7, the only
   accepted character encoding is UTF-8. When storing FlexForm
   information in external files, make sure that they are using UTF-8
   too).
 
+
+.. _columns-flex-tceforms:
 
 <T3DataStructure> extensions for "<TCEforms>"
 """""""""""""""""""""""""""""""""""""""""""""
@@ -245,13 +324,19 @@ Notice that changing the mode does not delete hidden field values of
 the flexform. Always use the "mode" field to determine which
 parameters to use.
 
-The tables below document the extension elements:
-
-"Array" Elements:
+The tables below documents the extension elements:
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _columns-flex-tceforms-array:
 
+Array Elements
+~~~~~~~~~~~~~~
+
+
+.. _columns-flex-tceforms-array-meta:
+
+<meta>
+''''''
 
 .. container:: table-row
 
@@ -268,6 +353,12 @@ The tables below document the extension elements:
          <langDisable>
 
 
+
+.. _columns-flex-tceforms-array-application-tag:
+
+<[application tag]>
+'''''''''''''''''''
+
 .. container:: table-row
 
    Element
@@ -281,6 +372,11 @@ The tables below document the extension elements:
          array configuring a field in TCA. As XML this is expressed by
          array2xml()'s output. See example below.*
 
+
+.. _columns-flex-tceforms-array-root-tceforms:
+
+<ROOT><TCEforms>
+''''''''''''''''
 
 .. container:: table-row
 
@@ -299,14 +395,16 @@ The tables below document the extension elements:
          <sheetShortDescr>
 
 
-.. ###### END~OF~TABLE ######
+.. _columns-flex-tceforms-value:
+
+Value Elements
+~~~~~~~~~~~~~~
 
 
-"Value" Elements:
+.. columns-flex-tceforms-value-langdisable:
 
-
-.. ### BEGIN~OF~TABLE ###
-
+<langDisable>
+'''''''''''''
 
 .. container:: table-row
 
@@ -322,9 +420,14 @@ The tables below document the extension elements:
          according to "sys\_languages" table contents.
 
          The language you can select from is the language configured in
-         "sys\_languages" but they  *must* have ISO country codes set - see
+         "sys\_languages" but they *must* have ISO country codes set - see
          example below.
 
+
+.. _columns-flex-tceforms-value-langchildren:
+
+<langChildren>
+''''''''''''''
 
 .. container:: table-row
 
@@ -340,6 +443,12 @@ The tables below document the extension elements:
          level"
 
 
+
+.. _columns-flex-tceforms-value-sheettitle:
+
+<sheetTitle>
+''''''''''''
+
 .. container:: table-row
 
    Element
@@ -351,6 +460,12 @@ The tables below document the extension elements:
    Description
          Specifies the title of the sheet.
 
+
+
+.. _columns-flex-tceforms-value-sheetdescription:
+
+<sheetDescription>
+''''''''''''''''''
 
 .. container:: table-row
 
@@ -364,6 +479,12 @@ The tables below document the extension elements:
          Specifies a description for the sheet shown in the flexform.
 
 
+
+.. _columns-flex-tceforms-value-sheetshortdescr:
+
+<sheetShortDescr>
+'''''''''''''''''
+
 .. container:: table-row
 
    Element
@@ -376,8 +497,7 @@ The tables below document the extension elements:
          Specifies a short description of the sheet used in the tab-menu.
 
 
-.. ###### END~OF~TABLE ######
-
+.. _columns-flex-sheets:
 
 Sheets and FlexForms
 """"""""""""""""""""
@@ -387,6 +507,8 @@ only one sheet is defined that must be the "sDEF" sheet (default). In
 that case no tab-menu for sheets will appear (see examples below).
 
 
+.. _columns-flex-data-format:
+
 FlexForm data format, <T3FlexForms>
 """""""""""""""""""""""""""""""""""
 
@@ -394,11 +516,17 @@ When saving FlexForm elements the content is stored as XML using
 t3lib\_div::array2xml() to convert the internal PHP array to XML
 format. The structure is as follows:
 
-"Array" Elements:
+
+.. _columns-flex-data-format-array:
+
+Array Elements
+~~~~~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _columns-flex-data-format-array-t3flexforms:
 
+<T3FlexForms>
+'''''''''''''
 
 .. container:: table-row
 
@@ -413,6 +541,12 @@ format. The structure is as follows:
 
          <data>
 
+
+
+.. _columns-flex-data-format-array-meta:
+
+<meta>
+''''''
 
 .. container:: table-row
 
@@ -429,6 +563,12 @@ format. The structure is as follows:
          <currentLangId>
 
 
+
+.. _columns-flex-data-format-array-data:
+
+<data>
+''''''
+
 .. container:: table-row
 
    Element
@@ -440,6 +580,12 @@ format. The structure is as follows:
    Child elements
          <sheet>
 
+
+
+.. _columns-flex-data-format-array-sheet:
+
+<sheet>
+'''''''
 
 .. container:: table-row
 
@@ -455,6 +601,12 @@ format. The structure is as follows:
 
          <s\_[sheet keys]>
 
+
+
+.. _columns-flex-data-format-array-sdef:
+
+<sDEF>
+''''''
 
 .. container:: table-row
 
@@ -474,6 +626,12 @@ format. The structure is as follows:
          <l[ISO language code]>
 
 
+
+.. _columns-flex-data-format-array-ldef:
+
+<lDEF>
+''''''
+
 .. container:: table-row
 
    Element
@@ -488,6 +646,12 @@ format. The structure is as follows:
    Child elements
          <[field name]>
 
+
+
+.. _columns-flex-data-format-array-field-name:
+
+<[field name]>
+''''''''''''''
 
 .. container:: table-row
 
@@ -505,6 +669,12 @@ format. The structure is as follows:
          <v[ISO language code]>
 
 
+
+.. _columns-flex-data-format-array-currentlangid:
+
+<currentLangId>
+'''''''''''''''
+
 .. container:: table-row
 
    Element
@@ -518,14 +688,16 @@ format. The structure is as follows:
          <n[0-x]>
 
 
-.. ###### END~OF~TABLE ######
+.. _columns-flex-data-format-value:
+
+Value Elements
+~~~~~~~~~~~~~~
 
 
-"Value" Elements:
+.. _columns-flex-data-format-value-vdef:
 
-
-.. ### BEGIN~OF~TABLE ###
-
+<vDEF>
+''''''
 
 .. container:: table-row
 
@@ -541,6 +713,12 @@ format. The structure is as follows:
          Content of the field in default or localized versions
 
 
+
+.. _columns-flex-data-format-value-currentsheetid:
+
+<currentSheetId>
+''''''''''''''''
+
 .. container:: table-row
 
    Element
@@ -553,8 +731,7 @@ format. The structure is as follows:
          Points to the currently shown sheet in the DS.
 
 
-.. ###### END~OF~TABLE ######
-
+.. _columns-flex-example-simple:
 
 Example: Simple FlexForm
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -563,9 +740,16 @@ The extension "examples" provides some sample FlexForms. The "simple
 FlexForm" plugin provides a very basic configuration with just a
 select-type field to choose a page from the "pages" table.
 
-|img-40| The DS used to render this field is found in the file
+.. figure:: ../../../Images/TypeFlexSimple.png
+   :alt: A simple FlexForm field
+
+   A plugin with a simple, one-field flexform
+
+The DS used to render this field is found in the file
 "flexform\_ds1.xml" inside the "examples" extension. Notice the
-<TCEforms> tags::
+<TCEforms> tags:
+
+.. code-block:: xml
 
    <T3DataStructure>
            <meta>
@@ -608,7 +792,9 @@ the field configurations we normally set up in the $TCA array.
 
 The Data Structure for this FlexForm is loaded in the "pi\_flexform"
 field of the "tt\_content" table by adding the following to the
-ext\_tables.php file of the "examples" extension::
+ext\_tables.php file of the "examples" extension:
+
+.. code-block:: php
 
    $TCA['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi_flexform';
    t3lib_extMgm::addPiFlexFormValue($_EXTKEY . '_pi1', 'FILE:EXT:examples/flexform_ds1.xml');
@@ -622,10 +808,17 @@ If we browse the definition for the "pi\_flexform" field in
 "tt\_content" using the Admin > Configuration module, we can see the
 following:
 
-|img-41| As you can see there are quite a few extensions that have added
+.. figure:: ../../../Images/TypeFlexConfigurationCheck.png
+   :alt: Checking the configuration
+
+   Checking the TCA configuration for the newly added Flexform
+
+As you can see there are quite a few extensions that have added
 pointers to their Data Structures. Towards the bottom we can find the
 one we have just been looking at.
 
+
+.. _columns-flex-example-sheets:
 
 Example: FlexForm with two sheets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -634,7 +827,9 @@ In this example we create a FlexForm field with two "sheets". Each
 sheet can contain a separate FlexForm structure. We build it up on top
 of the previous example, so the first sheet still has a select-type
 field related to the "pages" table. In the second sheet, we add a
-simple input field and a text field. ::
+simple input field and a text field.
+
+.. code-block:: xml
 
    <T3DataStructure>
            <meta>
@@ -705,12 +900,24 @@ The part that is different from the first Data Structure is
 highlighted in bold. The result from this configuration is a form
 which looks like this:
 
-|img-42| This looks very much like the first example, but notice the second
+.. figure:: ../../../Images/TypeFlexSheet1.png
+   :alt: The first sheet
+
+   The first sheet of our more complex FlexForm
+
+This looks very much like the first example, but notice the second
 tab. Clicking on "Message", we can access the second sheet which shows
 some other fields:
 
-|img-43| |img-44| If you look at the XML stored in the database field "pi\_flexform"
-this is how it looks::
+.. figure:: ../../../Images/TypeFlexSheet2.png
+   :alt: The second sheet
+
+   The second sheet of our more complex FlexForm
+
+If you look at the XML stored in the database field "pi\_flexform"
+this is how it looks:
+
+.. code-block:: xml
 
    <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
    <T3FlexForms>
@@ -741,11 +948,15 @@ Notice how the data of the two sheets are separated (sheet names
 highlighted in bold above).
 
 
+.. _columns-flex-example-rte:
+
 Example: Rich Text Editor in FlexForms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creating a RTE in FlexForms is done by adding "defaultExtras" content
-to the <TCEforms> tag::
+to the <TCEforms> tag:
+
+.. code-block:: xml
 
    <TCEforms>
            <config>
@@ -758,6 +969,8 @@ to the <TCEforms> tag::
    </TCEforms>
 
 
+.. _columns-flex-languages:
+
 Handling languages in FlexForms
 """""""""""""""""""""""""""""""
 
@@ -767,14 +980,31 @@ extension "static\_info\_tables" which contains country names and ISO-
 language codes which are the ones by which FlexForms stores localized
 content:
 
-|img-45| Then you must configure languages in the database:
+.. figure:: ../../../Images/TypeFlexStaticInfoTablesInstalled.png
+   :alt: Extension static\_info\_tables is installed
 
-|img-46| And finally, you have to make sure that each of these languages points
+   Checking that extension static\_info\_tables is installed
+
+Then you must configure languages in the database:
+
+.. figure:: ../../../Images/TypeFlexSystemLanguages.png
+   :alt: System languages
+
+   Checking that system languages are defined
+
+And finally, you have to make sure that each of these languages points
 to the right ISO code:
 
-|img-47| By default, you will not see any changes. Indeed if you look at the
+.. figure:: ../../../Images/TypeFlexLanguageCheckIsoCode.png
+   :alt: Check ISO code
+
+   Checking that system languages have the proper ISO codes
+
+By default, you will not see any changes. Indeed if you look at the
 example XML displayed above, you will notice the following line, at
-the top, in the "meta" section::
+the top, in the "meta" section:
+
+.. code-block:: xml
 
    <langDisable>1</langDisable>
 
@@ -785,18 +1015,29 @@ below is how a FlexForm field may end up containing its own
 translations. There are two methods for this.
 
 
+.. _columns-flex-languages-method1:
+
 Localization method #1
 ~~~~~~~~~~~~~~~~~~~~~~
 
 The first localization method just requires to change the
-"langDisable" flag mentioned above to 0::
+"langDisable" flag mentioned above to 0:
+
+.. code-block:: xml
 
    <langDisable>0</langDisable>
 
 This means that translations are now allowed for that FlexForm. This
 is how it looks like:
 
-|img-48| The data XML in the data base looks like this::
+.. figure:: ../../../Images/TypeFlexLocalizationMethod1.png
+   :alt: Translations with method 1
+
+   All FlexForm fields are grouped by language
+
+The data XML in the data base looks like this:
+
+.. code-block:: xml
 
    <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
    <T3FlexForms>
@@ -854,6 +1095,8 @@ Note how each language is stored separately at a level above the
 language like "lDE" or "lEN".
 
 
+.. _columns-flex-languages-method2:
+
 Localization method #2
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -865,7 +1108,9 @@ objects can be individual!
 The second method of localization handles each language on the
 *value* level instead, thus requiring a translation for each and every
 field in the default language! You enable this by setting the
-"langChildren" tag to "1" in the "meta" section::
+"langChildren" tag to "1" in the "meta" section:
+
+.. code-block:: xml
 
    <meta>
            <langDisable>0</langDisable>
@@ -874,10 +1119,17 @@ field in the default language! You enable this by setting the
 
 The editing form will now look like this:
 
-|img-49| You can see how all translation fields for the "Header" are grouped
+.. figure:: ../../../Images/TypeFlexLocalizationMethod2.png
+   :alt: Translations with method 2
+
+   Fields are grouped together
+
+You can see how all translation fields for the "Header" are grouped
 together with the default header. Likewise for the "Message" field.
 
-The difference is also seen in the <T3FlexForms> content::
+The difference is also seen in the <T3FlexForms> content:
+
+.. code-block:: xml
 
    <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
    <T3FlexForms>
@@ -927,9 +1179,15 @@ The additional "value" tags with an index attribute like
 "vDE.vDEFbase" are used to store the previous value that the field
 contained, so that a translation diff view can be displayed:
 
-|img-50| **NOTICE:** The two localization methods are NOT compatible! You
-cannot suddenly change from the one method to the other without having
-to do some conversion of the data format. That is obvious when you
-look at how the two methods also require different data structures
-underneath!
+.. figure:: ../../../Images/TypeFlexDiffView.png
+   :alt: Translations differences
 
+   Viewing changes in original and translations
+
+.. warning::
+
+   The two localization methods are NOT compatible! You
+   cannot suddenly change from the one method to the other without having
+   to do some conversion of the data format. That is obvious when you
+   look at how the two methods also require different data structures
+   underneath!

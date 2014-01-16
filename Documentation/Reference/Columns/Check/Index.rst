@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns-check:
@@ -12,20 +11,58 @@
 TYPE: "check"
 ^^^^^^^^^^^^^
 
-This type creates checkbox(es). Such elements might look like this:
+This type creates checkbox(es).
 
-|img-16| You can also configure checkboxes to appear in an array:
+There can be between 1 and 10 checkboxes. The corresponding database
+field must be of type integer. Each checkbox corresponds to a single
+bit of the integer value, even if there is only one checkbox.
 
-|img-17| You can have between 1 and 10 checkboxes and the field type in the
-database must be an integer. No matter how many checkboxes you have
-each check box will correspond to a single bit in the integer value.
-Even if there is only one checkbox (which in turn means that you
-should theoretically check the bit-0 of values from single-checkbox
-fields and not just whether it is true or false!).
+.. tip::
+
+   This means that you should theoretically check the bit-0 of values
+   from single-checkbox fields and not just whether it is true or false!.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-check-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ================ =========
+   Property         Data Type
+   ================ =========
+   `cols`_          integer
+   `default`_       integer
+   `items`_         array
+   `itemsProcFunc`_ string
+   `showIfRTE`_     boolean
+   `type`_          string
+   ================ =========
+
+
+Properties details
+""""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-check-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -41,6 +78,12 @@ fields and not just whether it is true or false!).
    Scope
          Display / Proc.
 
+
+
+.. _columns-check-properties-items:
+
+items
+~~~~~
 
 .. container:: table-row
 
@@ -74,6 +117,12 @@ fields and not just whether it is true or false!).
          Display
 
 
+
+.. _columns-check-properties-cols:
+
+cols
+~~~~
+
 .. container:: table-row
 
    Key
@@ -93,6 +142,12 @@ fields and not just whether it is true or false!).
          Display
 
 
+
+.. _columns-check-properties-showifrte:
+
+showIfRTE
+~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -108,6 +163,12 @@ fields and not just whether it is true or false!).
    Scope
          Display
 
+
+
+.. _columns-check-properties-default:
+
+default
+~~~~~~~
 
 .. container:: table-row
 
@@ -126,6 +187,12 @@ fields and not just whether it is true or false!).
    Scope
          Display / Proc.
 
+
+
+.. _columns-check-properties-itemsprocfunc:
+
+itemsProcFunc
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -154,12 +221,6 @@ fields and not just whether it is true or false!).
          Display
 
 
-.. ###### END~OF~TABLE ######
-
-
-Now follows some code listings as examples:
-
-
 .. _columns-check-examples:
 
 Examples
@@ -170,15 +231,26 @@ Examples
 A single checkbox
 ~~~~~~~~~~~~~~~~~
 
-A plain vanilla checkbox::
+A plain vanilla checkbox (the "Disable" checkbox from the "sys_template" table).
 
-   'enforce_date' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.enforce_date',
-           'config' => array(
-                   'type' => 'check',
-           )
-   ),
+.. code-block:: php
+
+	'hidden' => array(
+		'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.disable',
+		'exclude' => 1,
+		'config' => array(
+			'type' => 'check',
+			'default' => '0'
+		)
+	),
+
+which results in:
+
+
+.. figure:: ../../../Images/TypeCheckSimple.png
+   :alt: Simple checkbox
+
+   The simplest possible form of checkbox
 
 
 .. _columns-check-examples-array:
@@ -187,28 +259,35 @@ A checkbox array
 ~~~~~~~~~~~~~~~~
 
 This is an example of a checkbox array with two checkboxes in it. The
-first checkbox will have bit-0 and the second bit-1::
+first checkbox will have bit-0 and the second bit-1. The example is taken
+from the "pages" table.
 
-   'l18n_cfg' => array(
-           'exclude' => 1,
-           'label' => 'LLL:EXT:cms/locallang_tca.xml:pages.l18n_cfg',
-           'config' => array(
-                   'type' => 'check',
-                   'items' => array(
-                           array(
-                                   'LLL:EXT:cms/locallang_tca.xml:pages.l18n_cfg.I.1',
-                                   '',
-                           ),
-                           array(
-                                   $GLOBALS['TYPO3_CONF_VARS']['FE']['hidePagesIfNotTranslatedByDefault'] ?
-                                                   'LLL:EXT:cms/locallang_tca.xml:pages.l18n_cfg.I.2a' :
-                                                   'LLL:EXT:cms/locallang_tca.xml:pages.l18n_cfg.I.2',
-                                   '',
-                           ),
-                   ),
-           ),
-   ),
+.. code-block:: php
+
+	'l18n_cfg' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg',
+		'config' => array(
+			'type' => 'check',
+			'items' => array(
+				array(
+					'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.1',
+					''
+				),
+				array(
+					$GLOBALS['TYPO3_CONF_VARS']['FE']['hidePagesIfNotTranslatedByDefault'] ? 'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.2a' : 'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.2',
+					''
+				)
+			)
+		)
+	),
 
 If we wanted both checkboxes to be checked by default, we would set the
-"default" property to '3' (since this contains both bit-0 and bit-1).
+:code:`default` property to **3** (since this contains both bit-0 and bit-1).
 
+And this is the result in the backend:
+
+.. figure:: ../../../Images/TypeCheckWithArray.png
+   :alt: Checkbox with array of options
+
+   Checkbox with array of options

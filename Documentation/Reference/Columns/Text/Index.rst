@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns-text:
@@ -12,15 +11,53 @@
 TYPE: "text"
 ^^^^^^^^^^^^
 
-This field type generates a <textarea> field or inserts a RTE (Rich
-Text Editor).
+This field type generates a :code:`<textarea>` field or inserts a RTE
+(Rich Text Editor). For more details about the latter please refer to the
+:ref:`special-configuration-options` section.
 
-Such a field looks like this:
 
-|img-15|
+.. only:: html
 
-.. ### BEGIN~OF~TABLE ###
+   .. contents::
+      :local:
+      :depth: 1
 
+
+.. _columns-text-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ========== =========
+   Property   Data Type
+   ========== =========
+   `cols`_    integer
+   `default`_ string
+   `eval`_    string
+   `is\_in`_  string
+   `rows`_    integer
+   `type`_    string
+   `wizards`_ array
+   `wrap`_    string
+   ========== =========
+
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-text-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -37,6 +74,12 @@ Such a field looks like this:
          Display / Proc.
 
 
+
+.. _columns-text-properties-cols:
+
+cols
+~~~~
+
 .. container:: table-row
 
    Key
@@ -46,13 +89,19 @@ Such a field looks like this:
          integer
 
    Description
-         Abstract value for the width of the <textarea> field. To set the
+         Abstract value for the width of the :code:`<textarea>` field. To set the
          textarea to the full width of the form area, use the value 48. Default
          is 30.
 
    Scope
          Display
 
+
+
+.. _columns-text-properties-rows:
+
+rows
+~~~~
 
 .. container:: table-row
 
@@ -74,31 +123,44 @@ Such a field looks like this:
          Display
 
 
+
+.. _columns-text-properties-wrap:
+
+wrap
+~~~~
+
 .. container:: table-row
 
    Key
          wrap
 
    Datatype
-         ["off", "virtual"]
+         string (keyword)
 
    Description
          Determines the wrapping of the textarea field. There are two options:
 
-         - **"virtual"** : (Default) The textarea will automatically wrap the
+         virtual
+           (Default) The textarea will automatically wrap the
            lines like it would be expected for editing a text.
 
-         - **"off"** : The textarea will  *not* wrap the lines as you would
+         off
+           The textarea will *not* wrap the lines as you would
            expect when editing some kind of code.
 
-         **Notice:** If the string "nowrap" is found among options in the
-         fields extra configuration from the "types" listing this will override
-         the setting here to "off".
+         .. note::
+
+            If the string "nowrap" is found among options in the
+            :ref:`fields extra configuration <types-properties-showitem>`
+            from the "types" listing, it will override
+            the setting here to "off".
 
          **Example:**
 
          This configuration will create a textarea useful for entry of code
-         lines since it will not wrap the lines::
+         lines since it will not wrap the lines:
+
+         .. code-block:: php
 
             'config' => array(
                     'type' => 'text',
@@ -110,6 +172,12 @@ Such a field looks like this:
    Scope
          Display
 
+
+
+.. _columns-text-properties-default:
+
+default
+~~~~~~~
 
 .. container:: table-row
 
@@ -125,6 +193,12 @@ Such a field looks like this:
    Scope
          Display / Proc.
 
+
+
+.. _columns-text-properties-eval:
+
+eval
+~~~~
 
 .. container:: table-row
 
@@ -145,18 +219,28 @@ Such a field looks like this:
 
          Keywords:
 
-         - **required** : A non-empty value is required in the field (otherwise
+         required
+           A non-empty value is required in the field (otherwise
            the form cannot be saved).
 
-         - **trim** : The value in the field will have white spaces around it
+         trim
+           The value in the field will have white spaces around it
            trimmed away.
 
-         - **tx\_\*** : User-defined form evaluations. See the "eval" key
-           description for input-type field above.
+         tx\_\*
+           User-defined form evaluations. See the description of the
+           :ref:`eval key <columns-input-properties-eval>`
+           for the input-type field.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-text-properties-is-in:
+
+is\_in
+~~~~~~
 
 .. container:: table-row
 
@@ -167,13 +251,18 @@ Such a field looks like this:
          string
 
    Description
-         If a user-defined evaluation is used for the field (see above, under
-         key "eval"), then this values will be passed as argument to the user-
-         defined evaluation function.
+         If a user-defined evaluation is used for the field (see :ref:`eval key <columns-text-properties-eval>`),
+         then this value will be passed as argument to the user-defined evaluation function.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-text-properties-wizards:
+
+wizards
+~~~~~~~
 
 .. container:: table-row
 
@@ -184,16 +273,10 @@ Such a field looks like this:
          array
 
    Description
-         [See section later for options]
+         See the :ref:`wizards section <wizards>` for more information.
 
    Scope
          Display
-
-
-.. ###### END~OF~TABLE ######
-
-
-Now follows some code listings as examples:
 
 
 .. _columns-text-examples:
@@ -201,14 +284,22 @@ Now follows some code listings as examples:
 Example
 """""""
 
-This is the typical configuration for a textarea field::
+This is the typical configuration for a textarea field:
 
-               'message' => array(
-                   'label' => 'LLL:EXT:sys_note/locallang_tca.php:sys_note.message',
-                   'config' => array(
-                       'type' => 'text',
-                       'cols' => '40',
-                       'rows' => '15'
-                   )
-               ),
+.. code-block:: php
 
+	'message' => array(
+		'label' => 'LLL:EXT:sys_note/Resources/Private/Language/locallang_tca.xlf:sys_note.message',
+		'config' => array(
+			'type' => 'text',
+			'cols' => '40',
+			'rows' => '15'
+		)
+	),
+
+which looks like:
+
+.. figure:: ../../../Images/TypeTextSimple.png
+   :alt: A text field
+
+   The message field of system notes, a typical text field

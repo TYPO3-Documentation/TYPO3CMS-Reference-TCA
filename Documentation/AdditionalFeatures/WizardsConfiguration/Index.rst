@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _wizards:
@@ -16,17 +15,31 @@ Wizards are configurable for some field types, namely "input", "text",
 "select" and "group" types. They provide a way to insert helper-
 elements, links to wizard scripts etc.
 
-A well known example of a wizard application is the form wizard:
+A well known example of a wizard application is the form wizard
+(as provided by the "form" system extension):
 
-|img-63| The wizard is configured for the text area field and appears as an
+.. figure:: ../../Images/CoreWizardFormsIcon.png
+   :alt: The forms wizard's icon
+
+   Click on the forms icon wizard to display the forms editor
+
+The wizard is configured for the text area field and appears as an
 icon to the right. Clicking the icon will guide the user to a view
 where the "cryptic" form code is presented in a more user-friendly
 interface:
 
-|img-64| Another example of wizards are the new / edit / suggest wizards which
+.. figure:: ../../Images/CoreWizardFormsWindow.png
+   :alt: The forms visual editor
+
+   The visual forms editor provided by the "form" system extension
+
+Another example of wizards are the new / edit / suggest wizards which
 are available for "group" or "select" type fields:
 
-|img-65|
+.. figure:: ../../Images/WizardsSample.png
+   :alt: Several wizards associated with a field
+
+   New, edit and suggest wizard, associated with a form field
 
 
 .. _wizards-configuration:
@@ -41,50 +54,43 @@ are displayed in. The key-values themselves play no important role
 (except from a few reserved words listed in a table below).
 
 The configuration for the new / edit / suggest wizards shown above
-looks like this::
+looks like this:
 
-   'basedOn' => array(
-           'label' => 'LLL:EXT:cms/locallang_tca.xml:sys_template.basedOn',
-           'config' => array(
-                   'type' => 'group',
-                   'internal_type' => 'db',
-                   'allowed' => 'sys_template',
-                   'show_thumbs' => '1',
-                   'size' => '3',
-                   'maxitems' => '50',
-                   'autoSizeMax' => 10,
-                   'minitems' => '0',
-                   'default' => '',
-                   'wizards' => array(
-                        '_PADDING' => 4,
-                        '_VERTICAL' => 1,
-                        'suggest' => array(
-                                'type' => 'suggest',
-                        ),
-                        'edit' => array(
-                                'type' => 'popup',
-                                'title' => 'Edit template',
-                                'script' => 'wizard_edit.php',
-                                'popup_onlyOpenIfSelected' => 1,
-                                'icon' => 'edit2.gif',
-                                'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1',
-                        ),
-                        'add' => array(
-                                'type' => 'script',
-                                'title' => 'LLL:EXT:cms/locallang_tca.xml:sys_template.basedOn_add',
-                                'icon' => 'add.gif',
-                                'params' => array(
-                                        'table'=>'sys_template',
-                                        'pid' => '###CURRENT_PID###',
-                                        'setValue' => 'prepend'
-                                ),
-                                'script' => 'wizard_add.php',
-                        )
-                   )
-           )
-   ),
+.. code-block:: php
 
-The part specific to the wizards configuration is highlighted in bold.
+	'basedOn' => array(
+		'label' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template.basedOn',
+		'config' => array(
+			...
+			'wizards' => array(
+				'_PADDING' => 4,
+				'_VERTICAL' => 1,
+				'suggest' => array(
+					'type' => 'suggest'
+				),
+				'edit' => array(
+					'type' => 'popup',
+					'title' => 'Edit template',
+					'script' => 'wizard_edit.php',
+					'popup_onlyOpenIfSelected' => 1,
+					'icon' => 'edit2.gif',
+					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
+				),
+				'add' => array(
+					'type' => 'script',
+					'title' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template.basedOn_add',
+					'icon' => 'add.gif',
+					'params' => array(
+						'table' => 'sys_template',
+						'pid' => '###CURRENT_PID###',
+						'setValue' => 'prepend'
+					),
+					'script' => 'wizard_add.php'
+				)
+			)
+		)
+	),
+
 The first two lines of this configuration make use of two reserved
 keywords to define settings for the display of icons.
 
@@ -99,19 +105,10 @@ reserved for general configuration. These are listed in this table and
 as a rule of thumb they are prefixed with an underscore ("\_"):
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-reserved-position:
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Type
-         Type
-
-   Description
-         Description
-
+\_POSITION
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -122,17 +119,23 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
          string
 
    Description
-         Determines the position of the wizard-icons/titles.
+         Determines the position of the wizard icons/titles.
 
          Default is "right".
 
          Possible values are "left", "top", "bottom".
 
 
+
+.. _wizards-reserved-vertical:
+
+\_ VERTICAL
+~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
-         \_ VERTICAL
+         \_VERTICAL
 
    Type
          boolean
@@ -142,10 +145,16 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
          column (vertically) and not a row (horizontally, which is default)
 
 
+
+.. _wizards-reserved-distance:
+
+\_ DISTANCE
+~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
-         \_ DISTANCE
+         \_DISTANCE
 
    Type
          int+
@@ -153,6 +162,12 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
    Description
          The distance in pixels between wizard icons (if more than one).
 
+
+
+.. _wizards-reserved-padding:
+
+\_PADDING
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -166,6 +181,12 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
          The cellpadding of the table which keeps the wizard icons together.
 
 
+
+.. _wizards-reserved-valign:
+
+\_VALIGN
+~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -177,6 +198,12 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
    Description
          valign attribute in the table holding things together.
 
+
+
+.. _wizards-reserved-hiddenfield:
+
+\_HIDDENFIELD
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -191,19 +218,22 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
          visible...)
 
 
+
+.. _wizards-reserved-any-other-key:
+
+[any other key]
+~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
          [any other key]
 
    Type
-         PHP-Array
+         PHP array
 
    Description
          Configuration of the wizard types, see below.
-
-
-.. ###### END~OF~TABLE ######
 
 
 .. _wizards-configuration-general:
@@ -216,19 +246,10 @@ wizard types. In particular the value of the "type" key is important
 because it denotes what additional options are available.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-configuration-general-type:
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Type
-         Type
-
-   Description
-         Description
-
+type
+~~~~
 
 .. container:: table-row
 
@@ -245,6 +266,12 @@ because it denotes what additional options are available.
          **This setting is required!**
 
 
+
+.. _wizards-configuration-general-title:
+
+title
+~~~~~
+
 .. container:: table-row
 
    Key
@@ -258,6 +285,12 @@ because it denotes what additional options are available.
          physical representation – e.g. a link - this will be the link if no
          icon is presented.
 
+
+
+.. _wizards-configuration-general-icon:
+
+icon
+~~~~
 
 .. container:: table-row
 
@@ -279,6 +312,12 @@ because it denotes what additional options are available.
          If the icon is not set, the title will be used for the link.
 
 
+
+.. _wizards-configuration-general-enablebytypeconfig:
+
+enableByTypeConfig
+~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -288,10 +327,16 @@ because it denotes what additional options are available.
          boolean
 
    Description
-         If set, then the wizard is enabled only if declared in the Special
-         Configuration of specific types (using "wizards[ *list of wizard-keys*
-         ]"). See wizard section.
+         If set, then the wizard is enabled only if declared in the
+         :ref:`Special Configuration of specific types <special-configuration-options-keywords-wizards>`
+         (using :code:`wizards[list of wizard-keys]`).
 
+
+
+.. _wizards-configuration-general-rteonly:
+
+RTEonly
+~~~~~~~
 
 .. container:: table-row
 
@@ -306,6 +351,12 @@ because it denotes what additional options are available.
          for a RTE field.
 
 
+
+.. _wizards-configuration-general-hideparent:
+
+hideParent
+~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -317,11 +368,8 @@ because it denotes what additional options are available.
    Description
          If set, then the real field will not be shown (but rendered as a
          hidden field). In "hideParent" you can configure the non-editable
-         display of the content as if it was a field of the "none" type. The
-         options are the same as for the "config" key for "none" types.
-
-
-.. ###### END~OF~TABLE ######
+         display of the content as if it was a field of the :ref:`none-type <columns-none>`.
+         The options are the same as for the "config" key for none-type.
 
 
 .. _wizards-configuration-specific:
@@ -336,27 +384,32 @@ Script wizard
 ~~~~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-configuration-script-type:
+
+type
+''''
 
 .. container:: table-row
 
    Key
-         Key
+         type
 
    Type
-         Type
+         string
 
    Description
-         Description
+         *[Must be set to "script"]*
 
-
-.. container:: table-row
-
-   Key
          Creates a link to an external script which can do "context sensitive"
          processing of the field. This is how the Form and Table wizards are
          used.
 
+
+
+.. _wizards-configuration-script-notnewrecords:
+
+notNewRecords
+'''''''''''''
 
 .. container:: table-row
 
@@ -367,9 +420,15 @@ Script wizard
          boolean
 
    Description
-         If set, the link will appear  *only* if the record is not new (that
+         If set, the link will appear *only* if the record is not new (that
          is, it has a proper UID)
 
+
+
+.. _wizards-configuration-script-script:
+
+script
+''''''
 
 .. container:: table-row
 
@@ -377,17 +436,23 @@ Script wizard
          script
 
    Type
-         PHP-script filename
+         PHP script filename
 
    Description
-         If the first 3 chars are NOT "../" then the file is expected to be in
-         "typo3/". So to link to custom script, put it in "../typo3conf/". File
-         reference can be prefixed "EXT:[extension key]/" to point to a file
-         inside an extension.
+         If the first 3 characters are NOT :code:`../` then the file is expected to be in
+         :file:`typo3/`. So to link to a custom script, put it in :file:`../typo3conf/`.
 
-         A lot of parameters are passed to the script as GET-vars in an array,
-         P.
+         File reference can be prefixed "EXT:[extension key]/" to point to a file
+         inside an extension. This is by far the preferred method.
 
+         A lot of parameters are passed to the script as GET-vars in an array :code:`P`.
+
+
+
+.. _wizards-configuration-script-params:
+
+params
+''''''
 
 .. container:: table-row
 
@@ -398,9 +463,14 @@ Script wizard
          array
 
    Description
-         Here you can put values which are passed to your script in the P
-         array.
+         Here you can put values which are passed to your script in the :code:`P` array.
 
+
+
+.. _wizards-configuration-script-popup-onlyopenifselected:
+
+popup\_onlyOpenIfSelected
+'''''''''''''''''''''''''
 
 .. container:: table-row
 
@@ -413,11 +483,8 @@ Script wizard
    Description
          If set, then an element (one or more) from the list must be selected.
          Otherwise the popup will not appear and you will get a message alert
-         instead. This is supposed to be used with the wizard\_edit.php script
+         instead. This is supposed to be used with the :file:`wizard_edit.php` script
          for editing records in "group" type fields.
-
-
-.. ###### END~OF~TABLE ######
 
 
 .. _wizards-configuration-popup:
@@ -426,13 +493,30 @@ Popup and colorbox wizards
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-configuration-popup-type:
+
+type
+''''
 
 .. container:: table-row
 
    Key
+         type
+
+   Type
+         string
+
+   Description
+         *[Must be set to "popup" or "colorbox"]*
+
          Creates a link to an external script opened in a pop-up window.
 
+
+
+.. _wizards-configuration-popup-notnewrecords:
+
+notNewRecords
+'''''''''''''
 
 .. container:: table-row
 
@@ -443,8 +527,14 @@ Popup and colorbox wizards
          boolean
 
    Description
-         See above, type "script"
+         :ref:`See above, type "script" <wizards-configuration-script-notnewrecords>`.
 
+
+
+.. _wizards-configuration-popup-script:
+
+script
+''''''
 
 .. container:: table-row
 
@@ -452,11 +542,17 @@ Popup and colorbox wizards
          script
 
    Type
-         PHP-script filename
+         PHP script filename
 
    Description
-         See above, type "script"
+         :ref:`See above, type "script" <wizards-configuration-script-script>`.
 
+
+
+.. _wizards-configuration-popup-params:
+
+params
+''''''
 
 .. container:: table-row
 
@@ -464,11 +560,17 @@ Popup and colorbox wizards
          params
 
    Type
-
+         array
 
    Description
-         See above, type "script"
+         :ref:`See above, type "script" <wizards-configuration-script-params>`.
 
+
+
+.. _wizards-configuration-popup-jsopenparams:
+
+JSopenParams
+''''''''''''
 
 .. container:: table-row
 
@@ -481,12 +583,11 @@ Popup and colorbox wizards
    Description
          Parameters to open JS window:
 
-         **Example** ::
+         **Example**
+
+         .. code-block:: php
 
             "JSopenParams" => "height=300,width=250,status=0,menubar=0,scrollbars=1",
-
-
-.. ###### END~OF~TABLE ######
 
 
 .. _wizards-configuration-user:
@@ -495,14 +596,31 @@ User-defined wizards
 ~~~~~~~~~~~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-configuration-user-type:
+
+type
+''''
 
 .. container:: table-row
 
    Key
+         type
+
+   Type
+         string
+
+   Description
+         *[Must be set to "userFunc"]*
+
          Calls a user function/method to produce the wizard or whatever they
          are up to.
 
+
+
+.. _wizards-configuration-user-notnewrecords:
+
+notNewRecords
+'''''''''''''
 
 .. container:: table-row
 
@@ -513,8 +631,14 @@ User-defined wizards
          boolean
 
    Description
-         See above, type "script"
+         :ref:`See above, type "script" <wizards-configuration-script-notnewrecords>`.
 
+
+
+.. _REPLACE-ME-userfunc:
+
+userFunc
+''''''''
 
 .. container:: table-row
 
@@ -534,17 +658,17 @@ User-defined wizards
          The function/class must be included on beforehand. This is advised to
          be done within the localconf.php file.
 
-         Two parameters are passed to the function/method: 1) An array with
-         parameters, much like the ones passed to scripts. One key is special
-         though: the "item" key, which is passed by reference. So if you alter
-         that value it is reflected  *back* ! 2) $this (reference to the
-         TCEform-object).
+         Two parameters are passed to the function/method:
+
+         #. an array with parameters, much like the ones passed to scripts.
+            One key is special though: the "item" key, which is passed by reference.
+            So if you alter that value it is reflected *back*!
+         #. a back-reference to the calling TCEform-object.
 
          The content returned from the function call is inserted at the
          position where the the icon/title would normally go.
 
-
-.. ###### END~OF~TABLE ######
+         :ref:`See full example below <wizards-configuration-examples-user>`.
 
 
 .. _wizards-configuration-colorbox:
@@ -553,11 +677,22 @@ Colorbox wizards
 ~~~~~~~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-configuration-colorbox-type:
+
+type
+''''
 
 .. container:: table-row
 
    Key
+         type
+
+   Type
+         string
+
+   Description
+         *[Must be set to "colorbox"]*
+
          Renders a square box (table) with the background color set to the
          value of the field. The id-attribute is set to a md5-hash so you might
          change the color dynamically from pop-up- wizard.
@@ -565,6 +700,12 @@ Colorbox wizards
          The icon is not used, but the title is given as alt-text inside the
          color-square.
 
+
+
+.. _wizards-configuration-colorbox-dim:
+
+dim
+'''
 
 .. container:: table-row
 
@@ -575,10 +716,18 @@ Colorbox wizards
          W x H, pixels
 
    Description
-         Determines the dimensions of the box. Default is 20 pixels. ::
+         Determines the dimensions of the box. Default is 20 pixels.
 
-            "dim" => "50x20",
+         .. code-block:: php
 
+            'dim' => '50x20',
+
+
+
+.. _wizards-configuration-colorbox-tablestyle:
+
+tableStyle
+''''''''''
 
 .. container:: table-row
 
@@ -589,10 +738,18 @@ Colorbox wizards
          style-attribute content in table-tag
 
    Description
-         Sets the border style of the table, eg::
+         Sets the border style of the table, eg
 
-            "tableStyle" => "border:solid 1px black;"
+         .. code-block:: php
 
+            'tableStyle' => 'border:solid 1px black;'
+
+
+
+.. _wizards-configuration-colorbox-exampleimg:
+
+exampleImg
+''''''''''
 
 .. container:: table-row
 
@@ -603,18 +760,17 @@ Colorbox wizards
          string
 
    Description
-         Reference to a sample (relative to PATH\_typo3 directory).
+         Reference to a sample (relative to :file:`PATH_typo3` directory).
 
-         You can prefix with "EXT:" to get image from extension.
+         You can prefix with :code:`EXT:` to get image from extension.
 
-         An image width of 350 is optimal for display.
+         An image 350 pixels wide is optimal for display.
 
          **Example**
 
-         'exampleImg' => 'gfx/wizard\_colorpickerex.jpg'
+         .. code-block:: php
 
-
-.. ###### END~OF~TABLE ######
+            'exampleImg' => 'gfx/wizard_colorpickerex.jpg'
 
 
 .. _wizards-configuration-select:
@@ -623,11 +779,22 @@ Select wizards
 ~~~~~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-configuration-select-type:
+
+type
+''''
 
 .. container:: table-row
 
    Key
+         type
+
+   Type
+         string
+
+   Description
+         *[Must be set to "select"]*
+
          This renders a selector box. When a value is selected in the box, the
          value is transferred to the field and the field (default) element is
          thereafter selected (this is a blank value and the label is the wizard
@@ -636,10 +803,17 @@ Select wizards
          "select" wizards make no use of the icon.
 
          The "select" wizard's select-properties can be manipulated with the
-         same number of TSconfig options which are available for "real" select-
-         types in TCEFORM.[table].[field]. The position of these properties is
-         "TCEFORM.[ *table* ].[ *field* ].wizards.[ *wizard-key* ]".
+         same number of TSconfig options which are available for "real"
+         :ref:`select-type fields <columns-select>` in :ref:`TCEFORM.[table].[field] <t3tsconfig:tceform>`.
+         The position of these properties is
+         :code:`TCEFORM.[table].[field].wizards.[wizard-key]`.
 
+
+
+.. _wizards-configuration-select-mode:
+
+mode
+''''
 
 .. container:: table-row
 
@@ -650,25 +824,33 @@ Select wizards
          append, prepend, [blank]
 
    Description
-         Defines how the value is processed: Either added to the front or back
+         Defines how the value is processed: either added to the front or back
          or (default) substitutes the existing.
 
+
+
+.. _wizards-configuration-select-items:
+
+items
+'''''
 
 .. container:: table-row
 
    Key
-         items,
+         items
 
          foreign\_table\_
 
          etc...
 
    Type
-         Options related to the selection of elements known from "select" form-
-         element type in $TCA.
+         Options related to the selection of elements as known from
+         :ref:`select-type fields <columns-select>`.
 
    Description
-         **Example** ::
+         **Example**
+
+         .. code-block:: php
 
             'items' => array(
                     array('8 px', '8'),
@@ -682,34 +864,53 @@ Select wizards
             )
 
 
-.. ###### END~OF~TABLE ######
-
-
 .. _wizards-configuration-suggest:
 
 Suggest wizards
 ~~~~~~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-configuration-suggest-type:
+
+type
+''''
 
 .. container:: table-row
 
    Key
-         This renders an input field next to a select field of type "group"
-         (internal\_type=db) or of type "select" (using foreign\_table). After
-         the user has typed at least 2 (minimumCharacters) characters in this
+         type
+
+   Type
+         string
+
+   Description
+         *[Must be set to "suggest"]*
+
+         This renders an input field next to the selector of
+         :ref:`group-type fields <columns-group>`
+         (when :ref:`internal_type <columns-group-properties-internal-type>` is :code:`db`)
+         or of :ref:`select-type fields <columns-select>`
+         (using :ref:`foreign_table <columns-select-properties-foreign-table>`).
+         After the user has typed at least 2 (minimumCharacters) characters in this
          field, a search will start and show a list of records matching the
          search word. The "suggest" wizard's properties can be configured
-         directly in TCA or in page TSconfig (TCEFORM.suggest.default,
-         TCEFORM.suggest.[queryTable], see TSconfig manual).
+         directly in TCA or in page TSconfig (:ref:`see TCEFORM properties <t3tsconfig:tceform>`).
 
-         The configuration options are applied to each table queried by the
-         suggest wizard. There's a general "default" configuration that applies
-         to all tables. On top of that, there can be specific configurations
-         for each table (use the table's name as a key). See wizard example
-         below.
+         .. important::
 
+            The configuration options are applied to each table queried by the
+            suggest wizard. There's a general :code:`default` configuration that applies
+            to all tables. On top of that, there can be specific configurations
+            for each table (use the table name as a key).
+
+         :ref:`See wizard example below <wizards-configuration-examples-suggest>`.
+
+
+
+.. _wizards-configuration-suggest-pidlist:
+
+pidList
+'''''''
 
 .. container:: table-row
 
@@ -724,7 +925,9 @@ Suggest wizards
          is empty all pages will be included in the search (as long as the
          be\_user is allowed to see them).
 
-         **Example** ::
+         **Example**
+
+         .. code-block:: php
 
             $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
@@ -733,6 +936,12 @@ Suggest wizards
                     ),
             );
 
+
+
+.. _wizards-configuration-suggest-piddepth:
+
+pidDepth
+''''''''
 
 .. container:: table-row
 
@@ -746,7 +955,9 @@ Suggest wizards
          Expand pidList by this number of levels. Has an effect only if pidList
          has a value.
 
-         **Example** ::
+         **Example**
+
+         .. code-block:: php
 
             $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
@@ -756,6 +967,12 @@ Suggest wizards
                     ),
             );
 
+
+
+.. _wizards-configuration-suggest-minimumcharacters:
+
+minimumCharacters
+'''''''''''''''''
 
 .. container:: table-row
 
@@ -770,6 +987,12 @@ Suggest wizards
          "default" configuration.
 
 
+
+.. _wizards-configuration-suggest-maxpathtitlelength:
+
+maxPathTitleLength
+''''''''''''''''''
+
 .. container:: table-row
 
    Key
@@ -783,6 +1006,12 @@ Suggest wizards
          long
 
 
+
+.. _wizards-configuration-suggest-searchwholephrase:
+
+searchWholePhrase
+'''''''''''''''''
+
 .. container:: table-row
 
    Key
@@ -792,10 +1021,12 @@ Suggest wizards
          boolean
 
    Description
-         Whether to do a LIKE=%mystring% (searchWholePhrase = 1) or a
-         LIKE=mystring% (to do a real find as you type), default: 0
+         Whether to do a :code:`LIKE=%mystring%` (searchWholePhrase = 1) or a
+         :code:`LIKE=mystring%` (to do a real find as you type), default is :code:`0`.
 
-         **Example** ::
+         **Example**
+
+         .. code-block:: php
 
             $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
@@ -804,6 +1035,12 @@ Suggest wizards
                     ),
             );
 
+
+
+.. _wizards-configuration-suggest-searchcondition:
+
+searchCondition
+'''''''''''''''
 
 .. container:: table-row
 
@@ -814,9 +1051,11 @@ Suggest wizards
          string
 
    Description
-         Additional WHERE clause (no AND needed to prepend)
+         Additional WHERE clause (not prepended with :code:`AND`).
 
-         **Example** ::
+         **Example**
+
+         .. code-block:: php
 
             // configures the suggest wizard for the field "storage_pid" in table "pages" to search only for pages with doktype=1
             $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
@@ -826,6 +1065,12 @@ Suggest wizards
                     ),
             );
 
+
+
+.. _wizards-configuration-suggest-additionalsearchfields:
+
+additionalSearchFields
+''''''''''''''''''''''
 
 .. container:: table-row
 
@@ -843,6 +1088,12 @@ Suggest wizards
          properties.
 
 
+
+.. _wizards-configuration-suggest-cssclass:
+
+cssClass
+''''''''
+
 .. container:: table-row
 
    Key
@@ -854,6 +1105,12 @@ Suggest wizards
    Description
          Add a CSS class to every list item of the result list.
 
+
+
+.. _wizards-configuration-suggest-receiverclass:
+
+receiverClass
+'''''''''''''
 
 .. container:: table-row
 
@@ -870,6 +1127,12 @@ Suggest wizards
          derived from "t3lib\_tceforms\_suggest\_defaultreceiver".
 
 
+
+.. _wizards-configuration-suggest-renderfunc:
+
+renderFunc
+''''''''''
+
 .. container:: table-row
 
    Key
@@ -882,20 +1145,28 @@ Suggest wizards
          User function to manipulate the displayed records in the results.
 
 
-.. ###### END~OF~TABLE ######
-
-
 .. _wizards-configuration-slider:
 
 Slider wizards
 ~~~~~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _wizards-configuration-slider-type:
+
+type
+''''
 
 .. container:: table-row
 
    Key
+         type
+
+   Type
+         string
+
+   Description
+         *[Must be set to "slider"]*
+
          This renders a slider next to the field. It works for either input-
          type fields or select-type fields. For select-type fields, the wizard
          will "slide" through the items making up the field. For input-type
@@ -903,9 +1174,12 @@ Slider wizards
          time. It is advised to also define a "range" property, otherwise the
          slider will go from 0 to 10000.
 
-         **Note** : the range is properly taken into account only as of TYPO3
-         4.6.1.
 
+
+.. _wizards-configuration-slider-step:
+
+step
+''''
 
 .. container:: table-row
 
@@ -920,6 +1194,12 @@ Slider wizards
          can itself be a floating point value.
 
 
+
+.. _wizards-configuration-slider-width:
+
+width
+'''''
+
 .. container:: table-row
 
    Key
@@ -932,18 +1212,13 @@ Slider wizards
          Defines the width of the slider
 
 
-.. ###### END~OF~TABLE ######
-
-
-In the next section the more complex core wizard scripts are
-demonstrated with examples. Before that, here are a few examples of
-simpler core wizards.
-
-
 .. _wizards-configuration-examples:
 
 Examples
 """"""""
+
+:ref:`In the next section <core-wizards>` the more complex core wizard scripts are
+demonstrated with examples.
 
 
 .. _wizards-configuration-examples-preset:
@@ -953,34 +1228,41 @@ Selector box of preset values
 
 You can add a selector box containing preset values next to a field:
 
-|img-66| When an option from the selector box is selected it will be
+.. figure:: ../../Images/WizardsExamplesSelect.png
+   :alt: Select wizard
+
+   The select wizard with its list of options
+
+When an option from the selector box is selected it will be
 transferred to the input field of the element. The mode of transfer
 can be either substitution (default) or prepending or appending the
 value to the existing value.
 
-This is the corresponding TCA configuration::
+This is the corresponding TCA configuration:
 
-   'season' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.season',
-           'config' => array(
-                   'type' => 'input',
-                   'size' => 20,
-                   'eval' => 'trim',
-                   'wizards' => array(
-                           'season_picker' => array(
-                                   'type' => 'select',
-                                   'mode' => '',
-                                   'items' => array(
-   array('LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.season.spring', 'Spring'),
-   array('LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.season.summer', 'Summer'),
-   array('LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.season.autumn', 'Autumn'),
-   array('LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.season.winter', 'Winter'),
-                                   )
-                           )
-                   )
-           )
-   ),
+.. code-block:: php
+
+	'season' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season',
+		'config' => array(
+			'type' => 'input',
+			'size' => 20,
+			'eval' => 'trim',
+			'wizards' => array(
+				'season_picker' => array(
+					'type' => 'select',
+					'mode' => '',
+					'items' => array(
+						array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.spring', 'Spring'),
+						array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.summer', 'Summer'),
+						array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.autumn', 'Autumn'),
+						array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.winter', 'Winter'),
+					)
+				)
+			)
+		)
+	),
 
 
 .. _wizards-configuration-examples-user:
@@ -998,64 +1280,73 @@ make it possible to increase or decrease the value in the field by 1.
 The wizard also highlights the field with a background color. This is
 how it looks:
 
-|img-67| The corresponding configuration is::
+.. figure:: ../../Images/WizardsExamplesUserfunc.png
+   :alt: User-defined wizard
 
-   'weirdness' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.weirdness',
-           'config' => array(
-                   'type' => 'input',
-                   'size' => 10,
-                   'eval' => 'int',
-                   'wizards' => array(
-                           'specialWizard' => array(
-                                   'type' => 'userFunc',
-                                   'userFunc' => 'EXT:examples/class.tx_examples_tca.php:tx_examples_tca->someWizard',
-                                   'params' => array(
-                                           'color' => 'green'
-                                   )
-                           )
-                   )
-           )
-   ),
+   The input field with its custom wizard
 
-Notice the "params" array, which is passed to the user function that
+The corresponding configuration is:
+
+.. code-block:: php
+
+	'weirdness' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.weirdness',
+		'config' => array(
+			'type' => 'input',
+			'size' => 10,
+			'eval' => 'int',
+			'wizards' => array(
+				'specialWizard' => array(
+					'type' => 'userFunc',
+					'userFunc' => 'Documentation\\Examples\\Userfuncs\\Tca->someWizard',
+					'params' => array(
+						'color' => 'green'
+					)
+				)
+			)
+		)
+	),
+
+Notice the :code:`params` array, which is passed to the user function that
 handles the wizard. And here's the code of the user function (from
-file class.tx\_examples\_tca.php of the "examples" extension)::
+file :file:`EXT:examples/Classes/Userfuncs/Tca.php`):
 
-   function someWizard($PA, $fObj) {
-                   // Note that the information is passed by reference,
-                   // so it's possible to manipulate the field directly
-                   // Here we highlight the field with the color passed as parameter
-           $backgroundColor = 'white';
-           if (!empty($PA['params']['color'])) {
-                   $backgroundColor = $PA['params']['color'];
-           }
-           $PA['item'] = '<div style="background-color: ' . $backgroundColor . '; padding: 4px;">' . $PA['item'] . '</div>';
+.. code-block:: php
 
-                   // Assemble the wizard itself
-           $output = '<div style="margin-top: 8px; margin-left: 4px;">';
-                   // Create the + button
-           $onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value++; return false;";
-           $output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">+</a>';
-                   // Create the - button
-           $onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value--; return false;";
-           $output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">-</a>';
-           $output .= '</div>';
-           return $output;
-   }
+	public function someWizard($PA, $fObj) {
+		// Note that the information is passed by reference,
+		// so it's possible to manipulate the field directly
+		// Here we highlight the field with the color passed as parameter
+		$backgroundColor = 'white';
+		if (!empty($PA['params']['color'])) {
+			$backgroundColor = $PA['params']['color'];
+		}
+		$PA['item'] = '<div style="background-color: ' . $backgroundColor . '; padding: 4px;">' . $PA['item'] . '</div>';
+
+		// Assemble the wizard itself
+		$output = '<div style="margin-top: 8px; margin-left: 4px;">';
+		// Create the + button
+		$onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value++; return false;";
+		$output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">+</a>';
+		// Create the - button
+		$onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value--; return false;";
+		$output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">-</a>';
+		$output .= '</div>';
+		return $output;
+	}
 
 First the HTML code of the field itself is manipulated, by adding a
 div tag around it. Notice how all you need to do is to change the
-value of $PA['item'] since that value is passed by reference to the
+value of :code:`$PA['item']` since that value is passed by reference to the
 function and therefore doesn't need a return value - only to be
 changed. In that div, we use the color received as parameter.
 
 After that we create the JavaScript and the links for both the "+" and
 "-" buttons and we return the resulting HTML code.
 
-Use the debug() function to find more about what is available in the
-$PA array.
+Use the :code:`debug()` function to find more about what is available in the
+:code:`$PA` array.
 
 
 .. _wizards-configuration-examples-suggest:
@@ -1063,31 +1354,52 @@ $PA array.
 Add a suggest wizard
 ~~~~~~~~~~~~~~~~~~~~
 
-As an example, let's look at the suggest wizard setup for the "General
-Record Storage page". The wizard looks like this:
+As an example, let's look at the suggest wizard setup for the
+"related_record" field of the "haiku" table. The wizard looks like this:
 
-|img-68| And here's the wizard in action:
+.. figure:: ../../Images/WizardsExamplesSuggest.png
+   :alt: The suggest wizard
 
-|img-69| Here's the corresponding TCA configuration::
+   The suggest wizard next to the record selector
 
-   $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
-           'type' => 'suggest',
-           'default' => array(
-                   'searchWholePhrase' => 1,
-                   'maxPathTitleLength' => 40,
-                   'maxItemsInResultList' => 5
-           ),
-           'pages' => array(
-                   'searchCondition' => 'doktype=1',
-           ),
-   );
+And here's the wizard in action:
 
-The tables that are queried are the ones used in
-$TCA['pages']['columns']['storage\_pid']['config']['allowed'].
+.. figure:: ../../Images/WizardsExamplesSuggestExpanded.png
+   :alt: The suggest wizard in action
+
+   The suggest wizard shows suggestions
+
+This is the corresponding TCA configuration:
+
+.. code-block:: php
+
+	'related_records' => array(
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_records',
+		'config' => array(
+			'type' => 'group',
+			'internal_type' => 'db',
+			'allowed' => 'pages, tt_content',
+			...
+			'wizards' => array(
+				'suggest' => array(
+					'type' => 'suggest',
+					'default' => array(
+						'searchWholePhrase' => 1
+					),
+					'pages' => array(
+						'searchCondition' => 'doktype = 1'
+					)
+				)
+			)
+		)
+	)
+
+The tables that are queried are the ones used in the
+:code:`allowed` property, i.e. the "pages" and "tt_content" tables.
 
 The wizard can be configured differently for each of these tables. The
 settings in "default" is applied to all tables. In the example above,
-there's a special setting for the "pages" table.
+there's a special setting for the "pages" table to search only standard pages.
 
 
 .. _wizards-configuration-examples-slider:
@@ -1096,32 +1408,37 @@ Add a slider wizard
 ~~~~~~~~~~~~~~~~~~~
 
 The "haiku" table in the "examples" extension implements a slider
-wizard for the "Angle" field. The field configuration looks like this::
+wizard for the "Angle" field. The field configuration looks like this:
 
-   'angle' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.angle',
-           'config' => array(
-                   'type' => 'input',
-                   'size' => 5,
-                   'eval' => 'trim,int',
-                   'range' => array(
-                        'lower' => -90,
-                        'upper' => 90
-                ),
-                   'default' => 0,
-                   'wizards' => array(
-                        'angle' => array(
-                                'type' => 'slider',
-                                'step' => 10,
-                                'width' => 200
-                        )
-                )
-           )
-   ),
+.. code-block:: php
+
+	'angle' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.angle',
+		'config' => array(
+			'type' => 'input',
+			'size' => 5,
+			'eval' => 'trim,int',
+			'range' => array(
+				'lower' => -90,
+				'upper' => 90
+			),
+			'default' => 0,
+			'wizards' => array(
+				'angle' => array(
+					'type' => 'slider',
+					'step' => 10,
+					'width' => 200
+				)
+			)
+		)
+	),
 
 Note the range which defines the possible values as varying from -90
 to 90. With the step property we indicate that we want to progress by
 increments of 10. The slider wizard is rendered like this:
 
-|img-70|
+.. figure:: ../../Images/WizardsExamplesSlider.png
+   :alt: The slider wizard
+
+   The slider wizard next to the input field

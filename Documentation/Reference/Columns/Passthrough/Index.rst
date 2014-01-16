@@ -1,4 +1,4 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -22,8 +22,41 @@ Since there is no rendering mode for this field type it is
 specifically fitted for direct API usage with the TCEmain class.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-passthrough-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ======== =========
+   Property Data Type
+   ======== =========
+   `type`_  string
+   ======== =========
+
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-passthrough-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -37,16 +70,15 @@ specifically fitted for direct API usage with the TCEmain class.
          *[Must be set to "passthrough"]*
 
 
-.. ###### END~OF~TABLE ######
-
-
 .. _columns-passthrough-examples:
 
 Example
 """""""
 
 This field is found in a number of table, e.g. the "pages" table. It
-is used by the system extension "impexp" to store some information. ::
+is used by the system extension "impexp" to store some information.
+
+.. code-block:: php
 
    'tx_impexp_origuid' => array('config' => array('type' => 'passthrough'))
 

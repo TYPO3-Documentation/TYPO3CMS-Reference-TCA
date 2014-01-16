@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns-select:
@@ -17,15 +16,90 @@ type you can create selector boxes. In the most simple form this is a
 list of values among which you can chose only one. In that way it is
 similar to the "radio" type above.
 
-|img-19| It is also possible to configure more complex types where the values
-from from a look up in another database table and you can even have a
-type where more than one value can be selected in any given order you
-like.
+.. figure:: ../../../Images/TypeSelectLogin.png
+   :alt: A simple selector box
 
-|img-20|
+   A simple selector box with a few options
 
-.. ### BEGIN~OF~TABLE ###
+More complex configurations are possible, see the
+:ref:`examples section <columns-select-examples>` for more details.
 
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-select-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ========================================= =========
+   Property                                  Data Type
+   ========================================= =========
+   `allowNonIdValues`_                       boolean
+   `authMode`_                               string
+   `authMode\_enforce`_                      string
+   `autoSizeMax`_                            integer
+   `default`_                                string
+   `disableNoMatchingValueElement`_          boolean
+   `dontRemapTablesOnCopy`_                  string
+   `exclusiveKeys`_                          string
+   `localizeReferencesAtParentLocalization`_ boolean
+   `items`_                                  array
+   `itemsProcFunc`_                          string
+   `iconsInOptionTags`_                      boolean
+   `fileFolder`_                             string
+   `fileFolder\_extList`_                    string
+   `fileFolder\_recursions`_                 string
+   `foreign\_table`_                         string
+   `foreign\_table\_where`_                  string
+   `foreign\_table\_prefix`_                 string
+   `foreign\_table\_loadIcons`_              boolean
+   `itemListStyle`_                          string
+   `maxitems`_                               integer
+   `minitems`_                               integer
+   `MM`_                                     string
+   `MM\_opposite\_field`_                    string
+   `MM\_match\_fields`_                      array
+   `MM\_insert\_fields`_                     array
+   `MM\_table\_where`_                       string
+   `MM\_hasUidField`_                        boolean
+   `multiple`_                               boolean
+   `neg\_foreign\_table`_                    string
+   `noIconsBelowSelect`_                     boolean
+   `renderMode`_                             string
+   `rootLevel`_                              boolean
+   `selectedListStyle`_                      string
+   `selicon\_cols`_                          integer
+   `size`_                                   integer
+   `special`_                                string
+   `suppress\_icons`_                        string
+   `treeConfig`_                             array
+   `type`_                                   string
+   `wizards`_                                array
+   ========================================= =========
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+
+.. _columns-select-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -41,6 +115,12 @@ like.
    Scope
          Display / Proc.
 
+
+
+.. _columns-select-properties-items:
+
+items
+~~~~~
 
 .. container:: table-row
 
@@ -61,7 +141,7 @@ like.
 
          - Second value is the  **value of the item** .
 
-         - The special value "--div--" is used to insert a non-selectable value
+         - The special value :code:`--div--` is used to insert a non-selectable value
            that appears as a divider label in the selector box (only for maxitems
            <=1)
 
@@ -105,6 +185,12 @@ like.
          Display
 
 
+
+.. _columns-select-properties-itemsprocfunc:
+
+itemsProcFunc
+~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -126,11 +212,17 @@ like.
          will be displayed as a proper error message.
 
          For more information, see how user-functions are specified in the
-         section about 'wizards' some pages below here.
+         section about :ref:`wizards <wizards>` some pages below here.
 
    Scope
          Display
 
+
+
+.. _columns-select-properties-selicon-cols:
+
+selicon\_cols
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -148,6 +240,12 @@ like.
          Display
 
 
+
+.. _columns-select-properties-suppress-icons:
+
+suppress\_icons
+~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -160,17 +258,23 @@ like.
          Lets you disable display of icons. Can be nice to do if icons are
          coming from foreign database records and you don't want them.
 
-         Set it to "IF\_VALUE\_FALSE" if you  *only* want to see icons when a
+         Set it to :code:`IF_VALUE_FALSE` if you *only* want to see icons when a
          value (non-blank, non-zero) is selected. Otherwise no icons are shown.
 
-         Set it to "ONLY\_SELECTED" if you  *only* want to see an icon for the
+         Set it to :code:`ONLY_SELECTED` if you *only* want to see an icon for the
          selected item.
 
-         Set to "1" (true) if you never want any icons.
+         Set to :code:`1` (true) if you never want any icons.
 
    Scope
          Display
 
+
+
+.. _columns-select-properties-iconsinoptiontags:
+
+iconsInOptionTags
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -181,12 +285,18 @@ like.
          boolean
 
    Description
-         If set, icons will appear in the <option> tags of the selector box.
-         This feature seems only to work in Mozilla.
+         If set, icons will appear in the :code:`<option>` tags of the selector box.
+         This feature is badly supported by browsers.
 
    Scope
          Display
 
+
+
+.. _columns-select-properties-noiconsbelowselect:
+
+noIconsBelowSelect
+~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -198,12 +308,18 @@ like.
 
    Description
          Disables the rendering of the icons after the select even when icons
-         for the <select>s <option> tags were supplied and iconsInOptionTags
+         for the :code:`<select>`'s :code:`<option>` tags were supplied and iconsInOptionTags
          was set.
 
    Scope
          Display
 
+
+
+.. _columns-select-properties-foreign-table:
+
+foreign\_table
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -217,13 +333,19 @@ like.
 
    Description
          The item-array will be filled with records from the table defined
-         here. The table must be configured in $TCA.
+         here. The table must be configured in :code:`$TCA`.
 
          See the other related options below.
 
    Scope
          Proc. / Display
 
+
+
+.. _columns-select-properties-foreign-table-where:
+
+foreign\_table\_where
+~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -236,7 +358,8 @@ like.
          (SQL WHERE clause)
 
    Description
-         The items from "foreign\_table" are selected with this WHERE-clause.
+         The items from :ref:`foreign_table <columns-select-properties-foreign-table>`
+         are selected with this WHERE-clause.
 
          The table is joined with the "pages"-table and items are selected only
          from pages where the user has read access! (Not checking DB mount
@@ -281,6 +404,12 @@ like.
          Proc. / Display
 
 
+
+.. _columns-select-properties-foreign-table-prefix:
+
+foreign\_table\_prefix
+~~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -295,6 +424,12 @@ like.
    Scope
          Display
 
+
+
+.. _columns-select-properties-foreign-table-loadicons:
+
+foreign\_table\_loadIcons
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -315,6 +450,12 @@ like.
          Display
 
 
+
+.. _columns-select-properties-neg-foreign-table:
+
+neg\_foreign\_table
+~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -333,15 +474,21 @@ like.
 
    Description
          Four options corresponding to the 'foreign\_table'-keys but records
-         from this table will be referenced by  *negative* uid-numbers (unless
+         from this table will be referenced by *negative* uid-numbers (unless
          if MM is configured in which case it works like the group-type).
 
-         'neg\_foreign\_table' is active only if 'foreign\_table' is defined
-         also.
+         'neg\_foreign\_table' is active only if :ref:`foreign_table <columns-select-properties-foreign-table>`
+         is defined also.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-select-properties-filefolder:
+
+fileFolder
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -358,8 +505,10 @@ like.
          prefix "EXT:" to point to an extension folder.
 
          Files from the folder is selected recursively to the level specified
-         by "fileFolder\_recursions" (see below) and only files of the
-         extension defined by "fileFolder\_extList" is selected (see below).
+         by :ref:`fileFolder_recursions <columns-select-properties-filefolder-recursions>`
+         and only files of the extension defined by
+         :ref:`fileFolder_extList <columns-select-properties-filefolder-extlist>`
+         is selected.
 
          Only the file reference relative to the "fileFolder" is stored.
 
@@ -386,6 +535,12 @@ like.
          Display / Proc
 
 
+
+.. _columns-select-properties-filefolder-extlist:
+
+fileFolder\_extList
+~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -403,6 +558,12 @@ like.
    Scope
          Display / Proc
 
+
+
+.. _columns-select-properties-filefolder-recursions:
+
+fileFolder\_recursions
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -423,6 +584,12 @@ like.
    Scope
          Display / Proc
 
+
+
+.. _columns-select-properties-allownonidvalues:
+
+allowNonIdValues
+~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -449,6 +616,12 @@ like.
          Proc.
 
 
+
+.. _columns-select-properties-default:
+
+default
+~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -466,6 +639,12 @@ like.
          Display / Proc.
 
 
+
+.. _columns-select-properties-dontremaptablesoncopy:
+
+dontRemapTablesOnCopy
+~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -475,14 +654,20 @@ like.
          string
 
    Description
-         (See same feature for type="group", internal\_type="db")
+         (:ref:`See same feature for type="group" <columns-group-properties-dontremaptablesoncopy>`)
 
-         Set it to the exact same value as "foreign\_table" if you don't want
-         values to be remapped on copy.
+         Set it to the exact same value as :ref:`foreign_table <columns-select-properties-foreign-table>`
+         if you don't want values to be remapped on copy.
 
    Scope
          Proc.
 
+
+
+.. _columns-select-properties-rootlevel:
+
+rootLevel
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -493,13 +678,19 @@ like.
          boolean
 
    Description
-         If set, the "foreign\_table\_where" will be ignored and a "pid=0" will
-         be added to the query to select only records from root level of the
-         page tree.
+         If set, the :ref:`foreign_table_where <columns-select-properties-foreign-table-where>`
+         will be ignored and a "pid=0" will be added to the query to select only records
+         from root level of the page tree.
 
    Scope
          Display
 
+
+
+.. _columns-select-properties-mm:
+
+MM
+~~
 
 .. container:: table-row
 
@@ -512,9 +703,9 @@ like.
          (table name)
 
    Description
-         Means that the relation to the records of "foreign\_table" /
-         "neg\_foreign\_table" is done with a M-M relation with a third "join"
-         table.
+         Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>` /
+         :ref:`neg_foreign_table <columns-select-properties-neg-foreign-table>`
+         is done with a M-M relation with a third "join" table.
 
          That table has three columns as a minimum:
 
@@ -529,12 +720,15 @@ like.
 
          - *uid* (auto-incremented and PRIMARY KEY) may be used if you need the
            "multiple" feature (which allows the same record to be references
-           multiple times in the box. See "MM\_hasUidField"
+           multiple times in the box. See :ref:`MM_hasUidField <columns-select-properties-mm-hasuidfield>`.
 
-         - Other fields may exist, in particular if MM\_match\_fields is involved
-           in the set up.
+         - Other fields may exist, in particular if
+           :ref:`MM_match_fields <columns-select-properties-mm-match-fields>`
+           is involved in the set up.
 
-         **Example SQL #1** (most simple MM table) **:** ::
+         **Example SQL #1:** (most simple MM table)
+
+         .. code-block:: php
 
             CREATE TABLE user_testmmrelations_one_rel_mm (
               uid_local int(11) DEFAULT '0' NOT NULL,
@@ -546,8 +740,10 @@ like.
             );
 
          **Example SQL #2** (Advanced with UID field, "ident" used with
-         MM\_match\_fields and sorting\_foreign for bidirectional MM
-         relations)::
+         :ref:`MM_match_fields <columns-select-properties-mm-match-fields>`
+         and "sorting_foreign" for bidirectional MM relations):
+
+         .. code-block:: php
 
             #
             # Table structure for table 'user_testmmrelations_two_rel_mm'
@@ -571,9 +767,11 @@ like.
          rather it's set to the number of records in the relation on each
          update, so the field should be an integer.
 
-         Notice: Using MM relations you can ONLY store real relations for
-         foreign tables in the list - no additional string values or non-record
-         values.
+         .. note::
+
+            Using MM relations you can ONLY store real relations for
+            foreign tables in the list - no additional string values or non-record
+            values.
 
          **MM relations and flexforms**
 
@@ -583,6 +781,12 @@ like.
    Scope
          Proc.
 
+
+
+.. _columns-select-properties-mm-opposite-field:
+
+MM\_opposite\_field
+~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -597,21 +801,29 @@ like.
    Description
          If you want to make a MM relation editable from the foreign side
          (bidirectional) of the relation as well, you need to set
-         MM\_opposite\_field on the foreign side to the field name on the local
+         :code:`MM_opposite_field` on the foreign side to the field name on the local
          side.
 
          E.g. if the field "companies.employees" is your local side and you
          want to make the same relation editable from the foreign side of the
          relation in a field called persons.employers, you would need to set
-         the MM\_opposite\_field value of the TCA configuration of the
+         the :code:`MM_opposite_field` value of the TCA configuration of the
          persons.employers field to the string "employees".
 
-         *Notice: Bidirectional references only get registered once on the
-         native side in sys\_refindex*
+         .. note::
+
+            Bidirectional references only get registered once on the
+            native side in "sys\_refindex".
 
    Scope
          Proc.
 
+
+
+.. _columns-select-properties-mm-match-fields:
+
+MM\_match\_fields
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -629,6 +841,12 @@ like.
          Display / Proc.
 
 
+
+.. _columns-select-properties-mm-insert-fields:
+
+MM\_insert\_fields
+~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -644,6 +862,12 @@ like.
          Proc.
 
 
+
+.. _columns-select-properties-mm-table-where:
+
+MM\_table\_where
+~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -658,6 +882,12 @@ like.
    Scope
          Display
 
+
+
+.. _columns-select-properties-mm-hasuidfield:
+
+MM\_hasUidField
+~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -675,6 +905,12 @@ like.
    Scope
          Proc.
 
+
+
+.. _columns-select-properties-special:
+
+special
+~~~~~~~
 
 .. container:: table-row
 
@@ -702,14 +938,13 @@ like.
          - **modListUser** - module-lists added for users.
 
          - **explicitValues** – List values that require explicit permissions to
-           be allowed or denied. (See "authMode" directive for the "select"
-           type).
+           be allowed or denied. (See :ref:`authMode <columns-select-properties-authmode>`).
 
-         - **languages** – List system languages (sys\_language records from page
+         - **languages** – List system languages ("sys\_language" records from page
            tree root + Default language)
 
          - **custom** – Custom values set by backend modules (see
-           TYPO3\_CONF\_VARS[BE][customPermOptions])
+           :code:`TYPO3_CONF_VARS[BE][customPermOptions]`)
 
          As you might have guessed these options are used for backend user
          management and pretty worthless for most other purposes.
@@ -717,6 +952,12 @@ like.
    Scope
          Display / Proc.
 
+
+
+.. _columns-select-properties-size:
+
+size
+~~~~
 
 .. container:: table-row
 
@@ -732,6 +973,12 @@ like.
    Scope
          Display
 
+
+
+.. _columns-select-properties-autosizemax:
+
+autoSizeMax
+~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -752,6 +999,12 @@ like.
          Display
 
 
+
+.. _columns-select-properties-selectedliststyle:
+
+selectedListStyle
+~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -770,6 +1023,12 @@ like.
          Display
 
 
+
+.. _columns-select-properties-itemliststyle:
+
+itemListStyle
+~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -787,6 +1046,12 @@ like.
    Scope
          Display
 
+
+
+.. _columns-select-properties-rendermode:
+
+renderMode
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -815,23 +1080,33 @@ like.
 
          - **tree** - Renders the selector as tree. This will work properly only
            when referrring to a foreign table, so make sure that the
-           "foreign\_table" property is set. See "treeConfig" property
-           configuration options.
+           :ref:`foreign_table <columns-select-properties-foreign-table>`
+           property is set. See :ref:`treeConfig <columns-select-properties-treeconfig>`
+           for configuration options.
 
          When renderMode is "checkbox" or "singlebox" all values selected by
-         "foreign\_table" settings will automatically have their icon part in
+         :ref:`foreign_table <columns-select-properties-foreign-table>`
+         settings will automatically have their icon part in
          the items array set to the record icon (unless overruled by
          "selicon\_field" of that table).
 
-         **Notice:** "maxitems" and "minitems" are not enforced in the browser
-         for any of the render modes here! However they will be on the server.
-         It is recommended to set "minitems" to zero and "maxitems" to a very
-         large number exceeding the possible number of values you can select
-         (for instance set it to 1000 or so).
+         .. note::
+
+            Properties "maxitems" and "minitems" are not enforced in the browser
+            for any of the render modes here! However they will be on the server.
+            It is recommended to set "minitems" to zero and "maxitems" to a very
+            large number exceeding the possible number of values you can select
+            (for instance set it to 1000 or so).
 
    Scope
          Display
 
+
+
+.. _columns-select-properties-treeconfig:
+
+treeConfig
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -842,8 +1117,9 @@ like.
          (configuration options)
 
    Description
-         Configuration if the renderMode is set to "tree". Either childrenField
-         or parentField has to be set - childrenField takes precedence.
+         Configuration if the :ref:`renderMode <columns-select-properties-rendermode>`
+         is set to "tree". Either :code:`childrenField` or :code:`parentField`
+         has to be set - :code:`childrenField` takes precedence.
 
          **Sub-properties:**
 
@@ -879,6 +1155,12 @@ like.
          Display
 
 
+
+.. _columns-select-properties-multiple:
+
+multiple
+~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -888,7 +1170,7 @@ like.
          boolean
 
    Description
-         Allows the  *same item* more than once in a list.
+         Allows the *same item* more than once in a list.
 
          If used with bidirectional MM relations it must be set for both the
          native and foreign field configuration. Also, with MM relations in
@@ -898,6 +1180,12 @@ like.
    Scope
          Display / Proc.
 
+
+
+.. _columns-select-properties-maxitems:
+
+maxitems
+~~~~~~~~
 
 .. container:: table-row
 
@@ -914,6 +1202,12 @@ like.
          Display / Proc
 
 
+
+.. _columns-select-properties-minitems:
+
+minitems
+~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -929,6 +1223,12 @@ like.
          Display
 
 
+
+.. _columns-select-properties-wizards:
+
+wizards
+~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -938,11 +1238,17 @@ like.
          array
 
    Description
-         [See section later for options]
+         See the :ref:`wizards section <wizards>` for more information.
 
    Scope
          Display
 
+
+
+.. _columns-select-properties-disablenomatchingvalueelement:
+
+disableNoMatchingValueElement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -960,6 +1266,12 @@ like.
    Scope
          Display
 
+
+
+.. _columns-select-properties-authmode:
+
+authMode
+~~~~~~~~
 
 .. container:: table-row
 
@@ -1010,6 +1322,12 @@ like.
          Display / Proc
 
 
+
+.. _columns-select-properties-authmode-enforce:
+
+authMode\_enforce
+~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1019,7 +1337,8 @@ like.
          string keyword
 
    Description
-         Various additional enforcing options for authMode.
+         Various additional enforcing options for
+         :ref:`authMode <columns-select-properties-authmode>`.
 
          Keywords are:
 
@@ -1034,6 +1353,12 @@ like.
    Scope
          Display / Proc
 
+
+
+.. _columns-select-properties-exclusivekeys:
+
+exclusiveKeys
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -1054,6 +1379,12 @@ like.
          Display / Proc.
 
 
+
+.. _columns-select-properties-localizereferencesatparentlocalization:
+
+localizeReferencesAtParentLocalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -1069,9 +1400,6 @@ like.
 
    Scope
          Proc.
-
-
-.. ###### END~OF~TABLE ######
 
 
 Here follow some code listings as examples:
@@ -1090,7 +1418,14 @@ Example - A simple selector box:
 This is the most simple selector box you can get. It contains a static
 set of options you can select from:
 
-|img-21| ::
+.. figure:: ../../../Images/TypeSelectSimpleOptions.png
+   :alt: A simple selector box
+
+   A simple selector box with a few options and a divider
+
+And here's the corresponding code:
+
+.. code-block:: php
 
    'tx_examples_options' => array (
            'exclude' => 0,
@@ -1110,23 +1445,25 @@ set of options you can select from:
 
 In the configuration the elements are configured by the "items" array.
 Each entry in the array contains pairs of label/value. Notice the
-third entry of the "items" array. It defines a  *divider* . This value
+third entry of the "items" array. It defines a *divider*. This value
 cannot be selected. It only helps to divide the list of options with a
 label indicating a new section.
 
 
 .. _columns-select-examples-simple-markers:
 
-Example - Simple selector box with TSconfig markers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Simple selector box with TSconfig markers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example shows the use of markers inside the
-"foreign\_table\_where" clause and how the corresponding TSconfig must
-be set up.
+:ref:`foreign_table_where <columns-select-properties-foreign-table-where>`
+property and how the corresponding TSconfig must be set up.
 
 In the TCA definition of the "haiku" table ("examples" extension)
 there is a simple select field to create a reference to a page in the
-"pages" table::
+"pages" table:
+
+.. code-block:: php
 
    'reference_page' => array(
            'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.reference_page',
@@ -1142,85 +1479,110 @@ there is a simple select field to create a reference to a page in the
 
 Without any TSconfig, the selector will display a full list of pages:
 
-|img-22| Let's add the following bit of Tsconfig to the page containing our
-"haiku" record::
+.. figure:: ../../../Images/TypeSelectHaikuAllPages.png
+   :alt: Page selector with full list
+
+   The page selector showing all existing pages
+
+Let's add the following bit of Tsconfig to the page containing our
+"haiku" record:
+
+.. code-block:: typoscript
 
    TCEFORM.tx_examples_haiku.reference_page.PAGE_TSCONFIG_STR = image
 
 The list of pages that we can select from is now reduced to:
 
-|img-23|
+.. figure:: ../../../Images/TypeSelectHaikuLimitedPages.png
+   :alt: Page selector with restricted list
+
+   The page selector showing only pages with "image" in their title
+
 
 .. _columns-select-examples-multiple:
 
-Example - A multiple value selector with contents from a database table
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+A multiple value selector with contents from a database table
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The user group selector is based on the fe\_groups table. It appears
 as a multiple selector:
 
-|img-20| The corresponding TCA configuration::
+.. figure:: ../../../Images/TypeSelectUserGroups.png
+   :alt: List of user groups
 
-   'fe_group' => array(
-      'exclude' => 1,
-      'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.fe_group',
-      'config' => array(
-              'type' => 'select',
-              'size' => 7,
-              'maxitems' => 20,
-              'items' => array(
-                      array(
-                              'LLL:EXT:lang/locallang_general.xml:LGL.hide_at_login',
-                              -1,
-                      ),
-                      array(
-                              'LLL:EXT:lang/locallang_general.xml:LGL.any_login',
-                              -2,
-                      ),
-                      array(
-                              'LLL:EXT:lang/locallang_general.xml:LGL.usergroups',
-                              '--div--',
-                      ),
-              ),
-              'exclusiveKeys' => '-1,-2',
-              'foreign_table' => 'fe_groups',
-              'foreign_table_where' => 'ORDER BY fe_groups.title',
-      ),
-   ),
+   User groups selector in the access rights configuration
 
-The value stored in the database will be a  *comma list of uid
-numbers* of the records selected.
+The corresponding TCA configuration:
 
-The interesting point of this example is that it shows that static
+.. code-block:: php
+
+	'fe_group' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.fe_group',
+		'config' => array(
+			'type' => 'select',
+			'size' => 5,
+			'maxitems' => 20,
+			'items' => array(
+				array(
+					'LLL:EXT:lang/locallang_general.xlf:LGL.hide_at_login',
+					-1
+				),
+				array(
+					'LLL:EXT:lang/locallang_general.xlf:LGL.any_login',
+					-2
+				),
+				array(
+					'LLL:EXT:lang/locallang_general.xlf:LGL.usergroups',
+					'--div--'
+				)
+			),
+			'exclusiveKeys' => '-1,-2',
+			'foreign_table' => 'fe_groups',
+			'foreign_table_where' => 'ORDER BY fe_groups.title'
+		)
+	),
+
+The value stored in the database will be a  *comma-separated list of uid numbers*
+of the selected records.
+
+An interesting point of this example is that it shows that static
 values can be mixed with values fetched from a database table.
 
 
 .. _columns-select-examples-lookup:
 
-Example - Using a look up table for single value
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using a look up table for single value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this case the selector box looks up languages in a static table
 from an extension "static\_info\_tables":
 
-|img-24| The configuration looks like this (taken from the sys\_lang table)::
+.. figure:: ../../../Images/TypeSelectLookupTable.png
+   :alt: List of languages
 
-   'static_lang_isocode' => array(
-           'exclude' => 1,
-           'label' => 'LLL:EXT:lang/locallang_tca.php:sys_language.isocode',
-           'displayCond' => 'EXT:static_info_tables:LOADED:true',
-           'config' => array(
-                   'type' => 'select',
-                   'items' => array(
-                           array('', 0),
-                   ),
-                   'foreign_table' => 'static_languages',
-                   'foreign_table_where' => 'AND static_languages.pid=0 ORDER BY static_languages.lg_name_en',
-                   'size' => 1,
-                   'minitems' => 0,
-                   'maxitems' => 1,
-           )
-   ),
+   Language selector based on the static_languages table
+
+The configuration looks like this (taken from the "sys\_language" table):
+
+.. code-block:: php
+
+	'static_lang_isocode' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_language.isocode',
+		'displayCond' => 'EXT:static_info_tables:LOADED:true',
+		'config' => array(
+			'type' => 'select',
+			'items' => array(
+				array('', 0)
+			),
+			'foreign_table' => 'static_languages',
+			'foreign_table_where' => 'AND static_languages.pid=0 ORDER BY static_languages.lg_name_en',
+			'size' => 1,
+			'minitems' => 0,
+			'maxitems' => 1
+		)
+	),
 
 Notice how a condition is set that this box should only be displayed
 *if* the extension it relies on exists! This is very important since
@@ -1230,48 +1592,56 @@ errors.
 
 .. _columns-select-examples-icons:
 
-Example - Adding icons for selection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adding icons for selection
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example shows how you can add icons to the selection choice very
 easily. Each icon is associated with an option in the selector box and
 clicking the icon will automatically select the option in the selector
 box and more the black arrow:
 
-|img-25| The configuration looks like this. ::
+.. figure:: ../../../Images/TypeSelectWithIcons.png
+   :alt: Choosing image alignment
 
-   'imageorient' => array(
-           'label' => 'LLL:EXT:cms/locallang_ttc.xml:imageorient',
-           'config' => array(
-                   'type' => 'select',
-                   'items' => array(
-                           array(
-                                   'LLL:EXT:cms/locallang_ttc.xml:imageorient.I.0',
-                                   0,
-                                   'selicons/above_center.gif',
-                           ),
-                           array(
-                                   'LLL:EXT:cms/locallang_ttc.xml:imageorient.I.1',
-                                   1,
-                                   'selicons/above_right.gif',
-                           ),
-                           array(
-                                   'LLL:EXT:cms/locallang_ttc.xml:imageorient.I.2',
-                                   2,
-                                   'selicons/above_left.gif',
-                           ),
-                           ...
-                           array(
-                                   'LLL:EXT:cms/locallang_ttc.xml:imageorient.I.10',
-                                   26,
-                                   'selicons/intext_left_nowrap.gif',
-                           ),
-                   ),
-                   'selicon_cols' => 6,
-                   'default' => '0',
-                   'iconsInOptionTags' => 1,
-           ),
-   ),
+   The selector for image alignment, using icons
+
+The configuration looks like this:
+
+.. code-block:: php
+
+	'imageorient' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:imageorient',
+		'config' => array(
+			'type' => 'select',
+			'items' => array(
+				array(
+					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.0',
+					0,
+					'selicons/above_center.gif'
+				),
+				array(
+					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.1',
+					1,
+					'selicons/above_right.gif'
+				),
+				array(
+					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.2',
+					2,
+					'selicons/above_left.gif'
+				),
+				...
+				array(
+					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.10',
+					26,
+					'selicons/intext_left_nowrap.gif'
+				)
+			),
+			'selicon_cols' => 6,
+			'default' => '0',
+			'iconsInOptionTags' => 1
+		)
+	),
 
 Notice how each label/value pair contains an icon reference on the
 third position. Towards the bottom the layout of the icons is defined
@@ -1280,10 +1650,12 @@ as being arranged in 6 columns.
 
 .. _columns-select-examples-grsp:
 
-Example - Render the General Record Storage Page selector as a tree of page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Render the General Record Storage Page selector as a tree of page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following configuration change::
+The following configuration change:
+
+.. code-block:: php
 
    $tempConfiguration = array(
       'type' => 'select',
@@ -1305,217 +1677,149 @@ The following configuration change::
 
 will transform the General Record Storage Page selector into:
 
-|img-26|
+.. figure:: ../../../Images/TypeSelectGeneralStorageAsTree.png
+   :alt: The general storage selector as a tree
+
+   The general storage page selector modified to render as a page tree
+
 
 .. _columns-select-examples-wizards:
 
-Example - Adding wizards
-~~~~~~~~~~~~~~~~~~~~~~~~
+Adding wizards
+~~~~~~~~~~~~~~
 
 This example shows how wizards can be added to a selector box. The
 three typical wizards for a selector box is edit, add and list items.
 This enables the user to create new items in the look up table while
 being right at the selector box where he wants to select them:
 
-The configuration is rather long and looks like this (notice, that
-wizards are not exclusively available for selector boxes!)::
+The configuration is rather long and looks like this (note that
+wizards are not exclusively available for selector boxes!):
 
-   'file_mountpoints' => array(
-           'label' => 'LLL:EXT:lang/locallang_tca.xml:be_users.options_file_mounts',
-           'config' => array(
-                   'type' => 'select',
-                   'foreign_table' => 'sys_filemounts',
-                   'foreign_table_where' => ' AND sys_filemounts.pid=0 ORDER BY sys_filemounts.title',
-                   'size' => '3',
-                   'maxitems' => '10',
-                   'autoSizeMax' => 10,
-                   'iconsInOptionTags' => 1,
-                   'wizards' => array(
-                        '_PADDING' => 1,
-                        '_VERTICAL' => 1,
-                        'edit' => array(
-                                'type' => 'popup',
-                                'title' => 'LLL:EXT:lang/locallang_tca.xml:file_mountpoints_edit_title',
-                                'script' => 'wizard_edit.php',
-                                'icon' => 'edit2.gif',
-                                'popup_onlyOpenIfSelected' => 1,
-                                'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1',
-                        ),
-                        'add' => array(
-                                'type' => 'script',
-                                'title' => 'LLL:EXT:lang/locallang_tca.xml:file_mountpoints_add_title',
-                                'icon' => 'add.gif',
-                                'params' => array(
-                                        'table' => 'sys_filemounts',
-                                        'pid' => '0',
-                                        'setValue' => 'prepend'
-                                ),
-                                'script' => 'wizard_add.php',
-                        ),
-                        'list' => array(
-                                'type' => 'script',
-                                'title' => 'LLL:EXT:lang/locallang_tca.xml:file_mountpoints_list_title',
-                                'icon' => 'list.gif',
-                                'params' => array(
-                                        'table' => 'sys_filemounts',
-                                        'pid' => '0',
-                                ),
-                                'script' => 'wizard_list.php',
-                        )
-                )
-           )
-   ),
+.. code-block:: php
+   :emphasize-lines: 11-43
 
-See the wizard section in this document for more information.
+	'file_mountpoints' => array(
+		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.options_file_mounts',
+		'config' => array(
+			'type' => 'select',
+			'foreign_table' => 'sys_filemounts',
+			'foreign_table_where' => ' AND sys_filemounts.pid=0 ORDER BY sys_filemounts.title',
+			'size' => '3',
+			'maxitems' => 25,
+			'autoSizeMax' => 10,
+			'iconsInOptionTags' => 1,
+			'wizards' => array(
+				'_PADDING' => 1,
+				'_VERTICAL' => 1,
+				'edit' => array(
+					'type' => 'popup',
+					'title' => 'LLL:EXT:lang/locallang_tca.xlf:file_mountpoints_edit_title',
+					'script' => 'wizard_edit.php',
+					'icon' => 'edit2.gif',
+					'popup_onlyOpenIfSelected' => 1,
+					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
+				),
+				'add' => array(
+					'type' => 'script',
+					'title' => 'LLL:EXT:lang/locallang_tca.xlf:file_mountpoints_add_title',
+					'icon' => 'add.gif',
+					'params' => array(
+						'table' => 'sys_filemounts',
+						'pid' => '0',
+						'setValue' => 'prepend'
+					),
+					'script' => 'wizard_add.php'
+				),
+				'list' => array(
+					'type' => 'script',
+					'title' => 'LLL:EXT:lang/locallang_tca.xlf:file_mountpoints_list_title',
+					'icon' => 'list.gif',
+					'params' => array(
+						'table' => 'sys_filemounts',
+						'pid' => '0'
+					),
+					'script' => 'wizard_list.php'
+				)
+			)
+		)
+	),
 
-|img-27| Notice the configuration of "autoSizeMax". This value will make the
-height of the selector boxes adjust themselves automatically depending
-on the content in them. The result is as follows:
+See the :ref:`wizards section <wizards>` for more information.
+
+.. figure:: ../../../Images/TypeSelectWizards.png
+   :alt: A selector with wizards
+
+   The file mount selector with add, edit and list wizards
+
+Notice the configuration of :ref:`autoSizeMax <columns-select-properties-autosizemax>`.
+This value will make the height of the selector boxes adjust themselves automatically depending
+on the content in them.
 
 
 .. _columns-select-examples-mm:
 
-Example – Bidirectional MM relations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MM relations
+~~~~~~~~~~~~
 
-For a table, "user\_testmmrelations\_two", we have a field "rel" with
-configured with MM relations::
+This example demonstrates the use of MM relations. In particular
+they are used to relate system categories to a variety of other
+records. As such it is necessary to keep track in the MM table of
+the nature of each such record. This is achieved by using the
+"fieldname" field, referenced in the :ref:`MM_match_fields <columns-select-properties-mm-match-fields>`
+configuration.
 
-              "rel" => Array (
-                           "exclude" => 1,
-                           "label" => "Relations:",
-                           "config" => Array (
-                                   "type" => "select",
-                                   "foreign_table" => "user_testmmrelations_one",
-                                   "foreign_table_where" => "ORDER BY user_testmmrelations_one.uid",
-                                   "size" => 10,
-                                   "minitems" => 0,
-                                   "maxitems" => 10,
-                                   "MM" => "user_testmmrelations_two_rel_mm",
-                                   'MM_match_fields' => array('ident'=>'table_two')
-                           )
-                   ),
+The "tablenames" field is also used in the case where multiple
+category relation fields are added to the same record type
+(as happens to the "pages" table when the "examples" extension
+is installed).
 
-The MM table is called "user\_testmmrelations\_two\_rel\_mm", and the
-field "ident" is used to match on with the word "table\_two". Doing
-this enables us to use the  *same MM* table for other fields using
-other keywords for the "ident" field.
+.. code-block:: php
 
-In another table "user\_testmmrelations\_one" a field called "rel2"
-constitutes the foreign side of the bidirectional relation::
+	'type' => 'select',
+	'foreign_table' => 'sys_category',
+	'foreign_table_where' => ' AND sys_category.sys_language_uid IN (-1, 0) ORDER BY sys_category.sorting ASC',
+	'MM' => 'sys_category_record_mm',
+	'MM_opposite_field' => 'items',
+	'MM_match_fields' => array(
+		'tablenames' => 'categories',
+		'fieldname' => 'pages',
+	),
+	'size' => 10,
+	'autoSizeMax' => 50,
+	'maxitems' => 9999,
+	'renderMode' => 'tree',
+	'treeConfig' => array(
+		'parentField' => 'parent',
+		'appearance' => array(
+			'expandAll' => TRUE,
+			'showHeader' => TRUE,
+		),
+	),
 
-              "rel2" => Array (
-                           "label" => "Foreign relation:",
-                           "config" => Array (
-                                   "type" => "select",
-                                   "foreign_table" => "user_testmmrelations_two",
-                                   "foreign_table_where" => "ORDER BY user_testmmrelations_two.uid",
-                                   "size" => 10,
-                                   "minitems" => 0,
-                                   "maxitems" => 10,
-                                   "MM" => "user_testmmrelations_two_rel_mm",
-                                   'MM_match_fields' => array('ident'=>'table_two'),
-                                   "MM_opposite_field" => "rel"
-                           )
-                   ),
+The selector looks like this:
 
-Notice how in both cases " foreign\_table" points to the table name of
-the other. Also they use the exact same set up except in the foreign
-side case above the field "MM\_opposite\_field" is set to "rel" - the
-name of the field in table "user\_testmmrelations\_two"!
+.. figure:: ../../../Images/TypeSelectMmLocal.png
+   :alt: The categories selector
 
-The SQL looks like::
+   The categories selector as added by default to pages
 
-   #
-   # Table structure for table 'user_testmmrelations_two_rel_mm'
-   #
-   #
-   CREATE TABLE user_testmmrelations_two_rel_mm (
-     uid int(11) NOT NULL auto_increment,
-     uid_local int(11) DEFAULT '0' NOT NULL,
-     uid_foreign int(11) DEFAULT '0' NOT NULL,
-     tablenames varchar(30) DEFAULT '' NOT NULL,
-     sorting int(11) DEFAULT '0' NOT NULL,
-     sorting_foreign int(11) DEFAULT '0' NOT NULL,
-     ident varchar(30) DEFAULT '' NOT NULL,
+The above configuration also defines the MM relation as being
+bidirectional, via the :ref:`MM_opposite_field <columns-select-properties-mm-opposite-field>`
+property. This means that we can look at a given category and see
+which items it is related to. Note that it is perfectly possible to
+create relations from that side too.
 
-     KEY uid_local (uid_local),
-     KEY uid_foreign (uid_foreign),
-     PRIMARY KEY (uid),
-   );
+.. figure:: ../../../Images/TypeSelectMmForeign.png
+   :alt: The category and its items
 
-In the backend the form could look like:
+   A category and the items it is related to
 
-|img-28| So, from a record in table two (native) there are two relations made
-to records in table one.
+.. note::
 
-If we look at one of the records from table one we see the relation
-made from "TWO (1)":
-
-|img-29| |img-30| In the database it looks like this:
-
-
-.. _columns-select-examples-flexforms:
-
-Example – FlexForms and MM relations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-MM relations can be used with flexforms. Here is an example:
-
-|img-31| The flexform field configuration looks like this::
-
-   <rel1>
-       <TCEforms>
-           <label>Relation:</label>
-           <config>
-               <type>group</type>
-               <internal_type>db</internal_type>
-               <allowed>user_testmmrelations_three</allowed>
-               <size>10</size>
-               <minitems>0</minitems>
-               <maxitems>10</maxitems>
-               <MM>user_testmmrelations_two_rel_mm</MM>
-               <MM_match_fields>
-                   <ident>table_one_flex</ident>
-               </MM_match_fields>
-               <multiple>1</multiple>
-               <MM_hasUidField>1</MM_hasUidField>
-           </config>
-       </TCEforms>
-   </rel1>
-
-As you can see the same element (titled "3-3 (UID-3)") is selected
-twice (the "<multiple>" flag has been set) – and as a consequence
-<MM\_hasUidField>1</MM\_hasUidField> is set as well. In fact this
-configuration is  *sharing the MM table* with another field (see the
-previous example) so the configuration ::
-
-                      <MM_match_fields>
-                   <ident>table_one_flex</ident>
-               </MM_match_fields>
-
-makes sure all MM relations for this flexform field is marked with the
-string "table\_one\_flex".
-
-In the database the entry looks like:
-
-|img-32| (The first two entries belong to that other field, see previous
-example).
-
-Of course you can specify a dedicated join table to the flexform
-instead of sharing it.
-
-**What will not work in flexforms** is if you put MM relation fields
-in elements that can get repeated, like in sections:
-
-|img-33| Here I have added three sections and tried to add entries to each.
-However, when saved the two last entries are loaded for all of them.
-The result of the save was:
-
-|img-34| The reason is that the fields all use the same uid (that of the
-record) to find the MM records. This could work when MM fields were
-used outside sections of flexform fields which could only occur one
-time per record, but here it's not possible.
+   The TCA configuration listed above cannot be found directly
+   in a TCA file, but is generated by the :code:`addTcaColumn()` method
+   of class :ref:`TYPO3\CMS\Core\Category\CategoryRegistry <t3cmsapi:TYPO3\\CMS\\Core\\Category\\CategoryRegistry>`.
 
 
 .. _columns-select-data-format:

@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns:
@@ -24,11 +23,52 @@ defined etc.) and for each type a separate set of additional
 properties applies. These properties are clearly explained below for
 each type.
 
-This table shows the keys of the ['columns'][ *field name* ] array:
+This reference below shows the keys of the :code:`['columns'][field name]` array.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ================ ====================
+   Property         Data Type
+   ================ ====================
+   `config`_        array
+   `defaultExtras`_ string
+   `displayCond`_   string/array
+   `exclude`_       boolean
+   `label`_         string/LLL reference
+   `l10n\_cat`_     string
+   `l10n\_display`_ string
+   `l10n\_mode`_    string
+   ================ ====================
+
+
+Property details
+""""""""""""""""
+
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-properties-label:
+
+label
+~~~~~
 
 .. container:: table-row
 
@@ -43,11 +83,24 @@ This table shows the keys of the ['columns'][ *field name* ] array:
 
          The name of the field as it is shown in the interface:
 
-         |img-10|
+         .. figure:: ../../Images/ColumnLabel.png
+            :alt: Two examples of labels
+
+            "Disable:" and "Template Title:" are two labels
+
+         .. note::
+
+            Labels can be overridden in the :ref:`types definition <types-properties-showitem>`.
 
    Scope
          Display
 
+
+
+.. _columns-properties-exclude:
+
+exclude
+~~~~~~~
 
 .. container:: table-row
 
@@ -62,11 +115,17 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          they are members of a backend user group with this field added as an
          "Allowed Excludefield" (or "admin" user).
 
-         See "Inside TYPO3" document about permissions.
+         See :ref:`Inside TYPO3 <t3inside:start>` for more about permissions.
 
    Scope
          Proc.
 
+
+
+.. _columns-properties-l10n-mode:
+
+l10n\_mode
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -115,6 +174,12 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          Display / Proc.
 
 
+
+.. _columns-properties-l10n-display:
+
+l10n\_display
+~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -147,6 +212,12 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          Display
 
 
+
+.. _columns-properties-l10n-cat:
+
+l10n\_cat
+~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -175,6 +246,12 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          Display
 
 
+
+.. _columns-properties-config:
+
+config
+~~~~~~
+
 .. container:: table-row
 
    Key
@@ -198,6 +275,12 @@ This table shows the keys of the ['columns'][ *field name* ] array:
    Scope
          -
 
+
+
+.. _columns-properties-displaycond:
+
+displayCond
+~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -330,6 +413,12 @@ This table shows the keys of the ['columns'][ *field name* ] array:
          Display
 
 
+
+.. _columns-properties-defaultextras:
+
+defaultExtras
+~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -357,9 +446,6 @@ This table shows the keys of the ['columns'][ *field name* ] array:
 
    Scope
          Display
-
-
-.. ###### END~OF~TABLE ######
 
 
 .. _columns-types:

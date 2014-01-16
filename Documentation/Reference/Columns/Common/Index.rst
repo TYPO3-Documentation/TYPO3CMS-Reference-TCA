@@ -1,4 +1,4 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -15,8 +15,47 @@ There are a number of properties which are common to all field types.
 They are described below.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-common-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ============= =========
+   Property      Data Type
+   ============= =========
+   `dbType`_     string
+   `default`_    mixed
+   `form\_type`_ string
+   `type`_       string
+   `readOnly`_   boolean
+   `search`_     array
+   `softref`_    string
+   ============= =========
+
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-common-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -36,6 +75,12 @@ They are described below.
          / Proc.
 
 
+
+.. _columns-common-properties-form-type:
+
+form\_type
+~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -51,6 +96,12 @@ They are described below.
    Scope
          Display
 
+
+
+.. _columns-common-properties-dbtype:
+
+dbType
+~~~~~~
 
 .. container:: table-row
 
@@ -71,6 +122,12 @@ They are described below.
          Database
 
 
+
+.. _columns-common-properties-default:
+
+default
+~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -89,6 +146,12 @@ They are described below.
          / Proc.
 
 
+
+.. _columns-common-properties-softref:
+
+softref
+~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -105,6 +168,12 @@ They are described below.
    Scope
          Proc.
 
+
+
+.. _columns-common-properties-readonly:
+
+readOnly
+~~~~~~~~
 
 .. container:: table-row
 
@@ -125,6 +194,12 @@ They are described below.
    Scope
          Display
 
+
+
+.. _columns-common-properties-search:
+
+search
+~~~~~~
 
 .. container:: table-row
 
@@ -151,7 +226,9 @@ They are described below.
 
          **Example:**
 
-         The "tt\_content" table has the following definition::
+         The "tt\_content" table has the following definition:
+
+         .. code-block:: php
 
             $TCA['tt_content'] = array(
                     ...
@@ -177,7 +254,3 @@ They are described below.
 
    Scope
          Search
-
-
-.. ###### END~OF~TABLE ######
-

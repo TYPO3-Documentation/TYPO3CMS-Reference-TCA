@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns-inline:
@@ -15,21 +14,82 @@ TYPE: "inline"
 Inline-Relational-Record-Editing (IRRE) offers a way of directly
 editing parent-child-relations in one backend view. New child records
 are created using AJAX calls to prevent a reload of the complete
-backend view. This type was first integrated in TYPO3 4.1.
+backend view.
 
-|img-51| Please note that IRRE does not fully work in conjunction with
+.. figure:: ../../../Images/TypeInlineExample.png
+   :alt: An example of inline field
+
+   Images in content elements use IRRE to related to FAL records
+
+Please note that IRRE does not fully work in conjunction with
 versioning. Only 1:n relationships are supported in workspaces (since
 TYPO3 4.5).
 
 .. note::
 
-   TCAdefaults.<table>.pid = <page id> can be used to define the pid of
+   :code:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of
    new child records. Thus, it's possible to have special storage folders
-   on a per-table-basis.
+   on a per-table-basis. See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-inline-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ======================================= =========
+   Property                                Data Type
+   ======================================= =========
+   `appearance`_                           array
+   `autoSizeMax`_                          integer
+   `behaviour`_                            array
+   `customControls`_                       array
+   `filter`_                               array
+   `foreign\_default\_sortby`_             string
+   `foreign\_field`_                       string
+   `foreign\_label`_                       string
+   `foreign\_match\_fields`_               array
+   `foreign\_selector`_                    string
+   `foreign\_selector\_fieldTcaOverride`_  array
+   `foreign\_sortby`_                      string
+   `foreign\_table`_                       string
+   `foreign\_table\_field`_                string
+   `foreign\_types`_                       array
+   `foreign\_unique`_                      string
+   `minitems`_                             integer
+   `maxitems`_                             integer
+   `MM`_                                   string
+   `size`_                                 integer
+   `symmetric\_field`_                     string
+   `symmetric\_label`_                     string
+   `symmetric\_sortby`_                    string
+   `type`_                                 string
+   ======================================= =========
+
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-inline-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -45,6 +105,12 @@ TYPO3 4.5).
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-foreign-table:
+
+foreign\_table
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -67,6 +133,12 @@ TYPO3 4.5).
          Display / Proc.
 
 
+
+.. _columns-inline-properties-appearance:
+
+appearance
+~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -85,9 +157,12 @@ TYPO3 4.5).
            If a collapsed record is clicked, the currently open one collapses and
            the clicked one expands.
 
-         - *newRecordLinkAddTitle* (boolean) Adds the title of the foreign\_table
-           to the "New record" link.false: "Create new"true: "Create new <title
-           of foreign\_table>", e.g. "Create new address"
+         - *newRecordLinkAddTitle* (boolean) Adds the title of the
+           :ref:`foreign_table <columns-inline-properties-foreign-table>`
+           to the "New record" link.
+
+           -  false: "Create new"
+           -  true: "Create new <title of foreign\_table>", e.g. "Create new address"
 
          - *newRecordLinkPosition* (string) **Deprecated** : use
            *levelLinksPosition* instead
@@ -96,15 +171,15 @@ TYPO3 4.5).
            default: 'top'Defines where to show the "New record" link in relation
            to the child records.
 
-         - *useCombination* (boolean)This is only useful on bidirectional
+         - *useCombination* (boolean) This is only useful on bidirectional
            relations using an intermediate table with attributes. In a
            "combination" it is possible to edit the attributes AND the related
-           child record itself.If using a foreign\_selector in such a case, the
-           foreign\_unique property  **must** be set to the same field as the
-           foreign\_selector.
+           child record itself. If using a :ref:`foreign_selector <columns-inline-properties-foreign-selector>`
+           in such a case, the :ref:`foreign_unique <columns-inline-properties-foreign-unique>`
+           property  **must** be set to the same field as the
+           :ref:`foreign_selector <columns-inline-properties-foreign-selector>`.
 
-         - *useSortable* (boolean) Active Drag&Drop Sorting by the script.aculo.us
-           Sortable object.
+         - *useSortable* (boolean) Activate drag & drop.
 
          - *showPossibleLocalizationRecords* (boolean) Show unlocalized records
            which are in the original language, but not yet localized.
@@ -125,12 +200,13 @@ TYPO3 4.5).
            accordant values are set to a boolean value (true or false), the
            control is shown or hidden in the header of each record.
 
-         - *showPossibleRecordsSelector* (boolean) (since TYPO3 4.7) Can be used
+         - *showPossibleRecordsSelector* (boolean) (since TYPO3 CMS 4.7) Can be used
            to hide the foreign record selector from the interface, even if you
-           have a foreign\_selector configured. This can be used to keep the
-           technical functionality of the foreign\_selector but is useful if you
+           have a :ref:`foreign_selector <columns-inline-properties-foreign-selector>` configured.
+           This can be used to keep the technical functionality of the
+           :ref:`foreign_selector <columns-inline-properties-foreign-selector>` but is useful if you
            want to replace it with your own implementation using a custom control
-           (see "customControls").
+           (see :ref:`customControls <columns-inline-properties-customcontrols>`).
 
          - *headerThumbnail* (boolean) (since TYPO3 CMS 6.0) Defines whether a
            thumbnail should be rendered in the inline elements' header. This is
@@ -140,6 +216,12 @@ TYPO3 4.5).
    Scope
          Display
 
+
+
+.. _columns-inline-properties-behaviour:
+
+behaviour
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -158,17 +240,17 @@ TYPO3 4.5).
            the affected parent and child tables were localizable, the mode
            'select' is used by default.
 
-         - Mode 'keep': This is not a real localization, since the children are
-           taken from the parent of the original language. But the children can
-           be moved, deleted, modified etc. on the localized parent which - of
-           course - also affects the original language.
+           - Mode 'keep': This is not a real localization, since the children are
+             taken from the parent of the original language. But the children can
+             be moved, deleted, modified etc. on the localized parent which - of
+             course - also affects the original language.
 
-         - Mode 'select': This mode provides the possibility to have a selective
-           localization and to compare localized data to the pendants of the
-           original language. Furthermore this mode is extended by a 'localize
-           all' feature, which works similar to the localization of content on
-           pages, and a 'synchronize' feature which offers the possibility to
-           synchronize a localization with its original language.
+           - Mode 'select': This mode provides the possibility to have a selective
+             localization and to compare localized data to the pendants of the
+             original language. Furthermore this mode is extended by a 'localize
+             all' feature, which works similar to the localization of content on
+             pages, and a 'synchronize' feature which offers the possibility to
+             synchronize a localization with its original language.
 
          - *localizeChildrenAtParentLocalization* (boolean)Defines whether
            children should be localized when the localization of the parent gets
@@ -184,6 +266,12 @@ TYPO3 4.5).
          Display / Proc.
 
 
+
+.. _columns-inline-properties-customcontrols:
+
+customControls
+~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -193,7 +281,9 @@ TYPO3 4.5).
          array
 
    Description
-         (Since TYPO3 4.7) Numerical array containing definitions of custom
+         *(Available since TYPO3 CMS 4.7)*
+
+         Numerical array containing definitions of custom
          header controls for IRRE fields. This makes it possible to create
          special controls by calling user-defined functions (userFuncs). Each
          item in the array item must be an array itself, with at least on key
@@ -212,6 +302,12 @@ TYPO3 4.5).
          Display
 
 
+
+.. _columns-inline-properties-foreign-field:
+
+foreign\_field
+~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -221,13 +317,19 @@ TYPO3 4.5).
          string
 
    Description
-         The foreign\_field is the field of the child record pointing to the
+         The :code:`foreign_field` is the field of the child record pointing to the
          parent record. This defines where to store the uid of the parent
          record.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-foreign-label:
+
+foreign\_label
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -239,17 +341,21 @@ TYPO3 4.5).
 
    Description
          If set, it overrides the label set in
-         $TCA[<foreign\_table>]['ctrl']['label'] for the inline-view.
+         :code:`$TCA[<foreign_table>]['ctrl']['label']` for the inline-view.
 
    Scope
          Display / Proc.
 
 
+
+.. _columns-inline-properties-foreign-selector:
+
+foreign\_selector
+~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
-         .. _columns-inline-foreign-selector:
-
          foreign\_selector
 
    Datatype
@@ -259,14 +365,20 @@ TYPO3 4.5).
          A selector is used to show all possible child records that could be
          used to create a relation with the parent record. It will be rendered
          as a multi-select-box. On clicking on an item inside the selector a
-         new relation is created.The foreign\_selector points to a field of the
-         foreign\_table that is responsible for providing a selector-box – this
-         field on the foreign\_table usually has the type "select" and also has
-         a "foreign\_table" defined.
+         new relation is created.The :code:`foreign_selector` points to a field of the
+         :ref:`foreign_table <columns-inline-properties-foreign-table>` that is responsible
+         for providing a selector-box – this field on the :code:`foreign_table` usually
+         is of type :ref:`select <columns-select>` and also has a :code:`foreign_table` defined.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-foreign-selector-fieldtcaoverride:
+
+foreign\_selector\_fieldTcaOverride
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -280,7 +392,7 @@ TYPO3 4.5).
          *(Available since TYPO3 CMS 6.0)*
 
          TCA file configuration that overrides the configuration of the field defined
-         in the :ref:`foreign_selector<columns-inline-foreign-selector>` property.
+         in the :ref:`foreign_selector <columns-inline-properties-foreign-selector>` property.
 
          **Example** ::
 
@@ -297,6 +409,12 @@ TYPO3 4.5).
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-foreign-sortby:
+
+foreign\_sortby
+~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -316,6 +434,12 @@ TYPO3 4.5).
          Display / Proc.
 
 
+
+.. _columns-inline-properties-foreign-default-sortby:
+
+foreign\_default\_sortby
+~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -325,8 +449,8 @@ TYPO3 4.5).
          string
 
    Description
-         If a field name for  *foreign\_sortby* is defined, then this is
-         ignored.
+         If a field name for :ref:`foreign_sortby <columns-inline-properties-foreign-sortby>`
+         is defined, then this is ignored.
 
          Otherwise this is used as the "ORDER BY" statement to sort the records
          in the table when listed.
@@ -334,6 +458,12 @@ TYPO3 4.5).
    Scope
          Display
 
+
+
+.. _columns-inline-properties-foreign-table-field:
+
+foreign\_table\_field
+~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -344,17 +474,25 @@ TYPO3 4.5).
          string
 
    Description
-         The  *foreign\_table\_field* is the field of the child record pointing
+         The  :code:`foreign_table_field` is the field of the child record pointing
          to the parent record. This defines where to store the table name of
          the parent record. On setting this configuration key together with
-         *foreign\_field* , the child record knows what its parent record is –
+         :ref:`foreign_field <columns-inline-properties-foreign-field>`,
+         the child record knows what its parent record is –
          so the child record could also be used on other parent tables.This
          issue is also known as "weak entity".Do not confuse with
-         *foreign\_table* or  *foreign\_field* . It has its own behavior.
+         :ref:`foreign_table <columns-inline-properties-foreign-table>`
+         or :ref:`foreign_field <columns-inline-properties-foreign-field>`. It has its own behavior.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-foreign-unique:
+
+foreign\_unique
+~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -373,13 +511,19 @@ TYPO3 4.5).
          box. Now you want to be able to specify prices for each customer group
          when you edit a product, but of course you don't want to specify
          contradicting prices for one product (i.e. two different prices for
-         the same customer\_group). That's why you would set foreign\_unique to
+         the same customer\_group). That's why you would set :code:`foreign_unique` to
          the field name "customer\_group", to prevent that two prices for the
          same customer group can be created for one product.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-filter:
+
+filter
+~~~~~~
 
 .. container:: table-row
 
@@ -395,15 +539,21 @@ TYPO3 4.5).
          Possibility to define user functions to filter out child items.
 
          This is useful in special scenarios when used in conjunction
-         with a foreign_selector where only certain foreign records are allowed
-         to be related to.
+         with a :ref:`foreign_selector <columns-inline-properties-foreign-selector>`
+         where only certain foreign records are allowed to be related to.
 
          For further documentation on this feature, see the
-         :ref:`"filter" documentation under TYPE: "group"<columns-group-filter>`.
+         :ref:`"filter" documentation under TYPE: "group"<columns-group-properties-filter>`.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-mm:
+
+MM
+~~
 
 .. container:: table-row
 
@@ -416,8 +566,8 @@ TYPO3 4.5).
          (table name)
 
    Description
-         Means that the relation to the records of "foreign\_table" is done
-         with a M-M relation with a third "join" table.
+         Means that the relation to the records of :ref:`foreign_table <columns-inline-properties-foreign-table>`
+         is done with a M-M relation with a third "join" table.
 
          That table typically has three columns:
 
@@ -429,13 +579,21 @@ TYPO3 4.5).
          any more but rather it's set to the number of records in the relation
          on each update, so the field should be an integer.
 
-         Notice: Using MM relations you can ONLY store real relations for
-         foreign tables in the list - no additional string values or non-record
-         values (so no attributes).
+         .. note::
+
+            Using MM relations you can ONLY store real relations for
+            foreign tables in the list - no additional string values or non-record
+            values (so no attributes).
 
    Scope
          Proc.
 
+
+
+.. _columns-inline-properties-foreign-match-fields:
+
+foreign\_match\_fields
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -446,7 +604,9 @@ TYPO3 4.5).
          array
 
    Description
-         (Since TYPO3 4.7) Array of field-value pairs to both insert and match
+         *(Available since TYPO3 CMS 4.7)*
+
+         Array of field-value pairs to both insert and match
          against when writing/reading IRRE relations. Using the match fields,
          it is possible to re-use the same child table in more than one field
          of the parent table by using a match field with different values for
@@ -494,6 +654,12 @@ TYPO3 4.5).
          Proc.
 
 
+
+.. _columns-inline-properties-foreign-types:
+
+foreign\_types
+~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -503,7 +669,9 @@ TYPO3 4.5).
          array
 
    Description
-         (Since TYPO3 4.7) This can be used to control which fields of the
+         *(Available since TYPO3 CMS 4.7)*
+
+         This can be used to control which fields of the
          child table are displayed. You can override the "showitem", etc.
          settings of the child table here, by supplying an override for the
          "types" array of that table. For details on how the types array is
@@ -513,6 +681,12 @@ TYPO3 4.5).
    Scope
          Display
 
+
+
+.. _columns-inline-properties-size:
+
+size
+~~~~
 
 .. container:: table-row
 
@@ -528,6 +702,12 @@ TYPO3 4.5).
    Scope
          Display
 
+
+
+.. _columns-inline-properties-autosizemax:
+
+autoSizeMax
+~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -548,6 +728,12 @@ TYPO3 4.5).
          Display
 
 
+
+.. _columns-inline-properties-maxitems:
+
+maxitems
+~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -565,6 +751,12 @@ TYPO3 4.5).
          Display / Proc
 
 
+
+.. _columns-inline-properties-minitems:
+
+minitems
+~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -580,6 +772,12 @@ TYPO3 4.5).
          Display
 
 
+
+.. _columns-inline-properties-symmetric-field:
+
+symmetric\_field
+~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -589,13 +787,21 @@ TYPO3 4.5).
          string
 
    Description
-         This works like foreign\_field, but in case of using bidirectional
-         symmetric relations. symmetric\_field defines in which field on the
-         foreign\_table the uid of the "other" parent is stored.
+         This works like :ref:`foreign_field <columns-inline-properties-foreign-field>`,
+         but in case of using bidirectional symmetric relations.
+         :code:`symmetric_field` defines in which field on the
+         :ref:`foreign_table <columns-inline-properties-foreign-table>`
+         the uid of the "other" parent is stored.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-symmetric-label:
+
+symmetric\_label
+~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -607,12 +813,18 @@ TYPO3 4.5).
 
    Description
          If set, it overrides the label set in
-         $TCA[<foreign\_table>]['ctrl']['label'] for the inline-view and only
+         :code:`$TCA[<foreign_table>]['ctrl']['label']` for the inline-view and only
          if looking to a symmetric relation from the "other" side.
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-inline-properties-symmetric-sortby:
+
+symmetric\_sortby
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -623,16 +835,15 @@ TYPO3 4.5).
          string
 
    Description
-         This works like foreign\_sortby, but in case of using bidirectional
-         symmetric relations. Each side of a symmetric relation could have its
-         own sorting, so symmetric\_sortby defines a field on the
-         foreign\_table where the sorting of the "other" side is stored.
+         This works like :ref:`foreign_sortby <columns-inline-properties-foreign-sortby>`,
+         but in case of using bidirectional symmetric relations.
+         Each side of a symmetric relation could have its
+         own sorting, so :code:`symmetric_sortby` defines a field on the
+         :ref:`foreign_table <columns-inline-properties-foreign-table>` where the sorting
+         of the "other" side is stored.
 
    Scope
          Display / Proc.
-
-
-.. ###### END~OF~TABLE ######
 
 
 .. _columns-inline-examples:
@@ -646,7 +857,10 @@ Example "comma-separated list":
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This combines companies with persons (employees) using a comma
-separated list, so no "foreign\_field" is used here. ::
+separated list, so no :ref:`foreign_field <columns-inline-properties-foreign-field>`
+is used here.
+
+.. code-block:: php
 
    $TCA['company'] = array(
      'ctrl' => ...,
@@ -682,7 +896,9 @@ This example combines companies with persons (employees) using an
 intermediate table. It is also possible to add attributes to every
 relation – in this example, an attribute "jobtype" on the
 "person\_company" table is defined. It is also possible to look at the
-relation from both sides (parent and child). ::
+relation from both sides (parent and child).
+
+.. code-block:: php
 
    $TCA['person'] = array(
      'columns' => array(
@@ -764,7 +980,9 @@ husband.
 
 Sorting could be individually defined for each of the both sides
 (perhaps this should not be applied to a wife-husband-relationship in
-real life). ::
+real life).
+
+.. code-block:: php
 
    $TCA['person'] = array(
      'columns' => array(
@@ -823,4 +1041,3 @@ real life). ::
        ),
      ),
    );
-

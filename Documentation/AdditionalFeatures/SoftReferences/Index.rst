@@ -1,4 +1,4 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -12,12 +12,12 @@ Soft References
 ^^^^^^^^^^^^^^^
 
 "Soft References" are references to database elements, files, email
-addresses, URls etc. which are found in-text in content. The <link
-[page\_id]> tag from typical bodytext fields are an example of this.
+addresses, URLs etc. which are found inside text fields. The
+:code:`<link[page_id]>` tag found in bodytext fields is an example of this.
 
 The Soft Reference parsers are used by the system to find these
 references and process them accordingly in import/export actions and
-copy operations. Also, the soft references are utilized by integrity
+copy operations. Also, the soft references are used by integrity
 checking functions.
 
 
@@ -26,21 +26,16 @@ checking functions.
 Default soft reference parsers
 """"""""""""""""""""""""""""""
 
-The class "t3lib\_softrefproc" contains generic parsers for the most
-well-known types which are default for most TYPO3 installations. This
+The :ref:`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex <t3cmsapi:TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex>`
+class contains generic parsers for the most well-known types
+which are default for most TYPO3 installations. This
 is the list of the possible keys:
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _soft-references-default-parsers-substitute:
 
-.. container:: table-row
-
-   softref key
-         "softref" key
-
-   Description
-         Description
-
+substitute
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -52,6 +47,12 @@ is the list of the possible keys:
          /export features)
 
 
+
+.. _soft-references-default-parsers-notify:
+
+notify
+~~~~~~
+
 .. container:: table-row
 
    softref key
@@ -61,14 +62,26 @@ is the list of the possible keys:
          Just report if a value is found, nothing more.
 
 
+
+.. _soft-references-default-parsers-images:
+
+images
+~~~~~~
+
 .. container:: table-row
 
    softref key
          images
 
    Description
-         HTML <img> tags for RTE images / images from fileadmin/
+         HTML :code:`<img>` tags for RTE images / images from :file:`fileadmin/`.
 
+
+
+.. _soft-references-default-parsers-typolink:
+
+typolink
+~~~~~~~~
 
 .. container:: table-row
 
@@ -80,14 +93,26 @@ is the list of the possible keys:
          comma-separated list.
 
 
+
+.. _soft-references-default-parsers-typolink-tag:
+
+typolink\_tag
+~~~~~~~~~~~~~
+
 .. container:: table-row
 
    softref key
          typolink\_tag
 
    Description
-         As typolink, but searching for <link> tag to encapsulate it.
+         As typolink, but searching for a :code:`<link>` tag encapsulating it.
 
+
+
+.. _soft-references-default-parsers-tsconfig:
+
+TSconfig
+~~~~~~~~
 
 .. container:: table-row
 
@@ -95,8 +120,14 @@ is the list of the possible keys:
          TSconfig
 
    Description
-         Processing (filerefs? Domains? what do we know...)
+         References to files.
 
+
+
+.. _soft-references-default-parsers-tstemplate:
+
+TStemplate
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -105,8 +136,14 @@ is the list of the possible keys:
 
    Description
          Free text references to "fileadmin/" files. HTML resource links like
-         <a>, <img>, <form>
+         :code:`<a>`, :code:`<img>`, :code:`<form>`.
 
+
+
+.. _soft-references-default-parsers-ext-fileref:
+
+ext\_fileref
+~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -114,9 +151,15 @@ is the list of the possible keys:
          ext\_fileref
 
    Description
-         Relative file reference, prefixed "EXT:[extkey]/" - for finding
-         extension dependencies
+         Relative file reference, prefixed :code:`EXT:[extkey]/` - for finding
+         extension dependencies.
 
+
+
+.. _soft-references-default-parsers-email:
+
+email
+~~~~~
 
 .. container:: table-row
 
@@ -124,8 +167,14 @@ is the list of the possible keys:
          email
 
    Description
-         Email highlight
+         Email highlight.
 
+
+
+.. _soft-references-default-parsers-url:
+
+url
+~~~
 
 .. container:: table-row
 
@@ -133,30 +182,32 @@ is the list of the possible keys:
          url
 
    Description
-         URL highlights (with a scheme)
+         URL highlights (with a scheme).
 
 
-.. ###### END~OF~TABLE ######
 
+The default set up is found in :file:`typo3/sysext/core/Configuration/DefaultConfiguration.php`:
 
-These are by default set up in the config\_default.php file::
+.. code-block:: php
 
-      'SC_OPTIONS' => array(
-                   'GLOBAL' => array(
-                           'softRefParser' => array(
-                                   'substitute' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'notify' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'images' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'typolink' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'typolink_tag' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'TSconfig' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'TStemplate' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'ext_fileref' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'email' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                                   'url' => 't3lib/class.t3lib_softrefproc.php:&t3lib_softrefproc',
-                           )
-                   )
-           ),
+	'SC_OPTIONS' => array(
+		'GLOBAL' => array(
+			'softRefParser' => array(
+				'substitute' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'notify' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'images' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'typolink' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'typolink_tag' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'TSconfig' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'TStemplate' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'ext_fileref' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'email' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+				'url' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
+			),
+			...
+		),
+		...
+	),
 
 
 .. _soft-references-custom-parsers:
@@ -166,10 +217,10 @@ User-defined soft reference parsers
 
 Soft References can also be user-defined. It is easy to set them up by
 simply adding new keys in
-$TYPO3\_CONF\_VARS['SC\_OPTIONS']['GLOBAL']['softRefParser']. Use key
-names based on the extension you put it in, e.g. "tx\_myextensionkey".
+:code:`$TYPO3_CONF_VARS['SC_OPTIONS']['GLOBAL']['softRefParser']`. Use key
+names based on the extension you put it in, e.g. :code:`tx_myextensionkey`.
 
 The class containing the soft reference parser must have a function
-named "findRef". Please refer to the class "t3lib\_softrefproc" from
-t3lib/ for the API to use and return.
-
+named :code:`findRef`. Please refer to class
+:ref:`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex <t3cmsapi:TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex>`
+for API usage and expected return values.

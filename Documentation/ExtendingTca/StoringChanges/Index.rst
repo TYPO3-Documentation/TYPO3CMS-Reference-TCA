@@ -15,7 +15,7 @@ Changes to the $TCA are generally packaged into extensions and – more
 precisely – reside in the :file:`ext_tables.php` file (more details about
 extension structure can be found :ref:`in the Core APIs manual <extension-architecture>`).
 
-They can also be written to a general file in the :file:`typo3conf`directory.
+They can also be written to a general file in the :file:`typo3conf` directory.
 The name of this file is defined by the configuration variable
 :code:`$GLOBALS['TYPO3_CONF_VARS']['DB']['extTablesDefinitionScript']`.
 TYPO3 official packages (like the dummy or the Introduction Pacakage)

@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _extending-examples:
@@ -22,59 +21,73 @@ Example 1: extending the fe\_users table
 """"""""""""""""""""""""""""""""""""""""
 
 The "examples" extension adds two fields to the "fe\_users" table.
-Here's the complete code::
+Here's the complete code:
 
-   $temporaryColumns = array (
-           'tx_examples_options' => array (
-                   'exclude' => 0,
-                   'label' => 'LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options',
-                   'config' => array (
-                           'type' => 'select',
-                           'items' => array (
-                                   array('LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options.I.0', '1'),
-                                   array('LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options.I.1', '2'),
-                                   array('LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options.I.2', '--div--'),
-                                   array('LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options.I.3', '3'),
-                           ),
-                           'size' => 1,
-                           'maxitems' => 1,
-                   )
-           ),
-           'tx_examples_special' => array (
-                   'exclude' => 0,
-                   'label' => 'LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_special',
-                   'config' => array (
-                           'type' => 'user',
-                           'size' => '30',
-                           'userFunc' => 'EXT:examples/class.tx_examples_tca.php:tx_examples_tca->specialField'
-                   )
-           ),
-   );
+.. code-block:: php
 
-   t3lib_extMgm::addTCAcolumns('fe_users', $temporaryColumns,1);
-   t3lib_extMgm::addToAllTCAtypes('fe_users', 'tx_examples_options;;;;1-1-1, tx_examples_special');
+	$temporaryColumns = array (
+		'tx_examples_options' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_options',
+			'config' => array (
+				'type' => 'select',
+				'items' => array (
+					array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_options.I.0', '1'),
+					array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_options.I.1', '2'),
+					array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_options.I.2', '--div--'),
+					array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_options.I.3', '3'),
+				),
+				'size' => 1,
+				'maxitems' => 1,
+			)
+		),
+		'tx_examples_special' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_special',
+			'config' => array (
+				'type' => 'user',
+				'size' => '30',
+				'userFunc' => 'Documentation\\Examples\\Userfuncs\\Tca->specialField',
+				'parameters' => array(
+					'color' => 'blue'
+				)
+			)
+		),
+	);
+
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+		'fe_users',
+		$temporaryColumns,
+		1
+	);
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+		'fe_users',
+		'tx_examples_options;;;;1-1-1, tx_examples_special'
+	);
 
 First of all, the fields that we want to add are detailed according to
-the :code:`$TCAsyntax` for columns. This configuration is stored in the
+the :code:`$TCA` syntax for columns. This configuration is stored in the
 :code:`$temporaryColumns` array.
 
 After that come two additional steps:
 
 - first the columns are actually added to the table by using
-  :code:`t3lib_extMgm::addTCAcolumns()`.
+  :code:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns()`.
 
 - then the fields are added to the "types" definition of the
-  "fe\_users" table by using :code:`t3lib_extMgm::addToAllTCAtypes()`. It is
-  possible to be more fine-grained.
+  "fe\_users" table by using :code:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes()`.
+  It is possible to be more fine-grained.
 
 This does not create the corresponding fields in the database. The new
-fields must also be defined in the "ext\_tables.sql" file of the
-extension::
+fields must also be defined in the :file:`ext_tables.sql` file of the
+extension:
 
-   CREATE TABLE fe_users (
-           tx_examples_options int(11) DEFAULT '0' NOT NULL,
-           tx_examples_special varchar(255) DEFAULT '' NOT NULL
-   );
+.. code-block:: mysql
+
+	CREATE TABLE fe_users (
+		tx_examples_options int(11) DEFAULT '0' NOT NULL,
+		tx_examples_special varchar(255) DEFAULT '' NOT NULL
+	);
 
 
 .. warning::
@@ -91,7 +104,10 @@ at the bottom of the "Extended" tab (this tab is created if it does
 not exist). The following screenshot shows the placement of the two
 new fields when editing a "fe\_users" record:
 
-|img-82|
+.. figure:: ../../Images/ExtendingTcaFeUsers.png
+   :alt: New fields for fe\_users table
+
+   The new fields added at the bottom of the "Extended" tab
 
 The next example shows how to place a field more precisely.
 
@@ -103,63 +119,77 @@ Example 2: extending the tt\_content table
 
 In this second example, we will add a "No print" field to all content
 element types. First of all, we add its SQL definition in
-"ext\_tables.sql"::
+:file:`ext_tables.sql`:
 
-   CREATE TABLE tt_content (
-           tx_examples_noprint tinyint(4) DEFAULT '0' NOT NULL
-   );
+.. code-block:: mysql
 
-Then we add it to the $TCAin "ext\_tables.php"::
+	CREATE TABLE tt_content (
+		tx_examples_noprint tinyint(4) DEFAULT '0' NOT NULL
+	);
 
-   $temporaryColumn = array(
-           'tx_examples_noprint' => array (
-                   'exclude' => 0,
-                   'label' => 'LLL:EXT:examples/locallang_db.xml:tt_content.tx_examples_noprint',
-                   'config' => array (
-                           'type' => 'check',
-                   )
-           )
-   );
-   t3lib_extMgm::addTCAcolumns('tt_content', $temporaryColumn, 1);
-   t3lib_extMgm::addFieldsToPalette('tt_content', 'visibility', 'tx_examples_noprint', 'after:linkToTop');
+Then we add it to the :code:`$TCA` in :file:`ext_tables.php`:
+
+.. code-block:: php
+
+	$temporaryColumn = array(
+		'tx_examples_noprint' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tt_content.tx_examples_noprint',
+			'config' => array (
+				'type' => 'check',
+			)
+		)
+	);
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+		'tt_content',
+		$temporaryColumn,
+		1
+	);
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+		'tt_content',
+		'visibility',
+		'tx_examples_noprint',
+		'after:linkToTop'
+	);
 
 The code is mostly the same as in the first example, but the last line
-is very different and requires an explanation. Since TYPO3 4.5 the
-"pages" and "tt\_content" input forms were totally reorganized for
-increased usability. For reasons of flexibility, palettes were used
-intensively for all fields and not just for secondary options. This
-led to the introduction of new API methods for manipulating the
-content of palettes. The syntax is similar to the one we saw in the
-first example, but we have to additionally specify the palette's key,
-in this case "visibility".
+is very different and requires an explanation. The "pages" and "tt\_content"
+use :ref:`palettes <palettes>` extensively for all fields
+and not just for secondary options, for increased flexibility.
+So in this case we use :code:`addFieldsToPalette()` instead of :code:`addToAllTCAtypes()`.
+We need to specify the palette's key as the second argument (:code:`visibility`).
+Precise placement of the new field is achieved with the fourth parameter
+(:code:`after:linkToTop`). This will place the "no print" field right after the
+"link to top" field, instead of putting it in the "Extended" tab.
 
 The result is the following:
 
-|img-83|
+.. figure:: ../../Images/ExtendingTcaTtContent.png
+   :alt: New fields for tt\_content table
 
-Because we added the field into an existing palette and after a
-specific field (as per the "after:linkToTop" directive), it gets added
-"inside" the form and not in the "Extended" tab.
+   The new field added next to an existing one
 
-Obviously this new field will no magically exclude a content element
-from being printed. For it to have any effect, it must be used during
-the rendering by modifying the TypoScript used to render the
-"tt\_content" table. Although this is outside the scope of this
-manual, here is an example of what you could do, for the sake of
-showing a complete process.
+.. note::
+   Obviously this new field will no magically exclude a content element
+   from being printed. For it to have any effect, it must be used during
+   the rendering by modifying the TypoScript used to render the
+   "tt\_content" table. Although this is outside the scope of this
+   manual, here is an example of what you could do, for the sake of
+   showing a complete process.
 
-Assuming you are using "css\_styled\_content" (which is installed by
-default), you could add the following TypoScript to your template::
+   Assuming you are using "css\_styled\_content" (which is installed by
+   default), you could add the following TypoScript to your template:
 
-   tt_content.stdWrap.outerWrap = <div class="noprint">|</div>
-   tt_content.stdWrap.outerWrap.if.isTrue.field = tx_examples_noprint
+   .. code-block:: typoscript
 
-This will wrap a "div" tag with a "noprint" class around any content
-element that has its "No print" checkbox checked. The final step would
-be to declare the appropriate selector in the print-media CSS file so
-that "noprint" elements don't get displayed.
+      tt_content.stdWrap.outerWrap = <div class="noprint">|</div>
+      tt_content.stdWrap.outerWrap.if.isTrue.field = tx_examples_noprint
 
-This is just an example of how the effect of the "No print" checkbox
-can be ultimately implemented. It is meant to show that just adding
-the field to the $TCAis not enough.
+   This will wrap a "div" tag with a "noprint" class around any content
+   element that has its "No print" checkbox checked. The final step would
+   be to declare the appropriate selector in the print-media CSS file so
+   that "noprint" elements don't get displayed.
 
+   This is just an example of how the effect of the "No print" checkbox
+   can be ultimately implemented. It is meant to show that just adding
+   the field to the $TCAis not enough.

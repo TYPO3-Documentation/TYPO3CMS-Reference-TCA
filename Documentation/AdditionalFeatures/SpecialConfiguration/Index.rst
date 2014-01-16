@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _special-configuration:
@@ -15,30 +14,38 @@ Special Configuration introduction
 In relation to "types"-configuration it is possible to pass special
 parameters to a field only for certain "types"-configurations. For
 instance you can define that a text field should not wrap text lines
-for certain types. Let's add the "description" field to our previous
-example, a field which was not displayed until now. The configuration
-for type "0" becomes::
+for certain types. The following definition (in the "tx_examples_dummy"
+table of the "examples" extension) adds a :code:`nowrap` configuration to the
+"description field":
 
-   '0' => array('showitem' => 'hidden;;;;1-1-1, record_type;;;;2-2-2, title;;;;3-3-3, description;;;nowrap, some_date;;1 '),
+.. code-block:: php
 
-Notice the keyword "nowrap" in position 4 for the field "description".
-The field itself is defined like this in the columns section::
+	'0' => array('showitem' => 'hidden;;;;1-1-1, record_type;;;;2-2-2, title;;;;3-3-3, description;;;nowrap, some_date;;1 '),
 
-   'description' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.description',
-           'config' => array(
-                   'type' => 'text',
-                   'cols' => 50,
-                   'rows' => 3
-           )
-   )
+The field itself is defined absolutely normally:
+
+.. code-block:: php
+
+	'description' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_dummy.description',
+		'config' => array(
+			'type' => 'text',
+			'cols' => 50,
+			'rows' => 3
+		)
+	)
 
 The result is a textarea field where lines are not wrapped
 automatically when reaching the width of the box:
 
-|img-60| The point of setting "nowrap" in the "types"-configuration is that
-under other "types"-configurations the field  *will* wrap lines.
+.. figure:: ../../Images/SpecialConfigurationNoWrap.png
+   :alt: Text field with nowrap option
+
+   A text field which does not wrap automatically
+
+The point of setting :code:`nowrap` in the "types"-configuration is that
+under other "types"-configurations the field *will* wrap lines.
 Likewise you can configure an RTE to appear for a field only if a
 certain type of the record is set and in other cases not.
 
@@ -51,25 +58,29 @@ Default Special Configuration (defaultExtras)
 Since "types"-configuration does not apply for FlexForms and since a
 feature available as special configuration is sometimes needed
 regardless of type value you can also configure the default value of
-the special configuration. This is done with a key in the ['columns'][
-*field name* ] array. Thus, the alternative configuration for the
-example above could be::
+the special configuration. This is done with a key in the
+:code:`['columns'][field name]` array. Thus, the alternative configuration for the
+example above could be:
 
-   'description' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.description',
-           'config' => array(
-                   'type' => 'text',
-                   'cols' => 50,
-                   'rows' => 3
-           ),
-        'defaultExtras' => 'nowrap'
-   )
+.. code-block:: php
 
-and the "nowrap" parameter doesn't appear in the "types"-configuration
-anymore::
+	'description' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_dummy.description',
+		'config' => array(
+			'type' => 'text',
+			'cols' => 50,
+			'rows' => 3
+		),
+		'defaultExtras' => 'nowrap'
+	)
 
-   '0' => array('showitem' => 'hidden;;;;1-1-1, record_type;;;;2-2-2, title;;;;3-3-3, description, some_date;;1 '),
+and the :code:`nowrap` parameter doesn't appear in the "types"-configuration
+anymore:
+
+.. code-block:: php
+
+	'0' => array('showitem' => 'hidden;;;;1-1-1, record_type;;;;2-2-2, title;;;;3-3-3, description, some_date;;1 '),
 
 This works equally well.
 

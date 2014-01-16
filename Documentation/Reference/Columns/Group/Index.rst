@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns-group:
@@ -15,21 +14,73 @@ TYPE: "group"
 The group element in TYPO3 makes it possible to create references to
 records from multiple tables in the system. This is especially useful
 (compared to the "select" type) when records are scattered over the
-page tree and requires the Element Browser to be selected. In this
+page tree and require the Element Browser to be selected. In this
 example, Content Element records are attached (taken from the "Insert
 records" content element):
 
-|img-35| The "group" element is also the element you can use to bind files to
-records in TYPO3. In this case image files:
+.. figure:: ../../../Images/TypeGroupRecords.png
+   :alt: Insert records content element
 
-|img-36| One thing to notice about such a field is that the files that are
-referenced actually get copied to an internal file folder (usually "uploads/...")
-which is managed by TYPO3 only. It does not create references to the 
-location of the original files!
+   The "Insert records" content element with 3 elements referenced
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+.. _columns-group-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ========================= =========
+   Property                  Data Type
+   ========================= =========
+   `allowed`_
+   `appearance`_
+   `autoSizeMax`_
+   `disable\_controls`_
+   `disallowed`_
+   `dontRemapTablesOnCopy`_
+   `filter`_
+   `internal\_type`_
+   `max\_size`_
+   `maxitems`_
+   `minitems`_
+   `MM`_
+   `MM\_hasUidField`_
+   `MM\_insert\_fields`_
+   `MM\_match\_fields`_
+   `MM\_opposite\_field`_
+   `MM\_table\_where`_
+   `multiple`_
+   `prepend\_tname`_
+   `selectedListStyle`_
+   `show\_thumbs`_
+   `size`_
+   `type`_
+   `uploadfolder`_
+   `wizards`_
+   ========================= =========
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-group-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -45,6 +96,12 @@ location of the original files!
    Scope
          Display / Proc.
 
+
+
+.. _columns-group-properties-internal-type:
+
+internal\_type
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -62,7 +119,7 @@ location of the original files!
          There are four possible options to choose from:
 
          - "file" - this will create a field where files can be attached to the
-           record
+           record.
 
          - "file\_reference" - this will create a field where files can be
            referenced. In contrast to "file", referenced files (usually from
@@ -82,6 +139,12 @@ location of the original files!
    Scope
          Display / Proc.
 
+
+
+.. _columns-group-properties-allowed:
+
+allowed
+~~~~~~~
 
 .. container:: table-row
 
@@ -107,20 +170,28 @@ location of the original files!
 
          Value from these tables are always the 'uid' field.
 
-         First table in list is understood as the  *default table* , if a
+         First table in list is understood as the *default table* , if a
          table-name is not prepended to the value.
 
          If the value is '\*' then all tables are allowed (in this case  *you
          should set "prepend\_tname"* so all tables are prepended with their
          table name for sure).
 
-         *Notice* , if the field is the foreign side of a bidirectional MM
-         relation, only the first table is used and that must be the table of
-         the records on the native side of the relation.
+         .. note::
+
+            If the field is the foreign side of a bidirectional MM
+            relation, only the first table is used and that must be the table of
+            the records on the native side of the relation.
 
    Scope
          Proc. / Display
 
+
+
+.. _columns-group-properties-disallowed:
+
+disallowed
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -138,31 +209,35 @@ location of the original files!
          Default value is '\*' which means that anything file-extension which
          is not allowed is denied.
 
-         If you set this value (to for example "php,php3") AND the "allowed"
-         key is an empty string all extensions are permitted  *except* ".php"
-         and ".php3" files (works like the [BE][fileExtensions] config option).
+         If you set this value (to for example "php,inc") AND the "allowed"
+         key is an empty string all extensions are permitted *except* ".php"
+         and ".inc" files (works like the :code:`[BE][fileExtensions]` configuration option).
 
          In other words:
 
-         - If you want to permit  *only certain* file-extensions, use 'allowed'
+         - If you want to permit *only certain* file-extensions, use 'allowed'
            and not disallowed.
 
-         - If you want to permit  *all file-extensions* except a few, set
+         - If you want to permit *all file-extensions* except a few, set
            'allowed' to blank ("") and enter the list of denied extensions in
            'disallowed'.
 
-         - If you wish to  *allow all extensions* with no exceptions, set
+         - If you wish to *allow all extensions* with no exceptions, set
            'allowed' to '\*' and disallowed to ''
 
    Scope
          Proc. / Display
 
 
+
+.. _columns-group-properties-filter:
+
+filter
+~~~~~~
+
 .. container:: table-row
 
    Key
-         .. _columns-group-filter:
-
          filter
 
    Datatype
@@ -186,7 +261,7 @@ location of the original files!
 
          Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied.
 
-         ::
+         .. code-block:: php
 
             'filter' => array (
             	array(
@@ -213,7 +288,9 @@ location of the original files!
          In that case, you could use the filter functionality to make sure only females can be selected
          in that field.
 
-         The field configuration for the "mother" field could look like::
+         The field configuration for the "mother" field could look like:
+
+         .. code-block:: php
 
             'mother' => array (
             	'label' => 'Mother',
@@ -232,7 +309,9 @@ location of the original files!
             	)
             ),
 
-         The corresponding filter class would look like::
+         The corresponding filter class would look like:
+
+         .. code-block:: php
 
             class tx_myext_filter {
 
@@ -249,6 +328,12 @@ location of the original files!
    Scope
          Proc. / Display
 
+
+
+.. _columns-group-properties-mm:
+
+MM
+~~
 
 .. container:: table-row
 
@@ -270,7 +355,7 @@ location of the original files!
 
          - **uid\_local** - for the local uid.
 
-         - **uid\_foreign** - for the foreign uid.If the "internal\_type" is
+         - **uid\_foreign** - for the foreign uid. If the "internal\_type" is
            "file" then the "uid\_foreign" should be a varchar or 60 or so (for
            the filename) instead of an unsigned integer as you would use for the
            uid.
@@ -281,12 +366,17 @@ location of the original files!
 
          - **sorting** - is a required field used for ordering the items.
 
-         *see ['columns'][fieldname]['config'] / TYPE: "select" => MM for
-         additional features.*
+         See :ref:`MM property of select-type fields <columns-select-properties-mm>`.
 
    Scope
          Proc.
 
+
+
+.. _columns-group-properties-mm-opposite-field:
+
+MM\_opposite\_field
+~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -299,12 +389,17 @@ location of the original files!
          (field name)
 
    Description
-         *see ['columns'][fieldname]['config'] / TYPE: "select" =>
-         MM\_opposite\_field*
+         See :ref:`MM\_opposite\_field property of select-type fields <columns-select-properties-mm-opposite-field>`.
 
    Scope
          Proc.
 
+
+
+.. _columns-group-properties-mm-match-fields:
+
+MM\_match\_fields
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -315,12 +410,17 @@ location of the original files!
          array
 
    Description
-         *see ['columns'][fieldname]['config'] / TYPE: "select" =>
-         MM\_match\_fields*
+         See :ref:`MM\_match\_fields property of select-type fields <columns-select-properties-mm-match-fields>`.
 
    Scope
          Proc.
 
+
+
+.. _columns-group-properties-mm-insert-fields:
+
+MM\_insert\_fields
+~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -331,12 +431,17 @@ location of the original files!
          array
 
    Description
-         *see ['columns'][fieldname]['config'] / TYPE: "select" =>
-         MM\_insert\_fields*
+         See :ref:`MM\_insert\_fields property of select-type fields <columns-select-properties-mm-insert-fields>`.
 
    Scope
          Proc.
 
+
+
+.. _columns-group-properties-mm-table-where:
+
+MM\_table\_where
+~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -347,12 +452,17 @@ location of the original files!
          string (SQL WHERE)
 
    Description
-         *see ['columns'][fieldname]['config'] / TYPE: "select" =>
-         MM\_table\_where*
+         See :ref:`MM\_table\_where property of select-type fields <columns-select-properties-mm-table-where>`.
 
    Scope
          Proc.
 
+
+
+.. _columns-group-properties-mm-hasuidfield:
+
+MM\_hasUidField
+~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -363,12 +473,17 @@ location of the original files!
          boolean
 
    Description
-         *see ['columns'][fieldname]['config'] / TYPE: "select" =>
-         MM\_hasUidField*
+         See :ref:`MM\_hasUidField property of select-type fields <columns-select-properties-mm-hasuidfield>`.
 
    Scope
          Proc.
 
+
+
+.. _columns-group-properties-max-size:
+
+max\_size
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -387,6 +502,12 @@ location of the original files!
          Proc.
 
 
+
+.. _columns-group-properties-uploadfolder:
+
+uploadfolder
+~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -402,19 +523,29 @@ location of the original files!
 
          Example: 'uploads' or 'uploads/pictures'
 
-         **Notice:** TYPO3 does NOT create a reference to the file in its
-         original position! It makes a  *copy* of the file into this folder and
-         from that moment that file is not supposed to be manipulated from
-         outside. Being in the upload folder means that files are understood as
-         a part of the database content and should be managed by TYPO3 only.
+         .. note::
 
-         **Warning:** do NOT add a trailing slash (/) to the upload folder
-         otherwise the full path stored in the references will contain a double
-         slash (e.g. "uploads/pictures//stuff.png").
+            TYPO3 does NOT create a reference to the file in its
+            original position! It makes a  *copy* of the file into this folder and
+            from that moment that file is not supposed to be manipulated from
+            outside. Being in the upload folder means that files are understood as
+            a part of the database content and should be managed by TYPO3 only.
+
+         .. warning::
+
+            Do NOT add a trailing slash (/) to the upload folder
+            otherwise the full path stored in the references will contain a double
+            slash (e.g. "uploads/pictures//stuff.png").
 
    Scope
          Proc.
 
+
+
+.. _columns-group-properties-prepend-tname:
+
+prepend\_tname
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -434,6 +565,12 @@ location of the original files!
          Proc.
 
 
+
+.. _columns-group-properties-dontremaptablesoncopy:
+
+dontRemapTablesOnCopy
+~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -447,12 +584,18 @@ location of the original files!
    Description
          *[internal\_type =  **db** ONLY]*
 
-         A list of tables which should  *not* be remapped to the new element
+         A list of tables which should *not* be remapped to the new element
          uids if the field holds elements that are copied in the session.
 
    Scope
          Proc.
 
+
+
+.. _columns-group-properties-show-thumbs:
+
+show\_thumbs
+~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -463,11 +606,17 @@ location of the original files!
          boolean
 
    Description
-         Show thumbnails for the field in the TCEform
+         Show thumbnails for the field in the TCEform.
 
    Scope
          Display
 
+
+
+.. _columns-group-properties-size:
+
+size
+~~~~
 
 .. container:: table-row
 
@@ -483,6 +632,12 @@ location of the original files!
    Scope
          Display
 
+
+
+.. _columns-group-properties-autosizemax:
+
+autoSizeMax
+~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -503,6 +658,12 @@ location of the original files!
          Display
 
 
+
+.. _columns-group-properties-selectedliststyle:
+
+selectedListStyle
+~~~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -519,6 +680,12 @@ location of the original files!
          Display
 
 
+
+.. _columns-group-properties-multiple:
+
+multiple
+~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -528,16 +695,22 @@ location of the original files!
          boolean
 
    Description
-         Allows the  *same item* more than once in a list.
+         Allows the *same item* more than once in a list.
 
          If used with bidirectional MM relations it must be set for both the
          native and foreign field configuration. Also, with MM relations in
          general you must use a UID field in the join table, see description
-         for "MM"
+         for "MM".
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-group-properties-maxitems:
+
+maxitems
+~~~~~~~~
 
 .. container:: table-row
 
@@ -554,6 +727,12 @@ location of the original files!
          Display / Proc?
 
 
+
+.. _columns-group-properties-minitems:
+
+minitems
+~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -568,6 +747,12 @@ location of the original files!
    Scope
          Display / Proc?
 
+
+
+.. _columns-group-properties-disable-controls:
+
+disable\_controls
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -584,14 +769,25 @@ location of the original files!
          button), upload (disables upload control) and delete (disables the
          delete button). See example image below.
 
-         **NOTE:** if you use the delete button when the list is disabled,
-         **all** entries in the list will be deleted.
+         .. note::
 
-         |img-37|
+           If you use the delete button when the list is disabled,
+           **all** entries in the list will be deleted.
+
+         .. figure:: ../../../Images/TypeGroupControls.png
+            :alt: Disabling controls
+
+            Disabling the various controls
 
    Scope
          Display / Proc.
 
+
+
+.. _columns-group-properties-wizards:
+
+wizards
+~~~~~~~
 
 .. container:: table-row
 
@@ -602,11 +798,17 @@ location of the original files!
          array
 
    Description
-         [See section later for options]
+         See the :ref:`wizards section <wizards>` for more information.
 
    Scope
          Display
 
+
+
+.. _columns-group-properties-appearance:
+
+appearance
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -635,9 +837,6 @@ location of the original files!
          Display
 
 
-.. ###### END~OF~TABLE ######
-
-
 .. _columns-group-examples:
 
 Examples
@@ -652,7 +851,12 @@ The "Insert records" content element can be used to reference records
 from the "tt\_content" table (and possibly others, like "tt\_news" in
 the screenshot below):
 
-|img-35| The corresponding TCA code::
+.. figure:: ../../../Images/TypeGroupRecords.png
+   :alt: Insert records content element
+
+   The "Insert records" content element with 3 elements referenced
+
+The corresponding TCA code::
 
    'records' => array(
            'label' => 'LLL:EXT:cms/locallang_ttc.xml:records',
@@ -698,26 +902,35 @@ presented effectively in a big selector box and thus the Element
 Browser that follows the "group" type fields is useful. An example is
 the "General Record Storage page" reference:
 
-|img-38| The configuration looks like::
+.. figure:: ../../../Images/TypeGroupGeneralStorage.png
+   :alt: The general storage page selector
 
-   'storage_pid' => array(
-           'exclude' => 1,
-           'label' => 'LLL:EXT:lang/locallang_tca.php:storage_pid',
-           'config' => array(
-                   'type' => 'group',
-                   'internal_type' => 'db',
-                   'allowed' => 'pages',
-                   'size' => '1',
-                   'maxitems' => '1',
-                   'minitems' => '0',
-                   'show_thumbs' => '1',
-                   'wizards' => array(
-                           'suggest' => array(
-                                   'type' => 'suggest',
-                           ),
-                   ),
-           ),
-   ),
+   The general storage page selector, with link browser icon and select wizard
+
+The configuration looks like:
+
+.. code-block:: php
+   :emphasize-lines: 9,9
+
+	'storage_pid' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:lang/locallang_tca.xlf:storage_pid',
+		'config' => array(
+			'type' => 'group',
+			'internal_type' => 'db',
+			'allowed' => 'pages',
+			'size' => '1',
+			'maxitems' => '1',
+			'minitems' => '0',
+			'show_thumbs' => '1',
+			'wizards' => array(
+				'suggest' => array(
+					'type' => 'suggest'
+				)
+			)
+		)
+	),
+
 
 Notice how "maxitems" is used to ensure that only one relation is
 created despite the ability of the "group" type field to create
@@ -730,9 +943,9 @@ Attaching images
 ~~~~~~~~~~~~~~~~
 
 Attaching files to a database record is also achieved with group-type
-fields:
+fields.
 
-|img-36| Notice how all the image names end with "\_0" and some number. This
+Notice how all the image names end with "\_0" and some number. This
 happens because all files attached to records through a group-type
 field are copied to a location defined by the "uploadfolder" setting
 in the configuration (see below). When a file is referenced several
@@ -814,7 +1027,7 @@ be stored as their filenames in a list like "DSC\_7102\_background.jpg
 ,DSC\_7181.jpg,DSC\_7102\_background\_01.jpg".
 
 Since "db" references can be stored for multiple tables the rule is
-that uid numbers  *without* a table name prefixed are implicitly from
+that uid numbers *without* a table name prefixed are implicitly from
 the first table in the allowed table list! Thus the list "26,45,49,1"
 is implicitly understood as
 "tt\_content\_26,tt\_content\_45,tt\_content\_49,tt\_content\_1". That
@@ -842,207 +1055,40 @@ there are references to more than one table.
 Lets take the examples from before and see how they would be stored in
 an MM table:
 
-
-.. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   uid\_local
-         uid\_local
-
-   uid\_foreign
-         uid\_foreign
-
-   tablename
-         tablename
-
-   sorting
-         sorting
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         26
-
-   tablename
-         tt\_content
-
-   sorting
-         1
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         45
-
-   tablename
-         tt\_content
-
-   sorting
-         2
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         49
-
-   tablename
-         tt\_content
-
-   sorting
-         3
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         1
-
-   tablename
-         tt\_content
-
-   sorting
-         4
-
-
-.. ###### END~OF~TABLE ######
-
++-------------------------------------+--------------+-------------+---------+
+| uid\_local                          | uid\_foreign | tablename   | sorting |
++=====================================+==============+=============+=========+
+| [uid of the record you are editing] | 26           | tt\_content | 1       |
++-------------------------------------+--------------+-------------+---------+
+| [uid of the record you are editing] | 45           | tt\_content | 2       |
++-------------------------------------+--------------+-------------+---------+
+| [uid of the record you are editing] | 49           | tt\_content | 3       |
++-------------------------------------+--------------+-------------+---------+
+| [uid of the record you are editing] | 1            | tt\_content | 4       |
++-------------------------------------+--------------+-------------+---------+
 
 Or for "tt\_content\_26,pages\_123":
 
-
-.. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   uid\_local
-         uid\_local
-
-   uid\_foreign
-         uid\_foreign
-
-   tablename
-         tablename
-
-   sorting
-         sorting
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         26
-
-   tablename
-         tt\_content
-
-   sorting
-         1
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         123
-
-   tablename
-         pages
-
-   sorting
-         2
-
-
-.. ###### END~OF~TABLE ######
-
++-------------------------------------+--------------+-------------+---------+
+| uid\_local                          | uid\_foreign | tablename   | sorting |
++=====================================+==============+=============+=========+
+| [uid of the record you are editing] | 26           | tt\_content | 1       |
++-------------------------------------+--------------+-------------+---------+
+| [uid of the record you are editing] | 123          | pages       | 2       |
++-------------------------------------+--------------+-------------+---------+
 
 Or for "DSC\_7102\_background.jpg,DSC\_7181.jpg,DSC\_7102\_background\
 _01.jpg":
 
-
-.. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   uid\_local
-         uid\_local
-
-   uid\_foreign
-         uid\_foreign
-
-   tablename
-         tablename
-
-   sorting
-         sorting
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         DSC\_7102\_background.jpg
-
-   tablename
-         N/A
-
-   sorting
-         1
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         DSC\_7181.jpg
-
-   tablename
-         N/A
-
-   sorting
-         2
-
-
-.. container:: table-row
-
-   uid\_local
-         [uid of the record you are editing]
-
-   uid\_foreign
-         DSC\_7102\_background\_01.jpg
-
-   tablename
-         N/A
-
-   sorting
-         3
-
-
-.. ###### END~OF~TABLE ######
++-------------------------------------+-------------------------------+-------------+---------+
+| uid\_local                          | uid\_foreign                  | tablename   | sorting |
++=====================================+===============================+=============+=========+
+| [uid of the record you are editing] | DSC\_7102\_background.jpg     | N/A         | 1       |
++-------------------------------------+-------------------------------+-------------+---------+
+| [uid of the record you are editing] | DSC\_7181.jpg                 | N/A         | 2       |
++-------------------------------------+-------------------------------+-------------+---------+
+| [uid of the record you are editing] | DSC\_7102\_background\_01.jpg | N/A         | 3       |
++-------------------------------------+-------------------------------+-------------+---------+
 
 
 .. _columns-group-data-api:
@@ -1072,51 +1118,17 @@ the records.
 The t3lib/ class "t3lib\_transferdata" is doing such transformations
 (among other things) and this is how the transformation happens:
 
-
-.. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   Int. type
-         Int. type:
-
-   In Database
-         In Database:
-
-   When given to TCEforms
-         When given to TCEforms:
-
-
-.. container:: table-row
-
-   Int. type
-         "db"
-
-   In Database
-         26,45,49,1
-
-   When given to TCEforms
-         tt\_content\_26\|%20adfs%20asdf%20asdf%20,tt\_content\_45\|This%20is%2
-         0a%20test%20%28copy%203%29,tt\_content\_49\|%5B...%5D,tt\_content\_1\|
-         %5B...%5D
-
-
-.. container:: table-row
-
-   Int. type
-         "file"
-
-   In Database
-         DSC\_7102\_background.jpg,DSC\_7181.jpg,DSC\_7102\_background\_01.jpg
-
-   When given to TCEforms
-         DSC\_7102\_background.jpg\|DSC\_7102\_background.jpg,DSC\_7181.jpg\|DS
-         C\_7181.jpg,DSC\_7102\_background\_01.jpg\|DSC\_7102\_background\_01.j
-         pg
-
-
-.. ###### END~OF~TABLE ######
-
++-----------+----------------------------------+------------------------------------------------------------------+
+| Int. type | In Database:                     | When given to TCEforms:                                          |
++===========+==================================+==================================================================+
+| "db"      | 26,45,49,1                       | tt_content_26\|%20adfs%20asdf%20asdf%20,tt_content_45\|This%20is |
+|           |                                  | %20a%20test%20%28copy%203%29,tt_content_49\|%5B...               |
+|           |                                  | %5D,tt_content_1\|%5B...%5D                                      |
++-----------+----------------------------------+------------------------------------------------------------------+
+| "file"    | DSC_7102_background.jpg,DSC_7181 | DSC_7102_background.jpg\|DSC_7102_background.jpg,DSC_7181.jpg\|  |
+|           |                                  | DSC_7181.jpg,DSC_7102_background_01.jpg\|                        |
+|           |                                  | DSC_7102_background_01.jpg                                       |
++-----------+----------------------------------+------------------------------------------------------------------+
 
 The syntax is::
 
@@ -1126,7 +1138,7 @@ Values are transferred back to the database as a comma separated list
 of values without the labels but if labels are in the value they are
 automatically removed.
 
-Alternatively you can also submit each value as an item in an array;
+Alternately you can also submit each value as an item in an array;
 TCEmain will detect an array of values and implode it internally to a
 comma list. (This is used for the "select" type, in renderMode
 "singlebox" and "checkbox").
@@ -1149,56 +1161,17 @@ listed anymore are deleted.
 
 Examples:
 
-
-.. ### BEGIN~OF~TABLE ###
-
-.. container:: table-row
-
-   Current DB value
-         Current DB value
-
-   Submitted data from TCEforms
-         Submitted data from TCEforms
-
-   New DB value
-         New DB value
-
-   Processing done
-         Processing done
-
-
-.. container:: table-row
-
-   Current DB value
-         first.jpg,second.jpg
-
-   Submitted data from TCEforms
-         first.jpg,/www/typo3/fileadmin/newfile.jpg,second.jpg
-
-   New DB value
-         first.jpg,newfile\_01.jpg,second.jpg
-
-   Processing done
-         /www/typo3/fileadmin/newfile.jpg was copied to "uploads/[some-
-         dir]/newfile\_01.jpg". The filename was appended with "\_01" because
-         another file with the name "newfile.jpg" already existed in the
-         location.
-
-
-.. container:: table-row
-
-   Current DB value
-         first.jpg,second.jpg
-
-   Submitted data from TCEforms
-         first.jpg
-
-   New DB value
-         first.jpg
-
-   Processing done
-         "uploads/[some-dir]/second.jpg" was deleted from the location.
-
-
-.. ###### END~OF~TABLE ######
-
++----------------------+------------------------------+-------------------------------------+--------------------------------------+
+| Current DB value     | Submitted data from TCEforms | New DB value                        | Processing done                      |
++======================+==============================+=====================================+======================================+
+| first.jpg,second.jpg | first.jpg,/www/typo3/fileadm | first.jpg,newfile_01.jpg,second.jpg | /www/typo3/fileadmin/newfile.jpg     |
+|                      | in/newfile.jpg,second.jpg    |                                     | was copied to "uploads/[some-        |
+|                      |                              |                                     | dir]/newfile_01.jpg". The filename   |
+|                      |                              |                                     | was appended with "_01" because      |
+|                      |                              |                                     | another file with the name           |
+|                      |                              |                                     | "newfile.jpg" already existed in the |
+|                      |                              |                                     | location.                            |
++----------------------+------------------------------+-------------------------------------+--------------------------------------+
+| first.jpg,second.jpg | first.jpg                    | first.jpg                           | "uploads/[some-dir]/second.jpg" was  |
+|                      |                              |                                     | deleted from the location.           |
++----------------------+------------------------------+-------------------------------------+--------------------------------------+

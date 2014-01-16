@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _core-wizards:
@@ -31,19 +30,16 @@ a given table which may optionally be set as the value on return to
 the real form.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _core-wizards-add-properties:
 
-.. container:: table-row
+Properties
+~~~~~~~~~~
 
-   Key
-         Key
 
-   Type
-         Type
+.. _core-wizards-add-properties-table:
 
-   Description
-         Description
-
+table
+'''''
 
 .. container:: table-row
 
@@ -57,6 +53,12 @@ the real form.
          Table to add record in.
 
 
+
+.. _core-wizards-add-properties-pid:
+
+pid
+'''
+
 .. container:: table-row
 
    Key
@@ -68,15 +70,21 @@ the real form.
    Description
          pid of the new record.
 
-         You can use the "markers" (constants) as values instead if you wish::
+         Several markers are available instead:
 
-            ###CURRENT_PID###
-            ###THIS_UID###
-            ###STORAGE_PID###
-            ###SITEROOT###
+         - :code:`###CURRENT_PID###`
+         - :code:`###THIS_UID###`
+         - :code:`###STORAGE_PID###`
+         - :code:`###SITEROOT###`
 
-         (see TCA/select for description)
+         (see :ref:`TCA/select <columns-select-properties-foreign-table-where>` for description)
 
+
+
+.. _core-wizards-add-properties-setvalue:
+
+setValue
+''''''''
 
 .. container:: table-row
 
@@ -94,69 +102,84 @@ the real form.
          You must set one of these values.
 
 
-.. ###### END~OF~TABLE ######
+.. _core-wizards-add-example:
 
+Example
+~~~~~~~
 
 As an example, let's look at BE user records where one can see several
 wizards in use:
 
-|img-71| The wizard appears as a "+" icon. When clicked, the user is directed
+.. figure:: ../../Images/CoreWizardAddIcon.png
+   :alt: Add wizard icon
+
+   The icon of the add wizard
+
+The wizard appears as a "+" icon. When clicked, the user is directed
 to a form where a new BE user group can be created:
 
-|img-72| When the new template is saved and the user clicks the close button of
+.. figure:: ../../Images/CoreWizardAddCreateNew.png
+   :alt: New BE user group form
+
+   The form for creating a new BE user group, as a result of clicking the add wizard's icon
+
+When the new group is saved and the user clicks the close button of
 the form the new group is automatically inserted as the list of
 selected groups.
 
-The configuration looks like this::
+The configuration looks like this:
 
-   'usergroup' => array(
-           'label' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup',
-           'config' => array(
-                   'type' => 'select',
-                   'foreign_table' => 'be_groups',
-                   'foreign_table_where' => 'ORDER BY be_groups.title',
-                   'size' => '5',
-                   'maxitems' => '20',
-                   'iconsInOptionTags' => 1,
-                   'wizards' => array(
-                           '_PADDING' => 1,
-                           '_VERTICAL' => 1,
-                           'edit' => array(
-                                   'type' => 'popup',
-                                   'title' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup_edit_title',
-                                   'script' => 'wizard_edit.php',
-                                   'popup_onlyOpenIfSelected' => 1,
-                                   'icon' => 'edit2.gif',
-                                   'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1',
-                           ),
-                           'add' => array(
-                                'type' => 'script',
-                                'title' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup_add_title',
-                                'icon' => 'add.gif',
-                                'params' => array(
-                                        'table' => 'be_groups',
-                                        'pid' => '0',
-                                        'setValue' => 'prepend'
-                                ),
-                                'script' => 'wizard_add.php',
-                        ),
-                           'list' => array(
-                                   'type' => 'script',
-                                   'title' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup_list_title',
-                                   'icon' => 'list.gif',
-                                   'params' => array(
-                                           'table' => 'be_groups',
-                                           'pid' => '0',
-                                   ),
-                                   'script' => 'wizard_list.php',
-                           )
-                   )
-           )
-   ),
+.. code-block:: php
+   :emphasize-lines: 21-31
 
-The part in bold is related to the Add-wizard. Note how it points to
-the "wizard\_add.php" script. The "params" array instructs the Add-
-wizard how to handle the creation of the new record, i.e. which table,
+	'usergroup' => array(
+		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
+		'config' => array(
+			'type' => 'select',
+			'foreign_table' => 'be_groups',
+			'foreign_table_where' => 'ORDER BY be_groups.title',
+			'size' => '5',
+			'maxitems' => '20',
+			'iconsInOptionTags' => 1,
+			'wizards' => array(
+				'_PADDING' => 1,
+				'_VERTICAL' => 1,
+				'edit' => array(
+					'type' => 'popup',
+					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
+					'script' => 'wizard_edit.php',
+					'popup_onlyOpenIfSelected' => 1,
+					'icon' => 'edit2.gif',
+					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
+				),
+				'add' => array(
+					'type' => 'script',
+					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_add_title',
+					'icon' => 'add.gif',
+					'params' => array(
+						'table' => 'be_groups',
+						'pid' => '0',
+						'setValue' => 'prepend'
+					),
+					'script' => 'wizard_add.php'
+				),
+				'list' => array(
+					'type' => 'script',
+					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_list_title',
+					'icon' => 'list.gif',
+					'params' => array(
+						'table' => 'be_groups',
+						'pid' => '0'
+					),
+					'script' => 'wizard_list.php'
+				)
+			)
+		)
+	),
+
+The highlighted lines are related to the Add-wizard. Note how it points to
+the :file:`wizard_add.php` script. The "params" array instructs the Add-
+wizard on how to handle the creation of the new record, i.e. which table,
 where to store it, etc.. In particular the "setValue" parameter tells
 the wizard script that the uid of the newly created record should be
 inserted in the relations field of the original record (the one where
@@ -171,30 +194,37 @@ wizard\_edit.php
 The Edit wizard gives you a shortcut to edit references in "select" or
 "group" type form elements. Again let's look at the BE user records:
 
-|img-73| When a record is selected and the Edit-wizard button is clicked, that
+.. figure:: ../../Images/CoreWizardEdit.png
+   :alt: Editing a record thanks to the wizard
+
+   Edit a related record directly thanks to the Edit wizard
+
+When a record is selected and the Edit-wizard button is clicked, that
 record opens in a new window for modification. Let's look again at the
-configuration (just the Edit-wizard part)::
+configuration (just the Edit-wizard part):
 
-   'usergroup' => array(
-           'label' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup',
-           'config' => array(
-                   ...
-                   'wizards' => array(
-                           ...
-                           'edit' => array(
-                                'type' => 'popup',
-                                'title' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup_edit_title',
-                                'script' => 'wizard_edit.php',
-                                'popup_onlyOpenIfSelected' => 1,
-                                'icon' => 'edit2.gif',
-                                'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1',
-                        ),
-                           ...
-                   )
-           )
-   ),
+.. code-block:: php
 
-The wizard is set to type "popup" which makes it so that the selected
+	'usergroup' => array(
+		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
+		'config' => array(
+			...
+			'wizards' => array(
+				...
+				'edit' => array(
+					'type' => 'popup',
+					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
+					'script' => 'wizard_edit.php',
+					'popup_onlyOpenIfSelected' => 1,
+					'icon' => 'edit2.gif',
+					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
+				),
+				...
+			)
+		)
+	),
+
+The wizard is set to type :code:`popup` which makes it so that the selected
 record will open in a new window. There are no parameters to pass
 along like there were for the Add-wizard.
 
@@ -207,26 +237,33 @@ wizard\_list.php
 This links to the Web > List module for only one table and allows the
 user to manipulate stuff there. Again, the BE user records have it:
 
-|img-74| By clicking the icon the user gets taken to the Web > List module.
+.. figure:: ../../Images/CoreWizardListIcon.png
+   :alt: The list wizard's icon
+
+   Click on the list icon wizard to switch to the Web > List view
+
+By clicking the icon the user gets taken to the Web > List module.
 Notice the "Back" link found in the upper left corner, which leads
 back to the edit form.
 
-|img-75| This wizard has a few parameters to configure in the "params" array:
+.. figure:: ../../Images/CoreWizardListBackLink.png
+   :alt: Link back to the edit form
+
+   The back link will return the user to the edit form
+
+This wizard has a few parameters to configure in the "params" array:
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _core-wizards-list-properties:
 
-.. container:: table-row
+Properties
+~~~~~~~~~~
 
-   Key
-         Key
 
-   Type
-         Type
+.. _core-wizards-list-properties-table:
 
-   Description
-         Description
-
+table
+'''''
 
 .. container:: table-row
 
@@ -240,6 +277,12 @@ back to the edit form.
          Table to manage records for
 
 
+
+.. _core-wizards-list-properties-pid:
+
+pid
+'''
+
 .. container:: table-row
 
    Key
@@ -251,41 +294,45 @@ back to the edit form.
    Description
          id of the records you wish to list.
 
-         You can use the "markers" (constants) as values instead if you wish::
+         Several markers are available instead:
 
-            ###CURRENT_PID###
-            ###THIS_UID###
-            ###STORAGE_PID###
-            ###SITEROOT###
+         - :code:`###CURRENT_PID###`
+         - :code:`###THIS_UID###`
+         - :code:`###STORAGE_PID###`
+         - :code:`###SITEROOT###`
 
-         (see TCA/select for description)
+         (see :ref:`TCA/select <columns-select-properties-foreign-table-where>` for description)
 
 
-.. ###### END~OF~TABLE ######
+.. _core-wizards-list-example:
 
+Example
+~~~~~~~
 
 For the BE users table, the configuration look like this (just the
-List-wizard part)::
+List-wizard part):
 
-   'usergroup' => array(
-           'label' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup',
-           'config' => array(
-                   ...
-                   'wizards' => array(
-                           ...
-                           'list' => array(
-                                'type' => 'script',
-                                'title' => 'LLL:EXT:lang/locallang_tca.xml:be_users.usergroup_list_title',
-                                'icon' => 'list.gif',
-                                'params' => array(
-                                        'table' => 'be_groups',
-                                        'pid' => '0',
-                                ),
-                                'script' => 'wizard_list.php',
-                        )
-                   )
-           )
-   ),
+.. code-block:: php
+
+	'usergroup' => array(
+		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
+		'config' => array(
+			...
+			'wizards' => array(
+				...
+				'list' => array(
+					'type' => 'script',
+					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_list_title',
+					'icon' => 'list.gif',
+					'params' => array(
+						'table' => 'be_groups',
+						'pid' => '0'
+					),
+					'script' => 'wizard_list.php'
+				)
+			)
+		)
+	),
 
 The type is also the "script" type. In the "params" array the table
 and pid passed to the script is set.
@@ -301,34 +348,46 @@ user-friendly pop-up box. The wizard type is "colorbox" which will
 first of all add a colored box next to an input field. Here's how it
 looks in a "haiku" record of the "examples" extension:
 
-|img-76| The color of the box is set to the value of the text field. Clicking
+.. figure:: ../../Images/CoreWizardColorIcon.png
+   :alt: The color wizard's icon
+
+   Click on the color icon wizard to display a color selector
+
+The color of the box is set to the value of the text field. Clicking
 the box will open a popup window with the full color picker wizard:
 
-|img-77| Here you can select from the web-color matrix, pick a color from the
+.. figure:: ../../Images/CoreWizardColorPopup.png
+   :alt: The color wizard's popup window
+
+   Full color selector, with palette, dropdown-menu and image
+
+Here you can select from the web-color matrix, pick a color from the
 sample image or select a HTML-color name from a selector box.
 
-The corresponding TCA configuration looks like this::
+The corresponding TCA configuration looks like this:
 
-   'color' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.color',
-           'config' => array(
-                   'type' => 'input',
-                   'size' => 10,
-                   'eval' => 'trim',
-                   'wizards' => array(
-                           'colorChoice' => array(
-                                'type' => 'colorbox',
-                                'title' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.colorPick',
-                                'script' => 'wizard_colorpicker.php',
-                                'dim' => '20x20',
-                                'tableStyle' => 'border: solid 1px black; margin-left: 20px;',
-                                'JSopenParams' => 'height=600,width=380,status=0,menubar=0,scrollbars=1',
-                                'exampleImg' => 'EXT:examples/res/images/japanese_garden.jpg',
-                        )
-                   )
-           )
-   ),
+.. code-block:: php
+
+	'color' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.color',
+		'config' => array(
+			'type' => 'input',
+			'size' => 10,
+			'eval' => 'trim',
+			'wizards' => array(
+				'colorChoice' => array(
+					'type' => 'colorbox',
+					'title' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.colorPick',
+					'script' => 'wizard_colorpicker.php',
+					'dim' => '20x20',
+					'tableStyle' => 'border: solid 1px black; margin-left: 20px;',
+					'JSopenParams' => 'height=600,width=380,status=0,menubar=0,scrollbars=1',
+					'exampleImg' => 'EXT:examples/res/images/japanese_garden.jpg',
+				)
+			)
+		)
+	),
 
 Notice the wizard type which is "colorbox".
 
@@ -340,25 +399,19 @@ wizard\_forms.php
 
 The forms wizard is used typically with the Content Elements, type
 "Mailform". It allows to edit the code-like configuration of the mail
-form with a nice editor. This is shown in the introduction to Wizards
-above.
-
-This is the available parameters:
+form with a more visual editor.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _core-wizards-forms-properties:
 
-.. container:: table-row
+Properties
+~~~~~~~~~~
 
-   Key
-         Key
 
-   Type
-         Type
+.. _core-wizards-forms-properties-xmloutput:
 
-   Description
-         Description
-
+xmlOutput
+'''''''''
 
 .. container:: table-row
 
@@ -373,21 +426,44 @@ This is the available parameters:
          formatted TypoScript form-configuration code.
 
 
-.. ###### END~OF~TABLE ######
+.. _core-wizards-forms-example:
+
+Example
+~~~~~~~
+
+System extension "form" overrides the default "forms" wizard configuration
+to provide its more advanced visual editor (specific forms-wizard parameters
+highlighted):
+
+.. code-block:: php
+   :emphasize-lines: 8-10
+
+	$GLOBALS['TCA']['tt_content']['columns']['bodytext']['config']['wizards']['forms'] = array(
+		'notNewRecords' => 1,
+		'enableByTypeConfig' => 1,
+		'type' => 'script',
+		'title' => 'Form wizard',
+		'icon' => 'wizard_forms.gif',
+		'script' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('form') . 'Classes/Controller/Wizard.php',
+		'params' => array(
+			'xmlOutput' => 0
+		)
+	);
+
+This is how it looks in a "mailform" content element:
+
+.. figure:: ../../Images/CoreWizardFormsIcon.png
+   :alt: The forms wizard's icon
+
+   Click on the forms icon wizard to display the forms editor
 
 
-The configuration used for the editor in Content Elements looks like
-this::
+And this is the wizard's window:
 
-   'forms' => array(
-           'notNewRecords' => 1,
-           'enableByTypeConfig' => 1,
-           'type' => 'script',
-           'title' => 'Forms wizard',
-           'icon' => 'wizard_forms.gif',
-           'script' => 'wizard_forms.php?special=formtype_mail',
-           'params' => array('xmlOutput' => 0)
-   )
+.. figure:: ../../Images/CoreWizardFormsWindow.png
+   :alt: The forms visual editor
+
+   The visual forms editor provided by the "form" system extension
 
 
 .. _core-wizards-table:
@@ -399,22 +475,17 @@ The tables wizard is used typically with the Content Elements, type
 "Table". It allows to edit the code-like configuration of the tables
 with a visual editor.
 
-|img-78| This is the available parameters:
+
+.. _core-wizards-table-properties:
+
+Properties
+~~~~~~~~~~
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _core-wizards-table-properties-xmloutput:
 
-.. container:: table-row
-
-   Key
-         Key
-
-   Type
-         Type
-
-   Description
-         Description
-
+xmlOutput
+'''''''''
 
 .. container:: table-row
 
@@ -428,6 +499,12 @@ with a visual editor.
          If set, the output from the wizard is XML instead of the TypoScript
          table configuration code.
 
+
+
+.. _core-wizards-table-properties-numnewrows:
+
+numNewRows
+''''''''''
 
 .. container:: table-row
 
@@ -443,21 +520,36 @@ with a visual editor.
          is 1-50.
 
 
-.. ###### END~OF~TABLE ######
+.. _core-wizards-table-example:
+
+Example
+~~~~~~~
 
 
 This is the configuration code used for the table wizard in the
-Content Elements::
+Content Elements:
 
-   'table' => array(
-           'notNewRecords' => 1,
-           'enableByTypeConfig' => 1,
-           'type' => 'script',
-           'title' => 'Table wizard',
-           'icon' => 'wizard_table.gif',
-           'script' => 'wizard_table.php',
-           'params' => array('xmlOutput' => 0)
-   ),
+.. code-block:: php
+
+	'table' => array(
+		'notNewRecords' => 1,
+		'enableByTypeConfig' => 1,
+		'type' => 'script',
+		'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.table',
+		'icon' => 'wizard_table.gif',
+		'script' => 'wizard_table.php',
+		'params' => array(
+			'xmlOutput' => 0
+		)
+	),
+
+
+This is how the wizard looks like:
+
+.. figure:: ../../Images/CoreWizardTable.png
+   :alt: The table visual editor
+
+   The visual table editor
 
 
 .. _core-wizards-rte:
@@ -467,16 +559,18 @@ wizard\_rte.php
 
 This wizard is used to show a "full-screen" Rich Text Editor field.
 The configuration below shows an example taken from the Text field in
-Content Elements::
+Content Elements:
 
-   'RTE' => array(
-           'notNewRecords' => 1,
-           'RTEonly' => 1,
-           'type' => 'script',
-           'title' => 'LLL:EXT:cms/locallang_ttc.php:bodytext.W.RTE',
-           'icon' => 'wizard_rte2.gif',
-           'script' => 'wizard_rte.php',
-   ),
+.. code-block:: php
+
+	'RTE' => array(
+		'notNewRecords' => 1,
+		'RTEonly' => 1,
+		'type' => 'script',
+		'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
+		'icon' => 'wizard_rte2.gif',
+		'script' => 'wizard_rte.php'
+	),
 
 
 .. _core-wizards-tsconfig:
@@ -485,8 +579,8 @@ wizard\_tsconfig.php
 """"""""""""""""""""
 
 This wizard is used for the TSconfig fields and TypoScript Template
-"Setup" fields. It is specialized for that particular situations and
-it is not likely you will need it for anything on your own.
+"Setup" fields. Its usage is deprecated in favor of the code editor
+provided by the "t3editor" system extension.
 
 
 .. _core-wizards-browse:
@@ -497,20 +591,19 @@ browse\_links.php
 The "Links" wizard is used many places where you want to insert link
 references.
 
+This works not only in the Rich Text Editor but also in "typolink"
+fields.
 
-.. ### BEGIN~OF~TABLE ###
+.. _core-wizards-browse-properties:
 
-.. container:: table-row
+Properties
+~~~~~~~~~~
 
-   Key
-         Key
 
-   Type
-         Type
+.. _core-wizards-browse-properties-allowedextensions:
 
-   Description
-         Description
-
+allowedExtensions
+'''''''''''''''''
 
 .. container:: table-row
 
@@ -524,6 +617,12 @@ references.
          Comma separated list of allowed file extensions. By default, all
          extensions are allowed.
 
+
+
+.. _core-wizards-browse-properties-blindlinkoptions:
+
+blindLinkOptions
+''''''''''''''''
 
 .. container:: table-row
 
@@ -539,40 +638,54 @@ references.
          link options are displayed.
 
 
-.. ###### END~OF~TABLE ######
+.. _core-wizards-browse-example:
+
+Example
+~~~~~~~
 
 
-This works not only in the Rich Text Editor but also in "typolink"
-fields. Here's an example from tt\_content:
+Here's an example from "tt\_content" for the link that can be placed
+on the content element's header:
 
-|img-79| Clicking the wizard icons opens the Element Browser window:
+.. figure:: ../../Images/CoreWizardBrowseIcon.png
+   :alt: The browse wizard's icon
 
-|img-80| Such a wizard can be configured like this::
+   Click on the browse icon wizard to display the link browser
 
-   'image_link' => array(
-           'exclude' => 1,
-           'label' => 'LLL:EXT:cms/locallang_ttc.php:image_link',
-           'config' => array(
-                   'type' => 'input',
-                   'size' => '15',
-                   'max' => '256',
-                   'checkbox' => '',
-                   'eval' => 'trim',
-                   'wizards' => array(
-                           '_PADDING' => 2,
-                           'link' => array(
-                                'type' => 'popup',
-                                'title' => 'Link',
-                                'icon' => 'link_popup.gif',
-                                'script' => 'browse_links.php?mode=wizard',
-                                'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
-                        )
-                   ),
-                   'softref' => 'typolink[linkList]'
-           )
-   ),
+Clicking the wizard icons opens the Element Browser window:
 
-Notice how the "browse\_links.php" script requires an extra parameter
-since it has to return content back to the input field (and not the
-RTE for instance which it also supports).
+.. figure:: ../../Images/CoreWizardBrowsePopup.png
+   :alt: The browse wizard's popup window
 
+   The link browser popup window and all the link possibilities displayed as tabs
+
+Such a wizard can be configured like this:
+
+.. code-block:: php
+   :emphasize-lines: 15
+
+	'header_link' => array(
+		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link',
+		'exclude' => 1,
+		'config' => array(
+			'type' => 'input',
+			'size' => '50',
+			'max' => '256',
+			'eval' => 'trim',
+			'wizards' => array(
+				'_PADDING' => 2,
+				'link' => array(
+					'type' => 'popup',
+					'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
+					'icon' => 'link_popup.gif',
+					'script' => 'browse_links.php?mode=wizard',
+					'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+				)
+			),
+			'softref' => 'typolink'
+		)
+	),
+
+Notice how the :file:`browse_links.php` script requires an extra parameter
+(highlighted line) since it has to return content back to the input field
+(and not the RTE for instance which it also supports).

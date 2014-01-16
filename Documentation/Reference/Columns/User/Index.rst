@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns-user:
@@ -16,8 +15,44 @@ Allows you to render a whole form field by a user function or class
 method.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-user-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ================== =========
+   Property           Data Type
+   ================== =========
+   `noTableWrapping`_ boolean
+   `parameters`_      array
+   `type`_            string
+   `userFunc`_        string
+   ================== =========
+
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _columns-user-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -30,6 +65,12 @@ method.
    Description
          *[Must be set to "user"]*
 
+
+
+.. _columns-user-properties-userfunc:
+
+userFunc
+~~~~~~~~
 
 .. container:: table-row
 
@@ -58,10 +99,17 @@ method.
          The array with the current information will contain any parameters
          declared with the "parameters" property described below.
 
-         **Notice:** The class must be registered with the TYPO3 autoloader.
-         It's also possible to include it manually, but using the autoloader is
-         the preferred way.
+         .. note::
 
+            The class must be registered with the TYPO3 autoloader
+            (or use namespaces since TYPO3 CMS 6.0).
+
+
+
+.. _columns-user-properties-parameters:
+
+parameters
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -78,6 +126,12 @@ method.
          See example below.
 
 
+
+.. _columns-user-properties-notablewrapping:
+
+noTableWrapping
+~~~~~~~~~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -87,11 +141,8 @@ method.
          boolean
 
    Description
-         If set, thenthe output from the user function will  *not* be wrapped
+         If set, then the output from the user function will *not* be wrapped
          in the usual table - you will have to do that yourself.
-
-
-.. ###### END~OF~TABLE ######
 
 
 .. _columns-user-examples:
@@ -101,41 +152,48 @@ Example
 
 This field is rendered by custom PHP code:
 
-|img-39| The configuration in TCA is as simple as this::
+.. figure:: ../../../Images/TypeUserExample.png
+   :alt: A user-defined field
 
-   'tx_examples_special' => array (
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_special',
-           'config' => array (
-                   'type' => 'user',
-                   'size' => '30',
-                   'userFunc' => 'EXT:examples/class.tx_examples_tca.php:tx_examples_tca-> specialField',
-                   'parameters' => array(
-                           'color' => 'blue'
-                   )
-           )
-   ),
+   A sample user-defined field
 
-This is how the corresponding PHP class looks like::
+The configuration in TCA is as simple as this:
 
-   class tx_examples_tca {
-           function specialField($PA, $fObj) {
-                   $color = (isset($PA['parameters']['color'])) ? $PA['parameters']['color']:'red';
-                   $formField  = '<div style="padding: 5px; background-color: ' . $color . ';">';          $formField .= '<input type="text" name="' . $PA['itemFormElName'] . '"';
-                   $formField .= ' value="' . htmlspecialchars($PA['itemFormElValue']) . '"';
-                   $formField .= ' onchange="' . htmlspecialchars(implode('', $PA['fieldChangeFunc'])) . '"';
-                   $formField .= $PA['onFocus'];
-                   $formField .= ' /></div>';
-                   return $formField;
-           }
-   }
+.. code-block:: php
+
+	'tx_examples_special' => array (
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_special',
+		'config' => array (
+			'type' => 'user',
+			'size' => '30',
+			'userFunc' => 'Documentation\\Examples\\Userfuncs\\Tca->specialField',
+			'parameters' => array(
+				'color' => 'blue'
+			)
+		)
+	),
+
+This is how the corresponding PHP method (in class :code:`\Documentation\Examples\Userfuncs\Tca`) looks like:
+
+.. code-block:: php
+
+	public function specialField($PA, $fObj) {
+		$color = (isset($PA['parameters']['color'])) ? $PA['parameters']['color'] : 'red';
+		$formField  = '<div style="padding: 5px; background-color: ' . $color . ';">';
+		$formField .= '<input type="text" name="' . $PA['itemFormElName'] . '"';
+		$formField .= ' value="' . htmlspecialchars($PA['itemFormElValue']) . '"';
+		$formField .= ' onchange="' . htmlspecialchars(implode('', $PA['fieldChangeFunc'])) . '"';
+		$formField .= $PA['onFocus'];
+		$formField .= ' /></div>';
+		return $formField;
+	}
 
 This is not the place to dig into more details about user-defined
-forms. By this example you can start yourself up but you will have to
+forms. With this example you can start yourself up but you will have to
 figure out by yourself what options are available in the $PAarray and
 how to use them.
 
 Note in particular how the "parameters" array declared in the TCA
 configuration can be retrieved as part of the first argument ($PA)
 received by the method invoked.
-

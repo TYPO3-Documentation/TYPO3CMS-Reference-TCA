@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _special-configuration-options:
@@ -19,29 +18,17 @@ Keywords
 """"""""
 
 This table lists the options for keywords in special configuration.
-Each keyword is followed by a  *value* wrapped in [] (square
+Each keyword is followed by a *value* wrapped in :code:`[]` (square
 brackets).
 
 It is possible to use several keywords. Each must be separated by a
-colon (:). See examples below.
+colon (:code:`:`). See examples below.
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _special-configuration-options-keywords-nowrap:
 
-.. container:: table-row
-
-   Keyword
-         Keyword
-
-   Description
-         Description
-
-   Value syntax
-         Value syntax
-
-   Examples
-         Examples
-
+nowrap
+~~~~~~
 
 .. container:: table-row
 
@@ -54,8 +41,12 @@ colon (:). See examples below.
    Value syntax
          [no options]
 
-   Examples
 
+
+.. _special-configuration-options-keywords-richtext:
+
+richtext
+~~~~~~~~
 
 .. container:: table-row
 
@@ -79,8 +70,14 @@ colon (:). See examples below.
          richtext[cut\|copy\|paste] = ensures that cut, copy and paste options
          are shown regardless of RTE configuration
 
-         See RTE API definition later for more details.
+         See :ref:`RTE API <t3api:rte>` for more details.
 
+
+
+.. _special-configuration-options-keywords-rte-transform:
+
+rte\_transform
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -90,7 +87,7 @@ colon (:). See examples below.
    Description
          Configuration of RTE transformations and other options.
 
-         *See table below for a list of the key values possible.*
+         :ref:`See table for a list of possible key values <special-configuration-options-rte>`.
 
    Value syntax
          key1=value2\|key2=value2\|key3=value3\|...
@@ -98,6 +95,12 @@ colon (:). See examples below.
    Examples
          rte\_transform[key1=value1\|key2=value2\|key3=value3]
 
+
+
+.. _special-configuration-options-keywords-fixed-font:
+
+fixed-font
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -110,8 +113,12 @@ colon (:). See examples below.
    Value syntax
          [no options]
 
-   Examples
 
+
+.. _special-configuration-options-keywords-enable-tab:
+
+enable-tab
+~~~~~~~~~~
 
 .. container:: table-row
 
@@ -124,8 +131,12 @@ colon (:). See examples below.
    Value syntax
          [no options]
 
-   Examples
 
+
+.. _special-configuration-options-keywords-rte-only:
+
+rte\_only
+~~~~~~~~~
 
 .. container:: table-row
 
@@ -133,14 +144,18 @@ colon (:). See examples below.
          rte\_only
 
    Description
-         If set, the field can  *only* be edited with a Rich Text Editor -
+         If set, the field can *only* be edited with a Rich Text Editor -
          otherwise it will not show up.
 
    Value syntax
          boolean (0/1)
 
-   Examples
 
+
+.. _special-configuration-options-keywords-static-write:
+
+static\_write
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -150,13 +165,17 @@ colon (:). See examples below.
    Description
          This allows to configure a field value to be written to a file.
 
-         *See table below for value of f1-f5*
+         :ref:`See below for explanations about keys f1-f5 <special-configuration-options-static>`.
 
    Value syntax
          f1\|f2\|f3\|f4\|f5
 
-   Examples
 
+
+.. _special-configuration-options-keywords-wizards:
+
+wizards
+~~~~~~~
 
 .. container:: table-row
 
@@ -174,8 +193,6 @@ colon (:). See examples below.
          wizards[table]
 
 
-.. ###### END~OF~TABLE ######
-
 
 .. _special-configuration-options-rte:
 
@@ -183,22 +200,10 @@ rte\_transform[] key/value pairs
 """"""""""""""""""""""""""""""""
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _special-configuration-options-rte-flag:
 
-.. container:: table-row
-
-   Keyword
-         Keyword
-
-   Description
-         Description
-
-   Value syntax
-         Value syntax
-
-   Examples
-         Examples
-
+flag
+~~~~
 
 .. container:: table-row
 
@@ -216,6 +221,12 @@ rte\_transform[] key/value pairs
    Examples
          rte\_transform[flag=rte\_disable]
 
+
+
+.. _special-configuration-options-rte-mode:
+
+mode
+~~~~
 
 .. container:: table-row
 
@@ -238,6 +249,12 @@ rte\_transform[] key/value pairs
          rte\_transform[mode=ts\_css-images]
 
 
+
+.. _special-configuration-options-rte-imgpath:
+
+imgpath
+~~~~~~~
+
 .. container:: table-row
 
    Keyword
@@ -245,17 +262,11 @@ rte\_transform[] key/value pairs
 
    Description
          This sets an alternative path for Rich Text Editor images. Default is
-         configured by the value
-         TYPO3\_CONF\_VARS['BE']['RTE_imageStorageDir'] (default is
-         "uploads/")
+         configured by the value :code:`$TYPO3_CONF_VARS['BE']['RTE_imageStorageDir']`
+         (default is "uploads/").
 
    Value syntax
          path relative to PATH\_site, e.g. "uploads/rte\_test/"
-
-   Examples
-
-
-.. ###### END~OF~TABLE ######
 
 
 .. _special-configuration-options-rte-example:
@@ -264,28 +275,36 @@ Example - Setting up Rich Text Editors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's take another table from the "examples" extension to look at how
-to set up a text will with a RTE. The table is called
-"tx\_examples\_haiku" and it contains a column called "poem" on which
-we want to have the RTE. Its configuration looks like this::
+to set up a text will with a RTE. The table "tx\_examples\_haiku"
+contains a column called "poem" on which we want to have the RTE.
+Its configuration looks like this:
 
-   'poem' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.poem',
-           'config' => array(
-                   'type' => 'text',
-                   'cols' => 40,
-                   'rows' => 6
-           ),
-           'defaultExtras' => 'richtext[]:static_write[filename|poem]'
-   )
-   |img-61|
+.. code-block:: php
+   :emphasize-lines: 10
+
+	'poem' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.poem',
+		'config' => array(
+			'type' => 'text',
+			'cols' => 40,
+			'rows' => 6,
+			'softref' => 'typolink_tag,images,email[subst],url',
+		),
+		'defaultExtras' => 'richtext[]:rte_transform[mode=tx_examples_transformation-ts_css]:static_write[filename|poem]'
+	),
 
 
-Concentrate on just the part in bold. This example contains no
+Concentrate on just the highlighted line. This example contains no
 additional configuration (notice the empty square brackets), meaning
 the RTE will inherit from the TYPO3-wide configuration (as defined by
 Page and User TSconfig). This may look like this (depending on your
 local RTE configuration):
+
+.. figure:: ../../Images/SpecialConfigurationRte.png
+   :alt: Activated RTE in a text field
+
+   The "poem" text field with the RTE activated
 
 
 .. _special-configuration-options-static:
@@ -294,16 +313,10 @@ static\_write[] parameters
 """"""""""""""""""""""""""
 
 
-.. ### BEGIN~OF~TABLE ###
+.. _special-configuration-options-static-f1:
 
-.. container:: table-row
-
-   Keyword
-         Keyword
-
-   Description
-         Description
-
+f1
+~~
 
 .. container:: table-row
 
@@ -313,11 +326,17 @@ static\_write[] parameters
    Description
          The field name which contains the name of the file being edited. This
          filename should be relative to the path configured in
-         $TYPO3\_CONF\_VARS['BE']['staticFileEditPath'] (which is
-         "fileadmin/static/" by default).
+         :code:`$TYPO3_CONF_VARS['BE']['staticFileEditPath']`
+         (which is :file:`fileadmin/static/` by default).
 
          The file  **must** exist and be writable.
 
+
+
+.. _special-configuration-options-static-f2:
+
+f2
+~~
 
 .. container:: table-row
 
@@ -332,6 +351,12 @@ static\_write[] parameters
          configuration.
 
 
+
+.. _special-configuration-options-static-f3:
+
+f3
+~~
+
 .. container:: table-row
 
    Keyword
@@ -341,12 +366,18 @@ static\_write[] parameters
          The field name containing the alternative subpart marker used to
          identify the editable section in the file.
 
-         The default marker is ###TYPO3\_STATICFILE\_EDIT### and may be
+         The default marker is :code:`###TYPO3_STATICFILE_EDIT###` and may be
          encapsulated in HTML comments. There must be two markers, one to
          identify the beginning and one for the end of the editable section.
 
          Optional.
 
+
+
+.. _special-configuration-options-static-f4:
+
+f4
+~~
 
 .. container:: table-row
 
@@ -358,6 +389,12 @@ static\_write[] parameters
          content should always be loaded into the form from the file and not
          from the duplicate field in the database.
 
+
+
+.. _special-configuration-options-static-f5:
+
+f5
+~~
 
 .. container:: table-row
 
@@ -371,40 +408,51 @@ static\_write[] parameters
          Optional.
 
 
-.. ###### END~OF~TABLE ######
-
-
 .. _special-configuration-options-static-example:
 
 Example - Write to static file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's go back to the above example and look at the second part of the
-"defaultExtras" configuration (in bold)::
+:code:`defaultExtras` configuration (in the highlighted line):
 
-   'poem' => array(
-           'exclude' => 0,
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.poem',
-           'config' => array(
-                   'type' => 'text',
-                   'cols' => 40,
-                   'rows' => 6
-           ),
-           'defaultExtras' => 'richtext[]:static_write[filename|poem]'
-   )
+.. code-block:: php
+   :emphasize-lines: 10
+
+	'poem' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.poem',
+		'config' => array(
+			'type' => 'text',
+			'cols' => 40,
+			'rows' => 6,
+			'softref' => 'typolink_tag,images,email[subst],url',
+		),
+		'defaultExtras' => 'richtext[]:rte_transform[mode=tx_examples_transformation-ts_css]:static_write[filename|poem]'
+	),
 
 This configuration means that the content of the "poem" field will be
 written to the file given in "filename". It looks like this in the BE:
 
-|img-62| Before saving the content of "fileadmin/static/myhaiku.txt" must be::
+.. figure:: ../../Images/SpecialConfigurationStatic.png
+   :alt: File name for static storage
 
-   ###TYPO3_STATICFILE_EDIT###
-   ###TYPO3_STATICFILE_EDIT###
+   The field containing the file name to write to
 
-After saving the content of "fileadmin/static/myhaiku.txt" looks like
-this::
+Before saving the content of :file:`fileadmin/static/myhaiku.txt` must be:
 
-   ###TYPO3_STATICFILE_EDIT###
-   <p>Documentation</p><p>Community is happy</p><p>If kept up to date</p>
-   ###TYPO3_STATICFILE_EDIT###
+.. code-block:: text
 
+	###TYPO3_STATICFILE_EDIT###
+	###TYPO3_STATICFILE_EDIT###
+
+After saving the content of :file:`fileadmin/static/myhaiku.txt` looks like
+this:
+
+.. code-block:: text
+
+	###TYPO3_STATICFILE_EDIT###
+	Documentation
+	Community is happy
+	If kept up to date
+	###TYPO3_STATICFILE_EDIT###

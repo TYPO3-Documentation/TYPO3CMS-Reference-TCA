@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _interface:
@@ -16,8 +15,42 @@ Contains configuration for display and listing in various parts of the
 core backend:
 
 
-.. ### BEGIN~OF~TABLE ###
+.. only:: html
 
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _interface-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ======================= =========
+   Property                Data Type
+   ======================= =========
+   `maxDBListItems`_       integer
+   `maxSingleDBListItems`_ integer
+   `showRecordFieldList`_  string
+   ======================= =========
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
+.. _interface-properties-showrecordfieldlist:
+
+showRecordFieldList
+~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -34,21 +67,11 @@ core backend:
          'doktype,title,alias,hidden,....'
 
 
-.. container:: table-row
 
-   Key
-         always\_description
+.. _interface-properties-maxdblistitems:
 
-   Datatype
-         boolean
-
-   Description
-         If set, the description/helpicons are always shown regardless of the
-         configuration of the user. Works only in TCEforms and for tables
-         loaded via t3lib\_BEfunc::loadSingleTableDescription()
-
-         |img-9|
-
+maxDBListItems
+~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -61,6 +84,12 @@ core backend:
    Description
          Max number of items shown in the List module
 
+
+
+.. _interface-properties-maxsingledblistitems:
+
+maxSingleDBListItems
+~~~~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -75,19 +104,17 @@ core backend:
          in Extended mode (listing only a single table)
 
 
-.. ###### END~OF~TABLE ######
-
-
 .. _interface-examples:
 
 Example
 """""""
 
-This is how the "pages" table is configured for these settings::
+This is how the "pages" table is configured for these settings:
 
-       'interface' => array(
-           'showRecordFieldList' => 'doktype,title',
-           'maxDBListItems' => 30,
-           'maxSingleDBListItems' => 50
-       ),
+.. code-block:: php
 
+	'interface' => array(
+		'showRecordFieldList' => 'doktype,title,alias,...,backend_layout,backend_layout_next_level',
+		'maxDBListItems' => 30,
+		'maxSingleDBListItems' => 50
+	),

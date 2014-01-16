@@ -1,10 +1,9 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../../Includes.txt
-.. include:: Images.txt
 
 
 .. _columns-radio:
@@ -12,15 +11,50 @@
 TYPE: "radio"
 ^^^^^^^^^^^^^
 
-Radio buttons are seldom used, but sometimes they can be more
-attractive than their more popular sisters (selector boxes).
+This type creates a set of radio buttons. This should not be confused
+with a :ref:`select-type <columns-select>` field using radio buttons
+rendering.
 
-Here you see radio buttons in action for the "Filemounts" records:
 
-|img-18|
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
+
+.. _columns-radio-properties:
+
+Properties
+""""""""""
+
+.. container:: ts-properties
+
+   ================ =========
+   Property         Data Type
+   ================ =========
+   `default`_       mixed
+   `items`_         array
+   `itemsProcFunc`_ string
+   `type`_          string
+   ================ =========
+
+
+Property details
+""""""""""""""""
+
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 1
 
 .. ### BEGIN~OF~TABLE ###
 
+
+.. _columns-radio-properties-type:
+
+type
+~~~~
 
 .. container:: table-row
 
@@ -36,6 +70,12 @@ Here you see radio buttons in action for the "Filemounts" records:
    Scope
          *Display / Proc.*
 
+
+
+.. _columns-radio-properties-items:
+
+items
+~~~~~
 
 .. container:: table-row
 
@@ -60,6 +100,12 @@ Here you see radio buttons in action for the "Filemounts" records:
          Display
 
 
+
+.. _columns-radio-properties-default:
+
+default
+~~~~~~~
+
 .. container:: table-row
 
    Key
@@ -74,6 +120,12 @@ Here you see radio buttons in action for the "Filemounts" records:
    Scope
          Display / Proc.
 
+
+
+.. _columns-radio-properties-itemsprocfunc:
+
+itemsProcFunc
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -102,26 +154,36 @@ Here you see radio buttons in action for the "Filemounts" records:
          Display
 
 
-.. ###### END~OF~TABLE ######
-
-
 .. _columns-radio-examples:
 
 Example
 """""""
 
-An example of radio buttons configuration from "sys\_filemounts" (see
-above)::
+An example of radio buttons configuration from the "pages" table.
 
-   'base' => array(
-           'label' => 'LLL:EXT:lang/locallang_tca.xml:sys_filemounts.base',
-           'config' => array(
-                   'type' => 'radio',
-                   'items' => array(
-                           array('LLL:EXT:lang/locallang_tca.xml:sys_filemounts.base_absolute', 0),
-                           array('LLL:EXT:lang/locallang_tca.xml:sys_filemounts.base_relative', 1)
-                   ),
-                   'default' => 0
-           )
-   )
+.. code-block:: php
 
+	'mount_pid_ol' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:cms/locallang_tca.xlf:pages.mount_pid_ol',
+		'config' => array(
+			'type' => 'radio',
+			'items' => array(
+				array(
+					'LLL:EXT:cms/locallang_tca.xlf:pages.mount_pid_ol.I.0',
+					0
+				),
+				array(
+					'LLL:EXT:cms/locallang_tca.xlf:pages.mount_pid_ol.I.1',
+					1
+				)
+			)
+		)
+	),
+
+which results in:
+
+.. figure:: ../../../Images/TypeRadioSample.png
+   :alt: A typical set of radio buttons
+
+   A typical set of radio buttons
