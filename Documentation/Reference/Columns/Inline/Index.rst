@@ -58,6 +58,7 @@ Properties
    `foreign\_field`_                       string
    `foreign\_label`_                       string
    `foreign\_match\_fields`_               array
+   `foreign\_record\_defaults`_            array
    `foreign\_selector`_                    string
    `foreign\_selector\_fieldTcaOverride`_  array
    `foreign\_sortby`_                      string
@@ -486,6 +487,40 @@ foreign\_table\_field
 
    Scope
          Display / Proc.
+
+
+
+.. _columns-inline-properties-foreign-record-defaults:
+
+foreign\_record\_defaults
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         foreign\_record\_defaults
+
+   Datatype
+         array
+
+   Description
+         This property makes it possible to set default values for the
+         foreign records created via the inline relation.
+
+         **Example:**
+
+         .. code-block:: php
+
+			'foreign_table' => 'tt_content',
+			'foreign_record_defaults' => array(
+				'CType' => 'image'
+			);
+
+         This example would make every new content element created inline
+         an "image" content element by default.
+
+   Scope
+         Proc.
 
 
 
