@@ -186,10 +186,18 @@ readOnly
    Description
          Renders the form in a way that the user can see the values but cannot
          edit them. The rendering is as similar as possible to the normal
-         rendering but may differ in layout and size. **Notice:** Read-only
-         rendering might not be implemented by user defined form items! It is
-         up to each developer to implement read-only rendering for its own
-         user-types.
+         rendering but may differ in layout and size.
+
+         .. note::
+
+            Read-only is not implemented automatically for user-defined form items.
+            It is up to each developer to implement read-only rendering for its own
+            types.
+
+         .. warning::
+
+            This property affects only the display. It is still possible to write
+            to those fields when using the :ref:`TYPO3 Core Engine <t3api:tce>`.
 
    Scope
          Display
