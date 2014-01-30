@@ -52,9 +52,6 @@ The general structure (looking at a single table) is as follows::
        'interface' => array(
            ....
        ),
-       'feInterface' => array(
-           ....
-       ),
        'columns' => array(
            ....
        ),
@@ -70,8 +67,6 @@ The following table provides a brief description of each the various
 sections of $TCA. Each section is covered in more details in its own
 chapter.
 
-
-.. ### BEGIN~OF~TABLE ###
 
 .. container:: table-row
 
@@ -97,6 +92,8 @@ chapter.
 
          -  For all tables configured in $TCA this section must exist.
 
+         :ref:`Full reference <ctrl>`
+
 
 .. container:: table-row
 
@@ -109,20 +106,7 @@ chapter.
          The "interface" section contains properties related to the tables
          display in the backend, mostly the Web > List module.
 
-
-.. container:: table-row
-
-   Section
-         feInterface
-
-   Description
-         **Frontend Editing**
-
-         The "feInterface" section contains properties related to Front End
-         editing of the table, mostly related to the feAdmin\_lib.
-
-         It is deprecated in the sense that it will still exist, but will not be
-         (and should not be) extended further.
+         :ref:`Full reference <interface>`
 
 
 .. container:: table-row
@@ -145,6 +129,8 @@ chapter.
          properties applies. These properties are clearly explained for each
          type.
 
+         :ref:`Full reference <columns>`
+
 
 .. container:: table-row
 
@@ -158,6 +144,8 @@ chapter.
          the "columns" section) should be arranged inside the editing form; in
          which order, with which "palettes" (see below) and with which possible
          additional features applied.
+
+         :ref:`Full reference <types>`
 
 
 .. container:: table-row
@@ -176,8 +164,7 @@ chapter.
          form or (more usual) when you place the cursor in a form field of
          the main form).
 
-
-.. ###### END~OF~TABLE ######
+         :ref:`Full reference <palettes>`
 
 
 .. _tca-structure-deeper:
@@ -192,3 +179,35 @@ In the case of the :ref:`[columns]<columns>` section, this will be the fields
 themselves. For the :ref:`[types]<types>` and :ref:`[palettes]<palettes>` section this will be the list
 of all possible types and palettes.
 
+
+.. _tca-structure-scope:
+
+Properties scope
+""""""""""""""""
+
+In the detail reference one or more scopes are given for each
+property. They indicate which area is affected by a given
+property. The various scopes are explained below:
+
+Display
+  A "display" property will only affect the backend forms themselves.
+  They have no impact on the values, nor on the database.
+
+Proc.
+  This stands for "processing". Such properties have an impact
+  on the values entered (for example, filtering them) or how they
+  how written to the database (for example, dates transformed to
+  time stamps).
+
+Database
+  Such a property influences only the data type with regards
+  to the database structure (for example, dates kept as
+  datetime fields).
+
+Search
+  Search properties are related to the general search feature
+  provided by the TYPO3 backend.
+
+Because some things never fit in precise categories, there may be
+properties with a special scope. The meaning will be explained in
+the description of the property itself.

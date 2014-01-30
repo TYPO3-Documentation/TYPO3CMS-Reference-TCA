@@ -9,6 +9,7 @@
 $TCA array reference
 --------------------
 
+This section describes all the properties available
 
 .. toctree::
    :maxdepth: 5
