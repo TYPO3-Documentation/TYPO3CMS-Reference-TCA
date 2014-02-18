@@ -304,9 +304,9 @@ displayCond
          The first part is the rule-type and the subsequent parts will depend
          on the rule type.
 
-         Currently these rule values can be used:
+         The following rules are available:
 
-         - **FIELD** : This evaluates based on another fields value in the
+         - **FIELD** : This evaluates based on another field's value in the
            record.
 
            - Part 1 is the field name
@@ -324,14 +324,17 @@ displayCond
                less than the value in "Part 3"
 
              - **= / !=** : Evaluates if the field value is equal to value in "Part
-               3" (or not, if the negation flag, "!" is prefixed)
+               3" (or not, if the negation flag "!" is used)
 
              - **IN / !IN** : Evaluates if the field value is in the comma list equal
-               to value in "Part 3" (or not, if the negation flag, "!" is prefixed)
+               to value in "Part 3" (or not, if the negation flag "!" is used)
 
              - **- / !-** : Evaluates if the field value is in the range specified by
-               value in "Part 3" ([min] - [max]) (or not, if the negation flag, "!"
-               is prefixed)
+               value in "Part 3" ([min] - [max]) (or not, if the negation flag "!" is used)
+
+             - **BIT / !BIT** : Evaluates if the bit specified by the value in "Part 3"
+               is set (or not, if the negation flag "!" is used) in the field's value
+               (considered as an integer) *(available since TYPO3 CMS 6.2)*
 
          - **EXT** : This evaluates based on current status of extensions.
 
