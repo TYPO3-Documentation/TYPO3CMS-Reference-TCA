@@ -296,8 +296,8 @@ customControls
             EXT:myext/class.tx_myext_myclass:tx_myext_myclass->myUserFuncMethod
 
          For more details, see the implementation in
-         "t3lib/class.t3lib\_tceforms\_inline.php" and search for
-         "customControls".
+         :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement>`
+         and search for "customControls".
 
    Scope
          Display

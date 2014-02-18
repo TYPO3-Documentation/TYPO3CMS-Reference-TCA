@@ -15,7 +15,9 @@ Before you read on, let's just refresh the meaning of a few concepts
 mentioned on the next pages:
 
 - **TCE:** Short for "TYPO3 Core Engine". Also referred to as "TCEmain".
-  This class (class.t3lib\_tcemain) should ideally handle all updates to
+  The corresponding class
+  :ref:`TYPO3\\CMS\\Core\\DataHandling\\DataHandler <t3cmsapi:TYPO3\\CMS\\Core\\DataHandling\\DataHandler>`
+  should ideally handle all updates to
   records made in the backend of TYPO3. The class will handle all the
   rules which may be applied to each table correctly. It will also
   handle logging, versioning, history and undo features,

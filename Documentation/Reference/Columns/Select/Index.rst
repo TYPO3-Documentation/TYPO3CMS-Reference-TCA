@@ -150,12 +150,10 @@ items
          - Values must not contain "," (comma) and "\|" (vertical bar). If you
            want to use "authMode" you should also refrain from using ":" (colon).
 
-         - Third value is an optional icon.Default from "t3lib/gfx/" but if
-           prepended with "../" it will be taken from any PATH\_site directory.
-           You can also prepend the files "ext/" and "sysext/" if they are in
-           global extension directories. And finally - taking precedence over any
-           other value - files prepended with "EXT:" will be found in the
-           respective extension.
+         - Third value is an optional icon. Default path is
+           :file:`typo3/sysext/t3skin/icons/gfx/`. For custom icons
+           use a path prepended with "EXT:" to refer to an image file
+           found inside an extension.
 
          - Fourth value is an optional description text. This is only shown when
            the list is shown by renderMode "checkbox".
@@ -555,7 +553,7 @@ fileFolder\_extList
          List of extensions to select. If blank, all files are selected.
          Specify list in lowercase.
 
-         See "t3lib\_div::getAllFilesAndFoldersInPath()"
+         See :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
 
    Scope
          Display / Proc
@@ -581,7 +579,7 @@ fileFolder\_recursions
 
          0 (zero) means no recursion into subdirectories.
 
-         See "t3lib\_div::getAllFilesAndFoldersInPath()"
+         See :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
 
    Scope
          Display / Proc

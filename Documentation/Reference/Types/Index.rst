@@ -46,47 +46,52 @@ Optional possibilities
 
 The power of the "types"-configuration becomes clear when you want the
 form composition of a record to depend on a value from the record.
-Let's look at the "dummy" table from the "examples" extension. The
-"ctrl" section of its TCA looks like this::
+Let's look at the "tx_examples_dummy" table from the "examples" extension. The
+"ctrl" section of its TCA looks like this:
 
-   $TCA['tx_examples_dummy'] = array(
-	   'ctrl' => array(
-		   'title'     => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy',
-		   'label'     => 'title',
-		   'tstamp'    => 'tstamp',
-		   'crdate'    => 'crdate',
-		   'cruser_id' => 'cruser_id',
-		   'type'       => 'record_type',
-		   'default_sortby' => 'ORDER BY title',
-		   'delete' => 'deleted',
-		   'enablecolumns' => array(
-			   'disabled' => 'hidden',
-		   ),
-		   'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_examples_dummy.gif',
-	   )
-   );
+.. code-block:: php
+   :emphasize-lines: 7,7
 
-The line in bold indicates that the field called "record\_type" will
+	'ctrl' => array(
+		'title'     => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_dummy',
+		'label'     => 'title',
+		'tstamp'    => 'tstamp',
+		'crdate'    => 'crdate',
+		'cruser_id' => 'cruser_id',
+		'type'		=> 'record_type',
+		'default_sortby' => 'ORDER BY title',
+		'delete' => 'deleted',
+		'enablecolumns' => array(
+			'disabled' => 'hidden',
+		),
+		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('examples') . 'Resources/Public/Images/Dummy.png',
+	),
+
+The highlighted line indicates that the field called "record\_type" will
 used to indicate the "type" of any given record of the table. Let's
-look at how this field is defined::
+look at how this field is defined:
 
-   'record_type' => array(
-	   'exclude' => 0,
-	   'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type',
-	   'config' => array(
-		   'type' => 'select',
-		   'items' => array(
-			   array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.0', 0),
-			   array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.1', 1),
-			   array('LLL:EXT:examples/locallang_db.xml:tx_examples_dummy.record_type.2', 2),
-		   )
-	   )
-   ),
+.. code-block:: php
+
+	'record_type' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_dummy.record_type',
+		'config' => array(
+			'type' => 'select',
+			'items' => array(
+				array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_dummy.record_type.0', 0),
+				array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_dummy.record_type.1', 1),
+				array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_dummy.record_type.2', 2),
+			)
+		)
+	),
 
 There's nothing unusual here. It's a pretty straightforward select
 field, with three options. Finally, in the "types" section, we defined
 what fields should appear and in what order for every value of the
-"type" field::
+"type" field:
+
+.. code-block:: php
 
    'types' => array(
            '0' => array('showitem' => 'hidden, record_type, title, some_date '),

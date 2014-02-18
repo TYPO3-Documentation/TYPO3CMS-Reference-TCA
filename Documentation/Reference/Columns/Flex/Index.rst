@@ -285,7 +285,7 @@ FlexForm facts
 
 FlexForms create a form-in-a-form. The content coming from this form
 is still stored in the associated database field - but as an XML
-structure (stored by t3lib\_div::array2xml())!
+structure (stored by :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::xml2array()`)!
 
 The "TCA" information needed to generate the FlexForm fields are found
 inside a <T3DataStructure> XML document. When you configure a FlexForm
@@ -513,7 +513,7 @@ FlexForm data format, <T3FlexForms>
 """""""""""""""""""""""""""""""""""
 
 When saving FlexForm elements the content is stored as XML using
-t3lib\_div::array2xml() to convert the internal PHP array to XML
+:code:`\TYPO3\CMS\Core\Utility\GeneralUtility::array2xml_cs()` to convert the internal PHP array to XML
 format. The structure is as follows:
 
 
@@ -797,7 +797,7 @@ ext\_tables.php file of the "examples" extension:
 .. code-block:: php
 
    $TCA['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi_flexform';
-   t3lib_extMgm::addPiFlexFormValue($_EXTKEY . '_pi1', 'FILE:EXT:examples/flexform_ds1.xml');
+   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($_EXTKEY . '_pi1', 'FILE:EXT:examples/flexform_ds1.xml');
 
 In the first line the tt\_content field "pi\_flexform" is added to the
 display of fields when the Plugin type is selected and set to

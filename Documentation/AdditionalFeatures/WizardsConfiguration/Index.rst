@@ -303,10 +303,10 @@ icon
    Description
          This is the icon representing the wizard.
 
-         If the first 3 chars are NOT "../" then the file is expected to be in
-         "t3lib/gfx/". So to insert custom images, put them in "../typo3conf/"
-         or so. You can also prefix icons from extensions with
-         "EXT:ext/[extension key]/directory.../". Generally, the format is the
+         If the first 3 chars are **not** "../" then the file is expected to be in
+         :file:`typo3/sysext/t3skin/icons/gfx/`. To insert custom images,
+         put them into an extension and use an icon path like
+         :file:`EXT:ext/[extension key]/directory/...`. Generally, the format is the
          same as for referring to icons for selector box options.
 
          If the icon is not set, the title will be used for the link.
@@ -1121,10 +1121,8 @@ receiverClass
          string
 
    Description
-         PHP class alternative receiver class - the file that holds the class
-         needs to be included manually before calling the suggest feature
-         (default: t3lib\_tceforms\_suggest\_defaultreceiver), should be
-         derived from "t3lib\_tceforms\_suggest\_defaultreceiver".
+         PHP class alternative receiver class. Must extend
+         :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver>`.
 
 
 

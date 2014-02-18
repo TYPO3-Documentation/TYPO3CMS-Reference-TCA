@@ -208,7 +208,7 @@ label\_alt
 				'label' => 'header',
 				'label_alt' => 'subheader,bodytext',
 
-         See t3lib\_BEfunc::getRecordTitle().
+         See :code:`\TYPO3\CMS\Backend\Utility\BackendUtility::getRecordTitle()`.
 
          Also see :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
 
@@ -239,7 +239,7 @@ label\_alt\_force
          If set, then the :ref:`label_alt <ctrl-reference-label-alt>` fields
          are always shown in the title separated by comma.
 
-         See t3lib\_BEfunc::getRecordTitle()
+         See :code:`\TYPO3\CMS\Backend\Utility\BackendUtility::getRecordTitle()`.
 
          .. note::
 
@@ -1031,7 +1031,7 @@ rootLevel
 
          .. code-block:: php
 
-            t3lib_extMgm::allowTableOnStandardPages('tx_examples_haiku');
+            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_examples_haiku');
 
    Scope
          Proc. / Display
@@ -1885,8 +1885,9 @@ versioningWS
            version of an element per ID. For online: 0 (zero) unless t3ver\_state
            is set in which case it plays a role for previews in the backend (to
            no de-select placeholders for workspaces, see
-           t3lib\_BEfunc::versioningPlaceholderClause()) and for publishing of
-           move-to-actions (see t3lib\_BEfunc::getMovePlaceholder())
+           :code:`\TYPO3\CMS\Backend\Utility\BackendUtility::versioningPlaceholderClause())`
+           and for publishing of move-to-actions (see
+           :code:`\TYPO3\CMS\Backend\Utility\BackendUtility::getMovePlaceholder()`).
 
          t3ver\_state
            Contains special states of a version used when
