@@ -50,6 +50,8 @@ Reference
    `fe\_cruser\_id`_                    string
    `fe\_crgroup\_id`_                   string
    `fe\_admin\_lock`_                   string
+   `formattedLabel\_userFunc`_          string
+   `formattedLabel\_userFunc_options`_  array
    `groupName`_                         string
    `hideAtCopy`_                        boolean
    `hideTable`_                         boolean
@@ -319,6 +321,69 @@ label\_userFunc
             	$newTitle .= ' (' . substr(strip_tags($record['poem']), 0, 10) . '...)';
             	$parameters['title'] = $newTitle;
             }
+
+   Scope
+         Display
+
+
+
+.. _ctrl-reference-formattedlabel-userfunc:
+
+formattedLabel\_userFunc
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         formattedLabel\_userFunc
+
+   Datatype
+         string
+
+   Description
+         Similar to :ref:`label_userFunc <ctrl-reference-label-userfunc>`
+         but allowed to return formatted HTML for the label. Furthermore
+         the referenced user function may receive arguments using the
+         :ref:`formattedLabel_userFunc_options <ctrl-reference-formattedlabel-userfunc-options>`
+         property.
+
+         **Example**
+
+         Taken from table "sys_file_reference".
+
+         .. code-block:: php
+
+			'formattedLabel_userFunc' => 'EXT:core/Classes/Resource/Service/UserFileInlineLabelService.php:TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService->getInlineLabel',
+			'formattedLabel_userFunc_options' => array(
+				'sys_file' => array(
+					'title',
+					'name'
+				)
+			),
+
+         See class :ref:`TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService <t3cmsapi:TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService>`
+         for how such a user function should be designed and how the options are used.
+
+   Scope
+         Display
+
+
+
+.. _ctrl-reference-formattedlabel-userfunc-options:
+
+formattedLabel\_userFunc\_options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         formattedLabel\_userFunc\_options
+
+   Datatype
+         string
+
+   Description
+         Options for :ref:`formattedLabel_userFunc <ctrl-reference-formattedlabel-userfunc>`.
 
    Scope
          Display
