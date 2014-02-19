@@ -1149,7 +1149,10 @@ treeConfig
              levels that will not be selectable, by default the root node (which is
              "0") cannot be selected
 
-           - **width** (since TYPO3 CMS 6.0): Set a custom width of the tree select field in pixels.
+           - **allowRecursiveMode (boolean)** : If set to :code:`true`, the selection
+             of a node will trigger the selection of all child nodes too (recursively).
+
+           - **width** *(since TYPO3 CMS 6.0)*: Set a custom width of the tree select field in pixels.
 
    Scope
          Display
