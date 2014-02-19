@@ -61,6 +61,7 @@ Reference
    `label\_alt`_                        string
    `label\_alt\_force`_                 boolean
    `label\_userFunc`_                   string
+   `label\_userFunc\_options`_          array
    `languageField`_                     string
    `mainpalette`_                       string
    `origUid`_                           string
@@ -297,6 +298,11 @@ label\_userFunc
             it in your ext\_tables.php file). When using a class, the preferred
             way is to declare it with the autoloader.
 
+         .. warning::
+
+            The title is passed later on through :code:`htmlspecialchars()`
+            so it may not include any HTML formatting.
+
          **Example:**
 
          Let's look at what is done for the "haiku" table of the "examples"
@@ -327,6 +333,36 @@ label\_userFunc
 
 
 
+.. _ctrl-reference-label-userfunc-options:
+
+label\_userFunc\_options
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         label\_userFunc\_options
+
+   Datatype
+         string
+
+   Description
+         Options for :ref:`label_userFunc <ctrl-reference-label-userfunc>`.
+         The array of options is passed to the user function in the parameters
+         array with key "options".
+
+         .. note::
+
+            When the :code:`label_userFunc` is used for inline (IRRE)
+            elements, the options are **not** passed. If you need options
+            use :ref:`formattedLabel_userFunc <ctrl-reference-formattedlabel-userfunc>`
+            instead.
+
+   Scope
+         Display
+
+
+
 .. _ctrl-reference-formattedlabel-userfunc:
 
 formattedLabel\_userFunc
@@ -342,8 +378,9 @@ formattedLabel\_userFunc
 
    Description
          Similar to :ref:`label_userFunc <ctrl-reference-label-userfunc>`
-         but allowed to return formatted HTML for the label. Furthermore
-         the referenced user function may receive arguments using the
+         but allowed to return formatted HTML for the label
+         **and used only for the labels of inline (IRRE) records**.
+         The referenced user function may receive optional arguments using the
          :ref:`formattedLabel_userFunc_options <ctrl-reference-formattedlabel-userfunc-options>`
          property.
 
