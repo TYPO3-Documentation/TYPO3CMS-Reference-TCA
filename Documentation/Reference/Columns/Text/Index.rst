@@ -30,18 +30,19 @@ Properties
 
 .. container:: ts-properties
 
-   ========== =========
-   Property   Data Type
-   ========== =========
-   `cols`_    integer
-   `default`_ string
-   `eval`_    string
-   `is\_in`_  string
-   `rows`_    integer
-   `type`_    string
-   `wizards`_ array
-   `wrap`_    string
-   ========== =========
+   ============== =========
+   Property       Data Type
+   ============== =========
+   `cols`_        integer
+   `default`_     string
+   `eval`_        string
+   `is\_in`_      string
+   `placeholder`_ string
+   `rows`_        integer
+   `type`_        string
+   `wizards`_     array
+   `wrap`_        string
+   ============== =========
 
 
 Property details
@@ -256,6 +257,28 @@ is\_in
 
    Scope
          Display / Proc.
+
+
+.. _columns-text-properties-placeholder:
+
+placeholder
+~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         placeholder
+
+   Datatype
+         string
+
+   Description
+         *(Since TYPO3 CMS 4.7)*
+
+         :ref:`See description for input-type field. <columns-input-properties-placeholder>`
+
+   Scope
+         Display
 
 
 

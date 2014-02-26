@@ -34,19 +34,20 @@ Properties
 
 .. container:: ts-properties
 
-   =========== =========
-   Property    Data Type
-   =========== =========
-   `checkbox`_ string
-   `default`_  string
-   `eval`_     string
-   `is\_in`_   string
-   `max`_      integer
-   `range`_    array
-   `size`_     integer
-   `type`_     string
-   `wizards`_  array
-   =========== =========
+   ============== =========
+   Property       Data Type
+   ============== =========
+   `checkbox`_    string
+   `default`_     string
+   `eval`_        string
+   `is\_in`_      string
+   `max`_         integer
+   `placeholder`_ string
+   `range`_       array
+   `size`_        integer
+   `type`_        string
+   `wizards`_     array
+   ============== =========
 
 Property details
 """"""""""""""""
@@ -459,6 +460,62 @@ range
 
    Scope
          Proc.
+
+
+
+.. _columns-input-properties-placeholder:
+
+placeholder
+~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         placeholder
+
+   Datatype
+         string
+
+   Description
+         *(Since TYPO3 CMS 4.7)*
+
+         Placeholder text for the input field. This can be a simple string or
+         a reference to a value in the current record or another one.
+         With a syntax like :code:`__row|field` the placeholder will take
+         the value of the given field from the current record.
+
+         Since TYPO3 CMS 6.2, this can be recursive. If the designated field
+         is a relation to another table (i.e. is of type :ref:`select <columns-select>`,
+         :ref:`group <columns-group>` or :ref:`inline <columns-inline>`), the
+         related record will be loaded and the placeholder searched within it.
+
+         **Example**:
+
+         Taken from the "sys_file_reference" table.
+
+         .. code-block:: php
+            :emphasize-lines: 9
+
+			'title' => array(
+				'l10n_mode' => 'mergeIfNotBlank',
+				'exclude' => 1,
+				'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
+				'config' => array(
+					'type' => 'input',
+					'size' => '20',
+					'eval' => 'null',
+					'placeholder' => '__row|uid_local|metadata|title',
+					'mode' => 'useOrOverridePlaceholder',
+				)
+			),
+
+         In the above placeholder syntax, :code:`uid_local` points to the
+         related "sys_file" record and :code:`metadata` points to the
+         "sys_file_metata" of the related "sys_file" record. From there we
+         take the content of the :code:`title` field.
+
+   Scope
+         Display
 
 
 
