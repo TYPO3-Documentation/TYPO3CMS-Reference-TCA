@@ -165,6 +165,18 @@ appearance
            -  false: "Create new"
            -  true: "Create new <title of foreign\_table>", e.g. "Create new address"
 
+           |
+
+         - *newRecordLinkTitle* (string) *(since TYPO3 CMS 6.2)* Overwrites the title
+           of the "New record" link with a localised string. This will work only if
+           :code:`newRecordLinkAddTitle` is **not** set to true.
+
+           Example:
+
+           .. code-block:: php
+
+              'newRecordLinkTitle' => 'LLL:EXT:myext/Resources/Private/Language/locallang_db.xlf:my_new_record_label'
+
          - *newRecordLinkPosition* (string) **Deprecated** : use
            *levelLinksPosition* instead
 
