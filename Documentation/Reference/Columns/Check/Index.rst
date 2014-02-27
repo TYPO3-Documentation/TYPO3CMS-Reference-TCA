@@ -42,10 +42,12 @@ Properties
    ================ =========
    `cols`_          integer
    `default`_       integer
+   `eval`_          string
    `items`_         array
    `itemsProcFunc`_ string
    `showIfRTE`_     boolean
    `type`_          string
+   `validation`_    array
    ================ =========
 
 
@@ -157,7 +159,7 @@ showIfRTE
          boolean
 
    Description
-         If set, this field will show  *only* if the RTE editor is enabled
+         If set, this field will show *only* if the RTE editor is enabled
          (which includes correct browser version and user-rights altogether.)
 
    Scope
@@ -219,6 +221,81 @@ itemsProcFunc
 
    Scope
          Display
+
+
+
+.. _columns-check-properties-eval:
+
+eval
+~~~~
+
+.. container:: table-row
+
+   Key
+         eval
+
+   Datatype
+         list of keywords
+
+   Description
+         Configuration of field evaluation.
+
+         Keywords:
+
+         maximumRecordsChecked
+           If this evaluation is defined, the maximum number of records from
+           the same table that can have this box checked will be limited. If
+           someone tries to check the box of a record beyond the allowed
+           maximum, the box will be unchecked automatically upon saving.
+
+           The actual limit is defined with the
+           :ref:`validation <columns-check-properties-validation>` property.
+
+         maximumRecordsCheckedInPid
+           Similar to :code:`maximumRecordsChecked` but with the validation
+           scope limited to records stored in the same page.
+
+   Scope
+         Proc.
+
+
+
+.. _columns-check-properties-validation:
+
+validation
+~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         validation
+
+   Datatype
+         array
+
+   Description
+         Values for the :ref:`eval <columns-check-properties-eval>` rules.
+         The keys of the array must correspond to the keyword of the
+         related evaluation rule. The value will generally a number or
+         whatever else is approppriate for the evaluation rule.
+
+         For :code:`maximumRecordsChecked` and `maximumRecordsCheckedInPid`
+         the value is expected to be an integer.
+
+         **Example:**
+
+         .. code-block:: php
+
+            'eval' => 'maximumRecordsChecked',
+            'validation' => array(
+            	'maximumRecordsChecked' => 5
+            )
+
+         In this example, only five records from the same table will
+         be allowed to have that particular box checked.
+
+   Scope
+         Proc.
 
 
 .. _columns-check-examples:
