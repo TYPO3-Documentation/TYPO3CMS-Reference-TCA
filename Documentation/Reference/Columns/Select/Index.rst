@@ -66,11 +66,12 @@ Properties
    `maxitems`_                               integer
    `minitems`_                               integer
    `MM`_                                     string
-   `MM\_opposite\_field`_                    string
-   `MM\_match\_fields`_                      array
-   `MM\_insert\_fields`_                     array
-   `MM\_table\_where`_                       string
    `MM\_hasUidField`_                        boolean
+   `MM\_insert\_fields`_                     array
+   `MM\_match\_fields`_                      array
+   `MM\_opposite\_field`_                    string
+   `MM\_opposite\_usage`_                    array
+   `MM\_table\_where`_                       string
    `multiple`_                               boolean
    `multiSelectFilterItems`_                 array
    `neg\_foreign\_table`_                    string
@@ -835,10 +836,62 @@ MM\_match\_fields
 
    Description
          Array of field=>value pairs to both insert and match against when
-         writing/reading MM relations
+         writing/reading MM relations.
 
    Scope
          Display / Proc.
+
+
+
+.. _columns-select-properties-mm-opposite-usage:
+
+MM\_opposite\_usage
+~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         MM\_opposite\_usage
+
+   Datatype
+         array
+
+   Description
+         *(Since TYPO3 CMS 6.2)*
+
+         In a MM bidirectional relation using
+         :ref:`match fields <columns-select-properties-mm-match-fields>`
+         the opposite side needs to know about the match fields for
+         certain operations (for example, when a copy is created in a
+         workspace) so that relations are carried over with the correct
+         information.
+
+         :code:`MM_opposite_usage` is an array which references which
+         fields contain the references to the opposite side, so that they
+         can be queried for match field configuration.
+
+         This is used by the Core for system categories. Whenever a table
+         is registered as being categorizable, an entry in :code:`MM_opposite_usage`
+         is created for the "sys_category" table.
+
+         **Example**
+
+         With "pages", "tt_content" and "sys_file_metadata" all registered
+         as categorizable (using the default name of "categories" for the
+         relations field) plus extension "examples" installed, the TCA
+         for "sys_category" contains the following definition once
+         fully assembled:
+
+         .. code-block:: php
+
+         	$GLOBALS['TCA']['sys_category']['columns']['items']['config']['MM_oppositeUsage'] = array(
+         		'pages' => array('tx_examples_cats', 'categories'),
+         		'sys_file_metadata' => array('categories'),
+         		'tt_content' => array('categories'),
+         	)
+
+   Scope
+         Proc.
 
 
 

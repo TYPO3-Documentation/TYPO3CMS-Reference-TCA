@@ -40,31 +40,32 @@ Properties
    ========================= =========
    Property                  Data Type
    ========================= =========
-   `allowed`_
-   `appearance`_
-   `autoSizeMax`_
-   `disable\_controls`_
-   `disallowed`_
-   `dontRemapTablesOnCopy`_
-   `filter`_
-   `internal\_type`_
-   `max\_size`_
-   `maxitems`_
-   `minitems`_
-   `MM`_
-   `MM\_hasUidField`_
-   `MM\_insert\_fields`_
-   `MM\_match\_fields`_
-   `MM\_opposite\_field`_
-   `MM\_table\_where`_
-   `multiple`_
-   `prepend\_tname`_
-   `selectedListStyle`_
-   `show\_thumbs`_
-   `size`_
-   `type`_
-   `uploadfolder`_
-   `wizards`_
+   `allowed`_                string
+   `appearance`_             array
+   `autoSizeMax`_            integer
+   `disable\_controls`_      string
+   `disallowed`_             string
+   `dontRemapTablesOnCopy`_  string
+   `filter`_                 array
+   `internal\_type`_         string
+   `max\_size`_              integer
+   `maxitems`_               integer
+   `minitems`_               integer
+   `MM`_                     string
+   `MM\_hasUidField`_        boolean
+   `MM\_insert\_fields`_     array
+   `MM\_match\_fields`_      array
+   `MM\_opposite\_field`_    string
+   `MM\_opposite\_usage`_    array
+   `MM\_table\_where`_       string
+   `multiple`_               boolean
+   `prepend\_tname`_         boolean
+   `selectedListStyle`_      string
+   `show\_thumbs`_           boolean
+   `size`_                   integer
+   `type`_                   string
+   `uploadfolder`_           string
+   `wizards`_                array
    ========================= =========
 
 Property details
@@ -411,6 +412,27 @@ MM\_match\_fields
 
    Description
          See :ref:`MM\_match\_fields property of select-type fields <columns-select-properties-mm-match-fields>`.
+
+   Scope
+         Proc.
+
+
+
+.. _columns-group-properties-mm-opposite-usage:
+
+MM\_opposite\_usage
+~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         MM\_opposite\_usage
+
+   Datatype
+         array
+
+   Description
+         See :ref:`MM\_opposite\_usage property of select-type fields <columns-select-properties-mm-opposite-usage>`.
 
    Scope
          Proc.
