@@ -151,6 +151,10 @@ appearance
    Description
          Has information about the appearance of child-records, namely:
 
+         - *ajaxLoad* (boolean) By default all inline-type fields have their related
+           records loaded on demand only, via an AJAX call. Setting this flag to
+           false will render all records up front. This is generally not recommended.
+
          - *collapseAll* (boolean) Show all child-records collapsed (if false, all
            are expanded)
 
