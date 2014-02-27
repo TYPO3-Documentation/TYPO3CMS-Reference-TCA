@@ -583,6 +583,42 @@ This wizard is used for the TSconfig fields and TypoScript Template
 provided by the "t3editor" system extension.
 
 
+.. _core-wizards-t3editor:
+
+t3editor
+""""""""
+
+System extension "t3editor" provides an enhanced textarea for
+TypoScript input, with not only syntax highlighting but also
+auto-complete suggestions. This is a very special process reserved
+for the "sys_template" template.
+
+However beyond that the "t3editor" extension makes it possible to
+add syntax highlighting to textarea fields, for several languages
+(currently including HTML, CSS, JavaScript, TypoScript, SPARQL, XML
+and PHP). This is how the "bodytext" field of table "tt_content" is
+enhanced for HTML content elements:
+
+.. code-block:: php
+
+	$TCA['tt_content']['columns']['bodytext']['config']['wizards']['t3editor'] = array(
+		'enableByTypeConfig' => 1,
+		'type' => 'userFunc',
+		'userFunc' => 'TYPO3\\CMS\\T3editor\\FormWizard->main',
+		'title' => 't3editor',
+		'script' => '',
+		'params' => array(
+			'format' => 'html',
+			'style' => 'width:98%; height: 60%;'
+		)
+	);
+
+.. note::
+
+   The :code:`script` property is meaningless in this case, but is needed by
+   the Core for the wizard to kick in at all.
+
+
 .. _core-wizards-browse:
 
 browse\_links.php
