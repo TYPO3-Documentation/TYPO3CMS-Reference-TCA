@@ -13,8 +13,8 @@ Wizard scripts in the core
 
 The wizard interface allows you to use any PHP-script for your wizards
 but there is a useful set of default wizard scripts available in the
-core of TYPO3. These are found in PATH\_typo3 and are all prefixed
-"wizard\_" (except "browse\_links.php").
+core of TYPO3. These are found mostly in
+:file:`typo3/sysext/backend/Classes/Controller/Wizard/`.
 
 Below is a description of each of them including a description of
 their special parameters and an example of usage.
@@ -22,8 +22,8 @@ their special parameters and an example of usage.
 
 .. _core-wizards-add:
 
-wizard\_add.php
-"""""""""""""""
+Add wizard
+""""""""""
 
 This script links to a form which allows you to create a new record in
 a given table which may optionally be set as the value on return to
@@ -130,7 +130,7 @@ selected groups.
 The configuration looks like this:
 
 .. code-block:: php
-   :emphasize-lines: 21-31
+   :emphasize-lines: 23-35
 
 	'usergroup' => array(
 		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
@@ -147,7 +147,9 @@ The configuration looks like this:
 				'edit' => array(
 					'type' => 'popup',
 					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
-					'script' => 'wizard_edit.php',
+					'module' => array(
+						'name' => 'wizard_edit',
+					),
 					'popup_onlyOpenIfSelected' => 1,
 					'icon' => 'edit2.gif',
 					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
@@ -161,7 +163,9 @@ The configuration looks like this:
 						'pid' => '0',
 						'setValue' => 'prepend'
 					),
-					'script' => 'wizard_add.php'
+					'module' => array(
+						'name' => 'wizard_add'
+					)
 				),
 				'list' => array(
 					'type' => 'script',
@@ -171,25 +175,27 @@ The configuration looks like this:
 						'table' => 'be_groups',
 						'pid' => '0'
 					),
-					'script' => 'wizard_list.php'
+					'module' => array(
+						'name' => 'wizard_list'
+					)
 				)
 			)
 		)
 	),
 
-The highlighted lines are related to the Add-wizard. Note how it points to
-the :file:`wizard_add.php` script. The "params" array instructs the Add-
+The highlighted lines are related specifically to the Add wizard. Note the
+reference to the :code:`wizard_add` key. The "params" array instructs the Add
 wizard on how to handle the creation of the new record, i.e. which table,
 where to store it, etc.. In particular the "setValue" parameter tells
 the wizard script that the uid of the newly created record should be
 inserted in the relations field of the original record (the one where
-we clicked the Add-wizard's icon).
+we clicked the Add wizard's icon).
 
 
 .. _core-wizards-edit:
 
-wizard\_edit.php
-""""""""""""""""
+Edit wizard
+"""""""""""
 
 The Edit wizard gives you a shortcut to edit references in "select" or
 "group" type form elements. Again let's look at the BE user records:
@@ -199,9 +205,9 @@ The Edit wizard gives you a shortcut to edit references in "select" or
 
    Edit a related record directly thanks to the Edit wizard
 
-When a record is selected and the Edit-wizard button is clicked, that
+When a record is selected and the Edit wizard button is clicked, that
 record opens in a new window for modification. Let's look again at the
-configuration (just the Edit-wizard part):
+configuration (just the Edit wizard part):
 
 .. code-block:: php
 
@@ -214,7 +220,9 @@ configuration (just the Edit-wizard part):
 				'edit' => array(
 					'type' => 'popup',
 					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
-					'script' => 'wizard_edit.php',
+					'module' => array(
+						'name' => 'wizard_edit',
+					),
 					'popup_onlyOpenIfSelected' => 1,
 					'icon' => 'edit2.gif',
 					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
@@ -226,13 +234,13 @@ configuration (just the Edit-wizard part):
 
 The wizard is set to type :code:`popup` which makes it so that the selected
 record will open in a new window. There are no parameters to pass
-along like there were for the Add-wizard.
+along like there were for the Add wizard.
 
 
 .. _core-wizards-list:
 
-wizard\_list.php
-""""""""""""""""
+List wizard
+"""""""""""
 
 This links to the Web > List module for only one table and allows the
 user to manipulate stuff there. Again, the BE user records have it:
@@ -328,22 +336,23 @@ List-wizard part):
 						'table' => 'be_groups',
 						'pid' => '0'
 					),
-					'script' => 'wizard_list.php'
+					'module' => array(
+						'name' => 'wizard_list'
+					)
 				)
 			)
 		)
 	),
 
-The type is also the "script" type. In the "params" array the table
-and pid passed to the script is set.
+In the "params" array the table and pid passed to the script is set.
 
 
 .. _core-wizards-colorpicker:
 
-wizard\_colorpicker.php
-"""""""""""""""""""""""
+Color picker
+""""""""""""
 
-The colorpicker wizard allows you to select a HTML color value from a
+The color picker wizard allows you to select a HTML color value from a
 user-friendly pop-up box. The wizard type is "colorbox" which will
 first of all add a colored box next to an input field. Here's how it
 looks in a "haiku" record of the "examples" extension:
@@ -379,7 +388,9 @@ The corresponding TCA configuration looks like this:
 				'colorChoice' => array(
 					'type' => 'colorbox',
 					'title' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.colorPick',
-					'script' => 'wizard_colorpicker.php',
+					'module' => array(
+						'name' => 'wizard_colorpicker',
+					),
 					'dim' => '20x20',
 					'tableStyle' => 'border: solid 1px black; margin-left: 20px;',
 					'JSopenParams' => 'height=600,width=380,status=0,menubar=0,scrollbars=1',
@@ -394,8 +405,8 @@ Notice the wizard type which is "colorbox".
 
 .. _core-wizards-forms:
 
-wizard\_forms.php
-"""""""""""""""""
+Forms wizard
+""""""""""""
 
 The forms wizard is used typically with the Content Elements, type
 "Mailform". It allows to edit the code-like configuration of the mail
@@ -444,7 +455,9 @@ highlighted):
 		'type' => 'script',
 		'title' => 'Form wizard',
 		'icon' => 'wizard_forms.gif',
-		'script' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('form') . 'Classes/Controller/Wizard.php',
+		'module' => array(
+			'name' => 'wizard_form'
+		),
 		'params' => array(
 			'xmlOutput' => 0
 		)
@@ -468,10 +481,10 @@ And this is the wizard's window:
 
 .. _core-wizards-table:
 
-wizard\_table.php
-"""""""""""""""""
+Table wizard
+""""""""""""
 
-The tables wizard is used typically with the Content Elements, type
+The table wizard is used typically with the Content Elements, type
 "Table". It allows to edit the code-like configuration of the tables
 with a visual editor.
 
@@ -537,7 +550,9 @@ Content Elements:
 		'type' => 'script',
 		'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.table',
 		'icon' => 'wizard_table.gif',
-		'script' => 'wizard_table.php',
+		'module' => array(
+			'name' => 'wizard_table'
+		),
 		'params' => array(
 			'xmlOutput' => 0
 		)
@@ -554,8 +569,8 @@ This is how the wizard looks like:
 
 .. _core-wizards-rte:
 
-wizard\_rte.php
-"""""""""""""""
+RTE wizard
+""""""""""
 
 This wizard is used to show a "full-screen" Rich Text Editor field.
 The configuration below shows an example taken from the Text field in
@@ -569,14 +584,16 @@ Content Elements:
 		'type' => 'script',
 		'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
 		'icon' => 'wizard_rte2.gif',
-		'script' => 'wizard_rte.php'
+		'module' => array(
+			'name' => 'wizard_rte'
+		)
 	),
 
 
 .. _core-wizards-tsconfig:
 
-wizard\_tsconfig.php
-""""""""""""""""""""
+TSconfig wizard
+"""""""""""""""
 
 This wizard is used for the TSconfig fields and TypoScript Template
 "Setup" fields. Its usage is deprecated in favor of the code editor
@@ -621,10 +638,10 @@ enhanced for HTML content elements:
 
 .. _core-wizards-browse:
 
-browse\_links.php
-"""""""""""""""""
+Link browser
+""""""""""""
 
-The "Links" wizard is used many places where you want to insert link
+The link browser wizard is used many places where you want to insert link
 references.
 
 This works not only in the Rich Text Editor but also in "typolink"
@@ -698,7 +715,7 @@ Clicking the wizard icons opens the Element Browser window:
 Such a wizard can be configured like this:
 
 .. code-block:: php
-   :emphasize-lines: 15
+   :emphasize-lines: 17-19
 
 	'header_link' => array(
 		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link',
@@ -714,7 +731,12 @@ Such a wizard can be configured like this:
 					'type' => 'popup',
 					'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
 					'icon' => 'link_popup.gif',
-					'script' => 'browse_links.php?mode=wizard',
+					'module' => array(
+						'name' => 'wizard_element_browser',
+						'urlParameters' => array(
+							'mode' => 'wizard'
+						)
+					),
 					'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
 				)
 			),
@@ -722,6 +744,6 @@ Such a wizard can be configured like this:
 		)
 	),
 
-Notice how the :file:`browse_links.php` script requires an extra parameter
-(highlighted line) since it has to return content back to the input field
-(and not the RTE for instance which it also supports).
+Notice how the wizard requires an extra parameter
+(highlighted lines) since it has to return content back to the input field
+(and not the RTE, for instance, which it also supports).

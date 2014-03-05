@@ -53,6 +53,12 @@ for a field. The order of the keys determines the order the wizards
 are displayed in. The key-values themselves play no important role
 (except from a few reserved words listed in a table below).
 
+.. warning::
+
+   Configuration of wizards has changed since TYPO3 CMS 6.2 to provide
+   CSRF protection. To see examples for older version of TYPO3 CMS
+   please refer to other versions of this manual.
+
 The configuration for the new / edit / suggest wizards shown above
 looks like this:
 
@@ -71,7 +77,9 @@ looks like this:
 				'edit' => array(
 					'type' => 'popup',
 					'title' => 'Edit template',
-					'script' => 'wizard_edit.php',
+					'module' => array(
+						'name' => 'wizard_edit',
+					),
 					'popup_onlyOpenIfSelected' => 1,
 					'icon' => 'edit2.gif',
 					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
@@ -85,13 +93,15 @@ looks like this:
 						'pid' => '###CURRENT_PID###',
 						'setValue' => 'prepend'
 					),
-					'script' => 'wizard_add.php'
+					'module' => array(
+						'name' => 'wizard_add'
+					)
 				)
 			)
 		)
 	),
 
-The first two lines of this configuration make use of two reserved
+The first two lines of the "wizards" configuration make use of two reserved
 keywords to define settings for the display of icons.
 
 
@@ -447,6 +457,49 @@ script
 
          A lot of parameters are passed to the script as GET-vars in an array :code:`P`.
 
+         .. warning::
+
+            Deprecated since TYPO3 CMS 6.2, use :ref:`module <wizards-configuration-script-module>`
+            instead.
+
+
+
+.. _wizards-configuration-script-module:
+
+module
+''''''
+
+.. container:: table-row
+
+   Key
+         module
+
+   Type
+         array
+
+   Description
+         *(Since TYPO3 CMS 6.2)*
+
+         This array contains configuration matching a declared wizard.
+         For example, the "Add record" wizard is declated that way in
+         :file:`typo3/sysext/backend/ext_tables.php`:
+
+         .. code-block:: php
+
+			// Register add wizard
+			\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModulePath(
+				'wizard_add',
+				\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Modules/Wizards/AddWizard/'
+			);
+
+         Note the key named :code:`wizard_add`. This key is used when
+         configuring a wizard, as in:
+
+         .. code-block:: php
+
+			'module' => array(
+				'name' => 'wizard_add'
+			)
 
 
 .. _wizards-configuration-script-params:
@@ -546,6 +599,24 @@ script
 
    Description
          :ref:`See above, type "script" <wizards-configuration-script-script>`.
+
+
+
+.. _wizards-configuration-popup-module:
+
+module
+''''''
+
+.. container:: table-row
+
+   Key
+         module
+
+   Type
+         array
+
+   Description
+         :ref:`See above, type "module" <wizards-configuration-script-module>`.
 
 
 
@@ -1324,11 +1395,13 @@ file :file:`EXT:examples/Classes/Userfuncs/Tca.php`):
 
 		// Assemble the wizard itself
 		$output = '<div style="margin-top: 8px; margin-left: 4px;">';
+
+		$commonJavascriptCalls = $PA['fieldChangeFunc']['TBE_EDITOR_fieldChanged'] . $PA['fieldChangeFunc']['typo3form.fieldGet'] . ' return false;';
 		// Create the + button
-		$onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value++; return false;";
+		$onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value++; " . $commonJavascriptCalls;
 		$output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">+</a>';
 		// Create the - button
-		$onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value--; return false;";
+		$onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value--; " . $commonJavascriptCalls;
 		$output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">-</a>';
 		$output .= '</div>';
 		return $output;
@@ -1341,7 +1414,10 @@ function and therefore doesn't need a return value - only to be
 changed. In that div, we use the color received as parameter.
 
 After that we create the JavaScript and the links for both the "+" and
-"-" buttons and we return the resulting HTML code.
+"-" buttons and we return the resulting HTML code. Note that the :code:`$PA`
+contains important JavaScript code to use. This code marks the field
+on which the wizard acted as changed and updates the value in the
+corresponding hidden field.
 
 Use the :code:`debug()` function to find more about what is available in the
 :code:`$PA` array.
