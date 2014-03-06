@@ -124,8 +124,8 @@ internal\_type
 
          - "file\_reference" - this will create a field where files can be
            referenced. In contrast to "file", referenced files (usually from
-           fileadmin/) will not be copied to the upload folder.  **Warning:** use
-           this carefully.  *Your references will be broken if you delete
+           fileadmin/) will not be copied to the upload folder. **Warning:** use
+           this carefully. *Your references will be broken if you delete
            referenced files in the filesystem!*
 
          - "folder" - this will create a field where folders can be attached to
@@ -136,6 +136,12 @@ internal\_type
 
          The default value is none of them - you must specify one of the values
          correctly!
+
+         .. important::
+
+            Types "file" and "file\_reference" should not be used anymore
+            since TYPO3 CMS 6.0. You should use FAL references instead
+            (:ref:`see example <columns-group-examples-fal>`).
 
    Scope
          Display / Proc.
@@ -959,43 +965,48 @@ created despite the ability of the "group" type field to create
 multiple references.
 
 
-.. _columns-group-examples-images:
+.. _columns-group-examples-fal:
 
-Attaching images
-~~~~~~~~~~~~~~~~
+File Abstraction Layer
+~~~~~~~~~~~~~~~~~~~~~~
 
-Attaching files to a database record is also achieved with group-type
-fields.
+It is possible to use FAL references in a group-type field, although
+:ref:`using them with inline-type fields <columns-inline-examples-fal>`
+allows for richer references (as there can be additional fields
+in the relation in that case).
 
-Notice how all the image names end with "\_0" and some number. This
-happens because all files attached to records through a group-type
-field are copied to a location defined by the "uploadfolder" setting
-in the configuration (see below). When a file is referenced several
-times, it is also copied several times. TYPO3 automatically appends a
-number so that each reference is unique. ::
+Here is an example taken from the "examples" extension:
 
-   'image' => array(
-           'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.images',
-           'config' => array(
-                   'type' => 'group',
-                   'internal_type' => 'file',
-                   'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-                   'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-                   'uploadfolder' => 'uploads/pics',
-                   'show_thumbs' => '1',
-                   'size' => '3',
-                   'maxitems' => '200',
-                   'minitems' => '0',
-                   'autoSizeMax' => 40,
-           ),
-   ),
+.. code-block:: php
 
-Notice how the "group" type is defined to contain files. Next the list
-of allowed file extensions are defined (here, taking the default list
-of image types for TYPO3). A maximum size (in kilobytes) for files is
-also defined. The "uploadfolder" property indicates that all files
-will be copied to the "uploads/pics" folder. Notice that this path is
-relative to the PATH\_site of TYPO3, one directory below PATH\_typo3.
+	'image_fal_group' => array(
+		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.image_fal_group',
+		'config' => array(
+			'type' => 'group',
+			'internal_type' => 'db',
+			'allowed' => 'sys_file',
+			'MM' => 'sys_file_reference',
+			'MM_match_fields' => array(
+				'fieldname' => 'image_fal_group'
+			),
+			'prepend_tname' => TRUE,
+			'appearance' => array(
+				'elementBrowserAllowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+				'elementBrowserType' => 'file'
+			),
+			'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
+			'show_thumbs' => '1',
+			'size' => '3',
+			'maxitems' => '200',
+			'minitems' => '0',
+			'autoSizeMax' => 40,
+		),
+	),
+
+.. note::
+
+   It is also possible to create relations directly to the
+   "sys_file" table by not using MM information.
 
 
 .. _columns-group-data:

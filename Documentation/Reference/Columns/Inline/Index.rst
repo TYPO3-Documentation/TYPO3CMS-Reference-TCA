@@ -902,10 +902,120 @@ symmetric\_sortby
 Examples
 """"""""
 
+.. _columns-inline-examples-fal:
+
+File Abstraction Layer
+~~~~~~~~~~~~~~~~~~~~~~
+
+Inline-type fields are massively used the TYPO3 CMS Core with
+regards to the :ref:`File Abstraction Layer (FAL) <t3fal:start>`.
+
+FAL provides an API for registering an inline-type field
+with relations to the "sys_file_reference" table containing information
+related to existing media. Here is how it is used on the "image"
+field of table "tt_content":
+
+.. code-block:: php
+
+	'image' => array(
+		'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.images',
+		'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('image',
+			array(
+				'appearance' => array(
+					'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference'
+				),
+				// custom configuration for displaying fields in the overlay/reference table
+				// to use the imageoverlayPalette instead of the basicoverlayPalette
+				'foreign_types' => array(
+					'0' => array(
+						'showitem' => '
+							--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+							--palette--;;filePalette'
+					),
+					\TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => array(
+						'showitem' => '
+							--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+							--palette--;;filePalette'
+					),
+					...
+				)
+			),
+			$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
+		)
+	),
+
+The method to call is :code:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig()`
+which takes four parameters. The first one is the name of the field, the second one is an array
+of configuration options which will be merged with the default configuration. The third one is the list
+of allowed file types and the fourth one (not used above) the list of disallowed file types.
+
+The default field configuration looks like:
+
+.. code-block:: php
+
+	$fileFieldTCAConfig = array(
+		'type' => 'inline',
+		'foreign_table' => 'sys_file_reference',
+		'foreign_field' => 'uid_foreign',
+		'foreign_sortby' => 'sorting_foreign',
+		'foreign_table_field' => 'tablenames',
+		'foreign_match_fields' => array(
+			'fieldname' => $fieldName
+		),
+		'foreign_label' => 'uid_local',
+		'foreign_selector' => 'uid_local',
+		'foreign_selector_fieldTcaOverride' => array(
+			'config' => array(
+				'appearance' => array(
+					'elementBrowserType' => 'file',
+					'elementBrowserAllowed' => $allowedFileExtensions
+				)
+			)
+		),
+		'filter' => array(
+			array(
+				'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
+				'parameters' => array(
+					'allowedFileExtensions' => $allowedFileExtensions,
+					'disallowedFileExtensions' => $disallowedFileExtensions
+				)
+			)
+		),
+		'appearance' => array(
+			'useSortable' => TRUE,
+			'headerThumbnail' => array(
+				'field' => 'uid_local',
+				'width' => '45',
+				'height' => '45c',
+			),
+			'showPossibleLocalizationRecords' => FALSE,
+			'showRemovedLocalizationRecords' => FALSE,
+			'showSynchronizationLink' => FALSE,
+			'showAllLocalizationLink' => FALSE,
+
+			'enabledControls' => array(
+				'info' => FALSE,
+				'new' => FALSE,
+				'dragdrop' => TRUE,
+				'sort' => FALSE,
+				'hide' => TRUE,
+				'delete' => TRUE,
+				'localize' => TRUE,
+			),
+		),
+		'behaviour' => array(
+			'localizationMode' => 'select',
+			'localizeChildrenAtParentLocalization' => TRUE,
+		),
+	);
+
+into which the options (second call parameter) are merged.
+
+
 .. _columns-inline-examples-comma-list:
 
-Example "comma-separated list":
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Comma-separated list
+~~~~~~~~~~~~~~~~~~~~
 
 This combines companies with persons (employees) using a comma
 separated list, so no :ref:`foreign_field <columns-inline-properties-foreign-field>`
@@ -940,8 +1050,8 @@ is used here.
 
 .. _columns-inline-examples-asymmetric-mm:
 
-Example "attributes on anti-symmetric intermediate table":
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Attributes on anti-symmetric intermediate table
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example combines companies with persons (employees) using an
 intermediate table. It is also possible to add attributes to every
@@ -1018,8 +1128,8 @@ relation from both sides (parent and child).
 
 .. _columns-inline-examples-symmetric-mm:
 
-Example "attributes on symmetric intermediate table":
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Attributes on symmetric intermediate table
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example combines two persons with each other – imagine they are
 married. One person on the first side is the husband, and one person
