@@ -480,6 +480,8 @@ location of the original files!
    Description
          Height of the selector box in TCEforms.
 
+         Since TYPO3 CMS 6.1, the default size is 5.
+
    Scope
          Display
 
