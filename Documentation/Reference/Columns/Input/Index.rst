@@ -40,6 +40,7 @@ Properties
    `checkbox`_    string
    `default`_     string
    `eval`_        string
+   `format`_      string
    `is\_in`_      string
    `max`_         integer
    `mode`_        string
@@ -356,6 +357,33 @@ eval
 
    Scope
          Display / Proc.
+
+
+
+.. _columns-input-properties-format:
+
+format
+~~~~~~
+
+.. container:: table-row
+
+   Key
+         format
+
+   Datatype
+         string (keyword)
+
+   Description
+         When an input-type field is set as read-only, it actually
+         gets rendered as a :ref:`none-type field <columns-none>`.
+         This means that is is possible to use the
+         :ref:`format property <columns-none-properties-format>` of
+         such field to format the value of the input-type field.
+
+         Read-only fields with :code:`eval` set to "date"
+         will be formatted as "date", "datetime" as "datetime" and
+         "time" as "time". This overrides any value of :code:`format`
+         which might have been set.
 
 
 

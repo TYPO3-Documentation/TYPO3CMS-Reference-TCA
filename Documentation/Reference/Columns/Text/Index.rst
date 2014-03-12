@@ -36,6 +36,7 @@ Properties
    `cols`_        integer
    `default`_     string
    `eval`_        string
+   `format`_      string
    `is\_in`_      string
    `mode`_        string
    `placeholder`_ string
@@ -236,6 +237,28 @@ eval
 
    Scope
          Display / Proc.
+
+
+
+.. _columns-text-properties-format:
+
+format
+~~~~~~
+
+.. container:: table-row
+
+   Key
+         format
+
+   Datatype
+         string (keyword)
+
+   Description
+         When an text-type field is set as read-only, it actually
+         gets rendered as a :ref:`none-type field <columns-none>`.
+         This means that is is possible to use the
+         :ref:`format property <columns-none-properties-format>` of
+         such field to format the value of the text-type field.
 
 
 
