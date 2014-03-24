@@ -33,11 +33,24 @@ This document used to be a chapter inside :ref:`TYPO3 Core APIs <t3api:start>`.
 What's new
 ^^^^^^^^^^
 
-The main change in TYPO3 CMS 6.1 is the handling of the TCA. The whole notion
-of loading only the "ctrl" part and the rest on demand is gone. The TCA
-is always entirely loaded both in the frontend and the backend.
+This version is updated for TYPO3 CMS 6.2. Here is a highlight of the
+main changes:
 
-It is also now possible to use :ref:`mutliple display conditions <columns>`.
+- there's a new way to :ref:`register wizards <wizards-configuration>`,
+  which provides CSRF protection.
+
+- it's possible to :ref:`add a filter <columns-select-properties-enablemultiselectfiltertextfield>`
+  to select-type fields.
+
+- :ref:`display conditions <columns-properties-displaycond>` have now bit operators.
+
+- take a deep look at the :ref:`inline-type fields (IRRE) <columns-inline>`
+  which received many new properties, mostly related to the development of FAL.
+
+- the placeholder property (actually introduced in TYPO3 CMS 4.7,
+  but missing from the documentation) has improved capabilities. It is
+  available for :ref:`input-type fields <columns-input-properties-placeholder>`
+  and :ref:`text-type fields <columns-text-properties-placeholder>`.
 
 
 .. _credits:
