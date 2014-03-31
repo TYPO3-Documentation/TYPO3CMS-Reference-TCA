@@ -76,6 +76,7 @@ Reference
    `selicon\_field\_path`_              string
    `setToDefaultOnCopy`_                string
    `shadowColumnsForNewPlaceholders`_   string
+   `shadowColumnsForMovePlaceholders`_  string
    `sortby`_                            string
    `title`_                             string
    `transForeignTable`_                 string
@@ -1629,6 +1630,33 @@ shadowColumnsForNewPlaceholders
 
    Scope
          Proc.
+
+
+
+.. _ctrl-reference-shadowcolumnsformoveplaceholders:
+
+shadowColumnsForMovePlaceholders
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         shadowColumnsForMovePlaceholders
+
+   Datatype
+         string
+
+         (list of field names)
+
+   Description
+         Similar to :ref:`shadowColumnsForNewPlaceholders <ctrl-reference-shadowcolumnsfornewplaceholders>`
+         but for move placeholders. It is used when:
+
+         - changing the sorting order of elements on the same page
+         - moving elements to a different page
+
+         Move placeholders are used only when property :ref:`versioningWS <ctrl-reference-versioningws>`
+         is set to :code:`2` (instead of :code:`1` or :code:`TRUE`).
 
 
 
