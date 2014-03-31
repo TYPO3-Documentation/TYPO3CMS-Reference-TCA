@@ -140,6 +140,8 @@ default
          This property can be used to set a default value for the field. Its
          data type is whatever is appropriate for the given field.
 
+         Since TYPO3 CMS 6.2, :code:`NULL` is a valid default value.
+
    Scope
          Display
 
