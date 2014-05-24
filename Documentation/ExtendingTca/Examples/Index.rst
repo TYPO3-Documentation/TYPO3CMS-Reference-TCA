@@ -21,7 +21,8 @@ Example 1: extending the fe\_users table
 """"""""""""""""""""""""""""""""""""""""
 
 The "examples" extension adds two fields to the "fe\_users" table.
-Here's the complete code, taken from the :file:`ext_tables.php` file:
+Here's the complete code, taken from file
+:file:`Configuration/TCA/Overrides/fe_users.php`:
 
 .. code-block:: php
 
@@ -127,7 +128,7 @@ element types. First of all, we add its SQL definition in
 		tx_examples_noprint tinyint(4) DEFAULT '0' NOT NULL
 	);
 
-Then we add it to the :code:`$TCA` in :file:`ext_tables.php`:
+Then we add it to the :code:`$TCA` in :file:`Configuration/TCA/Overrides/tt_content.php`:
 
 .. code-block:: php
 
@@ -170,6 +171,7 @@ The result is the following:
    The new field added next to an existing one
 
 .. note::
+
    Obviously this new field will no magically exclude a content element
    from being printed. For it to have any effect, it must be used during
    the rendering by modifying the TypoScript used to render the
@@ -192,4 +194,4 @@ The result is the following:
 
    This is just an example of how the effect of the "No print" checkbox
    can be ultimately implemented. It is meant to show that just adding
-   the field to the $TCAis not enough.
+   the field to the :code:`$TCA` is not enough.
