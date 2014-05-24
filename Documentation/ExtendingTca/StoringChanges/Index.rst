@@ -49,6 +49,17 @@ a dependency of yours. See the
    This feature was introduced in TYPO3 CMS 6.2.1.
 
 
+.. _storing-changes-on-the-fly:
+
+Changing the TCA "on the fly"
+"""""""""""""""""""""""""""""
+
+It is also possible to perform some special manipulations on the
+:code:`$TCA` right before it is stored into cache, thanks to the
+:code:`tcaIsBeingBuilt` signal. This signal was introduced in
+TYPO3 CMS 6.2.1.
+
+
 .. _storing-changes-legacy:
 
 Legacy information
