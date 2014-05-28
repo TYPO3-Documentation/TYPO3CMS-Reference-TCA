@@ -399,6 +399,9 @@ foreign\_table\_where
          integers (default is zero) and PAGE\_TSCONFIG\_STR will be
          addslashes'ed before substitution (default is blank string).
 
+         More information about markers set by Page TSconfig can be found
+         in the :ref:`TSconfig reference <t3tsconfig:pagetceformconfobj>`.
+
          See example below "Simple selector box with TSconfig markers".
 
    Scope
