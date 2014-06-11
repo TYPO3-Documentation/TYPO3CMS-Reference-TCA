@@ -76,6 +76,9 @@ pid
          - :code:`###THIS_UID###`
          - :code:`###STORAGE_PID###`
          - :code:`###SITEROOT###`
+         - :code:`###PAGE_TSCONFIG_ID###`
+         - :code:`###PAGE_TSCONFIG_IDLIST###`
+         - :code:`###PAGE_TSCONFIG_STR###`
 
          (see :ref:`TCA/select <columns-select-properties-foreign-table-where>` for description)
 
@@ -308,6 +311,9 @@ pid
          - :code:`###THIS_UID###`
          - :code:`###STORAGE_PID###`
          - :code:`###SITEROOT###`
+         - :code:`###PAGE_TSCONFIG_ID###`
+         - :code:`###PAGE_TSCONFIG_IDLIST###`
+         - :code:`###PAGE_TSCONFIG_STR###`
 
          (see :ref:`TCA/select <columns-select-properties-foreign-table-where>` for description)
 
