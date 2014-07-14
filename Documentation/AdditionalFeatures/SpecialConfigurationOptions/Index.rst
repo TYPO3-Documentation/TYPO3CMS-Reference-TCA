@@ -17,7 +17,7 @@ Special Configuration options
 Keywords
 """"""""
 
-This table lists the options for keywords in special configuration.
+This table lists the options for keywords in a special configuration.
 Each keyword is followed by a *value* wrapped in :code:`[]` (square
 brackets).
 
