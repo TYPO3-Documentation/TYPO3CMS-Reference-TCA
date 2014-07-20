@@ -11,7 +11,7 @@
 Storing the changes
 ^^^^^^^^^^^^^^^^^^^
 
-Changes to the $TCA are generally packaged into extensions and – more
+Changes to :code:`$GLOBALS['TCA']` are generally packaged into extensions and – more
 precisely – reside in the :file:`ext_tables.php` file (more details about
 extension structure can be found :ref:`in the Core APIs manual <t3api:extension-architecture>`).
 Or, since TYPO3 CMS 6.2, inside an extension, in a folder called
@@ -20,6 +20,11 @@ Or, since TYPO3 CMS 6.2, inside an extension, in a folder called
 A best practice consists of creating in that directory one file
 per modified table. The file is named along the pattern:
 "tablename.php".
+
+.. important::
+
+   Be aware that :code:`$TCA` is not available in this context. Use 
+   :code:`$GLOBALS['TCA']` instead.
 
 They can also be written to a general file in the :file:`typo3conf` directory.
 The name of this file is defined by the configuration variable
@@ -33,12 +38,12 @@ since TYPO3 CMS 6.2.
 
 If you are targeting only TYPO3 CMS 6.2 or higher, you should use
 only the :file:`Configuration/TCA/Overrides` storage method. All changes to
-the :code:`$TCA` found in such files are incorporated into the
-:code:`$TCA` **before** it is cached. This is thus the most efficient
+:code:`$GLOBALS['TCA']` found in such files are incorporated into
+:code:`$GLOBALS['TCA']` **before** it is cached. This is thus the most efficient
 method.
 
 The extension loading order is obviously an issue. If you want to
-modify the :code:`$TCA` information provided by another extension
+modify :code:`$GLOBALS['TCA']` information provided by another extension
 you need to ensure that your extension is loaded afterwards. This
 can be simply achieved by registering that other extension as
 a dependency of yours. See the
@@ -54,8 +59,8 @@ a dependency of yours. See the
 Changing the TCA "on the fly"
 """""""""""""""""""""""""""""
 
-It is also possible to perform some special manipulations on the
-:code:`$TCA` right before it is stored into cache, thanks to the
+It is also possible to perform some special manipulations on
+:code:`$GLOBALS['TCA']` right before it is stored into cache, thanks to the
 :code:`tcaIsBeingBuilt` signal. This signal was introduced in
 TYPO3 CMS 6.2.1.
 
@@ -73,7 +78,7 @@ Legacy information
 
 The advantage of using the "extTablesDefinitionScript" file is that it is
 loaded last. This means that you are sure that your changes are not
-overridden by some other customizations. Also editing the :code:`$TCA`
+overridden by some other customizations. Also editing :code:`$GLOBALS['TCA']`
 from the Admin Tools > Configuration module will only work if such a file
 is defined (and writable, of course).
 
