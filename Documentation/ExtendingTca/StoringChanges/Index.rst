@@ -19,7 +19,8 @@ Or, since TYPO3 CMS 6.2, inside an extension, in a folder called
 
 A best practice consists of creating in that directory one file
 per modified table. The file is named along the pattern:
-"tablename.php".
+"tablename.php". Be aware that $TCA is not available in this environment. Use 
+$GLOBALS['TCA'] instead.
 
 They can also be written to a general file in the :file:`typo3conf` directory.
 The name of this file is defined by the configuration variable
