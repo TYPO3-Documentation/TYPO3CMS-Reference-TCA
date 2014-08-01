@@ -385,26 +385,49 @@ displayCond
 
          This example will require the field named "tx\_templavoila\_ds" to be
          true, otherwise the field for which this rule is set will not be
-         displayed::
+         displayed:
 
-            'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
+         .. code-block:: php
+
+				'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
 
          This example requires the extension "static\_info\_tables" to be
          loaded, otherwise the field is not displayed (this is useful if the
-         field makes a look-up on a table coming from another extension!)::
+         field makes a look-up on a table coming from another extension!):
 
-            'displayCond' => 'EXT:static_info_tables:LOADED:true',
+         .. code-block:: php
 
-         The two above conditions could be combined to be both required::
+				'displayCond' => 'EXT:static_info_tables:LOADED:true',
 
-            'displayCond' => array(
-            	AND => array(
-            		'FIELD:tx_templavoila_ds:REQ:true',
-            		'EXT:static_info_tables:LOADED:true',
-            	)
-            )
+         The two above conditions could be combined to be both required:
 
-         This last example would require the header-field of the FlexForm-parent
+         .. code-block:: php
+
+				'displayCond' => array(
+					AND => array(
+						'FIELD:tx_templavoila_ds:REQ:true',
+						'EXT:static_info_tables:LOADED:true',
+					)
+				)
+
+         Going further the next example defines the following conditions:
+         for the "spaceAfter" field to be displayed, the content element
+         must be in the default or "All" language. Furtheremore it must
+         either be a text-type element or have some "spaceBefore" defined:
+
+         .. code-block:: php
+
+				'displayCond' ==> array(
+					'AND' => array(
+						'FIELD:sys_language_uid:<=:0',
+						'OR' => array(
+							'FIELD:CType:=:text',
+							'FIELD:spaceBefore:>:0'
+						)
+					)
+				);
+
+         The last example requires the header-field of the FlexForm-parent
          record to be true, otherwise the FlexForm field is not displayed
          (works only within FlexForm datastructure definitions):
 
