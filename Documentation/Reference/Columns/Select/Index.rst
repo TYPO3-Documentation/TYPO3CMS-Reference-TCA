@@ -70,7 +70,7 @@ Properties
    `MM\_insert\_fields`_                     array
    `MM\_match\_fields`_                      array
    `MM\_opposite\_field`_                    string
-   `MM\_opposite\_usage`_                    array
+   `MM\_oppositeUsage`_                      array
    `MM\_table\_where`_                       string
    `multiple`_                               boolean
    `multiSelectFilterItems`_                 array
@@ -847,14 +847,15 @@ MM\_match\_fields
 
 
 .. _columns-select-properties-mm-opposite-usage:
+.. _columns-select-properties-mm-oppositeusage:
 
-MM\_opposite\_usage
-~~~~~~~~~~~~~~~~~~~
+MM\_oppositeUsage
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
    Key
-         MM\_opposite\_usage
+         MM\_oppositeUsage
 
    Datatype
          array
@@ -869,12 +870,12 @@ MM\_opposite\_usage
          workspace) so that relations are carried over with the correct
          information.
 
-         :code:`MM_opposite_usage` is an array which references which
+         :code:`MM_oppositeUsage` is an array which references which
          fields contain the references to the opposite side, so that they
          can be queried for match field configuration.
 
          This is used by the Core for system categories. Whenever a table
-         is registered as being categorizable, an entry in :code:`MM_opposite_usage`
+         is registered as being categorizable, an entry in :code:`MM_oppositeUsage`
          is created for the "sys_category" table.
 
          **Example**
