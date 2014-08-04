@@ -30,7 +30,7 @@ they appear in the database)::
        ...
    );
 
-Here three tables, "pages", "tt\_content" and "tt\_myext", are shown as
+Here three tables, "pages", "tt\_content" and "tx\_examples\_haiku" are shown as
 examples.
 
 
@@ -40,7 +40,7 @@ Inside the table entries (second level)
 """""""""""""""""""""""""""""""""""""""
 
 Each table is further defined by an array which configures how the
-system handles the table, both for display and processing in the
+system handles the table, both for the display and the processing in the
 backend. The various parts on this second level are called "sections".
 
 The general structure (looking at a single table) is as follows::
@@ -118,7 +118,7 @@ chapter.
          **The individual fields**
 
          The "columns" section contains configuration for each table  *field*
-         (also called "column") which can be edited by the backend.
+         (also called "column") which can be edited in the backend.
 
          The configuration includes both properties for the display in the
          backend as well as the processing of the submitted data.
