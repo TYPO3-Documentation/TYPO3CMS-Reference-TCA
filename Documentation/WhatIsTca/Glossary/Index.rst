@@ -28,13 +28,13 @@ mentioned on the next pages:
   with NO space between the values* .
 
 - **field name:** The name of a field from a database table. Another
-  word for the same is "column" but it is used more rarely, however the
-  meaning is exactly the same.
+  word for the same thing is "column", but it is used more rarely.
 
-- **record type:** A record can have different types, expressed by the
+- **record type:** A record can have different types, determined by the
   value of a certain field in the record. This field is defined by the
-  [ctrl][type]value and it affects also which fields
-  ("types"-configuration) is used to display possible form fields.
+  TCA [ctrl][type] value and it affects also which fields of the table
+  (TCA "types"-configuration) are used to display the backend entry form (TCE).
+  You can consider the record type as a switch in the interpretation of the whole record.
 
 - **LLL reference:** is a localized string fetched from a locallang file
   by prefixing the string with "LLL:".
