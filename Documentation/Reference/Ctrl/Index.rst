@@ -11,18 +11,18 @@
 ['ctrl'] section
 ^^^^^^^^^^^^^^^^
 
-The [ctrl]section contains properties for the table in general.
+The [ctrl] section contains properties for a database table in general.
 
 These properties are basically divided into two main categories:
 
-- properties which affect how the table is *displayed* and handled in
-  the backend *interface*. This includes which icon, what name, which
-  column contains the title value, which column defines the type value
+- Properties which affect how a table is *displayed* and handled in
+  the backend *interface*. This includes which icon is shown and which name is given for a record. It defines which
+  column contains the title value, which column contains the type value
   etc.
 
-- properties which determine how it is processed by the system
-  (TCE). This includes publishing control, "deleted" flag, whether the table
-  can only be edited by admin-users, may only exist in the tree root
+- Properties which determine how entries in the backend interface are processed by the system
+  (TCE). This includes the publishing control, the "deleted" flag, whether a table
+  can only be edited by admin-users, whether a table may only exist in the tree root
   etc.
 
 
