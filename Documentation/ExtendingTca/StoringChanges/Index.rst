@@ -11,11 +11,35 @@
 Storing the changes
 ^^^^^^^^^^^^^^^^^^^
 
+
+.. important::
+
+   The extension loading order is obviously an issue. If you want to
+   modify :code:`$GLOBALS['TCA']` information provided by another extension
+   you need to ensure that your extension is loaded afterwards. This
+   can be simply achieved by registering that other extension as
+   a dependency of your extension. See the
+   :ref:`description of constraints in Core APIs <t3api:extension-declaration>`.
+
+
+.. _storing-changes-ext-tables:
+
+File ext_tables.php
+"""""""""""""""""""
+
 Changes to :code:`$GLOBALS['TCA']` are generally packaged into extensions and – more
-precisely – reside in the :file:`ext_tables.php` file (more details about
+precisely – they reside in the file :file:`ext_tables.php` inside of an extension folder. (more details about
 extension structure can be found :ref:`in the Core APIs manual <t3api:extension-architecture>`).
-Or, since TYPO3 CMS 6.2, inside an extension, in a folder called
-:file:`Configuration/TCA/Overrides`.
+The usage of this file is deprecated since TYPO3 CMS 6.2.
+
+
+.. _storing-changes-overrides:
+
+Overrides Folder
+""""""""""""""""
+
+Since TYPO3 CMS 6.2.1 an extension can have a folder called
+:file:`Configuration/TCA/Overrides` which can contain files to store the changes to an already existing TCA.
 
 A best practice consists of creating in that directory one file
 per modified table. The file is named along the pattern:
@@ -26,32 +50,25 @@ per modified table. The file is named along the pattern:
    Be aware that :code:`$TCA` is not available in this context. Use 
    :code:`$GLOBALS['TCA']` instead.
 
-They can also be written to a general file in the :file:`typo3conf` directory.
-The name of this file is defined by the configuration variable
-:code:`$GLOBALS['TYPO3_CONF_VARS']['DB']['extTablesDefinitionScript']`.
-TYPO3 official packages (like the dummy or the Introduction Pacakage)
-predefine the name as :file:`extTables.php`.
-
-It's perfectly possible to work without that file by not defining it at all
-or unsetting existing definitions. Usage of that file is deprecated
-since TYPO3 CMS 6.2.
-
-If you are targeting only TYPO3 CMS 6.2 or higher, you should use
-only the :file:`Configuration/TCA/Overrides` storage method. All changes to
+If you are targeting only TYPO3 CMS 6.2.1 or higher, you should
+use the :file:`Configuration/TCA/Overrides` storage method. All changes to
 :code:`$GLOBALS['TCA']` found in such files are incorporated into
 :code:`$GLOBALS['TCA']` **before** it is cached. This is thus the most efficient
 method.
 
-The extension loading order is obviously an issue. If you want to
-modify :code:`$GLOBALS['TCA']` information provided by another extension
-you need to ensure that your extension is loaded afterwards. This
-can be simply achieved by registering that other extension as
-a dependency of yours. See the
-:ref:`description of constraints in Core APIs <t3api:extension-declaration>`.
 
-.. note::
+.. _storing-changes-typo3conf:
 
-   This feature was introduced in TYPO3 CMS 6.2.1.
+typo3conf Folder
+""""""""""""""""
+
+Modifications of the TCE can also be written to a general file in the :file:`typo3conf` directory.
+The name of this file is defined by the configuration variable
+:code:`$GLOBALS['TYPO3_CONF_VARS']['DB']['extTablesDefinitionScript']`.
+TYPO3 predefines the name as :file:`extTables.php`.
+
+It's perfectly possible to work without that file by not defining it at all
+or unsetting existing definitions.
 
 
 .. _storing-changes-on-the-fly:
