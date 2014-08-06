@@ -103,7 +103,8 @@ is defined (and writable, of course).
 
 It's perfectly possible to work without that file by not defining it at all
 or unsetting existing definitions. Usage of that file is deprecated
-since TYPO3 CMS 6.2.
+since TYPO3 CMS 6.2. Use the ":ref:`extension method <storing-changes-extension>`"
+described above instead.
 
 
 .. _storing-changes-on-the-fly:
