@@ -48,7 +48,7 @@ a dependency of yours. See the
 
 Before TYPO3 CMS 6.0, it is also possible to use the
 the "priority" property in the :code:`ext_emconf.php` file can help (a
-"bottom" extension will load last, but its exact load order may vary
+"bottom" extension will load last, but its exact loading order may vary
 if there are several "bottom"-priority extensions).
 
 For more information about an extension's structure, please refer to the
