@@ -12,7 +12,8 @@ Extending the $TCA array
 ------------------------
 
 Being a PHP array, the Table Configuration Array can be easily
-extended. TYPO3 also provides APIs for making this simpler.
+extended. It can be accessed as the global variable :code:`$GLOBALS['TCA']`.
+TYPO3 also provides APIs for making this simpler.
 
 
 .. toctree::
