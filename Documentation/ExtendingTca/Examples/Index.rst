@@ -26,6 +26,14 @@ Here's the complete code, taken from file
 
 .. code-block:: php
 
+	<?php
+	if (!defined('TYPO3_MODE')) {
+		die ('Access denied.');
+	}
+
+
+	// Add some fields to FE Users table to show TCA fields definitions
+	// USAGE: TCA Reference > $TCA array reference > ['columns'][fieldname]['config'] / TYPE: "select"
 	$temporaryColumns = array (
 		'tx_examples_options' => array (
 			'exclude' => 0,
