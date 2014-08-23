@@ -24,6 +24,8 @@ definition of a table also covers the following:
 
 - how should a field be validated (e.g. required, integer, etc.)
 
+- how some TYPO3 extensions show the tables in the Front End
+
 This array is highly extendable using extensions. Extensions can add fields
 to existing tables and add new tables. Several required extensions that are
 always loaded, already deliver some TCA files in their
