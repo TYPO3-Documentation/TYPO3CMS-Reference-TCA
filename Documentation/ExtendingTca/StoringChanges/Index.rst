@@ -20,7 +20,7 @@ on the version of TYPO3 CMS which you are targeting.
    Be aware that :code:`$TCA` is not available in all contexts.
    It is advised to always use :code:`$GLOBALS['TCA']` instead.
 
-There are two mains ways to store your TCA changes: inside an extension
+There are two main ways to store your changes to the TCA: inside an extension
 or straight in the :file:`typo3conf` folder. Both are described below in
 more details.
 
@@ -60,7 +60,7 @@ Core APIs.
 Storing in ext_tables files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Until TYPO3 CMS 6.2 changes to :code:`$GLOBALS['TCA']` are packaged
+Until TYPO3 CMS 6.1 (still supported for 6.2) changes to :code:`$GLOBALS['TCA']` are packaged
 into an extension's :file:`ext_tables.php` file.
 
 .. _storing-changes-extension-overrides:
