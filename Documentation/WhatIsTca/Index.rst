@@ -37,9 +37,9 @@ See the directories :file:`typo3/sysext/core/Configuration/TCA/` and
 
 Since TYPO3 CMS 6.1, the TCA definition of a new table with the name "database-table-name" must be done in the
 extension directory :file:`Configuration/TCA/` with :file:`database-table-name.php` as filename.
-An example is :file:`EXT:sys_note/Configuration/TCA/sys_note.php`. This file will be
+An example is :file:`EXT:sys_note/Configuration/TCA/sys_note.php` for the table "sys_note". This file will be
 found by the bootstrap code (if starting a TYPO3 request). It must return an
-array with the content of the TCA setting. The return value of any loaded
+array with the content of the TCA setting or FALSE in an error case. The return value of any loaded
 file will be cached. So there must either be no dynamic PHP code in it or
 care must be taken to clear the system cache after each change in such files.
 
