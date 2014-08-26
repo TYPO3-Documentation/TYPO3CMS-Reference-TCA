@@ -43,7 +43,7 @@ extension directory :file:`Configuration/TCA/` with :file:`database-table-name.p
 An example is :file:`EXT:sys_note/Configuration/TCA/sys_note.php` for table "sys_note". This file will be
 found by the bootstrap code (if starting a TYPO3 request). It must return an
 array with the content of the TCA setting or :code:`NULL` if the table
-should not be defined (depenging on the extension's internal logic).
+should not be defined (depending on the extension's internal logic).
 The return value of any loaded file will be cached.
 So there must either be no dynamic PHP code in it or
 care must be taken to clear the system cache after each change in such files.
