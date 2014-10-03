@@ -481,7 +481,7 @@ module
          *(Since TYPO3 CMS 6.2)*
 
          This array contains configuration matching a declared wizard.
-         For example, the "Add record" wizard is declated that way in
+         For example, the "Add record" wizard is declared that way in
          :file:`typo3/sysext/backend/ext_tables.php`:
 
          .. code-block:: php
