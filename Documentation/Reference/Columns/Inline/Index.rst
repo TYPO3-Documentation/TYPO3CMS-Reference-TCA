@@ -1145,7 +1145,7 @@ married. One person on the first side is the husband, and one person
 on the other side is the wife (or generally "spouse" in the example
 below). Symmetric relations combine object of the same with each other
 and it does not depend, from which side someone is looking to the
-relation – so the husband knows it's wife and the wife also know it's
+relation – so the husband knows his wife and the wife also knows her
 husband.
 
 Sorting could be individually defined for each of the both sides
