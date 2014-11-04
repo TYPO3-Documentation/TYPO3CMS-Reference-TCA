@@ -529,6 +529,8 @@ foreign\_record\_defaults
          array
 
    Description
+         *(Available since TYPO3 CMS 6.2)*
+
          This property makes it possible to set default values for the
          foreign records created via the inline relation.
 
