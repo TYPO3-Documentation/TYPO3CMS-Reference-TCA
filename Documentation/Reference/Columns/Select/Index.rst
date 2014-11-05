@@ -374,7 +374,7 @@ foreign\_table\_where
 
          You can use markers in the WHERE clause:
 
-         - ###REC\_FIELD\_[ *field name* ]###
+         - ###REC\_FIELD\_[ *field name* ]### - Any field name of the table's record. The field name part of the marker is not in upper case letters.
 
          - ###THIS\_UID### - is current element uid (zero if new).
 
