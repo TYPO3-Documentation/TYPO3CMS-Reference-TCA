@@ -366,15 +366,22 @@ foreign\_table\_where
          from pages where the user has read access! (Not checking DB mount
          limitations!)
 
-         **Example:** ::
+         **Example:**
 
-            AND [foreign_table].pid=0 ORDER BY [foreign_table].sorting
+         .. code-block:: sql
+
+            AND [foreign_table].pid = 0 ORDER BY [foreign_table].sorting
 
          **Markers:**
 
          You can use markers in the WHERE clause:
 
-         - ###REC\_FIELD\_[ *field name* ]###
+         - ###REC\_FIELD\_[*field name*]### - Any field of the foreign table.
+
+           .. note::
+
+              The field name part of the marker is not in upper case letters.
+              It must match the exact case used in the database.
 
          - ###THIS\_UID### - is current element uid (zero if new).
 
