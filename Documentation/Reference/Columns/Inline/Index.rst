@@ -230,6 +230,17 @@ appearance
            used by the File Abstraction Layer to render a preview of the related
            image.
 
+         - *fileUploadAllowed* (boolean) (since TYPO3 CMS 6.2) Defines whether the
+           button "Select & upload file" should be rendered. This can be used for
+           file fields to directly upload files and create a reference to the file.
+           The button is limited to file fields using File Abstraction Layer. It will
+           only appear to backend users which have write access to the user upload folder.
+           By default this folder is "fileadmin/user_upload" but it can be set in
+           User TSconfig :code:`options.defaultUploadFolder`.
+           See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
+           
+           The button is shown by default unless this option is set to FALSE.
+
    Scope
          Display
 
