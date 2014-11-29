@@ -199,6 +199,10 @@ eval
            positions, using the "." (period) as the decimal delimited (accepts
            also "," for the same).
 
+         email
+           This type adds a server-side validation of an email address.
+           If a record with this field defined is saved with the field not containing a valid email address, a Flashmessage warning is shown.
+
          int
            Evaluates the input to an integer.
 
