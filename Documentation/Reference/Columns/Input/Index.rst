@@ -1,4 +1,4 @@
-﻿.. ==================================================
+.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -198,6 +198,10 @@ eval
            Converts the input to a floating point with 2 decimal
            positions, using the "." (period) as the decimal delimited (accepts
            also "," for the same).
+           
+         email
+           This will check on server side if entered value is a valid e-mail address.
+           If not, a flash error message will be shown.
 
          int
            Evaluates the input to an integer.
