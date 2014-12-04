@@ -198,10 +198,11 @@ eval
            Converts the input to a floating point with 2 decimal
            positions, using the "." (period) as the decimal delimited (accepts
            also "," for the same).
-           
+
          email
-           This will check on server side if entered value is a valid e-mail address.
-           If not, a flash error message will be shown.
+           This type adds a server-side validation of an email address.
+           If the input does not contain a valid email address, a flash message
+           warning will be displayed.
 
          int
            Evaluates the input to an integer.

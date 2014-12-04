@@ -218,11 +218,9 @@ showitem
 
          .. note::
 
-            Instead of a real field name you can insert :code:`--div--` and you
-            should have a divider line shown. However this is not rendered by
-            default. If you set the dividers2tabs option (see ['ctrl'] section),
-            each :code:`--div--` will define a new tab. Furthermore using value
-            :code:`--newline--` for Part 3, will start a newline with this tab.
+            Instead of a real field name you can insert :code:`--div--` to place
+            the fields into a new tab. Furthermore using value
+            :code:`--newline--` for Part 3, will start a newline within this tab.
 
          **Example:**
 
