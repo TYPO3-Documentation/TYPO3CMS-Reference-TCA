@@ -43,7 +43,6 @@ Reference
    `cruser\_id`_                        string
    `default\_sortby`_                   string
    `delete`_                            string
-   `dividers2tabs`_                     integer
    `editlock`_                          string
    `enablecolumns`_                     array
    `EXT[extension\_key]`_               array
@@ -2155,98 +2154,6 @@ versioning\_followPages
 
 
 
-.. _ctrl-reference-dividers2tabs:
-
-dividers2tabs
-~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         dividers2tabs
-
-   Datatype
-         integer
-
-   Description
-         This key defines the activation of tabs, according to the following
-         values:
-
-         0: disabled (default)
-
-         1: activated, empty tabs are removed
-
-         2: activated, empty tabs are disabled
-
-         When tabs are activated, the special field name :code:`--div--` used in the
-         types configuration will be interpreted as starting a new tab in a
-         tab-menu for the record. The second part after :code:`--div--` is the title
-         of the tab.
-
-         If you place a :code:`--div--` field as the very first element in the types
-         configuration it will just be used to set the title of the first tab
-         (which is by default "General").
-
-         **Example:**
-
-         The :code:`['ctrl']` section of table "tt\_content" contains the following:
-
-         .. code-block:: php
-
-			'ctrl' => array(
-				...
-				'transForeignTable' => 'pages_language_overlay',
-				...
-			),
-
-         Then the types make use of :code:`--div--` fields. Example for the
-         "text"-type (usage of :code:`--div--` is highlighted):
-
-         .. code-block:: php
-            :emphasize-lines: 8,11,14
-
-         	'types' => array(
-         		...
-         		'text' => array(
-         			'showitem' => '--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.general;general,
-         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.header;header,
-         					bodytext;LLL:EXT:cms/locallang_ttc.xlf:bodytext_formlabel;;richtext:rte_transform[flag=rte_enabled|mode=ts_css],
-         					rte_enabled;LLL:EXT:cms/locallang_ttc.xlf:rte_enabled_formlabel,
-         					--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.appearance,
-         						--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.frames;frames,
-         						--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.textlayout;textlayout,
-         				--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,
-         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.visibility;visibility,
-         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.access;access,
-         				--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.extended'
-         		),
-         		...
-         	),
-
-         This will render a tab menu for the record where the fields are
-         distributed on the various tabs:
-
-         .. figure:: ../../Images/CtrlDivider2TabsGeneralTab.png
-            :alt: Tabs for content element, first tab activated
-
-            The tabs for a text-type content element, with the "General" tab activated
-
-         Here another tab is activated and another part of the form is shown:
-
-         .. figure:: ../../Images/CtrlDivider2TabsAppearanceTab.png
-            :alt: Tabs for content element, second tab activated
-
-            The same text-type content element, with the "Appearance" tab activated
-
-         .. note::
-
-            Usage of tabs is recommended for improved usability.
-
-   Scope
-         Display
-
-
-
 .. _ctrl-reference-security:
 
 security
@@ -2391,7 +2298,6 @@ The first one is from the "pages" table:
 		'cruser_id' => 'cruser_id',
 		'editlock' => 'editlock',
 		'useColumnsForDefaultValues' => 'doktype,fe_group,hidden',
-		'dividers2tabs' => 1,
 		'enablecolumns' => array(
 			'disabled' => 'hidden',
 			'starttime' => 'starttime',
@@ -2475,7 +2381,6 @@ Similarly for the "tt\_content" table:
 		),
 		'thumbnail' => 'image',
 		'requestUpdate' => 'list_type,rte_enabled,menu_type',
-		'dividers2tabs' => 1,
 		'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform'
 	),
 

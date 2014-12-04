@@ -186,10 +186,6 @@ Reference table:
 
          For both color and class values these facts apply:
 
-         - Omitting a color (blank value) will use the default value (from index
-           "0" and if index "0" is not defined, based on the general mainColors
-           in $TBE\_STYLES)
-
          - Setting a color value to dash ("-") will make it transparent (or just
            not set).
 
