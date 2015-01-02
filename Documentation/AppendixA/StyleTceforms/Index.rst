@@ -47,18 +47,6 @@ a certain meaning which you are encouraged to follow as well:
 .. container:: table-row
 
    Int. pointer
-         Int. pointer
-
-   Title
-         Title
-
-   Description
-         Description
-
-
-.. container:: table-row
-
-   Int. pointer
          0
 
    Title
