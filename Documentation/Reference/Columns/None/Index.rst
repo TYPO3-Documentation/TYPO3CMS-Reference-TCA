@@ -164,7 +164,7 @@ format
              The function receives the field configuration and the
              field's value as parameters.
 
-         **Example**
+         **Examples**
 
          .. code-block:: php
 
@@ -172,6 +172,12 @@ format
 			'format.' => array(
 				'strftime' => TRUE,
 				'option' => '%x'
+			)
+
+			'eval' => 'double2'
+			'format' => 'float'
+			'format.' => array(
+				'precision' => 8
 			)
 
 
