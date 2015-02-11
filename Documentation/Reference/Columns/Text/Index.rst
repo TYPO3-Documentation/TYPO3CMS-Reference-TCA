@@ -127,6 +127,27 @@ rows
 
 
 
+.. _columns-text-properties-maxlength:
+
+max
+~~~
+
+.. container:: table-row
+
+   Key
+         max
+
+   Datatype
+         integer
+
+   Description
+         Adds the HTML5 attribute "maxlength" to a textarea.
+
+   Scope
+         Display
+
+
+
 .. _columns-text-properties-wrap:
 
 wrap
