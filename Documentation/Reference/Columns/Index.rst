@@ -367,6 +367,10 @@ displayCond
            rather through some other interface (TemplaVoilà's Page module for
            instance).
 
+         - **USER:** userFunc call with a fully qualified classname.
+           Additional parameters can be be passed separated by colon.
+           ``USER:Evoweb\\Example\\User\\ElementConditionMatcher->checkHeaderGiven:any:more:information``
+
          - **VERSION:**
 
            - Part 1 is the type:

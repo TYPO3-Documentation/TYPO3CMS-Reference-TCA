@@ -145,7 +145,6 @@ The configuration looks like this:
 			'maxitems' => '20',
 			'iconsInOptionTags' => 1,
 			'wizards' => array(
-				'_PADDING' => 1,
 				'_VERTICAL' => 1,
 				'edit' => array(
 					'type' => 'popup',
@@ -732,7 +731,6 @@ Such a wizard can be configured like this:
 			'max' => '256',
 			'eval' => 'trim',
 			'wizards' => array(
-				'_PADDING' => 2,
 				'link' => array(
 					'type' => 'popup',
 					'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
