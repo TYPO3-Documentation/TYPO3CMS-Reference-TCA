@@ -47,6 +47,7 @@ Properties
    `disallowed`_             string
    `dontRemapTablesOnCopy`_  string
    `filter`_                 array
+   `foreign\_table`_         string
    `internal\_type`_         string
    `max\_size`_              integer
    `maxitems`_               integer
@@ -331,6 +332,33 @@ filter
             		return $fieldValues;
             	}
             }
+
+   Scope
+         Proc. / Display
+
+
+
+.. _columns-group-properties-foreign-table:
+
+foreign\_table
+~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         foreign\_table
+
+   Datatype
+         string
+
+         (table name)
+
+   Description
+         This property does not really exist for group-type fields. It is needed
+         as a workaround for an Extbase limitation. It is used to resolve
+         dependencies during Extbase persistence. It should hold the same values
+         as property :ref:`allowed <columns-group-properties-allowed>`.
+            
 
    Scope
          Proc. / Display
