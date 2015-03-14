@@ -219,8 +219,7 @@ showitem
          .. note::
 
             Instead of a real field name you can insert :code:`--div--` to place
-            the fields into a new tab. Furthermore using value
-            :code:`--newline--` for Part 3, will start a newline within this tab.
+            the fields into a new tab.
 
          **Example:**
 
