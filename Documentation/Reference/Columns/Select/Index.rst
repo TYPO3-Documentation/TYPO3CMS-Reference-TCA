@@ -376,7 +376,7 @@ foreign\_table\_where
 
          You can use markers in the WHERE clause:
 
-         - ###REC\_FIELD\_[*field name*]### - Any field of the foreign table.
+         - ###REC\_FIELD\_[*field name*]### - Any field of the current record.
 
            .. note::
 
