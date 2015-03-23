@@ -558,9 +558,6 @@ Array Elements
          is active etc.
 
    Child elements
-         <currentSheetId>
-
-         <currentLangId>
 
 
 
@@ -712,23 +709,6 @@ Value Elements
    Description
          Content of the field in default or localized versions
 
-
-
-.. _columns-flex-data-format-value-currentsheetid:
-
-<currentSheetId>
-''''''''''''''''
-
-.. container:: table-row
-
-   Element
-         <currentSheetId>
-
-   Format
-         string
-
-   Description
-         Points to the currently shown sheet in the DS.
 
 
 .. _columns-flex-example-simple:
