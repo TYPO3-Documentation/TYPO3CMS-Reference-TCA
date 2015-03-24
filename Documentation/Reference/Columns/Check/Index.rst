@@ -131,12 +131,14 @@ cols
          cols
 
    Datatype
-         integer
+         integer/string
 
    Description
-         How many columns the checkbox array are shown in.
+         How many columns the checkbox array are shown.
 
-         Range is 1-10, 1 being default.
+         Allowed values are 1, 2, 3, 4, 6 or ``inline``, 1 being default.
+
+         For values equals 5 or above 6 the rendering of 6 will be used while inline will make use of how much space is available.
 
          (Makes sense only if the 'array' key is defining a checkbox array)
 

@@ -291,7 +291,7 @@ Its configuration looks like this:
 			'rows' => 6,
 			'softref' => 'typolink_tag,images,email[subst],url',
 		),
-		'defaultExtras' => 'richtext[]:rte_transform[mode=tx_examples_transformation-ts_css]:static_write[filename|poem]'
+		'defaultExtras' => 'richtext[]:rte_transform[mode=tx_examples_transformation-ts_css]'
 	),
 
 
@@ -428,7 +428,7 @@ Let's go back to the above example and look at the second part of the
 			'rows' => 6,
 			'softref' => 'typolink_tag,images,email[subst],url',
 		),
-		'defaultExtras' => 'richtext[]:rte_transform[mode=tx_examples_transformation-ts_css]:static_write[filename|poem]'
+		'defaultExtras' => 'richtext[]:rte_transform[mode=tx_examples_transformation-ts_css]'
 	),
 
 This configuration means that the content of the "poem" field will be

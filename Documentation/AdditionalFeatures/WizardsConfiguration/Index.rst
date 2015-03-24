@@ -69,7 +69,6 @@ looks like this:
 		'config' => array(
 			...
 			'wizards' => array(
-				'_PADDING' => 4,
 				'_VERTICAL' => 1,
 				'suggest' => array(
 					'type' => 'suggest'
@@ -153,60 +152,6 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
    Description
          If set, the wizard icons (if more than one) will be positioned in a
          column (vertically) and not a row (horizontally, which is default)
-
-
-
-.. _wizards-reserved-distance:
-
-\_ DISTANCE
-~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         \_DISTANCE
-
-   Type
-         int+
-
-   Description
-         The distance in pixels between wizard icons (if more than one).
-
-
-
-.. _wizards-reserved-padding:
-
-\_PADDING
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         \_PADDING
-
-   Type
-         int+
-
-   Description
-         The cellpadding of the table which keeps the wizard icons together.
-
-
-
-.. _wizards-reserved-valign:
-
-\_VALIGN
-~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         \_VALIGN
-
-   Type
-         string
-
-   Description
-         valign attribute in the table holding things together.
 
 
 
