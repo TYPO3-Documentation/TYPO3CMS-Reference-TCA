@@ -13,7 +13,7 @@ TYPE: "check"
 
 This type creates checkbox(es).
 
-There can be between 1 and 10 checkboxes. The corresponding database
+There can be between 1 and 31 checkboxes. The corresponding database
 field must be of type integer. Each checkbox corresponds to a single
 bit of the integer value, even if there is only one checkbox.
 
