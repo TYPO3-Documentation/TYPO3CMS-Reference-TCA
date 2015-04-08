@@ -99,7 +99,7 @@ items
          If set, this array will create an array of checkboxes instead of just
          a single "on/off" checkbox.
 
-         **Notice:** You can have a maximum of 10 checkboxes in such an array
+         **Notice:** You can have a maximum of 31 checkboxes in such an array
          and each element is represented by a single bit in the integer value
          which ultimately goes into the database.
 
@@ -136,7 +136,7 @@ cols
    Description
          How many columns the checkbox array are shown in.
 
-         Range is 1-10, 1 being default.
+         Range is 1-31, 1 being default.
 
          (Makes sense only if the 'array' key is defining a checkbox array)
 
