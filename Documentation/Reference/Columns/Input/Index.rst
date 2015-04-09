@@ -194,6 +194,10 @@ eval
            a UNIX-time in seconds. The display will be like "16:32 12-8-2003"
            while the database value will be "1060698720".
 
+         domainname
+           Allows a domain name such as "example.com" and automatically transforms
+           the value to `punicode <https://en.wikipedia.org/wiki/Punycode>`_ if needed.
+
          double2
            Converts the input to a floating point with 2 decimal
            positions, using the "." (period) as the decimal delimited (accepts
