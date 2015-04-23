@@ -87,8 +87,7 @@ userFunc
          function name must be prefixed "user\_" or "tx\_".
 
          If you want to call a method in a class, enter
-         "[classname]->[methodname]". The class name must be prefixed "user\_"
-         or "tx\_".
+         "[classname]->[methodname]".
 
          Two arguments will be passed to the function/method: The first
          argument is an array (passed by reference) which contains the current
