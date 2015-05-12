@@ -353,7 +353,6 @@ eval
                             return $value . ' [added by PHP]';
                     }
             }
-            ?>
 
          ext_localconf.php
 
@@ -361,8 +360,7 @@ eval
 
             <?php
             // here we register "tx_exampleextraevaluations_extraeval1"
-            $TYPO3_CONF_VARS['SC_OPTIONS']['tce']['formevals']['tx_exampleextraevaluations_extraeval1'] = 'EXT:example_extraevaluations/ class.tx_exampleextraevaluations_extraeval1.php';
-            ?>
+            $TYPO3_CONF_VARS['SC_OPTIONS']['tce']['formevals']['tx_exampleextraevaluations_extraeval1'] = 'EXT:example_extraevaluations/class.tx_exampleextraevaluations_extraeval1.php';
 
    Scope
          Display / Proc.
