@@ -78,6 +78,12 @@ per modified table. The file is named along the pattern:
 The advantage of this method is that all such changes are incorporated into
 :code:`$GLOBALS['TCA']` **before** it is cached. This is thus far more efficient.
 
+.. important::
+
+   Be aware that you cannot extend the TCA of extensions if it was configured within
+   its :file:`ext_tables.php` file, usually containing the :code:`ctrl` section
+   referencing a :code:`dynamicConfigFile`. Please ask the extension author to switch
+   to the :code:`Configuration/TCA/<tablename>.php` setup.
 
 .. _storing-changes-typo3conf:
 
