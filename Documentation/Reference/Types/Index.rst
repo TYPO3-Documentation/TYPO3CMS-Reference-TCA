@@ -32,7 +32,7 @@ form looks like this:
 It corresponds to the following "types" configuration::
 
    'types' => array(
-		'0' => array('showitem' => 'category;;;;2-2-2, personal, subject;;;;3-3-3, message')
+		'0' => array('showitem' => 'category, personal, subject, message')
    )
 
 The key "showitem" lists the order in which to define the fields:
@@ -214,8 +214,6 @@ showitem
              and 'richtext[ *(list of keys or \*)* ]' (see "Additional $TCA
              features")
 
-           - Part 5: Form style codes (see "Visual style of TCEforms")
-
          .. note::
 
             Instead of a real field name you can insert :code:`--div--` to place
@@ -226,7 +224,7 @@ showitem
          .. code-block:: php
 
             'types' => array(
-                    '0' => array('showitem' => 'hidden;;;;1-1-1, title;;;;2-2-2, poem, filename;;;;3-3-3, season;;;;4-4-4, weirdness, color, --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2, image3, image4, image5'),
+                    '0' => array('showitem' => 'hidden, title, poem, filename, season, weirdness, color, --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2, image3, image4, image5'),
             ),
 
          Another special field name, :code:`--palette--`, will insert a link to a

@@ -20,7 +20,7 @@ table of the "examples" extension) adds a :code:`nowrap` configuration to the
 
 .. code-block:: php
 
-	'0' => array('showitem' => 'hidden;;;;1-1-1, record_type;;;;2-2-2, title;;;;3-3-3, description;;;nowrap, some_date;;1 '),
+	'0' => array('showitem' => 'hidden, record_type, title, description;;;nowrap, some_date'),
 
 The field itself is defined absolutely normally:
 
@@ -80,7 +80,7 @@ anymore:
 
 .. code-block:: php
 
-	'0' => array('showitem' => 'hidden;;;;1-1-1, record_type;;;;2-2-2, title;;;;3-3-3, description, some_date;;1 '),
+	'0' => array('showitem' => 'hidden, record_type, title, description, some_date'),
 
 This works equally well.
 

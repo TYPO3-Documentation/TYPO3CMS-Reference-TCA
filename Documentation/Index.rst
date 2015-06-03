@@ -83,6 +83,5 @@ address the task at hand.
    Reference/Index
    AdditionalFeatures/Index
    ExtendingTca/Index
-   AppendixA/Index
    Targets
 
