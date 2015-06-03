@@ -1862,7 +1862,7 @@ The configuration is rather long and looks like this (note that
 wizards are not exclusively available for selector boxes!):
 
 .. code-block:: php
-   :emphasize-lines: 11-43
+   :emphasize-lines: 11-48
 
 	'file_mountpoints' => array(
 		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.options_file_mounts',
@@ -1879,7 +1879,9 @@ wizards are not exclusively available for selector boxes!):
 				'edit' => array(
 					'type' => 'popup',
 					'title' => 'LLL:EXT:lang/locallang_tca.xlf:file_mountpoints_edit_title',
-					'script' => 'wizard_edit.php',
+					'module' => array(
+						'name' => 'wizard_edit',
+					),
 					'icon' => 'edit2.gif',
 					'popup_onlyOpenIfSelected' => 1,
 					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
@@ -1893,7 +1895,9 @@ wizards are not exclusively available for selector boxes!):
 						'pid' => '0',
 						'setValue' => 'prepend'
 					),
-					'script' => 'wizard_add.php'
+					'module' => array(
+						'name' => 'wizard_add'
+					)
 				),
 				'list' => array(
 					'type' => 'script',
@@ -1903,7 +1907,9 @@ wizards are not exclusively available for selector boxes!):
 						'table' => 'sys_filemounts',
 						'pid' => '0'
 					),
-					'script' => 'wizard_list.php'
+					'module' => array(
+						'name' => 'wizard_list'
+					)
 				)
 			)
 		)
