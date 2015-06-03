@@ -452,7 +452,7 @@ to provide its more advanced visual editor (specific forms-wizard parameters
 highlighted):
 
 .. code-block:: php
-   :emphasize-lines: 8-10
+   :emphasize-lines: 10-12
 
 	$GLOBALS['TCA']['tt_content']['columns']['bodytext']['config']['wizards']['forms'] = array(
 		'notNewRecords' => 1,
@@ -720,7 +720,7 @@ Clicking the wizard icons opens the Element Browser window:
 Such a wizard can be configured like this:
 
 .. code-block:: php
-   :emphasize-lines: 17-19
+   :emphasize-lines: 16-18
 
 	'header_link' => array(
 		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link',
