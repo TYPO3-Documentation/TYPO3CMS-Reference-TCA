@@ -458,14 +458,14 @@ defaultExtras
          string
 
    Description
-         In the "types" configuration of a field you can specify on position 4
-         a string of "extra configuration". This string will be the default
-         string of extra options for a field regardless of types configuration.
-         For instance this can be used to create an RTE field without having to
-         worry about special configuration in "types" config.
+         This string will be the default string of extra options for a field
+         regardless of types configuration. For instance this can be used to
+         create an RTE field.
 
-         This is also the way by which you can enable the RTE for FlexForm
-         fields.
+         This is also the way by which you can enable the RTE for FlexForm fields.
+
+         See :ref:`special configuration <special-configuration-default>` for
+         details on this setting.
 
          **Example value:**
 

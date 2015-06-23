@@ -595,16 +595,6 @@ Content Elements:
 	),
 
 
-.. _core-wizards-tsconfig:
-
-TSconfig wizard
-"""""""""""""""
-
-This wizard is used for the TSconfig fields and TypoScript Template
-"Setup" fields. Its usage is deprecated in favor of the code editor
-provided by the "t3editor" system extension.
-
-
 .. _core-wizards-t3editor:
 
 t3editor
@@ -623,22 +613,20 @@ enhanced for HTML content elements:
 
 .. code-block:: php
 
-	$TCA['tt_content']['columns']['bodytext']['config']['wizards']['t3editor'] = array(
-		'enableByTypeConfig' => 1,
-		'type' => 'userFunc',
-		'userFunc' => 'TYPO3\\CMS\\T3editor\\FormWizard->main',
-		'title' => 't3editor',
-		'script' => '',
-		'params' => array(
+	'bodytext' => array(
+		'label' => 'aLabel',
+		'config' => array(
+			'type' => 'text',
+			'renderType' => 't3editor',
 			'format' => 'html',
-			'style' => 'width:98%; height: 60%;'
-		)
-	);
+			'rows' => 42,
+		),
+	),
 
 .. note::
 
-   The :code:`script` property is meaningless in this case, but is needed by
-   the Core for the wizard to kick in at all.
+   Since TYPO3 7.3, this display widget is not configured in the `wizard` section, but
+   uses `renderType <columns-text-properties-rendertype>`.
 
 
 .. _core-wizards-browse:

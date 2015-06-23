@@ -158,6 +158,7 @@ Properties
    ============================= =========
    `bitmask\_value\_field`_      string
    `bitmask\_excludelist\_bits`_ string
+   `columnsOverrides`_           array
    `showitem`_                   string
    `subtype\_value\_field`_      string
    `subtypes\_excludelist`_      string
@@ -210,9 +211,9 @@ showitem
            - Part 3: Palette number (referring to an entry in the "palettes"
              section).
 
-           - Part 4: Special configuration (split by colon ( : )), e.g. 'nowrap'
-             and 'richtext[ *(list of keys or \*)* ]' (see "Additional $TCA
-             features")
+           - Part 4: (**Deprecated since TYPO3 7.3**) Special configuration (split by colon ( : )).
+             This was moved to :ref:`columnsOverrides <types-properties-columnsOverrides>` as
+             :ref:`defaultExtras <columns-properties-defaultextras>`
 
          .. note::
 
@@ -230,6 +231,50 @@ showitem
          Another special field name, :code:`--palette--`, will insert a link to a
          :ref:`palette <palettes>` (of course you need to specify a palette and title then...)
 
+
+.. _types-properties-columnsOverrides:
+
+columnsOverrides
+~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         columnsOverrides
+
+   Datatype
+         array (columns fields overrides)
+
+   Description
+         (Since TYPO3 7.3) Changed or added columns field definition.
+
+         This allows to change the column definition of a field if a record
+         of this type is edited. Currently, it only affects the display of
+         form fields, but not the data handling.
+
+         The former 4th section of :ref:`showitem <types-properties-showitem>` was moved
+         to columnsOverrides as `defaultExtras`.
+
+         Typical properties that can be changed here are
+         :ref:`defaultExtras <columns-properties-defaultextras>` and
+         :ref:`text config renderType <columns-text-properties-rendertype>`. Furthermore, it is
+         possible to *remove* certain options from the field configuration using the `__UNSET` value.
+
+         **Example:** Add `nowrap` defaultExtras to a text type for type 0
+
+         .. code-block:: php
+
+			'types' => array(
+				'0' => array(
+					'showitem' => 'hidden, myText'
+					'columnsOverrides' => array(
+						'myText' => array(
+							'defaultExtras' => 'nowrap',
+							'rows' => '__UNSET',
+						),
+					),
+				),
+			),
 
 
 .. _types-properties-subtype-value-field:
