@@ -85,33 +85,6 @@ The advantage of this method is that all such changes are incorporated into
    referencing a :code:`dynamicConfigFile`. Please ask the extension author to switch
    to the :code:`Configuration/TCA/<tablename>.php` setup.
 
-.. _storing-changes-typo3conf:
-
-Storing in typo3conf folder
-"""""""""""""""""""""""""""
-
-.. note::
-
-   The information below is relevant only for versions of TYPO3 CMS
-   older than 6.2.
-
-
-Changes can also be written to a general file in the :file:`typo3conf` directory.
-The name of this file is defined by the configuration variable
-:code:`$GLOBALS['TYPO3_CONF_VARS']['DB']['extTablesDefinitionScript']`.
-The name :file:`extTables.php` is most generally used.
-
-The advantage of using the "extTablesDefinitionScript" file is that it is
-loaded last. This means that you are sure that your changes are not
-overridden by some other customizations. Also editing :code:`$GLOBALS['TCA']`
-from the Admin Tools > Configuration module will only work if such a file
-is defined (and writable, of course).
-
-It's perfectly possible to work without that file by not defining it at all
-or unsetting existing definitions. Usage of that file is deprecated
-since TYPO3 CMS 6.2. Use the ":ref:`extension method <storing-changes-extension>`"
-described above instead.
-
 
 .. _storing-changes-on-the-fly:
 
