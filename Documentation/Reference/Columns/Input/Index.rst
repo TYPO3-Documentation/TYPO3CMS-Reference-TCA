@@ -49,6 +49,7 @@ Properties
    `size`_        integer
    `type`_        string
    `wizards`_     array
+   `dbType`_      string
    ============== =========
 
 Property details
@@ -627,7 +628,57 @@ wizards
          Display
 
 
+.. _columns-input-properties-dbtype:
+
+dbType
+~~~~~~
+
+.. container:: table-row
+
+   Key
+         dbType
+
+   Datatype
+         string
+
+   Description
+         *(Since TYPO3 CMS 6.0)*
+
+         This field is only relevant when storing date or datetime values as
+         date/datetime instead an integer timestamps in the database.
+
+         When a model property is defined to be of type DateTime (PHP), at it should be
+         stored as a Date or Datetime (MySQL e.g.) in the database, one has to set eval
+         to date/datetime and additionally set the field dbType as well.
+
+         **Example**:
+
+         ext_tables.sql
+
+          .. code-block:: sql
+
+		CREATE TABLE tx_example_domain_model_foo (
+			synced_at datetime default NULL
+		)
+	
+         Configuration/TCA/tx_example_domain_model_foo.php
+        
+         .. code-block:: php
+
+		'synced_at' => array(
+			'config' => array(
+				'type' => 'input',
+				'eval' => 'datetime',
+				'dbType' => 'datetime'
+			)
+		),
+
+   Scope
+         Proc
+
+
 .. _columns-input-examples:
+
 
 Examples
 """"""""
