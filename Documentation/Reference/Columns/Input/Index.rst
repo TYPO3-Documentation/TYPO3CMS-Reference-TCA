@@ -38,6 +38,7 @@ Properties
    Property       Data Type
    ============== =========
    `checkbox`_    string
+   `dbType`_      string
    `default`_     string
    `eval`_        string
    `format`_      string
@@ -49,7 +50,6 @@ Properties
    `size`_        integer
    `type`_        string
    `wizards`_     array
-   `dbType`_      string
    ============== =========
 
 Property details
@@ -645,33 +645,34 @@ dbType
          *(Since TYPO3 CMS 6.0)*
 
          This field is only relevant when storing date or datetime values as
-         date/datetime instead an integer timestamps in the database.
+         Date or Datetime type in the database instead of an integer value.
 
-         When a model property is defined to be of type DateTime (PHP), at it should be
-         stored as a Date or Datetime (MySQL e.g.) in the database, one has to set eval
-         to date/datetime and additionally set the field dbType as well.
+         When a model property is defined to be of type DateTime (PHP) and it
+         is meant to be stored as a Date or Datetime type (for example like in MySQL)
+         in the database, one has to set eval to date/datetime *and additionally*
+         set the field dbType as well.
 
          **Example**:
 
          ext_tables.sql
 
-          .. code-block:: sql
+         .. code-block:: sql
 
-		CREATE TABLE tx_example_domain_model_foo (
-			synced_at datetime default NULL
-		)
-	
+            CREATE TABLE tx_example_domain_model_foo (
+               synced_at datetime default NULL
+            )
+
          Configuration/TCA/tx_example_domain_model_foo.php
-        
+
          .. code-block:: php
 
-		'synced_at' => array(
-			'config' => array(
-				'type' => 'input',
-				'eval' => 'datetime',
-				'dbType' => 'datetime'
-			)
-		),
+            'synced_at' => array(
+                'config' => array(
+                    'type' => 'input',
+                    'eval' => 'datetime',
+                    'dbType' => 'datetime'
+                )
+            ),
 
    Scope
          Proc
