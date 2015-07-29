@@ -152,11 +152,11 @@ l10n\_mode
            condition.) Excluded fields will not be copied when a language-copy is
            made. May have frontend implications similar to "mergeIfNotBlank".
 
-         - **mergeIfNotBlank** – Field will be editable but if the field value is
-           blank the value from the default translation is used (this can be very
-           useful for images shared from the default record). Requires frontend
-           support. In the backend the effect is that the field content is not
-           copied when a new "localization copy" is made.
+         - **mergeIfNotBlank** – Field will be shown and editable in the Backend but if
+           the field value of the language overlay record is blank the value from the
+           default translation record is used. This can be very useful for values shared
+           from the default record. When a new localization copy is created in the backend,
+           the field content is not copied from the default translation.
 
          - **noCopy** – Like mergeIfNotBlank but without the implications for the
            frontend; The field is just not copied.
