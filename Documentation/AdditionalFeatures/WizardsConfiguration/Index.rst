@@ -773,50 +773,6 @@ type
 
 
 
-.. _wizards-configuration-colorbox-dim:
-
-dim
-'''
-
-.. container:: table-row
-
-   Key
-         dim
-
-   Type
-         W x H, pixels
-
-   Description
-         Determines the dimensions of the box. Default is 20 pixels.
-
-         .. code-block:: php
-
-            'dim' => '50x20',
-
-
-
-.. _wizards-configuration-colorbox-tablestyle:
-
-tableStyle
-''''''''''
-
-.. container:: table-row
-
-   Key
-         tableStyle
-
-   Type
-         style-attribute content in table-tag
-
-   Description
-         Sets the border style of the table, eg
-
-         .. code-block:: php
-
-            'tableStyle' => 'border:solid 1px black;'
-
-
-
 .. _wizards-configuration-colorbox-exampleimg:
 
 exampleImg
