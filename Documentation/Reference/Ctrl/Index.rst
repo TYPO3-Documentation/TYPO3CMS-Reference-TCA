@@ -37,7 +37,6 @@ Reference
    Property                             Data Type
    ==================================== ===========
    `adminOnly`_                         boolean
-   `canNotCollapse`_                    boolean
    `copyAfterDuplFields`_               string
    `crdate`_                            string
    `cruser\_id`_                        string
@@ -951,39 +950,6 @@ mainpalette
             of positioning the related fields weirdly when tabs are added to
             existing tables via extensions (the fields come at the end of the new
             tabs, which may be disturbing for editors).
-
-   Scope
-         Display
-
-
-
-.. _ctrl-reference-cannotcollapse:
-
-canNotCollapse
-~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         canNotCollapse
-
-   Datatype
-         boolean
-
-   Description
-         By default, fields placed in palettes (see later for more about
-         palettes) are not shown by TCEforms. They appear only once the "Show
-         secondary options" checkbox at the bottom of the screen is checked.
-
-         .. figure:: ../../Images/CtrlSecondaryOptions.png
-            :alt: Checkbox to activate palettes
-
-            Checkbox to make palettes visible by default
-
-         By setting "canNotCollapse" to true, the palettes of this
-         table will always be displayed, as if the above-mentioned option was
-         always checked. This setting can also be defined per palette (see
-         later).
 
    Scope
          Display
