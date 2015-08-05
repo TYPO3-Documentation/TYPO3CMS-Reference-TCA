@@ -78,7 +78,6 @@ Properties
    ================== =========
    Property           Data Type
    ================== =========
-   `canNotCollapse`_  boolean
    `isHiddenPalette`_ boolean
    `showitem`_        string
    ================== =========
@@ -117,29 +116,6 @@ showitem
 
             A field name must not appear in more than one palette
             and not more than once in the same palette.
-
-
-
-.. _palettes-properties-cannotcollapse:
-
-canNotCollapse
-~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         canNotCollapse
-
-   Datatype
-         boolean
-
-   Description
-         If set, then this palette is not allowed to 'collapse' in the
-         TCEforms-display.
-
-         This basically means that if "Show secondary options" is not on, this
-         palette is *still* displayed in the main form and not linked with an
-         icon.
 
 
 

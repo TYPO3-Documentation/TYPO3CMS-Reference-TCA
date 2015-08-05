@@ -155,22 +155,57 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
 
 
 
-.. _wizards-reserved-hiddenfield:
+.. _wizards-reserved-distance:
 
-\_HIDDENFIELD
-~~~~~~~~~~~~~
+\_ DISTANCE
+~~~~~~~~~~~
 
 .. container:: table-row
 
    Key
-         \_HIDDENFIELD
+         \_DISTANCE
 
    Type
-         boolean
+         int+
 
    Description
-         If set, the field itself will be a hidden field (and so not
-         visible...)
+         The distance in pixels between wizard icons (if more than one).
+
+
+
+.. _wizards-reserved-padding:
+
+\_PADDING
+~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         \_PADDING
+
+   Type
+         int+
+
+   Description
+         The cellpadding of the table which keeps the wizard icons together.
+
+
+
+.. _wizards-reserved-valign:
+
+\_VALIGN
+~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         \_VALIGN
+
+   Type
+         string
+
+   Description
+         valign attribute in the table holding things together.
 
 
 
@@ -305,26 +340,6 @@ RTEonly
          If set, then this wizard will appear only if the wizard is presented
          for a RTE field.
 
-
-
-.. _wizards-configuration-general-hideparent:
-
-hideParent
-~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         hideParent
-
-   Type
-         array
-
-   Description
-         If set, then the real field will not be shown (but rendered as a
-         hidden field). In "hideParent" you can configure the non-editable
-         display of the content as if it was a field of the :ref:`none-type <columns-none>`.
-         The options are the same as for the "config" key for none-type.
 
 
 .. _wizards-configuration-specific:
@@ -668,50 +683,6 @@ type
 
          The icon is not used, but the title is given as alt-text inside the
          color-square.
-
-
-
-.. _wizards-configuration-colorbox-dim:
-
-dim
-'''
-
-.. container:: table-row
-
-   Key
-         dim
-
-   Type
-         W x H, pixels
-
-   Description
-         Determines the dimensions of the box. Default is 20 pixels.
-
-         .. code-block:: php
-
-            'dim' => '50x20',
-
-
-
-.. _wizards-configuration-colorbox-tablestyle:
-
-tableStyle
-''''''''''
-
-.. container:: table-row
-
-   Key
-         tableStyle
-
-   Type
-         style-attribute content in table-tag
-
-   Description
-         Sets the border style of the table, eg
-
-         .. code-block:: php
-
-            'tableStyle' => 'border:solid 1px black;'
 
 
 

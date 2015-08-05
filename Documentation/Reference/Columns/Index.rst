@@ -324,16 +324,16 @@ displayCond
                less than the value in "Part 3"
 
              - **= / !=** : Evaluates if the field value is equal to value in "Part
-               3" (or not, if the negation flag "!" is used)
+               3"
 
              - **IN / !IN** : Evaluates if the field value is in the comma list equal
-               to value in "Part 3" (or not, if the negation flag "!" is used)
+               to value in "Part 3"
 
              - **- / !-** : Evaluates if the field value is in the range specified by
-               value in "Part 3" ([min] - [max]) (or not, if the negation flag "!" is used)
+               value in "Part 3" ([min] - [max])
 
              - **BIT / !BIT** : Evaluates if the bit specified by the value in "Part 3"
-               is set (or not, if the negation flag "!" is used) in the field's value
+               is set in the field's value
                (considered as an integer) *(available since TYPO3 CMS 6.2)*
 
          - **EXT** : This evaluates based on current status of extensions.
