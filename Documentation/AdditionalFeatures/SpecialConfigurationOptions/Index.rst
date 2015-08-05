@@ -200,29 +200,6 @@ rte\_transform[] key/value pairs
 """"""""""""""""""""""""""""""""
 
 
-.. _special-configuration-options-rte-flag:
-
-flag
-~~~~
-
-.. container:: table-row
-
-   Keyword
-         flag
-
-   Description
-         This points to a field in the row which determines whether or not the
-         RTE is disabled. If the value of the field is set, then the RTE is
-         disabled.
-
-   Value syntax
-         Field name
-
-   Examples
-         rte\_transform[flag=rte\_disable]
-
-
-
 .. _special-configuration-options-rte-mode:
 
 mode
