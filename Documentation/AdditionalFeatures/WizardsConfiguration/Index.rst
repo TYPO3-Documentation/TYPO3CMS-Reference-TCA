@@ -210,25 +210,6 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
 
 
 
-.. _wizards-reserved-hiddenfield:
-
-\_HIDDENFIELD
-~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         \_HIDDENFIELD
-
-   Type
-         boolean
-
-   Description
-         If set, the field itself will be a hidden field (and so not
-         visible...)
-
-
-
 .. _wizards-reserved-any-other-key:
 
 [any other key]
@@ -360,26 +341,6 @@ RTEonly
          If set, then this wizard will appear only if the wizard is presented
          for a RTE field.
 
-
-
-.. _wizards-configuration-general-hideparent:
-
-hideParent
-~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         hideParent
-
-   Type
-         array
-
-   Description
-         If set, then the real field will not be shown (but rendered as a
-         hidden field). In "hideParent" you can configure the non-editable
-         display of the content as if it was a field of the :ref:`none-type <columns-none>`.
-         The options are the same as for the "config" key for none-type.
 
 
 .. _wizards-configuration-specific:
