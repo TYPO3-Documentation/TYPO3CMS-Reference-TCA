@@ -166,6 +166,6 @@ Example
 .. code-block:: php
 
    'palettes' => array(
-      '1' => array('showitem' => 'salutation, firstname, lastname, --linebreak--, mobile, phone, fax, --linebreak--, email, email_work),
+      '1' => array('showitem' => 'salutation, firstname, lastname, --linebreak--, mobile, phone, fax, --linebreak--, email, email_work'),
    )
 

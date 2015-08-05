@@ -13,7 +13,7 @@ TYPE: "check"
 
 This type creates checkbox(es).
 
-There can be between 1 and 10 checkboxes. The corresponding database
+There can be between 1 and 31 checkboxes. The corresponding database
 field must be of type integer. Each checkbox corresponds to a single
 bit of the integer value, even if there is only one checkbox.
 
@@ -99,7 +99,7 @@ items
          If set, this array will create an array of checkboxes instead of just
          a single "on/off" checkbox.
 
-         **Notice:** You can have a maximum of 10 checkboxes in such an array
+         **Notice:** You can have a maximum of 31 checkboxes in such an array
          and each element is represented by a single bit in the integer value
          which ultimately goes into the database.
 
@@ -131,12 +131,14 @@ cols
          cols
 
    Datatype
-         integer
+         integer/string
 
    Description
-         How many columns the checkbox array are shown in.
+         In how many columns the checkboxes will be shown.
 
-         Range is 1-10, 1 being default.
+         Allowed values are 1, 2, 3, 4, 6 or ``inline``, 1 being default.
+
+         Range is 1-31, 1 being default.
 
          (Makes sense only if the 'array' key is defining a checkbox array)
 

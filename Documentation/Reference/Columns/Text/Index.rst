@@ -40,6 +40,7 @@ Properties
    `is\_in`_      string
    `mode`_        string
    `placeholder`_ string
+   `renderType`_  string
    `rows`_        integer
    `type`_        string
    `wizards`_     array
@@ -76,6 +77,46 @@ type
    Scope
          Display / Proc.
 
+
+.. _columns-text-properties-rendertype:
+
+renderType
+~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         renderType
+
+   Datatype
+         string, allowed values: `t3editor`
+
+   Description
+         If set to `t3editor` and if extension `t3editor` is loaded, the text field
+         will be rendered as code editor and can help editing HTML and other code fragments.
+
+         This property can be changed in the :ref:`columnsOverrides <types-properties-columnsOverrides>`
+         `types` setting.
+
+         The :ref:`format <columns-text-properties-format>` option can be used to
+         specify the code language.
+
+         **Example:**
+
+         .. code-block:: php
+
+			'bodytext' => array(
+				'label' => 'aLabel',
+				'config' => array(
+					'type' => 'text',
+					'renderType' => 't3editor',
+					'format' => 'html',
+					'rows' => 42,
+				),
+			),
+
+   Scope
+         Display
 
 
 .. _columns-text-properties-cols:
@@ -121,6 +162,27 @@ rows
          automatically fit the content.
 
          Default is 5. Max value is 20.
+
+   Scope
+         Display
+
+
+
+.. _columns-text-properties-maxlength:
+
+max
+~~~
+
+.. container:: table-row
+
+   Key
+         max
+
+   Datatype
+         integer
+
+   Description
+         Adds the HTML5 attribute "maxlength" to a textarea.
 
    Scope
          Display
@@ -260,6 +322,9 @@ format
          :ref:`format property <columns-none-properties-format>` of
          such field to format the value of the text-type field.
 
+         If :ref:`renderType <columns-text-properties-rendertype>` is set to `t3editor`,
+         the value specifies the language t3editor should handle. Allowed values:
+         `html`, `typoscript`, `javascript`, `css`, `xml`, `html`, `php`, `sparql`, `mixed`.
 
 
 .. _columns-text-properties-is-in:

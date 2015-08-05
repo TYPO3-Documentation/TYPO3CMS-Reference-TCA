@@ -3,8 +3,8 @@
 conf.py:
   project: TCA Reference
   copyright: 2000-2014
-  version: 6.2.0
-  release: 6.2.0
+  version: 7
+  release: 7
   intersphinx_mapping:
     t3cmsapi:
     - http://typo3.org/api/typo3cms/

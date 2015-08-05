@@ -230,6 +230,17 @@ appearance
            used by the File Abstraction Layer to render a preview of the related
            image.
 
+         - *fileUploadAllowed* (boolean) (since TYPO3 CMS 6.2) Defines whether the
+           button "Select & upload file" should be rendered. This can be used for
+           file fields to directly upload files and create a reference to the file.
+           The button is limited to file fields using File Abstraction Layer. It will
+           only appear to backend users which have write access to the user upload folder.
+           By default this folder is :file:`fileadmin/user_upload` but it can be changed in
+           User TSconfig using :code:`options.defaultUploadFolder`.
+           See the :ref:`TSconfig reference <t3tsconfig:useroptions>`.
+
+           The button is shown by default unless this option is set to :code:`FALSE`.
+
    Scope
          Display
 
@@ -529,6 +540,8 @@ foreign\_record\_defaults
          array
 
    Description
+         *(Available since TYPO3 CMS 6.2)*
+
          This property makes it possible to set default values for the
          foreign records created via the inline relation.
 
@@ -1145,7 +1158,7 @@ married. One person on the first side is the husband, and one person
 on the other side is the wife (or generally "spouse" in the example
 below). Symmetric relations combine object of the same with each other
 and it does not depend, from which side someone is looking to the
-relation – so the husband knows it's wife and the wife also know it's
+relation – so the husband knows his wife and the wife also knows her
 husband.
 
 Sorting could be individually defined for each of the both sides

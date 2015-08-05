@@ -152,11 +152,11 @@ l10n\_mode
            condition.) Excluded fields will not be copied when a language-copy is
            made. May have frontend implications similar to "mergeIfNotBlank".
 
-         - **mergeIfNotBlank** – Field will be editable but if the field value is
-           blank the value from the default translation is used (this can be very
-           useful for images shared from the default record). Requires frontend
-           support. In the backend the effect is that the field content is not
-           copied when a new "localization copy" is made.
+         - **mergeIfNotBlank** – Field will be shown and editable in the Backend but if
+           the field value of the language overlay record is blank the value from the
+           default translation record is used. This can be very useful for values shared
+           from the default record. When a new localization copy is created in the backend,
+           the field content is not copied from the default translation.
 
          - **noCopy** – Like mergeIfNotBlank but without the implications for the
            frontend; The field is just not copied.
@@ -367,6 +367,10 @@ displayCond
            rather through some other interface (TemplaVoilà's Page module for
            instance).
 
+         - **USER:** userFunc call with a fully qualified classname.
+           Additional parameters can be be passed separated by colon.
+           ``USER:Evoweb\\Example\\User\\ElementConditionMatcher->checkHeaderGiven:any:more:information``
+
          - **VERSION:**
 
            - Part 1 is the type:
@@ -454,14 +458,14 @@ defaultExtras
          string
 
    Description
-         In the "types" configuration of a field you can specify on position 4
-         a string of "extra configuration". This string will be the default
-         string of extra options for a field regardless of types configuration.
-         For instance this can be used to create an RTE field without having to
-         worry about special configuration in "types" config.
+         This string will be the default string of extra options for a field
+         regardless of types configuration. For instance this can be used to
+         create an RTE field.
 
-         This is also the way by which you can enable the RTE for FlexForm
-         fields.
+         This is also the way by which you can enable the RTE for FlexForm fields.
+
+         See :ref:`special configuration <special-configuration-default>` for
+         details on this setting.
 
          **Example value:**
 

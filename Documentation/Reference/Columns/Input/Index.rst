@@ -1,4 +1,4 @@
-﻿.. ==================================================
+.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -38,6 +38,7 @@ Properties
    Property       Data Type
    ============== =========
    `checkbox`_    string
+   `dbType`_      string
    `default`_     string
    `eval`_        string
    `format`_      string
@@ -194,10 +195,19 @@ eval
            a UNIX-time in seconds. The display will be like "16:32 12-8-2003"
            while the database value will be "1060698720".
 
+         domainname
+           Allows a domain name such as "example.com" and automatically transforms
+           the value to `punicode <https://en.wikipedia.org/wiki/Punycode>`_ if needed.
+
          double2
            Converts the input to a floating point with 2 decimal
            positions, using the "." (period) as the decimal delimited (accepts
            also "," for the same).
+
+         email
+           This type adds a server-side validation of an email address.
+           If the input does not contain a valid email address, a flash message
+           warning will be displayed.
 
          int
            Evaluates the input to an integer.
@@ -344,7 +354,6 @@ eval
                             return $value . ' [added by PHP]';
                     }
             }
-            ?>
 
          ext_localconf.php
 
@@ -352,8 +361,7 @@ eval
 
             <?php
             // here we register "tx_exampleextraevaluations_extraeval1"
-            $TYPO3_CONF_VARS['SC_OPTIONS']['tce']['formevals']['tx_exampleextraevaluations_extraeval1'] = 'EXT:example_extraevaluations/ class.tx_exampleextraevaluations_extraeval1.php';
-            ?>
+            $TYPO3_CONF_VARS['SC_OPTIONS']['tce']['formevals']['tx_exampleextraevaluations_extraeval1'] = 'EXT:example_extraevaluations/class.tx_exampleextraevaluations_extraeval1.php';
 
    Scope
          Display / Proc.
@@ -620,7 +628,58 @@ wizards
          Display
 
 
+.. _columns-input-properties-dbtype:
+
+dbType
+~~~~~~
+
+.. container:: table-row
+
+   Key
+         dbType
+
+   Datatype
+         string
+
+   Description
+         *(Since TYPO3 CMS 6.0)*
+
+         This field is only relevant when storing date or datetime values as
+         Date or Datetime type in the database instead of an integer value.
+
+         When a model property is defined to be of type DateTime (PHP) and it
+         is meant to be stored as a Date or Datetime type (for example like in MySQL)
+         in the database, one has to set eval to date/datetime *and additionally*
+         set the field dbType as well.
+
+         **Example**:
+
+         ext_tables.sql
+
+         .. code-block:: sql
+
+            CREATE TABLE tx_example_domain_model_foo (
+               synced_at datetime default NULL
+            )
+
+         Configuration/TCA/tx_example_domain_model_foo.php
+
+         .. code-block:: php
+
+            'synced_at' => array(
+                'config' => array(
+                    'type' => 'input',
+                    'eval' => 'datetime',
+                    'dbType' => 'datetime'
+                )
+            ),
+
+   Scope
+         Proc
+
+
 .. _columns-input-examples:
+
 
 Examples
 """"""""

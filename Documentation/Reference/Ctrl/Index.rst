@@ -42,7 +42,6 @@ Reference
    `cruser\_id`_                        string
    `default\_sortby`_                   string
    `delete`_                            string
-   `dividers2tabs`_                     integer
    `editlock`_                          string
    `enablecolumns`_                     array
    `EXT[extension\_key]`_               array
@@ -488,16 +487,18 @@ type
 
          Since TYPO3 CMS 4.7, it is also possible to make the type depend on the
          value of a related record, i.e. switch using the type field of a
-         foreign table. The syntax is "relation\_field:foreign\_type\_field".
+         foreign table. The syntax is :code:`relation_field:foreign_type_field`.
 
          **Example:**
 
-         Imagine two tables, related as parent and child. The child table has a
-         relation to the parent table using a "select" field called "myparent"
-         with "foreign\_table" set to the parent table. Now, if you want the
-         fields displayed in the child table to depend on a field called
-         "parenttype" of the parent table, you can define the :code:`['ctrl']['type']` of
-         the child table like "myparent:parenttype".
+         The "sys_file_metadata" table takes its type from the "sys_file" table.
+         The relation between the two tables is stored in the "file" field.
+         Thus the :code:`type` declaration for "sys_file_metadata" looks like:
+
+         .. code-block:: php
+
+         	'type' => 'file:type'
+
 
    Scope
          Display / Proc.
@@ -2121,8 +2122,6 @@ versioning\_followPages
 
 
 
-.. _ctrl-reference-dividers2tabs:
-
 dividers2tabs
 ~~~~~~~~~~~~~
 
@@ -2358,7 +2357,6 @@ The first one is from the "pages" table:
 		'cruser_id' => 'cruser_id',
 		'editlock' => 'editlock',
 		'useColumnsForDefaultValues' => 'doktype,fe_group,hidden',
-		'dividers2tabs' => 1,
 		'enablecolumns' => array(
 			'disabled' => 'hidden',
 			'starttime' => 'starttime',
@@ -2442,7 +2440,6 @@ Similarly for the "tt\_content" table:
 		),
 		'thumbnail' => 'image',
 		'requestUpdate' => 'list_type,rte_enabled,menu_type',
-		'dividers2tabs' => 1,
 		'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform'
 	),
 

@@ -69,7 +69,6 @@ looks like this:
 		'config' => array(
 			...
 			'wizards' => array(
-				'_PADDING' => 4,
 				'_VERTICAL' => 1,
 				'suggest' => array(
 					'type' => 'suggest'
@@ -396,35 +395,6 @@ notNewRecords
 
 
 
-.. _wizards-configuration-script-script:
-
-script
-''''''
-
-.. container:: table-row
-
-   Key
-         script
-
-   Type
-         PHP script filename
-
-   Description
-         If the first 3 characters are NOT :code:`../` then the file is expected to be in
-         :file:`typo3/`. So to link to a custom script, put it in :file:`../typo3conf/`.
-
-         File reference can be prefixed "EXT:[extension key]/" to point to a file
-         inside an extension. This is by far the preferred method.
-
-         A lot of parameters are passed to the script as GET-vars in an array :code:`P`.
-
-         .. warning::
-
-            Deprecated since TYPO3 CMS 6.2, use :ref:`module <wizards-configuration-script-module>`
-            instead.
-
-
-
 .. _wizards-configuration-script-module:
 
 module
@@ -442,7 +412,7 @@ module
          *(Since TYPO3 CMS 6.2)*
 
          This array contains configuration matching a declared wizard.
-         For example, the "Add record" wizard is declated that way in
+         For example, the "Add record" wizard is declared that way in
          :file:`typo3/sysext/backend/ext_tables.php`:
 
          .. code-block:: php
@@ -497,7 +467,7 @@ popup\_onlyOpenIfSelected
    Description
          If set, then an element (one or more) from the list must be selected.
          Otherwise the popup will not appear and you will get a message alert
-         instead. This is supposed to be used with the :file:`wizard_edit.php` script
+         instead. This is supposed to be used with the :code:`wizard_edit` wizard
          for editing records in "group" type fields.
 
 
@@ -542,24 +512,6 @@ notNewRecords
 
    Description
          :ref:`See above, type "script" <wizards-configuration-script-notnewrecords>`.
-
-
-
-.. _wizards-configuration-popup-script:
-
-script
-''''''
-
-.. container:: table-row
-
-   Key
-         script
-
-   Type
-         PHP script filename
-
-   Description
-         :ref:`See above, type "script" <wizards-configuration-script-script>`.
 
 
 

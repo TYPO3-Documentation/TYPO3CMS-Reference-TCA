@@ -16,7 +16,7 @@ TCA Reference
       doc_core_tca
 
 :Version:
-      6.2.0
+      |release|
 
 :Language:
       en
@@ -43,11 +43,8 @@ TCA Reference
 :Rendered:
       |today|
 
-The content of this document is related to TYPO3,
-
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<http://www.typo3.org/>`_
-
+The content of this document is related to TYPO3, a GNU/GPL CMS/Framework
+available from `www.typo3.org <http://www.typo3.org/>`_
 
 
 **Official documentation**
@@ -86,6 +83,5 @@ address the task at hand.
    Reference/Index
    AdditionalFeatures/Index
    ExtendingTca/Index
-   AppendixA/Index
    Targets
 

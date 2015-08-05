@@ -71,7 +71,7 @@ Here's the complete code, taken from file
 	);
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
 		'fe_users',
-		'tx_examples_options;;;;1-1-1, tx_examples_special'
+		'tx_examples_options, tx_examples_special'
 	);
 
 First of all, the fields that we want to add are detailed according to

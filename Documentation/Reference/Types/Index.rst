@@ -32,7 +32,7 @@ form looks like this:
 It corresponds to the following "types" configuration::
 
    'types' => array(
-		'0' => array('showitem' => 'category;;;;2-2-2, personal, subject;;;;3-3-3, message')
+		'0' => array('showitem' => 'category, personal, subject, message')
    )
 
 The key "showitem" lists the order in which to define the fields:
@@ -158,6 +158,7 @@ Properties
    ============================= =========
    `bitmask\_value\_field`_      string
    `bitmask\_excludelist\_bits`_ string
+   `columnsOverrides`_           array
    `showitem`_                   string
    `subtype\_value\_field`_      string
    `subtypes\_excludelist`_      string
@@ -210,31 +211,70 @@ showitem
            - Part 3: Palette number (referring to an entry in the "palettes"
              section).
 
-           - Part 4: Special configuration (split by colon ( : )), e.g. 'nowrap'
-             and 'richtext[ *(list of keys or \*)* ]' (see "Additional $TCA
-             features")
-
-           - Part 5: Form style codes (see "Visual style of TCEforms")
+           - Part 4: (**Deprecated since TYPO3 7.3**) Special configuration (split by colon ( : )).
+             This was moved to :ref:`columnsOverrides <types-properties-columnsOverrides>` as
+             :ref:`defaultExtras <columns-properties-defaultextras>`
 
          .. note::
 
-            Instead of a real field name you can insert :code:`--div--` and you
-            should have a divider line shown. However this is not rendered by
-            default. If you set the dividers2tabs option (see ['ctrl'] section),
-            each :code:`--div--` will define a new tab. Furthermore using value
-            :code:`--newline--` for Part 3, will start a newline with this tab.
+            Instead of a real field name you can insert :code:`--div--` to place
+            the fields into a new tab.
 
          **Example:**
 
          .. code-block:: php
 
             'types' => array(
-                    '0' => array('showitem' => 'hidden;;;;1-1-1, title;;;;2-2-2, poem, filename;;;;3-3-3, season;;;;4-4-4, weirdness, color, --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2, image3, image4, image5'),
+                    '0' => array('showitem' => 'hidden, title, poem, filename, season, weirdness, color, --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2, image3, image4, image5'),
             ),
 
          Another special field name, :code:`--palette--`, will insert a link to a
          :ref:`palette <palettes>` (of course you need to specify a palette and title then...)
 
+
+.. _types-properties-columnsOverrides:
+
+columnsOverrides
+~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         columnsOverrides
+
+   Datatype
+         array (columns fields overrides)
+
+   Description
+         (Since TYPO3 7.3) Changed or added columns field definition.
+
+         This allows to change the column definition of a field if a record
+         of this type is edited. Currently, it only affects the display of
+         form fields, but not the data handling.
+
+         The former 4th section of :ref:`showitem <types-properties-showitem>` was moved
+         to columnsOverrides as `defaultExtras`.
+
+         Typical properties that can be changed here are
+         :ref:`defaultExtras <columns-properties-defaultextras>` and
+         :ref:`text config renderType <columns-text-properties-rendertype>`. Furthermore, it is
+         possible to *remove* certain options from the field configuration using the `__UNSET` value.
+
+         **Example:** Add `nowrap` defaultExtras to a text type for type 0
+
+         .. code-block:: php
+
+			'types' => array(
+				'0' => array(
+					'showitem' => 'hidden, myText'
+					'columnsOverrides' => array(
+						'myText' => array(
+							'defaultExtras' => 'nowrap',
+							'rows' => '__UNSET',
+						),
+					),
+				),
+			),
 
 
 .. _types-properties-subtype-value-field:
