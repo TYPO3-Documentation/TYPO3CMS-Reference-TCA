@@ -42,6 +42,7 @@ Reference
    `cruser\_id`_                        string
    `default\_sortby`_                   string
    `delete`_                            string
+   `descriptionColumn`_                 string
    `editlock`_                          string
    `enablecolumns`_                     array
    `EXT[extension\_key]`_               array
@@ -1257,7 +1258,27 @@ delete
    Scope
          Proc. / Display
 
+.. _ctrl-reference-descriptionColumn:
 
+descriptionColumn
+~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         descriptionColumn
+
+   Datatype
+         string
+
+         (field name)
+
+   Description
+         Field name where description of a record is stored in.
+
+         This description is only displayed in the backend to guide editors and admins.
+   Scope
+         Display
 
 .. _ctrl-reference-enablecolumns:
 
