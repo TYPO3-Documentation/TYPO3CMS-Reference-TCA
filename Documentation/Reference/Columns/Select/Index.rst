@@ -478,8 +478,6 @@ neg\_foreign\_table
 
          neg\_foreign\_table\_loadIcons
 
-         neg\_foreign\_table\_imposeValueField
-
    Datatype
          [mixed]
 
