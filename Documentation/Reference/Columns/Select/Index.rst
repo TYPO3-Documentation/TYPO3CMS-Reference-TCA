@@ -74,7 +74,6 @@ Properties
    `MM\_table\_where`_                       string
    `multiple`_                               boolean
    `multiSelectFilterItems`_                 array
-   `neg\_foreign\_table`_                    string
    `noIconsBelowSelect`_                     boolean
    `renderMode`_                             string
    `rootLevel`_                              boolean
@@ -462,38 +461,6 @@ foreign\_table\_loadIcons
 
 
 
-.. _columns-select-properties-neg-foreign-table:
-
-neg\_foreign\_table
-~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         neg\_foreign\_table
-
-         neg\_foreign\_table\_where
-
-         neg\_foreign\_table\_prefix
-
-         neg\_foreign\_table\_loadIcons
-
-   Datatype
-         [mixed]
-
-   Description
-         Four options corresponding to the 'foreign\_table'-keys but records
-         from this table will be referenced by *negative* uid-numbers (unless
-         if MM is configured in which case it works like the group-type).
-
-         'neg\_foreign\_table' is active only if :ref:`foreign_table <columns-select-properties-foreign-table>`
-         is defined also.
-
-   Scope
-         Display / Proc.
-
-
-
 .. _columns-select-properties-filefolder:
 
 fileFolder
@@ -712,8 +679,7 @@ MM
          (table name)
 
    Description
-         Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>` /
-         :ref:`neg_foreign_table <columns-select-properties-neg-foreign-table>`
+         Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>`
          is done with a M-M relation with a third "join" table.
 
          That table has three columns as a minimum:
