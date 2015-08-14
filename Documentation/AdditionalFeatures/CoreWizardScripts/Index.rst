@@ -74,7 +74,6 @@ pid
 
          - :code:`###CURRENT_PID###`
          - :code:`###THIS_UID###`
-         - :code:`###STORAGE_PID###`
          - :code:`###SITEROOT###`
          - :code:`###PAGE_TSCONFIG_ID###`
          - :code:`###PAGE_TSCONFIG_IDLIST###`
@@ -308,7 +307,6 @@ pid
 
          - :code:`###CURRENT_PID###`
          - :code:`###THIS_UID###`
-         - :code:`###STORAGE_PID###`
          - :code:`###SITEROOT###`
          - :code:`###PAGE_TSCONFIG_ID###`
          - :code:`###PAGE_TSCONFIG_IDLIST###`
