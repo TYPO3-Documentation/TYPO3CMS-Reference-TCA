@@ -386,8 +386,6 @@ foreign\_table\_where
 
          - ###CURRENT\_PID### - is the current page id (pid of the record).
 
-         - ###STORAGE\_PID###
-
          - ###SITEROOT###
 
          - ###PAGE\_TSCONFIG\_ID### - a value you can set from Page TSconfig
