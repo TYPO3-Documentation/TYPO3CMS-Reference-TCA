@@ -288,7 +288,7 @@ behaviour
            get moved along with their parent records.
 
          - *enableCascadingDelete* (boolean) Enables the deletion of child records
-           along with their parent record.
+           along with their parent record. Defaults to TRUE.
 
    Scope
          Display / Proc.
