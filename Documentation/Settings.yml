@@ -2,7 +2,7 @@
 ---
 conf.py:
   project: TCA Reference
-  copyright: 2000-2014
+  copyright: 2000-2015
   version: 7
   release: 7
   intersphinx_mapping:
@@ -10,16 +10,16 @@ conf.py:
     - http://typo3.org/api/typo3cms/
     - null
     t3inside:
-    - http://docs.typo3.org/typo3cms/InsideTypo3Reference/
+    - https://docs.typo3.org/typo3cms/InsideTypo3Reference/
     - null
     t3api:
-    - http://docs.typo3.org/TYPO3/CoreApiReference
+    - https://docs.typo3.org/typo3cms/CoreApiReference
     - null
     t3fal:
-    - http://docs.typo3.org/typo3cms/FileAbstractionLayerReference/
+    - https://docs.typo3.org/typo3cms/FileAbstractionLayerReference/
     - null
     t3tsconfig:
-    - http://docs.typo3.org/typo3cms/TSconfigReference
+    - https://docs.typo3.org/typo3cms/TSconfigReference
     - null
   html_theme_options:
     github_repository: TYPO3-Documentation/TYPO3CMS-Reference-TCA
