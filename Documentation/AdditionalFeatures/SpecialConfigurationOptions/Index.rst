@@ -232,7 +232,7 @@ Example - Setting up Rich Text Editors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's take another table from the "examples" extension to look at how
-to set up a text will with a RTE. The table "tx\_examples\_haiku"
+to set up a text with a RTE. The table "tx\_examples\_haiku"
 contains a column called "poem" on which we want to have the RTE.
 Its configuration looks like this:
 
