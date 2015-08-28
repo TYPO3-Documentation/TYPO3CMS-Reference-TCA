@@ -665,24 +665,6 @@ Array Elements
 
 
 
-.. _columns-flex-data-format-array-currentlangid:
-
-<currentLangId>
-'''''''''''''''
-
-.. container:: table-row
-
-   Element
-         <currentLangId>
-
-   Description
-         Numerical array of language ISO codes + "DEF" for default which are
-         currently displayed for editing.
-
-   Child elements
-         <n[0-x]>
-
-
 .. _columns-flex-data-format-value:
 
 Value Elements
