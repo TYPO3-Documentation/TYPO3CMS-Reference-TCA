@@ -12,14 +12,7 @@
 ^^^^^^^^^^^^^^^^^^^^^
 
 Contains configuration for display and listing in various parts of the
-core backend:
-
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
+core backend.
 
 
 .. _interface-properties:
