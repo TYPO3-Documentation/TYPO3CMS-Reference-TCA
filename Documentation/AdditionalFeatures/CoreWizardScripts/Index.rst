@@ -697,6 +697,26 @@ blindLinkOptions
          link options are displayed.
 
 
+
+.. _core-wizards-browse-properties-blindlinkfields:
+
+blindLinkFields
+'''''''''''''''
+
+.. container:: table-row
+
+   Key
+         blindLinkFields
+
+   Type
+         string
+
+   Description
+         Comma separated list of link fields that should not be displayed.
+         Possible values are class, params, target and title. By default, all
+         link fields are displayed.
+
+
 .. _core-wizards-browse-example:
 
 Example
