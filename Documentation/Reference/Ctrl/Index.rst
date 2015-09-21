@@ -638,34 +638,6 @@ typeicon\_column
 
 
 
-.. _ctrl-reference-typeicons:
-
-typeicons
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         typeicons
-
-   Datatype
-         array
-
-   Description
-         Array of icons to use for the records. The keys must correspond
-         to the values found in the column referenced in the
-         :ref:`typeicon_column <ctrl-reference-typeicon-column>` property.
-
-         .. note::
-
-            Usage of this property is deprecated, please favor
-            :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`.
-
-   Scope
-         Display
-
-
-
 .. _ctrl-reference-typeicon-classes:
 
 typeicon_classes

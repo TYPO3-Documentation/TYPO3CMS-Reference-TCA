@@ -142,7 +142,6 @@ The configuration looks like this:
 			'foreign_table_where' => 'ORDER BY be_groups.title',
 			'size' => '5',
 			'maxitems' => '20',
-			'iconsInOptionTags' => 1,
 			'wizards' => array(
 				'_VERTICAL' => 1,
 				'edit' => array(

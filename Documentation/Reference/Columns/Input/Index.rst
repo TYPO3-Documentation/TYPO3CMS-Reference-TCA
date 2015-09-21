@@ -395,6 +395,26 @@ format
 
 
 
+.. _columns-input-properties-rendertype:
+
+renderType
+~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         renderType
+
+   Datatype
+         string, allowed values: `rsaInput`
+
+   Description
+         Adds RSA encryption to a field prior to being submitted
+
+   Scope
+         Display
+
+
 .. _columns-input-properties-is-in:
 
 is\_in
@@ -453,6 +473,65 @@ range
 
    Datatype
          array
+
+   Description
+         An array which defines an integer range within which the value must
+         be.
+
+         **Keys:**
+
+         lower
+           Defines the lower integer value.
+
+         upper
+           Defines the upper integer value.
+
+         You can specify both or only one of them.
+
+         .. note::
+
+            This feature is evaluated *on the server only* so any
+            regulation of the value will have happened after saving the form.
+
+         **Example:**
+
+         Limits an integer to be within the range 10 to 1000:
+
+         .. code-block:: php
+
+            'eval' => 'int',
+            'range' => array(
+              'lower' => 10,
+              'upper' => 1000
+            ),
+
+         In this example the upper limit is set to the last day in year 2020
+         while the lowest possible value is set to the date of yesterday.
+
+         .. code-block:: php
+
+            'range' => array(
+              'upper' => mktime(0, 0, 0, 12, 31, 2020),
+              'lower' => mktime(0,0,0,date('m'), date('d'), date('Y'))
+            )
+
+   Scope
+         Proc.
+
+
+
+.. _columns-input-properties-disableAgeDisplay:
+
+disableAgeDisplay
+~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         disableAgeDisplay
+
+   Datatype
+         boolean
 
    Description
          An array which defines an integer range within which the value must

@@ -809,6 +809,24 @@ minitems
 
 
 
+.. _columns-group-properties-hideMoveIcons:
+
+hideMoveIcons
+~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         hideMoveIcons
+
+   Datatype
+         boolean
+
+   Description
+         Removes the move icons next to the selector box.
+
+
+
 .. _columns-group-properties-disable-controls:
 
 disable\_controls
