@@ -86,7 +86,6 @@ Reference
    `type`_                              string
    `typeicon\_column`_                  string
    `typeicon_classes`_                  array
-   `typeicons`_                         array
    `useColumnsForDefaultValues`_        string
    `versioning\_followPages`_           boolean
    `versioningWS`_                      boolean
@@ -622,8 +621,7 @@ typeicon\_column
          (The default icon is the one defined with the 'iconfile' value.)
 
          The values in the field referenced by this property must match entries
-         in the array defined either in the :ref:`typeicon <ctrl-reference-typeicons>`
-         or :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`
+         in the array defined in :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`
          properties. If no match is found, the default icon is used.
 
          .. note::
