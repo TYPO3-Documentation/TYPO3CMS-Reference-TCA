@@ -54,7 +54,6 @@ Properties
    `localizeReferencesAtParentLocalization`_ boolean
    `items`_                                  array
    `itemsProcFunc`_                          string
-   `iconsInOptionTags`_                      boolean
    `fileFolder`_                             string
    `fileFolder\_extList`_                    string
    `fileFolder\_recursions`_                 string
@@ -271,28 +270,6 @@ suppress\_icons
 
 
 
-.. _columns-select-properties-iconsinoptiontags:
-
-iconsInOptionTags
-~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         iconsInOptionTags
-
-   Datatype
-         boolean
-
-   Description
-         If set, icons will appear in the :code:`<option>` tags of the selector box.
-         This feature is badly supported by browsers.
-
-   Scope
-         Display
-
-
-
 .. _columns-select-properties-noiconsbelowselect:
 
 noIconsBelowSelect
@@ -308,8 +285,7 @@ noIconsBelowSelect
 
    Description
          Disables the rendering of the icons after the select even when icons
-         for the :code:`<select>`'s :code:`<option>` tags were supplied and iconsInOptionTags
-         was set.
+         for the :code:`<select>`'s :code:`<option>` tags were supplied.
 
    Scope
          Display
@@ -1717,64 +1693,6 @@ otherwise the table will not be in the database and we will get SQL
 errors.
 
 
-.. _columns-select-examples-icons:
-
-Adding icons for selection
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This example shows how you can add icons to the selection choice very
-easily. Each icon is associated with an option in the selector box and
-clicking the icon will automatically select the option in the selector
-box and more the black arrow:
-
-.. figure:: ../../../Images/TypeSelectWithIcons.png
-   :alt: Choosing image alignment
-
-   The selector for image alignment, using icons
-
-The configuration looks like this:
-
-.. code-block:: php
-
-	'imageorient' => array(
-		'exclude' => 1,
-		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:imageorient',
-		'config' => array(
-			'type' => 'select',
-			'items' => array(
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.0',
-					0,
-					'selicons/above_center.gif'
-				),
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.1',
-					1,
-					'selicons/above_right.gif'
-				),
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.2',
-					2,
-					'selicons/above_left.gif'
-				),
-				...
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.10',
-					26,
-					'selicons/intext_left_nowrap.gif'
-				)
-			),
-			'selicon_cols' => 6,
-			'default' => '0',
-			'iconsInOptionTags' => 1
-		)
-	),
-
-Notice how each label/value pair contains an icon reference on the
-third position. Towards the bottom the layout of the icons is defined
-as being arranged in 6 columns.
-
-
 .. _columns-select-examples-grsp:
 
 Render the General Record Storage Page selector as a tree of page
@@ -1835,7 +1753,6 @@ wizards are not exclusively available for selector boxes!):
 			'size' => '3',
 			'maxitems' => 25,
 			'autoSizeMax' => 10,
-			'iconsInOptionTags' => 1,
 			'wizards' => array(
 				'_VERTICAL' => 1,
 				'edit' => array(

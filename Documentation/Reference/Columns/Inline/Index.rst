@@ -196,6 +196,26 @@ appearance
            property  **must** be set to the same field as the
            :ref:`foreign_selector <columns-inline-properties-foreign-selector>`.
 
+         - *suppressCombinationWarning* (boolean) Suppresses the warning FlashMessage
+           that will be displayed when using **useCombination**.
+           You can also override the message with your own message using the example below.
+
+           Example:
+
+           .. code-block:: php
+
+             $GLOBALS['TCA']['tx_demo_domain_model_demoinline']['columns']['irre_records']['config'] = array(
+                 'foreign_types_combination' => array(
+                     '1' => array(
+                         'showitem' => 'title'
+                     )
+                  )
+                  'appearance' => array(
+                      'overwriteCombinationWarningMessage' => 'LLL:EXT:demo/Resources/Private/Language/locallang_db.xlf:tx_demo_domain_model_demoinline.irre_records.useCombinationWarning',
+                      'useCombination' => TRUE
+                  )
+             )
+
          - *useSortable* (boolean) Activate drag & drop.
 
          - *showPossibleLocalizationRecords* (boolean) Show unlocalized records
