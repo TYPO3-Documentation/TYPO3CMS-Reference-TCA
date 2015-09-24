@@ -568,33 +568,17 @@ iconfile
    Description
          Pointing to the icon file to use for the table.
 
-         Icons should be dimensioned 16x16 pixels and of GIF or PNG file
-         type.
+         Icons should be square SVGs. In case you cannot supply a SVG you can still
+         use a PNG file of 64x64 pixels in dimension.
 
-         The value of the option can be any of these:
-
-         - **If there is a slash ( / ) in the value:** It must be a relative file
-           path pointing to the icon file relative to the typo3/ (admin) folder.
-           You may start that path with '../' if you like to get your icon from a
-           folder in the PATH\_site path.
-
-         - **If there is just a filename:** It must exist in the "typo3/gfx/i/"
-           folder.
-
-         - **If empty/not given:** The default icon for a table is defined as
-           "gfx/i/[table\_name].gif". (This is an obsolete approach to use since
-           the content of the "gfx/i/" folder should not be changed.)
-
-         - For extensions, see example below.
-
-         **Example: How to assign an icon from an extension**
+         **Example usage**
 
          For haikus from the "examples" extension, the icon is defined this
          way:
 
          .. code-block:: php
 
-            'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('examples') . 'Resources/Public/Images/Haiku.png',
+            'iconfile' => 'EXT:examples/Resources/Public/Images/Haiku.svg',
 
    Scope
          Display
