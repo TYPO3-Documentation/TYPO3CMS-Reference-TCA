@@ -150,15 +150,23 @@ items
            want to use "authMode" you should also refrain from using ":" (colon).
 
          - Third value is an optional icon. Default path is
-           :file:`typo3/sysext/t3skin/icons/gfx/`. For custom icons
-           use a path prepended with "EXT:" to refer to an image file
-           found inside an extension.
+           :file:`typo3/sysext/t3skin/icons/gfx/` but is deprecated since TYPO3 CMS 7,
+           and will be removed with TYPO3 CMS 8.
+           For custom icons use a path prepended with "EXT:" to refer to an image
+           file found inside an extension or use an registered icon identifier.
 
          - Fourth value is an optional description text. This is only shown when
            the list is shown by renderMode "checkbox".
 
          - Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
            option "authMode" / "individual" for more details.
+
+        .. note::
+
+            Usage of path in the third property is deprecated.
+            For custom icons use a path prepended with "EXT:" to refer to an image file 
+            found inside an extension or use an registered icon identifier, which is the
+            prefered way.
 
          **Example:**
 
@@ -175,9 +183,9 @@ items
 
             'type' => 'select',
             'items' => array(
-                array('LLL:EXT:cms/locallang_ttc.php:k1', 0, 'selicons/k1.gif'),
-                array('LLL:EXT:cms/locallang_ttc.php:k2', 1, 'selicons/k2.gif'),
-                array('LLL:EXT:cms/locallang_ttc.php:k3', 2, 'selicons/k3.gif'),
+                array('LLL:EXT:cms/locallang_ttc.php:k1', 0, 'EXT:myext/Resources/Public/selicons/k1.gif'),
+                array('LLL:EXT:cms/locallang_ttc.php:k2', 1, 'tx-myext-selicons-k2'),
+                array('LLL:EXT:cms/locallang_ttc.php:k3', 2, 'tx-myext-selicons-k3'),
             )
 
    Scope
