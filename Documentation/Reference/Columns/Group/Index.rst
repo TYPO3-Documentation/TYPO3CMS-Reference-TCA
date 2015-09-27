@@ -57,7 +57,7 @@ Properties
    `MM\_insert\_fields`_     array
    `MM\_match\_fields`_      array
    `MM\_opposite\_field`_    string
-   `MM\_opposite\_usage`_    array
+   `MM\_oppositeUsage`_      array
    `MM\_table\_where`_       string
    `multiple`_               boolean
    `prepend\_tname`_         boolean
@@ -358,7 +358,7 @@ foreign\_table
          as a workaround for an Extbase limitation. It is used to resolve
          dependencies during Extbase persistence. It should hold the same values
          as property :ref:`allowed <columns-group-properties-allowed>`.
-            
+
 
    Scope
          Proc. / Display
@@ -454,19 +454,19 @@ MM\_match\_fields
 
 .. _columns-group-properties-mm-opposite-usage:
 
-MM\_opposite\_usage
-~~~~~~~~~~~~~~~~~~~
+MM\_oppositeUsage
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
    Key
-         MM\_opposite\_usage
+         MM\_oppositeUsage
 
    Datatype
          array
 
    Description
-         See :ref:`MM\_opposite\_usage property of select-type fields <columns-select-properties-mm-opposite-usage>`.
+         See :ref:`MM\_oppositeUsage property of select-type fields <columns-select-properties-mm-opposite-usage>`.
 
    Scope
          Proc.
