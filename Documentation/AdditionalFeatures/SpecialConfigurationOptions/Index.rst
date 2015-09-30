@@ -199,8 +199,8 @@ mode
 
          The order is calling order when direction is "db".
 
-         *See* ` *RTE API*  <#Transformation%20overview%7Coutline>`_  *section
-         for list of transformations available.*
+         Please refer to the :ref:`RTE API <t3api:transformations-overview>`
+         for a list of available transformations.
 
    Examples
          rte\_transform[mode=ts\_css-images]
