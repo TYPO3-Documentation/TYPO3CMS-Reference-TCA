@@ -408,7 +408,7 @@ displayCond
          .. code-block:: php
 
 				'displayCond' => array(
-					AND => array(
+					'AND' => array(
 						'FIELD:tx_templavoila_ds:REQ:true',
 						'EXT:static_info_tables:LOADED:true',
 					)
