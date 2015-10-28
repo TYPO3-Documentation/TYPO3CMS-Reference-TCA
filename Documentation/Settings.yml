@@ -23,7 +23,7 @@ conf.py:
     - null
   html_theme_options:
     github_repository: TYPO3-Documentation/TYPO3CMS-Reference-TCA
-    github_branch: 6-0
+    github_branch: 6.0
   latex_documents:
   - - Index
     - t3tca.tex
