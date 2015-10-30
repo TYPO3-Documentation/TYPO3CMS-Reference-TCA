@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../Includes.txt
+﻿.. include:: ../../../Includes.txt
 
 
 .. _columns-select:
@@ -74,7 +69,7 @@ Properties
    `multiple`_                               boolean
    `multiSelectFilterItems`_                 array
    `noIconsBelowSelect`_                     boolean
-   `renderMode`_                             string
+   `renderType`_                             string
    `rootLevel`_                              boolean
    `selectedListStyle`_                      string
    `selicon\_cols`_                          integer
@@ -142,7 +137,7 @@ items
 
          - Second value is the  **value of the item** .
 
-         - The special value :code:`--div--` is used to insert a non-selectable value
+         - The special value `--div--` is used to insert a non-selectable value
            that appears as a divider label in the selector box (only for maxitems
            <=1)
 
@@ -156,7 +151,8 @@ items
            file found inside an extension or use an registered icon identifier.
 
          - Fourth value is an optional description text. This is only shown when
-           the list is shown by renderMode "checkbox".
+           the list is shown by
+           ((TODO: Was: `renderMode`_ `checkbox`. Should be: `renderType`_ `option x`)).
 
          - Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
            option "authMode" / "individual" for more details.
@@ -164,7 +160,7 @@ items
         .. note::
 
             Usage of path in the third property is deprecated.
-            For custom icons use a path prepended with "EXT:" to refer to an image file 
+            For custom icons use a path prepended with "EXT:" to refer to an image file
             found inside an extension or use an registered icon identifier, which is the
             prefered way.
 
@@ -265,13 +261,13 @@ suppress\_icons
          Lets you disable display of icons. Can be nice to do if icons are
          coming from foreign database records and you don't want them.
 
-         Set it to :code:`IF_VALUE_FALSE` if you *only* want to see icons when a
+         Set it to `IF_VALUE_FALSE` if you *only* want to see icons when a
          value (non-blank, non-zero) is selected. Otherwise no icons are shown.
 
-         Set it to :code:`ONLY_SELECTED` if you *only* want to see an icon for the
+         Set it to `ONLY_SELECTED` if you *only* want to see an icon for the
          selected item.
 
-         Set to :code:`1` (true) if you never want any icons.
+         Set to `1` (true) if you never want any icons.
 
    Scope
          Display
@@ -293,7 +289,7 @@ noIconsBelowSelect
 
    Description
          Disables the rendering of the icons after the select even when icons
-         for the :code:`<select>`'s :code:`<option>` tags were supplied.
+         for the `<select>`'s `<option>` tags were supplied.
 
    Scope
          Display
@@ -317,7 +313,7 @@ foreign\_table
 
    Description
          The item-array will be filled with records from the table defined
-         here. The table must be configured in :code:`$TCA`.
+         here. The table must be configured in `$TCA`.
 
          See the other related options below.
 
@@ -511,7 +507,7 @@ fileFolder\_extList
          List of extensions to select. If blank, all files are selected.
          Specify list in lowercase.
 
-         See :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
+         See `\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
 
    Scope
          Display / Proc
@@ -537,7 +533,7 @@ fileFolder\_recursions
 
          0 (zero) means no recursion into subdirectories.
 
-         See :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
+         See `\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
 
    Scope
          Display / Proc
@@ -758,13 +754,13 @@ MM\_opposite\_field
    Description
          If you want to make a MM relation editable from the foreign side
          (bidirectional) of the relation as well, you need to set
-         :code:`MM_opposite_field` on the foreign side to the field name on the local
+         `MM_opposite_field` on the foreign side to the field name on the local
          side.
 
          E.g. if the field "companies.employees" is your local side and you
          want to make the same relation editable from the foreign side of the
          relation in a field called persons.employers, you would need to set
-         the :code:`MM_opposite_field` value of the TCA configuration of the
+         the `MM_opposite_field` value of the TCA configuration of the
          persons.employers field to the string "employees".
 
          .. note::
@@ -823,12 +819,12 @@ MM\_oppositeUsage
          workspace) so that relations are carried over with the correct
          information.
 
-         :code:`MM_oppositeUsage` is an array which references which
+         `MM_oppositeUsage` is an array which references which
          fields contain the references to the opposite side, so that they
          can be queried for match field configuration.
 
          This is used by the Core for system categories. Whenever a table
-         is registered as being categorizable, an entry in :code:`MM_oppositeUsage`
+         is registered as being categorizable, an entry in `MM_oppositeUsage`
          is created for the "sys_category" table.
 
          **Example**
@@ -954,7 +950,7 @@ special
            tree root + Default language)
 
          - **custom** – Custom values set by backend modules (see
-           :code:`TYPO3_CONF_VARS[BE][customPermOptions]`)
+           `TYPO3_CONF_VARS[BE][customPermOptions]`)
 
          As you might have guessed these options are used for backend user
          management and pretty worthless for most other purposes.
@@ -1060,6 +1056,15 @@ itemListStyle
 
 .. _columns-select-properties-rendermode:
 
+renderMode
+~~~~~~~~~~
+
+`renderMode`_ is deprecated or gone. Use `renderType`_ instead.
+
+
+
+.. _columns-select-properties-rendertype:
+
 renderType
 ~~~~~~~~~~
 
@@ -1108,9 +1113,9 @@ treeConfig
          (configuration options)
 
    Description
-         Configuration if the :ref:`renderType <columns-select-properties-rendermode>`
-         is set to "selectTree". Either :code:`childrenField` or :code:`parentField`
-         has to be set - :code:`childrenField` takes precedence.
+         Configuration if the `renderType`_
+         is set to "selectTree". Either `childrenField` or `parentField`
+         has to be set - `childrenField` takes precedence.
 
          **Sub-properties:**
 
@@ -1140,7 +1145,7 @@ treeConfig
              levels that will not be selectable, by default the root node (which is
              "0") cannot be selected
 
-           - **allowRecursiveMode (boolean)** : If set to :code:`true`, the selection
+           - **allowRecursiveMode (boolean)** : If set to `true`, the selection
              of a node will trigger the selection of all child nodes too (recursively).
 
            - **width** *(since TYPO3 CMS 6.0)*: Set a custom width of the tree select field in pixels.
@@ -1194,7 +1199,7 @@ maxitems
 
          .. note::
 
-            Property maxitems is ignored if :ref:`renderType selectSingle` is set.
+            Property maxitems is ignored if `renderType`_ `selectSingle` is set.
 
    Scope
          Display / Proc
@@ -1860,7 +1865,7 @@ create relations from that side too.
 .. note::
 
    The TCA configuration listed above cannot be found directly
-   in a TCA file, but is generated by the :code:`addTcaColumn()` method
+   in a TCA file, but is generated by the `addTcaColumn()` method
    of class :ref:`TYPO3\CMS\Core\Category\CategoryRegistry <t3cmsapi:TYPO3\\CMS\\Core\\Category\\CategoryRegistry>`.
 
 
