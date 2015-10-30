@@ -1060,50 +1060,31 @@ itemListStyle
 
 .. _columns-select-properties-rendermode:
 
-renderMode
+renderType
 ~~~~~~~~~~
 
 .. container:: table-row
 
    Key
-         renderMode
+         renderType
 
    Datatype
          string (any of keywords)
 
    Description
-         (Only for maxitems > 1)
+         This setting specifies how the select field should be displayed. Available options are:
 
-         Renders the list of multiple options as either a list of checkboxes or
-         as a selector box with multiple choices.
-
-         The data type is fully compatible with an ordinary multiple element
-         list except that duplicate values cannot be represented for obvious
-         reasons (option "multiple" does not work) and the order of values is
-         fixed.
-
-         Keywords are:
-
-         - **checkbox** - Renders a list of checkboxes
-
-         - **singlebox** - Renders a single multiple selector box
-
-         - **tree** - Renders the selector as tree. This will work properly only
-           when referrring to a foreign table, so make sure that the
-           :ref:`foreign_table <columns-select-properties-foreign-table>`
-           property is set. See :ref:`treeConfig <columns-select-properties-treeconfig>`
-           for configuration options.
-
-         When renderMode is "checkbox" or "singlebox" all values selected by
-         :ref:`foreign_table <columns-select-properties-foreign-table>`
-         settings will automatically have their icon part in
-         the items array set to the record icon (unless overruled by
-         "selicon\_field" of that table).
+         - ``selectSingle`` - Normal select field for selecting a single value.
+         - ``selectSingleBox`` - Normal select field for selecting multiple values.
+         - ``selectCheckBox`` - List of checkboxes for selecting muliple values.
+         - ``selectMultipleSideBySide`` - Two select fields, items can be selected from the right
+           field, selected items are displayed in the left select.
+         - ``selectTree`` - A tree for selecting hierarchical data.
 
          .. note::
 
             Properties "maxitems" and "minitems" are not enforced in the browser
-            for any of the render modes here! However they will be on the server.
+            for any of the render types here! However they will be on the server.
             It is recommended to set "minitems" to zero and "maxitems" to a very
             large number exceeding the possible number of values you can select
             (for instance set it to 1000 or so).
@@ -1127,8 +1108,8 @@ treeConfig
          (configuration options)
 
    Description
-         Configuration if the :ref:`renderMode <columns-select-properties-rendermode>`
-         is set to "tree". Either :code:`childrenField` or :code:`parentField`
+         Configuration if the :ref:`renderType <columns-select-properties-rendermode>`
+         is set to "selectTree". Either :code:`childrenField` or :code:`parentField`
          has to be set - :code:`childrenField` takes precedence.
 
          **Sub-properties:**
@@ -1210,6 +1191,10 @@ maxitems
 
    Description
          Maximum number of items in the selector box. (Default = 1)
+
+         .. note::
+
+            Property maxitems is ignored if :ref:`renderType selectSingle` is set.
 
    Scope
          Display / Proc
