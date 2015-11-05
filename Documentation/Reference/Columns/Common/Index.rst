@@ -34,7 +34,6 @@ Properties
    ============= =========
    `dbType`_     string
    `default`_    mixed
-   `form\_type`_ string
    `type`_       string
    `readOnly`_   boolean
    `search`_     array
@@ -73,28 +72,6 @@ type
          Display
 
          / Proc.
-
-
-
-.. _columns-common-properties-form-type:
-
-form\_type
-~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         form\_type
-
-   Datatype
-         string
-
-   Description
-         This will override the field type when displaying it as a form. It can
-         take any of the values available for "type" above.
-
-   Scope
-         Display
 
 
 
