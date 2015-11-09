@@ -38,40 +38,40 @@ Properties
    Property                                  Data Type
    ========================================= =========
    `allowNonIdValues`_                       boolean
-   `authMode`_                               string
    `authMode\_enforce`_                      string
+   `authMode`_                               string
    `autoSizeMax`_                            integer
    `default`_                                string
    `disableNoMatchingValueElement`_          boolean
    `dontRemapTablesOnCopy`_                  string
    `enableMultiSelectFilterTextfield`_       boolean
    `exclusiveKeys`_                          string
-   `localizeReferencesAtParentLocalization`_ boolean
-   `items`_                                  array
-   `itemsProcFunc`_                          string
-   `fileFolder`_                             string
    `fileFolder\_extList`_                    string
    `fileFolder\_recursions`_                 string
-   `foreign\_table`_                         string
-   `foreign\_table\_where`_                  string
+   `fileFolder`_                             string
    `foreign\_table\_prefix`_                 string
+   `foreign\_table\_where`_                  string
+   `foreign\_table`_                         string
    `itemListStyle`_                          string
+   `items`_                                  array
+   `itemsProcFunc`_                          string
+   `localizeReferencesAtParentLocalization`_ boolean
    `maxitems`_                               integer
    `minitems`_                               integer
-   `MM`_                                     string
    `MM\_hasUidField`_                        boolean
    `MM\_insert\_fields`_                     array
    `MM\_match\_fields`_                      array
    `MM\_opposite\_field`_                    string
    `MM\_oppositeUsage`_                      array
    `MM\_table\_where`_                       string
+   `MM`_                                     string
    `multiple`_                               boolean
    `multiSelectFilterItems`_                 array
-   `showIconTable`_                          boolean
    `renderType`_                             string
    `rootLevel`_                              boolean
    `selectedListStyle`_                      string
    `selicon\_cols`_                          integer
+   `showIconTable`_                          boolean
    `size`_                                   integer
    `special`_                                string
    `treeConfig`_                             array
@@ -149,7 +149,7 @@ items
            file found inside an extension or use an registered icon identifier.
 
          - Fourth value is an optional description text. This is only shown when
-           the list is shown by `renderType` `selectCheckBox`.
+           the list is shown by `renderType`_ `selectCheckBox`.
 
          - Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
            option "authMode" / "individual" for more details.
@@ -241,7 +241,7 @@ selicon\_cols
 
 
 
-.. _columns-select-properties-noiconsbelowselect:
+.. _columns-select-properties-showIconTable:
 
 showIconTable
 ~~~~~~~~~~~~~

@@ -1,8 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
 .. include:: ../../../Includes.txt
 
 
@@ -34,23 +29,24 @@ Properties
 
 .. container:: ts-properties
 
-   ============== =========
-   Property       Data Type
-   ============== =========
-   `checkbox`_    string
-   `dbType`_      string
-   `default`_     string
-   `eval`_        string
-   `format`_      string
-   `is\_in`_      string
-   `max`_         integer
-   `mode`_        string
-   `placeholder`_ string
-   `range`_       array
-   `size`_        integer
-   `type`_        string
-   `wizards`_     array
-   ============== =========
+   =============== =========
+   Property        Data Type
+   =============== =========
+   `autocomplete`_ boolean
+   `checkbox`_     string
+   `dbType`_       string
+   `default`_      string
+   `eval`_         string
+   `format`_       string
+   `is\_in`_       string
+   `max`_          integer
+   `mode`_         string
+   `placeholder`_  string
+   `range`_        array
+   `size`_         integer
+   `type`_         string
+   `wizards`_      array
+   =============== =========
 
 Property details
 """"""""""""""""
@@ -581,8 +577,8 @@ disableAgeDisplay
 
 .. _columns-input-properties-autocomplete:
 
-placeholder
-~~~~~~~~~~~
+autocomplete
+~~~~~~~~~~~~
 
 .. container:: table-row
 
@@ -600,16 +596,16 @@ placeholder
          .. code-block:: php
             :emphasize-lines: 9
 
-			'title' => array(
-				'exclude' => 1,
-				'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
-				'config' => array(
-					'type' => 'input',
-					'size' => '20',
-					'eval' => 'null',
-					'autocomplete' => false,
-				)
-			),
+            'title' => array(
+               'exclude' => 1,
+               'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
+               'config' => array(
+                  'type' => 'input',
+                  'size' => '20',
+                  'eval' => 'null',
+                  'autocomplete' => false,
+               )
+            ),
 
    Scope
          Display
@@ -649,18 +645,18 @@ placeholder
          .. code-block:: php
             :emphasize-lines: 9
 
-			'title' => array(
-				'l10n_mode' => 'mergeIfNotBlank',
-				'exclude' => 1,
-				'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
-				'config' => array(
-					'type' => 'input',
-					'size' => '20',
-					'eval' => 'null',
-					'placeholder' => '__row|uid_local|metadata|title',
-					'mode' => 'useOrOverridePlaceholder',
-				)
-			),
+            'title' => array(
+               'l10n_mode' => 'mergeIfNotBlank',
+               'exclude' => 1,
+               'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
+               'config' => array(
+                  'type' => 'input',
+                  'size' => '20',
+                  'eval' => 'null',
+                  'placeholder' => '__row|uid_local|metadata|title',
+                  'mode' => 'useOrOverridePlaceholder',
+               )
+            ),
 
          In the above placeholder syntax, :code:`uid_local` points to the
          related "sys_file" record and :code:`metadata` points to the
@@ -809,19 +805,19 @@ This is the typical configuration for a date field, like "starttime":
 
 .. code-block:: php
 
-	'starttime' => array(
-		'exclude' => 1,
-		'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
-		'config' => array(
-			'type' => 'input',
-			'size' => '13',
-			'max' => '20',
-			'eval' => 'datetime',
-			'default' => '0'
-		),
-		'l10n_mode' => 'exclude',
-		'l10n_display' => 'defaultAsReadonly'
-	),
+   'starttime' => array(
+      'exclude' => 1,
+      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
+      'config' => array(
+         'type' => 'input',
+         'size' => '13',
+         'max' => '20',
+         'eval' => 'datetime',
+         'default' => '0'
+      ),
+      'l10n_mode' => 'exclude',
+      'l10n_display' => 'defaultAsReadonly'
+   ),
 
 
 .. _columns-input-examples-username:
@@ -836,15 +832,15 @@ stored, must be in lowercase and without spaces in it:
 
 .. code-block:: php
 
-	'username' => array(
-		'label' => 'LLL:EXT:cms/locallang_tca.xlf:fe_users.username',
-		'config' => array(
-			'type' => 'input',
-			'size' => '20',
-			'max' => '50',
-			'eval' => 'nospace,lower,uniqueInPid,required'
-		)
-	),
+   'username' => array(
+      'label' => 'LLL:EXT:cms/locallang_tca.xlf:fe_users.username',
+      'config' => array(
+         'type' => 'input',
+         'size' => '20',
+         'max' => '50',
+         'eval' => 'nospace,lower,uniqueInPid,required'
+      )
+   ),
 
 
 .. _columns-input-examples-typical:
@@ -859,16 +855,16 @@ values into varchar fields.
 
 .. code-block:: php
 
-	'name' => array(
-		'exclude' => 1,
-		'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.name',
-		'config' => array(
-			'type' => 'input',
-			'size' => '40',
-			'eval' => 'trim',
-			'max' => '80'
-		)
-	),
+   'name' => array(
+      'exclude' => 1,
+      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.name',
+      'config' => array(
+         'type' => 'input',
+         'size' => '40',
+         'eval' => 'trim',
+         'max' => '80'
+      )
+   ),
 
 
 .. _columns-input-examples-required:
@@ -880,13 +876,12 @@ Here the field is required to be filled in:
 
 .. code-block:: php
 
-	'title' => array(
-		'label' => 'LLL:EXT:cms/locallang_tca.xlf:fe_groups.title',
-		'config' => array(
-			'type' => 'input',
-			'size' => '20',
-			'max' => '50',
-			'eval' => 'trim,required'
-		)
-	),
-
+   'title' => array(
+      'label' => 'LLL:EXT:cms/locallang_tca.xlf:fe_groups.title',
+      'config' => array(
+         'type' => 'input',
+         'size' => '20',
+         'max' => '50',
+         'eval' => 'trim,required'
+      )
+   ),
