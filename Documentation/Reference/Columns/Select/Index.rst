@@ -55,7 +55,6 @@ Properties
    `foreign\_table`_                         string
    `foreign\_table\_where`_                  string
    `foreign\_table\_prefix`_                 string
-   `foreign\_table\_loadIcons`_              boolean
    `itemListStyle`_                          string
    `maxitems`_                               integer
    `minitems`_                               integer
@@ -68,14 +67,13 @@ Properties
    `MM\_table\_where`_                       string
    `multiple`_                               boolean
    `multiSelectFilterItems`_                 array
-   `noIconsBelowSelect`_                     boolean
+   `showIconTable`_                          boolean
    `renderType`_                             string
    `rootLevel`_                              boolean
    `selectedListStyle`_                      string
    `selicon\_cols`_                          integer
    `size`_                                   integer
    `special`_                                string
-   `suppress\_icons`_                        string
    `treeConfig`_                             array
    `type`_                                   string
    `wizards`_                                array
@@ -151,8 +149,7 @@ items
            file found inside an extension or use an registered icon identifier.
 
          - Fourth value is an optional description text. This is only shown when
-           the list is shown by
-           ((TODO: Was: `renderMode`_ `checkbox`. Should be: `renderType`_ `option x`)).
+           the list is shown by `renderType` `selectCheckBox`.
 
          - Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
            option "authMode" / "individual" for more details.
@@ -244,51 +241,21 @@ selicon\_cols
 
 
 
-.. _columns-select-properties-suppress-icons:
-
-suppress\_icons
-~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         suppress\_icons
-
-   Datatype
-         string
-
-   Description
-         Lets you disable display of icons. Can be nice to do if icons are
-         coming from foreign database records and you don't want them.
-
-         Set it to `IF_VALUE_FALSE` if you *only* want to see icons when a
-         value (non-blank, non-zero) is selected. Otherwise no icons are shown.
-
-         Set it to `ONLY_SELECTED` if you *only* want to see an icon for the
-         selected item.
-
-         Set to `1` (true) if you never want any icons.
-
-   Scope
-         Display
-
-
-
 .. _columns-select-properties-noiconsbelowselect:
 
-noIconsBelowSelect
-~~~~~~~~~~~~~~~~~~
+showIconTable
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
    Key
-         noIconsBelowSelect
+         showIconTable
 
    Datatype
          boolean
 
    Description
-         Disables the rendering of the icons after the select even when icons
+         Controls the rendering of the icons after the select even when icons
          for the `<select>`'s `<option>` tags were supplied.
 
    Scope
@@ -408,31 +375,6 @@ foreign\_table\_prefix
 
    Description
          Label prefix to the title of the records from the foreign-table.
-
-   Scope
-         Display
-
-
-
-.. _columns-select-properties-foreign-table-loadicons:
-
-foreign\_table\_loadIcons
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         foreign\_table\_loadIcons
-
-   Datatype
-         boolean
-
-   Description
-         If set, then the icons for the records of the foreign table are loaded
-         and presented in the form.
-
-         This depends on the 'selicon\_field' of the foreign tables [ctrl]
-         section being configured.
 
    Scope
          Display
@@ -1051,15 +993,6 @@ itemListStyle
 
    Scope
          Display
-
-
-
-.. _columns-select-properties-rendermode:
-
-renderMode
-~~~~~~~~~~
-
-`renderMode`_ is deprecated or gone. Use `renderType`_ instead.
 
 
 
@@ -1704,7 +1637,7 @@ The following configuration change:
       'type' => 'select',
       'foreign_table' => 'pages',
       'size' => 10,
-      'renderMode' => 'tree',
+      'renderType' => 'selectTree',
       'treeConfig' => array(
               'expandAll' => true,
               'parentField' => 'pid',
@@ -1835,7 +1768,7 @@ is installed).
 	'size' => 10,
 	'autoSizeMax' => 50,
 	'maxitems' => 9999,
-	'renderMode' => 'tree',
+	'renderType' => 'selectTree',
 	'treeConfig' => array(
 		'parentField' => 'parent',
 		'appearance' => array(

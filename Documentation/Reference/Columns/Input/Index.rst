@@ -579,6 +579,43 @@ disableAgeDisplay
 
 
 
+.. _columns-input-properties-autocomplete:
+
+placeholder
+~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         autocomplete
+
+   Datatype
+         boolean
+
+   Description
+         Controls the `autocomplete` attribute of a given input field
+
+         **Example**:
+
+         .. code-block:: php
+            :emphasize-lines: 9
+
+			'title' => array(
+				'exclude' => 1,
+				'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
+				'config' => array(
+					'type' => 'input',
+					'size' => '20',
+					'eval' => 'null',
+					'autocomplete' => false,
+				)
+			),
+
+   Scope
+         Display
+
+
+
 .. _columns-input-properties-placeholder:
 
 placeholder
