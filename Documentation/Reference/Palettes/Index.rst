@@ -38,7 +38,7 @@ When a palette exists, an icon appears next to the relevant field:
 .. figure:: ../../Images/PalettesCollapsed.png
    :alt: A collapsed palette
 
-   A collapsed palette with the icon to expand it
+   A collapsed palette with the icon to expand it. With TYPO3 version 7.4 onwards the icon is not displayed and the palette expanded.
 
 Clicking on this icon, the palette is revealed:
 
