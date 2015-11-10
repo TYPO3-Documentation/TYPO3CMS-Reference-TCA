@@ -78,7 +78,7 @@ address the task at hand.
 
    .. note::
 
-      :ref:`ToDo-List`
+      :ref:`Todo-List`
 
 **Table of Contents**
 
