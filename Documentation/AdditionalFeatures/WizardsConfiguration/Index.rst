@@ -1064,6 +1064,11 @@ receiverClass
          PHP class alternative receiver class. Must extend
          :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver>`.
 
+         .. todo:: Undefined label!
+
+            Is it TYPO3\\CMS\\Backend\\Form\\Wizard\\SuggestWizardDefaultReceiver now?
+            mb, 2015-11-10
+
 
 
 .. _wizards-configuration-suggest-renderfunc:

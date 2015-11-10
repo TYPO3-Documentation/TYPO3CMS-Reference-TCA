@@ -338,6 +338,11 @@ customControls
 
             EXT:myext/class.tx_myext_myclass:tx_myext_myclass->myUserFuncMethod
 
+
+         .. todo:: Undefined
+
+            TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement
+
          For more details, see the implementation in
          :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement>`
          and search for "customControls".
