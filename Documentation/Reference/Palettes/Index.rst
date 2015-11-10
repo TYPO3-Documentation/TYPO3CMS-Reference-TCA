@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _palettes:
@@ -18,18 +13,14 @@ palette fields are displayed. In the backend, "palettes" are known as
 "secondary options".
 
 Let's add a palette to the example from the previous section. The
-palette itself is defined like this:
-
-.. code-block:: php
+palette itself is defined like this::
 
    'palettes' => array(
            '1' => array('showitem' => 'enforce_date'),
    ),
 
 Now we change the "types" configuration to link the palette to the
-:code:`some_date` field:
-
-.. code-block:: php
+`some_date` field::
 
    '0' => array('showitem' => 'hidden, record_type, title, some_date;;1 '),
 
@@ -39,6 +30,11 @@ When a palette exists, an icon appears next to the relevant field:
    :alt: A collapsed palette
 
    A collapsed palette with the icon to expand it
+
+.. note::
+
+   With TYPO3 version 7.4 onwards the checkbox at the bottom “Show secondary options (palettes)” has been dropped
+   and the icon is not shown any more. Palettes are now always shown and the collapse buttons are no longer rendered.
 
 Clicking on this icon, the palette is revealed:
 
@@ -155,7 +151,7 @@ Line breaks
 
 By default all fields in a palette are shown on a single line.
 It is possible to place them on several lines by using the
-:code:`--linebreak--` keyword.
+`--linebreak--` keyword.
 
 
 .. _palettes-linebreaks-examples:
@@ -163,7 +159,7 @@ It is possible to place them on several lines by using the
 Example
 ~~~~~~~
 
-.. code-block:: php
+::
 
    'palettes' => array(
       '1' => array('showitem' => 'salutation, firstname, lastname, --linebreak--, mobile, phone, fax, --linebreak--, email, email_work'),
