@@ -820,6 +820,11 @@ maxitems
          that this is different from types "select" and "group" which default
          to 1.
 
+         .. note::
+
+            If the inline is used with ``foreign_table`` only, to store a
+            comma-separated list of uids, it defaults to 1.
+
    Scope
          Display / Proc
 
