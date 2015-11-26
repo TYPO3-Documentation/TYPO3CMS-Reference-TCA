@@ -1104,69 +1104,75 @@ relation from both sides (parent and child).
 
 .. code-block:: php
 
-   $TCA['person'] = array(
-     'columns' => array(
-       'employers' => array(
-         'label' => 'LLL:EXT:myextension/locallang_db.xml:person.employers',
-         'config' => array(
-           'type' => 'inline',
-           'foreign_table' => 'person_company',
-           'foreign_field' => 'person',
-           'foreign_label' => 'company',
-         ),
-       ),
-     ),
-   );
-   $TCA['company'] = array(
-     'columns' => array(
-       'employees' => array(
-         'label' => 'LLL:EXT:myextension/locallang_db.xml:company.employees',
-         'config' => array(
-           'type' => 'inline',
-           'foreign_table' => 'person_company',
-           'foreign_field' => 'company',
-           'foreign_label' => 'person',
-         ),
-       ),
-     ),
-   );
-   $TCA['person_company'] = array(
-    'columns' => array(
-    'person' => array(
-    'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.person',
-    'config' => array(
-    'type' => 'select',
-    'foreign_table' => 'person',
-    'size' => 1,
-    'minitems' => 0,
-    'maxitems' => 1,
-    ),
-    ),
-    'company' => array(
-    'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.company',
-    'config' => array(
-    'type' => 'select',
-    'foreign_table' => 'company',
-    'size' => 1,
-    'minitems' => 0,
-    'maxitems' => 1,
-    ),
-    ),
-       'jobtype' => array(
-         'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.jobtype',
-         'config' => array(
-           'type' => 'select',
-           'items' => array(
-             array('Project Manager (PM)', '0'),
-             array('Chief Executive Officer (CEO)', '1'),
-             array('Chief Technology Officer (CTO)', '2'),
-           ),
-           'size' => 1,
-           'maxitems' => 1,
-         ),
-       ),
-     ),
-   );
+	$GLOBALS['TCA']['person'] = array(
+		'columns' => array(
+			...
+			'employers' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:person.employers',
+				'config' => array(
+					'type' => 'inline',
+					'foreign_table' => 'person_company',
+					'foreign_field' => 'person',
+					'foreign_label' => 'company',
+				),
+			),
+		),
+	);
+	$GLOBALS['TCA']['company'] = array(
+		'columns' => array(
+			...
+			'employees' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:company.employees',
+				'config' => array(
+					'type' => 'inline',
+					'foreign_table' => 'person_company',
+					'foreign_field' => 'company',
+					'foreign_label' => 'person',
+				),
+			),
+		),
+	);
+	$GLOBALS['TCA']['person_company'] = array(
+		'columns' => array(
+			...
+			'person' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.person',
+				'config' => array(
+					'type' => 'select',
+					'renderType' => 'selectSingle',
+					'foreign_table' => 'person',
+					'size' => 1,
+					'minitems' => 0,
+					'maxitems' => 1,
+				),
+			),
+			'company' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.company',
+				'config' => array(
+					'type' => 'select',
+					'renderType' => 'selectSingle',
+					'foreign_table' => 'company',
+					'size' => 1,
+					'minitems' => 0,
+					'maxitems' => 1,
+				),
+			),
+			'jobtype' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.jobtype',
+				'config' => array(
+					'type' => 'select',
+					'renderType' => 'selectSingle',
+					'items' => array(
+						array('Project Manager (PM)', '0'),
+						array('Chief Executive Officer (CEO)', '1'),
+						array('Chief Technology Officer (CTO)', '2'),
+					),
+					'size' => 1,
+					'maxitems' => 1,
+				),
+			),
+		),
+	);
 
 
 .. _columns-inline-examples-symmetric-mm:
@@ -1188,60 +1194,63 @@ real life).
 
 .. code-block:: php
 
-   $TCA['person'] = array(
-     'columns' => array(
-       'employers' => array(
-         'label' => 'LLL:EXT:myextension/locallang_db.xml:person.employers',
-         'config' => array(
-           'type' => 'inline',
-           'foreign_table' => 'person_symmetric',
-           'foreign_field' => 'person',
-           'foreign_sortby' => 'sorting_person',
-           'foreign_label' => 'spouse',
-           'symmetric_field' => 'spouse',
-           'symmetric_sortby' => 'sorting_spouse',
-           'symmetric_label' => 'person',
-         ),
-       ),
-     ),
-   );
-   $TCA['person_symmetric'] = array(
-     'columns' => array(
-       'person' => array(
-         'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.person',
-         'config' => array(
-           'type' => 'select',
-           'foreign_table' => 'person',
-           'size' => 1,
-           'minitems' => 0,
-           'maxitems' => 1,
-         ),
-       ),
-       'spouse' => array(
-         'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.spouse',
-         'config' => array(
-           'type' => 'select',
-           'foreign_table' => 'person',
-           'size' => 1,
-           'minitems' => 0,
-           'maxitems' => 1,
-         ),
-       ),
-       'someattribute' => array(
-         'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.someattribute',
-         'config' => array(
-           'type' => 'input',
-         ),
-       ),
-       'sorting_person' => array(
-         'config' => array(
-           'type' => 'passthrough',
-         ),
-       ),
-       'sorting_spouse' => array(
-         'config' => array(
-           'type' => 'passthrough',
-         ),
-       ),
-     ),
-   );
+	$GLOBALS['TCA']['person'] = array(
+		'columns' => array(
+			'employers' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:person.employers',
+				'config' => array(
+					'type' => 'inline',
+					'foreign_table' => 'person_symmetric',
+					'foreign_field' => 'person',
+					'foreign_sortby' => 'sorting_person',
+					'foreign_label' => 'spouse',
+					'symmetric_field' => 'spouse',
+					'symmetric_sortby' => 'sorting_spouse',
+					'symmetric_label' => 'person',
+				),
+			),
+		),
+	);
+
+	$GLOBALS['TCA']['person_symmetric'] = array(
+		'columns' => array(
+			'person' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.person',
+				'config' => array(
+					'type' => 'select',
+					'renderType' => 'selectSingle',
+					'foreign_table' => 'person',
+					'size' => 1,
+					'minitems' => 0,
+					'maxitems' => 1,
+				),
+			),
+			'spouse' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.spouse',
+				'config' => array(
+					'type' => 'select',
+					'renderType' => 'selectSingle',
+					'foreign_table' => 'person',
+					'size' => 1,
+					'minitems' => 0,
+					'maxitems' => 1,
+				),
+			),
+			'someattribute' => array(
+				'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.someattribute',
+				'config' => array(
+					'type' => 'input',
+				),
+			),
+			'sorting_person' => array(
+				'config' => array(
+					'type' => 'passthrough',
+				),
+			),
+			'sorting_spouse' => array(
+				'config' => array(
+					'type' => 'passthrough',
+				),
+			),
+		),
+	);
