@@ -64,7 +64,7 @@ Let's look at the "tx_examples_dummy" table from the "examples" extension. The
 		'enablecolumns' => array(
 			'disabled' => 'hidden',
 		),
-		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('examples') . 'Resources/Public/Images/Dummy.png',
+		'iconfile' => 'EXT:examples/Resources/Public/Images/Dummy.png',
 	),
 
 The highlighted line indicates that the field called "record\_type" will
