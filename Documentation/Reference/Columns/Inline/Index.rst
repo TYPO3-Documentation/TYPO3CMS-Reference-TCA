@@ -344,7 +344,7 @@ customControls
             TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement
 
          For more details, see the implementation in
-         :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement>`
+         :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement <t3api:TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement>`
          and search for "customControls".
 
    Scope

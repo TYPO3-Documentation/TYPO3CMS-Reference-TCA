@@ -70,7 +70,7 @@ richtext
          richtext[cut\|copy\|paste] = ensures that cut, copy and paste options
          are shown regardless of RTE configuration
 
-         See :ref:`RTE API <t3api:rte>` for more details.
+         See :ref:`RTE API <t3coreapi:rte>` for more details.
 
 
 
@@ -199,7 +199,7 @@ mode
 
          The order is calling order when direction is "db".
 
-         Please refer to the :ref:`RTE API <t3api:transformations-overview>`
+         Please refer to the :ref:`RTE API <t3coreapi:transformations-overview>`
          for a list of available transformations.
 
    Examples

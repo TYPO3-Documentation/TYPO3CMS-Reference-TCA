@@ -39,7 +39,7 @@ finely controlled. Indeed if your extension modifies another extension,
 your extension must be loaded *after* the extension you are modifying.
 This can be achieved by registering that other extension as
 a dependency of yours. See the
-:ref:`description of constraints in Core APIs <t3api:extension-declaration>`.
+:ref:`description of constraints in Core APIs <t3coreapi:extension-declaration>`.
 
 .. note::
 
@@ -52,7 +52,7 @@ the "priority" property in the :code:`ext_emconf.php` file can help (a
 if there are several "bottom"-priority extensions).
 
 For more information about an extension's structure, please refer to the
-:ref:`extension architecture <t3api:extension-architecture>` chapter in
+:ref:`extension architecture <t3coreapi:extension-architecture>` chapter in
 Core APIs.
 
 .. _storing-changes-extension-exttables:

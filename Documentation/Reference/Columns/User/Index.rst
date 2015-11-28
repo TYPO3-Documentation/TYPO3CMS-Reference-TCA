@@ -97,7 +97,7 @@ userFunc
          argument is an array (passed by reference) which contains the current
          information about the current field being rendered. The second
          argument is a reference to the parent object (an instance of the
-         :ref:`TYPO3\\CMS\\Backend\\Form\\FormEngine <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\FormEngine>`
+         :ref:`TYPO3\\CMS\\Backend\\Form\\FormEngine <t3api:TYPO3\\CMS\\Backend\\Form\\FormEngine>`
          class).
 
          The array with the current information will contain any parameters

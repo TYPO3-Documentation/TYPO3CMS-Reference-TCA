@@ -176,7 +176,7 @@ readOnly
          .. warning::
 
             This property affects only the display. It is still possible to write
-            to those fields when using the :ref:`TYPO3 Core Engine <t3api:tce>`.
+            to those fields when using the :ref:`TYPO3 Core Engine <t3coreapi:tce>`.
 
    Scope
          Display

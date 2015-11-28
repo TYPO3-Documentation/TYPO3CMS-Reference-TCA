@@ -1179,7 +1179,7 @@ _01.jpg":
 API for getting the reference list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Class :ref:`TYPO3\\CMS\\Core\\Database\\RelationHandler <t3cmsapi:TYPO3\\CMS\\Core\\Database\\RelationHandler>`
+Class :ref:`TYPO3\\CMS\\Core\\Database\\RelationHandler <t3api:TYPO3\\CMS\\Core\\Database\\RelationHandler>`
 is designed to transform the stored reference list values into an array where all uids are paired
 with the right table name. Also, this class will automatically
 retrieve the list of MM relations. In other words, it provides an API
@@ -1203,7 +1203,7 @@ the records.
    t3cmsapi:typo3\\cms\\backend\\form\\datapreprocessor
 
 
-Class :ref:`TYPO3\\CMS\\Backend\\Form\\DataPreprocessor <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\DataPreprocessor>`
+Class :ref:`TYPO3\\CMS\\Backend\\Form\\DataPreprocessor <t3api:TYPO3\\CMS\\Backend\\Form\\DataPreprocessor>`
 is doing such transformations (among other things) and this is how the transformation happens:
 
 +-----------+----------------------------------+------------------------------------------------------------------+
