@@ -477,7 +477,8 @@ foreign\_sortby
          Define a field on the child record (or on the intermediate table) that
          stores the manual sorting information. It is possible to have a
          different sorting, depending from which side of the relation we look
-         at parent or child.
+         at parent or child. This property requires that the
+         :ref:`foreign_field <columns-inline-properties-foreign-field>` approach is used.
 
          .. important::
 
@@ -934,7 +935,8 @@ symmetric\_sortby
          Each side of a symmetric relation could have its
          own sorting, so :code:`symmetric_sortby` defines a field on the
          :ref:`foreign_table <columns-inline-properties-foreign-table>` where the sorting
-         of the "other" side is stored.
+         of the "other" side is stored. This property requires that the
+         :ref:`foreign_field <columns-inline-properties-foreign-field>` approach is used.
 
    Scope
          Display / Proc.
