@@ -1466,6 +1466,7 @@ And here's the corresponding code:
            'label' => 'LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options',
            'config' => array (
                    'type' => 'select',
+                   'renderType' => 'selectSingle',
                    'items' => array (
                            array('LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options.I.0', '1'),
                            array('LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options.I.1', '2'),
@@ -1503,6 +1504,7 @@ there is a simple select field to create a reference to a page in the
            'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.reference_page',
            'config' => array(
                    'type' => 'select',
+                   'renderType' => 'selectSingle',
                    'foreign_table' => 'pages',
                    'foreign_table_where' => "AND pages.title LIKE '%###PAGE_TSCONFIG_STR###%'",
                    'size' => 1,
@@ -1607,6 +1609,7 @@ The configuration looks like this (taken from the "sys\_language" table):
 		'displayCond' => 'EXT:static_info_tables:LOADED:true',
 		'config' => array(
 			'type' => 'select',
+                   	'renderType' => 'selectSingle',
 			'items' => array(
 				array('', 0)
 			),
