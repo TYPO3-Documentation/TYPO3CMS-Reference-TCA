@@ -66,8 +66,7 @@ Here's the complete code, taken from file
 
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
 		'fe_users',
-		$temporaryColumns,
-		1
+		$temporaryColumns
 	);
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
 		'fe_users',
@@ -151,8 +150,7 @@ Then we add it to the :code:`$TCA` in :file:`Configuration/TCA/Overrides/tt_cont
 	);
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
 		'tt_content',
-		$temporaryColumn,
-		1
+		$temporaryColumn
 	);
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
 		'tt_content',
