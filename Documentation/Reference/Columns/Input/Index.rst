@@ -122,7 +122,7 @@ max
          Value for the "maxlength" attribute of the :code:`<input>` field.
 
          If the form element edits a varchar(40) field in the database you
-         should also set this value to 40.
+         should also set this value to 40. Default is 256.
 
    Scope
          Display
