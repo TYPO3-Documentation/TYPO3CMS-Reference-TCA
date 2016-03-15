@@ -137,7 +137,7 @@ title
          .. code-block:: php
 
             'ctrl' => array(
-            	'title' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template',
+            	'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:sys_template',
 
          In the above example the :code:`LLL:` prefix tells the system to look up a
          label from a localized file. The next prefix code:`EXT:cms` will look for
@@ -2290,7 +2290,7 @@ Similarly for the "tt\_content" table:
 		'tstamp' => 'tstamp',
 		'crdate' => 'crdate',
 		'cruser_id' => 'cruser_id',
-		'title' => 'LLL:EXT:cms/locallang_tca.xlf:tt_content',
+		'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tt_content',
 		'delete' => 'deleted',
 		'versioningWS' => 2,
 		'versioning_followPages' => TRUE,
