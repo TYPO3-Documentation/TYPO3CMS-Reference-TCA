@@ -151,13 +151,13 @@ The configuration looks like this:
 						'name' => 'wizard_edit',
 					),
 					'popup_onlyOpenIfSelected' => 1,
-					'icon' => 'edit2.gif',
+					'icon' => 'actions-open',
 					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
 				),
 				'add' => array(
 					'type' => 'script',
 					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_add_title',
-					'icon' => 'add.gif',
+					'icon' => 'actions-add',
 					'params' => array(
 						'table' => 'be_groups',
 						'pid' => '0',
@@ -170,7 +170,7 @@ The configuration looks like this:
 				'list' => array(
 					'type' => 'script',
 					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_list_title',
-					'icon' => 'list.gif',
+					'icon' => 'actions-system-list-open',
 					'params' => array(
 						'table' => 'be_groups',
 						'pid' => '0'
@@ -224,7 +224,7 @@ configuration (just the Edit wizard part):
 						'name' => 'wizard_edit',
 					),
 					'popup_onlyOpenIfSelected' => 1,
-					'icon' => 'edit2.gif',
+					'icon' => 'actions-open',
 					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
 				),
 				...
@@ -333,7 +333,7 @@ List-wizard part):
 				'list' => array(
 					'type' => 'script',
 					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_list_title',
-					'icon' => 'list.gif',
+					'icon' => 'actions-system-list-open',
 					'params' => array(
 						'table' => 'be_groups',
 						'pid' => '0'
@@ -454,7 +454,7 @@ highlighted):
 		'enableByTypeConfig' => 1,
 		'type' => 'script',
 		'title' => 'Form wizard',
-		'icon' => 'wizard_forms.gif',
+		'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_forms.gif',
 		'module' => array(
 			'name' => 'wizard_form'
 		),
@@ -549,7 +549,7 @@ Content Elements:
 		'enableByTypeConfig' => 1,
 		'type' => 'script',
 		'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.table',
-		'icon' => 'wizard_table.gif',
+		'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_table.gif',
 		'module' => array(
 			'name' => 'wizard_table'
 		),
@@ -583,7 +583,7 @@ Content Elements:
 		'RTEonly' => 1,
 		'type' => 'script',
 		'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
-		'icon' => 'wizard_rte2.gif',
+		'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif',
 		'module' => array(
 			'name' => 'wizard_rte'
 		)
@@ -737,7 +737,7 @@ Such a wizard can be configured like this:
 				'link' => array(
 					'type' => 'popup',
 					'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
-					'icon' => 'link_popup.gif',
+					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
 					'module' => array(
 						'name' => 'wizard_element_browser',
 						'urlParameters' => array(
