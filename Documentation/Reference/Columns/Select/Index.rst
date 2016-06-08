@@ -1052,6 +1052,9 @@ treeConfig
 
          **Sub-properties:**
 
+         - **dataProvider**: Allows to define a custom data provider class for usecases where special data preparation
+           is necessary. By default ``\TYPO3\CMS\Core\Tree\TableConfiguration\DatabaseTreeDataProvider`` is used.
+
          - **childrenField (string)** : Field name of the foreign\_table that
            references the uid of the child records (either child
 
