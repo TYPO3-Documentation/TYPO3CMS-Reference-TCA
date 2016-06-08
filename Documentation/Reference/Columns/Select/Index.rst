@@ -1768,8 +1768,8 @@ is installed).
 	'MM' => 'sys_category_record_mm',
 	'MM_opposite_field' => 'items',
 	'MM_match_fields' => array(
-		'tablenames' => 'categories',
-		'fieldname' => 'pages',
+		'tablenames' => 'pages',
+		'fieldname' => 'categories',
 	),
 	'size' => 10,
 	'autoSizeMax' => 50,
