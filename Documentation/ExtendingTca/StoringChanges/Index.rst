@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -9,16 +5,16 @@
 .. _storing-changes:
 
 Storing the changes
-^^^^^^^^^^^^^^^^^^^
+===================
 
-There are various ways to store changes to :code:`$GLOBALS['TCA']`. They
+There are various ways to store changes to :php:`$GLOBALS['TCA']`. They
 depend - partly - on what you are trying to achieve and - a lot -
 on the version of TYPO3 CMS which you are targeting.
 
 .. important::
 
-   Be aware that :code:`$TCA` is not available in all contexts.
-   It is advised to always use :code:`$GLOBALS['TCA']` instead.
+   Be aware that :php:`$TCA` is not available in all contexts.
+   It is advised to always use :php:`$GLOBALS['TCA']` instead.
 
 There are two main ways to store your changes to the TCA: inside an extension
 or straight in the :file:`typo3conf` folder. Both are described below in
@@ -28,7 +24,7 @@ more details.
 .. _storing-changes-extension:
 
 Storing in extensions
-"""""""""""""""""""""
+---------------------
 
 The advantage of putting your changes inside an extension is that they
 are nicely packaged in a self-contained entity which can be easily
@@ -47,7 +43,7 @@ a dependency of yours. See the
    with a rewritten dependency resolver.
 
 Before TYPO3 CMS 6.0, it is also possible to use the
-the "priority" property in the :code:`ext_emconf.php` file can help (a
+the "priority" property in the :file:`ext_emconf.php` file can help (a
 "bottom" extension will load last, but its exact loading order may vary
 if there are several "bottom"-priority extensions).
 
@@ -58,9 +54,9 @@ Core APIs.
 .. _storing-changes-extension-exttables:
 
 Storing in ext_tables.php files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Until TYPO3 CMS 6.1 (still supported for 6.2) changes to :code:`$GLOBALS['TCA']` are packaged
+Until TYPO3 CMS 6.1 (still supported for 6.2) changes to :php:`$GLOBALS['TCA']` are packaged
 into an extension's :file:`ext_tables.php` file.
 
 .. _storing-changes-extension-overrides:
@@ -68,7 +64,7 @@ into an extension's :file:`ext_tables.php` file.
 Storing in the Overrides folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Since TYPO3 CMS 6.2 (6.2.1 to be precise) changes to :code:`$GLOBALS['TCA']`
+Since TYPO3 CMS 6.2 (6.2.1 to be precise) changes to :php:`$GLOBALS['TCA']`
 must be stored inside a folder called :file:`Configuration/TCA/Overrides`
 with one file per modified table. These files are named along the pattern
 :file:`<tablename>.php`.
@@ -77,22 +73,22 @@ Thus if you want to customize the TCA of :code:`tx_foo_domain_model_bar`,
 you'd create the file :file:`Configuration/TCA/Overrides/tx_foo_domain_model_bar.php`.
 
 The advantage of this method is that all such changes are incorporated into
-:code:`$GLOBALS['TCA']` **before** it is cached. This is thus far more efficient.
+:php:`$GLOBALS['TCA']` **before** it is cached. This is thus far more efficient.
 
 .. important::
 
    Be aware that you cannot extend the TCA of extensions if it was configured within
-   its :file:`ext_tables.php` file, usually containing the :code:`ctrl` section
-   referencing a :code:`dynamicConfigFile`. Please ask the extension author to switch
-   to the :code:`Configuration/TCA/<tablename>.php` setup.
+   its :file:`ext_tables.php` file, usually containing the "ctrl" section
+   referencing a "dynamicConfigFile". Please ask the extension author to switch
+   to the :file:`Configuration/TCA/<tablename>.php` setup.
 
 
 .. _storing-changes-on-the-fly:
 
 Changing the TCA "on the fly"
-"""""""""""""""""""""""""""""
+-----------------------------
 
 It is also possible to perform some special manipulations on
-:code:`$GLOBALS['TCA']` right before it is stored into cache, thanks to the
+:php:`$GLOBALS['TCA']` right before it is stored into cache, thanks to the
 :code:`tcaIsBeingBuilt` signal. This signal was introduced in
 TYPO3 CMS 6.2.1.
