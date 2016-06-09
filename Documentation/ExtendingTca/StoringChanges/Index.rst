@@ -57,7 +57,7 @@ Core APIs.
 
 .. _storing-changes-extension-exttables:
 
-Storing in ext_tables files
+Storing in ext_tables.php files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Until TYPO3 CMS 6.1 (still supported for 6.2) changes to :code:`$GLOBALS['TCA']` are packaged
@@ -69,11 +69,12 @@ Storing in the Overrides folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Since TYPO3 CMS 6.2 (6.2.1 to be precise) changes to :code:`$GLOBALS['TCA']`
-should be stored inside a folder called :file:`Configuration/TCA/Overrides`.
+must be stored inside a folder called :file:`Configuration/TCA/Overrides`
+with one file per modified table. These files are named along the pattern
+:file:`<tablename>.php`.
 
-A best practice consists of creating in that directory one file
-per modified table. The file is named along the pattern:
-"tablename.php".
+Thus if you want to customize the TCA of :code:`tx_foo_domain_model_bar`,
+you'd create the file :file:`Configuration/TCA/Overrides/tx_foo_domain_model_bar.php`.
 
 The advantage of this method is that all such changes are incorporated into
 :code:`$GLOBALS['TCA']` **before** it is cached. This is thus far more efficient.
