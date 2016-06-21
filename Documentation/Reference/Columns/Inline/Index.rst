@@ -1,5 +1,4 @@
-﻿
-.. include:: ../../../Includes.txt
+﻿.. include:: ../../../Includes.txt
 
 
 .. _columns-inline:
