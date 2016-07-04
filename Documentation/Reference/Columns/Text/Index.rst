@@ -84,7 +84,7 @@ renderType
          renderType
 
    Datatype
-         string, allowed values: `t3editor`
+         string, allowed values: `t3editor`, `belayoutwizard`
 
    Description
          If set to `t3editor` and if extension `t3editor` is loaded, the text field
@@ -106,6 +106,21 @@ renderType
 					'type' => 'text',
 					'renderType' => 't3editor',
 					'format' => 'html',
+					'rows' => 42,
+				),
+			),
+
+			If set to `belayoutwizard` the text field will render the Backend Layout Wizard inline.
+
+         **Example:**
+
+         .. code-block:: php
+
+			'bodytext' => array(
+				'label' => 'aLabel',
+				'config' => array(
+					'type' => 'text',
+					'renderType' => 'belayoutwizard',
 					'rows' => 42,
 				),
 			),
