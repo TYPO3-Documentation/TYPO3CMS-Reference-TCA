@@ -11,13 +11,6 @@ This field type generates a :code:`<textarea>` field or inserts a RTE
 :ref:`special-configuration-options` section.
 
 
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
-
 .. _columns-text-properties:
 
 Properties
@@ -41,16 +34,6 @@ Properties
    `wizards`_     array
    `wrap`_        string
    ============== =========
-
-
-Property details
-""""""""""""""""
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
 
 
 .. _columns-text-properties-type:
@@ -96,34 +79,30 @@ renderType
          The :ref:`format <columns-text-properties-format>` option can be used to
          specify the code language.
 
-         **Example:**
+         **Example:** ::
 
-         .. code-block:: php
+            'bodytext' => array(
+               'label' => 'aLabel',
+               'config' => array(
+                  'type' => 'text',
+                  'renderType' => 't3editor',
+                  'format' => 'html',
+                  'rows' => 42,
+               ),
+            ),
 
-			'bodytext' => array(
-				'label' => 'aLabel',
-				'config' => array(
-					'type' => 'text',
-					'renderType' => 't3editor',
-					'format' => 'html',
-					'rows' => 42,
-				),
-			),
+         If set to `belayoutwizard` the text field will render the Backend Layout Wizard inline.
 
-			If set to `belayoutwizard` the text field will render the Backend Layout Wizard inline.
+         **Example:** ::
 
-         **Example:**
-
-         .. code-block:: php
-
-			'bodytext' => array(
-				'label' => 'aLabel',
-				'config' => array(
-					'type' => 'text',
-					'renderType' => 'belayoutwizard',
-					'rows' => 42,
-				),
-			),
+            'bodytext' => array(
+               'label' => 'aLabel',
+               'config' => array(
+                  'type' => 'text',
+                  'renderType' => 'belayoutwizard',
+                  'rows' => 42,
+               ),
+            ),
 
    Scope
          Display
@@ -233,9 +212,7 @@ wrap
          **Example:**
 
          This configuration will create a textarea useful for entry of code
-         lines since it will not wrap the lines:
-
-         .. code-block:: php
+         lines since it will not wrap the lines::
 
             'config' => array(
                     'type' => 'text',
@@ -428,18 +405,16 @@ wizards
 Example
 """""""
 
-This is the typical configuration for a textarea field:
+This is the typical configuration for a textarea field::
 
-.. code-block:: php
-
-	'message' => array(
-		'label' => 'LLL:EXT:sys_note/Resources/Private/Language/locallang_tca.xlf:sys_note.message',
-		'config' => array(
-			'type' => 'text',
-			'cols' => '40',
-			'rows' => '15'
-		)
-	),
+   'message' => array(
+      'label' => 'LLL:EXT:sys_note/Resources/Private/Language/locallang_tca.xlf:sys_note.message',
+      'config' => array(
+         'type' => 'text',
+         'cols' => '40',
+         'rows' => '15'
+      )
+   ),
 
 which looks like:
 
