@@ -127,7 +127,7 @@ selected groups.
 The configuration looks like this:
 
 .. code-block:: php
-   :emphasize-lines: 23-35
+   :emphasize-lines: 21-33
 
 	'usergroup' => array(
 		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
@@ -718,7 +718,7 @@ Clicking the wizard icons opens the Element Browser window:
 Such a wizard can be configured like this:
 
 .. code-block:: php
-   :emphasize-lines: 16-18
+   :emphasize-lines: 10-18
 
 	'header_link' => array(
 		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link',
@@ -731,15 +731,12 @@ Such a wizard can be configured like this:
 			'wizards' => array(
 				'link' => array(
 					'type' => 'popup',
-					'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
+               'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
 					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
 					'module' => array(
-						'name' => 'wizard_element_browser',
-						'urlParameters' => array(
-							'mode' => 'wizard'
-						)
+                  'name' => 'wizard_link',
 					),
-					'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+               'JSopenParams' => 'height=800,width=600,status=0,menubar=0,scrollbars=1'
 				)
 			),
 			'softref' => 'typolink'
