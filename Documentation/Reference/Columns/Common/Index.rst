@@ -219,11 +219,12 @@ search
                             'bodytext' => array(
                                     ...
                                     'config' => array(
-                                            ...
+                                          ...
+                                          'search' => array(
+                                                  'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
+                                          ),
+                                          ...
                                     ),
-                                    'search' => array(
-                                            'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
-                                    )
                             ),
                             ...
                     ),
