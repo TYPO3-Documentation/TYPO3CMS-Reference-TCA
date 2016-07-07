@@ -129,54 +129,54 @@ The configuration looks like this:
 .. code-block:: php
    :emphasize-lines: 21-33
 
-	'usergroup' => array(
-		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
-		'config' => array(
-			'type' => 'select',
-			'foreign_table' => 'be_groups',
-			'foreign_table_where' => 'ORDER BY be_groups.title',
-			'size' => '5',
-			'maxitems' => '20',
-			'wizards' => array(
-				'_VERTICAL' => 1,
-				'edit' => array(
-					'type' => 'popup',
-					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
-					'module' => array(
-						'name' => 'wizard_edit',
-					),
-					'popup_onlyOpenIfSelected' => 1,
-					'icon' => 'actions-open',
-					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
-				),
-				'add' => array(
-					'type' => 'script',
-					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_add_title',
-					'icon' => 'actions-add',
-					'params' => array(
-						'table' => 'be_groups',
-						'pid' => '0',
-						'setValue' => 'prepend'
-					),
-					'module' => array(
-						'name' => 'wizard_add'
-					)
-				),
-				'list' => array(
-					'type' => 'script',
-					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_list_title',
-					'icon' => 'actions-system-list-open',
-					'params' => array(
-						'table' => 'be_groups',
-						'pid' => '0'
-					),
-					'module' => array(
-						'name' => 'wizard_list'
-					)
-				)
-			)
-		)
-	),
+   'usergroup' => array(
+      'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
+      'config' => array(
+         'type' => 'select',
+         'foreign_table' => 'be_groups',
+         'foreign_table_where' => 'ORDER BY be_groups.title',
+         'size' => '5',
+         'maxitems' => '20',
+         'wizards' => array(
+            '_VERTICAL' => 1,
+            'edit' => array(
+               'type' => 'popup',
+               'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
+               'module' => array(
+                  'name' => 'wizard_edit',
+               ),
+               'popup_onlyOpenIfSelected' => 1,
+               'icon' => 'actions-open',
+               'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
+            ),
+            'add' => array(
+               'type' => 'script',
+               'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_add_title',
+               'icon' => 'actions-add',
+               'params' => array(
+                  'table' => 'be_groups',
+                  'pid' => '0',
+                  'setValue' => 'prepend'
+               ),
+               'module' => array(
+                  'name' => 'wizard_add'
+               )
+            ),
+            'list' => array(
+               'type' => 'script',
+               'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_list_title',
+               'icon' => 'actions-system-list-open',
+               'params' => array(
+                  'table' => 'be_groups',
+                  'pid' => '0'
+               ),
+               'module' => array(
+                  'name' => 'wizard_list'
+               )
+            )
+         )
+      )
+   ),
 
 The highlighted lines are related specifically to the Add wizard. Note the
 reference to the :code:`wizard_add` key. The "params" array instructs the Add
@@ -206,26 +206,26 @@ configuration (just the Edit wizard part):
 
 .. code-block:: php
 
-	'usergroup' => array(
-		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
-		'config' => array(
-			...
-			'wizards' => array(
-				...
-				'edit' => array(
-					'type' => 'popup',
-					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
-					'module' => array(
-						'name' => 'wizard_edit',
-					),
-					'popup_onlyOpenIfSelected' => 1,
-					'icon' => 'actions-open',
-					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
-				),
-				...
-			)
-		)
-	),
+   'usergroup' => array(
+      'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
+      'config' => array(
+         ...
+         'wizards' => array(
+            ...
+            'edit' => array(
+               'type' => 'popup',
+               'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_edit_title',
+               'module' => array(
+                  'name' => 'wizard_edit',
+               ),
+               'popup_onlyOpenIfSelected' => 1,
+               'icon' => 'actions-open',
+               'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
+            ),
+            ...
+         )
+      )
+   ),
 
 The wizard is set to type :code:`popup` which makes it so that the selected
 record will open in a new window. There are no parameters to pass
@@ -319,27 +319,27 @@ List-wizard part):
 
 .. code-block:: php
 
-	'usergroup' => array(
-		'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
-		'config' => array(
-			...
-			'wizards' => array(
-				...
-				'list' => array(
-					'type' => 'script',
-					'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_list_title',
-					'icon' => 'actions-system-list-open',
-					'params' => array(
-						'table' => 'be_groups',
-						'pid' => '0'
-					),
-					'module' => array(
-						'name' => 'wizard_list'
-					)
-				)
-			)
-		)
-	),
+   'usergroup' => array(
+      'label' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup',
+      'config' => array(
+         ...
+         'wizards' => array(
+            ...
+            'list' => array(
+               'type' => 'script',
+               'title' => 'LLL:EXT:lang/locallang_tca.xlf:be_users.usergroup_list_title',
+               'icon' => 'actions-system-list-open',
+               'params' => array(
+                  'table' => 'be_groups',
+                  'pid' => '0'
+               ),
+               'module' => array(
+                  'name' => 'wizard_list'
+               )
+            )
+         )
+      )
+   ),
 
 In the "params" array the table and pid passed to the script is set.
 
@@ -374,26 +374,26 @@ The corresponding TCA configuration looks like this:
 
 .. code-block:: php
 
-	'color' => array(
-		'exclude' => 0,
-		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.color',
-		'config' => array(
-			'type' => 'input',
-			'size' => 10,
-			'eval' => 'trim',
-			'wizards' => array(
-				'colorChoice' => array(
-					'type' => 'colorbox',
-					'title' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.colorPick',
-					'module' => array(
-						'name' => 'wizard_colorpicker',
-					),
-					'JSopenParams' => 'height=600,width=380,status=0,menubar=0,scrollbars=1',
-					'exampleImg' => 'EXT:examples/res/images/japanese_garden.jpg',
-				)
-			)
-		)
-	),
+   'color' => array(
+      'exclude' => 0,
+      'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.color',
+      'config' => array(
+         'type' => 'input',
+         'size' => 10,
+         'eval' => 'trim',
+         'wizards' => array(
+            'colorChoice' => array(
+               'type' => 'colorbox',
+               'title' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.colorPick',
+               'module' => array(
+                  'name' => 'wizard_colorpicker',
+               ),
+               'JSopenParams' => 'height=600,width=380,status=0,menubar=0,scrollbars=1',
+               'exampleImg' => 'EXT:examples/res/images/japanese_garden.jpg',
+            )
+         )
+      )
+   ),
 
 Notice the wizard type which is "colorbox".
 
@@ -444,19 +444,19 @@ highlighted):
 .. code-block:: php
    :emphasize-lines: 10-12
 
-	$GLOBALS['TCA']['tt_content']['columns']['bodytext']['config']['wizards']['forms'] = array(
-		'notNewRecords' => 1,
-		'enableByTypeConfig' => 1,
-		'type' => 'script',
-		'title' => 'Form wizard',
-		'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_forms.gif',
-		'module' => array(
-			'name' => 'wizard_form'
-		),
-		'params' => array(
-			'xmlOutput' => 0
-		)
-	);
+   $GLOBALS['TCA']['tt_content']['columns']['bodytext']['config']['wizards']['forms'] = array(
+      'notNewRecords' => 1,
+      'enableByTypeConfig' => 1,
+      'type' => 'script',
+      'title' => 'Form wizard',
+      'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_forms.gif',
+      'module' => array(
+         'name' => 'wizard_form'
+      ),
+      'params' => array(
+         'xmlOutput' => 0
+      )
+   );
 
 This is how it looks in a "mailform" content element:
 
@@ -539,19 +539,19 @@ Content Elements:
 
 .. code-block:: php
 
-	'table' => array(
-		'notNewRecords' => 1,
-		'enableByTypeConfig' => 1,
-		'type' => 'script',
-		'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.table',
-		'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_table.gif',
-		'module' => array(
-			'name' => 'wizard_table'
-		),
-		'params' => array(
-			'xmlOutput' => 0
-		)
-	),
+   'table' => array(
+      'notNewRecords' => 1,
+      'enableByTypeConfig' => 1,
+      'type' => 'script',
+      'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.table',
+      'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_table.gif',
+      'module' => array(
+         'name' => 'wizard_table'
+      ),
+      'params' => array(
+         'xmlOutput' => 0
+      )
+   ),
 
 
 This is how the wizard looks like:
@@ -573,16 +573,16 @@ Content Elements:
 
 .. code-block:: php
 
-	'RTE' => array(
-		'notNewRecords' => 1,
-		'RTEonly' => 1,
-		'type' => 'script',
-		'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
-		'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif',
-		'module' => array(
-			'name' => 'wizard_rte'
-		)
-	),
+   'RTE' => array(
+      'notNewRecords' => 1,
+      'RTEonly' => 1,
+      'type' => 'script',
+      'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
+      'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif',
+      'module' => array(
+         'name' => 'wizard_rte'
+      )
+   ),
 
 
 .. _core-wizards-t3editor:
@@ -603,15 +603,15 @@ enhanced for HTML content elements:
 
 .. code-block:: php
 
-	'bodytext' => array(
-		'label' => 'aLabel',
-		'config' => array(
-			'type' => 'text',
-			'renderType' => 't3editor',
-			'format' => 'html',
-			'rows' => 42,
-		),
-	),
+   'bodytext' => array(
+      'label' => 'aLabel',
+      'config' => array(
+         'type' => 'text',
+         'renderType' => 't3editor',
+         'format' => 'html',
+         'rows' => 42,
+      ),
+   ),
 
 .. note::
 
@@ -720,28 +720,28 @@ Such a wizard can be configured like this:
 .. code-block:: php
    :emphasize-lines: 10-18
 
-	'header_link' => array(
-		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link',
-		'exclude' => 1,
-		'config' => array(
-			'type' => 'input',
-			'size' => '50',
-			'max' => '256',
-			'eval' => 'trim',
-			'wizards' => array(
-				'link' => array(
-					'type' => 'popup',
+   'header_link' => array(
+      'label' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link',
+      'exclude' => 1,
+      'config' => array(
+         'type' => 'input',
+         'size' => '50',
+         'max' => '256',
+         'eval' => 'trim',
+         'wizards' => array(
+            'link' => array(
+               'type' => 'popup',
                'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
-					'module' => array(
+               'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
+               'module' => array(
                   'name' => 'wizard_link',
-					),
+               ),
                'JSopenParams' => 'height=800,width=600,status=0,menubar=0,scrollbars=1'
-				)
-			),
-			'softref' => 'typolink'
-		)
-	),
+            )
+         ),
+         'softref' => 'typolink'
+      )
+   ),
 
 Notice how the wizard requires an extra parameter
 (highlighted lines) since it has to return content back to the input field
