@@ -198,17 +198,17 @@ search
 
             $TCA['tt_content'] = array(
                // ...
-                    'columns' => array(
+               'columns' => array(
                   // ...
-                            'bodytext' => array(
+                  'bodytext' => array(
                      // ...
-                                    'config' => array(
-                                            ...
-                                    'search' => array(
-                                            'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
-                            ),
+                     'config' => array(
                         // ...
-                    ),
+                        'search' => array(
+                           'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
+                        ),
+                        // ...
+                     ),
                   ),
                   // ...
                ),
