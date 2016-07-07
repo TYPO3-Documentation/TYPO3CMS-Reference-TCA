@@ -729,19 +729,16 @@ Such a wizard can be configured like this:
 			'max' => '256',
 			'eval' => 'trim',
 			'wizards' => array(
-				'link' => array(
-					'type' => 'popup',
-					'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
-					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
-					'module' => array(
-						'name' => 'wizard_element_browser',
-						'urlParameters' => array(
-							'mode' => 'wizard'
-						)
-					),
-					'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
-				)
-			),
+	                    'link' => array(
+	                        'type' => 'popup',
+	                        'title' => 'Link',
+	                        'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
+	                        'module' => array(
+	                            'name' => 'wizard_link',
+	                        ),
+	                        'JSopenParams' => 'height=800,width=600,status=0,menubar=0,scrollbars=1'
+	                    )
+	                )
 			'softref' => 'typolink'
 		)
 	),
