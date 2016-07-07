@@ -731,7 +731,7 @@ Such a wizard can be configured like this:
 			'wizards' => array(
 	                    'link' => array(
 	                        'type' => 'popup',
-	                        'title' => 'Link',
+	                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
 	                        'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
 	                        'module' => array(
 	                            'name' => 'wizard_link',
