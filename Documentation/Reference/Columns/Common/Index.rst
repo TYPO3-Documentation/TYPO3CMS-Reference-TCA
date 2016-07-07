@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../Includes.txt
+﻿.. include:: ../../../Includes.txt
 
 
 .. _columns-common:
@@ -13,13 +8,6 @@ Common column properties
 
 There are a number of properties which are common to all field types.
 They are described below.
-
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
 
 
 .. _columns-common-properties:
@@ -44,13 +32,6 @@ Properties
 
 Property details
 """"""""""""""""
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
 
 .. _columns-common-properties-type:
 
@@ -236,26 +217,25 @@ search
 
          **Example:**
 
-         The "tt\_content" table has the following definition:
-
-         .. code-block:: php
+         The "tt\_content" table has the following definition::
 
             $TCA['tt_content'] = array(
-                    ...
+               // ...
                     'columns' => array(
-                            ...
+                  // ...
                             'bodytext' => array(
-                                    ...
+                     // ...
                                     'config' => array(
                                             ...
-                                    ),
                                     'search' => array(
                                             'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
-                                    )
                             ),
-                            ...
+                        // ...
                     ),
-                    ...
+                  ),
+                  // ...
+               ),
+               // ...
             );
 
          This means that the "bodytext" field of the "tt\_content" table will
