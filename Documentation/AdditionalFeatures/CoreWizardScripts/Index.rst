@@ -738,7 +738,7 @@ Such a wizard can be configured like this:
 	                        ),
 	                        'JSopenParams' => 'height=800,width=600,status=0,menubar=0,scrollbars=1'
 	                    )
-	                )
+	                ),
 			'softref' => 'typolink'
 		)
 	),
