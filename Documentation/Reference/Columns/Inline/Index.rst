@@ -536,7 +536,7 @@ foreign\_record\_defaults
    This property makes it possible to set default values for the
    foreign records created via the inline relation.
 
-:aspect:`:`
+:aspect:`Example:`
    ::
 
       'foreign_table' => 'tt_content',
