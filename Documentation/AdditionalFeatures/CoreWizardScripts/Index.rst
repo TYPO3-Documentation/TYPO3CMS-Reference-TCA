@@ -577,10 +577,10 @@ Content Elements:
       'notNewRecords' => 1,
       'RTEonly' => 1,
       'type' => 'script',
-      'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
+      'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
       'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif',
       'module' => array(
-         'name' => 'wizard_rte'
+          'name' => 'wizard_rte'
       )
    ),
 
