@@ -416,7 +416,7 @@ displayCond
 
          .. code-block:: php
 
-				'displayCond' ==> array(
+				'displayCond' => array(
 					'AND' => array(
 						'FIELD:sys_language_uid:<=:0',
 						'OR' => array(
