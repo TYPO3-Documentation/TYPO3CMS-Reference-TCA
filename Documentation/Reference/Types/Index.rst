@@ -264,8 +264,10 @@ columnsOverrides
 					'showitem' => 'hidden, myText'
 					'columnsOverrides' => array(
 						'myText' => array(
-							'defaultExtras' => 'nowrap',
-							'rows' => '__UNSET',
+							'config' => array(
+								'defaultExtras' => 'nowrap',
+								'rows' => '__UNSET',
+							),
 						),
 					),
 				),
