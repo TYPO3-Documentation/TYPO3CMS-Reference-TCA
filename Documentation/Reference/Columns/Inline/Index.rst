@@ -29,6 +29,10 @@ backend view.
    new child records. Thus, it's possible to have special storage folders
    on a per-table-basis. See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
 
+.. note::
+
+   For using FAL references it is recommended to make use of `getFileFieldTCAConfig()` in 
+   `TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility` *(since TYPO3 6.0)*.
 
 .. only:: html
 
