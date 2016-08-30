@@ -135,12 +135,12 @@ items
 
          - Second value is the  **value of the item** .
 
-         - The special value `--div--` is used to insert a non-selectable value
-           that appears as a divider label in the selector box (only for maxitems
-           <=1)
+         	- The special value `--div--` is used to insert a non-selectable value
+           	  that appears as a divider label in the selector box (only for maxitems
+           	  <=1)
 
-         - Values must not contain "," (comma) and "\|" (vertical bar). If you
-           want to use "authMode" you should also refrain from using ":" (colon).
+	        - Values must not contain "," (comma) and "\|" (vertical bar). If you
+	          want to use "authMode" you should also refrain from using ":" (colon).
 
          - Third value is an optional icon. Default path is
            :file:`typo3/sysext/t3skin/icons/gfx/` but is deprecated since TYPO3 CMS 7,
