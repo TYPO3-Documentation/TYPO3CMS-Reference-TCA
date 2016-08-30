@@ -131,30 +131,30 @@ items
 
          Each element in this array is in itself an array where:
 
-         - First value is the  **item label** (string or LLL reference)
+         -  First value is the  **item label** (string or LLL reference)
 
-         - Second value is the  **value of the item** .
+         -  Second value is the  **value of the item** .
 
-         - The special value `--div--` is used to insert a non-selectable value
-           that appears as a divider label in the selector box (only for maxitems
-           <=1)
+            *  The special value `--div--` is used to insert a non-selectable value
+               that appears as a divider label in the selector box (only for maxitems
+               <=1)
 
-         - Values must not contain "," (comma) and "\|" (vertical bar). If you
-           want to use "authMode" you should also refrain from using ":" (colon).
+            *  Values must not contain "," (comma) and "\|" (vertical bar). If you
+               want to use "authMode" you should also refrain from using ":" (colon).
 
-         - Third value is an optional icon. Default path is
-           :file:`typo3/sysext/t3skin/icons/gfx/` but is deprecated since TYPO3 CMS 7,
-           and will be removed with TYPO3 CMS 8.
-           For custom icons use a path prepended with "EXT:" to refer to an image
-           file found inside an extension or use an registered icon identifier.
+         -  Third value is an optional icon. Default path is
+            :file:`typo3/sysext/t3skin/icons/gfx/` but is deprecated since TYPO3 CMS 7,
+            and will be removed with TYPO3 CMS 8.
+            For custom icons use a path prepended with "EXT:" to refer to an image
+            file found inside an extension or use an registered icon identifier.
 
-         - Fourth value is an optional description text. This is only shown when
-           the list is shown by `renderType`_ `selectCheckBox`.
+         -  Fourth value is an optional description text. This is only shown when
+            the list is shown by `renderType`_ `selectCheckBox`.
 
-         - Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
-           option "authMode" / "individual" for more details.
+         -  Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
+            option "authMode" / "individual" for more details.
 
-        .. note::
+         .. note::
 
             Usage of path in the third property is deprecated.
             For custom icons use a path prepended with "EXT:" to refer to an image file
@@ -165,20 +165,20 @@ items
 
          A configuration could look like this::
 
-                'type' => 'select',
-                'items' => array(
-                    array('English', ''),
-                    array('Danish', 'dk'),
-                    array('German', 'de'),
-                )
+            'type' => 'select',
+            'items' => array(
+               array('English', ''),
+               array('Danish', 'dk'),
+               array('German', 'de'),
+            )
 
          A more complex example could be this (includes icons)::
 
             'type' => 'select',
             'items' => array(
-                array('LLL:EXT:cms/locallang_ttc.php:k1', 0, 'EXT:myext/Resources/Public/selicons/k1.gif'),
-                array('LLL:EXT:cms/locallang_ttc.php:k2', 1, 'tx-myext-selicons-k2'),
-                array('LLL:EXT:cms/locallang_ttc.php:k3', 2, 'tx-myext-selicons-k3'),
+               array('LLL:EXT:cms/locallang_ttc.php:k1', 0, 'EXT:myext/Resources/Public/selicons/k1.gif'),
+               array('LLL:EXT:cms/locallang_ttc.php:k2', 1, 'tx-myext-selicons-k2'),
+               array('LLL:EXT:cms/locallang_ttc.php:k3', 2, 'tx-myext-selicons-k3'),
             )
 
    Scope
