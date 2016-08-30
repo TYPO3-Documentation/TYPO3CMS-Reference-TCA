@@ -636,10 +636,6 @@ typeicon_classes
 
          .. tip::
 
-            The best way to view all available icons and their corresponding
-            class names is to use extension "extdeveval", choose the function
-            "Sprite Management" and click on "Available sprite icons".
-
             To register your own icons with the global backend sprite, use
             method :code:`\TYPO3\CMS\Backend\Sprite\SpriteManager::addSingleIcons()`.
 
