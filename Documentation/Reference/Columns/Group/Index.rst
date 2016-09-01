@@ -253,6 +253,10 @@ filter
 
          Define filters for item values.
 
+	.. note::
+
+            Does't work in combination with a wizard.
+
          This is useful when only foreign records matching certain criteria
          should be allowed to be used as values in the group field.
          The values are filtered in the Element Browser as well as during processing in TCEMain.
