@@ -75,13 +75,13 @@ looks like this:
 						'name' => 'wizard_edit',
 					),
 					'popup_onlyOpenIfSelected' => 1,
-					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif',
+					'icon' => 'actions-open',
 					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
 				),
 				'add' => array(
 					'type' => 'script',
 					'title' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template.basedOn_add',
-					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif',
+					'icon' => 'actions-add',
 					'params' => array(
 						'table' => 'sys_template',
 						'pid' => '###CURRENT_PID###',

@@ -159,6 +159,8 @@ showIfRTE
          If set, this field will show *only* if the RTE editor is enabled
          (which includes correct browser version and user-rights altogether.)
 
+         This property is deprecated since TYPO3 v8.
+
    Scope
          Display
 
