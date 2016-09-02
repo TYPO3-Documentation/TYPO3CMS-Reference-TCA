@@ -40,7 +40,6 @@ Properties
    `allowNonIdValues`_                       boolean
    `authMode\_enforce`_                      string
    `authMode`_                               string
-   `autoSizeMax`_                            integer
    `default`_                                string
    `disableNoMatchingValueElement`_          boolean
    `dontRemapTablesOnCopy`_                  string
@@ -923,31 +922,6 @@ size
 
 
 
-.. _columns-select-properties-autosizemax:
-
-autoSizeMax
-~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         autoSizeMax
-
-   Datatype
-         integer
-
-   Description
-         If set, then the height of multiple-item selector boxes (maxitems > 1)
-         will automatically be adjusted to the number of selected elements,
-         however never less than "size" and never larger than the integer value
-         of "autoSizeMax" itself (takes precedence over "size"). So
-         "autoSizeMax" is the maximum height the selector can ever reach.
-
-   Scope
-         Display
-
-
-
 .. _columns-select-properties-selectedliststyle:
 
 selectedListStyle
@@ -1080,11 +1054,6 @@ treeConfig
            - **nonSelectableLevels (list, default "0")** : Comma-separated list of
              levels that will not be selectable, by default the root node (which is
              "0") cannot be selected
-
-           - **allowRecursiveMode (boolean)** : If set to `true`, the selection
-             of a node will trigger the selection of all child nodes too (recursively).
-
-           - **width** *(since TYPO3 CMS 6.0)*: Set a custom width of the tree select field in pixels.
 
    Scope
          Display
@@ -1689,7 +1658,6 @@ wizards are not exclusively available for selector boxes!):
 			'foreign_table_where' => ' AND sys_filemounts.pid=0 ORDER BY sys_filemounts.title',
 			'size' => '3',
 			'maxitems' => 25,
-			'autoSizeMax' => 10,
 			'wizards' => array(
 				'_VERTICAL' => 1,
 				'edit' => array(
@@ -1738,10 +1706,6 @@ See the :ref:`wizards section <wizards>` for more information.
 
    The file mount selector with add, edit and list wizards
 
-Notice the configuration of :ref:`autoSizeMax <columns-select-properties-autosizemax>`.
-This value will make the height of the selector boxes adjust themselves automatically depending
-on the content in them.
-
 
 .. _columns-select-examples-mm:
 
@@ -1772,7 +1736,6 @@ is installed).
 		'fieldname' => 'categories',
 	),
 	'size' => 10,
-	'autoSizeMax' => 50,
 	'maxitems' => 9999,
 	'renderType' => 'selectTree',
 	'treeConfig' => array(
