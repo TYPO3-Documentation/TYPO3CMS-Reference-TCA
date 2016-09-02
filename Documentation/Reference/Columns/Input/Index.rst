@@ -304,7 +304,7 @@ eval
    class with three functions, one which returns the JavaScript code for
    client side validation called `returnFieldJS()` and two for the server 
    side: `deevaluateFieldValue()` called when opening the record and 
-   `deevaluateFieldValue()` called for validation when saving the record.
+   `evaluateFieldValue()` called for validation when saving the record.
 
    **Example:**
 
@@ -324,12 +324,12 @@ eval
       	 */
       	public function returnFieldJS() {
       		return '
-      			return value + " [added by JavaScript]"
+      			return value + " [added by JavaScript on field blur]"
       		';
       	}
       
       	/**
-      	 * Server-side validation/evaluation when saving the record
+      	 * Server-side validation/evaluation on saving the record
       	 *
       	 * @param string $value The field value to be evaluated
       	 * @param string $is_in The "is_in" value of the field configuration from TCA
@@ -337,17 +337,17 @@ eval
       	 * @return string Evaluated field value
       	 */
       	public function evaluateFieldValue($value, $is_in, &$set) {
-      		return $value . ' [added by PHP when saving the record]';
+      		return $value . ' [added by PHP on saving the record]';
       	}
       
       	/**
-      	 * Server-side validation/evaluation when opening the record
+      	 * Server-side validation/evaluation on opening the record
       	 *
       	 * @param array $parameters Array with key 'value' containing the field value from the database
-      	 * @return string
+      	 * @return string Evaluated field value
       	 */
       	public function deevaluateFieldValue(array $parameters) {
-      		return $parameters['value'] .  [added by PHP when opening the record]';
+      		return $parameters['value'] .  [added by PHP on opening the record]';
       	}
       
       }
@@ -368,7 +368,7 @@ eval
    				'eval' => 'trim,Vendor\\Extension\\Evaluation\\ExampleEvaluation,required'
    			]
    		],
-		],
+	],
 
 :aspect:`Scope:`
    Display / Proc.
