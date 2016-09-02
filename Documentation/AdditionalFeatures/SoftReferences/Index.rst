@@ -69,7 +69,7 @@ images
          images
 
    Description
-         HTML :code:`<img>` tags for RTE images / images from :file:`fileadmin/`.
+         HTML :code:`<img>` tags for RTE images / images from :file:`upload/`.
 
 
 
@@ -101,37 +101,6 @@ typolink\_tag
 
    Description
          As typolink, but searching for a :code:`<link>` tag encapsulating it.
-
-
-
-.. _soft-references-default-parsers-tsconfig:
-
-TSconfig
-~~~~~~~~
-
-.. container:: table-row
-
-   softref key
-         TSconfig
-
-   Description
-         References to files.
-
-
-
-.. _soft-references-default-parsers-tstemplate:
-
-TStemplate
-~~~~~~~~~~
-
-.. container:: table-row
-
-   softref key
-         TStemplate
-
-   Description
-         Free text references to "fileadmin/" files. HTML resource links like
-         :code:`<a>`, :code:`<img>`, :code:`<form>`.
 
 
 
@@ -193,8 +162,6 @@ The default set up is found in :file:`typo3/sysext/core/Configuration/DefaultCon
 				'images' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'typolink' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'typolink_tag' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
-				'TSconfig' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
-				'TStemplate' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'ext_fileref' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'email' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'url' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
