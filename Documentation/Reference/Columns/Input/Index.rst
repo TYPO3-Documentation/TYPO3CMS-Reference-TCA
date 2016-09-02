@@ -270,7 +270,7 @@ eval
       Evaluates the input to a year between 1970 and 2038. If you
       need any year, then use "int" evaluation instead.
 
-   *
+   Vendor\\Extension\\*
       User defined form evaluations. See below.
 
 
