@@ -278,7 +278,7 @@ eval
    the functions found in the script :file:`typo3/sysext/backend/Resources/Public/JavaScript/jsfunc.evalfield.js`.
 
    "(TCE)" means the evaluation is done in the TCE on the server. The class used for this is
-   :ref:`TYPO3\CMS\Core\DataHandling\DataHandler <t3api:TYPO3\\CMS\\Core\\DataHandling\\DataHandler>`.
+   :ref:`TYPO3\\CMS\\Core\\DataHandling\\DataHandler <t3api:TYPO3\\CMS\\Core\\DataHandling\\DataHandler>`.
 
 :aspect:`Examples:`
 
@@ -347,7 +347,7 @@ eval
           * @return string Evaluated field value
           */
          public function deevaluateFieldValue(array $parameters) {
-            return $parameters['value'] .  [added by PHP on opening the record]';
+            return $parameters['value'] . ' [added by PHP on opening the record]';
          }
 
       }
