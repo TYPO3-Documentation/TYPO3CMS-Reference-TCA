@@ -245,9 +245,6 @@ eval
       The value in the field will have white spaces around it
       trimmed away.
 
-   tx\_\*
-      User defined form evaluations. See below.
-
    unique
       Requires the field to be unique for the *whole* table.
       (Evaluated on the server only).
@@ -272,6 +269,9 @@ eval
    year
       Evaluates the input to a year between 1970 and 2038. If you
       need any year, then use "int" evaluation instead.
+
+   Vendor\\Extension\\*
+      User defined form evaluations. See below.
 
 
    All the above evaluations (unless noted) are done by JavaScript with
@@ -301,42 +301,74 @@ eval
 
 :aspect:`User-defined form evaluations:`
    You can supply your own form evaluations in an extension by creating a
-   class with two functions, one which returns the JavaScript code for
-   client side validation called `returnFieldJS()` and one which does the
-   server side validation called `evaluateFieldValue()`.
-
-   The function `evaluateFieldValue()` has three arguments:
-
-   - `$value`:The field value to be evaluated
-
-   - `$is\_in`: The "is\_in" value of the field configuration from TCA
-     (see below)
-
-   - `&$set`: Boolean defining if the value is written to the database
-     or not. Must be passed by reference and changed if needed.
+   class with three functions, one which returns the JavaScript code for
+   client side validation called `returnFieldJS()` and two for the server
+   side: `deevaluateFieldValue()` called when opening the record and
+   `evaluateFieldValue()` called for validation when saving the record.
 
    **Example:**
 
-   :file:`class.tx_exampleextraevaluations_extraeval1.php`::
+   :file:`EXT:extension/Classes/Evaluation/ExampleEvaluation.php`::
 
-      class tx_exampleextraevaluations_extraeval1 {
+      namespace Vendor\Extension\Evaluation;
 
-         function returnFieldJS() {
+      /**
+       * Class for field value validation/evaluation to be used in 'eval' of TCA
+       */
+      class ExampleEvaluation {
+
+         /**
+          * JavaScript code for client side validation/evaluation
+          *
+          * @return string JavaScript code for client side validation/evaluation
+          */
+         public function returnFieldJS() {
             return '
-               return value + " [added by JS]";
+               return value + " [added by JavaScript on field blur]"
             ';
          }
-         function evaluateFieldValue($value, $is_in, &$set) {
-            return $value . ' [added by PHP]';
+
+         /**
+          * Server-side validation/evaluation on saving the record
+          *
+          * @param string $value The field value to be evaluated
+          * @param string $is_in The "is_in" value of the field configuration from TCA
+          * @param bool $set Boolean defining if the value is written to the database or not. Must be passed by reference and changed if needed.
+          * @return string Evaluated field value
+          */
+         public function evaluateFieldValue($value, $is_in, &$set) {
+            return $value . ' [added by PHP on saving the record]';
          }
+
+         /**
+          * Server-side validation/evaluation on opening the record
+          *
+          * @param array $parameters Array with key 'value' containing the field value from the database
+          * @return string Evaluated field value
+          */
+         public function deevaluateFieldValue(array $parameters) {
+            return $parameters['value'] .  [added by PHP on opening the record]';
+         }
+
       }
 
-   :file:`ext_localconf.php`::
 
-      // here we register "tx_exampleextraevaluations_extraeval1"
-      $TYPO3_CONF_VARS['SC_OPTIONS']['tce']['formevals']
-         ['tx_exampleextraevaluations_extraeval1'] =
-         'EXT:example_extraevaluations/class.tx_exampleextraevaluations_extraeval1.php';
+   :file:`EXT:extension/ext_localconf.php`::
+
+      // Register the class to be available in 'eval' of TCA
+      $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']['Vendor\\Extension\\Evaluation\\ExampleEvaluation'] = '';
+
+
+   :file:`EXT:extension/Configuration/TCA/tx_example_record.php`::
+
+      'columns' => [
+         'example_field' => [
+            'config' => [
+               'type' => 'input',
+               'eval' => 'trim,Vendor\\Extension\\Evaluation\\ExampleEvaluation,required'
+            ]
+         ],
+      ],
 
 :aspect:`Scope:`
    Display / Proc.
