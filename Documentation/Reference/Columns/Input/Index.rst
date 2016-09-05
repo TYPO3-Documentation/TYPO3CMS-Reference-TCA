@@ -324,7 +324,7 @@ eval
           */
          public function returnFieldJS() {
             return '
-               return value + " [added by JavaScript on field blur]"
+               return value + " [added by JavaScript on field blur]";
             ';
          }
 
