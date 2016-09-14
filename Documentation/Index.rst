@@ -77,11 +77,12 @@ address the task at hand.
 
 **Table of Contents**
 
-.. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
+Please visit the :ref:`Sitemap`.
 
+.. toctree::
+   :hidden:
+
+   Sitemap/Index
    Introduction/Index
    WhatIsTca/Index
    Reference/Index
