@@ -368,6 +368,33 @@ foreign\_table
 
 .. _columns-group-properties-mm:
 
+foreign\_table
+~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         foreign\_table
+
+   Datatype
+         string
+
+         (table name)
+
+   Description
+         The item-array will be filled with records from the table defined
+         here. The table must be configured in :code:`$TCA`.
+
+         Though not needed for the backend (:code:`$TCA`), this option needs to be
+         set if you need to resolve the relationship with Extbase persistence.
+
+   Scope
+         Proc. / Display
+
+
+
+.. _columns-select-properties-foreign-table-where:
+
 MM
 ~~
 
