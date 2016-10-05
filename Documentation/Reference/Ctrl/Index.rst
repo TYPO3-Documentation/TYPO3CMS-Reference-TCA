@@ -1739,6 +1739,10 @@ languageField
          The field name pointed to should be a single value selector box
          (maxitems <=1) saving its value into an integer field in the database.
 
+         Also see the :ref:`Frontend Localization Guide <t3l10n:core-support-tca>`
+         for a discussion about the effects of this property (and other TCA
+         properties) on the localization process.
+
    Scope
          Proc. / Display
 
