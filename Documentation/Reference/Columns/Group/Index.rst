@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../Includes.txt
+﻿.. include:: ../../../Includes.txt
 
 
 .. _columns-group:
@@ -57,7 +52,7 @@ Properties
    `MM\_insert\_fields`_     array
    `MM\_match\_fields`_      array
    `MM\_opposite\_field`_    string
-   `MM\_opposite\_usage`_    array
+   `MM\_oppositeUsage`_      array
    `MM\_table\_where`_       string
    `multiple`_               boolean
    `prepend\_tname`_         boolean
@@ -258,6 +253,10 @@ filter
 
          Define filters for item values.
 
+	.. note::
+
+         Does't work in combination with a wizard.
+
          This is useful when only foreign records matching certain criteria
          should be allowed to be used as values in the group field.
          The values are filtered in the Element Browser as well as during processing in TCEMain.
@@ -360,7 +359,7 @@ foreign\_table
          as property :ref:`allowed <columns-group-properties-allowed>`. Notice that
          only one table name is allowed here in contrast to the property
          :ref:`allowed <columns-group-properties-allowed>` itself.
-            
+
 
    Scope
          Proc. / Display
@@ -456,19 +455,19 @@ MM\_match\_fields
 
 .. _columns-group-properties-mm-opposite-usage:
 
-MM\_opposite\_usage
-~~~~~~~~~~~~~~~~~~~
+MM\_oppositeUsage
+~~~~~~~~~~~~~~~~~
 
 .. container:: table-row
 
    Key
-         MM\_opposite\_usage
+         MM\_oppositeUsage
 
    Datatype
          array
 
    Description
-         See :ref:`MM\_opposite\_usage property of select-type fields <columns-select-properties-mm-opposite-usage>`.
+         See :ref:`MM\_oppositeUsage property of select-type fields <columns-select-properties-mm-opposite-usage>`.
 
    Scope
          Proc.
@@ -806,6 +805,24 @@ minitems
 
    Scope
          Display / Proc?
+
+
+
+.. _columns-group-properties-hideMoveIcons:
+
+hideMoveIcons
+~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         hideMoveIcons
+
+   Datatype
+         boolean
+
+   Description
+         Removes the move icons next to the selector box.
 
 
 
@@ -1161,7 +1178,7 @@ _01.jpg":
 API for getting the reference list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Class :ref:`TYPO3\\CMS\\Core\\Database\\RelationHandler <t3cmsapi:TYPO3\\CMS\\Core\\Database\\RelationHandler>`
+Class :ref:`TYPO3\\CMS\\Core\\Database\\RelationHandler <t3api:TYPO3\\CMS\\Core\\Database\\RelationHandler>`
 is designed to transform the stored reference list values into an array where all uids are paired
 with the right table name. Also, this class will automatically
 retrieve the list of MM relations. In other words, it provides an API
@@ -1180,7 +1197,12 @@ particular this is important for database records. Passing the list
 "26,45,49,1" will not give TCEforms a chance to render the titles of
 the records.
 
-Class :ref:`TYPO3\\CMS\\Backend\\Form\\DataPreprocessor <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\DataPreprocessor>`
+.. todo:: Undefined:
+
+   t3cmsapi:typo3\\cms\\backend\\form\\datapreprocessor
+
+
+Class :ref:`TYPO3\\CMS\\Backend\\Form\\DataPreprocessor <t3api:TYPO3\\CMS\\Backend\\Form\\DataPreprocessor>`
 is doing such transformations (among other things) and this is how the transformation happens:
 
 +-----------+----------------------------------+------------------------------------------------------------------+

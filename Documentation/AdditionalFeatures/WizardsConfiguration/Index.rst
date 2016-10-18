@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _wizards:
@@ -80,13 +75,13 @@ looks like this:
 						'name' => 'wizard_edit',
 					),
 					'popup_onlyOpenIfSelected' => 1,
-					'icon' => 'edit2.gif',
+					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif',
 					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
 				),
 				'add' => array(
 					'type' => 'script',
 					'title' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template.basedOn_add',
-					'icon' => 'add.gif',
+					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif',
 					'params' => array(
 						'table' => 'sys_template',
 						'pid' => '###CURRENT_PID###',
@@ -1062,7 +1057,13 @@ receiverClass
 
    Description
          PHP class alternative receiver class. Must extend
-         :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver>`.
+         :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver <t3api:TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver>`.
+
+         .. todo:: Undefined label!
+
+            Is it TYPO3\\CMS\\Backend\\Form\\Wizard\\SuggestWizardDefaultReceiver now?
+
+         .. mb, 2015-11-10
 
 
 

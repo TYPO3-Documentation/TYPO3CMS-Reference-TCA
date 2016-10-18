@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _types:
@@ -64,7 +59,7 @@ Let's look at the "tx_examples_dummy" table from the "examples" extension. The
 		'enablecolumns' => array(
 			'disabled' => 'hidden',
 		),
-		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('examples') . 'Resources/Public/Images/Dummy.png',
+		'iconfile' => 'EXT:examples/Resources/Public/Images/Dummy.png',
 	),
 
 The highlighted line indicates that the field called "record\_type" will
@@ -269,8 +264,10 @@ columnsOverrides
 					'showitem' => 'hidden, myText'
 					'columnsOverrides' => array(
 						'myText' => array(
-							'defaultExtras' => 'nowrap',
-							'rows' => '__UNSET',
+							'config' => array(
+								'defaultExtras' => 'nowrap',
+								'rows' => '__UNSET',
+							),
 						),
 					),
 				),

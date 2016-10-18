@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _ctrl:
@@ -42,6 +37,7 @@ Reference
    `cruser\_id`_                        string
    `default\_sortby`_                   string
    `delete`_                            string
+   `descriptionColumn`_                 string
    `editlock`_                          string
    `enablecolumns`_                     array
    `EXT[extension\_key]`_               array
@@ -85,7 +81,6 @@ Reference
    `type`_                              string
    `typeicon\_column`_                  string
    `typeicon_classes`_                  array
-   `typeicons`_                         array
    `useColumnsForDefaultValues`_        string
    `versioning\_followPages`_           boolean
    `versioningWS`_                      boolean
@@ -137,7 +132,7 @@ title
          .. code-block:: php
 
             'ctrl' => array(
-            	'title' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template',
+            	'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:sys_template',
 
          In the above example the :code:`LLL:` prefix tells the system to look up a
          label from a localized file. The next prefix code:`EXT:cms` will look for
@@ -397,7 +392,7 @@ formattedLabel\_userFunc
 				)
 			),
 
-         See class :ref:`TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService <t3cmsapi:TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService>`
+         See class :ref:`TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService <t3api:TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService>`
          for how such a user function should be designed and how the options are used.
 
    Scope
@@ -568,33 +563,17 @@ iconfile
    Description
          Pointing to the icon file to use for the table.
 
-         Icons should be dimensioned 16x16 pixels and of GIF or PNG file
-         type.
+         Icons should be square SVGs. In case you cannot supply a SVG you can still
+         use a PNG file of 64x64 pixels in dimension.
 
-         The value of the option can be any of these:
-
-         - **If there is a slash ( / ) in the value:** It must be a relative file
-           path pointing to the icon file relative to the typo3/ (admin) folder.
-           You may start that path with '../' if you like to get your icon from a
-           folder in the PATH\_site path.
-
-         - **If there is just a filename:** It must exist in the "typo3/gfx/i/"
-           folder.
-
-         - **If empty/not given:** The default icon for a table is defined as
-           "gfx/i/[table\_name].gif". (This is an obsolete approach to use since
-           the content of the "gfx/i/" folder should not be changed.)
-
-         - For extensions, see example below.
-
-         **Example: How to assign an icon from an extension**
+         **Example usage**
 
          For haikus from the "examples" extension, the icon is defined this
          way:
 
          .. code-block:: php
 
-            'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('examples') . 'Resources/Public/Images/Haiku.png',
+            'iconfile' => 'EXT:examples/Resources/Public/Images/Haiku.svg',
 
    Scope
          Display
@@ -621,8 +600,7 @@ typeicon\_column
          (The default icon is the one defined with the 'iconfile' value.)
 
          The values in the field referenced by this property must match entries
-         in the array defined either in the :ref:`typeicon <ctrl-reference-typeicons>`
-         or :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`
+         in the array defined in :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`
          properties. If no match is found, the default icon is used.
 
          .. note::
@@ -631,34 +609,6 @@ typeicon\_column
             the :code:`$PAGES_TYPES` array.
 
          See example in the related :ref:`typeicon_classes <ctrl-reference-typeicon-classes>` feature.
-
-   Scope
-         Display
-
-
-
-.. _ctrl-reference-typeicons:
-
-typeicons
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         typeicons
-
-   Datatype
-         array
-
-   Description
-         Array of icons to use for the records. The keys must correspond
-         to the values found in the column referenced in the
-         :ref:`typeicon_column <ctrl-reference-typeicon-column>` property.
-
-         .. note::
-
-            Usage of this property is deprecated, please favor
-            :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`.
 
    Scope
          Display
@@ -685,10 +635,6 @@ typeicon_classes
          The class names correspond to the backend's sprite icons.
 
          .. tip::
-
-            The best way to view all available icons and their corresponding
-            class names is to use extension "extdeveval", choose the function
-            "Sprite Management" and click on "Available sprite icons".
 
             To register your own icons with the global backend sprite, use
             method :code:`\TYPO3\CMS\Backend\Sprite\SpriteManager::addSingleIcons()`.
@@ -1257,7 +1203,27 @@ delete
    Scope
          Proc. / Display
 
+.. _ctrl-reference-descriptionColumn:
 
+descriptionColumn
+~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         descriptionColumn
+
+   Datatype
+         string
+
+         (field name)
+
+   Description
+         Field name where description of a record is stored in.
+
+         This description is only displayed in the backend to guide editors and admins.
+   Scope
+         Display
 
 .. _ctrl-reference-enablecolumns:
 
@@ -1773,6 +1739,10 @@ languageField
          The field name pointed to should be a single value selector box
          (maxitems <=1) saving its value into an integer field in the database.
 
+         Also see the :ref:`Frontend Localization Guide <t3l10n:core-support-tca>`
+         for a discussion about the effects of this property (and other TCA
+         properties) on the localization process.
+
    Scope
          Proc. / Display
 
@@ -2122,97 +2092,6 @@ versioning\_followPages
 
 
 
-dividers2tabs
-~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         dividers2tabs
-
-   Datatype
-         integer
-
-   Description
-         This key defines the activation of tabs, according to the following
-         values:
-
-         0: disabled (default)
-
-         1: activated, empty tabs are removed
-
-         2: activated, empty tabs are disabled
-
-         When tabs are activated, the special field name :code:`--div--` used in the
-         types configuration will be interpreted as starting a new tab in a
-         tab-menu for the record. The second part after :code:`--div--` is the title
-         of the tab.
-
-         If you place a :code:`--div--` field as the very first element in the types
-         configuration it will just be used to set the title of the first tab
-         (which is by default "General").
-
-         **Example:**
-
-         The :code:`['ctrl']` section of table "tt\_content" contains the following:
-
-         .. code-block:: php
-
-			'ctrl' => array(
-				...
-				'transForeignTable' => 'pages_language_overlay',
-				...
-			),
-
-         Then the types make use of :code:`--div--` fields. Example for the
-         "text"-type (usage of :code:`--div--` is highlighted):
-
-         .. code-block:: php
-            :emphasize-lines: 8,11,14
-
-         	'types' => array(
-         		...
-         		'text' => array(
-         			'showitem' => '--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.general;general,
-         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.header;header,
-         					bodytext;LLL:EXT:cms/locallang_ttc.xlf:bodytext_formlabel;;
-         					richtext:rte_transform[mode=ts_css],
-         					rte_enabled;LLL:EXT:cms/locallang_ttc.xlf:rte_enabled_formlabel,
-         					--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.appearance,
-         						--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.frames;frames,
-         						--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.textlayout;textlayout,
-         				--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,
-         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.visibility;visibility,
-         					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.access;access,
-         				--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.extended'
-         		),
-         		...
-         	),
-
-         This will render a tab menu for the record where the fields are
-         distributed on the various tabs:
-
-         .. figure:: ../../Images/CtrlDivider2TabsGeneralTab.png
-            :alt: Tabs for content element, first tab activated
-
-            The tabs for a text-type content element, with the "General" tab activated
-
-         Here another tab is activated and another part of the form is shown:
-
-         .. figure:: ../../Images/CtrlDivider2TabsAppearanceTab.png
-            :alt: Tabs for content element, second tab activated
-
-            The same text-type content element, with the "Appearance" tab activated
-
-         .. note::
-
-            Usage of tabs is recommended for improved usability.
-
-   Scope
-         Display
-
-
-
 .. _ctrl-reference-security:
 
 security
@@ -2406,7 +2285,7 @@ Similarly for the "tt\_content" table:
 		'tstamp' => 'tstamp',
 		'crdate' => 'crdate',
 		'cruser_id' => 'cruser_id',
-		'title' => 'LLL:EXT:cms/locallang_tca.xlf:tt_content',
+		'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tt_content',
 		'delete' => 'deleted',
 		'versioningWS' => 2,
 		'versioning_followPages' => TRUE,

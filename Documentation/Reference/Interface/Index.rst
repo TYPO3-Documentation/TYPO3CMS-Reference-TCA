@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _interface:
@@ -12,14 +7,7 @@
 ^^^^^^^^^^^^^^^^^^^^^
 
 Contains configuration for display and listing in various parts of the
-core backend:
-
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
+core backend.
 
 
 .. _interface-properties:
@@ -63,8 +51,10 @@ showRecordFieldList
          (list of field names)
 
    Description
-         Defines which fields are shown in the show-item dialog. E.g.
-         'doktype,title,alias,hidden,....'
+         Defines which fields are shown in the show-item dialog. For example
+         'doktype,title,alias,hidden,...'. To see that dialog go to the
+         list module in the backend and click on the icon of a record in
+         the right pane. Then choose 'info' in the popup menu.
 
 
 

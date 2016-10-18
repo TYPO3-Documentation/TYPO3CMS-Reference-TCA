@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../Includes.txt
+﻿.. include:: ../../../Includes.txt
 
 
 .. _columns-select:
@@ -43,46 +38,41 @@ Properties
    Property                                  Data Type
    ========================================= =========
    `allowNonIdValues`_                       boolean
-   `authMode`_                               string
    `authMode\_enforce`_                      string
-   `autoSizeMax`_                            integer
+   `authMode`_                               string
    `default`_                                string
    `disableNoMatchingValueElement`_          boolean
    `dontRemapTablesOnCopy`_                  string
    `enableMultiSelectFilterTextfield`_       boolean
    `exclusiveKeys`_                          string
-   `localizeReferencesAtParentLocalization`_ boolean
-   `items`_                                  array
-   `itemsProcFunc`_                          string
-   `iconsInOptionTags`_                      boolean
-   `fileFolder`_                             string
    `fileFolder\_extList`_                    string
    `fileFolder\_recursions`_                 string
-   `foreign\_table`_                         string
-   `foreign\_table\_where`_                  string
+   `fileFolder`_                             string
    `foreign\_table\_prefix`_                 string
-   `foreign\_table\_loadIcons`_              boolean
+   `foreign\_table\_where`_                  string
+   `foreign\_table`_                         string
    `itemListStyle`_                          string
+   `items`_                                  array
+   `itemsProcFunc`_                          string
+   `localizeReferencesAtParentLocalization`_ boolean
    `maxitems`_                               integer
    `minitems`_                               integer
-   `MM`_                                     string
    `MM\_hasUidField`_                        boolean
    `MM\_insert\_fields`_                     array
    `MM\_match\_fields`_                      array
    `MM\_opposite\_field`_                    string
    `MM\_oppositeUsage`_                      array
    `MM\_table\_where`_                       string
+   `MM`_                                     string
    `multiple`_                               boolean
    `multiSelectFilterItems`_                 array
-   `neg\_foreign\_table`_                    string
-   `noIconsBelowSelect`_                     boolean
-   `renderMode`_                             string
+   `renderType`_                             string
    `rootLevel`_                              boolean
    `selectedListStyle`_                      string
    `selicon\_cols`_                          integer
+   `showIconTable`_                          boolean
    `size`_                                   integer
    `special`_                                string
-   `suppress\_icons`_                        string
    `treeConfig`_                             array
    `type`_                                   string
    `wizards`_                                array
@@ -140,46 +130,54 @@ items
 
          Each element in this array is in itself an array where:
 
-         - First value is the  **item label** (string or LLL reference)
+         -  First value is the  **item label** (string or LLL reference)
 
-         - Second value is the  **value of the item** .
+         -  Second value is the  **value of the item** .
 
-         - The special value :code:`--div--` is used to insert a non-selectable value
-           that appears as a divider label in the selector box (only for maxitems
-           <=1)
+            *  The special value `--div--` is used to insert a non-selectable value
+               that appears as a divider label in the selector box (only for maxitems
+               <=1)
 
-         - Values must not contain "," (comma) and "\|" (vertical bar). If you
-           want to use "authMode" you should also refrain from using ":" (colon).
+            *  Values must not contain "," (comma) and "\|" (vertical bar). If you
+               want to use "authMode" you should also refrain from using ":" (colon).
 
-         - Third value is an optional icon. Default path is
-           :file:`typo3/sysext/t3skin/icons/gfx/`. For custom icons
-           use a path prepended with "EXT:" to refer to an image file
-           found inside an extension.
+         -  Third value is an optional icon. Default path is
+            :file:`typo3/sysext/t3skin/icons/gfx/` but is deprecated since TYPO3 CMS 7,
+            and will be removed with TYPO3 CMS 8.
+            For custom icons use a path prepended with "EXT:" to refer to an image
+            file found inside an extension or use an registered icon identifier.
 
-         - Fourth value is an optional description text. This is only shown when
-           the list is shown by renderMode "checkbox".
+         -  Fourth value is an optional description text. This is only shown when
+            the list is shown by `renderType`_ `selectCheckBox`.
 
-         - Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
-           option "authMode" / "individual" for more details.
+         -  Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
+            option "authMode" / "individual" for more details.
+
+         .. note::
+
+            Usage of path in the third property is deprecated.
+            For custom icons use a path prepended with "EXT:" to refer to an image file
+            found inside an extension or use an registered icon identifier, which is the
+            prefered way.
 
          **Example:**
 
          A configuration could look like this::
 
-                'type' => 'select',
-                'items' => array(
-                    array('English', ''),
-                    array('Danish', 'dk'),
-                    array('German', 'de'),
-                )
+            'type' => 'select',
+            'items' => array(
+               array('English', ''),
+               array('Danish', 'dk'),
+               array('German', 'de'),
+            )
 
          A more complex example could be this (includes icons)::
 
             'type' => 'select',
             'items' => array(
-                array('LLL:EXT:cms/locallang_ttc.php:k1', 0, 'selicons/k1.gif'),
-                array('LLL:EXT:cms/locallang_ttc.php:k2', 1, 'selicons/k2.gif'),
-                array('LLL:EXT:cms/locallang_ttc.php:k3', 2, 'selicons/k3.gif'),
+               array('LLL:EXT:cms/locallang_ttc.php:k1', 0, 'EXT:myext/Resources/Public/selicons/k1.gif'),
+               array('LLL:EXT:cms/locallang_ttc.php:k2', 1, 'tx-myext-selicons-k2'),
+               array('LLL:EXT:cms/locallang_ttc.php:k3', 2, 'tx-myext-selicons-k3'),
             )
 
    Scope
@@ -242,75 +240,22 @@ selicon\_cols
 
 
 
-.. _columns-select-properties-suppress-icons:
+.. _columns-select-properties-showIconTable:
 
-suppress\_icons
-~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         suppress\_icons
-
-   Datatype
-         string
-
-   Description
-         Lets you disable display of icons. Can be nice to do if icons are
-         coming from foreign database records and you don't want them.
-
-         Set it to :code:`IF_VALUE_FALSE` if you *only* want to see icons when a
-         value (non-blank, non-zero) is selected. Otherwise no icons are shown.
-
-         Set it to :code:`ONLY_SELECTED` if you *only* want to see an icon for the
-         selected item.
-
-         Set to :code:`1` (true) if you never want any icons.
-
-   Scope
-         Display
-
-
-
-.. _columns-select-properties-iconsinoptiontags:
-
-iconsInOptionTags
-~~~~~~~~~~~~~~~~~
+showIconTable
+~~~~~~~~~~~~~
 
 .. container:: table-row
 
    Key
-         iconsInOptionTags
+         showIconTable
 
    Datatype
          boolean
 
    Description
-         If set, icons will appear in the :code:`<option>` tags of the selector box.
-         This feature is badly supported by browsers.
-
-   Scope
-         Display
-
-
-
-.. _columns-select-properties-noiconsbelowselect:
-
-noIconsBelowSelect
-~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         noIconsBelowSelect
-
-   Datatype
-         boolean
-
-   Description
-         Disables the rendering of the icons after the select even when icons
-         for the :code:`<select>`'s :code:`<option>` tags were supplied and iconsInOptionTags
-         was set.
+         Controls the rendering of the icons after the select even when icons
+         for the `<select>`'s `<option>` tags were supplied.
 
    Scope
          Display
@@ -334,7 +279,7 @@ foreign\_table
 
    Description
          The item-array will be filled with records from the table defined
-         here. The table must be configured in :code:`$TCA`.
+         here. The table must be configured in `$TCA`.
 
          See the other related options below.
 
@@ -387,8 +332,6 @@ foreign\_table\_where
 
          - ###CURRENT\_PID### - is the current page id (pid of the record).
 
-         - ###STORAGE\_PID###
-
          - ###SITEROOT###
 
          - ###PAGE\_TSCONFIG\_ID### - a value you can set from Page TSconfig
@@ -434,65 +377,6 @@ foreign\_table\_prefix
 
    Scope
          Display
-
-
-
-.. _columns-select-properties-foreign-table-loadicons:
-
-foreign\_table\_loadIcons
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         foreign\_table\_loadIcons
-
-   Datatype
-         boolean
-
-   Description
-         If set, then the icons for the records of the foreign table are loaded
-         and presented in the form.
-
-         This depends on the 'selicon\_field' of the foreign tables [ctrl]
-         section being configured.
-
-   Scope
-         Display
-
-
-
-.. _columns-select-properties-neg-foreign-table:
-
-neg\_foreign\_table
-~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         neg\_foreign\_table
-
-         neg\_foreign\_table\_where
-
-         neg\_foreign\_table\_prefix
-
-         neg\_foreign\_table\_loadIcons
-
-         neg\_foreign\_table\_imposeValueField
-
-   Datatype
-         [mixed]
-
-   Description
-         Four options corresponding to the 'foreign\_table'-keys but records
-         from this table will be referenced by *negative* uid-numbers (unless
-         if MM is configured in which case it works like the group-type).
-
-         'neg\_foreign\_table' is active only if :ref:`foreign_table <columns-select-properties-foreign-table>`
-         is defined also.
-
-   Scope
-         Display / Proc.
 
 
 
@@ -564,7 +448,7 @@ fileFolder\_extList
          List of extensions to select. If blank, all files are selected.
          Specify list in lowercase.
 
-         See :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
+         See `\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
 
    Scope
          Display / Proc
@@ -590,7 +474,7 @@ fileFolder\_recursions
 
          0 (zero) means no recursion into subdirectories.
 
-         See :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
+         See `\TYPO3\CMS\Core\Utility\GeneralUtility::getAllFilesAndFoldersInPath()`.
 
    Scope
          Display / Proc
@@ -714,8 +598,7 @@ MM
          (table name)
 
    Description
-         Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>` /
-         :ref:`neg_foreign_table <columns-select-properties-neg-foreign-table>`
+         Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>`
          is done with a M-M relation with a third "join" table.
 
          That table has three columns as a minimum:
@@ -812,13 +695,13 @@ MM\_opposite\_field
    Description
          If you want to make a MM relation editable from the foreign side
          (bidirectional) of the relation as well, you need to set
-         :code:`MM_opposite_field` on the foreign side to the field name on the local
+         `MM_opposite_field` on the foreign side to the field name on the local
          side.
 
          E.g. if the field "companies.employees" is your local side and you
          want to make the same relation editable from the foreign side of the
          relation in a field called persons.employers, you would need to set
-         the :code:`MM_opposite_field` value of the TCA configuration of the
+         the `MM_opposite_field` value of the TCA configuration of the
          persons.employers field to the string "employees".
 
          .. note::
@@ -877,12 +760,12 @@ MM\_oppositeUsage
          workspace) so that relations are carried over with the correct
          information.
 
-         :code:`MM_oppositeUsage` is an array which references which
+         `MM_oppositeUsage` is an array which references which
          fields contain the references to the opposite side, so that they
          can be queried for match field configuration.
 
          This is used by the Core for system categories. Whenever a table
-         is registered as being categorizable, an entry in :code:`MM_oppositeUsage`
+         is registered as being categorizable, an entry in `MM_oppositeUsage`
          is created for the "sys_category" table.
 
          **Example**
@@ -1008,7 +891,7 @@ special
            tree root + Default language)
 
          - **custom** – Custom values set by backend modules (see
-           :code:`TYPO3_CONF_VARS[BE][customPermOptions]`)
+           `TYPO3_CONF_VARS[BE][customPermOptions]`)
 
          As you might have guessed these options are used for backend user
          management and pretty worthless for most other purposes.
@@ -1033,31 +916,6 @@ size
 
    Description
          Height of the selector box in TCEforms.
-
-   Scope
-         Display
-
-
-
-.. _columns-select-properties-autosizemax:
-
-autoSizeMax
-~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         autoSizeMax
-
-   Datatype
-         integer
-
-   Description
-         If set, then the height of multiple-item selector boxes (maxitems > 1)
-         will automatically be adjusted to the number of selected elements,
-         however never less than "size" and never larger than the integer value
-         of "autoSizeMax" itself (takes precedence over "size"). So
-         "autoSizeMax" is the maximum height the selector can ever reach.
 
    Scope
          Display
@@ -1112,52 +970,33 @@ itemListStyle
 
 
 
-.. _columns-select-properties-rendermode:
+.. _columns-select-properties-rendertype:
 
-renderMode
+renderType
 ~~~~~~~~~~
 
 .. container:: table-row
 
    Key
-         renderMode
+         renderType
 
    Datatype
          string (any of keywords)
 
    Description
-         (Only for maxitems > 1)
+         This setting specifies how the select field should be displayed. Available options are:
 
-         Renders the list of multiple options as either a list of checkboxes or
-         as a selector box with multiple choices.
-
-         The data type is fully compatible with an ordinary multiple element
-         list except that duplicate values cannot be represented for obvious
-         reasons (option "multiple" does not work) and the order of values is
-         fixed.
-
-         Keywords are:
-
-         - **checkbox** - Renders a list of checkboxes
-
-         - **singlebox** - Renders a single multiple selector box
-
-         - **tree** - Renders the selector as tree. This will work properly only
-           when referrring to a foreign table, so make sure that the
-           :ref:`foreign_table <columns-select-properties-foreign-table>`
-           property is set. See :ref:`treeConfig <columns-select-properties-treeconfig>`
-           for configuration options.
-
-         When renderMode is "checkbox" or "singlebox" all values selected by
-         :ref:`foreign_table <columns-select-properties-foreign-table>`
-         settings will automatically have their icon part in
-         the items array set to the record icon (unless overruled by
-         "selicon\_field" of that table).
+         - ``selectSingle`` - Normal select field for selecting a single value.
+         - ``selectSingleBox`` - Normal select field for selecting multiple values.
+         - ``selectCheckBox`` - List of checkboxes for selecting muliple values.
+         - ``selectMultipleSideBySide`` - Two select fields, items can be selected from the right
+           field, selected items are displayed in the left select.
+         - ``selectTree`` - A tree for selecting hierarchical data.
 
          .. note::
 
             Properties "maxitems" and "minitems" are not enforced in the browser
-            for any of the render modes here! However they will be on the server.
+            for any of the render types here! However they will be on the server.
             It is recommended to set "minitems" to zero and "maxitems" to a very
             large number exceeding the possible number of values you can select
             (for instance set it to 1000 or so).
@@ -1181,11 +1020,14 @@ treeConfig
          (configuration options)
 
    Description
-         Configuration if the :ref:`renderMode <columns-select-properties-rendermode>`
-         is set to "tree". Either :code:`childrenField` or :code:`parentField`
-         has to be set - :code:`childrenField` takes precedence.
+         Configuration if the `renderType`_
+         is set to "selectTree". Either `childrenField` or `parentField`
+         has to be set - `childrenField` takes precedence.
 
          **Sub-properties:**
+
+         - **dataProvider**: Allows to define a custom data provider class for usecases where special data preparation
+           is necessary. By default ``\TYPO3\CMS\Core\Tree\TableConfiguration\DatabaseTreeDataProvider`` is used.
 
          - **childrenField (string)** : Field name of the foreign\_table that
            references the uid of the child records (either child
@@ -1212,11 +1054,6 @@ treeConfig
            - **nonSelectableLevels (list, default "0")** : Comma-separated list of
              levels that will not be selectable, by default the root node (which is
              "0") cannot be selected
-
-           - **allowRecursiveMode (boolean)** : If set to :code:`true`, the selection
-             of a node will trigger the selection of all child nodes too (recursively).
-
-           - **width** *(since TYPO3 CMS 6.0)*: Set a custom width of the tree select field in pixels.
 
    Scope
          Display
@@ -1264,6 +1101,10 @@ maxitems
 
    Description
          Maximum number of items in the selector box. (Default = 1)
+
+         .. note::
+
+            Property maxitems is ignored if `renderType`_ `selectSingle` is set.
 
    Scope
          Display / Proc
@@ -1597,6 +1438,7 @@ And here's the corresponding code:
            'label' => 'LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options',
            'config' => array (
                    'type' => 'select',
+                   'renderType' => 'selectSingle',
                    'items' => array (
                            array('LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options.I.0', '1'),
                            array('LLL:EXT:examples/locallang_db.xml:fe_users.tx_examples_options.I.1', '2'),
@@ -1634,6 +1476,7 @@ there is a simple select field to create a reference to a page in the
            'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.reference_page',
            'config' => array(
                    'type' => 'select',
+                   'renderType' => 'selectSingle',
                    'foreign_table' => 'pages',
                    'foreign_table_where' => "AND pages.title LIKE '%###PAGE_TSCONFIG_STR###%'",
                    'size' => 1,
@@ -1738,6 +1581,7 @@ The configuration looks like this (taken from the "sys\_language" table):
 		'displayCond' => 'EXT:static_info_tables:LOADED:true',
 		'config' => array(
 			'type' => 'select',
+                   	'renderType' => 'selectSingle',
 			'items' => array(
 				array('', 0)
 			),
@@ -1755,64 +1599,6 @@ otherwise the table will not be in the database and we will get SQL
 errors.
 
 
-.. _columns-select-examples-icons:
-
-Adding icons for selection
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This example shows how you can add icons to the selection choice very
-easily. Each icon is associated with an option in the selector box and
-clicking the icon will automatically select the option in the selector
-box and more the black arrow:
-
-.. figure:: ../../../Images/TypeSelectWithIcons.png
-   :alt: Choosing image alignment
-
-   The selector for image alignment, using icons
-
-The configuration looks like this:
-
-.. code-block:: php
-
-	'imageorient' => array(
-		'exclude' => 1,
-		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:imageorient',
-		'config' => array(
-			'type' => 'select',
-			'items' => array(
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.0',
-					0,
-					'selicons/above_center.gif'
-				),
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.1',
-					1,
-					'selicons/above_right.gif'
-				),
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.2',
-					2,
-					'selicons/above_left.gif'
-				),
-				...
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imageorient.I.10',
-					26,
-					'selicons/intext_left_nowrap.gif'
-				)
-			),
-			'selicon_cols' => 6,
-			'default' => '0',
-			'iconsInOptionTags' => 1
-		)
-	),
-
-Notice how each label/value pair contains an icon reference on the
-third position. Towards the bottom the layout of the icons is defined
-as being arranged in 6 columns.
-
-
 .. _columns-select-examples-grsp:
 
 Render the General Record Storage Page selector as a tree of page
@@ -1826,7 +1612,7 @@ The following configuration change:
       'type' => 'select',
       'foreign_table' => 'pages',
       'size' => 10,
-      'renderMode' => 'tree',
+      'renderType' => 'selectTree',
       'treeConfig' => array(
               'expandAll' => true,
               'parentField' => 'pid',
@@ -1872,8 +1658,6 @@ wizards are not exclusively available for selector boxes!):
 			'foreign_table_where' => ' AND sys_filemounts.pid=0 ORDER BY sys_filemounts.title',
 			'size' => '3',
 			'maxitems' => 25,
-			'autoSizeMax' => 10,
-			'iconsInOptionTags' => 1,
 			'wizards' => array(
 				'_VERTICAL' => 1,
 				'edit' => array(
@@ -1922,10 +1706,6 @@ See the :ref:`wizards section <wizards>` for more information.
 
    The file mount selector with add, edit and list wizards
 
-Notice the configuration of :ref:`autoSizeMax <columns-select-properties-autosizemax>`.
-This value will make the height of the selector boxes adjust themselves automatically depending
-on the content in them.
-
 
 .. _columns-select-examples-mm:
 
@@ -1952,13 +1732,12 @@ is installed).
 	'MM' => 'sys_category_record_mm',
 	'MM_opposite_field' => 'items',
 	'MM_match_fields' => array(
-		'tablenames' => 'categories',
-		'fieldname' => 'pages',
+		'tablenames' => 'pages',
+		'fieldname' => 'categories',
 	),
 	'size' => 10,
-	'autoSizeMax' => 50,
 	'maxitems' => 9999,
-	'renderMode' => 'tree',
+	'renderType' => 'selectTree',
 	'treeConfig' => array(
 		'parentField' => 'parent',
 		'appearance' => array(
@@ -1988,8 +1767,8 @@ create relations from that side too.
 .. note::
 
    The TCA configuration listed above cannot be found directly
-   in a TCA file, but is generated by the :code:`addTcaColumn()` method
-   of class :ref:`TYPO3\CMS\Core\Category\CategoryRegistry <t3cmsapi:TYPO3\\CMS\\Core\\Category\\CategoryRegistry>`.
+   in a TCA file, but is generated by the `addTcaColumn()` method
+   of class :ref:`TYPO3\CMS\Core\Category\CategoryRegistry <t3api:TYPO3\\CMS\\Core\\Category\\CategoryRegistry>`.
 
 
 .. _columns-select-data-format:

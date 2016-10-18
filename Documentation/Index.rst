@@ -1,8 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
 .. include:: Includes.txt
 
 
@@ -28,7 +23,7 @@ TCA Reference
       forAdmins, forDevelopers, forIntermediates
 
 :Copyright:
-      2000-2014
+      2000-2015
 
 :Author:
       Documentation Team
@@ -37,14 +32,14 @@ TCA Reference
       documentation@typo3.org
 
 :License:
-      Open Content License available from `www.opencontent.org/opl.shtml
-      <http://www.opencontent.org/opl.shtml>`_
+      Open Publication License available from `www.opencontent.org/openpub/
+      <http://www.opencontent.org/openpub/>`_
 
 :Rendered:
       |today|
 
 The content of this document is related to TYPO3, a GNU/GPL CMS/Framework
-available from `www.typo3.org <http://www.typo3.org/>`_
+available from `www.typo3.org <https://typo3.org/>`_
 
 
 **Official documentation**
@@ -70,14 +65,24 @@ Core Manuals are written as reference manuals. The reader should rely
 on the Table of Contents to identify what particular section will best
 address the task at hand.
 
+.. only:: html
+
+   .. tip::
+
+      :ref:`Sitemap`
+
+   .. note::
+
+      :ref:`Todo-List`
 
 **Table of Contents**
 
-.. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
+Please visit the :ref:`Sitemap`.
 
+.. toctree::
+   :hidden:
+
+   Sitemap/Index
    Introduction/Index
    WhatIsTca/Index
    Reference/Index

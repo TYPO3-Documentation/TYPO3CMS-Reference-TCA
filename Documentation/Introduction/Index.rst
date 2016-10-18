@@ -1,8 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
 .. include:: ../Includes.txt
 
 
@@ -25,7 +20,7 @@ Almost all code examples used in this manual come either from the TYPO3
 source code itself or from the extension "examples", which can be
 downloaded from the TER.
 
-This document used to be a chapter inside :ref:`TYPO3 Core APIs <t3api:start>`.
+This document used to be a chapter inside :ref:`TYPO3 Core APIs <t3coreapi:start>`.
 
 
 .. _new:
@@ -71,7 +66,7 @@ For general questions about the documentation get in touch by writing
 to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
 
 If you find a bug in this manual, please be so kind as to check the
-online version on http://docs.typo3.org/typo3cms/TCAReference/.
+online version on https://docs.typo3.org/typo3cms/TCAReference/.
 From there you can hit the "Edit me on GitHub" button in the top right corner
 and submit a pull request via GitHub. Alternatively you can just file an issue
 using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues.

@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../Includes.txt
+﻿.. include:: ../../../Includes.txt
 
 
 .. _columns-flex:
@@ -275,7 +270,7 @@ to the Data Structure which will contain form rendering information in
 the application specific tag "<TCEforms>".
 
 For general information about the backbone of a Data Structure, please
-refer to the `<T3DataStructure> chapter in the Core API manual <t3api:t3ds>`.
+refer to the `<T3DataStructure> chapter in the Core API manual <t3coreapi:t3ds>`.
 
 
 .. _columns-flex-facts:
@@ -663,24 +658,6 @@ Array Elements
 
          <v[ISO language code]>
 
-
-
-.. _columns-flex-data-format-array-currentlangid:
-
-<currentLangId>
-'''''''''''''''
-
-.. container:: table-row
-
-   Element
-         <currentLangId>
-
-   Description
-         Numerical array of language ISO codes + "DEF" for default which are
-         currently displayed for editing.
-
-   Child elements
-         <n[0-x]>
 
 
 .. _columns-flex-data-format-value:

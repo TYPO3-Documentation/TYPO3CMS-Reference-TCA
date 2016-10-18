@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _special-configuration-options:
@@ -70,7 +65,7 @@ richtext
          richtext[cut\|copy\|paste] = ensures that cut, copy and paste options
          are shown regardless of RTE configuration
 
-         See :ref:`RTE API <t3api:rte>` for more details.
+         See :ref:`RTE API <t3coreapi:rte>` for more details.
 
 
 
@@ -199,8 +194,8 @@ mode
 
          The order is calling order when direction is "db".
 
-         *See* ` *RTE API*  <#Transformation%20overview%7Coutline>`_  *section
-         for list of transformations available.*
+         Please refer to the :ref:`RTE API <t3coreapi:transformations-overview>`
+         for a list of available transformations.
 
    Examples
          rte\_transform[mode=ts\_css-images]
@@ -232,7 +227,7 @@ Example - Setting up Rich Text Editors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's take another table from the "examples" extension to look at how
-to set up a text will with a RTE. The table "tx\_examples\_haiku"
+to set up a text with a RTE. The table "tx\_examples\_haiku"
 contains a column called "poem" on which we want to have the RTE.
 Its configuration looks like this:
 

@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _soft-references:
@@ -26,7 +21,7 @@ checking functions.
 Default soft reference parsers
 """"""""""""""""""""""""""""""
 
-The :ref:`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex <t3cmsapi:TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex>`
+The :ref:`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex <t3api:TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex>`
 class contains generic parsers for the most well-known types
 which are default for most TYPO3 installations. This
 is the list of the possible keys:
@@ -74,7 +69,7 @@ images
          images
 
    Description
-         HTML :code:`<img>` tags for RTE images / images from :file:`fileadmin/`.
+         HTML :code:`<img>` tags for RTE images / images from :file:`upload/`.
 
 
 
@@ -106,37 +101,6 @@ typolink\_tag
 
    Description
          As typolink, but searching for a :code:`<link>` tag encapsulating it.
-
-
-
-.. _soft-references-default-parsers-tsconfig:
-
-TSconfig
-~~~~~~~~
-
-.. container:: table-row
-
-   softref key
-         TSconfig
-
-   Description
-         References to files.
-
-
-
-.. _soft-references-default-parsers-tstemplate:
-
-TStemplate
-~~~~~~~~~~
-
-.. container:: table-row
-
-   softref key
-         TStemplate
-
-   Description
-         Free text references to "fileadmin/" files. HTML resource links like
-         :code:`<a>`, :code:`<img>`, :code:`<form>`.
 
 
 
@@ -198,8 +162,6 @@ The default set up is found in :file:`typo3/sysext/core/Configuration/DefaultCon
 				'images' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'typolink' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'typolink_tag' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
-				'TSconfig' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
-				'TStemplate' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'ext_fileref' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'email' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
 				'url' => 'TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex',
@@ -222,5 +184,5 @@ names based on the extension you put it in, e.g. :code:`tx_myextensionkey`.
 
 The class containing the soft reference parser must have a function
 named :code:`findRef`. Please refer to class
-:ref:`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex <t3cmsapi:TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex>`
+:ref:`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex <t3api:TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex>`
 for API usage and expected return values.

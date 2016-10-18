@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _columns:
@@ -138,10 +133,11 @@ l10n\_mode
    Description
          Localization mode.
 
-         Only active if the ctrl-directive "languageField" is set.
+         Only active if the [ctrl] :ref:`"languageField" <ctrl-reference-languagefield>`
+         property is set.
 
          The main relevance is when a record is localized by an API call in
-         TCEmain that makes a copy of the default language record. You can
+         DataHandler that makes a copy of the default language record. You can
          think of this process as copying all fields from the source record,
          except if a special mode applies as defined below:
 
@@ -408,7 +404,7 @@ displayCond
          .. code-block:: php
 
 				'displayCond' => array(
-					AND => array(
+					'AND' => array(
 						'FIELD:tx_templavoila_ds:REQ:true',
 						'EXT:static_info_tables:LOADED:true',
 					)
@@ -421,7 +417,7 @@ displayCond
 
          .. code-block:: php
 
-				'displayCond' ==> array(
+				'displayCond' => array(
 					'AND' => array(
 						'FIELD:sys_language_uid:<=:0',
 						'OR' => array(

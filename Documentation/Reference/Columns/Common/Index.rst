@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../Includes.txt
+﻿.. include:: ../../../Includes.txt
 
 
 .. _columns-common:
@@ -13,13 +8,6 @@ Common column properties
 
 There are a number of properties which are common to all field types.
 They are described below.
-
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
 
 
 .. _columns-common-properties:
@@ -34,7 +22,6 @@ Properties
    ============= =========
    `dbType`_     string
    `default`_    mixed
-   `form\_type`_ string
    `type`_       string
    `readOnly`_   boolean
    `search`_     array
@@ -44,13 +31,6 @@ Properties
 
 Property details
 """"""""""""""""
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
 
 .. _columns-common-properties-type:
 
@@ -73,28 +53,6 @@ type
          Display
 
          / Proc.
-
-
-
-.. _columns-common-properties-form-type:
-
-form\_type
-~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         form\_type
-
-   Datatype
-         string
-
-   Description
-         This will override the field type when displaying it as a form. It can
-         take any of the values available for "type" above.
-
-   Scope
-         Display
 
 
 
@@ -199,7 +157,7 @@ readOnly
          .. warning::
 
             This property affects only the display. It is still possible to write
-            to those fields when using the :ref:`TYPO3 Core Engine <t3api:tce>`.
+            to those fields when using the :ref:`TYPO3 Core Engine <t3coreapi:tce>`.
 
    Scope
          Display
@@ -236,26 +194,25 @@ search
 
          **Example:**
 
-         The "tt\_content" table has the following definition:
-
-         .. code-block:: php
+         The "tt\_content" table has the following definition::
 
             $TCA['tt_content'] = array(
-                    ...
-                    'columns' => array(
-                            ...
-                            'bodytext' => array(
-                                    ...
-                                    'config' => array(
-                                            ...
-                                    ),
-                                    'search' => array(
-                                            'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
-                                    )
-                            ),
-                            ...
-                    ),
-                    ...
+               // ...
+               'columns' => array(
+                  // ...
+                  'bodytext' => array(
+                     // ...
+                     'config' => array(
+                        // ...
+                        'search' => array(
+                           'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
+                        ),
+                        // ...
+                     ),
+                  ),
+                  // ...
+               ),
+               // ...
             );
 
          This means that the "bodytext" field of the "tt\_content" table will
