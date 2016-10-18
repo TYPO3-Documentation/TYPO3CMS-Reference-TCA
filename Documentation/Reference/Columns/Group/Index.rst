@@ -843,16 +843,26 @@ disable\_controls
          Disables sub-controls inside "group" control. Comma-separated list of
          values. Possible values are: browser (disables browse button for list
          control), list (disables list and browse button, but not delete
-         button), upload (disables upload control) and delete (disables the
-         delete button). See example image below.
+         button), delete (disables the
+         delete button) and allowedTables (hide information which tables are
+         allowed to be referenced in the group field). See example image below.
 
          .. note::
 
            If you use the delete button when the list is disabled,
            **all** entries in the list will be deleted.
 
-         .. figure:: ../../../Images/TypeGroupControls.png
-            :alt: Disabling controls
+         .. figure:: ../../../Images/Group_DisableControlls_AllAvailable.png
+            :alt: Disabling controls - None
+
+         .. figure:: ../../../Images/Group_DisableControlls_Browser.png
+            :alt: Disabling controls - browser
+
+         .. figure:: ../../../Images/Group_DisableControlls_List.png
+            :alt: Disabling controls - List
+
+         .. figure:: ../../../Images/Group_DisableControlls_AllowedTables.png
+            :alt: Disabling controls - Allowed Tables
 
             Disabling the various controls
 
