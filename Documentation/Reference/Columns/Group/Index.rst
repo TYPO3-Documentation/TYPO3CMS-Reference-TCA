@@ -841,11 +841,14 @@ disable\_controls
 
    Description
          Disables sub-controls inside "group" control. Comma-separated list of
-         values. Possible values are: browser (disables browse button for list
-         control), list (disables list and browse button, but not delete
-         button), delete (disables the
-         delete button) and allowedTables (hide information which tables are
-         allowed to be referenced in the group field). See example image below.
+         values. Possible values are:
+         - *browser* (disables browse button for list control)
+         - *list* (disables list and browse button, but not delete button)
+         - *delete* (disables the delete button)
+         - *allowedTables* (hide information which tables are
+         allowed to be referenced in the group field).
+
+         See example images below.
 
          .. note::
 
@@ -859,10 +862,10 @@ disable\_controls
             :alt: Disabling controls - browser
 
          .. figure:: ../../../Images/Group_DisableControlls_List.png
-            :alt: Disabling controls - List
+            :alt: Disabling controls - list
 
          .. figure:: ../../../Images/Group_DisableControlls_AllowedTables.png
-            :alt: Disabling controls - Allowed Tables
+            :alt: Disabling controls - allowedTables
 
             Disabling the various controls
 
