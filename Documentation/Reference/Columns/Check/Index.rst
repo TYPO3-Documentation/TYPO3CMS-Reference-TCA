@@ -146,29 +146,6 @@ cols
          Display
 
 
-
-.. _columns-check-properties-showifrte:
-
-showIfRTE
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         showIfRTE
-
-   Datatype
-         boolean
-
-   Description
-         If set, this field will show *only* if the RTE editor is enabled
-         (which includes correct browser version and user-rights altogether.)
-
-   Scope
-         Display
-
-
-
 .. _columns-check-properties-default:
 
 default
