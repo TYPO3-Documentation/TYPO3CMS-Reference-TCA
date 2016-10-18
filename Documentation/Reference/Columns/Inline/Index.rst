@@ -249,6 +249,8 @@ appearance
 
       The button is shown by default unless this option is set to :php:`false`.
 
+   - *elementBrowserEnabled* (boolean) (since TYPO3 CMS 8.4) Hides or displays the button in inline records
+
 :aspect:`Scope:`
    Display
 
