@@ -150,60 +150,6 @@ as a rule of thumb they are prefixed with an underscore ("\_"):
 
 
 
-.. _wizards-reserved-distance:
-
-\_ DISTANCE
-~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         \_DISTANCE
-
-   Type
-         int+
-
-   Description
-         The distance in pixels between wizard icons (if more than one).
-
-
-
-.. _wizards-reserved-padding:
-
-\_PADDING
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         \_PADDING
-
-   Type
-         int+
-
-   Description
-         The cellpadding of the table which keeps the wizard icons together.
-
-
-
-.. _wizards-reserved-valign:
-
-\_VALIGN
-~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         \_VALIGN
-
-   Type
-         string
-
-   Description
-         valign attribute in the table holding things together.
-
-
-
 .. _wizards-reserved-any-other-key:
 
 [any other key]
