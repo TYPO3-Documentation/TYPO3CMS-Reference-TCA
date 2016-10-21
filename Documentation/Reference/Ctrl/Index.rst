@@ -57,7 +57,6 @@ Reference
    `label\_userFunc`_                   string
    `label\_userFunc\_options`_          array
    `languageField`_                     string
-   `mainpalette`_                       string
    `origUid`_                           string
    `prependAtCopy`_                     string
    `readOnly`_                          boolean
@@ -856,51 +855,6 @@ default\_sortby
          		'default_sortby' => 'ORDER BY title',
          		...
          	),
-
-   Scope
-         Display
-
-
-
-.. _ctrl-reference-mainpalette:
-
-mainpalette
-~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         mainpalette
-
-   Datatype
-         comma-separated list of integers (pointing to multiple palette keys)
-
-   Description
-         Points to the palette-number(s) that should always be shown in the
-         bottom of the TCEform.
-
-         **Example:**
-
-         The [ctrl]section looks like this:
-
-         .. code-block:: php
-
-            'mainpalette' => '1',
-
-         The number "1" references a palette. This palette could be something
-         like:
-
-         .. code-block:: php
-
-            'palettes' => array(
-                '1' => array('showitem' => 'hidden,starttime,endtime,fe_group'),
-
-         .. note::
-
-            This feature is not much used anymore. It has the drawback
-            of positioning the related fields weirdly when tabs are added to
-            existing tables via extensions (the fields come at the end of the new
-            tabs, which may be disturbing for editors).
 
    Scope
          Display
