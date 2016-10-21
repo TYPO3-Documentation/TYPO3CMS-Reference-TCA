@@ -102,20 +102,22 @@ internal\_type
 
          There are four possible options to choose from:
 
-         - "file" - this will create a field where files can be attached to the
-           record.
+         file
+            This will create a field where files can be attached to the record.
 
-         - "file\_reference" - this will create a field where files can be
-           referenced. In contrast to "file", referenced files (usually from
-           fileadmin/) will not be copied to the upload folder. **Warning:** use
-           this carefully. *Your references will be broken if you delete
-           referenced files in the filesystem!*
+         file\_reference
+            Tthis will create a field where files can be
+            referenced. In contrast to "file", referenced files (usually from
+            fileadmin/) will not be copied to the upload folder. **Warning:** use
+            this carefully. *Your references will be broken if you delete
+            referenced files in the filesystem!*
 
-         - "folder" - this will create a field where folders can be attached to
-           the record
+         folder
+            This will create a field where folders can be attached to the record.
 
-         - "db" - this will create a field where database records can be attached
-           as references.
+         db
+            This will create a field where database records can be attached
+            as references.
 
          The default value is none of them - you must specify one of the values
          correctly!
@@ -846,38 +848,38 @@ disable\_controls
 
          Disabling the various controls:
 
-         Disabling controls - None
+         1. Disabling controls - None
 
-         .. figure:: ../../../Images/Group_DisableControls_AllAvailable.png
-            :alt: Disabling controls - None
-            :class: with-border
+            .. figure:: ../../../Images/Group_DisableControls_AllAvailable.png
+               :alt: Disabling controls - None
+               :class: with-border
 
-            Disabling controls - None
+               Disabling controls - None
 
-         Disabling controls - browser
+         2. Disabling controls - browser
 
-         .. figure:: ../../../Images/Group_DisableControls_Browser.png
-            :alt: Disabling controls - browser
-            :class: with-border
+            .. figure:: ../../../Images/Group_DisableControls_Browser.png
+               :alt: Disabling controls - browser
+               :class: with-border
 
-            Disabling controls - browser
+               Disabling controls - browser
 
-         Disabling controls - list
+         3. Disabling controls - list
 
-         .. figure:: ../../../Images/Group_DisableControls_List.png
-            :alt: Disabling controls - list
-            :class: with-border
+            .. figure:: ../../../Images/Group_DisableControls_List.png
+               :alt: Disabling controls - list
+               :class: with-border
 
-            Disabling controls - list
+               Disabling controls - list
 
 
-         Disabling controls - allowedTables
+         4. Disabling controls - allowedTables
 
-         .. figure:: ../../../Images/Group_DisableControls_AllowedTables.png
-            :alt: Disabling controls - allowedTables
-            :class: with-border
+            .. figure:: ../../../Images/Group_DisableControls_AllowedTables.png
+               :alt: Disabling controls - allowedTables
+               :class: with-border
 
-            Disabling controls - allowedTables
+               Disabling controls - allowedTables
 
 
    Scope
@@ -922,17 +924,21 @@ appearance
    Description
          Options for refining the appearance of group-type fields.
 
-         - *elementBrowserType* (string) (since TYPO3 CMS 6.0)
-           Makes it possible to set an alternative element browser type ("db" or "file")
-           than would otherwise be rendered based on the "internal_type" setting.
-           This is used internally for :ref:`FAL<t3fal:start>` file fields, where internal_type is "db"
-           but the element browser should be the file element browser anyway.
+         elementBrowserType
+            (string) (since TYPO3 CMS 6.0)
 
-         - *elementBrowserAllowed* (string)  (since TYPO3 CMS 6.0)
-           Makes it possible to set an alternative element browser allowed string
-           than would otherwise be taken from the "allowed" setting of this field.
-           This is used internally for :ref:`FAL<t3fal:start>` file fields,
-           where this is used to supply the comma list of allowed file types.
+            Makes it possible to set an alternative element browser type ("db" or "file")
+            than would otherwise be rendered based on the "internal_type" setting.
+            This is used internally for :ref:`FAL<t3fal:start>` file fields, where internal_type is "db"
+            but the element browser should be the file element browser anyway.
+
+         elementBrowserAllowed
+            (string)  (since TYPO3 CMS 6.0)
+
+            Makes it possible to set an alternative element browser allowed string
+            than would otherwise be taken from the "allowed" setting of this field.
+            This is used internally for :ref:`FAL<t3fal:start>` file fields,
+            where this is used to supply the comma list of allowed file types.
 
    Scope
          Display

@@ -89,12 +89,6 @@ Reference
 Reference details
 """""""""""""""""
 
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
 
 .. _ctrl-reference-title:
 
