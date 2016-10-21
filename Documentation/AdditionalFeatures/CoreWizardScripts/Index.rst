@@ -544,7 +544,7 @@ Content Elements:
       'enableByTypeConfig' => 1,
       'type' => 'script',
       'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.table',
-      'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_table.gif',
+      'icon' => 'content-table',
       'module' => array(
          'name' => 'wizard_table'
       ),
@@ -578,7 +578,7 @@ Content Elements:
       'RTEonly' => 1,
       'type' => 'script',
       'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
-      'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif',
+      'icon' => 'actions-wizard-rte',
       'module' => array(
           'name' => 'wizard_rte'
       )
@@ -732,7 +732,7 @@ Such a wizard can be configured like this:
             'link' => array(
                'type' => 'popup',
                'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-               'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
+               'icon' => 'actions-wizard-link',
                'module' => array(
                   'name' => 'wizard_link',
                ),
