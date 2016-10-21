@@ -19,12 +19,6 @@ records" content element):
    The "Insert records" content element with 3 elements referenced
 
 
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
 .. _columns-group-properties:
 
 Properties
@@ -35,44 +29,37 @@ Properties
    ========================= =========
    Property                  Data Type
    ========================= =========
-   `allowed`_                string
-   `appearance`_             array
-   `autoSizeMax`_            integer
+   allowed_                  string
+   appearance_               array
+   autoSizeMax_              integer
    `disable\_controls`_      string
-   `disallowed`_             string
-   `dontRemapTablesOnCopy`_  string
-   `filter`_                 array
+   disallowed_               string
+   dontRemapTablesOnCopy_    string
+   filter_                   array
    `foreign\_table`_         string
    `internal\_type`_         string
    `max\_size`_              integer
-   `maxitems`_               integer
-   `minitems`_               integer
-   `MM`_                     string
+   maxitems_                 integer
+   minitems_                 integer
+   MM_                       string
    `MM\_hasUidField`_        boolean
    `MM\_insert\_fields`_     array
    `MM\_match\_fields`_      array
    `MM\_opposite\_field`_    string
    `MM\_oppositeUsage`_      array
    `MM\_table\_where`_       string
-   `multiple`_               boolean
+   multiple_                 boolean
    `prepend\_tname`_         boolean
-   `selectedListStyle`_      string
+   selectedListStyle_        string
    `show\_thumbs`_           boolean
-   `size`_                   integer
-   `type`_                   string
-   `uploadfolder`_           string
-   `wizards`_                array
+   size_                     integer
+   type_                     string
+   uploadfolder_             string
+   wizards_                  array
    ========================= =========
 
 Property details
 """"""""""""""""
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
 
 .. _columns-group-properties-type:
 
@@ -136,8 +123,8 @@ internal\_type
          .. important::
 
             Types "file" and "file\_reference" should not be used anymore
-            since TYPO3 CMS 6.0. You should use FAL references instead
-            (:ref:`see example <columns-group-examples-fal>`).
+            since TYPO3 CMS 6.0. You should use FAL references instead.
+            See the example :ref:`columns-group-examples-fal`.
 
    Scope
          Display / Proc.
@@ -253,84 +240,79 @@ filter
 
          Define filters for item values.
 
-	.. note::
+   .. note::
 
-         Does't work in combination with a wizard.
+      Does't work in combination with a wizard.
 
-         This is useful when only foreign records matching certain criteria
-         should be allowed to be used as values in the group field.
-         The values are filtered in the Element Browser as well as during processing in TCEMain.
-         Filter userFuncs should have two input arguments ($parameters and $parentObject).
-         The first argument ($parameters) is an array with the parameters of the filter
-         as configured in the TCA, but with the additional parameter "values",
-         which contains the array of values which should be filtered by the userFunc.
-         The function must return the filtered array of values.
+      This is useful when only foreign records matching certain criteria
+      should be allowed to be used as values in the group field.
+      The values are filtered in the Element Browser as well as during processing in TCEMain.
+      Filter userFuncs should have two input arguments ($parameters and $parentObject).
+      The first argument ($parameters) is an array with the parameters of the filter
+      as configured in the TCA, but with the additional parameter "values",
+      which contains the array of values which should be filtered by the userFunc.
+      The function must return the filtered array of values.
 
-         Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied.
+      Multiple filters can be defined, and an array of configuration data for each
+      of the filters can be supplied::
 
-         .. code-block:: php
-
-            'filter' => array (
-            	array(
-            		'userFunc' => 'EXT:myext/class.tx_myext_filter.php:tx_myext_filter->doFilter',
-            		'parameters' => array(
-            			// optional parameters for the filter go here
-            		),
-            	),
-            	array(
-            		'userFunc' => 'EXT:foo/class.tx_foo_filter.php:tx_foo_filter->myFilter',
-            		'parameters' => array(
-            			// optional parameters for the filter go here
-            		),
-            	),
+         'filter' => array (
+            array(
+               'userFunc' => 'EXT:myext/class.tx_myext_filter.php:tx_myext_filter->doFilter',
+               'parameters' => array(
+                  // optional parameters for the filter go here
+               ),
             ),
-
-
-         **Example**
-
-         Say you have a "person" table with fields "gender" (radio buttons) as well as "mother" and "father"
-         (both group fields with relations to the same table.
-
-         Now, in the field "mother" it should certainly only be possible to create relations to female persons.
-         In that case, you could use the filter functionality to make sure only females can be selected
-         in that field.
-
-         The field configuration for the "mother" field could look like:
-
-         .. code-block:: php
-
-            'mother' => array (
-            	'label' => 'Mother',
-            	'config' => array (
-            		'type' => 'group',
-            		'internal_type' => 'db',
-            		'allowed' => 'tx_myext_person',
-            		'size' => 1,
-            		'filter' => array (
-            			array(
-            				'userFunc' => 'EXT:myext/class.tx_myext_filter.php:tx_myext_filter->doFilter',
-            				'parameters' => array(
-            					'evaluateGender' => 'female',						),
-            			),
-            		),
-            	)
+            array(
+               'userFunc' => 'EXT:foo/class.tx_foo_filter.php:tx_foo_filter->myFilter',
+               'parameters' => array(
+                  // optional parameters for the filter go here
+               ),
             ),
+         ),
 
-         The corresponding filter class would look like:
 
-         .. code-block:: php
+      **Example**
 
-            class tx_myext_filter {
+      Say you have a "person" table with fields "gender" (radio buttons) as well as "mother" and "father"
+      (both group fields with relations to the same table.
 
-            	public function doFilter(array $parameters, $parentObject) {
-            		$fieldValues = $parameters['values'];
+      Now, in the field "mother" it should certainly only be possible to create relations to female persons.
+      In that case, you could use the filter functionality to make sure only females can be selected
+      in that field.
 
-            		// do the filtering here
-            		...
+      The field configuration for the "mother" field could look like::
 
-            		return $fieldValues;
-            	}
+         'mother' => array (
+            'label' => 'Mother',
+            'config' => array (
+               'type' => 'group',
+               'internal_type' => 'db',
+               'allowed' => 'tx_myext_person',
+               'size' => 1,
+               'filter' => array (
+                  array(
+                     'userFunc' => 'EXT:myext/class.tx_myext_filter.php:tx_myext_filter->doFilter',
+                     'parameters' => array(
+                        'evaluateGender' => 'female',                  ),
+                  ),
+               ),
+            )
+         ),
+
+      The corresponding filter class would look like::
+
+         class tx_myext_filter {
+
+            public function doFilter(array $parameters, $parentObject) {
+               $fieldValues = $parameters['values'];
+
+               // do the filtering here
+               ...
+
+               return $fieldValues;
             }
+         }
 
    Scope
          Proc. / Display
@@ -842,32 +824,51 @@ disable\_controls
    Description
          Disables sub-controls inside "group" control. Comma-separated list of
          values. Possible values are:
-         - *browser* (disables browse button for list control)
-         - *list* (disables list and browse button, but not delete button)
-         - *delete* (disables the delete button)
-         - *allowedTables* (hide information which tables are
-         allowed to be referenced in the group field).
+
+         browser
+            Disables browse button for list control.
+
+         list
+            Disables list and browse button, but not delete button.
+
+         delete
+            Disables the delete button.
+
+         allowedTables
+            Hide information which tables are allowed to be referenced in the group field.
 
          See example images below.
 
          .. note::
 
-           If you use the delete button when the list is disabled,
-           **all** entries in the list will be deleted.
+            If you use the delete button when the list is disabled,
+            **all** entries in the list will be deleted.
+
+         Disabling the various controls:
 
          .. figure:: ../../../Images/Group_DisableControlls_AllAvailable.png
             :alt: Disabling controls - None
 
+            Disabling controls - None
+
+
          .. figure:: ../../../Images/Group_DisableControlls_Browser.png
             :alt: Disabling controls - browser
+
+            Disabling controls - browser
+
 
          .. figure:: ../../../Images/Group_DisableControlls_List.png
             :alt: Disabling controls - list
 
+            Disabling controls - list
+
+
          .. figure:: ../../../Images/Group_DisableControlls_AllowedTables.png
             :alt: Disabling controls - allowedTables
 
-            Disabling the various controls
+            Disabling controls - allowedTables
+
 
    Scope
          Display / Proc.
@@ -949,21 +950,21 @@ the screenshot below):
 The corresponding TCA code::
 
    'records' => array(
-           'label' => 'LLL:EXT:cms/locallang_ttc.xml:records',
-           'config' => array(
-                   'type' => 'group',
-                   'internal_type' => 'db',
-                   'allowed' => 'tt_content',
-                   'size' => '5',
-                   'maxitems' => '200',
-                   'minitems' => '0',
-                   'show_thumbs' => '1',
-                   'wizards' => array(
-                           'suggest' => array(
-                                   'type' => 'suggest',
-                           ),
-                   ),
-           ),
+      'label' => 'LLL:EXT:cms/locallang_ttc.xml:records',
+      'config' => array(
+         'type' => 'group',
+         'internal_type' => 'db',
+         'allowed' => 'tt_content',
+         'size' => '5',
+         'maxitems' => '200',
+         'minitems' => '0',
+         'show_thumbs' => '1',
+         'wizards' => array(
+            'suggest' => array(
+               'type' => 'suggest',
+            ),
+         ),
+      ),
    ),
 
 Note in particular how the "internal\_type" of the group field is set
@@ -1002,24 +1003,24 @@ The configuration looks like:
 .. code-block:: php
    :emphasize-lines: 9,9
 
-	'storage_pid' => array(
-		'exclude' => 1,
-		'label' => 'LLL:EXT:lang/locallang_tca.xlf:storage_pid',
-		'config' => array(
-			'type' => 'group',
-			'internal_type' => 'db',
-			'allowed' => 'pages',
-			'size' => '1',
-			'maxitems' => '1',
-			'minitems' => '0',
-			'show_thumbs' => '1',
-			'wizards' => array(
-				'suggest' => array(
-					'type' => 'suggest'
-				)
-			)
-		)
-	),
+   'storage_pid' => array(
+      'exclude' => 1,
+      'label' => 'LLL:EXT:lang/locallang_tca.xlf:storage_pid',
+      'config' => array(
+         'type' => 'group',
+         'internal_type' => 'db',
+         'allowed' => 'pages',
+         'size' => '1',
+         'maxitems' => '1',
+         'minitems' => '0',
+         'show_thumbs' => '1',
+         'wizards' => array(
+            'suggest' => array(
+               'type' => 'suggest'
+            )
+         )
+      )
+   ),
 
 
 Notice how "maxitems" is used to ensure that only one relation is
@@ -1037,38 +1038,36 @@ It is possible to use FAL references in a group-type field, although
 allows for richer references (as there can be additional fields
 in the relation in that case).
 
-Here is an example taken from the "examples" extension:
+Here is an example taken from the "examples" extension::
 
-.. code-block:: php
-
-	'image_fal_group' => array(
-		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.image_fal_group',
-		'config' => array(
-			'type' => 'group',
-			'internal_type' => 'db',
-			'allowed' => 'sys_file',
-			'MM' => 'sys_file_reference',
-			'MM_match_fields' => array(
-				'fieldname' => 'image_fal_group'
-			),
-			'prepend_tname' => TRUE,
-			'appearance' => array(
-				'elementBrowserAllowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-				'elementBrowserType' => 'file'
-			),
-			'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-			'show_thumbs' => '1',
-			'size' => '3',
-			'maxitems' => '200',
-			'minitems' => '0',
-			'autoSizeMax' => 40,
-		),
-	),
+   'image_fal_group' => array(
+      'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.image_fal_group',
+      'config' => array(
+         'type' => 'group',
+         'internal_type' => 'db',
+         'allowed' => 'sys_file',
+         'MM' => 'sys_file_reference',
+         'MM_match_fields' => array(
+            'fieldname' => 'image_fal_group'
+         ),
+         'prepend_tname' => TRUE,
+         'appearance' => array(
+            'elementBrowserAllowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+            'elementBrowserType' => 'file'
+         ),
+         'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
+         'show_thumbs' => '1',
+         'size' => '3',
+         'maxitems' => '200',
+         'minitems' => '0',
+         'autoSizeMax' => 40,
+      ),
+   ),
 
 .. note::
 
    It is also possible to create relations directly to the
-   "sys_file" table by not using MM information.
+   "sys_file" table not using any MM information.
 
 
 .. _columns-group-data:

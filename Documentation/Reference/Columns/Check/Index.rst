@@ -18,12 +18,6 @@ bit of the integer value, even if there is only one checkbox.
    from single-checkbox fields and not just whether it is true or false!.
 
 
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
 
 .. _columns-check-properties:
 
@@ -35,26 +29,18 @@ Properties
    ================ =========
    Property         Data Type
    ================ =========
-   `cols`_          integer
-   `default`_       integer
-   `eval`_          string
-   `items`_         array
-   `itemsProcFunc`_ string
-   `showIfRTE`_     boolean
-   `type`_          string
-   `validation`_    array
+   cols_            integer
+   default_         integer
+   eval_            string
+   items_           array
+   itemsProcFunc_   string
+   type_            string
+   validation_      array
    ================ =========
 
 
 Properties details
 """"""""""""""""""
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
 
 .. _columns-check-properties-type:
 
@@ -103,7 +89,7 @@ items
          value. The value sent to the database will be an integer where each
          bit represents the state of a checkbox in this array.
 
-         **Example:** ::
+         Example::
 
             'items' => array(
                 array('Green tomatoes', ''),
@@ -131,7 +117,7 @@ cols
    Description
          In how many columns the checkboxes will be shown.
 
-         Allowed values are 1, 2, 3, 4, 6 or ``inline``, 1 being default.
+         Allowed values are 1, 2, 3, 4, 6 or `inline`, 1 being default.
 
          Range is 1-31, 1 being default.
 
@@ -157,8 +143,8 @@ default
    Description
          Setting the default value of the checkbox(es).
 
-         **Notice:** Each bit corresponds to a check box (even if only one
-         checkbox which maps to bit-0).
+         **Note:** Each bit corresponds to a check box. This is true even if there
+         is only one checkbox which which then maps to bit-0.
 
    Scope
          Display / Proc.
@@ -222,8 +208,8 @@ eval
            someone tries to check the box of a record beyond the allowed
            maximum, the box will be unchecked automatically upon saving.
 
-           The actual limit is defined with the
-           :ref:`validation <columns-check-properties-validation>` property.
+           The actual limit is defined with the validation property
+           :ref:`columns-check-properties-validation`.
 
          maximumRecordsCheckedInPid
            Similar to :code:`maximumRecordsChecked` but with the validation
@@ -256,13 +242,11 @@ validation
          For :code:`maximumRecordsChecked` and `maximumRecordsCheckedInPid`
          the value is expected to be an integer.
 
-         **Example:**
-
-         .. code-block:: php
+         Example::
 
             'eval' => 'maximumRecordsChecked',
             'validation' => array(
-            	'maximumRecordsChecked' => 5
+               'maximumRecordsChecked' => 5
             )
 
          In this example, only five records from the same table will
@@ -286,14 +270,14 @@ A plain vanilla checkbox (the "Disable" checkbox from the "sys_template" table).
 
 .. code-block:: php
 
-	'hidden' => array(
-		'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.disable',
-		'exclude' => 1,
-		'config' => array(
-			'type' => 'check',
-			'default' => '0'
-		)
-	),
+   'hidden' => array(
+      'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.disable',
+      'exclude' => 1,
+      'config' => array(
+         'type' => 'check',
+         'default' => '0'
+      )
+   ),
 
 which results in:
 
@@ -311,30 +295,30 @@ A checkbox array
 
 This is an example of a checkbox array with two checkboxes in it. The
 first checkbox will have bit-0 and the second bit-1. The example is taken
-from the "pages" table.
+from the "pages" table::
 
-.. code-block:: php
-
-	'l18n_cfg' => array(
-		'exclude' => 1,
-		'label' => 'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg',
-		'config' => array(
-			'type' => 'check',
-			'items' => array(
-				array(
-					'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.1',
-					''
-				),
-				array(
-					$GLOBALS['TYPO3_CONF_VARS']['FE']['hidePagesIfNotTranslatedByDefault'] ? 'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.2a' : 'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.2',
-					''
-				)
-			)
-		)
-	),
+   'l18n_cfg' => array(
+      'exclude' => 1,
+      'label' => 'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg',
+      'config' => array(
+         'type' => 'check',
+         'items' => array(
+            array(
+               'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.1',
+               ''
+            ),
+            array(
+               $GLOBALS['TYPO3_CONF_VARS']['FE']['hidePagesIfNotTranslatedByDefault'] ?
+               'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.2a' :
+               'LLL:EXT:cms/locallang_tca.xlf:pages.l18n_cfg.I.2',
+               ''
+            )
+         )
+      )
+   ),
 
 If we wanted both checkboxes to be checked by default, we would set the
-:code:`default` property to **3** (since this contains both bit-0 and bit-1).
+:code:`default` property to `3` (since this contains both bit-0 and bit-1).
 
 And this is the result in the backend:
 
