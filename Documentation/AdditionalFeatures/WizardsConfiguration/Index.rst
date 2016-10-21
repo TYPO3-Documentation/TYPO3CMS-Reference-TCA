@@ -408,24 +408,20 @@ module
 
          This array contains configuration matching a declared wizard.
          For example, the "Add record" wizard is declared that way in
-         :file:`typo3/sysext/backend/ext_tables.php`:
+         :file:`typo3/sysext/backend/ext_tables.php`::
 
-         .. code-block:: php
-
-         // Register add wizard
-         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModulePath(
-            'wizard_add',
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Modules/Wizards/AddWizard/'
-         );
+            // Register add wizard
+            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModulePath(
+               'wizard_add',
+               \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Modules/Wizards/AddWizard/'
+            );
 
          Note the key named :code:`wizard_add`. This key is used when
-         configuring a wizard, as in:
+         configuring a wizard, as in::
 
-         .. code-block:: php
-
-         'module' => array(
-            'name' => 'wizard_add'
-         )
+            'module' => array(
+               'name' => 'wizard_add'
+            )
 
 
 .. _wizards-configuration-script-params:
@@ -1057,7 +1053,7 @@ receiverClass
 
    Description
          PHP class alternative receiver class. Must extend
-         `TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver ((?))
+         `TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver` ((?))
 
 
 .. _wizards-configuration-suggest-renderfunc:
@@ -1345,9 +1341,7 @@ Add a slider wizard
 ~~~~~~~~~~~~~~~~~~~
 
 The "haiku" table in the "examples" extension implements a slider
-wizard for the "Angle" field. The field configuration looks like this:
-
-.. code-block:: php
+wizard for the "Angle" field. The field configuration looks like this::
 
    'angle' => array(
       'exclude' => 0,
