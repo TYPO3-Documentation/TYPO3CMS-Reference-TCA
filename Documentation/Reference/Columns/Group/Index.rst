@@ -846,26 +846,30 @@ disable\_controls
 
          Disabling the various controls:
 
-         .. figure:: ../../../Images/Group_DisableControlls_AllAvailable.png
+         .. figure:: ../../../Images/Group_DisableControls_AllAvailable.png
             :alt: Disabling controls - None
+            :class: with-border
 
             Disabling controls - None
 
 
-         .. figure:: ../../../Images/Group_DisableControlls_Browser.png
+         .. figure:: ../../../Images/Group_DisableControls_Browser.png
             :alt: Disabling controls - browser
+            :class: with-border
 
             Disabling controls - browser
 
 
-         .. figure:: ../../../Images/Group_DisableControlls_List.png
+         .. figure:: ../../../Images/Group_DisableControls_List.png
             :alt: Disabling controls - list
+            :class: with-border
 
             Disabling controls - list
 
 
-         .. figure:: ../../../Images/Group_DisableControlls_AllowedTables.png
+         .. figure:: ../../../Images/Group_DisableControls_AllowedTables.png
             :alt: Disabling controls - allowedTables
+            :class: with-border
 
             Disabling controls - allowedTables
 
