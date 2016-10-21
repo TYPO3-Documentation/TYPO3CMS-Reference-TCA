@@ -31,14 +31,9 @@ backend view.
 
 .. note::
 
-   For using FAL references it is recommended to make use of `getFileFieldTCAConfig()` in 
+   For using FAL references it is recommended to make use of `getFileFieldTCAConfig()` in
    `TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility` *(since TYPO3 6.0)*.
 
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
 
 
 .. _columns-inline-properties:
@@ -81,12 +76,6 @@ Properties
 
 Property details
 ================
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
 
 
 .. _columns-inline-properties-type:
@@ -248,6 +237,8 @@ appearance
       See the :ref:`TSconfig reference <t3tsconfig:useroptions>`.
 
       The button is shown by default unless this option is set to :php:`false`.
+
+   - *elementBrowserEnabled* (boolean) (since TYPO3 CMS 8.4) Hides or displays the button in inline records
 
 :aspect:`Scope:`
    Display
