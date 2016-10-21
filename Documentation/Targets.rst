@@ -2,11 +2,12 @@
 
 .. _targets-for-crossreferencing:
 .. _labels-for-crossreferencing:
+.. _Linktargets:
 
-.. only:: html
+Linktargets
+===========
 
-   Targets for Cross-Referencing
-   =============================
+Targets for Cross-Referencing
 
-   .. ref-targets-list::
+.. ref-targets-list::
 
