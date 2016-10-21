@@ -846,12 +846,15 @@ disable\_controls
 
          Disabling the various controls:
 
+         Disabling controls - None
+
          .. figure:: ../../../Images/Group_DisableControls_AllAvailable.png
             :alt: Disabling controls - None
             :class: with-border
 
             Disabling controls - None
 
+         Disabling controls - browser
 
          .. figure:: ../../../Images/Group_DisableControls_Browser.png
             :alt: Disabling controls - browser
@@ -859,6 +862,7 @@ disable\_controls
 
             Disabling controls - browser
 
+         Disabling controls - list
 
          .. figure:: ../../../Images/Group_DisableControls_List.png
             :alt: Disabling controls - list
@@ -866,6 +870,8 @@ disable\_controls
 
             Disabling controls - list
 
+
+         Disabling controls - allowedTables
 
          .. figure:: ../../../Images/Group_DisableControls_AllowedTables.png
             :alt: Disabling controls - allowedTables
@@ -1213,12 +1219,8 @@ particular this is important for database records. Passing the list
 "26,45,49,1" will not give TCEforms a chance to render the titles of
 the records.
 
-.. todo:: Undefined:
 
-   t3cmsapi:typo3\\cms\\backend\\form\\datapreprocessor
-
-
-Class :ref:`TYPO3\\CMS\\Backend\\Form\\DataPreprocessor <t3api:TYPO3\\CMS\\Backend\\Form\\DataPreprocessor>`
+Class `TYPO3\\CMS\\Backend\\Form\\DataPreprocessor` ((?))
 is doing such transformations (among other things) and this is how the transformation happens:
 
 +-----------+----------------------------------+------------------------------------------------------------------+
@@ -1278,3 +1280,5 @@ Examples:
 | first.jpg,second.jpg | first.jpg                    | first.jpg                           | "uploads/[some-dir]/second.jpg" was  |
 |                      |                              |                                     | deleted from the location.           |
 +----------------------+------------------------------+-------------------------------------+--------------------------------------+
+
+

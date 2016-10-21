@@ -14,6 +14,7 @@ backend view.
 
 .. figure:: ../../../Images/TypeInlineExample.png
    :alt: An example of inline field
+   :class: with-border
 
    Images in content elements use IRRE to related to FAL records
 
@@ -317,13 +318,8 @@ customControls
 
       EXT:myext/class.tx_myext_myclass:tx_myext_myclass->myUserFuncMethod
 
-
-   .. todo:: Undefined
-
-      TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement
-
    For more details, see the implementation in
-   :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement <t3api:TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement>`
+   `TYPO3\\CMS\\Backend\\Form\\Element\\InlineElement` ((?))
    and search for "customControls".
 
 :aspect:`Scope:`

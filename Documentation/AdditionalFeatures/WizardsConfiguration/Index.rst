@@ -59,41 +59,41 @@ looks like this:
 
 .. code-block:: php
 
-	'basedOn' => array(
-		'label' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template.basedOn',
-		'config' => array(
-			...
-			'wizards' => array(
-				'_VERTICAL' => 1,
-				'suggest' => array(
-					'type' => 'suggest'
-				),
-				'edit' => array(
-					'type' => 'popup',
-					'title' => 'Edit template',
-					'module' => array(
-						'name' => 'wizard_edit',
-					),
-					'popup_onlyOpenIfSelected' => 1,
-					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif',
-					'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
-				),
-				'add' => array(
-					'type' => 'script',
-					'title' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template.basedOn_add',
-					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif',
-					'params' => array(
-						'table' => 'sys_template',
-						'pid' => '###CURRENT_PID###',
-						'setValue' => 'prepend'
-					),
-					'module' => array(
-						'name' => 'wizard_add'
-					)
-				)
-			)
-		)
-	),
+   'basedOn' => array(
+      'label' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template.basedOn',
+      'config' => array(
+         ...
+         'wizards' => array(
+            '_VERTICAL' => 1,
+            'suggest' => array(
+               'type' => 'suggest'
+            ),
+            'edit' => array(
+               'type' => 'popup',
+               'title' => 'Edit template',
+               'module' => array(
+                  'name' => 'wizard_edit',
+               ),
+               'popup_onlyOpenIfSelected' => 1,
+               'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif',
+               'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1'
+            ),
+            'add' => array(
+               'type' => 'script',
+               'title' => 'LLL:EXT:cms/locallang_tca.xlf:sys_template.basedOn_add',
+               'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif',
+               'params' => array(
+                  'table' => 'sys_template',
+                  'pid' => '###CURRENT_PID###',
+                  'setValue' => 'prepend'
+               ),
+               'module' => array(
+                  'name' => 'wizard_add'
+               )
+            )
+         )
+      )
+   ),
 
 The first two lines of the "wizards" configuration make use of two reserved
 keywords to define settings for the display of icons.
@@ -412,20 +412,20 @@ module
 
          .. code-block:: php
 
-			// Register add wizard
-			\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModulePath(
-				'wizard_add',
-				\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Modules/Wizards/AddWizard/'
-			);
+         // Register add wizard
+         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModulePath(
+            'wizard_add',
+            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Modules/Wizards/AddWizard/'
+         );
 
          Note the key named :code:`wizard_add`. This key is used when
          configuring a wizard, as in:
 
          .. code-block:: php
 
-			'module' => array(
-				'name' => 'wizard_add'
-			)
+         'module' => array(
+            'name' => 'wizard_add'
+         )
 
 
 .. _wizards-configuration-script-params:
@@ -1057,14 +1057,7 @@ receiverClass
 
    Description
          PHP class alternative receiver class. Must extend
-         :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver <t3api:TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver>`.
-
-         .. todo:: Undefined label!
-
-            Is it TYPO3\\CMS\\Backend\\Form\\Wizard\\SuggestWizardDefaultReceiver now?
-
-         .. mb, 2015-11-10
-
+         `TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver ((?))
 
 
 .. _wizards-configuration-suggest-renderfunc:
@@ -1181,27 +1174,27 @@ This is the corresponding TCA configuration:
 
 .. code-block:: php
 
-	'season' => array(
-		'exclude' => 0,
-		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season',
-		'config' => array(
-			'type' => 'input',
-			'size' => 20,
-			'eval' => 'trim',
-			'wizards' => array(
-				'season_picker' => array(
-					'type' => 'select',
-					'mode' => '',
-					'items' => array(
-						array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.spring', 'Spring'),
-						array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.summer', 'Summer'),
-						array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.autumn', 'Autumn'),
-						array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.winter', 'Winter'),
-					)
-				)
-			)
-		)
-	),
+   'season' => array(
+      'exclude' => 0,
+      'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season',
+      'config' => array(
+         'type' => 'input',
+         'size' => 20,
+         'eval' => 'trim',
+         'wizards' => array(
+            'season_picker' => array(
+               'type' => 'select',
+               'mode' => '',
+               'items' => array(
+                  array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.spring', 'Spring'),
+                  array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.summer', 'Summer'),
+                  array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.autumn', 'Autumn'),
+                  array('LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.season.winter', 'Winter'),
+               )
+            )
+         )
+      )
+   ),
 
 
 .. _wizards-configuration-examples-user:
@@ -1228,24 +1221,24 @@ The corresponding configuration is:
 
 .. code-block:: php
 
-	'weirdness' => array(
-		'exclude' => 0,
-		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.weirdness',
-		'config' => array(
-			'type' => 'input',
-			'size' => 10,
-			'eval' => 'int',
-			'wizards' => array(
-				'specialWizard' => array(
-					'type' => 'userFunc',
-					'userFunc' => 'Documentation\\Examples\\Userfuncs\\Tca->someWizard',
-					'params' => array(
-						'color' => 'green'
-					)
-				)
-			)
-		)
-	),
+   'weirdness' => array(
+      'exclude' => 0,
+      'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.weirdness',
+      'config' => array(
+         'type' => 'input',
+         'size' => 10,
+         'eval' => 'int',
+         'wizards' => array(
+            'specialWizard' => array(
+               'type' => 'userFunc',
+               'userFunc' => 'Documentation\\Examples\\Userfuncs\\Tca->someWizard',
+               'params' => array(
+                  'color' => 'green'
+               )
+            )
+         )
+      )
+   ),
 
 Notice the :code:`params` array, which is passed to the user function that
 handles the wizard. And here's the code of the user function (from
@@ -1253,29 +1246,29 @@ file :file:`EXT:examples/Classes/Userfuncs/Tca.php`):
 
 .. code-block:: php
 
-	public function someWizard($PA, $fObj) {
-		// Note that the information is passed by reference,
-		// so it's possible to manipulate the field directly
-		// Here we highlight the field with the color passed as parameter
-		$backgroundColor = 'white';
-		if (!empty($PA['params']['color'])) {
-			$backgroundColor = $PA['params']['color'];
-		}
-		$PA['item'] = '<div style="background-color: ' . $backgroundColor . '; padding: 4px;">' . $PA['item'] . '</div>';
+   public function someWizard($PA, $fObj) {
+      // Note that the information is passed by reference,
+      // so it's possible to manipulate the field directly
+      // Here we highlight the field with the color passed as parameter
+      $backgroundColor = 'white';
+      if (!empty($PA['params']['color'])) {
+         $backgroundColor = $PA['params']['color'];
+      }
+      $PA['item'] = '<div style="background-color: ' . $backgroundColor . '; padding: 4px;">' . $PA['item'] . '</div>';
 
-		// Assemble the wizard itself
-		$output = '<div style="margin-top: 8px; margin-left: 4px;">';
+      // Assemble the wizard itself
+      $output = '<div style="margin-top: 8px; margin-left: 4px;">';
 
-		$commonJavascriptCalls = $PA['fieldChangeFunc']['TBE_EDITOR_fieldChanged'] . $PA['fieldChangeFunc']['typo3form.fieldGet'] . ' return false;';
-		// Create the + button
-		$onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value++; " . $commonJavascriptCalls;
-		$output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">+</a>';
-		// Create the - button
-		$onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value--; " . $commonJavascriptCalls;
-		$output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">-</a>';
-		$output .= '</div>';
-		return $output;
-	}
+      $commonJavascriptCalls = $PA['fieldChangeFunc']['TBE_EDITOR_fieldChanged'] . $PA['fieldChangeFunc']['typo3form.fieldGet'] . ' return false;';
+      // Create the + button
+      $onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value++; " . $commonJavascriptCalls;
+      $output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">+</a>';
+      // Create the - button
+      $onClick = "document." . $PA['formName'] . "['" . $PA['itemName'] . "'].value--; " . $commonJavascriptCalls;
+      $output .= '<a href="#" onclick="' . htmlspecialchars($onClick) . '" style="padding: 6px; border: 1px solid black; background-color: #999">-</a>';
+      $output .= '</div>';
+      return $output;
+   }
 
 First the HTML code of the field itself is manipulated, by adding a
 div tag around it. Notice how all you need to do is to change the
@@ -1317,26 +1310,26 @@ This is the corresponding TCA configuration:
 
 .. code-block:: php
 
-	'related_records' => array(
-		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_records',
-		'config' => array(
-			'type' => 'group',
-			'internal_type' => 'db',
-			'allowed' => 'pages, tt_content',
-			...
-			'wizards' => array(
-				'suggest' => array(
-					'type' => 'suggest',
-					'default' => array(
-						'searchWholePhrase' => 1
-					),
-					'pages' => array(
-						'searchCondition' => 'doktype = 1'
-					)
-				)
-			)
-		)
-	)
+   'related_records' => array(
+      'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_records',
+      'config' => array(
+         'type' => 'group',
+         'internal_type' => 'db',
+         'allowed' => 'pages, tt_content',
+         ...
+         'wizards' => array(
+            'suggest' => array(
+               'type' => 'suggest',
+               'default' => array(
+                  'searchWholePhrase' => 1
+               ),
+               'pages' => array(
+                  'searchCondition' => 'doktype = 1'
+               )
+            )
+         )
+      )
+   )
 
 The tables that are queried are the ones used in the
 :code:`allowed` property, i.e. the "pages" and "tt_content" tables.
@@ -1356,27 +1349,27 @@ wizard for the "Angle" field. The field configuration looks like this:
 
 .. code-block:: php
 
-	'angle' => array(
-		'exclude' => 0,
-		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.angle',
-		'config' => array(
-			'type' => 'input',
-			'size' => 5,
-			'eval' => 'trim,int',
-			'range' => array(
-				'lower' => -90,
-				'upper' => 90
-			),
-			'default' => 0,
-			'wizards' => array(
-				'angle' => array(
-					'type' => 'slider',
-					'step' => 10,
-					'width' => 200
-				)
-			)
-		)
-	),
+   'angle' => array(
+      'exclude' => 0,
+      'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.angle',
+      'config' => array(
+         'type' => 'input',
+         'size' => 5,
+         'eval' => 'trim,int',
+         'range' => array(
+            'lower' => -90,
+            'upper' => 90
+         ),
+         'default' => 0,
+         'wizards' => array(
+            'angle' => array(
+               'type' => 'slider',
+               'step' => 10,
+               'width' => 200
+            )
+         )
+      )
+   ),
 
 Note the range which defines the possible values as varying from -90
 to 90. With the step property we indicate that we want to progress by
@@ -1384,5 +1377,6 @@ increments of 10. The slider wizard is rendered like this:
 
 .. figure:: ../../Images/WizardsExamplesSlider.png
    :alt: The slider wizard
+   :class: with-border
 
    The slider wizard next to the input field

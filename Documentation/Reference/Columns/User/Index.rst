@@ -10,13 +10,6 @@ Allows you to render a whole form field by a user function or class
 method.
 
 
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
-
 .. _columns-user-properties:
 
 Properties
@@ -84,16 +77,11 @@ userFunc
          If you want to call a method in a class, enter
          "[classname]->[methodname]".
 
-         .. todo:: Undefined
-
-            TYPO3\\CMS\\Backend\\Form\\FormEngine
-
          Two arguments will be passed to the function/method: The first
          argument is an array (passed by reference) which contains the current
          information about the current field being rendered. The second
          argument is a reference to the parent object (an instance of the
-         :ref:`TYPO3\\CMS\\Backend\\Form\\FormEngine <t3api:TYPO3\\CMS\\Backend\\Form\\FormEngine>`
-         class).
+         `TYPO3\\CMS\\Backend\\Form\\FormEngine` ((?)) class).
 
          The array with the current information will contain any parameters
          declared with the "parameters" property described below.
