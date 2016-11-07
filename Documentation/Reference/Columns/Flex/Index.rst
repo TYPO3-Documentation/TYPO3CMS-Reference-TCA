@@ -345,7 +345,7 @@ inheritance of data structure definition to sub pages and sub trees.
 
 This is a more complex example to the above one. First note, there is again no "ds" definition. Instead,
 the code will again traverse a tree up to the root, until a value in "my_next_ds" or "my_ds" is found. The
-second field "my_next_ds" is preferred if it contains a value over "my_ds" field, **if* at least one level
+second field "my_next_ds" is preferred if it contains a value over "my_ds" field, **if** at least one level
 up was searched. This is also known as the "Template on next level" feature from TemplaVoila.
 
 Additionally, the value within "my_ds" and "my_next_ds" is not treated as the final data structure, but
