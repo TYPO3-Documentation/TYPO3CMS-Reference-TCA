@@ -300,11 +300,11 @@ to "Default.xml".
         'ds_pointerField' => 'list_type,CType',
         'ds' => [
             'default' => 'FILE:...',
-            'tt_address_pi1,list' => 'FILE:EXT:tt_address/pi1/flexform.xml', // DS for list_type=tt_address_pi1 and CType=list
-            '*,table' => 'FILE:EXT:css_styled_content/flexform_ds.xml', // DS for CType=table, no matter which list_type value
-            'tx_myext_pi1' => 'FILE:EXT:myext/flexform.xml', // DS for list_type=tx_myext_pi1 without specifying a CType at all
+            'tt_address_pi1,list' => 'FILE:EXT:tt_address/pi1/flexform.xml',
+            '*,table' => 'FILE:EXT:css_styled_content/flexform_ds.xml',
+            'tx_myext_pi1' => 'FILE:EXT:myext/flexform.xml',
         ],
-    )],
+    ],
 
 The data structure selection now depends on the values of two different fields. First, there is a general "default"
 fallback if nothing else matches. Next, if field "list_type" has the value "tt_address_pi1" and "CType" has the value
