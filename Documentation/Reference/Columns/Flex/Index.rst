@@ -920,5 +920,5 @@ to the <TCEforms> tag:
                    <rows>5</rows>
            </config>
            <label>Subtitle</label>
-           <defaultExtras>richtext[*]:rte_transform[mode=ts_css]</defaultExtras>
+           <defaultExtras>richtext:rte_transform</defaultExtras>
    </TCEforms>
