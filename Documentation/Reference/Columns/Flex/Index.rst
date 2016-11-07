@@ -270,7 +270,7 @@ to the Data Structure which will contain form rendering information in
 the application specific tag "<TCEforms>".
 
 For general information about the backbone of a Data Structure, please
-refer to the `<T3DataStructure> chapter in the Core API manual <t3coreapi:t3ds>`.
+refer to the "<T3DataStructure>" chapter in the :ref:`Core API manual <t3coreapi:t3ds>`.
 
 
 .. _columns-flex-facts:
