@@ -508,7 +508,7 @@ FlexForm data format, <T3FlexForms>
 """""""""""""""""""""""""""""""""""
 
 When saving FlexForm elements the content is stored as XML using
-:code:`\TYPO3\CMS\Core\Utility\GeneralUtility::array2xml_cs()` to convert the internal PHP array to XML
+:code:`\TYPO3\CMS\Core\Utility\GeneralUtility::array2xml()` to convert the internal PHP array to XML
 format. The structure is as follows:
 
 
