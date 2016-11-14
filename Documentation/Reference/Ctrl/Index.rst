@@ -81,7 +81,6 @@ Reference
    `typeicon\_column`_                  string
    `typeicon_classes`_                  array
    `useColumnsForDefaultValues`_        string
-   `versioning\_followPages`_           boolean
    `versioningWS`_                      boolean
    `versioningWS\_alwaysAllowLiveEdit`_ boolean
    ==================================== ===========
@@ -1855,14 +1854,10 @@ versioningWS
          versioningWS
 
    Datatype
-         boolean / version number
+         boolean
 
    Description
-         If set, versioning is enabled for this table. If integer it indicates
-         a version number of versioning features.
-
-         - Version 2: Support for moving elements was added. ("V2" is used to
-           mark features)
+         If set, versioning is enabled for this table.
 
          Versioning in TYPO3 is based on this scheme::
 
@@ -2009,37 +2004,6 @@ versioningWS\_alwaysAllowLiveEdit
 
 
 
-.. _ctrl-reference-versioning-followpages:
-
-versioning\_followPages
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         versioning\_followPages
-
-   Datatype
-         boolean
-
-   Description
-         (Only for other tables than "pages")
-
-         If set, content from this table will get copied along when a new
-         version of a page is created.
-
-         **Tracking Originals**
-
-         It is highly recommended to use the "origUid" feature for tables whose
-         records are copied with pages that are versioned with content or
-         subtree since this will enable the possibility of content comparison
-         between current and future versions.
-
-   Scope
-         Proc.
-
-
-
 .. _ctrl-reference-security:
 
 security
@@ -2175,7 +2139,7 @@ The first one is from the "pages" table:
 		'sortby' => 'sorting',
 		'title' => 'LLL:EXT:lang/locallang_tca.xlf:pages',
 		'type' => 'doktype',
-		'versioningWS' => 2,
+		'versioningWS' => true,
 		'origUid' => 't3_origuid',
 		'delete' => 'deleted',
 		'crdate' => 'crdate',
@@ -2235,8 +2199,7 @@ Similarly for the "tt\_content" table:
 		'cruser_id' => 'cruser_id',
 		'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tt_content',
 		'delete' => 'deleted',
-		'versioningWS' => 2,
-		'versioning_followPages' => TRUE,
+		'versioningWS' => true,
 		'origUid' => 't3_origuid',
 		'type' => 'CType',
 		'hideAtCopy' => TRUE,
