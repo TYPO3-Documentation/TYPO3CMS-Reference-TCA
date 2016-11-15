@@ -1545,7 +1545,7 @@ shadowColumnsForMovePlaceholders
          - changing the sorting order of elements on the same page
          - moving elements to a different page
 
-         Since TYPO3 CMS 7 LTS move-placeholders are always used.
+         **Note:** Since TYPO3 CMS 7 LTS move-placeholders are always used.
 
 
 .. _ctrl-reference-is-static:
