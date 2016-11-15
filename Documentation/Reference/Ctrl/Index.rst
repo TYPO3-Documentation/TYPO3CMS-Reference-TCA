@@ -1535,9 +1535,7 @@ shadowColumnsForMovePlaceholders
          - changing the sorting order of elements on the same page
          - moving elements to a different page
 
-         Move placeholders are used only when property :ref:`versioningWS <ctrl-reference-versioningws>`
-         is set to :code:`2` (instead of :code:`1` or :code:`TRUE`).
-
+         Since TYPO3 CMS 7 LTS move-placeholders are always used.
 
 
 .. _ctrl-reference-is-static:
