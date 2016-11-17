@@ -720,28 +720,33 @@ Such a wizard can be configured like this:
 .. code-block:: php
    :emphasize-lines: 10-18
 
-   'header_link' => array(
+   'header_link' => [
       'label' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link',
       'exclude' => 1,
-      'config' => array(
+      'config' => [
          'type' => 'input',
          'size' => '50',
          'max' => '256',
          'eval' => 'trim',
-         'wizards' => array(
-            'link' => array(
+         'wizards' => [
+            'link' => [
                'type' => 'popup',
                'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
                'icon' => 'actions-wizard-link',
-               'module' => array(
+               'module' => [
                   'name' => 'wizard_link',
-               ),
-               'JSopenParams' => 'height=800,width=600,status=0,menubar=0,scrollbars=1'
-            )
-         ),
-         'softref' => 'typolink'
-      )
-   ),
+               ],
+               'JSopenParams' => 'height=800,width=600,status=0,menubar=0,scrollbars=1',
+               'params' => [
+                  'blindLinkOptions' => 'folder',
+                  'blindLinkFields' => 'class, target',
+                  'allowedExtensions' => 'jpg',
+               ],
+            ],
+         ],
+         'softref' => 'typolink',
+      ],
+   ],
 
 Notice how the wizard requires an extra parameter
 (highlighted lines) since it has to return content back to the input field
