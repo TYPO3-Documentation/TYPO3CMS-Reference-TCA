@@ -36,19 +36,10 @@ This can be achieved by registering that other extension as
 a dependency of yours. See the
 :ref:`description of constraints in Core APIs <t3coreapi:extension-declaration>`.
 
-.. note::
-
-   This works particularly well since TYPO3 CMS 6.2, which comes
-   with a rewritten dependency resolver.
-
-Before TYPO3 CMS 6.0, it is also possible to use the
-the "priority" property in the :file:`ext_emconf.php` file can help (a
-"bottom" extension will load last, but its exact loading order may vary
-if there are several "bottom"-priority extensions).
-
 For more information about an extension's structure, please refer to the
 :ref:`extension architecture <t3coreapi:extension-architecture>` chapter in
 Core APIs.
+
 
 .. _storing-changes-extension-exttables:
 
@@ -56,7 +47,9 @@ Storing in ext_tables.php files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Until TYPO3 CMS 6.1 (still supported for 6.2) changes to :php:`$GLOBALS['TCA']` are packaged
-into an extension's :file:`ext_tables.php` file.
+into an extension's :file:`ext_tables.php` file. This is strongly discouraged
+in more recent versions of TYPO3 CMS.
+
 
 .. _storing-changes-extension-overrides:
 
@@ -80,6 +73,15 @@ The advantage of this method is that all such changes are incorporated into
    its :file:`ext_tables.php` file, usually containing the "ctrl" section
    referencing a "dynamicConfigFile". Please ask the extension author to switch
    to the :file:`Configuration/TCA/<tablename>.php` setup.
+
+.. important::
+
+   Only TCA-related changes should go into :file:`Configuration/TCA/Overrides`
+   files. Some API calls may be okay as long as they also manipulate only
+   :php:`$GLOBALS['TCA']`. For example, it is fine to register a plugin with
+   :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin()` in
+   :file:`Configuration/TCA/Overrides/tt_content.php` because that API call only
+   modifies :php:`$GLOBALS['TCA']` for table "tt\_content".
 
 
 .. _storing-changes-on-the-fly:
