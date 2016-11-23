@@ -309,7 +309,7 @@ to "Default.xml".
 The data structure selection now depends on the values of two different fields. First, there is a general "default"
 fallback if nothing else matches. Next, if field "list_type" has the value "tt_address_pi1" and "CType" has the value
 "list", then the data structure defined in sub array "tt_address_pi1,list" is chosen. If "list_type" is anything, but
-"CType" is "table", then the data structure defined in "*,table" is selected. And last, if "list_type" is "tx_myext_pi1"
+"CType" is "table", then the data structure defined in "\*,table" is selected. And last, if "list_type" is "tx_myext_pi1"
 and "CType" is whatever else, then data structure "tx_myext_pi1" is used.
 
 This lookup mechanism is pretty powerful and used for instance in core for data structure selection depending
