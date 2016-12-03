@@ -654,7 +654,7 @@ MM
 
               KEY uid_local (uid_local),
               KEY uid_foreign (uid_foreign),
-              PRIMARY KEY (uid),
+              PRIMARY KEY (uid)
             );
 
          The field name of the config is not used for data-storage anymore but
