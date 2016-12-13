@@ -291,10 +291,6 @@ displayCond
          Conditions can be grouped and nested using boolean operators :code:`AND`
          or :code:`OR` as array keys. See examples below.
 
-         .. note::
-
-            Multiple conditions are possible only since TYPO3 CMS 6.1.
-
          A rule is a string divided into several parts by ":" (colons).
 
          The first part is the rule-type and the subsequent parts will depend
@@ -330,16 +326,7 @@ displayCond
 
              - **BIT / !BIT** : Evaluates if the bit specified by the value in "Part 3"
                is set in the field's value
-               (considered as an integer) *(available since TYPO3 CMS 6.2)*
-
-         - **EXT** : This evaluates based on current status of extensions.
-
-           - Part 1 is the extension key
-
-           - Part 2 is the evaluation type:
-
-             - **LOADED** : Requires the extension to be loaded if Part3 is "true"
-               and reversed if Part3 is "false".
+               (considered as an integer)
 
          - **REC** : This evaluates based on the current record (doesn't make
            sense for flexform fields)
@@ -348,14 +335,6 @@ displayCond
 
              - **NEW** : Requires the record to be new if Part2 is "true" and
                reversed if Part2 is "false".
-
-         - **HIDE\_L10N\_SIBLINGS** : (FlexForms only) This evaluates based on
-           whether the field is a value for the default language or an
-           alternative language. Works only for <langChildren>=1, otherwise it
-           has no effect.
-
-           - Part 1: Keywords: "except\_admin" = will still show field to admin
-             users
 
          - **HIDE\_FOR\_NON\_ADMINS:** This will hide the field for all non-admin
            users while admins can see it. Useful for FlexForm container fields
@@ -374,12 +353,15 @@ displayCond
              - **IS** : Part 2 is "true" or "false": If true, the field is shown only
                if the record is a version (pid == -1)
 
-         For FlexForm elements the fields are tags on same level. If
-         <langChildren> is enabled, then the value of other fields on same
-         level is taken from the same language.
+         For FlexForm elements the fields are tags on same level.
 
          The field-values of the FlexForm-parent record are prefixed with
          "parentRec.". These fields can be used like every other field.
+
+         In FlexForm, display conditions can be attached to single fields in sheets,
+         to sheets itself, to flex section fields and to flex section container element
+         fields. :code:`FIELD` references can be prefixed with a sheet name to
+         reference a field from a neighbor sheet.
 
          **Examples:**
 
@@ -406,7 +388,7 @@ displayCond
 				'displayCond' => array(
 					'AND' => array(
 						'FIELD:tx_templavoila_ds:REQ:true',
-						'EXT:static_info_tables:LOADED:true',
+						'FIELD:header:=:Headline',
 					)
 				)
 
