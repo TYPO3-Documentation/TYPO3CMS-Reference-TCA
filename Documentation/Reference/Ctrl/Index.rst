@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _ctrl:
@@ -72,10 +72,8 @@ Reference
    `shadowColumnsForMovePlaceholders`_  string
    `sortby`_                            string
    `title`_                             string
-   `transForeignTable`_                 string
    `transOrigDiffSourceField`_          string
    `transOrigPointerField`_             string
-   `transOrigPointerTable`_             string
    `tstamp`_                            string
    `type`_                              string
    `typeicon\_column`_                  string
@@ -1719,88 +1717,6 @@ transOrigPointerField
 
          Must be configured in :code:`$TCA[<table>]['columns']`, at least as a
          passthrough type.
-
-   Scope
-         Proc. / Display
-
-
-
-.. _ctrl-reference-transforeigntable:
-
-transForeignTable
-~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         transForeignTable
-
-   Datatype
-         string (table name)
-
-   Description
-         Translations may be stored in a separate table, instead of the same
-         one. In such a case, the name of the translation table is stored in
-         this property. The translation table in turn will use the
-         :ref:`transOrigPointerTable <ctrl-reference-transorigpointertable>`
-         property to point back to this table.
-
-         This is used in the TYPO3 Core for the "pages" table, which uses the
-         "pages\_language\_overlay" table to hold the translations.
-
-         **Example:**
-
-         In the "pages" table:
-
-         .. code-block:: php
-
-			'ctrl' => array(
-				...
-				'transForeignTable' => 'pages_language_overlay',
-				...
-			),
-
-         In "pages\_language\_overlay" table:
-
-         .. code-block:: php
-
-         	'ctrl' => array(
-         		...
-         		'transOrigPointerField' => 'pid',
-         		'transOrigPointerTable' => 'pages',
-         		...
-         	),
-
-         Note that the :ref:`transOrigPointerField <ctrl-reference-transorigpointerfield>`
-         is still used, but within the table holding the translations.
-
-         .. warning::
-
-            This is still not fully for all other tables than the
-            "pages" table. You should expect some issues and inconsistencies when
-            using this translation method.
-
-   Scope
-         Proc.
-
-
-
-.. _ctrl-reference-transorigpointertable:
-
-transOrigPointerTable
-~~~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         transOrigPointerTable
-
-   Datatype
-         string (table name)
-
-   Description
-         Symmetrical property to "transForeignTable". See above for
-         explanations.
 
    Scope
          Proc. / Display

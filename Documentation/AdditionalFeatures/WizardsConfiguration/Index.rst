@@ -966,6 +966,44 @@ additionalSearchFields
 
 
 
+.. _wizards-configuration-suggest-addWhere:
+
+addWhere
+''''''''
+
+.. container:: table-row
+
+   Key
+         addWhere
+
+   Type
+         string
+
+   Description
+         Allows to define an additional where clause for the searchquery.
+         It supplies a marker for ###THIS_UID### which is useful to exclude
+         the current record.
+
+
+
+.. _wizards-configuration-suggest-orderBy:
+
+orderBy
+'''''''
+
+.. container:: table-row
+
+   Key
+         orderby
+
+   Type
+         string
+
+   Description
+         Allows to add an `ORDER BY` part to the searchquery.
+
+
+
 .. _wizards-configuration-suggest-cssclass:
 
 cssClass
