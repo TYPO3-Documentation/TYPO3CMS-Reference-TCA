@@ -994,7 +994,7 @@ orderBy
 .. container:: table-row
 
    Key
-         orderby
+         orderBy
 
    Type
          string
