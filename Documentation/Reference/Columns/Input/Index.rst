@@ -34,7 +34,6 @@ Properties
    Property        Data Type
    =============== =========
    `autocomplete`_ boolean
-   `checkbox`_     string
    `dbType`_       string
    `default`_      string
    `eval`_         string
@@ -435,25 +434,6 @@ is\_in
    found in this string as well. This value is also passed as argument to
    the evaluation function if a user-defined evaluation function is
    registered.
-
-:aspect:`Scope:`
-   Display / Proc.
-
-
-
-.. _columns-input-properties-checkbox:
-
-checkbox
---------
-
-:aspect:`Key:`
-   checkbox
-
-:aspect:`Datatype:`
-   string
-
-:aspect:`Description:`
-   **This setting is not used anymore since TYPO3 CMS 4.5.**
 
 :aspect:`Scope:`
    Display / Proc.
