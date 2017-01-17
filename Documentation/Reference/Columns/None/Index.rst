@@ -27,7 +27,6 @@ Properties
    Property         Data Type
    ================ =========
    `cols`_          integer
-   `fixedRows`_     boolean
    `format`_        string
    `pass\_content`_ boolean
    `rows`_          integer
@@ -238,26 +237,6 @@ cols
 
    Description
          See :ref:`rows <columns-none-properties-rows>` and :ref:`size <columns-none-properties-size>`.
-
-
-
-.. _columns-none-properties-fixedrows:
-
-fixedRows
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         fixedRows
-
-   Datatype
-         boolean
-
-   Description
-         If this is set the :code:`<div>` element will not automatically try to fit the
-         content length but rather respect the size selected by the value of
-         the :ref:`rows <columns-none-properties-rows>` key.
 
 
 
