@@ -3,14 +3,14 @@
 
 .. _tca-what-is:
 
-What is $TCA?
+What is $GLOBALS['TCA']?
 -------------
 
-The Table Configuration Array (or :code:`$TCA`) is a global array in TYPO3
+The Table Configuration Array (or :code:`$GLOBALS['TCA']`) is a global array in TYPO3
 which extends the definition of tables beyond what can be done
-strictly with SQL. First and foremost $TCA defines which tables are
+strictly with SQL. First and foremost $GLOBALS['TCA'] defines which tables are
 editable in the TYPO3 backend. Database tables with no corresponding
-entry in :code:`$TCA` are "invisible" to the TYPO3 backend. The :code:`$TCA`
+entry in :code:`$GLOBALS['TCA']` are "invisible" to the TYPO3 backend. The :code:`$GLOBALS['TCA']`
 definition of a table also covers the following:
 
 - the relations between that table and other tables

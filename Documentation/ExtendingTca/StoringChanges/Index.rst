@@ -12,7 +12,7 @@ on the version of TYPO3 CMS which you are targeting.
 
 .. important::
 
-   Be aware that :php:`$TCA` is not available in all contexts.
+   Be aware that :php:`$GLOBALS['TCA']` is not available in all contexts.
    It is advised to always use :php:`$GLOBALS['TCA']` instead.
 
 There are two main ways to store your changes to the TCA: inside an extension

@@ -196,7 +196,7 @@ search
 
          The "tt\_content" table has the following definition::
 
-            $TCA['tt_content'] = array(
+            $GLOBALS['TCA']['tt_content'] = array(
                // ...
                'columns' => array(
                   // ...

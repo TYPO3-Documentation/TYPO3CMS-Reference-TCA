@@ -17,7 +17,7 @@ TCA Reference
       en
 
 :Description:
-      Complete reference to the Table Configuration Array ($TCA).
+      Complete reference to the Table Configuration Array ($GLOBALS['TCA']).
 
 :Keywords:
       forAdmins, forDevelopers, forIntermediates

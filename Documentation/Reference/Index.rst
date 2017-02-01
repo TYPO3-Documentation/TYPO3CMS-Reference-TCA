@@ -1,7 +1,7 @@
 .. include:: ../Includes.txt
 
 
-$TCA array reference
+$GLOBALS['TCA'] array reference
 --------------------
 
 This section describes all the properties available

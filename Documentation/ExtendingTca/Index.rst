@@ -3,7 +3,7 @@
 
 .. _extending:
 
-Extending the $TCA array
+Extending the $GLOBALS['TCA'] array
 ------------------------
 
 Being a PHP array, the Table Configuration Array can be easily

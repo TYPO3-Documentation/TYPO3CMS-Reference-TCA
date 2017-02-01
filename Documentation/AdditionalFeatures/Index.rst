@@ -3,7 +3,7 @@
 
 .. _additional:
 
-Additional $TCA features
+Additional $GLOBALS['TCA'] features
 ------------------------
 
 

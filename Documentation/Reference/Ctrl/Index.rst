@@ -1487,7 +1487,7 @@ shadowColumnsForNewPlaceholders
          of fields whose values are "shadowed" to the Live record.
 
          All fields listed for this option must be defined in
-         :code:`$TCA[<table>]['columns']` as well.
+         :code:`$GLOBALS['TCA'][<table>]['columns']` as well.
 
          Furthermore fields which are listed in :ref:`transOrigPointerField <ctrl-reference-transorigpointerfield>`,
          :ref:`languageField <ctrl-reference-languageField>`, :ref:`label <ctrl-reference-label>`
@@ -1715,7 +1715,7 @@ transOrigPointerField
          the main form. This is very neat if translators are to see what they
          are translating.
 
-         Must be configured in :code:`$TCA[<table>]['columns']`, at least as a
+         Must be configured in :code:`$GLOBALS['TCA'][<table>]['columns']`, at least as a
          passthrough type.
 
    Scope
@@ -1748,7 +1748,7 @@ transOrigDiffSourceField
          The field type in the database should be a large text field
          (clob/blob).
 
-         You don't have to configure this field in :code:`$TCA[<table>]['columns']`,
+         You don't have to configure this field in :code:`$GLOBALS['TCA'][<table>]['columns']`,
          but if you do, select the "passthrough" type. That will enable
          the undo function to also work on this field.
 
@@ -1978,7 +1978,7 @@ Security-related configuration
 This section describes "sub-properties" of the "security" property. They
 are meant to be used as keys of the "security" property array::
 
-   $TCA['sys_file'] = array(
+   $GLOBALS['TCA']['sys_file'] = array(
       'ctrl' => array(
          ...
          'security' => array(

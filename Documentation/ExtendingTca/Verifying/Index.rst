@@ -3,13 +3,13 @@
 
 .. _verifying:
 
-Verifying the $TCA
+Verifying the $GLOBALS['TCA']
 ^^^^^^^^^^^^^^^^^^
 
 You may find it necessary – at some point – to verify the full
-structure of the :code:`$TCA` in your TYPO3 installation. The System >
+structure of the :code:`$GLOBALS['TCA']` in your TYPO3 installation. The System >
 Configuration module makes it possible to have an overview of the
-complete :code:`$TCA`, with all customizations taken into account.
+complete :code:`$GLOBALS['TCA']`, with all customizations taken into account.
 
 .. figure:: ../../Images/VerifyingTca.png
    :alt: The Configuration module

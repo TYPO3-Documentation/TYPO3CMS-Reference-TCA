@@ -806,7 +806,7 @@ pidList
 
          .. code-block:: php
 
-            $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
+            $GLOBALS['TCA']['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
                     'default' => array(
                             'pidList' => '1,2,3,45',
@@ -836,7 +836,7 @@ pidDepth
 
          .. code-block:: php
 
-            $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
+            $GLOBALS['TCA']['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
                     'default' => array(
                             'pidList' => '6,7',
@@ -905,7 +905,7 @@ searchWholePhrase
 
          .. code-block:: php
 
-            $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
+            $GLOBALS['TCA']['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
                     'default' => array(
                             'searchWholePhrase' => 1,
@@ -935,7 +935,7 @@ searchCondition
          .. code-block:: php
 
             // configures the suggest wizard for the field "storage_pid" in table "pages" to search only for pages with doktype=1
-            $TCA['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
+            $GLOBALS['TCA']['pages']['columns']['storage_pid']['config']['wizards']['suggest'] = array(
                     'type' => 'suggest',
                     'default' => array(
                             'searchCondition' => 'doktype=1',
