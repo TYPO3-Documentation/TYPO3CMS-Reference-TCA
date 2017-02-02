@@ -869,6 +869,24 @@ minimumCharacters
 
 
 
+.. _wizards-configuration-suggest-maxitemsinresultList:
+
+maxItemsInResultList
+''''''''''''''''''''
+
+.. container:: table-row
+
+   Key
+         maxItemsInResultList
+
+   Type
+         integer
+
+   Description
+         Maximum number of results to display, default is :code:`10`.
+
+
+
 .. _wizards-configuration-suggest-maxpathtitlelength:
 
 maxPathTitleLength
@@ -884,7 +902,7 @@ maxPathTitleLength
 
    Description
          Maximum number of characters to display when a path element is too
-         long
+         long.
 
 
 
