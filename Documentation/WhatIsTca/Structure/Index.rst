@@ -3,7 +3,7 @@
 
 .. _tca-structure:
 
-Structure of the $GLOBALS['TCA'] array
+Structure of the $TCA array
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -12,7 +12,7 @@ Structure of the $GLOBALS['TCA'] array
 The table entries (first level)
 """""""""""""""""""""""""""""""
 
-The "first level" of the $GLOBALS['TCA'] array is made of the table names (as
+The "first level" of the :php:`$GLOBALS['TCA']` array is made of the table names (as
 they appear in the database)::
 
    $GLOBALS['TCA']['pages'] = array(
@@ -59,7 +59,7 @@ The general structure (looking at a single table) is as follows::
    );
 
 The following table provides a brief description of each the various
-sections of $GLOBALS['TCA']. Each section is covered in more details in its own
+sections of :php:`$GLOBALS['TCA']`. Each section is covered in more details in its own
 chapter.
 
 
@@ -85,7 +85,7 @@ chapter.
            can only be edited by admin-users, may only exist in the tree root
            etc.
 
-         -  For all tables configured in $GLOBALS['TCA'] this section must exist.
+         -  For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
 
          :ref:`Full reference <ctrl>`
 

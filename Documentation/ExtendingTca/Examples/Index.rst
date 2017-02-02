@@ -69,8 +69,8 @@ Here's the complete code, taken from file
 	);
 
 First of all, the fields that we want to add are detailed according to
-the :code:`$GLOBALS['TCA']` syntax for columns. This configuration is stored in the
-:code:`$temporaryColumns` array.
+the :php:`$GLOBALS['TCA']` syntax for columns. This configuration is stored in the
+:php:`$temporaryColumns` array.
 
 After that come two additional steps:
 
@@ -130,7 +130,7 @@ element types. First of all, we add its SQL definition in
 		tx_examples_noprint tinyint(4) DEFAULT '0' NOT NULL
 	);
 
-Then we add it to the :code:`$GLOBALS['TCA']` in :file:`Configuration/TCA/Overrides/tt_content.php`:
+Then we add it to the :php:`$GLOBALS['TCA']` in :file:`Configuration/TCA/Overrides/tt_content.php`:
 
 .. code-block:: php
 
@@ -195,4 +195,4 @@ The result is the following:
 
    This is just an example of how the effect of the "No print" checkbox
    can be ultimately implemented. It is meant to show that just adding
-   the field to the :code:`$GLOBALS['TCA']` is not enough.
+   the field to the :php:`$GLOBALS['TCA']` is not enough.

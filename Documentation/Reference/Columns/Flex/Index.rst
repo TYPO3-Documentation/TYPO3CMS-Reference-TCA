@@ -828,7 +828,7 @@ The DS used to render this field is found in the file
    </T3DataStructure>
 
 It's clear that the contents of <TCEforms> is a direct reflection of
-the field configurations we normally set up in the $GLOBALS['TCA'] array.
+the field configurations we normally set up in the :php:`$GLOBALS['TCA']` array.
 
 The Data Structure for this FlexForm is loaded in the "pi\_flexform"
 field of the "tt\_content" table by adding the following to the

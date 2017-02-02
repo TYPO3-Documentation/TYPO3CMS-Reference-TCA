@@ -3,11 +3,11 @@
 
 .. _extending:
 
-Extending the $GLOBALS['TCA'] array
+Extending the $TCA array
 ------------------------
 
 Being a PHP array, the Table Configuration Array can be easily
-extended. It can be accessed as the global variable :code:`$GLOBALS['TCA']`.
+extended. It can be accessed as the global variable :php:`$GLOBALS['TCA']`.
 TYPO3 also provides APIs for making this simpler.
 
 

@@ -156,7 +156,7 @@ allowed
 
          **For the "db" internal type (Required!):**
 
-         A comma list of tables from $GLOBALS['TCA'].
+         A comma list of tables from :php:`$GLOBALS['TCA']`.
 
          For example the value could be "pages,be\_users".
 

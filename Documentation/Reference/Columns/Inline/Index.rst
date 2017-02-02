@@ -114,7 +114,7 @@ foreign\_table
 :aspect:`Description:`
    *[Must be set, there is no type "inline" without a foreign table]* The
    table name of the child records is defined here. The table must be
-   configured in $GLOBALS['TCA'].
+   configured in :php:`$GLOBALS['TCA']`.
 
    See the other related options below.
 

@@ -12,7 +12,7 @@ Introduction
 About this document
 ^^^^^^^^^^^^^^^^^^^
 
-This document aims to describe the global array called :code:`$GLOBALS['TCA']`. This
+This document aims to describe the global array called :php:`$GLOBALS['TCA']`. This
 array describes the database tables that TYPO3 can operate on. It is a
 very central element of the TYPO3 architecture.
 
