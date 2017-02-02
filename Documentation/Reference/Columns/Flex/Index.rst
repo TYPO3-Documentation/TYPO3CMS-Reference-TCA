@@ -828,7 +828,7 @@ The DS used to render this field is found in the file
    </T3DataStructure>
 
 It's clear that the contents of <TCEforms> is a direct reflection of
-the field configurations we normally set up in the $TCA array.
+the field configurations we normally set up in the :php:`$GLOBALS['TCA']` array.
 
 The Data Structure for this FlexForm is loaded in the "pi\_flexform"
 field of the "tt\_content" table by adding the following to the
@@ -836,7 +836,7 @@ ext\_tables.php file of the "examples" extension:
 
 .. code-block:: php
 
-   $TCA['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi_flexform';
+   $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi_flexform';
    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($_EXTKEY . '_pi1', 'FILE:EXT:examples/Configuration/FlexForms/Main.xml');
 
 In the first line the tt\_content field "pi\_flexform" is added to the

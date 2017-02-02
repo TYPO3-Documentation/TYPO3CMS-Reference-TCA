@@ -114,7 +114,7 @@ foreign\_table
 :aspect:`Description:`
    *[Must be set, there is no type "inline" without a foreign table]* The
    table name of the child records is defined here. The table must be
-   configured in $TCA.
+   configured in :php:`$GLOBALS['TCA']`.
 
    See the other related options below.
 
@@ -361,7 +361,7 @@ foreign\_label
 
 :aspect:`Description:`
    If set, it overrides the label set in
-   :php:`$TCA[<foreign_table>]['ctrl']['label']` for the inline-view.
+   :php:`$GLOBALS['TCA'][<foreign_table>]['ctrl']['label']` for the inline-view.
 
 :aspect:`Scope:`
    Display / Proc.
@@ -667,7 +667,7 @@ foreign\_match\_fields
    The match TCA configuration of the parent table would then look like
    this::
 
-      $TCA['ty_myext_company'] = array (
+      $GLOBALS['TCA']['ty_myext_company'] = array (
          // ...
          'columns' => array (
             //...
@@ -845,7 +845,7 @@ symmetric\_label
 
 :aspect:`Description:`
    If set, it overrides the label set in
-   :php:`$TCA[<foreign_table>]['ctrl']['label']` for the inline-view and only
+   :php:`$GLOBALS['TCA'][<foreign_table>]['ctrl']['label']` for the inline-view and only
    if looking to a symmetric relation from the "other" side.
 
 :aspect:`Scope:`
@@ -1001,7 +1001,7 @@ This combines companies with persons (employees) using a comma separated
 list, so no :ref:`foreign_field <columns-inline-properties-foreign-field>`
 is used here::
 
-   $TCA['company'] = array(
+   $GLOBALS['TCA']['company'] = array(
       'ctrl' => ...,
       'interface' => ...,
       'feInterface' => ...,

@@ -279,7 +279,7 @@ foreign\_table
 
    Description
          The item-array will be filled with records from the table defined
-         here. The table must be configured in `$TCA`.
+         here. The table must be configured in :php:`$GLOBALS['TCA']`.
 
          See the other related options below.
 
@@ -878,7 +878,7 @@ special
 
          - **pagetypes** - all "doktype"-values for the "pages" table are added.
 
-         - **exclude** - the list of "excludeFields" as found in $TCA is added.
+         - **exclude** - the list of "excludeFields" as found in :php:`$GLOBALS['TCA']` is added.
 
          - **modListGroup** - module-lists added for groups.
 
@@ -1621,8 +1621,8 @@ The following configuration change:
               ),
       ),
    );
-   $TCA['pages']['columns']['storage_pid']['config'] = array_merge(
-      $TCA['pages']['columns']['storage_pid']['config'],
+   $GLOBALS['TCA']['pages']['columns']['storage_pid']['config'] = array_merge(
+      $GLOBALS['TCA']['pages']['columns']['storage_pid']['config'],
       $tempConfiguration
    );
 

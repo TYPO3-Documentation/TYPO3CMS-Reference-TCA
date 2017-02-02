@@ -12,16 +12,16 @@ Structure of the $TCA array
 The table entries (first level)
 """""""""""""""""""""""""""""""
 
-The "first level" of the $TCA array is made of the table names (as
+The "first level" of the :php:`$GLOBALS['TCA']` array is made of the table names (as
 they appear in the database)::
 
-   $TCA['pages'] = array(
+   $GLOBALS['TCA']['pages'] = array(
        ...
    );
-   $TCA['tt_content'] = array(
+   $GLOBALS['TCA']['tt_content'] = array(
        ...
    );
-   $TCA['tx_examples_haiku'] = array(
+   $GLOBALS['TCA']['tx_examples_haiku'] = array(
        ...
    );
 
@@ -40,7 +40,7 @@ backend. The various parts on this second level are called "sections".
 
 The general structure (looking at a single table) is as follows::
 
-   $TCA['tx_examples_haiku'] = array(
+   $GLOBALS['TCA']['tx_examples_haiku'] = array(
        'ctrl' => array(
            ....
        ),
@@ -59,7 +59,7 @@ The general structure (looking at a single table) is as follows::
    );
 
 The following table provides a brief description of each the various
-sections of $TCA. Each section is covered in more details in its own
+sections of :php:`$GLOBALS['TCA']`. Each section is covered in more details in its own
 chapter.
 
 
@@ -85,7 +85,7 @@ chapter.
            can only be edited by admin-users, may only exist in the tree root
            etc.
 
-         -  For all tables configured in $TCA this section must exist.
+         -  For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
 
          :ref:`Full reference <ctrl>`
 
