@@ -93,3 +93,4 @@ It is also possible to perform some special manipulations on
 :php:`$GLOBALS['TCA']` right before it is stored into cache, thanks to the
 :code:`tcaIsBeingBuilt` signal. This signal was introduced in
 TYPO3 CMS 6.2.1.
+Put all manipulations which can not be cached (for example Page-TS-config specific or website specific TCA-manipulations) into :file:`ext_tables.php`.
