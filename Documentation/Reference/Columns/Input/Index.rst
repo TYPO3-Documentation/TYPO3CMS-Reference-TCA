@@ -577,7 +577,6 @@ Taken from the "sys_file_reference" table.
    :emphasize-lines: 9
 
    'title' => array(
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => 1,
       'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
       'config' => array(
