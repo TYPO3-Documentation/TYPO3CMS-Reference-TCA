@@ -18,22 +18,25 @@ Properties
 
 .. container:: ts-properties
 
-   ============== =========
-   Property       Data Type
-   ============== =========
-   `cols`_        integer
-   `default`_     string
-   `eval`_        string
-   `format`_      string
-   `is\_in`_      string
-   `mode`_        string
-   `placeholder`_ string
-   `renderType`_  string
-   `rows`_        integer
-   `type`_        string
-   `wizards`_     array
-   `wrap`_        string
-   ============== =========
+   =================== =========
+   Property            Data Type
+   =================== =========
+   `cols`_             integer
+   `default`_          string
+   `eval`_             string
+   `format`_           string
+   `is\_in`_           string
+   `mode`_             string
+   `placeholder`_      string
+   `renderType`_       string
+   `rows`_             integer
+   `type`_             string
+   `wizards`_          array
+   `wrap`_             string
+   `enableRichtext`_   boolean
+   `fixedFont`_        boolean
+   `enableTabulator`_  boolean
+   =================== =========
 
 
 .. _columns-text-properties-type:
@@ -220,6 +223,70 @@ wrap
                     'rows' => '15',
                     'wrap' => 'off',
             )
+
+   Scope
+         Display
+
+
+
+.. _columns-text-properties-enableRichtext:
+
+enableRichtext
+~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         enableRichtext
+
+   Datatype
+         boolean
+
+   Description
+         Determines whether a text field has the richtext editor enabled or not.
+
+   Scope
+         Display
+
+
+
+.. _columns-text-properties-fixedFont:
+
+fixedFont
+~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         fixedFont
+
+   Datatype
+         boolean
+
+   Description
+         Enables a fixed-width font for the text field. This is useful when using code.
+
+   Scope
+         Display
+
+
+
+.. _columns-text-properties-enableTabulator:
+
+enableTabulator
+~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         enableTabulator
+
+   Datatype
+         boolean
+
+   Description
+         Enabling this allows to use tabs in a text field. This works well together
+         with fixed-width fonts for code editing.
 
    Scope
          Display

@@ -993,14 +993,6 @@ renderType
            field, selected items are displayed in the left select.
          - ``selectTree`` - A tree for selecting hierarchical data.
 
-         .. note::
-
-            Properties "maxitems" and "minitems" are not enforced in the browser
-            for any of the render types here! However they will be on the server.
-            It is recommended to set "minitems" to zero and "maxitems" to a very
-            large number exceeding the possible number of values you can select
-            (for instance set it to 1000 or so).
-
    Scope
          Display
 

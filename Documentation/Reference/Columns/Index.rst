@@ -39,7 +39,6 @@ Properties
    Property         Data Type
    ================ ====================
    `config`_        array
-   `defaultExtras`_ string
    `displayCond`_   string/array
    `exclude`_       boolean
    `label`_         string/LLL reference
@@ -146,16 +145,7 @@ l10n\_mode
          - **exclude** – Field will not be shown in TCEforms if this record is a
            localization of the default language. (Works basically like a display
            condition.) Excluded fields will not be copied when a language-copy is
-           made. May have frontend implications similar to "mergeIfNotBlank".
-
-         - **mergeIfNotBlank** – Field will be shown and editable in the Backend but if
-           the field value of the language overlay record is blank the value from the
-           default translation record is used. This can be very useful for values shared
-           from the default record. When a new localization copy is created in the backend,
-           the field content is not copied from the default translation.
-
-         - **noCopy** – Like mergeIfNotBlank but without the implications for the
-           frontend; The field is just not copied.
+           made. May have frontend implications.
 
          - **prefixLangTitle** – The field will get copied, but the content is
            prefixed with the title of the language. Works only for field types
@@ -420,40 +410,6 @@ displayCond
    Scope
          Display
 
-
-
-.. _columns-properties-defaultextras:
-
-defaultExtras
-~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         defaultExtras
-
-   Datatype
-         string
-
-   Description
-         This string will be the default string of extra options for a field
-         regardless of types configuration. For instance this can be used to
-         create an RTE field.
-
-         This is also the way by which you can enable the RTE for FlexForm fields.
-
-         See :ref:`special configuration <special-configuration-default>` for
-         details on this setting.
-
-         **Example value:**
-
-         richtext[cut\|copy\|paste\|formatblock\|textcolor\|bold\|italic\|under
-         line\|left\|center\|right\|orderedlist\|unorderedlist\|outdent\|indent
-         \|link\|table\|image\|line\|chMode]:rte\_transform[mode=ts\_css\|imgpa
-         th=uploads/tx\_mininews/rte/]
-
-   Scope
-         Display
 
 
 .. _columns-types:

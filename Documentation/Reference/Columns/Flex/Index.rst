@@ -993,7 +993,7 @@ highlighted in bold above).
 Example: Rich Text Editor in FlexForms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Creating a RTE in FlexForms is done by adding "defaultExtras" content
+Creating a RTE in FlexForms is done by enabling "enableRichtext" content
 to the <TCEforms> tag:
 
 .. code-block:: xml
@@ -1003,7 +1003,7 @@ to the <TCEforms> tag:
                    <type>text</type>
                    <cols>48</cols>
                    <rows>5</rows>
+                   <enableRichtext>1</enableRichtext>
            </config>
            <label>Subtitle</label>
-           <defaultExtras>richtext:rte_transform</defaultExtras>
    </TCEforms>

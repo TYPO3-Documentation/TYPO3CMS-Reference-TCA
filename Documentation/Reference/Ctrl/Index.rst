@@ -60,7 +60,6 @@ Reference
    `origUid`_                           string
    `prependAtCopy`_                     string
    `readOnly`_                          boolean
-   `requestUpdate`_                     string
    `rootLevel`_                         [0, 1, -1]
    `thumbnail`_                         string
    `searchFields`_                      string
@@ -74,6 +73,7 @@ Reference
    `title`_                             string
    `transOrigDiffSourceField`_          string
    `transOrigPointerField`_             string
+   `translationSource`_                 string
    `tstamp`_                            string
    `type`_                              string
    `typeicon\_column`_                  string
@@ -508,32 +508,6 @@ hideTable
 
    Scope
          Display
-
-
-
-.. _ctrl-reference-requestupdate:
-
-requestUpdate
-~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         requestUpdate
-
-   Datatype
-         string
-
-         (list of field names)
-
-   Description
-         This is a list of fields that will trigger an update of the form, on
-         top of the "type" field. This is generally done to hide or show yet
-         more fields depending on the value of the field that triggered the
-         update.
-
-   Scope
-         Proc.
 
 
 
@@ -1723,6 +1697,28 @@ transOrigPointerField
 
 
 
+.. _ctrl-reference-translationSource:
+
+translationSource
+~~~~~~~~~~~~~~~~~
+
+.. container:: table-row
+
+   Key
+         translationSource
+
+   Datatype
+         string (field name)
+
+   Description
+         Name of the field used by translations to point back to the original
+         record (i.e. the record in any language of which they are a translation).
+
+   Scope
+         Proc. / Display
+
+
+
 .. _ctrl-reference-transorigdiffsourcefield:
 
 transOrigDiffSourceField
@@ -2143,7 +2139,6 @@ Similarly for the "tt\_content" table:
 			...
 		),
 		'thumbnail' => 'image',
-		'requestUpdate' => 'list_type,rte_enabled,menu_type',
 		'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform'
 	),
 
