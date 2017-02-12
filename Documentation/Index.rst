@@ -65,10 +65,6 @@ Core Manuals are written as reference manuals. The reader should rely
 on the Table of Contents to identify what particular section will best
 address the task at hand.
 
-.. note::
-
-   :ref:`Todo-List`
-
 
 .. toctree::
    :hidden:
