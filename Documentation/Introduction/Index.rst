@@ -92,8 +92,8 @@ Here three tables, `pages`, `tt_content` and `tx_examples_haiku` are shown as ex
 
 .. _tca-structure-level2:
 
-Inside the table entries (second level)
-=======================================
+Inside table entries (second level)
+===================================
 
 Each table is further defined by an array which configures how the
 system handles the table, both for the display and the processing in the
@@ -124,8 +124,7 @@ sections of :php:`$GLOBALS['TCA']['some_table']`. Each section is covered in mor
 chapter.
 
 
-ctrl
-  **The table**
+['ctrl'] The table
 
   The "ctrl" section contains properties for the table in general.
 
@@ -146,77 +145,47 @@ ctrl
   :ref:`Full reference <ctrl>`
 
 
-.. container:: table-row
+['interface'] Backend interface handling
 
-   Section
-         interface
+  The "interface" section contains properties related to the tables
+  display in the backend, mostly the Web > List module.
 
-   Description
-         **The backend interface handling**
-
-         The "interface" section contains properties related to the tables
-         display in the backend, mostly the Web > List module.
-
-         :ref:`Full reference <interface>`
+  :ref:`Full reference <interface>`
 
 
-.. container:: table-row
+['columns'] Individual fields
 
-   Section
-         columns
+  The "columns" section contains configuration for each table *field*
+  (also called "column") which can be edited in the backend.
 
-   Description
-         **The individual fields**
+  The configuration includes both properties for the display in the
+  backend as well as the processing of the submitted data.
 
-         The "columns" section contains configuration for each table  *field*
-         (also called "column") which can be edited in the backend.
+  Each field can be configured as a certain "type" (e.g. checkbox,
+  selector, input field, text area, file or db-relation field, user
+  defined etc.) and for each type a separate set of additional
+  properties applies. These properties are clearly explained for each
+  type.
 
-         The configuration includes both properties for the display in the
-         backend as well as the processing of the submitted data.
-
-         Each field can be configured as a certain "type" (e.g. checkbox,
-         selector, input field, text area, file or db-relation field, user
-         defined etc.) and for each type a separate set of additional
-         properties applies. These properties are clearly explained for each
-         type.
-
-         :ref:`Full reference <columns>`
+  :ref:`Full reference <columns>`
 
 
-.. container:: table-row
+['types'] Form layout for editing
 
-   Section
-         types
+  The "types" section defines how the fields in the table (configured in
+  the "columns" section) should be arranged inside the editing form; in
+  which order, with which "palettes" (see below) and with which possible
+  additional features applied.
 
-   Description
-         **The form layout for editing**
-
-         The "types" section defines how the fields in the table (configured in
-         the "columns" section) should be arranged inside the editing form; in
-         which order, with which "palettes" (see below) and with which possible
-         additional features applied.
-
-         :ref:`Full reference <types>`
+  :ref:`Full reference <types>`
 
 
-.. container:: table-row
+['palettes'] Palette fields order
 
-   Section
-         palettes
+  A palette is just a list of fields which will be arranged horizontally
+  side-by-side.
 
-   Description
-         **The palette fields order**
-
-         A palette is just a list of fields which will be arranged horizontally
-         side-by-side. But the main idea is that these fields can be displayed
-         in the top-frame of the backend interface on request so they don't
-         display inside the main form. In this way they are kind of hidden
-         fields which are brought forth either by clicking an icon in the main
-         form or (more usual) when you place the cursor in a form field of
-         the main form).
-
-         :ref:`Full reference <palettes>`
-
+  :ref:`Full reference <palettes>`
 
 
 .. _tca-structure-deeper:
