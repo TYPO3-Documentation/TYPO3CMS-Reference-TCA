@@ -70,7 +70,7 @@ The return value of any loaded file will be cached, so there must either be no d
 care must be taken to clear the system cache after each change in such files.
 See the :ref:`t3api docs <t3coreapi:extending>` for more information on how extensions can add and change TCA.
 
-The `TYPO3 core bootstrap <t3coreapi:bootstrapping>` compiles the final TCA on first call by loading all files from the
+The :ref:`TYPO3 core bootstrap <t3coreapi:bootstrapping>` compiles the final TCA on first call by loading all files from the
 different locations, and caches the result. On subsequent calls this relatively huge array is then rather quickly loaded
 from cache and is made available as :php:`$GLOBALS['TCA']` in almost all normal access patterns like Frontend, Backend and CLI requests.
 
