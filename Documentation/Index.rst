@@ -66,6 +66,33 @@ on the Table of Contents to identify what particular section will best
 address the task at hand.
 
 
+**Credits**
+
+The original reference to the TCA was written by Kasper Skårhøj. This
+version has been updated by François Suter. Lots of core team members and
+other contributors maintain this document over time, see
+`github <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi>`__ for
+an overview of recent contributors. A big "Thank You!" goes to every single on of them.
+
+
+**Feedback**
+
+For general questions about the documentation get in touch by writing
+to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
+
+If you find a bug in this manual, please be so kind as to check the
+`online version <https://docs.typo3.org/typo3cms/TCAReference/>`__.
+Use the "Edit me on GitHub" button in the top right corner
+and submit a pull request via GitHub. Alternatively you can just file an issue
+using the `bug tracker <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues>`__.
+
+Maintaining high quality documentation requires time and effort
+and the TYPO3 Documentation Team always appreciates support.
+If you want to support us, please join the `#typo3-documentation` channel
+on `typo3.slack.com <https://typo3.slack.com/>`__ to get in contact. If you're not
+using slack yet, trigger a `slack invite <https://forger.typo3.org/slack>`__.
+
+
 .. toctree::
    :hidden:
 

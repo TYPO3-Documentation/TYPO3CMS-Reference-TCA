@@ -3,75 +3,303 @@
 
 .. _introduction:
 
+============
 Introduction
-------------
+============
 
 
-.. _about:
+.. _introduction-about:
 
 About this document
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
-This document aims to describe the global array called :php:`$GLOBALS['TCA']`. This
-array describes the database tables that TYPO3 can operate on. It is a
+This document describes the global array called :php:`$GLOBALS['TCA']`. This
+array is a layer on top of the database tables that TYPO3 can operate on. It is a
 very central element of the TYPO3 architecture.
 
 Almost all code examples used in this manual come either from the TYPO3
-source code itself or from the extension "examples", which can be
-downloaded from the TER.
-
-This document used to be a chapter inside :ref:`TYPO3 Core APIs <t3coreapi:start>`.
+source code itself, from the extension  `example <https://github.com/TYPO3-Documentation/TYPO3CMS-Code-Examples>`__,
+or from extension `styleguide <https://https://github.com/TYPO3/TYPO3.CMS.Styleguide>`__.
 
 
-.. _new:
+.. _tca-what-is:
 
-What's new
-^^^^^^^^^^
+What is $GLOBALS['TCA']?
+------------------------
 
-This version is updated for TYPO3 CMS 6.2. Here is a highlight of the
-main changes:
+The Table Configuration Array (or `$GLOBALS['TCA']`) is a global array in TYPO3
+which extends the definition of database tables beyond what can be done strictly with SQL.
+First and foremost :php:`$GLOBALS['TCA']` defines which tables are editable in the TYPO3 backend.
+Database tables with no corresponding entry in :php:`$GLOBALS['TCA']` are "invisible" to the TYPO3 backend.
+The :php:`$GLOBALS['TCA']` definition of a table also covers the following:
 
-- there's a new way to :ref:`register wizards <wizards-configuration>`,
-  which provides CSRF protection.
+- Relations between that table and other tables
 
-- it's possible to :ref:`add a filter <columns-select-properties-enablemultiselectfiltertextfield>`
-  to select-type fields.
+- What fields should be displayed in the backend and with which layout
 
-- :ref:`display conditions <columns-properties-displaycond>` have now bit operators.
+- How should a field be validated (e.g. required, integer, etc.)
 
-- take a deep look at the :ref:`inline-type fields (IRRE) <columns-inline>`
-  which received many new properties, mostly related to the development of FAL.
+- How a field is used in the frontend by Extbase and any extension that may refer to this information
 
-- the placeholder property (actually introduced in TYPO3 CMS 4.7,
-  but missing from the documentation) has improved capabilities. It is
-  available for :ref:`input-type fields <columns-input-properties-placeholder>`
-  and :ref:`text-type fields <columns-text-properties-placeholder>`.
+This array is highly extendable using extensions. Extensions can add fields
+to existing tables and add new tables. Several required extensions that are
+always loaded, already deliver some TCA files in their
+:file:`Configuration/TCA` directories.
+
+Most importantly, the extension "core" comes with a definition of pages,
+be_users and further tables needed by the whole system.
+The extension "frontend" comes with the tables tt_content, fe_users, sys_template and more.
+See the directories :file:`typo3/sysext/core/Configuration/TCA/` and
+:file:`typo3/sysext/frontend/Configuration/TCA/` for the complete list of the TYPO3 CMS tables.
+
+The TCA definition of a new table with the name "database-table-name" must be done in the
+extension directory :file:`Configuration/TCA/` with :file:`database-table-name.php` as filename.
+An example is :file:`EXT:sys_note/Configuration/TCA/sys_note.php` for table "sys_note". This file will be
+found by the bootstrap code (if starting a TYPO3 request). It must return an
+array with the content of the TCA setting or :code:`NULL` if the table
+should not be defined (depending on the extension's internal logic).
+The return value of any loaded file will be cached, so there must either be no dynamic PHP code in it or
+care must be taken to clear the system cache after each change in such files.
+See the :ref:`t3api docs <t3coreapi:extending>` for more information on how extensions can add and change TCA.
 
 
-.. _credits:
+.. _tca-structure:
 
-Credits
-^^^^^^^
-
-The original reference to the TCA was written by Kasper Skårhøj. This
-version has been updated by François Suter.
+Structure of the $TCA array
+---------------------------
 
 
-.. _feedback:
+.. _tca-structure-level1:
 
-Feedback
-^^^^^^^^
+The table entries (first level)
+===============================
 
-For general questions about the documentation get in touch by writing
-to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
+The "first level" of the :php:`$GLOBALS['TCA']` array is made of the table names (as
+they appear in the database)::
 
-If you find a bug in this manual, please be so kind as to check the
-online version on https://docs.typo3.org/typo3cms/TCAReference/.
-From there you can hit the "Edit me on GitHub" button in the top right corner
-and submit a pull request via GitHub. Alternatively you can just file an issue
-using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues.
+   $GLOBALS['TCA']['pages'] = [
+       ...
+   ];
+   $GLOBALS['TCA']['tt_content'] = [
+       ...
+   ];
+   $GLOBALS['TCA']['tx_examples_haiku'] = [
+       ...
+   ];
 
-Maintaining high quality documentation requires time and effort
-and the TYPO3 Documentation Team always appreciates support.
-If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/).
+Here three tables, `pages`, `tt_content` and `tx_examples_haiku` are shown as examples.
+
+
+.. _tca-structure-level2:
+
+Inside the table entries (second level)
+=======================================
+
+Each table is further defined by an array which configures how the
+system handles the table, both for the display and the processing in the
+backend. The various parts on this second level are called "sections".
+
+The general structure (looking at a single table) is as follows::
+
+   $GLOBALS['TCA']['tx_examples_haiku'] = [
+       'ctrl' => [
+           ....
+       ],
+       'interface' => [
+           ....
+       ],
+       'columns' => [
+           ....
+       ],
+       'types' => [
+           ....
+       ],
+       'palettes' => [
+           ....
+       ],
+   ];
+
+The following table provides a brief description of each the various
+sections of :php:`$GLOBALS['TCA']['some_table']`. Each section is covered in more details in its own
+chapter.
+
+
+ctrl
+  **The table**
+
+  The "ctrl" section contains properties for the table in general.
+
+  These are basically divided in two main categories:
+
+  - properties which affect how the table is  *displayed* and handled in
+    the backend  *interface* .This includes which icon, what name, which
+    columns contains the title value, which column defines the type value
+    etc.
+
+  - properties which determine how it is processed by the system
+    (TCE).This includes publishing control, "deleted" flag, whether the table
+    can only be edited by admin-users, may only exist in the tree root
+    etc.
+
+  - For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
+
+  :ref:`Full reference <ctrl>`
+
+
+.. container:: table-row
+
+   Section
+         interface
+
+   Description
+         **The backend interface handling**
+
+         The "interface" section contains properties related to the tables
+         display in the backend, mostly the Web > List module.
+
+         :ref:`Full reference <interface>`
+
+
+.. container:: table-row
+
+   Section
+         columns
+
+   Description
+         **The individual fields**
+
+         The "columns" section contains configuration for each table  *field*
+         (also called "column") which can be edited in the backend.
+
+         The configuration includes both properties for the display in the
+         backend as well as the processing of the submitted data.
+
+         Each field can be configured as a certain "type" (e.g. checkbox,
+         selector, input field, text area, file or db-relation field, user
+         defined etc.) and for each type a separate set of additional
+         properties applies. These properties are clearly explained for each
+         type.
+
+         :ref:`Full reference <columns>`
+
+
+.. container:: table-row
+
+   Section
+         types
+
+   Description
+         **The form layout for editing**
+
+         The "types" section defines how the fields in the table (configured in
+         the "columns" section) should be arranged inside the editing form; in
+         which order, with which "palettes" (see below) and with which possible
+         additional features applied.
+
+         :ref:`Full reference <types>`
+
+
+.. container:: table-row
+
+   Section
+         palettes
+
+   Description
+         **The palette fields order**
+
+         A palette is just a list of fields which will be arranged horizontally
+         side-by-side. But the main idea is that these fields can be displayed
+         in the top-frame of the backend interface on request so they don't
+         display inside the main form. In this way they are kind of hidden
+         fields which are brought forth either by clicking an icon in the main
+         form or (more usual) when you place the cursor in a form field of
+         the main form).
+
+         :ref:`Full reference <palettes>`
+
+
+
+.. _tca-structure-deeper:
+
+Deeper levels
+=============
+
+All properties on the second level either have their own properties or
+contain a further hierarchy.
+
+In the case of the :ref:`[columns]<columns>` section, this will be the fields
+themselves. For the :ref:`[types]<types>` and :ref:`[palettes]<palettes>` section this will be the list
+of all possible types and palettes.
+
+
+.. _tca-structure-scope:
+
+Properties scope
+================
+
+In the detail reference one or more scopes are given for each
+property. They indicate which area is affected by a given
+property. The various scopes are explained below:
+
+Display
+  A "display" property will only affect the backend forms themselves.
+  They have no impact on the values, nor on the database.
+
+Proc.
+  This stands for "processing". Such properties have an impact
+  on the values entered (for example, filtering them) or how they
+  how written to the database (for example, dates transformed to
+  time stamps).
+
+Database
+  Such a property influences only the data type with regards
+  to the database structure (for example, dates kept as
+  datetime fields).
+
+Search
+  Search properties are related to the general search feature
+  provided by the TYPO3 backend.
+
+Because some things never fit in precise categories, there may be
+properties with a special scope. The meaning will be explained in
+the description of the property itself.
+
+
+.. _tca-glossary:
+
+Glossary
+========
+
+Before you read on, let's just refresh the meaning of a few concepts
+mentioned on the next pages:
+
+TCE
+  Short for :ref:`TYPO3 Core Engine <t3coreapi:tce>`. Also referred to as "DataHandler".
+  The corresponding class
+  :ref:`TYPO3\\CMS\\Core\\DataHandling\\DataHandler <t3api:TYPO3\\CMS\\Core\\DataHandling\\DataHandler>`
+  should ideally handle all updates to records made in the backend of TYPO3. The class will handle all the
+  rules which may be applied to each table correctly. It will also handle logging, versioning, history and undo features,
+  and copying, moving, deleting etc.
+
+"list of"
+  Typically used like "list of field names". Whenever
+  "list of" is used it means *a list of strings separated by comma and
+  with NO space between the values*.
+
+field name
+  The name of a field from a database table. Another
+  word for the same is "column" but it is used more rarely, however the
+  meaning is exactly the same.
+
+record type
+  A record can have different types, determined by the
+  value of a certain field in the record. This field is defined by the
+  :ref:`type property <ctrl-reference-type>` of the [ctrl] section.
+  It affects which fields are displayed in backend form
+  (see the :ref:`"types" configuration <types>`).
+  The record type can be considered as a switch in the interpretation
+  of the whole record.
+
+LLL reference
+  A localized string fetched from a locallang file
+  by prefixing the string with :code:`LLL:`.
