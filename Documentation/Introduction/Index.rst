@@ -19,7 +19,10 @@ very central element of the TYPO3 architecture.
 
 Almost all code examples used in this manual come either from the TYPO3
 source code itself, from the extension  `example <https://github.com/TYPO3-Documentation/TYPO3CMS-Code-Examples>`__,
-or from extension `styleguide <https://github.com/TYPO3/TYPO3.CMS.Styleguide>`__.
+or from extension `styleguide <https://github.com/TYPO3/TYPO3.CMS.Styleguide>`__. Extension `styleguide` comes with
+a huge list of TCA examples and field combinations. Installing it locally in some test environment is a good
+idea since the extension is great as a "show-off" on what can be done with TCA. Even experienced developers
+will find things they did not know before.
 
 
 .. _tca-what-is:
@@ -41,6 +44,11 @@ The :php:`$GLOBALS['TCA']` definition of a table also covers the following:
 
 - How a field is used in the frontend by Extbase and any extension that may refer to this information
 
+TCA can be seen as the glue between the :ref:`DataHandler <t3coreapi:tce>` which takes care of persisting data into
+the database, and the :ref:`FormEngine <t3coreapi:FormEngine>` which renders table rows in the Backend. TCA tells both of
+these main core constructs how they should behave for specific tables, fields and relations. Additionally, some
+parts of the Frontend rendering process also utilize TCA information, for instance the extbase MVC relies on it.
+
 This array is highly extendable using extensions. Extensions can add fields
 to existing tables and add new tables. Several required extensions that are
 always loaded, already deliver some TCA files in their
@@ -61,6 +69,10 @@ should not be defined (depending on the extension's internal logic).
 The return value of any loaded file will be cached, so there must either be no dynamic PHP code in it or
 care must be taken to clear the system cache after each change in such files.
 See the :ref:`t3api docs <t3coreapi:extending>` for more information on how extensions can add and change TCA.
+
+The `TYPO3 core bootstrap <t3coreapi:bootstrapping>` compiles the final TCA on first call by loading all files from the
+different locations, and caches the result. On subsequent calls this relatively huge array is then rather quickly loaded
+from cache and is made available as :php:`$GLOBALS['TCA']` in almost all normal access patterns like Frontend, Backend and CLI requests.
 
 
 .. _tca-structure:
@@ -124,7 +136,7 @@ sections of :php:`$GLOBALS['TCA']['some_table']`. Each section is covered in mor
 chapter.
 
 
-['ctrl'] The table
+**['ctrl'] The table**
 
   The "ctrl" section contains properties for the table in general.
 
@@ -145,7 +157,7 @@ chapter.
   :ref:`Full reference <ctrl>`
 
 
-['interface'] Backend interface handling
+**['interface'] Backend interface handling**
 
   The "interface" section contains properties related to the tables
   display in the backend, mostly the Web > List module.
@@ -153,7 +165,7 @@ chapter.
   :ref:`Full reference <interface>`
 
 
-['columns'] Individual fields
+**['columns'] Individual fields**
 
   The "columns" section contains configuration for each table *field*
   (also called "column") which can be edited in the backend.
@@ -170,7 +182,7 @@ chapter.
   :ref:`Full reference <columns>`
 
 
-['types'] Form layout for editing
+**['types'] Form layout for editing**
 
   The "types" section defines how the fields in the table (configured in
   the "columns" section) should be arranged inside the editing form; in
@@ -180,7 +192,7 @@ chapter.
   :ref:`Full reference <types>`
 
 
-['palettes'] Palette fields order
+**['palettes'] Palette fields order**
 
   A palette is just a list of fields which will be arranged horizontally
   side-by-side.

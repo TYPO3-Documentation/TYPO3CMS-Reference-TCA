@@ -66,6 +66,13 @@ on the Table of Contents to identify what particular section will best
 address the task at hand.
 
 
+**Versions**
+
+TCA properties change between major versions, this main array had significant refactorings
+especially between core versions 6.2 to 7 LTS, and again between 7 LTS and 8 LTS. Use the version
+selector of this documentation to select the documentation variant that fits.
+
+
 **Credits**
 
 The original reference to the TCA was written by Kasper Skårhøj. This
