@@ -74,6 +74,5 @@ address the task at hand.
    WhatIsTca/Index
    Reference/Index
    AdditionalFeatures/Index
-   ExtendingTca/Index
    Targets
 
