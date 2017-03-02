@@ -104,8 +104,8 @@ Here three tables, `pages`, `tt_content` and `tx_examples_haiku` are shown as ex
 
 .. _tca-structure-level2:
 
-Inside table entries (second level)
-===================================
+Inside tables (second level)
+============================
 
 Each table is further defined by an array which configures how the
 system handles the table, both for the display and the processing in the
