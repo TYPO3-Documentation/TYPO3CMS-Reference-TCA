@@ -27,7 +27,7 @@ or from extension `styleguide <https://https://github.com/TYPO3/TYPO3.CMS.Styleg
 What is $GLOBALS['TCA']?
 ------------------------
 
-The Table Configuration Array (or `$GLOBALS['TCA']`) is a global array in TYPO3
+The Table Configuration Array (or `$GLOBALS['TCA']`, `TCA`) is a global array in TYPO3
 which extends the definition of database tables beyond what can be done strictly with SQL.
 First and foremost :php:`$GLOBALS['TCA']` defines which tables are editable in the TYPO3 backend.
 Database tables with no corresponding entry in :php:`$GLOBALS['TCA']` are "invisible" to the TYPO3 backend.
@@ -65,14 +65,14 @@ See the :ref:`t3api docs <t3coreapi:extending>` for more information on how exte
 
 .. _tca-structure:
 
-Structure of the $TCA array
----------------------------
+TCA main array structure
+------------------------
 
 
 .. _tca-structure-level1:
 
-The table entries (first level)
-===============================
+Table entries (first level)
+===========================
 
 The "first level" of the :php:`$GLOBALS['TCA']` array is made of the table names (as
 they appear in the database)::
@@ -217,7 +217,7 @@ Display
 Proc.
   This stands for "processing". Such properties have an impact
   on the values entered (for example, filtering them) or how they
-  how written to the database (for example, dates transformed to
+  are written to the database (for example, dates transformed to
   time stamps).
 
 Database
