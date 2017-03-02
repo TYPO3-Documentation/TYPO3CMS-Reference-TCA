@@ -19,7 +19,7 @@ very central element of the TYPO3 architecture.
 
 Almost all code examples used in this manual come either from the TYPO3
 source code itself, from the extension  `example <https://github.com/TYPO3-Documentation/TYPO3CMS-Code-Examples>`__,
-or from extension `styleguide <https://https://github.com/TYPO3/TYPO3.CMS.Styleguide>`__.
+or from extension `styleguide <https://github.com/TYPO3/TYPO3.CMS.Styleguide>`__.
 
 
 .. _tca-what-is:
