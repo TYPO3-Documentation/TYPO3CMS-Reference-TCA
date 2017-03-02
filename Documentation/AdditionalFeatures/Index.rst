@@ -12,7 +12,6 @@ Additional $TCA features
    :titlesonly:
    :glob:
 
-   SoftReferences/Index
    WizardsConfiguration/Index
    CoreWizardScripts/Index
 
