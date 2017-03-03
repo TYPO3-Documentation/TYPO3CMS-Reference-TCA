@@ -112,6 +112,9 @@ A few remarks:
 .. _ctrl-reference-adminonly:
 .. include:: CtrlAdminOnly.rst
 
+.. _ctrl-reference-container:
+.. include:: CtrlContainer.rst
+
 .. _ctrl-reference-copyafterduplfields:
 .. include:: CtrlCopyAfterDuplFields.rst
 
