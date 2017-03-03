@@ -9,7 +9,7 @@ thumbnail
 
 :aspect:`Description`
     Field name, which contains the value for any thumbnails of the records. This could be a field
-    of the "group" type containing a list of file names.
+    of type "inline", usually a "sys_file_reference" / FAL record.
 
     **Example:**
 
