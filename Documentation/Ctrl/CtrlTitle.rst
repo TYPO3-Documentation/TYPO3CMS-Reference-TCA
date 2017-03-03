@@ -1,15 +1,11 @@
 title
 -----
 
-:aspect:`Key:`
-    title
-
 :aspect:`Datatype`
     string or LLL reference
 
 :aspect:`Scope`
     Display
-
 
 :aspect:`Description`
     Contains the *system name* of the table. Is used for display in the
@@ -29,8 +25,8 @@ title
 
     .. code-block:: php
 
-       'ctrl' => [
-        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:sys_template',
+        'ctrl' => [
+            'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:sys_template',
 
     In the above example the :code:`LLL:` prefix tells the system to look up a
     label from a localized file. The next prefix code:`EXT:frontend` will look for

@@ -10,7 +10,7 @@
 Introduction
 ------------
 
-The [ctrl] section contains properties for a database table in general.
+The ['ctrl'] section contains properties for a database table in general.
 
 These properties are basically divided into two main categories:
 
@@ -415,8 +415,8 @@ type
          where the "Type:" selector is defined as the "type" field and when you
          change that selector you will also get another rendering of the form:
 
-         .. figure:: ../../Images/CtrlType.png
-:alt: The type selector
+         .. figure:: ../Images/CtrlType.png
+            :alt: The type selector
 
             The type selector of content elements
 
@@ -632,8 +632,8 @@ thumbnail
          The effect of the field can be seen in listings in e.g. the "Web > List"
          module:
 
-         .. figure:: ../../Images/CtrlThumbnail.png
-:alt: Thumbnails in the list view
+         .. figure:: ../Images/CtrlThumbnail.png
+            :alt: Thumbnails in the list view
 
             Thumbnails in the List module
 
@@ -1170,8 +1170,8 @@ enablecolumns
             normally change as these examples show:
 
 
-            .. figure:: ../../Images/CtrlEnableFields.png
-:alt: Enable fields show up as icon overlays
+            .. figure:: ../Images/CtrlEnableFields.png
+               :alt: Enable fields show up as icon overlays
 
                FE group restricted access showing up on modified record icons
 
