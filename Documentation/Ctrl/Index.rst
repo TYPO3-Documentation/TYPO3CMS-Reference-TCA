@@ -36,7 +36,7 @@ Examples
         'iconfile' => 'EXT:myExtension/Resources/Public/Icons/someIcon.svg',
     ],
 
-While the backend would work with an empty :code:`['ctrl']` section, the above properties are a recommended
+Property :code:`label` is a mandatory setting, but the above properties are a recommended
 minimum. The list module shows an icon and a translated title of the table, and it uses the value of
 field :code:`title` as title for single rows. Single record administration however is limited with this setup: This
 table does not implement soft delete, record rows can not be sorted between each other, record localization is not
@@ -116,31 +116,7 @@ A few remarks:
 
 .. _ctrl-reference-label:
 
-label
-~~~~~
-
-.. container:: table-row
-
-   Key
-         label
-
-   Datatype
-         string (field name)
-
-   Description
-         **Required!**
-
-         Points to the field name of the table which should be used as the
-         "title" when the record is displayed in the system.
-
-         .. note::
-
-            :ref:`label_userFunc <ctrl-reference-label-userfunc>`
-            overrides this property (but it is still required).
-
-   Scope
-         Display
-
+.. include:: CtrlLabel.rst
 
 
 .. _ctrl-reference-label-alt:
