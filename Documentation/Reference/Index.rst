@@ -11,7 +11,6 @@ This section describes all the properties available
    :titlesonly:
    :glob:
 
-   Ctrl/Index
    Interface/Index
    Columns/Index
    Types/Index
