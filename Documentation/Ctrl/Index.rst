@@ -148,307 +148,32 @@ A few remarks:
 .. _ctrl-reference-typeicon-classes:
 .. include:: CtrlTypeiconClasses.rst
 
-
-
-
 .. _ctrl-reference-thumbnail:
-
-thumbnail
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         thumbnail
-
-   Datatype
-         string
-
-         (field name)
-
-   Description
-         Field name, which contains the value for any thumbnails of the
-         records.
-
-         This could be a field of the "group" type containing a list of file
-         names.
-
-         **Example:**
-
-         For the "tt\_content" table this option points to the field "image"
-         which contains the list of images that can be attached to the content
-         element:
-
-         .. code-block:: php
-
-            'thumbnail' => 'image',
-
-         The effect of the field can be seen in listings in e.g. the "Web > List"
-         module:
-
-         .. figure:: ../Images/CtrlThumbnail.png
-            :alt: Thumbnails in the list view
-
-            Thumbnails in the List module
-
-         (You might have to enable "Show Thumbnails by default" in the
-         "Startup" tab of the User Settings module first in order to see this
-         display).
-
-   Scope
-         Display
-
-
+.. include:: CtrlThumbnail.rst
 
 .. _ctrl-reference-selicon-field:
-
-selicon\_field
-~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         selicon\_field
-
-   Datatype
-         string
-
-         (field name)
-
-   Description
-         Field name, which contains the thumbnail image used to represent the
-         record visually whenever it is shown in TCEforms as a foreign
-         reference selectable from a selector box.
-
-         Only images in a usual format for the web (i.e. gif, png, jpeg, jpg)
-         are allowed. No scaling is done.
-
-         You should consider this a feature where you can attach an "icon" to a
-         record which is typically selected as a reference in other records.
-         For example a "category". In such a case this field points out the
-         icon image which will then be shown. This feature can thus enrich the
-         visual experience of selecting the relation in other forms.
-
-         **Example:**
-
-         The "backend\_layout" table defines the "icon" field as being the one
-         containing reference icons:
-
-         .. code-block:: php
-
-         	'ctrl' => array(
-         		...
-         		'selicon_field' => 'icon',
-         		'selicon_field_path' => 'uploads/media',
-         		...
-         	),
-
-         Also see :ref:`selicon_field_path <ctrl-reference-selicon-field-path>`.
-
-   Scope
-         Display
-
-
+.. include:: CtrlSeliconField.rst
 
 .. _ctrl-reference-selicon-field-path:
-
-selicon\_field\_path
-~~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         selicon\_field\_path
-
-   Datatype
-         string
-
-   Description
-         The path prefix of the value from :ref:`selicon_field <ctrl-reference-selicon-field>`.
-         This must the same as the "upload\_path" of that field.
-
-         See example above.
-
-   Scope
-         Display
-
-
+.. include:: CtrlSeliconFieldPath.rst
 
 .. _ctrl-reference-sortby:
-
-sortby
-~~~~~~
-
-.. container:: table-row
-
-   Key
-         sortby
-
-   Datatype
-         string
-
-         (field name)
-
-   Description
-         Field name, which is used to manage the *order* of the records.
-
-         The field will contain an integer value which positions it at the
-         correct position between other records from the same table on the
-         current page.
-
-         .. note::
-
-            The field should *not* be editable by the user since the
-            TCE will manage the content automatically in order to manage the order
-            of records.
-
-         This feature is used by e.g. the "pages" table and "tt\_content" table
-         (Content Elements) in order to output the pages or the content
-         elements in the order expected by the editors. Extensions are expected
-         to respect this field.
-
-         Typically the field name :code:`sorting` is dedicated to this feature.
-
-         Also see :ref:`default_sortby <ctrl-reference-default-sortby>`.
-
-   Scope
-         Proc. / Display
-
-
+.. include:: CtrlSortby.rst
 
 .. _ctrl-reference-default-sortby:
-
-default\_sortby
-~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         default\_sortby
-
-   Datatype
-         string
-
-   Description
-         If a field name for :ref:`sortby <ctrl-reference-sortby>` is defined, then this is ignored.
-
-         Otherwise this is used as the 'ORDER BY' statement to sort the records
-         in the table when listed in the TYPO3 backend.
-
-         **Example:**
-
-         For the "haikus" table of the "examples" extension, records are listed
-         alphabetically, based on their title:
-
-         .. code-block:: php
-
-         	'ctrl' => array(
-         		...
-         		'default_sortby' => 'ORDER BY title',
-         		...
-         	),
-
-   Scope
-         Display
-
-
+.. include:: CtrlDefaultSortby.rst
 
 .. _ctrl-reference-tstamp:
-
-tstamp
-~~~~~~
-
-.. container:: table-row
-
-   Key
-         tstamp
-
-   Datatype
-         string (field name)
-
-   Description
-         Field name, which is automatically updated to the current timestamp
-         (UNIX-time in seconds) each time the record is updated/saved in the
-         system.
-
-         Typically the name "tstamp" is used for that field.
-
-         **Example:**
-
-         from the :code:`['ctrl']` section of the "haikus" table:
-
-         .. code-block:: php
-
-         	'ctrl' => array(
-         		...
-         		'tstamp'    => 'tstamp',
-         		'crdate'    => 'crdate',
-         		'cruser_id' => 'cruser_id',
-         		...
-         	),
-
-         The above example shows the same definition for the :ref:`crdate <ctrl-reference-crdate>` and
-         :ref:`cruser_id <ctrl-reference-cruser-id>` fields described below.
-
-   Scope
-         Proc.
-
-
+.. include:: CtrlTstamp.rst
 
 .. _ctrl-reference-crdate:
-
-crdate
-~~~~~~
-
-.. container:: table-row
-
-   Key
-         crdate
-
-   Datatype
-         string (field name)
-
-   Description
-         Field name, which is automatically set to the current timestamp when
-         the record is created. Is never modified again.
-
-         Typically the name "crdate" is used for that field.
-
-         See example above.
-
-   Scope
-         Proc.
-
-
+.. include:: CtrlCrdate.rst
 
 .. _ctrl-reference-cruser-id:
-
-cruser\_id
-~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         cruser\_id
-
-   Datatype
-         string (field name)
-
-   Description
-         Field name, which is automatically set to the uid of the backend user
-         (be\_users) who originally created the record. Is never modified
-         again.
-
-         Typically the name "cruser\_id" is used for that field.
-
-         See example above.
-
-   Scope
-         Proc.
-
-
+.. include:: CtrlCruserId.rst
 
 .. _ctrl-reference-rootlevel:
+
 
 rootLevel
 ~~~~~~~~~
