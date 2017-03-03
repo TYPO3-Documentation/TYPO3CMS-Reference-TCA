@@ -19,7 +19,10 @@ thumbnail
 
     .. code-block:: php
 
-        'thumbnail' => 'image',
+        'ctrl' => [
+            'thumbnail' => 'image',
+            ...
+        ],
 
     The effect of the field can be seen in listings in e.g. the "Web > List" module:
 

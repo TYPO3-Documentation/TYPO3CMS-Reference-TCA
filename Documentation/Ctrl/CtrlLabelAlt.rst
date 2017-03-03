@@ -20,6 +20,7 @@ label\_alt
         'ctrl' => [
             'label' => 'header',
             'label_alt' => 'subheader,bodytext',
+        ],
 
     .. note::
         :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property, als

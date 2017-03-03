@@ -18,5 +18,6 @@ searchFields
     .. code-block:: php
 
         'ctrl' => [
-            'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform'
+            'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform',
+            ...
         ],

@@ -33,7 +33,10 @@ type
 
     .. code-block:: php
 
-        'type' => 'record_type'
+        'ctrl' => [
+            'type' => 'record_type',
+            ...
+        ],
 
     The "record\_type" field can take values ranging from 0 to 2. Accordingly we define types for the same values.
     Each type defines which fields will be displayed in the BE form:
@@ -43,7 +46,7 @@ type
         'types' => [
             '0' => [ 'showitem' => 'hidden, record_type, title, some_date' ],
             '1' => [ 'showitem' => 'record_type, title' ],
-            '2' => [ 'showitem' => 'title, some_date, hidden, record_type'],
+            '2' => [ 'showitem' => 'title, some_date, hidden, record_type' ],
         ],
 
     See the :ref:`section about types <types>` for more details.
@@ -58,4 +61,7 @@ type
 
     .. code-block:: php
 
-        'type' => 'file:type'
+        'ctrl' => [
+            'type' => 'file:type',
+            ...
+        ],

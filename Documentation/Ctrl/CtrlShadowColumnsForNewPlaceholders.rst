@@ -25,5 +25,5 @@ shadowColumnsForNewPlaceholders
 
         'ctrl' => [
             'shadowColumnsForNewPlaceholders' => 'sys_language_uid,l18n_parent,colPos',
-        ...
+            ...
         ],

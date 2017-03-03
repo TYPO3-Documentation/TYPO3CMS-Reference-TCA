@@ -15,4 +15,7 @@ iconfile
 
     .. code-block:: php
 
-        'iconfile' => 'EXT:examples/Resources/Public/Images/Haiku.svg',
+        'ctrl' => [
+            'iconfile' => 'EXT:examples/Resources/Public/Images/Haiku.svg',
+            ...
+        ],

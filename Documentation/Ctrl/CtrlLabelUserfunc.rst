@@ -36,6 +36,7 @@ label\_userFunc
         'ctrl' => [
             'label' => 'title',
             'label_userFunc' => '\Documentation\Examples\Userfuncs\Tca::class . '->haikuTitle',
+        ],
 
     Class :code:`Documentation\Examples\Userfuncs\Tca` contains the code itself:
 

@@ -18,6 +18,6 @@ typeicon\_classes
 
         'typeicon_classes' => [
             'header' => 'mimetypes-x-content-header',
-            ...
             'default' => 'mimetypes-x-content-text',
+            ...
         ],

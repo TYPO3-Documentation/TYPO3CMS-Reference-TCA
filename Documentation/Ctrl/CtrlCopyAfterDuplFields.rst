@@ -14,6 +14,7 @@ copyAfterDuplFields
     **Example from "tt\_content" table:**
 
     .. code-block:: php
+
         'ctrl' => [
             'copyAfterDuplFields' => 'colPos, sys_language_uid',
             ...

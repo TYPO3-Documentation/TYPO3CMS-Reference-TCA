@@ -14,7 +14,7 @@ useColumnsForDefaultValues
 
     .. code-block:: php
 
-    'ctrl' => [
-        'useColumnsForDefaultValues' => 'path,base',
-        ...
-    ],
+        'ctrl' => [
+            'useColumnsForDefaultValues' => 'path,base',
+            ...
+        ],

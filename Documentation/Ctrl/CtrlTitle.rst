@@ -27,6 +27,7 @@ title
 
         'ctrl' => [
             'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:sys_template',
+        ],
 
     In the above example the :code:`LLL:` prefix tells the system to look up a
     label from a localized file. The next prefix code:`EXT:frontend` will look for
