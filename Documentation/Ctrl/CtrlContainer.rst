@@ -65,9 +65,9 @@ container
             ],
         ],
 
-     This disables the default :php:`localizationStateSelector` fieldWizard of :php:`inlineControlContainer`.
+    This disables the default :php:`localizationStateSelector` fieldWizard of :php:`inlineControlContainer`.
 
-     **Example adding own wizard:**
+    **Example adding own wizard:**
 
     .. code-block:: php
 
