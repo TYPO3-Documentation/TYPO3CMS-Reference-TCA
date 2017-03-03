@@ -110,57 +110,13 @@ A few remarks:
 .. _ctrl-reference:
 
 .. _ctrl-reference-title:
-
 .. include:: CtrlTitle.rst
 
-
 .. _ctrl-reference-label:
-
 .. include:: CtrlLabel.rst
 
-
 .. _ctrl-reference-label-alt:
-
-label\_alt
-~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         label\_alt
-
-   Datatype
-         String (comma-separated list of field names)
-
-   Description
-         Comma-separated list of field names, which are holding alternative
-         values to the value from the field pointed to by "label" (see above)
-         if that value is empty. May not be used consistently in the system,
-         but should apply in most cases.
-
-         **Example:**
-
-         For table "tt\_content":
-
-         .. code-block:: php
-
-            'ctrl' => array(
-				'label' => 'header',
-				'label_alt' => 'subheader,bodytext',
-
-         See :code:`\TYPO3\CMS\Backend\Utility\BackendUtility::getRecordTitle()`.
-
-         Also see :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
-
-         .. note::
-
-            :ref:`label_userFunc <ctrl-reference-label-userfunc>`
-            overrides this property.
-
-   Scope
-         Display
-
-
+.. include:: CtrlLabelAlt.rst
 
 .. _ctrl-reference-label-alt-force:
 
