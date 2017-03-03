@@ -109,8 +109,56 @@ A few remarks:
 
 .. _ctrl-reference:
 
-.. _ctrl-reference-title:
-.. include:: CtrlTitle.rst
+.. _ctrl-reference-adminonly:
+.. include:: CtrlAdminOnly.rst
+
+.. _ctrl-reference-copyafterduplfields:
+.. include:: CtrlCopyAfterDuplFields.rst
+
+.. _ctrl-reference-crdate:
+.. include:: CtrlCrdate.rst
+
+.. _ctrl-reference-cruser-id:
+.. include:: CtrlCruserId.rst
+
+.. _ctrl-reference-default-sortby:
+.. include:: CtrlDefaultSortby.rst
+
+.. _ctrl-reference-delete:
+.. include:: CtrlDelete.rst
+
+.. _ctrl-reference-descriptionColumn:
+.. include:: CtrlDescriptionColumn.rst
+
+.. _ctrl-reference-editlock:
+.. include:: CtrlEditlock.rst
+
+.. _ctrl-reference-enablecolumns:
+.. include:: CtrlEnablecolumns.rst
+
+.. _ctrl-reference-ext-extension-key:
+.. include:: CtrlExt.rst
+
+.. _ctrl-reference-formattedlabel-userfunc:
+.. include:: CtrlFormattedLabelUserFunc.rst
+
+.. _ctrl-reference-formattedlabel-userfunc-options:
+.. include:: CtrlFormattedLabelUserFuncOptions.rst
+
+.. _ctrl-reference-groupname:
+.. include:: CtrlGroupName.rst
+
+.. _ctrl-reference-hideatcopy:
+.. include:: CtrlHideAtCopy.rst
+
+.. _ctrl-reference-hidetable:
+.. include:: CtrlHideTable.rst
+
+.. _ctrl-reference-iconfile:
+.. include:: CtrlIconfile.rst
+
+.. _ctrl-reference-is-static:
+.. include:: CtrlIsStatic.rst
 
 .. _ctrl-reference-label:
 .. include:: CtrlLabel.rst
@@ -127,29 +175,29 @@ A few remarks:
 .. _ctrl-reference-label-userfunc-options:
 .. include:: CtrlLabelUserFuncOptions.rst
 
-.. _ctrl-reference-formattedlabel-userfunc:
-.. include:: CtrlFormattedLabelUserFunc.rst
+.. _ctrl-reference-languagefield:
+.. include:: CtrlLanguageField.rst
 
-.. _ctrl-reference-formattedlabel-userfunc-options:
-.. include:: CtrlFormattedLabelUserFuncOptions.rst
+.. _ctrl-reference-origuid:
+.. include:: CtrlOrigUid.rst
 
-.. _ctrl-reference-type:
-.. include:: CtrlType.rst
+.. _ctrl-reference-prependatcopy:
+.. include:: CtrlPrependAtCopy.rst
 
-.. _ctrl-reference-hidetable:
-.. include:: CtrlHideTable.rst
+.. _ctrl-reference-readonly:
+.. include:: CtrlReadOnly.rst
 
-.. _ctrl-reference-iconfile:
-.. include:: CtrlIconfile.rst
+.. _ctrl-reference-rootlevel:
+.. include:: CtrlRootLevel.rst
 
-.. _ctrl-reference-typeicon-column:
-.. include:: CtrlTypeiconColumn.rst
+.. _ctrl-reference-searchfields:
+.. include:: CtrlSearchFields.rst
 
-.. _ctrl-reference-typeicon-classes:
-.. include:: CtrlTypeiconClasses.rst
-
-.. _ctrl-reference-thumbnail:
-.. include:: CtrlThumbnail.rst
+.. _ctrl-reference-security:
+.. _ctrl-security:
+.. _ctrl-security-ignorewebmountrestriction:
+.. _ctrl-security-ignorerootlevelrestriction:
+.. include:: CtrlSecurity.rst
 
 .. _ctrl-reference-selicon-field:
 .. include:: CtrlSeliconField.rst
@@ -157,65 +205,8 @@ A few remarks:
 .. _ctrl-reference-selicon-field-path:
 .. include:: CtrlSeliconFieldPath.rst
 
-.. _ctrl-reference-sortby:
-.. include:: CtrlSortby.rst
-
-.. _ctrl-reference-default-sortby:
-.. include:: CtrlDefaultSortby.rst
-
-.. _ctrl-reference-tstamp:
-.. include:: CtrlTstamp.rst
-
-.. _ctrl-reference-crdate:
-.. include:: CtrlCrdate.rst
-
-.. _ctrl-reference-cruser-id:
-.. include:: CtrlCruserId.rst
-
-.. _ctrl-reference-rootlevel:
-.. include:: CtrlRootLevel.rst
-
-.. _ctrl-reference-readonly:
-.. include:: CtrlReadOnly.rst
-
-.. _ctrl-reference-adminonly:
-.. include:: CtrlAdminOnly.rst
-
-.. _ctrl-reference-editlock:
-.. include:: CtrlEditlock.rst
-
-.. _ctrl-reference-origuid:
-.. include:: CtrlOrigUid.rst
-
-.. _ctrl-reference-delete:
-.. include:: CtrlDelete.rst
-
-.. _ctrl-reference-descriptionColumn:
-.. include:: CtrlDescriptionColumn.rst
-
-.. _ctrl-reference-enablecolumns:
-.. include:: CtrlEnablecolumns.rst
-
-.. _ctrl-reference-searchfields:
-.. include:: CtrlSearchFields.rst
-
-.. _ctrl-reference-groupname:
-.. include:: CtrlGroupName.rst
-
-.. _ctrl-reference-hideatcopy:
-.. include:: CtrlHideAtCopy.rst
-
-.. _ctrl-reference-prependatcopy:
-.. include:: CtrlPrependAtCopy.rst
-
-.. _ctrl-reference-copyafterduplfields:
-.. include:: CtrlCopyAfterDuplFields.rst
-
 .. _ctrl-reference-settodefaultoncopy:
 .. include:: CtrlSetToDefaultOnCopy.rst
-
-.. _ctrl-reference-usecolumnsfordefaultvalues:
-.. include:: CtrlUseColumnsForDefaultValues.rst
 
 .. _ctrl-reference-shadowcolumnsfornewplaceholders:
 .. include:: CtrlShadowColumnsForNewPlaceholders.rst
@@ -223,14 +214,14 @@ A few remarks:
 .. _ctrl-reference-shadowcolumnsformoveplaceholders:
 .. include:: CtrlShadowColumnsForMovePlaceholders.rst
 
-.. _ctrl-reference-is-static:
-.. include:: CtrlIsStatic.rst
+.. _ctrl-reference-sortby:
+.. include:: CtrlSortby.rst
 
-.. _ctrl-reference-languagefield:
-.. include:: CtrlLanguageField.rst
+.. _ctrl-reference-thumbnail:
+.. include:: CtrlThumbnail.rst
 
-.. _ctrl-reference-transorigpointerfield:
-.. include:: CtrlTransOrigPointerField.rst
+.. _ctrl-reference-title:
+.. include:: CtrlTitle.rst
 
 .. _ctrl-reference-translationSource:
 .. include:: CtrlTranslationSource.rst
@@ -238,17 +229,26 @@ A few remarks:
 .. _ctrl-reference-transorigdiffsourcefield:
 .. include:: CtrlTransOrigDiffSourceField.rst
 
+.. _ctrl-reference-transorigpointerfield:
+.. include:: CtrlTransOrigPointerField.rst
+
+.. _ctrl-reference-tstamp:
+.. include:: CtrlTstamp.rst
+
+.. _ctrl-reference-type:
+.. include:: CtrlType.rst
+
+.. _ctrl-reference-typeicon-classes:
+.. include:: CtrlTypeiconClasses.rst
+
+.. _ctrl-reference-typeicon-column:
+.. include:: CtrlTypeiconColumn.rst
+
+.. _ctrl-reference-usecolumnsfordefaultvalues:
+.. include:: CtrlUseColumnsForDefaultValues.rst
+
 .. _ctrl-reference-versioningws:
 .. include:: CtrlVersioningWS.rst
 
 .. _ctrl-reference-versioningws-alwaysallowliveedit:
 .. include:: CtrlVersioningWSAlwaysAllowLiveEdit.rst
-
-.. _ctrl-reference-ext-extension-key:
-.. include:: CtrlExt.rst
-
-.. _ctrl-reference-security:
-.. _ctrl-security:
-.. _ctrl-security-ignorewebmountrestriction:
-.. _ctrl-security-ignorerootlevelrestriction:
-.. include:: CtrlSecurity.rst
