@@ -1,0 +1,15 @@
+label\_alt\_force
+-----------------
+
+:aspect:`Datatype`
+    boolean
+
+:aspect:`Scope`
+    Display
+
+:aspect:`Description`
+    If set, then the :ref:`label_alt <ctrl-reference-label-alt>` fields
+    are always shown in the title separated by comma.
+
+    .. note::
+        :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property.

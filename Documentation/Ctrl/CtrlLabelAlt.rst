@@ -21,7 +21,6 @@ label\_alt
             'label' => 'header',
             'label_alt' => 'subheader,bodytext',
 
-    See :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
-
     .. note::
-        :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property.
+        :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property, als
+        see :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
