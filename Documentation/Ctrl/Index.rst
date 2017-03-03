@@ -173,232 +173,27 @@ A few remarks:
 .. include:: CtrlCruserId.rst
 
 .. _ctrl-reference-rootlevel:
-
-
-rootLevel
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         rootLevel
-
-   Datatype
-         [0, 1, -1]
-
-   Description
-         Determines where a record may exist in the page tree. There are three
-         options depending on the value:
-
-         - **0 (false): Can only exist in the page tree.** Records from this
-           table  *must* belong to a page (i.e. have a positive "pid" field
-           value). Thus records cannot be created in the root of the page tree
-           (where "admin" users are the only ones allowed to create records
-           anyways). This is the default behavior.
-
-         - **1 (true): Can only exist in the root.** Records must have a
-           "pid"-field value equal to zero. The consequence is that only admin
-           can edit this record.
-
-         - **-1: Can exist in both page tree and root.** Records can belong
-           either to a page (positive "pid" field value) or exist in the root of
-           the page tree (where the "pid" field value will be 0 (zero)).
-           **Notice:** the -1 value will still select foreign\_table records for
-           selector boxes only from root (pid=0)
-
-         .. note::
-
-            The setting for "rootLevel" is ignored for records in the
-            "pages" table (they are hardcoded to be allowed anywhere, equal to a
-            "-1" setting of rootLevel).
-
-         .. warning::
-
-            This property does not tell the whole story. If set to
-            "0" or "-1", it allows records from the table in the page tree, but
-            **not** on any kind of page. By default records can be created only in
-            "Folder"-type pages. To enable the creation of records on any kind of
-            page, an additional call must be made:
-
-         .. code-block:: php
-
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_examples_haiku');
-
-   Scope
-         Proc. / Display
-
-
+.. include:: CtrlRootLevel.rst
 
 .. _ctrl-reference-readonly:
-
-readOnly
-~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         readOnly
-
-   Datatype
-         boolean
-
-   Description
-         Records from this table may not be edited in the TYPO3 backend. Such
-         tables are usually called "static".
-
-   Scope
-         Proc. / Display
-
-
+.. include:: CtrlReadOnly.rst
 
 .. _ctrl-reference-adminonly:
-
-adminOnly
-~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         adminOnly
-
-   Datatype
-         boolean
-
-   Description
-         Records may be changed  *only* by "admin"-users (having the "admin"
-         flag set).
-
-         **Example:**
-
-         The "cms" system extension defines the table "sys\_template" as being
-         editable only by admin users:
-
-         .. code-block:: php
-
-         	'ctrl' => array(
-         		...
-         		'adminOnly' => 1,
-         		...
-         	),
-
-   Scope
-         Proc. / Display
-
-
+.. include:: CtrlAdminOnly.rst
 
 .. _ctrl-reference-editlock:
-
-editlock
-~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         editlock
-
-   Datatype
-         string (field name)
-
-   Description
-         Field name, which – if set – will prevent all editing of the record
-         for non-admin users.
-
-         The field should be configured as a checkbox type. Non-admins could be
-         allowed to edit the checkbox but if they set it, they will effectively
-         lock the record so they cannot edit it again – and they need an Admin-
-         user to remove the lock.
-
-         Note that this flag is cleared when a new copy or version of the
-         record is created.
-
-         This feature is used on the pages table, where it also prevents
-         editing of records on that page (except other pages)! Also, no new
-         records (including pages) can be created on the page.
-
-   Scope
-         Proc. / Display
-
-
+.. include:: CtrlEditlock.rst
 
 .. _ctrl-reference-origuid:
-
-origUid
-~~~~~~~
-
-.. container:: table-row
-
-   Key
-         origUid
-
-   Datatype
-         string
-
-         (field name)
-
-   Description
-         Field name, which will contain the UID of the original record in case
-         a record is created as a copy or new version of another record.
-
-         Is used when new versions are created from elements and enables the
-         backend to display a visual comparison between a new version and its
-         original.
-
-   Scope
-         Proc.
-
-
+.. include:: CtrlOrigUid.rst
 
 .. _ctrl-reference-delete:
-
-delete
-~~~~~~
-
-.. container:: table-row
-
-   Key
-         delete
-
-   Datatype
-         string
-
-         (field name)
-
-   Description
-         Field name, which indicates if a record is considered deleted or not.
-
-         If this feature is used, then records are not really deleted, but just
-         marked 'deleted' by setting the value of the field name to "1". And in
-         turn the whole system *must* strictly respect the record as deleted.
-         This means that any SQL query must exclude records where this field is
-         true.
-
-         This is a very common feature. Most tables use it throughout the TYPO3
-         Core.
-
-   Scope
-         Proc. / Display
+.. include:: CtrlDelete.rst
 
 .. _ctrl-reference-descriptionColumn:
+.. include:: CtrlDescriptionColumn.rst
 
-descriptionColumn
-~~~~~~~~~~~~~~~~~
 
-.. container:: table-row
-
-   Key
-         descriptionColumn
-
-   Datatype
-         string
-
-         (field name)
-
-   Description
-         Field name where description of a record is stored in.
-
-         This description is only displayed in the backend to guide editors and admins.
-   Scope
-         Display
 
 .. _ctrl-reference-enablecolumns:
 
