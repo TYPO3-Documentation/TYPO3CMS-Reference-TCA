@@ -88,7 +88,8 @@ Reference details
 
 
 .. _ctrl-reference-title:
-.. include:: CtrlTitle
+
+.. include:: CtrlTitle.rst
 
 
 .. _ctrl-reference-label:
