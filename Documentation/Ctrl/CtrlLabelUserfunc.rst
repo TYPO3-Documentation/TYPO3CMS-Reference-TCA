@@ -14,17 +14,14 @@ label\_userFunc
     function overrules the :ref:`label <ctrl-reference-label>`, :ref:`label_alt <ctrl-reference-label-alt>`
     and :ref:`label_alt_force <ctrl-reference-label-alt-force>` settings.
 
-    When calling a method from a class, enter "[classname]->[methodname]".
-
-    Two arguments will be passed to the method: The first argument is an array which contains the following
-    information about the record for which to get the title::
+    When calling a method from a class, enter "[classname]->[methodname]". Two arguments will be passed to the method:
+    The first argument is an array which contains the following information about the record for which to get the title::
 
        $params['table'] = $table;
        $params['row'] = $row;
 
-    The resulting title must be written to $params['title'], which is passed by reference.
-
-    The second argument is a reference to the parent object.
+    The resulting title must be written to $params['title'], which is passed by reference. The second argument is a
+    reference to the parent object.
 
     .. warning::
         The title is passed later on through :code:`htmlspecialchars()` so it may not include any HTML formatting.
