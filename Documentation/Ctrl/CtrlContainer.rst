@@ -28,25 +28,28 @@ container
                     'fieldWizard' => [
                         'aName' => [
                             'renderType' => 'aRenderType',
-                            'before' => 'anotherName',
-                            'after' => 'yetAnotherName',
+                            'before' => [ 'anotherName' ],
+                            'after' => [ 'yetAnotherName' ],
                             'disabled' => false,
+                            'options' => [],
                         ],
                     ],
                 ],
             ],
         ],
 
-    - 'renderType' refers to a registered node name from :php:`NodeFactory`
+    - "renderType" refers to a registered node name from :php:`NodeFactory`
 
-    - 'before' and 'after' can be set to sort single wizards relative to each other.
+    - "before" and "after" can be set to sort single wizards relative to each other.
 
-    - 'disabled' can be used to disable a built in default.
+    - "disabled" can be used to disable built in default wizards.
+
+    - Some wizards may support additional "options".
 
     - Note, next to "fieldWizard", some containers may also implement "fieldInformation", which can be
       manipulated the same way.
 
-    **Example manipulating built-in wizards**
+    **Example disabling a built-in wizards:**
 
     .. code-block:: php
 
@@ -64,7 +67,7 @@ container
 
      This disables the default :php:`localizationStateSelector` fieldWizard of :php:`inlineControlContainer`.
 
-     ** Example adding own wizard**
+     **Example adding own wizard:**
 
     .. code-block:: php
 
@@ -88,11 +91,11 @@ container
             ],
         ];
 
-    Register the new node as "fieldWizard" of "tt\_content" table in an :file:`Configuration\TCA\Overrides\tt_content.php`
+    Register the new node as "fieldWizard" of "tt\_content" table in an :file:`Configuration/TCA/Overrides/tt\_content.php`
     file. In PHP, the node has to implement an interface, but can return any additional HTML which is rendered in the
     "OuterWrapContainer" between the record title and the field body when editing a record:
 
-    .. figure:: ../../Images/CtrlFieldWizard.png
+    .. figure:: ../Images/CtrlFieldWizard.png
         :alt: A new field wizard in OuterWrapContainer
 
         A new field wizard in OuterWrapContainer
