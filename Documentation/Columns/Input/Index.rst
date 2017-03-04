@@ -10,7 +10,7 @@ TYPE: "input"
 The type "input" generates an `<input>` field, possibly with additional
 features applied.
 
-.. figure:: ../../../Images/TypeInputSimple.png
+.. figure:: ../../Images/TypeInputSimple.png
    :alt: Some simple input fields
 
    A collection of simple input fields
@@ -631,7 +631,7 @@ mode
 
    This is how the mode checkbox appears in the TYPO3 CMS backend:
 
-   .. figure:: ../../../Images/TypeInputOverridePlaceholder.png
+   .. figure:: ../../Images/TypeInputOverridePlaceholder.png
       :alt: Input fields with override checkboxes
 
       Several input or text fields with their placeholder override checkboxes

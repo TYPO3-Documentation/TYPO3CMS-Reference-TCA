@@ -12,7 +12,7 @@ editing parent-child-relations in one backend view. New child records
 are created using AJAX calls to prevent a reload of the complete
 backend view.
 
-.. figure:: ../../../Images/TypeInlineExample.png
+.. figure:: ../../Images/TypeInlineExample.png
    :alt: An example of inline field
    :class: with-border
 

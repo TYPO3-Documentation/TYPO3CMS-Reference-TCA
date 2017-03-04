@@ -283,7 +283,7 @@ A plain vanilla checkbox (the "Disable" checkbox from the "sys_template" table).
 which results in:
 
 
-.. figure:: ../../../Images/TypeCheckSimple.png
+.. figure:: ../../Images/TypeCheckSimple.png
    :alt: Simple checkbox
 
    The simplest possible form of checkbox
@@ -323,7 +323,7 @@ If we wanted both checkboxes to be checked by default, we would set the
 
 And this is the result in the backend:
 
-.. figure:: ../../../Images/TypeCheckWithArray.png
+.. figure:: ../../Images/TypeCheckWithArray.png
    :alt: Checkbox with array of options
 
    Checkbox with array of options

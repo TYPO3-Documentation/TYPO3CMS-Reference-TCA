@@ -13,7 +13,7 @@ page tree and require the Element Browser to be selected. In this
 example, Content Element records are attached (taken from the "Insert
 records" content element):
 
-.. figure:: ../../../Images/TypeGroupRecords.png
+.. figure:: ../../Images/TypeGroupRecords.png
    :alt: Insert records content element
 
    The "Insert records" content element with 3 elements referenced
@@ -850,7 +850,7 @@ disable\_controls
 
          1. Disabling controls - None
 
-            .. figure:: ../../../Images/Group_DisableControls_AllAvailable.png
+            .. figure:: ../../Images/Group_DisableControls_AllAvailable.png
                :alt: Disabling controls - None
                :class: with-border
 
@@ -858,7 +858,7 @@ disable\_controls
 
          2. Disabling controls - browser
 
-            .. figure:: ../../../Images/Group_DisableControls_Browser.png
+            .. figure:: ../../Images/Group_DisableControls_Browser.png
                :alt: Disabling controls - browser
                :class: with-border
 
@@ -866,7 +866,7 @@ disable\_controls
 
          3. Disabling controls - list
 
-            .. figure:: ../../../Images/Group_DisableControls_List.png
+            .. figure:: ../../Images/Group_DisableControls_List.png
                :alt: Disabling controls - list
                :class: with-border
 
@@ -875,7 +875,7 @@ disable\_controls
 
          4. Disabling controls - allowedTables
 
-            .. figure:: ../../../Images/Group_DisableControls_AllowedTables.png
+            .. figure:: ../../Images/Group_DisableControls_AllowedTables.png
                :alt: Disabling controls - allowedTables
                :class: with-border
 
@@ -958,7 +958,7 @@ The "Insert records" content element can be used to reference records
 from the "tt\_content" table (and possibly others, like "tt\_news" in
 the screenshot below):
 
-.. figure:: ../../../Images/TypeGroupRecords.png
+.. figure:: ../../Images/TypeGroupRecords.png
    :alt: Insert records content element
 
    The "Insert records" content element with 3 elements referenced
@@ -1009,7 +1009,7 @@ presented effectively in a big selector box and thus the Element
 Browser that follows the "group" type fields is useful. An example is
 the "General Record Storage page" reference:
 
-.. figure:: ../../../Images/TypeGroupGeneralStorage.png
+.. figure:: ../../Images/TypeGroupGeneralStorage.png
    :alt: The general storage page selector
 
    The general storage page selector, with link browser icon and select wizard

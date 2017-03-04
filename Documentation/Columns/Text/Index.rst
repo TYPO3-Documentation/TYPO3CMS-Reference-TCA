@@ -485,7 +485,7 @@ This is the typical configuration for a textarea field::
 
 which looks like:
 
-.. figure:: ../../../Images/TypeTextSimple.png
+.. figure:: ../../Images/TypeTextSimple.png
    :alt: A text field
 
    The message field of system notes, a typical text field

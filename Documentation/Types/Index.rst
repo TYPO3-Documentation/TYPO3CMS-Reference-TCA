@@ -20,7 +20,7 @@ Required configuration
 Let's take the internal notes (sys\_note) as an example. The input
 form looks like this:
 
-.. figure:: ../../Images/TypesSysNote.png
+.. figure:: ../Images/TypesSysNote.png
    :alt: The internal note input form
 
    The internal note form showing four input fields
@@ -97,14 +97,14 @@ what fields should appear and in what order for every value of the
 
 The result if the following display when type "Normal" is chosen:
 
-.. figure:: ../../Images/TypesDummyNormal.png
+.. figure:: ../Images/TypesDummyNormal.png
    :alt: The "normal" layout of dummy records
 
    The "normal" layout of dummy records
 
 Changing to type "Short" reloads the form and displays the following:
 
-.. figure:: ../../Images/TypesDummyShort.png
+.. figure:: ../Images/TypesDummyShort.png
    :alt: The "short" layout of dummy records
 
    The "short" layout displays less fields
@@ -112,7 +112,7 @@ Changing to type "Short" reloads the form and displays the following:
 And finally, type "Weird" also shows all fields, but in a different
 order:
 
-.. figure:: ../../Images/TypesDummyWeird.png
+.. figure:: ../Images/TypesDummyWeird.png
    :alt: The "weird" layout of dummy records
 
    The "weird" layout displays the fields in a totally different order

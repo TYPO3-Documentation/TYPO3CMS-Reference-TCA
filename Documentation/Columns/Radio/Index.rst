@@ -178,7 +178,7 @@ An example of radio buttons configuration from the "pages" table.
 
 which results in:
 
-.. figure:: ../../../Images/TypeRadioSample.png
+.. figure:: ../../Images/TypeRadioSample.png
    :alt: A typical set of radio buttons
 
    A typical set of radio buttons

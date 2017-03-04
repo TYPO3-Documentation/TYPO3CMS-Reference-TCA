@@ -11,7 +11,7 @@ type you can create selector boxes. In the most simple form this is a
 list of values among which you can chose only one. In that way it is
 similar to the "radio" type above.
 
-.. figure:: ../../../Images/TypeSelectLogin.png
+.. figure:: ../../Images/TypeSelectLogin.png
    :alt: A simple selector box
 
    A simple selector box with a few options
@@ -1255,7 +1255,7 @@ multiSelectFilterItems
 
          And this is the result:
 
-         .. figure:: ../../../Images/TypeSelectItemsFilter.png
+         .. figure:: ../../Images/TypeSelectItemsFilter.png
             :alt: Filtering available items
 
             Filtering available items with both predefined keywords and free input
@@ -1416,7 +1416,7 @@ Example - A simple selector box:
 This is the most simple selector box you can get. It contains a static
 set of options you can select from:
 
-.. figure:: ../../../Images/TypeSelectSimpleOptions.png
+.. figure:: ../../Images/TypeSelectSimpleOptions.png
    :alt: A simple selector box
 
    A simple selector box with a few options and a divider
@@ -1479,7 +1479,7 @@ there is a simple select field to create a reference to a page in the
 
 Without any TSconfig, the selector will display a full list of pages:
 
-.. figure:: ../../../Images/TypeSelectHaikuAllPages.png
+.. figure:: ../../Images/TypeSelectHaikuAllPages.png
    :alt: Page selector with full list
 
    The page selector showing all existing pages
@@ -1493,7 +1493,7 @@ Let's add the following bit of Tsconfig to the page containing our
 
 The list of pages that we can select from is now reduced to:
 
-.. figure:: ../../../Images/TypeSelectHaikuLimitedPages.png
+.. figure:: ../../Images/TypeSelectHaikuLimitedPages.png
    :alt: Page selector with restricted list
 
    The page selector showing only pages with "image" in their title
@@ -1507,7 +1507,7 @@ A multiple value selector with contents from a database table
 The user group selector is based on the fe\_groups table. It appears
 as a multiple selector:
 
-.. figure:: ../../../Images/TypeSelectUserGroups.png
+.. figure:: ../../Images/TypeSelectUserGroups.png
    :alt: List of user groups
 
    User groups selector in the access rights configuration
@@ -1558,7 +1558,7 @@ Using a look up table for single value
 In this case the selector box looks up languages in a static table
 from an extension "static\_info\_tables":
 
-.. figure:: ../../../Images/TypeSelectLookupTable.png
+.. figure:: ../../Images/TypeSelectLookupTable.png
    :alt: List of languages
 
    Language selector based on the static_languages table
@@ -1620,7 +1620,7 @@ The following configuration change:
 
 will transform the General Record Storage Page selector into:
 
-.. figure:: ../../../Images/TypeSelectGeneralStorageAsTree.png
+.. figure:: ../../Images/TypeSelectGeneralStorageAsTree.png
    :alt: The general storage selector as a tree
 
    The general storage page selector modified to render as a page tree
@@ -1693,7 +1693,7 @@ wizards are not exclusively available for selector boxes!):
 
 See the :ref:`wizards section <wizards>` for more information.
 
-.. figure:: ../../../Images/TypeSelectWizards.png
+.. figure:: ../../Images/TypeSelectWizards.png
    :alt: A selector with wizards
 
    The file mount selector with add, edit and list wizards
@@ -1740,7 +1740,7 @@ is installed).
 
 The selector looks like this:
 
-.. figure:: ../../../Images/TypeSelectMmLocal.png
+.. figure:: ../../Images/TypeSelectMmLocal.png
    :alt: The categories selector
 
    The categories selector as added by default to pages
@@ -1751,7 +1751,7 @@ property. This means that we can look at a given category and see
 which items it is related to. Note that it is perfectly possible to
 create relations from that side too.
 
-.. figure:: ../../../Images/TypeSelectMmForeign.png
+.. figure:: ../../Images/TypeSelectMmForeign.png
    :alt: The category and its items
 
    A category and the items it is related to

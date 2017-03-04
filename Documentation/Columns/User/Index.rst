@@ -139,7 +139,7 @@ Example
 
 This field is rendered by custom PHP code:
 
-.. figure:: ../../../Images/TypeUserExample.png
+.. figure:: ../../Images/TypeUserExample.png
    :alt: A user-defined field
 
    A sample user-defined field

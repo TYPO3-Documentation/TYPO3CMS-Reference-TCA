@@ -780,7 +780,7 @@ The extension "examples" provides some sample FlexForms. The "simple
 FlexForm" plugin provides a very basic configuration with just a
 select-type field to choose a page from the "pages" table.
 
-.. figure:: ../../../Images/TypeFlexSimple.png
+.. figure:: ../../Images/TypeFlexSimple.png
    :alt: A simple FlexForm field
 
    A plugin with a simple, one-field flexform
@@ -848,7 +848,7 @@ If we browse the definition for the "pi\_flexform" field in
 "tt\_content" using the Admin > Configuration module, we can see the
 following:
 
-.. figure:: ../../../Images/TypeFlexConfigurationCheck.png
+.. figure:: ../../Images/TypeFlexConfigurationCheck.png
    :alt: Checking the configuration
 
    Checking the TCA configuration for the newly added Flexform
@@ -940,7 +940,7 @@ The part that is different from the first Data Structure is
 highlighted in bold. The result from this configuration is a form
 which looks like this:
 
-.. figure:: ../../../Images/TypeFlexSheet1.png
+.. figure:: ../../Images/TypeFlexSheet1.png
    :alt: The first sheet
 
    The first sheet of our more complex FlexForm
@@ -949,7 +949,7 @@ This looks very much like the first example, but notice the second
 tab. Clicking on "Message", we can access the second sheet which shows
 some other fields:
 
-.. figure:: ../../../Images/TypeFlexSheet2.png
+.. figure:: ../../Images/TypeFlexSheet2.png
    :alt: The second sheet
 
    The second sheet of our more complex FlexForm

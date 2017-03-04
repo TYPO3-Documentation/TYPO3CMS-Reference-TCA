@@ -3,8 +3,9 @@
 
 .. _columns:
 
-['columns'] section
-^^^^^^^^^^^^^^^^^^^
+===========
+['columns']
+===========
 
 The "columns" section contains configuration for each table  *field*
 (also called "column") which can be edited by the backend.
@@ -77,7 +78,7 @@ label
 
          The name of the field as it is shown in the interface:
 
-         .. figure:: ../../Images/ColumnLabel.png
+         .. figure:: ../Images/ColumnLabel.png
             :alt: Two examples of labels
 
             "Disable:" and "Template Title:" are two labels
