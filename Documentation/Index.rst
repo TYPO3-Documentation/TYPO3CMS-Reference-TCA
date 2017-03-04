@@ -107,7 +107,7 @@ using slack yet, trigger a `slack invite <https://forger.typo3.org/slack>`__.
     Introduction/Index
     Ctrl/Index
     Interface/Index
+    Palettes/Index
     Reference/Index
     AdditionalFeatures/Index
     Targets
-
