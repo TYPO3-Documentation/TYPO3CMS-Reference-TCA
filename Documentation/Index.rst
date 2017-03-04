@@ -101,12 +101,13 @@ using slack yet, trigger a `slack invite <https://forger.typo3.org/slack>`__.
 
 
 .. toctree::
-   :hidden:
+    :hidden:
 
-   Sitemap/Index
-   Introduction/Index
-   Ctrl/Index
-   Reference/Index
-   AdditionalFeatures/Index
-   Targets
+    Sitemap/Index
+    Introduction/Index
+    Ctrl/Index
+    Interface/Index
+    Reference/Index
+    AdditionalFeatures/Index
+    Targets
 
