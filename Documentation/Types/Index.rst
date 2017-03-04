@@ -1,10 +1,11 @@
-﻿.. include:: ../../Includes.txt
+﻿.. include:: ../Includes.txt
 
 
 .. _types:
 
-['types'] section
-^^^^^^^^^^^^^^^^^
+=========
+['types']
+=========
 
 You have to add *at least* one entry in the "types"-configuration
 before any of the configured fields from the ['columns'] section will

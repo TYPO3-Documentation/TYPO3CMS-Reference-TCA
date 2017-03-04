@@ -12,4 +12,4 @@ This section describes all the properties available
    :glob:
 
    Columns/Index
-   Types/Index
+
