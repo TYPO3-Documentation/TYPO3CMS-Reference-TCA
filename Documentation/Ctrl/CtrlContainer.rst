@@ -9,7 +9,7 @@ container
 
 :aspect:`Description`
     Array to configure additional items in render containers of :ref:`FormEngine <t3coreapi:FormEngine>`,
-    see section :ref:`Node expansion <t3coreapi:FormEngine-Rendering>`.
+    see section :ref:`Node expansion <t3coreapi:FormEngine-Rendering-NodeExpansion>`.
 
     Next to single elements, some render container allow to be "enriched" with additional information via
     the "node expansion" API. Currently, the :php:`OuterWrapContainer` implements :php:`fieldWizard` and

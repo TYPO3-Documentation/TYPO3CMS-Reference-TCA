@@ -13,5 +13,3 @@ This section describes all the properties available
 
    Columns/Index
    Types/Index
-   Palettes/Index
-
