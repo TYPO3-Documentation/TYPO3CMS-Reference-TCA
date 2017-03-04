@@ -18,7 +18,7 @@ use that array part.
 .. _interface-examples:
 
 Example
-"""""""
+-------
 
 This is how the "pages" table is configured for these settings:
 
