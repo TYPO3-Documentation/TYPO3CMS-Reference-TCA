@@ -11,7 +11,7 @@ tstamp
     Field name, which is automatically updated to the current timestamp (UNIX-time in seconds) each time
     the record is updated/saved in the system. Typically the name "tstamp" is used for that field.
 
-    **Example from the "haikus" table of the "example" extension:
+    **Example from the "haikus" table of the "example" extension:**
 
     .. code-block:: php
 
