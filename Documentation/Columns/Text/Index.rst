@@ -6,7 +6,7 @@
 TYPE: "text"
 ^^^^^^^^^^^^
 
-This field type generates a :code:`<textarea>` field or inserts a RTE
+This field type generates a :code:`\<textarea\>` field or inserts a RTE
 (Rich Text Editor). For more details about the latter please refer to the
 :ref:`special-configuration-options` section.
 

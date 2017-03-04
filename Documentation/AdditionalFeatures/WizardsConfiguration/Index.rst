@@ -259,7 +259,7 @@ enableByTypeConfig
 
    Description
          If set, then the wizard is enabled only if declared in the
-         :ref:`Special Configuration of specific types <special-configuration-options-keywords-wizards>`
+         Special Configuration of specific types
          (using :code:`wizards[list of wizard-keys]`).
 
 
