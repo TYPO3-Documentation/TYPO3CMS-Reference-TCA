@@ -12,8 +12,9 @@ be edited in the backend. This is typically the biggest part of a TCA definition
 The configuration includes both properties for the display in the backend as well as the processing of the
 submitted data.
 
-Each field can be configured as a certain "type" (**required!**, eg. checkbox, input field, file or db-relation etc.) and
-optional a "renderType". For each combination a separate set of additional properties applies.
+Each field can be configured as a certain "type" (**required!**), for instance a checkbox, an input field, or a
+database relation. Each type allows a set of additional "renderType"s. Each "type" and "renderType" combination
+comes with a set of additional properties.
 
 The basic structure looks like this:
 
