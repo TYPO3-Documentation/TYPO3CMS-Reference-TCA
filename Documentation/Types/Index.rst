@@ -15,7 +15,7 @@ will show up, the default type is :code:`0`.
 
 Multiple types can be configured, which one is selected depends on the value of the field specified in
 :ref:`['ctrl']['type'] property <ctrl-reference-type>`. This approach is similar to what is often done with
-:ref:`Single Table Inheritance <https://en.wikipedia.org/wiki/Single_Table_Inheritance>`__ in Object-orientated
+`Single Table Inheritance <https://en.wikipedia.org/wiki/Single_Table_Inheritance>`__ in Object-orientated
 programming.
 
 The ['types'] system is powerful and allows differently shaped editing forms re-using fields, having own fields
@@ -140,23 +140,23 @@ And finally, type "Weird" also shows all fields, but in a different order:
     keys and the "select" values to give those types some easy to understand meaning if looking at the array.
 
 
-.. _types-properties-showitem:
-.. include:: TypesShowitem.rst
-
-.. _types-properties-columnsOverrides:
-.. include:: TypesColumnsOverrides.rst
-
-.. _types-properties-subtype-value-field:
-.. include:: TypesSubtypeValueField.rst
-
-.. _types-properties-subtypes-excludelist:
-.. include:: TypesSubtypesExcludelist.rst
-
-.. _types-properties-subtypes-addlist:
-.. include:: TypesSubtypesAddlist.rst
+.. _types-properties-bitmask-excludelist-bits:
+.. include:: TypesBitmaskExcludelistBits.rst
 
 .. _types-properties-bitmask-value-field:
 .. include:: TypesBitmaskValueField.rst
 
-.. _types-properties-bitmask-excludelist-bits:
-.. include:: TypesBitmaskExcludelistBits.rst
+.. _types-properties-columnsOverrides:
+.. include:: TypesColumnsOverrides.rst
+
+.. _types-properties-showitem:
+.. include:: TypesShowitem.rst
+
+.. _types-properties-subtype-value-field:
+.. include:: TypesSubtypeValueField.rst
+
+.. _types-properties-subtypes-addlist:
+.. include:: TypesSubtypesAddlist.rst
+
+.. _types-properties-subtypes-excludelist:
+.. include:: TypesSubtypesExcludelist.rst

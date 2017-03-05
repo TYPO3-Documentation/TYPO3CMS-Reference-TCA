@@ -27,6 +27,7 @@ bitmask\_value\_field
         ]
 
     .. code-block:: php
+
         'types' => [
             'aType' => [
                 'showitem' => 'aField, anotherField, yetAnotherField',
