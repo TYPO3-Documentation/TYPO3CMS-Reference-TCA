@@ -57,8 +57,8 @@ Let's take the internal notes (sys\_note) as a basic example. The ['types'] sect
         ],
     ]
 
-It specifies two tabs first one with four fields "general,category,subject,message" and second one with field
-"personal" on it. Only the default type "0" is specified. It looks like this:
+It specifies two tabs: First one with four fields "general", "category" "subject" and "message", and second with the
+field "personal" on it. Only the default type "0" is specified. Opening such a record looks like this:
 
 .. figure:: ../Images/TypesSysNote.png
    :alt: The internal note input form
@@ -66,7 +66,7 @@ It specifies two tabs first one with four fields "general,category,subject,messa
 
 .. _types-optional:
 
-The power of the "types"-configuration becomes clear when you want the form composition of a record to depend on a
+The power of the "types" configuration becomes clear when you want the form composition of a record to depend on a
 value from the record. Let's look at the "tx_examples_dummy" table from the "examples" extension. The
 "ctrl" section of its TCA contains a "type" property:
 
@@ -77,7 +77,7 @@ value from the record. Let's look at the "tx_examples_dummy" table from the "exa
         ...
     ],
 
-The highlighted line indicates that the field called "record\_type" is to indicate the "type" of any given record of
+This indicates that the field called "record\_type" is to specify the "type" of any given record of
 the table. Let's look at how this field is defined in ['columns']:
 
 .. code-block:: php

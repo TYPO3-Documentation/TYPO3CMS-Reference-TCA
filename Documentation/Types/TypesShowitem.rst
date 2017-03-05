@@ -12,8 +12,8 @@ showitem
 
     Configuration of the displayed order of fields in FormEngine and their tab alignment.
 
-    The whole string is a comma :php:`,` separated list of tokens. Each token can have keywords separated by
-    semicolon :php:`;`.
+    The whole string is a comma `,` separated list of tokens. Each token can have keywords separated by
+    semicolon `;`.
 
     Each comma separated token is one of the following:
 
@@ -45,7 +45,8 @@ showitem
         ],
 
     The above example shows three fields of the form. Since no further '--div--' are specified, there would be only
-    one tab. In this case FormEngine will not render tabs.
+    one tab. In this case FormEngine will suppress that single tab and just show all specified fields without
+    a tabbing indicator.
 
     .. code-block:: php
 

@@ -7,8 +7,8 @@ bitmask\_value\_field
 :aspect:`Description`
     Field name, which holds a value being the integer (bit-mask) for the 'bitmask\_excludelist\_bits' array.
 
-    It works much like 'subtype\_value\_field' but excludes fields based on whether a bit from the value field is set
-    or not. See property :ref:`bitmask\_excludelist\_bits <types-properties-bitmask-excludelist-bits>`.
+    It works much like 'subtype\_value\_field' but excludes fields based on whether a bit from the value field is set.
+    See property :ref:`bitmask\_excludelist\_bits <types-properties-bitmask-excludelist-bits>`.
 
     These two properties are rarely used, but pretty powerful if a 'type=radio' or 'type=check' field
     is set as bitmask\_value\_field.
