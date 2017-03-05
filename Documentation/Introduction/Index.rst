@@ -179,7 +179,7 @@ chapter.
   properties applies. These properties are clearly explained for each
   type.
 
-  :ref:`Full reference <columns>`
+  :ref:`Full reference <columns>` and :ref:`['config'] section <columns-types>`.
 
 
 **['types'] Form layout for editing**
