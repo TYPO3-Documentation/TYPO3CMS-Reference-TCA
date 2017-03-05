@@ -6,14 +6,14 @@
 ['columns']
 ===========
 
-The "columns" section contains configuration for each table  *field* (also called "column") which can
+The ['columns'] section contains configuration for each table  *field* (also called "column") which can
 be edited in the backend. This is typically the biggest part of a TCA definition.
 
 The configuration includes both properties for the display in the backend as well as the processing of the
 submitted data.
 
-Each field can be configured as a certain "type" (e.g. checkbox, selector, input field, file or db-relation etc.) and
-"renderType", for each combination a separate set of additional properties applies.
+Each field can be configured as a certain "type" (**required!**, eg. checkbox, input field, file or db-relation etc.) and
+optional a "renderType". For each combination a separate set of additional properties applies.
 
 The basic structure looks like this:
 
@@ -37,20 +37,20 @@ combination and are explained in detail in the :ref:`['columns']['config'] <colu
 
 .. _columns-properties:
 
-.. _columns-properties-label:
-.. include:: ColumnsLabel.rst
-
-.. _columns-properties-exclude:
-.. include:: ColumnsExclude.rst
-
-.. _columns-properties-l10n-mode:
-.. include:: ColumnsL10nMode.rst
-
-.. _columns-properties-l10n-display:
-.. include:: ColumnsL10nDisplay.rst
-
 .. _columns-properties-config:
 .. include:: ColumnsConfig.rst
 
 .. _columns-properties-displaycond:
 .. include:: ColumnsDisplayCond.rst
+
+.. _columns-properties-exclude:
+.. include:: ColumnsExclude.rst
+
+.. _columns-properties-label:
+.. include:: ColumnsLabel.rst
+
+.. _columns-properties-l10n-display:
+.. include:: ColumnsL10nDisplay.rst
+
+.. _columns-properties-l10n-mode:
+.. include:: ColumnsL10nMode.rst

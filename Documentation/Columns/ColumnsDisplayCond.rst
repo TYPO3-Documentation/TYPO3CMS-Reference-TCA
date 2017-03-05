@@ -18,47 +18,60 @@ displayCond
 
     The following rules are available:
 
-    - **FIELD** : This evaluates based on another field's value in the record.
+    - **FIELD**
+        This evaluates based on another field's value in the record.
 
         - Part 1 is the field name
 
         - Part 2 is the evaluation type. These are the possible options:
 
-            - **REQ** : Requires the field to have a "true" value. False values are "" (blank string) and 0 (zero).
+            - **REQ**
+                Requires the field to have a "true" value. False values are "" (blank string) and 0 (zero).
                 Everything else is true. For the REQ evaluation type Part3 of the rules string must be the string "true"
                 or "false". If "true" then the rule returns "true" if the evaluation is true. If "false" then the rule
                 returns "true" if the evaluation is false.
 
-            - **> / < / >= / <=** : Evaluates if the field value is greater than, less than the value in "Part 3"
+            - **> / < / >= / <=**
+                Evaluates if the field value is greater than, less than the value in "Part 3"
 
-            - **= / !=** : Evaluates if the field value is equal to value in "Part 3"
+            - **= / !=**
+                Evaluates if the field value is equal to value in "Part 3"
 
-            - **IN / !IN** : Evaluates if the field value is in the comma list equal to value in "Part 3"
+            - **IN / !IN**
+                Evaluates if the field value is in the comma list equal to value in "Part 3"
 
-            - **- / !-** : Evaluates if the field value is in the range specified by value in "Part 3" ([min] - [max])
+            - **- / !-**
+                Evaluates if the field value is in the range specified by value in "Part 3" ([min] - [max])
 
-            - **BIT / !BIT** : Evaluates if the bit specified by the value in "Part 3" is set in the field's value
+            - **BIT / !BIT**
+                Evaluates if the bit specified by the value in "Part 3" is set in the field's value
                 (considered as an integer)
 
-    - **REC** : This evaluates based on the current record (doesn't make sense for flexform fields)
+    - **REC**
+        This evaluates based on the current record (doesn't make sense for flexform fields)
 
         - Part 1 is the type.
 
-            - **NEW** : Requires the record to be new if Part2 is "true" and reversed if Part2 is "false".
+            - **NEW**
+                Requires the record to be new if Part2 is "true" and reversed if Part2 is "false".
 
-    - **HIDE\_FOR\_NON\_ADMINS** : This will hide the field for all non-admin users while admins can see it.
+    - **HIDE\_FOR\_NON\_ADMINS**
+        This will hide the field for all non-admin users while admins can see it.
         Useful for FlexForm container fields which are not supposed to be edited directly via the FlexForm but
         rather through some other interface (TemplaVoilà's Page module for instance).
 
-    - **USER** : userFunc call with a fully qualified class name. Additional parameters can be be passed separated
-        by colon. :php:`USER:Evoweb\\Example\\User\\ElementConditionMatcher->checkHeaderGiven:any:more:information`
+    - **USER**
+        userFunc call with a fully qualified class name. Additional parameters can be be passed separated
+        by colon. :php:`USER:Evoweb\\Example\\User\\MyConditionMatcher->checkHeader:some:more:info`
 
-    - **VERSION** : Evaluate if a record is a "versioned" record from workspaces.
+    - **VERSION**
+        Evaluate if a record is a "versioned" record from workspaces.
 
         - Part 1 is the type:
 
-            - **IS** : Part 2 is "true" or "false": If true, the field is shown only if the record
-                is a version (pid == -1). Example to show a field in "Live" workspace only: 'VERSION:IS:false'
+            - **IS**
+                Part 2 is "true" or "false": If true, the field is shown only if the record is a version (pid == -1).
+                Example to show a field in "Live" workspace only: :php:`VERSION:IS:false`
 
     In FlexForm, display conditions can be attached to single fields in sheets, to sheets itself, to flex section fields
     and to flex section container element fields. :code:`FIELD` references can be prefixed with a sheet name to
@@ -117,4 +130,4 @@ displayCond
         The display condition parser has been rewritten with TYPO3 core version 8. It is now "strict" and throws
         exceptions if the syntax of a display condition is bogus. The exception message reveals details on what
         exactly is broken. This helps with finding bugs in a display condition configuration and reduces headaches
-        with "Why is my field shown or not shown?" bug hunting.
+        with "Why is my field shown or not shown?".
