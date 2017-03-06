@@ -28,7 +28,7 @@ Examples
 
     A flex form with two sheets and some sheet description (flex_1)
 
-.. figure:: ../../Images/TypeFlexStyleguideFlex1.png
+.. figure:: ../../Images/TypeFlexStyleguideFlex2.png
     :alt: A flex form field with two flex section containers (flex_2)
 
     A flex form field with two flex section containers (flex_2)
@@ -614,18 +614,18 @@ table. In the second sheet, we add a simple input field and a text field.
 
 The result from this configuration is a form which looks like this:
 
-.. figure:: ../../Images/TypeFlexSheet1.png
-   :alt: The first sheet
+..  figure:: ../../Images/TypeFlexSheet1.png
+    :alt: The first sheet
 
-   The first sheet of our more complex FlexForm
+    The first sheet of our more complex FlexForm
 
 This looks very much like the first example, but notice the second tab. Clicking on "Message", we can access
 the second sheet which shows some other fields:
 
 .. figure:: ../../Images/TypeFlexSheet2.png
-   :alt: The second sheet
+    :alt: The second sheet
 
-   The second sheet of our more complex FlexForm
+    The second sheet of our more complex FlexForm
 
 If you look at the XML stored in the database field "pi\_flexform" this is how it looks:
 
