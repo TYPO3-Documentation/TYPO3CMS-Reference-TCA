@@ -13,6 +13,7 @@
     Introduction/Index
     Type/Check
     Type/Radio
+    Type/Passthrough
 
     Common/Index
     Input/Index
