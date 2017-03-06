@@ -13,8 +13,9 @@
     Introduction/Index
     Type/Check
     Type/None
-    Type/Radio
     Type/Passthrough
+    Type/Radio
+    Type/User
 
     Common/Index
     Input/Index
