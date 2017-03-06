@@ -5,7 +5,7 @@ itemsProcFunc
     string (function reference)
 
 :aspect:`Scope`
-    Display
+    Display / Proc.
 
 :aspect:`Description`
     PHP function which is called to fill / manipulate the array with elements.
