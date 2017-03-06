@@ -6,10 +6,14 @@
 ['types']
 =========
 
+.. note::
+    :ref:`Click here if you are looking for ['columns']['config']['type']. <columns-types>`
+
+
 Introduction
 ------------
 
-The ['types'] plays a crucial role in TCA to specify which fields from the :ref:`['columns'] section <columns>`
+The ['types'] section plays a crucial role in TCA to specify which fields from the :ref:`['columns'] section <columns>`
 are displayed if editing a table row in FormEngine. At least one type has to be configured before any field
 will show up, the default type is :code:`0`.
 

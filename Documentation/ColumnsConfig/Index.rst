@@ -11,10 +11,11 @@
     :titlesonly:
 
     Introduction
+    Check
     Common/Index
     Input/Index
     Text/Index
-    Check/Index
+
     Radio/Index
     Select/Index
     Group/Index
