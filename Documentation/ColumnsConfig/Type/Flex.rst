@@ -404,7 +404,7 @@ format. The structure is as follows:
 :aspect:`Element`
     <sDEF>
 
-:apsect:`Description`
+:aspect:`Description`
     For each sheet it contains elements for each language. only the <lDEF> tag is used.
 
     Child elements
