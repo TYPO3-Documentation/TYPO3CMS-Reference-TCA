@@ -44,7 +44,7 @@ Examples
 --------
 
 Some examples from extension styleguide to get an idea on what the ['colums'] definition is capable of: An input field
-with slider, a select field for images, a select drop-down for images, an inline relation spanning multiple tables.
+with slider, a select drop-down for images, an inline relation spanning multiple tables.
 
 .. code-block:: php
 
@@ -131,3 +131,6 @@ with slider, a select field for images, a select drop-down for images, an inline
 
 .. _columns-properties-l10n-mode:
 .. include:: ColumnsL10nMode.rst
+
+.. _columns-properties-onChange:
+.. include:: ColumnsOnChange.rst

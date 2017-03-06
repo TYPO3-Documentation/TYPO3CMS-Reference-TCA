@@ -7,19 +7,21 @@
 =====================
 
 .. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
+    :maxdepth: 5
+    :titlesonly:
 
-   Common/Index
-   Input/Index
-   Text/Index
-   Check/Index
-   Radio/Index
-   Select/Index
-   Group/Index
-   None/Index
-   Passthrough/Index
-   User/Index
-   Flex/Index
-   Inline/Index
+    Introduction/Index
+    Type/Check
+    Common/Index
+    Input/Index
+    Text/Index
+
+    Radio/Index
+    Select/Index
+    Group/Index
+    None/Index
+    Passthrough/Index
+    User/Index
+    Flex/Index
+    ImageManipulation/Index
+    Inline/Index

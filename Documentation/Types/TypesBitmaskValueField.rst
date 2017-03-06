@@ -19,15 +19,6 @@ bitmask\_value\_field
 
     .. code-block:: php
 
-        'bitmask_value_field' => 'active',
-        'bitmask_excludelist_bits' => [
-            '-0' => 'tmpl_a_subpart_marker,tmpl_a_description',
-            '-1' => 'tmpl_b_subpart_marker,tmpl_b_description',
-            '-2' => 'tmpl_c_subpart_marker,tmpl_c_description'
-        ]
-
-    .. code-block:: php
-
         'types' => [
             'aType' => [
                 'showitem' => 'aField, anotherField, yetAnotherField',
