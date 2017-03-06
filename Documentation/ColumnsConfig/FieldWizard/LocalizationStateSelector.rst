@@ -16,12 +16,12 @@ localizationStateSelector
     * The record is a localized record (not default language)
     * The record is in "translated" (connected), but not in "copy" (free) mode
     * The table is localization aware using the ['ctrl'] properties :ref:`languageField <ctrl-reference-languagefield>`,
-        :ref:`transOrigPointerField <ctrl-reference-transorigpointerfield>`. If the optional property
-        :ref:`translationSource <ctrl-reference-translationSource>` is also set, and if the record is a translation
-        from another localized record, the third radio appears.
+      :ref:`transOrigPointerField <ctrl-reference-transorigpointerfield>`. If the optional property
+      :ref:`translationSource <ctrl-reference-translationSource>` is also set, and if the record is a translation
+      from another localized record, the third radio appears.
     * The property ['config']['behaviour']['allowLanguageSynchronization'] is set to true
 
-    .. figure:: ../../Images/FieldWizardLocalizationStateSelector.png
+    .. figure:: ../Images/FieldWizardLocalizationStateSelector.png
         :alt: Example localization state selector on a type=input field
 
         Example localization state selector on an type=input field

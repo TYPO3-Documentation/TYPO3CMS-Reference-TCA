@@ -130,30 +130,6 @@ softref
          Proc.
 
 
-
-.. _columns-common-properties-onChange:
-
-onChange
-~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         onChange
-
-   Datatype
-         string
-
-   Description
-         Set this setting to `reload` if you want to trigger a form reload once a value
-         has changed in this field. Naturally, this only makes sense with select or radio
-         elements so you can use them in your TCA types definition.
-
-   Scope
-         Proc.
-
-
-
 .. _columns-common-properties-readonly:
 
 readOnly

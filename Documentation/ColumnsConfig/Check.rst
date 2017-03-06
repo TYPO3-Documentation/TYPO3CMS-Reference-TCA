@@ -113,15 +113,23 @@ type='check' has (currently) only one render definition, no special renderType m
 .. _columns-check-properties-eval:
 .. include:: Properties/CheckEval.rst
 
+.. _columns-check-properties-fieldInformation:
+.. include:: Properties/FieldInformation.rst
+
 .. _columns-check-properties-fieldWizard:
 .. include:: Properties/FieldWizard.rst
 .. include:: FieldWizard/LocalizationStateSelector.rst
+.. include:: FieldWizard/OtherLanguageContent.rst
+.. include:: FieldWizard/DefaultLanguageDifferences.rst
 
 .. _columns-check-properties-items:
 .. include:: Properties/CheckItems.rst
 
 .. _columns-check-properties-itemsprocfunc:
 .. include:: Properties/ItemsProcFunc.rst
+
+.. _columns-check-properties-readOnly:
+.. include:: Properties/ReadOnly.rst
 
 .. _columns-check-properties-validation:
 .. include:: Properties/CheckValidation.rst

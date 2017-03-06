@@ -131,3 +131,6 @@ with slider, a select drop-down for images, an inline relation spanning multiple
 
 .. _columns-properties-l10n-mode:
 .. include:: ColumnsL10nMode.rst
+
+.. _columns-properties-onChange:
+.. include:: ColumnsOnChange.rst
