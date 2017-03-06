@@ -118,9 +118,9 @@ type='check' has (currently) only one render definition, no special renderType m
 
 .. _columns-check-properties-fieldWizard:
 .. include:: ../Properties/FieldWizard.rst
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
 .. include:: ../FieldWizard/LocalizationStateSelector.rst
 .. include:: ../FieldWizard/OtherLanguageContent.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
 
 .. _columns-check-properties-items:
 .. include:: ../Properties/CheckItems.rst
