@@ -41,8 +41,8 @@ Examples
 
     Four checkboxes in three columns (checkbox_12)
 
-.. figure:: ../Images/TypeCheckStyleguide12.png
-    :alt: Checkboxes with inline floating (checkbox_16)
+.. figure:: ../Images/TypeCheckStyleguide16.png
+    :alt: Checkboxes wit inline floating (checkbox_16)
 
     Checkboxes with inline floating (checkbox_16)
 
@@ -112,6 +112,10 @@ type='check' has (currently) only one render definition, no special renderType m
 
 .. _columns-check-properties-eval:
 .. include:: Properties/CheckEval.rst
+
+.. _columns-check-properties-fieldWizard:
+.. include:: Properties/FieldWizard.rst
+.. include:: FieldWizard/LocalizationStateSelector.rst
 
 .. _columns-check-properties-items:
 .. include:: Properties/CheckItems.rst
