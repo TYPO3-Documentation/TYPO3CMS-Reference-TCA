@@ -12,11 +12,11 @@
 
     Introduction/Index
     Type/Check
+    Type/Radio
+
     Common/Index
     Input/Index
     Text/Index
-
-    Radio/Index
     Select/Index
     Group/Index
     None/Index
