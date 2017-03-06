@@ -2,7 +2,7 @@ itemsProcFunc
 ~~~~~~~~~~~~~
 
 :aspect:`Datatype`
-    string (function reference)
+    string (class->method reference)
 
 :aspect:`Scope`
     Display / Proc.
