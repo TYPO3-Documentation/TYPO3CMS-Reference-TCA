@@ -22,7 +22,6 @@
     Text/Index
     Select/Index
     Group/Index
-    User/Index
     Flex/Index
     ImageManipulation/Index
     Inline/Index

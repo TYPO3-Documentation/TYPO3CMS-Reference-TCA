@@ -25,7 +25,7 @@ Examples
 ========
 
 .. figure:: ../../Images/TypeUserExample.png
-:alt: A sample user-defined field
+    :alt: A sample user-defined field
 
    A sample user-defined field
 
