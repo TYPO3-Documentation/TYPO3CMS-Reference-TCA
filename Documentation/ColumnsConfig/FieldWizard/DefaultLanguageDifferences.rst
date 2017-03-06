@@ -16,7 +16,7 @@ defaultLanguageDifferences
     This wizard is important for editors who maintain translated records: They can see what has been
     changed in their localization parent between the last save operation of the overlay.
 
-    .. figure:: ../Images/FieldWizardDefaultLanguageDifferences.png
+    .. figure:: ../../Images/FieldWizardDefaultLanguageDifferences.png
         :alt: A field has been changed in default language record
 
         A field has been changed in default language record

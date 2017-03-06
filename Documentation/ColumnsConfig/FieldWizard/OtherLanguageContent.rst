@@ -17,7 +17,7 @@ otherLanguageContent
     and if the field is set to :php:`readOnly`. Additionally, the table has to be language aware by setting up the
     according fields in ['ctr'] section.
 
-    .. figure:: ../Images/FieldWizardOtherLanguageContent.png
+    .. figure:: ../../Images/FieldWizardOtherLanguageContent.png
         :alt: Header field showing values from two other languages
 
         Header field showing values from two other languages

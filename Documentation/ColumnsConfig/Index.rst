@@ -10,8 +10,8 @@
     :maxdepth: 5
     :titlesonly:
 
-    Introduction
-    Check
+    Introduction/Index
+    Type/Check
     Common/Index
     Input/Index
     Text/Index

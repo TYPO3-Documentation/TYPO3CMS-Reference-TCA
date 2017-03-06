@@ -26,7 +26,6 @@ Properties
    `readOnly`_   boolean
    `search`_     array
    `softref`_    string
-   `onChange`_    string
    ============= =========
 
 

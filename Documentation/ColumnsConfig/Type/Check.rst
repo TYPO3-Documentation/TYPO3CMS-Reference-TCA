@@ -31,17 +31,17 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 Examples
 ========
 
-.. figure:: ../Images/TypeCheckStyleguide2.png
+.. figure:: ../../Images/TypeCheckStyleguide2.png
     :alt: Simple checkbox with label (checkbox_2)
 
     Simple checkbox with label (checkbox_2)
 
-.. figure:: ../Images/TypeCheckStyleguide12.png
+.. figure:: ../../Images/TypeCheckStyleguide12.png
     :alt: Four checkboxes in three columns (checkbox_12)
 
     Four checkboxes in three columns (checkbox_12)
 
-.. figure:: ../Images/TypeCheckStyleguide16.png
+.. figure:: ../../Images/TypeCheckStyleguide16.png
     :alt: Checkboxes wit inline floating (checkbox_16)
 
     Checkboxes with inline floating (checkbox_16)
@@ -105,31 +105,31 @@ type='check' has (currently) only one render definition, no special renderType m
 .. _columns-check-properties-type:
 
 .. _columns-check-properties-cols:
-.. include:: Properties/CheckCols.rst
+.. include:: ../Properties/CheckCols.rst
 
 .. _columns-check-properties-default:
-.. include:: Properties/CheckDefault.rst
+.. include:: ../Properties/CheckDefault.rst
 
 .. _columns-check-properties-eval:
-.. include:: Properties/CheckEval.rst
+.. include:: ../Properties/CheckEval.rst
 
 .. _columns-check-properties-fieldInformation:
-.. include:: Properties/FieldInformation.rst
+.. include:: ../Properties/FieldInformation.rst
 
 .. _columns-check-properties-fieldWizard:
-.. include:: Properties/FieldWizard.rst
-.. include:: FieldWizard/LocalizationStateSelector.rst
-.. include:: FieldWizard/OtherLanguageContent.rst
-.. include:: FieldWizard/DefaultLanguageDifferences.rst
+.. include:: ../Properties/FieldWizard.rst
+.. include:: ../FieldWizard/LocalizationStateSelector.rst
+.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
 
 .. _columns-check-properties-items:
-.. include:: Properties/CheckItems.rst
+.. include:: ../Properties/CheckItems.rst
 
 .. _columns-check-properties-itemsprocfunc:
-.. include:: Properties/ItemsProcFunc.rst
+.. include:: ../Properties/ItemsProcFunc.rst
 
 .. _columns-check-properties-readOnly:
-.. include:: Properties/ReadOnly.rst
+.. include:: ../Properties/ReadOnly.rst
 
 .. _columns-check-properties-validation:
-.. include:: Properties/CheckValidation.rst
+.. include:: ../Properties/CheckValidation.rst
