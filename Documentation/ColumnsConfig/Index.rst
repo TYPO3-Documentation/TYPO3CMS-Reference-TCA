@@ -9,7 +9,6 @@
 .. toctree::
     :maxdepth: 5
     :titlesonly:
-    :hidden:
 
     Introduction
     Common/Index
