@@ -64,7 +64,7 @@ user
 .. toctree::
    :maxdepth: 5
    :titlesonly:
-   :glob:
+   :hidden:
 
    Common/Index
    Input/Index
