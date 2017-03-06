@@ -12,6 +12,7 @@
 
     Introduction/Index
     Type/Check
+    Type/Flex
     Type/None
     Type/Passthrough
     Type/Radio
@@ -22,6 +23,5 @@
     Text/Index
     Select/Index
     Group/Index
-    Flex/Index
     ImageManipulation/Index
     Inline/Index
