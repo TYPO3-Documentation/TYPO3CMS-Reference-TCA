@@ -631,7 +631,7 @@ mode
 
    This is how the mode checkbox appears in the TYPO3 CMS backend:
 
-   .. figure:: ../../Images/TypeInputOverridePlaceholder.png
+   .. figure:: ../../Images/OverridePlaceholder.png
       :alt: Input fields with override checkboxes
 
       Several input or text fields with their placeholder override checkboxes

@@ -16,11 +16,11 @@
     Type/None
     Type/Passthrough
     Type/Radio
+    Type/Text
     Type/User
 
     Common/Index
     Input/Index
-    Text/Index
     Select/Index
     Group/Index
     ImageManipulation/Index

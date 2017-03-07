@@ -8,4 +8,4 @@ default
     Display / Proc.
 
 :aspect:`Description`
-    Default value selected if a new record is created.
+    Default value set if a new record is created.
