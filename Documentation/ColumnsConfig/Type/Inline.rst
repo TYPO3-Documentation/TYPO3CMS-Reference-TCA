@@ -357,11 +357,11 @@ type='inline' has (currently) only one render definition, no special renderType 
 
 .. _columns-inline-properties-type:
 
-.. _columns-inline-properties-foreign-table:
-.. include:: ../Properties/InlineForeignTable.rst
-
 .. _columns-inline-properties-appearance:
 .. include:: ../Properties/InlineAppearance.rst
+
+.. _columns-inline-properties-autosizemax:
+.. include:: ../Properties/InlineAutoSizeMax.rst
 
 .. _columns-inline-properties-behaviour:
 .. include:: ../Properties/InlineBehaviour.rst
@@ -369,11 +369,23 @@ type='inline' has (currently) only one render definition, no special renderType 
 .. _columns-inline-properties-customcontrols:
 .. include:: ../Properties/InlineCustomControls.rst
 
+.. _columns-inline-properties-filter:
+.. include:: ../Properties/InlineFilter.rst
+
+.. _columns-inline-properties-foreign-default-sortby:
+.. include:: ../Properties/InlineForeignDefaultSortby.rst
+
 .. _columns-inline-properties-foreign-field:
 .. include:: ../Properties/InlineForeignField.rst
 
 .. _columns-inline-properties-foreign-label:
 .. include:: ../Properties/InlineForeignLabel.rst
+
+.. _columns-inline-properties-foreign-match-fields:
+.. include:: ../Properties/InlineForeignMatchFields.rst
+
+.. _columns-inline-properties-foreign-record-defaults:
+.. include:: ../Properties/InlineForeignRecordDefaults.rst
 
 .. _columns-inline-properties-foreign-selector:
 .. include:: ../Properties/InlineForeignSelector.rst
@@ -384,41 +396,29 @@ type='inline' has (currently) only one render definition, no special renderType 
 .. _columns-inline-properties-foreign-sortby:
 .. include:: ../Properties/InlinePropertiesForeignSortby.rst
 
-.. _columns-inline-properties-foreign-default-sortby:
-.. include:: ../Properties/InlineForeignDefaultSortby.rst
+.. _columns-inline-properties-foreign-table:
+.. include:: ../Properties/InlineForeignTable.rst
 
 .. _columns-inline-properties-foreign-table-field:
 .. include:: ../Properties/InlineForeignTableField.rst
 
-.. _columns-inline-properties-foreign-record-defaults:
-.. include:: ../Properties/InlineForeignRecordDefaults.rst
-
-.. _columns-inline-properties-foreign-unique:
-.. include:: ../Properties/InlineForeignUnique.rst
-
-.. _columns-inline-properties-filter:
-.. include:: ../Properties/InlineFilter.rst
-
-.. _columns-inline-properties-mm:
-.. include:: ../Properties/InlineMm.rst
-
-.. _columns-inline-properties-foreign-match-fields:
-.. include:: ../Properties/InlineForeignMatchFields.rst
-
 .. _columns-inline-properties-foreign-types:
 .. include:: ../Properties/InlineForeignTypes.rst
 
-.. _columns-inline-properties-size:
-.. include:: ../Properties/InlineSize.rst
-
-.. _columns-inline-properties-autosizemax:
-.. include:: ../Properties/InlineAutoSizeMax.rst
+.. _columns-inline-properties-foreign-unique:
+.. include:: ../Properties/InlineForeignUnique.rst
 
 .. _columns-inline-properties-maxitems:
 .. include:: ../Properties/InlineMaxitems.rst
 
 .. _columns-inline-properties-minitems:
 .. include:: ../Properties/InlineMinitems.rst
+
+.. _columns-inline-properties-mm:
+.. include:: ../Properties/InlineMm.rst
+
+.. _columns-inline-properties-size:
+.. include:: ../Properties/InlineSize.rst
 
 .. _columns-inline-properties-symmetric-field:
 .. include:: ../Properties/InlineSymmetricField.rst

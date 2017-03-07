@@ -14,7 +14,7 @@ MM
     That table typically has three columns:
 
     uid\_local, uid\_foreign
-      Storing uids of both sides. If done right, this is reflected in the table name - :sql:`tx_foo_local_foreign_mm`
+      Storing uids of both sides. If done right, this is reflected in the table name - :code:`tx_foo_local_foreign_mm`
 
     sorting
       is a required field used for ordering the items.
