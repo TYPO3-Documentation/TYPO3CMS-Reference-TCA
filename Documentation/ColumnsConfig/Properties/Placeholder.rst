@@ -19,7 +19,7 @@ placeholder
     **Example from the "sys_file_reference" table:**
 
     .. code-block:: php
-        :emphasize-lines: 9
+        :emphasize-lines: 7
 
         'title' => [
             'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
