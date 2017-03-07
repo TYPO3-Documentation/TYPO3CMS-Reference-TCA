@@ -22,3 +22,6 @@ sortby
     .. note::
         The field should **not** be made editable by the user since the DataHandler will manage the content automatically.
 
+    .. important::
+        Do not confuse this property with :ref:`default_sortby <ctrl-reference-default-sortby>`.
+

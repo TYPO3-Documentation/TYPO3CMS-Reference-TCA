@@ -20,3 +20,6 @@ default\_sortby
             'default_sortby' => 'ORDER BY title',
             ...
         ],
+
+    .. important::
+        Do not confuse this property with :ref:`sortby <ctrl-reference-sortby>`.

@@ -114,10 +114,10 @@ type='check' has (currently) only one render definition, no special renderType m
 .. include:: ../Properties/CheckEval.rst
 
 .. _columns-check-properties-fieldInformation:
-.. include:: ../Properties/FieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst
 
 .. _columns-check-properties-fieldWizard:
-.. include:: ../Properties/FieldWizard.rst
+.. include:: ../Properties/CommonFieldWizard.rst
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst
 .. include:: ../FieldWizard/LocalizationStateSelector.rst
 .. include:: ../FieldWizard/OtherLanguageContent.rst
@@ -126,10 +126,10 @@ type='check' has (currently) only one render definition, no special renderType m
 .. include:: ../Properties/CheckItems.rst
 
 .. _columns-check-properties-itemsprocfunc:
-.. include:: ../Properties/ItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst
 
 .. _columns-check-properties-readOnly:
-.. include:: ../Properties/ReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst
 
 .. _columns-check-properties-validation:
 .. include:: ../Properties/CheckValidation.rst
