@@ -49,13 +49,13 @@ type='radio' has (currently) only one render definition, no special renderType m
 .. _columns-radio-properties-type:
 
 .. _columns-radio-properties-default:
-.. include:: ../Properties/Default.rst
+.. include:: ../Properties/CommonDefault.rst
 
 .. _columns-radio-properties-fieldInformation:
-.. include:: ../Properties/FieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst
 
 .. _columns-radio-properties-fieldWizard:
-.. include:: ../Properties/FieldWizard.rst
+.. include:: ../Properties/CommonFieldWizard.rst
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst
 .. include:: ../FieldWizard/LocalizationStateSelector.rst
 .. include:: ../FieldWizard/OtherLanguageContent.rst
@@ -64,7 +64,7 @@ type='radio' has (currently) only one render definition, no special renderType m
 .. include:: ../Properties/RadioItems.rst
 
 .. _columns-radio-properties-itemsprocfunc:
-.. include:: ../Properties/ItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst
 
 .. _columns-radio-properties-readOnly:
-.. include:: ../Properties/ReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst

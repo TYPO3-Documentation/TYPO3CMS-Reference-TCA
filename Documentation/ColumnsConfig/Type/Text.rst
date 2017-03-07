@@ -119,7 +119,7 @@ if both enabled in configuration and enabled for the user.
 .. include:: ../Properties/TextCols.rst
 
 .. _columns-text-properties-default:
-.. include:: ../Properties/Default.rst
+.. include:: ../Properties/CommonDefault.rst
 
 .. _columns-text-properties-enableRichtext:
 .. include:: ../Properties/TextEnableRichtext.rst
@@ -131,13 +131,13 @@ if both enabled in configuration and enabled for the user.
 .. include:: ../Properties/TextEval.rst
 
 .. _columns-text-properties-fieldControl:
-.. include:: ../Properties/FieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst
 
 .. _columns-text-properties-fieldInformation:
-.. include:: ../Properties/FieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst
 
 .. _columns-text-properties-fieldWizard:
-.. include:: ../Properties/FieldWizard.rst
+.. include:: ../Properties/CommonFieldWizard.rst
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst
 .. include:: ../FieldWizard/LocalizationStateSelector.rst
 .. include:: ../FieldWizard/OtherLanguageContent.rst
@@ -152,13 +152,13 @@ if both enabled in configuration and enabled for the user.
 .. include:: ../Properties/TextMax.rst
 
 .. _columns-text-properties-mode:
-.. include:: ../Properties/Mode.rst
+.. include:: ../Properties/CommonMode.rst
 
 .. _columns-text-properties-placeholder:
-.. include:: ../Properties/Placeholder.rst
+.. include:: ../Properties/CommonPlaceholder.rst
 
 .. _columns-text-properties-readOnly:
-.. include:: ../Properties/ReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst
 
 .. _columns-text-properties-richtextConfiguration:
 .. include:: ../Properties/TextRichtextConfiugration.rst
@@ -167,10 +167,10 @@ if both enabled in configuration and enabled for the user.
 .. include:: ../Properties/TextRows.rst
 
 .. _columns-text-properties-search:
-.. include:: ../Properties/Search.rst
+.. include:: ../Properties/CommonSearch.rst
 
 .. _columns-text-properties-softref:
-.. include:: ../Properties/Softref.rst
+.. include:: ../Properties/CommonSoftref.rst
 
 .. _columns-text-properties-wrap:
 .. include:: ../Properties/TextWrap.rst
@@ -185,11 +185,11 @@ The :code:`renderType = 'belayoutwizard'` is a special renderType to display the
 wizard when editing records of table :code:`backend_layout` in the backend. It stored a custom
 syntax representing the Web -> Page layout in the database.
 
-.. include:: ../Properties/Default.rst
+.. include:: ../Properties/CommonDefault.rst
 
-.. include:: ../Properties/FieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst
 
-.. include:: ../Properties/FieldWizard.rst
+.. include:: ../Properties/CommonFieldWizard.rst
 
 
 .. _columns-text-renderType-t3editor:
@@ -204,13 +204,13 @@ System extension "t3editor" provides an enhanced textarea for TypoScript input, 
 also auto-complete suggestions. Beyond that the "t3editor" extension makes it possible to add syntax highlighting
 to textarea fields, for several languages.
 
-.. include:: ../Properties/Default.rst
+.. include:: ../Properties/CommonDefault.rst
 
-.. include:: ../Properties/FieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst
 
-.. include:: ../Properties/FieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst
 
-.. include:: ../Properties/FieldWizard.rst
+.. include:: ../Properties/CommonFieldWizard.rst
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst
 .. include:: ../FieldWizard/LocalizationStateSelector.rst
 .. include:: ../FieldWizard/OtherLanguageContent.rst
@@ -220,9 +220,9 @@ to textarea fields, for several languages.
 
 .. include:: ../Properties/TextRows.rst
 
-.. include:: ../Properties/Search.rst
+.. include:: ../Properties/CommonSearch.rst
 
-.. include:: ../Properties/Softref.rst
+.. include:: ../Properties/CommonSoftref.rst
 
 
 .. _columns-text-renderType-textTable:
@@ -235,16 +235,16 @@ It is used for the "Table" tt\_content content element.
 
 .. include:: ../Properties/TextCols.rst
 
-.. include:: ../Properties/Default.rst
+.. include:: ../Properties/CommonDefault.rst
 
 .. include:: ../Properties/TextEnableTabulator.rst
 
-.. include:: ../Properties/FieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst
 .. include:: ../FieldControl/TableWizard.rst
 
-.. include:: ../Properties/FieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst
 
-.. include:: ../Properties/FieldWizard.rst
+.. include:: ../Properties/CommonFieldWizard.rst
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst
 .. include:: ../FieldWizard/LocalizationStateSelector.rst
 .. include:: ../FieldWizard/OtherLanguageContent.rst
@@ -255,14 +255,14 @@ It is used for the "Table" tt\_content content element.
 
 .. include:: ../Properties/TextMax.rst
 
-.. include:: ../Properties/Placeholder.rst
+.. include:: ../Properties/CommonPlaceholder.rst
 
-.. include:: ../Properties/ReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst
 
 .. include:: ../Properties/TextRows.rst
 
-.. include:: ../Properties/Search.rst
+.. include:: ../Properties/CommonSearch.rst
 
-.. include:: ../Properties/Softref.rst
+.. include:: ../Properties/CommonSoftref.rst
 
 .. include:: ../Properties/TextWrap.rst

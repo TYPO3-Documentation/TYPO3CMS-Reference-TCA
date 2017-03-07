@@ -48,7 +48,7 @@ type='none' has (currently) only one render definition, no special renderType mu
 .. include:: ../Properties/NoneCols.rst
 
 .. _columns-none-properties-fieldInformation:
-.. include:: ../Properties/FieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst
 
 .. _columns-none-properties-format:
 .. include:: ../Properties/NoneFormat.rst
@@ -57,7 +57,7 @@ type='none' has (currently) only one render definition, no special renderType mu
 .. include:: ../Properties/NonePassContent.rst
 
 .. _columns-none-properties-search:
-.. include:: ../Properties/Search.rst
+.. include:: ../Properties/CommonSearch.rst
 
 .. _columns-none-properties-size:
 .. include:: ../Properties/NoneSize.rst
