@@ -49,7 +49,7 @@ type='radio' has (currently) only one render definition, no special renderType m
 .. _columns-radio-properties-type:
 
 .. _columns-radio-properties-default:
-.. include:: ../Properties/RadioDefault.rst
+.. include:: ../Properties/Default.rst
 
 .. _columns-radio-properties-fieldInformation:
 .. include:: ../Properties/FieldInformation.rst
