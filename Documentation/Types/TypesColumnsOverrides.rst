@@ -13,7 +13,7 @@ columnsOverrides
     This allows to change the column definition of a field if a record of this type is edited. Currently, it only
     affects the display of form fields, but not the data handling.
 
-    A typical property that can be changed here is :ref:`columns config renderType <columns-text-properties-rendertype>`.
+    A typical property that can be changed here is :code:`renderType`.
     Furthermore, it is possible to *remove* certain options from the field configuration using the `__UNSET` value.
 
     The core uses this property to override for instance the "bodytext" field config of table "tt_content": If a record

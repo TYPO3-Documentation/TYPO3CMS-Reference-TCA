@@ -16,7 +16,7 @@ tableWizard
 
     Note the control button is only displayed after a new record has been saved the first time.
 
-    .. figure:: ../Images/TypeTextTableWizard1.png
+    .. figure:: ../../Images/TypeTextTableWizard1.png
         :alt: The table wizard
 
         The table wizard

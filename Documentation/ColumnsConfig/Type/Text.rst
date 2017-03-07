@@ -130,10 +130,10 @@ if both enabled in configuration and enabled for the user.
 .. _columns-text-properties-eval:
 .. include:: ../Properties/TextEval.rst
 
-.. _columns-check-properties-fieldControl:
+.. _columns-text-properties-fieldControl:
 .. include:: ../Properties/FieldControl.rst
 
-.. _columns-check-properties-fieldInformation:
+.. _columns-text-properties-fieldInformation:
 .. include:: ../Properties/FieldInformation.rst
 
 .. _columns-text-properties-fieldWizard:
