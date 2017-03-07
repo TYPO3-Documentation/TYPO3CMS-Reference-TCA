@@ -1,0 +1,12 @@
+minitems
+~~~~~~~~
+
+:aspect:`Datatype`
+    integer > 0
+
+:aspect:`Scope`
+    Display
+
+:aspect:`Description`
+    Minimum number of child items. Defaults to 0. JavaScript record validation prevents the
+    record from being saved if the limit is not satisfied.
