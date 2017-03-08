@@ -2,9 +2,9 @@
 
 .. _columns-types:
 
-=====================
-['columns']['config']
-=====================
+========================
+['columns'][*]['config']
+========================
 
 .. toctree::
     :maxdepth: 5
@@ -14,6 +14,7 @@
     Type/Check
     Type/Flex
     Type/Inline
+    Type/Input
     Type/None
     Type/Passthrough
     Type/Radio
@@ -21,7 +22,6 @@
     Type/User
 
     Common/Index
-    Input/Index
     Select/Index
     Group/Index
     ImageManipulation/Index

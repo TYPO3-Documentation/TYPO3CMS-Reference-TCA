@@ -117,7 +117,7 @@ displayCond
 
     .. code-block:: xml
 
-        <!-- Hide field if valuef of record field "header" is not "true" -->
+        <!-- Hide field if value of record field "header" is not "true" -->
         <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
         <!-- Hide field if value of parent record field "field_1" is not "foo" -->
         <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
