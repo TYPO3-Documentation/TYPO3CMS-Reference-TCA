@@ -122,7 +122,12 @@ type='group' has (currently) only one render definition, no special renderType m
 .. _columns-group-properties-fieldWizard:
 .. include:: ../Properties/CommonFieldWizard.rst
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst
+.. include:: ../FieldWizard/FileThumbnails.rst
+.. include:: ../FieldWizard/FileTypeList.rst
+.. include:: ../FieldWizard/FileUpload.rst
 .. include:: ../FieldWizard/LocalizationStateSelector.rst
+.. include:: ../FieldWizard/RecordsOverview.rst
+.. include:: ../FieldWizard/TableList.rst
 .. include:: ../FieldWizard/OtherLanguageContent.rst
 
 .. _columns-group-properties-filter:
