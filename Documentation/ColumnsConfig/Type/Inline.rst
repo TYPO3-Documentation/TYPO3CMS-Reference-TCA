@@ -409,10 +409,10 @@ type='inline' has (currently) only one render definition, no special renderType 
 .. include:: ../Properties/InlineForeignUnique.rst
 
 .. _columns-inline-properties-maxitems:
-.. include:: ../Properties/InlineMaxitems.rst
+.. include:: ../Properties/CommonMaxitems.rst
 
 .. _columns-inline-properties-minitems:
-.. include:: ../Properties/InlineMinitems.rst
+.. include:: ../Properties/CommonMinitems.rst
 
 .. _columns-inline-properties-mm:
 .. include:: ../Properties/InlineMm.rst

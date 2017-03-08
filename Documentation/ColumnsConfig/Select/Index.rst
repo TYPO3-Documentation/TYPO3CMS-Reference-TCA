@@ -20,6 +20,9 @@ More complex configurations are possible, see the
 :ref:`examples section <columns-select-examples>` for more details.
 
 
+selectSingleBox and multipleSideBySide support autoSizeMax.
+
+
 .. only:: html
 
    .. contents::
@@ -68,7 +71,6 @@ Properties
    `multiSelectFilterItems`_                 array
    `renderType`_                             string
    `rootLevel`_                              boolean
-   `selectedListStyle`_                      string
    `selicon\_cols`_                          integer
    `showIconTable`_                          boolean
    `size`_                                   integer
@@ -536,26 +538,7 @@ default
 
 
 .. _columns-select-properties-dontremaptablesoncopy:
-
-dontRemapTablesOnCopy
-~~~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         dontRemapTablesOnCopy
-
-   Datatype
-         string
-
-   Description
-         (:ref:`See same feature for type="group" <columns-group-properties-dontremaptablesoncopy>`)
-
-         Set it to the exact same value as :ref:`foreign_table <columns-select-properties-foreign-table>`
-         if you don't want values to be remapped on copy.
-
-   Scope
-         Proc.
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
 
 
 
@@ -581,278 +564,27 @@ rootLevel
          Display
 
 
-
 .. _columns-select-properties-mm:
-
-MM
-~~
-
-.. container:: table-row
-
-   Key
-         MM
-
-   Datatype
-         string
-
-         (table name)
-
-   Description
-         Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>`
-         is done with a M-M relation with a third "join" table.
-
-         That table has three columns as a minimum:
-
-         - *uid\_local, uid\_foreign* for uids respectively.
-
-         - *sorting* is a required field used for ordering the items
-
-         - *sorting\_foreign* is required if the relation is bidirectional (see
-           description and example below table)
-
-         - *tablenames* is used if multiple tables are allowed in the relation.
-
-         - *uid* (auto-incremented and PRIMARY KEY) may be used if you need the
-           "multiple" feature (which allows the same record to be references
-           multiple times in the box. See :ref:`MM_hasUidField <columns-select-properties-mm-hasuidfield>`.
-
-         - Other fields may exist, in particular if
-           :ref:`MM_match_fields <columns-select-properties-mm-match-fields>`
-           is involved in the set up.
-
-         **Example SQL #1:** (most simple MM table)
-
-         .. code-block:: php
-
-            CREATE TABLE user_testmmrelations_one_rel_mm (
-              uid_local int(11) DEFAULT '0' NOT NULL,
-              uid_foreign int(11) DEFAULT '0' NOT NULL,
-              sorting int(11) DEFAULT '0' NOT NULL,
-
-              KEY uid_local (uid_local),
-              KEY uid_foreign (uid_foreign)
-            );
-
-         **Example SQL #2** (Advanced with UID field, "ident" used with
-         :ref:`MM_match_fields <columns-select-properties-mm-match-fields>`
-         and "sorting_foreign" for bidirectional MM relations):
-
-         .. code-block:: php
-
-            #
-            # Table structure for table 'user_testmmrelations_two_rel_mm'
-            #
-            #
-            CREATE TABLE user_testmmrelations_two_rel_mm (
-              uid int(11) NOT NULL auto_increment,
-              uid_local int(11) DEFAULT '0' NOT NULL,
-              uid_foreign int(11) DEFAULT '0' NOT NULL,
-              tablenames varchar(30) DEFAULT '' NOT NULL,
-              sorting int(11) DEFAULT '0' NOT NULL,
-              sorting_foreign int(11) DEFAULT '0' NOT NULL,
-              ident varchar(30) DEFAULT '' NOT NULL,
-
-              KEY uid_local (uid_local),
-              KEY uid_foreign (uid_foreign),
-              PRIMARY KEY (uid)
-            );
-
-         The field name of the config is not used for data-storage anymore but
-         rather it's set to the number of records in the relation on each
-         update, so the field should be an integer.
-
-         .. note::
-
-            Using MM relations you can ONLY store real relations for
-            foreign tables in the list - no additional string values or non-record
-            values.
-
-         **MM relations and flexforms**
-
-         MM relations has been tested to work with flexforms if not in a
-         repeated element in a section. See example below.
-
-   Scope
-         Proc.
-
-
+.. include:: ../Properties/CommonMm.rst
 
 .. _columns-select-properties-mm-opposite-field:
-
-MM\_opposite\_field
-~~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         MM\_opposite\_field
-
-   Datatype
-         string
-
-         (field name)
-
-   Description
-         If you want to make a MM relation editable from the foreign side
-         (bidirectional) of the relation as well, you need to set
-         `MM_opposite_field` on the foreign side to the field name on the local
-         side.
-
-         E.g. if the field "companies.employees" is your local side and you
-         want to make the same relation editable from the foreign side of the
-         relation in a field called persons.employers, you would need to set
-         the `MM_opposite_field` value of the TCA configuration of the
-         persons.employers field to the string "employees".
-
-         .. note::
-
-            Bidirectional references only get registered once on the
-            native side in "sys\_refindex".
-
-   Scope
-         Proc.
-
-
+.. include:: ../Properties/CommonOppositeField.rst
 
 .. _columns-select-properties-mm-match-fields:
-
-MM\_match\_fields
-~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         MM\_match\_fields
-
-   Datatype
-         array
-
-   Description
-         Array of field=>value pairs to both insert and match against when
-         writing/reading MM relations.
-
-   Scope
-         Display / Proc.
-
-
+.. include:: ../Properties/CommonMmMatchFields.rst
 
 .. _columns-select-properties-mm-opposite-usage:
 .. _columns-select-properties-mm-oppositeusage:
-
-MM\_oppositeUsage
-~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         MM\_oppositeUsage
-
-   Datatype
-         array
-
-   Description
-         *(Since TYPO3 CMS 6.2)*
-
-         In a MM bidirectional relation using
-         :ref:`match fields <columns-select-properties-mm-match-fields>`
-         the opposite side needs to know about the match fields for
-         certain operations (for example, when a copy is created in a
-         workspace) so that relations are carried over with the correct
-         information.
-
-         `MM_oppositeUsage` is an array which references which
-         fields contain the references to the opposite side, so that they
-         can be queried for match field configuration.
-
-         This is used by the Core for system categories. Whenever a table
-         is registered as being categorizable, an entry in `MM_oppositeUsage`
-         is created for the "sys_category" table.
-
-         **Example**
-
-         With "pages", "tt_content" and "sys_file_metadata" all registered
-         as categorizable (using the default name of "categories" for the
-         relations field) plus extension "examples" installed, the TCA
-         for "sys_category" contains the following definition once
-         fully assembled:
-
-         .. code-block:: php
-
-         	$GLOBALS['TCA']['sys_category']['columns']['items']['config']['MM_oppositeUsage'] = array(
-         		'pages' => array('tx_examples_cats', 'categories'),
-         		'sys_file_metadata' => array('categories'),
-         		'tt_content' => array('categories'),
-         	)
-
-   Scope
-         Proc.
-
-
+.. include:: ../Properties/CommonMmOppositeUsage.rst
 
 .. _columns-select-properties-mm-insert-fields:
-
-MM\_insert\_fields
-~~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         MM\_insert\_fields
-
-   Datatype
-         array
-
-   Description
-         Array of field=>value pairs to insert when writing new MM relations
-
-   Scope
-         Proc.
-
-
+.. include:: ../Properties/CommonMmInsertFields.rst
 
 .. _columns-select-properties-mm-table-where:
-
-MM\_table\_where
-~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         MM\_table\_where
-
-   Datatype
-         string (SQL WHERE)
-
-   Description
-         Additional where clause used when reading MM relations.
-
-   Scope
-         Display
-
-
+.. include:: ../Properties/CommonMmTableWhere.rst
 
 .. _columns-select-properties-mm-hasuidfield:
-
-MM\_hasUidField
-~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         MM\_hasUidField
-
-   Datatype
-         boolean
-
-   Description
-         If the "multiple" feature is used with MM relations you MUST set this
-         value to true and include a UID field! Otherwise sorting and removing
-         relations will be buggy.
-
-   Scope
-         Proc.
-
-
+.. include:: ../Properties/CommonMmHasUidField.rst
 
 .. _columns-select-properties-special:
 
@@ -902,47 +634,7 @@ special
 
 
 .. _columns-select-properties-size:
-
-size
-~~~~
-
-.. container:: table-row
-
-   Key
-         size
-
-   Datatype
-         integer
-
-   Description
-         Height of the selector box in TCEforms.
-
-   Scope
-         Display
-
-
-
-.. _columns-select-properties-selectedliststyle:
-
-selectedListStyle
-~~~~~~~~~~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         selectedListStyle
-
-   Datatype
-         string
-
-   Description
-         If set, this will override the default style of the selector box with
-         selected items (which is "width:200px").
-
-         Applies for when maxitems is > 1
-
-   Scope
-         Display
+.. include:: ../Properties/CommonSize.rst
 
 
 
@@ -1053,74 +745,13 @@ treeConfig
 
 
 .. _columns-select-properties-multiple:
-
-multiple
-~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         multiple
-
-   Datatype
-         boolean
-
-   Description
-         Allows the *same item* more than once in a list.
-
-         If used with bidirectional MM relations it must be set for both the
-         native and foreign field configuration. Also, with MM relations in
-         general you must use a UID field in the join table, see description
-         for "MM"
-
-   Scope
-         Display / Proc.
-
-
+.. include:: ../Properties/CommonMultiple.rst
 
 .. _columns-select-properties-maxitems:
-
-maxitems
-~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         maxitems
-
-   Datatype
-         integer > 0
-
-   Description
-         Maximum number of items in the selector box. (Default = 1)
-
-         .. note::
-
-            Property maxitems is ignored if `renderType`_ `selectSingle` is set.
-
-   Scope
-         Display / Proc
-
-
+.. include:: ../Properties/CommonMaxitems.rst
 
 .. _columns-select-properties-minitems:
-
-minitems
-~~~~~~~~
-
-.. container:: table-row
-
-   Key
-         minitems
-
-   Datatype
-         integer > 0
-
-   Description
-         Minimum number of items in the selector box. (Default = 0)
-
-   Scope
-         Display
+.. include:: ../Properties/CommonMinitems.rst
 
 
 
