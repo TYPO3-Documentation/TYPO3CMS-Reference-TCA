@@ -98,6 +98,9 @@ type='group' has (currently) only one render definition, no special renderType m
 .. _columns-group-properties-autosizemax:
 .. include:: ../Properties/CommonAutoSizeMax.rst
 
+.. _columns-group-properties-default:
+.. include:: ../Properties/CommonDefault.rst
+
 .. _columns-group-properties-disallowed:
 .. include:: ../Properties/GroupDisallowed.rst
 
@@ -154,6 +157,9 @@ type='group' has (currently) only one render definition, no special renderType m
 
 .. _columns-group-properties-prepend-tname:
 .. include:: ../Properties/GroupPrependTname.rst
+
+.. _columns-group-properties-readOnly:
+.. include:: ../Properties/CommonReadOnly.rst
 
 .. _columns-group-properties-size:
 .. include:: ../Properties/CommonSize.rst
