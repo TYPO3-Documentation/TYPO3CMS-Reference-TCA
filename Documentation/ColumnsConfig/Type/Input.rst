@@ -313,6 +313,7 @@ An input field used to handle links and mail addresses in the backend.
 .. include:: ../Properties/InputEval.rst
 
 .. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../FieldControl/LinkPopup.rst
 
 .. include:: ../Properties/CommonFieldInformation.rst
 
