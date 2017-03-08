@@ -165,7 +165,8 @@ Stored data values
 ==================
 
 .. note::
-    This structural in-depth study should probably be moved elsewhere.
+    This structural in-depth study should probably be moved elsewhere and cleaned up since it contains some
+    invalid information.
 
 Since the "group" element allows to store references to multiple elements we might want to look at how these
 references are stored internally.
@@ -284,11 +285,11 @@ is doing such transformations (among other things) and this is how the transform
 +-----------+----------------------------------+------------------------------------------------------------------+
 | Int. type | In Database:                     | When given to FormEngine:                                        |
 +===========+==================================+==================================================================+
-| "db"      | 26,45,49,1                       | tt_content_26\|%20adfs%20asdf%20asdf%20,tt_content_45\|This%20is |
-|           |                                  | %20a%20test%20%28copy%203%29,tt_content_49\|%5B...               |
-|           |                                  | %5D,tt_content_1\|%5B...%5D                                      |
+| "db"      | 26,45,49,1                       | tt_content_26\|adfs,tt_content_45\|This is                       |
+|           |                                  |  a test copy,tt_content_49\|...                                  |
+|           |                                  | ,tt_content_1\|...                                               |
 +-----------+----------------------------------+------------------------------------------------------------------+
-| "file"    | DSC_7102_background.jpg,DSC_7181 | DSC_7102_background.jpg\|DSC_7102_background.jpg,DSC_7181.jpg\|  |
+| "file"    | DSC_7102_background.jpg,DSC_7181 | DSC_7102_background.jpg\|DSC_7102\_background.jpg,DSC\_7181.jpg\||
 |           |                                  | DSC_7181.jpg,DSC_7102_background_01.jpg\|                        |
 |           |                                  | DSC_7102_background_01.jpg                                       |
 +-----------+----------------------------------+------------------------------------------------------------------+

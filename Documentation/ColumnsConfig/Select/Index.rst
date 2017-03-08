@@ -23,94 +23,9 @@ More complex configurations are possible, see the
 selectSingleBox and multipleSideBySide support autoSizeMax.
 
 
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
-
 .. _columns-select-properties:
 
-Properties
-""""""""""
-
-.. container:: ts-properties
-
-   ========================================= =========
-   Property                                  Data Type
-   ========================================= =========
-   `allowNonIdValues`_                       boolean
-   `authMode\_enforce`_                      string
-   `authMode`_                               string
-   `default`_                                string
-   `disableNoMatchingValueElement`_          boolean
-   `dontRemapTablesOnCopy`_                  string
-   `enableMultiSelectFilterTextfield`_       boolean
-   `exclusiveKeys`_                          string
-   `fileFolder\_extList`_                    string
-   `fileFolder\_recursions`_                 string
-   `fileFolder`_                             string
-   `foreign\_table\_prefix`_                 string
-   `foreign\_table\_where`_                  string
-   `foreign\_table`_                         string
-   `itemListStyle`_                          string
-   `items`_                                  array
-   `itemsProcFunc`_                          string
-   `localizeReferencesAtParentLocalization`_ boolean
-   `maxitems`_                               integer
-   `minitems`_                               integer
-   `MM\_hasUidField`_                        boolean
-   `MM\_insert\_fields`_                     array
-   `MM\_match\_fields`_                      array
-   `MM\_opposite\_field`_                    string
-   `MM\_oppositeUsage`_                      array
-   `MM\_table\_where`_                       string
-   `MM`_                                     string
-   `multiple`_                               boolean
-   `multiSelectFilterItems`_                 array
-   `renderType`_                             string
-   `rootLevel`_                              boolean
-   `selicon\_cols`_                          integer
-   `showIconTable`_                          boolean
-   `size`_                                   integer
-   `special`_                                string
-   `treeConfig`_                             array
-   `type`_                                   string
-   `wizards`_                                array
-   ========================================= =========
-
-Property details
-""""""""""""""""
-
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
-
-
 .. _columns-select-properties-type:
-
-type
-~~~~
-
-.. container:: table-row
-
-   Key
-         type
-
-   Datatype
-         string
-
-   Description
-         *[Must be set to "select"]*
-
-   Scope
-         Display / Proc.
-
-
 
 .. _columns-select-properties-items:
 
