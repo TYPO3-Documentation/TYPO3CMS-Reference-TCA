@@ -127,7 +127,7 @@ itemsProcFunc
          will be displayed as a proper error message.
 
          For more information, see how user-functions are specified in the
-         section about :ref:`wizards <wizards>` some pages below here.
+         section about wizards some pages below here.
 
    Scope
          Display
@@ -1217,7 +1217,7 @@ wizards are not exclusively available for selector boxes!):
 		)
 	),
 
-See the :ref:`wizards section <wizards>` for more information.
+See the wizards section for more information.
 
 .. figure:: ../../Images/TypeSelectWizards.png
    :alt: A selector with wizards
