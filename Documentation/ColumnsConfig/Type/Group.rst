@@ -21,7 +21,9 @@ assumed that `internal_type='file'` and `internal_type='file\_reference'` will b
 For database relations however, the type='group' field is the right and a powerful choice especially if dealing
 with lots of re-usable child records, and if :ref:`type='inline' <columns-inline>` is not suitable.
 
-This type comes with various additional wizards and field controls which can be turned on or off if needed.
+This type is very flexible in its display options with all its different
+:'ref:`fieldControl <columns-group-properties-fieldControl>` and
+:ref:`fieldWizard <columns-group-properties-fieldWizard>` options. A lot of them are available by default but disable.
 
 
 .. _columns-group-examples:
