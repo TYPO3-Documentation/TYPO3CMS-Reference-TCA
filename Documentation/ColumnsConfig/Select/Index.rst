@@ -1,6 +1,5 @@
 ﻿.. include:: ../../Includes.txt
 
-
 .. _columns-select:
 
 TYPE: "select"
@@ -669,25 +668,6 @@ treeConfig
 .. include:: ../Properties/CommonMinitems.rst
 
 
-
-.. _columns-select-properties-wizards:
-
-wizards
-~~~~~~~
-
-.. container:: table-row
-
-   Key
-         wizards
-
-   Datatype
-         array
-
-   Description
-         See the :ref:`wizards section <wizards>` for more information.
-
-   Scope
-         Display
 
 
 
