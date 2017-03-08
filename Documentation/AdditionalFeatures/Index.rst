@@ -12,6 +12,5 @@ Additional $TCA features
    :titlesonly:
    :glob:
 
-   WizardsConfiguration/Index
    CoreWizardScripts/Index
 

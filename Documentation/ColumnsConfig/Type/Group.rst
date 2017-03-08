@@ -107,6 +107,24 @@ type='group' has (currently) only one render definition, no special renderType m
 .. _columns-group-properties-dontremaptablesoncopy:
 .. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
 
+.. _columns-group-properties-fieldControl:
+.. include:: ../Properties/CommonFieldControl.rst
+.. _columns-group-properties-elementBrowser:
+.. include:: ../FieldControl/AddRecord.rst
+.. include:: ../FieldControl/EditPopup.rst
+.. include:: ../FieldControl/ElementBrowser.rst
+.. include:: ../FieldControl/InsertClipboard.rst
+.. include:: ../FieldControl/ListModule.rst
+
+.. _columns-group-properties-fieldInformation:
+.. include:: ../Properties/CommonFieldInformation.rst
+
+.. _columns-group-properties-fieldWizard:
+.. include:: ../Properties/CommonFieldWizard.rst
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
+.. include:: ../FieldWizard/LocalizationStateSelector.rst
+.. include:: ../FieldWizard/OtherLanguageContent.rst
+
 .. _columns-group-properties-filter:
 .. include:: ../Properties/GroupFilter.rst
 
