@@ -26,7 +26,7 @@ eval
       (requires a proper sql definition). Often combined with "mode" property.
 
     Vendor\\Extension\\*
-      User defined form evaluations. See below.
+      User defined form evaluations.
 
 :aspect:`Examples`
     Trimming the value for white space before storing in the database:
@@ -107,7 +107,7 @@ eval
         'columns' => [
             'example_field' => [
                 'config' => [
-                    'type' => 'input',
+                    'type' => 'text',
                     'eval' => 'trim,Vendor\\Extension\\Evaluation\\ExampleEvaluation,required'
                 ],
             ],
