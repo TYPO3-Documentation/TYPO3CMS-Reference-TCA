@@ -357,8 +357,8 @@ side on save. This can increase security if the backend is not HTTPS enabled, to
 .. note::
     The extension `rsaauth` is just an imperfect helper to secure little parts of the backend. It is clearly
     just a poor-man solution and no good substitution of running the entire backend with HTTPS. If you are
-    concerned about communication security, there is no way around HTTPS. If the backend is forced to HTTPS,
-    extension rsaauth can be unloaded.
+    concerned about communication security (you should!), there is no way around HTTPS. If the backend is forced to
+    HTTPS, extension rsaauth can be unloaded.
 
 .. include:: ../Properties/InputAutocomplete.rst
 
