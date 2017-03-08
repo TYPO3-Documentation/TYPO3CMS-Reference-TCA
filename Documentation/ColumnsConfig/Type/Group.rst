@@ -113,6 +113,9 @@ type='group' has (currently) only one render definition, no special renderType m
 .. _columns-group-properties-hideMoveIcons:
 .. include:: ../Properties/GroupHideMoveIcons.rst
 
+.. _columns-group-properties-hideSuggest:
+.. include:: ../Properties/GroupHideSuggest.rst
+
 .. _columns-group-properties-internal-type:
 .. include:: ../Properties/GroupInternalType.rst
 
@@ -154,6 +157,9 @@ type='group' has (currently) only one render definition, no special renderType m
 
 .. _columns-group-properties-size:
 .. include:: ../Properties/CommonSize.rst
+
+.. _columns-group-properties-suggestOptions:
+.. include:: ../Properties/GroupSuggestOptions.rst
 
 .. _columns-group-properties-uploadfolder:
 .. include:: ../Properties/GroupUploadfolder.rst
@@ -268,41 +274,6 @@ Class :ref:`TYPO3\\CMS\\Core\\Database\\RelationHandler <t3api:TYPO3\\CMS\\Core\
 is designed to transform the stored reference list values into an array where all uids are paired with the right table
 name. Also, this class will automatically retrieve the list of MM relations. In other words, it provides an API for
 getting the references from "group" elements into a PHP array regardless of storage method.
-
-.. _columns-group-data-tceforms:
-
-Passing the list of references to FormEngine
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Regardless of storage method, the reference list has to be "enriched" with proper title values when given to FormEngine
-for rendering. In particular this is important for database records. Passing the list "26,45,49,1" will not give
-FormEngine a chance to render the titles of the records.
-
-
-Class `TYPO3\\CMS\\Backend\\Form\\DataPreprocessor` ((?))
-is doing such transformations (among other things) and this is how the transformation happens:
-
-+-----------+----------------------------------+------------------------------------------------------------------+
-| Int. type | In Database:                     | When given to FormEngine:                                        |
-+===========+==================================+==================================================================+
-| "db"      | 26,45,49,1                       | tt_content_26\|adfs,tt_content_45\|This is                       |
-|           |                                  |  a test copy,tt_content_49\|...                                  |
-|           |                                  | ,tt_content_1\|...                                               |
-+-----------+----------------------------------+------------------------------------------------------------------+
-| "file"    | DSC_7102_background.jpg,DSC_7181 | DSC_7102_background.jpg\|DSC_7102\_background.jpg,DSC\_7181.jpg\||
-|           |                                  | DSC_7181.jpg,DSC_7102_background_01.jpg\|                        |
-|           |                                  | DSC_7102_background_01.jpg                                       |
-+-----------+----------------------------------+------------------------------------------------------------------+
-
-The syntax is::
-
-   [ref. value]|[ref. label rawurlencoded],[ref. value]|[ref. label rawurlencoded],....
-
-Values are transferred back to the database as a comma separated list of values without the labels but if labels are in
-the value they are automatically removed.
-
-Alternately you can also submit each value as an item in an array; DataHandler will detect an array of values and
-implode it internally to a comma list. (This is used for the "select" type, in renderMode "singlebox" and "checkbox").
 
 .. _columns-group-data-files:
 
