@@ -14,6 +14,7 @@
     Type/Check
     Type/Flex
     Type/Group
+    Type/ImageManipulation
     Type/Inline
     Type/Input
     Type/None
@@ -22,5 +23,3 @@
     Type/Select
     Type/Text
     Type/User
-
-    ImageManipulation/Index
