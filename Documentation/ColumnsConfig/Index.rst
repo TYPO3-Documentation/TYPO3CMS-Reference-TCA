@@ -19,9 +19,9 @@
     Type/None
     Type/Passthrough
     Type/Radio
+    Type/Select
     Type/Text
     Type/User
 
     Common/Index
-    Select/Index
     ImageManipulation/Index
