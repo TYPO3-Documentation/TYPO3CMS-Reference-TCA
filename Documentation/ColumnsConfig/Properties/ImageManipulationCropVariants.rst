@@ -111,7 +111,7 @@ cropVariants
             ],
         ]
 
-    Users can also select a focus area, when configured. The focus area is always **inside** the crop area and mark the
+    Users can also select a focus area, when configured. The focus area is always **inside** the crop area and marks the
     area in the image which must be visible for the image to transport its meaning. The selected area is persisted to
     the database but will have no effect on image processing. The data points are however made available as data
     attribute when using the `<f:image />` view helper.
@@ -142,14 +142,19 @@ cropVariants
 
     .. code-block:: php
 
-        'config' => [
-            'type' => 'imageManipulation',
-            'coverAreas' => [
-                [
-                    'x' => 0.05,
-                    'y' => 0.85,
-                    'width' => 0.9,
-                    'height' => 0.1,
-                ],
-            ],
-        ],
+         'config' => [
+             'type' => 'imageManipulation',
+             'cropVariants' => [
+                 'mobile' => [
+                     'title' => 'LLL:EXT:ext_key/Resources/Private/Language/locallang.xlf:imageManipulation.mobile',
+                     'coverAreas' => [
+                         [
+                             'x' => 0.05,
+                             'y' => 0.85,
+                             'width' => 0.9,
+                             'height' => 0.1,
+                         ]
+                     ],
+                 ],
+             ],
+         ]
