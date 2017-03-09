@@ -567,6 +567,11 @@ renderType = 'selectTree'
 
 A tree for selecting hierarchical data items.
 
+.. note::
+    This section needs a validation of the single properties - probably some of the relation
+    properties like MM are not valid.
+
+
 .. include:: ../Properties/SelectAllowNonIdValues.rst
 
 .. include:: ../Properties/SelectAuthMode.rst
@@ -630,8 +635,6 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/SelectRootLevel.rst
 
 .. include:: ../Properties/CommonSize.rst
-
-.. include:: ../Properties/SelectSpecial.rst
 
 .. _columns-select-properties-treeconfig:
 .. include:: ../Properties/SelectTreeConfig.rst
