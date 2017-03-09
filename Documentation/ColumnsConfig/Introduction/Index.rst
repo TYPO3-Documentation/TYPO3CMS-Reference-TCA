@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-Section ['columns']['config'] is the main workhorse when it comes to single field configuration.
+Section :code:`['columns'][*]['config']` (where :code:`*` stands for a table column) is the main workhorse when it comes to single field configuration.
 The main property is :code:`type`, it specifies the DataHandler processing and database value. Additionally,
 property :code:`renderType` specifies how a field is rendered. The renderType is sometimes optional. Both properties
 together specify the set of properties that are valid for one field.
