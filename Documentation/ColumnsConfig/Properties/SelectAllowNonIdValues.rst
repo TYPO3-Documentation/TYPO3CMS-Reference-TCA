@@ -8,7 +8,7 @@ allowNonIdValues
     Proc.
 
 :aspect:`Description`
-    **Only useful if :ref:`foreign\_table <columns-select-properties-foreign-table>` is enabled:**
+    Only useful if :ref:`foreign\_table <columns-select-properties-foreign-table>` is enabled.
 
     If set, then values which are not integer ids will be allowed. May be needed if you use itemsProcFunc or just enter
     additional items in the items array to produce some string-value elements for the list.

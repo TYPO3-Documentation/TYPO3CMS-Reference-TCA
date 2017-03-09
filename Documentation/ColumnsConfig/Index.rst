@@ -23,5 +23,4 @@
     Type/Text
     Type/User
 
-    Common/Index
     ImageManipulation/Index

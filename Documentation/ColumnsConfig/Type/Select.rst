@@ -19,6 +19,9 @@ elements and helps with selecting others via element browser and other tools.
 
 The select type is pretty powerful, there are a lot of options to steer both rendering and database handling.
 
+.. note::
+    For this type, a renderType is mandatory!
+
 
 .. _columns-select-examples:
 
@@ -193,34 +196,54 @@ Examples
             ],
         ],
 
-This setting specifies how the select field should be displayed. Available options are:
 
-- ``selectSingle`` - Normal select field for selecting a single value.
-- ``selectSingleBox`` - Normal select field for selecting multiple values.
-- ``selectCheckBox`` - List of checkboxes for selecting muliple values.
-- ``selectMultipleSideBySide`` - Two select fields, items can be selected from the right field, selected items are displayed in the left select.
-- ``selectTree`` - A tree for selecting hierarchical data.
+.. _columns-select-rendertype-selectSingle:
 
+renderType = 'selectSingle'
+===========================
+
+This renderType creates a drop-down box with items to select a single value. Only if
+:ref:`size <columns-select-properties-size>` is set to a value greater than one, a box is rendered containing
+all selectable elements from which one can be chosen.
 
 
 .. _columns-select-properties:
 
 .. _columns-select-properties-type:
 
-.. _columns-select-properties-items:
-.. include:: ../Properties/SelectItems.rst
+.. _columns-select-properties-allownonidvalues:
+.. include:: ../Properties/SelectAllowNonIdValues.rst
 
-.. _columns-select-properties-itemsprocfunc:
-.. include:: ../Properties/CommonItemsProcFunc.rst
+.. _columns-select-properties-authmode:
+.. include:: ../Properties/SelectAuthMode.rst
 
-.. _columns-select-properties-foreign-table:
-.. include:: ../Properties/SelectForeignTable.rst
+.. _columns-select-properties-authmode-enforce:
+.. include:: ../Properties/SelectAuthModeEnforce.rst
 
-.. _columns-select-properties-foreign-table-where:
-.. include:: ../Properties/SelectForeignTableWhere.rst
+.. _columns-select-properties-default:
+.. include:: ../Properties/SelectDefault.rst
 
-.. _columns-select-properties-foreign-table-prefix:
-.. include:: ../Properties/SelectForeignTablePrefix.rst
+.. _columns-select-properties-disablenomatchingvalueelement:
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+
+.. _columns-select-properties-dontremaptablesoncopy:
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+
+.. _columns-select-properties-exclusivekeys:
+.. include:: ../Properties/SelectExclusiveKeys.rst
+
+.. _columns-select-properties-fieldControl:
+.. include:: ../Properties/CommonFieldControl.rst
+
+.. _columns-select-properties-fieldInformation:
+.. include:: ../Properties/CommonFieldInformation.rst
+
+.. _columns-select-properties-fieldWizard:
+.. include:: ../Properties/CommonFieldWizard.rst
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
+.. include:: ../FieldWizard/LocalizationStateSelector.rst
+.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../FieldWizard/SelectIcons.rst
 
 .. _columns-select-properties-filefolder:
 .. include:: ../Properties/SelectFileFolder.rst
@@ -231,30 +254,32 @@ This setting specifies how the select field should be displayed. Available optio
 .. _columns-select-properties-filefolder-recursions:
 .. include:: ../Properties/SelectFileFolderRecursions.rst
 
-.. _columns-select-properties-allownonidvalues:
-.. include:: ../Properties/SelectAllowNonIdValues.rst
+.. _columns-select-properties-foreign-table:
+.. include:: ../Properties/SelectForeignTable.rst
 
-.. _columns-select-properties-default:
-.. include:: ../Properties/SelectDefault.rst
+.. _columns-select-properties-foreign-table-prefix:
+.. include:: ../Properties/SelectForeignTablePrefix.rst
 
-.. _columns-select-properties-dontremaptablesoncopy:
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+.. _columns-select-properties-foreign-table-where:
+.. include:: ../Properties/SelectForeignTableWhere.rst
 
-.. _columns-select-properties-rootlevel:
-.. include:: ../Properties/SelectRootLevel.rst
+.. _columns-select-properties-items:
+.. include:: ../Properties/SelectItems.rst
+
+.. _columns-select-properties-itemsprocfunc:
+.. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. _columns-select-properties-localizereferencesatparentlocalization:
+.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+
+.. _columns-select-properties-minitems:
+.. include:: ../Properties/CommonMinitems.rst
 
 .. _columns-select-properties-mm:
 .. include:: ../Properties/CommonMm.rst
 
-.. _columns-select-properties-mm-opposite-field:
-.. include:: ../Properties/CommonOppositeField.rst
-
-.. _columns-select-properties-mm-match-fields:
-.. include:: ../Properties/CommonMmMatchFields.rst
-
-.. _columns-select-properties-mm-opposite-usage:
-.. _columns-select-properties-mm-oppositeusage:
-.. include:: ../Properties/CommonMmOppositeUsage.rst
+.. _columns-select-properties-mm-hasuidfield:
+.. include:: ../Properties/CommonMmHasUidField.rst
 
 .. _columns-select-properties-mm-insert-fields:
 .. include:: ../Properties/CommonMmInsertFields.rst
@@ -262,269 +287,351 @@ This setting specifies how the select field should be displayed. Available optio
 .. _columns-select-properties-mm-table-where:
 .. include:: ../Properties/CommonMmTableWhere.rst
 
-.. _columns-select-properties-mm-hasuidfield:
-.. include:: ../Properties/CommonMmHasUidField.rst
+.. _columns-select-properties-mm-match-fields:
+.. include:: ../Properties/CommonMmMatchFields.rst
 
-.. _columns-select-properties-special:
-.. include:: ../Properties/SelectSpecial.rst
+.. _columns-select-properties-mm-opposite-field:
+.. include:: ../Properties/CommonOppositeField.rst
 
-.. _columns-select-properties-size:
-.. include:: ../Properties/CommonSize.rst
-
-.. _columns-select-properties-itemliststyle:
-.. include:: ../Properties/SelectItemListStyle.rst
-
-.. _columns-select-properties-treeconfig:
-.. include:: ../Properties/SelectTreeConfig.rst
+.. _columns-select-properties-mm-opposite-usage:
+.. _columns-select-properties-mm-oppositeusage:
+.. include:: ../Properties/CommonMmOppositeUsage.rst
 
 .. _columns-select-properties-multiple:
 .. include:: ../Properties/CommonMultiple.rst
 
+.. _columns-select-properties-readOnly:
+.. include:: ../Properties/CommonReadOnly.rst
+
+.. _columns-select-properties-rootlevel:
+.. include:: ../Properties/SelectRootLevel.rst
+
+.. _columns-select-properties-size:
+.. include:: ../Properties/CommonSize.rst
+
+.. _columns-select-properties-special:
+.. include:: ../Properties/SelectSpecial.rst
+
+
+.. _columns-select-rendertype-selectSingleBox:
+
+renderType = 'selectSingleBox'
+==============================
+
+Renders a select field to select multiple entries from a given list.
+
+.. include:: ../Properties/SelectAllowNonIdValues.rst
+
+.. include:: ../Properties/SelectAuthMode.rst
+
+.. include:: ../Properties/SelectAuthModeEnforce.rst
+
+.. include:: ../Properties/SelectDefault.rst
+
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+
+.. include:: ../Properties/SelectExclusiveKeys.rst
+
+.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/ResetSelection.rst
+
+.. include:: ../Properties/CommonFieldInformation.rst
+
+.. include:: ../Properties/CommonFieldWizard.rst
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
+.. include:: ../FieldWizard/LocalizationStateSelector.rst
+.. include:: ../FieldWizard/OtherLanguageContent.rst
+
+.. include:: ../Properties/SelectFileFolder.rst
+
+.. include:: ../Properties/SelectFileFolderExtList.rst
+
+.. include:: ../Properties/SelectFileFolderRecursions.rst
+
+.. include:: ../Properties/SelectForeignTable.rst
+
+.. include:: ../Properties/SelectForeignTablePrefix.rst
+
+.. include:: ../Properties/SelectForeignTableWhere.rst
+
+.. include:: ../Properties/SelectItems.rst
+
+.. _columns-select-properties-itemliststyle:
+.. include:: ../Properties/SelectItemListStyle.rst
+
+.. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+
 .. _columns-select-properties-maxitems:
 .. include:: ../Properties/CommonMaxitems.rst
 
-.. _columns-select-properties-minitems:
 .. include:: ../Properties/CommonMinitems.rst
 
-.. _columns-select-properties-disablenomatchingvalueelement:
+.. include:: ../Properties/CommonMm.rst
+
+.. include:: ../Properties/CommonMmHasUidField.rst
+
+.. include:: ../Properties/CommonMmInsertFields.rst
+
+.. include:: ../Properties/CommonMmTableWhere.rst
+
+.. include:: ../Properties/CommonMmMatchFields.rst
+
+.. include:: ../Properties/CommonOppositeField.rst
+
+.. include:: ../Properties/CommonMmOppositeUsage.rst
+
+.. include:: ../Properties/CommonMultiple.rst
+
+.. include:: ../Properties/CommonReadOnly.rst
+
+.. include:: ../Properties/SelectRootLevel.rst
+
+.. include:: ../Properties/CommonSize.rst
+
+.. include:: ../Properties/SelectSpecial.rst
+
+
+.. _columns-select-rendertype-selectCheckBox:
+
+renderType = 'selectCheckBox'
+==============================
+
+Render the list of values as single check box rows in a table. Multiple items can be selected.
+
+.. include:: ../Properties/SelectAllowNonIdValues.rst
+
+.. include:: ../Properties/SelectAuthMode.rst
+
+.. include:: ../Properties/SelectAuthModeEnforce.rst
+
+.. include:: ../Properties/SelectDefault.rst
+
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+
+.. include:: ../Properties/SelectExclusiveKeys.rst
+
+.. include:: ../Properties/CommonFieldControl.rst
+
+.. include:: ../Properties/CommonFieldInformation.rst
+
+.. include:: ../Properties/CommonFieldWizard.rst
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
+.. include:: ../FieldWizard/LocalizationStateSelector.rst
+.. include:: ../FieldWizard/OtherLanguageContent.rst
+
+.. include:: ../Properties/SelectFileFolder.rst
+
+.. include:: ../Properties/SelectFileFolderExtList.rst
+
+.. include:: ../Properties/SelectFileFolderRecursions.rst
+
+.. include:: ../Properties/SelectForeignTable.rst
+
+.. include:: ../Properties/SelectForeignTablePrefix.rst
+
+.. include:: ../Properties/SelectForeignTableWhere.rst
+
+.. include:: ../Properties/SelectItems.rst
+
+.. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+
+.. include:: ../Properties/CommonMaxitems.rst
+
+.. include:: ../Properties/CommonMinitems.rst
+
+.. include:: ../Properties/CommonMm.rst
+
+.. include:: ../Properties/CommonMmHasUidField.rst
+
+.. include:: ../Properties/CommonMmInsertFields.rst
+
+.. include:: ../Properties/CommonMmTableWhere.rst
+
+.. include:: ../Properties/CommonMmMatchFields.rst
+
+.. include:: ../Properties/CommonOppositeField.rst
+
+.. include:: ../Properties/CommonMmOppositeUsage.rst
+
+.. include:: ../Properties/CommonMultiple.rst
+
+.. include:: ../Properties/CommonReadOnly.rst
+
+.. include:: ../Properties/SelectRootLevel.rst
+
+.. include:: ../Properties/CommonSize.rst
+
+.. include:: ../Properties/SelectSpecial.rst
+
+
+.. _columns-select-rendertype-selectMultipleSideBySide:
+
+renderType = 'selectMultipleSideBySide'
+=======================================
+
+Two select fields, items can be selected from the right field, selected items are displayed in the left select.
+
+.. include:: ../Properties/SelectAllowNonIdValues.rst
+
+.. include:: ../Properties/SelectAuthMode.rst
+
+.. include:: ../Properties/SelectAuthModeEnforce.rst
+
+.. include:: ../Properties/SelectDefault.rst
+
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
 
 .. _columns-select-properties-enablemultiselectfiltertextfield:
 .. include:: ../Properties/SelectEnableMultiSelectFilterTextfield.rst
 
+.. include:: ../Properties/SelectExclusiveKeys.rst
+
+.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../FieldControl/AddRecord.rst
+.. include:: ../FieldControl/EditPopup.rst
+.. include:: ../FieldControl/ListModule.rst
+
+.. include:: ../Properties/CommonFieldInformation.rst
+
+.. include:: ../Properties/CommonFieldWizard.rst
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
+.. include:: ../FieldWizard/LocalizationStateSelector.rst
+.. include:: ../FieldWizard/OtherLanguageContent.rst
+
+.. include:: ../Properties/SelectFileFolder.rst
+
+.. include:: ../Properties/SelectFileFolderExtList.rst
+
+.. include:: ../Properties/SelectFileFolderRecursions.rst
+
+.. include:: ../Properties/SelectForeignTable.rst
+
+.. include:: ../Properties/SelectForeignTablePrefix.rst
+
+.. include:: ../Properties/SelectForeignTableWhere.rst
+
+.. include:: ../Properties/SelectItems.rst
+
+.. include:: ../Properties/SelectItemListStyle.rst
+
+.. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+
+.. include:: ../Properties/CommonMaxitems.rst
+
+.. include:: ../Properties/CommonMinitems.rst
+
+.. include:: ../Properties/CommonMm.rst
+
+.. include:: ../Properties/CommonMmHasUidField.rst
+
+.. include:: ../Properties/CommonMmInsertFields.rst
+
+.. include:: ../Properties/CommonMmTableWhere.rst
+
+.. include:: ../Properties/CommonMmMatchFields.rst
+
+.. include:: ../Properties/CommonOppositeField.rst
+
+.. include:: ../Properties/CommonMmOppositeUsage.rst
+
+.. include:: ../Properties/CommonMultiple.rst
+
 .. _columns-select-properties-multiselectfilteritems:
 .. include:: ../Properties/SelectMultiSelectFilterItems.rst
 
-.. _columns-select-properties-authmode:
+.. include:: ../Properties/CommonReadOnly.rst
+
+.. include:: ../Properties/SelectRootLevel.rst
+
+.. include:: ../Properties/CommonSize.rst
+
+.. include:: ../Properties/SelectSpecial.rst
+
+
+.. _columns-select-rendertype-selectTree:
+
+renderType = 'selectTree'
+=========================
+
+A tree for selecting hierarchical data items.
+
+.. include:: ../Properties/SelectAllowNonIdValues.rst
+
 .. include:: ../Properties/SelectAuthMode.rst
 
-.. _columns-select-properties-authmode-enforce:
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
-.. _columns-select-properties-exclusivekeys:
+.. include:: ../Properties/SelectDefault.rst
+
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+
 .. include:: ../Properties/SelectExclusiveKeys.rst
 
-.. _columns-select-properties-localizereferencesatparentlocalization:
+.. include:: ../Properties/CommonFieldControl.rst
+
+.. include:: ../Properties/CommonFieldInformation.rst
+
+.. include:: ../Properties/CommonFieldWizard.rst
+
+.. include:: ../Properties/SelectFileFolder.rst
+
+.. include:: ../Properties/SelectFileFolderExtList.rst
+
+.. include:: ../Properties/SelectFileFolderRecursions.rst
+
+.. include:: ../Properties/SelectForeignTable.rst
+
+.. include:: ../Properties/SelectForeignTablePrefix.rst
+
+.. include:: ../Properties/SelectForeignTableWhere.rst
+
+.. include:: ../Properties/SelectItems.rst
+
+.. include:: ../Properties/CommonItemsProcFunc.rst
+
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
+.. include:: ../Properties/CommonMaxitems.rst
 
+.. include:: ../Properties/CommonMinitems.rst
 
-Examples
-""""""""
+.. include:: ../Properties/CommonMm.rst
 
-.. _columns-select-examples-simple-markers:
+.. include:: ../Properties/CommonMmHasUidField.rst
 
-Simple selector box with TSconfig markers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: ../Properties/CommonMmInsertFields.rst
 
-This example shows the use of markers inside the
-:ref:`foreign_table_where <columns-select-properties-foreign-table-where>`
-property and how the corresponding TSconfig must be set up.
+.. include:: ../Properties/CommonMmTableWhere.rst
 
-In the TCA definition of the "haiku" table ("examples" extension)
-there is a simple select field to create a reference to a page in the
-"pages" table:
+.. include:: ../Properties/CommonMmMatchFields.rst
 
-.. code-block:: php
+.. include:: ../Properties/CommonOppositeField.rst
 
-   'reference_page' => array(
-           'label' => 'LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.reference_page',
-           'config' => array(
-                   'type' => 'select',
-                   'renderType' => 'selectSingle',
-                   'foreign_table' => 'pages',
-                   'foreign_table_where' => "AND pages.title LIKE '%###PAGE_TSCONFIG_STR###%'",
-                   'size' => 1,
-                   'minitems' => 0,
-                   'maxitems' => 1
-           ),
-   ),
+.. include:: ../Properties/CommonMmOppositeUsage.rst
 
-Without any TSconfig, the selector will display a full list of pages:
+.. include:: ../Properties/CommonMultiple.rst
 
-.. figure:: ../../Images/TypeSelectHaikuAllPages.png
-   :alt: Page selector with full list
+.. include:: ../Properties/CommonReadOnly.rst
 
-   The page selector showing all existing pages
+.. include:: ../Properties/SelectRootLevel.rst
 
-Let's add the following bit of Tsconfig to the page containing our
-"haiku" record:
+.. include:: ../Properties/CommonSize.rst
 
-.. code-block:: typoscript
+.. include:: ../Properties/SelectSpecial.rst
 
-   TCEFORM.tx_examples_haiku.reference_page.PAGE_TSCONFIG_STR = image
-
-The list of pages that we can select from is now reduced to:
-
-.. figure:: ../../Images/TypeSelectHaikuLimitedPages.png
-   :alt: Page selector with restricted list
-
-   The page selector showing only pages with "image" in their title
-
-
-.. _columns-select-examples-multiple:
-
-A multiple value selector with contents from a database table
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The user group selector is based on the fe\_groups table. It appears
-as a multiple selector:
-
-.. figure:: ../../Images/TypeSelectUserGroups.png
-   :alt: List of user groups
-
-   User groups selector in the access rights configuration
-
-The corresponding TCA configuration:
-
-.. code-block:: php
-
-	'fe_group' => array(
-		'exclude' => 1,
-		'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.fe_group',
-		'config' => array(
-			'type' => 'select',
-			'size' => 5,
-			'maxitems' => 20,
-			'items' => array(
-				array(
-					'LLL:EXT:lang/locallang_general.xlf:LGL.hide_at_login',
-					-1
-				),
-				array(
-					'LLL:EXT:lang/locallang_general.xlf:LGL.any_login',
-					-2
-				),
-				array(
-					'LLL:EXT:lang/locallang_general.xlf:LGL.usergroups',
-					'--div--'
-				)
-			),
-			'exclusiveKeys' => '-1,-2',
-			'foreign_table' => 'fe_groups',
-			'foreign_table_where' => 'ORDER BY fe_groups.title'
-		)
-	),
-
-The value stored in the database will be a  *comma-separated list of uid numbers*
-of the selected records.
-
-An interesting point of this example is that it shows that static
-values can be mixed with values fetched from a database table.
-
-
-.. _columns-select-examples-lookup:
-
-Using a look up table for single value
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-In this case the selector box looks up languages in a static table
-from an extension "static\_info\_tables":
-
-.. figure:: ../../Images/TypeSelectLookupTable.png
-   :alt: List of languages
-
-   Language selector based on the static_languages table
-
-The configuration looks like this (taken from the "sys\_language" table):
-
-.. code-block:: php
-
-	'static_lang_isocode' => array(
-		'exclude' => 1,
-		'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_language.isocode',
-		'displayCond' => 'EXT:static_info_tables:LOADED:true',
-		'config' => array(
-			'type' => 'select',
-                   	'renderType' => 'selectSingle',
-			'items' => array(
-				array('', 0)
-			),
-			'foreign_table' => 'static_languages',
-			'foreign_table_where' => 'AND static_languages.pid=0 ORDER BY static_languages.lg_name_en',
-			'size' => 1,
-			'minitems' => 0,
-			'maxitems' => 1
-		)
-	),
-
-Notice how a condition is set that this box should only be displayed
-*if* the extension it relies on exists! This is very important since
-otherwise the table will not be in the database and we will get SQL
-errors.
-
-
-
-.. _columns-select-examples-mm:
-
-MM relations
-~~~~~~~~~~~~
-
-This example demonstrates the use of MM relations. In particular
-they are used to relate system categories to a variety of other
-records. As such it is necessary to keep track in the MM table of
-the nature of each such record. This is achieved by using the
-"fieldname" field, referenced in the :ref:`MM_match_fields <columns-select-properties-mm-match-fields>`
-configuration.
-
-The "tablenames" field is also used in the case where multiple
-category relation fields are added to the same record type
-(as happens to the "pages" table when the "examples" extension
-is installed).
-
-.. code-block:: php
-
-	'type' => 'select',
-	'foreign_table' => 'sys_category',
-	'foreign_table_where' => ' AND sys_category.sys_language_uid IN (-1, 0) ORDER BY sys_category.sorting ASC',
-	'MM' => 'sys_category_record_mm',
-	'MM_opposite_field' => 'items',
-	'MM_match_fields' => array(
-		'tablenames' => 'pages',
-		'fieldname' => 'categories',
-	),
-	'size' => 10,
-	'maxitems' => 9999,
-	'renderType' => 'selectTree',
-	'treeConfig' => array(
-		'parentField' => 'parent',
-		'appearance' => array(
-			'expandAll' => TRUE,
-			'showHeader' => TRUE,
-		),
-	),
-
-The selector looks like this:
-
-.. figure:: ../../Images/TypeSelectMmLocal.png
-   :alt: The categories selector
-
-   The categories selector as added by default to pages
-
-The above configuration also defines the MM relation as being
-bidirectional, via the :ref:`MM_opposite_field <columns-select-properties-mm-opposite-field>`
-property. This means that we can look at a given category and see
-which items it is related to. Note that it is perfectly possible to
-create relations from that side too.
-
-.. figure:: ../../Images/TypeSelectMmForeign.png
-   :alt: The category and its items
-
-   A category and the items it is related to
-
-.. note::
-
-   The TCA configuration listed above cannot be found directly
-   in a TCA file, but is generated by the `addTcaColumn()` method
-   of class :ref:`TYPO3\CMS\Core\Category\CategoryRegistry <t3api:TYPO3\\CMS\\Core\\Category\\CategoryRegistry>`.
-
-
-.. _columns-select-data-format:
-
-Data format of "select" elements
-""""""""""""""""""""""""""""""""
-
-Since the "select" element allows to store references to multiple
-elements we might want to look at how these references are stored
-internally. The principle is the same as with the
-:ref:`"group" type <columns-group-data>`.
+.. _columns-select-properties-treeconfig:
+.. include:: ../Properties/SelectTreeConfig.rst
