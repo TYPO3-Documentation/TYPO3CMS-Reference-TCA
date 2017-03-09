@@ -272,7 +272,7 @@ This setting specifies how the select field should be displayed. Available optio
 .. include:: ../Properties/CommonSize.rst
 
 .. _columns-select-properties-itemliststyle:
-.. incdule:: ../Properties/SelectItemListStyle.rst
+.. include:: ../Properties/SelectItemListStyle.rst
 
 .. _columns-select-properties-treeconfig:
 .. include:: ../Properties/SelectTreeConfig.rst
