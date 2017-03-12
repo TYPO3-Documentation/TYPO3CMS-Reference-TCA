@@ -131,7 +131,7 @@ The general structure (looking at a single table) is as follows::
        ],
    ];
 
-The following table provides a brief description of each the various
+The following table provides a brief description of the various
 sections of :php:`$GLOBALS['TCA']['some_table']`. Each section is covered in more details in its own
 chapter.
 
@@ -143,12 +143,12 @@ chapter.
   These are basically divided in two main categories:
 
   - properties which affect how the table is  *displayed* and handled in
-    the backend  *interface* .This includes which icon, what name, which
+    the backend  *interface* . This includes which icon, what name, which
     columns contains the title value, which column defines the type value
     etc.
 
   - properties which determine how it is processed by the system
-    (TCE).This includes publishing control, "deleted" flag, whether the table
+    (TCE). This includes publishing control, "deleted" flag, whether the table
     can only be edited by admin-users, may only exist in the tree root
     etc.
 
