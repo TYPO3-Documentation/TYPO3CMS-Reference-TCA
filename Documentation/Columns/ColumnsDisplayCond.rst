@@ -61,7 +61,7 @@ displayCond
         rather through some other interface (TemplaVoilà's Page module for instance).
 
     - **USER**
-        userFunc call with a fully qualified class name. Additional parameters can be be passed separated
+        userFunc call with a fully qualified class name. Additional parameters can be passed separated
         by colon. :php:`USER:Evoweb\\Example\\User\\MyConditionMatcher->checkHeader:some:more:info`
 
     - **VERSION**
