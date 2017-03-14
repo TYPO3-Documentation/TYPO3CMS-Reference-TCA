@@ -466,7 +466,7 @@ The extension "examples" provides some sample FlexForms. The "simple FlexForm" p
 configuration with just a select-type field to choose a page from the "pages" table.
 
 .. figure:: ../../Images/TypeFlexSimple.png
-   :alt: A simple FlexForm field
+    :alt: A simple FlexForm field
     :class: with-shadow
 
    A plugin with a simple, one-field flexform
