@@ -66,6 +66,7 @@ field "personal" on it. Only the default type "0" is specified. Opening such a r
 
 .. figure:: ../Images/TypesSysNote.png
    :alt: The internal note input form
+   :class: with-shadow
 
 
 .. _types-optional:
@@ -121,6 +122,7 @@ The result if the following display when type "Normal" is chosen:
 
 .. figure:: ../Images/TypesDummyNormal.png
    :alt: The "normal" layout of dummy records
+   :class: with-shadow
 
    The "normal" layout of dummy records
 
@@ -128,6 +130,7 @@ Changing to type "Short" reloads the form and displays the following:
 
 .. figure:: ../Images/TypesDummyShort.png
    :alt: The "short" layout of dummy records
+   :class: with-shadow
 
    The "short" layout displays less fields
 
@@ -135,6 +138,7 @@ And finally, type "Weird" also shows all fields, but in a different order:
 
 .. figure:: ../Images/TypesDummyWeird.png
    :alt: The "weird" layout of dummy records
+   :class: with-shadow
 
    The "weird" layout displays the fields in a totally different order
 

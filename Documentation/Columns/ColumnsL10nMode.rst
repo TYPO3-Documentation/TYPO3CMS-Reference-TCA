@@ -34,6 +34,7 @@ l10n\_mode
 
         .. figure:: ../Images/ColumnsL10nModePrefixLangTitle.png
             :alt: "Header" field of a tt_content record after translation has been created
+            :class: with-shadow
 
             "Header" field of a tt_content record after translation
 

@@ -33,11 +33,13 @@ Examples
 
 .. figure:: ../../Images/TypeGroupDbStyleguide1.png
    :alt: Group relation to be_groups and be_users with some selected records (group_db_1)
+   :class: with-shadow
 
    Group relation to be_groups and be_users with some selected records (group_db_1)
 
 .. figure:: ../../Images/TypeGroupFileStyleguide1.png
    :alt: Group file relation with some selected files (group_file_1)
+   :class: with-shadow
 
    Group file relation with some selected files (group_file_1)
 

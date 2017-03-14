@@ -22,26 +22,31 @@ Examples
 
 .. figure:: ../../Images/TypeTextSysNote.png
     :alt: Message field of system notes, a simple text area (message)
+    :class: with-shadow
 
     Message field of system notes, a simple text area (message)
 
 .. figure:: ../../Images/TypeTextRteStyleguide1.png
     :alt: A Rich Text Editor field (rte_1)
+    :class: with-shadow
 
     A Rich Text Editor field (rte_1)
 
 .. figure:: ../../Images/TypeTextT3editorStyleguide1.png
     :alt: Code highlighting with t3editor (t3editor_1)
+    :class: with-shadow
 
     Code highlighting with t3editor (t3editor_1)
 
 .. figure:: ../../Images/TypeTextTableTtContentBodytext.png
     :alt: Table editor tt\_content bodytext
+    :class: with-shadow
 
     Table editor tt\_content bodytext
 
 .. figure:: ../../Images/TypeTextBackendLayout.png
     :alt: Backend layout editor (config)
+    :class: with-shadow
 
     Backend layout editor (config)
 

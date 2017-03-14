@@ -20,6 +20,7 @@ type
 
     .. figure:: ../Images/CtrlType.png
         :alt: The type selector
+        :class: with-shadow
 
         The type selector of content elements
 

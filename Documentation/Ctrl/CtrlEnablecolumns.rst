@@ -36,6 +36,7 @@ enablecolumns
 
         .. figure:: ../Images/CtrlEnableFields.png
             :alt: Enable fields show up as icon overlays
+            :class: with-shadow
 
             FE group restricted access showing up on modified record icons
 

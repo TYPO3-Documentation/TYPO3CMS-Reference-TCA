@@ -16,5 +16,6 @@ descriptionColumn
 
     .. figure:: ../Images/CtrlDescriptionColumn.png
         :alt: Record information in a be_groups row
+        :class: with-shadow
 
         Record information shown editing a be_groups row

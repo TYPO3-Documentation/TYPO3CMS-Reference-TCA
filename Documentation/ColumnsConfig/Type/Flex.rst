@@ -25,11 +25,13 @@ Examples
 
 .. figure:: ../../Images/TypeFlexStyleguideFlex1.png
     :alt: A flex form field with two sheets and some sheet description (flex_1)
+    :class: with-shadow
 
     A flex form with two sheets and some sheet description (flex_1)
 
 .. figure:: ../../Images/TypeFlexStyleguideFlex2.png
     :alt: A flex form field with two flex section containers (flex_2)
+    :class: with-shadow
 
     A flex form field with two flex section containers (flex_2)
 
@@ -465,6 +467,7 @@ configuration with just a select-type field to choose a page from the "pages" ta
 
 .. figure:: ../../Images/TypeFlexSimple.png
    :alt: A simple FlexForm field
+    :class: with-shadow
 
    A plugin with a simple, one-field flexform
 
@@ -529,6 +532,7 @@ we can see the following:
 
 .. figure:: ../../Images/TypeFlexConfigurationCheck.png
     :alt: Checking the configuration
+    :class: with-shadow
 
     Checking the TCA configuration for the newly added Flexform
 
@@ -624,6 +628,7 @@ the second sheet which shows some other fields:
 
 .. figure:: ../../Images/TypeFlexSheet2.png
     :alt: The second sheet
+    :class: with-shadow
 
     The second sheet of our more complex FlexForm
 

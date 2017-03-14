@@ -27,6 +27,7 @@ editPopup
 
     .. figure:: ../../Images/TypeGroupFieldControlEditPopup.png
         :alt: Editing a record thanks to the wizard
+        :class: with-shadow
 
         Edit a related record directly thanks to the Edit wizard
 

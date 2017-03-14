@@ -19,5 +19,6 @@ hideSuggest
 
     .. figure:: ../../Images/TypeGroupSuggest8.png
         :alt: Suggest wizard showing some suggestions
+        :class: with-shadow
 
         Suggest wizard showing some suggestions

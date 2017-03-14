@@ -97,5 +97,6 @@ container
 
     .. figure:: ../Images/CtrlFieldWizard.png
         :alt: A new field wizard in OuterWrapContainer
+        :class: with-shadow
 
         A new field wizard in OuterWrapContainer

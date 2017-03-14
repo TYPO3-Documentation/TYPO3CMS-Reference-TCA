@@ -23,5 +23,6 @@ localizationStateSelector
 
     .. figure:: ../../Images/FieldWizardLocalizationStateSelector.png
         :alt: Example localization state selector on a type=input field
+        :class: with-shadow
 
         Example localization state selector on an type=input field

@@ -21,11 +21,13 @@ Examples
 
 .. figure:: ../../Images/TypeImageManipulationButton.png
     :alt: Image manipulation button in FAL
+    :class: with-shadow
 
     Image manipulation button in FAL
 
 .. figure:: ../../Images/TypeImageManipulationCropper.png
     :alt: Image manipulation cropper modal
+    :class: with-shadow
 
     Image manipulation cropper modal
 

@@ -19,5 +19,6 @@ otherLanguageContent
 
     .. figure:: ../../Images/FieldWizardOtherLanguageContent.png
         :alt: Header field showing values from two other languages
+        :class: with-shadow
 
         Header field showing values from two other languages

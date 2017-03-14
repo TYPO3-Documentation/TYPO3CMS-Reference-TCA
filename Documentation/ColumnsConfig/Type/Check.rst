@@ -33,16 +33,19 @@ Examples
 
 .. figure:: ../../Images/TypeCheckStyleguide2.png
     :alt: Simple checkbox with label (checkbox_2)
+    :class: with-shadow
 
     Simple checkbox with label (checkbox_2)
 
 .. figure:: ../../Images/TypeCheckStyleguide12.png
     :alt: Four checkboxes in three columns (checkbox_12)
+    :class: with-shadow
 
     Four checkboxes in three columns (checkbox_12)
 
 .. figure:: ../../Images/TypeCheckStyleguide16.png
     :alt: Checkboxes wit inline floating (checkbox_16)
+    :class: with-shadow
 
     Checkboxes with inline floating (checkbox_16)
 

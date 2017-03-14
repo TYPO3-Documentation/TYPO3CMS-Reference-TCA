@@ -14,6 +14,7 @@ elementBrowser
 
     .. figure:: ../../Images/TypeGroupFieldControlElementBrowserStyleguideFolder1.png
         :alt: Open element browser popup (group_folder_1)
+        :class: with-shadow
 
         Open element browser popup (group_folder_1)
 

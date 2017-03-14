@@ -16,5 +16,6 @@ insertClipboard
 
     .. figure:: ../../Images/TypeGroupFieldControlInsertClipboardStyleguideFolder9.png
         :alt: The clipboard control below the insert record control
+        :class: with-shadow
 
         The clipboard control below the insert record control

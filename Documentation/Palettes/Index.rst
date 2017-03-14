@@ -55,6 +55,7 @@ This specifies the palette `caching`. It is then referenced in the `types` secti
 
 .. figure:: ../Images/PalettesPagesCaching.png
     :alt: Caching palette in pages
+    :class: with-shadow
 
     Caching palette in pages
 

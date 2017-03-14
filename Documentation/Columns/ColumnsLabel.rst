@@ -14,6 +14,7 @@ label
 
     .. figure:: ../Images/ColumnLabel.png
         :alt: Two examples of labels
+        :class: with-shadow
 
         "Type" and "Column" are two labels, "Content Element" is a :ref:`palette label <types-properties-showitem>`
 
