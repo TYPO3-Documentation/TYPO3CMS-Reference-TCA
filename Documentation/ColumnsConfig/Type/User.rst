@@ -26,6 +26,7 @@ Examples
 
 .. figure:: ../../Images/TypeUserExample.png
     :alt: A sample user-defined field
+    :class: with-shadow
 
     A sample user-defined field
 

@@ -21,6 +21,7 @@ Examples
 
 .. figure:: ../../Images/TypeRadioStyleguide1.png
     :alt: A set of radio buttons
+    :class: with-shadow
 
     A set of radio buttons
 

@@ -18,5 +18,6 @@ defaultLanguageDifferences
 
     .. figure:: ../../Images/FieldWizardDefaultLanguageDifferences.png
         :alt: A field has been changed in default language record
+        :class: with-shadow
 
         A field has been changed in default language record

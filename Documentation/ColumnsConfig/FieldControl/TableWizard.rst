@@ -18,6 +18,7 @@ tableWizard
 
     .. figure:: ../../Images/TypeTextTableWizard1.png
         :alt: The table wizard
+        :class: with-shadow
 
         The table wizard
 

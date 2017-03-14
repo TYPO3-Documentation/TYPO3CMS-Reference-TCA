@@ -28,5 +28,6 @@ thumbnail
 
     .. figure:: ../Images/CtrlThumbnail.png
         :alt: Thumbnails in the list module
+        :class: with-shadow
 
         Thumbnails in the List module

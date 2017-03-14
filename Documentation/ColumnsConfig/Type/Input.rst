@@ -24,36 +24,43 @@ Examples
 
 .. figure:: ../../Images/TypeInputStyleguide1.png
     :alt: Simple input field (input_1)
+    :class: with-shadow
 
     Simple input field (input_1)
 
 .. figure:: ../../Images/TypeInputStyleguide28Placeholder.png
     :alt: Input with placeholder and null handling (input_28)
+    :class: with-shadow
 
     Input with placeholder and null handling (input_28)
 
 .. figure:: ../../Images/TypeInputStyleguide29Link.png
     :alt: Link field (input_29)
+    :class: with-shadow
 
     Link field (input_29)
 
 .. figure:: ../../Images/TypeInputStyleguide30Slider.png
     :alt: Value slider (input_30)
+    :class: with-shadow
 
     Value slider (input_30)
 
 .. figure:: ../../Images/TypeInputStyleguide33ValuePicker.png
     :alt: Value picker (input_33)
+    :class: with-shadow
 
     Value picker (input_33)
 
 .. figure:: ../../Images/TypeInputStyleguide34Colorbox.png
     :alt: Color picker (input_34)
+    :class: with-shadow
 
     Color picker (input_34)
 
 .. figure:: ../../Images/TypeInputDateTimeStyleguide3.png
     :alt: Date and time picker (inputdatetime_3)
+    :class: with-shadow
 
     Date and time picker (inputdatetime_3)
 

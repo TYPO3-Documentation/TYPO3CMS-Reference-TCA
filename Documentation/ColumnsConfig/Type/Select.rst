@@ -29,39 +29,46 @@ Examples
 ========
 
 .. figure:: ../../Images/TypeSelectStyleguideSingle3.png
-    :alt: Simple select drop down with static and database values (select_single_3)
+   :alt: Simple select drop down with static and database values (select_single_3)
+   :class: with-shadow
 
-    Simple select drop down with static and database values (select_single_3)
+   Simple select drop down with static and database values (select_single_3)
 
 .. figure:: ../../Images/ColumnsExampleSelectImages.png
-    :alt: Select foreign rows which have icons configured (select_single_12)
+   :alt: Select foreign rows which have icons configured (select_single_12)
+   :class: with-shadow
 
-    Select foreign rows which have icons configured (select_single_12)
+   Select foreign rows which have icons configured (select_single_12)
 
 .. figure:: ../../Images/TypeSelectStyleguideSingle10.png
-    :alt: Select a single value from a list of elements (select_single_10)
+   :alt: Select a single value from a list of elements (select_single_10)
+   :class: with-shadow
 
-    Select a single value from a list of elements (select_single_10)
+   Select a single value from a list of elements (select_single_10)
 
 .. figure:: ../../Images/TypeSelectStyleguideSingleBox1.png
-    :alt: Select multiple values from a box (select_singlebox_1)
+   :alt: Select multiple values from a box (select_singlebox_1)
+   :class: with-shadow
 
-    Select multiple values from a box (select_singlebox_1)
+   Select multiple values from a box (select_singlebox_1)
 
 .. figure:: ../../Images/TypeSelectStyleguideCheckbox3.png
-    :alt: Select values from a checkbox list (select_checkbox_3)
+   :alt: Select values from a checkbox list (select_checkbox_3)
+   :class: with-shadow
 
-    Select values from a checkbox list (select_checkbox_3)
+   Select values from a checkbox list (select_checkbox_3)
 
 .. figure:: ../../Images/TypeSelectStyleguideMultipleSideBySide5.png
-    :alt: Side-by-side view with filter (select_multiplesidebyside_5)
+   :alt: Side-by-side view with filter (select_multiplesidebyside_5)
+   :class: with-shadow
 
-    Side-by-side view with filter (select_multiplesidebyside_5)
+   Side-by-side view with filter (select_multiplesidebyside_5)
 
 .. figure:: ../../Images/TypeSelectStyleguideTree1.png
-    :alt: A happy little tree! (select_tree_1)
+   :alt: A happy little tree! (select_tree_1)
+   :class: with-shadow
 
-    A happy little tree! (select_tree_1)
+   A happy little tree! (select_tree_1)
 
 .. code-block:: php
 

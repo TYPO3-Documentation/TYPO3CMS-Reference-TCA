@@ -22,6 +22,7 @@ Examples
 
 .. figure:: ../../Images/TypeNoneStyleguide1.png
     :alt: Simple none field (none_1)
+    :class: with-shadow
 
     Simple none field
 

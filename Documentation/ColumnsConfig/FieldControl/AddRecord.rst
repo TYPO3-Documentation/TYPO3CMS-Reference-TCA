@@ -48,10 +48,12 @@ addRecord
 
     .. figure:: ../../Images/TypeGroupFieldControlAddRecordIcon.png
         :alt: Add a new record icon
+        :class: with-shadow
 
         Add a new record icon
 
     .. figure:: ../../Images/TypeGroupFieldControlAddRecordView.png
         :alt: Add a new record view
+        :class: with-shadow
 
         Add a new record view

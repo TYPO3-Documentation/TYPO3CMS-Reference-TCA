@@ -21,7 +21,8 @@ mode
    This is how the mode checkbox appears in the TYPO3 CMS backend:
 
    .. figure:: ../../Images/OverridePlaceholder.png
-        :alt: Several fields with their placeholder override checkboxes
+      :alt: Several fields with their placeholder override checkboxes
+      :class: with-shadow
 
         Several fields with their placeholder override checkboxes
 

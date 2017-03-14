@@ -44,16 +44,19 @@ Images
 
 .. figure:: ../../Images/TypeInline1n1nStyleguide1.png
     :alt: A nested 1:n to 1:n relation
+    :class: with-shadow
 
     A nested 1:n to 1:n relation
 
 .. figure:: ../../Images/TypeInlineFalStyleguide1.png
     :alt: A typical FAL relation
+    :class: with-shadow
 
     A typical FAL relation
 
 .. figure:: ../../Images/TypeInlineCombinationBox1.png
     :alt: A m:n relation with combination box
+    :class: with-shadow
 
     A m:n relation with combination box
 
