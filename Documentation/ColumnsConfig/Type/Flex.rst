@@ -620,6 +620,7 @@ The result from this configuration is a form which looks like this:
 
 ..  figure:: ../../Images/TypeFlexSheet1.png
     :alt: The first sheet
+    :class: with-shadow
 
     The first sheet of our more complex FlexForm
 
