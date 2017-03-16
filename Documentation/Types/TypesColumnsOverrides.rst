@@ -14,7 +14,6 @@ columnsOverrides
     affects the display of form fields, but not the data handling.
 
     A typical property that can be changed here is :code:`renderType`.
-    Furthermore, it is possible to *remove* certain options from the field configuration using the `__UNSET` value.
 
     The core uses this property to override for instance the "bodytext" field config of table "tt_content": If a record
     of type "text" is edited, it adds "enableRichtext = 1" to trigger an RTE to the default "bodytext" configuration,
@@ -23,7 +22,7 @@ columnsOverrides
     The FormEngine basically merges "columnsOverrides" over the default "columns" field after the record type
     has been determined.
 
-    **Example adding "nowrap" to a text type for type "text" and removing "rows" property**
+    **Example adding "nowrap" to a text type for type "text"**
 
     .. code-block:: php
 
@@ -34,7 +33,6 @@ columnsOverrides
                     'myText' => [
                         'config' => [
                             'wrap' => 'off',
-                            'rows' => '__UNSET',
                         ],
                     ],
                 ],
