@@ -234,6 +234,9 @@ An input field with a JavaScript color picker.
 
 .. include:: ../Properties/InputEval.rst
 
+.. note::
+    A lot of the default :php:`eval` properties do not make much sense in the colorpicker. Choose with care.
+
 .. include:: ../Properties/CommonFieldControl.rst
 
 .. include:: ../Properties/CommonFieldInformation.rst
@@ -258,6 +261,11 @@ An input field with a JavaScript color picker.
 .. include:: ../Properties/InputSize.rst
 
 .. include:: ../Properties/CommonSoftref.rst
+
+.. include:: ../Properties/InputValuePicker.rst
+
+.. note::
+    The colorpicker ignores `mode` setting of the valuePicker, new values from the select box always substitute an existing one.
 
 
 .. _columns-input-renderType-inputDateTime:
