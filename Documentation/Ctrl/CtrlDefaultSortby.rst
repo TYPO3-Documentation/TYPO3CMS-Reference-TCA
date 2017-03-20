@@ -31,8 +31,8 @@ default\_sortby
         ],
 
     .. important::
-        Do not confuse this property with :ref:`sortby <ctrl-reference-sortby>`: This field should be set only if there
+        Do not confuse this property with :ref:`sortby <ctrl-reference-sortby>`: default_sortby should be set only if there
         is no :ref:`sortby <ctrl-reference-sortby>`. The sortby field (typically set to `sorting`) contains an integer
-        for explicit sorting , the backend then shows "up" and "down" buttons to manage sorting of recordds relative
+        for explicit sorting , the backend then shows "up" and "down" buttons to manage sorting of records relative
         to each other. The default\_sortby should only be set if that explicit sorting is not wanted or useful. For
         instance, the list of frontend users is sorted by username and has no other explicit sorting field in the database.

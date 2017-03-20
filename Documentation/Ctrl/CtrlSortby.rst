@@ -31,5 +31,5 @@ sortby
     .. important::
         Do not confuse this property with :ref:`default_sortby <ctrl-reference-default-sortby>`. The sortby field contains
         an integer and is managed by the DataHandler. If by accident a content column like "title" is set as sortby, the
-        DataHandler will write these integers into that field, and that is most likely *not* what you want.
+        DataHandler will write these integers into that field, which is most likely *not* what you want.
 
