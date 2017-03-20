@@ -19,6 +19,13 @@ sortby
     Typically the field name :code:`sorting` is dedicated to this feature, also
     see :ref:`default_sortby <ctrl-reference-default-sortby>`.
 
+    .. code-block:: php
+
+        'ctrl' => [
+            'sortby' => 'sorting',
+            ...
+        ],
+
     .. note::
         The field should **not** be made editable by the user since the DataHandler will manage the content automatically.
 
