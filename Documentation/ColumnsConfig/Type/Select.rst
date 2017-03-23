@@ -340,6 +340,8 @@ Renders a select field to select multiple entries from a given list.
 
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
+.. include:: ../Properties/CommonAutoSizeMax.rst
+
 .. include:: ../Properties/CommonBehaviour.rst
 .. include:: ../Behaviour/AllowLanguageSynchronization.rst
 
@@ -508,6 +510,8 @@ Two select fields, items can be selected from the right field, selected items ar
 .. include:: ../Properties/SelectAuthMode.rst
 
 .. include:: ../Properties/SelectAuthModeEnforce.rst
+
+.. include:: ../Properties/CommonAutoSizeMax.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
 .. include:: ../Behaviour/AllowLanguageSynchronization.rst
