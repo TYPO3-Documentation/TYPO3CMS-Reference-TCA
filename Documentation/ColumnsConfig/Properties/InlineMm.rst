@@ -25,8 +25,8 @@ MM
    .. note::
       Using MM relations you can ONLY store real relations for foreign tables in the list - no additional string
       values or non-record values (so no attributes).
-      
+
    .. warning::
       Copying with MM relations will not create a copy of the value. Thus copying the record `Org` with `Org->orgA` and
-      `Org->orgB` as `New` results in `New->orgA` and `New->orgB` instead of `New->newA` and `New->newB`. Deleting the 
+      `Org->orgB` as `New` results in `New->orgA` and `New->orgB` instead of `New->newA` and `New->newB`. Deleting the
       relation `New->orgA` will result in a broken relation `Org->orgA`.

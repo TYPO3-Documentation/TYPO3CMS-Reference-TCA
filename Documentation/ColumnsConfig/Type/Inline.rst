@@ -184,7 +184,6 @@ options (second call parameter) are merged looks like:
             ],
         ],
         'behaviour' => [
-            'localizationMode' => 'select',
             'localizeChildrenAtParentLocalization' => TRUE,
         ],
     ];
@@ -367,7 +366,11 @@ type='inline' has (currently) only one render definition, no special renderType 
 .. include:: ../Properties/InlineAutoSizeMax.rst
 
 .. _columns-inline-properties-behaviour:
-.. include:: ../Properties/InlineBehaviour.rst
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/InlineDisableMovingChildrenWithParent.rst
+.. include:: ../Behaviour/InlineEnableCascadingDelete.rst
+.. include:: ../Behaviour/InlineLocalizeChildrenAtParentLocalization.rst
 
 .. _columns-inline-properties-customcontrols:
 .. include:: ../Properties/InlineCustomControls.rst
@@ -410,6 +413,9 @@ type='inline' has (currently) only one render definition, no special renderType 
 
 .. _columns-inline-properties-foreign-unique:
 .. include:: ../Properties/InlineForeignUnique.rst
+
+.. _columns-inline-properties-l10nMode:
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. _columns-inline-properties-maxitems:
 .. include:: ../Properties/CommonMaxitems.rst

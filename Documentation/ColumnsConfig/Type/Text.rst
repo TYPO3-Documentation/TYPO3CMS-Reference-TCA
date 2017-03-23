@@ -120,6 +120,10 @@ if both enabled in configuration and enabled for the user.
 
 .. _columns-text-properties-type:
 
+.. _columns-text-properties-behaviour:
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. _columns-text-properties-cols:
 .. include:: ../Properties/TextCols.rst
 
@@ -152,6 +156,9 @@ if both enabled in configuration and enabled for the user.
 
 .. _columns-text-properties-is-in:
 .. include:: ../Properties/TextIsIn.rst
+
+.. _columns-text-properties-l10nMode:
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. _columns-text-properties-maxlength:
 .. include:: ../Properties/TextMax.rst
@@ -209,6 +216,9 @@ System extension "t3editor" provides an enhanced textarea for TypoScript input, 
 also auto-complete suggestions. Beyond that the "t3editor" extension makes it possible to add syntax highlighting
 to textarea fields, for several languages.
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/CommonDefault.rst
 
 .. include:: ../Properties/CommonFieldControl.rst
@@ -222,6 +232,8 @@ to textarea fields, for several languages.
 
 .. _columns-text-properties-format:
 .. include:: ../Properties/TextFormat.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/TextRows.rst
 
@@ -237,6 +249,9 @@ renderType = 'textTable'
 
 The :code:`renderType = 'textTable'` triggers a view to manage frontend table display in the backend.
 It is used for the "Table" tt\_content content element.
+
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
 
 .. include:: ../Properties/TextCols.rst
 
@@ -257,6 +272,8 @@ It is used for the "Table" tt\_content content element.
 .. include:: ../Properties/TextFixedFont.rst
 
 .. include:: ../Properties/TextIsIn.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/TextMax.rst
 

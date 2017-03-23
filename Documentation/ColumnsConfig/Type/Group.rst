@@ -102,6 +102,10 @@ type='group' has (currently) only one render definition, no special renderType m
 .. _columns-group-properties-autosizemax:
 .. include:: ../Properties/CommonAutoSizeMax.rst
 
+.. _columns-group-properties-behaviour:
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. _columns-group-properties-default:
 .. include:: ../Properties/CommonDefault.rst
 
@@ -148,6 +152,9 @@ type='group' has (currently) only one render definition, no special renderType m
 
 .. _columns-group-properties-internal-type:
 .. include:: ../Properties/GroupInternalType.rst
+
+.. _columns-group-properties-l10nMode:
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. _columns-group-properties-max-size:
 .. include:: ../Properties/GroupMaxSize.rst

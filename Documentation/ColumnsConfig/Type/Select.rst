@@ -227,6 +227,10 @@ all selectable elements from which one can be chosen.
 .. _columns-select-properties-authmode-enforce:
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
+.. _columns-select-properties-behaviour:
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. _columns-select-properties-default:
 .. include:: ../Properties/SelectDefault.rst
 
@@ -275,6 +279,9 @@ all selectable elements from which one can be chosen.
 
 .. _columns-select-properties-itemsprocfunc:
 .. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. _columns-select-properties-l10nMode:
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. _columns-select-properties-localizereferencesatparentlocalization:
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
@@ -333,6 +340,9 @@ Renders a select field to select multiple entries from a given list.
 
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/SelectDefault.rst
 
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
@@ -369,6 +379,8 @@ Renders a select field to select multiple entries from a given list.
 .. include:: ../Properties/SelectItemListStyle.rst
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
@@ -415,6 +427,9 @@ Render the list of values as single check box rows in a table. Multiple items ca
 
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/SelectDefault.rst
 
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
@@ -447,6 +462,8 @@ Render the list of values as single check box rows in a table. Multiple items ca
 .. include:: ../Properties/SelectItems.rst
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
@@ -492,6 +509,9 @@ Two select fields, items can be selected from the right field, selected items ar
 
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/SelectDefault.rst
 
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
@@ -532,6 +552,8 @@ Two select fields, items can be selected from the right field, selected items ar
 .. include:: ../Properties/SelectItemListStyle.rst
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
@@ -585,6 +607,9 @@ A tree for selecting hierarchical data items.
 
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/SelectDefault.rst
 
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
@@ -614,6 +639,8 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/SelectItems.rst
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
