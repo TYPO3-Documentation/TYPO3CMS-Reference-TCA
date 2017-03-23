@@ -19,7 +19,7 @@ very central element of the TYPO3 architecture.
 
 Almost all code examples used in this manual come either from the TYPO3
 source code itself, from the extension  `example <https://github.com/TYPO3-Documentation/TYPO3CMS-Code-Examples>`__,
-or from extension `styleguide <https://github.com/TYPO3/TYPO3.CMS.Styleguide>`__. Extension `styleguide` comes with
+or from extension `styleguide <https://github.com/TYPO3/styleguide>`__. Extension `styleguide` comes with
 a huge list of TCA examples and field combinations. Installing it locally in some test environment is a good
 idea since the extension is great as a "show-off" on what can be done with TCA. Even experienced developers
 will find things they did not know before.
