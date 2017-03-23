@@ -280,9 +280,6 @@ all selectable elements from which one can be chosen.
 .. _columns-select-properties-itemsprocfunc:
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. _columns-select-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. _columns-select-properties-localizereferencesatparentlocalization:
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
@@ -382,8 +379,6 @@ Renders a select field to select multiple entries from a given list.
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
 .. _columns-select-properties-maxitems:
@@ -464,8 +459,6 @@ Render the list of values as single check box rows in a table. Multiple items ca
 .. include:: ../Properties/SelectItems.rst
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
-
-.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
@@ -557,8 +550,6 @@ Two select fields, items can be selected from the right field, selected items ar
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 
 .. include:: ../Properties/CommonMaxitems.rst
@@ -643,8 +634,6 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/SelectItems.rst
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
-
-.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
 

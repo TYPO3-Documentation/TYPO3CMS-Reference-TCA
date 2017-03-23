@@ -414,9 +414,6 @@ type='inline' has (currently) only one render definition, no special renderType 
 .. _columns-inline-properties-foreign-unique:
 .. include:: ../Properties/InlineForeignUnique.rst
 
-.. _columns-inline-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. _columns-inline-properties-maxitems:
 .. include:: ../Properties/CommonMaxitems.rst
 

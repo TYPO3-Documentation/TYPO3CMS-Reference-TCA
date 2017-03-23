@@ -195,9 +195,6 @@ This normal workhorse input element is used if no renderType is set and no speci
 .. _columns-input-properties-is-in:
 .. include:: ../Properties/InputIsIn.rst
 
-.. _columns-input-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. _columns-input-properties-max:
 .. include:: ../Properties/InputMax.rst
 
@@ -259,8 +256,6 @@ An input field with a JavaScript color picker.
 
 .. include:: ../Properties/InputIsIn.rst
 
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. include:: ../Properties/InputMax.rst
 
 .. include:: ../Properties/CommonMode.rst
@@ -313,8 +308,6 @@ Renders an input field with date or time pickers.
 .. _columns-input-properties-format:
 .. include:: ../Properties/InputFormat.rst
 
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. include:: ../Properties/InputMax.rst
 
 .. include:: ../Properties/CommonMode.rst
@@ -359,8 +352,6 @@ An input field used to handle links and mail addresses in the backend.
 .. include:: ../FieldWizard/OtherLanguageContent.rst
 
 .. include:: ../Properties/InputIsIn.rst
-
-.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/InputMax.rst
 
@@ -417,8 +408,6 @@ side on save. This can increase security if the backend is not HTTPS enabled, to
 .. include:: ../FieldWizard/OtherLanguageContent.rst
 
 .. include:: ../Properties/InputIsIn.rst
-
-.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/InputMax.rst
 

@@ -153,9 +153,6 @@ type='group' has (currently) only one render definition, no special renderType m
 .. _columns-group-properties-internal-type:
 .. include:: ../Properties/GroupInternalType.rst
 
-.. _columns-group-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. _columns-group-properties-max-size:
 .. include:: ../Properties/GroupMaxSize.rst
 

@@ -135,9 +135,6 @@ type='check' has (currently) only one render definition, no special renderType m
 .. _columns-check-properties-itemsprocfunc:
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. _columns-check-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. _columns-check-properties-readOnly:
 .. include:: ../Properties/CommonReadOnly.rst
 
