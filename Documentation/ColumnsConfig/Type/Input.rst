@@ -172,6 +172,10 @@ This normal workhorse input element is used if no renderType is set and no speci
 .. _columns-input-properties-autocomplete:
 .. include:: ../Properties/InputAutocomplete.rst
 
+.. _columns-input-properties-behaviour:
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. _columns-input-properties-default:
 .. include:: ../Properties/CommonDefault.rst
 
@@ -184,11 +188,15 @@ This normal workhorse input element is used if no renderType is set and no speci
 
 .. include:: ../Properties/CommonFieldWizard.rst
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst
+.. _columns-input-properties-fieldWizard-localizationStateSelector:
 .. include:: ../FieldWizard/LocalizationStateSelector.rst
 .. include:: ../FieldWizard/OtherLanguageContent.rst
 
 .. _columns-input-properties-is-in:
 .. include:: ../Properties/InputIsIn.rst
+
+.. _columns-input-properties-l10nMode:
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. _columns-input-properties-max:
 .. include:: ../Properties/InputMax.rst
@@ -230,6 +238,9 @@ An input field with a JavaScript color picker.
 
 .. include:: ../Properties/InputAutocomplete.rst
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/CommonDefault.rst
 
 .. include:: ../Properties/InputEval.rst
@@ -247,6 +258,8 @@ An input field with a JavaScript color picker.
 .. include:: ../FieldWizard/OtherLanguageContent.rst
 
 .. include:: ../Properties/InputIsIn.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/InputMax.rst
 
@@ -278,6 +291,9 @@ Renders an input field with date or time pickers.
 .. _columns-input-properties-dbtype:
 .. include:: ../Properties/InputDbType.rst
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/CommonDefault.rst
 
 .. _columns-input-properties-disableAgeDisplay:
@@ -296,6 +312,8 @@ Renders an input field with date or time pickers.
 
 .. _columns-input-properties-format:
 .. include:: ../Properties/InputFormat.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/InputMax.rst
 
@@ -323,6 +341,9 @@ An input field used to handle links and mail addresses in the backend.
 
 .. include:: ../Properties/InputAutocomplete.rst
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/CommonDefault.rst
 
 .. include:: ../Properties/InputEval.rst
@@ -338,6 +359,8 @@ An input field used to handle links and mail addresses in the backend.
 .. include:: ../FieldWizard/OtherLanguageContent.rst
 
 .. include:: ../Properties/InputIsIn.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/InputMax.rst
 
@@ -378,6 +401,9 @@ side on save. This can increase security if the backend is not HTTPS enabled, to
 
 .. include:: ../Properties/InputAutocomplete.rst
 
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. include:: ../Properties/CommonDefault.rst
 
 .. include:: ../Properties/InputEval.rst
@@ -391,6 +417,8 @@ side on save. This can increase security if the backend is not HTTPS enabled, to
 .. include:: ../FieldWizard/OtherLanguageContent.rst
 
 .. include:: ../Properties/InputIsIn.rst
+
+.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/InputMax.rst
 

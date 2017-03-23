@@ -172,6 +172,10 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
 
 .. _columns-flex-properties-type:
 
+.. _columns-flex-properties-behaviour:
+.. include:: ../Properties/CommonBehaviour.rst
+.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+
 .. _columns-flex-properties-ds:
 .. include:: ../Properties/FlexDs.rst
 
@@ -186,6 +190,9 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
 
 .. _columns-flex-properties-ds-tablefield:
 .. include:: ../Properties/FlexDsTableField.rst
+
+.. _columns-flex-properties-l10nMode:
+.. include:: ../Properties/CommonL10nMode.rst
 
 
 .. _columns-flex-facts:
@@ -231,7 +238,7 @@ Array Elements
 .. _columns-flex-tceforms-array-meta:
 
 <meta>
-""""""
+^^^^^^
 
 :aspect:`Element`
     <meta>
@@ -243,7 +250,7 @@ Array Elements
 .. _columns-flex-tceforms-array-application-tag:
 
 <[application tag]>
-"""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^
 
 :aspect:`Element`
     <TCEforms>
@@ -255,7 +262,7 @@ Array Elements
 .. _columns-flex-tceforms-array-root-tceforms:
 
 <ROOT><TCEforms>
-""""""""""""""""
+^^^^^^^^^^^^^^^^
 
 :aspect:`Element`
     <ROOT><TCEforms>
@@ -280,7 +287,7 @@ Value Elements
 .. _columns-flex-tceforms-value-sheettitle:
 
 <sheetTitle>
-""""""""""""
+^^^^^^^^^^^^
 
 :aspect:`Element`
     <sheetTitle>
@@ -294,7 +301,7 @@ Value Elements
 .. _columns-flex-tceforms-value-sheetdescription:
 
 <sheetDescription>
-""""""""""""""""""
+^^^^^^^^^^^^^^^^^^
 
 :aspect:`Element`
     <sheetDescription>
@@ -308,7 +315,7 @@ Value Elements
 .. _columns-flex-tceforms-value-sheetshortdescr:
 
 <sheetShortDescr>
-"""""""""""""""""
+^^^^^^^^^^^^^^^^^
 
 :aspect:`Element`
     <sheetShortDescr>
@@ -344,7 +351,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-t3flexforms:
 
 <T3FlexForms>
-"""""""""""""
+^^^^^^^^^^^^^
 
 :aspect:`Element`
     <T3FlexForms>
@@ -360,7 +367,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-meta:
 
 <meta>
-""""""
+^^^^^^
 
 :aspect:`Element`
     <meta>
@@ -371,7 +378,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-data:
 
 <data>
-""""""
+^^^^^^
 
 :aspect:`Element`
     <data>
@@ -385,7 +392,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-sheet:
 
 <sheet>
-"""""""
+^^^^^^^
 
 :aspect:`Element`
     <sheet>
@@ -415,7 +422,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-ldef:
 
 <lDEF>
-""""""
+^^^^^^
 
 :aspect:`Element`
     <lDEF>
@@ -429,7 +436,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-field-name:
 
 <[field name]>
-""""""""""""""
+^^^^^^^^^^^^^^
 
 :aspect:`Element`
     <[field name]>
@@ -446,7 +453,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-value-vdef:
 
 <vDEF>
-""""""
+^^^^^^
 
 :aspect:`Element`
     <vDEF>
@@ -456,6 +463,7 @@ format. The structure is as follows:
 
 :aspect:`Description`
     Content of the field in default or localized versions.
+
 
 .. _columns-flex-example-simple:
 
@@ -469,7 +477,7 @@ configuration with just a select-type field to choose a page from the "pages" ta
     :alt: A simple FlexForm field
     :class: with-shadow
 
-   A plugin with a simple, one-field flexform
+    A plugin with a simple, one-field flexform
 
 The DS used to render this field is found in the file "flexform\_ds1.xml" inside the "examples" extension.
 Notice the <TCEforms> tags:
