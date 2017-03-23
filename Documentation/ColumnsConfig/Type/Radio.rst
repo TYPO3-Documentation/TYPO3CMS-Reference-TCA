@@ -71,8 +71,5 @@ type='radio' has (currently) only one render definition, no special renderType m
 .. _columns-radio-properties-itemsprocfunc:
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. _columns-radio-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. _columns-radio-properties-readOnly:
 .. include:: ../Properties/CommonReadOnly.rst

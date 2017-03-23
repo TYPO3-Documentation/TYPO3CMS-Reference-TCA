@@ -157,9 +157,6 @@ if both enabled in configuration and enabled for the user.
 .. _columns-text-properties-is-in:
 .. include:: ../Properties/TextIsIn.rst
 
-.. _columns-text-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. _columns-text-properties-maxlength:
 .. include:: ../Properties/TextMax.rst
 
@@ -233,8 +230,6 @@ to textarea fields, for several languages.
 .. _columns-text-properties-format:
 .. include:: ../Properties/TextFormat.rst
 
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. include:: ../Properties/TextRows.rst
 
 .. include:: ../Properties/CommonSearch.rst
@@ -272,8 +267,6 @@ It is used for the "Table" tt\_content content element.
 .. include:: ../Properties/TextFixedFont.rst
 
 .. include:: ../Properties/TextIsIn.rst
-
-.. include:: ../Properties/CommonL10nMode.rst
 
 .. include:: ../Properties/TextMax.rst
 

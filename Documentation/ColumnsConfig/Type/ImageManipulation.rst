@@ -71,8 +71,5 @@ renderType default
 .. _columns-imageManipulation-properties-fileField:
 .. include:: ../Properties/ImageManipulationFileField.rst
 
-.. _columns-imageManipulation-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 .. _columns-imageManipulation-properties-readOnly:
 .. include:: ../Properties/CommonReadOnly.rst

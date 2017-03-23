@@ -191,9 +191,6 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
 .. _columns-flex-properties-ds-tablefield:
 .. include:: ../Properties/FlexDsTableField.rst
 
-.. _columns-flex-properties-l10nMode:
-.. include:: ../Properties/CommonL10nMode.rst
-
 
 .. _columns-flex-facts:
 

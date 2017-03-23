@@ -1,5 +1,5 @@
-l10n\_mode
-----------
+l10n_mode
+---------
 
 :aspect:`Datatype`
     string (keyword)
@@ -13,10 +13,9 @@ l10n\_mode
     Only active if the :ref:`['ctrl']['languageField'] <ctrl-reference-languagefield>` property is set.
 
     The main relevance is when a record is localized by an API call in DataHandler that makes a copy of the default
-    language record. You can think of this process as copying all fields from the source record, except if a special
-    mode applies as defined below:
-
-    Keywords are:
+    language record. You can think of this process as copying all fields from the source record. By default, the given
+    value from the default language record is copied to the localization overlay and the field is editable in the
+    overlay record. This behaviour can be changed:
 
     exclude
         Field will not be shown in FormEngine if this record is a localization of the default language. Works basically
