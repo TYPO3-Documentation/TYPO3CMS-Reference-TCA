@@ -390,14 +390,8 @@ type='inline' has (currently) only one render definition, no special renderType 
 .. _columns-inline-properties-foreign-match-fields:
 .. include:: ../Properties/InlineForeignMatchFields.rst
 
-.. _columns-inline-properties-foreign-record-defaults:
-.. include:: ../Properties/InlineForeignRecordDefaults.rst
-
 .. _columns-inline-properties-foreign-selector:
 .. include:: ../Properties/InlineForeignSelector.rst
-
-.. _columns-inline-properties-foreign-selector-fieldtcaoverride:
-.. include:: ../Properties/InlineForeignSelectorFieldTcaOverride.rst
 
 .. _columns-inline-properties-foreign-sortby:
 .. include:: ../Properties/InlinePropertiesForeignSortby.rst
@@ -407,9 +401,6 @@ type='inline' has (currently) only one render definition, no special renderType 
 
 .. _columns-inline-properties-foreign-table-field:
 .. include:: ../Properties/InlineForeignTableField.rst
-
-.. _columns-inline-properties-foreign-types:
-.. include:: ../Properties/InlineForeignTypes.rst
 
 .. _columns-inline-properties-foreign-unique:
 .. include:: ../Properties/InlineForeignUnique.rst
@@ -422,6 +413,9 @@ type='inline' has (currently) only one render definition, no special renderType 
 
 .. _columns-inline-properties-mm:
 .. include:: ../Properties/InlineMm.rst
+
+.. _columns-inline-properties-overrideChildTca:
+.. include:: ../Properties/InlineOverrideChildTCa.rst
 
 .. _columns-inline-properties-size:
 .. include:: ../Properties/InlineSize.rst
