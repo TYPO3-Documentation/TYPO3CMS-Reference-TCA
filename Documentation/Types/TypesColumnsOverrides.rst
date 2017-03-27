@@ -43,6 +43,4 @@ columnsOverrides
     .. important::
         It is not possible to override any properties in "Proc." scope: The DataHandler does not take "columnsOverrides"
         into account. Only pure "Display" related properties can be overridden. This especially means that
-        columns config 'type' can **not** be set to a different value. Furthermore, it is not possible to override
-        :ref:`inline <columns-inline>` properties which affect the TCA of child records
-        like :ref:`foreign\_types <columns-inline-properties-foreign-types>`.
+        columns config 'type' can **not** be set to a different value.
