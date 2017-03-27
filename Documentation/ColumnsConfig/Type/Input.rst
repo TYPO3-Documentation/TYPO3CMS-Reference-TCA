@@ -308,8 +308,6 @@ Renders an input field with date or time pickers.
 .. _columns-input-properties-format:
 .. include:: ../Properties/InputFormat.rst
 
-.. include:: ../Properties/InputMax.rst
-
 .. include:: ../Properties/CommonMode.rst
 
 .. include:: ../Properties/CommonPlaceholder.rst
