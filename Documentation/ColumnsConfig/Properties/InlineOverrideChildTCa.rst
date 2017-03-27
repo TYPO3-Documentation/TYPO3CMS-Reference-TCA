@@ -8,9 +8,9 @@ overrideChildTca
     Display
 
 :aspect:`Description`
-    This property can be used to overide certain aspects of the child TCA if that child TCA record is
-    opened in given parent context. Display related TCA properties of the child table in :code:`types`
-    and :code:`columns` section can be overriden.
+    This property can be used to override certain aspects of the child's TCA if that child record is
+    opened inline of the given parent. Display related TCA properties of the child table can be
+    overridden in :code:`types` and :code:`columns` section.
 
     This example overrides the crop variants in a configured fal relation:
 
