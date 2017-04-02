@@ -374,9 +374,6 @@ Renders a select field to select multiple entries from a given list.
 
 .. include:: ../Properties/SelectItems.rst
 
-.. _columns-select-properties-itemliststyle:
-.. include:: ../Properties/SelectItemListStyle.rst
-
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
 .. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
@@ -545,8 +542,6 @@ Two select fields, items can be selected from the right field, selected items ar
 .. include:: ../Properties/SelectForeignTableWhere.rst
 
 .. include:: ../Properties/SelectItems.rst
-
-.. include:: ../Properties/SelectItemListStyle.rst
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
