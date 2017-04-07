@@ -122,7 +122,7 @@ information related to existing media. Here is how it is used on the "image" fie
                 ],
             ],
             $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-        ],
+        ),
     ],
 
 The method to call is :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig()` which takes
