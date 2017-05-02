@@ -427,13 +427,27 @@ displayCond
 					)
 				);
 
-         The last example requires the header-field of the FlexForm-parent
-         record to be true, otherwise the FlexForm field is not displayed
+         This example requires the header-field of the FlexForm-parent
+         record to be set, otherwise the FlexForm field is not displayed
          (works only within FlexForm datastructure definitions):
 
          .. code-block:: xml
 
             <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
+	    
+	 Using :code:`OR` and :code:`AND` within FlexForms works like this:
+	 
+         .. code-block:: xml
+
+            <displayCond>
+	       <and>
+	          <value1>FIELD:sys_language_uid:<=:0</value1>
+		  <or>
+		     <value1>FIELD:CType:=:text</value1>
+		     <value2>FIELD:spaceBefore:>:0</value2>
+		  </or>
+	       </and>
+	    </displayCond>
 
    Scope
          Display
