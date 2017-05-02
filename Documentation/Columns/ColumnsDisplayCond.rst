@@ -112,20 +112,20 @@ displayCond
                 ]
             ]
         ];
-	    
-	 Using :code:`OR` and :code:`AND` within FlexForms works like this:
-	 
-     .. code-block:: xml
 
-         <displayCond>
-	         <and>
-	             <value1>FIELD:sys_language_uid:<=:0</value1>
-		         <or>
-		             <value1>FIELD:CType:=:text</value1>
-		             <value2>FIELD:spaceBefore:>:0</value2>
-		         </or>
-	         </and>
-	    </displayCond>
+    Using :code:`OR` and :code:`AND` within FlexForms works like this:
+	 
+    .. code-block:: xml
+
+        <displayCond>
+            <and>
+                <value1>FIELD:sys_language_uid:<=:0</value1>
+                <or>
+                    <value1>FIELD:CType:=:text</value1>
+                    <value2>FIELD:spaceBefore:>:0</value2>
+                </or>
+            </and>
+        </displayCond>
 
     Flex form fields can access field values from various different sources:
 
