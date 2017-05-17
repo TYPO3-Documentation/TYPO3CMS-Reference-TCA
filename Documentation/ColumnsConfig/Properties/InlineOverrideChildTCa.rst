@@ -103,7 +103,7 @@ overrideChildTca
                     'columns' => [
                         'uid_local' => [
                             'config' => [
-                                'appearance' => ]
+                                'appearance' => [
                                     'elementBrowserType' => 'file',
                                     'elementBrowserAllowed' => $allowedFileExtensions
                                 ],
