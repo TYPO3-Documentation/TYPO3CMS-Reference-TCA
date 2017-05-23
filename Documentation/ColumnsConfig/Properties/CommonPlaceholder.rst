@@ -25,11 +25,11 @@ placeholder
             'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
             'config' => [
                 'type' => 'input',
-                'size' => '20',
+                'size' => 20,
                 'eval' => 'null',
                 'placeholder' => '__row|uid_local|metadata|title',
-                'mode' => 'useOrOverridePlaceholder',
-            ],
+                'mode' => 'useOrOverridePlaceholder'
+            ]
         ],
 
     In the above placeholder syntax, :code:`uid_local` points to the related "sys_file" record and :code:`metadata`
