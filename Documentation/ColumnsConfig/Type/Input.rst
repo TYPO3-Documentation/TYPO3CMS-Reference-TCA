@@ -102,7 +102,7 @@ Examples
         'label' => 'input_30 slider, step=10, width=200, eval=trim,int',
         'config' => [
             'type' => 'input',
-            'size' => 5,
+            'size' => 10,
             'eval' => 'trim,int',
             'range' => [
                 'lower' => -90,
