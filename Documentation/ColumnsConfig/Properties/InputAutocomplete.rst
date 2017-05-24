@@ -18,8 +18,8 @@ autocomplete
             'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
             'config' => [
                 'type' => 'input',
-                'size' => '20',
+                'size' => 20,
                 'eval' => 'null',
-                'autocomplete' => true,
+                'autocomplete' => true
             ]
         ],
