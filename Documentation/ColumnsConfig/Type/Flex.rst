@@ -214,6 +214,8 @@ documented here for TCA. The limitations are:
 
 - You cannot nest FlexForm configurations inside of FlexForms.
 
+- You cannot add, change or remove fields in FlexForms without copying the data structure and changing the configuration accordingly.
+
 - Charset follows that of the current backend UTF-8. When storing FlexForm information in external files,
   make sure that they are using UTF-8 too.
 
