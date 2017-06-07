@@ -66,14 +66,6 @@ eval
     required
       A non-empty value is required in the field (otherwise the form cannot be saved).
 
-    time
-      The field will evaluate the input as a timestamp in seconds for the current day (with a precision of minutes).
-      The display will be like "23:45" while the database will be "85500".
-
-    timesec
-      The field will evaluate the input as a timestamp in seconds for the current day (with a precision of seconds).
-      The display will be like "23:45:13" while the database will be "85513".
-
     trim
       The value in the field will have white spaces around it trimmed away.
 

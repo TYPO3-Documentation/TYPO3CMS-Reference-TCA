@@ -14,12 +14,15 @@ eval
 
     date
       The field will evaluate the input as a date, automatically converting the input to a UNIX-time in seconds.
-      The display will be like "12-8-2003" while the database value stored will be "1060639200".
+      The value stored in the database will be in UTC! That means that any input in the Backend will be treated
+      as a local time (default timezone is either set by PHP configuration or in the Install Tool), but will be
+      stored in UTC.
+      The display will be like "12-8-2003" (assuming UTC+2) while the database value stored will be "1060639200".
 
     datetime
       The field will evaluate the input as a date with time (detailed to hours and minutes), automatically converting
-      the input to a UNIX-time in seconds. The display will be like "16:32 12-8-2003"
-      while the database value will be "1060698720".
+      the input to a UNIX-time in seconds. Data is stored in UTC (see above).
+      The display will be like "16:32 12-8-2003" (assuming UTC+2) while the database value will be "1060698720".
 
     time
       The field will evaluate the input as a timestamp in seconds for the current day (with a precision of minutes).

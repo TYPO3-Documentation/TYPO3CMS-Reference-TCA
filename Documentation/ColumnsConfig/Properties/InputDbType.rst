@@ -8,7 +8,8 @@ dbType
     Proc.
 
 :aspect:`Description`
-    If set, the date / time will not be stored as timestamp, but as `date` or `datetime` field in the database.
+    If set, the date / time will not be stored as timestamp, but as native `date` or `datetime` field in the database.
+    Keep in mind that no timezone conversion will happen.
 
     **Example**
 
