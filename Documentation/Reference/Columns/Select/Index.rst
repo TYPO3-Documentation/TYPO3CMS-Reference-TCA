@@ -366,11 +366,11 @@ foreign\_table\_where
          from pages where the user has read access! (Not checking DB mount
          limitations!)
 
-         **Example:**
+         **Example (Syntax)**
 
          .. code-block:: sql
 
-            AND [foreign_table].pid = 0 ORDER BY [foreign_table].sorting
+            AND tx_myextension_domain_model_mytable.pid = 0 ORDER BY tx_myextension_domain_model_mytable.sorting	    
 
          **Markers:**
 
