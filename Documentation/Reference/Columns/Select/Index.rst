@@ -1,4 +1,4 @@
-﻿.. ==================================================
+.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -363,22 +363,35 @@ foreign\_table\_where
          are selected with this WHERE-clause.
 
          The table is joined with the "pages"-table and items are selected only
-         from pages where the user has read access! (Not checking DB mount
-         limitations!)
+         from pages where the user has read access. DB mount limitations are
+         not checked.
 
-         **Example (Syntax)**
+         Example 1::
 
-         .. code-block:: sql
+            ' AND TableName.pid = 0 ORDER BY TableName.sorting'
 
-            AND tx_myextension_domain_model_mytable.pid = 0 ORDER BY tx_myextension_domain_model_mytable.sorting	    
+         Example 2::
+
+            [
+               'ctrl' => [
+                  'columns' => [
+                     'file_mountpoints' => [
+                        'config' => [
+                           'foreign_table_where' => ' AND sys_filemounts.pid=0 ORDER BY sys_filemounts.title',
+                        ]
+                     ]
+                  ]
+               ]
+            ];
 
          **Markers:**
 
          You can use markers in the WHERE clause:
 
-         - ###REC\_FIELD\_[*field name*]### - Any field of the foreign table.
+         - ###REC\_FIELD\_*field name*### - Any field of the foreign table.
+           Example: ###REC_FIELD_titleField###
 
-           .. note::
+           .. attention::
 
               The field name part of the marker is not in upper case letters.
               It must match the exact case used in the database.
