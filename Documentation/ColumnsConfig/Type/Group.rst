@@ -153,6 +153,9 @@ type='group' has (currently) only one render definition, no special renderType m
 .. _columns-group-properties-internal-type:
 .. include:: ../Properties/GroupInternalType.rst
 
+.. _columns-group-properties-localizereferencesatparentlocalization:
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
+
 .. _columns-group-properties-max-size:
 .. include:: ../Properties/GroupMaxSize.rst
 

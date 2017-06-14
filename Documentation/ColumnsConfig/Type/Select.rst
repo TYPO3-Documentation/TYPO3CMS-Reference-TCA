@@ -281,7 +281,7 @@ all selectable elements from which one can be chosen.
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
 .. _columns-select-properties-localizereferencesatparentlocalization:
-.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
 
 .. _columns-select-properties-minitems:
 .. include:: ../Properties/CommonMinitems.rst
@@ -376,7 +376,7 @@ Renders a select field to select multiple entries from a given list.
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
 
 .. _columns-select-properties-maxitems:
 .. include:: ../Properties/CommonMaxitems.rst
@@ -457,7 +457,7 @@ Render the list of values as single check box rows in a table. Multiple items ca
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
 
 .. include:: ../Properties/CommonMaxitems.rst
 
@@ -545,7 +545,7 @@ Two select fields, items can be selected from the right field, selected items ar
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
 
 .. include:: ../Properties/CommonMaxitems.rst
 
@@ -630,7 +630,7 @@ A tree for selecting hierarchical data items.
 
 .. include:: ../Properties/CommonItemsProcFunc.rst
 
-.. include:: ../Properties/SelectLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
 
 .. include:: ../Properties/CommonMaxitems.rst
 
