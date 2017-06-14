@@ -24,18 +24,15 @@ suggestOptions
                 'type' => 'group',
                 'internal_type' => 'db',
                 'allowed' => 'pages, tt_content',
-                'wizards' => [
-                    'suggest' => [
-                        'type' => 'suggest',
-                        'default' => [
-                            'searchWholePhrase' => 1
-                        ],
-                        'pages' => [
-                            'searchCondition' => 'doktype = 1'
-                        ],
+                'suggestOptions' => [
+                    'default' => [
+                        'searchWholePhrase' => 1
                     ],
-                ],
-            ],
+                    'pages' => [
+                        'searchCondition' => 'doktype = 1'
+                    ]
+                ]
+            ]
         ],
 
     pidList (list of values)
