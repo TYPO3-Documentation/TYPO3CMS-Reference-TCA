@@ -1,3 +1,4 @@
+
 appearance
 ~~~~~~~~~~
 
@@ -51,11 +52,6 @@ appearance
       Example::
 
           $GLOBALS['TCA']['tx_demo_domain_model_demoinline']['columns']['irre_records']['config'] = [
-              'foreign_types_combination' => [
-                  '1' => [
-                      'showitem' => 'title'
-                  ]
-              ],
               'appearance' => [
                  'overwriteCombinationWarningMessage' => 'LLL:EXT:demo/Resources/Private/Language/locallang_db.xlf:tx_demo_domain_model_demoinline.irre_records.useCombinationWarning',
                  'useCombination' => TRUE
