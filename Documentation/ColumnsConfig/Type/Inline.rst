@@ -147,13 +147,17 @@ options (second call parameter) are merged looks like:
         ],
         'foreign_label' => 'uid_local',
         'foreign_selector' => 'uid_local',
-        'foreign_selector_fieldTcaOverride' => [
-            'config' => [
-                'appearance' => [
-                    'elementBrowserType' => 'file',
-                    'elementBrowserAllowed' => $allowedFileExtensions
-                ]
-            ]
+        'overrideChildTca' => [
+            'columns' => [
+                'uid_local' => [
+                    'config' => [
+                        'appearance' => [
+                            'elementBrowserType' => 'file',
+                            'elementBrowserAllowed' => $allowedFileExtensions
+                        ],
+                    ],
+                ],
+            ],
         ],
         'filter' => [
             [
