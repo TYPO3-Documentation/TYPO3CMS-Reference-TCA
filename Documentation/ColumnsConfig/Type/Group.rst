@@ -22,7 +22,7 @@ For database relations however, the type='group' field is the right and a powerf
 with lots of re-usable child records, and if :ref:`type='inline' <columns-inline>` is not suitable.
 
 This type is very flexible in its display options with all its different
-:'ref:`fieldControl <columns-group-properties-fieldControl>` and
+:ref:`fieldControl <columns-group-properties-fieldControl>` and
 :ref:`fieldWizard <columns-group-properties-fieldWizard>` options. A lot of them are available by default but disable.
 
 
