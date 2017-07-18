@@ -14,16 +14,16 @@ The group element in TYPO3 makes it possible to create references to records fro
 This is especially useful (compared to the "select" type) when records are scattered over the page tree and require
 the Element Browser to be selected.
 
-Next to database relations, the group type is also able to handle files. Using type='group' for file handling
+Next to database relations, the group type is also able to handle files. Using `type='group'` for file handling
 however is considered outdated and should be based on the :ref:`FAL API<t3fal:start>` instead, and it can be
-assumed that `internal_type='file'` and `internal_type='file\_reference'` will be removed sooner or later.
+assumed that `internal_type='file'` and `internal_type='file_reference'` will be removed sooner or later.
 
-For database relations however, the type='group' field is the right and a powerful choice especially if dealing
+For database relations however, the `type='group'` field is the right and a powerful choice especially if dealing
 with lots of re-usable child records, and if :ref:`type='inline' <columns-inline>` is not suitable.
 
 This type is very flexible in its display options with all its different
 :ref:`fieldControl <columns-group-properties-fieldControl>` and
-:ref:`fieldWizard <columns-group-properties-fieldWizard>` options. A lot of them are available by default but disable.
+:ref:`fieldWizard <columns-group-properties-fieldWizard>` options. A lot of them are available by default but disabled.
 
 
 .. _columns-group-examples:
