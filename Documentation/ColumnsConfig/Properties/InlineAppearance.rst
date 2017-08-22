@@ -99,3 +99,8 @@ appearance
 
     elementBrowserEnabled (boolean)
       Hides or displays the element browser button in inline records
+    
+    elementBrowserAllowed (string)
+      Sets the list of allowed element types, e.g. file extensions for file fields. For file fields this also affects
+      whether the "Add media by URL" button is shown if online media file extensions (e.g. `youtube` or `vimeo`) are
+      included.
