@@ -14,6 +14,10 @@ This type will just show the value of the field in the backend. The field is not
 Format options can be set to format a given value. The field is often similar to a :php:`type = 'input'`
 field having :php:`readOnly=true` set.
 
+.. caution::
+
+   With :php:`type = 'none'` the DataHandler cannot process the field since the type is unknown. 
+   You may use :php:`type = 'input'` with :php:`readOnly=true` instead.
 
 .. _columns-none-examples:
 
