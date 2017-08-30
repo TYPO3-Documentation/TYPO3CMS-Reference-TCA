@@ -15,10 +15,9 @@ Format options can be set to format a given value. The field is often similar to
 field having :php:`readOnly=true` set.
 
 .. caution::
-	Please note, that using :php:`type = 'none'` comes with somew drawbacks. E.g. you will not 
-    be able to alter this field using the DataHandler, because the type is unknown to it. 
-    If you intend to use the DataHandler you should fallback to :php:`type = 'input'` with 
-    :php:`readOnly=true` set.
+
+   With :php:`type = 'none'` the DataHandler cannot process the field since the type is unknown. 
+   You may use :php:`type = 'input'` with :php:`readOnly=true` instead.
 
 .. _columns-none-examples:
 
