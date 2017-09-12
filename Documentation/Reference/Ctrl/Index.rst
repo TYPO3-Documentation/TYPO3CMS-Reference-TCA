@@ -130,11 +130,11 @@ title
          .. code-block:: php
 
             'ctrl' => array(
-            	'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:sys_template',
+            	'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:sys_template',
 
          In the above example the :code:`LLL:` prefix tells the system to look up a
-         label from a localized file. The next prefix code:`EXT:cms` will look for
-         the data in the extension with the key "cms". In that extension the
+         label from a localized file. The next prefix code:`EXT:frontend` will look for
+         the data in the extension with the key "frontend". In that extension the
          file :file:`locallang_tca.xlf` contains a XML structure inside of which one
          label tag has an index attribute named "sys\_template". This tag
          contains the value to display in the default language. Other languages
