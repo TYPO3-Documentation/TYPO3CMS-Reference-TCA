@@ -1560,6 +1560,7 @@ The corresponding TCA configuration:
 		'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.fe_group',
 		'config' => array(
 			'type' => 'select',
+        	        'renderType' => 'selectMultipleSideBySide',
 			'size' => 5,
 			'maxitems' => 20,
 			'items' => array(
