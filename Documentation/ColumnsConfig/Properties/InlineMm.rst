@@ -19,12 +19,11 @@ MM
     sorting
       is a required field used for ordering the items.
 
+    further fields
+      May exist, in particular if :ref:`MM_match_fields <columns-inline-properties-mm-match-fields>` is involved in the set up.
+
     The field which is configured as "inline" is not used for data-storage any more but rather it's set to the number
     of records in the relation on each update, so the field should be an integer.
-
-   .. note::
-      Using MM relations you can ONLY store real relations for foreign tables in the list - no additional string
-      values or non-record values (so no attributes).
 
    .. warning::
       Copying with MM relations will not create a copy of the value. Thus copying the record `Org` with `Org->orgA` and

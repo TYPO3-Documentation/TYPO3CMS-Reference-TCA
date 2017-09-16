@@ -421,6 +421,9 @@ type='inline' has (currently) only one render definition, no special renderType 
 .. _columns-inline-properties-mm:
 .. include:: ../Properties/InlineMm.rst
 
+.. _columns-group-properties-mm-match-fields:
+.. include:: ../Properties/CommonMmMatchFields.rst
+
 .. _columns-inline-properties-overrideChildTca:
 .. include:: ../Properties/InlineOverrideChildTCa.rst
 
