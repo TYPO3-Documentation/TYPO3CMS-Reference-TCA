@@ -34,11 +34,17 @@ This field is found in a number of tables, for instance the "pages" table. It is
         ],
     ],
 
+.. _columns-input-renderType-default:
+
+renderType default
+==================
+
+This type has no renderType, so setting it is useless. However, some properties like default are applied
+through the :php:`DataHandler` if storing a record with a passthrough field.
 
 .. _columns-passthrough-properties:
 
+.. _columns-passthrough-properties-type:
+
 .. _columns-passthrough-properties-default:
 .. include:: ../Properties/CommonDefault.rst
-
-
-.. _columns-passthrough-properties-type:
