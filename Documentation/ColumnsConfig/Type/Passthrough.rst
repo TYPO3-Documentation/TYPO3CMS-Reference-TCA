@@ -37,4 +37,8 @@ This field is found in a number of tables, for instance the "pages" table. It is
 
 .. _columns-passthrough-properties:
 
+.. _columns-passthrough-properties-default:
+.. include:: ../Properties/CommonDefault.rst
+
+
 .. _columns-passthrough-properties-type:
