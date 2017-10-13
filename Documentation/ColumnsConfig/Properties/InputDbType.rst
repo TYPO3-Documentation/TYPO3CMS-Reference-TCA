@@ -29,7 +29,7 @@ dbType
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'dbType' => 'datetime'
+                'dbType' => 'datetime',
                 'eval' => 'datetime',
             ],
         ],
