@@ -22,9 +22,6 @@ linkPopup
       - :code:`###CURRENT_PID###`
       - :code:`###THIS_UID###`
       - :code:`###SITEROOT###`
-      - :code:`###PAGE_TSCONFIG_ID###`
-      - :code:`###PAGE_TSCONFIG_IDLIST###`
-      - :code:`###PAGE_TSCONFIG_STR###`
 
     allowedExtensions (string, list)
       Comma separated list of allowed file extensions. By default, all extensions are allowed.

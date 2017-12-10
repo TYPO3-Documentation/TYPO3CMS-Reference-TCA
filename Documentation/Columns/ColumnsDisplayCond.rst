@@ -97,18 +97,18 @@ displayCond
             ],
         ],
 
-    Going further the next example defines the following conditions: for the "spaceAfter" field to be displayed,
-    the content element must be in the default or "All" language. Furthermore it must either be a text-type element
-    or have some "spaceBefore" defined:
+    Going further the next example defines the following conditions: for the "example_field" field to be displayed,
+    the content element must be in the default language. Furthermore it must be a text-type element
+    or have the headline "Example" defined:
 
     .. code-block:: php
 
         'displayCond' => [
             'AND' => [
-                'FIELD:sys_language_uid:<=:0',
+                'FIELD:sys_language_uid:=:0',
                 'OR' => [
                     'FIELD:CType:=:text',
-                    'FIELD:spaceBefore:>:0'
+                    'FIELD:header:=:Example'
                 ]
             ]
         ];
@@ -119,10 +119,10 @@ displayCond
 
         <displayCond>
             <and>
-                <value1>FIELD:sys_language_uid:<=:0</value1>
+                <value1>FIELD:sys_language_uid:=:0</value1>
                 <or>
                     <value1>FIELD:CType:=:text</value1>
-                    <value2>FIELD:spaceBefore:>:0</value2>
+                    <value2>FIELD:header:=:Example</value2>
                 </or>
             </and>
         </displayCond>

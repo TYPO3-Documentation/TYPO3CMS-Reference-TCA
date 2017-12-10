@@ -29,9 +29,6 @@ addRecord
       - :code:`###CURRENT_PID###`
       - :code:`###THIS_UID###`
       - :code:`###SITEROOT###`
-      - :code:`###PAGE_TSCONFIG_ID###`
-      - :code:`###PAGE_TSCONFIG_IDLIST###`
-      - :code:`###PAGE_TSCONFIG_STR###`
 
     table (string)
       Add a record to this table, falls back to first table from :ref:`allowed <columns-group-properties-allowed>`
