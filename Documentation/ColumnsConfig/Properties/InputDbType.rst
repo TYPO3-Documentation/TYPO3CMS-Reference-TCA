@@ -8,8 +8,9 @@ dbType
     Proc.
 
 :aspect:`Description`
-    If set, the date / time will not be stored as timestamp, but as native `date`, `time` or `datetime` field in the database.
-    Keep in mind that no timezone conversion will happen.
+    If set, the date or time will not be stored as timestamp, but as native
+    `date`, `time` or `datetime` field in the database. Keep in mind that no
+    timezone conversion will happen.
 
     **Examples**
 
@@ -17,44 +18,42 @@ dbType
 
     :file:`ext_tables.sql`:
 
-    .. code-block:: php
+    .. code-block:: sql
 
-        CREATE TABLE tx_example_domain_model_foo (
-            synced_at datetime default NULL
-        )
+       CREATE TABLE tx_example_domain_model_foo (
+          synced_at datetime default NULL
+       )
 
     :file:`Configuration/TCA/tx_example_domain_model_foo.php`:
 
     .. code-block:: php
 
-        'synced_at' => [
-            'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
-                'dbType' => 'datetime',
-                'eval' => 'datetime',
-            ],
-        ],
+       'synced_at' => [
+          'config' => [
+             'type' => 'input',
+             'renderType' => 'inputDateTime',
+             'dbType' => 'datetime',
+             'eval' => 'datetime',
+          ],
+       ],
 
 
     Time:
 
     :file:`ext_tables.sql`:
 
-    .. code-block:: php
+    .. code-block:: sql
 
-        CREATE TABLE tx_example_domain_model_foo (
-            synced_at time default NULL
-        )
+       CREATE TABLE tx_example_domain_model_foo (
+          synced_at time default NULL
+       )
 
-    :file:`Configuration/TCA/tx_example_domain_model_foo.php`:
+    :file:`Configuration/TCA/tx_example_domain_model_foo.php`::
 
-    .. code-block:: php
-
-        'synced_at' => [
-            'config' => [
-                'type' => 'input',
-                'dbType' => 'time',
-                'eval' => 'time',
-            ],
-        ],
+       'synced_at' => [
+          'config' => [
+             'type' => 'input',
+             'dbType' => 'time',
+             'eval' => 'time',
+          ],
+       ],

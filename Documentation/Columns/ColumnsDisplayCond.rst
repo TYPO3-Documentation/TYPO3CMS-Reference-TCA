@@ -97,51 +97,53 @@ displayCond
             ],
         ],
 
-    Going further the next example defines the following conditions: for the "example_field" field to be displayed,
-    the content element must be in the default language. Furthermore it must be a text-type element
-    or have the headline "Example" defined:
+    Going further the next example defines the following conditions: for the
+    "example_field" field to be displayed, the content element must be in the
+    default language. Furthermore it must be a text-type element or have the
+    headline "Example" defined::
 
-    .. code-block:: php
-
-        'displayCond' => [
-            'AND' => [
-                'FIELD:sys_language_uid:=:0',
-                'OR' => [
-                    'FIELD:CType:=:text',
-                    'FIELD:header:=:Example'
-                ]
-            ]
-        ];
+       'displayCond' => [
+          'AND' => [
+             'FIELD:sys_language_uid:=:0',
+             'OR' => [
+                'FIELD:CType:=:text',
+                'FIELD:header:=:Example'
+             ]
+          ]
+       ];
 
     Using :code:`OR` and :code:`AND` within FlexForms works like this:
-	 
+
     .. code-block:: xml
 
-        <displayCond>
-            <and>
-                <value1>FIELD:sys_language_uid:=:0</value1>
-                <or>
-                    <value1>FIELD:CType:=:text</value1>
-                    <value2>FIELD:header:=:Example</value2>
-                </or>
-            </and>
-        </displayCond>
+       <displayCond>
+          <and>
+             <value1>FIELD:sys_language_uid:=:0</value1>
+             <or>
+                <value1>FIELD:CType:=:text</value1>
+                <value2>FIELD:header:=:Example</value2>
+             </or>
+          </and>
+       </displayCond>
 
     Flex form fields can access field values from various different sources:
 
     .. code-block:: xml
 
-        <!-- Hide field if value of record field "header" is not "true" -->
-        <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
-        <!-- Hide field if value of parent record field "field_1" is not "foo" -->
-        <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
-        <!-- Hide field if value of neighbour field "flexField_1 on same sheet is not "foo" -->
-        <displayCond>FIELD:flexField_1:!=:foo</displayCond>
-        <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
-        <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
+       <!-- Hide field if value of record field "header" is not "true" -->
+       <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
+       <!-- Hide field if value of parent record field "field_1" is not "foo" -->
+       <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
+       <!-- Hide field if value of neighbour field "flexField_1 on same sheet is not "foo" -->
+       <displayCond>FIELD:flexField_1:!=:foo</displayCond>
+       <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
+       <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
 
     .. note::
-        The display condition parser has been rewritten with TYPO3 core version 8. It is now "strict" and throws
-        exceptions if the syntax of a display condition is bogus. The exception message reveals details on what
-        exactly is broken. This helps with finding bugs in a display condition configuration and reduces headaches
-        with "Why is my field shown or not shown?".
+
+       The display condition parser has been rewritten with TYPO3 core version
+       8. It is now "strict" and throws exceptions if the syntax of a display
+       condition is bogus. The exception message reveals details on what
+       exactly is broken. This helps with finding bugs in a display condition
+       configuration and reduces headaches with "Why is my field shown or not
+       shown?".

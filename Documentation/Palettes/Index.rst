@@ -59,25 +59,27 @@ This specifies the palette `caching`. It is then referenced in the `types` secti
 
     Caching palette in pages
 
-It is also possibly to define the label of a palette directly in the palette definition.
-Declaring the label in a 'palettes' array can reduce boilerplate declarations if a palette is used over and over
-again in multiple types. If a label is defined for a palette this way, it is always displayed. Setting a specific label
-in the 'types' array for a palette overrides the default label defined within the 'palettes' array. There is no way to
-unset a label that is set within the 'palettes' array, it will always be displayed.
+It is also possibly to define the label of a palette directly in the palette
+definition. Declaring the label in an 'palettes' array can reduce boilerplate
+declarations if a palette is used over and over again in multiple types. If a
+label is defined for a palette this way, it is always displayed. Setting a
+specific label in the 'types' array for a palette overrides the default label
+that was defined within the 'palettes' array. There is no way to unset a label
+that is set within the 'palettes' array. It will always be displayed.
 
-.. code-block:: php
+Example::
 
-    'types' => [
-        'myType' => [
-            'showitem' => 'aField, --palette--;;aPalette, someOtherField',
-        ],
-    ],
-    'palettes' => [
-        'aPalette' => [
-            'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
-            'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
-        ],
-    ],
+   'types' => [
+      'myType' => [
+         'showitem' => 'aField, --palette--;;aPalette, someOtherField',
+      ],
+   ],
+   'palettes' => [
+      'aPalette' => [
+         'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
+         'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
+      ],
+   ],
 
 
 .. _palettes-properties:

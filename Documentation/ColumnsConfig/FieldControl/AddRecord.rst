@@ -14,8 +14,10 @@ addRecord
     first table from the allowed list is selected, if not specific `table` option is given.
 
     .. note::
-        The add record control is disabled by default, enable it if needed. It is shown below the `edit popup`
-        control if not changed by `below` or `after` settings.
+
+       The add record control is disabled by default, enable it if needed. It
+       is shown below the `edit popup` control if not changed by `below` or
+       `after` settings.
 
     **Options:**
 
