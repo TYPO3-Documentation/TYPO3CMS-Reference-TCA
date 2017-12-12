@@ -189,9 +189,6 @@ options (second call parameter) are merged looks like:
                 'localize' => TRUE,
             ],
         ],
-        'behaviour' => [
-            'localizeChildrenAtParentLocalization' => TRUE,
-        ],
     ];
 
 
@@ -376,7 +373,6 @@ type='inline' has (currently) only one render definition, no special renderType 
 .. include:: ../Behaviour/AllowLanguageSynchronization.rst
 .. include:: ../Behaviour/InlineDisableMovingChildrenWithParent.rst
 .. include:: ../Behaviour/InlineEnableCascadingDelete.rst
-.. include:: ../Behaviour/InlineLocalizeChildrenAtParentLocalization.rst
 
 .. _columns-inline-properties-customcontrols:
 .. include:: ../Properties/InlineCustomControls.rst
