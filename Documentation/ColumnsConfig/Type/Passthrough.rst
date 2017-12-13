@@ -34,7 +34,7 @@ This field is found in a number of tables, for instance the "pages" table. It is
         ],
     ],
 
-.. _columns-input-renderType-default:
+.. _columns-passthrough-renderType-default:
 
 renderType default
 ==================

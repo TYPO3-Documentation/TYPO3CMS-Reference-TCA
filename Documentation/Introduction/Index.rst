@@ -257,7 +257,7 @@ mentioned on the next pages:
 TCE
   Short for :ref:`TYPO3 Core Engine <t3coreapi:tce>`. Also referred to as "DataHandler".
   The corresponding class
-  :ref:`TYPO3\\CMS\\Core\\DataHandling\\DataHandler <t3api:TYPO3\\CMS\\Core\\DataHandling\\DataHandler>`
+  :php:`TYPO3\CMS\Core\DataHandling\DataHandler`
   should ideally handle all updates to records made in the backend of TYPO3. The class will handle all the
   rules which may be applied to each table correctly. It will also handle logging, versioning, history and undo features,
   and copying, moving, deleting etc.

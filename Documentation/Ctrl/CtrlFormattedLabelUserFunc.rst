@@ -24,5 +24,5 @@ formattedLabel\_userFunc
             ]
         ],
 
-    See class :ref:`TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService <t3api:TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService>`
+    See class :php:`TYPO3\CMS\Core\Resource\Service\UserFileInlineLabelService`
     for how such a user function should be designed and how the options are used.

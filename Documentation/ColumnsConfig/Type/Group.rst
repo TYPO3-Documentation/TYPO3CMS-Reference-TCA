@@ -310,10 +310,10 @@ Or for "DSC\_7102\_background.jpg,DSC\_7181.jpg,DSC\_7102\_background\_01.jpg":
 API for getting the reference list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Class :ref:`TYPO3\\CMS\\Core\\Database\\RelationHandler <t3api:TYPO3\\CMS\\Core\\Database\\RelationHandler>`
-is designed to transform the stored reference list values into an array where all uids are paired with the right table
-name. Also, this class will automatically retrieve the list of MM relations. In other words, it provides an API for
-getting the references from "group" elements into a PHP array regardless of storage method.
+Class :php:`TYPO3\CMS\Core\Database\RelationHandler` is designed to transform the stored reference list
+values into an array where all uids are paired with the right table name. Also, this class will automatically
+retrieve the list of MM relations. In other words, it provides an API for getting the references
+from "group" elements into a PHP array regardless of storage method.
 
 .. _columns-group-data-files:
 
