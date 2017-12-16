@@ -1002,43 +1002,9 @@ multiple references.
 File Abstraction Layer
 ~~~~~~~~~~~~~~~~~~~~~~
 
-It is possible to use FAL references in a group-type field, although
-:ref:`using them with inline-type fields <columns-inline-examples-fal>`
-allows for richer references (as there can be additional fields
-in the relation in that case).
-
-Here is an example taken from the "examples" extension:
-
-.. code-block:: php
-
-	'image_fal_group' => array(
-		'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.image_fal_group',
-		'config' => array(
-			'type' => 'group',
-			'internal_type' => 'db',
-			'allowed' => 'sys_file',
-			'MM' => 'sys_file_reference',
-			'MM_match_fields' => array(
-				'fieldname' => 'image_fal_group'
-			),
-			'prepend_tname' => TRUE,
-			'appearance' => array(
-				'elementBrowserAllowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-				'elementBrowserType' => 'file'
-			),
-			'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-			'show_thumbs' => '1',
-			'size' => '3',
-			'maxitems' => '200',
-			'minitems' => '0',
-			'autoSizeMax' => 40,
-		),
-	),
-
-.. note::
-
-   It is also possible to create relations directly to the
-   "sys_file" table by not using MM information.
+Be aware that you should never use FAL references in a group-type field / as an MM relation.
+While `sys_file_reference` looks similar as an MM table it is not - and you will experience
+unexpected behavior when using it. You should instead :ref:`use FAL relations with inline-type fields <columns-inline-examples-fal>`.
 
 
 .. _columns-group-data:
