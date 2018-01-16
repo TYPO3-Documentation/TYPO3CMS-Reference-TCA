@@ -534,7 +534,7 @@ following to the ext\_tables.php file of the "examples" extension:
 In the first line the tt\_content field "pi\_flexform" is added to the display of fields when the Plugin type is selected
 and set to "examples\_pi1". In the second line the DS xml file is configured to be the source of the FlexForm DS used.
 
-If we browse the definition for the "pi\_flexform" field in "tt\_content" using the Admin > Configuration module,
+If we browse the definition for the "pi\_flexform" field in "tt\_content" below "columns" using the Admin > Configuration module for "$GLOBALS['TCA'] (Table configuration array)",
 we can see the following:
 
 .. figure:: ../../Images/TypeFlexConfigurationCheck.png
