@@ -216,7 +216,7 @@ of all possible types and palettes.
 .. _tca-structure-scope:
 
 Properties scope
-================
+----------------
 
 In the detail reference one or more scopes are given for each
 property. They indicate which area is affected by a given
@@ -249,7 +249,7 @@ the description of the property itself.
 .. _tca-glossary:
 
 Glossary
-========
+--------
 
 Before you read on, let's just refresh the meaning of a few concepts
 mentioned on the next pages:
