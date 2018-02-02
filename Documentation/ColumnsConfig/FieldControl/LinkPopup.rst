@@ -35,7 +35,7 @@ linkPopup
 
     blindLinkOptions (string, list)
       Comma separated list of link options that should not be displayed. Possible values are
-      `file`, `mail`, `page`, `spec`, and `url`. By default, all link options are displayed.
+      `file`, `folder`, `mail`, `page`, `spec`, and `url`. By default, all link options are displayed.
 
     title (string or LLL reference)
       Allows to set a different 'title' attribute to the popup icon, defaults
