@@ -74,6 +74,8 @@ The :ref:`TYPO3 core bootstrap <t3coreapi:bootstrapping>` compiles the final TCA
 different locations, and caches the result. On subsequent calls this relatively huge array is then rather quickly loaded
 from cache and is made available as :php:`$GLOBALS['TCA']` in almost all normal access patterns like Frontend, Backend and CLI requests.
 
+In addition to the base TCA definition one can easily add overrides to add, change or remove TCA definitions in custom extensions. See :ref:`Extending the $TCA array <t3coreapi:extending>` for details.
+
 
 .. _tca-structure:
 
@@ -244,16 +246,6 @@ Search
 Because some things never fit in precise categories, there may be
 properties with a special scope. The meaning will be explained in
 the description of the property itself.
-
-
-.. _tca-overrides:
-
-TCA overrides
-------------------------
-
-In addition to the base TCA definition one can easily add overrides to add, change or remove TCA definitions in custom extensions.
-
-See :ref:`Extending the $TCA array <t3coreapi:extending>` for details.
 
 
 .. _tca-glossary:
