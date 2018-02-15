@@ -8,8 +8,8 @@ prependAtCopy
     Proc.
 
 :aspect:`Description`
-    This string will be prepend the records title field when the record is inserted on the same PID as the
-    original record to distinguish them.
+    This string will be appended (not prepended, contrary to the name of this option) to the title of a record copy
+    when it is inserted on the same PID as the original record to distinguish them.
 
-    Usually the value is something like " (copy %s)" which tells that it was a copy that was just
-    inserted (The token "%s" will take the copy number).
+    Usually the value is something like :php:` (copy %s)` which signifies that it was a copy that was just
+    inserted (The token :php:`%s` will be replaced by the copy number).
