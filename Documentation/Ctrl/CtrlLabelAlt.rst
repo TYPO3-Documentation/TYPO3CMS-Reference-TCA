@@ -23,5 +23,5 @@ label\_alt
         ],
 
     .. note::
-        :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property, als
+        :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property, also
         see :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
