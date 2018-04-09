@@ -350,12 +350,6 @@ wife-husband-relationship in real life)
     ];
 
 
-.. _columns-inline-renderType-default:
-
-renderType default
-==================
-
-type='inline' has (currently) only one render definition, no special renderType must be set.
 
 .. note::
    :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
@@ -363,7 +357,13 @@ type='inline' has (currently) only one render definition, no special renderType 
 
 .. _columns-inline-properties:
 
+Properties
+==========
+
 .. _columns-inline-properties-type:
+
+.. _columns-inline-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst
 
 .. _columns-inline-properties-appearance:
 .. include:: ../Properties/InlineAppearance.rst
@@ -373,7 +373,7 @@ type='inline' has (currently) only one render definition, no special renderType 
 
 .. _columns-inline-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 .. include:: ../Behaviour/InlineDisableMovingChildrenWithParent.rst
 .. include:: ../Behaviour/InlineEnableCascadingDelete.rst
 .. include:: ../Behaviour/InlineLocalizeChildrenAtParentLocalization.rst

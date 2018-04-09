@@ -154,10 +154,9 @@ use the content of a specific field in there as my data structure".
 
 .. _columns-flex-properties:
 
-renderType default
-==================
+Properties
+==========
 
-type='flex' has (currently) only one render definition, no special renderType must be set.
 
 There can be multiple data structures defined in `TCA` and it depends on the
 configuration and the record which one is chosen. All the different "ds" properties
@@ -172,9 +171,12 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
 
 .. _columns-flex-properties-type:
 
+.. _columns-flex-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst
+
 .. _columns-flex-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. _columns-flex-properties-ds:
 .. include:: ../Properties/FlexDs.rst

@@ -1,3 +1,6 @@
+.. this file could be removed, but right now there are search results for it
+.. there will be a general solution for broken links, so we leave it for now. (Sybille/2018-04-10)
+
 allowLanguageSynchronization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -16,3 +19,20 @@ allowLanguageSynchronization
     The state of this is stored in a json encoded array in the database table called :code:`l10n_state`. It tells
     the DataHandler which fields of the localization records should be kept in sync if the underlying default or
     source record changes.
+
+
+.. include:: CommonAllowLanguageSynchronization.rst
+
+Example:
+
+.. code-block:: php
+
+   COLUMN => [
+      'config' => [
+         'type' => TYPE,
+         'behaviour' => [
+            'allowLanguageSynchronization' = true,
+         ]
+      ]
+   ]
+

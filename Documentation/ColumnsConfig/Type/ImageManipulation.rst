@@ -41,17 +41,20 @@ Examples
     ],
 
 
-.. _columns-imageManipulation-renderType-default:
+.. _columns-imageManipulation-properties:
 
-renderType default
-==================
+Properties
+==========
+
+.. _columns-imageManipulation-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst
 
 .. _columns-imageManipulation-properties-allowedExtensions:
 .. include:: ../Properties/ImageManipulationAllowedExtensions.rst
 
 .. _columns-imageManipulation-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. _columns-imageManipulation-properties-cropVariants:
 .. include:: ../Properties/ImageManipulationCropVariants.rst

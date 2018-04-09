@@ -167,14 +167,20 @@ This normal workhorse input element is used if no renderType is set and no speci
 
 .. _columns-input-properties:
 
+Properties
+==========
+
 .. _columns-input-properties-type:
+
+.. _columns-input-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst
 
 .. _columns-input-properties-autocomplete:
 .. include:: ../Properties/InputAutocomplete.rst
 
 .. _columns-input-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. _columns-input-properties-default:
 .. include:: ../Properties/CommonDefault.rst
@@ -236,7 +242,7 @@ An input field with a JavaScript color picker.
 .. include:: ../Properties/InputAutocomplete.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/CommonDefault.rst
 
@@ -287,7 +293,7 @@ Renders an input field with date or time pickers.
 .. include:: ../Properties/InputDbType.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/CommonDefault.rst
 
@@ -333,7 +339,7 @@ An input field used to handle links and mail addresses in the backend.
 .. include:: ../Properties/InputAutocomplete.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/CommonDefault.rst
 
@@ -391,7 +397,7 @@ side on save. This can increase security if the backend is not HTTPS enabled, to
 .. include:: ../Properties/InputAutocomplete.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/CommonDefault.rst
 

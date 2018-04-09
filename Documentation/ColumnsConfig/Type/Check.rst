@@ -97,19 +97,20 @@ Examples
         ],
     ],
 
-
-renderType default
-==================
-
-type='check' has (currently) only one render definition, no special renderType must be set.
-
 .. _columns-check-properties:
+
+Properties
+==========
 
 .. _columns-check-properties-type:
 
+
+.. _columns-check-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst
+
 .. _columns-check-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. _columns-check-properties-cols:
 .. include:: ../Properties/CheckCols.rst

@@ -206,17 +206,16 @@ Examples
 
 .. _columns-select-rendertype-selectSingle:
 
-renderType = 'selectSingle'
-===========================
-
-This renderType creates a drop-down box with items to select a single value. Only if
-:ref:`size <columns-select-properties-size>` is set to a value greater than one, a box is rendered containing
-all selectable elements from which one can be chosen.
-
 
 .. _columns-select-properties:
 
+Properties
+==========
+
 .. _columns-select-properties-type:
+
+.. _columns-select-properties-render-type:
+.. include:: ../Properties/SelectRenderType.rst
 
 .. _columns-select-properties-allownonidvalues:
 .. include:: ../Properties/SelectAllowNonIdValues.rst
@@ -229,7 +228,7 @@ all selectable elements from which one can be chosen.
 
 .. _columns-select-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. _columns-select-properties-default:
 .. include:: ../Properties/SelectDefault.rst
@@ -340,7 +339,7 @@ Renders a select field to select multiple entries from a given list.
 .. include:: ../Properties/CommonAutoSizeMax.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/SelectDefault.rst
 
@@ -422,7 +421,7 @@ Render the list of values as single check box rows in a table. Multiple items ca
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/SelectDefault.rst
 
@@ -504,7 +503,7 @@ Two select fields, items can be selected from the right field, selected items ar
 .. include:: ../Properties/CommonAutoSizeMax.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/SelectDefault.rst
 
@@ -598,7 +597,7 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/SelectDefault.rst
 
