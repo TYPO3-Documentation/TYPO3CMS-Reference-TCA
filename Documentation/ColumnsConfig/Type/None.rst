@@ -47,7 +47,13 @@ type='none' has (currently) only one render definition, no special renderType mu
 
 .. _columns-none-properties:
 
+Properties
+==========
+
 .. _columns-none-properties-type:
+
+.. _columns-none-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst
 
 .. _columns-none-properties-cols:
 .. include:: ../Properties/NoneCols.rst

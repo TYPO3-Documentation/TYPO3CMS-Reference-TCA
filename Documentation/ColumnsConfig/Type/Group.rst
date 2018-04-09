@@ -82,16 +82,16 @@ Examples
     ],
 
 
-.. _columns-group-renderType-default:
-
-renderType default
-==================
-
-type='group' has (currently) only one render definition, no special renderType must be set.
 
 .. _columns-group-properties:
 
+Properties
+==========
+
 .. _columns-group-properties-type:
+
+.. _columns-group-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst
 
 .. _columns-group-properties-allowed:
 .. include:: ../Properties/GroupAllowed.rst
@@ -104,7 +104,7 @@ type='group' has (currently) only one render definition, no special renderType m
 
 .. _columns-group-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. _columns-group-properties-default:
 .. include:: ../Properties/CommonDefault.rst
