@@ -104,7 +104,7 @@ Properties
 
 .. _columns-group-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-group-properties-default:
 .. include:: ../Properties/CommonDefault.rst

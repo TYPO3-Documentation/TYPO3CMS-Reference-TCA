@@ -373,7 +373,7 @@ Properties
 
 .. _columns-inline-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 .. include:: ../Behaviour/InlineDisableMovingChildrenWithParent.rst
 .. include:: ../Behaviour/InlineEnableCascadingDelete.rst
 .. include:: ../Behaviour/InlineLocalizeChildrenAtParentLocalization.rst

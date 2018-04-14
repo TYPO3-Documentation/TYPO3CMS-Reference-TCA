@@ -180,7 +180,7 @@ Properties
 
 .. _columns-input-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-input-properties-default:
 .. include:: ../Properties/CommonDefault.rst
@@ -242,7 +242,7 @@ An input field with a JavaScript color picker.
 .. include:: ../Properties/InputAutocomplete.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. include:: ../Properties/CommonDefault.rst
 
@@ -293,7 +293,7 @@ Renders an input field with date or time pickers.
 .. include:: ../Properties/InputDbType.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. include:: ../Properties/CommonDefault.rst
 
@@ -339,7 +339,7 @@ An input field used to handle links and mail addresses in the backend.
 .. include:: ../Properties/InputAutocomplete.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. include:: ../Properties/CommonDefault.rst
 
@@ -397,7 +397,7 @@ side on save. This can increase security if the backend is not HTTPS enabled, to
 .. include:: ../Properties/InputAutocomplete.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. include:: ../Properties/CommonDefault.rst
 

@@ -176,7 +176,7 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
 
 .. _columns-flex-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-flex-properties-ds:
 .. include:: ../Properties/FlexDs.rst

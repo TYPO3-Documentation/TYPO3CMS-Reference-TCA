@@ -21,7 +21,7 @@ allowLanguageSynchronization
     source record changes.
 
 
-.. include:: CommonAllowLanguageSynchronization.rst
+.. include:: CommonAllowLanguageSynchronization.txt
 
 Example:
 

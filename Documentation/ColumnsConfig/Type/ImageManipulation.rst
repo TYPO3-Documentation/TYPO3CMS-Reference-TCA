@@ -54,7 +54,7 @@ Properties
 
 .. _columns-imageManipulation-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-imageManipulation-properties-cropVariants:
 .. include:: ../Properties/ImageManipulationCropVariants.rst

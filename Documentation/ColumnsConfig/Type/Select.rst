@@ -228,7 +228,7 @@ Properties
 
 .. _columns-select-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-select-properties-default:
 .. include:: ../Properties/SelectDefault.rst
@@ -339,7 +339,7 @@ Renders a select field to select multiple entries from a given list.
 .. include:: ../Properties/CommonAutoSizeMax.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. include:: ../Properties/SelectDefault.rst
 
@@ -421,7 +421,7 @@ Render the list of values as single check box rows in a table. Multiple items ca
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. include:: ../Properties/SelectDefault.rst
 
@@ -503,7 +503,7 @@ Two select fields, items can be selected from the right field, selected items ar
 .. include:: ../Properties/CommonAutoSizeMax.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. include:: ../Properties/SelectDefault.rst
 
@@ -597,7 +597,7 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/SelectAuthModeEnforce.rst
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. include:: ../Properties/SelectDefault.rst
 
