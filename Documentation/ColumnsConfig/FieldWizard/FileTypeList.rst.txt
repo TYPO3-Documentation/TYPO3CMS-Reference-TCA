@@ -1,0 +1,14 @@
+fileTypeList
+^^^^^^^^^^^^
+
+:aspect:`Datatype`
+    array
+
+:aspect:`Scope`
+    fieldWizard
+
+:aspect:`Description`
+    **Only with internal\_type='file'**
+
+    Render a list of allowed file extensions. Enabled by default with `type='group'` and
+    `internal_type='file'`.
