@@ -44,7 +44,7 @@ Properties
 .. _columns-passthrough-properties-type:
 
 .. _columns-passthrough-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-passthrough-properties-default:
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
