@@ -40,18 +40,20 @@ Examples
     ],
 
 
-renderType default
-==================
-
-type='radio' has (currently) only one render definition, no special renderType must be set.
 
 .. _columns-radio-properties:
 
+Properties
+==========
+
 .. _columns-radio-properties-type:
+
+.. _columns-radio-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst
 
 .. _columns-radio-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. _columns-radio-properties-default:
 .. include:: ../Properties/CommonDefault.rst

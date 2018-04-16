@@ -118,11 +118,14 @@ if both enabled in configuration and enabled for the user.
 
 .. _columns-text-properties:
 
+Properties
+==========
+
 .. _columns-text-properties-type:
 
 .. _columns-text-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. _columns-text-properties-cols:
 .. include:: ../Properties/TextCols.rst
@@ -214,7 +217,7 @@ also auto-complete suggestions. Beyond that the "t3editor" extension makes it po
 to textarea fields, for several languages.
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/CommonDefault.rst
 
@@ -246,7 +249,7 @@ The :code:`renderType = 'textTable'` triggers a view to manage frontend table di
 It is used for the "Table" tt\_content content element.
 
 .. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
 
 .. include:: ../Properties/TextCols.rst
 
