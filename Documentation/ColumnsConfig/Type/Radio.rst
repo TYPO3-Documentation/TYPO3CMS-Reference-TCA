@@ -40,36 +40,38 @@ Examples
     ],
 
 
-renderType default
-==================
-
-type='radio' has (currently) only one render definition, no special renderType must be set.
 
 .. _columns-radio-properties:
 
+Properties
+==========
+
 .. _columns-radio-properties-type:
 
+.. _columns-radio-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
+
 .. _columns-radio-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-radio-properties-default:
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
 .. _columns-radio-properties-fieldInformation:
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-radio-properties-fieldWizard:
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-radio-properties-items:
-.. include:: ../Properties/RadioItems.rst
+.. include:: ../Properties/RadioItems.rst.txt
 
 .. _columns-radio-properties-itemsprocfunc:
-.. include:: ../Properties/CommonItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
 
 .. _columns-radio-properties-readOnly:
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt

@@ -167,63 +167,69 @@ This normal workhorse input element is used if no renderType is set and no speci
 
 .. _columns-input-properties:
 
+Properties
+==========
+
 .. _columns-input-properties-type:
 
+.. _columns-input-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
+
 .. _columns-input-properties-autocomplete:
-.. include:: ../Properties/InputAutocomplete.rst
+.. include:: ../Properties/InputAutocomplete.rst.txt
 
 .. _columns-input-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-input-properties-default:
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
 .. _columns-input-properties-eval:
-.. include:: ../Properties/InputEval.rst
+.. include:: ../Properties/InputEval.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
 .. _columns-input-properties-fieldWizard-localizationStateSelector:
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-input-properties-is-in:
-.. include:: ../Properties/InputIsIn.rst
+.. include:: ../Properties/InputIsIn.rst.txt
 
 .. _columns-input-properties-max:
-.. include:: ../Properties/InputMax.rst
+.. include:: ../Properties/InputMax.rst.txt
 
 .. _columns-input-properties-mode:
-.. include:: ../Properties/CommonMode.rst
+.. include:: ../Properties/CommonMode.rst.txt
 
 .. _columns-input-properties-placeholder:
-.. include:: ../Properties/CommonPlaceholder.rst
+.. include:: ../Properties/CommonPlaceholder.rst.txt
 
 .. _columns-input-properties-range:
-.. include:: ../Properties/InputRange.rst
+.. include:: ../Properties/InputRange.rst.txt
 
 .. _columns-input-properties-readOnly:
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
 .. _columns-input-properties-search:
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
 .. _columns-input-properties-size:
-.. include:: ../Properties/InputSize.rst
+.. include:: ../Properties/InputSize.rst.txt
 
 .. _columns-input-properties-slider:
-.. include:: ../Properties/InputSlider.rst
+.. include:: ../Properties/InputSlider.rst.txt
 
 .. _columns-input-properties-softref:
-.. include:: ../Properties/CommonSoftref.rst
+.. include:: ../Properties/CommonSoftref.rst.txt
 
 .. _columns-input-properties-valuePicker:
-.. include:: ../Properties/InputValuePicker.rst
+.. include:: ../Properties/InputValuePicker.rst.txt
 
 
 .. _columns-input-renderType-colorpicker:
@@ -233,44 +239,44 @@ renderType = 'colorpicker'
 
 An input field with a JavaScript color picker.
 
-.. include:: ../Properties/InputAutocomplete.rst
+.. include:: ../Properties/InputAutocomplete.rst.txt
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
-.. include:: ../Properties/InputEval.rst
+.. include:: ../Properties/InputEval.rst.txt
 
 .. note::
     A lot of the default :php:`eval` properties do not make much sense in the colorpicker. Choose with care.
 
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
-.. include:: ../Properties/InputIsIn.rst
+.. include:: ../Properties/InputIsIn.rst.txt
 
-.. include:: ../Properties/InputMax.rst
+.. include:: ../Properties/InputMax.rst.txt
 
-.. include:: ../Properties/CommonMode.rst
+.. include:: ../Properties/CommonMode.rst.txt
 
-.. include:: ../Properties/CommonPlaceholder.rst
+.. include:: ../Properties/CommonPlaceholder.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
-.. include:: ../Properties/InputSize.rst
+.. include:: ../Properties/InputSize.rst.txt
 
-.. include:: ../Properties/CommonSoftref.rst
+.. include:: ../Properties/CommonSoftref.rst.txt
 
-.. include:: ../Properties/InputValuePicker.rst
+.. include:: ../Properties/InputValuePicker.rst.txt
 
 .. note::
     The colorpicker ignores `mode` setting of the valuePicker, new values from the select box always substitute an existing one.
@@ -284,43 +290,43 @@ renderType = 'inputDateTime'
 Renders an input field with date or time pickers.
 
 .. _columns-input-properties-dbtype:
-.. include:: ../Properties/InputDbType.rst
+.. include:: ../Properties/InputDbType.rst.txt
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
 .. _columns-input-properties-disableAgeDisplay:
-.. include:: ../Properties/InputDisableAgeDisplay.rst
+.. include:: ../Properties/InputDisableAgeDisplay.rst.txt
 
-.. include:: ../Properties/InputEvalInputDateTime.rst
+.. include:: ../Properties/InputEvalInputDateTime.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-input-properties-format:
-.. include:: ../Properties/InputFormat.rst
+.. include:: ../Properties/InputFormat.rst.txt
 
-.. include:: ../Properties/CommonMode.rst
+.. include:: ../Properties/CommonMode.rst.txt
 
-.. include:: ../Properties/CommonPlaceholder.rst
+.. include:: ../Properties/CommonPlaceholder.rst.txt
 
-.. include:: ../Properties/InputRange.rst
+.. include:: ../Properties/InputRange.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
-.. include:: ../Properties/InputSize.rst
+.. include:: ../Properties/InputSize.rst.txt
 
-.. include:: ../Properties/CommonSoftref.rst
+.. include:: ../Properties/CommonSoftref.rst.txt
 
 
 .. _columns-input-renderType-inputLink:
@@ -330,46 +336,46 @@ renderType = 'inputLink'
 
 An input field used to handle links and mail addresses in the backend.
 
-.. include:: ../Properties/InputAutocomplete.rst
+.. include:: ../Properties/InputAutocomplete.rst.txt
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
-.. include:: ../Properties/InputEval.rst
+.. include:: ../Properties/InputEval.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
-.. include:: ../FieldControl/LinkPopup.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
+.. include:: ../FieldControl/LinkPopup.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
-.. include:: ../Properties/InputIsIn.rst
+.. include:: ../Properties/InputIsIn.rst.txt
 
-.. include:: ../Properties/InputMax.rst
+.. include:: ../Properties/InputMax.rst.txt
 
-.. include:: ../Properties/CommonMode.rst
+.. include:: ../Properties/CommonMode.rst.txt
 
-.. include:: ../Properties/CommonPlaceholder.rst
+.. include:: ../Properties/CommonPlaceholder.rst.txt
 
-.. include:: ../Properties/InputRange.rst
+.. include:: ../Properties/InputRange.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
-.. include:: ../Properties/InputSize.rst
+.. include:: ../Properties/InputSize.rst.txt
 
-.. include:: ../Properties/InputSlider.rst
+.. include:: ../Properties/InputSlider.rst.txt
 
-.. include:: ../Properties/CommonSoftref.rst
+.. include:: ../Properties/CommonSoftref.rst.txt
 
-.. include:: ../Properties/InputValuePicker.rst
+.. include:: ../Properties/InputValuePicker.rst.txt
 
 
 .. _columns-input-renderType-rsaInput:
@@ -388,33 +394,33 @@ side on save. This can increase security if the backend is not HTTPS enabled, to
     concerned about communication security (you should!), there is no way around HTTPS. If the backend is forced to
     HTTPS, extension rsaauth can be unloaded.
 
-.. include:: ../Properties/InputAutocomplete.rst
+.. include:: ../Properties/InputAutocomplete.rst.txt
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
-.. include:: ../Properties/InputEval.rst
+.. include:: ../Properties/InputEval.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
-.. include:: ../Properties/InputIsIn.rst
+.. include:: ../Properties/InputIsIn.rst.txt
 
-.. include:: ../Properties/InputMax.rst
+.. include:: ../Properties/InputMax.rst.txt
 
-.. include:: ../Properties/InputRange.rst
+.. include:: ../Properties/InputRange.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
-.. include:: ../Properties/InputSize.rst
+.. include:: ../Properties/InputSize.rst.txt
 
-.. include:: ../Properties/CommonSoftref.rst
+.. include:: ../Properties/CommonSoftref.rst.txt

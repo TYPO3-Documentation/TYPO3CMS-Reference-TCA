@@ -110,148 +110,148 @@ A few remarks:
 .. _ctrl-reference:
 
 .. _ctrl-reference-adminonly:
-.. include:: CtrlAdminOnly.rst
+.. include:: CtrlAdminOnly.rst.txt
 
 .. _ctrl-reference-container:
-.. include:: CtrlContainer.rst
+.. include:: CtrlContainer.rst.txt
 
 .. _ctrl-reference-copyafterduplfields:
-.. include:: CtrlCopyAfterDuplFields.rst
+.. include:: CtrlCopyAfterDuplFields.rst.txt
 
 .. _ctrl-reference-crdate:
-.. include:: CtrlCrdate.rst
+.. include:: CtrlCrdate.rst.txt
 
 .. _ctrl-reference-cruser-id:
-.. include:: CtrlCruserId.rst
+.. include:: CtrlCruserId.rst.txt
 
 .. _ctrl-reference-default-sortby:
-.. include:: CtrlDefaultSortby.rst
+.. include:: CtrlDefaultSortby.rst.txt
 
 .. _ctrl-reference-delete:
-.. include:: CtrlDelete.rst
+.. include:: CtrlDelete.rst.txt
 
 .. _ctrl-reference-descriptionColumn:
-.. include:: CtrlDescriptionColumn.rst
+.. include:: CtrlDescriptionColumn.rst.txt
 
 .. _ctrl-reference-editlock:
-.. include:: CtrlEditlock.rst
+.. include:: CtrlEditlock.rst.txt
 
 .. _ctrl-reference-enablecolumns:
-.. include:: CtrlEnablecolumns.rst
+.. include:: CtrlEnablecolumns.rst.txt
 
 .. _ctrl-reference-ext-extension-key:
-.. include:: CtrlExt.rst
+.. include:: CtrlExt.rst.txt
 
 .. _ctrl-reference-formattedlabel-userfunc:
-.. include:: CtrlFormattedLabelUserFunc.rst
+.. include:: CtrlFormattedLabelUserFunc.rst.txt
 
 .. _ctrl-reference-formattedlabel-userfunc-options:
-.. include:: CtrlFormattedLabelUserFuncOptions.rst
+.. include:: CtrlFormattedLabelUserFuncOptions.rst.txt
 
 .. _ctrl-reference-groupname:
-.. include:: CtrlGroupName.rst
+.. include:: CtrlGroupName.rst.txt
 
 .. _ctrl-reference-hideatcopy:
-.. include:: CtrlHideAtCopy.rst
+.. include:: CtrlHideAtCopy.rst.txt
 
 .. _ctrl-reference-hidetable:
-.. include:: CtrlHideTable.rst
+.. include:: CtrlHideTable.rst.txt
 
 .. _ctrl-reference-iconfile:
-.. include:: CtrlIconfile.rst
+.. include:: CtrlIconfile.rst.txt
 
 .. _ctrl-reference-is-static:
-.. include:: CtrlIsStatic.rst
+.. include:: CtrlIsStatic.rst.txt
 
 .. _ctrl-reference-label:
-.. include:: CtrlLabel.rst
+.. include:: CtrlLabel.rst.txt
 
 .. _ctrl-reference-label-alt:
-.. include:: CtrlLabelAlt.rst
+.. include:: CtrlLabelAlt.rst.txt
 
 .. _ctrl-reference-label-alt-force:
-.. include:: CtrlLabelAltForce.rst
+.. include:: CtrlLabelAltForce.rst.txt
 
 .. _ctrl-reference-label-userfunc:
-.. include:: CtrlLabelUserfunc.rst
+.. include:: CtrlLabelUserfunc.rst.txt
 
 .. _ctrl-reference-label-userfunc-options:
-.. include:: CtrlLabelUserFuncOptions.rst
+.. include:: CtrlLabelUserFuncOptions.rst.txt
 
 .. _ctrl-reference-languagefield:
-.. include:: CtrlLanguageField.rst
+.. include:: CtrlLanguageField.rst.txt
 
 .. _ctrl-reference-origuid:
-.. include:: CtrlOrigUid.rst
+.. include:: CtrlOrigUid.rst.txt
 
 .. _ctrl-reference-prependatcopy:
-.. include:: CtrlPrependAtCopy.rst
+.. include:: CtrlPrependAtCopy.rst.txt
 
 .. _ctrl-reference-readonly:
-.. include:: CtrlReadOnly.rst
+.. include:: CtrlReadOnly.rst.txt
 
 .. _ctrl-reference-rootlevel:
-.. include:: CtrlRootLevel.rst
+.. include:: CtrlRootLevel.rst.txt
 
 .. _ctrl-reference-searchfields:
-.. include:: CtrlSearchFields.rst
+.. include:: CtrlSearchFields.rst.txt
 
 .. _ctrl-reference-security:
 .. _ctrl-security:
 .. _ctrl-security-ignorewebmountrestriction:
 .. _ctrl-security-ignorerootlevelrestriction:
-.. include:: CtrlSecurity.rst
+.. include:: CtrlSecurity.rst.txt
 
 .. _ctrl-reference-selicon-field:
-.. include:: CtrlSeliconField.rst
+.. include:: CtrlSeliconField.rst.txt
 
 .. _ctrl-reference-selicon-field-path:
-.. include:: CtrlSeliconFieldPath.rst
+.. include:: CtrlSeliconFieldPath.rst.txt
 
 .. _ctrl-reference-settodefaultoncopy:
-.. include:: CtrlSetToDefaultOnCopy.rst
+.. include:: CtrlSetToDefaultOnCopy.rst.txt
 
 .. _ctrl-reference-shadowcolumnsfornewplaceholders:
-.. include:: CtrlShadowColumnsForNewPlaceholders.rst
+.. include:: CtrlShadowColumnsForNewPlaceholders.rst.txt
 
 .. _ctrl-reference-shadowcolumnsformoveplaceholders:
-.. include:: CtrlShadowColumnsForMovePlaceholders.rst
+.. include:: CtrlShadowColumnsForMovePlaceholders.rst.txt
 
 .. _ctrl-reference-sortby:
-.. include:: CtrlSortby.rst
+.. include:: CtrlSortby.rst.txt
 
 .. _ctrl-reference-thumbnail:
-.. include:: CtrlThumbnail.rst
+.. include:: CtrlThumbnail.rst.txt
 
 .. _ctrl-reference-title:
-.. include:: CtrlTitle.rst
+.. include:: CtrlTitle.rst.txt
 
 .. _ctrl-reference-translationSource:
-.. include:: CtrlTranslationSource.rst
+.. include:: CtrlTranslationSource.rst.txt
 
 .. _ctrl-reference-transorigdiffsourcefield:
-.. include:: CtrlTransOrigDiffSourceField.rst
+.. include:: CtrlTransOrigDiffSourceField.rst.txt
 
 .. _ctrl-reference-transorigpointerfield:
-.. include:: CtrlTransOrigPointerField.rst
+.. include:: CtrlTransOrigPointerField.rst.txt
 
 .. _ctrl-reference-tstamp:
-.. include:: CtrlTstamp.rst
+.. include:: CtrlTstamp.rst.txt
 
 .. _ctrl-reference-type:
-.. include:: CtrlType.rst
+.. include:: CtrlType.rst.txt
 
 .. _ctrl-reference-typeicon-classes:
-.. include:: CtrlTypeiconClasses.rst
+.. include:: CtrlTypeiconClasses.rst.txt
 
 .. _ctrl-reference-typeicon-column:
-.. include:: CtrlTypeiconColumn.rst
+.. include:: CtrlTypeiconColumn.rst.txt
 
 .. _ctrl-reference-usecolumnsfordefaultvalues:
-.. include:: CtrlUseColumnsForDefaultValues.rst
+.. include:: CtrlUseColumnsForDefaultValues.rst.txt
 
 .. _ctrl-reference-versioningws:
-.. include:: CtrlVersioningWS.rst
+.. include:: CtrlVersioningWS.rst.txt
 
 .. _ctrl-reference-versioningws-alwaysallowliveedit:
-.. include:: CtrlVersioningWSAlwaysAllowLiveEdit.rst
+.. include:: CtrlVersioningWSAlwaysAllowLiveEdit.rst.txt

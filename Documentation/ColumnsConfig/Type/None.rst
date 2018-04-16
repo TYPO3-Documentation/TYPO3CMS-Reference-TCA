@@ -16,7 +16,7 @@ field having :php:`readOnly=true` set.
 
 .. caution::
 
-   With :php:`type = 'none'` the DataHandler cannot process the field since the type is unknown. 
+   With :php:`type = 'none'` the DataHandler cannot process the field since the type is unknown.
    You may use :php:`type = 'input'` with :php:`readOnly=true` instead.
 
 .. _columns-none-examples:
@@ -47,23 +47,29 @@ type='none' has (currently) only one render definition, no special renderType mu
 
 .. _columns-none-properties:
 
+Properties
+==========
+
 .. _columns-none-properties-type:
 
+.. _columns-none-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
+
 .. _columns-none-properties-cols:
-.. include:: ../Properties/NoneCols.rst
+.. include:: ../Properties/NoneCols.rst.txt
 
 .. _columns-none-properties-fieldInformation:
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-none-properties-format:
-.. include:: ../Properties/NoneFormat.rst
+.. include:: ../Properties/NoneFormat.rst.txt
 
 .. _columns-none-properties-pass-content:
-.. include:: ../Properties/NonePassContent.rst
+.. include:: ../Properties/NonePassContent.rst.txt
 
 .. _columns-none-properties-search:
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
 .. _columns-none-properties-size:
-.. include:: ../Properties/NoneSize.rst
+.. include:: ../Properties/NoneSize.rst.txt
 

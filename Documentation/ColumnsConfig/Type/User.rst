@@ -62,20 +62,22 @@ This is how the corresponding PHP method in class :php:`\Documentation\Examples\
     }
 
 
-renderType default
-==================
-
-type='check' has (currently) only one render definition, no special renderType must be set.
 
 .. _columns-user-properties:
 
+Properties
+==========
+
 .. _columns-user-properties-type:
 
+.. _columns-user-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
+
 .. _columns-user-properties-notablewrapping:
-.. include:: ../Properties/UserNoTableWrapping.rst
+.. include:: ../Properties/UserNoTableWrapping.rst.txt
 
 .. _columns-user-properties-parameters:
-.. include:: ../Properties/UserParameters.rst
+.. include:: ../Properties/UserParameters.rst.txt
 
 .. _columns-user-properties-userfunc:
-.. include:: ../Properties/UserUserFunc.rst
+.. include:: ../Properties/UserUserFunc.rst.txt

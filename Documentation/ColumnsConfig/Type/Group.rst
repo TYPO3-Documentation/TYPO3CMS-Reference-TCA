@@ -82,127 +82,127 @@ Examples
     ],
 
 
-.. _columns-group-renderType-default:
-
-renderType default
-==================
-
-type='group' has (currently) only one render definition, no special renderType must be set.
 
 .. _columns-group-properties:
 
+Properties
+==========
+
 .. _columns-group-properties-type:
 
+.. _columns-group-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
+
 .. _columns-group-properties-allowed:
-.. include:: ../Properties/GroupAllowed.rst
+.. include:: ../Properties/GroupAllowed.rst.txt
 
 .. _columns-group-properties-appearance:
-.. include:: ../Properties/GroupAppearance.rst
+.. include:: ../Properties/GroupAppearance.rst.txt
 
 .. _columns-group-properties-autosizemax:
-.. include:: ../Properties/CommonAutoSizeMax.rst
+.. include:: ../Properties/CommonAutoSizeMax.rst.txt
 
 .. _columns-group-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-group-properties-default:
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
 .. _columns-group-properties-disallowed:
-.. include:: ../Properties/GroupDisallowed.rst
+.. include:: ../Properties/GroupDisallowed.rst.txt
 
 .. _columns-group-properties-dontremaptablesoncopy:
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
 .. _columns-group-properties-fieldControl:
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 .. _columns-group-properties-elementBrowser:
-.. include:: ../FieldControl/AddRecord.rst
-.. include:: ../FieldControl/EditPopup.rst
-.. include:: ../FieldControl/ElementBrowser.rst
-.. include:: ../FieldControl/InsertClipboard.rst
-.. include:: ../FieldControl/ListModule.rst
+.. include:: ../FieldControl/AddRecord.rst.txt
+.. include:: ../FieldControl/EditPopup.rst.txt
+.. include:: ../FieldControl/ElementBrowser.rst.txt
+.. include:: ../FieldControl/InsertClipboard.rst.txt
+.. include:: ../FieldControl/ListModule.rst.txt
 
 .. _columns-group-properties-fieldInformation:
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-group-properties-fieldWizard:
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/FileThumbnails.rst
-.. include:: ../FieldWizard/FileTypeList.rst
-.. include:: ../FieldWizard/FileUpload.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/RecordsOverview.rst
-.. include:: ../FieldWizard/TableList.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/FileThumbnails.rst.txt
+.. include:: ../FieldWizard/FileTypeList.rst.txt
+.. include:: ../FieldWizard/FileUpload.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/RecordsOverview.rst.txt
+.. include:: ../FieldWizard/TableList.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-group-properties-filter:
-.. include:: ../Properties/GroupFilter.rst
+.. include:: ../Properties/GroupFilter.rst.txt
 
 .. _columns-group-properties-foreign-table:
-.. include:: ../Properties/GroupForeignTable.rst
+.. include:: ../Properties/GroupForeignTable.rst.txt
 
 .. _columns-group-properties-hideMoveIcons:
-.. include:: ../Properties/GroupHideMoveIcons.rst
+.. include:: ../Properties/GroupHideMoveIcons.rst.txt
 
 .. _columns-group-properties-hideSuggest:
-.. include:: ../Properties/GroupHideSuggest.rst
+.. include:: ../Properties/GroupHideSuggest.rst.txt
 
 .. _columns-group-properties-internal-type:
-.. include:: ../Properties/GroupInternalType.rst
+.. include:: ../Properties/GroupInternalType.rst.txt
 
 .. _columns-group-properties-localizereferencesatparentlocalization:
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
 
 .. _columns-group-properties-max-size:
-.. include:: ../Properties/GroupMaxSize.rst
+.. include:: ../Properties/GroupMaxSize.rst.txt
 
 .. _columns-group-properties-maxitems:
-.. include:: ../Properties/CommonMaxitems.rst
+.. include:: ../Properties/CommonMaxitems.rst.txt
 
 .. _columns-group-properties-minitems:
-.. include:: ../Properties/CommonMinitems.rst
+.. include:: ../Properties/CommonMinitems.rst.txt
 
 .. _columns-group-properties-mm:
-.. include:: ../Properties/CommonMm.rst
+.. include:: ../Properties/CommonMm.rst.txt
 
 .. _columns-group-properties-mm-insert-fields:
-.. include:: ../Properties/CommonMmInsertFields.rst
+.. include:: ../Properties/CommonMmInsertFields.rst.txt
 
 .. _columns-group-properties-mm-hasuidfield:
-.. include:: ../Properties/CommonMmHasUidField.rst
+.. include:: ../Properties/CommonMmHasUidField.rst.txt
 
 .. _columns-group-properties-mm-match-fields:
-.. include:: ../Properties/CommonMmMatchFields.rst
+.. include:: ../Properties/CommonMmMatchFields.rst.txt
 
 .. _columns-group-properties-mm-opposite-field:
-.. include:: ../Properties/CommonOppositeField.rst
+.. include:: ../Properties/CommonOppositeField.rst.txt
 
 .. _columns-group-properties-mm-opposite-usage:
-.. include:: ../Properties/CommonMmOppositeUsage.rst
+.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
 
 .. _columns-group-properties-mm-table-where:
-.. include:: ../Properties/CommonMmTableWhere.rst
+.. include:: ../Properties/CommonMmTableWhere.rst.txt
 
 .. _columns-group-properties-multiple:
-.. include:: ../Properties/CommonMultiple.rst
+.. include:: ../Properties/CommonMultiple.rst.txt
 
 .. _columns-group-properties-prepend-tname:
-.. include:: ../Properties/GroupPrependTname.rst
+.. include:: ../Properties/GroupPrependTname.rst.txt
 
 .. _columns-group-properties-readOnly:
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
 .. _columns-group-properties-size:
-.. include:: ../Properties/CommonSize.rst
+.. include:: ../Properties/CommonSize.rst.txt
 
 .. _columns-group-properties-suggestOptions:
-.. include:: ../Properties/GroupSuggestOptions.rst
+.. include:: ../Properties/GroupSuggestOptions.rst.txt
 
 .. _columns-group-properties-uploadfolder:
-.. include:: ../Properties/GroupUploadfolder.rst
+.. include:: ../Properties/GroupUploadfolder.rst.txt
 
 
 .. _columns-group-data:

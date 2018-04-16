@@ -154,10 +154,9 @@ use the content of a specific field in there as my data structure".
 
 .. _columns-flex-properties:
 
-renderType default
-==================
+Properties
+==========
 
-type='flex' has (currently) only one render definition, no special renderType must be set.
 
 There can be multiple data structures defined in `TCA` and it depends on the
 configuration and the record which one is chosen. All the different "ds" properties
@@ -172,24 +171,27 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
 
 .. _columns-flex-properties-type:
 
+.. _columns-flex-properties-render-type:
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
+
 .. _columns-flex-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/AllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.txt
 
 .. _columns-flex-properties-ds:
-.. include:: ../Properties/FlexDs.rst
+.. include:: ../Properties/FlexDs.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield:
-.. include:: ../Properties/FlexDsPointerField.rst
+.. include:: ../Properties/FlexDsPointerField.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield-searchparent:
-.. include:: ../Properties/FlexDsPointerFieldSearchParent.rst
+.. include:: ../Properties/FlexDsPointerFieldSearchParent.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield-searchparent-subfield:
-.. include:: ../Properties/FlexDsPointerFieldSearchParentSubField.rst
+.. include:: ../Properties/FlexDsPointerFieldSearchParentSubField.rst.txt
 
 .. _columns-flex-properties-ds-tablefield:
-.. include:: ../Properties/FlexDsTableField.rst
+.. include:: ../Properties/FlexDsTableField.rst.txt
 
 
 .. _columns-flex-facts:

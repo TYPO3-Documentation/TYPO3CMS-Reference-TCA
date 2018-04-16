@@ -149,22 +149,22 @@ And finally, type "Weird" also shows all fields, but in a different order:
 
 
 .. _types-properties-bitmask-excludelist-bits:
-.. include:: TypesBitmaskExcludelistBits.rst
+.. include:: TypesBitmaskExcludelistBits.rst.txt
 
 .. _types-properties-bitmask-value-field:
-.. include:: TypesBitmaskValueField.rst
+.. include:: TypesBitmaskValueField.rst.txt
 
 .. _types-properties-columnsOverrides:
-.. include:: TypesColumnsOverrides.rst
+.. include:: TypesColumnsOverrides.rst.txt
 
 .. _types-properties-showitem:
-.. include:: TypesShowitem.rst
+.. include:: TypesShowitem.rst.txt
 
 .. _types-properties-subtype-value-field:
-.. include:: TypesSubtypeValueField.rst
+.. include:: TypesSubtypeValueField.rst.txt
 
 .. _types-properties-subtypes-addlist:
-.. include:: TypesSubtypesAddlist.rst
+.. include:: TypesSubtypesAddlist.rst.txt
 
 .. _types-properties-subtypes-excludelist:
-.. include:: TypesSubtypesExcludelist.rst
+.. include:: TypesSubtypesExcludelist.rst.txt
