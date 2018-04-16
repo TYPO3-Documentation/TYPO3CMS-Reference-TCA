@@ -106,38 +106,38 @@ Properties
 
 
 .. _columns-check-properties-render-type:
-.. include:: ../Properties/CheckRenderType.rst
+.. include:: ../Properties/CheckRenderType.rst.txt
 
 .. _columns-check-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-check-properties-cols:
-.. include:: ../Properties/CheckCols.rst
+.. include:: ../Properties/CheckCols.rst.txt
 
 .. _columns-check-properties-default:
-.. include:: ../Properties/CheckDefault.rst
+.. include:: ../Properties/CheckDefault.rst.txt
 
 .. _columns-check-properties-eval:
-.. include:: ../Properties/CheckEval.rst
+.. include:: ../Properties/CheckEval.rst.txt
 
 .. _columns-check-properties-fieldInformation:
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-check-properties-fieldWizard:
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-check-properties-items:
-.. include:: ../Properties/CheckItems.rst
+.. include:: ../Properties/CheckItems.rst.txt
 
 .. _columns-check-properties-itemsprocfunc:
-.. include:: ../Properties/CommonItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
 
 .. _columns-check-properties-readOnly:
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
 .. _columns-check-properties-validation:
-.. include:: ../Properties/CheckValidation.rst
+.. include:: ../Properties/CheckValidation.rst.txt

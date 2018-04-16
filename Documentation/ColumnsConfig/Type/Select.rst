@@ -215,112 +215,112 @@ Properties
 .. _columns-select-properties-type:
 
 .. _columns-select-properties-render-type:
-.. include:: ../Properties/SelectRenderType.rst
+.. include:: ../Properties/SelectRenderType.rst.txt
 
 .. _columns-select-properties-allownonidvalues:
-.. include:: ../Properties/SelectAllowNonIdValues.rst
+.. include:: ../Properties/SelectAllowNonIdValues.rst.txt
 
 .. _columns-select-properties-authmode:
-.. include:: ../Properties/SelectAuthMode.rst
+.. include:: ../Properties/SelectAuthMode.rst.txt
 
 .. _columns-select-properties-authmode-enforce:
-.. include:: ../Properties/SelectAuthModeEnforce.rst
+.. include:: ../Properties/SelectAuthModeEnforce.rst.txt
 
 .. _columns-select-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-select-properties-default:
-.. include:: ../Properties/SelectDefault.rst
+.. include:: ../Properties/SelectDefault.rst.txt
 
 .. _columns-select-properties-disablenomatchingvalueelement:
-.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
 .. _columns-select-properties-dontremaptablesoncopy:
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
 .. _columns-select-properties-exclusivekeys:
-.. include:: ../Properties/SelectExclusiveKeys.rst
+.. include:: ../Properties/SelectExclusiveKeys.rst.txt
 
 .. _columns-select-properties-fieldControl:
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
 .. _columns-select-properties-fieldInformation:
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-select-properties-fieldWizard:
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
-.. include:: ../FieldWizard/SelectIcons.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
+.. include:: ../FieldWizard/SelectIcons.rst.txt
 
 .. _columns-select-properties-filefolder:
-.. include:: ../Properties/SelectFileFolder.rst
+.. include:: ../Properties/SelectFileFolder.rst.txt
 
 .. _columns-select-properties-filefolder-extlist:
-.. include:: ../Properties/SelectFileFolderExtList.rst
+.. include:: ../Properties/SelectFileFolderExtList.rst.txt
 
 .. _columns-select-properties-filefolder-recursions:
-.. include:: ../Properties/SelectFileFolderRecursions.rst
+.. include:: ../Properties/SelectFileFolderRecursions.rst.txt
 
 .. _columns-select-properties-foreign-table:
-.. include:: ../Properties/SelectForeignTable.rst
+.. include:: ../Properties/SelectForeignTable.rst.txt
 
 .. _columns-select-properties-foreign-table-prefix:
-.. include:: ../Properties/SelectForeignTablePrefix.rst
+.. include:: ../Properties/SelectForeignTablePrefix.rst.txt
 
 .. _columns-select-properties-foreign-table-where:
-.. include:: ../Properties/SelectForeignTableWhere.rst
+.. include:: ../Properties/SelectForeignTableWhere.rst.txt
 
 .. _columns-select-properties-items:
-.. include:: ../Properties/SelectItems.rst
+.. include:: ../Properties/SelectItems.rst.txt
 
 .. _columns-select-properties-itemsprocfunc:
-.. include:: ../Properties/CommonItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
 
 .. _columns-select-properties-localizereferencesatparentlocalization:
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
 
 .. _columns-select-properties-minitems:
-.. include:: ../Properties/CommonMinitems.rst
+.. include:: ../Properties/CommonMinitems.rst.txt
 
 .. _columns-select-properties-mm:
-.. include:: ../Properties/CommonMm.rst
+.. include:: ../Properties/CommonMm.rst.txt
 
 .. _columns-select-properties-mm-hasuidfield:
-.. include:: ../Properties/CommonMmHasUidField.rst
+.. include:: ../Properties/CommonMmHasUidField.rst.txt
 
 .. _columns-select-properties-mm-insert-fields:
-.. include:: ../Properties/CommonMmInsertFields.rst
+.. include:: ../Properties/CommonMmInsertFields.rst.txt
 
 .. _columns-select-properties-mm-table-where:
-.. include:: ../Properties/CommonMmTableWhere.rst
+.. include:: ../Properties/CommonMmTableWhere.rst.txt
 
 .. _columns-select-properties-mm-match-fields:
-.. include:: ../Properties/CommonMmMatchFields.rst
+.. include:: ../Properties/CommonMmMatchFields.rst.txt
 
 .. _columns-select-properties-mm-opposite-field:
-.. include:: ../Properties/CommonOppositeField.rst
+.. include:: ../Properties/CommonOppositeField.rst.txt
 
 .. _columns-select-properties-mm-opposite-usage:
 .. _columns-select-properties-mm-oppositeusage:
-.. include:: ../Properties/CommonMmOppositeUsage.rst
+.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
 
 .. _columns-select-properties-multiple:
-.. include:: ../Properties/CommonMultiple.rst
+.. include:: ../Properties/CommonMultiple.rst.txt
 
 .. _columns-select-properties-readOnly:
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
 .. _columns-select-properties-rootlevel:
-.. include:: ../Properties/SelectRootLevel.rst
+.. include:: ../Properties/SelectRootLevel.rst.txt
 
 .. _columns-select-properties-size:
-.. include:: ../Properties/CommonSize.rst
+.. include:: ../Properties/CommonSize.rst.txt
 
 .. _columns-select-properties-special:
-.. include:: ../Properties/SelectSpecial.rst
+.. include:: ../Properties/SelectSpecial.rst.txt
 
 
 .. _columns-select-rendertype-selectSingleBox:
@@ -330,81 +330,81 @@ renderType = 'selectSingleBox'
 
 Renders a select field to select multiple entries from a given list.
 
-.. include:: ../Properties/SelectAllowNonIdValues.rst
+.. include:: ../Properties/SelectAllowNonIdValues.rst.txt
 
-.. include:: ../Properties/SelectAuthMode.rst
+.. include:: ../Properties/SelectAuthMode.rst.txt
 
-.. include:: ../Properties/SelectAuthModeEnforce.rst
+.. include:: ../Properties/SelectAuthModeEnforce.rst.txt
 
-.. include:: ../Properties/CommonAutoSizeMax.rst
+.. include:: ../Properties/CommonAutoSizeMax.rst.txt
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/SelectDefault.rst
+.. include:: ../Properties/SelectDefault.rst.txt
 
-.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
-.. include:: ../Properties/SelectExclusiveKeys.rst
+.. include:: ../Properties/SelectExclusiveKeys.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
-.. include:: ../Properties/ResetSelection.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
+.. include:: ../Properties/ResetSelection.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
-.. include:: ../Properties/SelectFileFolder.rst
+.. include:: ../Properties/SelectFileFolder.rst.txt
 
-.. include:: ../Properties/SelectFileFolderExtList.rst
+.. include:: ../Properties/SelectFileFolderExtList.rst.txt
 
-.. include:: ../Properties/SelectFileFolderRecursions.rst
+.. include:: ../Properties/SelectFileFolderRecursions.rst.txt
 
-.. include:: ../Properties/SelectForeignTable.rst
+.. include:: ../Properties/SelectForeignTable.rst.txt
 
-.. include:: ../Properties/SelectForeignTablePrefix.rst
+.. include:: ../Properties/SelectForeignTablePrefix.rst.txt
 
-.. include:: ../Properties/SelectForeignTableWhere.rst
+.. include:: ../Properties/SelectForeignTableWhere.rst.txt
 
-.. include:: ../Properties/SelectItems.rst
+.. include:: ../Properties/SelectItems.rst.txt
 
-.. include:: ../Properties/CommonItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
 
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
 
 .. _columns-select-properties-maxitems:
-.. include:: ../Properties/CommonMaxitems.rst
+.. include:: ../Properties/CommonMaxitems.rst.txt
 
-.. include:: ../Properties/CommonMinitems.rst
+.. include:: ../Properties/CommonMinitems.rst.txt
 
-.. include:: ../Properties/CommonMm.rst
+.. include:: ../Properties/CommonMm.rst.txt
 
-.. include:: ../Properties/CommonMmHasUidField.rst
+.. include:: ../Properties/CommonMmHasUidField.rst.txt
 
-.. include:: ../Properties/CommonMmInsertFields.rst
+.. include:: ../Properties/CommonMmInsertFields.rst.txt
 
-.. include:: ../Properties/CommonMmTableWhere.rst
+.. include:: ../Properties/CommonMmTableWhere.rst.txt
 
-.. include:: ../Properties/CommonMmMatchFields.rst
+.. include:: ../Properties/CommonMmMatchFields.rst.txt
 
-.. include:: ../Properties/CommonOppositeField.rst
+.. include:: ../Properties/CommonOppositeField.rst.txt
 
-.. include:: ../Properties/CommonMmOppositeUsage.rst
+.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
 
-.. include:: ../Properties/CommonMultiple.rst
+.. include:: ../Properties/CommonMultiple.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/SelectRootLevel.rst
+.. include:: ../Properties/SelectRootLevel.rst.txt
 
-.. include:: ../Properties/CommonSize.rst
+.. include:: ../Properties/CommonSize.rst.txt
 
-.. include:: ../Properties/SelectSpecial.rst
+.. include:: ../Properties/SelectSpecial.rst.txt
 
 
 .. _columns-select-rendertype-selectCheckBox:
@@ -414,77 +414,77 @@ renderType = 'selectCheckBox'
 
 Render the list of values as single check box rows in a table. Multiple items can be selected.
 
-.. include:: ../Properties/SelectAllowNonIdValues.rst
+.. include:: ../Properties/SelectAllowNonIdValues.rst.txt
 
-.. include:: ../Properties/SelectAuthMode.rst
+.. include:: ../Properties/SelectAuthMode.rst.txt
 
-.. include:: ../Properties/SelectAuthModeEnforce.rst
+.. include:: ../Properties/SelectAuthModeEnforce.rst.txt
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/SelectDefault.rst
+.. include:: ../Properties/SelectDefault.rst.txt
 
-.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
-.. include:: ../Properties/SelectExclusiveKeys.rst
+.. include:: ../Properties/SelectExclusiveKeys.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
-.. include:: ../Properties/SelectFileFolder.rst
+.. include:: ../Properties/SelectFileFolder.rst.txt
 
-.. include:: ../Properties/SelectFileFolderExtList.rst
+.. include:: ../Properties/SelectFileFolderExtList.rst.txt
 
-.. include:: ../Properties/SelectFileFolderRecursions.rst
+.. include:: ../Properties/SelectFileFolderRecursions.rst.txt
 
-.. include:: ../Properties/SelectForeignTable.rst
+.. include:: ../Properties/SelectForeignTable.rst.txt
 
-.. include:: ../Properties/SelectForeignTablePrefix.rst
+.. include:: ../Properties/SelectForeignTablePrefix.rst.txt
 
-.. include:: ../Properties/SelectForeignTableWhere.rst
+.. include:: ../Properties/SelectForeignTableWhere.rst.txt
 
-.. include:: ../Properties/SelectItems.rst
+.. include:: ../Properties/SelectItems.rst.txt
 
-.. include:: ../Properties/CommonItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
 
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
 
-.. include:: ../Properties/CommonMaxitems.rst
+.. include:: ../Properties/CommonMaxitems.rst.txt
 
-.. include:: ../Properties/CommonMinitems.rst
+.. include:: ../Properties/CommonMinitems.rst.txt
 
-.. include:: ../Properties/CommonMm.rst
+.. include:: ../Properties/CommonMm.rst.txt
 
-.. include:: ../Properties/CommonMmHasUidField.rst
+.. include:: ../Properties/CommonMmHasUidField.rst.txt
 
-.. include:: ../Properties/CommonMmInsertFields.rst
+.. include:: ../Properties/CommonMmInsertFields.rst.txt
 
-.. include:: ../Properties/CommonMmTableWhere.rst
+.. include:: ../Properties/CommonMmTableWhere.rst.txt
 
-.. include:: ../Properties/CommonMmMatchFields.rst
+.. include:: ../Properties/CommonMmMatchFields.rst.txt
 
-.. include:: ../Properties/CommonOppositeField.rst
+.. include:: ../Properties/CommonOppositeField.rst.txt
 
-.. include:: ../Properties/CommonMmOppositeUsage.rst
+.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
 
-.. include:: ../Properties/CommonMultiple.rst
+.. include:: ../Properties/CommonMultiple.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/SelectRootLevel.rst
+.. include:: ../Properties/SelectRootLevel.rst.txt
 
-.. include:: ../Properties/CommonSize.rst
+.. include:: ../Properties/CommonSize.rst.txt
 
-.. include:: ../Properties/SelectSpecial.rst
+.. include:: ../Properties/SelectSpecial.rst.txt
 
 
 .. _columns-select-rendertype-selectMultipleSideBySide:
@@ -494,88 +494,88 @@ renderType = 'selectMultipleSideBySide'
 
 Two select fields, items can be selected from the right field, selected items are displayed in the left select.
 
-.. include:: ../Properties/SelectAllowNonIdValues.rst
+.. include:: ../Properties/SelectAllowNonIdValues.rst.txt
 
-.. include:: ../Properties/SelectAuthMode.rst
+.. include:: ../Properties/SelectAuthMode.rst.txt
 
-.. include:: ../Properties/SelectAuthModeEnforce.rst
+.. include:: ../Properties/SelectAuthModeEnforce.rst.txt
 
-.. include:: ../Properties/CommonAutoSizeMax.rst
+.. include:: ../Properties/CommonAutoSizeMax.rst.txt
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/SelectDefault.rst
+.. include:: ../Properties/SelectDefault.rst.txt
 
-.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
 .. _columns-select-properties-enablemultiselectfiltertextfield:
-.. include:: ../Properties/SelectEnableMultiSelectFilterTextfield.rst
+.. include:: ../Properties/SelectEnableMultiSelectFilterTextfield.rst.txt
 
-.. include:: ../Properties/SelectExclusiveKeys.rst
+.. include:: ../Properties/SelectExclusiveKeys.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
-.. include:: ../FieldControl/AddRecord.rst
-.. include:: ../FieldControl/EditPopup.rst
-.. include:: ../FieldControl/ListModule.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
+.. include:: ../FieldControl/AddRecord.rst.txt
+.. include:: ../FieldControl/EditPopup.rst.txt
+.. include:: ../FieldControl/ListModule.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
-.. include:: ../Properties/SelectFileFolder.rst
+.. include:: ../Properties/SelectFileFolder.rst.txt
 
-.. include:: ../Properties/SelectFileFolderExtList.rst
+.. include:: ../Properties/SelectFileFolderExtList.rst.txt
 
-.. include:: ../Properties/SelectFileFolderRecursions.rst
+.. include:: ../Properties/SelectFileFolderRecursions.rst.txt
 
-.. include:: ../Properties/SelectForeignTable.rst
+.. include:: ../Properties/SelectForeignTable.rst.txt
 
-.. include:: ../Properties/SelectForeignTablePrefix.rst
+.. include:: ../Properties/SelectForeignTablePrefix.rst.txt
 
-.. include:: ../Properties/SelectForeignTableWhere.rst
+.. include:: ../Properties/SelectForeignTableWhere.rst.txt
 
-.. include:: ../Properties/SelectItems.rst
+.. include:: ../Properties/SelectItems.rst.txt
 
-.. include:: ../Properties/CommonItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
 
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
 
-.. include:: ../Properties/CommonMaxitems.rst
+.. include:: ../Properties/CommonMaxitems.rst.txt
 
-.. include:: ../Properties/CommonMinitems.rst
+.. include:: ../Properties/CommonMinitems.rst.txt
 
-.. include:: ../Properties/CommonMm.rst
+.. include:: ../Properties/CommonMm.rst.txt
 
-.. include:: ../Properties/CommonMmHasUidField.rst
+.. include:: ../Properties/CommonMmHasUidField.rst.txt
 
-.. include:: ../Properties/CommonMmInsertFields.rst
+.. include:: ../Properties/CommonMmInsertFields.rst.txt
 
-.. include:: ../Properties/CommonMmTableWhere.rst
+.. include:: ../Properties/CommonMmTableWhere.rst.txt
 
-.. include:: ../Properties/CommonMmMatchFields.rst
+.. include:: ../Properties/CommonMmMatchFields.rst.txt
 
-.. include:: ../Properties/CommonOppositeField.rst
+.. include:: ../Properties/CommonOppositeField.rst.txt
 
-.. include:: ../Properties/CommonMmOppositeUsage.rst
+.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
 
-.. include:: ../Properties/CommonMultiple.rst
+.. include:: ../Properties/CommonMultiple.rst.txt
 
 .. _columns-select-properties-multiselectfilteritems:
-.. include:: ../Properties/SelectMultiSelectFilterItems.rst
+.. include:: ../Properties/SelectMultiSelectFilterItems.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/SelectRootLevel.rst
+.. include:: ../Properties/SelectRootLevel.rst.txt
 
-.. include:: ../Properties/CommonSize.rst
+.. include:: ../Properties/CommonSize.rst.txt
 
-.. include:: ../Properties/SelectSpecial.rst
+.. include:: ../Properties/SelectSpecial.rst.txt
 
 
 .. _columns-select-rendertype-selectTree:
@@ -590,72 +590,72 @@ A tree for selecting hierarchical data items.
     properties like MM are not valid.
 
 
-.. include:: ../Properties/SelectAllowNonIdValues.rst
+.. include:: ../Properties/SelectAllowNonIdValues.rst.txt
 
-.. include:: ../Properties/SelectAuthMode.rst
+.. include:: ../Properties/SelectAuthMode.rst.txt
 
-.. include:: ../Properties/SelectAuthModeEnforce.rst
+.. include:: ../Properties/SelectAuthModeEnforce.rst.txt
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/SelectDefault.rst
+.. include:: ../Properties/SelectDefault.rst.txt
 
-.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst
+.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst
+.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
-.. include:: ../Properties/SelectExclusiveKeys.rst
+.. include:: ../Properties/SelectExclusiveKeys.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
 
-.. include:: ../Properties/SelectFileFolder.rst
+.. include:: ../Properties/SelectFileFolder.rst.txt
 
-.. include:: ../Properties/SelectFileFolderExtList.rst
+.. include:: ../Properties/SelectFileFolderExtList.rst.txt
 
-.. include:: ../Properties/SelectFileFolderRecursions.rst
+.. include:: ../Properties/SelectFileFolderRecursions.rst.txt
 
-.. include:: ../Properties/SelectForeignTable.rst
+.. include:: ../Properties/SelectForeignTable.rst.txt
 
-.. include:: ../Properties/SelectForeignTablePrefix.rst
+.. include:: ../Properties/SelectForeignTablePrefix.rst.txt
 
-.. include:: ../Properties/SelectForeignTableWhere.rst
+.. include:: ../Properties/SelectForeignTableWhere.rst.txt
 
-.. include:: ../Properties/SelectItems.rst
+.. include:: ../Properties/SelectItems.rst.txt
 
-.. include:: ../Properties/CommonItemsProcFunc.rst
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
 
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst
+.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
 
-.. include:: ../Properties/CommonMaxitems.rst
+.. include:: ../Properties/CommonMaxitems.rst.txt
 
-.. include:: ../Properties/CommonMinitems.rst
+.. include:: ../Properties/CommonMinitems.rst.txt
 
-.. include:: ../Properties/CommonMm.rst
+.. include:: ../Properties/CommonMm.rst.txt
 
-.. include:: ../Properties/CommonMmHasUidField.rst
+.. include:: ../Properties/CommonMmHasUidField.rst.txt
 
-.. include:: ../Properties/CommonMmInsertFields.rst
+.. include:: ../Properties/CommonMmInsertFields.rst.txt
 
-.. include:: ../Properties/CommonMmTableWhere.rst
+.. include:: ../Properties/CommonMmTableWhere.rst.txt
 
-.. include:: ../Properties/CommonMmMatchFields.rst
+.. include:: ../Properties/CommonMmMatchFields.rst.txt
 
-.. include:: ../Properties/CommonOppositeField.rst
+.. include:: ../Properties/CommonOppositeField.rst.txt
 
-.. include:: ../Properties/CommonMmOppositeUsage.rst
+.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
 
-.. include:: ../Properties/CommonMultiple.rst
+.. include:: ../Properties/CommonMultiple.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/SelectRootLevel.rst
+.. include:: ../Properties/SelectRootLevel.rst.txt
 
-.. include:: ../Properties/CommonSize.rst
+.. include:: ../Properties/CommonSize.rst.txt
 
 .. _columns-select-properties-treeconfig:
-.. include:: ../Properties/SelectTreeConfig.rst
+.. include:: ../Properties/SelectTreeConfig.rst.txt

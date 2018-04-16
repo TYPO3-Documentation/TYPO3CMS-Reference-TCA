@@ -118,22 +118,22 @@ with slider, a select drop-down for images, an inline relation spanning multiple
 .. _columns-properties:
 
 .. _columns-properties-config:
-.. include:: ColumnsConfig.rst
+.. include:: ColumnsConfig.rst.txt
 
 .. _columns-properties-displaycond:
-.. include:: ColumnsDisplayCond.rst
+.. include:: ColumnsDisplayCond.rst.txt
 
 .. _columns-properties-exclude:
-.. include:: ColumnsExclude.rst
+.. include:: ColumnsExclude.rst.txt
 
 .. _columns-properties-label:
-.. include:: ColumnsLabel.rst
+.. include:: ColumnsLabel.rst.txt
 
 .. _columns-properties-l10n-display:
-.. include:: ColumnsL10nDisplay.rst
+.. include:: ColumnsL10nDisplay.rst.txt
 
 .. _columns-properties-l10n-mode:
-.. include:: ColumnsL10nMode.rst
+.. include:: ColumnsL10nMode.rst.txt
 
 .. _columns-properties-onChange:
-.. include:: ColumnsOnChange.rst
+.. include:: ColumnsOnChange.rst.txt

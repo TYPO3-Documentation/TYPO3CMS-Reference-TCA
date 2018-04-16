@@ -47,32 +47,32 @@ Properties
 ==========
 
 .. _columns-imageManipulation-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-imageManipulation-properties-allowedExtensions:
-.. include:: ../Properties/ImageManipulationAllowedExtensions.rst
+.. include:: ../Properties/ImageManipulationAllowedExtensions.rst.txt
 
 .. _columns-imageManipulation-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-imageManipulation-properties-cropVariants:
-.. include:: ../Properties/ImageManipulationCropVariants.rst
+.. include:: ../Properties/ImageManipulationCropVariants.rst.txt
 
 .. _columns-imageManipulation-properties-fieldControl:
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
 .. _columns-imageManipulation-properties-fieldInformation:
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-imageManipulation-properties-fieldWizard:
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-imageManipulation-properties-fileField:
-.. include:: ../Properties/ImageManipulationFileField.rst
+.. include:: ../Properties/ImageManipulationFileField.rst.txt
 
 .. _columns-imageManipulation-properties-readOnly:
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt

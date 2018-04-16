@@ -172,26 +172,26 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
 .. _columns-flex-properties-type:
 
 .. _columns-flex-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-flex-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-flex-properties-ds:
-.. include:: ../Properties/FlexDs.rst
+.. include:: ../Properties/FlexDs.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield:
-.. include:: ../Properties/FlexDsPointerField.rst
+.. include:: ../Properties/FlexDsPointerField.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield-searchparent:
-.. include:: ../Properties/FlexDsPointerFieldSearchParent.rst
+.. include:: ../Properties/FlexDsPointerFieldSearchParent.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield-searchparent-subfield:
-.. include:: ../Properties/FlexDsPointerFieldSearchParentSubField.rst
+.. include:: ../Properties/FlexDsPointerFieldSearchParentSubField.rst.txt
 
 .. _columns-flex-properties-ds-tablefield:
-.. include:: ../Properties/FlexDsTableField.rst
+.. include:: ../Properties/FlexDsTableField.rst.txt
 
 
 .. _columns-flex-facts:

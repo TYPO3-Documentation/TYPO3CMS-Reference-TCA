@@ -85,10 +85,10 @@ Example::
 .. _palettes-properties:
 
 .. _palettes-properties-ishiddenpalette:
-.. include:: PalettesIsHiddenPalette.rst
+.. include:: PalettesIsHiddenPalette.rst.txt
 
 .. _palettes-properties-showitem:
 .. _palettes-linebreaks:
 .. _palettes-linebreaks-examples:
-.. include:: PalettesShowitem.rst
+.. include:: PalettesShowitem.rst.txt
 

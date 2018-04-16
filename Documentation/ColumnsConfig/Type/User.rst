@@ -71,13 +71,13 @@ Properties
 .. _columns-user-properties-type:
 
 .. _columns-user-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-user-properties-notablewrapping:
-.. include:: ../Properties/UserNoTableWrapping.rst
+.. include:: ../Properties/UserNoTableWrapping.rst.txt
 
 .. _columns-user-properties-parameters:
-.. include:: ../Properties/UserParameters.rst
+.. include:: ../Properties/UserParameters.rst.txt
 
 .. _columns-user-properties-userfunc:
-.. include:: ../Properties/UserUserFunc.rst
+.. include:: ../Properties/UserUserFunc.rst.txt

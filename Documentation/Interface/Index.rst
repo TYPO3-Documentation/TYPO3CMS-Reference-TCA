@@ -34,10 +34,10 @@ This is how the "pages" table is configured for these settings:
 .. _interface-properties:
 
 .. _interface-properties-maxdblistitems:
-.. include:: InterfaceMaxDbListItems.rst
+.. include:: InterfaceMaxDbListItems.rst.txt
 
 .. _interface-properties-maxsingledblistitems:
-.. include:: InterfaceMaxSingleDbListItems.rst
+.. include:: InterfaceMaxSingleDbListItems.rst.txt
 
 .. _interface-properties-showrecordfieldlist:
-.. include:: InterfaceShowRecordFieldList.rst
+.. include:: InterfaceShowRecordFieldList.rst.txt

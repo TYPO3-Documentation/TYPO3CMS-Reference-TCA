@@ -360,76 +360,76 @@ Properties
 .. _columns-inline-properties-type:
 
 .. _columns-inline-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst
+.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-inline-properties-appearance:
-.. include:: ../Properties/InlineAppearance.rst
+.. include:: ../Properties/InlineAppearance.rst.txt
 
 .. _columns-inline-properties-autosizemax:
-.. include:: ../Properties/InlineAutoSizeMax.rst
+.. include:: ../Properties/InlineAutoSizeMax.rst.txt
 
 .. _columns-inline-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
-.. include:: ../Behaviour/InlineDisableMovingChildrenWithParent.rst
-.. include:: ../Behaviour/InlineEnableCascadingDelete.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
+.. include:: ../Behaviour/InlineDisableMovingChildrenWithParent.rst.txt
+.. include:: ../Behaviour/InlineEnableCascadingDelete.rst.txt
 
 .. _columns-inline-properties-customcontrols:
-.. include:: ../Properties/InlineCustomControls.rst
+.. include:: ../Properties/InlineCustomControls.rst.txt
 
 .. _columns-inline-properties-filter:
-.. include:: ../Properties/InlineFilter.rst
+.. include:: ../Properties/InlineFilter.rst.txt
 
 .. _columns-inline-properties-foreign-default-sortby:
-.. include:: ../Properties/InlineForeignDefaultSortby.rst
+.. include:: ../Properties/InlineForeignDefaultSortby.rst.txt
 
 .. _columns-inline-properties-foreign-field:
-.. include:: ../Properties/InlineForeignField.rst
+.. include:: ../Properties/InlineForeignField.rst.txt
 
 .. _columns-inline-properties-foreign-label:
-.. include:: ../Properties/InlineForeignLabel.rst
+.. include:: ../Properties/InlineForeignLabel.rst.txt
 
 .. _columns-inline-properties-foreign-match-fields:
-.. include:: ../Properties/InlineForeignMatchFields.rst
+.. include:: ../Properties/InlineForeignMatchFields.rst.txt
 
 .. _columns-inline-properties-foreign-selector:
-.. include:: ../Properties/InlineForeignSelector.rst
+.. include:: ../Properties/InlineForeignSelector.rst.txt
 
 .. _columns-inline-properties-foreign-sortby:
-.. include:: ../Properties/InlinePropertiesForeignSortby.rst
+.. include:: ../Properties/InlinePropertiesForeignSortby.rst.txt
 
 .. _columns-inline-properties-foreign-table:
-.. include:: ../Properties/InlineForeignTable.rst
+.. include:: ../Properties/InlineForeignTable.rst.txt
 
 .. _columns-inline-properties-foreign-table-field:
-.. include:: ../Properties/InlineForeignTableField.rst
+.. include:: ../Properties/InlineForeignTableField.rst.txt
 
 .. _columns-inline-properties-foreign-unique:
-.. include:: ../Properties/InlineForeignUnique.rst
+.. include:: ../Properties/InlineForeignUnique.rst.txt
 
 .. _columns-inline-properties-maxitems:
-.. include:: ../Properties/CommonMaxitems.rst
+.. include:: ../Properties/CommonMaxitems.rst.txt
 
 .. _columns-inline-properties-minitems:
-.. include:: ../Properties/CommonMinitems.rst
+.. include:: ../Properties/CommonMinitems.rst.txt
 
 .. _columns-inline-properties-mm:
-.. include:: ../Properties/InlineMm.rst
+.. include:: ../Properties/InlineMm.rst.txt
 
 .. _columns-inline-properties-mm-match-fields:
-.. include:: ../Properties/CommonMmMatchFields.rst
+.. include:: ../Properties/CommonMmMatchFields.rst.txt
 
 .. _columns-inline-properties-overrideChildTca:
-.. include:: ../Properties/InlineOverrideChildTCa.rst
+.. include:: ../Properties/InlineOverrideChildTCa.rst.txt
 
 .. _columns-inline-properties-size:
-.. include:: ../Properties/InlineSize.rst
+.. include:: ../Properties/InlineSize.rst.txt
 
 .. _columns-inline-properties-symmetric-field:
-.. include:: ../Properties/InlineSymmetricField.rst
+.. include:: ../Properties/InlineSymmetricField.rst.txt
 
 .. _columns-inline-properties-symmetric-label:
-.. include:: ../Properties/InlineSymmetricLabel.rst
+.. include:: ../Properties/InlineSymmetricLabel.rst.txt
 
 .. _columns-inline-properties-symmetric-sortby:
-.. include:: ../Properties/InlineSymmetricSortby.rst
+.. include:: ../Properties/InlineSymmetricSortby.rst.txt

@@ -124,68 +124,68 @@ Properties
 .. _columns-text-properties-type:
 
 .. _columns-text-properties-behaviour:
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-text-properties-cols:
-.. include:: ../Properties/TextCols.rst
+.. include:: ../Properties/TextCols.rst.txt
 
 .. _columns-text-properties-default:
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
 .. _columns-text-properties-enableRichtext:
-.. include:: ../Properties/TextEnableRichtext.rst
+.. include:: ../Properties/TextEnableRichtext.rst.txt
 
 .. _columns-text-properties-enableTabulator:
-.. include:: ../Properties/TextEnableTabulator.rst
+.. include:: ../Properties/TextEnableTabulator.rst.txt
 
 .. _columns-text-properties-eval:
-.. include:: ../Properties/TextEval.rst
+.. include:: ../Properties/TextEval.rst.txt
 
 .. _columns-text-properties-fieldControl:
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
 .. _columns-text-properties-fieldInformation:
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-text-properties-fieldWizard:
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-text-properties-fixedFont:
-.. include:: ../Properties/TextFixedFont.rst
+.. include:: ../Properties/TextFixedFont.rst.txt
 
 .. _columns-text-properties-is-in:
-.. include:: ../Properties/TextIsIn.rst
+.. include:: ../Properties/TextIsIn.rst.txt
 
 .. _columns-text-properties-maxlength:
-.. include:: ../Properties/TextMax.rst
+.. include:: ../Properties/TextMax.rst.txt
 
 .. _columns-text-properties-mode:
-.. include:: ../Properties/CommonMode.rst
+.. include:: ../Properties/CommonMode.rst.txt
 
 .. _columns-text-properties-placeholder:
-.. include:: ../Properties/CommonPlaceholder.rst
+.. include:: ../Properties/CommonPlaceholder.rst.txt
 
 .. _columns-text-properties-readOnly:
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
 .. _columns-text-properties-richtextConfiguration:
-.. include:: ../Properties/TextRichtextConfiugration.rst
+.. include:: ../Properties/TextRichtextConfiugration.rst.txt
 
 .. _columns-text-properties-rows:
-.. include:: ../Properties/TextRows.rst
+.. include:: ../Properties/TextRows.rst.txt
 
 .. _columns-text-properties-search:
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
 .. _columns-text-properties-softref:
-.. include:: ../Properties/CommonSoftref.rst
+.. include:: ../Properties/CommonSoftref.rst.txt
 
 .. _columns-text-properties-wrap:
-.. include:: ../Properties/TextWrap.rst
+.. include:: ../Properties/TextWrap.rst.txt
 
 
 .. _columns-text-renderType-belayoutwizard:
@@ -197,11 +197,11 @@ The :code:`renderType = 'belayoutwizard'` is a special renderType to display the
 wizard when editing records of table :code:`backend_layout` in the backend. It stored a custom
 syntax representing the Web -> Page layout in the database.
 
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
 
 
 .. _columns-text-renderType-t3editor:
@@ -216,28 +216,28 @@ System extension "t3editor" provides an enhanced textarea for TypoScript input, 
 also auto-complete suggestions. Beyond that the "t3editor" extension makes it possible to add syntax highlighting
 to textarea fields, for several languages.
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-text-properties-format:
-.. include:: ../Properties/TextFormat.rst
+.. include:: ../Properties/TextFormat.rst.txt
 
-.. include:: ../Properties/TextRows.rst
+.. include:: ../Properties/TextRows.rst.txt
 
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
-.. include:: ../Properties/CommonSoftref.rst
+.. include:: ../Properties/CommonSoftref.rst.txt
 
 
 .. _columns-text-renderType-textTable:
@@ -248,39 +248,39 @@ renderType = 'textTable'
 The :code:`renderType = 'textTable'` triggers a view to manage frontend table display in the backend.
 It is used for the "Table" tt\_content content element.
 
-.. include:: ../Properties/CommonBehaviour.rst
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/TextCols.rst
+.. include:: ../Properties/TextCols.rst.txt
 
-.. include:: ../Properties/CommonDefault.rst
+.. include:: ../Properties/CommonDefault.rst.txt
 
-.. include:: ../Properties/TextEnableTabulator.rst
+.. include:: ../Properties/TextEnableTabulator.rst.txt
 
-.. include:: ../Properties/CommonFieldControl.rst
-.. include:: ../FieldControl/TableWizard.rst
+.. include:: ../Properties/CommonFieldControl.rst.txt
+.. include:: ../FieldControl/TableWizard.rst.txt
 
-.. include:: ../Properties/CommonFieldInformation.rst
+.. include:: ../Properties/CommonFieldInformation.rst.txt
 
-.. include:: ../Properties/CommonFieldWizard.rst
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst
-.. include:: ../FieldWizard/LocalizationStateSelector.rst
-.. include:: ../FieldWizard/OtherLanguageContent.rst
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
-.. include:: ../Properties/TextFixedFont.rst
+.. include:: ../Properties/TextFixedFont.rst.txt
 
-.. include:: ../Properties/TextIsIn.rst
+.. include:: ../Properties/TextIsIn.rst.txt
 
-.. include:: ../Properties/TextMax.rst
+.. include:: ../Properties/TextMax.rst.txt
 
-.. include:: ../Properties/CommonPlaceholder.rst
+.. include:: ../Properties/CommonPlaceholder.rst.txt
 
-.. include:: ../Properties/CommonReadOnly.rst
+.. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/TextRows.rst
+.. include:: ../Properties/TextRows.rst.txt
 
-.. include:: ../Properties/CommonSearch.rst
+.. include:: ../Properties/CommonSearch.rst.txt
 
-.. include:: ../Properties/CommonSoftref.rst
+.. include:: ../Properties/CommonSoftref.rst.txt
 
-.. include:: ../Properties/TextWrap.rst
+.. include:: ../Properties/TextWrap.rst.txt
