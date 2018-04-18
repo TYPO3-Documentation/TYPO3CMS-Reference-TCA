@@ -52,26 +52,28 @@ Examples
 .. code-block:: php
 
     'checkbox_2' => [
+        'exclude' => 1,
         'label' => 'checkbox_2 one checkbox with label',
         'config' => [
             'type' => 'check',
             'items' => [
-                [ 'foo', '' ],
+                ['foo', ''],
             ],
-        ],
+        ]
     ],
 
 .. code-block:: php
 
     'checkbox_12' => [
+        'exclude' => 1,
         'label' => 'checkbox_12 cols=3',
         'config' => [
             'type' => 'check',
             'items' => [
-                [ 'foo1', '' ],
-                [ 'foo2', '' ],
-                [ 'foo3', '' ],
-                [ 'foo4', '' ],
+                ['foo1', ''],
+                ['foo2', ''],
+                ['foo3', ''],
+                ['foo4', ''],
             ],
             'cols' => '3',
         ],
@@ -85,17 +87,18 @@ Examples
         'config' => [
             'type' => 'check',
             'items' => [
-                [ 'Mo', '' ],
-                [ 'Tu', '' ],
-                [ 'We', '' ],
-                [ 'Th', '' ],
-                [ 'Fr', '' ],
-                [ 'Sa', '' ],
-                [ 'Su', '' ],
+                ['Mo', ''],
+                ['Tu', ''],
+                ['We', ''],
+                ['Th', ''],
+                ['Fr', ''],
+                ['Sa', ''],
+                ['Su', ''],
             ],
             'cols' => 'inline',
         ],
     ],
+
 
 .. _columns-check-properties:
 
