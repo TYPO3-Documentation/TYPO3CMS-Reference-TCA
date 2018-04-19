@@ -36,10 +36,10 @@ Standard checkboxes
 -------------------
 
 .. figure:: ../../Images/TypeCheckStyleguide2.png
-    :alt: Simple checkbox with label (checkbox_2)
-    :class: with-shadow
+   :alt: Simple checkbox with label (checkbox_2)
+   :class: with-shadow
 
-    Simple checkbox with label (checkbox_2)
+   Simple checkbox with label (checkbox_2)
 
 .. code-block:: php
 
@@ -55,10 +55,10 @@ Standard checkboxes
    ],
 
 .. figure:: ../../Images/TypeCheckStyleguide12.png
-    :alt: Four checkboxes in three columns (checkbox_12)
-    :class: with-shadow
+   :alt: Four checkboxes in three columns (checkbox_12)
+   :class: with-shadow
 
-    Four checkboxes in three columns (checkbox_12)
+   Four checkboxes in three columns (checkbox_12)
 
 .. code-block:: php
 
@@ -78,10 +78,10 @@ Standard checkboxes
    ],
 
 .. figure:: ../../Images/TypeCheckStyleguide16.png
-    :alt: Checkboxes wit inline floating (checkbox_16)
-    :class: with-shadow
+   :alt: Checkboxes wit inline floating (checkbox_16)
+   :class: with-shadow
 
-    Checkboxes with inline floating (checkbox_16)
+   Checkboxes with inline floating (checkbox_16)
 
 .. code-block:: php
 
@@ -107,10 +107,10 @@ Checkboxes with specific rendertypes
 ------------------------------------
 
 .. figure:: ../../Images/TypeCheckStyleguide17.png
-    :alt: Single checkbox with toggle (checkbox_17)
-    :class: with-shadow
+   :alt: Single checkbox with toggle (checkbox_17)
+   :class: with-shadow
 
-    Single checkbox with toggle (checkbox_17)
+   Single checkbox with toggle (checkbox_17)
 
 .. code-block:: php
 
@@ -132,10 +132,10 @@ Checkboxes with specific rendertypes
    ],
 
 .. figure:: ../../Images/TypeCheckStyleguide18.png
-    :alt: Single checkbox with toggle inverted state display (checkbox_18)
-    :class: with-shadow
+   :alt: Single checkbox with toggle inverted state display (checkbox_18)
+   :class: with-shadow
 
-    Single checkbox with toggle inverted state display (checkbox_18)
+   Single checkbox with toggle inverted state display (checkbox_18)
 
 .. code-block:: php
 
@@ -158,10 +158,10 @@ Checkboxes with specific rendertypes
    ],
 
 .. figure:: ../../Images/TypeCheckStyleguide19.png
-    :alt: Single checkbox with labeled toggle (checkbox_19)
-    :class: with-shadow
+   :alt: Single checkbox with labeled toggle (checkbox_19)
+   :class: with-shadow
 
-    Single checkbox with labeled toggle (checkbox_19)
+   Single checkbox with labeled toggle (checkbox_19)
 
 .. code-block:: php
 
@@ -183,10 +183,10 @@ Checkboxes with specific rendertypes
    ],
 
 .. figure:: ../../Images/TypeCheckStyleguide21.png
-    :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
-    :class: with-shadow
+   :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
+   :class: with-shadow
 
-    Single checkbox with labeled toggle inverted state display (checkbox_21)
+   Single checkbox with labeled toggle inverted state display (checkbox_21)
 
 .. code-block:: php
 
