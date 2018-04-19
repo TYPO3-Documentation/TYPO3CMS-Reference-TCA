@@ -32,23 +32,14 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 Examples
 ========
 
+Standard checkboxes
+-------------------
+
 .. figure:: ../../Images/TypeCheckStyleguide2.png
-    :alt: Simple checkbox with label (checkbox_2)
-    :class: with-shadow
+   :alt: Simple checkbox with label (checkbox_2)
+   :class: with-shadow
 
-    Simple checkbox with label (checkbox_2)
-
-.. figure:: ../../Images/TypeCheckStyleguide12.png
-    :alt: Four checkboxes in three columns (checkbox_12)
-    :class: with-shadow
-
-    Four checkboxes in three columns (checkbox_12)
-
-.. figure:: ../../Images/TypeCheckStyleguide16.png
-    :alt: Checkboxes wit inline floating (checkbox_16)
-    :class: with-shadow
-
-    Checkboxes with inline floating (checkbox_16)
+   Simple checkbox with label (checkbox_2)
 
 .. code-block:: php
 
@@ -62,6 +53,12 @@ Examples
          ],
       ]
    ],
+
+.. figure:: ../../Images/TypeCheckStyleguide12.png
+   :alt: Four checkboxes in three columns (checkbox_12)
+   :class: with-shadow
+
+   Four checkboxes in three columns (checkbox_12)
 
 .. code-block:: php
 
@@ -79,6 +76,12 @@ Examples
          'cols' => '3',
       ],
    ],
+
+.. figure:: ../../Images/TypeCheckStyleguide16.png
+   :alt: Checkboxes wit inline floating (checkbox_16)
+   :class: with-shadow
+
+   Checkboxes with inline floating (checkbox_16)
 
 .. code-block:: php
 
@@ -98,6 +101,111 @@ Examples
          ],
          'cols' => 'inline',
       ],
+   ],
+
+Checkboxes with specific rendertypes
+------------------------------------
+
+.. figure:: ../../Images/TypeCheckStyleguide17.png
+   :alt: Single checkbox with toggle (checkbox_17)
+   :class: with-shadow
+
+   Single checkbox with toggle (checkbox_17)
+
+.. code-block:: php
+
+   'checkbox_17' => [
+      'exclude' => 1,
+      'label' => 'checkbox_17 single checkbox with toggle',
+      'config' => [
+         'type' => 'check',
+         'renderType' => 'checkboxToggle',
+         'items' => [
+            [
+               0 => '',
+               1 => '',
+               'labelChecked' => 'Enabled',
+               'labelUnchecked' => 'Disabled',
+               ]
+         ],
+      ]
+   ],
+
+.. figure:: ../../Images/TypeCheckStyleguide18.png
+   :alt: Single checkbox with toggle inverted state display (checkbox_18)
+   :class: with-shadow
+
+   Single checkbox with toggle inverted state display (checkbox_18)
+
+.. code-block:: php
+
+   'checkbox_18' => [
+      'exclude' => 1,
+      'label' => 'checkbox_18 single checkbox with toggle inverted state display',
+      'config' => [
+         'type' => 'check',
+         'renderType' => 'checkboxToggle',
+         'items' => [
+            [
+               0 => '',
+               1 => '',
+               'labelChecked' => 'Enabled',
+               'labelUnchecked' => 'Disabled',
+               'invertStateDisplay' => true
+            ]
+         ],
+      ]
+   ],
+
+.. figure:: ../../Images/TypeCheckStyleguide19.png
+   :alt: Single checkbox with labeled toggle (checkbox_19)
+   :class: with-shadow
+
+   Single checkbox with labeled toggle (checkbox_19)
+
+.. code-block:: php
+
+   'checkbox_19' => [
+      'exclude' => 1,
+      'label' => 'checkbox_19 single checkbox with labeled toggle',
+      'config' => [
+         'type' => 'check',
+         'renderType' => 'checkboxLabeledToggle',
+         'items' => [
+            [
+               0 => 'foo',
+               1 => '',
+               'labelChecked' => 'Enabled',
+               'labelUnchecked' => 'Disabled',
+            ]
+         ],
+      ]
+   ],
+
+.. figure:: ../../Images/TypeCheckStyleguide21.png
+   :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
+   :class: with-shadow
+
+   Single checkbox with labeled toggle inverted state display (checkbox_21)
+
+.. code-block:: php
+
+   'checkbox_21' => [
+      'exclude' => 1,
+      'label' => 'checkbox_21 single checkbox with labeled toggle inverted state display',
+      'config' => [
+         'type' => 'check',
+         'renderType' => 'checkboxLabeledToggle',
+         'items' => [
+            [
+               0 => 'foo',
+               1 => '',
+               'labelChecked' => 'Enabled',
+               'labelUnchecked' => 'Disabled',
+               'invertStateDisplay' => true
+            ]
+         ],
+      ]
    ],
 
 
