@@ -2,8 +2,9 @@
 
 .. _columns-check:
 
+==============
 type = 'check'
---------------
+==============
 
 .. _columns-check-introduction:
 
