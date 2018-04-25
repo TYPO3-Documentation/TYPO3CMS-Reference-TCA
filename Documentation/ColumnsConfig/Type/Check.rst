@@ -32,14 +32,47 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 Examples
 ========
 
-Standard checkboxes
--------------------
-
 .. figure:: ../../Images/TypeCheckStyleguide2.png
    :alt: Simple checkbox with label (checkbox_2)
    :class: with-shadow
 
    Simple checkbox with label (checkbox_2)
+
+.. figure:: ../../Images/TypeCheckStyleguide12.png
+   :alt: Four checkboxes in three columns (checkbox_12)
+   :class: with-shadow
+
+   Four checkboxes in three columns (checkbox_12)
+
+.. figure:: ../../Images/TypeCheckStyleguide16.png
+   :alt: Checkboxes wit inline floating (checkbox_16)
+   :class: with-shadow
+
+   Checkboxes with inline floating (checkbox_16)
+
+.. figure:: ../../Images/TypeCheckStyleguide17.png
+   :alt: Single checkbox with toggle (checkbox_17)
+   :class: with-shadow
+
+   Single checkbox with toggle (checkbox_17)
+
+.. figure:: ../../Images/TypeCheckStyleguide18.png
+   :alt: Single checkbox with toggle inverted state display (checkbox_18)
+   :class: with-shadow
+
+   Single checkbox with toggle inverted state display (checkbox_18)
+
+.. figure:: ../../Images/TypeCheckStyleguide19.png
+   :alt: Single checkbox with labeled toggle (checkbox_19)
+   :class: with-shadow
+
+   Single checkbox with labeled toggle (checkbox_19)
+
+.. figure:: ../../Images/TypeCheckStyleguide21.png
+   :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
+   :class: with-shadow
+
+   Single checkbox with labeled toggle inverted state display (checkbox_21)
 
 .. code-block:: php
 
@@ -53,12 +86,6 @@ Standard checkboxes
          ],
       ]
    ],
-
-.. figure:: ../../Images/TypeCheckStyleguide12.png
-   :alt: Four checkboxes in three columns (checkbox_12)
-   :class: with-shadow
-
-   Four checkboxes in three columns (checkbox_12)
 
 .. code-block:: php
 
@@ -76,12 +103,6 @@ Standard checkboxes
          'cols' => '3',
       ],
    ],
-
-.. figure:: ../../Images/TypeCheckStyleguide16.png
-   :alt: Checkboxes wit inline floating (checkbox_16)
-   :class: with-shadow
-
-   Checkboxes with inline floating (checkbox_16)
 
 .. code-block:: php
 
@@ -103,15 +124,6 @@ Standard checkboxes
       ],
    ],
 
-Checkboxes with specific rendertypes
-------------------------------------
-
-.. figure:: ../../Images/TypeCheckStyleguide17.png
-   :alt: Single checkbox with toggle (checkbox_17)
-   :class: with-shadow
-
-   Single checkbox with toggle (checkbox_17)
-
 .. code-block:: php
 
    'checkbox_17' => [
@@ -130,12 +142,6 @@ Checkboxes with specific rendertypes
          ],
       ]
    ],
-
-.. figure:: ../../Images/TypeCheckStyleguide18.png
-   :alt: Single checkbox with toggle inverted state display (checkbox_18)
-   :class: with-shadow
-
-   Single checkbox with toggle inverted state display (checkbox_18)
 
 .. code-block:: php
 
@@ -157,12 +163,6 @@ Checkboxes with specific rendertypes
       ]
    ],
 
-.. figure:: ../../Images/TypeCheckStyleguide19.png
-   :alt: Single checkbox with labeled toggle (checkbox_19)
-   :class: with-shadow
-
-   Single checkbox with labeled toggle (checkbox_19)
-
 .. code-block:: php
 
    'checkbox_19' => [
@@ -181,12 +181,6 @@ Checkboxes with specific rendertypes
          ],
       ]
    ],
-
-.. figure:: ../../Images/TypeCheckStyleguide21.png
-   :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
-   :class: with-shadow
-
-   Single checkbox with labeled toggle inverted state display (checkbox_21)
 
 .. code-block:: php
 
@@ -211,14 +205,13 @@ Checkboxes with specific rendertypes
 
 .. _columns-check-properties:
 
-Properties
-==========
+Properties renderType default
+=============================
+
+This is typically a simple checkbox or a group of checkboxes. By default the toggle icons are visually designed
+to mimic a checkbox. Its state can be inverted via :code:`invertStateDisplay` per item.
 
 .. _columns-check-properties-type:
-
-
-.. _columns-check-properties-render-type:
-.. include:: ../Properties/CheckRenderType.rst.txt
 
 .. _columns-check-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst.txt
@@ -252,4 +245,64 @@ Properties
 .. include:: ../Properties/CommonReadOnly.rst.txt
 
 .. _columns-check-properties-validation:
+.. include:: ../Properties/CheckValidation.rst.txt
+
+
+Properties renderType='checkboxToggle'
+======================================
+
+Render toggle switches instead of a checkboxes.
+
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
+
+.. include:: ../Properties/CheckCols.rst.txt
+
+.. include:: ../Properties/CheckDefault.rst.txt
+
+.. include:: ../Properties/CheckEval.rst.txt
+
+.. include:: ../Properties/CommonFieldInformation.rst.txt
+
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
+
+.. include:: ../Properties/CheckItems.rst.txt
+
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
+
+.. include:: ../Properties/CommonReadOnly.rst.txt
+
+.. include:: ../Properties/CheckValidation.rst.txt
+
+
+Properties renderType='checkboxLabeledToggle'
+=============================================
+
+A toggle that mimics a button with different button labels depending on toggle state.
+
+.. include:: ../Properties/CommonBehaviour.rst.txt
+.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
+
+.. include:: ../Properties/CheckCols.rst.txt
+
+.. include:: ../Properties/CheckDefault.rst.txt
+
+.. include:: ../Properties/CheckEval.rst.txt
+
+.. include:: ../Properties/CommonFieldInformation.rst.txt
+
+.. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
+
+.. include:: ../Properties/CheckItems.rst.txt
+
+.. include:: ../Properties/CommonItemsProcFunc.rst.txt
+
+.. include:: ../Properties/CommonReadOnly.rst.txt
+
 .. include:: ../Properties/CheckValidation.rst.txt
