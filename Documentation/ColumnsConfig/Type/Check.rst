@@ -126,7 +126,7 @@ Checkboxes with specific rendertypes
                1 => '',
                'labelChecked' => 'Enabled',
                'labelUnchecked' => 'Disabled',
-               ]
+            ]
          ],
       ]
    ],
