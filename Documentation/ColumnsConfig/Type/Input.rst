@@ -388,6 +388,9 @@ side on save. This can increase security if the backend is not HTTPS enabled, to
     concerned about communication security (you should!), there is no way around HTTPS. If the backend is forced to
     HTTPS, extension rsaauth can be unloaded.
 
+    Extension `rsaauth` has been deprecated in the core and will be removed any time soon.
+
+
 .. include:: ../Properties/InputAutocomplete.rst.txt
 
 .. include:: ../Properties/CommonBehaviour.rst.txt
