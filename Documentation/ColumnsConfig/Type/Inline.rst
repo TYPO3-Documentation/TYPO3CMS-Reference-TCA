@@ -357,13 +357,10 @@ wife-husband-relationship in real life)
 
 .. _columns-inline-properties:
 
-Properties
-==========
+Properties renderType default
+=============================
 
 .. _columns-inline-properties-type:
-
-.. _columns-inline-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-inline-properties-appearance:
 .. include:: ../Properties/InlineAppearance.rst.txt

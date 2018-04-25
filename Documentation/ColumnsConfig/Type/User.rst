@@ -65,13 +65,10 @@ This is how the corresponding PHP method in class :php:`\Documentation\Examples\
 
 .. _columns-user-properties:
 
-Properties
-==========
+Properties renderType default
+=============================
 
 .. _columns-user-properties-type:
-
-.. _columns-user-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-user-properties-notablewrapping:
 .. include:: ../Properties/UserNoTableWrapping.rst.txt

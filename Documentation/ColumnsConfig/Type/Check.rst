@@ -100,14 +100,10 @@ Examples
 
 .. _columns-check-properties:
 
-Properties
-==========
+Properties renderType default
+=============================
 
 .. _columns-check-properties-type:
-
-
-.. _columns-check-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-check-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst.txt

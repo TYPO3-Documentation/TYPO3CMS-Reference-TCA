@@ -43,13 +43,10 @@ Examples
 
 .. _columns-radio-properties:
 
-Properties
-==========
+Properties renderType default
+=============================
 
 .. _columns-radio-properties-type:
-
-.. _columns-radio-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-radio-properties-behaviour:
 .. include:: ../Properties/CommonBehaviour.rst.txt

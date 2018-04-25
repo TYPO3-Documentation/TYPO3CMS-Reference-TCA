@@ -110,16 +110,13 @@ Examples
 
 .. _columns-text-renderType-default:
 
-renderType default
-==================
+Properties renderType default
+=============================
 
 type='text' without a given specific renderType either renders a simple :code:`<textarea>`, or a Rich Text Editor
 if both enabled in configuration and enabled for the user.
 
 .. _columns-text-properties:
-
-Properties
-==========
 
 .. _columns-text-properties-type:
 
@@ -190,8 +187,8 @@ Properties
 
 .. _columns-text-renderType-belayoutwizard:
 
-renderType = 'belayoutwizard'
-=============================
+Properties renderType = 'belayoutwizard'
+========================================
 
 The :code:`renderType = 'belayoutwizard'` is a special renderType to display the backend layout
 wizard when editing records of table :code:`backend_layout` in the backend. It stored a custom
@@ -206,8 +203,8 @@ syntax representing the Web -> Page layout in the database.
 
 .. _columns-text-renderType-t3editor:
 
-renderType = 't3editor'
-=======================
+Properties renderType = 't3editor'
+==================================
 
 The :code:`renderType = 't3editor'` triggers a code highlighter if extension `t3editor` is loaded, otherwise
 falls back to "default" renderType.
@@ -242,8 +239,8 @@ to textarea fields, for several languages.
 
 .. _columns-text-renderType-textTable:
 
-renderType = 'textTable'
-========================
+Properties renderType = 'textTable'
+===================================
 
 The :code:`renderType = 'textTable'` triggers a view to manage frontend table display in the backend.
 It is used for the "Table" tt\_content content element.

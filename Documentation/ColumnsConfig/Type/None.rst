@@ -40,20 +40,12 @@ Examples
     ],
 
 
-renderType default
-==================
-
-type='none' has (currently) only one render definition, no special renderType must be set.
+Properties renderType default
+=============================
 
 .. _columns-none-properties:
 
-Properties
-==========
-
 .. _columns-none-properties-type:
-
-.. _columns-none-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-none-properties-cols:
 .. include:: ../Properties/NoneCols.rst.txt

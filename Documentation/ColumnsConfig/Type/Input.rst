@@ -160,20 +160,14 @@ Examples
 
 .. _columns-input-renderType-default:
 
-renderType default
-==================
+Properties renderType default
+=============================
 
 This normal workhorse input element is used if no renderType is set and no special functionality is needed.
 
 .. _columns-input-properties:
 
-Properties
-==========
-
 .. _columns-input-properties-type:
-
-.. _columns-input-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-input-properties-autocomplete:
 .. include:: ../Properties/InputAutocomplete.rst.txt
@@ -234,8 +228,8 @@ Properties
 
 .. _columns-input-renderType-colorpicker:
 
-renderType = 'colorpicker'
-==========================
+Properties renderType = 'colorpicker'
+=====================================
 
 An input field with a JavaScript color picker.
 
@@ -284,8 +278,8 @@ An input field with a JavaScript color picker.
 
 .. _columns-input-renderType-inputDateTime:
 
-renderType = 'inputDateTime'
-============================
+Properties renderType = 'inputDateTime'
+=======================================
 
 Renders an input field with date or time pickers.
 
@@ -331,8 +325,8 @@ Renders an input field with date or time pickers.
 
 .. _columns-input-renderType-inputLink:
 
-renderType = 'inputLink'
-========================
+Properties renderType = 'inputLink'
+===================================
 
 An input field used to handle links and mail addresses in the backend.
 
@@ -380,8 +374,8 @@ An input field used to handle links and mail addresses in the backend.
 
 .. _columns-input-renderType-rsaInput:
 
-renderType = 'rsaInput'
-=======================
+Properties renderType = 'rsaInput'
+==================================
 
 If extension `rsaauth` is loaded, this renderType overrides the TCA configuration of table `be_users` and `fe_users`
 and adds itself as renderType for the `password` fields. If enabled, the value of fields are not transferred in
