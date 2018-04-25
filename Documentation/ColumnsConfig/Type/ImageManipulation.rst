@@ -43,11 +43,8 @@ Examples
 
 .. _columns-imageManipulation-properties:
 
-Properties
-==========
-
-.. _columns-imageManipulation-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
+Properties renderType default
+=============================
 
 .. _columns-imageManipulation-properties-allowedExtensions:
 .. include:: ../Properties/ImageManipulationAllowedExtensions.rst.txt

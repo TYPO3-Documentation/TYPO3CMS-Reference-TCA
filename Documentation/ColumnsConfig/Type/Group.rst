@@ -85,13 +85,10 @@ Examples
 
 .. _columns-group-properties:
 
-Properties
-==========
+Properties renderType default
+=============================
 
 .. _columns-group-properties-type:
-
-.. _columns-group-properties-render-type:
-.. include:: ../Properties/CommonRenderTypeDefault.rst.txt
 
 .. _columns-group-properties-allowed:
 .. include:: ../Properties/GroupAllowed.rst.txt

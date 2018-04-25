@@ -209,13 +209,10 @@ Examples
 
 .. _columns-select-properties:
 
-Properties
-==========
+Properties renderType default
+=============================
 
 .. _columns-select-properties-type:
-
-.. _columns-select-properties-render-type:
-.. include:: ../Properties/SelectRenderType.rst.txt
 
 .. _columns-select-properties-allownonidvalues:
 .. include:: ../Properties/SelectAllowNonIdValues.rst.txt
@@ -325,8 +322,8 @@ Properties
 
 .. _columns-select-rendertype-selectSingleBox:
 
-renderType = 'selectSingleBox'
-==============================
+Properties renderType = 'selectSingleBox'
+=========================================
 
 Renders a select field to select multiple entries from a given list.
 
@@ -409,8 +406,8 @@ Renders a select field to select multiple entries from a given list.
 
 .. _columns-select-rendertype-selectCheckBox:
 
-renderType = 'selectCheckBox'
-==============================
+Properties renderType = 'selectCheckBox'
+========================================
 
 Render the list of values as single check box rows in a table. Multiple items can be selected.
 
@@ -489,8 +486,8 @@ Render the list of values as single check box rows in a table. Multiple items ca
 
 .. _columns-select-rendertype-selectMultipleSideBySide:
 
-renderType = 'selectMultipleSideBySide'
-=======================================
+Properties renderType = 'selectMultipleSideBySide'
+==================================================
 
 Two select fields, items can be selected from the right field, selected items are displayed in the left select.
 
@@ -580,8 +577,8 @@ Two select fields, items can be selected from the right field, selected items ar
 
 .. _columns-select-rendertype-selectTree:
 
-renderType = 'selectTree'
-=========================
+Properties renderType = 'selectTree'
+====================================
 
 A tree for selecting hierarchical data items.
 
