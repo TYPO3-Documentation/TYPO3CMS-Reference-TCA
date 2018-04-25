@@ -239,9 +239,6 @@ Properties renderType default
 .. _columns-select-properties-exclusivekeys:
 .. include:: ../Properties/SelectExclusiveKeys.rst.txt
 
-.. _columns-select-properties-fieldControl:
-.. include:: ../Properties/CommonFieldControl.rst.txt
-
 .. _columns-select-properties-fieldInformation:
 .. include:: ../Properties/CommonFieldInformation.rst.txt
 
@@ -346,6 +343,7 @@ Renders a select field to select multiple entries from a given list.
 
 .. include:: ../Properties/SelectExclusiveKeys.rst.txt
 
+.. _columns-select-properties-fieldControl:
 .. include:: ../Properties/CommonFieldControl.rst.txt
 .. include:: ../Properties/ResetSelection.rst.txt
 
@@ -427,8 +425,6 @@ Render the list of values as single check box rows in a table. Multiple items ca
 .. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
 .. include:: ../Properties/SelectExclusiveKeys.rst.txt
-
-.. include:: ../Properties/CommonFieldControl.rst.txt
 
 .. include:: ../Properties/CommonFieldInformation.rst.txt
 
@@ -603,8 +599,6 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
 .. include:: ../Properties/SelectExclusiveKeys.rst.txt
-
-.. include:: ../Properties/CommonFieldControl.rst.txt
 
 .. include:: ../Properties/CommonFieldInformation.rst.txt
 
