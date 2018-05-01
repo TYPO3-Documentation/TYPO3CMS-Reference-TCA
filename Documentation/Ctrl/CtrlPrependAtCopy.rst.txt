@@ -13,3 +13,7 @@ prependAtCopy
 
     Usually the value is something like :php:` (copy %s)` which signifies that it was a copy that was just
     inserted (The token :php:`%s` will be replaced by the copy number).
+
+    Note it is possible to disable this feature on a page and user or group level using the Page
+    TSconfig option :ref:`disablePrependAtCopy <t3tsconfig:pagetcemaintables-disableprependatcopy>`.
+
