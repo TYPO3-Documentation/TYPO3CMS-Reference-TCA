@@ -59,5 +59,5 @@ items
 
     .. note::
 
-        When having a zero as second value and the field is of type :sql:`int(10)` in the database, make sure to define
+        When having a zero as second value and the field is of type :code:`int(10)` in the database, make sure to define
         the :ref:`default value <columns-select-properties-default>` as well in TCA: :php:`'default' => 0`.
