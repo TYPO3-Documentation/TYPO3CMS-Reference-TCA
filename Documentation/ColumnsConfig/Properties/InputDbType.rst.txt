@@ -57,3 +57,9 @@ dbType
              'eval' => 'time',
           ],
        ],
+
+
+    .. note::
+
+       When this property is *not set* you have to add :php:`int` to the :ref:`eval option <columns-input-properties-eval>`.
+       (Otherwise the database might complain about invalid values.)
