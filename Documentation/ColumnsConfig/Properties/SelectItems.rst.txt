@@ -55,3 +55,9 @@ items
                 [ 'LLL:EXT:cms/locallang_ttc.php:k2', 1, 'tx-myext-selicons-k2' ],
                 [ 'LLL:EXT:cms/locallang_ttc.php:k3', 2, 'tx-myext-selicons-k3' ],
             ]
+
+
+    .. note::
+
+        When having a zero as second value and the field is of type :sql:`int(10)` in the database, make sure to define
+        the :ref:`default value <columns-select-properties-default>` as well in TCA: :php:`'default' => 0`.
