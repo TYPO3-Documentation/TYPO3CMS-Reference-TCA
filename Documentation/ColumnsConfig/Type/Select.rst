@@ -603,6 +603,7 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. include:: ../Properties/CommonFieldWizard.rst.txt
+.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
 
 .. include:: ../Properties/SelectFileFolder.rst.txt
 
