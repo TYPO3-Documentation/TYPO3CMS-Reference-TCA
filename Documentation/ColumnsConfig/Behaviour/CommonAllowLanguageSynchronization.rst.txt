@@ -1,12 +1,13 @@
-
-.. rst-class:: dl-parameters
-
 allowLanguageSynchronization
-   :sep:`|` :aspect:`Scope:`   Proc.
-   :sep:`|` :aspect:`Type:`    boolean
-   :sep:`|` :aspect:`Default:` false
-   :sep:`|`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+:aspect:`Datatype`
+    boolean
+
+:aspect:`Scope`
+    Proc.
+
+:aspect:`Description`
    Allows an editor to select in a localized record whether the value is copied
    over from default or source language record, or if the field has an own value 
    in the localization. If set to true and if the table supports localization 
@@ -16,3 +17,6 @@ allowLanguageSynchronization
    stored in a json encoded array in the database table called :code:`l10n_state`.
    It tells the DataHandler which fields of the localization records should be kept
    in sync if the underlying default or source record changes.
+
+:aspect:`Default`
+    false
