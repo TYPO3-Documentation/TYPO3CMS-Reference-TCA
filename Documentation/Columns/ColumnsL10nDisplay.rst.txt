@@ -21,5 +21,5 @@ l10n\_display
 
     defaultAsReadonly
         This renders the field as read only field with the content of the default language record.
-        The field will be rendered even if 'l10n\_mode' is set to 'exclude'. While 'exclude' define the
+        The field will be rendered even if `l10n_mode` is set to `exclude`. While `exclude` define the
         field not to be translatable, this option activate display of the default data.
