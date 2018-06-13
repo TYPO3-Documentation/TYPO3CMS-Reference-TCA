@@ -18,8 +18,8 @@ title
     instead. This value is managed by the "title" value.
 
     You can insert plain text values, but the preferred way is to enter a
-    reference to a localized string. Refer to the Localization section in
-    :ref:`Inside TYPO3 <t3inside:start>` for more details.
+    reference to a localized string. Refer to the :ref:`Localization <t3coreapi:internationalization>`
+    section for more details.
 
     **Example for table "sys\_template"**
 
