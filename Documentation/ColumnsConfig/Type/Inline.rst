@@ -94,7 +94,7 @@ File Abstraction Layer
 Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3fal:start>`.
 
 FAL provides an API for registering an inline-type field with relations to the "sys_file_reference" table containing
-information related to existing media. Here is how it is used on the "image" field of table "tt_content"
+information related to existing media. Here is how to use it for the "image" field of table "tt_content":
 
 .. code-block:: php
 
