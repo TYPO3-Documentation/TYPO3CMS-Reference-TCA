@@ -32,7 +32,7 @@ Example::
       'config' => [
          'type' => TYPE,
          'behaviour' => [
-            'allowLanguageSynchronization' = true,
+            'allowLanguageSynchronization' => true,
          ]
       ]
    ]
