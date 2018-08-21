@@ -85,8 +85,6 @@ Examples
                 ],
                 'foreign_table' => 'tx_styleguide_staticdata',
                 'foreign_table_where' => 'AND tx_styleguide_staticdata.value_1 LIKE \'%foo%\' ORDER BY uid',
-                // @todo: docu of rootLevel says, foreign_table_where is *ignored*, which is NOT true.
-                'rootLevel' => 1,
                 'foreign_table_prefix' => 'A prefix: ',
             ],
         ],
@@ -307,9 +305,6 @@ Properties renderType default
 .. _columns-select-properties-readOnly:
 .. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. _columns-select-properties-rootlevel:
-.. include:: ../Properties/SelectRootLevel.rst.txt
-
 .. _columns-select-properties-size:
 .. include:: ../Properties/CommonSize.rst.txt
 
@@ -395,8 +390,6 @@ Renders a select field to select multiple entries from a given list.
 
 .. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/SelectRootLevel.rst.txt
-
 .. include:: ../Properties/CommonSize.rst.txt
 
 .. include:: ../Properties/SelectSpecial.rst.txt
@@ -472,8 +465,6 @@ Render the list of values as single check box rows in a table. Multiple items ca
 .. include:: ../Properties/CommonMultiple.rst.txt
 
 .. include:: ../Properties/CommonReadOnly.rst.txt
-
-.. include:: ../Properties/SelectRootLevel.rst.txt
 
 .. include:: ../Properties/CommonSize.rst.txt
 
@@ -564,8 +555,6 @@ Two select fields, items can be selected from the right field, selected items ar
 
 .. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. include:: ../Properties/SelectRootLevel.rst.txt
-
 .. include:: ../Properties/CommonSize.rst.txt
 
 .. include:: ../Properties/SelectSpecial.rst.txt
@@ -644,8 +633,6 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/CommonMultiple.rst.txt
 
 .. include:: ../Properties/CommonReadOnly.rst.txt
-
-.. include:: ../Properties/SelectRootLevel.rst.txt
 
 .. include:: ../Properties/CommonSize.rst.txt
 
