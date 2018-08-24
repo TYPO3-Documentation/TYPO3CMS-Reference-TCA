@@ -22,10 +22,12 @@ This type is very flexible in its display options with all its different
 :ref:`fieldWizard <columns-group-properties-fieldWizard>` options. A lot of them are available by default but disabled.
 
 
-It is required to set :ref:`internal_type <columns-group-properties-internal-type>`. Most common usage is to model database relations (n:1 or n:m) with `internal_type='db'.
+It is required to set :ref:`internal_type <columns-group-properties-internal-type>`. Most common usage is to model
+database relations (n:1 or n:m) with `internal_type='db'`.
 In this case property :ref:`allowed <columns-group-properties-allowed>` is required.
 
-The group field uses either CSV format to store uids of related records or intermediate mm table (in this case :ref:`MM <columns-group-properties-allowed>` property is required).
+The group field uses either CSV format to store uids of related records or intermediate mm table
+(in this case :ref:`MM <columns-group-properties-mm>` property is required).
 
 You can read more on how data is structured in :ref:`columns-group-data` chapter.
 

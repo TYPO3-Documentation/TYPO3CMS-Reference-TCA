@@ -21,4 +21,4 @@ allowed
 
       .. note::
           When using Extbase, you also need to fill :ref:`foreign_table <columns-group-properties-foreign-table>`
-          property with the same table name as used in `allowed` property (but with just one table name).
+          property with the same table name as used in :ref:`allowed <columns-group-properties-allowed>` property (but with just one table name).
