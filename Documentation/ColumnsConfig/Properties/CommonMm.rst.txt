@@ -8,10 +8,11 @@ MM
     Proc.
 
 :aspect:`Description`
-    Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>` is done
+    Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>`
+    (or table specified in :ref:`allowed <columns-group-properties-allowed>` property in case of the group field) is done
     with a M-M relation with a third "join" table.
 
-    That table has three columns as a minimum:
+    The intermediate table has three columns as a minimum:
 
     uid\_local, uid\_foreign (Required)
       Storing uids of both sides. If done right, this is reflected in the table name - :code:`tx_foo_local_foreign_mm`
