@@ -207,8 +207,8 @@ Examples
 
 .. _columns-select-properties:
 
-Properties renderType default
-=============================
+Properties renderType = 'selectSingle'
+======================================
 
 .. _columns-select-properties-type:
 
