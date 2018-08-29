@@ -60,7 +60,7 @@ used in different scenarios.
         'ds' => [
             'default' => 'FILE:EXT:myextension/Configuration/FlexForms/Main.xml',
         ],
-    )],
+    ],
 
 Straight and simple: Whenever a record is handled that has a column field definition with
 this TCA, the data structure defined in :file:`FILE:EXT:myextension/Configuration/FlexForms/Main.xml`
