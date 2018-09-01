@@ -10,7 +10,7 @@ uploadfolder
 :aspect:`Description`
     **Only with internal\_type='db'**
 
-    Path to folder under PATH\_site in which the files are stored, 'uploads/tx_myextension'.
+    Path to folder under :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()` in which the files are stored, 'uploads/tx_myextension'.
 
     .. note::
         TYPO3 does NOT create a reference to the file in its original position! It makes a  *copy* of the file into
