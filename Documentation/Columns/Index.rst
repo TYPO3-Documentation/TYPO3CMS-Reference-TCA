@@ -120,6 +120,9 @@ with slider, a select drop-down for images, an inline relation spanning multiple
 .. _columns-properties-config:
 .. include:: ColumnsConfig.rst.txt
 
+.. _columns-properties-description:
+.. include:: ColumnsDescription.rst.txt
+
 .. _columns-properties-displaycond:
 .. include:: ColumnsDisplayCond.rst.txt
 
