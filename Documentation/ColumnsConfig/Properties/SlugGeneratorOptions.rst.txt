@@ -1,4 +1,3 @@
-
 generatorOptions
 ~~~~~~~~~~~~~~~~
 
@@ -16,10 +15,10 @@ generatorOptions
 
       .. note::
 
-        For the time being, only the title field of table pages is evaluated to construct the slug from.
+        For the time being, only the `title` field of table pages is evaluated to construct the slug from.
 
 
-    fieldSeperator (string)
+    fieldSeparator (string)
       This value will divide the slug parts. If a section value contains this very value, it will be replaced by
       the value given in :ref:`fallbackCharacter <columns-slug-properties-fallbackCharacter>`.
 

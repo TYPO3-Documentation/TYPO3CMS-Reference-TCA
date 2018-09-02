@@ -13,8 +13,9 @@ Introduction
 
 .. note::
 
-    In the future, it could be possible to generate slugs for any TCA table,
-    but its's main usage will be for the "pages" TCA structure.
+    This type has been introduced in TYPO3 v9 for the url handling. It might be extended later
+    to be useful in extensions, but is currently only used and usable within the :php:`TCA` of
+    the :php:`pages` table.
 
 
 The main purpose of this type is to define parts of a URL path to generate and resolve URLs.
