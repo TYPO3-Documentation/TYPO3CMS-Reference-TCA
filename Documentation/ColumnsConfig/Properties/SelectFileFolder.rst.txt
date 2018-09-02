@@ -10,7 +10,7 @@ fileFolder
 :aspect:`Description`
     Specifying a folder from where files are added to the item array.
 
-    Specify the folder relative to the PATH\_site, possibly using the prefix "EXT:" to point to an extension folder.
+    Specify the folder relative to the :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()`, possibly using the prefix "EXT:" to point to an extension folder.
 
     Files from the folder is selected recursively to the level specified by
     :ref:`fileFolder_recursions <columns-select-properties-filefolder-recursions>` and only files of the extension
