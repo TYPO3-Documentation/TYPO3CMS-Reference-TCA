@@ -10,14 +10,17 @@ type = 'none'
 Introduction
 ============
 
-This type will just show the value of the field in the backend. The field is not editable.
-Format options can be set to format a given value. The field is often similar to a :php:`type = 'input'`
-field having :php:`readOnly=true` set.
+This type will just show the value of the field in the backend. The field is not editable. In TYPO3 core,
+this type is used seldom or not at all. If an existing value should just be displayed as not editable but
+formatted field, using a :php:`type = 'input'` with :php:`readOnly=true` is often more useful.
 
-.. caution::
+However, :php:`type = 'none'` is the only type that is not persisted by the :php:`DataHandler` to the
+database. It can thus be used to render a "virtual" field in FormEngine that is only displayed. Together
+with a custom :ref:`renderType <t3corapi:FormEngine-Rendering-NodeExpansion>`, this can be a powerful solution
+to render a meta field from other data. Example: A record has two database coordinate fields `latitude` and
+`longitude`, and a third field `map` that is defined as :php:`type = 'none'`, takes the values from the
+other two fields and renders a map from it. This field then does not need a database field.
 
-   With :php:`type = 'none'` the DataHandler cannot process the field since the type is unknown.
-   You may use :php:`type = 'input'` with :php:`readOnly=true` instead.
 
 .. _columns-none-examples:
 
