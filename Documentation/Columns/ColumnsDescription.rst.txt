@@ -14,16 +14,21 @@ description
 
     The property is available on all common `TCA` types like `input` and `select` and so on.
 
-    **Examples:**
+    **Example:**
 
     .. code-block:: php
 
         'columns' => [
-           'myField' => [
-              'label' => 'My label',
-              'description' => 'LLL:EXT:my_ext/Resources/Private/Language/locallang_tca.xlf:field.description',
-              'config' => [
-                 'type' => 'input',
-              ],
-           ],
+            'input_1' => [
+                'exclude' => 1,
+                'label' => 'input_1 description',
+                'description' => 'field description',
+                'config' => [
+                    'type' => 'input',
+                ],
+            ],
         ],
+
+    .. figure:: ../Images/ColumnsDescription.png
+        :alt: Show description text below label
+        :class: with-shadow
