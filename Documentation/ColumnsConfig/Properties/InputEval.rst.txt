@@ -67,8 +67,9 @@ eval
       A non-empty value is required in the field (otherwise the form cannot be saved).
 
     saltedPassword
-      The value will be hashed and salted using the salt configuration for BE for all tables except :php:`fe_user`,
-      where the salt configuration for FE is used.
+      The value will be hashed using the password hash configuration for BE for all tables except :php:`fe_user`,
+      where the password hash configuration for FE is used. Note this eval is typically only used core internally
+      for tables :php:`be_users` and :php:`fe_users` on the :php:`password` field.
 
     trim
       The value in the field will have white spaces around it trimmed away.
