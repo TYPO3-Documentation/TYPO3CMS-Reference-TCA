@@ -21,5 +21,6 @@
     Type/Passthrough
     Type/Radio
     Type/Select
+    Type/Slug
     Type/Text
     Type/User
