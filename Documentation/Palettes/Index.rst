@@ -87,6 +87,9 @@ Example::
 .. _palettes-properties-ishiddenpalette:
 .. include:: PalettesIsHiddenPalette.rst.txt
 
+.. _palettes-properties-label:
+.. include:: PalettesLabel.rst.txt
+
 .. _palettes-properties-showitem:
 .. _palettes-linebreaks:
 .. _palettes-linebreaks-examples:
