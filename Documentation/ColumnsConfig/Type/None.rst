@@ -62,9 +62,6 @@ Properties renderType default
 .. _columns-none-properties-pass-content:
 .. include:: ../Properties/NonePassContent.rst.txt
 
-.. _columns-none-properties-search:
-.. include:: ../Properties/CommonSearch.rst.txt
-
 .. _columns-none-properties-size:
 .. include:: ../Properties/NoneSize.rst.txt
 
