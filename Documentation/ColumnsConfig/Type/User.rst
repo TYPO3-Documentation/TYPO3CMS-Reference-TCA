@@ -11,12 +11,29 @@ type = 'user'
 Introduction
 ============
 
-Allows to render a whole form field by a developer defined class method.
+There are three columns config types that do similar things but still have subtle differences between them.
+These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <columns-passthrough>` and the
+:ref:`user type <columns-user>`.
+
+Characteristics of `user`:
+
+* A value sent to the DataHandler is just kept as is and put into the database field. Default FormEngine
+  however never sends values.
+* Unlike none, type user must have a database field.
+* FormEngine only renders a dummy element for type user fields by default. It should be combined with a
+  custom renderType.
+* Type user field values are rendered as-is at other places in the backend. They for instance can be selected
+  to be displayed in the list module "singel table view".
+* Field updates by the DataHandler get logged and the history/undo function will work with such values.
+
+The `user` field can be useful, if:
+
+* A special rendering and evaluation is needed for a value when editing records via FormEngine.
 
 .. note::
-    type='user' is outdated and currently mostly only kept for compatibility reasons.
-    The 'renderType' approach which can be extended by extensions is much more powerful.
-    See :ref:`FormEngine <t3coreapi:FormEngine-Rendering-NodeFactory>` for details.
+    In previous versions of TYPO3 core, :php:`type='user'` had a property `userFunc` to call an own class
+    method of some extension. This has been substituted with a custom element using a `renderType`.
+    See example below.
 
 
 .. _columns-user-examples:
@@ -24,43 +41,50 @@ Allows to render a whole form field by a developer defined class method.
 Examples
 ========
 
-.. figure:: ../../Images/TypeUserExample.png
-    :alt: A sample user-defined field
-    :class: with-shadow
+The example registers an own node element a TCA field using it and a class implementing a rendering.
+See :ref:`FormEngine docs<t3coreapi:FormEngine-Rendering-NodeFactory>` for more details on this.
 
-    A sample user-defined field
+Register an own node element::
 
-TCA configuration:
+    // Register a node in ext_localconf.php
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][<unix timestamp of "now">] = [
+        'nodeName' => 'lollisCustomMapElement',
+        'priority' => 40,
+        'class' => \Vendor\Extension\Form\Element\LollisCustomMapElement::class,
+    ];
 
-.. code-block:: php
+Use it as renderType in TCA::
 
-    'tx_examples_special' => [
-        'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_special',
+    'myMapElement' = [
+        'label' => 'My map element'
         'config' => [
             'type' => 'user',
-            'userFunc' => Documentation\Examples\Userfuncs\Tca::class . '->specialField',
+            'renderType' => 'lollisCustomMapElement',
             'parameters' => [
-                'color' => 'blue'
+                'useOpenStreetMap' => true,
             ],
         ],
     ],
 
-This is how the corresponding PHP method in class :php:`\Documentation\Examples\Userfuncs\Tca` looks like:
+Add a class implementation::
 
-.. code-block:: php
+    <?php
+    declare(strict_types = 1);
+    namespace Vendor\Extension\Form\Element;
 
-    public function specialField($PA, $fObj)
+    use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
+
+    class LollisCustomMapElement extends AbstractFormElement
     {
-        $color = (isset($PA['parameters']['color'])) ? $PA['parameters']['color'] : 'red';
-        $formField  = '<div style="padding: 5px; background-color: ' . $color . ';">';
-        $formField .= '<input type="text" name="' . $PA['itemFormElName'] . '"';
-        $formField .= ' value="' . htmlspecialchars($PA['itemFormElValue']) . '"';
-        $formField .= ' onchange="' . htmlspecialchars(implode('', $PA['fieldChangeFunc'])) . '"';
-        $formField .= $PA['onFocus'];
-        $formField .= ' /></div>';
-        return $formField;
+        public function render()
+        {
+            // Custom TCA properties and other data can be found in $this->data, for example the above
+            // parameters are available in $this->data['parameterArray']['fieldConf']['config']['parameters']
+            $result = $this->initializeResultArray();
+            $result['html'] = 'my map content';
+            return $result;
+        }
     }
-
 
 
 .. _columns-user-properties:
@@ -68,13 +92,9 @@ This is how the corresponding PHP method in class :php:`\Documentation\Examples\
 Properties renderType default
 =============================
 
+The default renderType just renders a dummy entry to indicate a custom renderType should be added.
+
 .. _columns-user-properties-type:
-
 .. _columns-user-properties-notablewrapping:
-.. include:: ../Properties/UserNoTableWrapping.rst.txt
-
 .. _columns-user-properties-parameters:
-.. include:: ../Properties/UserParameters.rst.txt
-
 .. _columns-user-properties-userfunc:
-.. include:: ../Properties/UserUserFunc.rst.txt

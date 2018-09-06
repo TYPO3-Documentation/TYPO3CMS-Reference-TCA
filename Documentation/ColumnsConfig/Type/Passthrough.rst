@@ -21,8 +21,7 @@ Characteristics of `passthrough`:
 * Unlike none, type passthrough must have a database field.
 * FormEngine does not render anything for passthrough types by default. But it can be combined with a custom
   renderType to make it render something. A user type is better suited for such use cases, though.
-* Type passthrough and similar to the none type, field values are usually also not rendered at other places
-  in the backend.
+* Type passthrough field values are usually also not rendered at other places in the backend.
 * Field updates by the DataHandler get logged and the history/undo function will work with such values.
 
 The `passthrough` field can be useful, if:
