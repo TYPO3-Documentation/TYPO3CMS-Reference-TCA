@@ -14,35 +14,32 @@ label\_userFunc
     function overrules the :ref:`label <ctrl-reference-label>`, :ref:`label_alt <ctrl-reference-label-alt>`
     and :ref:`label_alt_force <ctrl-reference-label-alt-force>` settings.
 
-    When calling a method from a class, enter "[classname]->[methodname]". Two arguments will be passed to the method:
-    The first argument is an array which contains the following information about the record for which to get the title::
+    When calling a method from a class, enter :php:`[classname]->[methodname]`. The passed argument is an array 
+    which contains the following information about the record for which to get the title::
 
        $params['table'] = $table;
        $params['row'] = $row;
 
-    The resulting title must be written to $params['title'], which is passed by reference. The second argument is a
-    reference to the parent object.
+    The resulting title must be written to $params['title'], which is passed by reference. 
 
     .. warning::
-        The title is passed later on through :code:`htmlspecialchars()` so it may not include any HTML formatting.
+
+       The title is passed later on through :code:`htmlspecialchars()` 
+       so it may not include any HTML formatting.
 
     **Example:**
 
     Let's look at what is done for the "haiku" table of the "examples" extension. The call to the user function appears
-    in the :file:`EXT:examples/Configuration/TCA/tx_examples_haiku.php` file:
-
-    .. code-block:: php
+    in the :file:`EXT:examples/Configuration/TCA/tx_examples_haiku.php` file:;
 
         'ctrl' => [
             'label' => 'title',
             'label_userFunc' => \Documentation\Examples\Userfuncs\Tca::class . '->haikuTitle',
         ],
 
-    Class :code:`Documentation\Examples\Userfuncs\Tca` contains the code itself:
+    Class :code:`Documentation\Examples\Userfuncs\Tca` contains the code itself::
 
-    .. code-block:: php
-
-        public function haikuTitle(&$parameters, $parentObject)
+        public function haikuTitle(&$parameters)
         {
             $record = BackendUtility::getRecord($parameters['table'], $parameters['row']['uid']);
             $newTitle = $record['title'];
