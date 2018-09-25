@@ -746,3 +746,36 @@ Such a wizard can be configured like this:
 Notice how the wizard requires an extra parameter
 (highlighted lines) since it has to return content back to the input field
 (and not the RTE, for instance, which it also supports).
+
+Here is another example with the link browser configured that it does not show the email tab:
+
+.. code-block:: php
+   :emphasize-lines: 17-19
+
+   'header_link' => array(
+      'label' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link',
+      'exclude' => 1,
+      'config' => array(
+         'type' => 'input',
+         'size' => '50',
+         'max' => '256',
+         'eval' => 'trim',
+         'wizards' => array(
+            'link' => array(
+               'type' => 'popup',
+               'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+               'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
+               'module' => array(
+                  'name' => 'wizard_link',
+               ),
+               'params' => array(
+                  'blindLinkOptions' => 'mail',
+               ),
+               'JSopenParams' => 'height=800,width=600,status=0,menubar=0,scrollbars=1'
+            )
+         ),
+         'softref' => 'typolink'
+      )
+   ),
+   
+End of document
