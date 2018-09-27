@@ -57,8 +57,9 @@ Examples
 .. code-block:: php
 
     'slug' => [
+        'label' => '<path-to-locallang-file>.slug',
+        'exclude' => 1,
         'config' => [
-            'label' => '<path-to-locallang-file>.slug',
             'type' => 'slug',
             'generatorOptions' => [
                 'fields' => ['title', 'nav_title'],
