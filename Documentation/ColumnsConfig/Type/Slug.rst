@@ -56,16 +56,19 @@ Examples
 
 .. code-block:: php
 
-   'type' => 'slug',
-   'config' => [
-      'generatorOptions' => [
-         'fields' => ['title', 'nav_title'],
-         'fieldSeparator' => '/',
-         'prefixParentPageSlug' => true
-      ]
-      'fallbackCharacter' => '-',
-      'eval' => 'uniqueInSite'
-   ],
+    'slug' => [
+        'config' => [
+            'label' => '<path-to-locallang-file>.slug',
+            'type' => 'slug',
+            'generatorOptions' => [
+                'fields' => ['title', 'nav_title'],
+                'fieldSeparator' => '/',
+                'prefixParentPageSlug' => true,
+            ],
+            'fallbackCharacter' => '-',
+            'eval' => 'uniqueInSite',
+        ],
+    ],
 
 
 .. _columns-slug-properties:
