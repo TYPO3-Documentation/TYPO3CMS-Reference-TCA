@@ -11,13 +11,6 @@ type = 'slug'
 Introduction
 ============
 
-.. note::
-
-    This type has been introduced in TYPO3 v9 for the url handling. It might be extended later
-    to be useful in extensions, but is currently only used and usable within the :php:`TCA` of
-    the :php:`pages` table.
-
-
 The main purpose of this type is to define parts of a URL path to generate and resolve URLs.
 
 With a URL like `https://www.typo3.org/ch/community/values/core-values/` a URL slug is typically a part like
@@ -82,8 +75,11 @@ Properties renderType default
 .. _columns-slug-properties-eval:
 .. include:: ../Properties/SlugEval.rst.txt
 
+.. _columns-slug-properties-fallbackCharacter:
+.. include:: ../Properties/SlugFallbackCharacter.rst.txt
+
 .. _columns-slug-properties-generatorOptions:
 .. include:: ../Properties/SlugGeneratorOptions.rst.txt
 
-.. _columns-slug-properties-fallbackCharacter:
-.. include:: ../Properties/SlugFallbackCharacter.rst.txt
+.. _columns-slug-properties-prependSlash:
+.. include:: ../Properties/SlugPrependSlash.rst.txt
