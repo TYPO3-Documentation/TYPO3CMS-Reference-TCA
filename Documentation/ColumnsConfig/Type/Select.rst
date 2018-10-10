@@ -93,7 +93,7 @@ Examples
                     ['DB values', '--div--'],
                 ],
                 'foreign_table' => 'tx_styleguide_staticdata',
-                'foreign_table_where' => 'AND tx_styleguide_staticdata.value_1 LIKE \'%foo%\' ORDER BY uid',
+                'foreign_table_where' => 'AND {#tx_styleguide_staticdata}.{#value_1} LIKE \'%foo%\' ORDER BY uid',
                 'foreign_table_prefix' => 'A prefix: ',
             ],
         ],
