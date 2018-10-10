@@ -17,7 +17,14 @@ foreign\_table\_where
 
     .. code-block:: sql
 
-        AND [foreign_table].pid = 0 ORDER BY [foreign_table].sorting
+        AND {#tx_my_foreign_table}.{#pid} = 0 ORDER BY tx_my_foreign_table.sorting
+
+    **Field quoting**
+
+    The above example uses the special field quoting syntax :php:`{#...}` around identifiers of the
+    :ref:`QueryHelper <t3coreapi:database-query-helper-quoteDatabaseIdentifiers>` to be as DBAL compatible
+    as possible. Note that the :php:`ORDER BY` is NOT quoted since that is parsed out anyway and
+    always receives proper quoting.
 
     **Markers:**
 
