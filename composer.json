@@ -1,0 +1,6 @@
+{
+    "name": "typo3/reference-tca",
+    "type": "typo3-cms-documentation",
+    "description": "Complete reference to the Table Configuration Array $GLOBALS['TCA']",
+    "license": "OPL-1.0"
+}
