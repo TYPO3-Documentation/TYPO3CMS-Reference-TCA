@@ -103,7 +103,6 @@ using slack yet, trigger a `slack invite <https://forger.typo3.org/slack>`__.
 .. toctree::
     :hidden:
 
-    Sitemap/Index
     Introduction/Index
     Columns/Index
     ColumnsConfig/Index
@@ -111,4 +110,5 @@ using slack yet, trigger a `slack invite <https://forger.typo3.org/slack>`__.
     Interface/Index
     Palettes/Index
     Types/Index
+    Sitemap
     Targets

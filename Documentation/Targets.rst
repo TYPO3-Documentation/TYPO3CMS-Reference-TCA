@@ -4,10 +4,8 @@
 .. _labels-for-crossreferencing:
 .. _Linktargets:
 
-Linktargets
-===========
-
-Targets for Cross-Referencing
+Link Targets
+============
 
 .. ref-targets-list::
 
