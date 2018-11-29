@@ -14,3 +14,6 @@ label
 
     .. note::
         :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property (but it is still required).
+        
+    .. warning::
+        CType should not be used as this will generate problems during the copy/paste process in the backend, if :code:`TCEMAIN.table.tt_content.disablePrependAtCopy` is set not set or set to :code:`0`
