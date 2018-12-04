@@ -15,7 +15,7 @@ otherLanguageContent
 
     The wizard shows content only for "simple" fields. For instance, it does not work for database relation fields,
     and if the field is set to :php:`readOnly`. Additionally, the table has to be language aware by setting up the
-    according fields in ['ctr'] section.
+    according fields in ['ctrl'] section.
 
     .. figure:: ../../Images/FieldWizardOtherLanguageContent.png
         :alt: Header field showing values from two other languages
