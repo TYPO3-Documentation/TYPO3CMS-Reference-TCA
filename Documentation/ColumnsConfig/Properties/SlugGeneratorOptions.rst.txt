@@ -25,3 +25,25 @@ generatorOptions
     prefixParentPageSlug (boolean)
       The slugs of parent pages will be prefixed to the slug for the page itself. Disable it for shorter URLs, but
       take the higher chance of collision into consideration.
+
+    replacements (array)
+      It allows to replace strings of a slug part. Add one of more array items with the key being the string
+      to replace and the value being the replacement string.
+
+      Example::
+
+         'type' => 'slug',
+         'config' => [
+             'generatorOptions' => [
+                 'fields' => ['title'],
+                 'replacements' => [
+                     '(f/m)' => '',
+                     '/' => '-'
+                 ],
+             ]
+             'fallbackCharacter' => '-',
+             'prependSlash' => true,
+             'eval' => 'uniqueInPid'
+         ]
+
+      This will change the provided slug **'Some Job in city1/city2 (f/m)'** to **'some-job-in-city1-city2'**.

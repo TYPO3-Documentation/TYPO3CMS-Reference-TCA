@@ -58,6 +58,9 @@ Examples
                 'fields' => ['title', 'nav_title'],
                 'fieldSeparator' => '/',
                 'prefixParentPageSlug' => true,
+                'replacements' => [
+                    '/' => '',
+                ],
             ],
             'fallbackCharacter' => '-',
             'eval' => 'uniqueInSite',
