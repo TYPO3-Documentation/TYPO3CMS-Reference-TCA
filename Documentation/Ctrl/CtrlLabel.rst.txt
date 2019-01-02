@@ -14,3 +14,6 @@ label
 
     .. note::
         :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property (but it is still required).
+        
+    .. warning::
+        For the label only regular input or text fields should be used. Otherwise issues may occur and prevent from a working system if :code:`TCEMAIN.table.tt_content.disablePrependAtCopy` is not set or set to :code:`0`.
