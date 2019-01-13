@@ -56,7 +56,7 @@ Register an own node element::
 Use it as renderType in TCA::
 
     'myMapElement' = [
-        'label' => 'My map element'
+        'label' => 'My map element',
         'config' => [
             'type' => 'user',
             'renderType' => 'lollisCustomMapElement',
