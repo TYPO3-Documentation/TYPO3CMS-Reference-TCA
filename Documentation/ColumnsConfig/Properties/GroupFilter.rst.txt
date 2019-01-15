@@ -25,13 +25,13 @@ filter
 
         'filter' => [
             [
-                'userFunc' => Vendor\\Extension\\MyClass::class . '->doFilter',
+                'userFunc' => \Vendor\Extension\MyClass::class . '->doFilter',
                 'parameters' => [
                     // optional parameters for the filter go here
                 ],
             ],
             [
-                'userFunc' => Vendor\\Extension\\OtherClass::class . '->myFilter',
+                'userFunc' => \Vendor\Extension\OtherClass::class . '->myFilter',
                 'parameters' => [
                     // optional parameters for the filter go here
                 ],
@@ -59,7 +59,7 @@ filter
                 'size' => 1,
                 'filter' => [
                     [
-                        'userFunc' => Vendor\\Extension\\MyClass::class . '->doFilter',
+                        'userFunc' => \Vendor\Extension\MyClass::class . '->doFilter',
                         'parameters' => [
                             'evaluateGender' => 'female',
                         ],
