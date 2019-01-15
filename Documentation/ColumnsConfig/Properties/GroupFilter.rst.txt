@@ -31,7 +31,7 @@ filter
                 ],
             ],
             [
-                'userFunc' => 'userFunc' => Vendor\\Extension\\OtherClass::class . '->myFilter',
+                'userFunc' => Vendor\\Extension\\OtherClass::class . '->myFilter',
                 'parameters' => [
                     // optional parameters for the filter go here
                 ],
