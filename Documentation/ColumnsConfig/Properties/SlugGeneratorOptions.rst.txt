@@ -32,8 +32,8 @@ generatorOptions
 
       Example::
 
-         'type' => 'slug',
          'config' => [
+             'type' => 'slug',
              'generatorOptions' => [
                  'fields' => ['title'],
                  'replacements' => [
