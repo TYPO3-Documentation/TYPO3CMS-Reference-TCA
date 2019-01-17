@@ -168,25 +168,25 @@ options (second call parameter) are merged looks like:
             ]
         ],
         'appearance' => [
-            'useSortable' => TRUE,
+            'useSortable' => true,
             'headerThumbnail' => [
                 'field' => 'uid_local',
                 'width' => '45',
                 'height' => '45c',
             ],
-            'showPossibleLocalizationRecords' => FALSE,
-            'showRemovedLocalizationRecords' => FALSE,
-            'showSynchronizationLink' => FALSE,
-            'showAllLocalizationLink' => FALSE,
+            'showPossibleLocalizationRecords' => false,
+            'showRemovedLocalizationRecords' => false,
+            'showSynchronizationLink' => false,
+            'showAllLocalizationLink' => false,
 
             'enabledControls' => [
-                'info' => FALSE,
-                'new' => FALSE,
-                'dragdrop' => TRUE,
-                'sort' => FALSE,
-                'hide' => TRUE,
-                'delete' => TRUE,
-                'localize' => TRUE,
+                'info' => false,
+                'new' => false,
+                'dragdrop' => true,
+                'sort' => false,
+                'hide' => true,
+                'delete' => true,
+                'localize' => true,
             ],
         ],
     ];
