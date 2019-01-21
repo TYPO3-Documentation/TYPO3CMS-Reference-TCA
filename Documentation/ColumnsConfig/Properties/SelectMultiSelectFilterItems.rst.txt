@@ -31,7 +31,7 @@ multiSelectFilterItems
                 'foreign_table_where' => 'ORDER BY header ASC',
                 'size' => 5,
                 'minitems' => 0,
-                'enableMultiSelectFilterTextfield' => TRUE,
+                'enableMultiSelectFilterTextfield' => true,
                 'multiSelectFilterItems' => [
                     [
                         'image',
