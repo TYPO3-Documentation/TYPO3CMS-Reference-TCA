@@ -44,10 +44,8 @@ linkPopup
     windowOpenParameters (string)
       Allows to set a different size of the popup, defaults
       to :code:`height=800,width=600,status=0,menubar=0,scrollbars=1`.
-      
-Example
-========
-.. code-block:: php
+
+**Example**::
 
     'link' => [
         'exclude' => 1,
@@ -63,4 +61,4 @@ Example
                 ]
             ]
         ],
-	],
+    ],
