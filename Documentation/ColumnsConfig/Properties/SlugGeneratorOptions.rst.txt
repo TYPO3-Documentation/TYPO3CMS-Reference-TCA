@@ -11,7 +11,7 @@ generatorOptions
     Holds information about the record fields to be used for slug generation:
 
     fields (array)
-      Insert several field names (of type string) that will be considered during slug construction.
+      Insert several field names (of type string or array) that will be considered during slug construction.
 
       .. note::
 
@@ -35,7 +35,7 @@ generatorOptions
          'config' => [
              'type' => 'slug',
              'generatorOptions' => [
-                 'fields' => ['title'],
+                 'fields' => ['nav_title', 'title'],
                  'replacements' => [
                      '(f/m)' => '',
                      '/' => '-'
