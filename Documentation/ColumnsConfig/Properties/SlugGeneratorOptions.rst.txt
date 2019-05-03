@@ -40,7 +40,7 @@ generatorOptions
                      '(f/m)' => '',
                      '/' => '-'
                  ],
-             ]
+             ],
              'fallbackCharacter' => '-',
              'prependSlash' => true,
              'eval' => 'uniqueInPid'
