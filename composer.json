@@ -2,5 +2,8 @@
     "name": "typo3/reference-tca",
     "type": "typo3-cms-documentation",
     "description": "Complete reference to the Table Configuration Array $GLOBALS['TCA']",
-    "license": "OPL-1.0"
+    "license": "OPL-1.0",
+    "require": {
+      "typo3/cms-core": "^8.7"
+    }
 }
