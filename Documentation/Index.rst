@@ -79,7 +79,7 @@ The original reference to the TCA was written by Kasper Skårhøj. This
 version has been updated by François Suter. Lots of core team members and
 other contributors maintain this document over time, see
 `github <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi>`__ for
-an overview of recent contributors. A big "Thank You!" goes to every single on of them.
+an overview of recent contributors. A big "Thank You!" goes to every single one of them.
 
 
 **Feedback**
