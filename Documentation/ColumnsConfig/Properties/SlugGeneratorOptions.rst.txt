@@ -17,6 +17,26 @@ generatorOptions
 
         For the time being, only the `title` field of table pages is evaluated to construct the slug from.
 
+      It is also possible to use multiple fields to have a fallback behaviour.
+
+      Example::
+
+         'config' => [
+             'type' => 'slug',
+             'generatorOptions' => [
+                 'fields' => [['nav_title', 'title'], 'some_other_field'],
+             ]
+             …
+         ]
+
+      This will generate a segment with:
+
+      - First:
+
+        - The value of the field `nav_title` if it is not empty
+        - The value of the field `title` if `nav_title` is empty
+
+      - Second: The value of the field `some_other_field`
 
     fieldSeparator (string)
       This value will divide the slug parts. If a section value contains this very value, it will be replaced by
