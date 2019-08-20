@@ -66,6 +66,20 @@ Examples
             'eval' => 'uniqueInSite',
         ],
     ],
+    
+It is possible to use multiple fields and fall back to the next by using a comma-separated list: 
+
+.. code-block:: php
+
+   'generatorOptions' => [
+       'fields' => ['nav_title,title'],
+       'fieldSeparator' => '/',
+       'prefixParentPageSlug' => true,
+       'replacements' => [
+           '/' => '',
+       ],
+   ],
+
 
 
 .. _columns-slug-properties:
