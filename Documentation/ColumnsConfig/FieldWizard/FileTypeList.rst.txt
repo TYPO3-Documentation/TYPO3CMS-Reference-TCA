@@ -12,3 +12,6 @@ fileTypeList
 
     Render a list of allowed file extensions. Enabled by default with `type='group'` and
     `internal_type='file'`.
+
+.. warning::
+   The configuration of `internal_type='file'` is deprecated since TYPO3 v9 and should not be used.
