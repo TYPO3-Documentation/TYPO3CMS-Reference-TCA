@@ -28,7 +28,7 @@ columnsOverrides
 
         'types' => [
             'text' => [
-                'showitem' => 'hidden, myText'
+                'showitem' => 'hidden, myText',
                 'columnsOverrides' => [
                     'myText' => [
                         'config' => [
