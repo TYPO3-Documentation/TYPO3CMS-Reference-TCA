@@ -389,7 +389,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-sheet:
 
 <sheets>
-^^^^^^^
+^^^^^^^^
 
 :aspect:`Element`
     <sheets>
