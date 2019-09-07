@@ -388,11 +388,11 @@ format. The structure is as follows:
 
 .. _columns-flex-data-format-array-sheet:
 
-<sheet>
-^^^^^^^
+<sheets>
+^^^^^^^^
 
 :aspect:`Element`
-    <sheet>
+    <sheets>
 
 :aspect:`Description`
     Contains the data for each sheet in the form. If there are no sheets, the default sheet "<sDEF>" is always used.
