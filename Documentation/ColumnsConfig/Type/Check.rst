@@ -136,8 +136,6 @@ Examples
             [
                0 => '',
                1 => '',
-               'labelChecked' => 'Enabled',
-               'labelUnchecked' => 'Disabled',
             ]
          ],
       ]
@@ -155,8 +153,6 @@ Examples
             [
                0 => '',
                1 => '',
-               'labelChecked' => 'Enabled',
-               'labelUnchecked' => 'Disabled',
                'invertStateDisplay' => true
             ]
          ],
