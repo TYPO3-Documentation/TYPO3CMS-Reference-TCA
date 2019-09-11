@@ -61,3 +61,29 @@ generatorOptions
          ]
 
       This will change the provided slug **'Some Job in city1/city2 (f/m)'** to **'some-job-in-city1-city2'**.
+
+    postModifiers (array)
+      The "slug" TCA type includes a possibility to hook into the generation of a slug via custom TCA generation options.
+      Hooks can be registered via::
+
+          $GLOBALS['TCA'][$tableName]['columns'][$fieldName]['config']['generatorOptions']['postModifiers'][] = My\Class::class . '->method';
+
+      Consider :php:`$tableName = 'pages'` and :php:`$fieldName = 'slug'`
+      inside :file:`EXT:myextension/Configuration/TCA/Overrides/table.php`::
+
+          $GLOBALS['TCA']['pages']['columns']['slug']['config']['generatorOptions']['postModifiers'][] = \My\Class::class . '->modifySlug';
+
+      The method then receives an parameter array with the following values::
+
+          [
+              'slug' // ... the slug to be used
+              'workspaceId' // ... the workspace ID, "0" if in live workspace
+              'configuration' // ... the configuration of the TCA field
+              'record' // ... the full record to be used
+              'pid' // ... the resolved parent page ID
+              'prefix' // ... the prefix that was added
+              'tableName' // ... the table of the slug field
+              'fieldName' // ... the field name of the slug field
+         ];
+
+      All hooks need to return the modified slug value.
