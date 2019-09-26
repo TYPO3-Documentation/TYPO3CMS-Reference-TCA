@@ -167,7 +167,7 @@ Examples
 .. code-block:: php
 
         'select_multiplesidebyside_5' => [
-            'label' => 'select_multiplesidebyside_5 multiSelectFilterItems, enableMultiSelectFilterTextfield=true',
+            'label' => 'select_multiplesidebyside_5 multiSelectFilterItems',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
@@ -177,7 +177,6 @@ Examples
                     ['foo 3', 3],
                     ['bar', 4],
                 ],
-                'enableMultiSelectFilterTextfield' => true,
                 'multiSelectFilterItems' => [
                     ['', ''],
                     ['foo', 'foo'],
@@ -503,9 +502,6 @@ Two select fields, items can be selected from the right field, selected items ar
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
 .. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
-
-.. _columns-select-properties-enablemultiselectfiltertextfield:
-.. include:: ../Properties/SelectEnableMultiSelectFilterTextfield.rst.txt
 
 .. include:: ../Properties/SelectExclusiveKeys.rst.txt
 

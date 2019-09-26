@@ -8,8 +8,7 @@ multiSelectFilterItems
     Display
 
 :aspect:`Description`
-    Contains predefined elements for the filter field enabled by
-    :ref:`enableMultiSelectFilterTextfield <columns-select-properties-enablemultiselectfiltertextfield>`. On selecting
+    Contains predefined elements for the filter field. On selecting
     an item, the list of available items gets automatically filtered.
 
     Each element in this array is in itself an array where:
@@ -31,7 +30,6 @@ multiSelectFilterItems
                 'foreign_table_where' => 'ORDER BY header ASC',
                 'size' => 5,
                 'minitems' => 0,
-                'enableMultiSelectFilterTextfield' => true,
                 'multiSelectFilterItems' => [
                     [
                         'image',
