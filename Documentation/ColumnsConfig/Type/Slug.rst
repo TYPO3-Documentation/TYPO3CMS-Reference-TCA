@@ -64,6 +64,7 @@ Examples
             ],
             'fallbackCharacter' => '-',
             'eval' => 'uniqueInSite',
+            'default' => ''
         ],
     ],
 
