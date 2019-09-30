@@ -313,14 +313,14 @@ Properties renderType = 'selectSingle'
 .. _columns-select-properties-readOnly:
 .. include:: ../Properties/CommonReadOnly.rst.txt
 
+.. _columns-select-properties-showicontable:
+.. include:: ../Properties/SelectShowIconTable.rst.txt
+
 .. _columns-select-properties-size:
 .. include:: ../Properties/CommonSize.rst.txt
 
 .. _columns-select-properties-special:
 .. include:: ../Properties/SelectSpecial.rst.txt
-
-.. _columns-select-properties-showicontable:
-.. include:: ../Properties/SelectShowIconTable.rst.txt
 
 .. _columns-select-rendertype-selectSingleBox:
 

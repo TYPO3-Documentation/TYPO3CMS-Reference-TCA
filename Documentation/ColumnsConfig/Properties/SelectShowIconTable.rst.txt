@@ -8,7 +8,9 @@ showIconTable
     Proc. / Display
 
 :aspect:`Description`
-    The option showIconTable has been introduced for select fields with render type `selectSingle`. If it set as `true` under the select box you see a table with the icons of your select items. In this table you could select the wishes item.
+    The option showIconTable has been introduced for select fields with render type `selectSingle`.
+    If it set to `true` it displays a table with icons of your select items under the select box.
+    In this table you can select the item you need.
 
     .. code-block:: php
 
