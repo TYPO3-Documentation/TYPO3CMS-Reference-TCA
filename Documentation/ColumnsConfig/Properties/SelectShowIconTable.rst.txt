@@ -1,0 +1,16 @@
+showIconTable
+~~~~~~~~~~~~~~~~
+
+:aspect:`Datatype`
+    boolean
+
+:aspect:`Scope`
+    Proc. / Display
+
+:aspect:`Description`
+    The option showIconTable has been introduced for select fields with render type `selectSingle`. If it set as `true` under the select box you see a table with the icons of your select items. In this table you could select the wishes item.
+
+    .. code-block:: php
+
+        // Enforce icon table showing flags
+        $GLOBALS['TCA']['tt_content']['columns']['sys_language_uid']['config']['showIconTable'] = true;
