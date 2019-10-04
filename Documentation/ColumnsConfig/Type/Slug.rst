@@ -55,7 +55,7 @@ Examples
         'config' => [
             'type' => 'slug',
             'generatorOptions' => [
-                'fields' => ['title', 'nav_title'],
+                'fields' => ['title, nav_title'],
                 'fieldSeparator' => '/',
                 'prefixParentPageSlug' => true,
                 'replacements' => [
