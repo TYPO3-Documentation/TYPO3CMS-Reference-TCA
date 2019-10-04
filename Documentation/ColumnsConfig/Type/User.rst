@@ -23,7 +23,7 @@ Characteristics of `user`:
 * FormEngine only renders a dummy element for type user fields by default. It should be combined with a
   custom renderType.
 * Type user field values are rendered as-is at other places in the backend. They for instance can be selected
-  to be displayed in the list module "singel table view".
+  to be displayed in the list module "single table view".
 * Field updates by the DataHandler get logged and the history/undo function will work with such values.
 
 The `user` field can be useful, if:
