@@ -11,7 +11,7 @@ type = 'user'
 Introduction
 ============
 
-There are three columns config types that do similar things but still have subtle differences between them.
+There are three columns config types that do similar things, but still have subtle differences between them.
 These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <columns-passthrough>` and the
 :ref:`user type <columns-user>`.
 
@@ -41,7 +41,7 @@ The `user` field can be useful, if:
 Examples
 ========
 
-The example registers an own node element a TCA field using it and a class implementing a rendering.
+The example registers an own node element, a TCA field using it and a class implementing a rendering.
 See :ref:`FormEngine docs<t3coreapi:FormEngine-Rendering-NodeFactory>` for more details on this.
 
 Register an own node element::
