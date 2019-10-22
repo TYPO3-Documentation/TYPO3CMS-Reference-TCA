@@ -30,7 +30,7 @@ label\_userFunc
     **Example:**
 
     Let's look at what is done for the "haiku" table of the "examples" extension. The call to the user function appears
-    in the :file:`EXT:examples/Configuration/TCA/tx_examples_haiku.php` file:;
+    in the :file:`EXT:examples/Configuration/TCA/tx_examples_haiku.php` file::
 
         'ctrl' => [
             'label' => 'title',
