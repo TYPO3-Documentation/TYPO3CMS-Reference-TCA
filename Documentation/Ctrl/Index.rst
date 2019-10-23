@@ -208,9 +208,6 @@ A few remarks:
 .. _ctrl-reference-selicon-field-path:
 .. include:: CtrlSeliconFieldPath.rst.txt
 
-.. _ctrl-reference-settodefaultoncopy:
-.. include:: CtrlSetToDefaultOnCopy.rst.txt
-
 .. _ctrl-reference-shadowcolumnsfornewplaceholders:
 .. include:: CtrlShadowColumnsForNewPlaceholders.rst.txt
 
