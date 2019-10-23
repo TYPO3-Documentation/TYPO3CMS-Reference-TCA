@@ -205,9 +205,6 @@ A few remarks:
 .. _ctrl-reference-selicon-field:
 .. include:: CtrlSeliconField.rst.txt
 
-.. _ctrl-reference-selicon-field-path:
-.. include:: CtrlSeliconFieldPath.rst.txt
-
 .. _ctrl-reference-settodefaultoncopy:
 .. include:: CtrlSetToDefaultOnCopy.rst.txt
 
