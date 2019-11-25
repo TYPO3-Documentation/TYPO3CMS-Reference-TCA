@@ -32,47 +32,16 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 Examples
 ========
 
+Example: Simple Checkbox With Label
+-----------------------------------
+
 .. figure:: ../../Images/TypeCheckStyleguide2.png
    :alt: Simple checkbox with label (checkbox_2)
    :class: with-shadow
 
    Simple checkbox with label (checkbox_2)
 
-.. figure:: ../../Images/TypeCheckStyleguide12.png
-   :alt: Four checkboxes in three columns (checkbox_12)
-   :class: with-shadow
-
-   Four checkboxes in three columns (checkbox_12)
-
-.. figure:: ../../Images/TypeCheckStyleguide16.png
-   :alt: Checkboxes wit inline floating (checkbox_16)
-   :class: with-shadow
-
-   Checkboxes with inline floating (checkbox_16)
-
-.. figure:: ../../Images/TypeCheckStyleguide17.png
-   :alt: Single checkbox with toggle (checkbox_17)
-   :class: with-shadow
-
-   Single checkbox with toggle (checkbox_17)
-
-.. figure:: ../../Images/TypeCheckStyleguide18.png
-   :alt: Single checkbox with toggle inverted state display (checkbox_18)
-   :class: with-shadow
-
-   Single checkbox with toggle inverted state display (checkbox_18)
-
-.. figure:: ../../Images/TypeCheckStyleguide19.png
-   :alt: Single checkbox with labeled toggle (checkbox_19)
-   :class: with-shadow
-
-   Single checkbox with labeled toggle (checkbox_19)
-
-.. figure:: ../../Images/TypeCheckStyleguide21.png
-   :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
-   :class: with-shadow
-
-   Single checkbox with labeled toggle inverted state display (checkbox_21)
+TCA:
 
 .. code-block:: php
 
@@ -82,10 +51,46 @@ Examples
       'config' => [
          'type' => 'check',
          'items' => [
+            // label, value
             ['foo', ''],
          ],
       ]
    ],
+
+If the checkbox is checked, the value for the field will be 1,
+if unchecked, it will be 0.
+
+:ref:`FlexForm <t3coreapi:flexforms>`:
+
+.. code-block:: xml
+
+   <settings.checkbox_2>
+      <TCEforms>
+          <label>checkbox_2 one checkbox with label</label>
+          <config>
+              <type>check</type>
+              <items type="array">
+                  <numIndex index="0" type="array">
+                      <numIndex index="0">foo</numIndex>
+                      <numIndex index="1"></numIndex>
+                  </numIndex>
+              </items>
+          </config>
+      </TCEforms>
+   </settings.checkbox_2>
+
+
+
+Example: Four Checkboxes in Three Columns
+-----------------------------------------
+
+.. figure:: ../../Images/TypeCheckStyleguide12.png
+   :alt: Four checkboxes in three columns (checkbox_12)
+   :class: with-shadow
+
+   Four checkboxes in three columns (checkbox_12)
+
+TCA:
 
 .. code-block:: php
 
@@ -95,6 +100,7 @@ Examples
       'config' => [
          'type' => 'check',
          'items' => [
+            // label, value
             ['foo1', ''],
             ['foo2', ''],
             ['foo3', ''],
@@ -103,6 +109,51 @@ Examples
          'cols' => '3',
       ],
    ],
+
+If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 | 4 | 8`).
+
+:ref:`FlexForm <t3coreapi:flexforms>`:
+
+.. code-block:: xml
+
+   <settings.checkbox_2>
+      <TCEforms>
+          <label>checkbox_12 cols=3</label>
+          <config>
+              <type>check</type>
+              <items type="array">
+                  <numIndex index="0" type="array">
+                      <numIndex index="0">foo1</numIndex>
+                      <numIndex index="1"></numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                      <numIndex index="0">foo2</numIndex>
+                      <numIndex index="1"></numIndex>
+                  </numIndex>
+                  <numIndex index="2" type="array">
+                      <numIndex index="0">foo3</numIndex>
+                      <numIndex index="1"></numIndex>
+                  </numIndex>
+                  <numIndex index="3" type="array">
+                      <numIndex index="0">foo4</numIndex>
+                      <numIndex index="1"></numIndex>
+                  </numIndex>
+              </items>
+              <cols>3</cols>
+          </config>
+      </TCEforms>
+   </settings.checkbox_2>
+
+
+
+Example: Checkboxes with Inline Floating
+----------------------------------------
+
+.. figure:: ../../Images/TypeCheckStyleguide16.png
+   :alt: Checkboxes wit inline floating (checkbox_16)
+   :class: with-shadow
+
+   Checkboxes with inline floating (checkbox_16)
 
 .. code-block:: php
 
@@ -124,6 +175,18 @@ Examples
       ],
    ],
 
+This will display as many checkbox items as will fit in one row. Without inline,
+each checkbox would be displayed in a separate row.
+
+Example: Single Checkbox With Toggle
+------------------------------------
+
+.. figure:: ../../Images/TypeCheckStyleguide17.png
+   :alt: Single checkbox with toggle (checkbox_17)
+   :class: with-shadow
+
+   Single checkbox with toggle (checkbox_17)
+
 .. code-block:: php
 
    'checkbox_17' => [
@@ -140,6 +203,17 @@ Examples
          ],
       ]
    ],
+
+`checkboxToggle`: Instead of checkboxes, a toggle item is displayed.
+
+Example: Single Checkbox With Toggle Inverted State Display
+-----------------------------------------------------------
+
+.. figure:: ../../Images/TypeCheckStyleguide18.png
+   :alt: Single checkbox with toggle inverted state display (checkbox_18)
+   :class: with-shadow
+
+   Single checkbox with toggle inverted state display (checkbox_18)
 
 .. code-block:: php
 
@@ -159,6 +233,18 @@ Examples
       ]
    ],
 
+`invertedStateDisplay`:  A checkbox is marked checked if the database bit is not set and vice versa.
+
+Example: Single checkbox With Labeled Toggle
+--------------------------------------------
+
+.. figure:: ../../Images/TypeCheckStyleguide19.png
+   :alt: Single checkbox with labeled toggle (checkbox_19)
+   :class: with-shadow
+
+   Single checkbox with labeled toggle (checkbox_19)
+
+
 .. code-block:: php
 
    'checkbox_19' => [
@@ -177,6 +263,17 @@ Examples
          ],
       ]
    ],
+
+
+Example: Single Checkbox With Labeled Toggle Inverted State Display
+-------------------------------------------------------------------
+
+.. figure:: ../../Images/TypeCheckStyleguide21.png
+   :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
+   :class: with-shadow
+
+   Single checkbox with labeled toggle inverted state display (checkbox_21)
+
 
 .. code-block:: php
 
