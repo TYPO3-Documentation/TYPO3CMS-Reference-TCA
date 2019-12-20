@@ -43,6 +43,12 @@ You can read more on how data is structured in :ref:`columns-group-data` chapter
 Examples
 ========
 
+.. figure:: ../../Images/TypeGroupDbSize1.png
+   :alt: Group relation to a single page (group_db_single)
+   :class: with-shadow
+
+   Group relation to a single page (group_db_single)
+
 .. figure:: ../../Images/TypeGroupDbStyleguide1.png
    :alt: Group relation to be_groups and be_users with some selected records (group_db_1)
    :class: with-shadow
@@ -54,6 +60,28 @@ Examples
    :class: with-shadow
 
    Group file relation with some selected files (group_file_1)
+
+.. code-block:: php
+
+   'group_db_single' => [
+      'label' => 'group_db_1 allowed=pages size=1',
+      'config' => [
+      'type' => 'group',
+      'internal_type' => 'db',
+      'allowed' => 'pages',
+      'maxitems' => 1,
+      'minitems' => 0,
+      'size' => 1,
+      'default' => 0,
+      'suggestOptions' => [
+         'default' => [
+            'additionalSearchFields' => 'nav_title, alias, url',
+               'addWhere' => 'AND pages.doktype = 1'
+            ]
+         ]
+      ]
+   ]
+
 
 .. code-block:: php
 
