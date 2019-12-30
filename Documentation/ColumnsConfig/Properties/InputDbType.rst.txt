@@ -22,7 +22,7 @@ dbType
 
        CREATE TABLE tx_example_domain_model_foo (
           synced_at datetime default NULL
-       )
+       );
 
     :file:`Configuration/TCA/tx_example_domain_model_foo.php`:
 
@@ -46,7 +46,7 @@ dbType
 
        CREATE TABLE tx_example_domain_model_foo (
           synced_at time default NULL
-       )
+       );
 
     :file:`Configuration/TCA/tx_example_domain_model_foo.php`::
 

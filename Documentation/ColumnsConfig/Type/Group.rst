@@ -33,7 +33,7 @@ You can read more on how data is structured in :ref:`columns-group-data` chapter
 
 .. note::
    Next to database relations, the group type is also able to handle files. Using `type='group'` for file handling
-   however is considered outdated and should be based on the :ref:`FAL API<t3fal:start>` instead, and
+   however is considered outdated and should be based on the :ref:`FAL API <t3coreapi:fal>` instead, and
    `internal_type='file'` and `internal_type='file_reference'` will be removed in TYPO3 version 10. To see an example
    on how to migrate these fields to FAL see the core change on `Gerrit <https://review.typo3.org/c/Packages/TYPO3.CMS/+/54830>`__
 

@@ -15,7 +15,7 @@ foreign\_table\_where
 
     **Example:**
 
-    .. code-block:: sql
+    .. code-block:: none
 
         AND {#tx_my_foreign_table}.{#pid} = 0 ORDER BY tx_my_foreign_table.sorting
 

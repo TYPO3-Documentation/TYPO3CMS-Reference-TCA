@@ -2,8 +2,9 @@
 
 .. _columns-select:
 
+===============
 type = 'select'
----------------
+===============
 
 .. _columns-select-introduction:
 
@@ -20,13 +21,12 @@ elements and helps with selecting others via element browser and other tools.
 
 The select type is pretty powerful, there are a lot of options to steer both rendering and database handling.
 
-Select TCA type is used to model a static selection of items or a n:1 database relation or a n:m database relation. For database relations the `foreign_table` TCA option is required.
+Select TCA type is used to model a static selection of items or a n:1 database relation or a n:m database relation.
+For database relations the `foreign_table` TCA option is required.
 
-In case of static items the values of the selected items are stored as CSV content.
-
-In case of n:1 (e.g. Organization has one Administrator) the uid of Administrator is stored in the select column of the Organization.
-
-In case of the n:m (e.g. Organization has multiple categories) the uid of the selected categories are stored either in CSV style inside the select column of the organization or as records in an MM-table, if specified in TCA.
+* In case of static items the values of the selected items are stored as CSV content.
+* In case of n:1 (e.g. Organization has one Administrator) the uid of Administrator is stored in the select column of the Organization.
+* In case of the n:m (e.g. Organization has multiple categories) the uid of the selected categories are stored either in CSV style inside the select column of the organization or as records in an MM-table, if specified in TCA.
 
 .. note::
     For this type, a renderType is mandatory!
