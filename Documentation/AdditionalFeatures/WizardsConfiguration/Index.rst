@@ -1211,7 +1211,7 @@ receiverClass
 
    Description
          PHP class alternative receiver class. Must extend
-         :ref:`TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver <t3cmsapi:TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver>`.
+         `TYPO3\\CMS\\Backend\\Form\\Element\\SuggestDefaultReceiver`.
 
 
 

@@ -399,7 +399,7 @@ formattedLabel\_userFunc
 				)
 			),
 
-         See class :ref:`TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService <t3cmsapi:TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService>`
+         See class `TYPO3\\CMS\\Core\\Resource\\Service\\UserFileInlineLabelService`
          for how such a user function should be designed and how the options are used.
 
    Scope

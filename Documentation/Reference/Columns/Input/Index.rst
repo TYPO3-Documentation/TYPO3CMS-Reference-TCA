@@ -287,7 +287,7 @@ eval
          the functions found in the script :file:`typo3/sysext/backend/Resources/Public/JavaScript/jsfunc.evalfield.js`.
 
          "(TCE)" means the evaluation is done in the TCE on the server. The class used for this is
-         :ref:`TYPO3\CMS\Core\DataHandling\DataHandler <t3cmsapi:TYPO3\\CMS\\Core\\DataHandling\\DataHandler>`.
+         `TYPO3\CMS\Core\DataHandling\DataHandler`.
 
          **Example:**
 

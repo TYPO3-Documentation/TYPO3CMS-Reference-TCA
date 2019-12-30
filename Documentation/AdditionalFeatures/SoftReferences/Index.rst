@@ -26,7 +26,7 @@ checking functions.
 Default soft reference parsers
 """"""""""""""""""""""""""""""
 
-The :ref:`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex <t3cmsapi:TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex>`
+The `TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex`
 class contains generic parsers for the most well-known types
 which are default for most TYPO3 installations. This
 is the list of the possible keys:
@@ -222,5 +222,5 @@ names based on the extension you put it in, e.g. :code:`tx_myextensionkey`.
 
 The class containing the soft reference parser must have a function
 named :code:`findRef`. Please refer to class
-:ref:`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex <t3cmsapi:TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex>`
+`TYPO3\\CMS\\Core\\Database\\SoftReferenceIndex`
 for API usage and expected return values.
