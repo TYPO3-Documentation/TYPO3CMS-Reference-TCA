@@ -20,4 +20,4 @@
 .settings
 .TemporaryItems
 .webprj
-nbproject
+nbproject*GENERATED*
