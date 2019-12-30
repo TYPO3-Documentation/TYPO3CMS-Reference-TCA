@@ -194,26 +194,26 @@ search
 
          **Example:**
 
-         The "tt\_content" table has the following definition:
+         The "tt\_content" table has the following definition::
 
-            $TCA['tt_content'] = array(
+            $TCA['tt_content'] = [
                // ...
-               'columns' => array(
+               'columns' => [
                   // ...
-                  'bodytext' => array(
+                  'bodytext' => [
                      // ...
-                     'config' => array(
+                     'config' =>  [
                         // ...
-                        'search' => array(
+                        'search' => [
                            'andWhere' => 'CType=\'text\' OR CType=\'textpic\'',
-                        ),
+                        ],
                         // ...
-                     ),
-                  ),
+                     ],
+                  ],
                   // ...
-               ),
+               ],
                // ...
-            );
+            ];
 
          This means that the "bodytext" field of the "tt\_content" table will
          be searched in only for elements of type Text and Text & Images.
