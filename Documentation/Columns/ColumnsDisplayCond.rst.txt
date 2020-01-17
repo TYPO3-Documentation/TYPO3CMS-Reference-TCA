@@ -72,6 +72,8 @@ displayCond
         - :php:`flexContext`: details about the FlexForm if the condition is used in one
         - :php:`flexformValueKey`: `vDEF`
         - :php:`conditionParameters`: additional parameters
+        
+        The called method is expected to return a :php:`bool` value: :php:`true` if the field should be displayed, :php:`false` otherwise.
 
     - **VERSION**
         Evaluate if a record is a "versioned" record from workspaces.
