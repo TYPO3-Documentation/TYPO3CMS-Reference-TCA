@@ -61,8 +61,19 @@ displayCond
         rather through some other interface (TemplaVoilà's Page module for instance).
 
     - **USER**
-        userFunc call with a fully qualified class name. Additional parameters can be passed separated
-        by colon. :php:`USER:Evoweb\\Example\\User\\MyConditionMatcher->checkHeader:some:more:info`
+        userFunc call with a fully qualified class name.
+        
+        Additional parameters can be passed separated by colon:
+        :php:`USER:Evoweb\\Example\\User\\MyConditionMatcher->checkHeader:some:more:info`
+        
+        The following arguments are passed as array to the userFunc:
+        
+        - :php:`record`: the currently edited record
+        - :php:`flexContext`: details about the FlexForm if the condition is used in one
+        - :php:`flexformValueKey`: `vDEF`
+        - :php:`conditionParameters`: additional parameters
+        
+        The called method is expected to return a :php:`bool` value: :php:`true` if the field should be displayed, :php:`false` otherwise.
 
     - **VERSION**
         Evaluate if a record is a "versioned" record from workspaces.
