@@ -66,16 +66,16 @@ Examples
    'group_db_single' => [
       'label' => 'group_db_1 allowed=pages size=1',
       'config' => [
-      'type' => 'group',
-      'internal_type' => 'db',
-      'allowed' => 'pages',
-      'maxitems' => 1,
-      'minitems' => 0,
-      'size' => 1,
-      'default' => 0,
-      'suggestOptions' => [
-         'default' => [
-            'additionalSearchFields' => 'nav_title, alias, url',
+         'type' => 'group',
+         'internal_type' => 'db',
+         'allowed' => 'pages',
+         'maxitems' => 1,
+         'minitems' => 0,
+         'size' => 1,
+         'default' => 0,
+         'suggestOptions' => [
+            'default' => [
+               'additionalSearchFields' => 'nav_title, alias, url',
                'addWhere' => 'AND pages.doktype = 1'
             ]
          ]
