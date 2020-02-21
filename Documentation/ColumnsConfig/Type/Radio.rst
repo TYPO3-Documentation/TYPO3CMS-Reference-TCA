@@ -32,9 +32,9 @@ Examples
         'config' => [
             'type' => 'radio',
             'items' => [
-                [ 'foo', 1 ], // 'foo' should be a LLL reference
-                [ 'bar', 2 ],
-                [ 'foobar', 3 ],
+                ['foo', 1], // 'foo' should be a LLL reference
+                ['bar', 2],
+                ['foobar', 3],
             ],
         ],
     ],

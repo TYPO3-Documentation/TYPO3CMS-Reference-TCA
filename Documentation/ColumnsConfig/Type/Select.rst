@@ -196,8 +196,8 @@ Examples
                 'foreign_table_where' => 'ORDER BY pages.sorting',
                 'size' => 20,
                 'items' => [
-                    [ 'static from tca 4711', 4711 ],
-                    [ 'static from tca 4712', 4712 ],
+                    ['static from tca 4711', 4711],
+                    ['static from tca 4712', 4712],
                 ],
                 'treeConfig' => [
                     'parentField' => 'pid',
