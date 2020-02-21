@@ -28,8 +28,8 @@ container
                     'fieldWizard' => [
                         'aName' => [
                             'renderType' => 'aRenderType',
-                            'before' => [ 'anotherName' ],
-                            'after' => [ 'yetAnotherName' ],
+                            'before' => ['anotherName'],
+                            'after' => ['yetAnotherName'],
                             'disabled' => false,
                             'options' => [],
                         ],
