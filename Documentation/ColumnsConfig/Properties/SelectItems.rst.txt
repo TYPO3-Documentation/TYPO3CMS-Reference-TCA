@@ -40,9 +40,9 @@ items
 
             'type' => 'select',
             'items' => [
-               [ 'English', '' ],
-               [ 'Danish', 'dk' ],
-               [ 'German', 'de' ],
+               ['English', ''],
+               ['Danish', 'dk'],
+               ['German', 'de'],
             ]
 
         A more complex example could be this (includes icons):
@@ -51,9 +51,9 @@ items
 
             'type' => 'select',
             'items' => [
-                [ 'LLL:EXT:cms/locallang_ttc.php:k1', 0, 'EXT:myext/Resources/Public/selicons/k1.gif' ],
-                [ 'LLL:EXT:cms/locallang_ttc.php:k2', 1, 'tx-myext-selicons-k2' ],
-                [ 'LLL:EXT:cms/locallang_ttc.php:k3', 2, 'tx-myext-selicons-k3' ],
+                ['LLL:EXT:cms/locallang_ttc.php:k1', 0, 'EXT:myext/Resources/Public/selicons/k1.gif'],
+                ['LLL:EXT:cms/locallang_ttc.php:k2', 1, 'tx-myext-selicons-k2'],
+                ['LLL:EXT:cms/locallang_ttc.php:k3', 2, 'tx-myext-selicons-k3'],
             ]
 
 

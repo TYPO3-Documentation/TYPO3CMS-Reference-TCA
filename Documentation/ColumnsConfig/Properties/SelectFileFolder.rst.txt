@@ -27,7 +27,7 @@ fileFolder
         'config' => [
             'type' => 'select',
             'items' => [
-                [ '', 0 ],
+                ['', 0],
             ],
             'fileFolder' => 'EXT:cms/tslib/media/flags/',
             'fileFolder_extList' => 'png,jpg,jpeg,gif',

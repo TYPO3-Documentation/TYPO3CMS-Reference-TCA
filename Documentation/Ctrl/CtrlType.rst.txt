@@ -45,9 +45,9 @@ type
     .. code-block:: php
 
         'types' => [
-            '0' => [ 'showitem' => 'hidden, record_type, title, some_date' ],
-            '1' => [ 'showitem' => 'record_type, title' ],
-            '2' => [ 'showitem' => 'title, some_date, hidden, record_type' ],
+            '0' => ['showitem' => 'hidden, record_type, title, some_date'],
+            '1' => ['showitem' => 'record_type, title'],
+            '2' => ['showitem' => 'title, some_date, hidden, record_type'],
         ],
 
     See the :ref:`section about types <types>` for more details.

@@ -126,10 +126,10 @@ Examples
             'eval' => 'trim',
             'valuePicker' => [
                 'items' => [
-                    [ 'spring', 'Spring', ],
-                    [ 'summer', 'Summer', ],
-                    [ 'autumn', 'Autumn', ],
-                    [ 'winter', 'Winter', ],
+                    ['spring', 'Spring'],
+                    ['summer', 'Summer'],
+                    ['autumn', 'Autumn'],
+                    ['winter', 'Winter'],
                 ],
             ],
         ],

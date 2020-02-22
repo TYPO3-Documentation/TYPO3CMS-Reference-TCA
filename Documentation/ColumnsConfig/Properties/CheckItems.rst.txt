@@ -23,8 +23,8 @@ items
     .. code-block:: php
 
         'items' => [
-            [ 'Green tomatoes', '' ], // Note these should be LLL references
-            [ 'Red peppers', '' ],
+            ['Green tomatoes', ''], // Note these should be LLL references
+            ['Red peppers', ''],
         ],
 
     Further properties can be set per item, but not all of them apply to all renderTypes:
