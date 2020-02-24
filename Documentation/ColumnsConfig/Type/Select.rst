@@ -182,6 +182,7 @@ Examples
                     ['foo', 'foo'],
                     ['bar', 'bar'],
                 ],
+                'enableMultiSelectFilterTextfield' => true,
             ],
         ],
 
