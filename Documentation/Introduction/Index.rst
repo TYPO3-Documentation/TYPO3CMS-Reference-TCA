@@ -11,7 +11,7 @@ Introduction
 .. _introduction-about:
 
 About this document
--------------------
+===================
 
 This document describes the global array called :php:`$GLOBALS['TCA']`. This
 array is a layer on top of the database tables that TYPO3 can operate on. It is a
@@ -28,7 +28,7 @@ will find things they did not know before.
 .. _tca-what-is:
 
 What is $GLOBALS['TCA']?
-------------------------
+========================
 
 The Table Configuration Array (or `$GLOBALS['TCA']`, `TCA`) is a global array in TYPO3
 which extends the definition of database tables beyond what can be done strictly with SQL.
@@ -78,13 +78,13 @@ from cache and is made available as :php:`$GLOBALS['TCA']` in almost all normal 
 .. _tca-structure:
 
 TCA main array structure
-------------------------
+========================
 
 
 .. _tca-structure-level1:
 
 Table entries (first level)
-===========================
+---------------------------
 
 The "first level" of the :php:`$GLOBALS['TCA']` array is made of the table names (as
 they appear in the database)::
@@ -105,7 +105,7 @@ Here three tables, `pages`, `tt_content` and `tx_examples_haiku` are shown as ex
 .. _tca-structure-level2:
 
 Inside tables (second level)
-============================
+----------------------------
 
 Each table is further defined by an array which configures how the
 system handles the table, both for the display and the processing in the
@@ -136,74 +136,79 @@ sections of :php:`$GLOBALS['TCA']['some_table']`. Each section is covered in mor
 chapter.
 
 
-**['ctrl'] The table**
+['ctrl'] The table
+~~~~~~~~~~~~~~~~~~
 
-  The "ctrl" section contains properties for the table in general.
+The "ctrl" section contains properties for the table in general.
 
-  These are basically divided in two main categories:
+These are basically divided in two main categories:
 
-  - properties which affect how the table is  *displayed* and handled in
-    the backend  *interface* . This includes which icon, what name, which
-    columns contains the title value, which column defines the type value
-    etc.
+- properties which affect how the table is  *displayed* and handled in
+the backend  *interface* . This includes which icon, what name, which
+columns contains the title value, which column defines the type value
+etc.
 
-  - properties which determine how it is processed by the system
-    (TCE). This includes publishing control, "deleted" flag, whether the table
-    can only be edited by admin-users, may only exist in the tree root
-    etc.
+- properties which determine how it is processed by the system
+(TCE). This includes publishing control, "deleted" flag, whether the table
+can only be edited by admin-users, may only exist in the tree root
+etc.
 
-  - For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
+- For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
 
-  :ref:`Full reference <ctrl>`
-
-
-**['interface'] Backend interface handling**
-
-  The "interface" section contains properties related to the tables
-  display in the backend, mostly the Web > List module.
-
-  :ref:`Full reference <interface>`
+:ref:`Full reference <ctrl>`
 
 
-**['columns'] Individual fields**
+['interface'] Backend interface handling
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  The "columns" section contains configuration for each table *field*
-  (also called "column") which can be edited in the backend.
+The "interface" section contains properties related to the tables
+display in the backend, mostly the Web > List module.
 
-  The configuration includes both properties for the display in the
-  backend as well as the processing of the submitted data.
-
-  Each field can be configured as a certain "type" (e.g. checkbox,
-  selector, input field, text area, file or db-relation field, user
-  defined etc.) and for each type a separate set of additional
-  properties applies. These properties are clearly explained for each
-  type.
-
-  :ref:`Full reference <columns>` and :ref:`['config'] section <columns-types>`.
+:ref:`Full reference <interface>`
 
 
-**['types'] Form layout for editing**
+['columns'] Individual fields
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  The "types" section defines how the fields in the table (configured in
-  the "columns" section) should be arranged inside the editing form; in
-  which order, with which "palettes" (see below) and with which possible
-  additional features applied.
+The "columns" section contains configuration for each table *field*
+(also called "column") which can be edited in the backend.
 
-  :ref:`Full reference <types>`
+The configuration includes both properties for the display in the
+backend as well as the processing of the submitted data.
+
+Each field can be configured as a certain "type" (e.g. checkbox,
+selector, input field, text area, file or db-relation field, user
+defined etc.) and for each type a separate set of additional
+properties applies. These properties are clearly explained for each
+type.
+
+:ref:`Full reference <columns>` and :ref:`['config'] section <columns-types>`.
 
 
-**['palettes'] Palette fields order**
+['types'] Form layout for editing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  A palette is just a list of fields which will be arranged horizontally
-  side-by-side.
+The "types" section defines how the fields in the table (configured in
+the "columns" section) should be arranged inside the editing form; in
+which order, with which "palettes" (see below) and with which possible
+additional features applied.
 
-  :ref:`Full reference <palettes>`
+:ref:`Full reference <types>`
+
+
+['palettes'] Palette fields order
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A palette is just a list of fields which will be arranged horizontally
+side-by-side.
+
+:ref:`Full reference <palettes>`
 
 
 .. _tca-structure-deeper:
 
 Deeper levels
-=============
+-------------
 
 All properties on the second level either have their own properties or
 contain a further hierarchy.
@@ -216,7 +221,7 @@ of all possible types and palettes.
 .. _tca-structure-scope:
 
 Properties scope
-================
+----------------
 
 In the detail reference one or more scopes are given for each
 property. They indicate which area is affected by a given
