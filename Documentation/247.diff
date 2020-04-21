@@ -1,0 +1,50 @@
+diff --git a/Documentation/ColumnsConfig/Type/Group.rst b/Documentation/ColumnsConfig/Type/Group.rst
+index 7f6945c..e95b0d9 100644
+--- a/Documentation/ColumnsConfig/Type/Group.rst
++++ b/Documentation/ColumnsConfig/Type/Group.rst
+@@ -43,6 +43,12 @@ You can read more on how data is structured in :ref:`columns-group-data` chapter
+ Examples
+ ========
+ 
++.. figure:: ../../Images/TypeGroupDbSize1.png
++   :alt: Group relation to a single page (group_db_single)
++   :class: with-shadow
++
++   Group relation to a single page (group_db_single)
++
+ .. figure:: ../../Images/TypeGroupDbStyleguide1.png
+    :alt: Group relation to be_groups and be_users with some selected records (group_db_1)
+    :class: with-shadow
+@@ -55,6 +61,28 @@ Examples
+ 
+    Group file relation with some selected files (group_file_1)
+ 
++.. code-block:: php
++
++   'group_db_single' => [
++      'label' => 'group_db_1 allowed=pages size=1',
++      'config' => [
++      'type' => 'group',
++      'internal_type' => 'db',
++      'allowed' => 'pages',
++      'maxitems' => 1,
++      'minitems' => 0,
++      'size' => 1,
++      'default' => 0,
++      'suggestOptions' => [
++         'default' => [
++            'additionalSearchFields' => 'nav_title, alias, url',
++               'addWhere' => 'AND pages.doktype = 1'
++            ]
++         ]
++      ]
++   ]
++
++
+ .. code-block:: php
+ 
+     'group_db_1' => [
+diff --git a/Documentation/Images/TypeGroupDbSize1.png b/Documentation/Images/TypeGroupDbSize1.png
+new file mode 100644
+index 0000000..8a345fa
+Binary files /dev/null and b/Documentation/Images/TypeGroupDbSize1.png differ

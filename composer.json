@@ -4,6 +4,6 @@
     "description": "Complete reference to the Table Configuration Array $GLOBALS['TCA']",
     "license": "OPL-1.0",
     "require": {
-        "typo3/cms-core": "^10.0"
+        "typo3/cms-core": "^10.4"
     }
 }
