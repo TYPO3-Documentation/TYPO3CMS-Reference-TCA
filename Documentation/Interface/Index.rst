@@ -25,7 +25,6 @@ This is how the "pages" table is configured for these settings:
 .. code-block:: php
 
     'interface' => [
-        'showRecordFieldList' => 'doktype,title,alias,...,backend_layout,backend_layout_next_level',
         'maxDBListItems' => 30,
         'maxSingleDBListItems' => 50
     ],
@@ -38,6 +37,3 @@ This is how the "pages" table is configured for these settings:
 
 .. _interface-properties-maxsingledblistitems:
 .. include:: InterfaceMaxSingleDbListItems.rst.txt
-
-.. _interface-properties-showrecordfieldlist:
-.. include:: InterfaceShowRecordFieldList.rst.txt
