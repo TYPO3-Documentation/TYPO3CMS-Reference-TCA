@@ -33,5 +33,5 @@ placeholder
         ],
 
     In the above placeholder syntax, :code:`uid_local` points to the related "sys_file" record and :code:`metadata`
-    points to the "sys_file_metata" of the related "sys_file" record. From there we take the content
+    points to the "sys_file_metadata" of the related "sys_file" record. From there we take the content
     of the :code:`title` field as placeholder value.
