@@ -62,6 +62,9 @@ Examples
                     '/' => '',
                 ],
             ],
+            'appearance' => [
+               'prefix' => \Vendor\Extension\UserFunctions\FormEngine\SlugPrefix::class . '->getPrefix'
+            ],
             'fallbackCharacter' => '-',
             'eval' => 'uniqueInSite',
             'default' => ''
@@ -75,6 +78,9 @@ Properties renderType default
 =============================
 
 .. _columns-slug-properties-type:
+
+.. _columns-slug-properties-appearance:
+.. include:: ../Properties/SlugAppearance.rst.txt
 
 .. _columns-slug-properties-eval:
 .. include:: ../Properties/SlugEval.rst.txt
