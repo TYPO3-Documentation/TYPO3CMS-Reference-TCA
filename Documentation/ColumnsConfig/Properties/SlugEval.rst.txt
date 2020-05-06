@@ -21,8 +21,7 @@ eval
         Evaluate if a record is unique in a site (specific to a language).
 
         .. warning::
-              Be aware that using this option makes it impossible to show records persisted in a page of one site
-              on pages of another site!
+              Be aware that using this option makes it impossible to show records stored inside other sites
 
     uniqueInPid
         Requires the field to be unique for the current PID among other records on the same page.
