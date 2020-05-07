@@ -14,7 +14,7 @@ eval
 
     unique
         Evaluate if a record is unique in the whole TYPO3 installation (specific to a language).
-        This option is recommended as it allows to show any record stored inside other site.
+        This option is recommended as it allows to show any record stored inside other sites.
         The only downside is that it is not possible to have the same slug on multiple sites.
 
     uniqueInSite
