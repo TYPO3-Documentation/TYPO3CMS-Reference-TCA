@@ -1,6 +1,3 @@
-fieldInformation
-~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

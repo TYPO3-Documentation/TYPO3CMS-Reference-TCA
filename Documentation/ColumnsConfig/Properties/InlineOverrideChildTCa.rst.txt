@@ -1,6 +1,3 @@
-overrideChildTca
-~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

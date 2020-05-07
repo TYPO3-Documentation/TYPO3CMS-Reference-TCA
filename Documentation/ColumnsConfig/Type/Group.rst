@@ -2,8 +2,13 @@
 
 .. _columns-group:
 
+==============
 type = 'group'
---------------
+==============
+
+.. contents:: Table of contents:
+   :local:
+   :depth: 1
 
 .. _columns-group-introduction:
 
@@ -43,23 +48,14 @@ You can read more on how data is structured in :ref:`columns-group-data` chapter
 Examples
 ========
 
+Group relation to a single page
+-------------------------------
+
 .. figure:: ../../Images/TypeGroupDbSize1.png
    :alt: Group relation to a single page (group_db_single)
    :class: with-shadow
 
    Group relation to a single page (group_db_single)
-
-.. figure:: ../../Images/TypeGroupDbStyleguide1.png
-   :alt: Group relation to be_groups and be_users with some selected records (group_db_1)
-   :class: with-shadow
-
-   Group relation to be_groups and be_users with some selected records (group_db_1)
-
-.. figure:: ../../Images/TypeGroupFileStyleguide1.png
-   :alt: Group file relation with some selected files (group_file_1)
-   :class: with-shadow
-
-   Group file relation with some selected files (group_file_1)
 
 .. code-block:: php
 
@@ -82,6 +78,15 @@ Examples
       ]
    ]
 
+Group relation to be_groups and be_users
+----------------------------------------
+
+
+.. figure:: ../../Images/TypeGroupDbStyleguide1.png
+   :alt: Group relation to be_groups and be_users with some selected records (group_db_1)
+   :class: with-shadow
+
+   Group relation to be_groups and be_users with some selected records (group_db_1)
 
 .. code-block:: php
 
@@ -105,125 +110,322 @@ Examples
         ],
     ],
 
+Group file relation
+-------------------
+
+.. figure:: ../../Images/TypeGroupFileStyleguide1.png
+   :alt: Group file relation with some selected files (group_file_1)
+   :class: with-shadow
+
+   Group file relation with some selected files (group_file_1)
+
 
 .. _columns-group-properties:
-
-Properties renderType default
-=============================
-
 .. _columns-group-properties-type:
 
+Properties
+==========
+
+.. contents::
+   :local:
+   :depth: 1
+
 .. _columns-group-properties-allowed:
+
+allowed
+-------
+
 .. include:: ../Properties/GroupAllowed.rst.txt
 
 .. _columns-group-properties-appearance:
+
+appearance
+----------
+
 .. include:: ../Properties/GroupAppearance.rst.txt
 
 .. _columns-group-properties-autosizemax:
+
+autoSizeMax
+-----------
+
 .. include:: ../Properties/CommonAutoSizeMax.rst.txt
 
 .. _columns-group-properties-behaviour:
+
+behaviour
+---------
+
 .. include:: ../Properties/CommonBehaviour.rst.txt
+
+allowLanguageSynchronization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-group-properties-default:
+
+default
+-------
+
 .. include:: ../Properties/CommonDefault.rst.txt
 
 .. _columns-group-properties-disallowed:
+
+disallowed
+----------
+
 .. include:: ../Properties/GroupDisallowed.rst.txt
 
 .. _columns-group-properties-dontremaptablesoncopy:
+
+dontRemapTablesOnCopy
+---------------------
+
 .. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
 
 .. _columns-group-properties-fieldControl:
+
+fieldControl
+------------
+
 .. include:: ../Properties/CommonFieldControl.rst.txt
-.. _columns-group-properties-elementBrowser:
+
+addRecord
+~~~~~~~~~
+
 .. include:: ../FieldControl/AddRecord.rst.txt
+
+editPopup
+~~~~~~~~~
+
 .. include:: ../FieldControl/EditPopup.rst.txt
+
+.. _columns-group-properties-elementBrowser:
+
+elementBrowser
+~~~~~~~~~~~~~~
+
 .. include:: ../FieldControl/ElementBrowser.rst.txt
+
+insertClipboard
+~~~~~~~~~~~~~~~
+
 .. include:: ../FieldControl/InsertClipboard.rst.txt
+
+listModule
+~~~~~~~~~~
+
 .. include:: ../FieldControl/ListModule.rst.txt
 
 .. _columns-group-properties-fieldInformation:
+
+fieldInformation
+----------------
+
 .. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-group-properties-fieldWizard:
+
+fieldWizard
+-----------
+
 .. include:: ../Properties/CommonFieldWizard.rst.txt
+
+defaultLanguageDifferences
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+
+fileThumbnails
+~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/FileThumbnails.rst.txt
+
+fileTypeList
+~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/FileTypeList.rst.txt
+
+fileUpload
+~~~~~~~~~~
+
 .. include:: ../FieldWizard/FileUpload.rst.txt
+
+localizationStateSelector
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+
+recordsOverview
+~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/RecordsOverview.rst.txt
+
+tableList
+~~~~~~~~~
+
 .. include:: ../FieldWizard/TableList.rst.txt
+
+otherLanguageContent
+~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-group-properties-filter:
+
+filter
+------
+
 .. include:: ../Properties/GroupFilter.rst.txt
 
 .. _columns-group-properties-foreign-table:
+
+foreign\_table
+--------------
+
 .. include:: ../Properties/GroupForeignTable.rst.txt
 
 .. _columns-group-properties-hideMoveIcons:
+
+hideMoveIcons
+-------------
+
 .. include:: ../Properties/GroupHideMoveIcons.rst.txt
 
 .. _columns-group-properties-hideSuggest:
+
+hideSuggest
+-----------
+
 .. include:: ../Properties/GroupHideSuggest.rst.txt
 
 .. _columns-group-properties-internal-type:
+
+internal\_type
+--------------
+
 .. include:: ../Properties/GroupInternalType.rst.txt
 
 .. _columns-group-properties-localizereferencesatparentlocalization:
+
+localizeReferencesAtParentLocalization
+--------------------------------------
+
 .. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
 
 .. _columns-group-properties-max-size:
+
+max\_size
+---------
+
 .. include:: ../Properties/GroupMaxSize.rst.txt
 
 .. _columns-group-properties-maxitems:
+
+maxitems
+--------
+
 .. include:: ../Properties/CommonMaxitems.rst.txt
 
 .. _columns-group-properties-minitems:
+
+minitems
+--------
+
 .. include:: ../Properties/CommonMinitems.rst.txt
 
 .. _columns-group-properties-mm:
+
+MM
+--
+
 .. include:: ../Properties/CommonMm.rst.txt
 
-.. _columns-group-properties-mm-insert-fields:
-.. include:: ../Properties/CommonMmInsertFields.rst.txt
-
 .. _columns-group-properties-mm-hasuidfield:
+
+MM\_hasUidField
+---------------
+
 .. include:: ../Properties/CommonMmHasUidField.rst.txt
 
+.. _columns-group-properties-mm-insert-fields:
+
+MM\_insert\_fields
+------------------
+
+.. include:: ../Properties/CommonMmInsertFields.rst.txt
+
+
 .. _columns-group-properties-mm-match-fields:
+
+MM\_match\_fields
+-----------------
+
 .. include:: ../Properties/CommonMmMatchFields.rst.txt
 
 .. _columns-group-properties-mm-opposite-field:
+
+MM\_opposite\_field
+-------------------
+
 .. include:: ../Properties/CommonOppositeField.rst.txt
 
 .. _columns-group-properties-mm-opposite-usage:
+
+MM\_oppositeUsage
+-----------------
+
 .. include:: ../Properties/CommonMmOppositeUsage.rst.txt
 
 .. _columns-group-properties-mm-table-where:
+
+MM\_table\_where
+----------------
+
 .. include:: ../Properties/CommonMmTableWhere.rst.txt
 
 .. _columns-group-properties-multiple:
+
+multiple
+--------
+
 .. include:: ../Properties/CommonMultiple.rst.txt
 
 .. _columns-group-properties-prepend-tname:
+
+prepend\_tname
+--------------
+
 .. include:: ../Properties/GroupPrependTname.rst.txt
 
 .. _columns-group-properties-readOnly:
+
+readOnly
+--------
+
 .. include:: ../Properties/CommonReadOnly.rst.txt
 
 .. _columns-group-properties-size:
+
+size
+----
+
 .. include:: ../Properties/CommonSize.rst.txt
 
 .. _columns-group-properties-suggestOptions:
+
+suggestOptions
+--------------
+
 .. include:: ../Properties/GroupSuggestOptions.rst.txt
 
 .. _columns-group-properties-uploadfolder:
-.. include:: ../Properties/GroupUploadfolder.rst.txt
 
+uploadfolder
+------------
+
+.. include:: ../Properties/GroupUploadfolder.rst.txt
 
 .. _columns-group-data:
 
@@ -240,7 +442,7 @@ references are stored internally.
 .. _columns-group-data-storage:
 
 Storage methods
-~~~~~~~~~~~~~~~
+---------------
 
 There are two main methods for this:
 
@@ -253,7 +455,7 @@ The default and most wide spread method is the comma list.
 .. _columns-group-data-reserved:
 
 Reserved tokens
-~~~~~~~~~~~~~~~
+---------------
 
 In the comma list the token "," is used to separate the values. In addition the pipe sign "\|" is used to separate
 value from label value when delivered to the interface. Therefore these tokens are not allowed in reference
@@ -262,7 +464,7 @@ values, not even if the MM method is used.
 .. _columns-group-data-commalist:
 
 The "Comma list" method (default)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 When storing references as a comma list the values are simply stored one after another, separated by a comma in between
 (with no space around!). The database field type is normally a varchar, text or blob field in order to handle this.
@@ -282,7 +484,7 @@ were "tt\_content,pages".
 .. _columns-group-data-mm:
 
 The "MM" method
-~~~~~~~~~~~~~~~
+---------------
 
 Using the MM method you have to create a new database table which you configure with the key "MM". The table must
 contain a field, "uid\_local" which contains the reference to the uid of the record that contains the list of elements
@@ -328,7 +530,7 @@ Or for "DSC\_7102\_background.jpg,DSC\_7181.jpg,DSC\_7102\_background\_01.jpg":
 .. _columns-group-data-api:
 
 API for getting the reference list
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 Class :php:`TYPO3\CMS\Core\Database\RelationHandler` is designed to transform the stored reference list
 values into an array where all uids are paired with the right table name. Also, this class will automatically
@@ -338,7 +540,7 @@ from "group" elements into a PHP array regardless of storage method.
 .. _columns-group-data-files:
 
 Managing file references
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 When a new file is attached to a record the TCE will detect the new file based on whether it has a path prefixed or not.
 New files are copied into the upload folder that has been configured and the final value list going into the database

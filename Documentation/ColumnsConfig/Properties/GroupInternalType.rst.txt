@@ -1,6 +1,3 @@
-internal\_type
-~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

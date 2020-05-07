@@ -1,6 +1,3 @@
-uploadfolder
-~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

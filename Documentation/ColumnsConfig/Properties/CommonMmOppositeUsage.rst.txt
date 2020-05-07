@@ -1,6 +1,3 @@
-MM\_oppositeUsage
-~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

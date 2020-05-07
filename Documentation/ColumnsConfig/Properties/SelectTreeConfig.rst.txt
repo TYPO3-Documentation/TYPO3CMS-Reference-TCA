@@ -1,6 +1,3 @@
-treeConfig
-~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

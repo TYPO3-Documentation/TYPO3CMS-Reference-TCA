@@ -1,6 +1,3 @@
-disableMovingChildrenWithParent
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 :aspect:`Datatype`
     boolean
 

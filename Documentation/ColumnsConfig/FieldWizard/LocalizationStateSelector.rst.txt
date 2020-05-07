@@ -1,6 +1,3 @@
-localizationStateSelector
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
 :aspect:`Datatype`
     array
 
