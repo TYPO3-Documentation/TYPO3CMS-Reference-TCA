@@ -37,17 +37,12 @@ In case of the n:m (e.g. Organization has multiple categories) the uid of the se
 Examples
 ========
 
-.. figure:: ../../Images/TypeSelectStyleguideSingle3.png
-   :alt: Simple select drop down with static and database values (select_single_3)
-   :class: with-shadow
+You can find these and more examples in the extension
+`styleguide <https://github.com/TYPO3/styleguide>`__.
 
-   Simple select drop down with static and database values (select_single_3)
 
-.. figure:: ../../Images/ColumnsExampleSelectImages.png
-   :alt: Select foreign rows which have icons configured (select_single_12)
-   :class: with-shadow
-
-   Select foreign rows which have icons configured (select_single_12)
+selectSingle with static values
+-------------------------------
 
 .. figure:: ../../Images/TypeSelectStyleguideSingle10.png
    :alt: Select a single value from a list of elements (select_single_10)
@@ -55,29 +50,58 @@ Examples
 
    Select a single value from a list of elements (select_single_10)
 
-.. figure:: ../../Images/TypeSelectStyleguideSingleBox1.png
-   :alt: Select multiple values from a box (select_singlebox_1)
+
+.. code-block:: php
+
+        'select_single_10' => [
+            'label' => 'select_single_10 size=6, three options',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['foo 1', 1],
+                    ['foo 2', 2],
+                    ['a divider', '--div--'],
+                    ['foo 3', 3],
+                ],
+                'size' => 6,
+            ],
+        ],
+
+selectSingle with DB
+--------------------
+
+.. figure:: ../../Images/ColumnsExampleSelectImages.png
+   :alt: Select foreign rows which have icons configured (select_single_12)
    :class: with-shadow
 
-   Select multiple values from a box (select_singlebox_1)
+   Select foreign rows which have icons configured (select_single_12)
 
-.. figure:: ../../Images/TypeSelectStyleguideCheckbox3.png
-   :alt: Select values from a checkbox list (select_checkbox_3)
+.. code-block:: php
+
+        'select_single_12' => [
+            'label' => 'select_single_12 foreign_table selicon_field',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'foreign_table' => 'tx_styleguide_elements_select_single_12_foreign',
+                'fieldWizard' => [
+                    'selectIcons' => [
+                        'disabled' => false,
+                    ],
+                ],
+            ],
+        ],
+
+
+selectSingle with static and DB values
+--------------------------------------
+
+.. figure:: ../../Images/TypeSelectStyleguideSingle3.png
+   :alt: Simple select drop down with static and database values (select_single_3)
    :class: with-shadow
 
-   Select values from a checkbox list (select_checkbox_3)
-
-.. figure:: ../../Images/TypeSelectStyleguideMultipleSideBySide5.png
-   :alt: Side-by-side view with filter (select_multiplesidebyside_5)
-   :class: with-shadow
-
-   Side-by-side view with filter (select_multiplesidebyside_5)
-
-.. figure:: ../../Images/TypeSelectStyleguideTree1.png
-   :alt: A happy little tree! (select_tree_1)
-   :class: with-shadow
-
-   A happy little tree! (select_tree_1)
+   Simple select drop down with static and database values (select_single_3)
 
 .. code-block:: php
 
@@ -98,38 +122,14 @@ Examples
             ],
         ],
 
-.. code-block:: php
+selectSingleBox with static values
+----------------------------------
 
-        'select_single_12' => [
-            'label' => 'select_single_12 foreign_table selicon_field',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_styleguide_elements_select_single_12_foreign',
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false,
-                    ],
-                ],
-            ],
-        ],
+.. figure:: ../../Images/TypeSelectStyleguideSingleBox1.png
+   :alt: Select multiple values from a box (select_singlebox_1)
+   :class: with-shadow
 
-.. code-block:: php
-
-        'select_single_10' => [
-            'label' => 'select_single_10 size=6, three options',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['a divider', '--div--'],
-                    ['foo 3', 3],
-                ],
-                'size' => 6,
-            ],
-        ],
+   Select multiple values from a box (select_singlebox_1)
 
 .. code-block:: php
 
@@ -148,6 +148,15 @@ Examples
             ],
         ],
 
+selectCheckBox
+--------------
+
+.. figure:: ../../Images/TypeSelectStyleguideCheckbox3.png
+   :alt: Select values from a checkbox list (select_checkbox_3)
+   :class: with-shadow
+
+   Select values from a checkbox list (select_checkbox_3)
+
 .. code-block:: php
 
         'select_checkbox_3' => [
@@ -163,6 +172,15 @@ Examples
                 ],
             ],
         ],
+
+selectMultipleSideBySide
+------------------------
+
+.. figure:: ../../Images/TypeSelectStyleguideMultipleSideBySide5.png
+   :alt: Side-by-side view with filter (select_multiplesidebyside_5)
+   :class: with-shadow
+
+   Side-by-side view with filter (select_multiplesidebyside_5)
 
 .. code-block:: php
 
@@ -184,6 +202,15 @@ Examples
                 ],
             ],
         ],
+
+selectTree
+----------
+
+.. figure:: ../../Images/TypeSelectStyleguideTree1.png
+   :alt: A happy little tree! (select_tree_1)
+   :class: with-shadow
+
+   A happy little tree! (select_tree_1)
 
 .. code-block:: php
 
