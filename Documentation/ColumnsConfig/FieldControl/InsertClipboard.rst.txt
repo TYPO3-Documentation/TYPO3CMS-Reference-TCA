@@ -1,6 +1,3 @@
-insertClipboard
-^^^^^^^^^^^^^^^
-
 :aspect:`Datatype`
     array
 

@@ -1,6 +1,3 @@
-special
-~~~~~~~
-
 :aspect:`Datatype`
     string (keyword)
 

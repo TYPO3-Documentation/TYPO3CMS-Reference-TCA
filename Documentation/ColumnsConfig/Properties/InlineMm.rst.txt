@@ -1,6 +1,3 @@
-MM
-~~
-
 :aspect:`Datatype`
     string (table name)
 

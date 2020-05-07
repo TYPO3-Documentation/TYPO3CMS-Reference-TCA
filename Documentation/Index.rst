@@ -41,7 +41,6 @@ TCA Reference
 The content of this document is related to TYPO3, a GNU/GPL CMS/Framework
 available from `www.typo3.org <https://typo3.org/>`_
 
-
 **Official documentation**
 
 This document is included as part of the official TYPO3 documentation.

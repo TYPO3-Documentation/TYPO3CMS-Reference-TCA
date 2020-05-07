@@ -1,6 +1,3 @@
-fileFolder\_extList
-~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

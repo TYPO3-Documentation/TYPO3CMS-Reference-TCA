@@ -1,6 +1,3 @@
-symmetric\_label
-~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

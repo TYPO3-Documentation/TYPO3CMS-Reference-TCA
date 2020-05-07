@@ -1,6 +1,3 @@
-otherLanguageContent
-^^^^^^^^^^^^^^^^^^^^
-
 :aspect:`Datatype`
     array
 

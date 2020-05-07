@@ -2,8 +2,13 @@
 
 .. _columns-passthrough:
 
+====================
 type = 'passthrough'
---------------------
+====================
+
+.. contents:: Table of contents:
+   :local:
+   :depth: 1
 
 .. _columns-passthrough-introduction:
 
@@ -55,11 +60,15 @@ This field is found in a number of tables, for instance the "pages" table. It is
 
 .. _columns-passthrough-properties:
 .. _columns-passthrough-renderType-default:
-
-Properties renderType default
-=============================
-
 .. _columns-passthrough-properties-type:
 
+
+Properties
+==========
+
 .. _columns-passthrough-properties-default:
+
+default
+-------
+
 .. include:: ../Properties/CommonDefault.rst.txt

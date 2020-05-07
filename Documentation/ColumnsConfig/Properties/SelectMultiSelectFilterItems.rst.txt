@@ -1,6 +1,3 @@
-multiSelectFilterItems
-~~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

@@ -1,7 +1,3 @@
-
-appearance
-~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

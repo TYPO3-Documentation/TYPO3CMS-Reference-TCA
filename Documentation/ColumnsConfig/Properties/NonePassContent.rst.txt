@@ -1,6 +1,3 @@
-pass\_content
-~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     boolean
 

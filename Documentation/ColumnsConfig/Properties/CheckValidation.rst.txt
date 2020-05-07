@@ -1,6 +1,3 @@
-validation
-~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

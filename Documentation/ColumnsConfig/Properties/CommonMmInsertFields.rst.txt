@@ -1,6 +1,3 @@
-MM\_insert\_fields
-~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

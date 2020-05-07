@@ -2,8 +2,13 @@
 
 .. _columns-imageManipulation:
 
+==========================
 type = 'imageManipulation'
---------------------------
+==========================
+
+.. contents:: Table of contents:
+   :local:
+   :depth: 1
 
 .. _columns-imageManipulation-introduction:
 
@@ -43,33 +48,85 @@ Examples
 
 .. _columns-imageManipulation-properties:
 
-Properties renderType default
-=============================
+Properties
+==========
+
+.. contents::
+   :local:
+   :depth: 1
 
 .. _columns-imageManipulation-properties-allowedExtensions:
+
+allowedExtensions
+-----------------
+
 .. include:: ../Properties/ImageManipulationAllowedExtensions.rst.txt
 
 .. _columns-imageManipulation-properties-behaviour:
+
+behaviour
+---------
+
 .. include:: ../Properties/CommonBehaviour.rst.txt
+
+allowLanguageSynchronization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-imageManipulation-properties-cropVariants:
+
+cropVariants
+------------
+
 .. include:: ../Properties/ImageManipulationCropVariants.rst.txt
 
 .. _columns-imageManipulation-properties-fieldControl:
+
+fieldControl
+------------
+
 .. include:: ../Properties/CommonFieldControl.rst.txt
 
 .. _columns-imageManipulation-properties-fieldInformation:
+
+fieldInformation
+----------------
+
 .. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-imageManipulation-properties-fieldWizard:
+
+fieldWizard
+-----------
+
 .. include:: ../Properties/CommonFieldWizard.rst.txt
+
+defaultLanguageDifferences
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+
+localizationStateSelector
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+
+otherLanguageContent
+~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-imageManipulation-properties-fileField:
+
+file_field
+----------
+
 .. include:: ../Properties/ImageManipulationFileField.rst.txt
 
 .. _columns-imageManipulation-properties-readOnly:
+
+readOnly
+--------
+
 .. include:: ../Properties/CommonReadOnly.rst.txt

@@ -144,14 +144,14 @@ The "ctrl" section contains properties for the table in general.
 These are basically divided in two main categories:
 
 - properties which affect how the table is  *displayed* and handled in
-the backend  *interface* . This includes which icon, what name, which
-columns contains the title value, which column defines the type value
-etc.
+  the backend  *interface* . This includes which icon, what name, which
+  columns contains the title value, which column defines the type value
+  etc.
 
 - properties which determine how it is processed by the system
-(TCE). This includes publishing control, "deleted" flag, whether the table
-can only be edited by admin-users, may only exist in the tree root
-etc.
+  (TCE). This includes publishing control, "deleted" flag, whether the table
+  can only be edited by admin-users, may only exist in the tree root
+  etc.
 
 - For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
 
