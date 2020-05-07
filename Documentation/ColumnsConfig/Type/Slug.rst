@@ -6,6 +6,10 @@
 type = 'slug'
 ==============
 
+.. contents:: Table of contents:
+   :local:
+   :depth: 1
+
 .. _columns-slug-introduction:
 
 Introduction
@@ -69,20 +73,40 @@ Examples
 
 
 .. _columns-slug-properties:
-
-Properties renderType default
-=============================
-
 .. _columns-slug-properties-type:
 
+Properties
+==========
+
+.. contents::
+   :local:
+   :depth: 1
+
+
 .. _columns-slug-properties-eval:
+
+eval
+----
+
 .. include:: ../Properties/SlugEval.rst.txt
 
 .. _columns-slug-properties-fallbackCharacter:
+
+fallbackCharacter
+-----------------
+
 .. include:: ../Properties/SlugFallbackCharacter.rst.txt
 
 .. _columns-slug-properties-generatorOptions:
+
+generatorOptions
+----------------
+
 .. include:: ../Properties/SlugGeneratorOptions.rst.txt
 
 .. _columns-slug-properties-prependSlash:
+
+prependSlash
+------------
+
 .. include:: ../Properties/SlugPrependSlash.rst.txt

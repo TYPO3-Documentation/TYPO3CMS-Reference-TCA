@@ -1,6 +1,3 @@
-foreign\_default\_sortby
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

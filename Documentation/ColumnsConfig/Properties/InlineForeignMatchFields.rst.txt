@@ -1,6 +1,3 @@
-foreign\_match\_fields
-~~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

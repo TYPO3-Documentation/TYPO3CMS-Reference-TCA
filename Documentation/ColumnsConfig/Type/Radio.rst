@@ -2,8 +2,13 @@
 
 .. _columns-radio:
 
+==============
 type = 'radio'
---------------
+==============
+
+.. contents:: Table of contents:
+   :local:
+   :depth: 1
 
 .. _columns-radio-introduction:
 
@@ -42,33 +47,80 @@ Examples
 
 
 .. _columns-radio-properties:
-
-Properties renderType default
-=============================
-
 .. _columns-radio-properties-type:
 
+Properties
+==========
+
+.. contents::
+   :local:
+   :depth: 1
+
 .. _columns-radio-properties-behaviour:
+
+behaviour
+---------
+
 .. include:: ../Properties/CommonBehaviour.rst.txt
+
+allowLanguageSynchronization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-radio-properties-default:
+
+default
+-------
+
 .. include:: ../Properties/CommonDefault.rst.txt
 
 .. _columns-radio-properties-fieldInformation:
+
+fieldInformation
+----------------
+
 .. include:: ../Properties/CommonFieldInformation.rst.txt
 
 .. _columns-radio-properties-fieldWizard:
+
+fieldWizard
+-----------
+
 .. include:: ../Properties/CommonFieldWizard.rst.txt
+
+defaultLanguageDifferences
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
+
+localizationStateSelector
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
+
+otherLanguageContent
+~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 
 .. _columns-radio-properties-items:
+
+items
+-----
+
 .. include:: ../Properties/RadioItems.rst.txt
 
 .. _columns-radio-properties-itemsprocfunc:
+
+itemsProcFunc
+-------------
+
 .. include:: ../Properties/CommonItemsProcFunc.rst.txt
 
 .. _columns-radio-properties-readOnly:
+
+readOnly
+--------
+
 .. include:: ../Properties/CommonReadOnly.rst.txt

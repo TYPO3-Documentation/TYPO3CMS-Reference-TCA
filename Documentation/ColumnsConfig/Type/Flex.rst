@@ -2,8 +2,13 @@
 
 .. _columns-flex:
 
+=============
 type = 'flex'
--------------
+=============
+
+.. contents:: Table of contents:
+   :local:
+   :depth: 1
 
 .. _columns-flex-introduction:
 
@@ -153,9 +158,10 @@ use the content of a specific field in there as my data structure".
 
 
 .. _columns-flex-properties:
+.. _columns-flex-properties-type:
 
-Properties renderType default
-=============================
+Properties
+==========
 
 There can be multiple data structures defined in `TCA` and it depends on the
 configuration and the record which one is chosen. All the different "ds" properties
@@ -167,26 +173,55 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
    :ref:`TCA type columnsOverrides <types-properties-columnsOverrides>` or to manipulate
    them in an inline parent-child relation from the parent `TCA`.
 
-
-.. _columns-flex-properties-type:
+.. contents::
+   :local:
+   :depth: 1
 
 .. _columns-flex-properties-behaviour:
+
+behaviour
+---------
+
 .. include:: ../Properties/CommonBehaviour.rst.txt
+
+allowLanguageSynchronization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 .. _columns-flex-properties-ds:
+
+ds
+--
+
 .. include:: ../Properties/FlexDs.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield:
+
+ds\_pointerField
+----------------
+
 .. include:: ../Properties/FlexDsPointerField.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield-searchparent:
+
+ds\_pointerField\_searchParent
+------------------------------
+
 .. include:: ../Properties/FlexDsPointerFieldSearchParent.rst.txt
 
 .. _columns-flex-properties-ds-pointerfield-searchparent-subfield:
+
+ds\_pointerField\_searchParent\_subField
+----------------------------------------
+
 .. include:: ../Properties/FlexDsPointerFieldSearchParentSubField.rst.txt
 
 .. _columns-flex-properties-ds-tablefield:
+
+ds\_tableField
+--------------
+
 .. include:: ../Properties/FlexDsTableField.rst.txt
 
 
@@ -197,7 +232,7 @@ FlexForm syntax
 
 .. note::
     This section is still messy, should be merged with the section from :ref:`Core API <t3coreapi:t3ds>`
-    and should be much easier to understand.
+    and :ref:`t3coreapi:flexforms` and should be much easier to understand.
 
 FlexForms create a form-in-a-form. The content coming from this form
 is still stored in the associated database field - but as an XML
@@ -230,12 +265,12 @@ The tables below documents the extension elements:
 .. _columns-flex-tceforms-array:
 
 Array Elements
-~~~~~~~~~~~~~~
+--------------
 
 .. _columns-flex-tceforms-array-meta:
 
 <meta>
-^^^^^^
+~~~~~~
 
 :aspect:`Element`
     <meta>
@@ -247,7 +282,7 @@ Array Elements
 .. _columns-flex-tceforms-array-application-tag:
 
 <[application tag]>
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Element`
     <TCEforms>
@@ -259,7 +294,7 @@ Array Elements
 .. _columns-flex-tceforms-array-root-tceforms:
 
 <ROOT><TCEforms>
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 :aspect:`Element`
     <ROOT><TCEforms>
@@ -279,12 +314,12 @@ Array Elements
 .. _columns-flex-tceforms-value:
 
 Value Elements
-~~~~~~~~~~~~~~
+--------------
 
 .. _columns-flex-tceforms-value-sheettitle:
 
 <sheetTitle>
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 :aspect:`Element`
     <sheetTitle>
@@ -298,7 +333,7 @@ Value Elements
 .. _columns-flex-tceforms-value-sheetdescription:
 
 <sheetDescription>
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 :aspect:`Element`
     <sheetDescription>
@@ -312,7 +347,7 @@ Value Elements
 .. _columns-flex-tceforms-value-sheetshortdescr:
 
 <sheetShortDescr>
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 :aspect:`Element`
     <sheetShortDescr>
@@ -327,7 +362,7 @@ Value Elements
 .. _columns-flex-sheets:
 
 Sheets and FlexForms
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 FlexForms always resolve sheet definitions in a Data Structure. If only one sheet is defined that must be
 the "sDEF" sheet (default). In that case no tab-menu for sheets will appear (see examples below).
@@ -336,7 +371,7 @@ the "sDEF" sheet (default). In that case no tab-menu for sheets will appear (see
 .. _columns-flex-data-format:
 
 FlexForm data format, <T3FlexForms>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 
 When saving FlexForm elements the content is stored as XML using
 :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::array2xml()` to convert the internal PHP array to XML
@@ -348,7 +383,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-t3flexforms:
 
 <T3FlexForms>
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 :aspect:`Element`
     <T3FlexForms>
@@ -364,7 +399,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-meta:
 
 <meta>
-^^^^^^
+~~~~~~
 
 :aspect:`Element`
     <meta>
@@ -375,7 +410,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-data:
 
 <data>
-^^^^^^
+~~~~~~
 
 :aspect:`Element`
     <data>
@@ -388,8 +423,9 @@ format. The structure is as follows:
 
 .. _columns-flex-data-format-array-sheet:
 
+
 <sheet>
-^^^^^^^
+~~~~~~~~
 
 :aspect:`Element`
     <sheet>
@@ -419,7 +455,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-ldef:
 
 <lDEF>
-^^^^^^
+~~~~~~
 
 :aspect:`Element`
     <lDEF>
@@ -433,7 +469,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-array-field-name:
 
 <[field name]>
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 :aspect:`Element`
     <[field name]>
@@ -450,7 +486,7 @@ format. The structure is as follows:
 .. _columns-flex-data-format-value-vdef:
 
 <vDEF>
-^^^^^^
+~~~~~~
 
 :aspect:`Element`
     <vDEF>
@@ -465,7 +501,7 @@ format. The structure is as follows:
 .. _columns-flex-example-simple:
 
 Example: Simple FlexForm
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 The extension "examples" provides some sample FlexForms. The "simple FlexForm" plugin provides a very basic
 configuration with just a select-type field to choose a page from the "pages" table.
@@ -547,7 +583,7 @@ Towards the bottom we can find the one we have just been looking at.
 .. _columns-flex-example-sheets:
 
 Example: FlexForm with two sheets
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 In this example we create a FlexForm field with two "sheets". Each sheet can contain a separate FlexForm structure.
 We build it up on top of the previous example, so the first sheet still has a select-type field related to the "pages"
@@ -670,7 +706,7 @@ Notice how the data of the two sheets are separated.
 .. _columns-flex-example-rte:
 
 Example: Rich Text Editor in FlexForms
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 Creating a RTE in FlexForms is done by enabling "enableRichtext" content to the <TCEforms> tag:
 

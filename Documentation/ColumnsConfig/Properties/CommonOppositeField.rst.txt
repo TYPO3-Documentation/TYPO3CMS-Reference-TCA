@@ -1,6 +1,3 @@
-MM\_opposite\_field
-~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string (field name)
 

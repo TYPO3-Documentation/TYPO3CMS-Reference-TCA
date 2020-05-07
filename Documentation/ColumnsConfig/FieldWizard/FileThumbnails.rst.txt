@@ -1,6 +1,3 @@
-fileThumbnails
-^^^^^^^^^^^^^^
-
 :aspect:`Datatype`
     array
 

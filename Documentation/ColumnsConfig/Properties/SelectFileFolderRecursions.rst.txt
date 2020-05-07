@@ -1,6 +1,3 @@
-fileFolder\_recursions
-~~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     integer
 

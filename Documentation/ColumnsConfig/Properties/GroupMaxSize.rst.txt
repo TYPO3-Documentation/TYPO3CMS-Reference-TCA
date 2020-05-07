@@ -1,6 +1,3 @@
-max\_size
-~~~~~~~~~
-
 :aspect:`Datatype`
     integer
 

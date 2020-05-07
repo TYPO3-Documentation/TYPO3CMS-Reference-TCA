@@ -1,6 +1,3 @@
-rows
-~~~~
-
 :aspect:`Datatype`
     integer
 

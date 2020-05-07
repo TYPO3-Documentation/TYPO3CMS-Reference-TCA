@@ -1,6 +1,3 @@
-exclusiveKeys
-~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string (list of)
 

@@ -1,6 +1,3 @@
-dbType
-~~~~~~
-
 :aspect:`Datatype`
     string
 

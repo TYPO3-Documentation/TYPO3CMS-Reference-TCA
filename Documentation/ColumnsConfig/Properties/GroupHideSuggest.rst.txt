@@ -1,6 +1,3 @@
-hideSuggest
-~~~~~~~~~~~
-
 :aspect:`Datatype`
     boolean
 

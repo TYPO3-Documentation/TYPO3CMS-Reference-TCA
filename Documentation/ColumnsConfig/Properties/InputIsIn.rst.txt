@@ -1,6 +1,3 @@
-is\_in
-~~~~~~
-
 :aspect:`Datatype`
     string
 
