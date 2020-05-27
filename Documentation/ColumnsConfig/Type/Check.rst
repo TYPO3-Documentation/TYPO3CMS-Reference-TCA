@@ -32,8 +32,11 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 Examples
 ========
 
+.. use non-standard header level 3 here (~~~~) because that is what is commonly
+.. being used, should be fixed in entire manual (in the included files).
+
 Example: Simple checkbox With label
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/TypeCheckStyleguide2.png
   :alt: Simple checkbox with label (checkbox_2)
@@ -80,7 +83,7 @@ if unchecked, it will be 0.
   </settings.checkbox_2>
 
 Example: Four checkboxes in three columns
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/TypeCheckStyleguide12.png
   :alt: Four checkboxes in three columns (checkbox_12)
@@ -144,7 +147,7 @@ If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 |
 
 
 Example: Checkboxes with inline floating
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/TypeCheckStyleguide16.png
   :alt: Checkboxes wit inline floating (checkbox_16)
@@ -176,7 +179,7 @@ This will display as many checkbox items as will fit in one row. Without inline,
 each checkbox would be displayed in a separate row.
 
 Example: Single checkbox With toggle
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/TypeCheckStyleguide17.png
   :alt: Single checkbox with toggle (checkbox_17)
@@ -203,8 +206,8 @@ Example: Single checkbox With toggle
 
 `checkboxToggle`: Instead of checkboxes, a toggle item is displayed.
 
-Example: Single checkbox With toggle inverted state display
------------------------------------------------------------
+Example: Single checkbox with toggle inverted state display
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/TypeCheckStyleguide18.png
   :alt: Single checkbox with toggle inverted state display (checkbox_18)
@@ -233,7 +236,7 @@ Example: Single checkbox With toggle inverted state display
 `invertedStateDisplay`:  A checkbox is marked checked if the database bit is not set and vice versa.
 
 Example: Single checkbox with labeled toggle
---------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/TypeCheckStyleguide19.png
   :alt: Single checkbox with labeled toggle (checkbox_19)
@@ -263,7 +266,7 @@ Example: Single checkbox with labeled toggle
 
 
 Example: Single checkbox with labeled toggle inverted state display
--------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/TypeCheckStyleguide21.png
   :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
