@@ -340,7 +340,7 @@ Renders a select field to select multiple entries from a given list.
 .. include:: ../Properties/CommonBehaviour.rst.txt
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/SelectDefault.rst.txt
+.. include:: ../Properties/SelectDefaultMulti.rst.txt
 
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
@@ -421,7 +421,7 @@ Render the list of values as single check box rows in a table. Multiple items ca
 .. include:: ../Properties/CommonBehaviour.rst.txt
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/SelectDefault.rst.txt
+.. include:: ../Properties/SelectDefaultMulti.rst.txt
 
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
@@ -499,7 +499,7 @@ Two select fields, items can be selected from the right field, selected items ar
 .. include:: ../Properties/CommonBehaviour.rst.txt
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/SelectDefault.rst.txt
+.. include:: ../Properties/SelectDefaultMulti.rst.txt
 
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
@@ -588,7 +588,7 @@ A tree for selecting hierarchical data items.
 .. include:: ../Properties/CommonBehaviour.rst.txt
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
-.. include:: ../Properties/SelectDefault.rst.txt
+.. include:: ../Properties/SelectDefaultMulti.rst.txt
 
 .. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
 
