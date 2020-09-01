@@ -29,7 +29,9 @@ For database relations the `foreign_table` TCA option is required.
 * In case of the n:m (e.g. Organization has multiple categories) the uid of the selected categories are stored either in CSV style inside the select column of the organization or as records in an MM-table, if specified in TCA.
 
 .. note::
-    For this type, a renderType is mandatory!
+
+   Since TYPO3 7.6, specifying renderType when using type='select' is mandatory,
+   see :doc:`t3core:Changelog/7.6/Deprecation-69822-DeprecateSelectFieldTca`.
 
 The chosen renderType influences the behaviour of the element and how it will
 be displayed.
