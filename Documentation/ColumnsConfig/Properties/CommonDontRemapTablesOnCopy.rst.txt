@@ -1,6 +1,3 @@
-dontRemapTablesOnCopy
-~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string (list of tables)
 

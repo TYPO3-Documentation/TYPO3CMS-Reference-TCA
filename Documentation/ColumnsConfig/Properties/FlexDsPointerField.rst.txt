@@ -1,6 +1,3 @@
-ds\_pointerField
-~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

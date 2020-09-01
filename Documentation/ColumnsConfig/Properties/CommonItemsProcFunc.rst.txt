@@ -1,6 +1,3 @@
-itemsProcFunc
-~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string (class->method reference)
 
@@ -63,3 +60,4 @@ itemsProcFunc
             }
 
     Further examples on different config type's can be found in the extension `styleguide`.
+

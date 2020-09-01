@@ -1,6 +1,3 @@
-disallowed
-~~~~~~~~~~
-
 :aspect:`Datatype`
     string (list of)
 

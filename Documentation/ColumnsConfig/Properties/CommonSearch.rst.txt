@@ -1,6 +1,3 @@
-search
-~~~~~~
-
 :aspect:`Datatype`
     array
 

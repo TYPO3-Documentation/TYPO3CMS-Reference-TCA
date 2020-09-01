@@ -1,6 +1,3 @@
-disableAgeDisplay
-~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     boolean
 

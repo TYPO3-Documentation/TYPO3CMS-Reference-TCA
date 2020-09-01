@@ -1,6 +1,3 @@
-addRecord
-^^^^^^^^^
-
 :aspect:`Datatype`
     array
 

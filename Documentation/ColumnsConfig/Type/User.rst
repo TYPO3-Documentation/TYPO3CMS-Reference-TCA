@@ -2,9 +2,13 @@
 
 .. _columns-user:
 
+=============
 type = 'user'
--------------
+=============
 
+.. contents:: Table of contents:
+   :local:
+   :depth: 1
 
 .. _columns-user-introduction:
 
@@ -87,6 +91,10 @@ Add a class implementation::
     }
 
 
+.. _columns-user-properties-type:
+.. _columns-user-properties-notablewrapping:
+.. _columns-user-properties-parameters:
+.. _columns-user-properties-userfunc:
 .. _columns-user-properties:
 
 Properties renderType default
@@ -94,7 +102,4 @@ Properties renderType default
 
 The default renderType just renders a dummy entry to indicate a custom renderType should be added.
 
-.. _columns-user-properties-type:
-.. _columns-user-properties-notablewrapping:
-.. _columns-user-properties-parameters:
-.. _columns-user-properties-userfunc:
+

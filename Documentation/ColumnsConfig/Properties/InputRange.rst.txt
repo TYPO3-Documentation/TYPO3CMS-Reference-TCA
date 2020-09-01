@@ -1,6 +1,3 @@
-range
-~~~~~
-
 :aspect:`Datatype`
     array
 

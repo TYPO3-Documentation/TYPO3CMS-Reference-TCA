@@ -1,6 +1,3 @@
-disableNoMatchingValueElement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     boolean
 

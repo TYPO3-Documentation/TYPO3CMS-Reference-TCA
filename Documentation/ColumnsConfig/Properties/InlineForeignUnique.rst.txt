@@ -1,6 +1,3 @@
-foreign\_unique
-~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

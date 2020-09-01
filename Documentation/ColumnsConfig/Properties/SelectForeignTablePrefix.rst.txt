@@ -1,6 +1,3 @@
-foreign\_table\_prefix
-~~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string or LLL reference
 
