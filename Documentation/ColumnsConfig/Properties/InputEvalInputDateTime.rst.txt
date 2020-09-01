@@ -36,6 +36,6 @@ eval
 
        TYPO3 does not handle the following dates properly:
 
-       * before Christus (negative year)
+       * Before Christ (negative year)
 
-       * two digit years
+       * double-digit years
