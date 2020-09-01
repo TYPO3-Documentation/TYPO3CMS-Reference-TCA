@@ -1,6 +1,3 @@
-ds\_pointerField\_searchParent\_subField
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

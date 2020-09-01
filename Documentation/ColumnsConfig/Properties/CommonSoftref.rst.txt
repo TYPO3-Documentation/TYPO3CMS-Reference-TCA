@@ -1,6 +1,3 @@
-softref
-~~~~~~~
-
 :aspect:`Datatype`
     string
 

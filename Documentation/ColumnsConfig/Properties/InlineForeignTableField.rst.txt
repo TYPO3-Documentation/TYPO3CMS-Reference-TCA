@@ -1,6 +1,3 @@
-foreign\_table\_field
-~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

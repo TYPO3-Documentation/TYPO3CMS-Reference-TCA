@@ -1,6 +1,3 @@
-ds\_tableField
-~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

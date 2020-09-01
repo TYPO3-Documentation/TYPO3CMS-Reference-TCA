@@ -1,6 +1,3 @@
-foreign\_table
-~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string (table name)
 

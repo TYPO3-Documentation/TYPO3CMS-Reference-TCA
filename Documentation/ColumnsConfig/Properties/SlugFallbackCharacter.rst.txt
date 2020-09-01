@@ -1,6 +1,3 @@
-fallbackCharacter
-~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     string
 

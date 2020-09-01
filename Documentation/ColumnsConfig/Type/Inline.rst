@@ -2,8 +2,13 @@
 
 .. _columns-inline:
 
+===============
 type = 'inline'
----------------
+===============
+
+.. contents:: Table of contents:
+   :local:
+   :depth: 1
 
 .. _columns-inline-introduction:
 
@@ -40,7 +45,7 @@ Examples
 .. _columns-inline-examples-images:
 
 Images
-~~~~~~
+------
 
 .. figure:: ../../Images/TypeInline1n1nStyleguide1.png
     :alt: A nested 1:n to 1:n relation
@@ -64,7 +69,7 @@ Images
 .. _columns-inline-examples-1nRelation:
 
 Simple 1:n relation
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 This combines a table companies with persons (employees):
 
@@ -89,7 +94,7 @@ This combines a table companies with persons (employees):
 .. _columns-inline-examples-fal:
 
 File Abstraction Layer
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3fal:start>`.
 
@@ -195,7 +200,7 @@ options (second call parameter) are merged looks like:
 .. _columns-inline-examples-asymmetric-mm:
 
 Attributes on anti-symmetric intermediate table
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------
 
 This example combines companies with persons (employees) using an intermediate table. It is also possible to add
 attributes to every relation – in this example, an attribute "jobtype" on the "person\_company" table is defined.
@@ -274,7 +279,7 @@ It is also possible to look at the relation from both sides (parent and child):
 .. _columns-inline-examples-symmetric-mm:
 
 Attributes on symmetric intermediate table
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------
 
 This example combines two persons with each other – imagine they are married. One person on the first side is the
 husband, and one person on the other side is the wife (or generally "spouse" in the example below). Symmetric
@@ -353,80 +358,187 @@ wife-husband-relationship in real life)
    have special storage folders on a per-table-basis. See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
 
 .. _columns-inline-properties:
-
-Properties renderType default
-=============================
-
 .. _columns-inline-properties-type:
 
+Properties
+==========
+
+.. contents::
+   :local:
+   :depth: 1
+
 .. _columns-inline-properties-appearance:
+
+appearance
+----------
+
 .. include:: ../Properties/InlineAppearance.rst.txt
 
 .. _columns-inline-properties-autosizemax:
+
+autoSizeMax
+-----------
+
 .. include:: ../Properties/InlineAutoSizeMax.rst.txt
 
 .. _columns-inline-properties-behaviour:
+
+behaviour
+---------
+
 .. include:: ../Properties/CommonBehaviour.rst.txt
+
+allowLanguageSynchronization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
+
+disableMovingChildrenWithParent
+-------------------------------
+
 .. include:: ../Behaviour/InlineDisableMovingChildrenWithParent.rst.txt
+
+enableCascadingDelete
+---------------------
+
 .. include:: ../Behaviour/InlineEnableCascadingDelete.rst.txt
 
 .. _columns-inline-properties-customcontrols:
+
+customControls
+--------------
+
 .. include:: ../Properties/InlineCustomControls.rst.txt
 
 .. _columns-inline-properties-filter:
+
+filter
+------
+
 .. include:: ../Properties/InlineFilter.rst.txt
 
 .. _columns-inline-properties-foreign-default-sortby:
+
+foreign\_default\_sortby
+------------------------
+
 .. include:: ../Properties/InlineForeignDefaultSortby.rst.txt
 
 .. _columns-inline-properties-foreign-field:
+
+foreign\_field
+--------------
+
 .. include:: ../Properties/InlineForeignField.rst.txt
 
 .. _columns-inline-properties-foreign-label:
+
+foreign\_label
+--------------
+
 .. include:: ../Properties/InlineForeignLabel.rst.txt
 
 .. _columns-inline-properties-foreign-match-fields:
+
+foreign\_match\_fields
+----------------------
+
 .. include:: ../Properties/InlineForeignMatchFields.rst.txt
 
 .. _columns-inline-properties-foreign-selector:
+
+foreign\_selector
+-----------------
+
 .. include:: ../Properties/InlineForeignSelector.rst.txt
 
 .. _columns-inline-properties-foreign-sortby:
+
+foreign\_sortby
+---------------
+
 .. include:: ../Properties/InlinePropertiesForeignSortby.rst.txt
 
 .. _columns-inline-properties-foreign-table:
+
+foreign\_table
+--------------
+
 .. include:: ../Properties/InlineForeignTable.rst.txt
 
 .. _columns-inline-properties-foreign-table-field:
+
+foreign\_table\_field
+---------------------
+
 .. include:: ../Properties/InlineForeignTableField.rst.txt
 
 .. _columns-inline-properties-foreign-unique:
+
+foreign\_unique
+---------------
+
 .. include:: ../Properties/InlineForeignUnique.rst.txt
 
 .. _columns-inline-properties-maxitems:
+
+maxitems
+--------
+
 .. include:: ../Properties/CommonMaxitems.rst.txt
 
 .. _columns-inline-properties-minitems:
+
+minitems
+--------
+
 .. include:: ../Properties/CommonMinitems.rst.txt
 
 .. _columns-inline-properties-mm:
+
+MM
+--
+
 .. include:: ../Properties/InlineMm.rst.txt
 
 .. _columns-inline-properties-mm-match-fields:
+
+MM\_match\_fields
+-----------------
+
 .. include:: ../Properties/CommonMmMatchFields.rst.txt
 
 .. _columns-inline-properties-overrideChildTca:
+
+overrideChildTca
+----------------
+
 .. include:: ../Properties/InlineOverrideChildTCa.rst.txt
 
 .. _columns-inline-properties-size:
+
+size
+----
+
 .. include:: ../Properties/InlineSize.rst.txt
 
 .. _columns-inline-properties-symmetric-field:
+
+symmetric\_field
+----------------
+
 .. include:: ../Properties/InlineSymmetricField.rst.txt
 
 .. _columns-inline-properties-symmetric-label:
+
+symmetric\_label
+----------------
+
 .. include:: ../Properties/InlineSymmetricLabel.rst.txt
 
 .. _columns-inline-properties-symmetric-sortby:
+
+symmetric\_sortby
+-----------------
+
 .. include:: ../Properties/InlineSymmetricSortby.rst.txt

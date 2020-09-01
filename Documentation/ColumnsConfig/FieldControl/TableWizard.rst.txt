@@ -1,6 +1,3 @@
-tableWizard
-^^^^^^^^^^^
-
 :aspect:`Datatype`
     array
 

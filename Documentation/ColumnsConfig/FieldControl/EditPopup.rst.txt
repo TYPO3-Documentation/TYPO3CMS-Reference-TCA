@@ -1,6 +1,3 @@
-editPopup
-^^^^^^^^^
-
 :aspect:`Datatype`
     array
 

@@ -1,6 +1,3 @@
-MM\_match\_fields
-~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

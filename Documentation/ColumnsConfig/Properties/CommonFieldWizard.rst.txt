@@ -1,6 +1,3 @@
-fieldWizard
-~~~~~~~~~~~
-
 :aspect:`Datatype`
     array
 

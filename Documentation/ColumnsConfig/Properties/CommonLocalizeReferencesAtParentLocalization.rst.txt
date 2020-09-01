@@ -1,6 +1,3 @@
-localizeReferencesAtParentLocalization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     boolean
 

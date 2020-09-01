@@ -1,6 +1,3 @@
-MM\_hasUidField
-~~~~~~~~~~~~~~~
-
 :aspect:`Datatype`
     boolean
 
