@@ -26,7 +26,7 @@ imageManipulation
    :ref:`Json array with cut / cropping information <columns-imageManipulation>`. Special field for images in FAL / Resource handling.
 
 inline
-   :ref:`Relations to other table rows that can be edited in the same form <columns-inline>`.
+   :ref:`Relations to other table rows that can be edited in the same form <columns-inline>`. Also used for file resources.
 
 input
    :ref:`Single line text input <columns-input>`. Used for a various different single line outputs like head lines, links, color pickers.
