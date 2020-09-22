@@ -38,8 +38,7 @@
             ],
         ],
 
-    You can supply own form evaluations in an extension by creating a class with three functions, one which returns
-    the JavaScript code for client side validation called `returnFieldJS()` and two for the server side:
+    You can supply own form evaluations in an extension by creating a class with two functions:
     `deevaluateFieldValue()` called when opening the record and `evaluateFieldValue()` called for validation when
     saving the record:
 
@@ -54,17 +53,6 @@
          */
         class ExampleEvaluation
         {
-
-            /**
-             * JavaScript code for client side validation/evaluation
-             *
-             * @return string JavaScript code for client side validation/evaluation
-             */
-            public function returnFieldJS()
-            {
-                return 'return value + " [added by JavaScript on field blur]";';
-            }
-
             /**
              * Server-side validation/evaluation on saving the record
              *
