@@ -346,13 +346,6 @@ readOnly
 
 .. include:: ../Properties/CommonReadOnly.rst.txt
 
-.. _columns-select-properties-showicontable:
-
-showIconTable
--------------
-
-.. include:: ../Properties/SelectShowIconTable.rst.txt
-
 .. _columns-select-properties-size:
 
 size
