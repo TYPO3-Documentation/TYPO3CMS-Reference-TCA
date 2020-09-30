@@ -19,7 +19,7 @@
 
     rootUid (integer, optional)
       uid of the record that shall be considered as the root node of the tree. In general this might be
-      set by Page TSconfig
+      set by Page TSconfig, see :ref:`pagetsconfigtceformconfigtreeconfig`
 
     appearance (array, optional)
       showHeader (boolean)
