@@ -59,7 +59,7 @@ This specifies the palette `caching`. It is then referenced in the `types` secti
 
     Caching palette in pages
 
-It is also possibly to define the label of a palette directly in the palette
+It is also possible to define the label of a palette directly in the palette
 definition. Declaring the label in an 'palettes' array can reduce boilerplate
 declarations if a palette is used over and over again in multiple types. If a
 label is defined for a palette this way, it is always displayed. Setting a
