@@ -15,13 +15,13 @@ useColumnsForDefaultValues
     create a new record from an existing one using the "New" button.
 
     This may still get overridden by the default values for the record. When assigning values to a new
-    record the following are used (the last one takes precedence):
+    record the following are used (applied in that order, e.g. Page TSconfig will overwrite User TSconfig):
 
     #. User TSconfig
     #. Page TSconfig
     #. From 'previous' record
     #. Default values
-    #. etc.
+    #. From 'inline' relations
 
     See :php:`\TYPO3\CMS\Backend\Form\FormDataProvider\DatabaseRowInitializeNew->DatabaseRowInitializeNew()`
 
