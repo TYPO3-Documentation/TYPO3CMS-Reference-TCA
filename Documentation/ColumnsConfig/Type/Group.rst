@@ -158,8 +158,8 @@ behaviour
 
 .. include:: ../Properties/CommonBehaviour.rst.txt
 
-allowLanguageSynchronization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+behaviour => allowLanguageSynchronization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
@@ -191,30 +191,36 @@ fieldControl
 
 .. include:: ../Properties/CommonFieldControl.rst.txt
 
-addRecord
-~~~~~~~~~
+The following fieldControls are available for this type:
+
+.. contents::
+   :local:
+   :depth: 1
+
+fieldControl => addRecord
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldControl/AddRecord.rst.txt
 
-editPopup
-~~~~~~~~~
+fieldControl => editPopup
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldControl/EditPopup.rst.txt
 
 .. _columns-group-properties-elementBrowser:
 
-elementBrowser
-~~~~~~~~~~~~~~
+fieldControl => elementBrowser
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldControl/ElementBrowser.rst.txt
 
-insertClipboard
-~~~~~~~~~~~~~~~
+fieldControl => insertClipboard
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldControl/InsertClipboard.rst.txt
 
-listModule
-~~~~~~~~~~
+fieldControl => listModule
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldControl/ListModule.rst.txt
 
@@ -232,43 +238,49 @@ fieldWizard
 
 .. include:: ../Properties/CommonFieldWizard.rst.txt
 
-defaultLanguageDifferences
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+The following wizards are available for this type:
+
+.. contents::
+   :local:
+   :depth: 1
+
+fieldWizard => defaultLanguageDifferences
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
 
-fileThumbnails
-~~~~~~~~~~~~~~
+fieldWizard => fileThumbnails
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/FileThumbnails.rst.txt
 
-fileTypeList
-~~~~~~~~~~~~
+fieldWizard => fileTypeList
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/FileTypeList.rst.txt
 
-fileUpload
-~~~~~~~~~~
+fieldWizard => fileUpload
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/FileUpload.rst.txt
 
-localizationStateSelector
-~~~~~~~~~~~~~~~~~~~~~~~~~
+fieldWizard => localizationStateSelector
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
 
-recordsOverview
-~~~~~~~~~~~~~~~
+fieldWizard => recordsOverview
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/RecordsOverview.rst.txt
 
-tableList
-~~~~~~~~~
+fieldWizard => tableList
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/TableList.rst.txt
 
-otherLanguageContent
-~~~~~~~~~~~~~~~~~~~~
+fieldWizard => otherLanguageContent
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/OtherLanguageContent.rst.txt
 

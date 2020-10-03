@@ -15,5 +15,16 @@
    It tells the DataHandler which fields of the localization records should be kept
    in sync if the underlying default or source record changes.
 
+   Example::
+
+      'aField' => [
+         'config' => [
+            'type' = 'sometype',
+            'behaviour' => [
+               'allowLanguageSynchronization' => true
+            ]
+         ]
+      ]
+
 :aspect:`Default`
     false
