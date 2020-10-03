@@ -184,8 +184,8 @@ behaviour
 
 .. include:: ../Properties/CommonBehaviour.rst.txt
 
-allowLanguageSynchronization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+behaviour => allowLanguageSynchronization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 

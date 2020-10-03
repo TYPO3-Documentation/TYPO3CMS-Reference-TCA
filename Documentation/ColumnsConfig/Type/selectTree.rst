@@ -83,8 +83,8 @@ behaviour
 
 .. include:: ../Properties/CommonBehaviour.rst.txt
 
-allowLanguageSynchronization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+behaviour => allowLanguageSynchronization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
@@ -118,8 +118,14 @@ fieldWizard
 
 .. include:: ../Properties/CommonFieldWizard.rst.txt
 
-localizationStateSelector
-~~~~~~~~~~~~~~~~~~~~~~~~~
+The following fieldWizards are available for this renderType:
+
+.. contents::
+   :local:
+   :depth: 1
+
+fieldWizard => localizationStateSelector
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
 
