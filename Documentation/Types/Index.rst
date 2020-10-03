@@ -61,8 +61,8 @@ Let's take the internal notes (sys\_note) as a basic example. The ['types'] sect
         ],
     ]
 
-It specifies two tabs: First one with four fields "general", "category" "subject" and "message", and second with the
-field "personal" on it. Only the default type "0" is specified. Opening such a record looks like this:
+It specifies two tabs: the first one labelled "general" with three fields "category" "subject" and "message", and the second one labelled "access" with the
+field "personal". Only the default type "0" is specified. Opening such a record looks like this:
 
 .. figure:: ../Images/TypesSysNote.png
    :alt: The internal note input form
