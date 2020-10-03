@@ -61,7 +61,7 @@ Let's take the internal notes (sys\_note) as a basic example. The ['types'] sect
         ],
     ]
 
-It specifies two tabs: First one with four fields "general", "category" "subject" and "message", and second with the
+It specifies two tabs: First one with three fields "category" "subject" and "message", and second with the
 field "personal" on it. Only the default type "0" is specified. Opening such a record looks like this:
 
 .. figure:: ../Images/TypesSysNote.png
