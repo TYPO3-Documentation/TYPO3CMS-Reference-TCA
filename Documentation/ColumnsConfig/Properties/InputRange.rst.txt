@@ -35,6 +35,6 @@
     .. code-block:: php
 
         'range' => [
-            'upper' => mktime(0, 0, 0, 12, 31, 2020),
-            'lower' => mktime(0, 0, 0, 1, 1, 2014),
+            'upper' => gmmktime(23, 59, 59, 12, 31, 2020),
+            'lower' => gmmktime(0, 0, 0, 1, 1, 2014),
         ],
