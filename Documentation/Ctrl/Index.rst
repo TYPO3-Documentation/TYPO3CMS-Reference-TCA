@@ -61,7 +61,7 @@ Table :code:`tt_content` makes much more excessive use of the :code:`['ctrl']` s
         'type' => 'CType',
         'descriptionColumn' => 'rowDescription',
         'hideAtCopy' => true,
-        'prependAtCopy' => 'LLL:EXT:lang/locallang_general.xlf:LGL.prependAtCopy',
+        'prependAtCopy' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
         'copyAfterDuplFields' => 'colPos,sys_language_uid',
         'useColumnsForDefaultValues' => 'colPos,sys_language_uid,CType',
         'shadowColumnsForNewPlaceholders' => 'colPos',

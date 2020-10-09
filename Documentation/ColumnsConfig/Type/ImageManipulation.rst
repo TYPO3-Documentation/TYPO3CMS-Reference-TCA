@@ -39,7 +39,7 @@ Examples
 .. code-block:: php
 
     'crop' => [
-        'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.crop',
+        'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.crop',
         'config' => [
             'type' => 'imageManipulation',
         ],
