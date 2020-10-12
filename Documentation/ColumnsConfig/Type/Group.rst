@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+.. include:: ../../Includes.txt
 
 .. _columns-group:
 
@@ -119,6 +119,27 @@ Group file relation
 
    Group file relation with some selected files (group_file_1)
 
+.. code-block:: php
+
+    'group_file_1' => [
+        'label' => 'group_file_1 allowed=sys_file',
+        'config' => [
+            'type' => 'group',
+            'internal_type' => 'db',
+            'allowed' => 'sys_file',
+            'fieldControl' => [
+                'editPopup' => [
+                    'disabled' => false,
+                ],
+                'addRecord' => [
+                    'disabled' => false,
+                ],
+                'listModule' => [
+                    'disabled' => false,
+                ],
+            ],
+        ],
+    ],
 
 .. _columns-group-properties:
 .. _columns-group-properties-type:
