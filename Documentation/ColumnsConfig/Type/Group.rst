@@ -110,37 +110,6 @@ Group relation to be_groups and be_users
         ],
     ],
 
-Group file relation
--------------------
-
-.. figure:: ../../Images/TypeGroupFileStyleguide1.png
-   :alt: Group file relation with some selected files (group_file_1)
-   :class: with-shadow
-
-   Group file relation with some selected files (group_file_1)
-
-.. code-block:: php
-
-    'group_file_1' => [
-        'label' => 'group_file_1 allowed=sys_file',
-        'config' => [
-            'type' => 'group',
-            'internal_type' => 'db',
-            'allowed' => 'sys_file',
-            'fieldControl' => [
-                'editPopup' => [
-                    'disabled' => false,
-                ],
-                'addRecord' => [
-                    'disabled' => false,
-                ],
-                'listModule' => [
-                    'disabled' => false,
-                ],
-            ],
-        ],
-    ],
-
 .. _columns-group-properties:
 .. _columns-group-properties-type:
 
