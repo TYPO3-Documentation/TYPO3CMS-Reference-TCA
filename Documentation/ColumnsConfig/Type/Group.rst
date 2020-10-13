@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+.. include:: ../../Includes.txt
 
 .. _columns-group:
 
@@ -109,16 +109,6 @@ Group relation to be_groups and be_users
             ],
         ],
     ],
-
-Group file relation
--------------------
-
-.. figure:: ../../Images/TypeGroupFileStyleguide1.png
-   :alt: Group file relation with some selected files (group_file_1)
-   :class: with-shadow
-
-   Group file relation with some selected files (group_file_1)
-
 
 .. _columns-group-properties:
 .. _columns-group-properties-type:
