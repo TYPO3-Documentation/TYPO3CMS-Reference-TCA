@@ -178,6 +178,13 @@ exclusiveKeys
 
 .. include:: ../Properties/SelectExclusiveKeys.rst.txt
 
+.. _columns-select-properties-fieldControl:
+
+fieldControl
+------------
+
+.. include:: ../Properties/CommonFieldControl.rst.txt
+
 .. _columns-select-properties-fieldInformation:
 
 fieldInformation
