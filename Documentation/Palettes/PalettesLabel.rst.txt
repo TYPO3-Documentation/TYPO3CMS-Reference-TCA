@@ -5,7 +5,6 @@ label
     string
 
 :aspect:`Description`
-
     Allows to display a localized label text as a dedicated entry into the palette declaration, instead as a part of
     the types configuration.
     By using the explicit label entry, code duplication upon reusing existing palettes can be reduced. The label is
