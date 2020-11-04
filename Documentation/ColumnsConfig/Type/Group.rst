@@ -36,12 +36,6 @@ The group field uses either CSV format to store uids of related records or inter
 
 You can read more on how data is structured in :ref:`columns-group-data` chapter.
 
-.. note::
-   Next to database relations, the group type is also able to handle files. Using `type='group'` for file handling
-   however is considered outdated and should be based on the :ref:`FAL API<t3fal:start>` instead, and
-   `internal_type='file'` and `internal_type='file_reference'` will be removed in TYPO3 version 10. To see an example
-   on how to migrate these fields to FAL see the core change on `Gerrit <https://review.typo3.org/c/Packages/TYPO3.CMS/+/54830>`__
-
 
 .. _columns-group-examples:
 
@@ -239,20 +233,6 @@ fieldWizard => defaultLanguageDifferences
 
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
 
-fieldWizard => fileThumbnails
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: ../FieldWizard/FileThumbnails.rst.txt
-
-fieldWizard => fileTypeList
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: ../FieldWizard/FileTypeList.rst.txt
-
-fieldWizard => fileUpload
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: ../FieldWizard/FileUpload.rst.txt
 
 fieldWizard => localizationStateSelector
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -472,8 +452,6 @@ When storing references as a comma list the values are simply stored one after a
 (with no space around!). The database field type is normally a varchar, text or blob field in order to handle this.
 
 From the examples above the four Content Elements will be stored as "26,45,49,1" which is the UID values of the records.
-The images will be stored as their filenames in a list
-like "DSC\_7102\_background.jpg ,DSC\_7181.jpg,DSC\_7102\_background\_01.jpg".
 
 Since "db" references can be stored for multiple tables the rule is that uid numbers *without* a table name prefixed
 are implicitly from the first table in the allowed table list! Thus the list "26,45,49,1" is implicitly understood as
@@ -517,18 +495,6 @@ Or for "tt\_content\_26,pages\_123":
 | [uid of the record you are editing] | 123          | pages       | 2       |
 +-------------------------------------+--------------+-------------+---------+
 
-Or for "DSC\_7102\_background.jpg,DSC\_7181.jpg,DSC\_7102\_background\_01.jpg":
-
-+-------------------------------------+-------------------------------+-------------+---------+
-| uid\_local                          | uid\_foreign                  | tablename   | sorting |
-+=====================================+===============================+=============+=========+
-| [uid of the record you are editing] | DSC\_7102\_background.jpg     | N/A         | 1       |
-+-------------------------------------+-------------------------------+-------------+---------+
-| [uid of the record you are editing] | DSC\_7181.jpg                 | N/A         | 2       |
-+-------------------------------------+-------------------------------+-------------+---------+
-| [uid of the record you are editing] | DSC\_7102\_background\_01.jpg | N/A         | 3       |
-+-------------------------------------+-------------------------------+-------------+---------+
-
 .. _columns-group-data-api:
 
 API for getting the reference list
@@ -538,32 +504,3 @@ Class :php:`TYPO3\CMS\Core\Database\RelationHandler` is designed to transform th
 values into an array where all uids are paired with the right table name. Also, this class will automatically
 retrieve the list of MM relations. In other words, it provides an API for getting the references
 from "group" elements into a PHP array regardless of storage method.
-
-.. _columns-group-data-files:
-
-Managing file references
-------------------------
-
-When a new file is attached to a record the TCE will detect the new file based on whether it has a path prefixed or not.
-New files are copied into the upload folder that has been configured and the final value list going into the database
-will contain the new filename of the copy.
-
-If images are removed from the list that is detected by simply comparing the original file list with the one submitted.
-Any files not listed anymore are deleted.
-
-Examples:
-
-+----------------------+------------------------------+-------------------------------------+--------------------------------------+
-| Current DB value     | Data from FormEngine         | New DB value                        | Processing done                      |
-+======================+==============================+=====================================+======================================+
-| first.jpg,second.jpg | first.jpg,/www/typo3/fileadm | first.jpg,newfile_01.jpg,second.jpg | /www/typo3/fileadmin/newfile.jpg     |
-|                      | in/newfile.jpg,second.jpg    |                                     | was copied to "uploads/[some-        |
-|                      |                              |                                     | dir]/newfile_01.jpg". The filename   |
-|                      |                              |                                     | was appended with "_01" because      |
-|                      |                              |                                     | another file with the name           |
-|                      |                              |                                     | "newfile.jpg" already existed in the |
-|                      |                              |                                     | location.                            |
-+----------------------+------------------------------+-------------------------------------+--------------------------------------+
-| first.jpg,second.jpg | first.jpg                    | first.jpg                           | "uploads/[some-dir]/second.jpg" was  |
-|                      |                              |                                     | deleted from the location.           |
-+----------------------+------------------------------+-------------------------------------+--------------------------------------+
