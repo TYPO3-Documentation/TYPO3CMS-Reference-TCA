@@ -3,10 +3,10 @@
 .. _columns-input-renderType-colorpicker:
 
 ===================
-input (colorPicker)
+input (colorpicker)
 ===================
 
-This page describes the :ref:`input <columns-input>` type with renderType='colorPicker'.
+This page describes the :ref:`input <columns-input>` type with renderType='colorpicker'.
 
 An input field with a JavaScript color picker.
 
