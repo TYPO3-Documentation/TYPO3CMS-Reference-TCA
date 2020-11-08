@@ -214,9 +214,6 @@ A few remarks:
 .. _ctrl-reference-sortby:
 .. include:: CtrlSortby.rst.txt
 
-.. _ctrl-reference-thumbnail:
-.. include:: CtrlThumbnail.rst.txt
-
 .. _ctrl-reference-title:
 .. include:: CtrlTitle.rst.txt
 
