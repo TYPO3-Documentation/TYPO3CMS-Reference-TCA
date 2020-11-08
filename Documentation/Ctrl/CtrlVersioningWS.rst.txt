@@ -105,7 +105,6 @@ versioningWS
         t3ver_stage int(11) DEFAULT '0' NOT NULL,
         t3ver_count int(11) DEFAULT '0' NOT NULL,
         t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
-        t3ver_move_id int(11) DEFAULT '0' NOT NULL,
 
     **Special "t3ver\_swapmode" field for pages**
 

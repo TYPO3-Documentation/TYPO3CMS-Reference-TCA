@@ -208,9 +208,6 @@ A few remarks:
 .. _ctrl-reference-shadowcolumnsfornewplaceholders:
 .. include:: CtrlShadowColumnsForNewPlaceholders.rst.txt
 
-.. _ctrl-reference-shadowcolumnsformoveplaceholders:
-.. include:: CtrlShadowColumnsForMovePlaceholders.rst.txt
-
 .. _ctrl-reference-sortby:
 .. include:: CtrlSortby.rst.txt
 
