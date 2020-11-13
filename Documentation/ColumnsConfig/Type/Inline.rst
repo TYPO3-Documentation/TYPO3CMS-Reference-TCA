@@ -394,12 +394,12 @@ behaviour => allowLanguageSynchronization
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
 
 behaviour => disableMovingChildrenWithParent
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../Behaviour/InlineDisableMovingChildrenWithParent.rst.txt
 
 behaviour => enableCascadingDelete
----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: ../Behaviour/InlineEnableCascadingDelete.rst.txt
 
