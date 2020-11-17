@@ -23,7 +23,13 @@ With a URL like `https://www.typo3.org/ch/community/values/core-values/` a URL s
 Within TYPO3, a slug is always part of the URL "path" - it does not contain scheme, host, HTTP verb, etc.
 
 A slug is usually added to a TCA-based database table, containing some rules for evaluation and definition.
-A slug is a segment of a URL, but it is not limited to be separated by slashes. Therefore, a slug can contain slashes.
+In the simpliest and most common case slugs are added to pages. A hierarchy of pages is often represented by a
+combined slug where from each page the characteristic last part is taken and the single segemnts are separated
+by slashes. Like this the resulting path of an URL is comparable with a filepath in any operating system.  
+Slugs in TYPO3 are not limited to be separated by slashes or can contain slashes in a single path-segment.
+It's also not required to build hierarchical paths but it's possible to assign a single path-segment to
+every page even if a deep page hierarchy exists. In TYPO3 the only requirement is that a slug for each domain
+must be unique.
 
 If a TCA table contains a field called "slug", it needs to be filled for every existing record. It can
 be shown and edited via regular Backend Forms, and is also evaluated during persistence via DataHandler.
