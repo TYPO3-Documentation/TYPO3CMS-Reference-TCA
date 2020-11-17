@@ -28,8 +28,8 @@ combined slug where from each page the characteristic last part is taken and the
 by slashes. Like this the resulting path of an URL is comparable with a filepath in any operating system.  
 Slugs in TYPO3 are not limited to be separated by slashes or can contain slashes in a single path-segment.
 It's also not required to build hierarchical paths but it's possible to assign a single path-segment to
-every page even if a deep page hierarchy exists. In TYPO3 the only requirement is that a slug for each domain
-must be unique.
+every page even if a deep page hierarchy exists. In TYPO3 the only requirement is that a slug for each 
+page of a domain must be unique.
 
 If a TCA table contains a field called "slug", it needs to be filled for every existing record. It can
 be shown and edited via regular Backend Forms, and is also evaluated during persistence via DataHandler.
