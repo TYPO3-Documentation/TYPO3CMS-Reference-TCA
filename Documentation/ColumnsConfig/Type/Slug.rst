@@ -24,7 +24,7 @@ Within TYPO3, a slug is always part of the URL "path" - it does not contain sche
 
 A slug is usually added to a TCA-based database table, containing some rules for evaluation and definition.
 In the simpliest and most common case slugs are added to pages. A hierarchy of pages is often represented by a
-combined slug where from each page the characteristic last part is taken and the single segemnts are separated
+combined slug where from each page the characteristic last part is taken and the single segments are separated
 by slashes. Like this the resulting path of an URL is comparable with a filepath in any operating system.  
 Slugs in TYPO3 are not limited to be separated by slashes or can contain slashes in a single path-segment.
 It's also not required to build hierarchical paths but it's possible to assign a single path-segment to
