@@ -57,6 +57,11 @@ allowNonIdValues
 
 .. include:: ../Properties/SelectAllowNonIdValues.rst.txt
 
+appearance
+----------
+
+.. include:: ../Properties/SelectCheckBoxAppearance.rst.txt
+
 authMode
 --------
 
