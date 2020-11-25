@@ -96,7 +96,7 @@ Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
 If you want to support us, please join the `#typo3-documentation` channel
 on `typo3.slack.com <https://typo3.slack.com/>`__ to get in contact. If you're not
-using slack yet, trigger a `slack invite <https://forger.typo3.org/slack>`__.
+using Slack yet, trigger a `Slack invite <https://forger.typo3.com/slack>`__.
 
 
 .. toctree::
