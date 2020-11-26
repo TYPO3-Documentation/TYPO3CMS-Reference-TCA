@@ -143,12 +143,6 @@ readOnly
 search
 ------
 
-.. note::
-
-    Input fields of renderType ``date``, ``time`` and ``int`` are excluded from search by default.
-    To include them, use this hook:
-    :doc:`t3core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
-
 .. include:: ../Properties/CommonSearch.rst.txt
 
 size
