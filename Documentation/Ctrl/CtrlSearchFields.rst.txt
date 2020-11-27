@@ -13,6 +13,13 @@ searchFields
 
     There are more fine grained controls per column, see the documentation of the "search" key of any type in :ref:`columns-types`.
 
+    .. note::
+
+        Fields of type :ref:`input <columns-input>` may be excluded from search by default,
+        especially when using ``date``, ``time`` or ``int`` in ``eval``.
+        To include them, modify the search query with this hook:
+        :doc:`t3core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
+
     **Example from "tt\_content" table:**
 
     .. code-block:: php
