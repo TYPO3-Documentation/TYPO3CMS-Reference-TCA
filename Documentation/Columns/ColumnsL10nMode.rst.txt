@@ -23,7 +23,7 @@ l10n_mode
         field of the localized record. The DataHandler keeps the values of localized records in sync and actively copies
         a changed value from the default language record into the localized overlays if changed.
         You can force the field to be displayed as readonly (with default language value) 
-        by setting  :ref:`"l10n_display" <columns-properties-l10n-display>` to `defaultAsReadOnly`.
+        by setting  :ref:`"l10n_display" <columns-properties-l10n-display>` to `defaultAsReadonly`.
 
     prefixLangTitle
         The field value from the default language record gets copied when an localization overlay is created, but the
