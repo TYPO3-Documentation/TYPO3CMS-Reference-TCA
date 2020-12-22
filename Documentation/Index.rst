@@ -90,5 +90,6 @@ Alternatively you can
     Interface/Index
     Palettes/Index
     Types/Index
+    genindex
     Sitemap
     
