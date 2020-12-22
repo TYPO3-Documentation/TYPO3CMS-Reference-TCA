@@ -76,7 +76,7 @@ For general questions about the documentation get in touch with the
 
 If you find a bug in this manual, please do not be afraid to suggest a fix, e.g.
 by using the "Edit me on GitHub" button in the top right corner.
-Alternatively you can just
+Alternatively you can
 `file an issue <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues>`__.
 
 
