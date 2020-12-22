@@ -74,7 +74,7 @@ A big "Thank You!" goes to every single one of them.
 For general questions about the documentation get in touch with the
 `Documentation Team <https://typo3.org/community/teams/documentation>`__.
 
-If you find a bug in this manual, please be so kind as to make a change, e.g.
+If you find a bug in this manual, please do not be afraid to suggest a fix, e.g.
 by using the "Edit me on GitHub" button in the top right corner.
 Alternatively you can just
 `file an issue <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues>`__.
