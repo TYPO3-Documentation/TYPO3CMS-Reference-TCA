@@ -22,7 +22,7 @@ With a URL like `https://www.typo3.org/ch/community/values/core-values/` a URL s
 
 Within TYPO3, a slug is always part of the URL "path" - it does not contain scheme, host, HTTP verb, etc.
 
-A slug is usually added to a TCA-based database table for example pages.  The TCA then contains rules for 
+A slug is usually added to a TCA-based database table, for example pages.  The TCA then contains rules for 
 evaluation and definition.
 
 When applied to pages a hierarchy of pages is often represented by a combined slug: From each page the 
