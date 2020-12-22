@@ -91,4 +91,4 @@ Alternatively you can just
     Palettes/Index
     Types/Index
     Sitemap
-    Targets
+    
