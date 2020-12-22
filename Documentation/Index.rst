@@ -18,11 +18,11 @@ A complete reference to the Table Configuration Array :php:`$GLOBALS['TCA']`.
       http://www.opencontent.org/openpub/
 
 
-.. sidebar:: For contributors
+.. sidebar:: Contributors:
 
    *  :ref:`How to contribute to documentation <h2document:contribute>`
    *  :ref:`Link targets <Link-targets>`
-   *  Shortcut: `t3tca` is the usual alias for cross-referencing.
+   *  `t3tca` is usually used in cross-referencing.
 
 The content of this document is related to TYPO3, a GNU/GPL CMS/Framework
 available from https://typo3.org/.
