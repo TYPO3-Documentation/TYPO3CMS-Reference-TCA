@@ -7,36 +7,28 @@
 TCA Reference
 =============
 
-:Previous Key:
-      doc_core_tca
-
-:Version:
-      |release|
+A complete reference to the Table Configuration Array :php:`$GLOBALS['TCA']`.
 
 :Language:
       en
 
-:Description:
-      Complete reference to the Table Configuration Array :php:`$GLOBALS['TCA']`.
-
-:Keywords:
-      forAdmins, forDevelopers, forIntermediates
-
-:Copyright:
-      2000-2017
-
 :Author:
-      Documentation Team
-
-:Email:
-      documentation@typo3.org
+      TYPO3 community (see :ref:`credits`)
 
 :License:
       Open Publication License available from `www.opencontent.org/openpub/
       <http://www.opencontent.org/openpub/>`_
 
-:Rendered:
-      |today|
+.. rst-class:: horizbuttons-primary-xxl
+
+-  :ref:`Sitemap`
+
+
+.. sidebar:: For contributors
+
+   * :ref:`How to contribute to documentation <h2document:contribute>`
+   * :ref:`Link targets <Linktargets>` (for cross referencing)
+   * Shortcut: `t3tca` is the usual alias for cross-referencing.
 
 The content of this document is related to TYPO3, a GNU/GPL CMS/Framework
 available from `www.typo3.org <https://typo3.org/>`_
@@ -44,12 +36,6 @@ available from `www.typo3.org <https://typo3.org/>`_
 **Official documentation**
 
 This document is included as part of the official TYPO3 documentation.
-It has been approved by the TYPO3 Documentation Team following a peer-
-review process. The reader should expect the information in this
-document to be accurate - please report discrepancies to the
-Documentation Team (documentation@typo3.org). Official documents are
-kept up-to-date to the best of the Documentation Team's abilities.
-
 
 **Core Manual**
 
@@ -61,7 +47,7 @@ may include information on available APIs, specific configuration
 options, etc.
 
 Core Manuals are written as reference manuals. The reader should rely
-on the Table of Contents to identify what particular section will best
+on the :ref:`sitemap` to identify what particular section will best
 address the task at hand.
 
 
@@ -71,32 +57,27 @@ TCA properties change between major versions, this main array had significant re
 especially between core versions 6.2 to 7 LTS, and again between 7 LTS and 8 LTS. Use the version
 selector of this documentation to select the documentation variant that fits.
 
+.. _credits:
 
 **Credits**
 
-The original reference to the TCA was written by Kasper Skårhøj. This
-version has been updated by François Suter. Lots of core team members and
-other contributors maintain this document over time, see
-`github <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-CoreApi>`__ for
-an overview of recent contributors. A big "Thank You!" goes to every single one of them.
+The original reference to the TCA was written by Kasper Skårhøj. Subsequent
+versions have been updated by François Suter. Several core team members and
+other contributors maintained this document over time, see the list of
+`contributors on GitHub <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/graphs/contributors>`__.
+
+A big "Thank You!" goes to every single one of them.
 
 
-**Feedback**
+**Contribution**
 
-For general questions about the documentation get in touch by writing
-to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
+For general questions about the documentation get in touch with the
+`Documentation Team <https://typo3.org/community/teams/documentation>`__.
 
-If you find a bug in this manual, please be so kind as to check the
-`online version <https://docs.typo3.org/typo3cms/TCAReference/>`__.
-Use the "Edit me on GitHub" button in the top right corner
-and submit a pull request via GitHub. Alternatively you can just file an issue
-using the `bug tracker <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues>`__.
-
-Maintaining high quality documentation requires time and effort
-and the TYPO3 Documentation Team always appreciates support.
-If you want to support us, please join the `#typo3-documentation` channel
-on `typo3.slack.com <https://typo3.slack.com/>`__ to get in contact. If you're not
-using Slack yet, trigger a `Slack invite <https://forger.typo3.com/slack>`__.
+If you find a bug in this manual, please be so kind as to make a change, e.g.
+by using the "Edit me on GitHub" button in the top right corner.
+Alternatively you can just
+`file an issue <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues>`__.
 
 
 .. toctree::
