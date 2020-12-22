@@ -8,4 +8,4 @@ TCA Reference
 =============
 
 :Repository:  https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA
-:Read online: https://docs.typo3.org/typo3cms/TCAReference/
+:Read online: https://docs.typo3.org/m/typo3/reference-tca/master/en-us/
