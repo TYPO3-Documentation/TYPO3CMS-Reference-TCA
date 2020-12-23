@@ -73,7 +73,7 @@ For general questions about the documentation get in touch with the
 `Documentation Team <https://typo3.org/community/teams/documentation>`__.
 
 If you find a bug in this manual, please do not be afraid to suggest a fix,
-e.g. by using the :guilabel:`"Edit on GitHub"` button in the top right corner.
+e.g. by using the :guilabel:`Edit on GitHub` button in the top right corner.
 Alternatively you can `file an issue
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues>`__.
 
