@@ -48,9 +48,9 @@ at hand.
 
 **Versions**
 
-TCA properties change between major versions. This manual had significant
-refactorings especially between core versions 6.2 to 7 LTS, and again between 7
-LTS and 8 LTS. Use the version selector of this documentation to select the
+TCA properties change between major versions. This manual has significant
+changes between between each TYPO3 LTS release. 
+Use the version selector of this documentation to select the
 documentation variant that fits.
 
 .. _credits:
