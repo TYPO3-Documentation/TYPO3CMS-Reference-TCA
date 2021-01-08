@@ -144,11 +144,12 @@ implementing a rendering. See :ref:`FormEngine docs
             $html[] =   '</div>';
             $html[] = '</div>';
             $resultArray['html'] = implode(LF, $html);
+            
             return $resultArray;
          }
       }
 
-      .. important::
+      .. attention::
 
          The returned data in :php:`$resultArray['html']` will be output in the
          TYPO3 Backend as it is passed. Therefore don't trust user input in
