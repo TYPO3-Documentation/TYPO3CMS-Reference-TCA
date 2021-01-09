@@ -1,0 +1,17 @@
+.. include:: /Includes.rst.txt
+.. _columns-check-properties-default:
+
+=======
+default
+=======
+
+:aspect:`Datatype`
+    integer
+
+:aspect:`Scope`
+    Display / Proc.
+
+:aspect:`Description`
+    Setting the default value of the checkbox(es). As example, value :php:`5` enabled first and third checkbox.
+
+    Each bit corresponds to a check box. This is true even if there is only one checkbox which which then maps to bit-0.

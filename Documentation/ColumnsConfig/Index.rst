@@ -1,18 +1,18 @@
-﻿.. include:: ../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 .. _columns-types:
 
-========================
-['columns'][*]['config']
-========================
+===========
+Field types
+===========
 
 .. toctree::
     :maxdepth: 5
     :titlesonly:
 
     Introduction/Index
-    Type/Check
-    Type/Flex
+    Type/Check/Index
+    Type/Flex/Index
     Type/Group
     Type/ImageManipulation
     Type/Inline

@@ -1,6 +1,6 @@
 :orphan:
 
-.. include:: /Includes.txt
+.. include:: /Includes.rst.txt
 .. index:: 
    Link targets
    see: Targets; Link targets
