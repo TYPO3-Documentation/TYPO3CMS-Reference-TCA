@@ -21,7 +21,7 @@ hideSuggest
 
     Setting this property to `true` disables the suggest wizard.
 
-    .. figure:: ../../Images/TypeGroupSuggest8.png
+    .. figure:: ../Images/TypeGroupSuggest8.png
         :alt: Suggest wizard showing some suggestions
         :class: with-shadow
 

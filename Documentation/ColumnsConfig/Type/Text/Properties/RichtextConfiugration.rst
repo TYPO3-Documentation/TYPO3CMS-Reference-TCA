@@ -1,8 +1,19 @@
+.. include:: /Includes.rst.txt
+.. _columns-text-properties-richtextConfiguration:
+
+=====================
+richtextConfiguration
+=====================
+
+
 :aspect:`Datatype`
     string (keyword)
 
 :aspect:`Scope`
     Display / Proc.
+
+:aspect:`renderType`
+    :ref:`default <columns-text-renderType-default>`
 
 :aspect:`Description`
     The value is a key in :php:`$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']` array and specifies the

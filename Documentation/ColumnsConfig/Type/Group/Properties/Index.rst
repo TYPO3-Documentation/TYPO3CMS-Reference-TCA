@@ -43,8 +43,8 @@ Special properties
    HideSuggest
    InternalType
    MaxSize
+   Options
    PrependTname
-   SuggestOptions
    Uploadfolder
 
 

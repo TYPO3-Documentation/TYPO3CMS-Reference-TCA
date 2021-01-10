@@ -54,9 +54,10 @@ The following renderTypes are available:
 .. toctree::
    :hidden:
 
-   Select/Single
-   Select/SingleBox
-   Select/CheckBox
-   Select/MultipleSideBySide
-   Select/Tree
+   Properties/Index
+   Single/Index
+   SingleBox/Index
+   CheckBox/Index
+   MultipleSideBySide/Index
+   Tree/Index
 

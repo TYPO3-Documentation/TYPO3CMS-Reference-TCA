@@ -19,7 +19,7 @@ elementBrowser
    element browser depending on selected :code:`internal_type`. It is enabled by default if rendering a
    group element.
 
-   .. figure:: ../../Images/TypeGroupFieldControlElementBrowserStyleguideFolder1.png
+   .. figure:: /ColumnsConfig/Type/Group/Images/TypeGroupFieldControlElementBrowserStyleguideFolder1.png
       :alt: Open element browser popup (group_folder_1)
       :class: with-shadow
 

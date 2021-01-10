@@ -21,10 +21,7 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
    DsPointerField
    DsPointerFieldSearchParent
    DsPointerFieldSearchParentSubField
-   InvertStateDisplay
-   Items
    DsTableField
-   Validation
 
 .. note::
 

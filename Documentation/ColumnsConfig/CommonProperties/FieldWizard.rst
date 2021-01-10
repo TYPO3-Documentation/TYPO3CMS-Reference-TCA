@@ -64,3 +64,12 @@ fieldWizard
    options in the optional :php:`options` array to specific wizards, and to disable single wizards using the
    :php:`disabled` key. Developers should have a look at the
    :ref:`FormEngine docs <t3coreapi:FormEngine-Rendering-NodeExpansion>` for details.
+
+
+.. toctree::
+   FieldWizard/DefaultLanguageDifferences
+   FieldWizard/LocalizationStateSelector
+   FieldWizard/OtherLanguageContent
+   FieldWizard/RecordsOverview
+   FieldWizard/SelectIcons
+   FieldWizard/TableList

@@ -23,23 +23,6 @@ Special properties
 Common properties
 =================
 
-
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
-.. include:: ../Properties/CommonDefault.rst.txt
-.. include:: ../Properties/CommonFieldInformation.rst.txt
-.. include:: ../Properties/CommonFieldWizard.rst.txt
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
-.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
-.. include:: ../Properties/RadioItems.rst.txt
-.. include:: ../Properties/CommonItemsProcFunc.rst.txt
-
-
-readOnly
---------
-
-.. include:: ../Properties/CommonReadOnly.rst.txt
-
-
 *  :ref:`behaviour > allowLanguageSynchronization <tca_property_behaviour_allowLanguageSynchronization>`
 *  :ref:`default <tca_property_default>`
 *  :ref:`fieldControl <tca_property_fieldControl>`
@@ -50,3 +33,4 @@ readOnly
    *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
 
 *  :ref:`itemsProcFunc <tca_property_itemsProcFunc>`
+*  :ref:`readOnly <tca_property_readOnly>`

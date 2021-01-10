@@ -1,5 +1,9 @@
 .. include:: /Includes.rst.txt
 
+=======
+maxSize
+=======
+
 :aspect:`Datatype`
     integer
 

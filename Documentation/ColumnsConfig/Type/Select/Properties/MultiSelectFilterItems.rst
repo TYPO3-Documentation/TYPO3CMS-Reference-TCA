@@ -49,7 +49,7 @@ multiSelectFilterItems
          ],
       ],
 
-   .. figure:: ../../Images/TypeSelectItemsFilter.png
+   .. figure:: ../Images/TypeSelectItemsFilter.png
       :alt: Filtering available items with both predefined keywords and free input
       :class: with-shadow
 

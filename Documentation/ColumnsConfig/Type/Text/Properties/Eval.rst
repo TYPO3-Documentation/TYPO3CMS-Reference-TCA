@@ -1,8 +1,18 @@
+.. include:: /Includes.rst.txt
+.. _columns-text-properties-eval:
+
+====
+eval
+====
+
 :aspect:`Datatype`
     string (list of keywords)
 
 :aspect:`Scope`
     Display / Proc.
+
+:aspect:`renderType`
+    :ref:`default <columns-text-renderType-default>`
 
 :aspect:`Description`
     Configuration of field evaluation. None of these apply for RTE fields.

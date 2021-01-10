@@ -1,8 +1,19 @@
+.. include:: /Includes.rst.txt
+.. _columns-text-properties-enableTabulator:
+
+===============
+enableTabulator
+===============
+
 :aspect:`Datatype`
     boolean
 
 :aspect:`Scope`
     Display
+
+:aspect:`renderType`
+    :ref:`textTable <columns-text-renderType-textTable>`,
+    :ref:`default <columns-text-renderType-default>`
 
 :aspect:`Description`
     Enabling this allows to use tabs in a text field. This works well together with

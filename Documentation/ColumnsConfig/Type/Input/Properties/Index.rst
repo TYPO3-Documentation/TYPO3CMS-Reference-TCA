@@ -23,7 +23,7 @@ Special properties
    Autocomplete
    Eval
    IsIn
-   LinkPopup (only :php:`renderType = 'inputLink'`)
+   LinkPopup
    Max
    Range
    Size

@@ -9,7 +9,7 @@ This type creates a set of radio buttons. The value is typically stored as integ
 item has one assigned number, but it can be a string, too.
 
 .. toctree::
-   :hidden:
+   :titlesonly:
 
    Examples
    Properties/Index

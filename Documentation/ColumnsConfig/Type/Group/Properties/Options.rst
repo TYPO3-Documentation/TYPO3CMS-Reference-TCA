@@ -1,6 +1,7 @@
 .. include:: /Includes.rst.txt
 .. _columns-group-properties-suggestOptions:
 
+==============
 suggestOptions
 ==============
 

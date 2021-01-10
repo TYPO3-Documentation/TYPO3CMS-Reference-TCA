@@ -1,3 +1,10 @@
+.. include:: /Includes.rst.txt
+.. _columns-slug-properties-appearance:
+
+==========
+appearance
+==========
+
 :aspect:`Datatype`
    array
 

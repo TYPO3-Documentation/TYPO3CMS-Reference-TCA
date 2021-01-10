@@ -30,7 +30,7 @@ localizationStateSelector
      from another localized record, the third radio appears.
    * The property ['config']['behaviour']['allowLanguageSynchronization'] is set to true
 
-   .. figure:: ../../Images/FieldWizardLocalizationStateSelector.png
+   .. figure:: Images/LocalizationStateSelector.png
       :alt: Example localization state selector on a type=input field
       :class: with-shadow
 

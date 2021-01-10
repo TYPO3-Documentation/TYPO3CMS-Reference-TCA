@@ -1,8 +1,21 @@
+.. include:: /Includes.rst.txt
+.. _columns-text-properties-rows:
+
+====
+rows
+====
+
+
 :aspect:`Datatype`
     integer
 
 :aspect:`Scope`
     Display
+
+:aspect:`renderType`
+    :ref:`textTable <columns-text-renderType-textTable>`,
+    :ref:`t3editor <columns-text-renderType-t3editor>`,
+    :ref:`default <columns-text-renderType-default>`
 
 :aspect:`Description`
     The number of rows in the textarea. May be corrected for harmonization between browsers. Will also

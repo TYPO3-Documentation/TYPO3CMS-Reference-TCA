@@ -1,8 +1,19 @@
+.. include:: /Includes.rst.txt
+.. _columns-text-properties-wrap:
+
+====
+wrap
+====
+
 :aspect:`Datatype`
     string (keyword)
 
 :aspect:`Scope`
     Display
+
+:aspect:`renderType`
+    :ref:`textTable <columns-text-renderType-textTable>`,
+    :ref:`default <columns-text-renderType-default>`
 
 :aspect:`Description`
     Determines the wrapping of the textarea field. Does not apply to RTE fields. There are two options:

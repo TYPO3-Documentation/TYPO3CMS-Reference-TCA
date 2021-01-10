@@ -38,7 +38,7 @@ The TYPO3 core makes little or no use of `none` fields itself.
 
 
 .. toctree::
-   :hidden:
+   :titlesonly:
 
    Examples
    Properties/Index

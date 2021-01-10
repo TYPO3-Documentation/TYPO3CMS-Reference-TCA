@@ -1,3 +1,10 @@
+.. include:: /Includes.rst.txt
+.. _columns-slug-properties-generatorOptions:
+
+================
+generatorOptions
+================
+
 :aspect:`Datatype`
     array
 

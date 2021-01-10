@@ -8,7 +8,7 @@ Examples
 Group relation to a single page
 -------------------------------
 
-.. figure:: ../../Images/TypeGroupDbSize1.png
+.. figure:: Images/TypeGroupDbSize1.png
    :alt: Group relation to a single page (group_db_single)
    :class: with-shadow
 
@@ -39,7 +39,7 @@ Group relation to be_groups and be_users
 ----------------------------------------
 
 
-.. figure:: ../../Images/TypeGroupDbStyleguide1.png
+.. figure:: Images/TypeGroupDbStyleguide1.png
    :alt: Group relation to be_groups and be_users with some selected records (group_db_1)
    :class: with-shadow
 

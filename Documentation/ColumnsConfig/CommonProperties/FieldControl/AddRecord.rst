@@ -52,13 +52,13 @@ addRecord
      Can be one of 'set', 'prepend' or 'append'. With 'set' the given selection is substituted with the
      new record, 'prepend' adds the new record on top of the list, 'append' adds it at the bottom. Default: 'append'.
 
-   .. figure:: ../../Images/TypeGroupFieldControlAddRecordIcon.png
+   .. figure:: /ColumnsConfig/Type/Group/Images/TypeGroupFieldControlAddRecordIcon.png
       :alt: Add a new record icon
       :class: with-shadow
 
       Add a new record icon
 
-   .. figure:: ../../Images/TypeGroupFieldControlAddRecordView.png
+   .. figure:: /ColumnsConfig/Type/Group/Images/TypeGroupFieldControlAddRecordView.png
       :alt: Add a new record view
       :class: with-shadow
 

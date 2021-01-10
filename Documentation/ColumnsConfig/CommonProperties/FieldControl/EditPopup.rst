@@ -32,7 +32,7 @@ editPopup
      Allows to set a different size of the popup, defaults
      to :code:`height=800,width=600,status=0,menubar=0,scrollbars=1`.
 
-   .. figure:: ../../Images/TypeGroupFieldControlEditPopup.png
+   .. figure:: /ColumnsConfig/Type/Group/Images/TypeGroupFieldControlEditPopup.png
       :alt: Editing a record thanks to the wizard
       :class: with-shadow
 

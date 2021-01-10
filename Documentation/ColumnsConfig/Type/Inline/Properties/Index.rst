@@ -27,10 +27,11 @@ Special properties
    ForeignLabel
    ForeignMatchFields
    ForeignSelector
-   PropertiesForeignSortby
+   ForeignSortby
    ForeignTable
    ForeignTableField
    ForeignUnique
+   Index
    Mm
    OverrideChildTCa
    Size

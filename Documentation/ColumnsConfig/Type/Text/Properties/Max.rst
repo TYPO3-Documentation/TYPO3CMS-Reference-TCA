@@ -1,8 +1,19 @@
+.. include:: /Includes.rst.txt
+.. _columns-text-properties-maxlength:
+
+===
+max
+===
+
 :aspect:`Datatype`
     integer
 
 :aspect:`Scope`
     Display
+
+:aspect:`renderType`
+    :ref:`textTable <columns-text-renderType-textTable>`,
+    :ref:`default <columns-text-renderType-default>`
 
 :aspect:`Description`
     Adds the HTML5 attribute "maxlength" to a textarea. Prevents the field from adding more than
