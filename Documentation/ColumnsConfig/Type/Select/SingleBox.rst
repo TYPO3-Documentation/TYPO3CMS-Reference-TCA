@@ -50,218 +50,66 @@ Example
 Properties
 ==========
 
-.. contents::
-   :local:
-   :depth: 1
-
-allowNonIdValues
-----------------
-
-.. include:: ../Properties/SelectAllowNonIdValues.rst.txt
-
-authMode
---------
-
-.. include:: ../Properties/SelectAuthMode.rst.txt
-
-
-authMode\_enforce
------------------
-
-.. include:: ../Properties/SelectAuthModeEnforce.rst.txt
-
-autoSizeMax
------------
-
-.. include:: ../Properties/CommonAutoSizeMax.rst.txt
-
-behaviour
----------
-
-.. include:: ../Properties/CommonBehaviour.rst.txt
-
-behaviour => allowLanguageSynchronization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+   AutoSizeMax.rst.txt
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
-
-default
--------
-
-.. include:: ../Properties/SelectDefault.rst.txt
-
-disableNoMatchingValueElement
------------------------------
-
-.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
-
-dontRemapTablesOnCopy
----------------------
-
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
-
-exclusiveKeys
--------------
-
-.. include:: ../Properties/SelectExclusiveKeys.rst.txt
-
-.. _columns-select-properties-fieldControl:
-
-fieldControl
-------------
-
-.. include:: ../Properties/CommonFieldControl.rst.txt
-
-The following fieldControls are available for this renderType:
-
-.. contents::
-   :local:
-   :depth: 1
-
-fieldControl => resetSelection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+   DontRemapTablesOnCopy.rst.txt
+   FieldControl.rst.txt
 .. include:: ../FieldControl/ResetSelection.rst.txt
-
-fieldInformation
-----------------
-
-.. include:: ../Properties/CommonFieldInformation.rst.txt
-
-fieldWizard
------------
-
-.. include:: ../Properties/CommonFieldWizard.rst.txt
-
-The following fieldWizards are available for this renderType:
-
-.. contents::
-   :local:
-   :depth: 1
-
-fieldWizard => defaultLanguageDifferences
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+   FieldInformation.rst.txt
+   FieldWizard.rst.txt
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
-
-fieldWizard => localizationStateSelector
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
-
-fieldWizard => otherLanguageContent
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. include:: ../FieldWizard/OtherLanguageContent.rst.txt
+   ItemsProcFunc.rst.txt
+   LocalizeReferencesAtParentLocalization.rst.txt
+   Maxitems.rst.txt
+   Minitems.rst.txt
+   Mm.rst.txt
+   Multiple.rst.txt
+   ReadOnly.rst.txt
+   Size.rst.txt
 
-fileFolder
-----------
+Select properties
+=================
 
-.. include:: ../Properties/SelectFileFolder.rst.txt
+*  :ref:`allownonidvalues <columns-select-properties-allownonidvalues>`
+*  :ref:`authmode <columns-select-properties-authmode>`
+*  :ref:`authmode > enforce <columns-select-properties-authmode-enforce>`
+*  :ref:`default <columns-select-properties-default>`
+*  :ref:`disableNoMatchingValueElement <columns-select-properties-disableNoMatchingValueElement>`
+*  :ref:`exclusivekeys <columns-select-properties-exclusivekeys>`
+*  :ref:`filefolder <columns-select-properties-filefolder>`
+*  :ref:`filefolder-extlist <columns-select-properties-filefolder-extlist>`
+*  :ref:`filefolder-recursions <columns-select-properties-filefolder-recursions>`
+*  :ref:`foreign-table <columns-select-properties-foreign-table>`
+*  :ref:`foreign-table-prefix <columns-select-properties-foreign-table-prefix>`
+*  :ref:`foreign-table-where <columns-select-properties-foreign-table-where>`
+*  :ref:`items <columns-select-properties-items>`
+*  :ref:`special <columns-select-properties-special>`
 
-fileFolder\_extList
--------------------
 
-.. include:: ../Properties/SelectFileFolderExtList.rst.txt
+Common properties
+=================
 
-fileFolder\_recursions
-----------------------
+*  :ref:`autoSizeMax <tca_property_autoSizeMax>`
+*  :ref:`behaviour > allowLanguageSynchronization <tca_property_behaviour_allowLanguageSynchronization>`
+*  :ref:`dontRemapTablesOnCopy <tca_property_dontRemapTablesOnCopy>`
+*  :ref:`fieldControl <tca_property_fieldControl>`
 
-.. include:: ../Properties/SelectFileFolderRecursions.rst.txt
+   *  :ref:`resetSelection <tca_property_fieldControl_resetSelection>`
 
-foreign\_table
---------------
+*  :ref:`fieldInformation <tca_property_fieldInformation>`
+*  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
 
-.. include:: ../Properties/SelectForeignTable.rst.txt
+   *  :ref:`defaultLanguageDifferences <tca_property_fieldWizard_>`
+   *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
+   *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
 
-foreign\_table\_prefix
-----------------------
-
-.. include:: ../Properties/SelectForeignTablePrefix.rst.txt
-
-foreign\_table\_where
----------------------
-
-.. include:: ../Properties/SelectForeignTableWhere.rst.txt
-
-items
------
-
-.. include:: ../Properties/SelectItems.rst.txt
-
-itemsProcFunc
--------------
-
-.. include:: ../Properties/CommonItemsProcFunc.rst.txt
-
-localizeReferencesAtParentLocalization
---------------------------------------
-
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
-
-.. _columns-select-properties-maxitems:
-
-maxitems
---------
-
-.. include:: ../Properties/CommonMaxitems.rst.txt
-
-minitems
---------
-
-.. include:: ../Properties/CommonMinitems.rst.txt
-
-MM
---
-
-.. include:: ../Properties/CommonMm.rst.txt
-
-MM\_hasUidField
----------------
-
-.. include:: ../Properties/CommonMmHasUidField.rst.txt
-
-MM\_insert\_fields
-------------------
-
-.. include:: ../Properties/CommonMmInsertFields.rst.txt
-
-MM\_match\_fields
------------------
-
-.. include:: ../Properties/CommonMmMatchFields.rst.txt
-
-MM\_opposite\_field
--------------------
-
-.. include:: ../Properties/CommonOppositeField.rst.txt
-
-MM\_oppositeUsage
------------------
-
-.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
-
-MM\_table\_where
-----------------
-
-.. include:: ../Properties/CommonMmTableWhere.rst.txt
-
-multiple
---------
-
-.. include:: ../Properties/CommonMultiple.rst.txt
-
-readOnly
---------
-
-.. include:: ../Properties/CommonReadOnly.rst.txt
-
-size
-----
-
-.. include:: ../Properties/CommonSize.rst.txt
-
-special
--------
-
-.. include:: ../Properties/SelectSpecial.rst.txt
+*  :ref:`itemsProcFunc <tca_property_itemsProcFunc>`
+*  :ref:`localizeReferencesAtParentLocalization <tca_property_localizeReferencesAtParentLocalization>`
+*  :ref:`maxitems <tca_property_maxitems>`
+*  :ref:`minitems <tca_property_minitems>`
+*  :ref:`MM <tca_property_MM>`
+*  :ref:`multiple <tca_property_multiple>`
+*  :ref:`readOnly <tca_property_readOnly>`
+*  :ref:`size <tca_property_size>`

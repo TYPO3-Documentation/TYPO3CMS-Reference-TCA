@@ -3,9 +3,9 @@
 .. _columns-none:
 .. _columns-none-introduction:
 
-=============
-type = 'none'
-=============
+================
+The `none` field
+================
 
 There are three columns config types that do similar things but still have subtle differences between them.
 These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <columns-passthrough>` and the
@@ -36,4 +36,10 @@ of type `none` fields is a "virtual" field that is combined with a custom
 :ref:`renderType <t3coreapi:FormEngine-Rendering-NodeExpansion>` by an extension.
 The TYPO3 core makes little or no use of `none` fields itself.
 
+
+.. toctree::
+   :hidden:
+
+   Examples
+   Properties/Index
 

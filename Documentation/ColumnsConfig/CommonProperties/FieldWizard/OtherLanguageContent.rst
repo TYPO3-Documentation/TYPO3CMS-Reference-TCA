@@ -15,7 +15,8 @@ otherLanguageContent
    :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
    :ref:`group <columns-group>`,
    :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`
+   :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
+
 
 :aspect:`Description`
    Show values from the default language record and other localized records if the edited row is a

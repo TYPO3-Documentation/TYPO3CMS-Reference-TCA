@@ -106,272 +106,91 @@ Select a single value from a list of elements
 
 .. _columns-select-properties:
 .. _columns-select-properties-type:
+.. _columns-select-properties-behaviour:
+
+.. _columns-select-properties-dontremaptablesoncopy:
+.. _columns-select-single-properties-fieldControl:
+.. _columns-select-properties-fieldInformation:
+.. _columns-select-properties-fieldWizard:
+
+.. _columns-select-properties-itemsprocfunc:
+.. _columns-select-properties-localizereferencesatparentlocalization:
+.. _columns-select-properties-minitems:
+.. _columns-select-properties-mm:
+
+.. _columns-select-properties-mm-hasuidfield:
+.. _columns-select-properties-mm-match-fields:
+.. _columns-select-properties-mm-opposite-field:
+.. _columns-select-properties-mm-opposite-usage:
+.. _columns-select-properties-mm-oppositeusage:
+
+.. _columns-select-properties-mm-table-where:
+.. _columns-select-properties-multiple:
+.. _columns-select-properties-readOnly:
+.. _columns-select-properties-size:
+.. _columns-select-properties-special:
+.. _columns-select-properties-fieldControl:
+.. _columns-select-properties-maxitems:
 
 Properties
 ==========
 
-.. contents::
-   :local:
-   :depth: 1
-
-
-
-.. _columns-select-properties-allownonidvalues:
-.. _columns-selectSingle-properties-allownonidvalues:
-
-allowNonIdValues
-----------------
-
-.. include:: ../Properties/SelectAllowNonIdValues.rst.txt
-
-.. _columns-select-properties-authmode:
-
-authMode
---------
-
-.. include:: ../Properties/SelectAuthMode.rst.txt
-
-.. _columns-select-properties-authmode-enforce:
-
-authMode\_enforce
------------------
-
-.. include:: ../Properties/SelectAuthModeEnforce.rst.txt
-
-.. _columns-select-properties-behaviour:
-
-behaviour
----------
-
-.. include:: ../Properties/CommonBehaviour.rst.txt
-
-behaviour => allowLanguageSynchronization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
-
-.. _columns-select-properties-default:
-
-default
--------
-
-.. include:: ../Properties/SelectDefault.rst.txt
-
-.. _columns-select-properties-disablenomatchingvalueelement:
-
-disableNoMatchingValueElement
------------------------------
-
-.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
-
-.. _columns-select-properties-dontremaptablesoncopy:
-
-dontRemapTablesOnCopy
----------------------
-
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
-
-.. _columns-select-properties-exclusivekeys:
-
-exclusiveKeys
--------------
-
-.. include:: ../Properties/SelectExclusiveKeys.rst.txt
-
-.. _columns-select-single-properties-fieldControl:
-
-fieldControl
-------------
-
-.. include:: ../Properties/CommonFieldControl.rst.txt
-
-.. _columns-select-properties-fieldInformation:
-
-fieldInformation
-----------------
-
-.. include:: ../Properties/CommonFieldInformation.rst.txt
-
-.. _columns-select-properties-fieldWizard:
-
-fieldWizard
------------
-
-.. include:: ../Properties/CommonFieldWizard.rst.txt
-
-The following fieldWizards are available for this renderType:
-
-.. contents::
-   :local:
-   :depth: 1
-
-fieldWizard => defaultLanguageDifferences
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+   DontRemapTablesOnCopy.rst.txt
+   FieldControl.rst.txt
+   FieldInformation.rst.txt
+   FieldWizard.rst.txt
 .. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
-
-fieldWizard => localizationStateSelector
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
-
-fieldWizard => otherLanguageContent
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. include:: ../FieldWizard/OtherLanguageContent.rst.txt
-
-selectIcons
-~~~~~~~~~~~
-
 .. include:: ../FieldWizard/SelectIcons.rst.txt
-
-.. _columns-select-properties-filefolder:
-
-fileFolder
-----------
-
-.. include:: ../Properties/SelectFileFolder.rst.txt
-
-.. _columns-select-properties-filefolder-extlist:
-
-fileFolder\_extList
--------------------
-
-.. include:: ../Properties/SelectFileFolderExtList.rst.txt
-
-.. _columns-select-properties-filefolder-recursions:
-
-fileFolder\_recursions
-----------------------
-
-.. include:: ../Properties/SelectFileFolderRecursions.rst.txt
-
-.. _columns-select-properties-foreign-table:
-
-foreign\_table
---------------
-
-.. include:: ../Properties/SelectForeignTable.rst.txt
-
-.. _columns-select-properties-foreign-table-prefix:
-
-foreign\_table\_prefix
-----------------------
-
-.. include:: ../Properties/SelectForeignTablePrefix.rst.txt
-
-.. _columns-select-properties-foreign-table-where:
-
-foreign\_table\_where
----------------------
-
-.. include:: ../Properties/SelectForeignTableWhere.rst.txt
-
-.. _columns-select-properties-items:
-
-items
------
-
-.. include:: ../Properties/SelectItems.rst.txt
-
-.. _columns-select-properties-itemsprocfunc:
-
-itemsProcFunc
--------------
-
-.. include:: ../Properties/CommonItemsProcFunc.rst.txt
-
-.. _columns-select-properties-localizereferencesatparentlocalization:
-
-localizeReferencesAtParentLocalization
---------------------------------------
-
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
-
-.. _columns-select-properties-minitems:
-
-minitems
---------
-
-.. include:: ../Properties/CommonMinitems.rst.txt
-
-.. _columns-select-properties-mm:
-
-MM
---
-
-.. include:: ../Properties/CommonMm.rst.txt
-
-.. _columns-select-properties-mm-hasuidfield:
-
-MM\_hasUidField
----------------
-
-.. include:: ../Properties/CommonMmHasUidField.rst.txt
-
-.. _columns-select-properties-mm-insert-fields:
-
-MM\_insert\_fields
-------------------
-
-.. include:: ../Properties/CommonMmInsertFields.rst.txt
-
-.. _columns-select-properties-mm-match-fields:
-
-MM\_match\_fields
------------------
-
-.. include:: ../Properties/CommonMmMatchFields.rst.txt
-
-.. _columns-select-properties-mm-opposite-field:
-
-MM\_opposite\_field
--------------------
-
-.. include:: ../Properties/CommonOppositeField.rst.txt
-
-.. _columns-select-properties-mm-opposite-usage:
-.. _columns-select-properties-mm-oppositeusage:
-
-MM\_oppositeUsage
------------------
-
-.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
-
-.. _columns-select-properties-mm-table-where:
-
-MM\_table\_where
-----------------
-
-.. include:: ../Properties/CommonMmTableWhere.rst.txt
-
-.. _columns-select-properties-multiple:
-
-multiple
---------
-
-.. include:: ../Properties/CommonMultiple.rst.txt
-
-.. _columns-select-properties-readOnly:
-
-readOnly
---------
-
-.. include:: ../Properties/CommonReadOnly.rst.txt
-
-.. _columns-select-properties-size:
-
-size
-----
-
-.. include:: ../Properties/CommonSize.rst.txt
-
-.. _columns-select-properties-special:
-
-special
--------
-
-.. include:: ../Properties/SelectSpecial.rst.txt
-
-
-
+   ItemsProcFunc.rst.txt
+   LocalizeReferencesAtParentLocalization.rst.txt
+   Minitems.rst.txt
+   Mm.rst.txt
+   Multiple.rst.txt
+   ReadOnly.rst.txt
+   Size.rst.txt
+
+
+Select properties
+=================
+
+*  :ref:`allownonidvalues <columns-select-properties-allownonidvalues>`
+*  :ref:`authmode <columns-select-properties-authmode>`
+*  :ref:`authmode > enforce <columns-select-properties-authmode-enforce>`
+*  :ref:`default <columns-select-properties-default>`
+*  :ref:`disableNoMatchingValueElement <columns-select-properties-disableNoMatchingValueElement>`
+*  :ref:`exclusivekeys <columns-select-properties-exclusivekeys>`
+*  :ref:`filefolder <columns-select-properties-filefolder>`
+*  :ref:`filefolder-extlist <columns-select-properties-filefolder-extlist>`
+*  :ref:`filefolder-recursions <columns-select-properties-filefolder-recursions>`
+*  :ref:`foreign-table <columns-select-properties-foreign-table>`
+*  :ref:`foreign-table-prefix <columns-select-properties-foreign-table-prefix>`
+*  :ref:`foreign-table-where <columns-select-properties-foreign-table-where>`
+*  :ref:`items <columns-select-properties-items>`
+*  :ref:`special <columns-select-properties-special>`
+
+
+Common properties
+=================
+
+*  :ref:`behaviour > allowLanguageSynchronization <tca_property_behaviour_allowLanguageSynchronization>`
+*  :ref:`dontRemapTablesOnCopy <tca_property_dontRemapTablesOnCopy>`
+*  :ref:`fieldControl <tca_property_fieldControl>`
+*  :ref:`fieldInformation <tca_property_fieldInformation>`
+*  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
+
+   *  :ref:`defaultLanguageDifferences <tca_property_fieldWizard_>`
+   *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
+   *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
+   *  :ref:`selectIcons <tca_property_fieldWizard_selectIcons>`
+
+
+*  :ref:`itemsProcFunc <tca_property_itemsProcFunc>`
+*  :ref:`localizeReferencesAtParentLocalization <tca_property_localizeReferencesAtParentLocalization>`
+*  :ref:`minitems <tca_property_minitems>`
+*  :ref:`MM <tca_property_MM>`
+*  :ref:`multiple <tca_property_multiple>`
+*  :ref:`readOnly <tca_property_readOnly>`
+*  :ref:`size <tca_property_size>`

@@ -2,9 +2,9 @@
 
 .. _columns-input-renderType-inputLink:
 
-=================
-input (inputLink)
-=================
+==========
+Link input
+==========
 
 This page describes the :ref:`input <columns-input>` type with the renderType='inputLink'.
 

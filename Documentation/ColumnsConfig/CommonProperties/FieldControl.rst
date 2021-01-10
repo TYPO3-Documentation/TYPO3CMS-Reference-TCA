@@ -14,7 +14,8 @@ fieldControl
 :aspect:`types`
    :ref:`group <columns-group>`,
    :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`
+   :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
+
 
 :aspect:`Description`
    Show action buttons next to the element. This is used in various type's to add

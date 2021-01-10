@@ -12,7 +12,8 @@ itemsProcFunc
    Display / Proc.
 
 :aspect:`types`
-   :ref:`check <columns-check>`, :ref:`flex <columns-flex>`
+   :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
+   :ref:`radio <columns-radio>`
 
 :aspect:`Description`
    PHP function which is called to fill / manipulate the array with elements.

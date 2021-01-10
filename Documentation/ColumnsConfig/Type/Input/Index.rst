@@ -34,9 +34,8 @@ The following renderTypes are available:
 .. toctree::
    :hidden:
 
-   Properties/Index
    Default/Index
    ColorPicker/Index
    DateTime/Index
    Link/Index
-   RsaInput/Index
+   Properties/Index

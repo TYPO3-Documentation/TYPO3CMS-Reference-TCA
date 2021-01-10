@@ -12,5 +12,5 @@ It is typically only used in FAL relations. The crop information is stored as an
 .. toctree::
    :titlesonly:
 
-   Properties/Index
    Examples
+   Properties/Index

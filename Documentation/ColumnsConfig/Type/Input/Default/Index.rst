@@ -2,9 +2,9 @@
 
 .. _columns-input-renderType-default:
 
-===============
-input (default)
-===============
+=============
+Default input
+=============
 
 This page describes the :ref:`input <columns-input>` type with the default renderType.
 

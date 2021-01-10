@@ -17,7 +17,8 @@ allowLanguageSynchronization behaviour
    :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
    :ref:`group <columns-group>`,
    :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`inline <columns-inline>`, :ref:`input <columns-input>`
+   :ref:`inline <columns-inline>`, :ref:`input <columns-input>`,
+   :ref:`radio <columns-radio>`
 
 :aspect:`Description`
    Allows an editor to select in a localized record whether the value is copied

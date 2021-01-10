@@ -30,6 +30,6 @@ You can read more on how data is structured in :ref:`columns-group-data` chapter
 .. toctree::
    :titlesonly:
 
-   Properties/Index
-   StoredDataValues
    Examples
+   StoredDataValues
+   Properties/Index

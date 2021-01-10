@@ -1,3 +1,10 @@
+.. include:: /Includes.rst.txt
+.. _columns-none-properties-format:
+
+======
+format
+======
+
 :aspect:`Datatype`
     string (keyword) + array
 

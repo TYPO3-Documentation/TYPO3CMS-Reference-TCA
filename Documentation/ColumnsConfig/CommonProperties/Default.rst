@@ -13,7 +13,10 @@ default
 
 
 :aspect:`types`
-   :ref:`group <columns-group>`, :ref:`input <columns-input>`
+   :ref:`group <columns-group>`, :ref:`input <columns-input>`,
+   :ref:`passthrough <columns-passthrough>`,
+   :ref:`radio <columns-radio>`
+
 
 :aspect:`Description`
    Default value set if a new record is created.

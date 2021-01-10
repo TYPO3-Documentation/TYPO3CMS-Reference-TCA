@@ -48,227 +48,50 @@ Example
         ],
 
 
-Properties
-==========
+Select properties
+=================
+
+*  :ref:`allownonidvalues <columns-select-properties-allownonidvalues>`
+*  :ref:`authmode <columns-select-properties-authmode>`
+*  :ref:`authmode > enforce <columns-select-properties-authmode-enforce>`
+*  :ref:`default <columns-select-properties-default>`
+*  :ref:`disableNoMatchingValueElement <columns-select-properties-disableNoMatchingValueElement>`
+*  :ref:`exclusivekeys <columns-select-properties-exclusivekeys>`
+*  :ref:`filefolder <columns-select-properties-filefolder>`
+*  :ref:`filefolder-extlist <columns-select-properties-filefolder-extlist>`
+*  :ref:`filefolder-recursions <columns-select-properties-filefolder-recursions>`
+*  :ref:`foreign-table <columns-select-properties-foreign-table>`
+*  :ref:`foreign-table-prefix <columns-select-properties-foreign-table-prefix>`
+*  :ref:`foreign-table-where <columns-select-properties-foreign-table-where>`
+*  :ref:`items <columns-select-properties-items>`
+*  :ref:`multiSelectFilterItems <columns-select-properties-multiselectfilteritems>`
+*  :ref:`special <columns-select-properties-special>`
+
+Common properties
+=================
+
+*  :ref:`autoSizeMax <tca_property_autoSizeMax>`
+*  :ref:`behaviour > allowLanguageSynchronization <tca_property_behaviour_allowLanguageSynchronization>`
+*  :ref:`dontRemapTablesOnCopy <tca_property_dontRemapTablesOnCopy>`
+*  :ref:`fieldControl <tca_property_fieldControl>`
+
+   *  :ref:`addRecord <tca_property_fieldControl_addRecord>`
+   *  :ref:`editPopup <tca_property_fieldControl_editPopup>`
+   *  :ref:`listModule <tca_property_fieldControl_listModule>`
+
+*  :ref:`fieldInformation <tca_property_fieldInformation>`
+*  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
+
+   *  :ref:`defaultLanguageDifferences <tca_property_fieldWizard_>`
+   *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
+   *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
+
+*  :ref:`itemsProcFunc <tca_property_itemsProcFunc>`
+*  :ref:`localizeReferencesAtParentLocalization <tca_property_localizeReferencesAtParentLocalization>`
+*  :ref:`maxitems <tca_property_maxitems>`
+*  :ref:`minitems <tca_property_minitems>`
+*  :ref:`MM <tca_property_MM>`
+*  :ref:`multiple <tca_property_multiple>`
+*  :ref:`readOnly <tca_property_readOnly>`
+*  :ref:`size <tca_property_size>`
 
-.. contents::
-   :local:
-   :depth: 1
-
-allowNonIdValues
-----------------
-
-.. include:: ../Properties/SelectAllowNonIdValues.rst.txt
-
-authMode
---------
-
-.. include:: ../Properties/SelectAuthMode.rst.txt
-
-authMode\_enforce
------------------
-
-.. include:: ../Properties/SelectAuthModeEnforce.rst.txt
-
-autoSizeMax
------------
-
-.. include:: ../Properties/CommonAutoSizeMax.rst.txt
-
-behaviour
----------
-
-.. include:: ../Properties/CommonBehaviour.rst.txt
-
-behaviour => allowLanguageSynchronization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: ../Behaviour/CommonAllowLanguageSynchronization.rst.txt
-
-default
--------
-
-.. include:: ../Properties/SelectDefault.rst.txt
-
-disableNoMatchingValueElement
------------------------------
-
-.. include:: ../Properties/SelectDisableNonMatchingValueElement.rst.txt
-
-dontRemapTablesOnCopy
----------------------
-
-.. include:: ../Properties/CommonDontRemapTablesOnCopy.rst.txt
-
-exclusiveKeys
--------------
-
-.. include:: ../Properties/SelectExclusiveKeys.rst.txt
-
-fieldControl
-------------
-
-.. include:: ../Properties/CommonFieldControl.rst.txt
-
-addRecord
-~~~~~~~~~
-
-.. include:: ../FieldControl/AddRecord.rst.txt
-
-editPopup
-~~~~~~~~~
-
-.. include:: ../FieldControl/EditPopup.rst.txt
-
-listModule
-~~~~~~~~~~
-
-.. include:: ../FieldControl/ListModule.rst.txt
-
-fieldInformation
-----------------
-
-.. include:: ../Properties/CommonFieldInformation.rst.txt
-
-fieldWizard
------------
-
-.. include:: ../Properties/CommonFieldWizard.rst.txt
-
-The following fieldWizards are available for this renderType:
-
-.. contents::
-   :local:
-   :depth: 1
-
-fieldWizard => defaultLanguageDifferences
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: ../FieldWizard/DefaultLanguageDifferences.rst.txt
-
-fieldWizard => localizationStateSelector
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: ../FieldWizard/LocalizationStateSelector.rst.txt
-
-fieldWizard => otherLanguageContent
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: ../FieldWizard/OtherLanguageContent.rst.txt
-
-fileFolder
-----------
-
-.. include:: ../Properties/SelectFileFolder.rst.txt
-
-fileFolder\_extList
--------------------
-
-.. include:: ../Properties/SelectFileFolderExtList.rst.txt
-
-fileFolder\_recursions
-----------------------
-
-.. include:: ../Properties/SelectFileFolderRecursions.rst.txt
-
-foreign\_table
---------------
-
-.. include:: ../Properties/SelectForeignTable.rst.txt
-
-foreign\_table\_prefix
-----------------------
-
-.. include:: ../Properties/SelectForeignTablePrefix.rst.txt
-
-foreign\_table\_where
----------------------
-
-.. include:: ../Properties/SelectForeignTableWhere.rst.txt
-
-items
------
-
-.. include:: ../Properties/SelectItems.rst.txt
-
-itemsProcFunc
--------------
-
-.. include:: ../Properties/CommonItemsProcFunc.rst.txt
-
-localizeReferencesAtParentLocalization
---------------------------------------
-
-.. include:: ../Properties/CommonLocalizeReferencesAtParentLocalization.rst.txt
-
-maxitems
---------
-
-.. include:: ../Properties/CommonMaxitems.rst.txt
-
-minitems
---------
-
-.. include:: ../Properties/CommonMinitems.rst.txt
-
-MM
---
-
-.. include:: ../Properties/CommonMm.rst.txt
-
-MM\_hasUidField
----------------
-
-.. include:: ../Properties/CommonMmHasUidField.rst.txt
-
-MM\_insert\_fields
-------------------
-
-.. include:: ../Properties/CommonMmInsertFields.rst.txt
-
-MM\_match\_fields
------------------
-
-.. include:: ../Properties/CommonMmMatchFields.rst.txt
-
-MM\_opposite\_field
--------------------
-
-.. include:: ../Properties/CommonOppositeField.rst.txt
-
-MM\_oppositeUsage
------------------
-
-.. include:: ../Properties/CommonMmOppositeUsage.rst.txt
-
-MM\_table\_where
-----------------
-
-.. include:: ../Properties/CommonMmTableWhere.rst.txt
-
-multiple
---------
-
-.. include:: ../Properties/CommonMultiple.rst.txt
-
-.. _columns-select-properties-multiselectfilteritems:
-
-multiSelectFilterItems
-----------------------
-
-.. include:: ../Properties/SelectMultiSelectFilterItems.rst.txt
-
-readOnly
---------
-
-.. include:: ../Properties/CommonReadOnly.rst.txt
-
-size
-----
-
-.. include:: ../Properties/CommonSize.rst.txt
-
-special
--------
-
-.. include:: ../Properties/SelectSpecial.rst.txt

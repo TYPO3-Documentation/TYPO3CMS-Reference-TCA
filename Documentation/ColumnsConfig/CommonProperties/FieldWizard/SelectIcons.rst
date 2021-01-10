@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. _tca_property_fieldWizard_:
+.. _tca_property_fieldWizard_selectIcons:
 
 ===========
 selectIcons

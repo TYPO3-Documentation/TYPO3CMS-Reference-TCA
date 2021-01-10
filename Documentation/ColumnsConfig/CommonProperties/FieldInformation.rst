@@ -15,7 +15,9 @@ fieldInformation
    :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
    :ref:`group <columns-group>`,
    :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`
+   :ref:`input <columns-input>`, :ref:`none <columns-none>`,
+   :ref:`radio <columns-radio>`
+
 
 :aspect:`Description`
    Show information between an element label and the main element input area. Configuration

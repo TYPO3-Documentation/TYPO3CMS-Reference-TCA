@@ -1,3 +1,10 @@
+.. include:: /Includes.rst.txt
+.. _columns-none-properties-pass-content:
+
+=============
+pass\_content
+=============
+
 :aspect:`Datatype`
     boolean
 

@@ -15,7 +15,8 @@ fieldWizard
    :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
    :ref:`group <columns-group>`,
    :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`
+   :ref:`input <columns-input>`,
+   :ref:`radio <columns-radio>`
 
 :aspect:`Description`
    Specifies wizards rendered below the main input area of an element. Single type / renderType elements

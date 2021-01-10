@@ -2,9 +2,9 @@
 
 .. _columns-passthrough:
 
-====================
-type = 'passthrough'
-====================
+============================
+Pass through / virtual field
+============================
 
 .. contents:: Table of contents:
    :local:
@@ -61,14 +61,10 @@ This field is found in a number of tables, for instance the "pages" table. It is
 .. _columns-passthrough-properties:
 .. _columns-passthrough-renderType-default:
 .. _columns-passthrough-properties-type:
+.. _columns-passthrough-properties-default:
 
 
 Properties
 ==========
 
-.. _columns-passthrough-properties-default:
-
-default
--------
-
-.. include:: ../Properties/CommonDefault.rst.txt
+*  :ref:`default <tca_property_default>`

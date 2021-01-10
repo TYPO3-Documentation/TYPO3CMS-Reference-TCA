@@ -16,7 +16,7 @@ in an XML representation within this "flex" field.
 .. toctree::
    :titlesonly:
 
-   Properties/Index
    AboutDataStructures
    FlexformSyntax
    Examples
+   Properties/Index

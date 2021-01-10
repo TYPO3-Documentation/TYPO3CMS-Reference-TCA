@@ -15,7 +15,8 @@ defaultLanguageDifferences
    :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
    :ref:`group <columns-group>`,
    :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`
+   :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
+
 
 :aspect:`Description`
    Show a "diff-view" if the content of the default language record has been changed after the
