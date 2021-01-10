@@ -15,7 +15,6 @@ No additional configuration is necessary. Its state can be inverted via
 
 .. toctree::
 
-   Properties/Index
    Examples/ToggleExample
 
 

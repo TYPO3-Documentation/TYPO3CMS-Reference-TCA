@@ -1,0 +1,22 @@
+.. include:: /Includes.rst.txt
+.. _columns-inline-properties-foreign-unique:
+
+===============
+foreign\_unique
+===============
+
+:aspect:`Datatype`
+    string
+
+:aspect:`Scope`
+    Display / Proc.
+
+:aspect:`Description`
+    Field which must be unique for all children of a parent record.
+
+    Example: Say you have two tables, products, your parent table, and prices, your child table (products) can have
+    multiple prices. The prices table has a field called customer\_group, which is a selector box. Now you want to be
+    able to specify prices for each customer group when you edit a product, but of course you don't want to specify
+    contradicting prices for one product (i.e. two different prices for the same customer\_group). That's why you
+    would set :code:`foreign_unique` to the field name "customer\_group", to prevent that two prices for the
+    same customer group can be created for one product.

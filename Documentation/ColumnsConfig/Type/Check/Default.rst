@@ -1,4 +1,4 @@
-.. include:: /Includes
+.. include:: /Includes.rst.txt
 
 .. _columns-check-properties:
 .. _columns-check-properties-type:
@@ -18,7 +18,6 @@ Its state can be inverted via :code:`invertStateDisplay`.
 
 .. toctree::
 
-   Properties/Index
    Examples/DefaultExamples
 
 

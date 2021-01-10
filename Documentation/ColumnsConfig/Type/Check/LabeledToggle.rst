@@ -18,7 +18,6 @@ Its state can be inverted via :ref:`invertStateDisplay
 
 .. toctree::
 
-   Properties/Index
    Examples/LabeledToggleExamples
 
 .. figure:: Images/TypeCheckStyleguide19.png

@@ -17,9 +17,9 @@ renderType
 :aspect:`Description`
    Three different render types are currently available for the check box field:
 
-   * :ref:`default <columns-check-default>`
-   * :ref:`checkboxToggle <columns-check-checkboxToggle>`
-   * :ref:`checkboxLabeledToggle <columns-check-checkboxLabeledToggle>`
+   *  :ref:`default <columns-check-default>`
+   *  :ref:`checkboxToggle <columns-check-checkboxToggle>`
+   *  :ref:`checkboxLabeledToggle <columns-check-checkboxLabeledToggle>`
 
 :aspect:`Examples`
    .. figure:: ../Images/TypeCheckStyleguide2.png

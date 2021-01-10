@@ -1,18 +1,22 @@
-.. include:: /Includes
+.. include:: /Includes.rst.txt
+.. _tca_property_maxitems:
 
 ========
 maxitems
 ========
 
 :aspect:`Datatype`
-    integer > 0
+   integer > 0
 
 :aspect:`Scope`
-    Maximum number of child items. Defaults to a high value. JavaScript record validation prevents the
-    record from being saved if the limit is not satisfied.
+   Display / Proc.
 
-    .. note::
-        Property maxitems is ignored with `type='select'` and `renderType='selectSingle'`.
+:aspect:`types`
+   :ref:`group <columns-group>`, :ref:`inline <columns-inline>`
 
 :aspect:`Description`
-    Display / Proc.
+   Maximum number of child items. Defaults to a high value. JavaScript record validation prevents the
+   record from being saved if the limit is not satisfied.
+
+   .. note::
+      Property maxitems is ignored with `type='select'` and `renderType='selectSingle'`.

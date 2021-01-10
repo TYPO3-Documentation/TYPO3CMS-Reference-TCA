@@ -7,20 +7,21 @@ Field types
 ===========
 
 .. toctree::
-    :maxdepth: 5
-    :titlesonly:
+   :maxdepth: 5
+   :titlesonly:
 
-    Introduction/Index
-    Type/Check/Index
-    Type/Flex/Index
-    Type/Group
-    Type/ImageManipulation
-    Type/Inline
-    Type/Input
-    Type/None
-    Type/Passthrough
-    Type/Radio
-    Type/Select
-    Type/Slug
-    Type/Text
-    Type/User
+   Introduction/Index
+   CommonProperties/Index
+   Type/Check/Index
+   Type/Flex/Index
+   Type/Group/Index
+   Type/ImageManipulation/Index
+   Type/Inline/Index
+   Type/Input/Index
+   Type/None/Index
+   Type/Passthrough/Index
+   Type/Radio/Index
+   Type/Select/Index
+   Type/Slug/Index
+   Type/Text/Index
+   Type/User/Index

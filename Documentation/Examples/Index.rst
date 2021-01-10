@@ -1,4 +1,4 @@
-.. include:: /Includes
+.. include:: /Includes.rst.txt
 
 ==================
 About the examples

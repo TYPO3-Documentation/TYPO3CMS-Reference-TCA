@@ -1,14 +1,19 @@
-.. include:: /Includes
+.. include:: /Includes.rst.txt
+.. _tca_property_default:
 
 =======
 default
 =======
 
 :aspect:`Datatype`
-    integer / string
+   integer / string
 
 :aspect:`Scope`
-    Display / Proc.
+   Display / Proc.
+
+
+:aspect:`types`
+   :ref:`group <columns-group>`, :ref:`input <columns-input>`
 
 :aspect:`Description`
-    Default value set if a new record is created.
+   Default value set if a new record is created.
