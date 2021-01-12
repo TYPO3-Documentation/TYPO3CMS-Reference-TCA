@@ -2,9 +2,9 @@
 
 .. _columns:
 
-==================================
-Field definitions :php:`'columns'`
-==================================
+===========================
+Field definitions (columns)
+===========================
 
 The ['columns'] section contains configuration for each table  *field* (also called "column") which can
 be edited in the backend. This is typically the biggest part of a TCA definition.

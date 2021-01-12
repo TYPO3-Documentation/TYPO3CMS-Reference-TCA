@@ -1,6 +1,10 @@
 .. include:: /Includes.rst.txt
 .. _columns-select-properties-special:
 
+=======
+special
+=======
+
 :aspect:`Datatype`
    string (keyword)
 

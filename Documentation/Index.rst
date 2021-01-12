@@ -78,15 +78,16 @@ Alternatively you can `file an issue
 
 
 .. toctree::
-    :hidden:
+   :hidden:
 
-    Introduction/Index
-    Columns/Index
-    ColumnsConfig/Index
-    Ctrl/Index
-    Interface/Index
-    Palettes/Index
-    Types/Index
-    genindex
-    Sitemap
+   Introduction/Index
+   Examples/Index
+   Columns/Index
+   ColumnsConfig/Index
+   Ctrl/Index
+   Interface/Index
+   Palettes/Index
+   Types/Index
+   genindex
+   Sitemap
     

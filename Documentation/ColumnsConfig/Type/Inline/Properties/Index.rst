@@ -31,7 +31,6 @@ Special properties
    ForeignTable
    ForeignTableField
    ForeignUnique
-   Index
    Mm
    OverrideChildTCa
    Size

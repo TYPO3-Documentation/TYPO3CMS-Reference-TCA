@@ -4,7 +4,7 @@
 Example
 =======
 
-.. figure:: Images/BackendLayout.png
+.. figure:: ../Images/BackendLayout.png
     :alt: Backend layout editor (config)
     :class: with-shadow
 

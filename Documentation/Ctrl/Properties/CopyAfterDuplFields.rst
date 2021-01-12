@@ -1,0 +1,25 @@
+.. include:: /Includes.rst.txt
+.. _ctrl-reference-copyafterduplfields:
+
+===================
+copyAfterDuplFields
+===================
+
+:aspect:`Datatype`
+    string (list of field names)
+
+:aspect:`Scope`
+    Proc.
+
+:aspect:`Description`
+    The fields in this list will automatically have the value of the same field from the "previous" record transferred
+    when they are *copied* to the position *after* another record from same table.
+
+    **Example from "tt\_content" table:**
+
+    .. code-block:: php
+
+        'ctrl' => [
+            'copyAfterDuplFields' => 'colPos, sys_language_uid',
+            ...
+        ],

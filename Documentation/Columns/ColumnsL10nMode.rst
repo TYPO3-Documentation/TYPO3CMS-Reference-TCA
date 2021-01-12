@@ -37,7 +37,7 @@ l10n_mode
         The example shows the "header" field of a "tt\_content" record after a translation from default language
         english with content "English header" to danish has been created.
 
-        .. figure:: ../Images/ColumnsL10nModePrefixLangTitle.png
+        .. figure:: Images/L10nModePrefixLangTitle.png
             :alt: "Header" field of a tt_content record after translation has been created
             :class: with-shadow
 

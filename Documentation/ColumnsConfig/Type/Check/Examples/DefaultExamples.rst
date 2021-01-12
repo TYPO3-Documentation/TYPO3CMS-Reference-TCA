@@ -9,7 +9,7 @@ Examples
 ========
 
 All examples listed here can be found in the :ref:`extension styleguide
-<extension_styleguide_tca_examples>`.
+<tca_examples_extension_styleguide>`.
 
 .. _tca_example_checkbox_2:
 

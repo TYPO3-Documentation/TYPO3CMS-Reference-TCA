@@ -22,6 +22,7 @@ Properties:
    Eval
    InvertStateDisplay
    Items
+   RenderType
    Validation
 
 
@@ -32,7 +33,7 @@ Common properties
 *  :ref:`fieldInformation <tca_property_fieldInformation>`
 *  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
 
-    *  :ref:`defaultLanguageDifferences <tca_property_fieldWizard_>`
+    *  :ref:`defaultLanguageDifferences <tca_property_fieldWizard>`
     *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
     *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
 

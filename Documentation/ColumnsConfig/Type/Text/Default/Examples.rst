@@ -8,7 +8,7 @@ Examples
 Simple text area
 ================
 
-.. figure:: Images/SysNote.png
+.. figure:: ../Images/SysNote.png
     :alt: Message field of system notes, a simple text area (message)
     :class: with-shadow
 
@@ -28,7 +28,7 @@ Simple text area
 Rich text editor field
 ======================
 
-.. figure:: Images/RteStyleguide1.png
+.. figure:: ../Images/RteStyleguide1.png
     :alt: A Rich Text Editor field (rte_1)
     :class: with-shadow
 

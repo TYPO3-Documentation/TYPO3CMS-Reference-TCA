@@ -1,0 +1,19 @@
+.. include:: /Includes.rst.txt
+.. _ctrl-reference-hideatcopy:
+
+==========
+hideAtCopy
+==========
+
+:aspect:`Datatype`
+    boolean
+
+:aspect:`Scope`
+    Proc.
+
+:aspect:`Description`
+    If set, and the "disabled" field from :ref:`enablecolumns <ctrl-reference-enablecolumns>` is
+    specified, then records will be disabled/hidden when they are copied.
+
+    Note it is possible to disable this feature on a page and user or group level using the Page
+    TSconfig option :ref:`disableHideAtCopy <t3tsconfig:pagetcemaintables-disablehideatcopy>`.

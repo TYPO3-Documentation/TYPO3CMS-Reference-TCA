@@ -1,7 +1,6 @@
 ﻿.. include:: /Includes.rst.txt
 
 
-.. _columns-text-properties:
 .. _columns-text-properties-type:
 .. _columns-text-properties-behaviour:
 .. _columns-text-properties-fieldControl:
@@ -10,7 +9,6 @@
 .. _columns-text-properties-mode:
 .. _columns-text-properties-placeholder:
 .. _columns-text-properties-readOnly:
-.. _columns-text-properties-richtextConfiguration:
 .. _columns-text-properties-search:
 .. _columns-text-properties-softref:
 .. _columns-text-properties-default:
@@ -43,7 +41,7 @@ Common properties
 *  :ref:`fieldInformation <tca_property_fieldInformation>`
 *  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
 
-   *  :ref:`defaultLanguageDifferences <tca_property_fieldWizard_>`
+   *  :ref:`defaultLanguageDifferences <tca_property_fieldwizard>`
    *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
    *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
 

@@ -36,7 +36,7 @@ Simple select drop down with static and database values
 Select foreign rows with icons
 ==============================
 
-.. figure:: ../Images/ColumnsExampleSelectImages.png
+.. figure:: ../Images/Icons.png
    :alt: Select foreign rows which have icons configured (select_single_12)
    :class: with-shadow
 

@@ -179,7 +179,7 @@ table. In the second sheet, we add a simple input field and a text field.
 
 The result from this configuration is a form which looks like this:
 
-..  figure:: ../../Images/TypeFlexSheet1.png
+..  figure:: Images/Sheet1.png
     :alt: The first sheet
     :class: with-shadow
 

@@ -9,14 +9,14 @@ Properties
 
 .. toctree::
 
-Cols
-EnableRichtext
-EnableTabulator
-Eval
-FixedFont
-Format.rst
-IsIn
-Max
-RichtextConfiugration
-Rows
-Wrap
+   Cols
+   EnableRichtext
+   EnableTabulator
+   Eval
+   FixedFont
+   Format.rst
+   IsIn
+   Max
+   RichtextConfiugration
+   Rows
+   Wrap

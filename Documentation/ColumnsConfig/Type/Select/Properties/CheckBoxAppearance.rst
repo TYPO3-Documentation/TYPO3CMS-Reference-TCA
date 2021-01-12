@@ -12,7 +12,7 @@ appearance - selectCheckBox
    Display
 
 :aspect:`RenderType`
-   :ref:`<selectCheckBox> columns-select-rendertype-selectCheckBox`
+   :ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`
 
 :aspect:`Description`
    Options for refining the appearance of `selectCheckBox` fields.

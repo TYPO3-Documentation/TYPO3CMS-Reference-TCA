@@ -16,7 +16,7 @@ label
 
     The name of the field as it is shown in the interface:
 
-    .. figure:: ../Images/ColumnLabel.png
+    .. figure:: Images/Label.png
         :alt: Two examples of labels
         :class: with-shadow
 

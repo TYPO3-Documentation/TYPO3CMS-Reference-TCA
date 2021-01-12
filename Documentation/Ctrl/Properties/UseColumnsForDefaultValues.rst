@@ -1,0 +1,39 @@
+.. include:: /Includes.rst.txt
+.. _ctrl-reference-usecolumnsfordefaultvalues:
+
+==========================
+useColumnsForDefaultValues
+==========================
+
+:aspect:`Datatype`
+    string (list of field names)
+
+:aspect:`Scope`
+    Proc.
+
+:aspect:`Description`
+    When a new record is created, this defines the fields from the 'previous' record that should be used as default values.
+
+    What is considered the 'previous' record depends on how the record is created. For example, if
+    TSconfig :ref:`options.saveDocNew <t3tsconfig:useroptions-saveDocNew>` is enabled, you can
+    create a new record from an existing one using the "New" button.
+
+    This may still get overridden by the default values for the record. When assigning values to a new
+    record the following are used (applied in that order, e.g. Page TSconfig will overwrite User TSconfig):
+
+    #. User TSconfig
+    #. Page TSconfig
+    #. From 'previous' record
+    #. Default values
+    #. From 'inline' relations
+
+    See :php:`\TYPO3\CMS\Backend\Form\FormDataProvider\DatabaseRowInitializeNew->DatabaseRowInitializeNew()`
+
+    **Example from "pages" table:**
+
+    .. code-block:: php
+
+        'ctrl' => [
+            'useColumnsForDefaultValues' => 'doktype,fe_group,hidden',
+            ...
+        ],

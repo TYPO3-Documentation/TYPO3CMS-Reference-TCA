@@ -4,7 +4,7 @@
 Example
 =======
 
-.. figure:: Images/TableTtContentBodytext.png
+.. figure:: ../Images/TableTtContentBodytext.png
     :alt: Table editor tt\_content bodytext
     :class: with-shadow
 

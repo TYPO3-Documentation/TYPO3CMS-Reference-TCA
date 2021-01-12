@@ -4,7 +4,7 @@
 Example
 =======
 
-.. figure:: Images/T3editorStyleguide1.png
+.. figure:: ../Images/T3editorStyleguide1.png
     :alt: Code highlighting with t3editor (t3editor_1)
     :class: with-shadow
 

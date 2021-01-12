@@ -27,12 +27,11 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 The following renderTypes are available:
 
 *  :ref:`default <columns-check-default>`: One or more checkboxes are displayed.
-
 *  :ref:`checkboxToggle <columns-check-checkboxToggle>`: Instead of checkboxes,
-  a toggle item is displayed.
+   a toggle item is displayed.
 *  :ref:`checkboxLabeledToggle <columns-check-checkboxLabeledToggle>`: A toggle
-  switch where both states can be labelled (ON/OFF, Visible / Hidden or alike).
-  Its state can be inverted via :code:`invertStateDisplay`
+   switch where both states can be labelled (ON/OFF, Visible / Hidden or alike).
+   Its state can be inverted via :code:`invertStateDisplay`
 
 .. toctree::
    :hidden:

@@ -29,7 +29,7 @@ Common properties
 *  :ref:`fieldInformation <tca_property_fieldInformation>`
 *  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
 
-   *  :ref:`defaultLanguageDifferences <tca_property_fieldWizard_>`
+   *  :ref:`defaultLanguageDifferences <tca_property_fieldwizard>`
    *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
 
 *  :ref:`itemsProcFunc <tca_property_itemsProcFunc>`

@@ -33,6 +33,6 @@ description
             ],
         ],
 
-    .. figure:: ../Images/ColumnsDescription.png
+    .. figure:: Images/Description.png
         :alt: Show description text below label
         :class: with-shadow

@@ -27,7 +27,7 @@ with slider, a select drop-down for images, an inline relation spanning multiple
         ],
     ],
 
-.. figure:: ../Images/ColumnsExampleInputSlider.png
+.. figure:: Images/ExampleInputSlider.png
     :alt: Slider input field
     :class: with-shadow
 
@@ -50,7 +50,7 @@ with slider, a select drop-down for images, an inline relation spanning multiple
         ],
     ],
 
-.. figure:: ../Images/ColumnsExampleSelectImages.png
+.. figure:: Images/SelectImages.png
     :alt: Select images from a drop-down
     :class: with-shadow
 
@@ -69,7 +69,7 @@ with slider, a select drop-down for images, an inline relation spanning multiple
         ],
     ],
 
-.. figure:: ../Images/ColumnsExampleInline.png
+.. figure:: Images/ExampleInline.png
     :alt: Nested inline relation to a different table
     :class: with-shadow
 

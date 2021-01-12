@@ -7,7 +7,7 @@ Labeled toggle checkbox
 =======================
 
 This page describes the :ref:`check <columns-check>` type with the
-:ref:`renderType <check-properties-renderType> :php:`'checkboxLabeledToggle'`.
+:ref:`renderType <columns-check-properties-renderType>` :php:`'checkboxLabeledToggle'`.
 
 A toggle switch where both states can be labelled (ON/OFF, Visible / Hidden
 or alike).

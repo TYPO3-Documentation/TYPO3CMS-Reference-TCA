@@ -38,28 +38,28 @@ foreign\_table\_where
    It is possible to use markers in the WHERE clause:
 
    -  ###REC\_FIELD\_[*field name*]###
-     Any field of the current record.
+      Any field of the current record.
 
-     .. note::
-        The field name part of the marker is not in upper case letters.
-        It must match the exact case used in the database.
+      .. note::
+         The field name part of the marker is not in upper case letters.
+         It must match the exact case used in the database.
 
    -  ###THIS\_UID###
-     Current element uid (zero if new).
+      Current element uid (zero if new).
 
    -  ###CURRENT\_PID###
-     The current page id (pid of the record).
+      The current page id (pid of the record).
 
    -  ###SITEROOT###
 
    -  ###PAGE\_TSCONFIG\_ID###
-     A value you can set from Page TSconfig dynamically.
+      A value you can set from Page TSconfig dynamically.
 
    -  ###PAGE\_TSCONFIG\_IDLIST###
-     A value you can set from Page TSconfig dynamically.
+      A value you can set from Page TSconfig dynamically.
 
    -  ###PAGE\_TSCONFIG\_STR###
-     A value you can set from Page TSconfig dynamically.
+      A value you can set from Page TSconfig dynamically.
 
    The markers are preprocessed so that the value of CURRENT\_PID and PAGE\_TSCONFIG\_ID are always integers
    (default is zero), PAGE\_TSCONFIG\_IDLIST will always be a comma-separated list of integers (default is zero)

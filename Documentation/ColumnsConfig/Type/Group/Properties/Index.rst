@@ -66,11 +66,11 @@ Common properties
 *  :ref:`fieldInformation <tca_property_fieldInformation>`
 *  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
 
-   *  :ref:`defaultLanguageDifferences <tca_property_fieldWizard_>`
+   *  :ref:`defaultLanguageDifferences <tca_property_fieldwizard>`
    *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
    *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
-   *  :ref:`recordsOverview <tca_property_recordsOverview>`
-   *  :ref:`tableList <tca_property_tableList>`
+   *  :ref:`recordsOverview <tca_property_fieldWizard_recordsOverview>`
+   *  :ref:`tableList <tca_property_fieldWizard_tableList>`
 
 *  :ref:`localizeReferencesAtParentLocalization <tca_property_localizeReferencesAtParentLocalization>`
 *  :ref:`maxitems <tca_property_maxitems>`
