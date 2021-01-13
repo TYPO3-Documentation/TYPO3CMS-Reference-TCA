@@ -1,5 +1,9 @@
+.. include:: /Includes.rst.txt
+.. _types-properties-bitmask-value-field:
+
+=====================
 bitmask\_value\_field
----------------------
+=====================
 
 :aspect:`Datatype`
     string (field name)

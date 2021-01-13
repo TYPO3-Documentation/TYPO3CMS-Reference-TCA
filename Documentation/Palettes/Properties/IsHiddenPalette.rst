@@ -1,5 +1,8 @@
+.. include:: /Includes.rst.txt
+
+===============
 isHiddenPalette
----------------
+===============
 
 :aspect:`Datatype`
     boolean

@@ -1,5 +1,9 @@
+.. include:: /Includes.rst.txt
+.. _types-properties-subtype-value-field:
+
+=====================
 subtype\_value\_field
----------------------
+=====================
 
 :aspect:`Datatype`
     string (field name)

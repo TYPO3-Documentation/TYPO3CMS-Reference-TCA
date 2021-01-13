@@ -1,5 +1,11 @@
+.. include:: /Includes.rst.txt
+.. _palettes-properties-showitem:
+.. _palettes-linebreaks:
+.. _palettes-linebreaks-examples:
+
+========
 showitem
---------
+========
 
 :aspect:`Datatype`
     string (list of field names)

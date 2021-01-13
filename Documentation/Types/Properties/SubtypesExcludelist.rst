@@ -1,5 +1,9 @@
+.. include:: /Includes.rst.txt
+.. _types-properties-subtypes-excludelist:
+
+=====================
 subtypes\_excludelist
----------------------
+=====================
 
 :aspect:`Datatype`
     array

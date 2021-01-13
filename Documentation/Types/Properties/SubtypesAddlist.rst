@@ -1,5 +1,9 @@
+.. include:: /Includes.rst.txt
+.. _types-properties-subtypes-addlist:
+
+=================
 subtypes\_addlist
------------------
+=================
 
 :aspect:`Datatype`
     array

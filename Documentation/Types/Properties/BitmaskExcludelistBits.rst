@@ -1,5 +1,9 @@
+.. include:: /Includes.rst.txt
+.. _types-properties-bitmask-excludelist-bits:
+
+==========================
 bitmask\_excludelist\_bits
---------------------------
+==========================
 
 :aspect:`Datatype`
     array

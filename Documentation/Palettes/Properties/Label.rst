@@ -1,5 +1,9 @@
+.. include:: /Includes.rst.txt
+.. _palettes-properties-label:
+
+=====
 label
------
+=====
 
 :aspect:`Datatype`
     string

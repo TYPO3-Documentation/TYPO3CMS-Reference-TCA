@@ -1,39 +1,21 @@
 ﻿.. include:: /Includes.rst.txt
-
 .. _interface:
 
-=============
-['interface']
-=============
+===========================
+Backend display (interface)
+===========================
+
+.. todo:
+   This section is incomplete. See
+   https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues/340
+
+The :php`'interface'` section contains configuration for display and listing in
+various parts of the backend. It is optional to use. Many tables in both the
+Core and the
 
 
-Introduction
-------------
+.. toctree::
 
-The ['interface'] section contains configuration for display and listing in various parts of the
-backend. Extension authors often ignore these settings and a lot of extensions in the wild don't
-use that array part.
+   Examples
+   Properties
 
-
-.. _interface-examples:
-
-Examples
---------
-
-This is how the "pages" table is configured for these settings:
-
-.. code-block:: php
-
-    'interface' => [
-        'maxDBListItems' => 30,
-        'maxSingleDBListItems' => 50
-    ],
-
-
-.. _interface-properties:
-
-.. _interface-properties-maxdblistitems:
-.. include:: InterfaceMaxDbListItems.rst.txt
-
-.. _interface-properties-maxsingledblistitems:
-.. include:: InterfaceMaxSingleDbListItems.rst.txt

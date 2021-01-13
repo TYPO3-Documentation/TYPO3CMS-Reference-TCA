@@ -1,5 +1,9 @@
+.. include:: /Includes.rst.txt
+.. _types-properties-columnsOverrides:
+
+================
 columnsOverrides
-----------------
+================
 
 :aspect:`Datatype`
     array (columns fields overrides)
