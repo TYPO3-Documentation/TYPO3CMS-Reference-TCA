@@ -5,10 +5,12 @@
 authMode
 ========
 
-   :type: string (keyword)   :Scope: Display / Proc.
+.. confval:: authMode
 
-:aspect:`RenderType`
-   all
+   :type: string (keyword)
+   :Scope: Display  / Proc.
+   :RenderType: all
+
    Authorization mode for the selector box. Keywords are:
 
    explicitAllow

@@ -5,11 +5,14 @@
 items
 =====
 
-   :type: array   :Scope: Display / Proc.
-    **Required.**
+.. confval:: items
 
-    An array of values which can be selected.
+   :required: true
+   :type: array
+   :Scope: Display  / Proc.
 
-    Each entry is in itself an array where the  *first entry* is the displayed *title* (string or LLL reference)
-    and the *second entry* is the *value* of the field in database if that radio is selected. Values can be
-    integer numbers or string values.
+   An array of values which can be selected.
+
+   Each entry is in itself an array where the  *first entry* is the displayed *title* (string or LLL reference)
+   and the *second entry* is the *value* of the field in database if that radio is selected. Values can be
+   integer numbers or string values.

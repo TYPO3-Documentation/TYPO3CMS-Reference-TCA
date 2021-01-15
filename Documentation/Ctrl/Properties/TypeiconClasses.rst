@@ -5,24 +5,26 @@
 typeicon\_classes
 =================
 
-:aspect:`Datatype`
-    array
+.. confval:: typeicon_classes
 
-:aspect:`Scope`
-    Display
+   :type: array
+   :Scope: Display
 
-:aspect:`Description`
-    Array of names to use for the records. The keys must correspond to the values found in the column
-    referenced in the :ref:`typeicon_column <ctrl-reference-typeicon-column>` property. The values correspond
-    to icons registered in the :ref:`Icon API <t3coreapi:icon>`. For using and configuring `typeicon_classes`
-    for custom page types, please see :ref:`Create a new Page Type<t3coreapi:page-types-example>`.
 
-    **Example from the `tt_content` table:**
+   Array of names to use for the records. The keys must correspond to the values found in the column
+   referenced in the :ref:`typeicon_column <ctrl-reference-typeicon-column>` property. The values correspond
+   to icons registered in the :ref:`Icon API <t3coreapi:icon>`. For using and configuring `typeicon_classes`
+   for custom page types, please see :ref:`Create a new Page Type<t3coreapi:page-types-example>`.
 
-    .. code-block:: php
 
-        'typeicon_classes' => [
-            'header' => 'mimetypes-x-content-header',
-            'default' => 'mimetypes-x-content-text',
-            ...
-        ],
+Examples
+========
+
+Example from the `tt_content` table::
+
+   'typeicon_classes' => [
+      'header' => 'mimetypes-x-content-header',
+      'default' => 'mimetypes-x-content-text',
+      ...
+   ],
+

@@ -5,11 +5,10 @@
 hideTable
 =========
 
-:aspect:`Datatype`
-    boolean
+.. confval:: hideTable
 
-:aspect:`Scope`
-    Display
+   :type: boolean
+   :Scope: Display
 
-:aspect:`Description`
-    Hide this table in record listings, especially the list module.
+
+   Hide this table in record listings, especially the list module.

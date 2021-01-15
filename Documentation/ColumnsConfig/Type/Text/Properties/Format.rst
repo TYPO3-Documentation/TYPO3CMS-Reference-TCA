@@ -5,9 +5,11 @@
 format
 ======
 
-   :type: string (keyword)   :Scope: Display
+.. confval:: format
 
-:aspect:`renderType`
-    :ref:`t3editor <columns-text-renderType-t3editor>`
-    The value specifies the language t3editor should handle. Allowed values:
-    `css`, `html`, `javascript`, `php`, `typoscript`, `xml`
+   :type: string (keyword)
+   :Scope: Display
+   :RenderType: :ref:`t3editor <columns-text-renderType-t3editor>`
+
+   The value specifies the language t3editor should handle. Allowed values:
+   `css`, `html`, `javascript`, `php`, `typoscript`, `xml`

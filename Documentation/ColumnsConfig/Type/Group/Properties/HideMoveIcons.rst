@@ -5,5 +5,10 @@
 hideMoveIcons
 =============
 
-   :type: boolean   :Scope: Display
-    Removes the move icons next to the selector box.
+.. confval:: hideMoveIcons
+
+   :type: boolean
+   :Scope: Display
+   :InternalType: all
+
+   Removes the move icons next to the selector box.

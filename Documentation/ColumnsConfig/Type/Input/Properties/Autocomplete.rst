@@ -5,22 +5,24 @@
 autocomplete
 ============
 
-   :type: boolean   :Scope: Display
+.. confval:: autocomplete
 
-:aspect:`Render types`
-    default, colorpicker, link
-    Controls the `autocomplete` attribute of a given input field. If set to true (default false),
-    adds attribute :php:`autocomplete="on"` to the input field allowing browser auto filling the field:
+   :type: boolean
+   :Scope: Display
+   :RenderTypes: default, colorpicker, link
 
-    .. code-block:: php
-        :emphasize-lines: 7
+   Controls the `autocomplete` attribute of a given input field. If set to true (default false),
+   adds attribute :php:`autocomplete="on"` to the input field allowing browser auto filling the field:
 
-        'title' => [
-            'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
-            'config' => [
-                'type' => 'input',
-                'size' => 20,
-                'eval' => 'null',
-                'autocomplete' => true
-            ]
-        ],
+   .. code-block:: php
+      :emphasize-lines: 7
+
+      'title' => [
+         'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
+         'config' => [
+            'type' => 'input',
+            'size' => 20,
+            'eval' => 'null',
+            'autocomplete' => true
+         ]
+      ],

@@ -5,7 +5,11 @@
 authMode\_enforce
 =================
 
-   :type: string (keyword)   :Scope: Display / Proc.
+.. confval:: authMode_enforce
+
+   :type: string (keyword)
+   :Scope: Display  / Proc.
+
    Various additional enforcing options for :ref:`authMode <columns-select-properties-authmode>`, keywords:
 
    strict

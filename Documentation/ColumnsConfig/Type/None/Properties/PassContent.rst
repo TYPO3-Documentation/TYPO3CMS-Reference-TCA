@@ -5,9 +5,13 @@
 pass\_content
 =============
 
-   :type: boolean   :Scope: Display
-    If set, then content from the field is directly outputted in the :code:`<input>` section as value attribute.
-    Otherwise, the content will be passed through :code:`htmlspecialchars()`.
+.. confval:: pass_content
 
-    Be careful to set this flag since it allows HTML from the field to be outputted on the page, thereby creating
-    the possibility of XSS security holes.
+   :type: boolean
+   :Scope: Display
+
+   If set, then content from the field is directly outputted in the :code:`<input>` section as value attribute.
+   Otherwise, the content will be passed through :code:`htmlspecialchars()`.
+
+   Be careful to set this flag since it allows HTML from the field to be outputted on the page, thereby creating
+   the possibility of XSS security holes.

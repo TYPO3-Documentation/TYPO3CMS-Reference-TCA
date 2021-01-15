@@ -4,7 +4,10 @@
 maxSize
 =======
 
-   :type: integer   :Scope: Proc.
-    **Only with internal\_type='file'**
+.. confval:: maxSize
+
+   :type: integer
+   :Scope: Proc.
+   :InternalType: file
 
     Maximum file size allowed in KB.

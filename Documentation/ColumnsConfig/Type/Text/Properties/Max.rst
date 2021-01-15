@@ -5,13 +5,15 @@
 max
 ===
 
-   :type: integer   :Scope: Display
+.. confval:: max
 
-:aspect:`renderType`
-    :ref:`textTable <columns-text-renderType-textTable>`,
-    :ref:`default <columns-text-renderType-default>`
-    Adds the HTML5 attribute "maxlength" to a textarea. Prevents the field from adding more than
-    specified number of characters. This is a client side restriction, no server side length restriction
-    is enforced.
+   :type: integer
+   :Scope: Display
+   :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,
+      :ref:`default <columns-text-renderType-default>`
 
-    Does not apply for RTE fields.
+   Adds the HTML5 attribute "maxlength" to a textarea. Prevents the field from adding more than
+   specified number of characters. This is a client side restriction, no server side length restriction
+   is enforced.
+
+   Does not apply for RTE fields.

@@ -5,7 +5,10 @@
 foreign\_table
 ==============
 
-   :type: string (table name)   :Scope: Display / Proc.
-   **Required**
+.. confval:: foreign_table
+
+   :Required: true
+   :type: string (table name)
+   :Scope: Display  / Proc.
 
    The table name of the child records is defined here. The table must be configured in :php:`$GLOBALS['TCA']`.

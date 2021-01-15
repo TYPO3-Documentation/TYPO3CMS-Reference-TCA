@@ -5,10 +5,12 @@
 items
 =====
 
-   :type: array   :Scope: Display / Proc.
+.. confval:: items
 
-:aspect:`RenderType`
-   all
+   :type: array
+   :Scope: Display  / Proc.
+   :RenderType: all
+
    Contains the elements for the selector box unless the property "foreign\_table" or "special" has been set
    in which case automated values are set in addition to any values listed in this array.
 

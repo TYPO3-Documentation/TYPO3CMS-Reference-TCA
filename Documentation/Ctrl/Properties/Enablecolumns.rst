@@ -5,54 +5,54 @@
 enablecolumns
 =============
 
-:aspect:`Datatype`
-    array
+.. confval:: enablecolumns
 
-:aspect:`Scope`
-    Proc. / Display
+   :type: array
+   :Scope: Proc. / Display
 
-:aspect:`Description`
-    Specifies which *publishing control features* are automatically implemented for the table.
 
-    This includes that records can be "disabled" or "hidden", have a starting and/or ending time and be access
-    controlled so only a certain front end user group can access them. This property is used by the
-    :ref:`RestrictionBuilder <t3coreapi:database-restriction-builder>` to create SQL fragments.
+   Specifies which *publishing control features* are automatically implemented for the table.
 
-    These are the keys in the array you can use. Each of the values must be a field name in the table which
-    should be used for the feature:
+   This includes that records can be "disabled" or "hidden", have a starting and/or ending time and be access
+   controlled so only a certain front end user group can access them. This property is used by the
+   :ref:`RestrictionBuilder <t3coreapi:database-restriction-builder>` to create SQL fragments.
 
-    disabled
-        Defines which field serves as hidden/disabled flag.
+   These are the keys in the array you can use. Each of the values must be a field name in the table which
+   should be used for the feature:
 
-    starttime
-        Defines which field contains the starting time.
+   disabled
+      Defines which field serves as hidden/disabled flag.
 
-    endtime
-        Defines which field contains the ending time.
+   starttime
+      Defines which field contains the starting time.
 
-    fe\_group
-        Defines which field is used for access control via a selection of FE user groups.
+   endtime
+      Defines which field contains the ending time.
 
-    .. note::
-        In general these fields do *not* affect the access or display in the backend! They are primarily
-        related to the frontend. However the icon of records having these features enabled will
-        normally change as these examples show:
+   fe\_group
+      Defines which field is used for access control via a selection of FE user groups.
 
-        .. figure:: ../Images/EnableFields.png
-            :alt: Enable fields show up as icon overlays
-            :class: with-shadow
+   .. note::
+      In general these fields do *not* affect the access or display in the backend! They are primarily
+      related to the frontend. However the icon of records having these features enabled will
+      normally change as these examples show:
 
-            FE group restricted access showing up on modified record icons
+      .. figure:: ../Images/EnableFields.png
+         :alt: Enable fields show up as icon overlays
+         :class: with-shadow
 
-    See also the :ref:`delete <ctrl-reference-delete>` feature which is related, but is active for both frontend and backend.
+         FE group restricted access showing up on modified record icons
 
-    **Example from table "tt_content":**
+   See also the :ref:`delete <ctrl-reference-delete>` feature which is related, but is active for both frontend and backend.
 
-    .. code-block:: php
+Examples
+========
 
-        'enablecolumns' => [
-            'disabled' => 'hidden',
-            'starttime' => 'starttime',
-            'endtime' => 'endtime',
-            'fe_group' => 'fe_group'
-        ],
+Example from table "tt_content"::
+
+   'enablecolumns' => [
+      'disabled' => 'hidden',
+      'starttime' => 'starttime',
+      'endtime' => 'endtime',
+      'fe_group' => 'fe_group'
+   ],

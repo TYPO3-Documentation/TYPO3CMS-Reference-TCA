@@ -5,6 +5,9 @@
 ds\_pointerField\_searchParent\_subField
 ========================================
 
+.. confval:: ds_pointerField_searchParent_subField
 
-   :type: string   :Scope: Display / Proc.
-    Points to a field in the "rootline" which may contain a pointer to the "next-level" template.
+   :type: string
+   :Scope: Display  / Proc.
+
+   Points to a field in the "rootline" which may contain a pointer to the "next-level" template.

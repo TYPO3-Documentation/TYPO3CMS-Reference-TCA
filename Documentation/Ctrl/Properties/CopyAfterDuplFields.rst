@@ -5,21 +5,22 @@
 copyAfterDuplFields
 ===================
 
-:aspect:`Datatype`
-    string (list of field names)
+.. confval:: copyAfterDuplFields
 
-:aspect:`Scope`
-    Proc.
+   :type: string (list of field names)
+   :Scope: Proc.
 
-:aspect:`Description`
-    The fields in this list will automatically have the value of the same field from the "previous" record transferred
-    when they are *copied* to the position *after* another record from same table.
 
-    **Example from "tt\_content" table:**
+   The fields in this list will automatically have the value of the same field from the "previous" record transferred
+   when they are *copied* to the position *after* another record from same table.
 
-    .. code-block:: php
+Examples
+========
 
-        'ctrl' => [
-            'copyAfterDuplFields' => 'colPos, sys_language_uid',
-            ...
-        ],
+Example from "tt\_content" table::
+
+   'ctrl' => [
+      'copyAfterDuplFields' => 'colPos, sys_language_uid',
+      ...
+   ],
+

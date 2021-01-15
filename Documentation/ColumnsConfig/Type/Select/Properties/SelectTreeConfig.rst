@@ -5,10 +5,12 @@
 treeConfig
 ==========
 
-   :type: array   :Scope: Display
+.. confval:: treeConfig
 
-:aspect:`RenderType`
-   :ref:`selectTree <columns-select-rendertype-selectTree>`
+   :type: array
+   :Scope: Display
+   :RenderType: :ref:`selectTree <columns-select-rendertype-selectTree>`
+
    Either `childrenField` or `parentField` has to be set - `childrenField` takes precedence. Keywords:
 
    dataProvider

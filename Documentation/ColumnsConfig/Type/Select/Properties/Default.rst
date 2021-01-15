@@ -5,8 +5,11 @@
 default
 =======
 
-   :type: string   :Scope: Display / Proc.
+.. confval:: default
 
-:aspect:`RenderType`
-   all
-   Default value set if a new record is created. If empty, the first element in the items array is selected.
+   :type: string
+   :Scope: Display  / Proc.
+   :RenderType: all
+
+   Default value set if a new record is created. If empty, the first element in
+   the items array is selected.

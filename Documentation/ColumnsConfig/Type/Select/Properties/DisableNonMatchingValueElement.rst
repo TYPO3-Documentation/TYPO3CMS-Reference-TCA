@@ -5,9 +5,11 @@
 disableNoMatchingValueElement
 =============================
 
-   :type: boolean   :Scope: Display
+.. confval:: disableNoMatchingValueElement
 
-:aspect:`RenderType`
-   all
+   :type: boolean
+   :Scope: Display
+   :RenderType: all
+
    If set, then no element is inserted if the current value does not match any of the existing elements. A
    corresponding options is also found in Page TSconfig.

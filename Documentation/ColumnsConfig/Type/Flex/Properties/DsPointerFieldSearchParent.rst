@@ -5,6 +5,10 @@
 ds\_pointerField\_searchParent
 ==============================
 
-   :type: string   :Scope: Display / Proc.
-    Used to search for Data Structure recursively back in the table assuming that the table is a tree table.
-    This value points to the "pid" field.
+.. confval:: ds_pointerField_searchParent
+
+   :type: string
+   :Scope: Display  / Proc.
+
+   Used to search for Data Structure recursively back in the table assuming that the table is a tree table.
+   This value points to the "pid" field.

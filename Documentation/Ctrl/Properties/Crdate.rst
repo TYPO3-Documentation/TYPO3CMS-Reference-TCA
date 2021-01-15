@@ -5,12 +5,10 @@
 crdate
 ======
 
-:aspect:`Datatype`
-    string (field name)
+.. confval:: crdate
 
-:aspect:`Scope`
-    Proc.
+   :type: string (field name)
+   :Scope: Proc.
 
-:aspect:`Description`
-    Field name, which is automatically set to the current timestamp when the record is created. Is never modified again.
-    Typically the name "crdate" is used for that field. See :ref:`tstamp <ctrl-reference-tstamp>` example.
+   Field name, which is automatically set to the current timestamp when the record is created. Is never modified again.
+   Typically the name "crdate" is used for that field. See :ref:`tstamp <ctrl-reference-tstamp>` example.

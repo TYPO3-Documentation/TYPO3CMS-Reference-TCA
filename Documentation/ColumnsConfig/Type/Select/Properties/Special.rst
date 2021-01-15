@@ -5,14 +5,15 @@
 special
 =======
 
-   :type: string (keyword)   :Scope: Display / Proc.
+.. confval:: special
 
+   :type: string (keyword)
+   :Scope: Display  / Proc.
+   :RenderType: :ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`,
+      :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`,
+      :ref:`selectSingle <columns-select-rendertype-selectSingle>`,
+      :ref:`selectSingleBox <columns-select-rendertype-selectSingleBox>`
 
-:aspect:`RenderType`
-   :ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`,
-   :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`,
-   :ref:`selectSingle <columns-select-rendertype-selectSingle>`,
-   :ref:`selectSingleBox <columns-select-rendertype-selectSingleBox>`
    This configures the selector box to fetch content from some predefined internal source. These options are used for
    backend user management and pretty worthless for most other purposes. Keywords:
 

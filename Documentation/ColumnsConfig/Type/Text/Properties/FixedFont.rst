@@ -6,11 +6,13 @@
 fixedFont
 =========
 
-   :type: boolean   :Scope: Display
+.. confval:: fixedFont
 
-:aspect:`renderType`
-    :ref:`textTable <columns-text-renderType-textTable>`,
-    :ref:`default <columns-text-renderType-default>`
-    Enables a fixed-width font (monospace) for the text field. This is useful when using code.
+   :type: boolean
+   :Scope: Display
+   :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,
 
-    Does not apply to RTE fields.
+   :ref:`default <columns-text-renderType-default>`
+   Enables a fixed-width font (monospace) for the text field. This is useful when using code.
+
+   Does not apply to RTE fields.

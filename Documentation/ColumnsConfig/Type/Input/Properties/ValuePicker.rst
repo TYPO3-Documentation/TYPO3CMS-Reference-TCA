@@ -5,11 +5,12 @@
 valuePicker
 ===========
 
+.. confval:: valuePicker
 
-   :type: array   :Scope: Display
+   :type: array
+   :Scope: Display
+   :RenderTypes: default, colorpicker, inputLink
 
-:aspect:`Render types`
-   default, colorpicker, inputLink
    Renders a select box with static values next to the input field. When a value is selected in the box,
    the value is transferred to the field. Keys:
 
@@ -28,7 +29,8 @@ valuePicker
       An array with selectable items. Each item is an array with the first value being the label in the select
       drop-down (LLL reference possible) the second being the value transferred to the input field.
 
-   **Example:**
+Example
+=======
 
    .. code-block:: php
 

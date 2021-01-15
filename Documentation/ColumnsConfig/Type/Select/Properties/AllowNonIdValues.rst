@@ -6,10 +6,12 @@
 allowNonIdValues
 ================
 
-   :type: boolean   :Scope: Proc.
+.. confval:: allowNonIdValues
 
-:aspect:`RenderType`
-   all
+   :type: boolean
+   :Scope: Proc.
+   :RenderType: all
+
    Only useful if :ref:`foreign\_table <columns-select-properties-foreign-table>` is enabled.
 
    If set, then values which are not integer ids will be allowed. May be needed if you use itemsProcFunc or just enter

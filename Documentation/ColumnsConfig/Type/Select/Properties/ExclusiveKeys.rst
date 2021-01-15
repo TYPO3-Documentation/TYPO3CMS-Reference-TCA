@@ -5,10 +5,12 @@
 exclusiveKeys
 =============
 
-   :type: string (list of)   :Scope: Display / Proc.
+.. confval:: exclusiveKeys
 
-:aspect:`RenderType`
-   all
+   :type: string (list of)
+   :Scope: Display  / Proc.
+   :RenderType: all
+
    List of keys that exclude any other keys in a select box where multiple items could be selected.
 
    "Show at any login" of "fe\_groups" (tables "pages" and "tt\_content") is an example where such a

@@ -5,18 +5,21 @@
 hideSuggest
 ===========
 
-   :type: boolean   :Scope: Display
-    **Only with internal\_type='db'**
+.. confval:: hideSuggest
 
-    The "suggest wizard" is added by default to all database relation group fields. After a couple of characters have
-    been typed into this field, an ajax based search starts and shows a list of records matching the search word.
+   :type: boolean
+   :Scope: Display
+   :InternalType: db
 
-    A :ref:`set of options <columns-group-properties-suggestOptions>` is available to configure search details.
+   The "suggest wizard" is added by default to all database relation group fields. After a couple of characters have
+   been typed into this field, an ajax based search starts and shows a list of records matching the search word.
 
-    Setting this property to `true` disables the suggest wizard.
+   A :ref:`set of options <columns-group-properties-suggestOptions>` is available to configure search details.
 
-    .. figure:: ../Images/TypeGroupSuggest8.png
-        :alt: Suggest wizard showing some suggestions
-        :class: with-shadow
+   Setting this property to `true` disables the suggest wizard.
 
-        Suggest wizard showing some suggestions
+   .. figure:: ../Images/TypeGroupSuggest8.png
+      :alt: Suggest wizard showing some suggestions
+      :class: with-shadow
+
+      Suggest wizard showing some suggestions

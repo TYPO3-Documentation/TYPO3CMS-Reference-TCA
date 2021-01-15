@@ -6,10 +6,12 @@
 fileFolder\_recursions
 ======================
 
-   :type: integer   :Scope: Display / Proc.
+.. confval:: fileFolder_recursions
 
-:aspect:`RenderType`
-   all
+   :type: integer
+   :Scope: Display  / Proc.
+   :RenderType: all
+
    Depth of directory recursions. Default is 99. Specify in range from 0-99. 0 (zero) means no recursion
    into subdirectories. Only useful in combination with property
    :ref:`fileFolder <columns-select-properties-filefolder>`.

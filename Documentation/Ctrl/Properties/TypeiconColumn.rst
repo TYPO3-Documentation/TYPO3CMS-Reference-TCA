@@ -5,13 +5,12 @@
 typeicon\_column
 ================
 
-:aspect:`Datatype`
-    string (field name)
+.. confval:: typeicon_column
 
-:aspect:`Scope`
-    Display
+   :type: string (field name)
+   :Scope: Display
 
-:aspect:`Description`
+
     Field name, whose value decides *alternative icons* for the table records, the default icon
     is the one defined with the :ref:`iconfile <ctrl-reference-iconfile>` value.
 

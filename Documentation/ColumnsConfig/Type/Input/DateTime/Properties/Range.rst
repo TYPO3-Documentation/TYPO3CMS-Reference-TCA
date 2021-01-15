@@ -6,7 +6,9 @@ range
 =====
 
 
-   :type: array   :Scope: Proc.
+   :type: array
+   :Scope: Proc.
+
    An array which defines an integer range within which the value must be. Keys:
 
    lower

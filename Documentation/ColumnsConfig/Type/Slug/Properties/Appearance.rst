@@ -5,7 +5,11 @@
 appearance
 ==========
 
-   :type: array   :Scope: Display
+.. confval:: appearance
+
+   :type: array
+   :Scope: Display
+
    Provides a custom base url that is displayed in front of the input field.
 
    prefix
@@ -18,19 +22,23 @@ appearance
       The user function should return the string which is then used as the base
       url.
 
-      Example::
 
-         <?php
-         declare(strict_types = 1);
+Example
+=======
 
-         namespace Vendor\Extension\UserFunctions\FormEngine
+::
 
-         use TYPO3\CMS\Backend\Form\FormDataProvider\TcaSlug;
+   <?php
+   declare(strict_types = 1);
 
-         class SlugPrefix
-         {
-             public function getPrefix(array $parameters, TcaSlug $reference): string
-             {
-                 return 'custom base url';
-             }
-         }
+   namespace Vendor\Extension\UserFunctions\FormEngine
+
+   use TYPO3\CMS\Backend\Form\FormDataProvider\TcaSlug;
+
+   class SlugPrefix
+   {
+       public function getPrefix(array $parameters, TcaSlug $reference): string
+       {
+           return 'custom base url';
+       }
+   }

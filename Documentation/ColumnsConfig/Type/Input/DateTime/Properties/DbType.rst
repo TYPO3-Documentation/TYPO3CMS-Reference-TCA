@@ -5,7 +5,9 @@
 dbType
 ======
 
-   :type: string   :Scope: Proc.
+   :type: string
+   :Scope: Proc.
+
     If set, the date or time will not be stored as timestamp, but as native
     `date`, `time` or `datetime` field in the database. Keep in mind that no
     timezone conversion will happen.

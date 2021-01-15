@@ -5,13 +5,12 @@
 formattedLabel\_userFunc\_options
 =================================
 
-:aspect:`Datatype`
-   string
+.. confval:: formattedLabel_userFunc_options
 
-:aspect:`Scope`
-   Display
+   :type: string
+   :Scope: Display
 
-:aspect:`Description`
+
    Options for :ref:`formattedLabel_userFunc <ctrl-reference-formattedlabel-userfunc>`.
    The array of options is passed to the user function in the parameters array
    with key "options".

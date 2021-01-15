@@ -5,42 +5,46 @@
 items
 =====
 
-   :type: array   :Scope: Display
-    If set, this array will create an array of checkboxes instead of just a single "on/off" checkbox.
+.. confval:: items
 
-    .. note::
-        You can have a maximum of 31 checkboxes in such an array and each element is represented by a single bit
-        in the integer value which ultimately goes into the database.
+   :type: array
+   :Scope: Display
 
-    In this array each entry is itself an array where the first entry is the label (string or LLL reference) and the
-    second entry is a blank value. The value sent to the database will be an integer where each bit represents the
-    state of a checkbox in this array.
+   If set, this array will create an array of checkboxes instead of just a single "on/off" checkbox.
 
-    A basic item looks like this:
+   .. note::
+      You can have a maximum of 31 checkboxes in such an array and each element is represented by a single bit
+      in the integer value which ultimately goes into the database.
 
-    .. code-block:: php
+   In this array each entry is itself an array where the first entry is the label (string or LLL reference) and the
+   second entry is a blank value. The value sent to the database will be an integer where each bit represents the
+   state of a checkbox in this array.
 
-        'items' => [
-            ['Green tomatoes', ''], // Note these should be LLL references
-            ['Red peppers', ''],
-        ],
+   A basic item looks like this:
 
-    Further properties can be set per item, but not all of them apply to all renderTypes:
+   .. code-block:: php
 
-    invertStateDisplay (boolean)
+      'items' => [
+         ['Green tomatoes', ''], // Note these should be LLL references
+         ['Red peppers', ''],
+      ],
+
+   Further properties can be set per item, but not all of them apply to all renderTypes:
+
+   invertStateDisplay (boolean)
       All renderTypes. If set to true, checked / unchecked state are swapped in view: A checkbox is marked checked if
       the database bit is *not* set and vice versa.
 
-    iconIdentifierChecked (string)
+   iconIdentifierChecked (string)
       Only if renderType is not set (default): An optional icon shown is selected / on. If not set, a check mark
       icon is used.
 
-    iconIdentifierUnchecked (string)
+   iconIdentifierUnchecked (string)
       Only if renderType is not set (default): An optional icon shown selected / on. If not set, no icon is
       show (check mark icon not displayed).
 
-    labelChecked (string)
+   labelChecked (string)
       Mandatory property for renderType `checkboxLabeledToggle`: Text shown if element is selected / on.
 
-    labelUnchecked (string)
+   labelUnchecked (string)
       Mandatory property for renderType `checkboxLabeledToggle`: Text shown if element is not selected.

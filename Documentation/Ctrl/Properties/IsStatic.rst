@@ -5,13 +5,12 @@
 is\_static
 ==========
 
-:aspect:`Datatype`
-    boolean
+.. confval:: is_static
 
-:aspect:`Scope`
-    Used by import/export
+   :type: boolean
+   :Scope: Used by import/export
 
-:aspect:`Description`
+
     This marks a table to be "static".
 
     A "static table" means that it should not be updated for individual

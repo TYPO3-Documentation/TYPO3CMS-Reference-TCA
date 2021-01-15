@@ -5,22 +5,21 @@
 label
 =====
 
-:aspect:`Datatype`
-    string (field name)
+.. confval:: label
 
-:aspect:`Scope`
-    Display
+   :type: string (field name)
+   :Scope: Display
 
-:aspect:`Description`
-    **Required!**
 
-    Points to the field name of the table which should be used as the "title" when the record is displayed in the system.
+   **Required!**
 
-    .. note::
-        :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property (but it is still required).
+   Points to the field name of the table which should be used as the "title" when the record is displayed in the system.
 
-    .. warning::
-        For the label only regular input or text fields should be used. Otherwise issues may occur and prevent from a working system if :code:`TCEMAIN.table.tt_content.disablePrependAtCopy` is not set or set to :code:`0`.
+   .. note::
+      :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property (but it is still required).
+
+   .. warning::
+      For the label only regular input or text fields should be used. Otherwise issues may occur and prevent from a working system if :code:`TCEMAIN.table.tt_content.disablePrependAtCopy` is not set or set to :code:`0`.
 
 
 .. _ctrl-reference-label-alt:
@@ -28,30 +27,30 @@ label
 label\_alt
 ==========
 
-:aspect:`Datatype`
-    String (comma-separated list of field names)
+.. confval:: label_alt
 
-:aspect:`Scope`
-    Display
+   :type: String (comma-separated list of field names)
+   :Scope: Display
 
-:aspect:`Description`
-    Comma-separated list of field names, which are holding alternative
-    values to the value from the field pointed to by "label" (see above)
-    if that value is empty. May not be used consistently in the system,
-    but should apply in most cases.
 
-    **Example for table "tt\_content"**
+   Comma-separated list of field names, which are holding alternative
+   values to the value from the field pointed to by "label" (see above)
+   if that value is empty. May not be used consistently in the system,
+   but should apply in most cases.
 
-    .. code-block:: php
+   .. note::
+      :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property, also
+      see :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
 
-        'ctrl' => [
-            'label' => 'header',
-            'label_alt' => 'subheader,bodytext',
-        ],
+Examples
+--------
 
-    .. note::
-        :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property, also
-        see :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
+Example for table "tt\_content"::
+
+   'ctrl' => [
+      'label' => 'header',
+      'label_alt' => 'subheader,bodytext',
+   ],
 
 
 .. _ctrl-reference-label-alt-force:
@@ -59,15 +58,14 @@ label\_alt
 label\_alt\_force
 =================
 
-:aspect:`Datatype`
-    boolean
+.. confval:: label_alt_force
 
-:aspect:`Scope`
-    Display
+   :type: boolean
+   :Scope: Display
 
-:aspect:`Description`
-    If set, then the :ref:`label_alt <ctrl-reference-label-alt>` fields
-    are always shown in the title separated by comma.
 
-    .. note::
-        :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property.
+   If set, then the :ref:`label_alt <ctrl-reference-label-alt>` fields
+   are always shown in the title separated by comma.
+
+   .. note::
+      :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property.

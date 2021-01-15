@@ -1,13 +1,16 @@
 .. include:: /Includes.rst.txt
 .. _columns-select-properties-multiselectfilteritems:
 
+======================
 multiSelectFilterItems
-----------------------
+======================
 
-   :type: array   :Scope: Display
+.. confval:: multiSelectFilterItems
 
-:aspect:`RenderType`
-   :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`
+   :type: array
+   :Scope: Display
+   :RenderType: :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`
+
    Contains predefined elements for the filter field. On selecting
    an item, the list of available items gets automatically filtered.
 
