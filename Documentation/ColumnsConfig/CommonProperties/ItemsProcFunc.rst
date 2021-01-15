@@ -5,17 +5,13 @@
 itemsProcFunc
 =============
 
-:aspect:`Datatype`
-   string (class->method reference)
+.. confval:: itemsProcFunc
 
-:aspect:`Scope`
-   Display / Proc.
+   :type: string (class->method reference)
+   :Scope: Display / Proc.
+   :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
+      :ref:`radio <columns-radio>`
 
-:aspect:`types`
-   :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
-   :ref:`radio <columns-radio>`
-
-:aspect:`Description`
    PHP function which is called to fill / manipulate the array with elements.
 
    [classname]->[methodname]

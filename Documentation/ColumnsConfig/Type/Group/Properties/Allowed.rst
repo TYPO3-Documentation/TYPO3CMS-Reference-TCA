@@ -5,13 +5,7 @@
 allowed
 =======
 
-:aspect:`Datatype`
-    string (list)
-
-:aspect:`Scope`
-    Proc. / Display
-
-:aspect:`Description`
+   :type: string (list)   :Scope: Proc. / Display
     **For the "file" internal type (Optional):**
       A lowercase comma list of file extensions that are permitted, eg. 'jpg,gif,txt'. Also
       see :ref:`disallowed <columns-group-properties-disallowed>`.

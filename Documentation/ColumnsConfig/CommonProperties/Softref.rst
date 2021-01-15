@@ -5,16 +5,12 @@
 softref
 =======
 
-:aspect:`Datatype`
-   string
+.. confval:: softref
 
-:aspect:`Scope`
-   Proc.
+   :type: string
+   :Scope: Proc.
+   :Types: :ref:`input <columns-input>`
 
-:aspect:`types`
-   :ref:`input <columns-input>`
-
-:aspect:`Description`
    Used to attach "soft reference parsers", typically used in :code:`type='text'` fields.
 
    The syntax for this value is key1,key2[parameter1;parameter2;...],...

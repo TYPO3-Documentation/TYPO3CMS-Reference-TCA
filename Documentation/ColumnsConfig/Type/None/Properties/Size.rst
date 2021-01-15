@@ -5,13 +5,7 @@
 size
 ====
 
-:aspect:`Datatype`
-    integer
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: integer   :Scope: Display
     The :ref:`cols <columns-none-properties-cols>` value is used to set the width of the field,
     and if :code:`cols` is not found, then this value is used.
 

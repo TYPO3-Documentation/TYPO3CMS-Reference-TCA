@@ -5,16 +5,12 @@
 insertClipboard
 ===============
 
-:aspect:`Datatype`
-   array
+.. confval:: insertClipboard
 
-:aspect:`Scope`
-   fieldControl
+   :type: array
+   :Scope: fieldControl
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`
-
-:aspect:`Description`
    The clipboard control adds a control button for :code:`type='group'` to paste records from
    a users clipboard into the selection. It is enabled by default for :code:`type='group'` and
    shown below the :ref:`element browser <columns-group-properties-elementBrowser>` if the

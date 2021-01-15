@@ -5,20 +5,15 @@
 defaultLanguageDifferences
 ==========================
 
-:aspect:`Datatype`
-   array
+.. confval:: defaultLanguageDifferences
 
-:aspect:`Scope`
-   fieldWizard
+   :type: array
+   :Scope: fieldWizard
+   :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
+      :ref:`group <columns-group>`,
+      :ref:`imageManipulation <columns-imageManipulation>`,
+      :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
 
-:aspect:`types`
-   :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
-   :ref:`group <columns-group>`,
-   :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
-
-
-:aspect:`Description`
    Show a "diff-view" if the content of the default language record has been changed after the
    translation overlay has been created. The ['ctrl'] section property
    :ref:`transOrigDiffSourceField <ctrl-reference-transorigdiffsourcefield>` has to be specified

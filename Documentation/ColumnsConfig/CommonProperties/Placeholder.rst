@@ -5,16 +5,12 @@
 placeholder
 ===========
 
-:aspect:`Datatype`
-   string
+.. confval:: placeholder
 
-:aspect:`Scope`
-   Display
+   :type: string
+   :Scope: Display
+   :Types: :ref:`input <columns-input>`
 
-:aspect:`types`
-   :ref:`input <columns-input>`
-
-:aspect:`Description`
    Placeholder text for the field. This can be a simple string or a reference to a value in the current record
    or another one. With a syntax like :code:`__row|field` the placeholder will take
    the value of the given field from the current record.

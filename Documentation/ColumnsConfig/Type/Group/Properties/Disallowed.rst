@@ -5,13 +5,7 @@
 disallowed
 ==========
 
-:aspect:`Datatype`
-    string (list of)
-
-:aspect:`Scope`
-    Proc. / Display
-
-:aspect:`Description`
+   :type: string (list of)   :Scope: Proc. / Display
     **Only with internal\_type='file'**
 
     Default value is '\*' which means that anything file-extension which is not allowed is denied.

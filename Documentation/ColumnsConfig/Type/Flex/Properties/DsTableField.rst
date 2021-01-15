@@ -5,13 +5,7 @@
 ds\_tableField
 ==============
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Display / Proc.
     Contains the value "[table]:[field name]" from which to fetch Data Structure XML.
 
     :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>` is in this case the pointer which

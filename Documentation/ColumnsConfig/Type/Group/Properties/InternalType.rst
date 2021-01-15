@@ -5,13 +5,7 @@
 internal\_type
 ==============
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Display / Proc.
     **Required!**
 
     Configures the internal type of the "group" type of element.

@@ -4,13 +4,7 @@
 filter
 ======
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: array   :Scope: Display / Proc.
     Possibility to define user functions to filter out child items.
 
     This is useful in special scenarios when used in conjunction with a

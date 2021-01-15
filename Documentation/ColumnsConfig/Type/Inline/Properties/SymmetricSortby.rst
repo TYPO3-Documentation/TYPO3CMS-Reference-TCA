@@ -5,13 +5,7 @@
 symmetric\_sortby
 =================
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Display / Proc.
     This works like :ref:`foreign_sortby <columns-inline-properties-foreign-sortby>`, but in case of using bidirectional
     symmetric relations. Each side of a symmetric relation could have its own sorting, so :code:`symmetric_sortby`
     defines a field on the :ref:`foreign_table <columns-inline-properties-foreign-table>` where the sorting of the

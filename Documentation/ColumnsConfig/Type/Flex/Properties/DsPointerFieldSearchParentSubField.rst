@@ -6,11 +6,5 @@ ds\_pointerField\_searchParent\_subField
 ========================================
 
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Display / Proc.
     Points to a field in the "rootline" which may contain a pointer to the "next-level" template.

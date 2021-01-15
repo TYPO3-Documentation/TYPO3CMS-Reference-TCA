@@ -5,13 +5,7 @@
 suggestOptions
 ==============
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: array   :Scope: Display
     **Only with internal\_type='db'**
 
     Optional, additional suggest options used if the suggest wizard is not

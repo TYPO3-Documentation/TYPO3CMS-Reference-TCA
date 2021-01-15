@@ -40,12 +40,5 @@ combination and are explained in detail in the :ref:`['columns']['config'] <colu
 
 .. toctree::
 
-   ColumnsConfig
-   ColumnsDescription
-   ColumnsDisplayCond
-   ColumnsExclude
-   ColumnsLabel
-   ColumnsL10nDisplay
-   ColumnsL10nMode
-   ColumnsOnChange
    Examples
+   Properties/Index

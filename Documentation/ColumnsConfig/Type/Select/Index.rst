@@ -29,10 +29,8 @@ In case of n:1 (e.g. Organization has one Administrator) the uid of Administrato
 
 In case of the n:m (e.g. Organization has multiple categories) the uid of the selected categories are stored either in CSV style inside the select column of the organization or as records in an MM-table, if specified in TCA.
 
-.. note::
-
-   Since TYPO3 7.6, specifying renderType when using type='select' is mandatory,
-   see :doc:`t3core:Changelog/7.6/Deprecation-69822-DeprecateSelectFieldTca`.
+.. versionchanged:: 7.6
+   Specifying renderType when using type='select' is mandatory.
 
 The chosen renderType influences the behaviour of the element and how it will
 be displayed.

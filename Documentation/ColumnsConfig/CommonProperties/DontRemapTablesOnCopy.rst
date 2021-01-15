@@ -5,15 +5,12 @@
 dontRemapTablesOnCopy
 =====================
 
-:aspect:`Datatype`
-   string (list of tables)
+.. confval:: dontRemapTablesOnCopy
 
-:aspect:`Scope`
-   Proc.
+   :type: string (list of tables)
+   :Scope: Proc.
+   :Types: :aspect:`Description`
 
-:aspect:`types`
-
-:aspect:`Description`
    **If used with type='group', this is only considered with internal\_type='db'**
 
    A list of tables which should *not* be remapped to the new element uids if the field holds elements that

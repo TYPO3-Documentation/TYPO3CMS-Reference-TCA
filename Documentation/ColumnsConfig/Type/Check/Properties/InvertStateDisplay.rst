@@ -5,16 +5,10 @@
 invertStateDisplay
 ==================
 
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Scope`
-    Display
+   :type: boolean   :Scope: Display
 
 :aspect:`Default`
     false
-
-:aspect:`Description`
       The state of a checkbox can be displayed inverted when this property is
       set to true.
 

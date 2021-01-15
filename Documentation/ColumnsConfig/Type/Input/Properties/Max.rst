@@ -5,16 +5,10 @@ max
 ===
 
 
-:aspect:`Datatype`
-    integer
-
-:aspect:`Scope`
-    Display
+   :type: integer   :Scope: Display
 
 :aspect:`Render types`
     default, colorpicker, inputLink
-
-:aspect:`Description`
     Value for the "maxlength" attribute of the :code:`<input>` field. Javascript prevents adding more than
     these number of characters.
 

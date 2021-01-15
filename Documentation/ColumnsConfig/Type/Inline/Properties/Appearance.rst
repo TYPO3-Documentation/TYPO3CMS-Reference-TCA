@@ -5,13 +5,7 @@
 appearance
 ==========
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: array   :Scope: Display
     Has information about the appearance of child-records, namely:
 
     collapseAll (boolean)

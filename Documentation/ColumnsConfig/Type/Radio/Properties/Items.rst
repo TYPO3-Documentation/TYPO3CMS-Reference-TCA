@@ -5,13 +5,7 @@
 items
 =====
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: array   :Scope: Display / Proc.
     **Required.**
 
     An array of values which can be selected.

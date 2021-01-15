@@ -5,16 +5,12 @@
 tableList
 =========
 
-:aspect:`Datatype`
-   array
+.. confval:: tableList
 
-:aspect:`Scope`
-   fieldWizard
+   :type: array
+   :Scope: fieldWizard
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`
-
-:aspect:`Description`
    **Only with internal\_type='db'**
 
    Render a list of allowed tables and link to element browser. This field wizard is enabled by default.

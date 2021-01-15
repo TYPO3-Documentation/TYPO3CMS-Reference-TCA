@@ -5,13 +5,7 @@
 format
 ======
 
-:aspect:`Datatype`
-    string (keyword) + array
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: string (keyword) + array   :Scope: Display
     The value of a none-type fields is normally displayed as is. It is however possible to format it using this property.
     The following keywords are available, some having sub-properties. Sub-properties are called with the :code:`format.`
     keyword (note the trailing dot), which in itself is an array.

@@ -5,13 +5,7 @@
 hideSuggest
 ===========
 
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: boolean   :Scope: Display
     **Only with internal\_type='db'**
 
     The "suggest wizard" is added by default to all database relation group fields. After a couple of characters have

@@ -5,15 +5,9 @@
 format
 ======
 
-:aspect:`Datatype`
-    string (keyword)
-
-:aspect:`Scope`
-    Display
+   :type: string (keyword)   :Scope: Display
 
 :aspect:`renderType`
     :ref:`t3editor <columns-text-renderType-t3editor>`
-
-:aspect:`Description`
     The value specifies the language t3editor should handle. Allowed values:
     `css`, `html`, `javascript`, `php`, `typoscript`, `xml`

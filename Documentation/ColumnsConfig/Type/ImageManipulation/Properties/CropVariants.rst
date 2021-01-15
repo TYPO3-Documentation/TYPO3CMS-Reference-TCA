@@ -5,13 +5,7 @@
 cropVariants
 ============
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Proc. / Display
-
-:aspect:`Description`
+   :type: array   :Scope: Proc. / Display
     Main crop, focus area and cover area configuration.
 
     Default configuration:

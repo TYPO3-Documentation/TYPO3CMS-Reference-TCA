@@ -5,16 +5,12 @@
 localizeReferencesAtParentLocalization
 ======================================
 
-:aspect:`Datatype`
-   boolean
+.. confval:: localizeReferencesAtParentLocalization
 
-:aspect:`Scope`
-   Proc.
+   :type: boolean
+   :Scope: Proc.
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`
-
-:aspect:`Description`
    Defines whether referenced records should be localized when the current
    record gets localized. This does only apply if references are stored using
    `MM` tables.

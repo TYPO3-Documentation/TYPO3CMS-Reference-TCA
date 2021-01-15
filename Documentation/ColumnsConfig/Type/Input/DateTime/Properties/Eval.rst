@@ -3,13 +3,7 @@
 eval
 ====
 
-:aspect:`Datatype`
-    string (list of keywords)
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string (list of keywords)   :Scope: Display / Proc.
     **Required**
 
     Configuration of field evaluation, must be set to one of the value below:

@@ -6,16 +6,10 @@ valuePicker
 ===========
 
 
-:aspect:`Datatype`
-   array
-
-:aspect:`Scope`
-   Display
+   :type: array   :Scope: Display
 
 :aspect:`Render types`
    default, colorpicker, inputLink
-
-:aspect:`Description`
    Renders a select box with static values next to the input field. When a value is selected in the box,
    the value is transferred to the field. Keys:
 

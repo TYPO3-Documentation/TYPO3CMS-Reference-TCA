@@ -5,13 +5,7 @@
 appearance
 ==========
 
-:aspect:`Datatype`
-   array
-
-:aspect:`Scope`
-   Display
-
-:aspect:`Description`
+   :type: array   :Scope: Display
    Provides a custom base url that is displayed in front of the input field.
 
    prefix

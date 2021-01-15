@@ -5,13 +5,7 @@
 foreign\_match\_fields
 ======================
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Proc.
-
-:aspect:`Description`
+   :type: array   :Scope: Proc.
     Array of field-value pairs to both insert and match against when writing/reading IRRE relations. Using the match
     fields, it is possible to re-use the same child table in more than one field of the parent table by using a match
     field with different values for each of the use cases.

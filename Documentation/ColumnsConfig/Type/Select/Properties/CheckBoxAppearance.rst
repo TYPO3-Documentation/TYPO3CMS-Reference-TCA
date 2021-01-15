@@ -5,16 +5,10 @@
 appearance - selectCheckBox
 ===========================
 
-:aspect:`Datatype`
-   array
-
-:aspect:`Scope`
-   Display
+   :type: array   :Scope: Display
 
 :aspect:`RenderType`
    :ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`
-
-:aspect:`Description`
    Options for refining the appearance of `selectCheckBox` fields.
 
    expandAll (boolean)

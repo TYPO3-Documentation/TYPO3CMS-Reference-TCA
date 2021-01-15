@@ -5,13 +5,7 @@
 validation
 ==========
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Proc.
-
-:aspect:`Description`
+   :type: array   :Scope: Proc.
     Values for the :ref:`eval <columns-check-properties-eval>` rules. The keys of the array must correspond to the
     keyword of the related evaluation rule. For :code:`maximumRecordsChecked` and :code:`maximumRecordsCheckedInPid`
     the value is expected to be an integer.

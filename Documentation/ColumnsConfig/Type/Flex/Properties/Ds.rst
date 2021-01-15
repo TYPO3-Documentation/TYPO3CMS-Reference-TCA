@@ -5,13 +5,7 @@
 Data structure (ds)
 ===================
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: array   :Scope: Display / Proc.
     Data Structure(s) defined in an array.
 
     Each key is a value that can be pointed to by :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>`.

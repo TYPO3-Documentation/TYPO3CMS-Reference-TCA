@@ -2,9 +2,9 @@
 
 .. _palettes:
 
-============
-['palettes']
-============
+==========================
+Grouping fields (palettes)
+==========================
 
 If editing records in the backend, all fields are usually displayed after each other in single rows.
 Palettes provide a way to display multiple fields next to each other if the browser window size allows this.
@@ -16,14 +16,4 @@ Each palette has a name and can be referenced by name from within the :ref:`['ty
 .. toctree::
 
    Examples
-   Properties
-
-
-
-
-.. include:: PalettesIsHiddenPalette.rst.txt
-
-.. include:: PalettesLabel.rst.txt
-
-.. include:: PalettesShowitem.rst.txt
-
+   Properties/Index

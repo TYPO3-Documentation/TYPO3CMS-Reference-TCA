@@ -5,19 +5,14 @@
 fieldControl
 ============
 
-:aspect:`Datatype`
-   array
+.. confval:: fieldControl
 
-:aspect:`Scope`
-   Display
+   :type: array
+   :Scope: Display
+   :Types: :ref:`group <columns-group>`,
+      :ref:`imageManipulation <columns-imageManipulation>`,
+      :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`,
-   :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
-
-
-:aspect:`Description`
    Show action buttons next to the element. This is used in various type's to add
    control buttons right next to the main element. They can open popus, switch the entire view
    and other things. All must provide a "button" icon to click on, see

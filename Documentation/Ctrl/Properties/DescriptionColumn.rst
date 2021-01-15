@@ -18,7 +18,7 @@ descriptionColumn
     as a note field to give editors important additional information on single records. The TYPO3 core sets this
     property for a series of main tables like `be_users`, `be_groups` and `tt_content`.
 
-    .. figure:: Images/DescriptionColumn.png
+    .. figure:: ../Images/DescriptionColumn.png
         :alt: Record information in a be_groups row
         :class: with-shadow
 

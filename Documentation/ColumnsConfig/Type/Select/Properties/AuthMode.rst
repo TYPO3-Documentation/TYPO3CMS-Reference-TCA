@@ -5,16 +5,10 @@
 authMode
 ========
 
-:aspect:`Datatype`
-   string (keyword)
-
-:aspect:`Scope`
-   Display / Proc.
+   :type: string (keyword)   :Scope: Display / Proc.
 
 :aspect:`RenderType`
    all
-
-:aspect:`Description`
    Authorization mode for the selector box. Keywords are:
 
    explicitAllow

@@ -49,8 +49,6 @@ Array Elements
 
 :aspect:`Element`
     <meta>
-
-:aspect:`Description`
     Can contain application specific meta settings. For FlexForms this means a definition of how languages
     are handled in the form.
 
@@ -61,8 +59,6 @@ Array Elements
 
 :aspect:`Element`
     <TCEforms>
-
-:aspect:`Description`
     A direct reflection of a ['columns']['field name']['config'] PHP array configuring a field in TCA. As XML,
     this is expressed by array2xml()'s output.
 
@@ -73,8 +69,6 @@ Array Elements
 
 :aspect:`Element`
     <ROOT><TCEforms>
-
-:aspect:`Description`
     For <ROOT> elements in the DS you can add application specific information about the
     sheet that the <ROOT> element represents.
 
@@ -101,8 +95,6 @@ Value Elements
 
 :aspect:`Format`
     string or LLL reference
-
-:aspect:`Description`
     Specifies the title of the sheet.
 
 .. _columns-flex-tceforms-value-sheetdescription:
@@ -115,8 +107,6 @@ Value Elements
 
 :aspect:`Format`
     string or LLL reference
-
-:aspect:`Description`
     Specifies a description for the sheet shown in the flexform.
 
 .. _columns-flex-tceforms-value-sheetshortdescr:
@@ -129,8 +119,6 @@ Value Elements
 
 :aspect:`Format`
     string or LLL reference
-
-:aspect:`Description`
     Specifies a short description of the sheet used in the tab-menu.
 
 
@@ -162,8 +150,6 @@ format. The structure is as follows:
 
 :aspect:`Element`
     <T3FlexForms>
-
-:aspect:`Description`
     Document tag
 
     Child elements
@@ -178,8 +164,6 @@ format. The structure is as follows:
 
 :aspect:`Element`
     <meta>
-
-:aspect:`Description`
     Meta data for the content. For instance information about which sheet is active etc.
 
 .. _columns-flex-data-format-array-data:
@@ -189,8 +173,6 @@ format. The structure is as follows:
 
 :aspect:`Element`
     <data>
-
-:aspect:`Description`
     Contains the data: sheets, language sections, field and values
 
     Child elements
@@ -203,8 +185,6 @@ format. The structure is as follows:
 
 :aspect:`Element`
     <sheets>
-
-:aspect:`Description`
     Contains the data for each sheet in the form. If there are no sheets, the default sheet "<sDEF>" is always used.
 
     Child elements
@@ -219,8 +199,6 @@ format. The structure is as follows:
 
 :aspect:`Element`
     <sDEF>
-
-:aspect:`Description`
     For each sheet it contains elements for each language. only the <lDEF> tag is used.
 
     Child elements
@@ -233,8 +211,6 @@ format. The structure is as follows:
 
 :aspect:`Element`
     <lDEF>
-
-:aspect:`Description`
     For each language the fields in the form will be available on this level.
 
     Child elements
@@ -247,8 +223,6 @@ format. The structure is as follows:
 
 :aspect:`Element`
     <[field name]>
-
-:aspect:`Description`
     For each field name there is at least one element with the value, <vDEF>.
 
    Child elements
@@ -267,7 +241,5 @@ format. The structure is as follows:
 
 :aspect:`Format`
     string
-
-:aspect:`Description`
     Content of the field in default or localized versions.
 

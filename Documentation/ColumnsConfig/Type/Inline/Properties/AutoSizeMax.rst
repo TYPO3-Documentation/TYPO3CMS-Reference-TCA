@@ -5,13 +5,7 @@
 autoSizeMax
 ===========
 
-:aspect:`Datatype`
-    integer
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: integer   :Scope: Display
     Only useful in combination with :ref:`foreign\_selector <columns-inline-properties-foreign-selector>`.
 
     If set, then the height of multiple-item selector boxes (maxitem > 1) will automatically be adjusted to the number

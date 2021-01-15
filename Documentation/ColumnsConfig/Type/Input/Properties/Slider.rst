@@ -6,16 +6,10 @@ slider
 ======
 
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display
+   :type: array   :Scope: Display
 
 :aspect:`Render types`
     default, inputLink
-
-:aspect:`Description`
     Render a value slider next to the field. Only works for fields :ref:`evaluated <columns-input-properties-eval>`
     to integer and float. It is advised to also define a :ref:`range <columns-input-properties-range>` property,
     otherwise the slider will go from 0 to 10000. Note the range can be negative if needed. Available keys:

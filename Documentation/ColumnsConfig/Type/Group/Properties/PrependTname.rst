@@ -5,13 +5,7 @@
 prepend\_tname
 ==============
 
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Scope`
-    Proc.
-
-:aspect:`Description`
+   :type: boolean   :Scope: Proc.
     **Only with internal\_type='db'**
 
     Will prepend the table name to the stored relations (so instead of storing "23" you will

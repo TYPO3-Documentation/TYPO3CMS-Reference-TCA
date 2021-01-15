@@ -5,16 +5,12 @@
 multiple
 ========
 
-:aspect:`Datatype`
-   boolean
+.. confval:: multiple
 
-:aspect:`Scope`
-   Display / Proc.
+   :type: boolean
+   :Scope: Display / Proc.
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`
-
-:aspect:`Description`
    Allows the *same item* more than once in a list.
 
    If used with bidirectional MM relations it must be set for both the native and foreign field configuration.

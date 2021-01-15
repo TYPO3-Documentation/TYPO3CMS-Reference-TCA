@@ -5,13 +5,7 @@
 uploadfolder
 ============
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Proc.
     **Only with internal\_type='db'**
 
     Path to folder under :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()` in which the files are stored, 'uploads/tx_myextension'.

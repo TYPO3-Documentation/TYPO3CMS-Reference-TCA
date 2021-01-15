@@ -7,16 +7,10 @@
 linkPopup
 =========
 
-:aspect:`Datatype`
-   array
-
-:aspect:`Scope`
-   fieldControl
+   :type: array   :Scope: fieldControl
 
 :aspect:`Render types`
     inputLink
-
-:aspect:`Description`
    The link browser control is typically used with `type='input'` with `renderType='inputLink'` adding a button
    which opens a popup to select an internal link to a page, an external link or a mail address.
 

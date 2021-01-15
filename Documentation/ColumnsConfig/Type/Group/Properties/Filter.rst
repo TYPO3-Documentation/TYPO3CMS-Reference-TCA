@@ -6,13 +6,7 @@ filter
 ======
 
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Proc. / Display
-
-:aspect:`Description`
+   :type: array   :Scope: Proc. / Display
     **Only with internal\_type='db'**
 
     Define filters for item values. Doesn't work in combination with a wizard.

@@ -26,10 +26,7 @@ Properties
    Iconfile
    IsStatic
    Label
-   LabelAlt
-   LabelAltForce
    LabelUserfunc
-   LabelUserFuncOptions
    LanguageField
    OrigUid
    PrependAtCopy

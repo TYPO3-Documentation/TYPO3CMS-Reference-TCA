@@ -5,16 +5,12 @@
 maxitems
 ========
 
-:aspect:`Datatype`
-   integer > 0
+.. confval:: maxitems
 
-:aspect:`Scope`
-   Display / Proc.
+   :type: integer > 0
+   :Scope: Display / Proc.
+   :Types: :ref:`group <columns-group>`, :ref:`inline <columns-inline>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`, :ref:`inline <columns-inline>`
-
-:aspect:`Description`
    Maximum number of child items. Defaults to a high value. JavaScript record validation prevents the
    record from being saved if the limit is not satisfied.
 

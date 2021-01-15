@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. _interface-examples:
+.. _palettes-examples:
 
 ========
 Examples

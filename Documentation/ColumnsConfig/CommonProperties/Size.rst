@@ -5,16 +5,12 @@
 size
 ====
 
-:aspect:`Datatype`
-   integer
+.. confval:: size
 
-:aspect:`Scope`
-   Display
+   :type: integer
+   :Scope: Display
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`
-
-:aspect:`Description`
    Height of the box in FormEngine.
 
    With `type='select'` and `renderType='selectSingle'`, the default is `1`, but if set to a number greater than 1,

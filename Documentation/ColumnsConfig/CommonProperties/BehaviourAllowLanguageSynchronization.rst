@@ -6,21 +6,16 @@
 allowLanguageSynchronization behaviour
 =======================================
 
-:aspect:`Datatype`
-   boolean
+.. confval:: behaviour > allowLanguageSynchronization
 
-:aspect:`Scope`
-   Proc.
+   :type: boolean
+   :Scope: Proc.
+   :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
+      :ref:`group <columns-group>`,
+      :ref:`imageManipulation <columns-imageManipulation>`,
+      :ref:`inline <columns-inline>`, :ref:`input <columns-input>`,
+      :ref:`radio <columns-radio>`
 
-
-:aspect:`types`
-   :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
-   :ref:`group <columns-group>`,
-   :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`inline <columns-inline>`, :ref:`input <columns-input>`,
-   :ref:`radio <columns-radio>`
-
-:aspect:`Description`
    Allows an editor to select in a localized record whether the value is copied
    over from default or source language record, or if the field has an own value 
    in the localization. If set to true and if the table supports localization 

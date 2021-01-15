@@ -5,13 +5,7 @@
 authMode\_enforce
 =================
 
-:aspect:`Datatype`
-   string (keyword)
-
-:aspect:`Scope`
-   Display / Proc.
-
-:aspect:`Description`
+   :type: string (keyword)   :Scope: Display / Proc.
    Various additional enforcing options for :ref:`authMode <columns-select-properties-authmode>`, keywords:
 
    strict

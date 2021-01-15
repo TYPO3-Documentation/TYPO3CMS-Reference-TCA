@@ -5,16 +5,10 @@
 fileFolder
 ==========
 
-:aspect:`Datatype`
-   string
-
-:aspect:`Scope`
-   Display / Proc.
+   :type: string   :Scope: Display / Proc.
 
 :aspect:`RenderType`
    all
-
-:aspect:`Description`
    Specifying a folder from where files are added to the item array.
 
    Specify the folder relative to the :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()`, possibly using the prefix "EXT:" to point to an extension folder.

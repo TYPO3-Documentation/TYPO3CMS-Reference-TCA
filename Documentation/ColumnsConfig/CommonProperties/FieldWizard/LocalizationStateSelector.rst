@@ -1,22 +1,20 @@
 .. include:: /Includes.rst.txt
 .. _tca_property_fieldWizard_localizationStateSelector:
 
+=========================
 localizationStateSelector
 =========================
 
-:aspect:`Datatype`
-   array
+.. confval:: localizationStateSelector
 
-:aspect:`Scope`
-   fieldWizard
+   :type: array
+   :Scope: fieldWizard
 
-:aspect:`types`
-   :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
-   :ref:`group <columns-group>`,
-   :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`
+   :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
+      :ref:`group <columns-group>`,
+      :ref:`imageManipulation <columns-imageManipulation>`,
+      :ref:`input <columns-input>`
 
-:aspect:`Description`
    The localization state selector wizard displays two or three radio buttons in localized records
    saying: "This field has an own value distinct from my default language or source record", "This field
    has the same value as the default language record" or "This field has the same value as my source record".

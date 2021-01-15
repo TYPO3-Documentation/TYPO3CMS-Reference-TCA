@@ -5,17 +5,11 @@
 wrap
 ====
 
-:aspect:`Datatype`
-    string (keyword)
-
-:aspect:`Scope`
-    Display
+   :type: string (keyword)   :Scope: Display
 
 :aspect:`renderType`
     :ref:`textTable <columns-text-renderType-textTable>`,
     :ref:`default <columns-text-renderType-default>`
-
-:aspect:`Description`
     Determines the wrapping of the textarea field. Does not apply to RTE fields. There are two options:
 
     virtual (default)

@@ -4,16 +4,10 @@
 eval
 ====
 
-:aspect:`Datatype`
-    string (list of keywords)
-
-:aspect:`Scope`
-    Display / Proc.
+   :type: string (list of keywords)   :Scope: Display / Proc.
 
 :aspect:`Render types`
     default, colorpicker, inputLink
-
-:aspect:`Description`
     Configuration of field evaluation.
 
     Some of these evaluation keywords will trigger a JavaScript pre- evaluation in the form. Other evaluations will be

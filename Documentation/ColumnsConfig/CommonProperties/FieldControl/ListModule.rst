@@ -5,16 +5,12 @@
 listModule
 ==========
 
-:aspect:`Datatype`
-   array
+.. confval:: listModule
 
-:aspect:`Scope`
-   fieldControl
+   :type: array
+   :Scope: fieldControl
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`
-
-:aspect:`Description`
    The list module control button opens the Web > List module for only one table and allows the user to manipulate
    stuff there.
 

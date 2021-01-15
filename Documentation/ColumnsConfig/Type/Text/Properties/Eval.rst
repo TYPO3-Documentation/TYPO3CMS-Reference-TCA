@@ -5,16 +5,10 @@
 eval
 ====
 
-:aspect:`Datatype`
-    string (list of keywords)
-
-:aspect:`Scope`
-    Display / Proc.
+   :type: string (list of keywords)   :Scope: Display / Proc.
 
 :aspect:`renderType`
     :ref:`default <columns-text-renderType-default>`
-
-:aspect:`Description`
     Configuration of field evaluation. None of these apply for RTE fields.
 
     Some of these evaluation keywords will trigger a JavaScript pre-evaluation in the form. Other evaluations

@@ -5,13 +5,7 @@
 foreign\_table
 ==============
 
-:aspect:`Datatype`
-    string (table name)
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string (table name)   :Scope: Display / Proc.
    **Required**
 
    The table name of the child records is defined here. The table must be configured in :php:`$GLOBALS['TCA']`.

@@ -5,13 +5,7 @@
 MM
 ==
 
-:aspect:`Datatype`
-    string (table name)
-
-:aspect:`Scope`
-    Proc.
-
-:aspect:`Description`
+   :type: string (table name)   :Scope: Proc.
     Means that the relation to the records of :ref:`foreign_table <columns-inline-properties-foreign-table>`
     is done with a M-M relation with a third "intermediate" table.
 

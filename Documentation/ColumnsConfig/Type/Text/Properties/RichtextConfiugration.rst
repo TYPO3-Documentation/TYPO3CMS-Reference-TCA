@@ -6,16 +6,10 @@ richtextConfiguration
 =====================
 
 
-:aspect:`Datatype`
-    string (keyword)
-
-:aspect:`Scope`
-    Display / Proc.
+   :type: string (keyword)   :Scope: Display / Proc.
 
 :aspect:`renderType`
     :ref:`default <columns-text-renderType-default>`
-
-:aspect:`Description`
     The value is a key in :php:`$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']` array and specifies the
     YAML configuration source field used for that RTE field. It does not make sense without having property
     :ref:`enableRichtext <columns-text-properties-enableRichtext>` set to true.

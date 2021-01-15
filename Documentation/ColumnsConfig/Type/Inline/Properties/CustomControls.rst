@@ -5,13 +5,7 @@
 customControls
 ==============
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: array   :Scope: Display
    Numerical array containing definitions of custom header controls for IRRE fields. This makes it possible to create
    special controls by calling user-defined functions (userFuncs). Each item in the array item must be an array itself,
    with at least on key "userFunc" pointing to the user function to call.

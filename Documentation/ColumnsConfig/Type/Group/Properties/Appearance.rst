@@ -5,13 +5,7 @@
 appearance
 ==========
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: array   :Scope: Display
     Options for refining the appearance of group-type fields.
 
     elementBrowserType (string)

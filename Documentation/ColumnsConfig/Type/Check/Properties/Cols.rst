@@ -5,13 +5,7 @@
 cols
 ====
 
-:aspect:`Datatype`
-    integer/string
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: integer/string   :Scope: Display
     In how many columns the checkboxes will be shown. Makes sense only if the 'items' property is defining multiple
     checkboxes.
 

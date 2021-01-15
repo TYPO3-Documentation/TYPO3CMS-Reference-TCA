@@ -4,13 +4,7 @@
 disableMovingChildrenWithParent behaviour
 =========================================
 
-:aspect:`Datatype`
-   boolean
-
-:aspect:`Scope`
-   Proc.
-
-:aspect:`Description`
+   :type: boolean   :Scope: Proc.
    Default false. Disables that child records get moved along with their parent records. Usually if in a parent-child
    relation a parent record is moved to a different page (eg. via cut+paste from clipboard), the children are relocated
    along with the parent. This flag disables the child move.

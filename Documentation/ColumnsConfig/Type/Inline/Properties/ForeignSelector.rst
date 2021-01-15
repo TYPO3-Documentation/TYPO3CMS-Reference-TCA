@@ -5,13 +5,7 @@ foreign\_selector
 =================
 
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Display / Proc.
     A selector is used to show all possible child records that could be used to create a relation with the parent record.
     It will be rendered as a multi-select-box. On clicking on an item inside the selector a new relation is created.
     The :code:`foreign_selector` points to a field of the :ref:`foreign_table <columns-inline-properties-foreign-table>`

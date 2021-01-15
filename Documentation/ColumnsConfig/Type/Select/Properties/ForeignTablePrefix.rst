@@ -4,14 +4,8 @@
 foreign\_table\_prefix
 ======================
 
-:aspect:`Datatype`
-   string or LLL reference
-
-:aspect:`Scope`
-   Display
+   :type: string or LLL reference   :Scope: Display
 
 :aspect:`RenderType`
    all
-
-:aspect:`Description`
    Label prefix to the title of the records from the foreign-table.

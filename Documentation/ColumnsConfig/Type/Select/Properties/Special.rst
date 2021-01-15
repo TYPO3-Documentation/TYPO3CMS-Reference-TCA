@@ -5,11 +5,7 @@
 special
 =======
 
-:aspect:`Datatype`
-   string (keyword)
-
-:aspect:`Scope`
-   Display / Proc.
+   :type: string (keyword)   :Scope: Display / Proc.
 
 
 :aspect:`RenderType`
@@ -17,8 +13,6 @@ special
    :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`,
    :ref:`selectSingle <columns-select-rendertype-selectSingle>`,
    :ref:`selectSingleBox <columns-select-rendertype-selectSingleBox>`
-
-:aspect:`Description`
    This configures the selector box to fetch content from some predefined internal source. These options are used for
    backend user management and pretty worthless for most other purposes. Keywords:
 

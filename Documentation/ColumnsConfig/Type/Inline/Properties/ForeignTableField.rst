@@ -5,13 +5,7 @@
 foreign\_table\_field
 =====================
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Display / Proc.
     The :code:`foreign_table_field` is the field of the child record pointing to the parent record. This defines where
     to store the table name of the parent record. On setting this configuration key together with
     :ref:`foreign_field <columns-inline-properties-foreign-field>`, the child record knows what its parent record is –

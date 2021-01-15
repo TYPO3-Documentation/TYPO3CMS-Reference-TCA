@@ -4,13 +4,7 @@
 maxSize
 =======
 
-:aspect:`Datatype`
-    integer
-
-:aspect:`Scope`
-    Proc.
-
-:aspect:`Description`
+   :type: integer   :Scope: Proc.
     **Only with internal\_type='file'**
 
     Maximum file size allowed in KB.

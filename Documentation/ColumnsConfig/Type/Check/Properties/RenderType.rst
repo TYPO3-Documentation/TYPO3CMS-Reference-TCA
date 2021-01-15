@@ -5,16 +5,10 @@
 renderType
 ==========
 
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Scope`
-    Display
+   :type: boolean   :Scope: Display
 
 :aspect:`Default`
     default
-
-:aspect:`Description`
    Three different render types are currently available for the check box field:
 
    *  :ref:`default <columns-check-default>`

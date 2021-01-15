@@ -5,16 +5,12 @@
 mode
 ====
 
-:aspect:`Datatype`
-   string (keywords)
+.. confval:: mode
 
-:aspect:`Scope`
-   Display
+   :type: string (keywords)
+   :Scope: Display
+   :Types: :ref:`input <columns-input>`
 
-:aspect:`types`
-   :ref:`input <columns-input>`
-
-:aspect:`Description`
    Possible keywords: :code:`useOrOverridePlaceholder`
 
    This property is related to the placeholder property. When defined a checkbox will appear above the field. If that

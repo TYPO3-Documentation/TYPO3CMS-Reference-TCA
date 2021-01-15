@@ -5,16 +5,13 @@
 editPopup
 =========
 
-:aspect:`Datatype`
-   array
+.. confval:: editPopup
 
-:aspect:`Scope`
-   fieldControl
+   :type: array
+   :Scope: fieldControl
 
-:aspect:`types`
-   :ref:`group <columns-group>`
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`Description`
    The edit popup field control gives a shortcut to edit referenced elements directly a popup. When a record is
    selected and the edit button is clicked, that record opens in a new window for modification.
 

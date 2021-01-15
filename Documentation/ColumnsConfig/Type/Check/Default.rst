@@ -9,7 +9,7 @@ Default checkbox
 ================
 
 This page describes the :ref:`check <columns-check>` type with the default
-:ref:`renderType <columns-check-properties-renderType`.
+:ref:`renderType <columns-check-properties-renderType>`.
 
 This is typically a simple checkbox or a group of checkboxes.
 Each checkbox is a toggle that toggles between two icon identifiers.

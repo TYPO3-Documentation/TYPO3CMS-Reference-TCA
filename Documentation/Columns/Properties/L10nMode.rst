@@ -5,13 +5,13 @@
 l10n_mode
 =========
 
-:aspect:`Datatype`
-    string (keyword)
+.. confval:: l10n_mode
 
-:aspect:`Scope`
-    Display / Proc.
+   :Required: false
 
-:aspect:`Description`
+   :type:string (keyword)
+
+   :Scope:Display / Proc.
     Localization mode.
 
     Only active if the :ref:`['ctrl']['languageField'] <ctrl-reference-languagefield>` property is set.
@@ -37,7 +37,7 @@ l10n_mode
         The example shows the "header" field of a "tt\_content" record after a translation from default language
         english with content "English header" to danish has been created.
 
-        .. figure:: Images/L10nModePrefixLangTitle.png
+        .. figure:: ../Images/L10nModePrefixLangTitle.png
             :alt: "Header" field of a tt_content record after translation has been created
             :class: with-shadow
 

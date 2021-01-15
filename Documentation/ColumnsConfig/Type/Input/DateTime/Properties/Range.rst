@@ -6,13 +6,7 @@ range
 =====
 
 
-:aspect:`Datatype`
-   array
-
-:aspect:`Scope`
-   Proc.
-
-:aspect:`Description`
+   :type: array   :Scope: Proc.
    An array which defines an integer range within which the value must be. Keys:
 
    lower

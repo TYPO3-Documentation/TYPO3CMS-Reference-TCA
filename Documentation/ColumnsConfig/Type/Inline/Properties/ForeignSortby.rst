@@ -5,13 +5,7 @@
 foreign\_sortby
 ===============
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Display / Proc.
     Define a field on the child record (or on the intermediate table) that stores the manual sorting information. It is
     possible to have a different sorting, depending from which side of the relation we look at parent or child.
     This property requires that the :ref:`foreign_field <columns-inline-properties-foreign-field>` approach is used.

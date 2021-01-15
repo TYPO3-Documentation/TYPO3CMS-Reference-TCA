@@ -22,7 +22,7 @@ type
     where the "Type:" selector is defined as the "type" field and when you
     change that selector you will also get another rendering of the form:
 
-    .. figure:: Images/Type.png
+    .. figure:: ../Images/Type.png
         :alt: The type selector
         :class: with-shadow
 

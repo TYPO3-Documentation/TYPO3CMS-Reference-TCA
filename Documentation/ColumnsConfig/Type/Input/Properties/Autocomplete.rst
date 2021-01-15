@@ -5,16 +5,10 @@
 autocomplete
 ============
 
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Scope`
-    Display
+   :type: boolean   :Scope: Display
 
 :aspect:`Render types`
     default, colorpicker, link
-
-:aspect:`Description`
     Controls the `autocomplete` attribute of a given input field. If set to true (default false),
     adds attribute :php:`autocomplete="on"` to the input field allowing browser auto filling the field:
 

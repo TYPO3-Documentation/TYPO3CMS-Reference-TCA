@@ -5,13 +5,7 @@
 items
 =====
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: array   :Scope: Display
     If set, this array will create an array of checkboxes instead of just a single "on/off" checkbox.
 
     .. note::

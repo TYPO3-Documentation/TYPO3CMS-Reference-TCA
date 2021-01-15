@@ -4,16 +4,10 @@
 multiSelectFilterItems
 ----------------------
 
-:aspect:`Datatype`
-   array
-
-:aspect:`Scope`
-   Display
+   :type: array   :Scope: Display
 
 :aspect:`RenderType`
    :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`
-
-:aspect:`Description`
    Contains predefined elements for the filter field. On selecting
    an item, the list of available items gets automatically filtered.
 

@@ -5,16 +5,12 @@
 MM
 ==
 
-:aspect:`Datatype`
-   string (table name)
+.. confval:: MM
 
-:aspect:`Scope`
-   Proc.
+   :type: string (table name)
+   :Scope: Proc.
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`
-
-:aspect:`Description`
    Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>`
    (or table specified in :ref:`allowed <columns-group-properties-allowed>` property in case of the group field) is done
    with a M-M relation with a third "join" table.
@@ -88,58 +84,36 @@ MM
       string values or non-record values.
 
 
-MM\_hasUidField
-===============
+.. confval:: MM\_hasUidField
 
-:aspect:`Datatype`
-   boolean
+   :type: boolean
+   :Scope: Proc.
 
-:aspect:`Scope`
-   Proc.
-
-:aspect:`Description`
    If the "multiple" feature is used with MM relations you MUST set this value to true and include a UID field!
    Otherwise sorting and removing relations will be buggy.
 
 
-MM\_insert\_fields
-==================
+.. confval:: MM\_insert\_fields
 
-:aspect:`Datatype`
-   array
+   :type: array
+   :Scope: Proc.
 
-:aspect:`Scope`
-   Proc.
-
-:aspect:`Description`
    Array of field=>value pairs to insert when writing new MM relations.
 
 
-MM\_match\_fields
-=================
+.. confval:: MM\_match\_fields
 
-:aspect:`Datatype`
-   array
+   :type: array
+   :Scope: Display / Proc.
 
-:aspect:`Scope`
-   Display / Proc.
-
-:aspect:`Description`
    Array of field=>value pairs to both insert and match against when writing/reading MM relations.
 
 
-MM\_opposite\_field
-===================
+.. confval:: MM\_opposite\_field
 
+   :type: string (field name)
+   :Scope: Proc.
 
-
-:aspect:`Datatype`
-   string (field name)
-
-:aspect:`Scope`
-   Proc.
-
-:aspect:`Description`
    If you want to make a MM relation editable from the foreign side (bidirectional) of the relation as well, you need
    to set `MM_opposite_field` on the foreign side to the field name on the local side.
 
@@ -151,16 +125,11 @@ MM\_opposite\_field
       Bidirectional references only get registered once on the native side in "sys\_refindex".
 
 
-MM\_oppositeUsage
-=================
+.. confval:: MM\_oppositeUsage
 
-:aspect:`Datatype`
-   array
+   :type: array
+   :Scope: Proc.
 
-:aspect:`Scope`
-   Proc.
-
-:aspect:`Description`
    In a MM bidirectional relation using :ref:`select match fields <columns-select-properties-mm-match-fields>`
    / :ref:`group match fields <columns-group-properties-mm-match-fields>` the opposite side needs to know about
    the match fields for certain operations (for example, when a copy is created in a workspace) so that relations
@@ -186,16 +155,11 @@ MM\_oppositeUsage
         ];
 
 
-MM\_table\_where
-================
+.. confval:: MM\_table\_where
 
-:aspect:`Datatype`
-   string (SQL WHERE)
+   :type: string (SQL WHERE)
+   :Scope: Proc.
 
-:aspect:`Scope`
-   Proc.
-
-:aspect:`Description`
    Additional where clause used when reading MM relations.
 
    Example::

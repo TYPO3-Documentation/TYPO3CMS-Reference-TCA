@@ -5,13 +5,7 @@
 generatorOptions
 ================
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: array   :Scope: Display
     Holds information about the record fields to be used for slug generation:
 
     fields (array)

@@ -5,15 +5,12 @@
 tableWizard
 ===========
 
-:aspect:`Datatype`
-   array
+.. confval:: tableWizard
 
-:aspect:`Scope`
-   fieldControl
+   :type: array
+   :Scope: fieldControl
+   :Types: :aspect:`Description`
 
-:aspect:`types`
-
-:aspect:`Description`
    The table wizard field control is used in :code:`type='text'` with :code:`renderType='textTable'`
    elements and renders a button to the stand alone table wizard.
 

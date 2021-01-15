@@ -5,16 +5,10 @@
 enableRichtext
 ==============
 
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Scope`
-    Display / Proc.
+   :type: boolean   :Scope: Display / Proc.
 
 :aspect:`renderType`
     :ref:`default <columns-text-renderType-default>`
-
-:aspect:`Description`
     If set to true, the system renders a Rich Text Editor if that is enabled for the editor (default: yes),
     and if a suitable editor extension is loaded (default: rteckeditor).
 

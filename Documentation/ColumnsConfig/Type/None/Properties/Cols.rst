@@ -5,13 +5,7 @@
 cols
 ====
 
-:aspect:`Datatype`
-    integer
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: integer   :Scope: Display
     Set the width of the input field. Overrides :ref:`size <columns-none-properties-size>`.
 
     Value for the width of the :code:`<input>` field. To set the input field to the full width of

@@ -5,20 +5,15 @@
 otherLanguageContent
 ====================
 
-:aspect:`Datatype`
-   array
+.. confval:: otherLanguageContent
 
-:aspect:`Scope`
-   fieldWizard
+   :type: array
+   :Scope: fieldWizard
+   :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
+      :ref:`group <columns-group>`,
+      :ref:`imageManipulation <columns-imageManipulation>`,
+      :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
 
-:aspect:`types`
-   :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
-   :ref:`group <columns-group>`,
-   :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
-
-
-:aspect:`Description`
    Show values from the default language record and other localized records if the edited row is a
    localized record. Often used in :php:`tt_content` fields. By default, only the value of the default
    language record is shown, values from further translations can be shown by setting the

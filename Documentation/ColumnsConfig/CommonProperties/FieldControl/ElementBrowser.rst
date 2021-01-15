@@ -5,16 +5,12 @@
 elementBrowser
 ==============
 
-:aspect:`Datatype`
-   array
+.. confval:: elementBrowser
 
-:aspect:`Scope`
-   fieldControl
+   :type: array
+   :Scope: fieldControl
+   :Types: :ref:`group <columns-group>`
 
-:aspect:`types`
-   :ref:`group <columns-group>`
-
-:aspect:`Description`
    The element browser field control used in :code:`type='group'` renders a button to open
    element browser depending on selected :code:`internal_type`. It is enabled by default if rendering a
    group element.

@@ -38,7 +38,7 @@ enablecolumns
         related to the frontend. However the icon of records having these features enabled will
         normally change as these examples show:
 
-        .. figure:: Images/EnableFields.png
+        .. figure:: ../Images/EnableFields.png
             :alt: Enable fields show up as icon overlays
             :class: with-shadow
 

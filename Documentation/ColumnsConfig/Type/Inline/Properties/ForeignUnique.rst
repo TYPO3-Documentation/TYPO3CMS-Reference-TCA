@@ -5,13 +5,7 @@
 foreign\_unique
 ===============
 
-:aspect:`Datatype`
-    string
-
-:aspect:`Scope`
-    Display / Proc.
-
-:aspect:`Description`
+   :type: string   :Scope: Display / Proc.
     Field which must be unique for all children of a parent record.
 
     Example: Say you have two tables, products, your parent table, and prices, your child table (products) can have

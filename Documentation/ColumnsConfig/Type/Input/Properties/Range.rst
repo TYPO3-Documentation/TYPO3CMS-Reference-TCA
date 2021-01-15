@@ -6,16 +6,10 @@ range
 =====
 
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Proc.
+   :type: array   :Scope: Proc.
 
 :aspect:`Render types`
     default, inputLink
-
-:aspect:`Description`
     An array which defines an integer range within which the value must be. Keys:
 
     lower

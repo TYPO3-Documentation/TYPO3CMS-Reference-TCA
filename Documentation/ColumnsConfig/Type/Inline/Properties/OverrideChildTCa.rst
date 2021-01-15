@@ -5,13 +5,7 @@
 overrideChildTca
 ================
 
-:aspect:`Datatype`
-    array
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: array   :Scope: Display
     This property can be used to override certain aspects of the child's TCA if that child record is
     opened inline of the given parent. Display related TCA properties of the child table can be
     overridden in :code:`types` and :code:`columns` section.

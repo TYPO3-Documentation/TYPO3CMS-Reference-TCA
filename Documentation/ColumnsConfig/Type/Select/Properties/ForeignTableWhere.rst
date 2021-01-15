@@ -5,16 +5,10 @@
 foreign\_table\_where
 =====================
 
-:aspect:`Datatype`
-   string (SQL WHERE)
-
-:aspect:`Scope`
-   Proc. / Display
+   :type: string (SQL WHERE)   :Scope: Proc. / Display
 
 :aspect:`RenderType`
    all
-
-:aspect:`Description`
    The items from :ref:`foreign_table <columns-select-properties-foreign-table>` are selected with this WHERE-clause.
 
    The table is joined with the "pages"-table and items are selected only from pages where the user has read access!

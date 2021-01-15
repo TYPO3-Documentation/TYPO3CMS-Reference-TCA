@@ -5,13 +5,9 @@
 selectIcons
 ===========
 
-:aspect:`Datatype`
-   array
+.. confval:: selectIcons
 
-:aspect:`Scope`
-   fieldWizard
+   :type: array
+   :Scope: fieldWizard
 
-:aspect:`types`
-
-:aspect:`Description`
    Render thumbnails of icons below the select drop-down. Disabled by default.

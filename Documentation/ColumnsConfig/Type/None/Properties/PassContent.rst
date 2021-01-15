@@ -5,13 +5,7 @@
 pass\_content
 =============
 
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Scope`
-    Display
-
-:aspect:`Description`
+   :type: boolean   :Scope: Display
     If set, then content from the field is directly outputted in the :code:`<input>` section as value attribute.
     Otherwise, the content will be passed through :code:`htmlspecialchars()`.
 

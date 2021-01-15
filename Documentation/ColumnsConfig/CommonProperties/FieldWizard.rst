@@ -5,20 +5,16 @@
 fieldWizard
 ===========
 
-:aspect:`Datatype`
-   array
+.. confval:: fieldWizard
 
-:aspect:`Scope`
-   Display
+   :type: array
+   :Scope: Display
+   :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
+      :ref:`group <columns-group>`,
+      :ref:`imageManipulation <columns-imageManipulation>`,
+      :ref:`input <columns-input>`,
+      :ref:`radio <columns-radio>`
 
-:aspect:`types`
-   :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
-   :ref:`group <columns-group>`,
-   :ref:`imageManipulation <columns-imageManipulation>`,
-   :ref:`input <columns-input>`,
-   :ref:`radio <columns-radio>`
-
-:aspect:`Description`
    Specifies wizards rendered below the main input area of an element. Single type / renderType elements
    can register default wizards which are merged with this property.
 
