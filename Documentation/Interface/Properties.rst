@@ -9,22 +9,22 @@ Properties
 maxDBListItems
 ==============
 
-:aspect:`Datatype`
-    integer
+.. confval:: maxDBListItems
 
-:aspect:`Description`
-    Max number of items shown in the List module. Defaults to 20
-    if not specified.
+   :type: integer
+
+   Max number of items shown in the List module. Defaults to 20
+   if not specified.
+
 
 .. _interface-properties-maxsingledblistitems:
-
 
 maxSingleDBListItems
 ====================
 
-:aspect:`Datatype`
-    integer
+.. confval:: maxSingleDBListItems
 
-:aspect:`Description`
-    Maximum number of items shown in the List module, if this table is listed
-    in extended mode (listing only a single table). Defaults to 100 if not specified.
+   :type: integer
+
+   Maximum number of items shown in the List module, if this table is listed
+   in extended mode (listing only a single table). Defaults to 100 if not specified.

@@ -5,46 +5,49 @@
 columnsOverrides
 ================
 
-:aspect:`Datatype`
-    array (columns fields overrides)
+.. confval:: columnsOverrides
 
-:aspect:`Scope`
-    Display
+   :type: array (columns fields overrides)
 
-:aspect:`Description`
-    Changed or added ['columns'] field display definitions.
+   :Scope: Display
 
-    This allows to change the column definition of a field if a record of this type is edited. Currently, it only
-    affects the display of form fields, but not the data handling.
 
-    A typical property that can be changed here is :code:`renderType`.
+   Changed or added ['columns'] field display definitions.
 
-    The core uses this property to override for instance the "bodytext" field config of table "tt_content": If a record
-    of type "text" is edited, it adds "enableRichtext = 1" to trigger an RTE to the default "bodytext" configuration,
-    and if a type "table" is edited, it adds "renderType = textTable" and "wrap = off" to "bodytext".
+   This allows to change the column definition of a field if a record of this type is edited. Currently, it only
+   affects the display of form fields, but not the data handling.
 
-    The FormEngine basically merges "columnsOverrides" over the default "columns" field after the record type
-    has been determined.
+   A typical property that can be changed here is :code:`renderType`.
 
-    **Example adding "nowrap" to a text type for type "text"**
+   The core uses this property to override for instance the "bodytext" field config of table "tt_content": If a record
+   of type "text" is edited, it adds "enableRichtext = 1" to trigger an RTE to the default "bodytext" configuration,
+   and if a type "table" is edited, it adds "renderType = textTable" and "wrap = off" to "bodytext".
 
-    .. code-block:: php
+   The FormEngine basically merges "columnsOverrides" over the default "columns" field after the record type
+   has been determined.
 
-        'types' => [
-            'text' => [
-                'showitem' => 'hidden, myText',
-                'columnsOverrides' => [
-                    'myText' => [
-                        'config' => [
-                            'wrap' => 'off',
-                        ],
-                    ],
-                ],
+
+   .. important::
+      It is not possible to override any properties in "Proc." scope: The DataHandler does not take "columnsOverrides"
+      into account. Only pure "Display" related properties can be overridden. This especially means that
+      columns config 'type' must **not** be set to a different value.
+
+Examples
+========
+
+Example adding "nowrap" to a text type for type "text"::
+
+   'types' => [
+      'text' => [
+         'showitem' => 'hidden, myText',
+         'columnsOverrides' => [
+            'myText' => [
+               'config' => [
+                  'wrap' => 'off',
+               ],
             ],
-            ...
-        ],
+         ],
+      ],
+      ...
+   ],
 
-    .. important::
-        It is not possible to override any properties in "Proc." scope: The DataHandler does not take "columnsOverrides"
-        into account. Only pure "Display" related properties can be overridden. This especially means that
-        columns config 'type' must **not** be set to a different value.
