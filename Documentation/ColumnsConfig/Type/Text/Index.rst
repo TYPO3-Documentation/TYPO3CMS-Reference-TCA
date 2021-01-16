@@ -2,9 +2,9 @@
 
 .. _columns-text:
 
-=============
-type = 'text'
-=============
+================
+Text areas & RTE
+================
 
 .. contents:: Table of contents:
    :local:

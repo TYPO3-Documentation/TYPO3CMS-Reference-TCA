@@ -2,9 +2,9 @@
 
 .. _columns-user:
 
-=============
-type = 'user'
-=============
+====================
+Custom inputs (user)
+====================
 
 .. contents:: Table of contents:
    :local:

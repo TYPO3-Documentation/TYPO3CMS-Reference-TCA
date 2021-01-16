@@ -2,9 +2,9 @@
 
 .. _columns-select:
 
-===============
-type = 'select'
-===============
+=============
+Select fields
+=============
 
 .. _columns-select-introduction:
 
