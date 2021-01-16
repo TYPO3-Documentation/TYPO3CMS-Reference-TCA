@@ -1,0 +1,40 @@
+.. include:: /Includes.rst.txt
+
+.. _tca_examples:
+
+==================
+About the examples
+==================
+
+.. _tca_examples_extension_styleguide:
+
+Extension styleguide
+====================
+
+Many of the examples are part of the TYPO3 extension :file:`styleguide`. This
+extension can be installed via composer:
+
+.. code-block:: console
+
+   composer require --dev typo3/cms-styleguide
+
+It can also be downloaded from `GitHub <https://github.com/TYPO3/styleguide>`__.
+
+.. todo:
+   Explain how to use the extension styleguide.
+   See https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues/297
+
+.. _tca_examples_extension_examples:
+
+Extension examples
+==================
+
+Some examples can be found in the TYPO3 extension :file:`examples`. It can
+be installed via composer:
+
+.. code-block:: console
+
+   composer require --dev t3docs/examples
+
+It can also be downloaded from the `TYPO3 extension repository
+<https://extensions.typo3.org/extension/examples/>`__
