@@ -12,16 +12,11 @@ Extension styleguide
 ====================
 
 Many of the examples are part of the TYPO3 extension :file:`styleguide`. This
-extension can be installed via composer:
+extension offers neatly numbered examples for any field type. Furthermore there
+are examples with different properties set to different values.
 
-.. code-block:: console
-
-   composer require --dev typo3/cms-styleguide
-
-It can also be downloaded from `GitHub <https://github.com/TYPO3/styleguide>`__.
-
-The extension `styleguide <https://github.com/TYPO3/styleguide>`__ offers to
-create an example page tree containing a large number of examples.
+Read here about how to :ref:`install and use the styleguide extension
+<tca_examples_styleguide_installations>`.
 
 
 .. _tca_examples_extension_examples:
@@ -29,8 +24,11 @@ create an example page tree containing a large number of examples.
 Extension examples
 ==================
 
-Some examples can be found in the TYPO3 extension :file:`examples`. It can
-be installed via composer:
+Some examples can also be found in the TYPO3 extension :file:`examples`. This
+extension contains special configurations that have been used neither in the
+extension :file:`stylguide` not in the TYPO3 Core.
+
+The extension :file:`examples` can be installed via composer:
 
 .. code-block:: console
 
@@ -38,3 +36,32 @@ be installed via composer:
 
 It can also be downloaded from the `TYPO3 extension repository
 <https://extensions.typo3.org/extension/examples/>`__
+
+
+.. _tca_examples_core:
+
+Examples from the TYPO3 Core
+============================
+
+Some examples are also taken from the TYPO3 Core and examples that come from
+different system extensions. You can open their TCA definitions in the
+corresponding file in the system extension.
+
+Common examples are taken from the following tables:
+
+:sql:`pages`
+   :file:`public/typo3/sysext/core/Configuration/TCA/pages.php`
+
+:sql:`sys_category`
+   :file:`public/typo3/sysext/core/Configuration/TCA/sys_category.php`
+
+:sql:`sys_file`
+   :file:`public/typo3/sysext/core/Configuration/TCA/sys_file.php`
+
+:sql:`sys_template`
+   :file:`public/typo3/sysext/frontend/Configuration/TCA/sys_template.php`
+
+
+:sql:`tt_content`
+   :file:`public/typo3/sysext/frontend/Configuration/TCA/tt_content.php`
+
