@@ -20,9 +20,9 @@ extension can be installed via composer:
 
 It can also be downloaded from `GitHub <https://github.com/TYPO3/styleguide>`__.
 
-.. todo:
-   Explain how to use the extension styleguide.
-   See https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues/297
+The extension `styleguide <https://github.com/TYPO3/styleguide>`__ offers to
+create an example page tree containing a large number of examples.
+
 
 .. _tca_examples_extension_examples:
 
