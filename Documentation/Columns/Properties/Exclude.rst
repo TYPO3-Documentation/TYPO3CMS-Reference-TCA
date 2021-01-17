@@ -17,3 +17,11 @@ exclude
 
    See :ref:`Access lists <t3coreapi:access-options-access-lists>` for more
    about permissions.
+
+Example
+=======
+
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start input_1
+   :end-before: end input_1

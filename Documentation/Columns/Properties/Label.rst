@@ -8,9 +8,7 @@ label
 .. confval:: label
 
    :Required: true
-
    :type: string or LLL reference
-
    :Scope: Display
 
    The name of the field as shown in the form:
