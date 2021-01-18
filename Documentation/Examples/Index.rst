@@ -43,7 +43,7 @@ It can also be downloaded from the `TYPO3 extension repository
 Examples from the TYPO3 Core
 ============================
 
-Some examples are also taken from the TYPO3 Core and examples that come from
+Some examples are taken from the TYPO3 Core and some come from
 different system extensions. You can open their TCA definitions in the
 corresponding file in the system extension.
 
