@@ -20,7 +20,7 @@ eval
       The only downside is that it is not possible to have the same slug on multiple sites.
 
    uniqueInSite
-      Evaluate if a record is unique in a site (specific to a language).
+        Requires the field to be unique for the current site and language. This allows for multiple records of the same table to have the same slug as long as these records are separated by their sites. Consequently records of a foreign site are not accessible with :php:`uniqueInsite` since slugs are looked up respecting the current site.
 
       .. warning::
            Be aware that using this option makes it impossible to show records stored inside other sites.
