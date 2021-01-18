@@ -1,4 +1,4 @@
-﻿:orphan:
+:orphan:
 
 The page was moved to: :ref:`columns-user`
 
