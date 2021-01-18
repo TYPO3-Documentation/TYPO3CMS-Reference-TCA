@@ -25,8 +25,8 @@ Extension examples
 ==================
 
 Some examples can also be found in the TYPO3 extension :file:`examples`. This
-extension contains special configurations that have been used neither in the
-extension :file:`stylguide` not in the TYPO3 Core.
+extension contains special configurations that have not been used in the
+extension :file:`stylguide` nor in the TYPO3 Core.
 
 The extension :file:`examples` can be installed via composer:
 
