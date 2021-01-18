@@ -55,8 +55,8 @@ How to use the `styleguide` extension
 
    .. hint::
       If you turn on Backend debugging you can see the names of all fields as
-      used in the database. Furthermore in fields that hide the real database
-      value such as checkboxes you can see the value hidden behind the label.
+      used in the database. Furthermore, in fields that hide the real database
+      value (such as checkboxes) you can see the value hidden behind the label.
       To activate backend debugging go to: :guilabel:`Admin Tools > Settings
       > Configuration Presets > Debug Settings > BE/debug`.
 
