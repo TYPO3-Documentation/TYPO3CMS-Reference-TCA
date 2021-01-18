@@ -64,7 +64,7 @@ How to use the `styleguide` extension
 4. Find the corresponding TCA definition
 
    All TCA examples are called after their type and then numbered. The tables
-   carry the same name like the entry in the page tree, prefixed with
+   carry the same name as the entry in the page tree, prefixed with
    :file:`tx_styleguide_` therefore you would find the example from the
    screenshot in the following file:
    :file:`public/typo3conf/ext/styleguide/Configuration/TCA/tx_styleguide_elements_basic.php`.
