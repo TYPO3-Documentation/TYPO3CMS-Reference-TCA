@@ -43,7 +43,7 @@ How to use the `styleguide` extension
 
    Navigate to the new page tree called :guilabel:`styleguide TCA demo`, using
    the :guilabel:`List` module. Choose a page, for example
-   :guilabel:`elements basic` and open the english record. The records in the
+   :guilabel:`elements basic`, and open the English record. The records in the
    other languages can be used to see examples of localization and relation
    between language.
 
