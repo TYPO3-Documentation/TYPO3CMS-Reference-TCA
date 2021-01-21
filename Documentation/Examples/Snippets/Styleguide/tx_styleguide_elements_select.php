@@ -1,721 +1,1105 @@
 <?php
 
 return [
-    'ctrl' => [
-        'title' => 'Form engine elements - select',
-        'label' => 'uid',
-        'tstamp' => 'tstamp',
-        'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
-        'delete' => 'deleted',
-        'sortby' => 'sorting',
-        'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
-        'versioningWS' => true,
-        'origUid' => 't3_origuid',
-        'languageField' => 'sys_language_uid',
-        'transOrigPointerField' => 'l10n_parent',
-        'transOrigDiffSourceField' => 'l10n_diffsource',
-        'translationSource' => 'l10n_source',
-        'enablecolumns' => [
-            'disabled' => 'hidden',
-        ],
-    ],
-
-    'columns' => [
-        'hidden' => [
-            'exclude' => 1,
-            'config' => [
-                'type' => 'check',
-                'items' => [
-                    '1' => [
-                        '0' => 'Disable',
-                    ],
-                ],
+   'ctrl' => [ 
+      'title' => 'Form engine elements - select',
+      'label' => 'uid',
+      'tstamp' => 'tstamp',
+      'crdate' => 'crdate',
+      'cruser_id' => 'cruser_id',
+      'delete' => 'deleted',
+      'sortby' => 'sorting',
+      'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+      'versioningWS' => 1,
+      'origUid' => 't3_origuid',
+      'languageField' => 'sys_language_uid',
+      'transOrigPointerField' => 'l10n_parent',
+      'transOrigDiffSourceField' => 'l10n_diffsource',
+      'translationSource' => 'l10n_source',
+      'enablecolumns' => [ 
+         'disabled' => 'hidden',
+      ],
+   ],
+   'columns' => [ 
+      // [start hidden]
+      'hidden' => [ 
+         'exclude' => 1,
+         'config' => [ 
+            'type' => 'check',
+            'items' => [ 
+               '1' => [ 
+                  '0' => 'Disable',
+               ],
             ],
-        ],
-        'sys_language_uid' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'special' => 'languages',
-                'items' => [
-                    [
-                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                        -1,
-                        'flags-multiple'
-                    ],
-                ],
-                'default' => 0,
-            ]
-        ],
-        'l10n_parent' => [
-            'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'label' => 'Translation parent',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    [
-                        '',
-                        0
-                    ]
-                ],
-                'foreign_table' => 'tx_styleguide_elements_select',
-                'foreign_table_where' => 'AND {#tx_styleguide_elements_select}.{#pid}=###CURRENT_PID### AND {#tx_styleguide_elements_select}.{#sys_language_uid} IN (-1,0)',
-                'default' => 0
-            ]
-        ],
-        'l10n_source' => [
-            'exclude' => true,
-            'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'label' => 'Translation source',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    [
-                        '',
-                        0
-                    ]
-                ],
-                'foreign_table' => 'tx_styleguide_elements_select',
-                'foreign_table_where' => 'AND {#tx_styleguide_elements_select}.{#pid}=###CURRENT_PID### AND {#tx_styleguide_elements_select}.{#uid}!=###THIS_UID###',
-                'default' => 0
-            ]
-        ],
-        'l10n_diffsource' => [
-            'config' => [
-                'type' => 'passthrough',
-                'default' => ''
-            ]
-        ],
-
-        'select_single_1' => [
-            'exclude' => 1,
-            'label' => 'select_single_1 two items, long text description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    [
-                        'foo and this here is very long text that maybe does not really fit into the form in one line.'
-                            . ' Ok let us add even more text to see how this looks like if wrapped. Is this enough now? No?'
-                            . ' Then let us add some even more useless text here!',
-                        1
-                    ],
-                    ['bar', 'bar'],
-                ],
+         ],
+      ],
+      // [end hidden]
+      // [start sys_language_uid]
+      'sys_language_uid' => [ 
+         'exclude' => 1,
+         'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'special' => 'languages',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                  '1' => -1,
+                  '2' => 'flags-multiple',
+               ],
             ],
-        ],
-        'select_single_2' => [
-            'exclude' => 1,
-            'label' => 'select_single_2 itemsProcFunc',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['foo', 1],
-                    ['bar', 'bar'],
-                ],
-                'itemsProcFunc' => 'TYPO3\\CMS\\Styleguide\\UserFunctions\\FormEngine\\TypeSelect2ItemsProcFunc->itemsProcFunc',
+            'default' => 0,
+         ],
+      ],
+      // [end sys_language_uid]
+      // [start l10n_parent]
+      'l10n_parent' => [ 
+         'displayCond' => 'FIELD:sys_language_uid:>:0',
+         'label' => 'Translation parent',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => '',
+                  '1' => 0,
+               ],
             ],
-        ],
-        'select_single_3' => [
-            'exclude' => 1,
-            'label' => 'select_single_3 static values, dividers, foreign_table_where',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['Static values', '--div--'],
-                    ['static -2', -2],
-                    ['static -1', -1],
-                    ['DB values', '--div--'],
-                ],
-                'foreign_table' => 'tx_styleguide_staticdata',
-                'foreign_table_where' => 'AND {#tx_styleguide_staticdata}.{#value_1} LIKE \'%foo%\' ORDER BY uid',
-                'foreign_table_prefix' => 'A prefix: ',
+            'foreign_table' => 'tx_styleguide_elements_select',
+            'foreign_table_where' => 'AND {#tx_styleguide_elements_select}.{#pid}=###CURRENT_PID### AND {#tx_styleguide_elements_select}.{#sys_language_uid} IN (-1,0)',
+            'default' => 0,
+         ],
+      ],
+      // [end l10n_parent]
+      // [start l10n_source]
+      'l10n_source' => [ 
+         'exclude' => 1,
+         'displayCond' => 'FIELD:sys_language_uid:>:0',
+         'label' => 'Translation source',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => '',
+                  '1' => 0,
+               ],
             ],
-        ],
-        'select_single_4' => [
-            'exclude' => 1,
-            'label' => 'select_single_4 items with icons',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['foo 1', 'foo1', 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg'],
-                    ['foo 2', 'foo2', 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg'],
-                ],
+            'foreign_table' => 'tx_styleguide_elements_select',
+            'foreign_table_where' => 'AND {#tx_styleguide_elements_select}.{#pid}=###CURRENT_PID### AND {#tx_styleguide_elements_select}.{#uid}!=###THIS_UID###',
+            'default' => 0,
+         ],
+      ],
+      // [end l10n_source]
+      // [start l10n_diffsource]
+      'l10n_diffsource' => [ 
+         'config' => [ 
+            'type' => 'passthrough',
+            'default' => '',
+         ],
+      ],
+      // [end l10n_diffsource]
+      // [start select_single_1]
+      'select_single_1' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_1 two items, long text description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo and this here is very long text that maybe does not really fit into the form in one line. Ok let us add even more text to see how this looks like if wrapped. Is this enough now? No? Then let us add some even more useless text here!',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'bar',
+                  '1' => 'bar',
+               ],
             ],
-        ],
-        'select_single_5' => [
-            'exclude' => 1,
-            'label' => 'select_single_5 selectIcons, items with icons',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['foo 1', 'foo1', 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg'],
-                    ['foo 2', 'foo2', 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg'],
-                ],
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false,
-                    ],
-                ],
+         ],
+      ],
+      // [end select_single_1]
+      // [start select_single_2]
+      'select_single_2' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_2 itemsProcFunc',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'bar',
+                  '1' => 'bar',
+               ],
             ],
-        ],
-        'select_single_7' => [
-            'exclude' => 1,
-            'label' => 'select_single_7 fileFolder, dummy first entry, selectIcons',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['', 0],
-                ],
-                'fileFolder' => 'EXT:styleguide/Resources/Public/Icons',
-                'fileFolder_extList' => 'svg',
-                'fileFolder_recursions' => 1,
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false,
-                    ],
-                ],
+            'itemsProcFunc' => 'TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeSelect2ItemsProcFunc->itemsProcFunc',
+         ],
+      ],
+      // [end select_single_2]
+      // [start select_single_3]
+      'select_single_3' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_3 static values, dividers, foreign_table_where',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'Static values',
+                  '1' => '--div--',
+               ],
+               '1' => [ 
+                  '0' => 'static -2',
+                  '1' => -2,
+               ],
+               '2' => [ 
+                  '0' => 'static -1',
+                  '1' => -1,
+               ],
+               '3' => [ 
+                  '0' => 'DB values',
+                  '1' => '--div--',
+               ],
             ],
-        ],
-        // tca reference marker start select_single_8
-        'select_single_8' => [
-            'exclude' => 1,
-            'label' => 'select_single_8 drop down with empty div',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['First div with items', '--div--'],
-                    ['item 1', 1],
-                    ['item 2', 2],
-                    ['Second div without items', '--div--'],
-                    ['Third div with items', '--div--'],
-                    ['item 3', 3],
-                ],
+            'foreign_table' => 'tx_styleguide_staticdata',
+            'foreign_table_where' => 'AND {#tx_styleguide_staticdata}.{#value_1} LIKE '%foo%' ORDER BY uid',
+            'foreign_table_prefix' => 'A prefix: ',
+         ],
+      ],
+      // [end select_single_3]
+      // [start select_single_4]
+      'select_single_4' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_4 items with icons',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 'foo1',
+                  '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 'foo2',
+                  '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+               ],
             ],
-        ],
-        // tca reference marker end select_single_8
-        // @todo: selectSingle with size > 1 overlaps with selectSingleBox, except that only one item can be selected
-        'select_single_10' => [
-            'exclude' => 1,
-            'label' => 'select_single_10 size=6, three options',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['a divider', '--div--'],
-                    ['foo 3', 3],
-                ],
-                'size' => 6,
+         ],
+      ],
+      // [end select_single_4]
+      // [start select_single_5]
+      'select_single_5' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_5 selectIcons, items with icons',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 'foo1',
+                  '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 'foo2',
+                  '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+               ],
             ],
-        ],
-        'select_single_11' => [
-            'exclude' => 1,
-            'label' => 'select_single_11 size=2, two options',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                ],
-                'size' => 2,
+            'fieldWizard' => [ 
+               'selectIcons' => [ 
+                  'disabled' => ,
+               ],
             ],
-        ],
-        // tca reference marker start select_single_12
-        'select_single_12' => [
-            'exclude' => 1,
-            'label' => 'select_single_12 foreign_table selicon_field',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_styleguide_elements_select_single_12_foreign',
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false,
-                    ],
-                ],
+         ],
+      ],
+      // [end select_single_5]
+      // [start select_single_7]
+      'select_single_7' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_7 fileFolder, dummy first entry, selectIcons',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => '',
+                  '1' => 0,
+               ],
             ],
-        ],
-        // tca reference marker end select_single_12
-        // tca reference marker start select_single_13
-        'select_single_13' => [
-            'exclude' => 1,
-            'label' => 'select_single_13 l10n_display=defaultAsReadonly',
-            'l10n_mode' => 'exclude',
-            'l10n_display' => 'defaultAsReadonly',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['foo', 'foo'],
-                    ['bar', 'bar'],
-                ],
+            'fileFolder' => 'EXT:styleguide/Resources/Public/Icons',
+            'fileFolder_extList' => 'svg',
+            'fileFolder_recursions' => 1,
+            'fieldWizard' => [ 
+               'selectIcons' => [ 
+                  'disabled' => ,
+               ],
             ],
-        ],
-        // tca reference marker end select_single_13
-        'select_single_14' => [
-            'exclude' => 1,
-            'label' => 'select_single_14 two items readOnly description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'readOnly' => true,
-                'items' => [
-                    ['bar', 'bar'],
-                ],
+         ],
+      ],
+      // [end select_single_7]
+      // [start select_single_8]
+      'select_single_8' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_8 drop down with empty div',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'First div with items',
+                  '1' => '--div--',
+               ],
+               '1' => [ 
+                  '0' => 'item 1',
+                  '1' => 1,
+               ],
+               '2' => [ 
+                  '0' => 'item 2',
+                  '1' => 2,
+               ],
+               '3' => [ 
+                  '0' => 'Second div without items',
+                  '1' => '--div--',
+               ],
+               '4' => [ 
+                  '0' => 'Third div with items',
+                  '1' => '--div--',
+               ],
+               '5' => [ 
+                  '0' => 'item 3',
+                  '1' => 3,
+               ],
             ],
-        ],
-        'select_single_15' => [
-            'exclude' => 1,
-            'label' => 'select_single_15 foreign_table',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_styleguide_staticdata',
-                'MM' => 'tx_styleguide_elements_select_single_15_mm'
+         ],
+      ],
+      // [end select_single_8]
+      // [start select_single_10]
+      'select_single_10' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_10 size=6, three options',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'a divider',
+                  '1' => '--div--',
+               ],
+               '3' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
             ],
-        ],
-
-        'select_singlebox_1' => [
-            'exclude' => 1,
-            'label' => 'select_singlebox_1 description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingleBox',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['divider', '--div--'],
-                    ['foo 3', 3],
-                    ['foo 4', 4],
-                ],
+            'size' => 6,
+         ],
+      ],
+      // [end select_single_10]
+      // [start select_single_11]
+      'select_single_11' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_11 size=2, two options',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
             ],
-        ],
-        'select_singlebox_2' => [
-            'exclude' => 1,
-            'label' => 'select_singlebox_1 readOnly description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingleBox',
-                'readOnly' => true,
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['divider', '--div--'],
-                    ['foo 3', 3],
-                    ['foo 4', 4],
-                ],
+            'size' => 2,
+         ],
+      ],
+      // [end select_single_11]
+      // [start select_single_12]
+      'select_single_12' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_12 foreign_table selicon_field',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tx_styleguide_elements_select_single_12_foreign',
+            'fieldWizard' => [ 
+               'selectIcons' => [ 
+                  'disabled' => ,
+               ],
             ],
-        ],
-
-        'select_checkbox_1' => [
-            'exclude' => 1,
-            'label' => 'select_checkbox_1 description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectCheckBox',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['foo 3', 3],
-                ],
+         ],
+      ],
+      // [end select_single_12]
+      // [start select_single_13]
+      'select_single_13' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_13 l10n_display=defaultAsReadonly',
+         'l10n_mode' => 'exclude',
+         'l10n_display' => 'defaultAsReadonly',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo',
+                  '1' => 'foo',
+               ],
+               '1' => [ 
+                  '0' => 'bar',
+                  '1' => 'bar',
+               ],
             ],
-        ],
-        'select_checkbox_2' => [
-            'exclude' => 1,
-            'label' => 'select_checkbox_2, maxitems=1',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectCheckBox',
-                'maxitems' => 1,
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['foo 3', 3],
-                ],
+         ],
+      ],
+      // [end select_single_13]
+      // [start select_single_14]
+      'select_single_14' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_14 two items readOnly description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'readOnly' => 1,
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'bar',
+                  '1' => 'bar',
+               ],
             ],
-        ],
-        'select_checkbox_3' => [
-            'exclude' => 1,
-            'label' => 'select_checkbox_3 icons, description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectCheckBox',
-                'items' => [
-                    ['foo 1', 1, '', 'optional description'],
-                    ['foo 2', 2, 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg', 'LLL:EXT:styleguide/Resources/Private/Language/locallang.xlf:translatedHelpTextForSelectCheckBox3'],
-                    ['foo 3', 3, 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg'],
-                    ['foo 4', 4],
-                ],
+         ],
+      ],
+      // [end select_single_14]
+      // [start select_single_15]
+      'select_single_15' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_15 foreign_table',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tx_styleguide_staticdata',
+            'MM' => 'tx_styleguide_elements_select_single_15_mm',
+         ],
+      ],
+      // [end select_single_15]
+      // [start select_singlebox_1]
+      'select_singlebox_1' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_1 description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'divider',
+                  '1' => '--div--',
+               ],
+               '3' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '4' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
             ],
-        ],
-        'select_checkbox_4' => [
-            // @todo: readOnly select checkbox renders no body?!
-            'exclude' => 1,
-            'label' => 'select_checkbox_4 readOnly description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectCheckBox',
-                'readOnly' => true,
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                ],
+         ],
+      ],
+      // [end select_singlebox_1]
+      // [start select_singlebox_2]
+      'select_singlebox_2' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_1 readOnly description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'readOnly' => 1,
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'divider',
+                  '1' => '--div--',
+               ],
+               '3' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '4' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
             ],
-        ],
-        'select_checkbox_5' => [
-            'exclude' => 1,
-            'label' => 'select_checkbox_5 dividers, expandAll',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectCheckBox',
-                'appearance' => [
-                    'expandAll' => true
-                ],
-                'items' => [
-                    ['div 1', '--div--'],
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['foo 3', 3],
-                    ['div 2', '--div--'],
-                    ['foo 4', 4],
-                    ['foo 5', 5],
-                ],
+         ],
+      ],
+      // [end select_singlebox_2]
+      // [start select_checkbox_1]
+      'select_checkbox_1' => [ 
+         'exclude' => 1,
+         'label' => 'select_checkbox_1 description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectCheckBox',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
             ],
-        ],
-        'select_checkbox_6' => [
-            'exclude' => 1,
-            'label' => 'select_checkbox_5 dividers',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectCheckBox',
-                'items' => [
-                    ['div 1', '--div--'],
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['foo 3', 3],
-                    ['div 2', '--div--'],
-                    ['foo 4', 4],
-                    ['foo 5', 5],
-                ],
+         ],
+      ],
+      // [end select_checkbox_1]
+      // [start select_checkbox_2]
+      'select_checkbox_2' => [ 
+         'exclude' => 1,
+         'label' => 'select_checkbox_2, maxitems=1',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectCheckBox',
+            'maxitems' => 1,
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
             ],
-        ],
-
-        'select_multiplesidebyside_1' => [
-            'exclude' => 1,
-            'label' => 'select_multiplesidebyside_1 autoSizeMax=5, size=3 description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['a divider', '--div--'],
-                    ['foo 3', 3],
-                    ['foo 4', 4],
-                    ['foo 5', 5],
-                    ['foo 6', 6],
-                ],
-                'size' => 3,
-                'autoSizeMax' => 5,
-                'multiple' => true,
+         ],
+      ],
+      // [end select_checkbox_2]
+      // [start select_checkbox_3]
+      'select_checkbox_3' => [ 
+         'exclude' => 1,
+         'label' => 'select_checkbox_3 icons, description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectCheckBox',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+                  '2' => '',
+                  '3' => 'optional description',
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+                  '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+                  '3' => 'LLL:EXT:styleguide/Resources/Private/Language/locallang.xlf:translatedHelpTextForSelectCheckBox3',
+               ],
+               '2' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+                  '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+               ],
+               '3' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
             ],
-        ],
-        'select_multiplesidebyside_2' => [
-            'exclude' => 1,
-            'label' => 'select_multiplesidebyside_2 exclusiveKeys=1,2',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'items' => [
-                    ['two exclusive items', '--div--'],
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['casual multiple items', '--div--'],
-                    ['foo 3', 3],
-                    ['foo 4', 4],
-                    ['foo 5', 5],
-                    ['foo 6', 6],
-                ],
-                'multiple' => true,
-                'exclusiveKeys' => '1,2',
+         ],
+      ],
+      // [end select_checkbox_3]
+      // [start select_checkbox_4]
+      'select_checkbox_4' => [ 
+         'exclude' => 1,
+         'label' => 'select_checkbox_4 readOnly description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectCheckBox',
+            'readOnly' => 1,
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
             ],
-        ],
-        'select_multiplesidebyside_3' => [
-            'exclude' => 1,
-            'label' => 'select_multiplesidebyside_3 itemListStyle, selectedListStyle',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['foo 3', 3],
-                ],
-                'itemListStyle' => 'width:250px;background-color:#ffcccc;',
-                'selectedListStyle' => 'width:250px;background-color:#ccffcc;',
-                'size' => 2,
+         ],
+      ],
+      // [end select_checkbox_4]
+      // [start select_checkbox_5]
+      'select_checkbox_5' => [ 
+         'exclude' => 1,
+         'label' => 'select_checkbox_5 dividers, expandAll',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectCheckBox',
+            'appearance' => [ 
+               'expandAll' => 1,
             ],
-        ],
-        'select_multiplesidebyside_5' => [
-            'exclude' => 1,
-            'label' => 'select_multiplesidebyside_5 multiSelectFilterItems',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['foo 3', 3],
-                    ['bar', 4],
-                ],
-                'multiSelectFilterItems' => [
-                    ['', ''],
-                    ['foo', 'foo'],
-                    ['bar', 'bar'],
-                ],
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'div 1',
+                  '1' => '--div--',
+               ],
+               '1' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '2' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '3' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '4' => [ 
+                  '0' => 'div 2',
+                  '1' => '--div--',
+               ],
+               '5' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
+               '6' => [ 
+                  '0' => 'foo 5',
+                  '1' => 5,
+               ],
             ],
-        ],
-        'select_multiplesidebyside_6' => [
-            'exclude' => 1,
-            'label' => 'select_multiplesidebyside_6 fieldControl',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'foreign_table' => 'tx_styleguide_staticdata',
-                'size' => 5,
-                'autoSizeMax' => 20,
-                'fieldControl' => [
-                    'editPopup' => [
-                        'disabled' => false,
-                    ],
-                    'addRecord' => [
-                        'disabled' => false,
-                    ],
-                    'listModule' => [
-                        'disabled' => false,
-                    ],
-                ],
+         ],
+      ],
+      // [end select_checkbox_5]
+      // [start select_checkbox_6]
+      'select_checkbox_6' => [ 
+         'exclude' => 1,
+         'label' => 'select_checkbox_5 dividers',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectCheckBox',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'div 1',
+                  '1' => '--div--',
+               ],
+               '1' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '2' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '3' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '4' => [ 
+                  '0' => 'div 2',
+                  '1' => '--div--',
+               ],
+               '5' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
+               '6' => [ 
+                  '0' => 'foo 5',
+                  '1' => 5,
+               ],
             ],
-        ],
-        'select_multiplesidebyside_7' => [
-            'exclude' => 1,
-            'label' => 'select_multiplesidebyside_7 readonly description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['a divider', '--div--'],
-                    ['foo 3', 3],
-                    ['foo 4', 4],
-                    ['foo 5', 5],
-                    ['foo 6', 6],
-                ],
-                'readOnly' => true,
-                'size' => 3,
-                'autoSizeMax' => 5,
-                'multiple' => true,
+         ],
+      ],
+      // [end select_checkbox_6]
+      // [start select_multiplesidebyside_1]
+      'select_multiplesidebyside_1' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_1 autoSizeMax=5, size=3 description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'a divider',
+                  '1' => '--div--',
+               ],
+               '3' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '4' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
+               '5' => [ 
+                  '0' => 'foo 5',
+                  '1' => 5,
+               ],
+               '6' => [ 
+                  '0' => 'foo 6',
+                  '1' => 6,
+               ],
             ],
-        ],
-        'select_multiplesidebyside_8' => [
-            'exclude' => 1,
-            'label' => 'select_multiplesidebyside_8 foreign_table mm',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'foreign_table' => 'tx_styleguide_staticdata',
-                'MM' => 'tx_styleguide_elements_select_multiplesidebyside_8_mm',
-                'size' => 3,
-                'autoSizeMax' => 5,
+            'size' => 3,
+            'autoSizeMax' => 5,
+            'multiple' => 1,
+         ],
+      ],
+      // [end select_multiplesidebyside_1]
+      // [start select_multiplesidebyside_2]
+      'select_multiplesidebyside_2' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_2 exclusiveKeys=1,2',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'two exclusive items',
+                  '1' => '--div--',
+               ],
+               '1' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '2' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '3' => [ 
+                  '0' => 'casual multiple items',
+                  '1' => '--div--',
+               ],
+               '4' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '5' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
+               '6' => [ 
+                  '0' => 'foo 5',
+                  '1' => 5,
+               ],
+               '7' => [ 
+                  '0' => 'foo 6',
+                  '1' => 6,
+               ],
             ],
-        ],
-        'select_multiplesidebyside_9' => [
-            'exclude' => 1,
-            'label' => 'select_multiplesidebyside_9 maxitems=1',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'maxitems' => 1,
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['foo 3', 3],
-                    ['bar', 4],
-                ]
+            'multiple' => 1,
+            'exclusiveKeys' => '1,2',
+         ],
+      ],
+      // [end select_multiplesidebyside_2]
+      // [start select_multiplesidebyside_3]
+      'select_multiplesidebyside_3' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_3 itemListStyle, selectedListStyle',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
             ],
-        ],
-        'select_tree_1' => [
-            'exclude' => 1,
-            'label' => 'select_tree_1 pages, showHeader=true, expandAll=true, size=20, order by sorting, static items, description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectTree',
-                'foreign_table' => 'pages',
-                'foreign_table_where' => 'ORDER BY pages.sorting',
-                'size' => 20,
-                'items' => [
-                    [ 'static from tca 4711', 4711 ],
-                    [ 'static from tca 4712', 4712 ],
-                ],
-                'behaviour' => [
-                    'allowLanguageSynchronization' => true,
-                ],
-                'treeConfig' => [
-                    'parentField' => 'pid',
-                    'appearance' => [
-                        'expandAll' => true,
-                        'showHeader' => true,
-                    ],
-                ],
+            'itemListStyle' => 'width:250px;background-color:#ffcccc;',
+            'selectedListStyle' => 'width:250px;background-color:#ccffcc;',
+            'size' => 2,
+         ],
+      ],
+      // [end select_multiplesidebyside_3]
+      // [start select_multiplesidebyside_5]
+      'select_multiplesidebyside_5' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_5 multiSelectFilterItems',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '3' => [ 
+                  '0' => 'bar',
+                  '1' => 4,
+               ],
             ],
-        ],
-        'select_tree_2' => [
-            'exclude' => 1,
-            'label' => 'select_tree_2 pages, showHeader=false, nonSelectableLevels=0,1, maxitems=4, size=10',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectTree',
-                'foreign_table' => 'pages',
-                'maxitems' => 4,
-                'size' => 10,
-                'treeConfig' => [
-                    'parentField' => 'pid',
-                    'appearance' => [
-                        'expandAll' => true,
-                        'showHeader' => false,
-                        'nonSelectableLevels' => '0,1'
-                    ],
-                ],
+            'multiSelectFilterItems' => [ 
+               '0' => [ 
+                  '0' => '',
+                  '1' => '',
+               ],
+               '1' => [ 
+                  '0' => 'foo',
+                  '1' => 'foo',
+               ],
+               '2' => [ 
+                  '0' => 'bar',
+                  '1' => 'bar',
+               ],
             ],
-        ],
-        'select_tree_3' => [
-            'exclude' => 1,
-            'label' => 'select_tree_3 pages, maxLevels=1, minitems=1, maxitems=2',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectTree',
-                'foreign_table' => 'pages',
-                'size' => 20,
-                'minitems' => 1,
-                'maxitems' => 2,
-                'treeConfig' => [
-                    'parentField' => 'pid',
-                    'appearance' => [
-                        'showHeader' => true,
-                        'expandAll' => true,
-                        'maxLevels' => 1,
-                    ],
-                ],
+         ],
+      ],
+      // [end select_multiplesidebyside_5]
+      // [start select_multiplesidebyside_6]
+      'select_multiplesidebyside_6' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_6 fieldControl',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'foreign_table' => 'tx_styleguide_staticdata',
+            'size' => 5,
+            'autoSizeMax' => 20,
+            'fieldControl' => [ 
+               'editPopup' => [ 
+                  'disabled' => ,
+               ],
+               'addRecord' => [ 
+                  'disabled' => ,
+               ],
+               'listModule' => [ 
+                  'disabled' => ,
+               ],
             ],
-        ],
-        'select_tree_4' => [
-            'exclude' => 1,
-            'label' => 'select_tree_4 pages, maxLevels=2, requestUpdate, expandAll=false',
-            'onChange' => 'reload',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectTree',
-                'foreign_table' => 'pages',
-                'size' => 20,
-                'maxitems' => 4,
-                'treeConfig' => [
-                    'parentField' => 'pid',
-                    'appearance' => [
-                        'expandAll' => false,
-                        'showHeader' => true,
-                        'maxLevels' => 2,
-                    ],
-                ],
+         ],
+      ],
+      // [end select_multiplesidebyside_6]
+      // [start select_multiplesidebyside_7]
+      'select_multiplesidebyside_7' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_7 readonly description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'a divider',
+                  '1' => '--div--',
+               ],
+               '3' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '4' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
+               '5' => [ 
+                  '0' => 'foo 5',
+                  '1' => 5,
+               ],
+               '6' => [ 
+                  '0' => 'foo 6',
+                  '1' => 6,
+               ],
             ],
-        ],
-        'select_tree_5' => [
-            'exclude' => 1,
-            'label' => 'select_tree_5 pages, readOnly, showHeader=true description',
-            'description' => 'field description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectTree',
-                'foreign_table' => 'pages',
-                'size' => 20,
-                'readOnly' => true,
-                'maxitems' => 4,
-                'treeConfig' => [
-                    'parentField' => 'pid',
-                    'appearance' => [
-                        'showHeader' => true,
-                        'expandAll' => true,
-                    ],
-                ],
+            'readOnly' => 1,
+            'size' => 3,
+            'autoSizeMax' => 5,
+            'multiple' => 1,
+         ],
+      ],
+      // [end select_multiplesidebyside_7]
+      // [start select_multiplesidebyside_8]
+      'select_multiplesidebyside_8' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_8 foreign_table mm',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'foreign_table' => 'tx_styleguide_staticdata',
+            'MM' => 'tx_styleguide_elements_select_multiplesidebyside_8_mm',
+            'size' => 3,
+            'autoSizeMax' => 5,
+         ],
+      ],
+      // [end select_multiplesidebyside_8]
+      // [start select_multiplesidebyside_9]
+      'select_multiplesidebyside_9' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_9 maxitems=1',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'maxitems' => 1,
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+               ],
+               '2' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+               ],
+               '3' => [ 
+                  '0' => 'bar',
+                  '1' => 4,
+               ],
             ],
-        ],
-        'select_tree_6' => [
-            'exclude' => 1,
-            'label' => 'select_tree_6 categories',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectTree',
-                'foreign_table' => 'sys_category',
-                'foreign_table_where' => 'AND ({#sys_category}.{#sys_language_uid} = 0 OR {#sys_category}.{#l10n_parent} = 0) ORDER BY sys_category.sorting',
-                'size' => 20,
-                'treeConfig' => [
-                    'parentField' => 'parent',
-                    'appearance' => [
-                        'expandAll' => true,
-                        'showHeader' => true,
-                    ],
-                ],
+         ],
+      ],
+      // [end select_multiplesidebyside_9]
+      // [start select_tree_1]
+      'select_tree_1' => [ 
+         'exclude' => 1,
+         'label' => 'select_tree_1 pages, showHeader=true, expandAll=true, size=20, order by sorting, static items, description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectTree',
+            'foreign_table' => 'pages',
+            'foreign_table_where' => 'ORDER BY pages.sorting',
+            'size' => 20,
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'static from tca 4711',
+                  '1' => 4711,
+               ],
+               '1' => [ 
+                  '0' => 'static from tca 4712',
+                  '1' => 4712,
+               ],
             ],
-        ],
-
-        'select_requestUpdate_1' => [
-            'exclude' => 1,
-            'label' => 'select_requestUpdate_1',
-            'onChange' => 'reload',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    [
-                        'Just an item',
-                        1
-                    ],
-                    ['bar', 'bar'],
-                    ['and yet another one', -1],
-                ],
+            'behaviour' => [ 
+               'allowLanguageSynchronization' => 1,
             ],
-        ],
-
-        'flex_1' => [
-            'exclude' => 1,
-            'label' => 'flex_1',
-            'config' => [
-                'type' => 'flex',
-                'ds' => [
-                    'default' => '
+            'treeConfig' => [ 
+               'parentField' => 'pid',
+               'appearance' => [ 
+                  'expandAll' => 1,
+                  'showHeader' => 1,
+               ],
+            ],
+         ],
+      ],
+      // [end select_tree_1]
+      // [start select_tree_2]
+      'select_tree_2' => [ 
+         'exclude' => 1,
+         'label' => 'select_tree_2 pages, showHeader=false, nonSelectableLevels=0,1, maxitems=4, size=10',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectTree',
+            'foreign_table' => 'pages',
+            'maxitems' => 4,
+            'size' => 10,
+            'treeConfig' => [ 
+               'parentField' => 'pid',
+               'appearance' => [ 
+                  'expandAll' => 1,
+                  'showHeader' => ,
+                  'nonSelectableLevels' => '0,1',
+               ],
+            ],
+         ],
+      ],
+      // [end select_tree_2]
+      // [start select_tree_3]
+      'select_tree_3' => [ 
+         'exclude' => 1,
+         'label' => 'select_tree_3 pages, maxLevels=1, minitems=1, maxitems=2',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectTree',
+            'foreign_table' => 'pages',
+            'size' => 20,
+            'minitems' => 1,
+            'maxitems' => 2,
+            'treeConfig' => [ 
+               'parentField' => 'pid',
+               'appearance' => [ 
+                  'showHeader' => 1,
+                  'expandAll' => 1,
+                  'maxLevels' => 1,
+               ],
+            ],
+         ],
+      ],
+      // [end select_tree_3]
+      // [start select_tree_4]
+      'select_tree_4' => [ 
+         'exclude' => 1,
+         'label' => 'select_tree_4 pages, maxLevels=2, requestUpdate, expandAll=false',
+         'onChange' => 'reload',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectTree',
+            'foreign_table' => 'pages',
+            'size' => 20,
+            'maxitems' => 4,
+            'treeConfig' => [ 
+               'parentField' => 'pid',
+               'appearance' => [ 
+                  'expandAll' => ,
+                  'showHeader' => 1,
+                  'maxLevels' => 2,
+               ],
+            ],
+         ],
+      ],
+      // [end select_tree_4]
+      // [start select_tree_5]
+      'select_tree_5' => [ 
+         'exclude' => 1,
+         'label' => 'select_tree_5 pages, readOnly, showHeader=true description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectTree',
+            'foreign_table' => 'pages',
+            'size' => 20,
+            'readOnly' => 1,
+            'maxitems' => 4,
+            'treeConfig' => [ 
+               'parentField' => 'pid',
+               'appearance' => [ 
+                  'showHeader' => 1,
+                  'expandAll' => 1,
+               ],
+            ],
+         ],
+      ],
+      // [end select_tree_5]
+      // [start select_tree_6]
+      'select_tree_6' => [ 
+         'exclude' => 1,
+         'label' => 'select_tree_6 categories',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectTree',
+            'foreign_table' => 'sys_category',
+            'foreign_table_where' => 'AND ({#sys_category}.{#sys_language_uid} = 0 OR {#sys_category}.{#l10n_parent} = 0) ORDER BY sys_category.sorting',
+            'size' => 20,
+            'treeConfig' => [ 
+               'parentField' => 'parent',
+               'appearance' => [ 
+                  'expandAll' => 1,
+                  'showHeader' => 1,
+               ],
+            ],
+         ],
+      ],
+      // [end select_tree_6]
+      // [start select_requestUpdate_1]
+      'select_requestUpdate_1' => [ 
+         'exclude' => 1,
+         'label' => 'select_requestUpdate_1',
+         'onChange' => 'reload',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'Just an item',
+                  '1' => 1,
+               ],
+               '1' => [ 
+                  '0' => 'bar',
+                  '1' => 'bar',
+               ],
+               '2' => [ 
+                  '0' => 'and yet another one',
+                  '1' => -1,
+               ],
+            ],
+         ],
+      ],
+      // [end select_requestUpdate_1]
+      // [start flex_1]
+      'flex_1' => [ 
+         'exclude' => 1,
+         'label' => 'flex_1',
+         'config' => [ 
+            'type' => 'flex',
+            'ds' => [ 
+               'default' => '
                         <T3DataStructure>
                             <sheets>
 
@@ -985,15 +1369,14 @@ return [
                             </sheets>
                         </T3DataStructure>
                     ',
-                ],
             ],
-        ],
-
-    ],
-
-    'types' => [
-        '0' => [
-            'showitem' => '
+         ],
+      ],
+      // [end flex_1]
+   ],
+   'types' => [ 
+      '0' => [ 
+         'showitem' => '
                 --div--;renderType=selectSingle,
                     select_single_1, select_single_2, select_single_3, select_single_4, select_single_5,
                     select_single_7, select_single_12, select_single_8, select_single_13, select_single_10,
@@ -1015,7 +1398,6 @@ return [
                 --div--;meta,
                     sys_language_uid, l10n_parent, l10n_source,
             ',
-        ],
-    ],
-
+      ],
+   ],
 ];

@@ -21,7 +21,7 @@ Its state can be inverted via :code:`invertStateDisplay`.
    Examples/DefaultExamples
 
 
-.. figure:: Images/TypeCheckStyleguide2.png
+.. figure:: /Examples/Images/Styleguide/Checkbox2.png
    :alt: Simple checkbox with default render type
    :class: with-shadow
 

@@ -16,7 +16,7 @@ All examples listed here can be found in the :ref:`extension styleguide
 Example: Simple checkbox with label
 ===================================
 
-.. figure:: ../Images/TypeCheckStyleguide2.png
+.. figure:: /Examples/Images/Styleguide/Checkbox2.png
   :alt: Simple checkbox with label (checkbox_2)
   :class: with-shadow
 
@@ -24,19 +24,11 @@ Example: Simple checkbox with label
 
 TCA:
 
-.. code-block:: php
-
-  'checkbox_2' => [
-     'exclude' => 1,
-     'label' => 'checkbox_2 one checkbox with label',
-     'config' => [
-        'type' => 'check',
-        'items' => [
-           // label, value
-           ['foo', ''],
-        ],
-     ]
-  ],
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start checkbox_2
+   :end-before: end checkbox_2
+   :lines: 2-
 
 If the checkbox is checked, the value for the field will be 1,
 if unchecked, it will be 0.
@@ -65,7 +57,7 @@ if unchecked, it will be 0.
 Example: Four checkboxes in three columns
 =========================================
 
-.. figure:: ../Images/TypeCheckStyleguide12.png
+.. figure:: /Examples/Images/Styleguide/Checkbox12.png
   :alt: Four checkboxes in three columns (checkbox_12)
   :class: with-shadow
 
@@ -73,23 +65,12 @@ Example: Four checkboxes in three columns
 
 TCA:
 
-.. code-block:: php
 
-  'checkbox_12' => [
-     'exclude' => 1,
-     'label' => 'checkbox_12 cols=3',
-     'config' => [
-        'type' => 'check',
-        'items' => [
-           // label, value
-           ['foo1', ''],
-           ['foo2', ''],
-           ['foo3', ''],
-           ['foo4', ''],
-        ],
-        'cols' => '3',
-     ],
-  ],
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start checkbox_12
+   :end-before: end checkbox_12
+   :lines: 2-
 
 If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 | 4 | 8`).
 
@@ -130,31 +111,17 @@ If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 |
 Example: Checkboxes with inline floating
 ========================================
 
-.. figure:: ../Images/TypeCheckStyleguide16.png
+.. figure:: /Examples/Images/Styleguide/Checkbox16.png
   :alt: Checkboxes wit inline floating (checkbox_16)
   :class: with-shadow
 
   Checkboxes with inline floating (checkbox_16)
 
-.. code-block:: php
-
-  'checkbox_16' => [
-     'exclude' => 1,
-     'label' => 'checkbox_16 cols=inline',
-     'config' => [
-        'type' => 'check',
-        'items' => [
-           ['Mo', ''],
-           ['Tu', ''],
-           ['We', ''],
-           ['Th', ''],
-           ['Fr', ''],
-           ['Sa', ''],
-           ['Su', ''],
-        ],
-        'cols' => 'inline',
-     ],
-  ],
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start checkbox_16
+   :end-before: end checkbox_16
+   :lines: 2-
 
 This will display as many checkbox items as will fit in one row. Without inline,
 each checkbox would be displayed in a separate row.

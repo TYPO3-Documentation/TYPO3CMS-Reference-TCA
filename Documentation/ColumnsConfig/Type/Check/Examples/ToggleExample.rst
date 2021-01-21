@@ -10,28 +10,18 @@ Examples
 Example: Single checkbox with toggle
 ====================================
 
-.. figure:: ../Images/TypeCheckStyleguide17.png
+.. figure:: /Examples/Images/Styleguide/Checkbox17.png
   :alt: Single checkbox with toggle (checkbox_17)
   :class: with-shadow
 
   Single checkbox with toggle (checkbox_17)
 
-.. code-block:: php
 
-  'checkbox_17' => [
-     'exclude' => 1,
-     'label' => 'checkbox_17 single checkbox with toggle',
-     'config' => [
-        'type' => 'check',
-        'renderType' => 'checkboxToggle',
-        'items' => [
-           [
-              0 => '',
-              1 => '',
-           ]
-        ],
-     ]
-  ],
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start checkbox_17
+   :end-before: end checkbox_17
+   :lines: 2-
 
 `checkboxToggle`: Instead of checkboxes, a toggle item is displayed.
 
@@ -41,29 +31,18 @@ Example: Single checkbox with toggle
 Example: Single checkbox with toggle inverted state display
 ===========================================================
 
-.. figure:: ../Images/TypeCheckStyleguide18.png
+.. figure:: /Examples/Images/Styleguide/Checkbox18.png
   :alt: Single checkbox with toggle inverted state display (checkbox_18)
   :class: with-shadow
 
   Single checkbox with toggle inverted state display (checkbox_18)
 
-.. code-block:: php
 
-  'checkbox_18' => [
-     'exclude' => 1,
-     'label' => 'checkbox_18 single checkbox with toggle inverted state display',
-     'config' => [
-        'type' => 'check',
-        'renderType' => 'checkboxToggle',
-        'items' => [
-           [
-              0 => '',
-              1 => '',
-              'invertStateDisplay' => true
-           ]
-        ],
-     ]
-  ],
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start checkbox_18
+   :end-before: end checkbox_18
+   :lines: 2-
 
 `invertedStateDisplay`:  A checkbox is marked checked if the database bit is
 not set and vice versa.

@@ -23,3 +23,13 @@ eval
 
    maximumRecordsCheckedInPid
       Similar to :code:`maximumRecordsChecked` but with the validation scope limited to records stored in the same page.
+
+.. figure:: /Examples/Images/Styleguide/Checkbox2.png
+  :alt: Simple checkbox with label (checkbox_2)
+  :class: with-shadow
+
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start checkbox_7
+   :end-before: end checkbox_7
+   :lines: 2-

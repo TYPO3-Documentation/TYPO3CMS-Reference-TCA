@@ -22,13 +22,9 @@ In the example below, only five records from the same table will be allowed to h
 
 .. code-block:: php
 
-   'aCheckbox' => [
-      'label' => 'aLabel',
-      'config' => [
-         'type' => 'check',
-         'eval' => 'maximumRecordsChecked',
-         'validation' => [
-            'maximumRecordsChecked' => 5
-         ],
-      ],
-   ],
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start checkbox_8
+   :end-before: end checkbox_8
+   :lines: 2-
+
