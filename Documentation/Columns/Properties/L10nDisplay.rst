@@ -1,16 +1,14 @@
 .. include:: /Includes.rst.txt
 .. _columns-properties-l10n-display:
 
-=============
-l10n\_display
-=============
+====================================
+Localization display (l10n\_display)
+====================================
 
-.. confval:: l10n\_display
+.. confval:: l10n_display
 
    :Required: false
-
    :type: string (list of keywords)
-
    :Scope: Display
 
    Localization display, see :ref:`l10n\_mode <columns-properties-l10n-mode>`.
@@ -30,3 +28,37 @@ l10n\_display
       :ref:`l10n_mode <columns-properties-l10n-mode>` is set to
       :php:`'exclude'`. While `exclude` defines the field not to be
       translatable, this option activates the display of the default data.
+
+
+Examples
+========
+
+The following field has the option :php:`'l10n_display' => 'defaultAsReadonly'` 
+set:
+
+.. figure:: /Examples/Images/Styleguide/SelectSingle13Translated.png
+   :class: with-shadow
+
+   Select field with 'l10n_display' => 'defaultAsReadonly'
+
+Complete definition of the field select_single_13:
+
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_select.php
+   :language: php
+   :start-at: start select_single_13
+   :end-before: end select_single_13
+   :linenos:
+   :emphasize-lines: 5
+   
+While the following has no :php:`'l10n_display'` definition:
+
+.. figure:: /Examples/Images/Styleguide/SelectSingle8Translated.png
+   :class: with-shadow
+
+
+Complete definition of the field select_single_8:
+
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_select.php
+   :language: php
+   :start-at: start select_single_8
+   :end-before: end select_single_8

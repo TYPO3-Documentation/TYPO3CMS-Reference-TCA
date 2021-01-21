@@ -61,7 +61,7 @@ displayCond
    HIDE\_FOR\_NON\_ADMINS
       This will hide the field for all non-admin users while admins can see it.
       Useful for FlexForm container fields which are not supposed to be edited directly via the FlexForm but
-      rather through some other interface (TemplaVoilà's Page module for instance).
+      rather through some other interface.
 
    USER
       userFunc call with a fully qualified class name.
@@ -91,63 +91,88 @@ displayCond
    and to flex section container element fields. :code:`FIELD` references can be prefixed with a sheet name to
    reference a field from a neighbor sheet, see examples below.
 
-   **Examples:**
+.. tip::
+   Fields used in a conditions should have the column option
+   :confval:`onChange` set to reload.
 
-   This example will require the field named "tx\_templavoila\_ds" to be true, otherwise the field for which this rule
-   is set will not be displayed::
 
-      'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
+Examples
+========
 
-   Multiple conditions can be combined::
+Simple display condition
+------------------------
 
-      'displayCond' => [
-         'AND' => [
-            'FIELD:tx_templavoila_ds:REQ:true',
-            'FIELD:header:=:Headline',
-         ],
+This example will require the field named "tx\_templavoila\_ds" to be true, otherwise the field for which this rule
+is set will not be displayed::
+
+   'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
+
+
+Combining conditions
+--------------------
+
+Multiple conditions can be combined::
+
+   'displayCond' => [
+      'AND' => [
+         'FIELD:tx_templavoila_ds:REQ:true',
+         'FIELD:header:=:Headline',
       ],
+   ],
 
-   Going further the next example defines the following conditions: for the
-   "example_field" field to be displayed, the content element must be in the
-   default language. Furthermore it must be a text-type element or have the
-   headline "Example" defined::
 
-      'displayCond' => [
-         'AND' => [
-            'FIELD:sys_language_uid:=:0',
-            'OR' => [
-               'FIELD:CType:=:text',
-               'FIELD:header:=:Example'
-            ]
+A complex example
+-----------------
+
+Going further the next example defines the following conditions: for the
+"example_field" field to be displayed, the content element must be in the
+default language. Furthermore it must be a text-type element or have the
+headline "Example" defined::
+
+   'displayCond' => [
+      'AND' => [
+         'FIELD:sys_language_uid:=:0',
+         'OR' => [
+            'FIELD:CType:=:text',
+            'FIELD:header:=:Example'
          ]
-      ];
+      ]
+   ];
 
-   Using :code:`OR` and :code:`AND` within FlexForms works like this:
 
-   .. code-block:: xml
+A complex example in a flexform
+-------------------------------
 
-      <displayCond>
-         <and>
-            <value1>FIELD:sys_language_uid:=:0</value1>
-            <or>
-               <value1>FIELD:CType:=:text</value1>
-               <value2>FIELD:header:=:Example</value2>
-            </or>
-         </and>
-      </displayCond>
+Using :code:`OR` and :code:`AND` within FlexForms works like this:
 
-   Flex form fields can access field values from various different sources:
+.. code-block:: xml
 
-   .. code-block:: xml
+   <displayCond>
+      <and>
+         <value1>FIELD:sys_language_uid:=:0</value1>
+         <or>
+            <value1>FIELD:CType:=:text</value1>
+            <value2>FIELD:header:=:Example</value2>
+         </or>
+      </and>
+   </displayCond>
 
-      <!-- Hide field if value of record field "header" is not "true" -->
-      <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
-      <!-- Hide field if value of parent record field "field_1" is not "foo" -->
-      <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
-      <!-- Hide field if value of neighbour field "flexField_1 on same sheet is not "foo" -->
-      <displayCond>FIELD:flexField_1:!=:foo</displayCond>
-      <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
-      <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
+
+Access values in a flexform
+---------------------------
+
+Flex form fields can access field values from various different sources:
+
+.. code-block:: xml
+
+   <!-- Hide field if value of record field "header" is not "true" -->
+   <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
+   <!-- Hide field if value of parent record field "field_1" is not "foo" -->
+   <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
+   <!-- Hide field if value of neighbour field "flexField_1 on same sheet is not "foo" -->
+   <displayCond>FIELD:flexField_1:!=:foo</displayCond>
+   <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
+   <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
 
 .. versionchanged:: 8
 
