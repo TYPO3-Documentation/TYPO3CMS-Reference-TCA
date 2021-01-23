@@ -17,3 +17,18 @@ cols
    "floating" and there will be as many in one row as fits to browser width.
 
    Note checkboxes will still wrap if browser width is not sufficient.
+
+Examples
+========
+
+Fixes columns
+-------------
+
+.. include:: /Examples/Images/Includes/Checkbox2.rst.txt
+.. include:: /Examples/Snippets/Includes/Checkbox2.rst.txt
+
+Inline columns
+--------------
+
+.. include:: /Examples/Images/Includes/Checkbox16.rst.txt
+.. include:: /Examples/Snippets/Includes/Checkbox16.rst.txt

@@ -32,7 +32,7 @@ How to use the `styleguide` extension
    you can delete the example page tree by clicking the other button
    :guilabel:`Delete styleguide page tree and all styleguide data records`
 
-   .. image:: Images/StyleguideCreateTCA.png
+   .. figure:: Images/StyleguideCreateTCA.png
       :alt: some image
       :class: with-shadow
 
@@ -47,7 +47,7 @@ How to use the `styleguide` extension
    other languages can be used to see examples of localization and the relation 
    between languages.
 
-   .. image:: Images/StyleguideViewExample.png
+   .. figure:: Images/StyleguideViewExample.png
       :alt: some image
       :class: with-shadow
 
@@ -72,7 +72,7 @@ How to use the `styleguide` extension
    field, in this example `checkbox_9`. You can then have a look at the TCA
    definition in a working example.
 
-   .. image:: Images/StyleguideViewExample.png
+   .. figure:: Images/StyleguideViewExample.png
       :alt: some image
       :class: with-shadow
 

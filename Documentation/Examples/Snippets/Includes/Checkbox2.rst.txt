@@ -1,0 +1,5 @@
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start checkbox_2
+   :end-before: end checkbox_2
+   :lines: 2-

@@ -48,3 +48,10 @@ items
 
    labelUnchecked (string)
       Mandatory property for renderType `checkboxLabeledToggle`: Text shown if element is not selected.
+
+
+Examples
+========
+
+.. include:: /Examples/Images/Includes/Checkbox3.rst.txt
+.. include:: /Examples/Snippets/Includes/Checkbox3.rst.txt

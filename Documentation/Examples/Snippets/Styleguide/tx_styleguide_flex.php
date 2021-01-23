@@ -10,7 +10,7 @@ return [
       'delete' => 'deleted',
       'sortby' => 'sorting',
       'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
-      'versioningWS' => 1,
+      'versioningWS' => true,
       'origUid' => 't3_origuid',
       'languageField' => 'sys_language_uid',
       'transOrigPointerField' => 'l10n_parent',
@@ -33,10 +33,11 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end hidden]
       // [start sys_language_uid]
       'sys_language_uid' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
          'config' => [ 
             'type' => 'select',
@@ -52,6 +53,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end sys_language_uid]
       // [start l10n_parent]
       'l10n_parent' => [ 
@@ -71,10 +73,11 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end l10n_parent]
       // [start l10n_source]
       'l10n_source' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'displayCond' => 'FIELD:sys_language_uid:>:0',
          'label' => 'Translation source',
          'config' => [ 
@@ -91,6 +94,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end l10n_source]
       // [start l10n_diffsource]
       'l10n_diffsource' => [ 
@@ -99,6 +103,7 @@ return [
             'default' => '',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end l10n_diffsource]
       // [start flex_5]
       'flex_5' => [ 
@@ -154,6 +159,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_5]
       // [start flex_1]
       'flex_1' => [ 
@@ -233,6 +239,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_1]
       // [start flex_2]
       'flex_2' => [ 
@@ -307,6 +314,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_2]
       // [start flex_3]
       'flex_3' => [ 
@@ -346,6 +354,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_3]
       // [start flex_6]
       'flex_6' => [ 
@@ -505,6 +514,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_6]
       // [start flex_6_select_1]
       'flex_6_select_1' => [ 
@@ -526,6 +536,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_6_select_1]
       // [start flex_4]
       'flex_4' => [ 
@@ -613,6 +624,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_4]
       // [start flex_4_select_1]
       'flex_4_select_1' => [ 
@@ -635,6 +647,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_4_select_1]
       // [start flex_7]
       'flex_7' => [ 
@@ -804,6 +817,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_7]
       // [start flex_7_select_1]
       'flex_7_select_1' => [ 
@@ -826,6 +840,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_flex"
       // [end flex_7_select_1]
    ],
    'types' => [ 

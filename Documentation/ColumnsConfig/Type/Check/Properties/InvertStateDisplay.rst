@@ -17,15 +17,19 @@ invertStateDisplay
 Example
 =======
 
+Toggle checkbox with invertStateDisplay
+---------------------------------------
+
+.. include:: /Examples/Images/Includes/Checkbox18.rst.txt
+.. include:: /Examples/Snippets/Includes/Checkbox18.rst.txt
+
+Field hidden/visible in table tt_content
+----------------------------------------
+
 The field :sql:`hidden` is set to 1 if the record is hidden and to 0 if the
 record is visibile. However the field usually carries a label like
 :guilabel:`Enabled`. It is then displayed as "on", when the underlying
 field is set to 0. The following examples is from the core, table
 :sql:`tt_content`:
 
-
-.. literalinclude:: /Examples/Snippets/Core/tt_content.php
-   :language: php
-   :start-at: start hidden
-   :end-before: end hidden
-   :lines: 2-
+.. include:: /Examples/Snippets/Core/Includes/TtContentHidden.rst.txt

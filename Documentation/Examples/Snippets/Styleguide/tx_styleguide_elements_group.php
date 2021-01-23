@@ -10,7 +10,7 @@ return [
       'delete' => 'deleted',
       'sortby' => 'sorting',
       'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
-      'versioningWS' => 1,
+      'versioningWS' => true,
       'origUid' => 't3_origuid',
       'languageField' => 'sys_language_uid',
       'transOrigPointerField' => 'l10n_parent',
@@ -33,10 +33,11 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end hidden]
       // [start sys_language_uid]
       'sys_language_uid' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
          'config' => [ 
             'type' => 'select',
@@ -52,6 +53,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end sys_language_uid]
       // [start l10n_parent]
       'l10n_parent' => [ 
@@ -71,10 +73,11 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end l10n_parent]
       // [start l10n_source]
       'l10n_source' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'displayCond' => 'FIELD:sys_language_uid:>:0',
          'label' => 'Translation source',
          'config' => [ 
@@ -91,6 +94,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end l10n_source]
       // [start l10n_diffsource]
       'l10n_diffsource' => [ 
@@ -99,6 +103,7 @@ return [
             'default' => '',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end l10n_diffsource]
       // [start group_db_1]
       'group_db_1' => [ 
@@ -111,17 +116,18 @@ return [
             'allowed' => 'be_users,be_groups',
             'fieldControl' => [ 
                'editPopup' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
                'addRecord' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
                'listModule' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_db_1]
       // [start group_db_2]
       'group_db_2' => [ 
@@ -133,11 +139,12 @@ return [
             'allowed' => 'be_users,be_groups',
             'fieldWizard' => [ 
                'recordsOverview' => [ 
-                  'disabled' => 1,
+                  'disabled' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_db_2]
       // [start group_db_9]
       'group_db_9' => [ 
@@ -149,11 +156,12 @@ return [
             'allowed' => 'be_users,be_groups',
             'fieldWizard' => [ 
                'tableList' => [ 
-                  'disabled' => 1,
+                  'disabled' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_db_9]
       // [start group_db_3]
       'group_db_3' => [ 
@@ -165,11 +173,12 @@ return [
             'allowed' => 'tx_styleguide_staticdata',
             'fieldControl' => [ 
                'elementBrowser' => [ 
-                  'disable' => 1,
+                  'disable' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_db_3]
       // [start group_db_8]
       'group_db_8' => [ 
@@ -179,9 +188,10 @@ return [
             'type' => 'group',
             'internal_type' => 'db',
             'allowed' => 'tx_styleguide_staticdata',
-            'multiple' => 1,
+            'multiple' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_db_8]
       // [start group_db_4]
       'group_db_4' => [ 
@@ -195,6 +205,7 @@ return [
             'maxitems' => 1,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_db_4]
       // [start group_db_5]
       'group_db_5' => [ 
@@ -208,6 +219,7 @@ return [
             'readOnly' => 1,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_db_5]
       // [start group_db_7]
       'group_db_7' => [ 
@@ -219,7 +231,30 @@ return [
             'allowed' => 'be_users',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_db_7]
+      // [start group_db_10]
+      'group_db_10' => [ 
+         'exclude' => 1,
+         'label' => 'group_db_10 allowed=pages size=1',
+         'config' => [ 
+            'type' => 'group',
+            'internal_type' => 'db',
+            'allowed' => 'pages',
+            'maxitems' => 1,
+            'minitems' => 0,
+            'size' => 1,
+            'default' => 0,
+            'suggestOptions' => [ 
+               'default' => [ 
+                  'additionalSearchFields' => 'nav_title, alias, url',
+                  'addWhere' => 'AND pages.doktype = 1',
+               ],
+            ],
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
+      // [end group_db_10]
       // [start group_folder_1]
       'group_folder_1' => [ 
          'exclude' => 1,
@@ -230,6 +265,7 @@ return [
             'internal_type' => 'folder',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_folder_1]
       // [start group_requestUpdate_1]
       'group_requestUpdate_1' => [ 
@@ -242,6 +278,7 @@ return [
             'allowed' => 'be_users,be_groups',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end group_requestUpdate_1]
       // [start flex_1]
       'flex_1' => [ 
@@ -349,13 +386,14 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_group"
       // [end flex_1]
    ],
    'types' => [ 
       '0' => [ 
          'showitem' => '
                 --div--;internal_type=db,
-                    group_db_1, group_db_2, group_db_9, group_db_3, group_db_8, group_db_4, group_db_5, group_db_7,
+                    group_db_1, group_db_2, group_db_9, group_db_3, group_db_8, group_db_4, group_db_5, group_db_7, group_db_10,
                 --div--;internal_type=folder,
                     group_folder_1,
                 --div--;in flex,

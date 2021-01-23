@@ -1,0 +1,16 @@
+.. code-block:: xml
+
+  <settings.checkbox_2>
+     <TCEforms>
+         <label>checkbox_2 one checkbox with label</label>
+         <config>
+             <type>check</type>
+             <items type="array">
+                 <numIndex index="0" type="array">
+                     <numIndex index="0">foo</numIndex>
+                     <numIndex index="1"></numIndex>
+                 </numIndex>
+             </items>
+         </config>
+     </TCEforms>
+  </settings.checkbox_2>

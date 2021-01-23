@@ -6,7 +6,6 @@
 Checkboxes
 ==========
 
-.. _columns-check-introduction:
 
 Introduction
 ============
@@ -19,6 +18,14 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 .. tip::
     This means that you should check the bits of values from single-checkbox
     fields and not just whether it is true or false.
+
+
+.. include:: /Examples/Images/Includes/Checkbox2.rst.txt
+.. include:: /Examples/Images/Includes/Checkbox16.rst.txt
+.. include:: /Examples/Images/Includes/Checkbox19.rst.txt
+.. include:: /Examples/Images/Includes/Checkbox17.rst.txt
+
+.. _columns-check-introduction:
 
 .. warning::
     Resorting the 'items' of a type='check' config results in single items moving to different bit positions.

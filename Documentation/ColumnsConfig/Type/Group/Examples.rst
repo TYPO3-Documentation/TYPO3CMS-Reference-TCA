@@ -5,38 +5,29 @@
 Examples
 ========
 
+
+.. _tca_example_group_db_10:
+
 Group relation to a single page
--------------------------------
+===============================
 
 .. figure:: Images/TypeGroupDbSize1.png
-   :alt: Group relation to a single page (group_db_single)
+   :alt: Group relation to a single page (group_db_10)
    :class: with-shadow
 
-   Group relation to a single page (group_db_single)
+   Group relation to a single page (group_db_10)
 
-.. code-block:: php
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_group.php
+   :language: php
+   :start-at: start group_db_10
+   :end-before: end group_db_10
+   :lines: 2-
 
-   'group_db_single' => [
-      'label' => 'group_db_1 allowed=pages size=1',
-      'config' => [
-         'type' => 'group',
-         'internal_type' => 'db',
-         'allowed' => 'pages',
-         'maxitems' => 1,
-         'minitems' => 0,
-         'size' => 1,
-         'default' => 0,
-         'suggestOptions' => [
-            'default' => [
-               'additionalSearchFields' => 'nav_title, alias, url',
-               'addWhere' => 'AND pages.doktype = 1'
-            ]
-         ]
-      ]
-   ]
+
+.. _tca_example_group_db_1:
 
 Group relation to be_groups and be_users
-----------------------------------------
+========================================
 
 
 .. figure:: Images/TypeGroupDbStyleguide1.png
@@ -45,24 +36,9 @@ Group relation to be_groups and be_users
 
    Group relation to be_groups and be_users with some selected records (group_db_1)
 
-.. code-block:: php
 
-    'group_db_1' => [
-        'label' => 'group_db_1 allowed=be_users,be_groups',
-        'config' => [
-            'type' => 'group',
-            'internal_type' => 'db',
-            'allowed' => 'be_users,be_groups',
-            'fieldControl' => [
-                'editPopup' => [
-                    'disabled' => false,
-                ],
-                'addRecord' => [
-                    'disabled' => false,
-                ],
-                'listModule' => [
-                    'disabled' => false,
-                ],
-            ],
-        ],
-    ],
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_group.php
+   :language: php
+   :start-at: start group_db_1
+   :end-before: end group_db_1
+   :lines: 2-

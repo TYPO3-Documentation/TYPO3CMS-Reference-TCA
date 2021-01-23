@@ -1,0 +1,5 @@
+.. figure:: /Examples/Images/Styleguide/Checkbox16.png
+  :alt: Checkboxes wit inline floating (checkbox_16)
+  :class: with-shadow
+
+  :ref:`Checkboxes with inline floating (checkbox_16) <tca_example_checkbox_16>`

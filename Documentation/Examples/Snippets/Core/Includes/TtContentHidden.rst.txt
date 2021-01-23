@@ -1,0 +1,5 @@
+.. literalinclude:: /Examples/Snippets/Core/tt_content.php
+   :language: php
+   :start-at: start hidden
+   :end-before: end hidden
+   :lines: 2-

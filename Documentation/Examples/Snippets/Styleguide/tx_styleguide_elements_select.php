@@ -10,7 +10,7 @@ return [
       'delete' => 'deleted',
       'sortby' => 'sorting',
       'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
-      'versioningWS' => 1,
+      'versioningWS' => true,
       'origUid' => 't3_origuid',
       'languageField' => 'sys_language_uid',
       'transOrigPointerField' => 'l10n_parent',
@@ -33,10 +33,11 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end hidden]
       // [start sys_language_uid]
       'sys_language_uid' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
          'config' => [ 
             'type' => 'select',
@@ -52,6 +53,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end sys_language_uid]
       // [start l10n_parent]
       'l10n_parent' => [ 
@@ -71,10 +73,11 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end l10n_parent]
       // [start l10n_source]
       'l10n_source' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'displayCond' => 'FIELD:sys_language_uid:>:0',
          'label' => 'Translation source',
          'config' => [ 
@@ -91,6 +94,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end l10n_source]
       // [start l10n_diffsource]
       'l10n_diffsource' => [ 
@@ -99,6 +103,7 @@ return [
             'default' => '',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end l10n_diffsource]
       // [start select_single_1]
       'select_single_1' => [ 
@@ -120,6 +125,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_1]
       // [start select_single_2]
       'select_single_2' => [ 
@@ -141,6 +147,7 @@ return [
             'itemsProcFunc' => 'TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeSelect2ItemsProcFunc->itemsProcFunc',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_2]
       // [start select_single_3]
       'select_single_3' => [ 
@@ -168,10 +175,11 @@ return [
                ],
             ],
             'foreign_table' => 'tx_styleguide_staticdata',
-            'foreign_table_where' => 'AND {#tx_styleguide_staticdata}.{#value_1} LIKE '%foo%' ORDER BY uid',
+            'foreign_table_where' => 'AND {#tx_styleguide_staticdata}.{#value_1} LIKE \'%foo%\' ORDER BY uid',
             'foreign_table_prefix' => 'A prefix: ',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_3]
       // [start select_single_4]
       'select_single_4' => [ 
@@ -194,6 +202,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_4]
       // [start select_single_5]
       'select_single_5' => [ 
@@ -216,11 +225,12 @@ return [
             ],
             'fieldWizard' => [ 
                'selectIcons' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_5]
       // [start select_single_7]
       'select_single_7' => [ 
@@ -240,11 +250,12 @@ return [
             'fileFolder_recursions' => 1,
             'fieldWizard' => [ 
                'selectIcons' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_7]
       // [start select_single_8]
       'select_single_8' => [ 
@@ -281,6 +292,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_8]
       // [start select_single_10]
       'select_single_10' => [ 
@@ -310,6 +322,7 @@ return [
             'size' => 6,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_10]
       // [start select_single_11]
       'select_single_11' => [ 
@@ -331,6 +344,7 @@ return [
             'size' => 2,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_11]
       // [start select_single_12]
       'select_single_12' => [ 
@@ -342,11 +356,12 @@ return [
             'foreign_table' => 'tx_styleguide_elements_select_single_12_foreign',
             'fieldWizard' => [ 
                'selectIcons' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_12]
       // [start select_single_13]
       'select_single_13' => [ 
@@ -369,6 +384,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_13]
       // [start select_single_14]
       'select_single_14' => [ 
@@ -378,7 +394,7 @@ return [
          'config' => [ 
             'type' => 'select',
             'renderType' => 'selectSingle',
-            'readOnly' => 1,
+            'readOnly' => true,
             'items' => [ 
                '0' => [ 
                   '0' => 'bar',
@@ -387,6 +403,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_14]
       // [start select_single_15]
       'select_single_15' => [ 
@@ -399,6 +416,7 @@ return [
             'MM' => 'tx_styleguide_elements_select_single_15_mm',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_15]
       // [start select_singlebox_1]
       'select_singlebox_1' => [ 
@@ -432,6 +450,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_singlebox_1]
       // [start select_singlebox_2]
       'select_singlebox_2' => [ 
@@ -441,7 +460,7 @@ return [
          'config' => [ 
             'type' => 'select',
             'renderType' => 'selectSingleBox',
-            'readOnly' => 1,
+            'readOnly' => true,
             'items' => [ 
                '0' => [ 
                   '0' => 'foo 1',
@@ -466,6 +485,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_singlebox_2]
       // [start select_checkbox_1]
       'select_checkbox_1' => [ 
@@ -491,6 +511,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_checkbox_1]
       // [start select_checkbox_2]
       'select_checkbox_2' => [ 
@@ -516,6 +537,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_checkbox_2]
       // [start select_checkbox_3]
       'select_checkbox_3' => [ 
@@ -549,6 +571,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_checkbox_3]
       // [start select_checkbox_4]
       'select_checkbox_4' => [ 
@@ -558,7 +581,7 @@ return [
          'config' => [ 
             'type' => 'select',
             'renderType' => 'selectCheckBox',
-            'readOnly' => 1,
+            'readOnly' => true,
             'items' => [ 
                '0' => [ 
                   '0' => 'foo 1',
@@ -571,6 +594,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_checkbox_4]
       // [start select_checkbox_5]
       'select_checkbox_5' => [ 
@@ -580,7 +604,7 @@ return [
             'type' => 'select',
             'renderType' => 'selectCheckBox',
             'appearance' => [ 
-               'expandAll' => 1,
+               'expandAll' => true,
             ],
             'items' => [ 
                '0' => [ 
@@ -614,6 +638,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_checkbox_5]
       // [start select_checkbox_6]
       'select_checkbox_6' => [ 
@@ -654,6 +679,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_checkbox_6]
       // [start select_multiplesidebyside_1]
       'select_multiplesidebyside_1' => [ 
@@ -695,9 +721,10 @@ return [
             ],
             'size' => 3,
             'autoSizeMax' => 5,
-            'multiple' => 1,
+            'multiple' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_1]
       // [start select_multiplesidebyside_2]
       'select_multiplesidebyside_2' => [ 
@@ -740,10 +767,11 @@ return [
                   '1' => 6,
                ],
             ],
-            'multiple' => 1,
+            'multiple' => true,
             'exclusiveKeys' => '1,2',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_2]
       // [start select_multiplesidebyside_3]
       'select_multiplesidebyside_3' => [ 
@@ -771,6 +799,7 @@ return [
             'size' => 2,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_3]
       // [start select_multiplesidebyside_5]
       'select_multiplesidebyside_5' => [ 
@@ -813,6 +842,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_5]
       // [start select_multiplesidebyside_6]
       'select_multiplesidebyside_6' => [ 
@@ -826,17 +856,18 @@ return [
             'autoSizeMax' => 20,
             'fieldControl' => [ 
                'editPopup' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
                'addRecord' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
                'listModule' => [ 
-                  'disabled' => ,
+                  'disabled' => false,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_6]
       // [start select_multiplesidebyside_7]
       'select_multiplesidebyside_7' => [ 
@@ -876,12 +907,13 @@ return [
                   '1' => 6,
                ],
             ],
-            'readOnly' => 1,
+            'readOnly' => true,
             'size' => 3,
             'autoSizeMax' => 5,
-            'multiple' => 1,
+            'multiple' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_7]
       // [start select_multiplesidebyside_8]
       'select_multiplesidebyside_8' => [ 
@@ -896,6 +928,7 @@ return [
             'autoSizeMax' => 5,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_8]
       // [start select_multiplesidebyside_9]
       'select_multiplesidebyside_9' => [ 
@@ -925,6 +958,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_9]
       // [start select_tree_1]
       'select_tree_1' => [ 
@@ -948,17 +982,18 @@ return [
                ],
             ],
             'behaviour' => [ 
-               'allowLanguageSynchronization' => 1,
+               'allowLanguageSynchronization' => true,
             ],
             'treeConfig' => [ 
                'parentField' => 'pid',
                'appearance' => [ 
-                  'expandAll' => 1,
-                  'showHeader' => 1,
+                  'expandAll' => true,
+                  'showHeader' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_tree_1]
       // [start select_tree_2]
       'select_tree_2' => [ 
@@ -973,13 +1008,14 @@ return [
             'treeConfig' => [ 
                'parentField' => 'pid',
                'appearance' => [ 
-                  'expandAll' => 1,
-                  'showHeader' => ,
+                  'expandAll' => true,
+                  'showHeader' => false,
                   'nonSelectableLevels' => '0,1',
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_tree_2]
       // [start select_tree_3]
       'select_tree_3' => [ 
@@ -995,13 +1031,14 @@ return [
             'treeConfig' => [ 
                'parentField' => 'pid',
                'appearance' => [ 
-                  'showHeader' => 1,
-                  'expandAll' => 1,
+                  'showHeader' => true,
+                  'expandAll' => true,
                   'maxLevels' => 1,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_tree_3]
       // [start select_tree_4]
       'select_tree_4' => [ 
@@ -1017,13 +1054,14 @@ return [
             'treeConfig' => [ 
                'parentField' => 'pid',
                'appearance' => [ 
-                  'expandAll' => ,
-                  'showHeader' => 1,
+                  'expandAll' => false,
+                  'showHeader' => true,
                   'maxLevels' => 2,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_tree_4]
       // [start select_tree_5]
       'select_tree_5' => [ 
@@ -1035,17 +1073,18 @@ return [
             'renderType' => 'selectTree',
             'foreign_table' => 'pages',
             'size' => 20,
-            'readOnly' => 1,
+            'readOnly' => true,
             'maxitems' => 4,
             'treeConfig' => [ 
                'parentField' => 'pid',
                'appearance' => [ 
-                  'showHeader' => 1,
-                  'expandAll' => 1,
+                  'showHeader' => true,
+                  'expandAll' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_tree_5]
       // [start select_tree_6]
       'select_tree_6' => [ 
@@ -1060,12 +1099,13 @@ return [
             'treeConfig' => [ 
                'parentField' => 'parent',
                'appearance' => [ 
-                  'expandAll' => 1,
-                  'showHeader' => 1,
+                  'expandAll' => true,
+                  'showHeader' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_tree_6]
       // [start select_requestUpdate_1]
       'select_requestUpdate_1' => [ 
@@ -1091,6 +1131,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_requestUpdate_1]
       // [start flex_1]
       'flex_1' => [ 
@@ -1372,6 +1413,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end flex_1]
    ],
    'types' => [ 

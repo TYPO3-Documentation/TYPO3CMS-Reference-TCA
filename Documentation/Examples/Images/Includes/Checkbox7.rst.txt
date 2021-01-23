@@ -1,0 +1,6 @@
+
+.. figure:: /Examples/Images/Styleguide/Checkbox7Error.png
+  :alt: Simple checkbox with label (checkbox_7)
+  :class: with-shadow
+
+  :ref:`Checkbox can only be activated once, installation-wide <tca_example_checkbox_7>`

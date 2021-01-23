@@ -10,7 +10,7 @@ return [
       'delete' => 'deleted',
       'sortby' => 'sorting',
       'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
-      'versioningWS' => 1,
+      'versioningWS' => true,
       'origUid' => 't3_origuid',
       'languageField' => 'sys_language_uid',
       'transOrigPointerField' => 'l10n_parent',
@@ -33,10 +33,11 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end hidden]
       // [start sys_language_uid]
       'sys_language_uid' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
          'config' => [ 
             'type' => 'select',
@@ -52,6 +53,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end sys_language_uid]
       // [start l10n_parent]
       'l10n_parent' => [ 
@@ -71,10 +73,11 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end l10n_parent]
       // [start l10n_source]
       'l10n_source' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'displayCond' => 'FIELD:sys_language_uid:>:0',
          'label' => 'Translation source',
          'config' => [ 
@@ -91,6 +94,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end l10n_source]
       // [start l10n_diffsource]
       'l10n_diffsource' => [ 
@@ -99,6 +103,7 @@ return [
             'default' => '',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end l10n_diffsource]
       // [start input_1]
       'input_1' => [ 
@@ -109,10 +114,11 @@ return [
          'config' => [ 
             'type' => 'input',
             'behaviour' => [ 
-               'allowLanguageSynchronization' => 1,
+               'allowLanguageSynchronization' => true,
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_1]
       // [start input_2]
       'input_2' => [ 
@@ -124,6 +130,7 @@ return [
             'size' => 10,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_2]
       // [start input_3]
       'input_3' => [ 
@@ -134,6 +141,7 @@ return [
             'max' => 4,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_3]
       // [start input_4]
       'input_4' => [ 
@@ -144,6 +152,7 @@ return [
             'eval' => 'alpha',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_4]
       // [start input_5]
       'input_5' => [ 
@@ -154,6 +163,7 @@ return [
             'eval' => 'alphanum',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_5]
       // [start input_8]
       'input_8' => [ 
@@ -164,6 +174,7 @@ return [
             'eval' => 'double2',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_8]
       // [start input_9]
       'input_9' => [ 
@@ -174,6 +185,7 @@ return [
             'eval' => 'int',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_9]
       // [start input_10]
       'input_10' => [ 
@@ -185,6 +197,7 @@ return [
             'is_in' => 'abc123',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_10]
       // [start input_11]
       'input_11' => [ 
@@ -195,6 +208,7 @@ return [
             'eval' => 'lower',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_11]
       // [start input_12]
       'input_12' => [ 
@@ -205,6 +219,7 @@ return [
             'eval' => 'md5',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_12]
       // [start input_13]
       'input_13' => [ 
@@ -215,6 +230,7 @@ return [
             'eval' => 'nospace',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_13]
       // [start input_14]
       'input_14' => [ 
@@ -225,6 +241,7 @@ return [
             'eval' => 'null',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_14]
       // [start input_15]
       'input_15' => [ 
@@ -235,6 +252,7 @@ return [
             'eval' => 'num',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_15]
       // [start input_16]
       'input_16' => [ 
@@ -245,6 +263,7 @@ return [
             'eval' => 'password',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_16]
       // [start input_19]
       'input_19' => [ 
@@ -255,6 +274,7 @@ return [
             'eval' => 'trim',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_19]
       // [start input_20]
       'input_20' => [ 
@@ -265,6 +285,7 @@ return [
             'eval' => 'TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeInput21Eval',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_20]
       // [start input_21]
       'input_21' => [ 
@@ -275,6 +296,7 @@ return [
             'eval' => 'unique',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_21]
       // [start input_22]
       'input_22' => [ 
@@ -285,6 +307,7 @@ return [
             'eval' => 'uniqueInPid',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_22]
       // [start input_23]
       'input_23' => [ 
@@ -295,6 +318,7 @@ return [
             'eval' => 'upper',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_23]
       // [start input_24]
       'input_24' => [ 
@@ -305,6 +329,7 @@ return [
             'eval' => 'year',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_24]
       // [start input_25]
       'input_25' => [ 
@@ -320,6 +345,7 @@ return [
             'default' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_25]
       // [start input_26]
       'input_26' => [ 
@@ -330,6 +356,7 @@ return [
             'default' => 'input_26',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_26]
       // [start input_27]
       'input_27' => [ 
@@ -340,6 +367,7 @@ return [
             'placeholder' => '__row|input_26',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_27]
       // [start input_28]
       'input_28' => [ 
@@ -349,10 +377,11 @@ return [
             'type' => 'input',
             'placeholder' => '__row|input_26',
             'eval' => 'null',
-            'default' => ,
+            'default' => null,
             'mode' => 'useOrOverridePlaceholder',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_28]
       // [start input_29]
       'input_29' => [ 
@@ -364,6 +393,7 @@ return [
             'renderType' => 'inputLink',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_29]
       // [start input_30]
       'input_30' => [ 
@@ -384,6 +414,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_30]
       // [start input_31]
       'input_31' => [ 
@@ -404,6 +435,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_31]
       // [start input_32]
       'input_32' => [ 
@@ -424,6 +456,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_32]
       // [start input_33]
       'input_33' => [ 
@@ -455,6 +488,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_33]
       // [start input_34]
       'input_34' => [ 
@@ -467,6 +501,7 @@ return [
             'size' => 10,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_34]
       // [start input_35]
       'input_35' => [ 
@@ -499,6 +534,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_35]
       // [start input_36]
       'input_36' => [ 
@@ -531,6 +567,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_36]
       // [start input_37]
       'input_37' => [ 
@@ -558,6 +595,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_37]
       // [start input_38]
       'input_38' => [ 
@@ -575,6 +613,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_38]
       // [start input_39]
       'input_39' => [ 
@@ -585,6 +624,7 @@ return [
             'eval' => 'email',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_39]
       // [start input_40]
       'input_40' => [ 
@@ -593,9 +633,10 @@ return [
          'description' => 'field description',
          'config' => [ 
             'type' => 'input',
-            'readOnly' => 1,
+            'readOnly' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_40]
       // [start input_41]
       'input_41' => [ 
@@ -605,9 +646,10 @@ return [
          'config' => [ 
             'type' => 'input',
             'renderType' => 'inputLink',
-            'readOnly' => 1,
+            'readOnly' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_41]
       // [start input_42]
       'input_42' => [ 
@@ -617,9 +659,10 @@ return [
          'config' => [ 
             'type' => 'input',
             'renderType' => 'colorpicker',
-            'readOnly' => 1,
+            'readOnly' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end input_42]
       // [start inputdatetime_1]
       'inputdatetime_1' => [ 
@@ -632,6 +675,7 @@ return [
             'eval' => 'date',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_1]
       // [start inputdatetime_2]
       'inputdatetime_2' => [ 
@@ -645,6 +689,7 @@ return [
             'default' => '0000-00-00',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_2]
       // [start inputdatetime_3]
       'inputdatetime_3' => [ 
@@ -656,6 +701,7 @@ return [
             'eval' => 'datetime',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_3]
       // [start inputdatetime_4]
       'inputdatetime_4' => [ 
@@ -669,6 +715,7 @@ return [
             'default' => '0000-00-00 00:00:00',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_4]
       // [start inputdatetime_5]
       'inputdatetime_5' => [ 
@@ -680,6 +727,7 @@ return [
             'eval' => 'time',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_5]
       // [start inputdatetime_6]
       'inputdatetime_6' => [ 
@@ -691,6 +739,7 @@ return [
             'eval' => 'timesec',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_6]
       // [start inputdatetime_7]
       'inputdatetime_7' => [ 
@@ -701,9 +750,10 @@ return [
             'type' => 'input',
             'renderType' => 'inputDateTime',
             'eval' => 'date',
-            'readOnly' => 1,
+            'readOnly' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_7]
       // [start inputdatetime_8]
       'inputdatetime_8' => [ 
@@ -713,9 +763,10 @@ return [
             'type' => 'input',
             'renderType' => 'inputDateTime',
             'eval' => 'datetime',
-            'readOnly' => 1,
+            'readOnly' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_8]
       // [start inputdatetime_9]
       'inputdatetime_9' => [ 
@@ -725,9 +776,10 @@ return [
             'type' => 'input',
             'renderType' => 'inputDateTime',
             'eval' => 'time',
-            'readOnly' => 1,
+            'readOnly' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_9]
       // [start inputdatetime_10]
       'inputdatetime_10' => [ 
@@ -737,9 +789,10 @@ return [
             'type' => 'input',
             'renderType' => 'inputDateTime',
             'eval' => 'timesec',
-            'readOnly' => 1,
+            'readOnly' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end inputdatetime_10]
       // [start text_1]
       'text_1' => [ 
@@ -751,6 +804,7 @@ return [
             'type' => 'text',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_1]
       // [start text_2]
       'text_2' => [ 
@@ -762,6 +816,7 @@ return [
             'cols' => 20,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_2]
       // [start text_3]
       'text_3' => [ 
@@ -772,6 +827,7 @@ return [
             'rows' => 2,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_3]
       // [start text_4]
       'text_4' => [ 
@@ -783,6 +839,7 @@ return [
             'rows' => 2,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_4]
       // [start text_5]
       'text_5' => [ 
@@ -794,6 +851,7 @@ return [
             'default' => 'This textbox has wrap set to "off", so these long paragraphs should appear in one line: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non luctus elit. In sed nunc velit. Donec gravida eros sollicitudin ligula mollis id eleifend mauris laoreet. Donec turpis magna, pulvinar id pretium eu, blandit et nisi. Nulla facilisi. Vivamus pharetra orci sed nunc auctor condimentum. Aenean volutpat posuere scelerisque. Nullam sed dolor justo. Pellentesque id tellus nunc, id sodales diam. Sed rhoncus risus a enim lacinia tincidunt. Aliquam ut neque augue.',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_5]
       // [start text_6]
       'text_6' => [ 
@@ -805,6 +863,7 @@ return [
             'default' => 'This textbox has wrap set to "virtual", so these long paragraphs should appear in multiple lines (wrapped at the end of the textbox): Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non luctus elit. In sed nunc velit. Donec gravida eros sollicitudin ligula mollis id eleifend mauris laoreet. Donec turpis magna, pulvinar id pretium eu, blandit et nisi. Nulla facilisi. Vivamus pharetra orci sed nunc auctor condimentum. Aenean volutpat posuere scelerisque. Nullam sed dolor justo. Pellentesque id tellus nunc, id sodales diam. Sed rhoncus risus a enim lacinia tincidunt. Aliquam ut neque augue.',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_6]
       // [start text_7]
       'text_7' => [ 
@@ -815,6 +874,7 @@ return [
             'eval' => 'trim',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_7]
       // [start text_8]
       'text_8' => [ 
@@ -825,6 +885,7 @@ return [
             'eval' => 'TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeText9Eval',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_8]
       // [start text_9]
       'text_9' => [ 
@@ -836,6 +897,7 @@ return [
             'readOnly' => 1,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_9]
       // [start text_10]
       'text_10' => [ 
@@ -847,6 +909,7 @@ return [
             'format' => 'datetime',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_10]
       // [start text_11]
       'text_11' => [ 
@@ -859,6 +922,7 @@ return [
             'max' => 30,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_11]
       // [start text_12]
       'text_12' => [ 
@@ -869,6 +933,7 @@ return [
             'default' => 'text_12',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_12]
       // [start text_13]
       'text_13' => [ 
@@ -879,6 +944,7 @@ return [
             'placeholder' => '__row|text_12',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_13]
       // [start text_14]
       'text_14' => [ 
@@ -891,6 +957,7 @@ return [
             'mode' => 'useOrOverridePlaceholder',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_14]
       // [start text_15]
       'text_15' => [ 
@@ -898,10 +965,11 @@ return [
          'label' => 'text_15 enableTabulator, fixedFont',
          'config' => [ 
             'type' => 'text',
-            'enableTabulator' => 1,
-            'fixedFont' => 1,
+            'enableTabulator' => true,
+            'fixedFont' => true,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_15]
       // [start text_16]
       'text_16' => [ 
@@ -928,6 +996,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_16]
       // [start text_17]
       'text_17' => [ 
@@ -940,6 +1009,7 @@ return [
             'rows' => '5',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_17]
       // [start text_18]
       'text_18' => [ 
@@ -950,6 +1020,7 @@ return [
             'eval' => 'null',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_18]
       // [start text_19]
       'text_19' => [ 
@@ -958,11 +1029,12 @@ return [
          'config' => [ 
             'type' => 'text',
             'renderType' => 'textTable',
-            'readOnly' => 1,
+            'readOnly' => true,
             'cols' => '40',
             'rows' => '5',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end text_19]
       // [start checkbox_1]
       'checkbox_1' => [ 
@@ -973,6 +1045,7 @@ return [
             'type' => 'check',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_1]
       // [start checkbox_2]
       'checkbox_2' => [ 
@@ -988,6 +1061,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_2]
       // [start checkbox_3]
       'checkbox_3' => [ 
@@ -1013,6 +1087,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_3]
       // [start checkbox_4]
       'checkbox_4' => [ 
@@ -1040,6 +1115,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_4]
       // [start checkbox_6]
       'checkbox_6' => [ 
@@ -1059,6 +1135,7 @@ return [
             'itemsProcFunc' => 'TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeCheckbox8ItemsProcFunc->itemsProcFunc',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_6]
       // [start checkbox_7]
       'checkbox_7' => [ 
@@ -1072,6 +1149,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_7]
       // [start checkbox_8]
       'checkbox_8' => [ 
@@ -1085,6 +1163,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_8]
       // [start checkbox_9]
       'checkbox_9' => [ 
@@ -1106,6 +1185,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_9]
       // [start checkbox_10]
       'checkbox_10' => [ 
@@ -1130,6 +1210,7 @@ return [
             'cols' => '1',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_10]
       // [start checkbox_11]
       'checkbox_11' => [ 
@@ -1154,6 +1235,7 @@ return [
             'cols' => '2',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_11]
       // [start checkbox_12]
       'checkbox_12' => [ 
@@ -1182,6 +1264,7 @@ return [
             'cols' => '3',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_12]
       // [start checkbox_13]
       'checkbox_13' => [ 
@@ -1226,6 +1309,7 @@ return [
             'cols' => '4',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_13]
       // [start checkbox_14]
       'checkbox_14' => [ 
@@ -1266,6 +1350,7 @@ return [
             'cols' => '5',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_14]
       // [start checkbox_15]
       'checkbox_15' => [ 
@@ -1306,6 +1391,7 @@ return [
             'cols' => '6',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_15]
       // [start checkbox_16]
       'checkbox_16' => [ 
@@ -1344,8 +1430,10 @@ return [
                ],
             ],
             'cols' => 'inline',
+            'default' => 5,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_16]
       // [start checkbox_17]
       'checkbox_17' => [ 
@@ -1365,6 +1453,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_17]
       // [start checkbox_18]
       'checkbox_18' => [ 
@@ -1379,11 +1468,12 @@ return [
                   '1' => '',
                   'labelChecked' => 'Enabled',
                   'labelUnchecked' => 'Disabled',
-                  'invertStateDisplay' => 1,
+                  'invertStateDisplay' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_18]
       // [start checkbox_19]
       'checkbox_19' => [ 
@@ -1403,6 +1493,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_19]
       // [start checkbox_20]
       'checkbox_20' => [ 
@@ -1429,11 +1520,12 @@ return [
                   '1' => '',
                   'labelChecked' => 'On',
                   'labelUnchecked' => 'Off',
-                  'invertStateDisplay' => 1,
+                  'invertStateDisplay' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_20]
       // [start checkbox_21]
       'checkbox_21' => [ 
@@ -1448,11 +1540,12 @@ return [
                   '1' => '',
                   'labelChecked' => 'Enabled',
                   'labelUnchecked' => 'Disabled',
-                  'invertStateDisplay' => 1,
+                  'invertStateDisplay' => true,
                ],
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_21]
       // [start checkbox_24]
       'checkbox_24' => [ 
@@ -1482,6 +1575,7 @@ return [
             'cols' => '4',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_24]
       // [start checkbox_25]
       'checkbox_25' => [ 
@@ -1491,7 +1585,7 @@ return [
          'config' => [ 
             'type' => 'check',
             'renderType' => 'checkboxToggle',
-            'readOnly' => 1,
+            'readOnly' => true,
             'items' => [ 
                '0' => [ 
                   '0' => 'foo',
@@ -1502,6 +1596,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_25]
       // [start checkbox_26]
       'checkbox_26' => [ 
@@ -1511,7 +1606,7 @@ return [
          'config' => [ 
             'type' => 'check',
             'renderType' => 'checkboxLabeledToggle',
-            'readOnly' => 1,
+            'readOnly' => true,
             'items' => [ 
                '0' => [ 
                   '0' => 'foo',
@@ -1522,6 +1617,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end checkbox_26]
       // [start radio_1]
       'radio_1' => [ 
@@ -1546,6 +1642,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end radio_1]
       // [start radio_2]
       'radio_2' => [ 
@@ -1569,6 +1666,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end radio_2]
       // [start radio_3]
       'radio_3' => [ 
@@ -1644,6 +1742,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end radio_3]
       // [start radio_4]
       'radio_4' => [ 
@@ -1663,6 +1762,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end radio_4]
       // [start radio_5]
       'radio_5' => [ 
@@ -1683,6 +1783,7 @@ return [
             'itemsProcFunc' => 'TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeRadio5ItemsProcFunc->itemsProcFunc',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end radio_5]
       // [start radio_6]
       'radio_6' => [ 
@@ -1704,6 +1805,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end radio_6]
       // [start none_1]
       'none_1' => [ 
@@ -1715,6 +1817,7 @@ return [
             'pass_content' => 1,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end none_1]
       // [start none_2]
       'none_2' => [ 
@@ -1725,6 +1828,7 @@ return [
             'pass_content' => 0,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end none_2]
       // [start none_3]
       'none_3' => [ 
@@ -1735,6 +1839,7 @@ return [
             'cols' => 2,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end none_3]
       // [start none_4]
       'none_4' => [ 
@@ -1745,6 +1850,7 @@ return [
             'size' => 6,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end none_4]
       // [start none_5]
       'none_5' => [ 
@@ -1755,6 +1861,7 @@ return [
             'format' => 'datetime',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end none_5]
       // [start passthrough_1]
       'passthrough_1' => [ 
@@ -1764,6 +1871,7 @@ return [
             'type' => 'passthrough',
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end passthrough_1]
       // [start passthrough_2]
       'passthrough_2' => [ 
@@ -1774,6 +1882,7 @@ return [
             'default' => 42,
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end passthrough_2]
       // [start user_1]
       'user_1' => [ 
@@ -1787,6 +1896,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end user_1]
       // [start flex_1]
       'flex_1' => [ 
@@ -2072,6 +2182,7 @@ return [
             ],
          ],
       ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end flex_1]
    ],
    'types' => [ 

@@ -177,7 +177,7 @@ implementing a rendering. See :ref:`FormEngine docs
 
 The field would then look like this in the backend:
 
-.. figure:: ../Images/ExtendingTcaFeUsers.png
+.. figure:: Images/ExtendingTcaFeUsers.png
    :alt: New fields for fe\_users table
 
 This example is also described in TYPO3 Explained,
