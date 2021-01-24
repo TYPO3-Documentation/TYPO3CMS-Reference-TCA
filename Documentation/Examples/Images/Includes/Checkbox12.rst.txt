@@ -1,5 +1,0 @@
-.. figure:: /Examples/Images/Styleguide/Checkbox12.png
-  :alt: Four checkboxes in three columns (checkbox_12)
-  :class: with-shadow
-
-  :ref:`Four checkboxes in three columns (checkbox_12) <tca_example_checkbox_12>`

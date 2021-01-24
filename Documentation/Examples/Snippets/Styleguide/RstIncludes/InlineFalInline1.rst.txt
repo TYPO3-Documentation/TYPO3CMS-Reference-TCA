@@ -1,0 +1,6 @@
+.. Manually adjusted don't override!
+
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_inline_fal.php
+   :language: php
+   :start-at: 'inline_1'
+   :end-before: 'inline_2'

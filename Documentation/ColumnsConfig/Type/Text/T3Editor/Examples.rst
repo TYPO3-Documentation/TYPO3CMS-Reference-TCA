@@ -4,22 +4,13 @@
 Example
 =======
 
-.. figure:: ../Images/T3editorStyleguide1.png
-    :alt: Code highlighting with t3editor (t3editor_1)
-    :class: with-shadow
+.. _t3editor_1:
 
-    Code highlighting with t3editor (t3editor_1)
+Code highlighting with t3editor
+===============================
 
 
-.. code-block:: php
+.. include:: Documentation/Examples/Images/Styleguide/RstIncludes/T3editor1.rst.txt
 
-    't3editor_1' => [
-        'label' => 't3editor_1 format=html, rows=7',
-        'config' => [
-            'type' => 'text',
-            'renderType' => 't3editor',
-            'format' => 'html',
-            'rows' => 7,
-        ],
-    ],
+.. include:: Documentation/Examples/Images/Styleguide/RstIncludes/T3editor1.rst.txt
 

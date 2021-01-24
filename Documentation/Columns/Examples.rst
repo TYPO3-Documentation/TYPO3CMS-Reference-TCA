@@ -19,20 +19,11 @@ The following examples all can be found in the
 Input field with slider
 =======================
 
-.. figure:: /Examples/Images/Styleguide/Input30.png
-    :alt: Slider input field
-    :class: with-shadow
-
-    Slider input field
-
+.. include:: /Examples/Images/Styleguide/RstIncludes/Input30.rst.txt
 
 Input field with a slider, allowing integer values between -90 and 90:
-    
-.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
-   :language: php
-   :start-at: start input_30
-   :end-before: end input_30
-   :lines: 2-
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input30.rst.txt
 
 
 .. index:: 
@@ -42,62 +33,23 @@ Input field with a slider, allowing integer values between -90 and 90:
 Select drop-down for records represented by images
 ==================================================
 
-.. figure:: /Examples/Images/Styleguide/SelectSingle12.png
-    :alt: Select images from a drop-down
-    :class: with-shadow
-
-    Select foreign records from a drop-down using selicon
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSingle12.rst.txt
 
 Select field with foreign table relation and field wizard:
 
-.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_select.php
-   :language: php
-   :start-at: start select_single_12
-   :end-before: end select_single_12
-   :lines: 2-
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle12.rst.txt
    
 The table :sql:`tx_styleguide_elements_select_single_12_foreign` is defined as
-follows::
+follows:
 
-   [
-      'ctrl' => [
-         // ...
-         'selicon_field' => 'fal_1',
-      ],
-
-      'columns' => [
-         // ...
-         'fal_1' => [
-            'label' => 'fal_1 selicon_field',
-            'exclude' => 1,
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-               'fal_1',
-               [
-                  'maxitems' => 1,
-               ],
-               $GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext']
-            ),
-         ],
-      ],
-      // ...
-
-   ];
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/SelectSingle12ForeignPart.rst.txt
 
 
 Inline relation (IRRE) spanning multiple tables
 ===============================================
 
-.. figure:: /Examples/Images/Styleguide/Inline1.png
-    :alt: Nested inline relation to a different table
-    :class: with-shadow
-
-    Nested inline relation to a different table
+.. include:: /Examples/Images/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt
 
 Inline relation to a foreign table:
 
-.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_inline_1n.php
-   :language: php
-   :start-at: start inline_1
-   :end-before: end inline_1
-   :lines: 2-
-
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt

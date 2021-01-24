@@ -1,5 +1,0 @@
-.. figure:: /Examples/Images/Styleguide/Checkbox19.png
-  :alt: Single checkbox with labeled toggle (checkbox_19)
-  :class: with-shadow
-
-  :ref:`Single checkbox with labeled toggle <tca_example_checkbox_19>`

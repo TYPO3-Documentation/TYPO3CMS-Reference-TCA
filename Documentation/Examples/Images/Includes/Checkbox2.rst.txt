@@ -1,6 +1,0 @@
-
-.. figure:: /Examples/Images/Styleguide/Checkbox2.png
-  :alt: Simple checkbox with label (checkbox_2)
-  :class: with-shadow
-
-  :ref:`Simple checkbox with label (checkbox_2) <tca_example_checkbox_2>`

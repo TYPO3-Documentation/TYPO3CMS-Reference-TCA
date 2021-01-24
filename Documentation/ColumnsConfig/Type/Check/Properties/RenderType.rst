@@ -23,15 +23,15 @@ Examples
 default
 -------
 
-.. include:: /Examples/Images/Includes/Checkbox2.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
 
 checkboxToggle
 --------------
 
-.. include:: /Examples/Images/Includes/Checkbox17.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox17.rst.txt
 
 
 checkboxLabeledToggle
 ---------------------
 
-.. include:: /Examples/Images/Includes/Checkbox19.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox19.rst.txt

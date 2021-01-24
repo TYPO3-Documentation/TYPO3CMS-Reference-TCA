@@ -1,6 +1,0 @@
-
-.. figure:: /Examples/Images/Styleguide/Checkbox3.png
-  :alt: three checkboxes, two with labels, one without
-  :class: with-shadow
-
-  :ref:`three checkboxes, two with labels, one without <tca_example_checkbox_3>`

@@ -20,8 +20,8 @@ Example
 Toggle checkbox with invertStateDisplay
 ---------------------------------------
 
-.. include:: /Examples/Images/Includes/Checkbox18.rst.txt
-.. include:: /Examples/Snippets/Includes/Checkbox18.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox18.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Checkbox18.rst.txt
 
 Field hidden/visible in table tt_content
 ----------------------------------------

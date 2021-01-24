@@ -1,5 +1,0 @@
-.. figure:: /Examples/Images/Styleguide/Checkbox21.png
-  :alt: Single checkbox with labeled toggle inverted state display (checkbox_21)
-  :class: with-shadow
-
-  :ref:`Single checkbox with labeled toggle inverted state display (checkbox_21) <tca_example_checkbox_21>`

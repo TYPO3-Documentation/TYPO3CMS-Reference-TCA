@@ -4,6 +4,11 @@
 Example
 =======
 
+.. _tca_example_backend_layout:
+
+Backend layout editor
+=====================
+
 .. figure:: ../Images/BackendLayout.png
     :alt: Backend layout editor (config)
     :class: with-shadow

@@ -1,0 +1,6 @@
+.. Manually adjusted
+
+.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_inline_fal.php
+   :language: xml
+   :start-at: <fal>
+   :end-before: </fal>
