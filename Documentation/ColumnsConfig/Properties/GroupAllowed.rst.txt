@@ -19,3 +19,10 @@
       .. note::
           When using Extbase, you also need to fill :ref:`foreign_table <columns-group-properties-foreign-table>`
           property with the same table name as used in :ref:`allowed <columns-group-properties-allowed>` property (but with just one table name).
+
+.. deprecated:: 9.5
+   The internal types `file` and `file_reference` have been deprecated with
+   TYPO3 9 and will be removed with TYPO3 10. Extensions that used group fields
+   with these internal types should switch to use
+   :ref:`FAL references <tca_example_inline_fal_inline_1>` based on
+   type=inline instead.

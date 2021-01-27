@@ -26,5 +26,10 @@
 
     The default value is none of them - you must specify one of the values correctly!
 
-    .. important::
-        Types "file" and "file\_reference" should not be used anymore. Use FAL references instead.
+
+.. deprecated:: 9.5
+   The internal types `file` and `file_reference` have been deprecated with
+   TYPO3 9 and will be removed with TYPO3 10. Extensions that used group fields
+   with these internal types should switch to use
+   :ref:`FAL references <tca_example_inline_fal_inline_1>` based on
+   type=inline instead.

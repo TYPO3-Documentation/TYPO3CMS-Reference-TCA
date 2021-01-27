@@ -5,7 +5,7 @@
     Proc.
 
 :aspect:`Description`
-    **Only with internal\_type='db'**
+    **Only with internal\_type='file'**
 
     Path to folder under :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()` in which the files are stored, 'uploads/tx_myextension'.
 
@@ -17,3 +17,10 @@
     .. warning::
         Do NOT add a trailing slash (/) to the upload folder otherwise the full path stored in the references
         will contain a double slash (e.g. "uploads/pictures//stuff.png").
+
+.. deprecated:: 9.5
+   The internal types `file` and `file_reference` have been deprecated with
+   TYPO3 9 and will be removed with TYPO3 10. Extensions that used group fields
+   with these internal types should switch to use
+   :ref:`FAL references <tca_example_inline_fal_inline_1>` based on
+   type=inline instead.
