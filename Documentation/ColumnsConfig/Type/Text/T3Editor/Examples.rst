@@ -4,7 +4,7 @@
 Example
 =======
 
-.. _t3editor_1:
+.. _tca_example_t3editor_1:
 
 Code highlighting with t3editor
 ===============================

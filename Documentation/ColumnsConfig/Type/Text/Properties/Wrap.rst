@@ -24,7 +24,7 @@ wrap
 Examples
 ========
 
-.. _text_5:
+.. _tca_example_text_5:
 
 Textarea with no wraping
 ------------------------
@@ -34,7 +34,7 @@ Textarea with no wraping
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/Text5.rst.txt
 
 
-.. _text_6:
+.. _tca_example_text_6:
 
 Textarea with virtual wraping
 -----------------------------

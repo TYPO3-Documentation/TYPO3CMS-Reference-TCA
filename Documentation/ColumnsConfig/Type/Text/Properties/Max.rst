@@ -21,7 +21,7 @@ max
 Examples
 ========
 
-.. _text_11:
+.. _tca_example_text_11:
 
 Textarea with a maximum of 30 characters
 ----------------------------------------

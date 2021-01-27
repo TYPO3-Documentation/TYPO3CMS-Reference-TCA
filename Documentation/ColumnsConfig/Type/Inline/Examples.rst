@@ -20,6 +20,7 @@ employees).
 
 
 .. _columns-inline-examples-fal:
+.. _tca_example_inline_fal_inline_1:
 
 File abstraction layer
 ======================
@@ -47,7 +48,7 @@ Using inline FAL relations in flexforms
 =======================================
 
 It is also possible to use the inline FAL relations is a flexform. However
-there is no method which fascilitates the generation of the code yet. So
+there is no method which facilitates the generation of the code yet. So
 the configuration has to be written manually like this:
 
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineFalInline1Flexform.rst.txt

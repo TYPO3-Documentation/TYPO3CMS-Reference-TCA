@@ -34,7 +34,7 @@ eval
 Examples
 ========
 
-.. _text_7:
+.. _tca_example_text_7:
 
 Trimming input
 --------------
@@ -46,12 +46,14 @@ Trimming the value for white space before storing in the database:
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/Text7.rst.txt
 
 
+.. _tca_example_text_9:
+
 Custom form evaluation
 ----------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Text7.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/Text9.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text7.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text9.rst.txt
 
 You can supply own form evaluations in an extension by creating a class with two functions:
 :php:`deevaluateFieldValue()` called when opening the record and :php:`evaluateFieldValue()`

@@ -20,7 +20,7 @@ enableTabulator
 Examples
 ========
 
-.. _text_15:
+.. _tca_example_text_15:
 
 Fixed font field with tabulators enabled
 ----------------------------------------

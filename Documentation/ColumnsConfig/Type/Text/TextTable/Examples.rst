@@ -5,7 +5,7 @@ Example
 =======
 
 
-.. _text_17:
+.. _tca_example_text_17:
 
 Text field with renderType textTable
 ====================================

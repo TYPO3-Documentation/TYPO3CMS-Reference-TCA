@@ -5,7 +5,7 @@ Example
 =======
 
 .. _tca_example_backend_layout:
-.. _text_4:
+.. _tca_example_text_20:
 
 Backend layout editor
 =====================
