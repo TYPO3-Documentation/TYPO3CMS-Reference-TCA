@@ -50,7 +50,7 @@ It is also possible to use the inline FAL relations is a flexform. However
 there is no method which fascilitates the generation of the code yet. So
 the configuration has to be written manually like this:
 
-.. include:: Documentation/Examples/Snippets/Styleguide/RstIncludes/InlineFalInline1Flexform.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineFalInline1Flexform.rst.txt
 
 
 .. _columns-inline-examples-asymmetric-mm:
@@ -122,11 +122,11 @@ both directions.
 With a combination box
 ======================
 
-.. include:: Documentation/Examples/Images/Styleguide/RstIncludes/InlineCombinationInline1.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/InlineCombinationInline1.rst.txt
 
 The combination box shows available records. On clicking one entry it gets
 added to the parent record.
 
 
-.. include:: Documentation/Examples/Snippets/Styleguide/RstIncludes/InlineCombinationInline1.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineCombinationInline1.rst.txt
 

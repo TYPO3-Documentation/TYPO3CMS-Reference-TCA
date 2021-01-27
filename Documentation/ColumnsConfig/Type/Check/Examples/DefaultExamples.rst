@@ -27,7 +27,7 @@ if unchecked, it will be 0.
 
 :ref:`FlexForm <t3coreapi:flexforms>`:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Checkbox2Flexform.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/FlexformCheckbox2.rst.txt
 
 .. _tca_example_checkbox_12:
 
@@ -45,7 +45,7 @@ If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 |
 
 :ref:`FlexForm <t3coreapi:flexforms>`:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Checkbox12Flexform.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/FlexformCheckbox12.rst.txt
 
 
 .. _tca_example_checkbox_16:

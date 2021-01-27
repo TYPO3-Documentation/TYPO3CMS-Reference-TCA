@@ -18,13 +18,9 @@ validation
 Examples
 ========
 
-In the example below, only five records from the same table will be allowed to have that particular box checked.
+In the example below, only one record from the same table will be allowed to have that particular box checked.
 
-.. code-block:: php
 
-.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
-   :language: php
-   :start-at: start checkbox_8
-   :end-before: end checkbox_8
-   :lines: 2-
+.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox8.rst.txt
 
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Checkbox8.rst.txt

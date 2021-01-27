@@ -15,3 +15,11 @@ enableRichtext
    and if a suitable editor extension is loaded (default: rteckeditor).
 
    If either of these requirements is not met, the system falls back to a :code:`<textarea>` field.
+
+
+Rich text editor (RTE)
+======================
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/Rte1.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Rte1.rst.txt

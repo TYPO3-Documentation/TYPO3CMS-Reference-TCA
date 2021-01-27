@@ -24,6 +24,25 @@ richtextConfiguration
    If this property is not specified for an RTE field, the system will fall back to the `default`
    configuration.
 
-   .. note::
-       If dealing with the YAML files, be aware it is usually not allowed to base your configuration
-       on existing files and to extend them, but it is required to rely on a full own set of configuration files.
+Examples
+========
+
+.. _rte_4:
+
+RTE with minimal configuration
+------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/Rte4.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Rte4.rst.txt
+
+
+.. _rte_5:
+
+RTE with full configuration
+---------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/Rte4.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Rte4.rst.txt
+

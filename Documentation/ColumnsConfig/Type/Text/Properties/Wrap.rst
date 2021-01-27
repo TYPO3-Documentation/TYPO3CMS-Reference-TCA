@@ -20,17 +20,26 @@ wrap
    off
      The textarea will *not* wrap the lines as you would expect when editing some kind of code.
 
-   Example configuration to create a textarea useful for code lines since it will not wrap the lines,
-   uses a :ref:`monospace font <columns-text-properties-fixedFont>`
-   and :ref:`enables tabs <columns-text-properties-enableTabulator>`:
 
-   .. code-block:: php
+Examples
+========
 
-       'config' => [
-           'type' => 'text',
-           'cols' => '40',
-           'rows' => '15',
-           'wrap' => 'off',
-           'fixedFont' => true,
-           'enableTabulator' => true,
-       ]
+.. _text_5:
+
+Textarea with no wraping
+------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/Text5.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text5.rst.txt
+
+
+.. _text_6:
+
+Textarea with virtual wraping
+-----------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/Text6.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text6.rst.txt
+

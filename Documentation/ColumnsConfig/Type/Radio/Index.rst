@@ -8,7 +8,7 @@ Radiobuttons
 This type creates a set of radio buttons. The value is typically stored as integer value, each radio
 item has one assigned number, but it can be a string, too.
 
-.. include:: Documentation/Examples/Images/Styleguide/RstIncludes/Radio1.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/Radio1.rst.txt
 
 .. toctree::
    :titlesonly:

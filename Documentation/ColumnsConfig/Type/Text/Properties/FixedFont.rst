@@ -16,3 +16,14 @@ fixedFont
    Enables a fixed-width font (monospace) for the text field. This is useful when using code.
 
    Does not apply to RTE fields.
+
+
+Examples
+========
+
+Fixed font field with tabulators enabled
+----------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/Text4.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text4.rst.txt

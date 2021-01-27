@@ -15,3 +15,13 @@ config
 
    The possibilities for this array depend on the value of the array keys "type" and "renderType" within the array,
    see :ref:`the dedicated section <columns-types>` for details.
+
+Examples
+========
+
+Simple input field
+------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/Input1.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input1.rst.txt
