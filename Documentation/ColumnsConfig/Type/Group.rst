@@ -172,7 +172,7 @@ disallowed
 .. deprecated:: 9.5
    The internal types `file` and `file_reference` have been deprecated with
    TYPO3 9 and removed with TYPO3 10. The property `disallowed` only worked
-   with there properties
+   with their properties.
 
 .. _columns-group-properties-dontremaptablesoncopy:
 
