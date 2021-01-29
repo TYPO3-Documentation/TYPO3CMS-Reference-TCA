@@ -169,7 +169,10 @@ default
 disallowed
 ----------
 
-.. include:: ../Properties/GroupDisallowed.rst.txt
+.. deprecated:: 9.5
+   The internal types `file` and `file_reference` have been deprecated with
+   TYPO3 9 and removed with TYPO3 10. The property `disallowed` only worked
+   with their properties.
 
 .. _columns-group-properties-dontremaptablesoncopy:
 
@@ -311,7 +314,10 @@ localizeReferencesAtParentLocalization
 max\_size
 ---------
 
-.. include:: ../Properties/GroupMaxSize.rst.txt
+.. deprecated:: 9.5
+   The internal types `file` and `file_reference` have been deprecated with
+   TYPO3 9 and removed with TYPO3 10. The property `max_size` only worked
+   with their properties.
 
 .. _columns-group-properties-maxitems:
 
@@ -417,7 +423,10 @@ suggestOptions
 uploadfolder
 ------------
 
-.. include:: ../Properties/GroupUploadfolder.rst.txt
+.. deprecated:: 9.5
+   The internal types `file` and `file_reference` have been deprecated with
+   TYPO3 9 and removed with TYPO3 10. The property `uploadfolder` only worked
+   with their properties.
 
 .. _columns-group-data:
 
