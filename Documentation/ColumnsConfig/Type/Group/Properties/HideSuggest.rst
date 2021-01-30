@@ -28,6 +28,7 @@ Suggest wizard is hidden
 
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/GroupDb11.rst.txt
 
+.. _tca_example_group_db_8:
 
 Suggest wizard is shown
 ------------------------

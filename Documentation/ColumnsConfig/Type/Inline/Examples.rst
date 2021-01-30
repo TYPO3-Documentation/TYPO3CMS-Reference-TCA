@@ -7,6 +7,7 @@ Examples
 
 .. _columns-inline-examples-images:
 .. _columns-inline-examples-1nRelation:
+.. _tca_example_inline_1n_inline_1:
 
 Simple 1:n relation
 ===================
@@ -89,7 +90,8 @@ Attributes on symmetric intermediate table
 ==========================================
 
 .. include:: /Examples/Images/Styleguide/RstIncludes/InlineMnSymetricInline1.rst.txt
-   Record 1 is related to records 6 and 11 of the same table
+
+Record 1 is related to records 6 and 11 of the same table
 
 This example combines records of the same table with each other. Image we want
 to store relationships between hotels. Symmetric relations combine records of
@@ -99,12 +101,13 @@ record A is related to B and C, B doesn't have to be related to C.
 
 
 .. include:: /Examples/Images/Styleguide/RstIncludes/InlineMnSymetricBranches.rst.txt
-   Record 11 is symetrically related to record 1 but not to 6
+
+Record 11 is symetrically related to record 1 but not to 6
 
 The main table :php:`tx_styleguide_inline_mnsymmetric` has a field storing the
 inline relation, here: :php:`branches`.
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineMnSymetricInline1.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineMnSymetricBranches.rst.txt
 
 Records of the main table can than have a symetric relationship to each other
 using the intermediate table :php:`tx_styleguide_inline_mnsymmetric_mm`.
@@ -119,15 +122,16 @@ both directions.
    :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
    have special storage folders on a per-table-basis. See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
 
+.. _tca_example_inline_usecombinationc_inline_1:
 
 With a combination box
 ======================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineCombinationInline1.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/InlineUsecombinationcInline1.rst.txt
 
 The combination box shows available records. On clicking one entry it gets
 added to the parent record.
 
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineCombinationInline1.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineUsecombinationcInline1.rst.txt
 

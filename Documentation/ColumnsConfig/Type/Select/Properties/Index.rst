@@ -14,8 +14,6 @@ Select field properties
    DisableNonMatchingValueElement
    ExclusiveKeys
    FileFolder
-   FileFolderExtList
-   FileFolderRecursions
    ForeignTable
    ForeignTablePrefix
    ForeignTableWhere

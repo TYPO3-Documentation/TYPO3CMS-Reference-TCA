@@ -11,3 +11,16 @@ foreign\_table\_prefix
    :RenderType: all
 
    Label prefix to the title of the records from the foreign-table.
+
+
+Examples
+========
+
+.. _tca_example_select_single_3:
+
+Select single field with foreign_prefix and foreign_where
+---------------------------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSingle3.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle3.rst.txt
