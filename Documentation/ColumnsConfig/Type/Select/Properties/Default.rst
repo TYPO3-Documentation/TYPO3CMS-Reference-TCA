@@ -1,9 +1,9 @@
 .. include:: /Includes.rst.txt
 .. _columns-select-properties-default:
 
-=======
-default
-=======
+=============
+default value
+=============
 
 .. confval:: default
 

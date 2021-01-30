@@ -20,7 +20,7 @@ extension offers numbered examples for any field type. Furthermore there
 are examples with different properties set to different values.
 
 Read here about how to :ref:`install and use the styleguide extension
-<tca_examples_styleguide_installations>`.
+<styleguide>`.
 
 .. _tca_examples_extension_examples:
 
@@ -67,3 +67,8 @@ Common examples are taken from the following tables:
 
 :sql:`tt_content`
    :file:`public/typo3/sysext/frontend/Configuration/TCA/tt_content.php`
+
+
+.. toctree::
+
+   StyleGuide

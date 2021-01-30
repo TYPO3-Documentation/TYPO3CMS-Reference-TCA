@@ -6,7 +6,7 @@ Examples
 ========
 
 
-.. _text_4:
+.. _tca_example_text_20:
 
 Simple text area
 ================
@@ -17,7 +17,7 @@ Simple text area
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/Text4.rst.txt
 
 
-.. _rte_1:
+.. _tca_example_rte_1:
 
 Rich text editor field
 ======================

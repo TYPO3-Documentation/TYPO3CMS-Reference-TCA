@@ -92,6 +92,7 @@ return [
             ]
         ],
 
+        // [start inline_1]
         'inline_1' => [
             'exclude' => 1,
             'label' => 'inline_1 typical fal image',
@@ -119,6 +120,8 @@ return [
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),
         ],
+        // [end inline_1]
+        // [start inline_2]
         'inline_2' => [
             'exclude' => 1,
             'label' => 'inline_2 read only fal images',
@@ -147,6 +150,8 @@ return [
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),
         ],
+        // [end inline_2]
+        // [start inline_3]
         'inline_3' => [
             'label' => 'inline_3 media fal',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
@@ -155,6 +160,8 @@ return [
                 $GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext']
             ),
         ],
+        // [end inline_3]
+        // [start inline_4]
         'inline_4' => [
             'label' => 'inline_4 media fal with allowLanguageSynchronization',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
@@ -167,6 +174,7 @@ return [
                 $GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext']
             ),
         ],
+        // [end inline_4]
 
         'inline_flex_1' => [
             'exclude' => 1,

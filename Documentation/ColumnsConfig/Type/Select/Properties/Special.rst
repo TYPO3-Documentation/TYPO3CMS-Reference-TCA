@@ -41,3 +41,91 @@ special
 
    custom
      Custom values set by backend modules (see `TYPO3_CONF_VARS[BE][customPermOptions]`)
+
+Examples
+========
+
+.. _tca_example_select_singlebox_3:
+
+Select single box with special `languages`
+------------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
+
+
+.. _tca_example_select_singlebox_4:
+
+Select single box with special `tables`
+---------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox4.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox4.rst.txt
+
+
+.. _tca_example_select_singlebox_5:
+
+Select single box with special `pagetypes`
+------------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox5.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox5.rst.txt
+
+
+
+.. _tca_example_select_singlebox_6:
+
+Select single box with special `exclude`
+----------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox6.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox6.rst.txt
+
+
+
+.. _tca_example_select_singlebox_7:
+
+Select single box with special `modListGroup`
+---------------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox7.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox7.rst.txt
+
+
+
+.. _tca_example_select_singlebox_8:
+
+Select single box with special `modListUser`
+--------------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox8.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox8.rst.txt
+
+
+
+.. _tca_example_select_singlebox_9:
+
+Select single box with special `explicitValues`
+-----------------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox9.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox9.rst.txt
+
+
+
+.. _tca_example_select_singlebox_10:
+
+Select single box with special `custom`
+---------------------------------------
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox10.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox10.rst.txt
+

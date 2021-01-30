@@ -19,6 +19,11 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
     This means that you should check the bits of values from single-checkbox
     fields and not just whether it is true or false.
 
+There is a subtle difference between fields of the type `check` and select
+fields with the render type
+:ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`. For the
+details please see: :ref:`selectCheckBox-check-compared`.
+
 
 .. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
 .. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox16.rst.txt

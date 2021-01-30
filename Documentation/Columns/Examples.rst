@@ -4,7 +4,7 @@
 Examples
 ========
 
-Some examples from extension styleguide to get an idea on what the 
+Some examples from extension styleguide to get an idea on what the
 field definition is capable of: An input field
 with slider, a select drop-down for images, an inline relation spanning multiple tables.
 
@@ -12,7 +12,7 @@ with slider, a select drop-down for images, an inline relation spanning multiple
 The following examples all can be found in the
 :ref:`extension styleguide <styleguide>`.
 
-.. index:: 
+.. index::
    Styleguide; input_30
    Input; With slider
 
@@ -26,7 +26,7 @@ Input field with a slider, allowing integer values between -90 and 90:
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/Input30.rst.txt
 
 
-.. index:: 
+.. index::
    Styleguide; select_single_12
    pair: selectSingle; Images
 
@@ -38,12 +38,13 @@ Select drop-down for records represented by images
 Select field with foreign table relation and field wizard:
 
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle12.rst.txt
-   
+
 The table :sql:`tx_styleguide_elements_select_single_12_foreign` is defined as
 follows:
 
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/SelectSingle12ForeignPart.rst.txt
 
+.. _tca_example_inline_1n1n_inline_1:
 
 Inline relation (IRRE) spanning multiple tables
 ===============================================
