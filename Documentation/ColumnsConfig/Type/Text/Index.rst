@@ -38,8 +38,6 @@ Simple text area
 
 .. include:: /Examples/Images/Styleguide/RstIncludes/Text4.rst.txt
 
-.. _tca_example_rte_1:
-
 Rich text editor field
 ======================
 

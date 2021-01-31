@@ -18,6 +18,11 @@ validation
 Examples
 ========
 
+.. _tca_example_checkbox_8:
+
+Only one record can be checked
+===============================
+
 In the example below, only one record from the same table will be allowed to have that particular box checked.
 
 

@@ -89,7 +89,7 @@ The intermediate table :php:`tx_styleguide_inline_mn_mm` defines the following f
 Attributes on symmetric intermediate table
 ==========================================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineMnSymetricInline1.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/InlineMnSymetric11Branches.rst.txt
 
 Record 1 is related to records 6 and 11 of the same table
 
@@ -100,7 +100,7 @@ also related to record A. However, the records are not stored in groups. If
 record A is related to B and C, B doesn't have to be related to C.
 
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineMnSymetricBranches.rst.txt
+.. include:: /Examples/Images/Styleguide/RstIncludes/InlineMnSymetric11Branches.rst.txt
 
 Record 11 is symetrically related to record 1 but not to 6
 

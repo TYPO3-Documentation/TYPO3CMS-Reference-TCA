@@ -62,8 +62,6 @@ the :ref:`TSconfig reference <t3tsconfig:pagetceformconfobj>`.
 Examples
 ========
 
-.. _tca_example_select_single_3:
-
 Select single field with foreign_prefix and foreign_where
 ---------------------------------------------------------
 
@@ -72,7 +70,7 @@ Select single field with foreign_prefix and foreign_where
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle3.rst.txt
 
 
-.. _tca_example_select_tree_8:
+.. _tca_example_select_tree_6:
 
 Tree field with foreign_table_where
 ===================================

@@ -45,8 +45,6 @@ treeConfig
 Examples
 ========
 
-.. _tca_example_select_tree_1:
-
 Tree with non selectable levels
 ===============================
 

@@ -6,11 +6,10 @@ Examples
 ========
 
 
-.. _tca_example_text_20:
+.. _tca_example_text_4:
 
 Simple text area
 ================
-
 
 .. include:: /Examples/Images/Styleguide/RstIncludes/Text4.rst.txt
 

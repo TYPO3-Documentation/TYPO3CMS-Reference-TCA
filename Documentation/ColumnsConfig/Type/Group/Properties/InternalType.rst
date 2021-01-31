@@ -40,6 +40,7 @@ Internal type `db`- group relation to a single page
 
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/GroupDb10.rst.txt
 
+.. _tca_example_group_folder_1:
 
 Internal type `folder`
 ----------------------

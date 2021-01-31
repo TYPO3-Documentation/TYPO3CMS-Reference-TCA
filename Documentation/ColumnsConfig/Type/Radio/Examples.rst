@@ -12,5 +12,5 @@ Set of radio buttons field
 
 .. include:: /Examples/Images/Styleguide/RstIncludes/Radio1.rst.txt
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Radio1.rst.txt
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Radio1.rst.txt
 

@@ -21,6 +21,8 @@ hideSuggest
 Examples
 ========
 
+.. _tca_example_group_db_11:
+
 Suggest wizard is hidden
 ------------------------
 

@@ -16,8 +16,6 @@ foreign\_table\_prefix
 Examples
 ========
 
-.. _tca_example_select_single_3:
-
 Select single field with foreign_prefix and foreign_where
 ---------------------------------------------------------
 

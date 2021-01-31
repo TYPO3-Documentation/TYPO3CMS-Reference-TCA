@@ -27,7 +27,7 @@ richtextConfiguration
 Examples
 ========
 
-.. _rte_4:
+.. _tca_example_rte_4:
 
 RTE with minimal configuration
 ------------------------------
@@ -37,7 +37,7 @@ RTE with minimal configuration
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/Rte4.rst.txt
 
 
-.. _rte_5:
+.. _tca_example_rte_5:
 
 RTE with full configuration
 ---------------------------

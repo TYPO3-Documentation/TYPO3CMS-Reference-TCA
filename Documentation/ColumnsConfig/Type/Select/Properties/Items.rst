@@ -66,6 +66,7 @@ A more complex example could be this (includes icons):
 
 .. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle4.rst.txt
 
+.. _tca_example_sys_language_uid:
 
 A typical sys_language_uid field
 --------------------------------

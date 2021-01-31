@@ -41,7 +41,6 @@ Special properties
    HideMoveIcons
    HideSuggest
    InternalType
-   MaxSize
    PrependTname
    SuggestOptions
 
