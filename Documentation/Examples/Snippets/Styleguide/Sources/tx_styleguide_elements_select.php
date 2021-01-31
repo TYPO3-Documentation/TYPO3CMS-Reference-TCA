@@ -1,4 +1,4 @@
-<?php
+<?php // Automatic screenshot: Remove this comment if you wand to manually change this file
 
 return [
    'ctrl' => [ 
@@ -455,7 +455,7 @@ return [
       // [start select_singlebox_2]
       'select_singlebox_2' => [ 
          'exclude' => 1,
-         'label' => 'select_singlebox_1 readOnly description',
+         'label' => 'select_singlebox_2 readOnly description',
          'description' => 'field description',
          'config' => [ 
             'type' => 'select',
@@ -487,6 +487,110 @@ return [
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_singlebox_2]
+      // [start select_singlebox_3]
+      'select_singlebox_3' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_3 special=languages',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'special' => 'languages',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_singlebox_3]
+      // [start select_singlebox_4]
+      'select_singlebox_4' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_4 special=tables',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'special' => 'tables',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_singlebox_4]
+      // [start select_singlebox_5]
+      'select_singlebox_5' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_5 special=pagetypes',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'special' => 'pagetypes',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_singlebox_5]
+      // [start select_singlebox_6]
+      'select_singlebox_6' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_6 special=exclude',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'special' => 'exclude',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_singlebox_6]
+      // [start select_singlebox_7]
+      'select_singlebox_7' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_7 special=modListGroup',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'special' => 'modListGroup',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_singlebox_7]
+      // [start select_singlebox_8]
+      'select_singlebox_8' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_8 special=modListUser',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'special' => 'modListUser',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_singlebox_8]
+      // [start select_singlebox_9]
+      'select_singlebox_9' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_9 special=explicitValues',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'special' => 'explicitValues',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_singlebox_9]
+      // [start select_singlebox_10]
+      'select_singlebox_10' => [ 
+         'exclude' => 1,
+         'label' => 'select_singlebox_10 special=custom',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingleBox',
+            'special' => 'custom',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_singlebox_10]
       // [start select_checkbox_1]
       'select_checkbox_1' => [ 
          'exclude' => 1,
@@ -1424,7 +1528,10 @@ return [
                     select_single_7, select_single_12, select_single_8, select_single_13, select_single_10,
                     select_single_11, select_single_14, select_single_15,
                 --div--;renderType=selectSingleBox,
-                    select_singlebox_1, select_singlebox_2,
+                    select_singlebox_1, select_singlebox_2, select_singlebox_3,
+                    select_singlebox_4, select_singlebox_5, select_singlebox_6,
+                    select_singlebox_7, select_singlebox_8, select_singlebox_9,
+                    select_singlebox_10,
                 --div--;renderType=selectCheckBox,
                     select_checkbox_1, select_checkbox_2, select_checkbox_3, select_checkbox_4, select_checkbox_5, select_checkbox_6,
                 --div--;renderType=selectMultipleSideBySide,
