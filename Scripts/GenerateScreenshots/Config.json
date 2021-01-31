@@ -1,0 +1,221 @@
+{
+  "comments": {
+    "php": "// Automatic screenshot: Remove this comment if you wand to manually change this file",
+    "rst.txt": ".. Automatic screenshot: Remove this line if you wand to manually change this file",
+    "general": "Automatic screenshot:"
+  },
+  "extensions": {
+    "styleguide": {
+      "paths": {
+        "imageSource": "Documentation/Examples/Images/Styleguide/AutomaticScreenshots/",
+        "imageRst": "Documentation/Examples/Images/Styleguide/RstIncludes/",
+        "codeRst": "Documentation/Examples/Snippets/Styleguide/RstIncludes/",
+        "codeSource": "Documentation/Examples/Snippets/Styleguide/Sources/",
+        "source": "typo3conf/ext/styleguide/Configuration/TCA/"
+      },
+      "tables": [
+        {
+          "table": "tx_styleguide_elements_basic",
+          "uid": 1,
+          "fields": [
+            "sys_language_uid",
+            "input_1",
+            "input_30",
+            "input_34",
+            "inputdatetime_3",
+            "input_28",
+            "input_30",
+            "input_33",
+            "input_29",
+            "none_1",
+            "radio_1",
+            "checkbox_2",
+            "checkbox_3",
+            "checkbox_7",
+            "checkbox_8",
+            "checkbox_12",
+            "checkbox_16",
+            "checkbox_17",
+            "checkbox_18",
+            "checkbox_19",
+            "checkbox_21",
+            "text_4",
+            "text_5",
+            "text_6",
+            "text_7",
+            "text_9",
+            "text_11",
+            "text_15",
+            "text_17",
+            "text_19",
+            "text_20"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_elements_basic",
+          "uid": 3,
+          "prefix": "translated_",
+          "fields": [
+            "text_2"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_elements_select",
+          "uid": 1,
+          "fields": [
+            "select_checkbox_1",
+            "select_checkbox_2",
+            "select_checkbox_3",
+            "select_checkbox_5",
+            "select_multiplesidebyside_1",
+            "select_multiplesidebyside_2",
+            "select_multiplesidebyside_5",
+            "select_multiplesidebyside_6",
+            "select_multiplesidebyside_8",
+            "select_single_1",
+            "select_single_3",
+            "select_single_4",
+            "select_single_7",
+            "select_single_10",
+            "select_single_12",
+            "select_single_15",
+            "select_singlebox_1",
+            "select_singlebox_3",
+            "select_singlebox_4",
+            "select_singlebox_5",
+            "select_singlebox_6",
+            "select_singlebox_7",
+            "select_singlebox_8",
+            "select_singlebox_9",
+            "select_singlebox_10",
+            "select_tree_1",
+            "select_tree_2",
+            "select_tree_6"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_elements_select",
+          "uid": 3,
+          "prefix": "translated_",
+          "fields": [
+            "select_single_8",
+            "select_single_13"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_elements_rte",
+          "uid": 1,
+          "fields": [
+            "rte_1",
+            "rte_2",
+            "rte_4"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_elements_t3editor",
+          "uid": 1,
+          "fields": [
+            "t3editor_1"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_elements_group",
+          "uid": 1,
+          "fields": [
+            "group_db_1",
+            "group_db_10",
+            "group_db_11",
+            "group_db_8",
+            "group_folder_1"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_inline_1n",
+          "prefix": "inline_1n_",
+          "uid": 1,
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_inline_1n1n",
+          "prefix": "inline_1n1n_",
+          "uid": 1,
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_inline_fal",
+          "prefix": "inline_fal_",
+          "uid": 1,
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_inline_mn",
+          "prefix": "inline_mn_",
+          "uid": 1,
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_inline_mn_child",
+          "prefix": "inline_mn_child_",
+          "uid": 1,
+          "fields": [
+            "parents"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_inline_mnsymmetric",
+          "prefix": "inline_mn_symetric_",
+          "uid": 1,
+          "fields": [
+            "branches"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_inline_mnsymmetric",
+          "prefix": "inline_mn_symetric_11_",
+          "uid": 11,
+          "fields": [
+            "branches"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_inline_usecombination",
+          "prefix": "inline_usecombinationc_",
+          "uid": 1,
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_elements_t3editor",
+          "uid": 1,
+          "fields": [
+            "t3editor_1"
+          ]
+        }
+      ]
+    }
+  }
+}
