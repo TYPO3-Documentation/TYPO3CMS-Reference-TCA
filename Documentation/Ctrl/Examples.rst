@@ -5,13 +5,14 @@
 Examples
 ========
 
-.. code-block:: php
+.. _tca_example_ctrl_minimal:
 
-   'ctrl' => [
-      'title' => 'LLL:EXT:myExtension/Resources/Private/Language/general.xlf:tableTitle',
-      'label' => 'title',
-      'iconfile' => 'EXT:myExtension/Resources/Public/Icons/someIcon.svg',
-   ],
+Minimal table configuration
+===========================
+
+.. include:: /Examples/Images/Styleguide/RstIncludes/TxStyleguideCtrlMinimal.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlMinimal.rst.txt
 
 Property :code:`label` is a mandatory setting, but the above properties are a recommended
 minimum. The list module shows an icon and a translated title of the table, and it uses the value of
@@ -19,6 +20,18 @@ field :code:`title` as title for single rows. Single record administration howev
 table does not implement soft delete, record rows can not be sorted between each other, record localization is not
 possible, and much more. In the database, only columns :code:`uid`, :code:`pid` and :code:`title` are needed
 in :file:`ext_tables.sql` with this setup.
+
+
+.. _tca_example_ctrl_common:
+
+Common table control configuration
+==================================
+
+
+.. _tca_example_ctrl_tt_content:
+
+Core table tt_content
+=====================
 
 Table :code:`tt_content` makes much more excessive use of the :code:`['ctrl']` section:
 

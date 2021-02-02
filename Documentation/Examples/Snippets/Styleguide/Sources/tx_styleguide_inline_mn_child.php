@@ -1,6 +1,7 @@
-<?php // Automatic screenshot: Remove this comment if you wand to manually change this file
+<?php // Example from extension "styleguide", table "tx_styleguide_inline_mn"
 
 return [
+   // [start ctrl]
    'ctrl' => [ 
       'title' => 'Form engine - inline mn child',
       'label' => 'input_1',
@@ -20,6 +21,8 @@ return [
       'versioningWS' => true,
       'origUid' => 't3_origuid',
    ],
+   // [end ctrl]
+   // [start columns]
    'columns' => [ 
       // [start sys_language_uid]
       'sys_language_uid' => [ 
@@ -140,6 +143,8 @@ return [
       // Example from extension "styleguide", table "tx_styleguide_inline_mn_child"
       // [end parents]
    ],
+   // [end columns]
+   // [start types]
    'types' => [ 
       '0' => [ 
          'showitem' => '
@@ -148,4 +153,5 @@ return [
             ',
       ],
    ],
+   // [end types]
 ];

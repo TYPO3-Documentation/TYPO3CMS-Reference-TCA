@@ -1,6 +1,7 @@
-<?php // Automatic screenshot: Remove this comment if you wand to manually change this file
+<?php // Example from extension "styleguide", table "tx_styleguide_inline_mnsymmetric"
 
 return [
+   // [start ctrl]
    'ctrl' => [ 
       'title' => 'Form engine - inline use combination',
       'label' => 'uid',
@@ -20,6 +21,8 @@ return [
          'disabled' => 'hidden',
       ],
    ],
+   // [end ctrl]
+   // [start columns]
    'columns' => [ 
       // [start hidden]
       'hidden' => [ 
@@ -133,9 +136,12 @@ return [
       // Example from extension "styleguide", table "tx_styleguide_inline_usecombination"
       // [end inline_1]
    ],
+   // [end columns]
+   // [start types]
    'types' => [ 
       '0' => [ 
          'showitem' => 'inline_1',
       ],
    ],
+   // [end types]
 ];

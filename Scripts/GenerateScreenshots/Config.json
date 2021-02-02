@@ -4,10 +4,37 @@
     "rst.txt": ".. Automatic screenshot: Remove this line if you wand to manually change this file",
     "general": "Automatic screenshot:"
   },
-  "extensions": {
-    "styleguide": {
+  "extensions": [
+    {
+      "extension": "frontend",
+      "paths": {
+        "imageSource": "Documentation/Examples/Images/Core/Frontend/AutomaticScreenshots/",
+        "relativeImagePath": "/Examples/Images/Core/Frontend/AutomaticScreenshots/",
+        "imageRst": "Documentation/Examples/Images/Core/Frontend/RstIncludes/",
+        "codeRst": "Documentation/Examples/Snippets/Core/Frontend/RstIncludes/",
+        "codeSource": "Documentation/Examples/Snippets/Core/Frontend/Sources/",
+        "source": "typo3/sysext/frontend/Configuration/TCA/"
+      },
+      "tables": [
+        {
+          "table": "tt_content",
+          "screens": [
+            {
+              "view": "table",
+              "pid": 137,
+              "selector": ".recordlist",
+              "caption": "Control section of tt_content"
+            }
+          ],
+          "tableConvert": "parse-as-text"
+        }
+      ]
+    },
+    {
+      "extension": "styleguide",
       "paths": {
         "imageSource": "Documentation/Examples/Images/Styleguide/AutomaticScreenshots/",
+        "relativeImagePath": "/Examples/Images/Styleguide/AutomaticScreenshots/",
         "imageRst": "Documentation/Examples/Images/Styleguide/RstIncludes/",
         "codeRst": "Documentation/Examples/Snippets/Styleguide/RstIncludes/",
         "codeSource": "Documentation/Examples/Snippets/Styleguide/Sources/",
@@ -15,10 +42,42 @@
       },
       "tables": [
         {
+          "table": "tx_styleguide_ctrl_minimal",
+          "screens": [
+            {
+              "view": "table",
+              "pid": 137,
+              "selector": ".recordlist",
+              "caption": "A minimal example of the control section"
+            }
+          ],
+          "tableConvert": "no-comments"
+        },
+        {
+          "table": "tx_styleguide_ctrl_minimal",
+          "screens": [
+            {
+              "view": "table",
+              "pid": 137,
+              "selector": ".recordlist",
+              "caption": "A common example of the control section"
+            }
+          ],
+          "tableConvert": "no-comments"
+        },
+        {
           "table": "tx_styleguide_elements_basic",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
-            "sys_language_uid",
+            {
+              "field": "sys_language_uid",
+              "caption": "A typical sys_language_uid field"
+            },
             "input_1",
             "input_30",
             "input_34",
@@ -55,7 +114,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_elements_basic",
           "tableConvert": "ignore",
-          "uid": 3,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 3
+            }
+          ],
           "prefix": "translated_",
           "fields": [
             "text_2"
@@ -64,7 +128,12 @@
         {
           "extension": "styleguide",
           "table": "tx_styleguide_elements_select",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "select_checkbox_1",
             "select_checkbox_2",
@@ -100,7 +169,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_elements_select",
           "tableConvert": "ignore",
-          "uid": 3,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 3
+            }
+          ],
           "prefix": "translated_",
           "fields": [
             "select_single_8",
@@ -110,7 +184,12 @@
         {
           "extension": "styleguide",
           "table": "tx_styleguide_elements_rte",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "rte_1",
             "rte_2",
@@ -120,7 +199,12 @@
         {
           "extension": "styleguide",
           "table": "tx_styleguide_elements_t3editor",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "t3editor_1"
           ]
@@ -128,7 +212,12 @@
         {
           "extension": "styleguide",
           "table": "tx_styleguide_elements_group",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "group_db_1",
             "group_db_10",
@@ -141,7 +230,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_inline_1n",
           "prefix": "inline_1n_",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "inline_1"
           ]
@@ -150,7 +244,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_inline_1n1n",
           "prefix": "inline_1n1n_",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "inline_1"
           ]
@@ -160,7 +259,12 @@
           "table": "tx_styleguide_inline_fal",
           "tableConvert": "ignore",
           "prefix": "inline_fal_",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "inline_1"
           ]
@@ -169,7 +273,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_inline_mn",
           "prefix": "inline_mn_",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "inline_1"
           ]
@@ -178,7 +287,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_inline_mn_child",
           "prefix": "inline_mn_child_",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "parents"
           ]
@@ -187,7 +301,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_inline_mnsymmetric",
           "prefix": "inline_mn_symetric_",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "branches"
           ]
@@ -196,7 +315,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_inline_mnsymmetric",
           "prefix": "inline_mn_symetric_11_",
-          "uid": 11,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 11
+            }
+          ],
           "fields": [
             "branches"
           ]
@@ -205,7 +329,12 @@
           "extension": "styleguide",
           "table": "tx_styleguide_inline_usecombination",
           "prefix": "inline_usecombinationc_",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "inline_1"
           ]
@@ -213,12 +342,17 @@
         {
           "extension": "styleguide",
           "table": "tx_styleguide_elements_t3editor",
-          "uid": 1,
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
           "fields": [
             "t3editor_1"
           ]
         }
       ]
     }
-  }
+  ]
 }

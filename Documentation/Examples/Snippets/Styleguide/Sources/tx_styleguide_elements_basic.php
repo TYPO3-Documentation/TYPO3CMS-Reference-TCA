@@ -1,6 +1,7 @@
-<?php // Automatic screenshot: Remove this comment if you wand to manually change this file
+<?php // Example from extension "styleguide", table "tx_styleguide_ctrl_minimal"
 
 return [
+   // [start ctrl]
    'ctrl' => [ 
       'title' => 'Form engine elements - input, text, checkbox, radio, none, passthrough, user',
       'label' => 'uid',
@@ -20,6 +21,8 @@ return [
          'disabled' => 'hidden',
       ],
    ],
+   // [end ctrl]
+   // [start columns]
    'columns' => [ 
       // [start hidden]
       'hidden' => [ 
@@ -2231,6 +2234,8 @@ mod.web_layout.BackendLayouts {
       // Example from extension "styleguide", table "tx_styleguide_elements_basic"
       // [end flex_1]
    ],
+   // [end columns]
+   // [start types]
    'types' => [ 
       '0' => [ 
          'showitem' => '
@@ -2266,4 +2271,5 @@ mod.web_layout.BackendLayouts {
             ',
       ],
    ],
+   // [end types]
 ];

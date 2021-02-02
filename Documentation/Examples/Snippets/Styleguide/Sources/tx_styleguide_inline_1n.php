@@ -1,6 +1,7 @@
-<?php // Automatic screenshot: Remove this comment if you wand to manually change this file
+<?php // Example from extension "styleguide", table "tx_styleguide_elements_group"
 
 return [
+   // [start ctrl]
    'ctrl' => [ 
       'title' => 'Form engine - inline 1:n foreign field',
       'label' => 'uid',
@@ -20,6 +21,8 @@ return [
          'disabled' => 'hidden',
       ],
    ],
+   // [end ctrl]
+   // [start columns]
    'columns' => [ 
       // [start hidden]
       'hidden' => [ 
@@ -125,6 +128,8 @@ return [
       // Example from extension "styleguide", table "tx_styleguide_inline_1n"
       // [end inline_1]
    ],
+   // [end columns]
+   // [start types]
    'types' => [ 
       '0' => [ 
          'showitem' => '
@@ -135,4 +140,5 @@ return [
             ',
       ],
    ],
+   // [end types]
 ];

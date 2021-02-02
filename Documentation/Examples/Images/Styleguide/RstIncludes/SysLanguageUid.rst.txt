@@ -1,7 +1,7 @@
 .. Automatic screenshot: Remove this line if you wand to manually change this file
 
 .. figure:: /Examples/Images/Styleguide/AutomaticScreenshots/SysLanguageUid.png
-   :alt: Screenshot of  field sys_language_uid, table tx_styleguide_elements_basic
+   :alt: A typical sys_language_uid field
    :class: with-shadow
 
-   :ref:`Screenshot of  field sys_language_uid, table tx_styleguide_elements_basic <tca_example_sys_language_uid>`
+   :ref:`A typical sys_language_uid field <tca_example_sys_language_uid>`

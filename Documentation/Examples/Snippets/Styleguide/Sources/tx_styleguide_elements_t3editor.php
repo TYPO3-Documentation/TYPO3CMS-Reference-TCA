@@ -1,6 +1,7 @@
-<?php // Automatic screenshot: Remove this comment if you wand to manually change this file
+<?php // Example from extension "styleguide", table "tx_styleguide_inline_usecombination"
 
 return [
+   // [start ctrl]
    'ctrl' => [ 
       'title' => 'Form engine elements - t3editor',
       'label' => 'uid',
@@ -20,6 +21,8 @@ return [
          'disabled' => 'hidden',
       ],
    ],
+   // [end ctrl]
+   // [start columns]
    'columns' => [ 
       // [start hidden]
       'hidden' => [ 
@@ -249,6 +252,8 @@ return [
       // Example from extension "styleguide", table "tx_styleguide_elements_t3editor"
       // [end t3editor_flex_1]
    ],
+   // [end columns]
+   // [start types]
    'types' => [ 
       '0' => [ 
          'showitem' => '
@@ -262,4 +267,5 @@ return [
             ',
       ],
    ],
+   // [end types]
 ];
