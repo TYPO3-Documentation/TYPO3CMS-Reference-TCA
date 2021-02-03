@@ -9,8 +9,12 @@
 
     Keywords:
 
+    unique
+        evaluate if a record is unique in its table.
+
     uniqueInSite
-        evaluate if a record is unique in a page tree (specific to a language).
+        evaluate if a record is unique in a page tree (specific to a language). Be careful on a multi-domain setup
+        when using one storage folder for different site roots.
 
     uniqueInPid
         Requires the field to be unique for the current PID among other records on the same page.
