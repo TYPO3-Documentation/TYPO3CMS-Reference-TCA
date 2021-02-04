@@ -260,7 +260,6 @@ return [
                 ],
             ]
         ],
-        // [start hidden]
         'hidden' => [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
@@ -276,7 +275,6 @@ return [
                 ],
             ]
         ],
-        // [end hidden]
         'starttime' => [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',

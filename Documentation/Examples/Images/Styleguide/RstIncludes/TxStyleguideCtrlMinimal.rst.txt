@@ -1,7 +1,7 @@
 .. Automatic screenshot: Remove this line if you wand to manually change this file
 
 .. figure:: /Examples/Images/Styleguide/AutomaticScreenshots/TxStyleguideCtrlMinimal.png
-   :alt: A common example of the control section
+   :alt: A minimal example of the control section
    :class: with-shadow
 
-   A common example of the control section
+   A minimal example of the control section

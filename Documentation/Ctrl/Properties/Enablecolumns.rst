@@ -48,11 +48,9 @@ enablecolumns
 Examples
 ========
 
-Example from table "tt_content"::
+Common enable fields
+====================
 
-   'enablecolumns' => [
-      'disabled' => 'hidden',
-      'starttime' => 'starttime',
-      'endtime' => 'endtime',
-      'fe_group' => 'fe_group'
-   ],
+.. include:: /Examples/Images/Styleguide/RstIncludes/CtrlEnableFields.rst.txt
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlCommon.rst.txt

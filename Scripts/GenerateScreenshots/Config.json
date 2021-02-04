@@ -24,6 +24,19 @@
               "pid": 137,
               "selector": ".recordlist",
               "caption": "Control section of tt_content"
+            },
+            {
+              "view": "record",
+              "uid": 1,
+              "actions": [
+                {
+                  "action": "click",
+                  "select": "CType"
+                }
+              ],
+              "selector": "",
+              "name": "CtrlType",
+              "caption": "The type selector of a content elements"
             }
           ],
           "tableConvert": "parse-as-text"
@@ -54,13 +67,33 @@
           "tableConvert": "no-comments"
         },
         {
-          "table": "tx_styleguide_ctrl_minimal",
+          "table": "tx_styleguide_ctrl_common",
           "screens": [
             {
               "view": "table",
               "pid": 137,
               "selector": ".recordlist",
               "caption": "A common example of the control section"
+            },
+            {
+              "view": "record",
+              "uid": 1,
+              "selector": "#EditDocumentController",
+              "name": "CtrlDescriptionColumn",
+              "caption": "Record information shown editing an example record"
+            },
+            {
+              "view": "record",
+              "uid": 1,
+              "actions": [
+                {
+                  "action": "click",
+                  "tab": "Access"
+                }
+              ],
+              "selector": "[role=\"tabpanel\"]",
+              "name": "CtrlEnableFields",
+              "caption": "Record information shown editing an example record"
             }
           ],
           "tableConvert": "no-comments"
@@ -162,7 +195,8 @@
             "select_singlebox_10",
             "select_tree_1",
             "select_tree_2",
-            "select_tree_6"
+            "select_tree_6",
+            "select_requestUpdate_1"
           ]
         },
         {
@@ -350,6 +384,124 @@
           ],
           "fields": [
             "t3editor_1"
+          ]
+        },
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_type",
+          "screens": [
+            {
+              "view": "record",
+              "uid": 6,
+              "actions": [
+                {
+                  "action": "change",
+                  "select": "record_type",
+                  "value": "0"
+                },
+                {
+                  "action": "wait",
+                  "selector": ".modal-dialog",
+                  "options": {
+                    "visible": true
+                  }
+                },
+                {
+                  "action": "click",
+                  "button": "OK"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ],
+              "selector": ".typo3-TCEforms",
+              "name": "CtrlType0",
+              "caption": "The record with default type `0`"
+            },
+            {
+              "view": "record",
+              "uid": 6,
+              "actions": [
+                {
+                  "action": "change",
+                  "select": "record_type",
+                  "value": "withChangedFields"
+                },
+                {
+                  "action": "wait",
+                  "selector": ".modal-dialog",
+                  "options": {
+                    "visible": true
+                  }
+                },
+                {
+                  "action": "click",
+                  "button": "OK"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ],
+              "selector": ".typo3-TCEforms",
+              "name": "CtrlTypeWithChangedFields",
+              "caption": "The same record with type `withChangedFields`"
+            },
+            {
+              "view": "record",
+              "uid": 6,
+              "actions": [
+                {
+                  "action": "change",
+                  "select": "record_type",
+                  "value": "withOverriddenColumns"
+                },
+                {
+                  "action": "wait",
+                  "selector": ".modal-dialog",
+                  "options": {
+                    "visible": true
+                  }
+                },
+                {
+                  "action": "click",
+                  "button": "OK"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ],
+              "selector": ".typo3-TCEforms",
+              "name": "CtrlTypeWithOverriddenColumns",
+              "caption": "The same record with type `withOverriddenColumns`"
+            },
+            {
+              "view": "record",
+              "uid": 6,
+              "actions": [
+                {
+                  "action": "change",
+                  "select": "record_type",
+                  "value": "0"
+                },
+                {
+                  "action": "wait",
+                  "selector": ".modal-dialog",
+                  "options": {
+                    "visible": true
+                  }
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ],
+              "selector": "",
+              "name": "CtrlTypeChangeModal",
+              "caption": "The record needs to be reloaded to show the changed fields."
+            }
           ]
         }
       ]
