@@ -37,6 +37,8 @@ Record types
    It is also possible to make the type depend on the value of a related record,
    for example to switch using the type field of a
    foreign table. The syntax is :code:`relation_field:foreign_type_field`.
+   For example the :sql:`sys_file_metadata` table takes its type from the
+   :sql:`sys_file` table.
 
 
 Examples
@@ -64,12 +66,22 @@ See the :ref:`section about types <types>` for more details.
 Type in relation to a foreign table's field
 -------------------------------------------
 
-The "sys_file_metadata" table takes its type from the "sys_file" table. The relation between the two tables is
-stored in the "file" field. Thus the :code:`type` declaration for "sys_file_metadata" looks like:
+.. include:: /Examples/Images/Styleguide/RstIncludes/CtrlTypeForeign.rst.txt
 
-.. code-block:: php
+The following table :sql:`tx_styleguide_type_foreign` stores its relation to
+the table :sql:`tx_styleguide_type` in the field :php:`foreign_table`.
 
-   'ctrl' => [
-      'type' => 'file:type',
-      ...
-   ],
+The type of the table :sql:`tx_styleguide_type_foreign` comes from the content
+of the field `tx_styleguide_type:record_type` of the related field.
+
+The type is therefore defined via :php:`type = 'foreign_table:record_type'`.
+
+The control section of the table :sql:`tx_styleguide_type_foreign` looks like
+this:
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/TypeForeignTableCtrl.rst.txt
+
+The field :php:`foreign_table` in the same table is a normal singleSelect field.
+It can be any kind of 1 - 1 or 1 - n relation.
+
+.. include:: /Examples/Snippets/Styleguide/RstIncludes/TypeForeignForeignTable.rst.txt

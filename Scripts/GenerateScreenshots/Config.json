@@ -501,6 +501,37 @@
               "selector": "",
               "name": "CtrlTypeChangeModal",
               "caption": "The record needs to be reloaded to show the changed fields."
+            },
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "record_type"
+          ]
+        },
+
+        {
+          "extension": "styleguide",
+          "table": "tx_styleguide_type_foreign",
+          "prefix": "type_foreign_",
+          "screens": [
+            {
+              "view": "record",
+              "uid": 1,
+              "selector": ".typo3-TCEforms",
+              "name": "CtrlTypeForeign",
+              "caption": "The type of the record is fetched from the record specified in field `foreign_table`'`"
+            },
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            {
+              "field": "foreign_table"
             }
           ]
         }
