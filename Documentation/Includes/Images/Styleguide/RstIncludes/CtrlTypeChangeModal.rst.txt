@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/CtrlTypeChangeModal.png
+   :alt: The record needs to be reloaded to show the changed fields.
+   :class: with-shadow
+
+   The record needs to be reloaded to show the changed fields.

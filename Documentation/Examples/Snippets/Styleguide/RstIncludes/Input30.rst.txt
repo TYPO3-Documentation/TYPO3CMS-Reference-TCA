@@ -1,8 +1,0 @@
-.. Automatic screenshot: Remove this line if you wand to manually change this file
-
-.. literalinclude:: /Examples/Snippets/Styleguide/Sources/tx_styleguide_elements_basic.php
-   :language: php
-   :start-at: start input_30
-   :end-before: end input_30
-   :lines: 2- 
-

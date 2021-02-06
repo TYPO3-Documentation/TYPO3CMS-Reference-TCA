@@ -10,6 +10,6 @@ Example
 Backend layout editor
 =====================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Text20.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text20.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text20.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text20.rst.txt

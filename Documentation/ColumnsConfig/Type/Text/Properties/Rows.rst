@@ -22,6 +22,6 @@ rows
 A simple text editor with 20 width
 ==================================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text4.rst.txt

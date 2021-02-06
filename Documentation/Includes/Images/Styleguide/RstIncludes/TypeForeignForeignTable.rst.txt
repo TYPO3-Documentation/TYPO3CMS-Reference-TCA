@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/TypeForeignForeignTable.png
+   :alt: Screenshot of field foreign_table, table tx_styleguide_type_foreign
+   :class: with-shadow
+
+   :ref:`Screenshot of field foreign_table, table tx_styleguide_type_foreign <tca_example_type_foreign_foreign_table>`

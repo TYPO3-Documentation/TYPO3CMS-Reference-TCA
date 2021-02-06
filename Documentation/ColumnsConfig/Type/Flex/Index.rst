@@ -1,9 +1,9 @@
 ﻿.. include:: /Includes.rst.txt
 .. _columns-flex:
 
-===============
-FlexForm  field
-===============
+==============
+FlexForm field
+==============
 
 Renders a FlexForm element. Essentially this consists in a hierarchically organized set of fields which will have
 their values saved into a single field in the database, stored as XML.

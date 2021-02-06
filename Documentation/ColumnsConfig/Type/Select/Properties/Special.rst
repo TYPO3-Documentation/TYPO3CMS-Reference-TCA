@@ -50,9 +50,9 @@ Examples
 Select single box with special `languages`
 ------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
 
 
 .. _tca_example_select_singlebox_4:
@@ -60,9 +60,9 @@ Select single box with special `languages`
 Select single box with special `tables`
 ---------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox4.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox4.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox4.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox4.rst.txt
 
 
 .. _tca_example_select_singlebox_5:
@@ -70,9 +70,9 @@ Select single box with special `tables`
 Select single box with special `pagetypes`
 ------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox5.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox5.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox5.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox5.rst.txt
 
 
 
@@ -81,9 +81,9 @@ Select single box with special `pagetypes`
 Select single box with special `exclude`
 ----------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox6.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox6.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox6.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox6.rst.txt
 
 
 
@@ -92,9 +92,9 @@ Select single box with special `exclude`
 Select single box with special `modListGroup`
 ---------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox7.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox7.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox7.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox7.rst.txt
 
 
 
@@ -103,9 +103,9 @@ Select single box with special `modListGroup`
 Select single box with special `modListUser`
 --------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox8.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox8.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox8.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox8.rst.txt
 
 
 
@@ -114,9 +114,9 @@ Select single box with special `modListUser`
 Select single box with special `explicitValues`
 -----------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox9.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox9.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox9.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox9.rst.txt
 
 
 
@@ -125,7 +125,7 @@ Select single box with special `explicitValues`
 Select single box with special `custom`
 ---------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSinglebox10.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox10.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSinglebox10.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox10.rst.txt
 

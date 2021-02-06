@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Core/Frontend/AutomaticScreenshots/TtContent.png
+   :alt: Control section of tt_content
+   :class: with-shadow
+
+   Control section of tt_content

@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_elements_basic.php
+   :language: php
+   :start-at: start sys_language_uid
+   :end-before: end sys_language_uid
+   :lines: 2-
+

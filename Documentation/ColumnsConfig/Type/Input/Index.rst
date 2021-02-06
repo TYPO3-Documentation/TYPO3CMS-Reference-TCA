@@ -32,13 +32,13 @@ The following renderTypes are available:
    used to handle links and mail addresses in the backend.
 
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input1.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input28.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input30.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input33.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input34.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Inputdatetime3.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input29.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input28.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input30.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input33.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input34.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Inputdatetime3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input29.rst.txt
 
 
 .. toctree::

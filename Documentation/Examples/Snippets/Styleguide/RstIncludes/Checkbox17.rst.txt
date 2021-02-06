@@ -1,8 +1,0 @@
-.. Automatic screenshot: Remove this line if you wand to manually change this file
-
-.. literalinclude:: /Examples/Snippets/Styleguide/Sources/tx_styleguide_elements_basic.php
-   :language: php
-   :start-at: start checkbox_17
-   :end-before: end checkbox_17
-   :lines: 2- 
-

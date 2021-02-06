@@ -30,6 +30,6 @@ Examples
 Group relation to be_groups and be_users
 ----------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt

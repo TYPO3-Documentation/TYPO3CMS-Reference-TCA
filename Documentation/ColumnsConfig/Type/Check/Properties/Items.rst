@@ -54,5 +54,5 @@ items
 Examples
 ========
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox3.rst.txt
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Checkbox3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox3.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox3.rst.txt

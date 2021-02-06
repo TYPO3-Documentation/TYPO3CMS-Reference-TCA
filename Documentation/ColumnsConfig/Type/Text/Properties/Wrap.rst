@@ -29,9 +29,9 @@ Examples
 Textarea with no wraping
 ------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Text5.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text5.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text5.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text5.rst.txt
 
 
 .. _tca_example_text_6:
@@ -39,7 +39,7 @@ Textarea with no wraping
 Textarea with virtual wraping
 -----------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Text6.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text6.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text6.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text6.rst.txt
 

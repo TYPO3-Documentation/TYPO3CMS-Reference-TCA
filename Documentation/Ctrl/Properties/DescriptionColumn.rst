@@ -21,7 +21,7 @@ descriptionColumn
 Examples
 ========
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/CtrlDescriptionColumn.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/CtrlDescriptionColumn.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/TxStyleguideCtrlCommon.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/TxStyleguideCtrlCommon.rst.txt
 

@@ -26,6 +26,6 @@ Examples
 Textarea with a maximum of 30 characters
 ----------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Text11.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text11.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Text11.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text11.rst.txt

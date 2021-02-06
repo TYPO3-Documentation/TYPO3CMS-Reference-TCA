@@ -1,0 +1,6 @@
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_type.php
+   :language: php
+   :start-at: start types
+   :end-before: end types
+   :lines: 2-

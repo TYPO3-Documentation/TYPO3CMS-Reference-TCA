@@ -26,17 +26,17 @@ Examples
 Suggest wizard is hidden
 ------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/GroupDb11.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb11.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/GroupDb11.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb11.rst.txt
 
 .. _tca_example_group_db_8:
 
 Suggest wizard is shown
 ------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/GroupDb8.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb8.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/GroupDb8.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb8.rst.txt
 
 

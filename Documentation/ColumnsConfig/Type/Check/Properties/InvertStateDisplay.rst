@@ -20,8 +20,8 @@ Example
 Toggle checkbox with invertStateDisplay
 ---------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox18.rst.txt
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Checkbox18.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox18.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox18.rst.txt
 
 Field hidden/visible in table tt_content
 ----------------------------------------
@@ -32,4 +32,4 @@ record is visibile. However the field usually carries a label like
 field is set to 0. The following examples is from the core, table
 :sql:`tt_content`:
 
-.. include:: /Examples/Snippets/Core/Includes/TtContentHidden.rst.txt
+.. include:: /Includes/Snippets/Core/Includes/TtContentHidden.rst.txt

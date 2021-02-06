@@ -65,9 +65,9 @@ Examples
 Select single field with foreign_prefix and foreign_where
 ---------------------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSingle3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle3.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle3.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle3.rst.txt
 
 
 .. _tca_example_select_tree_6:
@@ -75,6 +75,6 @@ Select single field with foreign_prefix and foreign_where
 Tree field with foreign_table_where
 ===================================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectTree6.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree6.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectTree6.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectTree6.rst.txt

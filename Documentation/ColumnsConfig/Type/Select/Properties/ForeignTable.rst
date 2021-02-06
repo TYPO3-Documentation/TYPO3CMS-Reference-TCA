@@ -20,9 +20,9 @@ Examples
 Select singe field with enabled selectIcons
 -------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSingle12.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle12.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle12.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle12.rst.txt
 
 
 .. _tca_example_select_single_15:
@@ -30,6 +30,6 @@ Select singe field with enabled selectIcons
 Select field with foreign table via MM table
 --------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSingle15.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle15.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle15.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle15.rst.txt

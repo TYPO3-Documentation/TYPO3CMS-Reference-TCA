@@ -25,10 +25,10 @@ fields with the render type
 details please see: :ref:`selectCheckBox-check-compared`.
 
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox19.rst.txt
-.. include:: /Examples/Images/Styleguide/RstIncludes/Checkbox17.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox19.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox17.rst.txt
 
 .. _columns-check-introduction:
 

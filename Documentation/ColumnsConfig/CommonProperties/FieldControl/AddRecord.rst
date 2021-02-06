@@ -22,40 +22,93 @@ addRecord
       is shown below the `edit popup` control if not changed by `below` or
       `after` settings.
 
-   **Options:**
+Examples
+========
 
-   pid (string)
+Select field
+------------
 
-     pid of the new record. Can be an hard pid setting, or one of these markers, see
-     :ref:`select foreign_table_where <columns-select-properties-foreign-table-where>`.
-     Falls back to "current pid" if not set, forces pid=0 if records of this table are only
-     allowed on root level.
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
 
-     - :code:`###CURRENT_PID###`
-     - :code:`###THIS_UID###`
-     - :code:`###SITEROOT###`
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
 
-   table (string)
-     Add a record to this table, falls back to first table from :ref:`allowed <columns-group-properties-allowed>`
-     list if not set for `type='group'` fields and to :ref:`foreign_table <columns-select-properties-foreign-table>`
-     for `type='select'` fields.
 
-   title (string or LLL reference)
-     Allows to set a different 'title' attribute to the popup icon, defaults
-     to :code:`LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.createNew`
+Group field
+-----------
 
-   setValue (string, keyword)
-     Can be one of 'set', 'prepend' or 'append'. With 'set' the given selection is substituted with the
-     new record, 'prepend' adds the new record on top of the list, 'append' adds it at the bottom. Default: 'append'.
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
 
-   .. figure:: /ColumnsConfig/Type/Group/Images/TypeGroupFieldControlAddRecordIcon.png
-      :alt: Add a new record icon
-      :class: with-shadow
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt
 
-      Add a new record icon
 
-   .. figure:: /ColumnsConfig/Type/Group/Images/TypeGroupFieldControlAddRecordView.png
-      :alt: Add a new record view
-      :class: with-shadow
+Select field with options
+-------------------------
 
-      Add a new record view
+The field controls are also used in the core. The following example is from
+the table :sql:`be_groups`:
+
+.. include:: /Includes/Images/Core/Core/RstIncludes/FileMountpoints.rst.txt
+
+.. include:: /Includes/Snippets/Core/Core/RstIncludes/FileMountpoints.rst.txt
+
+Options
+=======
+
+.. confval:: disabled
+
+   :type: boolean
+   :Scope: fieldControl -> addRecord
+   :Default: true
+
+   Disables the field control. Needs to be set to :php:`false` to enable the
+   :guilabel:`Create new` button
+
+.. confval:: options[pid]
+
+   :type: string
+   :Scope: fieldControl -> addRecord
+   :Values: marker or an integer
+   :Default: ###CURRENT_PID###
+
+   pid of the new record. Can be an hard pid setting, or one of these markers,
+   see :ref:`select foreign_table_where
+   <columns-select-properties-foreign-table-where>`.
+
+   Falls back to "current pid" if not set, forces pid=0 if records of this
+   table are only allowed on root level.
+
+   -  :code:`###CURRENT_PID###`
+   -  :code:`###THIS_UID###`
+   -  :code:`###SITEROOT###`
+
+.. confval:: options[table]
+
+   :type: string
+   :Scope: fieldControl -> addRecord
+   :Values: name of the table
+   :Default: First table from property `allowed` / `foreign_table`
+
+   Add a record to this table, falls back to first table from
+   :ref:`allowed <columns-group-properties-allowed>` list if not set for
+   `type='group'` fields and to :ref:`foreign_table
+   <columns-select-properties-foreign-table>` for `type='select'` fields.
+
+.. confval:: options[title]
+
+   :type: string
+   :Scope: fieldControl -> addRecord
+   :Values: string or LLL reference
+   :Default: LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.createNew
+
+   Allows to set a different 'title' attribute to the popup icon.
+
+.. confval:: options[setValue]
+
+   :type: string
+   :Scope: fieldControl -> addRecord
+   :Values: string
+   :Default: append
+
+   Can be one of 'set', 'prepend' or 'append'. With 'set' the given selection
+   is substituted with the new record, 'prepend' adds the new record on top of
+   the list, 'append' adds it at the bottom.

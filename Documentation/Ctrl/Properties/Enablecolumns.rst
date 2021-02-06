@@ -51,6 +51,6 @@ Examples
 Common enable fields
 ====================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/CtrlEnableFields.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/CtrlEnableFields.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlCommon.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlCommon.rst.txt

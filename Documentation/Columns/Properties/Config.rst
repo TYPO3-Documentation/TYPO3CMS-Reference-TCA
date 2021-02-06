@@ -22,6 +22,6 @@ Examples
 Simple input field
 ------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input1.rst.txt

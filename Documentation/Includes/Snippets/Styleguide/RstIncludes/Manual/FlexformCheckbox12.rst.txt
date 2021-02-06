@@ -1,0 +1,5 @@
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_flex.php
+   :language: php
+   :start-at: </settings.checkbox_2>
+   :end-before: </settings.checkbox_12>

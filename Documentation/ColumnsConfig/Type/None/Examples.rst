@@ -10,6 +10,6 @@ Examples
 Simple none field
 =================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/None1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/None1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/None1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/None1.rst.txt

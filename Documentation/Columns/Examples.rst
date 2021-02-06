@@ -19,11 +19,11 @@ The following examples all can be found in the
 Input field with slider
 =======================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input30.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input30.rst.txt
 
 Input field with a slider, allowing integer values between -90 and 90:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input30.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input30.rst.txt
 
 
 .. index::
@@ -33,24 +33,24 @@ Input field with a slider, allowing integer values between -90 and 90:
 Select drop-down for records represented by images
 ==================================================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSingle12.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle12.rst.txt
 
 Select field with foreign table relation and field wizard:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle12.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle12.rst.txt
 
 The table :sql:`tx_styleguide_elements_select_single_12_foreign` is defined as
 follows:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/SelectSingle12ForeignPart.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/SelectSingle12ForeignPart.rst.txt
 
 .. _tca_example_inline_1n1n_inline_1:
 
 Inline relation (IRRE) spanning multiple tables
 ===============================================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt
 
 Inline relation to a foreign table:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt

@@ -12,12 +12,12 @@ Examples
 Simple 1:n relation
 ===================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Inline1nInline1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Inline1nInline1.rst.txt
 
 This combines a table (for example companies) with a child table (for example
 employees).
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Inline1nInline1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Inline1nInline1.rst.txt
 
 
 .. _columns-inline-examples-fal:
@@ -26,7 +26,7 @@ employees).
 File abstraction layer
 ======================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineFalInline1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineFalInline1.rst.txt
 
 Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3fal:start>`.
 
@@ -34,7 +34,7 @@ FAL provides an API for registering an inline-type field with relations to the "
 information related to existing media. Here an example from the
 :ref:`extension styleguide <styleguide>`:
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineFalInline1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineFalInline1.rst.txt
 
 The method to call is :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig()` which takes
 four parameters. The first one is the name of the field, the second one is an array of configuration options which will
@@ -42,7 +42,7 @@ be merged with the default configuration. The third one is the list of allowed f
 (not used above) the list of disallowed file types. The default field configuration into which the
 options (second call parameter) are merged looks like:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/FileFieldTCAConfig.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/FileFieldTCAConfig.rst.txt
 
 
 Using inline FAL relations in flexforms
@@ -52,7 +52,7 @@ It is also possible to use the inline FAL relations is a flexform. However
 there is no method which facilitates the generation of the code yet. So
 the configuration has to be written manually like this:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineFalInline1Flexform.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineFalInline1Flexform.rst.txt
 
 
 .. _columns-inline-examples-asymmetric-mm:
@@ -60,7 +60,7 @@ the configuration has to be written manually like this:
 Attributes on anti-symmetric intermediate table
 ===============================================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt
 
 The record has two child records displayed inline.
 
@@ -72,16 +72,16 @@ attributes to every relation – in this example a checkbox.
 
 The parent table :php:`tx_styleguide_inline_mn` contains the following column:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineMnInline1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineMnInline1.rst.txt
 
 If the child table :php:`tx_styleguide_inline_mn_child` wants to display its parents also it needs to define a
 column like in this example:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineMnChildParents.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineMnChildParents.rst.txt
 
 The intermediate table :php:`tx_styleguide_inline_mn_mm` defines the following fields:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/InlineMnMm.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/InlineMnMm.rst.txt
 
 
 .. _columns-inline-examples-symmetric-mm:
@@ -89,7 +89,7 @@ The intermediate table :php:`tx_styleguide_inline_mn_mm` defines the following f
 Attributes on symmetric intermediate table
 ==========================================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineMnSymetric11Branches.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineMnSymetric11Branches.rst.txt
 
 Record 1 is related to records 6 and 11 of the same table
 
@@ -100,14 +100,14 @@ also related to record A. However, the records are not stored in groups. If
 record A is related to B and C, B doesn't have to be related to C.
 
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineMnSymetric11Branches.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineMnSymetric11Branches.rst.txt
 
 Record 11 is symetrically related to record 1 but not to 6
 
 The main table :php:`tx_styleguide_inline_mnsymmetric` has a field storing the
 inline relation, here: :php:`branches`.
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineMnSymetricBranches.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineMnSymetricBranches.rst.txt
 
 Records of the main table can than have a symetric relationship to each other
 using the intermediate table :php:`tx_styleguide_inline_mnsymmetric_mm`.
@@ -116,7 +116,7 @@ The intermediate table stores the uids of both sides of the relation in
 :php:`hotelid` and :php:`branchid`. Furthermore custom sorting can be defined in
 both directions.
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/InlineMnSymetricMm.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/InlineMnSymetricMm.rst.txt
 
 .. note::
    :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
@@ -127,11 +127,11 @@ both directions.
 With a combination box
 ======================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineUsecombinationcInline1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineUsecombinationcInline1.rst.txt
 
 The combination box shows available records. On clicking one entry it gets
 added to the parent record.
 
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineUsecombinationcInline1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineUsecombinationcInline1.rst.txt
 

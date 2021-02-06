@@ -20,12 +20,12 @@ Description
 Example
 =======
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input1.rst.txt
 
 
 The field can be used with a string that will be directly output or with a
 language reference:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input1.rst.txt
 
 You can find this example in the :ref:`extension styleguide <styleguide>`.

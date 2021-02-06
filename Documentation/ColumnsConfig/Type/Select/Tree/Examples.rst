@@ -9,6 +9,6 @@ Examples
 A happy little tree!
 ====================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectTree1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectTree1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectTree1.rst.txt

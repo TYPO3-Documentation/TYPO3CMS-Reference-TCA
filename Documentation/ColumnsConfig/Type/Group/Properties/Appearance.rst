@@ -31,11 +31,11 @@ appearance
 Examples
 ========
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/InlineFalInline1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineFalInline1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/InlineFalInline1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineFalInline1.rst.txt
 
 Where :php:`ExtensionManagementUtility::getFileFieldTCAConfig` internally
 creates an array like this:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Manual/FileFieldTCAConfig.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/FileFieldTCAConfig.rst.txt

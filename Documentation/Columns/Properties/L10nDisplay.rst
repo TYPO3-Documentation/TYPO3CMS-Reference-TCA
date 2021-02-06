@@ -41,11 +41,11 @@ Select field with `defaultAsReadonly`
 The following field has the option :php:`'l10n_display' => 'defaultAsReadonly'`
 set:
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/TranslatedSelectSingle13.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/TranslatedSelectSingle13.rst.txt
 
 Complete TCA definition of the field:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/TranslatedSelectSingle13.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/TranslatedSelectSingle13.rst.txt
 
 .. _tca_example_translated_select_single_8:
 
@@ -54,8 +54,8 @@ Translated field without `l10n_display` definition
 
 The following has no :php:`'l10n_display'` definition:
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/TranslatedSelectSingle8.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/TranslatedSelectSingle8.rst.txt
 
 Complete TCA definition of the field:
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/TranslatedSelectSingle8.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/TranslatedSelectSingle8.rst.txt

@@ -12,7 +12,7 @@ This page describes the :ref:`select <columns-select>` type with
 It displays two select fields, the items can be selected from the right field
 all selected items are displayed in the left one.
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
 
 .. toctree::
    :titlesonly:

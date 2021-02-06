@@ -20,6 +20,6 @@ enableRichtext
 Rich text editor (RTE)
 ======================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Rte1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Rte1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Rte1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Rte1.rst.txt

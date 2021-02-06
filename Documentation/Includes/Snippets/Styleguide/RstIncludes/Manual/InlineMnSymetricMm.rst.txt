@@ -1,0 +1,7 @@
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_inline_mnsymmetric_mm.php
+   :language: php
+   :start-at: [start hotelid]
+   :end-before: [end branchsort]
+   :lines: 2-
+

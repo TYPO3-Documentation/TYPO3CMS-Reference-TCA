@@ -50,9 +50,9 @@ Examples
 Simple items definition with label and value
 --------------------------------------------
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSingle1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle1.rst.txt
 
 
 .. _tca_example_select_single_4:
@@ -62,9 +62,9 @@ Items definition with label, value and icon
 
 A more complex example could be this (includes icons):
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectSingle4.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle4.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectSingle4.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle4.rst.txt
 
 .. _tca_example_sys_language_uid:
 
@@ -74,9 +74,9 @@ A typical sys_language_uid field
 The icons can also be referenced by their identifier in the
 :ref:`Icon API<t3coreapi:icon>`
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SysLanguageUid.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SysLanguageUid.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SysLanguageUid.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SysLanguageUid.rst.txt
 
 
 Select checkbox field with icons and descriptions
@@ -84,6 +84,6 @@ Select checkbox field with icons and descriptions
 
 Descriptions are only displayed in render type `selectCheckbox`.
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/SelectCheckbox3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox3.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/SelectCheckbox3.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectCheckbox3.rst.txt

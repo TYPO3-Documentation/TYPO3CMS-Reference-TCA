@@ -10,7 +10,7 @@ Examples
 Set of radio buttons field
 ==========================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Radio1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Radio1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Radio1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Radio1.rst.txt
 

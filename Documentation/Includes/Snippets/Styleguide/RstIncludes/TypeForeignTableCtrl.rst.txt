@@ -1,0 +1,8 @@
+.. Manually created to contain ctrl section
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_type_foreign.php
+   :language: php
+   :start-at: start ctrl
+   :end-before: end ctrl
+   :lines: 2-
+

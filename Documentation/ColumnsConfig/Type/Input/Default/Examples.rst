@@ -10,9 +10,9 @@ Examples
 Simple input field
 ==================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input1.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input1.rst.txt
 
 
 .. _tca_example_input_28:
@@ -20,9 +20,9 @@ Simple input field
 Input with placeholder and null handling
 ========================================
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input28.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input28.rst.txt
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input28.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input28.rst.txt
 
 
 .. _tca_example_input_30:
@@ -30,10 +30,10 @@ Input with placeholder and null handling
 Value slider
 ============
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input30.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input30.rst.txt
 
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input30.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input30.rst.txt
 
 
 .. _tca_example_input_33:
@@ -41,8 +41,8 @@ Value slider
 Value picker
 ============
 
-.. include:: /Examples/Images/Styleguide/RstIncludes/Input33.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input33.rst.txt
 
 
-.. include:: /Examples/Snippets/Styleguide/RstIncludes/Input33.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input33.rst.txt
 
