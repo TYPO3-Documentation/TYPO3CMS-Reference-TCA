@@ -23,5 +23,5 @@ Examples
 
 .. include:: /Includes/Images/Styleguide/RstIncludes/CtrlDescriptionColumn.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/TxStyleguideCtrlCommon.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlCommon.rst.txt
 

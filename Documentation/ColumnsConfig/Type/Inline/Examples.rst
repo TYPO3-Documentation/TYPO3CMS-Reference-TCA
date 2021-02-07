@@ -34,7 +34,7 @@ FAL provides an API for registering an inline-type field with relations to the "
 information related to existing media. Here an example from the
 :ref:`extension styleguide <styleguide>`:
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/InlineFalInline1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineFalInline1.rst.txt
 
 The method to call is :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig()` which takes
 four parameters. The first one is the name of the field, the second one is an array of configuration options which will
@@ -85,6 +85,7 @@ The intermediate table :php:`tx_styleguide_inline_mn_mm` defines the following f
 
 
 .. _columns-inline-examples-symmetric-mm:
+.. _tca_example_inline_mn_symetric_11_branches:
 
 Attributes on symmetric intermediate table
 ==========================================

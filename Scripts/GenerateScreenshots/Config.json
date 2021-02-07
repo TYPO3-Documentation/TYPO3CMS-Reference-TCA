@@ -8,11 +8,12 @@
     {
       "extension": "frontend",
       "paths": {
-        "imageSource": "Documentation/Examples/Images/Core/Frontend/AutomaticScreenshots/",
-        "relativeImagePath": "/Examples/Images/Core/Frontend/AutomaticScreenshots/",
-        "imageRst": "Documentation/Examples/Images/Core/Frontend/RstIncludes/",
-        "codeRst": "Documentation/Examples/Snippets/Core/Frontend/RstIncludes/",
-        "codeSource": "Documentation/Examples/Snippets/Core/Frontend/Sources/",
+        "imageSource": "Documentation/Includes/Images/Core/Frontend/AutomaticScreenshots/",
+        "relativeImagePath": "/Includes/Images/Core/Frontend/AutomaticScreenshots/",
+        "imageRst": "Documentation/Includes/Images/Core/Frontend/RstIncludes/",
+        "codeRst": "Documentation/Includes/Snippets/Core/Frontend/RstIncludes/",
+        "codeSource": "Documentation/Includes/Snippets/Core/Frontend/Sources/",
+        "relativeCodeSource": "/Includes/Snippets/Core/Frontend/Sources/",
         "source": "typo3/sysext/frontend/Configuration/TCA/"
       },
       "tables": [
@@ -37,23 +38,118 @@
               "selector": "",
               "name": "CtrlType",
               "caption": "The type selector of a content elements"
+            },
+            {
+              "view": "record",
+              "uid": 3,
+              "actions": [
+                {
+                  "action": "click",
+                  "tab": "Plugin"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "500"
+                }
+              ],
+              "selector": "[role=\"tabpanel\"]",
+              "name": "PluginFlexFormConfigurationCheck",
+              "caption": "The type selector of a content elements"
             }
           ],
           "tableConvert": "parse-as-text"
+        },
+        {
+          "table": "tt_content",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 2,
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
+          ],
+          "tableConvert": "ignore",
+          "fields": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "extension": "core",
+      "paths": {
+        "imageSource": "Documentation/Includes/Images/Core/Core/AutomaticScreenshots/",
+        "relativeImagePath": "/Includes/Images/Core/Core/AutomaticScreenshots/",
+        "imageRst": "Documentation/Includes/Images/Core/Core/RstIncludes/",
+        "codeRst": "Documentation/Includes/Snippets/Core/Core/RstIncludes/",
+        "codeSource": "Documentation/Includes/Snippets/Core/Core/Sources/",
+        "relativeCodeSource": "/Includes/Snippets/Core/Core/Sources/",
+        "source": "typo3/sysext/core/Configuration/TCA/"
+      },
+      "tables": [
+        {
+          "table": "be_groups",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "file_mountpoints"
+          ]
         }
       ]
     },
     {
       "extension": "styleguide",
       "paths": {
-        "imageSource": "Documentation/Examples/Images/Styleguide/AutomaticScreenshots/",
-        "relativeImagePath": "/Examples/Images/Styleguide/AutomaticScreenshots/",
-        "imageRst": "Documentation/Examples/Images/Styleguide/RstIncludes/",
-        "codeRst": "Documentation/Examples/Snippets/Styleguide/RstIncludes/",
-        "codeSource": "Documentation/Examples/Snippets/Styleguide/Sources/",
+        "imageSource": "Documentation/Includes/Images/Styleguide/AutomaticScreenshots/",
+        "relativeImagePath": "/Includes/Images/Styleguide/AutomaticScreenshots/",
+        "imageRst": "Documentation/Includes/Images/Styleguide/RstIncludes/",
+        "codeRst": "Documentation/Includes/Snippets/Styleguide/RstIncludes/",
+        "codeSource": "Documentation/Includes/Snippets/Styleguide/Sources/",
+        "relativeCodeSource": "/Includes/Snippets/Styleguide/Sources/",
         "source": "typo3conf/ext/styleguide/Configuration/TCA/"
       },
       "tables": [
+        {
+          "table": "tx_styleguide_flex",
+          "screens": [
+          {
+            "view": "fields",
+            "uid": 1
+          }
+        ],
+          "fields": [
+            {
+              "field": "flex_file_1",
+              "caption": "A field with a simple, one-field flex form"
+            },
+            {
+              "field": "flex_1",
+              "caption": "A flex form with two sheets and descriptions"
+            },
+            {
+              "field": "flex_2",
+              "caption": "A flex form field with two flex section containers"
+            }
+          ]
+        },
         {
           "table": "tx_styleguide_ctrl_minimal",
           "screens": [
@@ -89,6 +185,10 @@
                 {
                   "action": "click",
                   "tab": "Access"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "500"
                 }
               ],
               "selector": "[role=\"tabpanel\"]",
@@ -115,10 +215,27 @@
             "input_30",
             "input_34",
             "inputdatetime_3",
-            "input_28",
+            {
+              "field": "input_28",
+              "actions": [
+                {
+                  "action": "wait",
+                  "timeout": "500"
+                }
+              ]
+            },
             "input_30",
             "input_33",
-            "input_29",
+            "input_28",
+            {
+              "field": "input_29",
+              "actions": [
+                {
+                  "action": "wait",
+                  "timeout": "500"
+                }
+              ]
+            },
             "none_1",
             "radio_1",
             "checkbox_2",
@@ -137,6 +254,7 @@
             "text_7",
             "text_9",
             "text_11",
+            "text_14",
             "text_15",
             "text_17",
             "text_19",
@@ -144,7 +262,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_elements_basic",
           "tableConvert": "ignore",
           "screens": [
@@ -159,7 +276,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_elements_select",
           "screens": [
             {
@@ -200,7 +316,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_elements_select",
           "tableConvert": "ignore",
           "screens": [
@@ -216,7 +331,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_elements_rte",
           "screens": [
             {
@@ -231,7 +345,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_elements_t3editor",
           "screens": [
             {
@@ -244,7 +357,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_elements_group",
           "screens": [
             {
@@ -254,6 +366,7 @@
           ],
           "fields": [
             "group_db_1",
+            "group_db_3",
             "group_db_10",
             "group_db_11",
             "group_db_8",
@@ -261,7 +374,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_inline_1n",
           "prefix": "inline_1n_",
           "screens": [
@@ -275,7 +387,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_inline_1n1n",
           "prefix": "inline_1n1n_",
           "screens": [
@@ -289,7 +400,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_inline_fal",
           "tableConvert": "ignore",
           "prefix": "inline_fal_",
@@ -304,7 +414,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_inline_mn",
           "prefix": "inline_mn_",
           "screens": [
@@ -318,7 +427,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_inline_mn_child",
           "prefix": "inline_mn_child_",
           "screens": [
@@ -332,7 +440,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_inline_mnsymmetric",
           "prefix": "inline_mn_symetric_",
           "screens": [
@@ -346,7 +453,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_inline_mnsymmetric",
           "prefix": "inline_mn_symetric_11_",
           "screens": [
@@ -360,7 +466,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_inline_usecombination",
           "prefix": "inline_usecombinationc_",
           "screens": [
@@ -374,7 +479,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_elements_t3editor",
           "screens": [
             {
@@ -387,7 +491,6 @@
           ]
         },
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_type",
           "screens": [
             {
@@ -511,9 +614,7 @@
             "record_type"
           ]
         },
-
         {
-          "extension": "styleguide",
           "table": "tx_styleguide_type_foreign",
           "prefix": "type_foreign_",
           "screens": [
@@ -532,6 +633,18 @@
           "fields": [
             {
               "field": "foreign_table"
+            }
+          ]
+        },
+        {
+          "table": "tx_styleguide_palette",
+          "screens": [
+            {
+              "view": "record",
+              "uid": 1,
+              "selector": ".typo3-TCEforms",
+              "name": "Palette",
+              "caption": "Examples of different palettes in the extension styleguide"
             }
           ]
         }
