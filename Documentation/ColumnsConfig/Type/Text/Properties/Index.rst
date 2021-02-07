@@ -19,4 +19,5 @@ Properties
    Max
    RichtextConfiguration
    Rows
+   TableWizard
    Wrap

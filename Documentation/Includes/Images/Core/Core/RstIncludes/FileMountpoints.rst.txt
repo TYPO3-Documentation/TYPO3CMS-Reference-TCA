@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Core/Core/AutomaticScreenshots/FileMountpoints.png
+   :alt: Screenshot of field file_mountpoints, table be_groups
+   :class: with-shadow
+
+   :ref:`Screenshot of field file_mountpoints, table be_groups <tca_example_file_mountpoints>`

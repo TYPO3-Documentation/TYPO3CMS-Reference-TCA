@@ -37,11 +37,7 @@ enablecolumns
       related to the frontend. However the icon of records having these features enabled will
       normally change as these examples show:
 
-      .. figure:: ../Images/EnableFields.png
-         :alt: Enable fields show up as icon overlays
-         :class: with-shadow
-
-         FE group restricted access showing up on modified record icons
+      .. include:: /Includes/Images/Core/Frontend/RstIncludes/CtrlEnableFields.rst.txt
 
    See also the :ref:`delete <ctrl-reference-delete>` feature which is related, but is active for both frontend and backend.
 

@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Core/Core/Sources/be_groups.php
+   :language: php
+   :start-at: start file_mountpoints
+   :end-before: end file_mountpoints
+   :lines: 2- 
+

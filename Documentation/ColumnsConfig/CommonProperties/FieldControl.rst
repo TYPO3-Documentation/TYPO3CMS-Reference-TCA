@@ -23,12 +23,8 @@ fieldControl
 
    .. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
 
-
 .. toctree::
    FieldControl/AddRecord
    FieldControl/EditPopup
-   FieldControl/ElementBrowser
-   FieldControl/InsertClipboard
    FieldControl/ListModule
    FieldControl/ResetSelection
-   FieldControl/TableWizard

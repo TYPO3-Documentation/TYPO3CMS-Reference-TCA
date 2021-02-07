@@ -22,6 +22,7 @@ Options
 =======
 
 .. confval:: disabled
+
    :type: boolean
    :Scope: fieldControl -> listModule
    :Default: true
@@ -30,6 +31,7 @@ Options
    :guilabel:`Create new` button
 
 .. confval:: options[pid]
+
    :type: string
    :Scope: fieldControl -> addRecord
    :Values: marker or an integer
@@ -47,6 +49,7 @@ Options
    -  :code:`###SITEROOT###`
 
 .. confval:: options[table]
+
    :type: string
    :Scope: fieldControl -> listModule
    :Values: name of the table
@@ -58,6 +61,7 @@ Options
    <columns-select-properties-foreign-table>` for `type='select'` fields.
 
 .. confval:: options[title]
+
    :type: string
    :Scope: fieldControl -> listModule
    :Values: string or LLL reference

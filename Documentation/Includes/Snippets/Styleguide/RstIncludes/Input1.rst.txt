@@ -4,5 +4,5 @@
    :language: php
    :start-at: start input_1
    :end-before: end input_1
-   :lines: 2-
+   :lines: 2- 
 

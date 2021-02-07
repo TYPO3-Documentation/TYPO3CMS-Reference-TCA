@@ -1,0 +1,5 @@
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_ctrl_common.php
+   :language: php
+   :start-at: 'ctrl' => [
+   :end-before: 'palettes' => [

@@ -1,0 +1,7 @@
+
+.. figure:: /Includes/Images/Core/Frontend/ManualScreenshots/Label.png
+   :alt: Screenshot of a field label and a palette label
+   :class: with-shadow
+
+   "Type" and "Column" are two labels, "Content Element" is a
+   :ref:`palette label <types-properties-showitem>`

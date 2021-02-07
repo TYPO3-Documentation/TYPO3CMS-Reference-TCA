@@ -13,12 +13,7 @@ label
 
    The name of the field as shown in the form:
 
-   .. figure:: ../Images/Label.png
-      :alt: Two examples of labels
-      :class: with-shadow
-
-      "Type" and "Column" are two labels, "Content Element" is a 
-      :ref:`palette label <types-properties-showitem>`
+   .. include:: /Includes/Images/Core/Frontend/RstIncludes/Label.rst.txt
 
    .. note::
       Labels can be overridden in the

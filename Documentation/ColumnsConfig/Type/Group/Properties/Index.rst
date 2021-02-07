@@ -36,6 +36,7 @@ Special properties
 
    Allowed
    Appearance
+   FieldWizard
    Filter
    ForeignTable
    HideMoveIcons

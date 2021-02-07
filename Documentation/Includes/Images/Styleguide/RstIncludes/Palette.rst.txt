@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/Palette.png
+   :alt: Examples of different palettes in the extension styleguide
+   :class: with-shadow
+
+   Examples of different palettes in the extension styleguide

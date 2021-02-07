@@ -4,5 +4,5 @@
    :language: php
    :start-at: start foreign_table
    :end-before: end foreign_table
-   :lines: 2-
+   :lines: 2- 
 

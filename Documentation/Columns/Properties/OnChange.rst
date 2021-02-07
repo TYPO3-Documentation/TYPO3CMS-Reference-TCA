@@ -8,9 +8,7 @@ onChange
 .. confval:: onChange
 
    :Required: false
-
    :type: string
-
    :Scope: Display
 
    If set to `reload`, it triggers a form reload once the value of this field

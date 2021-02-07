@@ -4,5 +4,5 @@
    :language: php
    :start-at: start t3editor_1
    :end-before: end t3editor_1
-   :lines: 2-
+   :lines: 2- 
 

@@ -22,6 +22,7 @@ Options
 =======
 
 .. confval:: disabled
+
    :type: boolean
    :Scope: fieldControl -> editPopup
    :Default: true
@@ -30,6 +31,7 @@ Options
    :guilabel:`Create new` button
 
 .. confval:: options[title]
+
    :type: string
    :Scope: fieldControl -> editPopup
    :Values: string or LLL reference
@@ -38,6 +40,7 @@ Options
    Allows to set a different 'title' attribute to the popup icon.
 
 .. confval:: options[windowOpenParameters]
+
    :type: string
    :Scope: fieldControl -> editPopup
    :Values: string or LLL reference

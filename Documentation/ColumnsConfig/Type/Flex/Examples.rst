@@ -6,6 +6,7 @@ Examples
 ========
 
 .. _columns-flex-example-simple:
+.. _tca_example_flex_file_1:
 
 Simple FlexForm
 ===============
@@ -57,7 +58,7 @@ If we browse the definition for the "pi\_flexform" field in "tt\_content" below
 "$GLOBALS['TCA'] (Table configuration array)",
 we can see the following:
 
-.. include:: /Includes/Images/RstIncludes/PluginFlexFormConfigurationCheck.rst.txt
+.. include:: /Includes/Images/Core/Frontend/RstIncludes/PluginFlexFormConfigurationCheck.rst.txt
 
 As you can see there are quite a few extensions that have added pointers to
 their Data Structures. Towards the bottom we can find the one we have just been
@@ -65,6 +66,7 @@ looking at.
 
 
 .. _columns-flex-example-sheets:
+.. _tca_example_flex_1:
 
 Example: FlexForm with two sheets
 =================================
@@ -82,6 +84,8 @@ field:
 
 Notice how the data of the two sheets are separated.
 
+
+.. _tca_example_flex_2:
 
 A flex form field with two flex section containers
 ==================================================

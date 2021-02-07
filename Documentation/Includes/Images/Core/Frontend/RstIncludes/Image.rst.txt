@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Core/Frontend/AutomaticScreenshots/Image.png
+   :alt: Screenshot of field image, table tt_content
+   :class: with-shadow
+
+   :ref:`Screenshot of field image, table tt_content <tca_example_image>`
