@@ -20,22 +20,18 @@ renderType
 Examples
 ========
 
-.. figure:: ../Images/TypeCheckStyleguide2.png
-   :alt: Simple checkbox with default render type
-   :class: with-shadow
+default
+-------
 
-   :ref:`Simple checkbox with default render type <tca_example_checkbox_2>`
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
 
+checkboxToggle
+--------------
 
-.. figure:: ../Images/TypeCheckStyleguide17.png
-  :alt: Single checkbox with toggle
-  :class: with-shadow
-
-  :ref:`Single checkbox with toggle <tca_example_checkbox_17>`
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox17.rst.txt
 
 
-.. figure:: ../Images/TypeCheckStyleguide19.png
-  :alt: Single checkbox with labeled toggle
-  :class: with-shadow
+checkboxLabeledToggle
+---------------------
 
-  :ref:`Single checkbox with labeled toggle <tca_example_checkbox_19>`
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox19.rst.txt

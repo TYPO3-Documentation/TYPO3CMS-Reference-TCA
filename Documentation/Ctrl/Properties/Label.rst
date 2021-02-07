@@ -21,6 +21,13 @@ label
    .. warning::
       For the label only regular input or text fields should be used. Otherwise issues may occur and prevent from a working system if :code:`TCEMAIN.table.tt_content.disablePrependAtCopy` is not set or set to :code:`0`.
 
+A simple example
+----------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/TxStyleguideCtrlMinimal.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlMinimal.rst.txt
+
 
 .. _ctrl-reference-label-alt:
 

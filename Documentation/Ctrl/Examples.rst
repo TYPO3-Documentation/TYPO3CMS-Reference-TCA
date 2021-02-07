@@ -5,13 +5,14 @@
 Examples
 ========
 
-.. code-block:: php
+.. _tca_example_ctrl_minimal:
 
-   'ctrl' => [
-      'title' => 'LLL:EXT:myExtension/Resources/Private/Language/general.xlf:tableTitle',
-      'label' => 'title',
-      'iconfile' => 'EXT:myExtension/Resources/Public/Icons/someIcon.svg',
-   ],
+Minimal table configuration
+===========================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/TxStyleguideCtrlMinimal.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlMinimal.rst.txt
 
 Property :code:`label` is a mandatory setting, but the above properties are a recommended
 minimum. The list module shows an icon and a translated title of the table, and it uses the value of
@@ -20,47 +21,26 @@ table does not implement soft delete, record rows can not be sorted between each
 possible, and much more. In the database, only columns :code:`uid`, :code:`pid` and :code:`title` are needed
 in :file:`ext_tables.sql` with this setup.
 
+
+.. _tca_example_ctrl_common:
+
+Common table control configuration
+==================================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/TxStyleguideCtrlCommon.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlCommon.rst.txt
+
+.. _tca_example_ctrl_tt_content:
+
+Core table tt_content
+=====================
+
 Table :code:`tt_content` makes much more excessive use of the :code:`['ctrl']` section:
 
 .. code-block:: php
 
-   'ctrl' => [
-      'label' => 'header',
-      'label_alt' => 'subheader,bodytext',
-      'sortby' => 'sorting',
-      'tstamp' => 'tstamp',
-      'crdate' => 'crdate',
-      'cruser_id' => 'cruser_id',
-      'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tt_content',
-      'delete' => 'deleted',
-      'versioningWS' => true,
-      'origUid' => 't3_origuid',
-      'type' => 'CType',
-      'descriptionColumn' => 'rowDescription',
-      'hideAtCopy' => true,
-      'prependAtCopy' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
-      'copyAfterDuplFields' => 'colPos,sys_language_uid',
-      'useColumnsForDefaultValues' => 'colPos,sys_language_uid,CType',
-      'shadowColumnsForNewPlaceholders' => 'colPos',
-      'transOrigPointerField' => 'l18n_parent',
-      'translationSource' => 'l10n_source',
-      'transOrigDiffSourceField' => 'l18n_diffsource',
-      'languageField' => 'sys_language_uid',
-      'enablecolumns' => [
-         'disabled' => 'hidden',
-         'starttime' => 'starttime',
-         'endtime' => 'endtime',
-         'fe_group' => 'fe_group'
-      ],
-      'typeicon_column' => 'CType',
-      'typeicon_classes' => [
-         'header' => 'mimetypes-x-content-header',
-         'textpic' => 'mimetypes-x-content-text-picture',
-         ...
-         'default' => 'mimetypes-x-content-text'
-      ],
-      'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform',
-   ],
+.. include:: /Includes/Snippets/Core/Frontend/RstIncludes/TtContentCtrl.rst.txt
 
 A few remarks:
 

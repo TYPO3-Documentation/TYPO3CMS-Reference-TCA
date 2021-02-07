@@ -4,19 +4,11 @@
 Examples
 ========
 
-.. figure:: ../Images/DateTimeStyleguide3.png
-    :alt: Date and time picker (inputdatetime_3)
-    :class: with-shadow
+.. _tca_example_inputdatetime_3:
 
-    Date and time picker (inputdatetime_3)
+Date and time picker field
+==========================
 
-.. code-block:: php
+.. include:: /Includes/Images/Styleguide/RstIncludes/Inputdatetime3.rst.txt
 
-    'inputdatetime_3' => [
-        'label' => 'inputdatetime_3 eval=datetime',
-        'config' => [
-            'type' => 'input',
-            'renderType' => 'inputDateTime',
-            'eval' => 'datetime',
-        ],
-    ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Inputdatetime3.rst.txt

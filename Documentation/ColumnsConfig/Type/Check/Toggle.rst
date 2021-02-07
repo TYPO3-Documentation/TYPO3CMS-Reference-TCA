@@ -6,11 +6,17 @@
 Toggle checkbox
 ===============
 
-This page describes the :ref:`check <columns-check>` type with the renderType='checkboxToggle'.
 
-Toggle switches are rendered instead of checkboxes.
-No additional configuration is necessary. Its state can be inverted via
-:code:`invertStateDisplay`.
+The checkbox with the
+:ref:`renderType checkboxToggle <columns-check-properties-renderType>` renders
+as one or several toggle switches. As opposed to the
+:ref:`Labeled toggle checkbox <columns-check-checkboxLabeledToggle>` no
+additional labels for the states can be defined.
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox17.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox18.rst.txt
+
+Its state can be inverted via :code:`invertStateDisplay`.
 
 
 .. toctree::
@@ -18,8 +24,3 @@ No additional configuration is necessary. Its state can be inverted via
    Examples/ToggleExample
 
 
-.. figure:: Images/TypeCheckStyleguide17.png
-  :alt: Single checkbox with toggle
-  :class: with-shadow
-
-  :ref:`Single checkbox with toggle <tca_example_checkbox_17>`

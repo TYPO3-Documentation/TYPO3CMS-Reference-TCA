@@ -5,44 +5,21 @@
 Examples
 ========
 
-TCA of table `pages` specifies a series of palettes, let's have a closer look at one of them:
+The TCA of the styleguide extension provides palettes with different properties.
 
-.. code-block:: php
+.. include:: /Includes/Images/Styleguide/RstIncludes/Palette.rst.txt
 
-    'palettes' => [
-        'caching' => [
-            'showitem' => '
-                cache_timeout;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.cache_timeout_formlabel,
-                cache_tags,
-                no_cache;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.no_cache_formlabel
-            ',
-        ],
-        ...
-    ],
+Palettes get defined in the section :php:`palettes` of the tables TCA array.
 
-This specifies the palette `caching`. It is then referenced in the `types` section for "normal" tables on tab "Behaviour":
+The following TCA section specifies the different palettes.
 
-.. code-block:: php
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/Palettes.rst.txt
 
-    'types' => [
-        '1' => [
-            'showitem' => '
-                ...
-                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.behaviour,
-                    ...
-                    --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.palettes.caching;caching,
-                    ...
-                ...
-            ',
-        ],
-        ...
-    ],
+The palettes then get referenced in the :php:`types` section:
 
-.. figure:: Images/PalettesPagesCaching.png
-    :alt: Caching palette in pages
-    :class: with-shadow
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/PalettesTypes.rst.txt
 
-    Caching palette in pages
+
 
 It is also possible to define the label of a palette directly in the palette
 definition. Declaring the label in an 'palettes' array can reduce boilerplate

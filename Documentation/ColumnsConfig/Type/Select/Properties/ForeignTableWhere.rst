@@ -11,55 +11,70 @@ foreign_table_where
    :Scope: Proc. / Display
    :RenderType: all
 
-   The items from :ref:`foreign_table <columns-select-properties-foreign-table>` are selected with this WHERE-clause.
+   The items from :ref:`foreign_table <columns-select-properties-foreign-table>`
+   are selected with this WHERE-clause.
 
-   The table is joined with the "pages"-table and items are selected only from pages where the user has read access!
-   (Not checking DB mount limitations!)
+Field quoting
+=============
 
-   **Example:**
+The example below uses the special field quoting syntax :php:`{#...}`
+around identifiers of the
+:ref:`QueryHelper <t3coreapi:database-query-helper-quoteDatabaseIdentifiers>`
+to be as DBAL compatible as possible. Note that the :php:`ORDER BY` is NOT
+quoted since that is parsed out anyway and always receives proper quoting.
 
-   .. code-block:: text
+Markers inside the WHERE statement
 
-      AND {#tx_my_foreign_table}.{#pid} = 0 ORDER BY tx_my_foreign_table.sorting
+It is possible to use markers in the WHERE clause:
 
-   **Field quoting**
+###REC\_FIELD\_[*field name*]###
+   Any field of the current record.
 
-   The above example uses the special field quoting syntax :php:`{#...}` around identifiers of the
-   :ref:`QueryHelper <t3coreapi:database-query-helper-quoteDatabaseIdentifiers>` to be as DBAL compatible
-   as possible. Note that the :php:`ORDER BY` is NOT quoted since that is parsed out anyway and
-   always receives proper quoting.
+   .. note::
+      The field name part of the marker is not in upper case letters.
+      It must match the exact case used in the database.
 
-   **Markers:**
+###THIS\_UID###
+   Current element uid (zero if new).
 
-   It is possible to use markers in the WHERE clause:
+###CURRENT\_PID###
+   The current page id (pid of the record).
 
-   -  ###REC\_FIELD\_[*field name*]###
-      Any field of the current record.
+###SITEROOT###
 
-      .. note::
-         The field name part of the marker is not in upper case letters.
-         It must match the exact case used in the database.
+###PAGE\_TSCONFIG\_ID###
+   A value you can set from Page TSconfig dynamically.
 
-   -  ###THIS\_UID###
-      Current element uid (zero if new).
+###PAGE\_TSCONFIG\_IDLIST###
+   A value you can set from Page TSconfig dynamically.
 
-   -  ###CURRENT\_PID###
-      The current page id (pid of the record).
+###PAGE\_TSCONFIG\_STR###
+   A value you can set from Page TSconfig dynamically.
 
-   -  ###SITEROOT###
+The markers are preprocessed so that the value of CURRENT\_PID and PAGE\_TSCONFIG\_ID are always integers
+(default is zero), PAGE\_TSCONFIG\_IDLIST will always be a comma-separated list of integers (default is zero)
+and PAGE\_TSCONFIG\_STR will be addslashes'ed before substitution (default is blank string).
 
-   -  ###PAGE\_TSCONFIG\_ID###
-      A value you can set from Page TSconfig dynamically.
+More information about markers set by Page TSconfig can be found in
+the :ref:`TSconfig reference <t3tsconfig:pagetceformconfobj>`.
 
-   -  ###PAGE\_TSCONFIG\_IDLIST###
-      A value you can set from Page TSconfig dynamically.
 
-   -  ###PAGE\_TSCONFIG\_STR###
-      A value you can set from Page TSconfig dynamically.
+Examples
+========
 
-   The markers are preprocessed so that the value of CURRENT\_PID and PAGE\_TSCONFIG\_ID are always integers
-   (default is zero), PAGE\_TSCONFIG\_IDLIST will always be a comma-separated list of integers (default is zero)
-   and PAGE\_TSCONFIG\_STR will be addslashes'ed before substitution (default is blank string).
+Select single field with foreign_prefix and foreign_where
+---------------------------------------------------------
 
-   More information about markers set by Page TSconfig can be found in
-   the :ref:`TSconfig reference <t3tsconfig:pagetceformconfobj>`.
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle3.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle3.rst.txt
+
+
+.. _tca_example_select_tree_6:
+
+Tree field with foreign_table_where
+===================================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree6.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectTree6.rst.txt

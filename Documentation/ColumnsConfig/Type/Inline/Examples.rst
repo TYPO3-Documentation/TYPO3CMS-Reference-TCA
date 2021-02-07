@@ -6,94 +6,35 @@ Examples
 ========
 
 .. _columns-inline-examples-images:
-
-Images
-======
-
-.. figure:: Images/Styleguide1.png
-    :alt: A nested 1:n to 1:n relation
-    :class: with-shadow
-
-    A nested 1:n to 1:n relation
-
-.. figure:: Images/FalStyleguide1.png
-    :alt: A typical FAL relation
-    :class: with-shadow
-
-    A typical FAL relation
-
-.. figure:: Images/CombinationBox1.png
-    :alt: A m:n relation with combination box
-    :class: with-shadow
-
-    A m:n relation with combination box
-
-
 .. _columns-inline-examples-1nRelation:
+.. _tca_example_inline_1n_inline_1:
 
 Simple 1:n relation
 ===================
 
-This combines a table companies with persons (employees):
+.. include:: /Includes/Images/Styleguide/RstIncludes/Inline1nInline1.rst.txt
 
-.. code-block:: php
+This combines a table (for example companies) with a child table (for example
+employees).
 
-    'employees' => [
-        'exclude' => 1,
-        'label' => 'LLL:EXT:myextension/locallang_db.xml:company.employees',
-        'config' => [
-            'type' => 'inline',
-            'foreign_table' => 'person',
-            'foreign_field' => 'parentid',
-            'foreign_table_field' => 'parenttable',
-            'maxitems' => 10,
-            'appearance' => [
-                'collapseAll' => 1,
-                'expandSingle' => 1,
-            ],
-        ],
-    ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Inline1nInline1.rst.txt
+
 
 .. _columns-inline-examples-fal:
+.. _tca_example_inline_fal_inline_1:
 
-File Abstraction Layer
+File abstraction layer
 ======================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineFalInline1.rst.txt
 
 Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3fal:start>`.
 
 FAL provides an API for registering an inline-type field with relations to the "sys_file_reference" table containing
-information related to existing media. Here is how to use it for the "image" field of table "tt_content":
+information related to existing media. Here an example from the
+:ref:`extension styleguide <styleguide>`:
 
-.. code-block:: php
-
-    'image' => [
-        'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.images',
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-            'image',
-            [
-                'appearance' => [
-                   'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
-                ],
-                // custom configuration for displaying fields in the overlay/reference table
-                // to use the image overlay palette instead of the basic overlay palette
-                'overrideChildTca' => [
-                    'types' => [
-                        '0' => [
-                            'showitem' => '
-                                ==palette==;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-                                ==palette==;;filePalette'
-                        ],
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
-                            'showitem' => '
-                                ==palette==;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-                                ==palette==;;filePalette'
-                        ],
-                    ],
-                ],
-            ],
-            $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-        ),
-    ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineFalInline1.rst.txt
 
 The method to call is :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig()` which takes
 four parameters. The first one is the name of the field, the second one is an array of configuration options which will
@@ -101,63 +42,17 @@ be merged with the default configuration. The third one is the list of allowed f
 (not used above) the list of disallowed file types. The default field configuration into which the
 options (second call parameter) are merged looks like:
 
-.. code-block:: php
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/FileFieldTCAConfig.rst.txt
 
-    $fileFieldTCAConfig = [
-        'type' => 'inline',
-        'foreign_table' => 'sys_file_reference',
-        'foreign_field' => 'uid_foreign',
-        'foreign_sortby' => 'sorting_foreign',
-        'foreign_table_field' => 'tablenames',
-        'foreign_match_fields' => [
-            'fieldname' => $fieldName
-        ],
-        'foreign_label' => 'uid_local',
-        'foreign_selector' => 'uid_local',
-        'overrideChildTca' => [
-            'columns' => [
-                'uid_local' => [
-                    'config' => [
-                        'appearance' => [
-                            'elementBrowserType' => 'file',
-                            'elementBrowserAllowed' => $allowedFileExtensions
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        'filter' => [
-            [
-                'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
-                'parameters' => [
-                    'allowedFileExtensions' => $allowedFileExtensions,
-                    'disallowedFileExtensions' => $disallowedFileExtensions
-                ]
-            ]
-        ],
-        'appearance' => [
-            'useSortable' => true,
-            'headerThumbnail' => [
-                'field' => 'uid_local',
-                'width' => '45',
-                'height' => '45c',
-            ],
-            'showPossibleLocalizationRecords' => false,
-            'showRemovedLocalizationRecords' => false,
-            'showSynchronizationLink' => false,
-            'showAllLocalizationLink' => false,
 
-            'enabledControls' => [
-                'info' => false,
-                'new' => false,
-                'dragdrop' => true,
-                'sort' => false,
-                'hide' => true,
-                'delete' => true,
-                'localize' => true,
-            ],
-        ],
-    ];
+Using inline FAL relations in flexforms
+=======================================
+
+It is also possible to use the inline FAL relations is a flexform. However
+there is no method which facilitates the generation of the code yet. So
+the configuration has to be written manually like this:
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineFalInline1Flexform.rst.txt
 
 
 .. _columns-inline-examples-asymmetric-mm:
@@ -165,157 +60,79 @@ options (second call parameter) are merged looks like:
 Attributes on anti-symmetric intermediate table
 ===============================================
 
-This example combines companies with persons (employees) using an intermediate table. It is also possible to add
-attributes to every relation – in this example, an attribute "jobtype" on the "person\_company" table is defined.
-It is also possible to look at the relation from both sides (parent and child):
+.. include:: /Includes/Images/Styleguide/RstIncludes/Inline1n1nInline1.rst.txt
 
-.. code-block:: php
+The record has two child records displayed inline.
 
-    $GLOBALS['TCA']['person'] = [
-        'columns' => [
-            'employers' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:person.employers',
-                'config' => [
-                    'type' => 'inline',
-                    'foreign_table' => 'person_company',
-                    'foreign_field' => 'person',
-                    'foreign_label' => 'company',
-                ],
-            ],
-        ],
-    ];
-    $GLOBALS['TCA']['company'] = [
-        'columns' => [
-            'employees' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:company.employees',
-                'config' => [
-                    'type' => 'inline',
-                    'foreign_table' => 'person_company',
-                    'foreign_field' => 'company',
-                    'foreign_label' => 'person',
-                ],
-            ],
-        ],
-    ];
-    $GLOBALS['TCA']['person_company'] = [
-        'columns' => [
-            'person' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.person',
-                'config' => [
-                    'type' => 'select',
-                    'renderType' => 'selectSingle',
-                    'foreign_table' => 'person',
-                    'size' => 1,
-                    'minitems' => 0,
-                    'maxitems' => 1,
-                ],
-            ],
-            'company' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.company',
-                'config' => [
-                    'type' => 'select',
-                    'renderType' => 'selectSingle',
-                    'foreign_table' => 'company',
-                    'size' => 1,
-                    'minitems' => 0,
-                    'maxitems' => 1,
-                ],
-            ],
-            'jobtype' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:person_company.jobtype',
-                'config' => [
-                    'type' => 'select',
-                    'renderType' => 'selectSingle',
-                    'items' => [
-                        ['Project Manager (PM)', '0'],
-                        ['Chief Executive Officer (CEO)', '1'],
-                        ['Chief Technology Officer (CTO)', '2'],
-                    ],
-                    'size' => 1,
-                    'maxitems' => 1,
-                ],
-            ],
-        ],
-    ];
+This example combines records from a parent table
+:php:`tx_styleguide_inline_mn` with records from the child table
+:php:`tx_styleguide_inline_mn_child` using the intermediate table
+:php:`tx_styleguide_inline_mn_mm`. It is also possible to add
+attributes to every relation – in this example a checkbox.
+
+The parent table :php:`tx_styleguide_inline_mn` contains the following column:
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineMnInline1.rst.txt
+
+If the child table :php:`tx_styleguide_inline_mn_child` wants to display its parents also it needs to define a
+column like in this example:
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineMnChildParents.rst.txt
+
+The intermediate table :php:`tx_styleguide_inline_mn_mm` defines the following fields:
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/InlineMnMm.rst.txt
 
 
 .. _columns-inline-examples-symmetric-mm:
+.. _tca_example_inline_mn_symetric_11_branches:
 
 Attributes on symmetric intermediate table
 ==========================================
 
-This example combines two persons with each other – imagine they are married. One person on the first side is the
-husband, and one person on the other side is the wife (or generally "spouse" in the example below). Symmetric
-relations combine object of the same with each other and it does not depend, from which side someone is looking to the
-relation – so the husband knows his wife and the wife also knows her husband.
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineMnSymetric11Branches.rst.txt
 
-Sorting could be individually defined for each of the both sides (perhaps this should not be applied to a
-wife-husband-relationship in real life)
+Record 1 is related to records 6 and 11 of the same table
 
-.. code-block:: php
-
-    $GLOBALS['TCA']['person'] = [
-        'columns' => [
-            'employers' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:person.employers',
-                'config' => [
-                    'type' => 'inline',
-                    'foreign_table' => 'person_symmetric',
-                    'foreign_field' => 'person',
-                    'foreign_sortby' => 'sorting_person',
-                    'foreign_label' => 'spouse',
-                    'symmetric_field' => 'spouse',
-                    'symmetric_sortby' => 'sorting_spouse',
-                    'symmetric_label' => 'person',
-                ],
-            ],
-        ],
-    ];
-    $GLOBALS['TCA']['person_symmetric'] = [
-        'columns' => [
-            'person' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.person',
-                'config' => [
-                    'type' => 'select',
-                    'renderType' => 'selectSingle',
-                    'foreign_table' => 'person',
-                    'size' => 1,
-                    'minitems' => 0,
-                    'maxitems' => 1,
-                ],
-            ],
-            'spouse' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.spouse',
-                'config' => [
-                    'type' => 'select',
-                    'renderType' => 'selectSingle',
-                    'foreign_table' => 'person',
-                    'size' => 1,
-                    'minitems' => 0,
-                    'maxitems' => 1,
-                ],
-            ],
-            'someattribute' => [
-                'label' => 'LLL:EXT:myextension/locallang_db.xml:person_symmetric.someattribute',
-                'config' => [
-                    'type' => 'input',
-                ],
-            ],
-            'sorting_person' => [
-                'config' => [
-                    'type' => 'passthrough',
-                ],
-            ],
-            'sorting_spouse' => [
-                'config' => [
-                    'type' => 'passthrough',
-                ],
-            ],
-        ],
-    ];
+This example combines records of the same table with each other. Image we want
+to store relationships between hotels. Symmetric relations combine records of
+one table with each other. If record A is related to record B then record B is
+also related to record A. However, the records are not stored in groups. If
+record A is related to B and C, B doesn't have to be related to C.
 
 
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineMnSymetric11Branches.rst.txt
+
+Record 11 is symetrically related to record 1 but not to 6
+
+The main table :php:`tx_styleguide_inline_mnsymmetric` has a field storing the
+inline relation, here: :php:`branches`.
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineMnSymetricBranches.rst.txt
+
+Records of the main table can than have a symetric relationship to each other
+using the intermediate table :php:`tx_styleguide_inline_mnsymmetric_mm`.
+
+The intermediate table stores the uids of both sides of the relation in
+:php:`hotelid` and :php:`branchid`. Furthermore custom sorting can be defined in
+both directions.
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/InlineMnSymetricMm.rst.txt
 
 .. note::
    :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
    have special storage folders on a per-table-basis. See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
+
+.. _tca_example_inline_usecombinationc_inline_1:
+
+With a combination box
+======================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineUsecombinationcInline1.rst.txt
+
+The combination box shows available records. On clicking one entry it gets
+added to the parent record.
+
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/InlineUsecombinationcInline1.rst.txt
+

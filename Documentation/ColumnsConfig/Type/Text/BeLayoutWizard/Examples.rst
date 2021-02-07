@@ -4,18 +4,12 @@
 Example
 =======
 
-.. figure:: ../Images/BackendLayout.png
-    :alt: Backend layout editor (config)
-    :class: with-shadow
+.. _tca_example_backend_layout:
+.. _tca_example_text_20:
 
-    Backend layout editor (config)
+Backend layout editor
+=====================
 
-.. code-block:: php
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text20.rst.txt
 
-    'config' => [
-        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:backend_layout.config',
-        'config' => [
-            'type' => 'text',
-            'renderType' => 'belayoutwizard',
-        ]
-    ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text20.rst.txt

@@ -20,34 +20,13 @@ multiSelectFilterItems
 
    -  Second value is the  **item label** (string or LLL reference)
 
-   **Example configuration:**
+Examples
+========
 
-   .. code-block:: php
+Select by predefined keywords
+-----------------------------
 
-      'related_content' => [
-         'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_content',
-         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectMultipleSideBySide',
-            'foreign_table' => 'tt_content',
-            'foreign_table_where' => 'ORDER BY header ASC',
-            'size' => 5,
-            'minitems' => 0,
-            'multiSelectFilterItems' => [
-               [
-                  'image',
-                  'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_content.image'
-               ],
-               [
-                  'typo3',
-                  'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tx_examples_haiku.related_content.typo3'
-               ],
-            ],
-         ],
-      ],
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside5.rst.txt
 
-   .. figure:: ../Images/TypeSelectItemsFilter.png
-      :alt: Filtering available items with both predefined keywords and free input
-      :class: with-shadow
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside5.rst.txt
 
-      Filtering available items with both predefined keywords and free input

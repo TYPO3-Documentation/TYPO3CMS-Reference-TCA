@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/CtrlDescriptionColumn.png
+   :alt: Record information shown editing an example record
+   :class: with-shadow
+
+   Record information shown editing an example record

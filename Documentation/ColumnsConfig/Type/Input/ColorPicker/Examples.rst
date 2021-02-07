@@ -4,19 +4,12 @@
 Examples
 ========
 
-.. figure:: ../Images/Styleguide34Colorbox.png
-    :alt: Color picker (input_34)
-    :class: with-shadow
 
-    Color picker (input_34)
+.. _tca_example_input_34:
 
-.. code-block:: php
+Color picker field
+==================
 
-    'input_34' => [
-        'label' => 'input_34 renderType colorbox',
-        'config' => [
-            'type' => 'input',
-            'renderType' => 'colorpicker',
-            'size' => 10,
-        ],
-    ],
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input34.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input34.rst.txt

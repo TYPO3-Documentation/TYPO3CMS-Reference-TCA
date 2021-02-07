@@ -1,36 +1,14 @@
 .. include:: /Includes.rst.txt
 
 
-Example
-=======
+Examples
+========
 
-.. figure:: ../Images/TypeSelectStyleguideTree1.png
-   :alt: A happy little tree! (select_tree_1)
-   :class: with-shadow
+.. _tca_example_select_tree_1:
 
-   A happy little tree! (select_tree_1)
+A happy little tree!
+====================
 
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree1.rst.txt
 
-.. code-block:: php
-
-   'select_tree_1' => [
-      'label' => 'select_tree_1 pages, showHeader=true, expandAll=true, size=20, order by sorting, static items',
-      'config' => [
-         'type' => 'select',
-         'renderType' => 'selectTree',
-         'foreign_table' => 'pages',
-         'foreign_table_where' => 'ORDER BY pages.sorting',
-         'size' => 20,
-         'items' => [
-            ['static from tca 4711', 4711],
-            ['static from tca 4712', 4712],
-         ],
-         'treeConfig' => [
-            'parentField' => 'pid',
-            'appearance' => [
-               'expandAll' => true,
-               'showHeader' => true,
-            ],
-         ],
-      ],
-   ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectTree1.rst.txt

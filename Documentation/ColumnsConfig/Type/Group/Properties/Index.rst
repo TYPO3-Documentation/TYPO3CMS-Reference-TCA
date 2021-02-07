@@ -36,17 +36,14 @@ Special properties
 
    Allowed
    Appearance
-   Disallowed
+   FieldWizard
    Filter
    ForeignTable
    HideMoveIcons
    HideSuggest
    InternalType
-   MaxSize
-   Options
    PrependTname
-   Uploadfolder
-
+   SuggestOptions
 
 Common properties
 =================

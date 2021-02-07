@@ -1,0 +1,6 @@
+
+.. figure:: /Includes/Images/Styleguide/ManualScreenshots/StyleguideViewExample.png
+   :alt: some image
+   :class: with-shadow
+
+   View the examples (backend debugging is activated)

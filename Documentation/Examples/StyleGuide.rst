@@ -32,11 +32,7 @@ How to use the `styleguide` extension
    you can delete the example page tree by clicking the other button
    :guilabel:`Delete styleguide page tree and all styleguide data records`
 
-   .. image:: Images/StyleguideCreateTCA.png
-      :alt: some image
-      :class: with-shadow
-
-      Create the page tree
+   .. include:: /Includes/Images/Styleguide/RstIncludes/StyleguideCreateTCA.rst.txt
 
 
 3. Have a look at the examples
@@ -44,17 +40,15 @@ How to use the `styleguide` extension
    Navigate to the new page tree called :guilabel:`styleguide TCA demo`, using
    the :guilabel:`List` module. Choose a page, for example
    :guilabel:`elements basic`, and open the English record. The records in the
-   other languages can be used to see examples of localization and the relation 
+   other languages can be used to see examples of localization and the relation
    between languages.
 
-   .. image:: Images/StyleguideViewExample.png
-      :alt: some image
-      :class: with-shadow
 
-      View the examples (backend debugging is activated)
+   .. include:: /Includes/Images/Styleguide/RstIncludes/StyleguideViewExample.rst.txt
+
 
    .. hint::
-      If you turn on Backend debugging you can see the names of all fields as
+      If you turn on the backend debugging you can see the names of all fields as
       used in the database. Furthermore, in fields that hide the real database
       value (such as checkboxes) you can see the value hidden behind the label.
       To activate backend debugging go to: :guilabel:`Admin Tools > Settings
@@ -72,8 +66,5 @@ How to use the `styleguide` extension
    field, in this example `checkbox_9`. You can then have a look at the TCA
    definition in a working example.
 
-   .. image:: Images/StyleguideViewExample.png
-      :alt: some image
-      :class: with-shadow
+   .. include:: /Includes/Images/Styleguide/RstIncludes/StyleguideTcaDefinition.rst.txt
 
-      View the examples (backend debugging is activated)

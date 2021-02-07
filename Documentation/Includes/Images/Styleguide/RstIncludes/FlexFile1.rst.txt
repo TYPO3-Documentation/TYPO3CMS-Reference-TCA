@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/FlexFile1.png
+   :alt: A field with a simple, one-field flex form
+   :class: with-shadow
+
+   :ref:`A field with a simple, one-field flex form <tca_example_flex_file_1>`

@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Core/Frontend/AutomaticScreenshots/CtrlType.png
+   :alt: The type selector of a content elements
+   :class: with-shadow
+
+   The type selector of a content elements

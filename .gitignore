@@ -1,15 +1,2 @@
-*.bak
-*.idea
-*.project
-*.swp
-*GENERATED*
-*NOT_VERSIONED*
-*~
-.buildpath
-.cache
-.project
-.session
-.settings
-.TemporaryItems
-.webprj
-nbproject
+
+/Documentation-GENERATED-temp

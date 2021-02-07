@@ -1,9 +1,9 @@
 .. include:: /Includes.rst.txt
 .. _ctrl-reference-type:
 
-====
-type
-====
+============
+Record types
+============
 
 .. confval:: type
 
@@ -18,63 +18,70 @@ type
    will probably also affect how the record is used in the context where it belongs.
 
    The most widely known usage of this feature is the case of *Content Elements*
-   where the "Type:" selector is defined as the "type" field and when you
+   where the :guilabel:`Type:` selector is defined as the "CType" field and when you
    change that selector you will also get another rendering of the form:
 
-   .. figure:: ../Images/Type.png
-      :alt: The type selector
-      :class: with-shadow
-
-      The type selector of content elements
+   .. include:: /Includes/Images/Core/Frontend/RstIncludes/CtrlType.rst.txt
 
    It is used for example by the "doktype" field in the "pages" table.
 
+   On changing the value of the field defined in `type` the user gets prompted
+   to reload the record.
+
+   .. include:: /Includes/Images/Styleguide/RstIncludes/CtrlTypeChangeModal.rst.txt
+
+   Only one type field can be defined. If you need to reload the record on
+   changing another field, see
+   :ref:`property onchange <columns-properties-onChange>`.
 
    It is also possible to make the type depend on the value of a related record,
    for example to switch using the type field of a
    foreign table. The syntax is :code:`relation_field:foreign_type_field`.
+   For example the :sql:`sys_file_metadata` table takes its type from the
+   :sql:`sys_file` table.
 
 
 Examples
 ========
 
-Type stored in a field
-======================
+the type stored in a field
+--------------------------
 
-The "dummy" table from the "examples" extension defines different types. The field used for differentiating
+.. include:: /Includes/Images/Styleguide/RstIncludes/CtrlType0.rst.txt
+
+The table :sql:`` table from the "examples" extension defines different types. The field used for differentiating
 the types is the "record\_type" field. Hence we have the following in the :code:`['ctrl']` section
 of the tx\_examples\_dummy table:
 
-.. code-block:: php
-
-   'ctrl' => [
-      'type' => 'record_type',
-      ...
-   ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/CtrlTypeCtrl.rst.txt
 
 The "record\_type" field can take values ranging from 0 to 2. Accordingly we define types for the same values.
 Each type defines which fields will be displayed in the BE form:
 
-.. code-block:: php
-
-   'types' => [
-      '0' => ['showitem' => 'hidden, record_type, title, some_date'],
-      '1' => ['showitem' => 'record_type, title'],
-      '2' => ['showitem' => 'title, some_date, hidden, record_type'],
-   ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/CtrlTypeTypes.rst.txt
 
 See the :ref:`section about types <types>` for more details.
 
 
-Type in relation to a foreign table
------------------------------------
+Type in relation to a foreign table's field
+-------------------------------------------
 
-The "sys_file_metadata" table takes its type from the "sys_file" table. The relation between the two tables is
-stored in the "file" field. Thus the :code:`type` declaration for "sys_file_metadata" looks like:
+.. include:: /Includes/Images/Styleguide/RstIncludes/CtrlTypeForeign.rst.txt
 
-.. code-block:: php
+The following table :sql:`tx_styleguide_type_foreign` stores its relation to
+the table :sql:`tx_styleguide_type` in the field :php:`foreign_table`.
 
-   'ctrl' => [
-      'type' => 'file:type',
-      ...
-   ],
+The type of the table :sql:`tx_styleguide_type_foreign` comes from the content
+of the field `tx_styleguide_type:record_type` of the related field.
+
+The type is therefore defined via :php:`type = 'foreign_table:record_type'`.
+
+The control section of the table :sql:`tx_styleguide_type_foreign` looks like
+this:
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/TypeForeignTableCtrl.rst.txt
+
+The field :php:`foreign_table` in the same table is a normal singleSelect field.
+It can be any kind of 1 - 1 or 1 - n relation.
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/TypeForeignForeignTable.rst.txt

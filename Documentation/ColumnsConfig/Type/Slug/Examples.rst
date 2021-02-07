@@ -5,8 +5,8 @@
 Examples
 ========
 
-General Example
-===============
+Slug field
+==========
 
 .. code-block:: php
 
@@ -31,6 +31,7 @@ General Example
          'default' => ''
       ],
    ],
+
 
 .. _tca_example_pages_slug:
 

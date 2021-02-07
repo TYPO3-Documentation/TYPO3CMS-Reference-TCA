@@ -23,3 +23,11 @@ eval
 
    maximumRecordsCheckedInPid
       Similar to :code:`maximumRecordsChecked` but with the validation scope limited to records stored in the same page.
+
+.. _tca_example_checkbox_7:
+
+Examples
+========
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox7.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox7.rst.txt

@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/InlineMnSymetric11Branches.png
+   :alt: Screenshot of field branches, table tx_styleguide_inline_mnsymmetric
+   :class: with-shadow
+
+   :ref:`Screenshot of field branches, table tx_styleguide_inline_mnsymmetric <tca_example_inline_mn_symetric_11_branches>`

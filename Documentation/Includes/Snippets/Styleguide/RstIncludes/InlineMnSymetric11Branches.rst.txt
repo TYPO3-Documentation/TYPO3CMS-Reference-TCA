@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_inline_mnsymmetric.php
+   :language: php
+   :start-at: start branches
+   :end-before: end branches
+   :lines: 2- 
+

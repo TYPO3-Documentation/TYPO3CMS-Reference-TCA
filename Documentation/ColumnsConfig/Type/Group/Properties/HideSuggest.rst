@@ -18,8 +18,25 @@ hideSuggest
 
    Setting this property to `true` disables the suggest wizard.
 
-   .. figure:: ../Images/TypeGroupSuggest8.png
-      :alt: Suggest wizard showing some suggestions
-      :class: with-shadow
+Examples
+========
 
-      Suggest wizard showing some suggestions
+.. _tca_example_group_db_11:
+
+Suggest wizard is hidden
+------------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb11.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb11.rst.txt
+
+.. _tca_example_group_db_8:
+
+Suggest wizard is shown
+------------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb8.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb8.rst.txt
+
+

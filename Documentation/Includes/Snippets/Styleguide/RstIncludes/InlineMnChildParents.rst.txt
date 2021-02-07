@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_inline_mn_child.php
+   :language: php
+   :start-at: start parents
+   :end-before: end parents
+   :lines: 2- 
+

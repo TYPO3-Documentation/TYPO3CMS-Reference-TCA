@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_inline_fal.php
+   :language: php
+   :start-at: start inline_1
+   :end-before: end inline_1
+   :lines: 2- 
+

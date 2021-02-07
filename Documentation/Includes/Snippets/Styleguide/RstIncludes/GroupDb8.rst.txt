@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_elements_group.php
+   :language: php
+   :start-at: start group_db_8
+   :end-before: end group_db_8
+   :lines: 2- 
+

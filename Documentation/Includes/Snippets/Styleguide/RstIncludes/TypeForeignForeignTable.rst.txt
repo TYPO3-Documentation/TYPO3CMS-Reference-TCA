@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_type_foreign.php
+   :language: php
+   :start-at: start foreign_table
+   :end-before: end foreign_table
+   :lines: 2- 
+

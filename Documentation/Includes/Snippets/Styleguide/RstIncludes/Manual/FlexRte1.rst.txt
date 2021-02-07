@@ -1,0 +1,5 @@
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_elements_rte.php
+   :language: xml
+   :start-at: <rte_1>
+   :end-before: <rte.2>

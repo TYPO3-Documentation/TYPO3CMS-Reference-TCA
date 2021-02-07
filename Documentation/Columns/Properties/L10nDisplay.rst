@@ -33,32 +33,29 @@ Localization display (l10n\_display)
 Examples
 ========
 
-The following field has the option :php:`'l10n_display' => 'defaultAsReadonly'` 
+.. _tca_example_translated_select_single_13:
+
+Select field with `defaultAsReadonly`
+-------------------------------------
+
+The following field has the option :php:`'l10n_display' => 'defaultAsReadonly'`
 set:
 
-.. figure:: /Examples/Images/Styleguide/SelectSingle13Translated.png
-   :class: with-shadow
+.. include:: /Includes/Images/Styleguide/RstIncludes/TranslatedSelectSingle13.rst.txt
 
-   Select field with 'l10n_display' => 'defaultAsReadonly'
+Complete TCA definition of the field:
 
-Complete definition of the field select_single_13:
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/TranslatedSelectSingle13.rst.txt
 
-.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_select.php
-   :language: php
-   :start-at: start select_single_13
-   :end-before: end select_single_13
-   :linenos:
-   :emphasize-lines: 5
-   
-While the following has no :php:`'l10n_display'` definition:
+.. _tca_example_translated_select_single_8:
 
-.. figure:: /Examples/Images/Styleguide/SelectSingle8Translated.png
-   :class: with-shadow
+Translated field without `l10n_display` definition
+--------------------------------------------------
 
+The following has no :php:`'l10n_display'` definition:
 
-Complete definition of the field select_single_8:
+.. include:: /Includes/Images/Styleguide/RstIncludes/TranslatedSelectSingle8.rst.txt
 
-.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_select.php
-   :language: php
-   :start-at: start select_single_8
-   :end-before: end select_single_8
+Complete TCA definition of the field:
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/TranslatedSelectSingle8.rst.txt

@@ -5,42 +5,22 @@
 Examples
 ========
 
+
+.. _tca_example_text_4:
+
 Simple text area
 ================
 
-.. figure:: ../Images/SysNote.png
-    :alt: Message field of system notes, a simple text area (message)
-    :class: with-shadow
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
 
-    Message field of system notes, a simple text area (message)
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text4.rst.txt
 
-.. code-block:: php
 
-    'message' => [
-        'label' => 'LLL:EXT:sys_note/Resources/Private/Language/locallang_tca.xlf:sys_note.message',
-        'config' => [
-            'type' => 'text',
-            'cols' => 40,
-            'rows' => 15
-        ]
-    ],
+.. _tca_example_rte_1:
 
 Rich text editor field
 ======================
 
-.. figure:: ../Images/RteStyleguide1.png
-    :alt: A Rich Text Editor field (rte_1)
-    :class: with-shadow
+.. include:: /Includes/Images/Styleguide/RstIncludes/Rte1.rst.txt
 
-    A Rich Text Editor field (rte_1)
-
-.. code-block:: php
-
-    'rte_1' => [
-        'label' => 'rte_1',
-        'config' => [
-            'type' => 'text',
-            'enableRichtext' => true,
-        ],
-    ],
-
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Rte1.rst.txt

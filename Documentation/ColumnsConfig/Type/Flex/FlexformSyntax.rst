@@ -18,16 +18,16 @@ inside a <T3DataStructure> XML document. When you configure a FlexForm
 field in a Data Structure (DS) you can use basically all column types
 documented here for TCA. The limitations are:
 
-- "unique" and "uniqueInPid" evaluation is not available
+-  "unique" and "uniqueInPid" evaluation is not available
 
-- You cannot nest FlexForm configurations inside of FlexForms.
+-  You cannot nest FlexForm configurations inside of FlexForms.
 
-- You cannot add, change or remove fields in FlexForms without copying the data structure and changing the configuration accordingly.
+-  You cannot add, change or remove fields in FlexForms without copying the data structure and changing the configuration accordingly.
 
-- Charset follows that of the current backend UTF-8. When storing FlexForm information in external files,
-  make sure that they are using UTF-8 too.
+-  Charset follows that of the current backend UTF-8. When storing FlexForm information in external files,
+   make sure that they are using UTF-8 too.
 
-- :php:`type='inline'` and other type's that point to different tables are not allowed in flex form section containers.
+-  :php:`type='inline'` and other type's that point to different tables are not allowed in flex form section containers.
 
 .. _columns-flex-tceforms:
 

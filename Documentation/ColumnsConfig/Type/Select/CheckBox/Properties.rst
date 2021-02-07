@@ -22,9 +22,6 @@ Select properties
 *  :ref:`foreign-table-prefix <columns-select-properties-foreign-table-prefix>`
 *  :ref:`foreign-table-where <columns-select-properties-foreign-table-where>`
 *  :ref:`items <columns-select-properties-items>`
-*  :ref:` <columns-select-properties->`
-*  :ref:` <columns-select-properties->`
-*  :ref:` <columns-select-properties->`
 
 Common properties
 =================

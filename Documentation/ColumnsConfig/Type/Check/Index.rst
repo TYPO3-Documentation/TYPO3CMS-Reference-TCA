@@ -6,7 +6,6 @@
 Checkboxes
 ==========
 
-.. _columns-check-introduction:
 
 Introduction
 ============
@@ -19,6 +18,19 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 .. tip::
     This means that you should check the bits of values from single-checkbox
     fields and not just whether it is true or false.
+
+There is a subtle difference between fields of the type `check` and select
+fields with the render type
+:ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`. For the
+details please see: :ref:`selectCheckBox-check-compared`.
+
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox19.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox17.rst.txt
+
+.. _columns-check-introduction:
 
 .. warning::
     Resorting the 'items' of a type='check' config results in single items moving to different bit positions.

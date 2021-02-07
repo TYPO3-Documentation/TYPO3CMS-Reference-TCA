@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/Flex1.png
+   :alt: A flex form with two sheets and descriptions
+   :class: with-shadow
+
+   :ref:`A flex form with two sheets and descriptions <tca_example_flex_1>`

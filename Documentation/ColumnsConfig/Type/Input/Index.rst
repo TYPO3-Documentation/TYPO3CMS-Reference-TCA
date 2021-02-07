@@ -31,6 +31,16 @@ The following renderTypes are available:
 *  :ref:`inputLink <columns-input-renderType-inputLink>`: An input field
    used to handle links and mail addresses in the backend.
 
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input28.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input30.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input33.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input34.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Inputdatetime3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input29.rst.txt
+
+
 .. toctree::
    :hidden:
 

@@ -9,7 +9,6 @@ editPopup
 
    :type: array
    :Scope: fieldControl
-
    :Types: :ref:`group <columns-group>`
 
    The edit popup field control gives a shortcut to edit referenced elements directly a popup. When a record is
@@ -19,37 +18,49 @@ editPopup
       The edit popup control is pre-configured, but disabled by default. Enable it if you need it, the button
       is by default shown below `element browser` and `insert clipboard`.
 
-   **Options:**
+Options
+=======
 
-   title (string or LLL reference)
-     Allows to set a different 'title' attribute to the popup icon, defaults
-     to :code:`LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.edit`
+.. confval:: disabled
 
-   windowOpenParameters (string)
-     Allows to set a different size of the popup, defaults
-     to :code:`height=800,width=600,status=0,menubar=0,scrollbars=1`.
+   :type: boolean
+   :Scope: fieldControl -> editPopup
+   :Default: true
 
-   .. figure:: /ColumnsConfig/Type/Group/Images/TypeGroupFieldControlEditPopup.png
-      :alt: Editing a record thanks to the wizard
-      :class: with-shadow
+   Disables the field control. Needs to be set to :php:`false` to enable the
+   :guilabel:`Create new` button
 
-      Edit a related record directly thanks to the Edit wizard
+.. confval:: options[title]
 
-   **Example**
+   :type: string
+   :Scope: fieldControl -> editPopup
+   :Values: string or LLL reference
+   :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.edit
 
-   .. code-block:: php
+   Allows to set a different 'title' attribute to the popup icon.
 
-      'myField' => [
-         'type' => 'group',
-         // ...
-         'config' => [
-            'fieldControl' => [
-               'editPopup' => [
-                  'disabled' => false,
-                  'options' => [
-                     'title' => 'Edit a selected record!',
-                  ],
-               ],
-            ],
-         ],
-      ],
+.. confval:: options[windowOpenParameters]
+
+   :type: string
+   :Scope: fieldControl -> editPopup
+   :Values: string or LLL reference
+   :Default: height=800,width=600,status=0,menubar=0,scrollbars=1
+
+   Allows to set a different size of the popup, defaults
+
+Examples
+========
+
+Select field
+------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+
+Group field
+-----------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt

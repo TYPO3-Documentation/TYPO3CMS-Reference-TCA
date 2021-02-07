@@ -21,7 +21,9 @@ exclude
 Example
 =======
 
-.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
-   :language: php
-   :start-at: start input_1
-   :end-before: end input_1
+Simple input field
+------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input1.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input1.rst.txt

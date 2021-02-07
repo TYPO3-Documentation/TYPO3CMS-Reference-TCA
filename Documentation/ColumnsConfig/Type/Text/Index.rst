@@ -32,6 +32,29 @@ The following renderTypes are available:
    :code:`renderType = 'textTable'` triggers a view to manage frontend table
    display in the backend. It is used for the "Table" tt\_content content element.
 
+
+Simple text area
+================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
+
+Rich text editor field
+======================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Rte1.rst.txt
+
+
+Backend layout editor
+=====================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text20.rst.txt
+
+
+Text field with renderType textTable
+====================================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text17.rst.txt
+
 .. toctree::
    :hidden:
 

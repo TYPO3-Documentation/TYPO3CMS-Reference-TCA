@@ -10,6 +10,8 @@ renderType='selectSingleBox'.
 
 Renders a select field to select multiple entries from a given list.
 
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox1.rst.txt
+
 .. important::
 
    The name is misleading. This is a renderType which allows you to select

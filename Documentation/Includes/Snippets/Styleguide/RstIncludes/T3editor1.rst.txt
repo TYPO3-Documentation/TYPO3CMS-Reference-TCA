@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_elements_t3editor.php
+   :language: php
+   :start-at: start t3editor_1
+   :end-before: end t3editor_1
+   :lines: 2- 
+

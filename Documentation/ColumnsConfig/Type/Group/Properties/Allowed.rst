@@ -9,19 +9,27 @@ allowed
 
    :type: string (list)
    :Scope: Proc. / Display
-   :InternalType: all
+   :InternalType: db
 
-   **For the "file" internal type (Optional):**
-      A lowercase comma list of file extensions that are permitted, eg. 'jpg,gif,txt'. Also
-      see :ref:`disallowed <columns-group-properties-disallowed>`.
+   A comma list of tables from :php:`$GLOBALS['TCA']`, for example "pages,be\_users".
 
-   **For the "db" internal type (Required!):**
-      A comma list of tables from :php:`$GLOBALS['TCA']`, for example "pages,be\_users".
+   .. note::
+      If the field is the foreign side of a bidirectional MM relation, only the first table is used and that
+      must be the table of the records on the native side of the relation.
 
-      .. note::
-         If the field is the foreign side of a bidirectional MM relation, only the first table is used and that
-         must be the table of the records on the native side of the relation.
+   .. note::
+      When using Extbase, you also need to fill
+      :ref:`foreign_table <columns-group-properties-foreign-table>`
+      property with the same table name as used in
+      :ref:`allowed <columns-group-properties-allowed>` property
+      (but with just one table name).
 
-      .. note::
-         When using Extbase, you also need to fill :ref:`foreign_table <columns-group-properties-foreign-table>`
-         property with the same table name as used in :ref:`allowed <columns-group-properties-allowed>` property (but with just one table name).
+Examples
+========
+
+Group relation to be_groups and be_users
+----------------------------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt

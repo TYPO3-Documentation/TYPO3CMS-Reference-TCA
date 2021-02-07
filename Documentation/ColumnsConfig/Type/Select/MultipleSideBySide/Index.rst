@@ -7,9 +7,12 @@ selectMultipleSideBySide
 ========================
 
 This page describes the :ref:`select <columns-select>` type with
-renderType='selectMultipleSideBySide'.
+:php:`renderType='selectMultipleSideBySide'`.
 
-Two select fields, items can be selected from the right field, selected items are displayed in the left select.
+It displays two select fields, the items can be selected from the right field
+all selected items are displayed in the left one.
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
 
 .. toctree::
    :titlesonly:

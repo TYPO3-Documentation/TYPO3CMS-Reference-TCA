@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/InlineUsecombinationcInline1.png
+   :alt: Screenshot of field inline_1, table tx_styleguide_inline_usecombination
+   :class: with-shadow
+
+   :ref:`Screenshot of field inline_1, table tx_styleguide_inline_usecombination <tca_example_inline_usecombinationc_inline_1>`

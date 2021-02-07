@@ -5,17 +5,11 @@
 Examples
 ========
 
-.. figure:: Images/Styleguide1.png
-    :alt: Simple none field (none_1)
-    :class: with-shadow
+.. _tca_example_none_1:
 
-    Simple none field
+Simple none field
+=================
 
-.. code-block:: php
+.. include:: /Includes/Images/Styleguide/RstIncludes/None1.rst.txt
 
-    'none_1' => [
-        'label' => 'none_1',
-        'config' => [
-            'type' => 'none',
-        ],
-    ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/None1.rst.txt

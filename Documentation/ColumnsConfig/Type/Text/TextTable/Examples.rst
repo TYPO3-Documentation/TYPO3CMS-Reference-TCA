@@ -4,21 +4,12 @@
 Example
 =======
 
-.. figure:: ../Images/TableTtContentBodytext.png
-    :alt: Table editor tt\_content bodytext
-    :class: with-shadow
 
-    Table editor tt\_content bodytext
+.. _tca_example_text_17:
 
-.. code-block:: php
+Text field with renderType textTable
+====================================
 
-    'bodytext' => [
-        'label' => '',
-        'config' => [
-            'type' => 'text',
-            'renderType' => 'textTable',
-            'wrap' => 'off',
-            'cols' => 80,
-            'rows' => 15,
-        ],
-    ],
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text17.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text17.rst.txt

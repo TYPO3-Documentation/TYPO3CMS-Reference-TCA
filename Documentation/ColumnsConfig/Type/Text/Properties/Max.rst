@@ -17,3 +17,15 @@ max
    is enforced.
 
    Does not apply for RTE fields.
+
+Examples
+========
+
+.. _tca_example_text_11:
+
+Textarea with a maximum of 30 characters
+----------------------------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text11.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text11.rst.txt

@@ -1,0 +1,5 @@
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_inline_mn_mm.php
+   :language: php
+   :start-at: [start parentid]
+   :end-before: [end check_1]

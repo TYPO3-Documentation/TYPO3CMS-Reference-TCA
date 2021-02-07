@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_flex.php
+   :language: php
+   :start-at: start flex_2
+   :end-before: end flex_2
+   :lines: 2- 
+

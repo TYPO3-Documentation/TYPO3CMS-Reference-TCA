@@ -1,5 +1,4 @@
 ﻿.. include:: /Includes.rst.txt
-
 .. _columns:
 
 ===========================
@@ -39,6 +38,7 @@ combination and are explained in detail in the :ref:`['columns']['config'] <colu
 .. _columns-properties:
 
 .. toctree::
+   :titlesonly:
 
    Examples
    Properties/Index

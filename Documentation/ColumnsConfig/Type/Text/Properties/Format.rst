@@ -13,3 +13,15 @@ format
 
    The value specifies the language t3editor should handle. Allowed values:
    `css`, `html`, `javascript`, `php`, `typoscript`, `xml`
+
+
+Examples
+========
+
+T3editor with format HTML
+-------------------------
+
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/T3editor1.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/T3editor1.rst.txt

@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/CtrlTypeWithOverriddenColumns.png
+   :alt: The same record with type `withOverriddenColumns`
+   :class: with-shadow
+
+   The same record with type `withOverriddenColumns`

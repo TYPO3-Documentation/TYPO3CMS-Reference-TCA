@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/SelectCheckbox5.png
+   :alt: Screenshot of field select_checkbox_5, table tx_styleguide_elements_select
+   :class: with-shadow
+
+   :ref:`Screenshot of field select_checkbox_5, table tx_styleguide_elements_select <tca_example_select_checkbox_5>`

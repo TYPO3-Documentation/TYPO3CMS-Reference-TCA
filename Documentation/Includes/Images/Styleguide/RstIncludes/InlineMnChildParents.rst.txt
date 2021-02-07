@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/InlineMnChildParents.png
+   :alt: Screenshot of field parents, table tx_styleguide_inline_mn_child
+   :class: with-shadow
+
+   :ref:`Screenshot of field parents, table tx_styleguide_inline_mn_child <tca_example_inline_mn_child_parents>`

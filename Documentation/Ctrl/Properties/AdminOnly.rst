@@ -10,7 +10,6 @@ adminOnly
    :type: boolean
    :Scope: Proc. / Display
 
-
    Records can be changed  *only* by "admin"-users (having the "admin" flag set).
 
 Examples

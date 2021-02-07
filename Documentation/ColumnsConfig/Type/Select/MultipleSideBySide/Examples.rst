@@ -1,33 +1,41 @@
 .. include:: /Includes.rst.txt
 
-=======
-Example
-=======
+========
+Examples
+========
 
-.. figure:: ../Images/TypeSelectStyleguideMultipleSideBySide5.png
-   :alt: Side-by-side view with filter (select_multiplesidebyside_5)
-   :class: with-shadow
+.. _tca_example_select_multiplesidebyside_1:
 
-   Side-by-side view with filter (select_multiplesidebyside_5)
+Simple side-by-side select field
+================================
 
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
 
-.. code-block:: php
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
 
-        'select_multiplesidebyside_5' => [
-            'label' => 'select_multiplesidebyside_5 multiSelectFilterItems',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
-                'items' => [
-                    ['foo 1', 1],
-                    ['foo 2', 2],
-                    ['foo 3', 3],
-                    ['bar', 4],
-                ],
-                'multiSelectFilterItems' => [
-                    ['', ''],
-                    ['foo', 'foo'],
-                    ['bar', 'bar'],
-                ],
-            ],
-        ],
+.. _tca_example_select_multiplesidebyside_5:
+
+Side-by-side view with filter
+=============================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside5.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside5.rst.txt
+
+.. _tca_example_select_multiplesidebyside_6:
+
+Side-by-side select with field controls
+=======================================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+
+.. _tca_example_select_multiplesidebyside_8:
+
+Using a MM table
+================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside8.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt

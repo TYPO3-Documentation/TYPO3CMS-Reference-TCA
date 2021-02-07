@@ -1,0 +1,8 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_elements_rte.php
+   :language: php
+   :start-at: start rte_4
+   :end-before: end rte_4
+   :lines: 2- 
+

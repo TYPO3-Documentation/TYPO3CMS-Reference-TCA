@@ -20,17 +20,12 @@ Description
 Example
 =======
 
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input1.rst.txt
+
+
 The field can be used with a string that will be directly output or with a
 language reference:
 
-.. literalinclude:: /Examples/Snippets/Styleguide/tx_styleguide_elements_basic.php
-   :language: php
-   :start-at: start input_1
-   :end-before: end input_1
-   :lines: 2-
-
-.. figure:: /Examples/Images/Styleguide/Input1.png
-   :alt: Show description text below label
-   :class: with-shadow
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input1.rst.txt
 
 You can find this example in the :ref:`extension styleguide <styleguide>`.

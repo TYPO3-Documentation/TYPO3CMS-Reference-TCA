@@ -1,0 +1,654 @@
+{
+  "comments": {
+    "php": "// Automatic screenshot: Remove this comment if you wand to manually change this file",
+    "rst.txt": ".. Automatic screenshot: Remove this line if you wand to manually change this file",
+    "general": "Automatic screenshot:"
+  },
+  "extensions": [
+    {
+      "extension": "frontend",
+      "paths": {
+        "imageSource": "Documentation/Includes/Images/Core/Frontend/AutomaticScreenshots/",
+        "relativeImagePath": "/Includes/Images/Core/Frontend/AutomaticScreenshots/",
+        "imageRst": "Documentation/Includes/Images/Core/Frontend/RstIncludes/",
+        "codeRst": "Documentation/Includes/Snippets/Core/Frontend/RstIncludes/",
+        "codeSource": "Documentation/Includes/Snippets/Core/Frontend/Sources/",
+        "relativeCodeSource": "/Includes/Snippets/Core/Frontend/Sources/",
+        "source": "typo3/sysext/frontend/Configuration/TCA/"
+      },
+      "tables": [
+        {
+          "table": "tt_content",
+          "screens": [
+            {
+              "view": "table",
+              "pid": 137,
+              "selector": ".recordlist",
+              "caption": "Control section of tt_content"
+            },
+            {
+              "view": "record",
+              "uid": 1,
+              "actions": [
+                {
+                  "action": "click",
+                  "select": "CType"
+                }
+              ],
+              "selector": "",
+              "name": "CtrlType",
+              "caption": "The type selector of a content elements"
+            },
+            {
+              "view": "record",
+              "uid": 3,
+              "actions": [
+                {
+                  "action": "click",
+                  "tab": "Plugin"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "500"
+                }
+              ],
+              "selector": "[role=\"tabpanel\"]",
+              "name": "PluginFlexFormConfigurationCheck",
+              "caption": "The type selector of a content elements"
+            }
+          ],
+          "tableConvert": "parse-as-text"
+        },
+        {
+          "table": "tt_content",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 2,
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
+          ],
+          "tableConvert": "ignore",
+          "fields": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "extension": "core",
+      "paths": {
+        "imageSource": "Documentation/Includes/Images/Core/Core/AutomaticScreenshots/",
+        "relativeImagePath": "/Includes/Images/Core/Core/AutomaticScreenshots/",
+        "imageRst": "Documentation/Includes/Images/Core/Core/RstIncludes/",
+        "codeRst": "Documentation/Includes/Snippets/Core/Core/RstIncludes/",
+        "codeSource": "Documentation/Includes/Snippets/Core/Core/Sources/",
+        "relativeCodeSource": "/Includes/Snippets/Core/Core/Sources/",
+        "source": "typo3/sysext/core/Configuration/TCA/"
+      },
+      "tables": [
+        {
+          "table": "be_groups",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "file_mountpoints"
+          ]
+        }
+      ]
+    },
+    {
+      "extension": "styleguide",
+      "paths": {
+        "imageSource": "Documentation/Includes/Images/Styleguide/AutomaticScreenshots/",
+        "relativeImagePath": "/Includes/Images/Styleguide/AutomaticScreenshots/",
+        "imageRst": "Documentation/Includes/Images/Styleguide/RstIncludes/",
+        "codeRst": "Documentation/Includes/Snippets/Styleguide/RstIncludes/",
+        "codeSource": "Documentation/Includes/Snippets/Styleguide/Sources/",
+        "relativeCodeSource": "/Includes/Snippets/Styleguide/Sources/",
+        "source": "typo3conf/ext/styleguide/Configuration/TCA/"
+      },
+      "tables": [
+        {
+          "table": "tx_styleguide_flex",
+          "screens": [
+          {
+            "view": "fields",
+            "uid": 1
+          }
+        ],
+          "fields": [
+            {
+              "field": "flex_file_1",
+              "caption": "A field with a simple, one-field flex form"
+            },
+            {
+              "field": "flex_1",
+              "caption": "A flex form with two sheets and descriptions"
+            },
+            {
+              "field": "flex_2",
+              "caption": "A flex form field with two flex section containers"
+            }
+          ]
+        },
+        {
+          "table": "tx_styleguide_ctrl_minimal",
+          "screens": [
+            {
+              "view": "table",
+              "pid": 137,
+              "selector": ".recordlist",
+              "caption": "A minimal example of the control section"
+            }
+          ],
+          "tableConvert": "no-comments"
+        },
+        {
+          "table": "tx_styleguide_ctrl_common",
+          "screens": [
+            {
+              "view": "table",
+              "pid": 137,
+              "selector": ".recordlist",
+              "caption": "A common example of the control section"
+            },
+            {
+              "view": "record",
+              "uid": 1,
+              "selector": "#EditDocumentController",
+              "name": "CtrlDescriptionColumn",
+              "caption": "Record information shown editing an example record"
+            },
+            {
+              "view": "record",
+              "uid": 1,
+              "actions": [
+                {
+                  "action": "click",
+                  "tab": "Access"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "500"
+                }
+              ],
+              "selector": "[role=\"tabpanel\"]",
+              "name": "CtrlEnableFields",
+              "caption": "Record information shown editing an example record"
+            }
+          ],
+          "tableConvert": "no-comments"
+        },
+        {
+          "table": "tx_styleguide_elements_basic",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            {
+              "field": "sys_language_uid",
+              "caption": "A typical sys_language_uid field"
+            },
+            "input_1",
+            "input_30",
+            "input_34",
+            "inputdatetime_3",
+            {
+              "field": "input_28",
+              "actions": [
+                {
+                  "action": "wait",
+                  "timeout": "500"
+                }
+              ]
+            },
+            "input_30",
+            "input_33",
+            "input_28",
+            {
+              "field": "input_29",
+              "actions": [
+                {
+                  "action": "wait",
+                  "timeout": "500"
+                }
+              ]
+            },
+            "none_1",
+            "radio_1",
+            "checkbox_2",
+            "checkbox_3",
+            "checkbox_7",
+            "checkbox_8",
+            "checkbox_12",
+            "checkbox_16",
+            "checkbox_17",
+            "checkbox_18",
+            "checkbox_19",
+            "checkbox_21",
+            "text_4",
+            "text_5",
+            "text_6",
+            "text_7",
+            "text_9",
+            "text_11",
+            "text_14",
+            "text_15",
+            "text_17",
+            "text_19",
+            "text_20"
+          ]
+        },
+        {
+          "table": "tx_styleguide_elements_basic",
+          "tableConvert": "ignore",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 3
+            }
+          ],
+          "prefix": "translated_",
+          "fields": [
+            "text_2"
+          ]
+        },
+        {
+          "table": "tx_styleguide_elements_select",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "select_checkbox_1",
+            "select_checkbox_2",
+            "select_checkbox_3",
+            "select_checkbox_5",
+            "select_multiplesidebyside_1",
+            "select_multiplesidebyside_2",
+            "select_multiplesidebyside_5",
+            "select_multiplesidebyside_6",
+            "select_multiplesidebyside_8",
+            "select_single_1",
+            "select_single_3",
+            "select_single_4",
+            "select_single_7",
+            "select_single_10",
+            "select_single_12",
+            "select_single_15",
+            "select_singlebox_1",
+            "select_singlebox_3",
+            "select_singlebox_4",
+            "select_singlebox_5",
+            "select_singlebox_6",
+            "select_singlebox_7",
+            "select_singlebox_8",
+            "select_singlebox_9",
+            "select_singlebox_10",
+            "select_tree_1",
+            "select_tree_2",
+            "select_tree_6",
+            "select_requestUpdate_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_elements_select",
+          "tableConvert": "ignore",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 3
+            }
+          ],
+          "prefix": "translated_",
+          "fields": [
+            "select_single_8",
+            "select_single_13"
+          ]
+        },
+        {
+          "table": "tx_styleguide_elements_rte",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "rte_1",
+            "rte_2",
+            "rte_4"
+          ]
+        },
+        {
+          "table": "tx_styleguide_elements_t3editor",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "t3editor_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_elements_group",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "group_db_1",
+            "group_db_3",
+            "group_db_10",
+            "group_db_11",
+            "group_db_8",
+            "group_folder_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_1n",
+          "prefix": "inline_1n_",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_1n1n",
+          "prefix": "inline_1n1n_",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_fal",
+          "tableConvert": "ignore",
+          "prefix": "inline_fal_",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_mn",
+          "prefix": "inline_mn_",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_mn_child",
+          "prefix": "inline_mn_child_",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "parents"
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_mnsymmetric",
+          "prefix": "inline_mn_symetric_",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "branches"
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_mnsymmetric",
+          "prefix": "inline_mn_symetric_11_",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 11
+            }
+          ],
+          "fields": [
+            "branches"
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_usecombination",
+          "prefix": "inline_usecombinationc_",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "inline_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_elements_t3editor",
+          "screens": [
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "t3editor_1"
+          ]
+        },
+        {
+          "table": "tx_styleguide_type",
+          "screens": [
+            {
+              "view": "record",
+              "uid": 6,
+              "actions": [
+                {
+                  "action": "change",
+                  "select": "record_type",
+                  "value": "0"
+                },
+                {
+                  "action": "wait",
+                  "selector": ".modal-dialog",
+                  "options": {
+                    "visible": true
+                  }
+                },
+                {
+                  "action": "click",
+                  "button": "OK"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ],
+              "selector": ".typo3-TCEforms",
+              "name": "CtrlType0",
+              "caption": "The record with default type `0`"
+            },
+            {
+              "view": "record",
+              "uid": 6,
+              "actions": [
+                {
+                  "action": "change",
+                  "select": "record_type",
+                  "value": "withChangedFields"
+                },
+                {
+                  "action": "wait",
+                  "selector": ".modal-dialog",
+                  "options": {
+                    "visible": true
+                  }
+                },
+                {
+                  "action": "click",
+                  "button": "OK"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ],
+              "selector": ".typo3-TCEforms",
+              "name": "CtrlTypeWithChangedFields",
+              "caption": "The same record with type `withChangedFields`"
+            },
+            {
+              "view": "record",
+              "uid": 6,
+              "actions": [
+                {
+                  "action": "change",
+                  "select": "record_type",
+                  "value": "withOverriddenColumns"
+                },
+                {
+                  "action": "wait",
+                  "selector": ".modal-dialog",
+                  "options": {
+                    "visible": true
+                  }
+                },
+                {
+                  "action": "click",
+                  "button": "OK"
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ],
+              "selector": ".typo3-TCEforms",
+              "name": "CtrlTypeWithOverriddenColumns",
+              "caption": "The same record with type `withOverriddenColumns`"
+            },
+            {
+              "view": "record",
+              "uid": 6,
+              "actions": [
+                {
+                  "action": "change",
+                  "select": "record_type",
+                  "value": "0"
+                },
+                {
+                  "action": "wait",
+                  "selector": ".modal-dialog",
+                  "options": {
+                    "visible": true
+                  }
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ],
+              "selector": "",
+              "name": "CtrlTypeChangeModal",
+              "caption": "The record needs to be reloaded to show the changed fields."
+            },
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            "record_type"
+          ]
+        },
+        {
+          "table": "tx_styleguide_type_foreign",
+          "prefix": "type_foreign_",
+          "screens": [
+            {
+              "view": "record",
+              "uid": 1,
+              "selector": ".typo3-TCEforms",
+              "name": "CtrlTypeForeign",
+              "caption": "The type of the record is fetched from the record specified in field `foreign_table`'`"
+            },
+            {
+              "view": "fields",
+              "uid": 1
+            }
+          ],
+          "fields": [
+            {
+              "field": "foreign_table"
+            }
+          ]
+        },
+        {
+          "table": "tx_styleguide_palette",
+          "screens": [
+            {
+              "view": "record",
+              "uid": 1,
+              "selector": ".typo3-TCEforms",
+              "name": "Palette",
+              "caption": "Examples of different palettes in the extension styleguide"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

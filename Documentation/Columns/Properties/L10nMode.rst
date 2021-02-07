@@ -23,7 +23,7 @@ Localization mode (l10n_mode)
       like a display condition. Internally, the field value of the default language record is copied over to the
       field of the localized record. The DataHandler keeps the values of localized records in sync and actively copies
       a changed value from the default language record into the localized overlays if changed.
-      You can force the field to be displayed as readonly (with default language value) 
+      You can force the field to be displayed as readonly (with default language value)
       by setting  :ref:`"l10n_display" <columns-properties-l10n-display>` to `defaultAsReadonly`.
 
    prefixLangTitle
@@ -38,25 +38,19 @@ Localization mode (l10n_mode)
 Examples
 ========
 
+.. _tca_example_translated_text_2:
+
+prefixLangTitle
+---------------
+
 The following example can be found in the :ref:`extension styleguide
 <styleguide>`. On translating a record in a new language the content of the
-field gets copied to the target languge. It get prefixed with 
+field gets copied to the target languge. It get prefixed with
 :text:`[Translate to <language name>:]`.
 
-.. figure:: /Examples/Images/Styleguide/Text2Translated.png
-   :alt: A field prefixed with the language title
-   :class: with-shadow
+.. include:: /Includes/Images/Styleguide/RstIncludes/TranslatedText2.rst.txt
 
-   A field prefixed with the language title
 
 The language mode is defined as follows::
 
-   'text_2' => [
-      'l10n_mode' => 'prefixLangTitle',
-      'exclude' => 1,
-      'label' => 'text_2 cols=20',
-      'config' => [
-         'type' => 'text',
-         'cols' => 20,
-      ],
-   ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/TranslatedText2.rst.txt

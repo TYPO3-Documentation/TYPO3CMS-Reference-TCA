@@ -34,74 +34,40 @@ eval
 Examples
 ========
 
+.. _tca_example_text_7:
+
+Trimming input
+--------------
+
 Trimming the value for white space before storing in the database:
 
-.. code-block:: php
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text7.rst.txt
 
-   'aField' => [
-      'label' => 'aLabel',
-      'config' => [
-         'type' => 'text',
-         'eval' => 'trim',
-      ],
-   ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text7.rst.txt
+
+
+.. _tca_example_text_9:
+
+Custom form evaluation
+----------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text9.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text9.rst.txt
 
 You can supply own form evaluations in an extension by creating a class with two functions:
-`deevaluateFieldValue()` called when opening the record and `evaluateFieldValue()` called for validation when
-saving the record:
+:php:`deevaluateFieldValue()` called when opening the record and :php:`evaluateFieldValue()`
+called for validation when saving the record:
 
-:file:`EXT:extension/Classes/Evaluation/ExampleEvaluation.php`
+:file:`EXT:styleguide/Classes/UserFunctions/FormEngine/TypeText9Eval.php`
 
-.. code-block:: php
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TypeText9Eval.rst.txt
 
-   namespace Vendor\Extension\Evaluation;
-
-   /**
-    * Class for field value validation/evaluation to be used in 'eval' of TCA
-    */
-   class ExampleEvaluation
-   {
-      /**
-       * Server-side validation/evaluation on saving the record
-       *
-       * @param string $value The field value to be evaluated
-       * @param string $is_in The "is_in" value of the field configuration from TCA
-       * @param bool $set Boolean defining if the value is written to the database or not.
-       * @return string Evaluated field value
-       */
-      public function evaluateFieldValue($value, $is_in, &$set)
-      {
-         return $value . ' [added by PHP on saving the record]';
-      }
-
-      /**
-       * Server-side validation/evaluation on opening the record
-       *
-       * @param array $parameters Array with key 'value' containing the field value from the database
-       * @return string Evaluated field value
-       */
-      public function deevaluateFieldValue(array $parameters)
-      {
-         return $parameters['value'] . ' [added by PHP on opening the record]';
-      }
-   }
-
-:file:`EXT:extension/ext_localconf.php`:
+:file:`EXT:styleguide/ext_localconf.php`:
 
 .. code-block:: php
 
    // Register the class to be available in 'eval' of TCA
-   $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']['Vendor\\Extension\\Evaluation\\ExampleEvaluation'] = '';
+   $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']
+      ['TYPO3\\CMS\\Styleguide\\UserFunctions\\FormEngine\\TypeText9Eval'] = '';
 
-:file:`EXT:extension/Configuration/TCA/tx_example_record.php`:
-
-.. code-block:: php
-
-   'columns' => [
-      'example_field' => [
-         'config' => [
-            'type' => 'text',
-            'eval' => 'trim,Vendor\\Extension\\Evaluation\\ExampleEvaluation,required'
-         ],
-      ],
-   ],

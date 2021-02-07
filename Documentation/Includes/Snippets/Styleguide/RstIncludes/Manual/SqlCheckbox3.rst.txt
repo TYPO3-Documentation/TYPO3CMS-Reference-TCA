@@ -1,0 +1,5 @@
+
+.. code-block::sql
+   CREATE TABLE tx_styleguide_elements_basic (
+      checkbox_3 int(11) DEFAULT '0' NOT NULL,
+   );

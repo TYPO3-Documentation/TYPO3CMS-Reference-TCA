@@ -1,0 +1,4 @@
+.. literalinclude:: /Includes/Snippets/Core/Frontend/Sources/tt_content.php
+   :language: php
+   :start-at: 'hidden' =>
+   :end-before: 'starttime' =>

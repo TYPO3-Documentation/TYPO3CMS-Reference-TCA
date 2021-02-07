@@ -17,6 +17,7 @@ Properties
    Format.rst
    IsIn
    Max
-   RichtextConfiugration
+   RichtextConfiguration
    Rows
+   TableWizard
    Wrap

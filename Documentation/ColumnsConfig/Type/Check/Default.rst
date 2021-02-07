@@ -8,21 +8,15 @@
 Default checkbox
 ================
 
-This page describes the :ref:`check <columns-check>` type with the default
-:ref:`renderType <columns-check-properties-renderType>`.
+The checkbox with :ref:`renderType default <columns-check-properties-renderType>`
+is typically a single checkbox or a group of checkboxes.
 
-This is typically a simple checkbox or a group of checkboxes.
-Each checkbox is a toggle that toggles between two icon identifiers.
-By default the toggle icons are visually designed to mimic a checkbox.
 Its state can be inverted via :code:`invertStateDisplay`.
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox12.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
 
 .. toctree::
 
    Examples/DefaultExamples
-
-
-.. figure:: Images/TypeCheckStyleguide2.png
-   :alt: Simple checkbox with default render type
-   :class: with-shadow
-
-   :ref:`Simple checkbox with default render type <tca_example_checkbox_2>`

@@ -22,7 +22,8 @@ shadowColumnsForNewPlaceholders
    :ref:`type <ctrl-reference-type>` are automatically added to this list of fields and do not have to be
    mentioned again here.
 
-Examples::
+Examples:
+=========
 
 Example from "sys\_filemounts" table::
 

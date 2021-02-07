@@ -45,8 +45,8 @@ Examples
 Say you have a "person" table with fields "gender" (radio buttons) as well as "mother" and "father", both group
 fields with relations to the same table.
 
- Now, in the field "mother" it should certainly only be possible to create relations to female persons. In that
- case, you could use the filter functionality to make sure only females can be selected in that field.
+Now, in the field "mother" it should certainly only be possible to create relations to female persons. In that
+case, you could use the filter functionality to make sure only females can be selected in that field.
 
 The field configuration for the "mother" field could look like:
 

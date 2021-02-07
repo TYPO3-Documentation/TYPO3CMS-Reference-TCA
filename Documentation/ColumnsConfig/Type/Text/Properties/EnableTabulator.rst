@@ -16,3 +16,15 @@ enableTabulator
    :ref:`fixed-width fonts <columns-text-properties-fixedFont>` (monospace) for code editing.
 
    Does not apply to RTE fields.
+
+Examples
+========
+
+.. _tca_example_text_15:
+
+Fixed font field with tabulators enabled
+----------------------------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text4.rst.txt

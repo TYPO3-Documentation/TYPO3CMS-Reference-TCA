@@ -4,18 +4,11 @@
 Examples
 ========
 
-.. figure:: ../Images/Styleguide29Link.png
-    :alt: Link field (input_29)
-    :class: with-shadow
+.. _tca_example_input_29:
 
-    Link field (input_29)
+Link field
+==========
 
-.. code-block:: php
+.. include:: /Includes/Images/Styleguide/RstIncludes/Input29.rst.txt
 
-    'input_29' => [
-        'label' => 'input_29 link',
-        'config' => [
-            'type' => 'input',
-            'renderType' => 'inputLink',
-        ],
-    ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input29.rst.txt

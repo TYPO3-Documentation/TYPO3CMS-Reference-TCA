@@ -18,3 +18,10 @@ rows
    field will automatically fit the content. Default is 5. Max value is 20.
 
    Does not apply to RTE fields.
+
+A simple text editor with 20 width
+==================================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text4.rst.txt

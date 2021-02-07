@@ -1,0 +1,6 @@
+
+.. figure:: /Includes/Images/Styleguide/ManualScreenshots/StyleguideCreateTCA.png
+   :alt: some image
+   :class: with-shadow
+
+   Create the page tree

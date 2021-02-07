@@ -5,11 +5,10 @@
 selectTree
 ==========
 
-This page describes the :ref:`select <columns-select>` type with
-renderType='selectTree'.
+A field with the render type `selectTree` displays hierarchical data
+in a tree.
 
-A tree for selecting hierarchical data items.
-
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree1.rst.txt
 
 .. toctree::
    :titlesonly:

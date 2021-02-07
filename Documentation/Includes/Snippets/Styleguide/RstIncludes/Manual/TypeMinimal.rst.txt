@@ -1,0 +1,5 @@
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_ctrl_minimal.php
+   :language: php
+   :start-at: 'types' => [
+   :end-before: ];

@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/CtrlType0.png
+   :alt: The record with default type `0`
+   :class: with-shadow
+
+   The record with default type `0`

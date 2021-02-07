@@ -18,17 +18,14 @@ validation
 Examples
 ========
 
-In the example below, only five records from the same table will be allowed to have that particular box checked.
+.. _tca_example_checkbox_8:
 
-.. code-block:: php
+Only one record can be checked
+===============================
 
-   'aCheckbox' => [
-      'label' => 'aLabel',
-      'config' => [
-         'type' => 'check',
-         'eval' => 'maximumRecordsChecked',
-         'validation' => [
-            'maximumRecordsChecked' => 5
-         ],
-      ],
-   ],
+In the example below, only one record from the same table will be allowed to have that particular box checked.
+
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox8.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox8.rst.txt

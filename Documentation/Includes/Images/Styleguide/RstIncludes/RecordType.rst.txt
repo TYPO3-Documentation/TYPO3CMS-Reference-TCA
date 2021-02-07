@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/RecordType.png
+   :alt: Screenshot of field record_type, table tx_styleguide_type
+   :class: with-shadow
+
+   :ref:`Screenshot of field record_type, table tx_styleguide_type <tca_example_record_type>`

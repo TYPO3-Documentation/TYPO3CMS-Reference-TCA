@@ -41,3 +41,15 @@ treeConfig
       nonSelectableLevels (list, default "0")
          Comma-separated list of levels that will not be selectable, by default the root
          node (which is "0") cannot be selected
+
+Examples
+========
+
+.. _tca_example_select_tree_2:
+
+Tree with non selectable levels
+===============================
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree2.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectTree2.rst.txt

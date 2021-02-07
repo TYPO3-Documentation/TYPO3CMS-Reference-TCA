@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/T3editor1.png
+   :alt: Screenshot of field t3editor_1, table tx_styleguide_elements_t3editor
+   :class: with-shadow
+
+   :ref:`Screenshot of field t3editor_1, table tx_styleguide_elements_t3editor <tca_example_t3editor_1>`

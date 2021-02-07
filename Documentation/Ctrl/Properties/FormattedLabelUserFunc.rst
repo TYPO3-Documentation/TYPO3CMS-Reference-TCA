@@ -25,15 +25,15 @@ formattedLabel\_userFunc
 Examples
 ========
 
-*Example from table "sys_file_reference"::
+*  Example from table "sys_file_reference"::
 
-   'formattedLabel_userFunc' => TYPO3\CMS\Core\Resource\Service\UserFileInlineLabelService::class . '->getInlineLabel',
-   'formattedLabel_userFunc_options' => [
-      'sys_file' => [
-         'title',
-         'name'
-      ]
-   ],
+      'formattedLabel_userFunc' => TYPO3\CMS\Core\Resource\Service\UserFileInlineLabelService::class . '->getInlineLabel',
+      'formattedLabel_userFunc_options' => [
+         'sys_file' => [
+            'title',
+            'name'
+         ]
+      ],
 
 In this example, :php:`getInlineLabel` will be called with an array of :php:`$parameters` which is passed by reference.
 This array consists of the following keys (and values):

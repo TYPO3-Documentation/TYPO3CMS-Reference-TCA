@@ -1,0 +1,5 @@
+
+.. literalinclude:: /Includes/Snippets/Core/Frontend/Sources/tt_content.php
+   :language: php
+   :start-at: 'ctrl' =>
+   :end-before: 'interface' =>
