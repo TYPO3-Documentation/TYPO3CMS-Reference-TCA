@@ -383,7 +383,24 @@
             }
           ],
           "fields": [
-            "inline_1"
+            {
+              "field": "inline_1",
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
           ]
         },
         {
@@ -396,7 +413,37 @@
             }
           ],
           "fields": [
-            "inline_1"
+            {
+              "field": "inline_1",
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                },
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button[aria-controls=\"data-52-tx_styleguide_inline_1n1n-1-inline_1-tx_styleguide_inline_1n1n_child-1-inline_1-tx_styleguide_inline_1n1n_childchild-1_fields\"]",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
           ]
         },
         {
@@ -410,7 +457,24 @@
             }
           ],
           "fields": [
-            "inline_1"
+            {
+              "field": "inline_1",
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
           ]
         },
         {
@@ -423,7 +487,24 @@
             }
           ],
           "fields": [
-            "inline_1"
+            {
+              "field": "inline_1",
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
           ]
         },
         {
@@ -436,7 +517,24 @@
             }
           ],
           "fields": [
-            "parents"
+            {
+              "field": "parents",
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
           ]
         },
         {
@@ -449,7 +547,24 @@
             }
           ],
           "fields": [
-            "branches"
+            {
+              "field": "branches",
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
           ]
         },
         {
@@ -462,7 +577,24 @@
             }
           ],
           "fields": [
-            "branches"
+            {
+              "field": "branches",
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
           ]
         },
         {
@@ -475,7 +607,24 @@
             }
           ],
           "fields": [
-            "inline_1"
+            {
+              "field": "inline_1",
+              "actions": [
+                {
+                  "action": "click",
+                  "buttonSelector": ".form-irre-header-button",
+                  "if": [
+                    {
+                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
+                    }
+                  ]
+                },
+                {
+                  "action": "wait",
+                  "timeout": "1000"
+                }
+              ]
+            }
           ]
         },
         {
