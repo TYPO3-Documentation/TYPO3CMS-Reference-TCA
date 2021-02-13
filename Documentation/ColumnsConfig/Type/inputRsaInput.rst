@@ -6,6 +6,11 @@
 input (rsaInput)
 ================
 
+.. deprecated:: 9.1
+
+   EXT:rsaauth has been deprecated with TYPO3 Version 9 and will be removed with Version 10. 
+   Therefore there will be no render type :php:`rsaInput` anymore.
+
 This page describes the :ref:`input <columns-input>` type with renderType='rsaInput'.
 
 If extension `rsaauth` is loaded, this renderType overrides the TCA configuration of table `be_users` and `fe_users`
