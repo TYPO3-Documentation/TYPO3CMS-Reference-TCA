@@ -54,9 +54,10 @@ implementing a rendering. See :ref:`FormEngine docs
 
 .. rst-class:: bignums
 
+
 1. Register the new renderType node element
 
-    Add to :file:`ext_localconf.php`::
+   Add to :file:`ext_localconf.php`::
 
        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][<current timestamp>] = [
            'nodeName' => 'specialField',
@@ -84,10 +85,11 @@ implementing a rendering. See :ref:`FormEngine docs
          ],
       ],
 
+
 3. Implement the FormElement class
 
    The :php:`renderType` can be implemented by extending the class
-   :php:`AbstractFormElement` and overriding the function :php:`render()`.
+   :php:`AbstractFormElement` and overriding the function :php:`render()`::
 
       <?php
       declare(strict_types = 1);
@@ -169,7 +171,7 @@ implementing a rendering. See :ref:`FormEngine docs
       * The JavaScript function to be called on changing the field in
         :php:`$this->data['parameterArray']['fieldChangeFunc']`
 
-      In order for the field to work it is vital, that the corresponding
+      In order for the field to work, it is vital, that the corresponding
       HTML input field has a unique :html:`id` attribute, fills the
       attributes :html:`name` and :html:`data-formengine-input-name` with the
       correct name, as provided in the :php:`itemFormElName` and calls the
