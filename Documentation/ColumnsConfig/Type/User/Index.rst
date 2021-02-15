@@ -161,7 +161,7 @@ implementing a rendering. See :ref:`FormEngine docs
          <t3core:security-xss>`.
 
 
-   The array :php:`$this->data` consists the following parts:
+   The array :php:`$this->data` consists of the following parts:
    
    * The row of the currently edited record in
      :php:`$this->data['databaseRow']`
