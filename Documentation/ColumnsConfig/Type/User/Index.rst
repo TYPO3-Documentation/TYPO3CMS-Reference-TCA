@@ -174,11 +174,12 @@ implementing a rendering. See :ref:`FormEngine docs
       * The JavaScript function to be called on changing the field in
         :php:`$this->data['parameterArray']['fieldChangeFunc']`
 
-      In order for the field to work, it is vital, that the corresponding
-      HTML input field has a unique :html:`id` attribute, fills the
-      attributes :html:`name` and :html:`data-formengine-input-name` with the
-      correct name, as provided in the :php:`itemFormElName` and calls the
-      function provided by :php:`fieldChangeFunc` on changing the data.
+
+   In order for the field to work, it is vital, that the corresponding
+   HTML input field has a unique :html:`id` attribute, fills the
+   attributes :html:`name` and :html:`data-formengine-input-name` with the
+   correct name, as provided in the :php:`itemFormElName` and calls the
+   function provided by :php:`fieldChangeFunc` on changing the data.
 
 The field would then look like this in the backend:
 
