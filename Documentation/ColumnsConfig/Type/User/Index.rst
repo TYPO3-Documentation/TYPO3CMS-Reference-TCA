@@ -162,7 +162,9 @@ implementing a rendering. See :ref:`FormEngine docs
 
 
    Array :php:`$this->data`: ...
-
+   
+   ::
+   
       * The row of the currently edited record in
         :php:`$this->data['databaseRow']`
       * The configuration from the TCA in
