@@ -161,20 +161,18 @@ implementing a rendering. See :ref:`FormEngine docs
          <t3core:security-xss>`.
 
 
-   Array :php:`$this->data`: ...
+   The array :php:`$this->data` consists the following parts:
    
-   ::
-   
-      * The row of the currently edited record in
-        :php:`$this->data['databaseRow']`
-      * The configuration from the TCA in
-        :php:`$this->data['parameterArray']['fieldConf']['config']`
-      * The name of the input field in
-        :php:`$this->data['parameterArray']['itemFormElName']`
-      * The current value of the field in
-        :php:`$this->data['parameterArray']['itemFormElValue']`
-      * The JavaScript function to be called on changing the field in
-        :php:`$this->data['parameterArray']['fieldChangeFunc']`
+   * The row of the currently edited record in
+     :php:`$this->data['databaseRow']`
+   * The configuration from the TCA in
+     :php:`$this->data['parameterArray']['fieldConf']['config']`
+   * The name of the input field in
+     :php:`$this->data['parameterArray']['itemFormElName']`
+   * The current value of the field in
+     :php:`$this->data['parameterArray']['itemFormElValue']`
+   * The JavaScript function to be called on changing the field in
+     :php:`$this->data['parameterArray']['fieldChangeFunc']`
 
 
    In order for the field to work, it is vital, that the corresponding
