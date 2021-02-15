@@ -151,14 +151,17 @@ implementing a rendering. See :ref:`FormEngine docs
          }
       }
 
-      .. attention::
+
+
+   .. attention::
 
          The returned data in :php:`$resultArray['html']` will be output in the
          TYPO3 Backend as it is passed. Therefore don't trust user input in
          order to prevent :ref:`cross-site scripting (XSS)
          <t3core:security-xss>`.
 
-      The array :php:`$this->data` provides the following data:
+
+   The array :php:`$this->data` provides the following data:
 
       * The row of the currently edited record in
         :php:`$this->data['databaseRow']`
