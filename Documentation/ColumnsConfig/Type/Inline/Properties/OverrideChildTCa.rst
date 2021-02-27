@@ -136,3 +136,24 @@ This overrides the foreign_selector field target field config, defined in the
 .. note::
    It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsOverrides>`
    of an inline parent in the :code:`['types']` section.
+   
+Example
+-------
+
+.. code-block:: php
+
+  'tt_content' => [
+     'types' => [
+        'myCType' => [
+            'columnsOverrides' => [
+                'myForeignTableColumnInTtContent' => [
+                    'config' => [
+                        'overrideChildTca' => [
+                            //... same as above
+                        ],
+                    ],
+                ],
+            ],
+        ],
+     ],
+  ],
