@@ -1,7 +1,7 @@
 .. Automatic screenshot: Remove this line if you wand to manually change this file
 
 .. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/SelectMultiplesidebyside2.png
-   :alt: Screenshot of field select_multiplesidebyside_2, table tx_styleguide_elements_select
+   :alt: Screenshot of field tx_styleguide_elements_select:select_multiplesidebyside_2
    :class: with-shadow
 
-   :ref:`Screenshot of field select_multiplesidebyside_2, table tx_styleguide_elements_select <tca_example_select_multiplesidebyside_2>`
+   :ref:`Screenshot of field tx_styleguide_elements_select:select_multiplesidebyside_2 <tca_example_select_multiplesidebyside_2>`

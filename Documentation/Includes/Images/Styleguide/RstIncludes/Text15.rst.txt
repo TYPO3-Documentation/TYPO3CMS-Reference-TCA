@@ -1,7 +1,7 @@
 .. Automatic screenshot: Remove this line if you wand to manually change this file
 
 .. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/Text15.png
-   :alt: Screenshot of field text_15, table tx_styleguide_elements_basic
+   :alt: Screenshot of field tx_styleguide_elements_basic:text_15
    :class: with-shadow
 
-   :ref:`Screenshot of field text_15, table tx_styleguide_elements_basic <tca_example_text_15>`
+   :ref:`Screenshot of field tx_styleguide_elements_basic:text_15 <tca_example_text_15>`
