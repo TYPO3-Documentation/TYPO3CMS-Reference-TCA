@@ -149,7 +149,7 @@ Example
                 'myForeignTableColumnInTtContent' => [
                     'config' => [
                         'overrideChildTca' => [
-                            ... same as above
+                            //... same as above
                         ],
                     ],
                 ],
