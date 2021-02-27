@@ -45,87 +45,100 @@ special
 Examples
 ========
 
-.. _tca_example_select_singlebox_3:
+.. _tca_example_special_languages_1:
 
 Select single box with special `languages`
 ------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialLanguages1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SpecialLanguages1.rst.txt
 
 
-.. _tca_example_select_singlebox_4:
+.. _tca_example_special_tables_1:
 
 Select single box with special `tables`
 ---------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox4.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialTables1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox4.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SpecialTables1.rst.txt
 
 
-.. _tca_example_select_singlebox_5:
+.. _tca_example_special_pagetypes_1:
 
 Select single box with special `pagetypes`
 ------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox5.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialPagetypes1.rst.txt
 
 .. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox5.rst.txt
 
 
 
-.. _tca_example_select_singlebox_6:
+.. _tca_example_special_exclude_1:
 
 Select single box with special `exclude`
 ----------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox6.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialExclude1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox6.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SpecialExclude1.rst.txt
 
 
 
-.. _tca_example_select_singlebox_7:
+.. _tca_example_special_modlistgroup_1:
 
 Select single box with special `modListGroup`
 ---------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox7.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialModlistgroup1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox7.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SpecialModlistgroup1.rst.txt
 
 
 
-.. _tca_example_select_singlebox_8:
+.. _tca_example_special_usermods_1:
 
 Select single box with special `modListUser`
 --------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox8.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialUsermods1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox8.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SpecialUsermods1.rst.txt
 
 
 
-.. _tca_example_select_singlebox_9:
+.. _tca_example_special_explicitvalues_1:
 
 Select single box with special `explicitValues`
 -----------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox9.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialExplicitvalues1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox9.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SpecialExplicitvalues1.rst.txt
 
 
 
-.. _tca_example_select_singlebox_10:
+.. _tca_example_special_custom_1:
 
 Select single box with special `custom`
 ---------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox10.rst.txt
+This option is only used in the Core table :sql:`be_groups`. It enables
+extensions to introduce custom options for user rights.
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox10.rst.txt
+To include a field with this option anywhere but in :sql:`be_groups` would
+probably make no sense.
+
+You can introduce additional values by defining the following in your
+extension's :file:`ext_tables.php`:
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/SpecialCustomOptions.rst.txt
+
+This is an example of the option in the styleguide extension:
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialCustom1.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SpecialCustom1.rst.txt
 
