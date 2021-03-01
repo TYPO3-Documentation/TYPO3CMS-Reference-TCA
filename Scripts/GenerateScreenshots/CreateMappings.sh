@@ -22,7 +22,5 @@
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_elements_basic --filename=tx_styleguide_elements_basic.json --additional-fields="sys_language_uid"
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_ctrl_common --filename=tx_styleguide_ctrl_common.json --additional-fields="sys_language_uid"
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_elements_special --filename=tx_styleguide_elements_special.json --additional-fields="sys_language_uid"
-./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_ctrl_minimal --filename=tx_styleguide_ctrl_minimal.json --additional-fields="title"
-
-## This doesn't work yet as table sys_language doesn't have a field "deleted"
-## ./vendor/bin/typo3cms screenshots:getmapping --table=sys_language --filename=sys_language.json --additional-fields="title,language_isocode"
+./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_ctrl_minimal --filename=tx_styleguide_ctrl_minimal.json --additional-fields="title" --checkDeleted=false
+./vendor/bin/typo3cms screenshots:getmapping --table=sys_language --filename=sys_language.json --additional-fields="title,language_isocode" --checkDeleted=false
