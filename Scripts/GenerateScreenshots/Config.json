@@ -22,13 +22,19 @@
           "screens": [
             {
               "view": "table",
-              "pid": 137,
+              "selectRecord": {
+                "by": "title",
+                "title": "Customize"
+              },
               "selector": ".recordlist",
               "caption": "Control section of tt_content"
             },
             {
               "view": "record",
-              "uid": 1,
+              "selectRecord": {
+                "by": "header",
+                "header": "Playground"
+              },
               "actions": [
                 {
                   "action": "click",
@@ -36,7 +42,7 @@
                 }
               ],
               "selector": "",
-              "name": "CtrlType",
+              "filename": "CtrlType",
               "caption": "The type selector of a content elements"
             },
             {
@@ -53,8 +59,9 @@
                 }
               ],
               "selector": "[role=\"tabpanel\"]",
-              "name": "PluginFlexFormConfigurationCheck",
-              "caption": "The type selector of a content elements"
+              "filename": "PluginFlexFormConfigurationCheck",
+              "caption": "The type selector of a content elements",
+              "screenshot" : "ignore"
             }
           ],
           "tableConvert": "parse-as-text"
@@ -64,20 +71,14 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 2,
+              "selectRecord": {
+                "by": "header",
+                "header": "Deliver business value"
+              },
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": "@first"
                 }
               ]
             }
@@ -102,11 +103,19 @@
       },
       "tables": [
         {
+          "table": "sys_language",
+          "screens": [
+          ]
+        },
+        {
           "table": "be_groups",
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "title",
+                "title": "Simple editors"
+              }
             }
           ],
           "fields": [
@@ -132,7 +141,10 @@
           "screens": [
           {
             "view": "fields",
-            "uid": 1
+            "selectRecord": {
+              "by": "sys_language_uid",
+              "sys_language_uid": 0
+            }
           }
         ],
           "fields": [
@@ -155,7 +167,10 @@
           "screens": [
             {
               "view": "table",
-              "pid": 137,
+              "selectRecord": {
+                "by": "title",
+                "title": "ctrl minimal"
+              },
               "selector": ".recordlist",
               "caption": "A minimal example of the control section"
             }
@@ -167,20 +182,29 @@
           "screens": [
             {
               "view": "table",
-              "pid": 137,
+              "selectRecord": {
+                "by": "title",
+                "title": "ctrl common"
+              },
               "selector": ".recordlist",
               "caption": "A common example of the control section"
             },
             {
               "view": "record",
-              "uid": 1,
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              },
               "selector": "#EditDocumentController",
-              "name": "CtrlDescriptionColumn",
+              "filename": "CtrlDescriptionColumn",
               "caption": "Record information shown editing an example record"
             },
             {
               "view": "record",
-              "uid": 1,
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              },
               "actions": [
                 {
                   "action": "click",
@@ -192,7 +216,7 @@
                 }
               ],
               "selector": "[role=\"tabpanel\"]",
-              "name": "CtrlEnableFields",
+              "filename": "CtrlEnableFields",
               "caption": "Record information shown editing an example record"
             }
           ],
@@ -203,7 +227,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -258,7 +285,9 @@
             "text_15",
             "text_17",
             "text_19",
-            "text_20"
+            {
+              "field": "text_20"
+            }
           ]
         },
         {
@@ -267,7 +296,14 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 3
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": {
+                  "table" : "sys_language",
+                  "by": "title",
+                  "title": "styleguide demo language german"
+                }
+              }
             }
           ],
           "prefix": "translated_",
@@ -280,7 +316,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -301,14 +340,6 @@
             "select_single_12",
             "select_single_15",
             "select_singlebox_1",
-            "select_singlebox_3",
-            "select_singlebox_4",
-            "select_singlebox_5",
-            "select_singlebox_6",
-            "select_singlebox_7",
-            "select_singlebox_8",
-            "select_singlebox_9",
-            "select_singlebox_10",
             "select_tree_1",
             "select_tree_2",
             "select_tree_6",
@@ -321,7 +352,14 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 3
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": {
+                  "table" : "sys_language",
+                  "by": "title",
+                  "title": "styleguide demo language german"
+                }
+              }
             }
           ],
           "prefix": "translated_",
@@ -335,7 +373,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -349,7 +390,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -361,7 +405,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -374,12 +421,37 @@
           ]
         },
         {
+          "table": "tx_styleguide_elements_special",
+          "screens": [
+            {
+              "view": "fields",
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
+            }
+          ],
+          "fields": [
+            "special_languages_1",
+            "special_tables_1",
+            "special_pagetypes_1",
+            "special_exclude_1",
+            "special_modlistgroup_1",
+            "special_usermods_1",
+            "special_explicitvalues_1",
+            "special_custom_1"
+          ]
+        },
+        {
           "table": "tx_styleguide_inline_1n",
           "prefix": "inline_1n_",
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -387,17 +459,8 @@
               "field": "inline_1",
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": "@first"
                 }
               ]
             }
@@ -409,7 +472,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -417,30 +483,12 @@
               "field": "inline_1",
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
+                  "action": "open",
+                  "accordion": "@first"
                 },
                 {
-                  "action": "wait",
-                  "timeout": "1000"
-                },
-                {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button[aria-controls=\"data-52-tx_styleguide_inline_1n1n-1-inline_1-tx_styleguide_inline_1n1n_child-1-inline_1-tx_styleguide_inline_1n1n_childchild-1_fields\"]",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": ".form-irre-object .panel-collapse .form-irre-header-button"
                 }
               ]
             }
@@ -453,7 +501,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -461,17 +512,8 @@
               "field": "inline_1",
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": "@first"
                 }
               ]
             }
@@ -483,7 +525,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -491,17 +536,8 @@
               "field": "inline_1",
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": "@first"
                 }
               ]
             }
@@ -513,25 +549,20 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
             {
               "field": "parents",
+
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": "@first"
                 }
               ]
             }
@@ -543,7 +574,9 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "@first"
+              }
             }
           ],
           "fields": [
@@ -551,17 +584,8 @@
               "field": "branches",
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": "@first"
                 }
               ]
             }
@@ -573,7 +597,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 11
+              "selectRecord": {
+                "by": "input_1",
+                "input_1": "lipsum26"
+              }
             }
           ],
           "fields": [
@@ -581,17 +608,8 @@
               "field": "branches",
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": "@first"
                 }
               ]
             }
@@ -603,7 +621,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -611,17 +632,8 @@
               "field": "inline_1",
               "actions": [
                 {
-                  "action": "click",
-                  "buttonSelector": ".form-irre-header-button",
-                  "if": [
-                    {
-                      "exists": ".form-irre-header-button[aria-expanded=\"false\"]"
-                    }
-                  ]
-                },
-                {
-                  "action": "wait",
-                  "timeout": "1000"
+                  "action": "open",
+                  "accordion": "@first"
                 }
               ]
             }
@@ -632,7 +644,10 @@
           "screens": [
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -644,7 +659,10 @@
           "screens": [
             {
               "view": "record",
-              "uid": 6,
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              },
               "actions": [
                 {
                   "action": "change",
@@ -668,12 +686,15 @@
                 }
               ],
               "selector": ".typo3-TCEforms",
-              "name": "CtrlType0",
+              "filename": "CtrlType0",
               "caption": "The record with default type `0`"
             },
             {
               "view": "record",
-              "uid": 6,
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              },
               "actions": [
                 {
                   "action": "change",
@@ -697,12 +718,15 @@
                 }
               ],
               "selector": ".typo3-TCEforms",
-              "name": "CtrlTypeWithChangedFields",
+              "filename": "CtrlTypeWithChangedFields",
               "caption": "The same record with type `withChangedFields`"
             },
             {
               "view": "record",
-              "uid": 6,
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              },
               "actions": [
                 {
                   "action": "change",
@@ -726,12 +750,15 @@
                 }
               ],
               "selector": ".typo3-TCEforms",
-              "name": "CtrlTypeWithOverriddenColumns",
+              "filename": "CtrlTypeWithOverriddenColumns",
               "caption": "The same record with type `withOverriddenColumns`"
             },
             {
               "view": "record",
-              "uid": 6,
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              },
               "actions": [
                 {
                   "action": "change",
@@ -751,12 +778,15 @@
                 }
               ],
               "selector": "",
-              "name": "CtrlTypeChangeModal",
+              "filename": "CtrlTypeChangeModal",
               "caption": "The record needs to be reloaded to show the changed fields."
             },
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -764,19 +794,25 @@
           ]
         },
         {
-          "table": "tx_styleguide_type_foreign",
+          "table": "tx_styleguide_typeforeign",
           "prefix": "type_foreign_",
           "screens": [
             {
               "view": "record",
-              "uid": 1,
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              },
               "selector": ".typo3-TCEforms",
-              "name": "CtrlTypeForeign",
+              "filename": "CtrlTypeForeign",
               "caption": "The type of the record is fetched from the record specified in field `foreign_table`'`"
             },
             {
               "view": "fields",
-              "uid": 1
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
           ],
           "fields": [
@@ -790,9 +826,12 @@
           "screens": [
             {
               "view": "record",
-              "uid": 1,
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              },
               "selector": ".typo3-TCEforms",
-              "name": "Palette",
+              "filename": "Palette",
               "caption": "Examples of different palettes in the extension styleguide"
             }
           ]
