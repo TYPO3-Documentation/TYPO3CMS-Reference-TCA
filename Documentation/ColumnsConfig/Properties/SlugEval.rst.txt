@@ -1,14 +1,14 @@
 :aspect:`Datatype`
-    string (list of keywords)
+   string (list of keywords)
 
 :aspect:`Scope`
-    Proc. / Display
+   Proc. / Display
 
 :aspect:`Description`
-    Configuration of field evaluation.
+   Configuration of field evaluation. No other eval setting is checked for. It is possible to set
+   multiple keywords, however it is recommended not to do so.
 
-    Keywords:
-
+   Keywords:
     
    unique
       Evaluate if a record is unique in the whole TYPO3 installation (specific to a language).
@@ -28,6 +28,3 @@
 
    uniqueInPid
       Requires the field to be unique for the current PID among other records on the same page.
-
-    No other eval setting is checked for. It is possible to set both eval options, however it is
-    recommended not to do so.
