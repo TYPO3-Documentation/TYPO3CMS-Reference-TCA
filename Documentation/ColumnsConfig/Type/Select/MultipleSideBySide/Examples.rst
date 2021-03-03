@@ -38,4 +38,4 @@ Using a MM table
 
 .. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside8.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside8.rst.txt
