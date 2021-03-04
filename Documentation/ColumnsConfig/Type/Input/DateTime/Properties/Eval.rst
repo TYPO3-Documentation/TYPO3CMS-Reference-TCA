@@ -3,10 +3,9 @@
 eval
 ====
 
-:type: string (list of keywords)
-:Scope: Display / Proc.
-
-**Required**
+:Type:   string (list of keywords)
+:Scope:  Display / Proc.
+:Usage:  required
 
 Configuration of field evaluation, must be set to one of the value below:
 
