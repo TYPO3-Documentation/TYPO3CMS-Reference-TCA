@@ -8,7 +8,7 @@ Group fields
 
 The group element (:php:`type' == 'group'`) in TYPO3 makes it possible to create references from a record of one table to many records from multiple tables in the system.
 This is especially useful (compared to the "select" type) when records are scattered over the page tree and require
-the Element Browser to be added before they can be selected.
+the Element Browser to select records for adding them to the group field.
 
 For database relations however, the group field is the right and powerful choice, especially if dealing
 with lots of re-usable child records, and if :ref:`type='inline' <columns-inline>` is not suitable.
