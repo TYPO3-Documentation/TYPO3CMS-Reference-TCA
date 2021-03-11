@@ -6,7 +6,7 @@
 Group fields
 ============
 
-The group element (:php:`type' == 'group'`) in TYPO3 makes it possible to create references from a record of one table to many records from multiple tables in the system.
+The group element (:php:`type' => 'group'`) in TYPO3 makes it possible to create references from a record of one table to many records from multiple tables in the system. The foreign tables can be the table itself (thus a self-reference) or any other table.
 This is especially useful (compared to the "select" type) when records are scattered over the page tree and require
 the Element Browser to select records for adding them to the group field.
 
