@@ -15,8 +15,7 @@ with lots of re-usable child records, and if :ref:`type='inline' <columns-inline
 
 This type is very flexible in its display options with all its different
 :ref:`fieldControl <columns-group-properties-fieldControl>` and
-:ref:`fieldWizard <columns-group-properties-fieldWizard>` options. A lot of them are available by default, however they must be enabled.
-
+:ref:`fieldWizard <columns-group-properties-fieldWizard>` options. A lot of them are available by default, however they must be enabled: :php:`disabled' => 'false'`
 
 It is required to set :ref:`internal_type <columns-group-properties-internal-type>`. Most common usage is to model
 database relations (n:1 or n:m) with `internal_type='db'`.
