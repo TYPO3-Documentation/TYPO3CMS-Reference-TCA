@@ -21,9 +21,6 @@ range
 
    It is allowed to specify only one of both of them.
 
-   .. note::
-      This feature is evaluated *on the server only* so any regulation of the value will have happened
-      after saving the form.
 
 Example
 =======
