@@ -14,7 +14,7 @@ addRecord
    Control button to directly add a related record. Leaves the current view and opens a new form to add
    a new record. On 'Save and close', the record is directly selected as referenced element
    in the `type='group'` field. If multiple tables are :ref:`allowed <columns-group-properties-allowed>`, the
-   first table from the allowed list is selected, if not specific `table` option is given.
+   first table from the allowed list is selected, if no specific `table` option is given.
 
    .. note::
 
