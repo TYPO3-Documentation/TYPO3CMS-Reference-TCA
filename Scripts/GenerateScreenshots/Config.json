@@ -340,9 +340,33 @@
             "select_single_12",
             "select_single_15",
             "select_singlebox_1",
-            "select_tree_1",
-            "select_tree_2",
-            "select_tree_6",
+            {
+              "field": "select_tree_1",
+              "actions": [
+                {
+                  "action": "wait",
+                  "timeout": "100"
+                }
+              ]
+            },
+            {
+              "field": "select_tree_2",
+              "actions": [
+                {
+                  "action": "wait",
+                  "timeout": "100"
+                }
+              ]
+            },
+            {
+              "field": "select_tree_6",
+              "actions": [
+                {
+                  "action": "wait",
+                  "timeout": "100"
+                }
+              ]
+            },
             "select_requestUpdate_1"
           ]
         },
