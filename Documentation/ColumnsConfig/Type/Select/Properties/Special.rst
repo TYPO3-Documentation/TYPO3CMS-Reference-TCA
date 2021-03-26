@@ -36,7 +36,11 @@ special
      List values that require explicit permissions to be allowed or denied, see
      :ref:`authMode <columns-select-properties-authmode>`.
 
+
+
    languages
+      .. deprecated:: 11.2
+         Use TCA field type called :ref:`language<columns-language>` instead.
      List system languages ("sys\_language" records from page tree root + Default language)
 
    custom
@@ -50,9 +54,8 @@ Examples
 Select single box with special `languages`
 ------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SpecialLanguages1.rst.txt
-
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SpecialLanguages1.rst.txt
+.. deprecated:: 11.2
+   Use TCA field type called :ref:`language<columns-language>` instead.
 
 
 .. _tca_example_special_tables_1:

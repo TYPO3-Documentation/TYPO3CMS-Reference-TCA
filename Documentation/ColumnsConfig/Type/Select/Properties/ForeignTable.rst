@@ -14,6 +14,11 @@ foreign\_table
    The item-array will be filled with records from the table defined here.
    The table must have a TCA definition.
 
+   .. deprecated:: 11.2
+      Usage of the `foreign_table` relation with the table `sys_language`
+      Has been deprecated. Use TCA field type called
+      :ref:`language<columns-language>` instead.
+
 Examples
 ========
 

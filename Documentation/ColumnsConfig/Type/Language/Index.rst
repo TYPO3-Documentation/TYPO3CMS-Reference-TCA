@@ -1,19 +1,37 @@
 ﻿.. include:: /Includes.rst.txt
 
-.. _columns-slug:
+.. _columns-language:
 
-=================
-Slugs / URL parts
-=================
+===============
+Language fields
+===============
 
-The main purpose of this type is to define parts of a URL path to generate and
-resolve URLs.
+.. versionadded:: 11.2
+   The TCA field type called `language` has been added to TYPO3 Core.
 
-.. figure:: Images/PagesSlug.png
-   :alt: Slug field in the table pages
-   :class: with-shadow
+The main
+purpose of the TCA language configuration is to simplify the TCA language
+configuration. It therefore supersedes
+the `special=languages` option of TCA columns with `type=select`.
 
-   Slug field in the table pages, see :ref:`example <tca_example_pages_slug>`
+Formerly `foreign_table` relations to the table `sys_language` had also
+been used. This became deprecated with the introduction of site
+configurations with TYPO3 v9.
+
+This field type decouples the actually available site
+languages from the `sys_language` table.
+
+This TCA type automatically displays all available languages for the
+current context (the corresponding site configuration) and also automatically
+adds the special `-1` language (meaning `all languages`) for all record
+types, except `pages`.
+
+In records on root level (`pid=0`) or on a page, outside of a site context,
+all languages form all site configurations are displayed in the new field.
+
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/Language1.rst.txt
+
 
 .. toctree::
    :titlesonly:
@@ -21,3 +39,4 @@ resolve URLs.
    Introduction
    Examples
    Properties/Index
+   Migration

@@ -1,16 +1,12 @@
 .. include:: /Includes.rst.txt
 
-.. _columns-slug-properties:
-.. _columns-slug-properties-type:
+=========================
+Language field properties
+=========================
 
-Properties
-==========
+Since the new TCA type is mostly based on the `type=select` internally, most
+of the associated TCA and TSconfig options can still be applied. This includes
+for example the `selectIcons` field wizard, as well as the :typoscript:`keepItems`
+and :typoscript:`removeItems` page TSconfig options.
 
-.. toctree::
-   :titlesonly:
-
-   Appearance
-   Eval
-   FallbackCharacter
-   GeneratorOptions
-   PrependSlash
+.. todo: add a list of properties here.
