@@ -4,7 +4,7 @@
 Language field properties
 =========================
 
-Since the new TCA type is mostly based on the `type=select` internally, most
+Since the TCA type `language` is mostly based on the `type=select` internally, most
 of the associated TCA and TSconfig options can still be applied. This includes
 for example the `selectIcons` field wizard, as well as the :typoscript:`keepItems`
 and :typoscript:`removeItems` page TSconfig options.
