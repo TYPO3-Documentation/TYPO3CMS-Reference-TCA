@@ -23,6 +23,7 @@ be influenced by further properties.
    Type/ImageManipulation/Index
    Type/Inline/Index
    Type/Input/Index
+   Type/Language/Index
    Type/None/Index
    Type/Passthrough/Index
    Type/Radio/Index

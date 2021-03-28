@@ -7,31 +7,29 @@ languageField
 
 .. confval:: languageField
 
-   :type: string (field name)
+   :type: string (field name of type :ref:`language <columns-language>`)
    :Scope: Proc. / Display
 
 
-   **Localization access control.**
+   .. deprecated:: 11.2
+      This field can only be used with the type
+      :ref:`language <columns-language>`. All other field types will be
+      automatically migrated on-the-fly possibly losing configurations.
+      See :ref;`Migration to the languge type <columns-languge-migration>`
 
-   Field name which contains the pointer to the language of the record's content. Language for a record is defined
-   by an integer pointing to a "sys\_language" record (found in the page tree root).
+   This property contains the field name which contains a pointer to the
+   language of the record. The field should have the type
+   :ref:`language <columns-language>`.
 
-   Backend users can be limited to have edit access for only certain of these languages and if this option is set,
-   edit access for languages will be enforced for this table.
+   This TCA type automatically displays all available languages for the
+   current context (the corresponding site configuration) and also automatically
+   adds the special `-1` language (meaning `all languages`) for all record
+   types, except `pages`.
 
-   The values in this field may be the following:
+   Backend users can be limited to have edit access for only certain of
+   these languages and if this option is set, edit access for languages
+   will be enforced for this table.
 
-   **-1 :** (ALL) The record does not represent any specific language. Localization access control is never carried out
-   for such a record. Typically this is used if the record has content which itself handles
-   localization (such as plugins or flexforms).
-
-   **0 :** The default language of the system. Localization access control applies.
-
-   **Values > 0** : Points to a uid of a sys\_language record representing a possible language for translation.
-   Localization access control applies.
-
-   The field name pointed to should be a single value selector box (maxitems <=1) saving its value into an
-   integer field in the database.
-
-   Also see the :ref:`Frontend Localization Guide <t3l10n:core-support-tca>` for a discussion about the effects of
+   Also see the :ref:`Frontend Localization Guide <t3l10n:core-support-tca>`
+   for a discussion about the effects of
    this property (and other TCA properties) on the localization process.
