@@ -20,19 +20,18 @@ items
 
    #2 Second value is the **value of the item**
 
-      -  The special value `--div--` was used to insert a non-selectable
+      *  The special value `--div--` was used to insert a non-selectable
          value that appears as a divider label in the selector box. It is kept
          for backwards-compatible reasons. Use :ref:`item groups
          <columns-select-properties-item-groups>` for custom selects instead.
 
-      -  Values must not contain "," (comma) and "\|" (vertical bar). If you want to use "authMode" you should
+      *  Values must not contain "," (comma) and "\|" (vertical bar). If you want to use "authMode" you should
          also refrain from using ":" (colon).
 
    #3 Third value is an optional icon. For custom icons use a path prepended with "EXT:" to refer to an image
       file found inside an extension or use an registered icon identifier.
 
-   #4 Fourth value is the key of the :ref:`item group
-      <columns-select-properties-item-groups>`.
+   #4 Fourth value is the key of the :ref:`item group <columns-select-properties-item-groups>`.
 
    #5 Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
       property :ref:`authMode / individual <columns-select-properties-authmode>` for more details.

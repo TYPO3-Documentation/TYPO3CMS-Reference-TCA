@@ -117,8 +117,6 @@ SelectSingle field with itemGroups
 SelectSingle field with itemGroups, size=6
 ------------------------------------------
 
-A more complex example could be this (includes icons):
-
 .. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle17.rst.txt
 
 .. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle17.rst.txt
@@ -129,19 +127,15 @@ A more complex example could be this (includes icons):
 SelectSingleBox field with itemGroups
 -------------------------------------
 
-A more complex example could be this (includes icons):
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingleBox3.rst.txt
-
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingleBox3.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
 
 
 .. _tca_example_select_checkbox_7:
 
 SelectCheckbox field with itemGroups
 ------------------------------------
-
-A more complex example could be this (includes icons):
 
 .. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox7.rst.txt
 
@@ -150,10 +144,8 @@ A more complex example could be this (includes icons):
 
 .. _tca_example_select_multiplesidebyside_10:
 
-SelectCheckbox field with itemGroups
-------------------------------------
-
-A more complex example could be this (includes icons):
+Multiple side by side field with itemGroups
+-------------------------------------------
 
 .. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside10.rst.txt
 
