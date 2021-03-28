@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/SelectSinglebox3.png
+   :alt: Screenshot of field tx_styleguide_elements_select:select_singlebox_3
+   :class: with-shadow
+
+   :ref:`Screenshot of field tx_styleguide_elements_select:select_singlebox_3 <tca_example_select_singlebox_3>`
