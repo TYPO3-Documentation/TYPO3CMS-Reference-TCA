@@ -4,7 +4,7 @@ return [
    // [start ctrl]
    'ctrl' => [ 
       'title' => 'Form engine - type',
-      'label' => 'uid',
+      'label' => 'input_1',
       'tstamp' => 'tstamp',
       'crdate' => 'crdate',
       'cruser_id' => 'cruser_id',
@@ -20,7 +20,7 @@ return [
       'enablecolumns' => [ 
          'disabled' => 'hidden',
       ],
-      'type' => 'type',
+      'type' => 'record_type',
    ],
    // [end ctrl]
    // [start columns]
@@ -112,9 +112,8 @@ return [
       ],
       // Example from extension "styleguide", table "tx_styleguide_type"
       // [end l10n_diffsource]
-      // [start type]
-      'type' => [ 
-         'exclude' => 1,
+      // [start record_type]
+      'record_type' => [ 
          'label' => 'type',
          'config' => [ 
             'type' => 'select',
@@ -125,14 +124,37 @@ return [
                   '1' => '0',
                ],
                '1' => [ 
-                  '0' => 'type test',
-                  '1' => 'test',
+                  '0' => 'Type with changed fields',
+                  '1' => 'withChangedFields',
+               ],
+               '2' => [ 
+                  '0' => 'Type with columnsOverrides',
+                  '1' => 'withColumnsOverrides',
                ],
             ],
          ],
       ],
       // Example from extension "styleguide", table "tx_styleguide_type"
-      // [end type]
+      // [end record_type]
+      // [start input_1]
+      'input_1' => [ 
+         'label' => 'input_1',
+         'config' => [ 
+            'type' => 'input',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_type"
+      // [end input_1]
+      // [start input_2]
+      'input_2' => [ 
+         'label' => 'input_2, renderType=colorpicker',
+         'config' => [ 
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_type"
+      // [end input_2]
       // [start text_1]
       'text_1' => [ 
          'exclude' => 1,
@@ -148,11 +170,22 @@ return [
    // [start types]
    'types' => [ 
       '0' => [ 
-         'showitem' => 'type, text_1',
+         'showitem' => 'record_type, input_1, text_1',
       ],
-      'test' => [ 
-         'showitem' => 'type, text_1',
+      'withChangedFields' => [ 
+         'showitem' => 'record_type, input_1, input_2, text_1',
+      ],
+      'withColumnsOverrides' => [ 
+         'showitem' => 'record_type, input_1, input_2, text_1',
          'columnsOverrides' => [ 
+            'input_2' => [ 
+               'label' => 'input_2, readOnly, size=10, empty renderType',
+               'config' => [ 
+                  'renderType' => '',
+                  'readOnly' => true,
+                  'size' => 10,
+               ],
+            ],
             'text_1' => [ 
                'config' => [ 
                   'renderType' => 't3editor',

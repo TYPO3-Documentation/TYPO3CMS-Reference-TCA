@@ -2,15 +2,15 @@
 
 return [
    'ctrl' => [ 
-      'title' => 'Common table control',
-      'label' => 'title_field',
-      'descriptionColumn' => 'description_field',
+      'title' => 'Form engine - Common table control',
+      'label' => 'title',
+      'descriptionColumn' => 'description',
       'tstamp' => 'tstamp',
       'crdate' => 'crdate',
       'cruser_id' => 'cruser_id',
       'delete' => 'deleted',
       'sortby' => 'sorting',
-      'default_sortby' => 'title_field',
+      'default_sortby' => 'title',
       'versioningWS' => true,
       'rootLevel' => -1,
       'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
@@ -19,7 +19,7 @@ return [
       'transOrigPointerField' => 'l10n_parent',
       'transOrigDiffSourceField' => 'l10n_diffsource',
       'translationSource' => 'l10n_source',
-      'searchFields' => 'title_field,description_field',
+      'searchFields' => 'title,description',
       'enablecolumns' => [ 
          'disabled' => 'hidden',
          'starttime' => 'starttime',
@@ -119,7 +119,7 @@ return [
             ],
          ],
       ],
-      'title_field' => [ 
+      'title' => [ 
          'label' => 'LLL:EXT:styleguide/Resources/Private/Language/locallang.xlf:minimalTableTitleField',
          'config' => [ 
             'type' => 'input',
@@ -127,18 +127,17 @@ return [
             'eval' => 'trim,required',
          ],
       ],
-      'description_field' => [ 
-         'label' => 'description_field',
+      'description' => [ 
+         'label' => 'description',
          'config' => [ 
             'type' => 'text',
-            'default' => '',
          ],
       ],
    ],
    'types' => [ 
       '0' => [ 
          'showitem' => '
-            title_field, description_field,
+            title, description,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
                 --palette--;;language,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,

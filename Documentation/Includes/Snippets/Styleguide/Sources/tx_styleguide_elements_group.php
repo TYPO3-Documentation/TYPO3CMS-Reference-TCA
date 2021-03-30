@@ -169,14 +169,14 @@ return [
       // [start group_db_3]
       'group_db_3' => [ 
          'exclude' => 1,
-         'label' => 'group_db_3 allowed=tx_styleguide_staticdata, disable elementBrowser',
+         'label' => 'group_db_3 allowed=tx_styleguide_staticdata, disabled elementBrowser',
          'config' => [ 
             'type' => 'group',
             'internal_type' => 'db',
             'allowed' => 'tx_styleguide_staticdata',
             'fieldControl' => [ 
                'elementBrowser' => [ 
-                  'disable' => true,
+                  'disabled' => true,
                ],
             ],
          ],
@@ -200,7 +200,7 @@ return [
       // [start group_db_11]
       'group_db_11' => [ 
          'exclude' => 1,
-         'label' => 'group_db_8 hideSuggest=true allowed=tx_styleguide_staticdata, multiple',
+         'label' => 'group_db_11 hideSuggest=true allowed=tx_styleguide_staticdata, multiple',
          'config' => [ 
             'type' => 'group',
             'internal_type' => 'db',
@@ -262,7 +262,6 @@ return [
             'maxitems' => 1,
             'minitems' => 0,
             'size' => 1,
-            'default' => 0,
             'suggestOptions' => [ 
                'default' => [ 
                   'additionalSearchFields' => 'nav_title, alias, url',

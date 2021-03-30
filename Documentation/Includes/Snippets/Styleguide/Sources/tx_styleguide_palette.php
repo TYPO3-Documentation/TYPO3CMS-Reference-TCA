@@ -1,4 +1,4 @@
-<?php // Example from extension "styleguide", table "tx_styleguide_type_foreign"
+<?php // Example from extension "styleguide", table "tx_styleguide_typeforeign"
 
 return [
    // [start ctrl]
@@ -177,7 +177,7 @@ return [
       // [start palette_4_2]
       'palette_4_2' => [ 
          'exclude' => 1,
-         'label' => 'palette_4_2',
+         'label' => 'palette_4_2 This is a really long label text. AndOneWordIsReallyEvenMuchLongerWhoWritesThoseLongWordsAnyways?',
          'config' => [ 
             'type' => 'input',
          ],
@@ -252,13 +252,13 @@ return [
          'showitem' => '
                 --div--;palette,
                     --palette--;;palette_1,
-                    --palette--;Palette 2 label defined in showitem section of type;palette_2,
-                    --palette--;Palette 3 label;palette_3,
+                    --palette--;palette_2;palette_2,
+                    --palette--;palette_3;palette_3,
                     --palette--;;palette_4,
-                    --palette--;Palette 5 label;palette_5,
+                    --palette--;palette_5;palette_5,
                 --div--;hidden palette,
-                    --palette--;Palette 6 label;palette_6,
-                    --palette--;Palette 7 (palette_6 hidden);palette_7,
+                    --palette--;palette_6;palette_6,
+                    --palette--;palette_7 (palette_6 hidden);palette_7,
             ',
       ],
    ],
@@ -266,14 +266,13 @@ return [
    // [start palettes]
    'palettes' => [ 
       'palette_1' => [ 
-         'label' => 'Palette 1, Label defined in palettes definition',
+         'label' => 'palette_1',
          'showitem' => 'palette_1_1, palette_1_3',
       ],
       'palette_2' => [ 
          'showitem' => 'palette_2_1',
       ],
-      'palette_3' => [
-          'label' => 'Palette 3 label gets overridden',
+      'palette_3' => [ 
          'showitem' => 'palette_3_1, palette_3_2',
       ],
       'palette_4' => [ 

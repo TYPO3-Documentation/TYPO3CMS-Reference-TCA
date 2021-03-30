@@ -1,4 +1,4 @@
-<?php // Example from extension "styleguide", table "tx_styleguide_elements_group"
+<?php // Example from extension "styleguide", table "tx_styleguide_elements_special"
 
 return [
    // [start ctrl]
@@ -122,6 +122,7 @@ return [
                'showSynchronizationLink' => true,
                'showAllLocalizationLink' => true,
                'showPossibleLocalizationRecords' => true,
+               'showRemovedLocalizationRecords' => true,
             ],
          ],
       ],
