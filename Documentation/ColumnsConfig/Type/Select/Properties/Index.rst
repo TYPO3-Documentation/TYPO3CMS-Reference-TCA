@@ -17,6 +17,7 @@ Select field properties
    ForeignTable
    ForeignTablePrefix
    ForeignTableWhere
+   ItemGroups
    Items
    MultiSelectFilterItems
    SelectTreeConfig
