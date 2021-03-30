@@ -19,28 +19,59 @@ Render the list of values as single check box rows in a table. Multiple items ca
 Example
 =======
 
-.. figure:: ../../Images/TypeSelectStyleguideCheckbox3.png
-   :alt: Select values from a checkbox list (select_checkbox_3)
+.. figure:: ../../Images/TypeSelectStyleguideCheckbox7.png
+   :alt: Select values from a checkbox list (select_checkbox_7)
    :class: with-shadow
 
-   Select values from a checkbox list (select_checkbox_3)
+   Select values from a checkbox list (select_checkbox_7)
 
 
 .. code-block:: php
 
-        'select_checkbox_3' => [
-            'label' => 'select_checkbox_3 icons, description',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectCheckBox',
-                'items' => [
-                    ['foo 1', 1, '', 'optional description'],
-                    ['foo 2', 2, 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg', 'description'],
-                    ['foo 3', 3, 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg'],
-                    ['foo 4', 4],
-                ],
+     'select_checkbox_7' => [
+      'exclude' => 1,
+      'label' => 'select_checkbox_7',
+      'description' => 'itemGroups',
+      'config' => [
+         'type' => 'select',
+         'renderType' => 'selectCheckBox',
+         'items' => [
+            '0' => [
+               '0' => 'foo 1',
+               '1' => 1,
+               '2' => '',
+               '3' => 'group1',
             ],
-        ],
+            '1' => [
+               '0' => 'foo 2',
+               '1' => 2,
+               '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+               '3' => 'group1',
+            ],
+            '2' => [
+               '0' => 'foo 3',
+               '1' => 3,
+               '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+            ],
+            '3' => [
+               '0' => 'foo 4',
+               '1' => 4,
+            ],
+            '4' => [
+               '0' => 'foo 5',
+               '1' => 1,
+               '2' => '',
+               '3' => 'group3',
+            ],
+         ],
+         'itemGroups' => [
+            'group1' => 'Group 1 with items',
+            'group2' => 'Group 2 with no items',
+            'group3' => 'Group 3 with items',
+         ],
+      ],
+   ],
+   // Example from extension "styleguide", table "tx_styleguide_elements_select"
 
 
 
@@ -157,6 +188,11 @@ foreign\_table\_where
 ---------------------
 
 .. include:: ../Properties/SelectForeignTableWhere.rst.txt
+
+itemGroups
+----------
+
+.. include:: ../Properties/SelectItemGroups.rst.txt
 
 items
 -----

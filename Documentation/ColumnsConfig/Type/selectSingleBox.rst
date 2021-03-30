@@ -184,6 +184,11 @@ foreign\_table\_where
 
 .. include:: ../Properties/SelectForeignTableWhere.rst.txt
 
+itemGroups
+----------
+
+.. include:: ../Properties/SelectItemGroups.rst.txt
+
 items
 -----
 

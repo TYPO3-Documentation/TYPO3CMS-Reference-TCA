@@ -1,0 +1,181 @@
+:aspect:`Datatype`
+    array
+
+:aspect:`Scope`
+    Display / Proc.
+
+:aspect:`Description`
+    Contains an array of key-value pairs. The key contains the id of the item
+    group, the value contains the label of the item group or its language
+    reference.
+
+    Only groups containing items will be displayed. In the select field first all
+    items with no group defined are listed then the item groups in the order of
+    their definition, each group with the corresponding items.
+
+    In the renderType `selectSingle` item groups are rendered as
+    :html:`<optgroup>`.
+
+    In the renderType `selectCheckbox` the groups are displayed as accordions
+    containing the check boxes.
+
+    In other renderTypes a non selectable item with the
+    group name gets displayed.
+
+    **Example:**
+
+    A configuration could look like this:
+
+    .. code-block:: php
+
+        'select_single_16' => [
+           'exclude' => 1,
+           'label' => 'select_single_16',
+           'description' => 'itemGroups',
+           'config' => [
+              'type' => 'select',
+              'renderType' => 'selectSingle',
+              'items' => [
+                 '0' => [
+                    '0' => 'item 1',
+                    '1' => 1,
+                    '2' => '',
+                    '3' => 'group1',
+                 ],
+                 '1' => [
+                    '0' => 'item 2',
+                    '1' => 2,
+                    '2' => '',
+                    '3' => 'group1',
+                 ],
+                 '2' => [
+                    '0' => 'item 3',
+                    '1' => 3,
+                    '2' => '',
+                    '3' => 'group3',
+                 ],
+                 '3' => [
+                    '0' => 'item 4',
+                    '1' => 3,
+                 ],
+              ],
+              'itemGroups' => [
+                 'group1' => 'Group 1 with items',
+                 'group2' => 'Group 2 with no items',
+                 'group3' => 'Group 3 with items',
+              ],
+           ],
+        ],
+        // Example from extension "styleguide", table "tx_styleguide_elements_select"
+
+    A more complex example could be this (includes icons):
+
+    .. code-block:: php
+
+        'select_checkbox_7' => [
+           'exclude' => 1,
+           'label' => 'select_checkbox_7',
+           'description' => 'itemGroups',
+           'config' => [
+              'type' => 'select',
+              'renderType' => 'selectCheckBox',
+              'items' => [
+                 '0' => [
+                    '0' => 'foo 1',
+                    '1' => 1,
+                    '2' => '',
+                    '3' => 'group1',
+                 ],
+                 '1' => [
+                    '0' => 'foo 2',
+                    '1' => 2,
+                    '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+                    '3' => 'group1',
+                 ],
+                 '2' => [
+                    '0' => 'foo 3',
+                    '1' => 3,
+                    '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+                 ],
+                 '3' => [
+                    '0' => 'foo 4',
+                    '1' => 4,
+                 ],
+                 '4' => [
+                    '0' => 'foo 5',
+                    '1' => 1,
+                    '2' => '',
+                    '3' => 'group3',
+                 ],
+              ],
+              'itemGroups' => [
+                 'group1' => 'Group 1 with items',
+                 'group2' => 'Group 2 with no items',
+                 'group3' => 'Group 3 with items',
+              ],
+           ],
+        ],
+        // Example from extension "styleguide", table "tx_styleguide_elements_select"
+
+
+    **API Methods**
+
+    **Adding custom select item groups**
+
+    Registration of a select item group takes place in
+    :file:`Configuration/TCA/tx_mytable.php` for new TCA tables, and in
+    :file:`Configuration/TCA/Overrides/a_random_core_table.php`
+    for modifying an existing TCA definition.
+
+    For existing select fields additional item groups can be added via the
+    api method :php:`ExtensionManagementUtility::addTcaSelectItemGroup`.
+
+    .. code-block:: php
+
+       ExtensionManagementUtility::addTcaSelectItemGroup(
+           'tt_content',
+           'CType',
+           'sliders',
+           'LLL:EXT:my_slider_mixtape/Resources/Private/Language/locallang_tca.xlf:tt_content.group.sliders',
+           'after:lists'
+       );
+
+    When adding a new select field, itemGroups should be added directly in the
+    original TCA definition without using the API method. Use the API within
+    :file:`TCA/Configuration/Overrides/` files to extend an existing TCA select
+    field with grouping.
+
+    **Attaching select items to item groups**
+
+    Using the API method :php:`ExtensionManagementUtility::addTcaSelectItem` a
+    a fourth parameter in the array can be used to specify the id of the item
+    group.
+
+    .. code-block:: php
+
+       ExtensionManagementUtility::addTcaSelectItem(
+           'tt_content',
+           'CType',
+           [
+               'LLL:EXT:my_slider_mixtape/Resources/Private/Locallang/locallang_tca.xlf:tt_content.CType.slickslider',
+               'slickslider',
+               'EXT:my_slider_mixtape/Resources/Public/Icons/slickslider.png',
+               'sliders'
+           ]
+       );
+
+    **History**
+
+    With the introduction of the `itemGroups` the TCA column type ``select`` has a
+    clean API to group items for dropdowns in FormEngine. This was previously
+    handled via placeholder ``--div--`` items,
+    which then rendered as :html:`<optgroup>` HTML elements in a dropdown.
+
+    In larger installations or TYPO3 instances with lots of extensions, Plugins
+    (:php:`tt_content.list_type`), Content Types (:php:`tt_content.CType`) or custom
+    Page Types (:php:`pages.doktype`) drop down lists could grow large and
+    adding item groups caused tedious work for developers or integrators.
+    Grouping can now be configured on a per-item
+    basis. Custom groups can be added via an API or when defining TCA for a new
+    table.
+

@@ -14,8 +14,10 @@
 
     - Second value is the **value of the item**
 
-      - The special value `--div--` is used to insert a non-selectable value that appears as a divider
-        label in the selector box (only for maxitems <=1)
+      - The special value `--div--` was used to insert a non-selectable
+        value that appears as a divider label in the selector box. It is kept
+        for backwards-compatible reasons. Use :ref:`item groups
+        <columns-select-properties-item-groups>` for custom selects instead.
 
       - Values must not contain "," (comma) and "\|" (vertical bar). If you want to use "authMode" you should
         also refrain from using ":" (colon).
