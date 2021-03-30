@@ -9,20 +9,18 @@ selectCheckBox
 This page describes the :ref:`select <columns-select>` type with
 renderType='selectCheckBox'.
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox7.rst.txt
 
 The select checkbox stores the values as comma separated values.
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectCheckbox3.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectCheckbox7.rst.txt
 
 The field in the database is of type text or varchar.
 
 .. code-block::sql
    CREATE TABLE tx_styleguide_elements_select (
-      select_checkbox_3 text,
+      select_checkbox_7 text,
    );
-
-In opposite
 
 .. toctree::
    :titlesonly:

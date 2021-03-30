@@ -421,6 +421,89 @@ return [
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_15]
+      // [start select_single_16]
+      'select_single_16' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_16',
+         'description' => 'itemGroups',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'item 1',
+                  '1' => 1,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '1' => [ 
+                  '0' => 'item 2',
+                  '1' => 2,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '2' => [ 
+                  '0' => 'item 3',
+                  '1' => 3,
+                  '2' => '',
+                  '3' => 'group3',
+               ],
+               '3' => [ 
+                  '0' => 'item 4',
+                  '1' => 3,
+               ],
+            ],
+            'itemGroups' => [ 
+               'group1' => 'Group 1 with items',
+               'group2' => 'Group 2 with no items',
+               'group3' => 'Group 3 with items',
+            ],
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_single_16]
+      // [start select_single_17]
+      'select_single_17' => [ 
+         'exclude' => 1,
+         'label' => 'select_single_16',
+         'description' => 'itemGroups, size=6',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'item 1',
+                  '1' => 1,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '1' => [ 
+                  '0' => 'item 2',
+                  '1' => 2,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '2' => [ 
+                  '0' => 'item 3',
+                  '1' => 3,
+                  '2' => '',
+                  '3' => 'group3',
+               ],
+               '3' => [ 
+                  '0' => 'item 4',
+                  '1' => 3,
+               ],
+            ],
+            'itemGroups' => [ 
+               'group1' => 'Group 1 with items',
+               'group2' => 'Group 2 with no items',
+               'group3' => 'Group 3 with items',
+            ],
+            'size' => 6,
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_single_17]
       // [start select_singlebox_1]
       'select_singlebox_1' => [ 
          'exclude' => 1,
@@ -493,107 +576,44 @@ return [
       // [start select_singlebox_3]
       'select_singlebox_3' => [ 
          'exclude' => 1,
-         'label' => 'select_singlebox_3 special=languages',
-         'description' => 'field description',
+         'label' => 'select_singlebox_3',
+         'description' => 'itemGroups',
          'config' => [ 
             'type' => 'select',
             'renderType' => 'selectSingleBox',
-            'special' => 'languages',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'item 1',
+                  '1' => 1,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '1' => [ 
+                  '0' => 'item 2',
+                  '1' => 2,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '2' => [ 
+                  '0' => 'item 3',
+                  '1' => 3,
+                  '2' => '',
+                  '3' => 'group3',
+               ],
+               '3' => [ 
+                  '0' => 'item 4',
+                  '1' => 3,
+               ],
+            ],
+            'itemGroups' => [ 
+               'group1' => 'Group 1 with items',
+               'group2' => 'Group 2 with no items',
+               'group3' => 'Group 3 with items',
+            ],
          ],
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_singlebox_3]
-      // [start select_singlebox_4]
-      'select_singlebox_4' => [ 
-         'exclude' => 1,
-         'label' => 'select_singlebox_4 special=tables',
-         'description' => 'field description',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingleBox',
-            'special' => 'tables',
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_singlebox_4]
-      // [start select_singlebox_5]
-      'select_singlebox_5' => [ 
-         'exclude' => 1,
-         'label' => 'select_singlebox_5 special=pagetypes',
-         'description' => 'field description',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingleBox',
-            'special' => 'pagetypes',
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_singlebox_5]
-      // [start select_singlebox_6]
-      'select_singlebox_6' => [ 
-         'exclude' => 1,
-         'label' => 'select_singlebox_6 special=exclude',
-         'description' => 'field description',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingleBox',
-            'special' => 'exclude',
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_singlebox_6]
-      // [start select_singlebox_7]
-      'select_singlebox_7' => [ 
-         'exclude' => 1,
-         'label' => 'select_singlebox_7 special=modListGroup',
-         'description' => 'field description',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingleBox',
-            'special' => 'modListGroup',
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_singlebox_7]
-      // [start select_singlebox_8]
-      'select_singlebox_8' => [ 
-         'exclude' => 1,
-         'label' => 'select_singlebox_8 special=modListUser',
-         'description' => 'field description',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingleBox',
-            'special' => 'modListUser',
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_singlebox_8]
-      // [start select_singlebox_9]
-      'select_singlebox_9' => [ 
-         'exclude' => 1,
-         'label' => 'select_singlebox_9 special=explicitValues',
-         'description' => 'field description',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingleBox',
-            'special' => 'explicitValues',
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_singlebox_9]
-      // [start select_singlebox_10]
-      'select_singlebox_10' => [ 
-         'exclude' => 1,
-         'label' => 'select_singlebox_10 special=custom',
-         'description' => 'field description',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingleBox',
-            'special' => 'custom',
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_singlebox_10]
       // [start select_checkbox_1]
       'select_checkbox_1' => [ 
          'exclude' => 1,
@@ -788,6 +808,52 @@ return [
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_checkbox_6]
+      // [start select_checkbox_7]
+      'select_checkbox_7' => [ 
+         'exclude' => 1,
+         'label' => 'select_checkbox_7',
+         'description' => 'itemGroups',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectCheckBox',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'foo 1',
+                  '1' => 1,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '1' => [ 
+                  '0' => 'foo 2',
+                  '1' => 2,
+                  '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+                  '3' => 'group1',
+               ],
+               '2' => [ 
+                  '0' => 'foo 3',
+                  '1' => 3,
+                  '2' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+               ],
+               '3' => [ 
+                  '0' => 'foo 4',
+                  '1' => 4,
+               ],
+               '4' => [ 
+                  '0' => 'foo 5',
+                  '1' => 1,
+                  '2' => '',
+                  '3' => 'group3',
+               ],
+            ],
+            'itemGroups' => [ 
+               'group1' => 'Group 1 with items',
+               'group2' => 'Group 2 with no items',
+               'group3' => 'Group 3 with items',
+            ],
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_checkbox_7]
       // [start select_multiplesidebyside_1]
       'select_multiplesidebyside_1' => [ 
          'exclude' => 1,
@@ -1067,6 +1133,50 @@ return [
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_multiplesidebyside_9]
+      // [start select_multiplesidebyside_10]
+      'select_multiplesidebyside_10' => [ 
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_1 autoSizeMax=5, size=3 description',
+         'description' => 'field description',
+         'config' => [ 
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'items' => [ 
+               '0' => [ 
+                  '0' => 'item 1',
+                  '1' => 1,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '1' => [ 
+                  '0' => 'item 2',
+                  '1' => 2,
+                  '2' => '',
+                  '3' => 'group1',
+               ],
+               '2' => [ 
+                  '0' => 'item 3',
+                  '1' => 3,
+                  '2' => '',
+                  '3' => 'group3',
+               ],
+               '3' => [ 
+                  '0' => 'item 4',
+                  '1' => 3,
+               ],
+            ],
+            'itemGroups' => [ 
+               'group1' => 'Group 1 with items',
+               'group2' => 'Group 2 with no items',
+               'group3' => 'Group 3 with items',
+            ],
+            'size' => 3,
+            'autoSizeMax' => 5,
+            'multiple' => true,
+         ],
+      ],
+      // Example from extension "styleguide", table "tx_styleguide_elements_select"
+      // [end select_multiplesidebyside_10]
       // [start select_tree_1]
       'select_tree_1' => [ 
          'exclude' => 1,
@@ -1250,7 +1360,6 @@ return [
                'default' => '
                         <T3DataStructure>
                             <sheets>
-
                                 <sSingle>
                                     <ROOT>
                                         <type>array</type>
@@ -1340,34 +1449,6 @@ return [
                                                     </config>
                                                 </TCEforms>
                                             </select_tree_1>
-                                            <select_tree_2_condition>
-                                                <TCEforms>
-                                                    <label>select_tree_2_condition, display select_tree_2?</label>
-                                                    <config>
-                                                        <type>check</type>
-                                                    </config>
-                                                </TCEforms>
-                                            </select_tree_2_condition>
-                                            <select_tree_2>
-                                                <TCEforms>
-                                                    <label>select_tree_2 displayCond</label>
-                                                    <displayCond>FIELD:select_tree_2_condition:REQ:TRUE</displayCond>
-                                                    <config>
-                                                        <type>select</type>
-                                                        <renderType>selectTree</renderType>
-                                                        <foreign_table>pages</foreign_table>
-                                                        <size>20</size>
-                                                        <maxitems>4</maxitems>
-                                                        <treeConfig>
-                                                            <expandAll>1</expandAll>
-                                                            <parentField>pid</parentField>
-                                                            <appearance>
-                                                                <showHeader>1</showHeader>
-                                                            </appearance>
-                                                        </treeConfig>
-                                                    </config>
-                                                </TCEforms>
-                                            </select_tree_2>
                                         </el>
                                     </ROOT>
                                 </sTree>
@@ -1531,18 +1612,17 @@ return [
                 --div--;renderType=selectSingle,
                     select_single_1, select_single_2, select_single_3, select_single_4, select_single_5,
                     select_single_7, select_single_12, select_single_8, select_single_13, select_single_10,
-                    select_single_11, select_single_14, select_single_15,
+                    select_single_11, select_single_14, select_single_15,select_single_16,,select_single_17,
                 --div--;renderType=selectSingleBox,
-                    select_singlebox_1, select_singlebox_2, select_singlebox_3,
-                    select_singlebox_4, select_singlebox_5, select_singlebox_6,
-                    select_singlebox_7, select_singlebox_8, select_singlebox_9,
-                    select_singlebox_10,
+                    select_singlebox_1, select_singlebox_2,select_singlebox_3,
                 --div--;renderType=selectCheckBox,
-                    select_checkbox_1, select_checkbox_2, select_checkbox_3, select_checkbox_4, select_checkbox_5, select_checkbox_6,
+                    select_checkbox_1, select_checkbox_2, select_checkbox_3, select_checkbox_4, select_checkbox_5,
+                    select_checkbox_6, select_checkbox_7,
                 --div--;renderType=selectMultipleSideBySide,
                     select_multiplesidebyside_1, select_multiplesidebyside_2, select_multiplesidebyside_3,
                     select_multiplesidebyside_5, select_multiplesidebyside_6,
                     select_multiplesidebyside_7, select_multiplesidebyside_8, select_multiplesidebyside_9,
+                    select_multiplesidebyside_10,
                 --div--;renderType=selectTree,
                     select_tree_1, select_tree_2, select_tree_3, select_tree_4, select_tree_5, select_tree_6,
                 --div--;in flex,
