@@ -34,4 +34,3 @@ The following renderTypes are available:
    inputColorPicker
    inputDateTime
    inputLink
-   inputRsaInput
