@@ -14,3 +14,12 @@ fallbackCharacter
    :ref:`fieldSeparator <columns-slug-properties-generatorOptions>`.
 
 
+Examples
+========
+
+fallbackCharacter and fieldSeparator set
+----------------------------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Slug2.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug2.rst.txt

@@ -10,35 +10,33 @@ appearance
    :type: array
    :Scope: Display
 
-   Provides a custom base url that is displayed in front of the input field.
+   Properties that only apply to how the field is displayed in the backend.
 
-   prefix
-      Assign a user function. It receives two arguments:
+.. confval:: appearance:prefix
 
-      * The first argument is the parameters array containing the site object,
-        the language id, the current table and the current row.
-      * The second argument is the reference object :php:`TcaSlug`.
+   :type: userFunction
+   :Scope: Display
 
-      The user function should return the string which is then used as the base
-      url.
+   Provides a string that is displayed in front of the input field.
+
+   Assign a user function. It receives two arguments:
+
+   * The first argument is the parameters array containing the site object,
+     the language id, the current table and the current row.
+   * The second argument is the reference object :php:`TcaSlug`.
+
+   The user function should return the string which is then used for display
+   purposes.
 
 
 Example
 =======
 
-::
 
-   <?php
-   declare(strict_types = 1);
+.. include:: /Includes/Images/Styleguide/RstIncludes/Slug1.rst.txt
 
-   namespace Vendor\Extension\UserFunctions\FormEngine
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug1.rst.txt
 
-   use TYPO3\CMS\Backend\Form\FormDataProvider\TcaSlug;
+The user function can be implemented like this:
 
-   class SlugPrefix
-   {
-       public function getPrefix(array $parameters, TcaSlug $reference): string
-       {
-           return 'custom base url';
-       }
-   }
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/SlugPrefix.rst.txt

@@ -494,108 +494,6 @@ return [
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_select"
       // [end select_single_17]
-      // [start select_single_18]
-      'select_single_18' => [ 
-         'exclude' => 1,
-         'label' => 'select_single_18',
-         'description' => 'sortItems label asc',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [ 
-               '0' => [ 
-                  '0' => 'Plum tree',
-                  '1' => 1,
-               ],
-               '1' => [ 
-                  '0' => 'Walnut tree',
-                  '1' => 2,
-               ],
-               '2' => [ 
-                  '0' => 'Apple tree',
-                  '1' => 3,
-               ],
-               '3' => [ 
-                  '0' => 'Cherry tree',
-                  '1' => 4,
-               ],
-            ],
-            'sortItems' => [ 
-               'label' => 'asc',
-            ],
-            'size' => 4,
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_single_18]
-      // [start select_single_19]
-      'select_single_19' => [ 
-         'exclude' => 1,
-         'label' => 'select_single_19',
-         'description' => 'sortItems value desc',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [ 
-               '0' => [ 
-                  '0' => 'Plum tree',
-                  '1' => 1,
-               ],
-               '1' => [ 
-                  '0' => 'Walnut tree',
-                  '1' => 2,
-               ],
-               '2' => [ 
-                  '0' => 'Apple tree',
-                  '1' => 3,
-               ],
-               '3' => [ 
-                  '0' => 'Cherry tree',
-                  '1' => 4,
-               ],
-            ],
-            'sortItems' => [ 
-               'value' => 'desc',
-            ],
-            'size' => 4,
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_single_19]
-      // [start select_single_20]
-      'select_single_20' => [ 
-         'exclude' => 1,
-         'label' => 'select_single_20',
-         'description' => 'sortItems custom',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [ 
-               '0' => [ 
-                  '0' => 'Plum tree',
-                  '1' => 1,
-               ],
-               '1' => [ 
-                  '0' => 'Walnut tree',
-                  '1' => 2,
-               ],
-               '2' => [ 
-                  '0' => 'Apple tree',
-                  '1' => 3,
-               ],
-               '3' => [ 
-                  '0' => 'Cherry tree',
-                  '1' => 4,
-               ],
-            ],
-            'sortItems' => [ 
-               'tx_styleguide' => 'TYPO3\CMS\Styleguide\UserFunctions\FormEngine\SelectItemSorter->sortReverseTitles',
-            ],
-            'size' => 4,
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_select"
-      // [end select_single_20]
       // [start select_singlebox_1]
       'select_singlebox_1' => [ 
          'exclude' => 1,
@@ -1709,8 +1607,7 @@ return [
                 --div--;renderType=selectSingle,
                     select_single_1, select_single_2, select_single_3, select_single_4, select_single_5,
                     select_single_7, select_single_12, select_single_8, select_single_13, select_single_10,
-                    select_single_11, select_single_14, select_single_15,select_single_16,select_single_17,
-                    select_single_18, select_single_19, select_single_20,
+                    select_single_11, select_single_14, select_single_15,select_single_16,,select_single_17,
                 --div--;renderType=selectSingleBox,
                     select_singlebox_1, select_singlebox_2,select_singlebox_3,
                 --div--;renderType=selectCheckBox,

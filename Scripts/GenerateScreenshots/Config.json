@@ -150,6 +150,10 @@
                   "remove": "comments"
                 }
               ]
+            },
+
+            {
+              "from": "SlugPrefix.php"
             }
           ]
         }
@@ -178,6 +182,70 @@
             {
               "field": "flex_2",
               "caption": "A flex form field with two flex section containers"
+            }
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_mm",
+          "prefix": "inline_mm_",
+          "screens": [
+            {
+              "view": "fields",
+              "selectRecord": {
+                "by": "@first"
+              }
+            }
+          ],
+          "fields": [
+            {
+              "field": "inline_1",
+              "caption": "An inline field with MM relation"
+            }
+          ]
+        },
+        {
+          "table": "tx_styleguide_elements_slugs",
+          "screens": [
+            {
+              "view": "fields",
+              "selectRecord": {
+                "by": "@first"
+              }
+            }
+          ],
+          "fields": [
+            {
+              "field": "slug_1"
+            },
+            {
+              "field": "slug_2"
+            },
+            {
+              "field": "slug_3"
+            },
+            {
+              "field": "slug_4"
+            },
+            {
+              "field": "slug_5"
+            }
+          ]
+        },
+        {
+          "table": "tx_styleguide_inline_mm_child",
+          "prefix": "inline_mm_child_",
+          "screens": [
+            {
+              "view": "fields",
+              "selectRecord": {
+                "by": "@first"
+              }
+            }
+          ],
+          "fields": [
+            {
+              "field": "parents",
+              "caption": "An inline field with MM relation defined in the opposite table"
             }
           ]
         },
