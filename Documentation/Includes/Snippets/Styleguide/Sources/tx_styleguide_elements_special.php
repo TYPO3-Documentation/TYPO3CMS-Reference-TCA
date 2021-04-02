@@ -43,17 +43,7 @@ return [
          'exclude' => true,
          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
          'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'special' => 'languages',
-            'items' => [ 
-               '0' => [ 
-                  '0' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                  '1' => -1,
-                  '2' => 'flags-multiple',
-               ],
-            ],
-            'default' => 0,
+            'type' => 'language',
          ],
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_special"
@@ -149,19 +139,6 @@ return [
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_special"
       // [end special_explicitvalues_1]
-      // [start special_languages_1]
-      'special_languages_1' => [ 
-         'exclude' => 1,
-         'label' => 'special_languages_1, identical to be_groups allowed_languages description',
-         'description' => 'field description',
-         'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectCheckBox',
-            'special' => 'languages',
-         ],
-      ],
-      // Example from extension "styleguide", table "tx_styleguide_elements_special"
-      // [end special_languages_1]
       // [start special_modlistgroup_1]
       'special_modlistgroup_1' => [ 
          'exclude' => 1,

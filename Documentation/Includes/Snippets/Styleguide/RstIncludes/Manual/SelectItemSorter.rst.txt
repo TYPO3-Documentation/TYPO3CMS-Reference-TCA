@@ -1,0 +1,4 @@
+
+.. literalinclude:: /Includes/Snippets/Styleguide/Sources/UserFunctions/SelectItemSorter.php
+   :language: php
+   :start-at: class SelectItemSorter

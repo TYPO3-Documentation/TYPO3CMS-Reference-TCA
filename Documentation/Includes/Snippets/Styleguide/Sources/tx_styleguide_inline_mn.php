@@ -26,24 +26,10 @@ return [
    'columns' => [ 
       // [start sys_language_uid]
       'sys_language_uid' => [ 
-         'exclude' => 1,
+         'exclude' => true,
          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
          'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'foreign_table' => 'sys_language',
-            'foreign_table_where' => 'ORDER BY sys_language.title',
-            'items' => [ 
-               '0' => [ 
-                  '0' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                  '1' => -1,
-               ],
-               '1' => [ 
-                  '0' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
-                  '1' => 0,
-               ],
-            ],
-            'default' => 0,
+            'type' => 'language',
          ],
       ],
       // Example from extension "styleguide", table "tx_styleguide_inline_mn"

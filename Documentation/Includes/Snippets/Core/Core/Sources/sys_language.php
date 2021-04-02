@@ -1,4 +1,4 @@
-<?php // Automatic screenshot: Remove this comment if you wand to manually change this file
+<?php // Automatic screenshot: Remove this comment if you want to manually change this file
 
 return [
    // [start ctrl]

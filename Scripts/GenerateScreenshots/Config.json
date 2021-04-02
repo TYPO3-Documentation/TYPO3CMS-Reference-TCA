@@ -135,6 +135,25 @@
         "relativeCodeSource": "/Includes/Snippets/Styleguide/Sources/",
         "source": "typo3conf/ext/styleguide/Configuration/TCA/"
       },
+      "sourceFiles": [
+        {
+          "paths": {
+            "codeSource": "Documentation/Includes/Snippets/Styleguide/Sources/UserFunctions/",
+            "relativeCodeSource": "/Includes/Snippets/Styleguide/Sources/UserFunctions/",
+            "source": "typo3conf/ext/styleguide/Classes/UserFunctions/FormEngine/"
+          },
+          "copy": [
+            {
+              "from": "SelectItemSorter.php",
+              "removes": [
+                {
+                  "remove": "comments"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "tables": [
         {
           "table": "tx_styleguide_flex",
@@ -343,6 +362,9 @@
             "select_single_15",
             "select_single_16",
             "select_single_17",
+            "select_single_18",
+            "select_single_19",
+            "select_single_20",
             "select_singlebox_1",
             "select_singlebox_3",
             {
@@ -461,7 +483,6 @@
             }
           ],
           "fields": [
-            "special_languages_1",
             "special_tables_1",
             "special_pagetypes_1",
             "special_exclude_1",

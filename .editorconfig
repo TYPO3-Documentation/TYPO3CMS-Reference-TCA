@@ -5,6 +5,9 @@
 # top-most EditorConfig file
 root = false
 
+[*]
+max_line_length = 80
+
 [{*.rst,*.rst.txt}]
 charset = utf-8
 end_of_line = lf
