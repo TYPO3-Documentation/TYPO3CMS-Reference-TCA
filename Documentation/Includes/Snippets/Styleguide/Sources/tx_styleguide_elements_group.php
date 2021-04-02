@@ -43,17 +43,7 @@ return [
          'exclude' => true,
          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
          'config' => [ 
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'special' => 'languages',
-            'items' => [ 
-               '0' => [ 
-                  '0' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                  '1' => -1,
-                  '2' => 'flags-multiple',
-               ],
-            ],
-            'default' => 0,
+            'type' => 'language',
          ],
       ],
       // Example from extension "styleguide", table "tx_styleguide_elements_group"

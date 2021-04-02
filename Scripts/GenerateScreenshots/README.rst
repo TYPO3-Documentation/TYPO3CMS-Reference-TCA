@@ -26,3 +26,4 @@ Compare images and copy files
 Open the following in a browser of your choice::
 
    https://sig-screenshots.ddev.site/scripts/index.php?manual=TYPO3CMS-Reference-TCA
+
