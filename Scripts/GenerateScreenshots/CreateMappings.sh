@@ -15,6 +15,8 @@
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_inline_fal --filename=tx_styleguide_inline_fal.json --additional-fields="sys_language_uid"
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_inline_1n1n --filename=tx_styleguide_inline_1n1n.json --additional-fields="sys_language_uid"
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_inline_1n --filename=tx_styleguide_inline_1n.json --additional-fields="sys_language_uid"
+./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_inline_mm --filename=tx_styleguide_inline_mm.json --additional-fields="sys_language_uid"
+./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_inline_mm_child --filename=tx_styleguide_inline_mm_child.json --additional-fields="sys_language_uid"
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_elements_group --filename=tx_styleguide_elements_group.json --additional-fields="sys_language_uid"
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_elements_t3editor --filename=tx_styleguide_elements_t3editor.json --additional-fields="sys_language_uid"
 ./vendor/bin/typo3cms screenshots:getmapping --table=tx_styleguide_elements_rte --filename=tx_styleguide_elements_rte.json --additional-fields="sys_language_uid"
