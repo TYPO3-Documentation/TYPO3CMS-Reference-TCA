@@ -5,6 +5,14 @@
 displayCond
 ===========
 
+The display conditions are implemented in class
+:ref:`TYPO3\CMS\Backend\Form\FormDataProvider\EvaluateDisplayConditions
+<https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/backend/Classes/Form/FormDataProvider/EvaluateDisplayConditions.php>`,
+which is a :ref:`FormDataProvider<t3coreapi:FormEngine-DataCompiling>`.
+It can be used for fields directly in the record as well as for
+FlexForm values.
+
+
 .. confval:: displayCond
 
    :Required: false
@@ -50,13 +58,9 @@ displayCond
             Evaluates if the bit specified by the value in "Part 3" is set in the field's value
             (considered as an integer)
 
-   REC
-      This evaluates based on the current record (doesn't make sense for flexform fields)
+   REC:NEW
+      This can be used to test whether the current record is new or not.
 
-      -  Part 1 is the type:
-
-         NEW
-            Requires the record to be new if Part 2 is "true" and reversed if Part 2 is "false".
 
    HIDE\_FOR\_NON\_ADMINS
       This will hide the field for all non-admin users while admins can see it.
@@ -78,7 +82,7 @@ displayCond
 
       The called method is expected to return a :php:`bool` value: :php:`true` if the field should be displayed, :php:`false` otherwise.
 
-   VERSION
+   VERSION:IS
       Evaluate if a record is a "versioned" record from workspaces.
 
       -  Part 1 is the type:
