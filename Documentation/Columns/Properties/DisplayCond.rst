@@ -5,7 +5,7 @@
 displayCond
 ===========
 
-The display conditions are impelemented in class
+The display conditions are implemented in class
 :ref:`TYPO3\CMS\Backend\Form\FormDataProvider\EvaluateDisplayConditions
 <https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/backend/Classes/Form/FormDataProvider/EvaluateDisplayConditions.php>`,
 which is a :ref:`FormDataProvider<t3coreapi:FormEngine-DataCompiling>`.
