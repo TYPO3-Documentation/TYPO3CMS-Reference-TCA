@@ -1,4 +1,4 @@
-<?php // Example from extension "styleguide", table "tx_styleguide_flex"
+<?php // Example from extension "styleguide", table "tx_styleguide_inline_mm_child"
 
 return [
    'ctrl' => [ 

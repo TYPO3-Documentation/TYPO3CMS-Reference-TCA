@@ -162,14 +162,14 @@
         {
           "table": "tx_styleguide_flex",
           "screens": [
-          {
-            "view": "fields",
-            "selectRecord": {
-              "by": "sys_language_uid",
-              "sys_language_uid": 0
+            {
+              "view": "fields",
+              "selectRecord": {
+                "by": "sys_language_uid",
+                "sys_language_uid": 0
+              }
             }
-          }
-        ],
+          ],
           "fields": [
             {
               "field": "flex_file_1",

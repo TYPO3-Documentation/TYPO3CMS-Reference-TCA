@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you wand to manually change this file
+
+.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/InlineMmChildParents.png
+   :alt: An inline field with MM relation defined in the opposite table
+   :class: with-shadow
+
+   :ref:`An inline field with MM relation defined in the opposite table <tca_example_inline_mm_child_parents>`

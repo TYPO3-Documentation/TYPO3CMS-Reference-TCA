@@ -31,3 +31,53 @@ MM
       Copying with MM relations will not create a copy of the value. Thus copying the record `Org` with `Org->orgA` and
       `Org->orgB` as `New` results in `New->orgA` and `New->orgB` instead of `New->newA` and `New->newB`. Deleting the
       relation `New->orgA` will result in a broken relation `Org->orgA`.
+
+.. confval:: MM\_hasUidField
+
+   :type: boolean
+   :Scope: Proc.
+
+   If the "multiple" feature is used with MM relations you MUST set this value
+   to true and include a UID field! Otherwise sorting and removing relations
+   will be buggy.
+
+.. confval:: MM\_opposite\_field
+
+   :type: string (field name)
+   :Scope: Proc.
+
+   If you want to make a MM relation editable from the foreign side
+   (bidirectional) of the relation as well, you need to set `MM_opposite_field`
+   on the foreign side to the field name on the local side.
+
+   For example if the field "companies.employees" is your local side and
+   you want to make the same relation editable from the foreign side of the
+   relation in a field called persons.employers, you would need to set the
+   `MM_opposite_field` value of the TCA configuration of the persons.employers
+   field to the string "employees".
+
+   .. note::
+      Bidirectional references only get registered once on the native side in
+      :sql:`sys_refindex`.
+
+
+Examples
+========
+
+.. _tca_example_inline_mm_inline_1:
+
+Inline field with MM table configured
+-------------------------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineMmInline1.rst.txt
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineMmInline1.rst.txt
+
+.. _tca_example_inline_mm_child_parents:
+
+Opposite field to display MM relations two ways
+-----------------------------------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineMmChildParents.rst.txt
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/InlineMmChildParents.rst.txt
