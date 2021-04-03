@@ -31,3 +31,13 @@ eval
 
    No other eval setting is checked for. It is possible to set different eval options, however it is
    recommended not to do so.
+
+Examples
+========
+
+eval = uniqueInSite
+-------------------
+
+.. include:: /Includes/Images/Styleguide/RstIncludes/Slug2.rst.txt
+
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug2.rst.txt
