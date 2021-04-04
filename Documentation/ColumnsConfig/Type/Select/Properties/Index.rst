@@ -22,4 +22,3 @@ Select field properties
    MultiSelectFilterItems
    SelectTreeConfig
    SortItems
-   Special

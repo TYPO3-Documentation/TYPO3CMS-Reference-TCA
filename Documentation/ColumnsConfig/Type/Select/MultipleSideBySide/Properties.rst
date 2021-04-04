@@ -21,7 +21,6 @@ Select properties
 *  :ref:`foreign-table-where <columns-select-properties-foreign-table-where>`
 *  :ref:`items <columns-select-properties-items>`
 *  :ref:`multiSelectFilterItems <columns-select-properties-multiselectfilteritems>`
-*  :ref:`special <columns-select-properties-special>`
 
 Common properties
 =================
