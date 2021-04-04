@@ -20,7 +20,6 @@ Select properties
 *  :ref:`foreign-table-prefix <columns-select-properties-foreign-table-prefix>`
 *  :ref:`foreign-table-where <columns-select-properties-foreign-table-where>`
 *  :ref:`items <columns-select-properties-items>`
-*  :ref:`special <columns-select-properties-special>`
 
 
 Common properties
