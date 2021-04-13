@@ -6,6 +6,14 @@
 Storing the changes
 ===================
 
+.. note::
+
+   This page is for an outdated TYPO3 version (7.6). For newer versions, you
+   can find the information in:
+
+   *  TYPO3 Explained: :ref:`t3coreapi:extending-tca` (7.6)
+
+
 There are various ways to store changes to :php:`$GLOBALS['TCA']`. They
 depend - partly - on what you are trying to achieve and - a lot -
 on the version of TYPO3 CMS which you are targeting.

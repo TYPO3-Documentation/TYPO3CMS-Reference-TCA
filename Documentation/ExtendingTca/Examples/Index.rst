@@ -6,6 +6,14 @@
 Customization examples
 ^^^^^^^^^^^^^^^^^^^^^^
 
+.. note::
+
+   This page is for an outdated TYPO3 version (7.6). For newer versions, you
+   can find the information in:
+
+   *  TYPO3 Explained: :ref:`t3coreapi:extending-tca` (7.6)
+
+
 Many extracts can be found throughout the manual, but this section
 provides more complete examples.
 
