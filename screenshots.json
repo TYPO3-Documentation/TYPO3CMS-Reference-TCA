@@ -1,0 +1,31 @@
+{
+  "suites": {
+    "Styleguide": {
+      "screenshots": [
+        [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          }
+        ],
+        [
+          {
+            "action": "makeScreenshotOfField",
+            "table": "tx_styleguide_elements_basic",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_basic",
+              "field": "sys_language_uid",
+              "value": 0
+            },
+            "fields": "input_1",
+            "absPath": "Documentation/Includes/Images/Styleguide/",
+            "filename": "Input1",
+            "selector": ".form-section"
+          }
+        ]
+      ]
+    }
+  }
+}
