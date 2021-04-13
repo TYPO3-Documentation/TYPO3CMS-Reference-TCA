@@ -6,6 +6,13 @@
 Verifying the $TCA
 ^^^^^^^^^^^^^^^^^^
 
+.. note::
+
+   This page is for an outdated TYPO3 version (7.6). For newer versions, you
+   can find the information in:
+
+   *  TYPO3 Explained: :ref:`t3coreapi:extending-tca` (7.6)
+
 You may find it necessary – at some point – to verify the full
 structure of the :code:`$TCA` in your TYPO3 installation. The System >
 Configuration module makes it possible to have an overview of the
