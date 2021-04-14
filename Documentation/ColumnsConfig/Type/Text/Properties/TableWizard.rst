@@ -19,32 +19,23 @@ tableWizard
 
    Note the control button is only displayed after a new record has been saved the first time.
 
-   .. figure:: /ColumnsConfig/Type/Text/Images/TableWizard1.png
-      :alt: The table wizard
-      :class: with-shadow
-
-      The table wizard
+   .. include:: /Includes/Images/Styleguide/RstIncludes/TableWizard.rst.txt
 
    Available options:
 
    xmlOutput
-     (boolean) If set to true, the output from the wizard is XML instead of the TypoScript table configuration code.
-     Default false.
+      (boolean) If set to true, the output from the wizard is XML instead of the
+      TypoScript table configuration code. This variable still needs binding
+      to the wizard parameters. Otherwise only an empty wizard will be rendered.
+      Default false.
 
    numNewRows
      (integer) Setting the number of blank rows that will be added in the bottom of the table when the
      plus-icon is pressed. The default is 5, the range is 1-50.
 
-   Example overriding defaults of a :code:`renderType='textTable'` element:
+Example
+=======
 
-   .. code-block:: php
+Overriding defaults of a :code:`renderType='textTable'` element:
 
-      'bodytext' => [
-         'config' => [
-            'fieldControl' => [
-               'options' => [
-                  'numNewRows' => 3,
-               ],
-            ],
-         ],
-      ],
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text21.rst.txt

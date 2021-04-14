@@ -374,6 +374,10 @@
             "text_19",
             {
               "field": "text_20"
+            },
+            {
+              "field": "text_21",
+              "description": "The table wizard"
             }
           ]
         },
