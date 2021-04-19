@@ -58,21 +58,21 @@ versioningWS
    t3ver\_state
      Contains special states of a version used when new, deleted, moved content requires versioning.
 
-     * For an  **online** version:
+     -  For an  **online** version:
 
-         * "1" or "2" means that it is a temporary placeholder for a new element (which is the offline version of this record)
-         * "3" means it is a "move-to-location" placeholder and t3ver\_move\_id
+         -  "1" or "2" means that it is a temporary placeholder for a new element (which is the offline version of this record)
+         -  "3" means it is a "move-to-location" placeholder and t3ver\_move\_id
         holds uid of online record (with an offline version) to move . Unlike
         for "1" and "2" there is  *no offline version* of this record type!
         (V2 feature)
-         * If "t3ver\_state" has a value >0 it should never be shown in Live workspace.
+         -  If "t3ver\_state" has a value >0 it should never be shown in Live workspace.
 
-     * For an  **offline** version:
+     -  For an  **offline** version:
 
-        * "1" or "2" means that when published, the element must be deleted (placeholder for delete-action).
-        * "-1" means it is just an indication that the online version has the flag set to "1" (is a placeholder for
+        -  "1" or "2" means that when published, the element must be deleted (placeholder for delete-action).
+        -  "-1" means it is just an indication that the online version has the flag set to "1" (is a placeholder for
         new records.). This only affects display, not processing anywhere.
-        * "4" means this version is a "move-pointer" for the online record and an online "move-to-location"
+        -  "4" means this version is a "move-pointer" for the online record and an online "move-to-location"
         (t3ver\_state=3) record exists. (V2 feature)
 
 
