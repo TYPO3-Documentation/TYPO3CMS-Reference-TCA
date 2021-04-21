@@ -10,6 +10,8 @@
           }
         ],
         [
+
+          {"action": "setCodeSnippetsSourcePath", "path": "typo3conf/ext/styleguide"},
           {
             "action": "makeScreenshotOfField",
             "table": "tx_styleguide_elements_basic",
@@ -20,9 +22,14 @@
               "value": 0
             },
             "fields": "input_1",
-            "absPath": "Documentation/Includes/Images/Styleguide/",
-            "filename": "Input1",
+            "fileName": "Input1",
             "selector": ".form-section"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/input_1",
+            "targetFileName": "Input1"
           }
         ]
       ]
