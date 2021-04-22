@@ -10,8 +10,14 @@
           }
         ],
         [
-
-          {"action": "setCodeSnippetsSourcePath", "path": "typo3conf/ext/styleguide"},
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setCodeSnippetsFileNameDefault",
+            "name": "###LAST_FIELD###"
+          },
           {
             "action": "makeScreenshotOfField",
             "table": "tx_styleguide_elements_basic",
@@ -28,8 +34,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/input_1",
-            "targetFileName": "Input1"
+            "field": "columns/input_1"
           }
         ]
       ]
