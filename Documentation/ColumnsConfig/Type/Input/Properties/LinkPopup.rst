@@ -14,12 +14,12 @@ linkPopup
    :RenderTypes: inputLink
 
    The link browser control is typically used with `type='input'` with `renderType='inputLink'` adding a button
-   which opens a popup to select an internal link to a page, an external link or a mail address.
+   which opens a modal to select an internal link to a page, an external link or a mail address.
 
    **Options:**
 
    pid (string)
-      pid of the new record. Can be an hard pid setting, or one of these markers, see
+      pid of the new record. Can be a hard pid setting, or one of these markers, see
       :ref:`select foreign_table_where <columns-select-properties-foreign-table-where>`.
       Falls back to "current pid" if not set, forces pid=0 if records of this table are only
       allowed on root level.
@@ -42,7 +42,3 @@ linkPopup
    title (string or LLL reference)
       Allows to set a different 'title' attribute to the popup icon, defaults
       to :code:`LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.link`
-
-   windowOpenParameters (string)
-      Allows to set a different size of the popup, defaults
-      to :code:`height=800,width=600,status=0,menubar=0,scrollbars=1`.
