@@ -1,0 +1,39 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'select_tree_1' => [
+         'exclude' => 1,
+         'label' => 'select_tree_1 pages, showHeader=true, expandAll=true, size=20, order by sorting, static items, description',
+         'description' => 'field description',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectTree',
+            'foreign_table' => 'pages',
+            'foreign_table_where' => 'ORDER BY pages.sorting',
+            'size' => 20,
+            'items' => [
+               [
+                  'static from tca 4711',
+                  4711,
+               ],
+               [
+                  'static from tca 4712',
+                  4712,
+               ],
+            ],
+            'behaviour' => [
+               'allowLanguageSynchronization' => true,
+            ],
+            'treeConfig' => [
+               'parentField' => 'pid',
+               'appearance' => [
+                  'expandAll' => true,
+                  'showHeader' => true,
+               ],
+            ],
+         ],
+      ],
+   ]
+   

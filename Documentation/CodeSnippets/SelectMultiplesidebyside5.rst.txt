@@ -1,0 +1,47 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'select_multiplesidebyside_5' => [
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_5 multiSelectFilterItems',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'items' => [
+               [
+                  'foo 1',
+                  1,
+               ],
+               [
+                  'foo 2',
+                  2,
+               ],
+               [
+                  'foo 3',
+                  3,
+               ],
+               [
+                  'bar',
+                  4,
+               ],
+            ],
+            'multiSelectFilterItems' => [
+               [
+                  '',
+                  '',
+               ],
+               [
+                  'foo',
+                  'foo',
+               ],
+               [
+                  'bar',
+                  'bar',
+               ],
+            ],
+         ],
+      ],
+   ]
+   

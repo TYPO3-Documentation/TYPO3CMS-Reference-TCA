@@ -1,0 +1,18 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'text_14' => [
+         'exclude' => 1,
+         'label' => 'text_14',
+         'description' => 'placeholder=__row|text_12, mode=useOrOverridePlaceholder, eval=null',
+         'config' => [
+            'type' => 'text',
+            'placeholder' => '__row|text_12',
+            'eval' => 'null',
+            'mode' => 'useOrOverridePlaceholder',
+         ],
+      ],
+   ]
+   
