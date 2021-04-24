@@ -1,0 +1,17 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'inputdatetime_3' => [
+         'exclude' => 1,
+         'label' => 'inputdatetime_3',
+         'description' => 'eval=datetime',
+         'config' => [
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime',
+         ],
+      ],
+   ]
+   

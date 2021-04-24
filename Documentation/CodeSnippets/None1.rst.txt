@@ -1,0 +1,16 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'none_1' => [
+         'exclude' => 1,
+         'label' => 'none_1',
+         'description' => 'pass_content=1',
+         'config' => [
+            'type' => 'none',
+            'pass_content' => 1,
+         ],
+      ],
+   ]
+   

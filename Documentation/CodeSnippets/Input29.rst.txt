@@ -1,0 +1,16 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'input_29' => [
+         'exclude' => 1,
+         'label' => 'input_29',
+         'description' => 'renderType=inputLink',
+         'config' => [
+            'type' => 'input',
+            'renderType' => 'inputLink',
+         ],
+      ],
+   ]
+   

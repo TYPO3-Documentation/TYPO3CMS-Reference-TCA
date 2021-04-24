@@ -1,0 +1,26 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'input_30' => [
+         'exclude' => 1,
+         'label' => 'input_30',
+         'description' => 'slider step=10 width=200 eval=trim,int',
+         'config' => [
+            'type' => 'input',
+            'size' => 5,
+            'eval' => 'trim,int',
+            'range' => [
+               'lower' => -90,
+               'upper' => 90,
+            ],
+            'default' => 0,
+            'slider' => [
+               'step' => 10,
+               'width' => 200,
+            ],
+         ],
+      ],
+   ]
+   

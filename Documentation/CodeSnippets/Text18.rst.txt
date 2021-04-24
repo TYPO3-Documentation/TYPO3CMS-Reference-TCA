@@ -1,0 +1,16 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'text_18' => [
+         'exclude' => 1,
+         'label' => 'text_18',
+         'description' => 'eval=null',
+         'config' => [
+            'type' => 'text',
+            'eval' => 'null',
+         ],
+      ],
+   ]
+   

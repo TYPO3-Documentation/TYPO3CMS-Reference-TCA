@@ -1,0 +1,19 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'select_multiplesidebyside_8' => [
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_8 foreign_table mm',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'foreign_table' => 'tx_styleguide_staticdata',
+            'MM' => 'tx_styleguide_elements_select_multiplesidebyside_8_mm',
+            'size' => 3,
+            'autoSizeMax' => 5,
+         ],
+      ],
+   ]
+   
