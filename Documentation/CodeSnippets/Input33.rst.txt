@@ -1,0 +1,37 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'input_33' => [
+         'exclude' => 1,
+         'label' => 'input_33',
+         'description' => 'valuePicker',
+         'config' => [
+            'type' => 'input',
+            'size' => 20,
+            'eval' => 'trim',
+            'valuePicker' => [
+               'items' => [
+                  [
+                     'spring',
+                     'Spring',
+                  ],
+                  [
+                     'summer',
+                     'Summer',
+                  ],
+                  [
+                     'autumn',
+                     'Autumn',
+                  ],
+                  [
+                     'winter',
+                     'Winter',
+                  ],
+               ],
+            ],
+         ],
+      ],
+   ]
+   

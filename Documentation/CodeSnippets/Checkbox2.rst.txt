@@ -1,0 +1,21 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'checkbox_2' => [
+         'exclude' => 1,
+         'label' => 'checkbox_2',
+         'description' => 'one checkbox with label',
+         'config' => [
+            'type' => 'check',
+            'items' => [
+               [
+                  'foo',
+                  '',
+               ],
+            ],
+         ],
+      ],
+   ]
+   

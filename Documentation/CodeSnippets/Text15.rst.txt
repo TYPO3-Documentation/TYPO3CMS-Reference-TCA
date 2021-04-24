@@ -1,0 +1,17 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'text_15' => [
+         'exclude' => 1,
+         'label' => 'text_15',
+         'description' => 'enableTabulator, fixedFont',
+         'config' => [
+            'type' => 'text',
+            'enableTabulator' => true,
+            'fixedFont' => true,
+         ],
+      ],
+   ]
+   

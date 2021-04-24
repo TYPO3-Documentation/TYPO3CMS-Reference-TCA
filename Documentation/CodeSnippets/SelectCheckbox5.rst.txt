@@ -1,0 +1,48 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'select_checkbox_5' => [
+         'exclude' => 1,
+         'label' => 'select_checkbox_5 dividers, expandAll',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectCheckBox',
+            'appearance' => [
+               'expandAll' => true,
+            ],
+            'items' => [
+               [
+                  'div 1',
+                  '--div--',
+               ],
+               [
+                  'foo 1',
+                  1,
+               ],
+               [
+                  'foo 2',
+                  2,
+               ],
+               [
+                  'foo 3',
+                  3,
+               ],
+               [
+                  'div 2',
+                  '--div--',
+               ],
+               [
+                  'foo 4',
+                  4,
+               ],
+               [
+                  'foo 5',
+                  5,
+               ],
+            ],
+         ],
+      ],
+   ]
+   

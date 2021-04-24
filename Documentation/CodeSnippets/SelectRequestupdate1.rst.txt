@@ -1,0 +1,30 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'select_requestUpdate_1' => [
+         'exclude' => 1,
+         'label' => 'select_requestUpdate_1',
+         'onChange' => 'reload',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+               [
+                  'Just an item',
+                  1,
+               ],
+               [
+                  'bar',
+                  'bar',
+               ],
+               [
+                  'and yet another one',
+                  -1,
+               ],
+            ],
+         ],
+      ],
+   ]
+   
