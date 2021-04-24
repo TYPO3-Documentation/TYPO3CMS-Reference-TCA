@@ -3,15 +3,15 @@
 .. code:: php
 
    'columns' => [
-       'select_single_15' => [
-           'exclude' => 1,
-           'label' => 'select_single_15 foreign_table',
-           'config' => [
-               'type' => 'select',
-               'renderType' => 'selectSingle',
-               'foreign_table' => 'tx_styleguide_staticdata',
-               'MM' => 'tx_styleguide_elements_select_single_15_mm',
-           ],
-       ],
+      'select_single_15' => [
+         'exclude' => 1,
+         'label' => 'select_single_15 foreign_table',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tx_styleguide_staticdata',
+            'MM' => 'tx_styleguide_elements_select_single_15_mm',
+         ],
+      ],
    ]
    

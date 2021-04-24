@@ -3,36 +3,36 @@
 .. code:: php
 
    'columns' => [
-       'select_single_19' => [
-           'exclude' => 1,
-           'label' => 'select_single_19',
-           'description' => 'sortItems value desc',
-           'config' => [
-               'type' => 'select',
-               'renderType' => 'selectSingle',
-               'items' => [
-                   [
-                       'Plum tree',
-                       1,
-                   ],
-                   [
-                       'Walnut tree',
-                       2,
-                   ],
-                   [
-                       'Apple tree',
-                       3,
-                   ],
-                   [
-                       'Cherry tree',
-                       4,
-                   ],
+      'select_single_19' => [
+         'exclude' => 1,
+         'label' => 'select_single_19',
+         'description' => 'sortItems value desc',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+               [
+                  'Plum tree',
+                  1,
                ],
-               'sortItems' => [
-                   'value' => 'desc',
+               [
+                  'Walnut tree',
+                  2,
                ],
-               'size' => 4,
-           ],
-       ],
+               [
+                  'Apple tree',
+                  3,
+               ],
+               [
+                  'Cherry tree',
+                  4,
+               ],
+            ],
+            'sortItems' => [
+               'value' => 'desc',
+            ],
+            'size' => 4,
+         ],
+      ],
    ]
    

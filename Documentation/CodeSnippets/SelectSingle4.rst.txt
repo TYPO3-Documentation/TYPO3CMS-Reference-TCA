@@ -3,25 +3,25 @@
 .. code:: php
 
    'columns' => [
-       'select_single_4' => [
-           'exclude' => 1,
-           'label' => 'select_single_4 items with icons',
-           'config' => [
-               'type' => 'select',
-               'renderType' => 'selectSingle',
-               'items' => [
-                   [
-                       'foo 1',
-                       'foo1',
-                       'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
-                   ],
-                   [
-                       'foo 2',
-                       'foo2',
-                       'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
-                   ],
+      'select_single_4' => [
+         'exclude' => 1,
+         'label' => 'select_single_4 items with icons',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+               [
+                  'foo 1',
+                  'foo1',
+                  'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
                ],
-           ],
-       ],
+               [
+                  'foo 2',
+                  'foo2',
+                  'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+               ],
+            ],
+         ],
+      ],
    ]
    

@@ -3,16 +3,16 @@
 .. code:: php
 
    'columns' => [
-       'text_19' => [
-           'label' => 'text_19',
-           'description' => 'renderType=textTable readOnly',
-           'config' => [
-               'type' => 'text',
-               'renderType' => 'textTable',
-               'readOnly' => true,
-               'cols' => '40',
-               'rows' => '5',
-           ],
-       ],
+      'text_19' => [
+         'label' => 'text_19',
+         'description' => 'renderType=textTable readOnly',
+         'config' => [
+            'type' => 'text',
+            'renderType' => 'textTable',
+            'readOnly' => true,
+            'cols' => '40',
+            'rows' => '5',
+         ],
+      ],
    ]
    

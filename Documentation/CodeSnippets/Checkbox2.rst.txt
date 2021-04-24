@@ -3,19 +3,19 @@
 .. code:: php
 
    'columns' => [
-       'checkbox_2' => [
-           'exclude' => 1,
-           'label' => 'checkbox_2',
-           'description' => 'one checkbox with label',
-           'config' => [
-               'type' => 'check',
-               'items' => [
-                   [
-                       'foo',
-                       '',
-                   ],
+      'checkbox_2' => [
+         'exclude' => 1,
+         'label' => 'checkbox_2',
+         'description' => 'one checkbox with label',
+         'config' => [
+            'type' => 'check',
+            'items' => [
+               [
+                  'foo',
+                  '',
                ],
-           ],
-       ],
+            ],
+         ],
+      ],
    ]
    

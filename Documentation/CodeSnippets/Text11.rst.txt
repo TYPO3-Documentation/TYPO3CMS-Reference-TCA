@@ -3,16 +3,16 @@
 .. code:: php
 
    'columns' => [
-       'text_11' => [
-           'exclude' => 1,
-           'label' => 'text_11',
-           'description' => 'max=30',
-           'config' => [
-               'type' => 'text',
-               'cols' => 30,
-               'rows' => 4,
-               'max' => 30,
-           ],
-       ],
+      'text_11' => [
+         'exclude' => 1,
+         'label' => 'text_11',
+         'description' => 'max=30',
+         'config' => [
+            'type' => 'text',
+            'cols' => 30,
+            'rows' => 4,
+            'max' => 30,
+         ],
+      ],
    ]
    

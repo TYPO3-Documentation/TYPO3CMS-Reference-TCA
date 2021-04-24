@@ -3,49 +3,49 @@
 .. code:: php
 
    'columns' => [
-       'select_multiplesidebyside_2' => [
-           'exclude' => 1,
-           'label' => 'select_multiplesidebyside_2 exclusiveKeys=1,2',
-           'config' => [
-               'type' => 'select',
-               'renderType' => 'selectMultipleSideBySide',
-               'items' => [
-                   [
-                       'two exclusive items',
-                       '--div--',
-                   ],
-                   [
-                       'foo 1',
-                       1,
-                   ],
-                   [
-                       'foo 2',
-                       2,
-                   ],
-                   [
-                       'casual multiple items',
-                       '--div--',
-                   ],
-                   [
-                       'foo 3',
-                       3,
-                   ],
-                   [
-                       'foo 4',
-                       4,
-                   ],
-                   [
-                       'foo 5',
-                       5,
-                   ],
-                   [
-                       'foo 6',
-                       6,
-                   ],
+      'select_multiplesidebyside_2' => [
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_2 exclusiveKeys=1,2',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'items' => [
+               [
+                  'two exclusive items',
+                  '--div--',
                ],
-               'multiple' => true,
-               'exclusiveKeys' => '1,2',
-           ],
-       ],
+               [
+                  'foo 1',
+                  1,
+               ],
+               [
+                  'foo 2',
+                  2,
+               ],
+               [
+                  'casual multiple items',
+                  '--div--',
+               ],
+               [
+                  'foo 3',
+                  3,
+               ],
+               [
+                  'foo 4',
+                  4,
+               ],
+               [
+                  'foo 5',
+                  5,
+               ],
+               [
+                  'foo 6',
+                  6,
+               ],
+            ],
+            'multiple' => true,
+            'exclusiveKeys' => '1,2',
+         ],
+      ],
    ]
    

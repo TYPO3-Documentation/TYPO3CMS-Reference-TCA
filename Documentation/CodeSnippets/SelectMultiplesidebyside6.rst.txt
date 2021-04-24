@@ -3,30 +3,27 @@
 .. code:: php
 
    'columns' => [
-       'select_multiplesidebyside_6' => [
-           'exclude' => 1,
-           'label' => 'select_multiplesidebyside_6 fieldControl',
-           'config' => [
-               'type' => 'select',
-               'renderType' => 'selectMultipleSideBySide',
-               'foreign_table' => 'tx_styleguide_staticdata',
-               'size' => 5,
-               'autoSizeMax' => 20,
-               'fieldControl' => [
-                   'editPopup' => [
-                       'disabled' => false,
-                       'options' => [
-                           'windowOpenParameters' => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
-                       ],
-                   ],
-                   'addRecord' => [
-                       'disabled' => false,
-                   ],
-                   'listModule' => [
-                       'disabled' => false,
-                   ],
+      'select_multiplesidebyside_6' => [
+         'exclude' => 1,
+         'label' => 'select_multiplesidebyside_6 fieldControl',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'foreign_table' => 'tx_styleguide_staticdata',
+            'size' => 5,
+            'autoSizeMax' => 20,
+            'fieldControl' => [
+               'editPopup' => [
+                  'disabled' => false,
                ],
-           ],
-       ],
+               'addRecord' => [
+                  'disabled' => false,
+               ],
+               'listModule' => [
+                  'disabled' => false,
+               ],
+            ],
+         ],
+      ],
    ]
    

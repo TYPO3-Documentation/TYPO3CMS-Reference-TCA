@@ -3,36 +3,36 @@
 .. code:: php
 
    'columns' => [
-       'select_single_20' => [
-           'exclude' => 1,
-           'label' => 'select_single_20',
-           'description' => 'sortItems custom',
-           'config' => [
-               'type' => 'select',
-               'renderType' => 'selectSingle',
-               'items' => [
-                   [
-                       'Plum tree',
-                       1,
-                   ],
-                   [
-                       'Walnut tree',
-                       2,
-                   ],
-                   [
-                       'Apple tree',
-                       3,
-                   ],
-                   [
-                       'Cherry tree',
-                       4,
-                   ],
+      'select_single_20' => [
+         'exclude' => 1,
+         'label' => 'select_single_20',
+         'description' => 'sortItems custom',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+               [
+                  'Plum tree',
+                  1,
                ],
-               'sortItems' => [
-                   'tx_styleguide' => 'TYPO3\\CMS\\Styleguide\\UserFunctions\\FormEngine\\SelectItemSorter->sortReverseTitles',
+               [
+                  'Walnut tree',
+                  2,
                ],
-               'size' => 4,
-           ],
-       ],
+               [
+                  'Apple tree',
+                  3,
+               ],
+               [
+                  'Cherry tree',
+                  4,
+               ],
+            ],
+            'sortItems' => [
+               'tx_styleguide' => 'TYPO3\\CMS\\Styleguide\\UserFunctions\\FormEngine\\SelectItemSorter->sortReverseTitles',
+            ],
+            'size' => 4,
+         ],
+      ],
    ]
    

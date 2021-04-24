@@ -3,16 +3,16 @@
 .. code:: php
 
    'columns' => [
-       'text_14' => [
-           'exclude' => 1,
-           'label' => 'text_14',
-           'description' => 'placeholder=__row|text_12, mode=useOrOverridePlaceholder, eval=null',
-           'config' => [
-               'type' => 'text',
-               'placeholder' => '__row|text_12',
-               'eval' => 'null',
-               'mode' => 'useOrOverridePlaceholder',
-           ],
-       ],
+      'text_14' => [
+         'exclude' => 1,
+         'label' => 'text_14',
+         'description' => 'placeholder=__row|text_12, mode=useOrOverridePlaceholder, eval=null',
+         'config' => [
+            'type' => 'text',
+            'placeholder' => '__row|text_12',
+            'eval' => 'null',
+            'mode' => 'useOrOverridePlaceholder',
+         ],
+      ],
    ]
    

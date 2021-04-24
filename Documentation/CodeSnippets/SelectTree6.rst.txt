@@ -3,23 +3,23 @@
 .. code:: php
 
    'columns' => [
-       'select_tree_6' => [
-           'exclude' => 1,
-           'label' => 'select_tree_6 categories',
-           'config' => [
-               'type' => 'select',
-               'renderType' => 'selectTree',
-               'foreign_table' => 'sys_category',
-               'foreign_table_where' => 'AND ({#sys_category}.{#sys_language_uid} = 0 OR {#sys_category}.{#l10n_parent} = 0) ORDER BY sys_category.sorting',
-               'size' => 20,
-               'treeConfig' => [
-                   'parentField' => 'parent',
-                   'appearance' => [
-                       'expandAll' => true,
-                       'showHeader' => true,
-                   ],
+      'select_tree_6' => [
+         'exclude' => 1,
+         'label' => 'select_tree_6 categories',
+         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectTree',
+            'foreign_table' => 'sys_category',
+            'foreign_table_where' => 'AND ({#sys_category}.{#sys_language_uid} = 0 OR {#sys_category}.{#l10n_parent} = 0) ORDER BY sys_category.sorting',
+            'size' => 20,
+            'treeConfig' => [
+               'parentField' => 'parent',
+               'appearance' => [
+                  'expandAll' => true,
+                  'showHeader' => true,
                ],
-           ],
-       ],
+            ],
+         ],
+      ],
    ]
    
