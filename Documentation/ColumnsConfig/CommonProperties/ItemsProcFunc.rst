@@ -9,62 +9,86 @@ itemsProcFunc
 
    :type: string (class->method reference)
    :Scope: Display / Proc.
-   :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
-      :ref:`radio <columns-radio>`
+   :Types: :ref:`check <columns-check>`, :ref:`select <columns-select>`, :ref:`radio <columns-radio>`
 
-   PHP function which is called to fill / manipulate the array with elements.
+   PHP method which is called to fill or manipulate the items array.
+   It is recommended to use the actual FQCN with :php:`class` and then concatenate the method:
 
-   [classname]->[methodname]
+   :php:`\VENDOR\Extension\UserFunction\FormEngine\YourClass::class . '->yourMethod'`
 
-   The function/method will have an array of parameters passed to it, the items-array is passed by reference
-   in the key 'items'. By modifying the array of items, you alter the list of items. A method may throw an
+   This becomes handy when using an IDE and doing operations like renaming classes.
+
+   The provided method will have an array of parameters passed to it. The items array is passed by reference
+   in the key :php:`items`. By modifying the array of items, you alter the list of items. A method may throw an
    exception which will be displayed as a proper error message to the user.
 
-   **Example:**
+Passed parameters
+=================
 
-   The configuration for the field `category_field` of the table `tt_content` looks like this:
+* :php:`items` (passed by reference)
+* :php:`config` (TCA config of the field)
+* :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsconfig:itemsProcFunc>`)
+* :php:`table` (current table)
+* :php:`row` (current database record)
+* :php:`field` (current field name)
 
-   .. code-block:: php
+.. versionadded:: 7.6
+The following parameter only exists if the field has a :ref:`flex parent <columns-flex>`.
 
-       'type' => 'select',
-       'renderType' => 'selectSingle',
-       'itemsProcFunc' => 'TYPO3\CMS\Core\Category\CategoryRegistry->getCategoryFieldsForTable',
-       'itemsProcConfig' => [
-          'table' => 'tt_content'
+* :php:`flexParentDatabaseRow`
+
+.. versionadded:: 11.2
+The following parameters are filled if the current record has an :ref:`inline parent <columns-inline>`.
+
+* :php:`inlineParentUid`
+* :php:`inlineParentTableName`
+* :php:`inlineParentFieldName`
+* :php:`inlineParentConfig`
+* :php:`inlineTopMostParentUid`
+* :php:`inlineTopMostParentTableName`
+* :php:`inlineTopMostParentFieldName`
+
+Example
+=======
+
+The configuration for a custom field :sql:`select_single_2` could look like this:
+
+.. code-block:: php
+
+   'select_single_2' => [
+       'exclude' => 1,
+       'label' => 'select_single_2 itemsProcFunc',
+       'config' => [
+           'type' => 'select',
+           'renderType' => 'selectSingle',
+           'items' => [
+               ['foo', 1],
+               ['bar', 'bar'],
+           ],
+           'itemsProcFunc' => TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeSelect2ItemsProcFunc::class . '->itemsProcFunc',
        ],
-       'minitems' => 0,
-       'maxitems' => 1,
-       'size' => 1
+   ]
 
-   The referenced `itemsProcFunc` should populate the items by filling :php:`$configuration['items']``:
+The referenced :php:`itemsProcFunc` method should populate the items by filling :php:`$params['items']`:
 
-   .. code-block:: php
+.. code-block:: php
 
-       /**
-        * Returns a list of category fields for a given table for populating selector "category_field"
-        * in tt_content table (called as itemsProcFunc).
-        *
-        * @param array $configuration Current field configuration
-        * @throws \UnexpectedValueException
-        * @internal
-        */
-       public function getCategoryFieldsForTable(array &$configuration)
-       {
-          $table = $configuration['config']['itemsProcConfig']['table'] ?? '';
-          // Return early if no table is defined
-          if (empty($table)) {
-             throw new \UnexpectedValueException('No table is given.', 1381823570);
-          }
-          // Loop on all registries and find entries for the correct table
-          foreach ($this->registry as $tableName => $fields) {
-             if ($tableName === $table) {
-                foreach ($fields as $fieldName => $options) {
-                   $fieldLabel = $this->getLanguageService()->sL($GLOBALS['TCA'][$tableName]['columns'][$fieldName]['label']);
-                   $configuration['items'][] = [$fieldLabel, $fieldName];
-                }
-             }
-          }
-       }
+    /**
+     * A user function used in select_2
+     */
+    class TypeSelect2ItemsProcFunc
+    {
+        /**
+         * Add two items to existing ones
+         *
+         * @param array $params
+         */
+        public function itemsProcFunc(&$params): void
+        {
+            $params['items'][] = ['item 1 from itemProcFunc()', 'val1'];
+            $params['items'][] = ['item 2 from itemProcFunc()', 'val2'];
+        }
+    }
 
-   Further examples on different config type's can be found in the extension `styleguide`.
-
+This results in the rendered select dropdown having four items. This is a really simple example. In the real world
+you would use the other passed parameters to dynamically generate the items.
