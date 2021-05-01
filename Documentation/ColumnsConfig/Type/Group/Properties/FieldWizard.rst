@@ -6,7 +6,7 @@ fieldWizard
 ===========
 
 The field of type group can enable all common :ref:`field control options
-<tca_property_fieldControl>`. Furthermore the following are availible:
+<tca_property_fieldControl>`. Furthermore the following are available:
 
 .. confval:: elementBrowser
 
@@ -15,7 +15,7 @@ The field of type group can enable all common :ref:`field control options
    :Types: :ref:`group <columns-group>`
 
    The element browser field control used in :code:`type='group'` renders a
-   button to open element browser depending on selected :code:`internal_type`.
+   button to open an element browser depending on the selected :code:`internal_type`.
    It is enabled by default if rendering a group element.
 
 .. confval:: insertClipboard
@@ -36,16 +36,16 @@ Examples
 Group field with element browser enabled
 ----------------------------------------
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
 
-   .. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt
 
 
 Group field with element browser disabled
 -----------------------------------------
 
-   The element browser control can be disabled by setting :php:`disabled = true`:
+The element browser control can be disabled by setting :php:`disabled = true`:
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb3.rst.txt
+.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb3.rst.txt
 
-   .. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb3.rst.txt
+.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb3.rst.txt
