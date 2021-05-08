@@ -3,14 +3,14 @@
 .. code:: php
 
    'columns' => [
-      'text_9' => [
-         'exclude' => 1,
-         'label' => 'text_9',
-         'description' => 'readOnly=1',
-         'config' => [
-            'type' => 'text',
-            'readOnly' => 1,
-         ],
-      ],
+       'text_9' => [
+           'exclude' => 1,
+           'label' => 'text_9',
+           'description' => 'readOnly=1',
+           'config' => [
+               'type' => 'text',
+               'readOnly' => 1,
+           ],
+       ],
    ]
    

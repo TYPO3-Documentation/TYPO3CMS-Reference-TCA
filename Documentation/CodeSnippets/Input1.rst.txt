@@ -3,17 +3,17 @@
 .. code:: php
 
    'columns' => [
-      'input_1' => [
-         'l10n_mode' => 'prefixLangTitle',
-         'exclude' => 1,
-         'label' => 'input_1 description',
-         'description' => 'field description',
-         'config' => [
-            'type' => 'input',
-            'behaviour' => [
-               'allowLanguageSynchronization' => true,
-            ],
-         ],
-      ],
+       'input_1' => [
+           'l10n_mode' => 'prefixLangTitle',
+           'exclude' => 1,
+           'label' => 'input_1 description',
+           'description' => 'field description',
+           'config' => [
+               'type' => 'input',
+               'behaviour' => [
+                   'allowLanguageSynchronization' => true,
+               ],
+           ],
+       ],
    ]
    

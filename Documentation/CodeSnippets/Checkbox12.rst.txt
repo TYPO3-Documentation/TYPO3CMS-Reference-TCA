@@ -3,32 +3,32 @@
 .. code:: php
 
    'columns' => [
-      'checkbox_12' => [
-         'exclude' => 1,
-         'label' => 'checkbox_12',
-         'description' => 'cols=3',
-         'config' => [
-            'type' => 'check',
-            'items' => [
-               [
-                  'foo1',
-                  '',
+       'checkbox_12' => [
+           'exclude' => 1,
+           'label' => 'checkbox_12',
+           'description' => 'cols=3',
+           'config' => [
+               'type' => 'check',
+               'items' => [
+                   [
+                       'foo1',
+                       '',
+                   ],
+                   [
+                       'foo2',
+                       '',
+                   ],
+                   [
+                       'foo3',
+                       '',
+                   ],
+                   [
+                       'foo4',
+                       '',
+                   ],
                ],
-               [
-                  'foo2',
-                  '',
-               ],
-               [
-                  'foo3',
-                  '',
-               ],
-               [
-                  'foo4',
-                  '',
-               ],
-            ],
-            'cols' => '3',
-         ],
-      ],
+               'cols' => '3',
+           ],
+       ],
    ]
    

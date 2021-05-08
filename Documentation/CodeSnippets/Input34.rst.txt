@@ -3,15 +3,15 @@
 .. code:: php
 
    'columns' => [
-      'input_34' => [
-         'exclude' => 1,
-         'label' => 'input_34',
-         'description' => 'renderType=colorpicker',
-         'config' => [
-            'type' => 'input',
-            'renderType' => 'colorpicker',
-            'size' => 10,
-         ],
-      ],
+       'input_34' => [
+           'exclude' => 1,
+           'label' => 'input_34',
+           'description' => 'renderType=colorpicker',
+           'config' => [
+               'type' => 'input',
+               'renderType' => 'colorpicker',
+               'size' => 10,
+           ],
+       ],
    ]
    

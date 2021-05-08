@@ -3,17 +3,17 @@
 .. code:: php
 
    'columns' => [
-      'checkbox_7' => [
-         'exclude' => 1,
-         'label' => 'checkbox_7',
-         'description' => 'eval=maximumRecordsChecked, table wide',
-         'config' => [
-            'type' => 'check',
-            'eval' => 'maximumRecordsChecked',
-            'validation' => [
-               'maximumRecordsChecked' => 1,
-            ],
-         ],
-      ],
+       'checkbox_7' => [
+           'exclude' => 1,
+           'label' => 'checkbox_7',
+           'description' => 'eval=maximumRecordsChecked, table wide',
+           'config' => [
+               'type' => 'check',
+               'eval' => 'maximumRecordsChecked',
+               'validation' => [
+                   'maximumRecordsChecked' => 1,
+               ],
+           ],
+       ],
    ]
    

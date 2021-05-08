@@ -3,24 +3,24 @@
 .. code:: php
 
    'columns' => [
-      'select_single_1' => [
-         'exclude' => 1,
-         'label' => 'select_single_1 two items, long text description',
-         'description' => 'field description',
-         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-               [
-                  'foo and this here is very long text that maybe does not really fit into the form in one line. Ok let us add even more text to see how this looks like if wrapped. Is this enough now? No? Then let us add some even more useless text here!',
-                  1,
+       'select_single_1' => [
+           'exclude' => 1,
+           'label' => 'select_single_1 two items, long text description',
+           'description' => 'field description',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'items' => [
+                   [
+                       'foo and this here is very long text that maybe does not really fit into the form in one line. Ok let us add even more text to see how this looks like if wrapped. Is this enough now? No? Then let us add some even more useless text here!',
+                       1,
+                   ],
+                   [
+                       'bar',
+                       'bar',
+                   ],
                ],
-               [
-                  'bar',
-                  'bar',
-               ],
-            ],
-         ],
-      ],
+           ],
+       ],
    ]
    
