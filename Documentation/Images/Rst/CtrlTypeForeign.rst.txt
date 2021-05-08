@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/CtrlTypeForeign.png
+   :alt: The type of the record is fetched from the record specified in field `foreign_table`
+   :class: with-shadow
