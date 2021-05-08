@@ -3,46 +3,46 @@
 .. code:: php
 
    'columns' => [
-      'select_multiplesidebyside_10' => [
-         'exclude' => 1,
-         'label' => 'select_multiplesidebyside_1 autoSizeMax=5, size=3 description',
-         'description' => 'field description',
-         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectMultipleSideBySide',
-            'items' => [
-               [
-                  'item 1',
-                  1,
-                  '',
-                  'group1',
+       'select_multiplesidebyside_10' => [
+           'exclude' => 1,
+           'label' => 'select_multiplesidebyside_1 autoSizeMax=5, size=3 description',
+           'description' => 'field description',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectMultipleSideBySide',
+               'items' => [
+                   [
+                       'item 1',
+                       1,
+                       '',
+                       'group1',
+                   ],
+                   [
+                       'item 2',
+                       2,
+                       '',
+                       'group1',
+                   ],
+                   [
+                       'item 3',
+                       3,
+                       '',
+                       'group3',
+                   ],
+                   [
+                       'item 4',
+                       3,
+                   ],
                ],
-               [
-                  'item 2',
-                  2,
-                  '',
-                  'group1',
+               'itemGroups' => [
+                   'group1' => 'Group 1 with items',
+                   'group2' => 'Group 2 with no items',
+                   'group3' => 'Group 3 with items',
                ],
-               [
-                  'item 3',
-                  3,
-                  '',
-                  'group3',
-               ],
-               [
-                  'item 4',
-                  3,
-               ],
-            ],
-            'itemGroups' => [
-               'group1' => 'Group 1 with items',
-               'group2' => 'Group 2 with no items',
-               'group3' => 'Group 3 with items',
-            ],
-            'size' => 3,
-            'autoSizeMax' => 5,
-            'multiple' => true,
-         ],
-      ],
+               'size' => 3,
+               'autoSizeMax' => 5,
+               'multiple' => true,
+           ],
+       ],
    ]
    

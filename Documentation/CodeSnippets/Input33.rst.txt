@@ -3,35 +3,35 @@
 .. code:: php
 
    'columns' => [
-      'input_33' => [
-         'exclude' => 1,
-         'label' => 'input_33',
-         'description' => 'valuePicker',
-         'config' => [
-            'type' => 'input',
-            'size' => 20,
-            'eval' => 'trim',
-            'valuePicker' => [
-               'items' => [
-                  [
-                     'spring',
-                     'Spring',
-                  ],
-                  [
-                     'summer',
-                     'Summer',
-                  ],
-                  [
-                     'autumn',
-                     'Autumn',
-                  ],
-                  [
-                     'winter',
-                     'Winter',
-                  ],
+       'input_33' => [
+           'exclude' => 1,
+           'label' => 'input_33',
+           'description' => 'valuePicker',
+           'config' => [
+               'type' => 'input',
+               'size' => 20,
+               'eval' => 'trim',
+               'valuePicker' => [
+                   'items' => [
+                       [
+                           'spring',
+                           'Spring',
+                       ],
+                       [
+                           'summer',
+                           'Summer',
+                       ],
+                       [
+                           'autumn',
+                           'Autumn',
+                       ],
+                       [
+                           'winter',
+                           'Winter',
+                       ],
+                   ],
                ],
-            ],
-         ],
-      ],
+           ],
+       ],
    ]
    

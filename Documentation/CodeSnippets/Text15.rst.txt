@@ -3,15 +3,15 @@
 .. code:: php
 
    'columns' => [
-      'text_15' => [
-         'exclude' => 1,
-         'label' => 'text_15',
-         'description' => 'enableTabulator, fixedFont',
-         'config' => [
-            'type' => 'text',
-            'enableTabulator' => true,
-            'fixedFont' => true,
-         ],
-      ],
+       'text_15' => [
+           'exclude' => 1,
+           'label' => 'text_15',
+           'description' => 'enableTabulator, fixedFont',
+           'config' => [
+               'type' => 'text',
+               'enableTabulator' => true,
+               'fixedFont' => true,
+           ],
+       ],
    ]
    

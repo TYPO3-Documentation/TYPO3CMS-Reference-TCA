@@ -3,43 +3,43 @@
 .. code:: php
 
    'columns' => [
-      'select_single_16' => [
-         'exclude' => 1,
-         'label' => 'select_single_16',
-         'description' => 'itemGroups',
-         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-               [
-                  'item 1',
-                  1,
-                  '',
-                  'group1',
+       'select_single_16' => [
+           'exclude' => 1,
+           'label' => 'select_single_16',
+           'description' => 'itemGroups',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'items' => [
+                   [
+                       'item 1',
+                       1,
+                       '',
+                       'group1',
+                   ],
+                   [
+                       'item 2',
+                       2,
+                       '',
+                       'group1',
+                   ],
+                   [
+                       'item 3',
+                       3,
+                       '',
+                       'group3',
+                   ],
+                   [
+                       'item 4',
+                       3,
+                   ],
                ],
-               [
-                  'item 2',
-                  2,
-                  '',
-                  'group1',
+               'itemGroups' => [
+                   'group1' => 'Group 1 with items',
+                   'group2' => 'Group 2 with no items',
+                   'group3' => 'Group 3 with items',
                ],
-               [
-                  'item 3',
-                  3,
-                  '',
-                  'group3',
-               ],
-               [
-                  'item 4',
-                  3,
-               ],
-            ],
-            'itemGroups' => [
-               'group1' => 'Group 1 with items',
-               'group2' => 'Group 2 with no items',
-               'group3' => 'Group 3 with items',
-            ],
-         ],
-      ],
+           ],
+       ],
    ]
    

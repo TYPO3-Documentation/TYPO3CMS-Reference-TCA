@@ -3,36 +3,36 @@
 .. code:: php
 
    'columns' => [
-      'select_singlebox_1' => [
-         'exclude' => 1,
-         'label' => 'select_singlebox_1 description',
-         'description' => 'field description',
-         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingleBox',
-            'items' => [
-               [
-                  'foo 1',
-                  1,
+       'select_singlebox_1' => [
+           'exclude' => 1,
+           'label' => 'select_singlebox_1 description',
+           'description' => 'field description',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingleBox',
+               'items' => [
+                   [
+                       'foo 1',
+                       1,
+                   ],
+                   [
+                       'foo 2',
+                       2,
+                   ],
+                   [
+                       'divider',
+                       '--div--',
+                   ],
+                   [
+                       'foo 3',
+                       3,
+                   ],
+                   [
+                       'foo 4',
+                       4,
+                   ],
                ],
-               [
-                  'foo 2',
-                  2,
-               ],
-               [
-                  'divider',
-                  '--div--',
-               ],
-               [
-                  'foo 3',
-                  3,
-               ],
-               [
-                  'foo 4',
-                  4,
-               ],
-            ],
-         ],
-      ],
+           ],
+       ],
    ]
    
