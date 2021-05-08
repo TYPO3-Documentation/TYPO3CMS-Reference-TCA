@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/TxStyleguideCtrlMinimal.png
+   :alt: A minimal example of the control section
+   :class: with-shadow

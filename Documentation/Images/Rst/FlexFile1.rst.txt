@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/FlexFile1.png
+   :alt: A field with a simple, one-field flex form
+   :class: with-shadow
