@@ -1,0 +1,18 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+       'foreign_table' => [
+           'label' => 'type from foreign table',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'foreign_table' => 'tx_styleguide_type',
+               'minitems' => 1,
+               'maxitems' => 1,
+               'size' => 1,
+           ],
+       ],
+   ]
+   

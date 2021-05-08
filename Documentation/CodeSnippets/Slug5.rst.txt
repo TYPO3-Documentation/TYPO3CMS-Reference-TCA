@@ -1,0 +1,26 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+       'slug_5' => [
+           'exclude' => 1,
+           'label' => 'slug_5',
+           'config' => [
+               'type' => 'slug',
+               'generatorOptions' => [
+                   'fields' => [
+                       [
+                           'input_1',
+                           'input_2',
+                       ],
+                   ],
+                   'prefixParentPageSlug' => false,
+               ],
+               'fallbackCharacter' => '-',
+               'eval' => 'uniqueInSite',
+               'default' => '',
+           ],
+       ],
+   ]
+   

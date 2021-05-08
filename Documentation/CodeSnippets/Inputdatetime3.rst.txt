@@ -3,15 +3,15 @@
 .. code:: php
 
    'columns' => [
-      'inputdatetime_3' => [
-         'exclude' => 1,
-         'label' => 'inputdatetime_3',
-         'description' => 'eval=datetime',
-         'config' => [
-            'type' => 'input',
-            'renderType' => 'inputDateTime',
-            'eval' => 'datetime',
-         ],
-      ],
+       'inputdatetime_3' => [
+           'exclude' => 1,
+           'label' => 'inputdatetime_3',
+           'description' => 'eval=datetime',
+           'config' => [
+               'type' => 'input',
+               'renderType' => 'inputDateTime',
+               'eval' => 'datetime',
+           ],
+       ],
    ]
    

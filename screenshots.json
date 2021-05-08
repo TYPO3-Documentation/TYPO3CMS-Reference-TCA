@@ -1703,9 +1703,25 @@
             "altText": "Record information shown editing an example record"
           },
           {
-            "action": "makeScreenshotOfRecord",
-            "fileName": "CtrlEnableFields",
+            "action": "goToRecord"
+          },
+          {
+            "action": "waitForText",
+            "text": "Access",
+            "timeout": 5
+          },
+          {
+            "action": "click",
+            "link": "Access"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
             "selector": "[role=\"tabpanel\"]",
+            "fileName": "CtrlEnableFields",
             "altText": "Record information shown editing an example record"
           },
           {

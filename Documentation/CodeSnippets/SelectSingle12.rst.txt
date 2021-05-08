@@ -3,19 +3,19 @@
 .. code:: php
 
    'columns' => [
-      'select_single_12' => [
-         'exclude' => 1,
-         'label' => 'select_single_12 foreign_table selicon_field',
-         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'foreign_table' => 'tx_styleguide_elements_select_single_12_foreign',
-            'fieldWizard' => [
-               'selectIcons' => [
-                  'disabled' => false,
+       'select_single_12' => [
+           'exclude' => 1,
+           'label' => 'select_single_12 foreign_table selicon_field',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'foreign_table' => 'tx_styleguide_elements_select_single_12_foreign',
+               'fieldWizard' => [
+                   'selectIcons' => [
+                       'disabled' => false,
+                   ],
                ],
-            ],
-         ],
-      ],
+           ],
+       ],
    ]
    

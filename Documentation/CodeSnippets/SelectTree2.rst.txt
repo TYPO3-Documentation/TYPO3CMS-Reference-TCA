@@ -3,24 +3,24 @@
 .. code:: php
 
    'columns' => [
-      'select_tree_2' => [
-         'exclude' => 1,
-         'label' => 'select_tree_2 pages, showHeader=false, nonSelectableLevels=0,1, maxitems=4, size=10',
-         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectTree',
-            'foreign_table' => 'pages',
-            'maxitems' => 4,
-            'size' => 10,
-            'treeConfig' => [
-               'parentField' => 'pid',
-               'appearance' => [
-                  'expandAll' => true,
-                  'showHeader' => false,
-                  'nonSelectableLevels' => '0,1',
+       'select_tree_2' => [
+           'exclude' => 1,
+           'label' => 'select_tree_2 pages, showHeader=false, nonSelectableLevels=0,1, maxitems=4, size=10',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectTree',
+               'foreign_table' => 'pages',
+               'maxitems' => 4,
+               'size' => 10,
+               'treeConfig' => [
+                   'parentField' => 'pid',
+                   'appearance' => [
+                       'expandAll' => true,
+                       'showHeader' => false,
+                       'nonSelectableLevels' => '0,1',
+                   ],
                ],
-            ],
-         ],
-      ],
+           ],
+       ],
    ]
    

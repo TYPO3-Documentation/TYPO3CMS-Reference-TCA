@@ -3,23 +3,23 @@
 .. code:: php
 
    'columns' => [
-      'checkbox_18' => [
-         'exclude' => 1,
-         'label' => 'checkbox_18',
-         'description' => 'renderType=checkboxToggle single inverted state display',
-         'config' => [
-            'type' => 'check',
-            'renderType' => 'checkboxToggle',
-            'items' => [
-               [
-                  0 => 'foo',
-                  1 => '',
-                  'labelChecked' => 'Enabled',
-                  'labelUnchecked' => 'Disabled',
-                  'invertStateDisplay' => true,
+       'checkbox_18' => [
+           'exclude' => 1,
+           'label' => 'checkbox_18',
+           'description' => 'renderType=checkboxToggle single inverted state display',
+           'config' => [
+               'type' => 'check',
+               'renderType' => 'checkboxToggle',
+               'items' => [
+                   [
+                       0 => 'foo',
+                       1 => '',
+                       'labelChecked' => 'Enabled',
+                       'labelUnchecked' => 'Disabled',
+                       'invertStateDisplay' => true,
+                   ],
                ],
-            ],
-         ],
-      ],
+           ],
+       ],
    ]
    

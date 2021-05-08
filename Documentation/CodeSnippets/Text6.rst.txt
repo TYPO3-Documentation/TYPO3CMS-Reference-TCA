@@ -3,15 +3,15 @@
 .. code:: php
 
    'columns' => [
-      'text_6' => [
-         'exclude' => 1,
-         'label' => 'text_6',
-         'description' => 'wrap=virtual, long default text',
-         'config' => [
-            'type' => 'text',
-            'wrap' => 'virtual',
-            'default' => 'This textbox has wrap set to "virtual", so these long paragraphs should appear in multiple lines (wrapped at the end of the textbox): Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non luctus elit. In sed nunc velit. Donec gravida eros sollicitudin ligula mollis id eleifend mauris laoreet. Donec turpis magna, pulvinar id pretium eu, blandit et nisi. Nulla facilisi. Vivamus pharetra orci sed nunc auctor condimentum. Aenean volutpat posuere scelerisque. Nullam sed dolor justo. Pellentesque id tellus nunc, id sodales diam. Sed rhoncus risus a enim lacinia tincidunt. Aliquam ut neque augue.',
-         ],
-      ],
+       'text_6' => [
+           'exclude' => 1,
+           'label' => 'text_6',
+           'description' => 'wrap=virtual, long default text',
+           'config' => [
+               'type' => 'text',
+               'wrap' => 'virtual',
+               'default' => 'This textbox has wrap set to "virtual", so these long paragraphs should appear in multiple lines (wrapped at the end of the textbox): Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non luctus elit. In sed nunc velit. Donec gravida eros sollicitudin ligula mollis id eleifend mauris laoreet. Donec turpis magna, pulvinar id pretium eu, blandit et nisi. Nulla facilisi. Vivamus pharetra orci sed nunc auctor condimentum. Aenean volutpat posuere scelerisque. Nullam sed dolor justo. Pellentesque id tellus nunc, id sodales diam. Sed rhoncus risus a enim lacinia tincidunt. Aliquam ut neque augue.',
+           ],
+       ],
    ]
    
