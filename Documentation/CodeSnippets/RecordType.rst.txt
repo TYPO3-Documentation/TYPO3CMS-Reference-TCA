@@ -1,0 +1,28 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+       'record_type' => [
+           'label' => 'type',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'items' => [
+                   [
+                       'type 0',
+                       '0',
+                   ],
+                   [
+                       'Type with changed fields',
+                       'withChangedFields',
+                   ],
+                   [
+                       'Type with columnsOverrides',
+                       'withColumnsOverrides',
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

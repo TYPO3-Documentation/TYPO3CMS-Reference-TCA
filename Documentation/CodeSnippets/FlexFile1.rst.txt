@@ -1,0 +1,18 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+       'flex_file_1' => [
+           'exclude' => 1,
+           'label' => 'flex_file_1 simple flexform in external file',
+           'description' => 'field description',
+           'config' => [
+               'type' => 'flex',
+               'ds' => [
+                   'default' => 'FILE:EXT:styleguide/Configuration/FlexForms/Simple.xml',
+               ],
+           ],
+       ],
+   ]
+   

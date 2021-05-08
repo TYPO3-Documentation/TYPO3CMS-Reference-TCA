@@ -3,14 +3,14 @@
 .. code:: php
 
    'columns' => [
-      'text_7' => [
-         'exclude' => 1,
-         'label' => 'text_7',
-         'description' => 'eval=trim',
-         'config' => [
-            'type' => 'text',
-            'eval' => 'trim',
-         ],
-      ],
+       'text_7' => [
+           'exclude' => 1,
+           'label' => 'text_7',
+           'description' => 'eval=trim',
+           'config' => [
+               'type' => 'text',
+               'eval' => 'trim',
+           ],
+       ],
    ]
    

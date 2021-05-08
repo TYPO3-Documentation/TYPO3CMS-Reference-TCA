@@ -1,0 +1,25 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+       'group_db_10' => [
+           'exclude' => 1,
+           'label' => 'group_db_10 allowed=pages size=1',
+           'config' => [
+               'type' => 'group',
+               'internal_type' => 'db',
+               'allowed' => 'pages',
+               'maxitems' => 1,
+               'minitems' => 0,
+               'size' => 1,
+               'suggestOptions' => [
+                   'default' => [
+                       'additionalSearchFields' => 'nav_title, alias, url',
+                       'addWhere' => 'AND pages.doktype = 1',
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

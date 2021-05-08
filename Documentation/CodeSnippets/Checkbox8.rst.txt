@@ -3,17 +3,17 @@
 .. code:: php
 
    'columns' => [
-      'checkbox_8' => [
-         'exclude' => 1,
-         'label' => 'checkbox_8',
-         'description' => 'eval=maximumRecordsCheckedInPid, for this PID',
-         'config' => [
-            'type' => 'check',
-            'eval' => 'maximumRecordsCheckedInPid',
-            'validation' => [
-               'maximumRecordsCheckedInPid' => 1,
-            ],
-         ],
-      ],
+       'checkbox_8' => [
+           'exclude' => 1,
+           'label' => 'checkbox_8',
+           'description' => 'eval=maximumRecordsCheckedInPid, for this PID',
+           'config' => [
+               'type' => 'check',
+               'eval' => 'maximumRecordsCheckedInPid',
+               'validation' => [
+                   'maximumRecordsCheckedInPid' => 1,
+               ],
+           ],
+       ],
    ]
    

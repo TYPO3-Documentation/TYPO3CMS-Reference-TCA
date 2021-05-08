@@ -1,0 +1,23 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+       'inline_1' => [
+           'exclude' => 1,
+           'label' => 'inline_1',
+           'config' => [
+               'type' => 'inline',
+               'foreign_table' => 'tx_styleguide_inline_mm_child',
+               'MM' => 'tx_styleguide_inline_mm_child_rel',
+               'MM_hasUidField' => true,
+               'appearance' => [
+                   'showSynchronizationLink' => 1,
+                   'showAllLocalizationLink' => 1,
+                   'showPossibleLocalizationRecords' => 1,
+                   'showRemovedLocalizationRecords' => 1,
+               ],
+           ],
+       ],
+   ]
+   

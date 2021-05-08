@@ -3,22 +3,22 @@
 .. code:: php
 
    'columns' => [
-      'checkbox_17' => [
-         'exclude' => 1,
-         'label' => 'checkbox_17',
-         'description' => 'renderType=checkboxToggle single',
-         'config' => [
-            'type' => 'check',
-            'renderType' => 'checkboxToggle',
-            'items' => [
-               [
-                  0 => 'foo',
-                  1 => '',
-                  'labelChecked' => 'Enabled',
-                  'labelUnchecked' => 'Disabled',
+       'checkbox_17' => [
+           'exclude' => 1,
+           'label' => 'checkbox_17',
+           'description' => 'renderType=checkboxToggle single',
+           'config' => [
+               'type' => 'check',
+               'renderType' => 'checkboxToggle',
+               'items' => [
+                   [
+                       0 => 'foo',
+                       1 => '',
+                       'labelChecked' => 'Enabled',
+                       'labelUnchecked' => 'Disabled',
+                   ],
                ],
-            ],
-         ],
-      ],
+           ],
+       ],
    ]
    
