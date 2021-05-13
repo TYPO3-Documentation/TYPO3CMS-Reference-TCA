@@ -16,10 +16,10 @@ An overview of available types:
 check
    :ref:`One or multiple check boxes <columns-check>`
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox19.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox17.rst.txt
+   .. include:: /Images/Rst/Checkbox2.rst.txt
+   .. include:: /Images/Rst/Checkbox16.rst.txt
+   .. include:: /Images/Rst/Checkbox19.rst.txt
+   .. include:: /Images/Rst/Checkbox17.rst.txt
 
 flex
    :ref:`Form elements stored in an XML structure in one field <columns-flex>`.
@@ -27,7 +27,7 @@ flex
 group
    :ref:`Relations to other table rows or files <columns-group>`.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
+   .. include:: /Images/Rst/GroupDb1.rst.txt
 
 imageManipulation
    :ref:`Json array with cut / cropping information
@@ -39,24 +39,24 @@ inline
    <columns-inline>`. Also used for file resources via `sys_file_reference`
    table.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Inline1nInline1.rst.txt
+   .. include:: /Images/Rst/Inline1nInline1.rst.txt
 
 input
    :ref:`Single line text input <columns-input>`. Used for a various different
    single line outputs like head lines, links, color pickers.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Input1.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Input28.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Input30.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Input33.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Input34.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Inputdatetime3.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Input29.rst.txt
+   .. include:: /Images/Rst/Input1.rst.txt
+   .. include:: /Images/Rst/Input28.rst.txt
+   .. include:: /Images/Rst/Input30.rst.txt
+   .. include:: /Images/Rst/Input33.rst.txt
+   .. include:: /Images/Rst/Input34.rst.txt
+   .. include:: /Images/Rst/Inputdatetime3.rst.txt
+   .. include:: /Images/Rst/Input29.rst.txt
 
 none
    :ref:`Read only, virtual field <columns-none>`. No DataHandler processing.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/None1.rst.txt
+   .. include:: /Images/Rst/None1.rst.txt
 
 passthrough
    :ref:`Not displayed, only send as hidden field to DataHandler
@@ -65,15 +65,15 @@ passthrough
 radio
    :ref:`One or multiple radio buttons <columns-radio>`.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Radio1.rst.txt
+   .. include:: /Images/Rst/Radio1.rst.txt
 
 select
    :ref:`Select one or more items from a list <columns-select>`.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle12.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox1.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree1.rst.txt
+   .. include:: /Images/Rst/SelectSingle12.rst.txt
+   .. include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
+   .. include:: /Images/Rst/SelectSinglebox1.rst.txt
+   .. include:: /Images/Rst/SelectTree1.rst.txt
 
 slug
    :ref:`Define parts of a URL path<columns-slug>`
@@ -82,8 +82,8 @@ text
    :ref:`A multiline text field <columns-text>`. Used for RTE display,
    t3editor and some more.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
-   .. include:: /Includes/Images/Styleguide/RstIncludes/Rte1.rst.txt
+   .. include:: /Images/Rst/Text4.rst.txt
+   .. include:: /Images/Rst/Rte1.rst.txt
 
 user
    :ref:`Special rendering and evaluation defined by an additional

@@ -14,7 +14,7 @@ The type :php:`0` is required to be defined. It has to have at least the
 property :ref:`showitem <types-properties-showitem>` defined. A minimal
 configuration can be seen here, for example:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TypeMinimal.rst.txt
+.. include:: /CodeSnippets/TypeMinimal.rst.txt
 
 It displays nothing but a single field.
 
@@ -26,7 +26,7 @@ with three fields "category" "subject" and "message", and the second one
 labelled "access" with the field "personal". Only the default type "0" is
 specified. Opening such a record looks like this:
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/TxStyleguideCtrlCommon.rst.txt
+.. include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
 
 .. _types-optional:
 
@@ -39,33 +39,33 @@ composition of a record to depend on a value from the record. Let's look at the
 extension. The :php:`ctrl` section of its TCA contains a property called
 :php: `type`:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/CtrlTypeCtrl.rst.txt
+.. include:: /CodeSnippets/CtrlTypeCtrl.rst.txt
 
 This indicates that the field called :php:`record\_type` is to specify the type
 of any given record of the table. Let's look at how this field is defined in
 the property :php:`columns`:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/CtrlTypeTypes.rst.txt
+.. include:: /CodeSnippets/RecordType.rst.txt
 
 There's nothing unusual here. It's a pretty straightforward select field, with
 three options. Finally, in the :php:`types` section, we define what fields
 should appear and in what order for every value of the type field:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/CtrlTypeTypes.rst.txt
+.. include:: /CodeSnippets/CtrlTypeTypes.rst.txt
 
 The result if the following display when type :php:`0` is chosen:
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/CtrlType0.rst.txt
+.. include:: /Images/Rst/CtrlType0.rst.txt
 
 Changing to type :php:`withChangedFields` reloads the form and displays
 the a different set of fields:
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/CtrlTypeWithChangedFields.rst.txt
+.. include:: /Images/Rst/CtrlTypeWithChangedFields.rst.txt
 
 And finally, type :php:`withOverriddenColumns` shows the fields and overrides
 part of the configuration of the fields:
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/CtrlTypeWithOverriddenColumns.rst.txt
+.. include:: /Images/Rst/CtrlTypeWithOverriddenColumns.rst.txt
 
 .. note::
    It is a good idea to give all "types" speaking names, except the default

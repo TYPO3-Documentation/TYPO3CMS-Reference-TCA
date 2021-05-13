@@ -36,24 +36,24 @@ The following renderTypes are available:
 Simple text area
 ================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /Images/Rst/Text4.rst.txt
 
 Rich text editor field
 ======================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Rte1.rst.txt
+.. include:: /Images/Rst/Rte1.rst.txt
 
 
 Backend layout editor
 =====================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text20.rst.txt
+.. include:: /Images/Rst/Text20.rst.txt
 
 
 Text field with renderType textTable
 ====================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text17.rst.txt
+.. include:: /Images/Rst/Text17.rst.txt
 
 .. toctree::
    :hidden:

@@ -9,6 +9,38 @@
             "height": 640
           }
         ],
+        "be_groups": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "be_groups"
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3/sysext/core"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "uid": {
+              "action": "getUidByField",
+              "table": "be_groups",
+              "field": "pid",
+              "value": 0
+            },
+            "fields": "file_mountpoints",
+            "fileName": "FileMountpoints"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/be_groups.php",
+            "field": "columns/file_mountpoints",
+            "targetFileName": "FileMountpoints"
+          }
+        ],
         "tt_content": [
           {
             "action": "setScreenshotsDefaultTable",
@@ -90,6 +122,11 @@
           {"comment": "Screenshots from table tx_styleguide_elements_basic"},
           {"comment": "************************************"},
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
@@ -108,8 +145,26 @@
           },
           {
             "action": "makeScreenshotOfField",
-            "fields": "input_1",
-            "fileName": "Input1"
+            "fields": "sys_language_uid",
+            "fileName": "SysLanguageUid"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/sys_language_uid",
+            "targetFileName": "SysLanguageUid"
+          },
+          {
+            "action": "goToField",
+            "fields": "input_1"
+          },
+          {
+            "action": "drawBox",
+            "selector": ".formengine-field-item-description"
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "fileName": "Label"
           },
           {
             "action": "createPhpArrayCodeSnippet",
@@ -735,6 +790,12 @@
             "targetFileName": "SelectSingle7"
           },
           {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_8",
+            "targetFileName": "SelectSingle8"
+          },
+          {
             "action": "makeScreenshotOfField",
             "fields": "select_single_10",
             "fileName": "SelectSingle10"
@@ -755,6 +816,12 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
             "field": "columns/select_single_12",
             "targetFileName": "SelectSingle12"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_8",
+            "targetFileName": "SelectSingle13"
           },
           {
             "action": "makeScreenshotOfField",
@@ -821,6 +888,11 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
             "field": "columns/select_single_20",
             "targetFileName": "SelectSingle20"
+          },
+          {
+            "action": "createCodeSnippet",
+            "sourceFile": "Classes/UserFunctions/FormEngine/SelectItemSorter.php",
+            "targetFileName": "SelectItemSorter"
           },
           {
             "action": "makeScreenshotOfField",
@@ -1085,6 +1157,11 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_flex.php",
             "field": "columns/flex_file_1",
             "targetFileName": "FlexFile1"
+          },
+          {
+            "action": "createCodeSnippet",
+            "sourceFile": "Configuration/FlexForms/Simple.xml",
+            "targetFileName": "FlexFormFile1"
           }
         ],
         "slugs": [
@@ -1159,6 +1236,11 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
             "field": "columns/slug_5",
             "targetFileName": "Slug5"
+          },
+          {
+            "action": "createCodeSnippet",
+            "sourceFile": "Classes/UserFunctions/FormEngine/SlugPrefix.php",
+            "targetFileName": "SlugPrefix"
           }
         ],
         "elements_group": [
@@ -1643,6 +1725,18 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
             "field": "columns/record_type",
             "targetFileName": "RecordType"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
+            "field": "ctrl",
+            "targetFileName": "CtrlTypeCtrl"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
+            "field": "types",
+            "targetFileName": "CtrlTypeTypes"
           }
         ],
         "typeforeign": [
@@ -1682,6 +1776,10 @@
           }
         ],
         "ctrl_common": [
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
           {
             "action": "setScreenshotsDefaultTable",
             "table": "tx_styleguide_ctrl_common"
@@ -1736,6 +1834,12 @@
             },
             "selector": ".recordlist",
             "altText": "A common example of the control section"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_common.php",
+            "field": "ctrl",
+            "targetFileName": "TxStyleguideCtrlCommon"
           }
         ],
         "ctrl_minimal": [
@@ -1759,6 +1863,18 @@
             },
             "selector": ".recordlist",
             "altText": "A minimal example of the control section"
+          },
+
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_minimal.php",
+            "field": "types",
+            "targetFileName": "TypeMinimal"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_minimal.php",
+            "targetFileName": "TxStyleguideCtrlMinimal"
           }
         ],
         "palettes": [
@@ -1780,6 +1896,18 @@
             "fileName": "Palette",
             "selector": ".typo3-TCEforms",
             "altText": "Examples of different palettes in the extension styleguide"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
+            "field": "palettes",
+            "targetFileName": "Palettes"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
+            "field": "types",
+            "targetFileName": "PalettesTypes"
           }
         ]
         }

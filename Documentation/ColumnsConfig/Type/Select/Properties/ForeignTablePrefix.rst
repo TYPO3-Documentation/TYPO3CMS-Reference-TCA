@@ -19,6 +19,6 @@ Examples
 Select single field with foreign_prefix and foreign_where
 ---------------------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle3.rst.txt
+.. include:: /Images/Rst/SelectSingle3.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle3.rst.txt
+.. include:: /CodeSnippets/SelectSingle3.rst.txt

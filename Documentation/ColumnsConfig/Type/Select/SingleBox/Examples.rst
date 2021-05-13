@@ -9,6 +9,6 @@ Example
 Select multiple values from a box
 =================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox1.rst.txt
+.. include:: /Images/Rst/SelectSinglebox1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox1.rst.txt
+.. include:: /CodeSnippets/SelectSinglebox1.rst.txt

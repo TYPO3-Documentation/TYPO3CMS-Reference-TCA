@@ -24,6 +24,6 @@ Examples
 Fixed font field with tabulators enabled
 ----------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /Images/Rst/Text4.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /CodeSnippets/Text4.rst.txt

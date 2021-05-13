@@ -22,6 +22,6 @@ cols
 A simple text editor with 20 width
 ==================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /Images/Rst/Text4.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /CodeSnippets/Text4.rst.txt

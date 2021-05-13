@@ -48,9 +48,9 @@ The following example can be found in the :ref:`extension styleguide
 field gets copied to the target language. It get prefixed with
 :text:`[Translate to <language name>:]`.
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/TranslatedText2.rst.txt
+.. include:: /Images/Rst/TranslatedText2.rst.txt
 
 
 The language mode is defined as follows:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/TranslatedText2.rst.txt
+.. include:: /CodeSnippets/TranslatedText2.rst.txt

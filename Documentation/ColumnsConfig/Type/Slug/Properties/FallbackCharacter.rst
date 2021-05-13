@@ -20,6 +20,6 @@ Examples
 fallbackCharacter and fieldSeparator set
 ----------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Slug2.rst.txt
+.. include:: /Images/Rst/Slug2.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug2.rst.txt
+.. include:: /CodeSnippets/Slug2.rst.txt

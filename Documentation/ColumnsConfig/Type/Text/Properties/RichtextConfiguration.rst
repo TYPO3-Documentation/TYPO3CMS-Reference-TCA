@@ -32,9 +32,9 @@ Examples
 RTE with minimal configuration
 ------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Rte4.rst.txt
+.. include:: /Images/Rst/Rte4.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Rte4.rst.txt
+.. include:: /CodeSnippets/Rte4.rst.txt
 
 
 .. _tca_example_rte_5:
@@ -42,7 +42,7 @@ RTE with minimal configuration
 RTE with full configuration
 ---------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Rte4.rst.txt
+.. include:: /Images/Rst/Rte4.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Rte4.rst.txt
+.. include:: /CodeSnippets/Rte4.rst.txt
 

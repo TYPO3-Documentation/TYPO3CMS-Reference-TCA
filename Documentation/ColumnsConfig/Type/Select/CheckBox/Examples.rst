@@ -9,18 +9,18 @@ Examples
 Simple select checkbox with 3 possible values
 =============================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox1.rst.txt
+.. include:: /Images/Rst/SelectCheckbox1.rst.txt
 
 The select checkbox stores the values as comma separated values.
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectCheckbox1.rst.txt
+.. include:: /CodeSnippets/SelectCheckbox1.rst.txt
 
 
 Select checkbox with icons and groups
 =====================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox7.rst.txt
+.. include:: /Images/Rst/SelectCheckbox7.rst.txt
 
 The select checkbox stores the values as comma separated values.
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectCheckbox7.rst.txt
+.. include:: /CodeSnippets/SelectCheckbox7.rst.txt

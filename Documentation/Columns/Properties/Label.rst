@@ -13,7 +13,7 @@ label
 
    The name of the field as shown in the form:
 
-   .. include:: /Includes/Images/Core/Frontend/RstIncludes/Label.rst.txt
+   .. include:: /Images/Rst/Label.rst.txt
 
    .. note::
       Labels can be overridden in the

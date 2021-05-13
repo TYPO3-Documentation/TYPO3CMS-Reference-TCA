@@ -16,7 +16,7 @@ installation.
 A special language :guilabel:`All languages` is automatically added.
 
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/Language1.rst.txt
+.. include:: /CodeSnippets/SysLanguageUid.rst.txt
 
 
 .. toctree::

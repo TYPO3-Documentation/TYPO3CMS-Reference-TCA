@@ -21,7 +21,7 @@ fieldControl
    See :ref:`type=group <columns-group-properties-fieldControl>` for examples.
 
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+   .. include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
 
 .. toctree::
    FieldControl/AddRecord

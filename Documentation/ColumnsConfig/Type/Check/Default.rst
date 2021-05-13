@@ -13,9 +13,9 @@ is typically a single checkbox or a group of checkboxes.
 
 Its state can be inverted via :code:`invertStateDisplay`.
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox12.rst.txt
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
+.. include:: /Images/Rst/Checkbox2.rst.txt
+.. include:: /Images/Rst/Checkbox12.rst.txt
+.. include:: /Images/Rst/Checkbox16.rst.txt
 
 .. toctree::
 

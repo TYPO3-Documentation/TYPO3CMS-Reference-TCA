@@ -35,9 +35,9 @@ Examples
 Sort items by label
 -------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle18.rst.txt
+.. include:: /Images/Rst/SelectSingle18.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle18.rst.txt
+.. include:: /CodeSnippets/SelectSingle18.rst.txt
 
 
 .. _tca_example_select_single_19:
@@ -45,9 +45,9 @@ Sort items by label
 Sort items by value
 -------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle19.rst.txt
+.. include:: /Images/Rst/SelectSingle19.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle19.rst.txt
+.. include:: /CodeSnippets/SelectSingle19.rst.txt
 
 
 .. _tca_example_select_single_20:
@@ -57,8 +57,8 @@ Sort items by a custom method
 
 The following custom method sorts the items by their reversed labels:
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle20.rst.txt
+.. include:: /Images/Rst/SelectSingle20.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle20.rst.txt
+.. include:: /CodeSnippets/SelectSingle20.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/SelectItemSorter.rst.txt
+.. include:: /CodeSnippets/SelectItemSorter.rst.txt

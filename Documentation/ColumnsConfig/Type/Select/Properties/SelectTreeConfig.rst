@@ -50,6 +50,6 @@ Examples
 Tree with non selectable levels
 ===============================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree2.rst.txt
+.. include:: /Images/Rst/SelectTree2.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectTree2.rst.txt
+.. include:: /CodeSnippets/SelectTree2.rst.txt
