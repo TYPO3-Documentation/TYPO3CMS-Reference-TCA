@@ -32,7 +32,7 @@ How to use the `styleguide` extension
    you can delete the example page tree by clicking the other button
    :guilabel:`Delete styleguide page tree and all styleguide data records`
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/StyleguideCreateTCA.rst.txt
+   .. include:: /Images/Rst/StyleguideCreateTCA.rst.txt
 
 
 3. Have a look at the examples
@@ -44,7 +44,7 @@ How to use the `styleguide` extension
    between languages.
 
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/StyleguideViewExample.rst.txt
+   .. include:: /Images/Rst/StyleguideViewExample.rst.txt
 
 
    .. hint::
@@ -66,5 +66,5 @@ How to use the `styleguide` extension
    field, in this example `checkbox_9`. You can then have a look at the TCA
    definition in a working example.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/StyleguideTcaDefinition.rst.txt
+   .. include:: /Images/Rst/StyleguideTcaDefinition.rst.txt
 

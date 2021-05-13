@@ -54,13 +54,13 @@ Examples
 Select field
 ------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
 
 Group field
 -----------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /Images/Rst/GroupDb1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /CodeSnippets/GroupDb1.rst.txt

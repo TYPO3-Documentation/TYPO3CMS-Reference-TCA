@@ -9,7 +9,7 @@ Slugs / URL parts
 The main purpose of this type is to define parts of a URL path to generate and
 resolve URLs.
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Slug2.rst.txt
+.. include:: /Images/Rst/Slug2.rst.txt
 
 .. toctree::
    :titlesonly:

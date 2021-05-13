@@ -11,9 +11,9 @@ Examples
 Simple text area
 ================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /Images/Rst/Text4.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text4.rst.txt
+.. include:: /CodeSnippets/Text4.rst.txt
 
 
 .. _tca_example_rte_1:
@@ -21,6 +21,6 @@ Simple text area
 Rich text editor field
 ======================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Rte1.rst.txt
+.. include:: /Images/Rst/Rte1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Rte1.rst.txt
+.. include:: /CodeSnippets/Rte1.rst.txt

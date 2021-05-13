@@ -24,11 +24,11 @@ Examples
 Fixes columns
 -------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox2.rst.txt
+.. include:: /Images/Rst/Checkbox2.rst.txt
+.. include:: /CodeSnippets/Checkbox2.rst.txt
 
 Inline columns
 --------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox16.rst.txt
+.. include:: /Images/Rst/Checkbox16.rst.txt
+.. include:: /CodeSnippets/Checkbox16.rst.txt

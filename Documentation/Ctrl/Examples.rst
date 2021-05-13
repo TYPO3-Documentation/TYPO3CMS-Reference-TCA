@@ -10,9 +10,9 @@ Examples
 Minimal table configuration
 ===========================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/TxStyleguideCtrlMinimal.rst.txt
+.. include:: /Images/Rst/TxStyleguideCtrlMinimal.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlMinimal.rst.txt
+.. include:: /CodeSnippets/TxStyleguideCtrlMinimal.rst.txt
 
 Property :code:`label` is a mandatory setting, but the above properties are a recommended
 minimum. The list module shows an icon and a translated title of the table, and it uses the value of
@@ -27,9 +27,9 @@ in :file:`ext_tables.sql` with this setup.
 Common table control configuration
 ==================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/TxStyleguideCtrlCommon.rst.txt
+.. include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlCommon.rst.txt
+.. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
 
 .. _tca_example_ctrl_tt_content:
 
@@ -40,7 +40,7 @@ Table :code:`tt_content` makes much more excessive use of the :code:`['ctrl']` s
 
 .. code-block:: php
 
-.. include:: /Includes/Snippets/Core/Frontend/RstIncludes/TtContentCtrl.rst.txt
+.. include:: /CodeSnippets/TtContentCtrl.rst.txt
 
 A few remarks:
 

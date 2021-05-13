@@ -8,7 +8,7 @@ selectTree
 A field with the render type `selectTree` displays hierarchical data
 in a tree.
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectTree1.rst.txt
+.. include:: /Images/Rst/SelectTree1.rst.txt
 
 .. toctree::
    :titlesonly:

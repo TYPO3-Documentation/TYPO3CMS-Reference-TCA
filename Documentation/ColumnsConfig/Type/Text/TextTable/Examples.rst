@@ -10,6 +10,6 @@ Example
 Text field with renderType textTable
 ====================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text17.rst.txt
+.. include:: /Images/Rst/Text17.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text17.rst.txt
+.. include:: /CodeSnippets/Text17.rst.txt

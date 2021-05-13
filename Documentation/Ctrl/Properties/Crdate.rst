@@ -19,6 +19,6 @@ Examples
 Common table control configuration
 ==================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/TxStyleguideCtrlCommon.rst.txt
+.. include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlCommon.rst.txt
+.. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt

@@ -1,0 +1,40 @@
+.. Extension styleguide, file  tx_styleguide_inline_mnsymmetric_mm.php
+
+.. code-block:: php
+   :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_inline_mnsymmetric_mm.php
+
+   [
+      'columns' => [
+         'input_1' => [
+            'exclude' => 1,
+            'l10n_mode' => 'prefixLangTitle',
+            'label' => 'input_1',
+            'config' => [
+               'type' => 'input',
+               'size' => '30',
+               'eval' => 'required',
+            ],
+         ],
+         'branches' => [
+            'exclude' => 1,
+            'label' => 'branches',
+            'config' => [
+               'type' => 'inline',
+               'foreign_table' => 'tx_styleguide_inline_mnsymmetric_mm',
+               'foreign_field' => 'hotelid',
+               'foreign_sortby' => 'hotelsort',
+               'foreign_label' => 'branchid',
+               'symmetric_field' => 'branchid',
+               'symmetric_sortby' => 'branchsort',
+               'symmetric_label' => 'hotelid',
+               'maxitems' => 10,
+               'appearance' => [
+                  'showSynchronizationLink' => 1,
+                  'showAllLocalizationLink' => 1,
+                  'showPossibleLocalizationRecords' => 1,
+                  'showRemovedLocalizationRecords' => 1,
+               ],
+            ],
+         ],
+      ],
+   ];

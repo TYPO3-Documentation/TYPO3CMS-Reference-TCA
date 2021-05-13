@@ -28,20 +28,20 @@ Examples
 Select foreign records from a drop-down using selicon
 -----------------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle12.rst.txt
+.. include:: /Images/Rst/SelectSingle12.rst.txt
 
 
 The table :sql:`tx_styleguide_elements_select_single_12_foreign` is defined as
 follows:
 
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/SelectSingle12ForeignPart.rst.txt
+.. include:: /CodeSnippets/Manual/SelectSingle12ForeignPart.rst.txt
 
 
 It can be used in another table as a foreign relation, for example in a field
 with render type :php:`singleSelect`::
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle12.rst.txt
+.. include:: /CodeSnippets/SelectSingle12.rst.txt
 
 
 You can find this example in the :ref:`extension styleguide <styleguide>`.

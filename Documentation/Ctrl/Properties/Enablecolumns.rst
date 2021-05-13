@@ -37,7 +37,7 @@ enablecolumns
       related to the frontend. However the icon of records having these features enabled will
       normally change as these examples show:
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/CtrlEnableFields.rst.txt
+   .. include:: /Images/Rst/CtrlEnableFields.rst.txt
 
    See also the :ref:`delete <ctrl-reference-delete>` feature which is related, but is active for both frontend and backend.
 
@@ -47,6 +47,6 @@ Examples
 Common enable fields
 ====================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/CtrlEnableFields.rst.txt
+.. include:: /Images/Rst/CtrlEnableFields.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlCommon.rst.txt
+.. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt

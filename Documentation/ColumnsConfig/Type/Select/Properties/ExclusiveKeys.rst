@@ -22,6 +22,6 @@ Examples
 Side-by-side select with two exclusive items
 --------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside2.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside2.rst.txt

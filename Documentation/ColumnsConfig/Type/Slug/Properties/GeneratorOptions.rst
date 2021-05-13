@@ -119,18 +119,18 @@ Examples
 Generate a concatenated slug
 ----------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Slug4.rst.txt
+.. include:: /Images/Rst/Slug4.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug4.rst.txt
+.. include:: /CodeSnippets/Slug4.rst.txt
 
 .. _tca_example_slug_5:
 
 Generate a slug from one field with a backup field if first is empty
 --------------------------------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Slug5.rst.txt
+.. include:: /Images/Rst/Slug5.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug5.rst.txt
+.. include:: /CodeSnippets/Slug5.rst.txt
 
 .. _tca_example_slug_6:
 
@@ -140,8 +140,8 @@ Example: remove all strings "(f/m)" from Jobtitles
 This will change the provided slug **'Some Job in city1/city2 (f/m)'**
 to **'some-job-in-city1-city2'**.
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Slug3.rst.txt
+.. include:: /Images/Rst/Slug3.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug3.rst.txt
+.. include:: /CodeSnippets/Slug3.rst.txt
 
 
