@@ -21,8 +21,8 @@ These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <colum
 
 Characteristics of `passthrough`:
 
-* A value sent to the 
-is just kept as is and put into the database field. Default `FormEngine`
+* A value sent to the `DataHandler`
+  is just kept as is and put into the database field. Default `FormEngine`
   however never sends values.
 * Unlike none, type passthrough must have a database field.
 * `FormEngine` does not render anything for passthrough types by default. But it can be combined with a custom
