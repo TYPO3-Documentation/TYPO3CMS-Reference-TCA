@@ -24,7 +24,7 @@ Characteristics of `passthrough`:
 * A value sent to the :php:`DataHandler` is kept as is and put into the database field. However, the default TYPO3 backend forms never send data for a `passthrough` field.
 * Unlike the field type `none`, the field type `passthrough` must have a database field.
 * `FormEngine` does not render anything for passthrough types by default. But it can be combined with a custom
-  renderType to make it render something. A user type is better suited for such use cases, though.
+  `renderType` to display something. A field of type `user` is better suited for such use cases, though.
 * Type passthrough field values are usually not rendered at other places in the backend.
 * Field updates by the `DataHandler` get logged and the history/undo function will work with such values.
 
