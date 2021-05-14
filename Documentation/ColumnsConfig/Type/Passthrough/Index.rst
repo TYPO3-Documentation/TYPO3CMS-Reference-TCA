@@ -36,7 +36,7 @@ The `passthrough` field can be useful, if:
   data is rendered differently in FormEngine at other places if editing a record but still updated and handled
   by the `DataHandler`.
 
-Typical usages of type passthrough is a field that only needs data evaluation on the `DataHandler` side, but
+Typical usages of the field type `passthrough` is a field that only needs data evaluation on the `DataHandler` side, but
 no rendering definition. The `DataHandler` does not evaluate the value in any way by default.
 
 Since there is no rendering mode for this field type it is specifically fitted for direct API usage with the `DataHandler`.
