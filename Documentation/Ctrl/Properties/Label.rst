@@ -71,8 +71,8 @@ label\_alt\_force
    :Scope: Display
 
 
-   If set, then the :ref:`label_alt <ctrl-reference-label-alt>` fields
-   are always shown in the title separated by comma.
+   If set, then the :ref:`label <ctrl-reference-label>` field and the :ref:`label_alt <ctrl-reference-label-alt>` fields
+   are shown in the title separated by comma.
 
    .. note::
       :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property.
