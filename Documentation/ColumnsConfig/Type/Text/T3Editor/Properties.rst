@@ -22,5 +22,6 @@ Common properties
    *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
    *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
 
+*  :ref:`readOnly <tca_property_readOnly>`
 *  :ref:`search <tca_property_search>`
 *  :ref:`softref <tca_property_softref>`
