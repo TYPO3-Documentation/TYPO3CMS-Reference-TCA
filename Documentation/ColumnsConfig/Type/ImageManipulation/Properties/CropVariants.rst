@@ -53,6 +53,7 @@ cropVariants
 
    Above configuration is a fall back if no other more specific configuration has been given.
 
+
 Examples
 ========
 
@@ -255,6 +256,31 @@ It is also possible to set the cropping configuration only for a specific tt_con
 Please note, that the array for ``overrideChildTca`` is merged with the child TCA, so are the crop variants that are defined
 in the child TCA (most likely sys_file_reference). Because you cannot remove crop variants easily, it is possible to disable them
 for certain field types by setting the array key for a crop variant ``disabled`` to the value ``true``
+
+
+Disable an aspect ratio
+-----------------------
+
+Not only cropVariants but also aspect ratios can be disabled by adding a
+"disabled" key to the array.
+
+.. code-block:: php
+
+   $GLOBALS['TCA']['tt_content']['types']['textmedia']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config'] = [
+       'cropVariants' => [
+           'default' => [
+               'allowedAspectRatios' => [
+                   '4:3' => [
+                       'disabled' => true,
+                   ],
+               ],
+           ],
+       ],
+   ];
+
+This works for each field, that defines cropVariants for any
+:sql:`sys_file_reference` usage.
+
 
 
 Crop variants in view helpers
