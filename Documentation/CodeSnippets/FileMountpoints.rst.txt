@@ -1,0 +1,39 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'file_mountpoints' => [
+           'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:file_mountpoints',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectMultipleSideBySide',
+               'foreign_table' => 'sys_filemounts',
+               'foreign_table_where' => ' AND sys_filemounts.pid=0',
+               'size' => 3,
+               'autoSizeMax' => 10,
+               'fieldControl' => [
+                   'editPopup' => [
+                       'disabled' => false,
+                       'options' => [
+                           'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:file_mountpoints_edit_title',
+                       ],
+                   ],
+                   'addRecord' => [
+                       'disabled' => false,
+                       'options' => [
+                           'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:file_mountpoints_add_title',
+                           'setValue' => 'prepend',
+                       ],
+                   ],
+                   'listModule' => [
+                       'disabled' => false,
+                       'options' => [
+                           'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:file_mountpoints_list_title',
+                       ],
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

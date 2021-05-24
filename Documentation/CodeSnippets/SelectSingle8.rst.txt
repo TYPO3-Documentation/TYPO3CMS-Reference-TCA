@@ -1,0 +1,41 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'select_single_8' => [
+           'exclude' => 1,
+           'label' => 'select_single_8 drop down with empty div',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'items' => [
+                   [
+                       'First div with items',
+                       '--div--',
+                   ],
+                   [
+                       'item 1',
+                       1,
+                   ],
+                   [
+                       'item 2',
+                       2,
+                   ],
+                   [
+                       'Second div without items',
+                       '--div--',
+                   ],
+                   [
+                       'Third div with items',
+                       '--div--',
+                   ],
+                   [
+                       'item 3',
+                       3,
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

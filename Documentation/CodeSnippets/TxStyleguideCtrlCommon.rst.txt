@@ -1,0 +1,30 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'ctrl' => [
+       'title' => 'Form engine - Common table control',
+       'label' => 'title',
+       'descriptionColumn' => 'description',
+       'tstamp' => 'tstamp',
+       'crdate' => 'crdate',
+       'cruser_id' => 'cruser_id',
+       'delete' => 'deleted',
+       'sortby' => 'sorting',
+       'default_sortby' => 'title',
+       'versioningWS' => true,
+       'rootLevel' => -1,
+       'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+       'origUid' => 't3_origuid',
+       'languageField' => 'sys_language_uid',
+       'transOrigPointerField' => 'l10n_parent',
+       'transOrigDiffSourceField' => 'l10n_diffsource',
+       'translationSource' => 'l10n_source',
+       'searchFields' => 'title,description',
+       'enablecolumns' => [
+           'disabled' => 'hidden',
+           'starttime' => 'starttime',
+           'endtime' => 'endtime',
+       ],
+   ]
+   
