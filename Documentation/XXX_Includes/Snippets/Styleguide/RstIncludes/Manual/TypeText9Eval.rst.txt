@@ -1,3 +1,0 @@
-
-.. literalinclude:: /Includes/Snippets/Styleguide/Sources/TypeText9Eval.php
-   :language: php

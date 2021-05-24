@@ -1,7 +1,0 @@
-.. Automatic screenshot: Remove this line if you wand to manually change this file
-
-.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/GroupDb3.png
-   :alt: Screenshot of field tx_styleguide_elements_group:group_db_3
-   :class: with-shadow
-
-   :ref:`Screenshot of field tx_styleguide_elements_group:group_db_3 <tca_example_group_db_3>`

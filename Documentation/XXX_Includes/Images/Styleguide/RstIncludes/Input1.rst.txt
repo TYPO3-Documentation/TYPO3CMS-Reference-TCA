@@ -1,7 +1,0 @@
-.. Automatic screenshot: Remove this line if you wand to manually change this file
-
-.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/Input1.png
-   :alt: Screenshot of field tx_styleguide_elements_basic:input_1
-   :class: with-shadow
-
-   :ref:`Screenshot of field tx_styleguide_elements_basic:input_1 <tca_example_input_1>`

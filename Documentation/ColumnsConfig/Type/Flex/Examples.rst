@@ -27,7 +27,7 @@ The DataStructure used to render this field is found in the file
 "Simple.xml" inside the :file:`styleguide` extension.
 Notice the :xml:`<TCEforms>` tags:
 
-.. include:: /CodeSnippet/FlexFormFile1.rst.txt
+.. include:: /CodeSnippets/FlexFile1.rst.txt
 
 It's clear that the contents of :xml:`<TCEforms>` is a direct reflection of
 the field configurations we normally set up in the :php:`$GLOBALS['TCA']` array.

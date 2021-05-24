@@ -1,7 +1,0 @@
-.. Automatic screenshot: Remove this line if you wand to manually change this file
-
-.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/InlineMmInline1.png
-   :alt: An inline field with MM relation
-   :class: with-shadow
-
-   :ref:`An inline field with MM relation <tca_example_inline_mm_inline_1>`

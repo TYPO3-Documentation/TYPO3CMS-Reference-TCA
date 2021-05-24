@@ -1,4 +1,0 @@
-
-.. literalinclude:: /Includes/Snippets/Styleguide/Sources/tx_styleguide_type.php
-   :language: php
-   :start-at: use

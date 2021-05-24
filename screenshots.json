@@ -166,6 +166,11 @@
             }
           },
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 2048
+          },
+          {
             "action": "goToField",
             "fields": "inline_1"
           },
@@ -295,8 +300,19 @@
             "targetFileName": "Input33"
           },
           {
-            "action": "makeScreenshotOfField",
-            "fields": "input_34",
+            "action": "goToField",
+            "fields": "input_34"
+          },
+          {
+            "action": "click",
+            "link": "input"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
             "fileName": "Input34"
           },
           {
@@ -1816,7 +1832,7 @@
           },
           {
             "action": "wait",
-            "timeout": 0.1
+            "timeout": 1
           },
           {
             "action": "makeScreenshotOfElement",
@@ -2125,11 +2141,15 @@
           {
             "action": "resizeWindow",
             "width": 640,
-            "height": 640
+            "height": 1024
           },
           {
             "action": "setScreenshotsDefaultTable",
             "table": "tx_styleguide_palette"
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
           },
           {
             "action": "setScreenshotsDefaultUid",
