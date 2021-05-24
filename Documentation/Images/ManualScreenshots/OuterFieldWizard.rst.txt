@@ -1,0 +1,6 @@
+
+.. figure:: /Images/ManualScreenshots/OuterFieldWizard.png
+   :alt: A new field wizard in OuterWrapContainer
+   :class: with-shadow
+
+   A new field wizard in OuterWrapContainer

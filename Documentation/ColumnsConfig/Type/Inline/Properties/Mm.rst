@@ -69,15 +69,15 @@ Examples
 Inline field with MM table configured
 -------------------------------------
 
-.. include:: /Images/Rst/InlineMmInline1.rst.txt
+.. include:: /Images/ManualScreenshots/InlineMmInline1.rst.txt
 
-.. include:: /Images/Rst/InlineMmInline1.rst.txt
+.. include:: /CodeSnippets/InlineMmInline1.rst.txt
 
 .. _tca_example_inline_mm_child_parents:
 
 Opposite field to display MM relations two ways
 -----------------------------------------------
 
-.. include:: /Images/Rst/InlineMmChildParents.rst.txt
+.. include:: /Images/ManualScreenshots/InlineMmChildParents.rst.txt
 
-.. include:: /Images/Rst/InlineMmChildParents.rst.txt
+.. include:: /CodeSnippets/InlineMmChildParents.rst.txt

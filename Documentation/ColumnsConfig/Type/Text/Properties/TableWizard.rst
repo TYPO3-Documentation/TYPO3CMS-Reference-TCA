@@ -19,7 +19,7 @@ tableWizard
 
    Note the control button is only displayed after a new record has been saved the first time.
 
-   .. include:: /Images/Rst/TableWizard.rst.txt
+   .. include:: /Images/Rst/Text21.rst.txt
 
    Available options:
 
