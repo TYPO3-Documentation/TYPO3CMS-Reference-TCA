@@ -103,4 +103,4 @@ file::
 In PHP, the node has to implement an interface, but can return any additional HTML which is rendered in the
 "OuterWrapContainer" between the record title and the field body when editing a record:
 
-.. include:: /Images/Rst/OuterFieldWizard.rst.txt
+.. include:: /Images/ManualScreenshots/OuterFieldWizard.rst.txt

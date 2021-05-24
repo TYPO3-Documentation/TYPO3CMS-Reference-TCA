@@ -49,7 +49,7 @@ the type stored in a field
 
 .. include:: /Images/Rst/CtrlType0.rst.txt
 
-The table :sql:`` table from the "examples" extension defines different types. The field used for differentiating
+The table :sql:`tx_styleguide_type` table from the "examples" extension defines different types. The field used for differentiating
 the types is the "record\_type" field. Hence we have the following in the :code:`['ctrl']` section
 of the tx\_examples\_dummy table:
 

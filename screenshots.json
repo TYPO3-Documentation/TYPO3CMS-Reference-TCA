@@ -2,14 +2,14 @@
   "suites": {
     "Introduction": {
       "screenshots": {
-        "options": [
+        "be_groups": [
+          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+          {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
           {
             "action": "resizeWindow",
             "width": 640,
             "height": 640
-          }
-        ],
-        "be_groups": [
+          },
           {
             "action": "resizeWindow",
             "width": 640,
@@ -25,12 +25,7 @@
           },
           {
             "action": "makeScreenshotOfField",
-            "uid": {
-              "action": "getUidByField",
-              "table": "be_groups",
-              "field": "pid",
-              "value": 0
-            },
+            "uid": 1,
             "fields": "file_mountpoints",
             "fileName": "FileMountpoints"
           },
@@ -42,6 +37,16 @@
           }
         ],
         "tt_content": [
+          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3/sysext/frontend"
+          },
           {
             "action": "setScreenshotsDefaultTable",
             "table": "tt_content"
@@ -82,15 +87,36 @@
             "fileName": "CtrlType",
             "altText": "The type selector of a content elements"
           },
+
           {
-            "action": "goToField",
-            "fields": "image",
+            "action": "setScreenshotsDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tt_content",
               "field": "header",
               "value": "Deliver business value"
             }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "hidden",
+            "fileName": "TtContentHidden"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tt_content.php",
+            "field": "columns/hidden",
+            "targetFileName": "TtContentHidden"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tt_content.php",
+            "field": "ctrl",
+            "targetFileName": "TtContentCtrl"
+          },
+          {
+            "action": "goToField",
+            "fields": "image"
           },
           {
             "action": "click",
@@ -111,10 +137,62 @@
     "Styleguide": {
       "screenshots": {
         "options": [
+          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+          {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
+          {"action": "setScreenshotsImagePath", "path": "Images/AutomaticScreenshots"},
+          {"action": "createScreenshotsRstFile", "create": true}
+        ],
+        "inline_fal": [
           {
             "action": "resizeWindow",
             "width": 640,
             "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_fal"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_fal",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "goToField",
+            "fields": "inline_1"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineFalInline1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_fal.php",
+            "field": "columns/inline_1",
+            "targetFileName": "InlineFalInline1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_fal.php",
+            "field": "columns/inline_flex_1",
+            "targetFileName": "InlineFalInline1Flexform"
           }
         ],
         "input_basic": [
@@ -244,6 +322,11 @@
           {"comment": "Screenshots from table tx_styleguide_elements_basic"},
           {"comment": "************************************"},
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
@@ -270,6 +353,11 @@
           {"comment": "************************************"},
           {"comment": "Screenshots from table tx_styleguide_elements_basic"},
           {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -303,6 +391,11 @@
           {"comment": "************************************"},
           {"comment": "Screenshots from table tx_styleguide_elements_basic"},
           {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -435,6 +528,11 @@
           {"comment": "************************************"},
           {"comment": "Screenshots from table tx_styleguide_elements_basic"},
           {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -572,12 +670,28 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
             "field": "columns/text_20",
             "targetFileName": "Text20"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_21",
+            "fileName": "Text21"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_21",
+            "targetFileName": "Text21"
           }
         ],
         "basic_translation": [
           {"comment": "************************************"},
           {"comment": "Screenshots from table tx_styleguide_elements_basic translation "},
           {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -607,6 +721,11 @@
           }
         ],
         "select": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -820,7 +939,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_8",
+            "field": "columns/select_single_13",
             "targetFileName": "SelectSingle13"
           },
           {
@@ -990,6 +1109,11 @@
           {"comment": "Screenshots from table tx_styleguide_elements_select translation "},
           {"comment": "************************************"},
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
@@ -1023,6 +1147,11 @@
           }
         ],
         "rte": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1076,6 +1205,11 @@
         ],
         "t3editor": [
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
@@ -1105,6 +1239,11 @@
           }
         ],
         "flex": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1165,6 +1304,11 @@
           }
         ],
         "slugs": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1244,6 +1388,11 @@
           }
         ],
         "elements_group": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1330,6 +1479,11 @@
         ],
         "inline_1n": [
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
@@ -1371,6 +1525,11 @@
           }
         ],
         "inline_1n1n": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1416,49 +1575,12 @@
             "targetFileName": "Inline1n1nInline1"
           }
         ],
-        "inline_fal": [
-          {
-            "action": "setCodeSnippetsSourcePath",
-            "path": "typo3conf/ext/styleguide"
-          },
-          {
-            "action": "setScreenshotsDefaultTable",
-            "table": "tx_styleguide_inline_fal"
-          },
-          {
-            "action": "setScreenshotsDefaultUid",
-            "uid": {
-              "action": "getUidByField",
-              "table": "tx_styleguide_inline_fal",
-              "field": "sys_language_uid",
-              "value": 0
-            }
-          },
-          {
-            "action": "goToField",
-            "fields": "inline_1"
-          },
-          {
-            "action": "click",
-            "link": ".form-irre-header-button"
-          },
-          {
-            "action": "wait",
-            "timeout": 0.1
-          },
-          {
-            "action": "makeScreenshotOfElement",
-            "selector": ".form-section",
-            "fileName": "InlineFalInline1"
-          },
-          {
-            "action": "createPhpArrayCodeSnippet",
-            "sourceFile": "Configuration/TCA/tx_styleguide_inline_fal.php",
-            "field": "columns/inline_1",
-            "targetFileName": "InlineFalInline1"
-          }
-        ],
         "inline_mm": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1477,6 +1599,12 @@
             }
           },
           {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineMmChildParents",
+            "captionText": "An inline field with MM relation defined in the opposite table"
+          },
+          {
             "action": "goToField",
             "fields": "inline_1"
           },
@@ -1493,7 +1621,33 @@
             "targetFileName": "InlineMmInline1"
           }
         ],
+        "inline_mm_child": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_mm_child"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_mm_child.php",
+            "field": "columns/parents",
+            "targetFileName": "InlineMmChildParents"
+          }
+        ],
         "inline_mn": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1537,6 +1691,11 @@
         ],
         "inline_mn_child": [
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
@@ -1578,6 +1737,11 @@
           }
         ],
         "inline_mnsymmetric_branches": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1621,6 +1785,11 @@
         ],
         "inline_mnsymmetric_input": [
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
@@ -1656,6 +1825,11 @@
           }
         ],
         "inline_usecombination": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1699,6 +1873,11 @@
         ],
         "type": [
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
@@ -1721,6 +1900,44 @@
             "fileName": "RecordType"
           },
           {
+            "action": "goToRecord"
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".t3js-module-body",
+            "fileName": "CtrlTypeWithChangedFields"
+          },
+          {
+            "action": "selectOption",
+            "select": "select[name=\"data[tx_styleguide_type][1][record_type]\"]",
+            "option": "0"
+          },
+          {"action": "waitForModalDialogInMainFrame"},
+          {
+            "action": "makeScreenshotOfElement",
+            "fileName": "CtrlTypeChangeModal"
+          },
+          {"action": "click", "link": "OK"},
+          {"action": "wait", "timeout": 0.3},
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".t3js-module-body",
+            "fileName": "CtrlType0"
+          },
+          {
+            "action": "selectOption",
+            "select": "select[name=\"data[tx_styleguide_type][1][record_type]\"]",
+            "option": "withColumnsOverrides"
+          },
+          {"action": "waitForModalDialogInMainFrame"},
+          {"action": "click", "link": "OK"},
+          {"action": "wait", "timeout": 1},
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".t3js-module-body",
+            "fileName": "CtrlTypeWithOverriddenColumns"
+          },
+          {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
             "field": "columns/record_type",
@@ -1737,9 +1954,20 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
             "field": "types",
             "targetFileName": "CtrlTypeTypes"
+          },
+
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "record_type",
+            "fileName": "RecordType"
           }
         ],
         "typeforeign": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1773,9 +2001,20 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_typeforeign.php",
             "field": "columns/foreign_table",
             "targetFileName": "TypeForeignForeignTable"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_typeforeign.php",
+            "field": "ctrl",
+            "targetFileName": "TypeForeignTableCtrl"
           }
         ],
         "ctrl_common": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
@@ -1844,6 +2083,11 @@
         ],
         "ctrl_minimal": [
           {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
             "action": "setScreenshotsDefaultTable",
             "table": "tx_styleguide_ctrl_minimal"
           },
@@ -1878,6 +2122,11 @@
           }
         ],
         "palettes": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
           {
             "action": "setScreenshotsDefaultTable",
             "table": "tx_styleguide_palette"
