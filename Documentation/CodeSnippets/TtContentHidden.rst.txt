@@ -1,0 +1,22 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'hidden' => [
+           'exclude' => true,
+           'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
+           'config' => [
+               'type' => 'check',
+               'renderType' => 'checkboxToggle',
+               'items' => [
+                   [
+                       0 => '',
+                       1 => '',
+                       'invertStateDisplay' => true,
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

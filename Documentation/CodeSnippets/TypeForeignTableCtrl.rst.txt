@@ -1,0 +1,25 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'ctrl' => [
+       'title' => 'Form engine - type from foreign table',
+       'label' => 'input_1',
+       'tstamp' => 'tstamp',
+       'crdate' => 'crdate',
+       'cruser_id' => 'cruser_id',
+       'delete' => 'deleted',
+       'sortby' => 'sorting',
+       'iconfile' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+       'versioningWS' => true,
+       'origUid' => 't3_origuid',
+       'languageField' => 'sys_language_uid',
+       'transOrigPointerField' => 'l10n_parent',
+       'transOrigDiffSourceField' => 'l10n_diffsource',
+       'translationSource' => 'l10n_source',
+       'enablecolumns' => [
+           'disabled' => 'hidden',
+       ],
+       'type' => 'foreign_table:record_type',
+   ]
+   

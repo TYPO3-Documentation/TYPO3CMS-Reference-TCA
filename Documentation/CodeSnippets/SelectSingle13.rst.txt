@@ -1,0 +1,27 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'select_single_13' => [
+           'exclude' => 1,
+           'label' => 'select_single_13 l10n_display=defaultAsReadonly',
+           'l10n_mode' => 'exclude',
+           'l10n_display' => 'defaultAsReadonly',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'items' => [
+                   [
+                       'foo',
+                       'foo',
+                   ],
+                   [
+                       'bar',
+                       'bar',
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

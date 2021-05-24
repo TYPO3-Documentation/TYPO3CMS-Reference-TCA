@@ -1,0 +1,20 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'types' => [
+       [
+           'showitem' => '
+                   --div--;palette,
+                       --palette--;;palette_1,
+                       --palette--;palette_2;palette_2,
+                       --palette--;palette_3;palette_3,
+                       --palette--;;palette_4,
+                       --palette--;palette_5;palette_5,
+                   --div--;hidden palette,
+                       --palette--;palette_6;palette_6,
+                       --palette--;palette_7 (palette_6 hidden);palette_7,
+               ',
+       ],
+   ]
+   
