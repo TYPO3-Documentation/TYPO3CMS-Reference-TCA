@@ -24,9 +24,9 @@ label
 A simple example
 ----------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/TxStyleguideCtrlMinimal.rst.txt
+.. include:: /Images/Rst/TxStyleguideCtrlMinimal.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TxStyleguideCtrlMinimal.rst.txt
+.. include:: /CodeSnippets/TxStyleguideCtrlMinimal.rst.txt
 
 
 .. _ctrl-reference-label-alt:

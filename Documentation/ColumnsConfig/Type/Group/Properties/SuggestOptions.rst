@@ -153,6 +153,6 @@ Examples
 Only show pages with doktype=1 in the suggest options
 =====================================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb10.rst.txt
+.. include:: /Images/Rst/GroupDb10.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb10.rst.txt
+.. include:: /CodeSnippets/GroupDb10.rst.txt

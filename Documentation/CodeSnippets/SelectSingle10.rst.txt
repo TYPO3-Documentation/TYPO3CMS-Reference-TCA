@@ -1,0 +1,34 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'select_single_10' => [
+           'exclude' => 1,
+           'label' => 'select_single_10 size=6, three options',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'items' => [
+                   [
+                       'foo 1',
+                       1,
+                   ],
+                   [
+                       'foo 2',
+                       2,
+                   ],
+                   [
+                       'a divider',
+                       '--div--',
+                   ],
+                   [
+                       'foo 3',
+                       3,
+                   ],
+               ],
+               'size' => 6,
+           ],
+       ],
+   ]
+   

@@ -1,4 +1,0 @@
-
-
-.. literalinclude:: /Includes/Snippets/Styleguide/Sources/FlexForms/Simple.xml
-   :language: xml

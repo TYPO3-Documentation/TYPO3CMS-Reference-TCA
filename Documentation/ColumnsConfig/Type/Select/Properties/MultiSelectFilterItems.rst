@@ -26,7 +26,7 @@ Examples
 Select by predefined keywords
 -----------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside5.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside5.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside5.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside5.rst.txt
 

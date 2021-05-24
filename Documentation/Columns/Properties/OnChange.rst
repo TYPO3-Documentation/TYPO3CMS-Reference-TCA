@@ -20,7 +20,7 @@ onChange
 
    On changing the field a modal gets displayed prompting to reload the record.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/CtrlTypeChangeModal.rst.txt
+   .. include:: /Images/Rst/CtrlTypeChangeModal.rst.txt
 
 Examples
 ========
@@ -28,5 +28,5 @@ Examples
 Select field triggering reload
 ------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectRequestupdate1.rst.txt
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectRequestupdate1.rst.txt
+.. include:: /Images/Rst/SelectRequestupdate1.rst.txt
+.. include:: /CodeSnippets/SelectRequestupdate1.rst.txt

@@ -51,9 +51,9 @@ Examples
 Simple items definition with label and value
 --------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle1.rst.txt
+.. include:: /Images/Rst/SelectSingle1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle1.rst.txt
+.. include:: /CodeSnippets/SelectSingle1.rst.txt
 
 
 .. _tca_example_select_single_4:
@@ -63,9 +63,9 @@ Items definition with label, value and icon
 
 A more complex example could be this (includes icons):
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle4.rst.txt
+.. include:: /Images/Rst/SelectSingle4.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle4.rst.txt
+.. include:: /CodeSnippets/SelectSingle4.rst.txt
 
 .. _tca_example_sys_language_uid:
 
@@ -75,9 +75,9 @@ A typical sys_language_uid field
 The icons can also be referenced by their identifier in the
 :ref:`Icon API<t3coreapi:icon>`
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SysLanguageUid.rst.txt
+.. include:: /Images/Rst/SysLanguageUid.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SysLanguageUid.rst.txt
+.. include:: /CodeSnippets/SysLanguageUid.rst.txt
 
 
 Select checkbox field with icons and descriptions
@@ -85,9 +85,9 @@ Select checkbox field with icons and descriptions
 
 Descriptions are only displayed in render type `selectCheckbox`.
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox3.rst.txt
+.. include:: /Images/Rst/SelectCheckbox3.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectCheckbox3.rst.txt
+.. include:: /CodeSnippets/SelectCheckbox3.rst.txt
 
 
 SelectSingle field with itemGroups
@@ -95,7 +95,7 @@ SelectSingle field with itemGroups
 
 A select single field of size 6 with 3 item groups and one item without group.
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle17.rst.txt
+.. include:: /Images/Rst/SelectSingle17.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle17.rst.txt
+.. include:: /CodeSnippets/SelectSingle17.rst.txt
 

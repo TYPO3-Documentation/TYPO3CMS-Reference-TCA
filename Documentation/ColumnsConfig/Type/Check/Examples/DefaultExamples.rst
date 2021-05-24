@@ -16,36 +16,31 @@ All examples listed here can be found in the :ref:`extension styleguide
 Example: Simple checkbox with label
 ===================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox2.rst.txt
+.. include:: /Images/Rst/Checkbox2.rst.txt
 
 TCA:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox2.rst.txt
+.. include:: /CodeSnippets/Checkbox2.rst.txt
 
 If the checkbox is checked, the value for the field will be 1,
 if unchecked, it will be 0.
 
 :ref:`FlexForm <t3coreapi:flexforms>`:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/FlexformCheckbox2.rst.txt
+.. include:: /CodeSnippets/Manual/FlexformCheckbox2.rst.txt
 
 .. _tca_example_checkbox_12:
 
 Example: Four checkboxes in three columns
 =========================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox12.rst.txt
+.. include:: /Images/Rst/Checkbox12.rst.txt
 
 TCA:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox12.rst.txt
-
+.. include:: /CodeSnippets/Checkbox12.rst.txt
 
 If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 | 4 | 8`).
-
-:ref:`FlexForm <t3coreapi:flexforms>`:
-
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/FlexformCheckbox12.rst.txt
 
 
 .. _tca_example_checkbox_16:
@@ -53,8 +48,8 @@ If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 |
 Example: Checkboxes with inline floating
 ========================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox16.rst.txt
+.. include:: /Images/Rst/Checkbox16.rst.txt
+.. include:: /CodeSnippets/Checkbox16.rst.txt
 
 This will display as many checkbox items as will fit in one row. Without inline,
 each checkbox would be displayed in a separate row.

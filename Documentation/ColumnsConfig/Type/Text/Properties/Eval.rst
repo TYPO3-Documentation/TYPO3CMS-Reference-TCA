@@ -41,9 +41,9 @@ Trimming input
 
 Trimming the value for white space before storing in the database:
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text7.rst.txt
+.. include:: /Images/Rst/Text7.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text7.rst.txt
+.. include:: /CodeSnippets/Text7.rst.txt
 
 
 .. _tca_example_text_9:
@@ -51,9 +51,9 @@ Trimming the value for white space before storing in the database:
 Custom form evaluation
 ----------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text9.rst.txt
+.. include:: /Images/Rst/Text9.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text9.rst.txt
+.. include:: /CodeSnippets/Text9.rst.txt
 
 You can supply own form evaluations in an extension by creating a class with two functions:
 :php:`deevaluateFieldValue()` called when opening the record and :php:`evaluateFieldValue()`
@@ -61,7 +61,7 @@ called for validation when saving the record:
 
 :file:`EXT:styleguide/Classes/UserFunctions/FormEngine/TypeText9Eval.php`
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/TypeText9Eval.rst.txt
+.. include:: /CodeSnippets/Manual/TypeText9Eval.rst.txt
 
 :file:`EXT:styleguide/ext_localconf.php`:
 

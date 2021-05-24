@@ -1,0 +1,49 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'select_multiplesidebyside_1' => [
+           'exclude' => 1,
+           'label' => 'select_multiplesidebyside_1 autoSizeMax=5, size=3 description',
+           'description' => 'field description',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectMultipleSideBySide',
+               'items' => [
+                   [
+                       'foo 1',
+                       1,
+                   ],
+                   [
+                       'foo 2',
+                       2,
+                   ],
+                   [
+                       'a divider',
+                       '--div--',
+                   ],
+                   [
+                       'foo 3',
+                       3,
+                   ],
+                   [
+                       'foo 4',
+                       4,
+                   ],
+                   [
+                       'foo 5',
+                       5,
+                   ],
+                   [
+                       'foo 6',
+                       6,
+                   ],
+               ],
+               'size' => 3,
+               'autoSizeMax' => 5,
+               'multiple' => true,
+           ],
+       ],
+   ]
+   

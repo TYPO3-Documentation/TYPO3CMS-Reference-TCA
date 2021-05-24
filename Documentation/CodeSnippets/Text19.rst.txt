@@ -1,0 +1,18 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'text_19' => [
+           'label' => 'text_19',
+           'description' => 'renderType=textTable readOnly',
+           'config' => [
+               'type' => 'text',
+               'renderType' => 'textTable',
+               'readOnly' => true,
+               'cols' => '40',
+               'rows' => '5',
+           ],
+       ],
+   ]
+   

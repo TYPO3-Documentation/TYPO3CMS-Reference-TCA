@@ -1,0 +1,18 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'text_11' => [
+           'exclude' => 1,
+           'label' => 'text_11',
+           'description' => 'max=30',
+           'config' => [
+               'type' => 'text',
+               'cols' => 30,
+               'rows' => 4,
+               'max' => 30,
+           ],
+       ],
+   ]
+   

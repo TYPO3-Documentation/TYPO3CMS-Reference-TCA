@@ -7,7 +7,7 @@
 The `none` field
 ================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/None1.rst.txt
+.. include:: /Images/Rst/None1.rst.txt
 
 There are three columns config types that do similar things but still have subtle differences between them.
 These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <columns-passthrough>` and the

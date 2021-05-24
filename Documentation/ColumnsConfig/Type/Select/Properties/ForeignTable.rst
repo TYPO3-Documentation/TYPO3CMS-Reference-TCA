@@ -25,9 +25,9 @@ Examples
 Select singe field with enabled selectIcons
 -------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle12.rst.txt
+.. include:: /Images/Rst/SelectSingle12.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle12.rst.txt
+.. include:: /CodeSnippets/SelectSingle12.rst.txt
 
 
 .. _tca_example_select_single_15:
@@ -35,6 +35,6 @@ Select singe field with enabled selectIcons
 Select field with foreign table via MM table
 --------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle15.rst.txt
+.. include:: /Images/Rst/SelectSingle15.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle15.rst.txt
+.. include:: /CodeSnippets/SelectSingle15.rst.txt

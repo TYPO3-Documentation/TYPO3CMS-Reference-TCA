@@ -1,0 +1,31 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'checkbox_3' => [
+           'exclude' => 1,
+           'label' => 'checkbox_3',
+           'description' => 'three checkboxes, two with labels, one without',
+           'config' => [
+               'type' => 'check',
+               'items' => [
+                   [
+                       'foo',
+                       '',
+                   ],
+                   [
+                       '',
+                       '',
+                   ],
+                   [
+                       0 => 'foobar',
+                       1 => '',
+                       'iconIdentifierChecked' => 'content-beside-text-img-below-center',
+                       'iconIdentifierUnchecked' => 'content-beside-text-img-below-center',
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

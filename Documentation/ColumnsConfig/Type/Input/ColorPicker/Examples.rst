@@ -10,6 +10,6 @@ Examples
 Color picker field
 ==================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Input34.rst.txt
+.. include:: /Images/Rst/Input34.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input34.rst.txt
+.. include:: /CodeSnippets/Input34.rst.txt

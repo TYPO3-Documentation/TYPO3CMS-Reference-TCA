@@ -1,3 +1,0 @@
-.. literalinclude:: /Includes/Snippets/Styleguide/Sources/UserFunctions/SlugPrefix.php
-   :language: php
-   :start-at: use

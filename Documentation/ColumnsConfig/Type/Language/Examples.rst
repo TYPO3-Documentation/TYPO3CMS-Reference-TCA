@@ -10,4 +10,4 @@ Examples
 Simple language field
 =====================
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/Language1.rst.txt
+.. include:: /CodeSnippets/SysLanguageUid.rst.txt

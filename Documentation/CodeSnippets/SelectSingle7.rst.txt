@@ -1,0 +1,29 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'select_single_7' => [
+           'exclude' => 1,
+           'label' => 'select_single_7 fileFolder, dummy first entry, selectIcons',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'items' => [
+                   [
+                       '',
+                       0,
+                   ],
+               ],
+               'fileFolder' => 'EXT:styleguide/Resources/Public/Icons',
+               'fileFolder_extList' => 'svg',
+               'fileFolder_recursions' => 1,
+               'fieldWizard' => [
+                   'selectIcons' => [
+                       'disabled' => false,
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

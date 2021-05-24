@@ -28,17 +28,17 @@ Examples
 Select field
 ------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
 
 
 Group field
 -----------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /Images/Rst/GroupDb1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /CodeSnippets/GroupDb1.rst.txt
 
 
 Select field with options
@@ -47,9 +47,9 @@ Select field with options
 The field controls are also used in the core. The following example is from
 the table :sql:`be_groups`:
 
-.. include:: /Includes/Images/Core/Core/RstIncludes/FileMountpoints.rst.txt
+.. include:: /Images/Rst/FileMountpoints.rst.txt
 
-.. include:: /Includes/Snippets/Core/Core/RstIncludes/FileMountpoints.rst.txt
+.. include:: /CodeSnippets/FileMountpoints.rst.txt
 
 Options
 =======

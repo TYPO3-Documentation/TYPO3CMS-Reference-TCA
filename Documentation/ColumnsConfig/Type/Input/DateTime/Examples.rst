@@ -9,6 +9,6 @@ Examples
 Date and time picker field
 ==========================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Inputdatetime3.rst.txt
+.. include:: /Images/Rst/Inputdatetime3.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Inputdatetime3.rst.txt
+.. include:: /CodeSnippets/Inputdatetime3.rst.txt

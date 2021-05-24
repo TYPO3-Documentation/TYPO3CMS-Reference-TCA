@@ -9,33 +9,33 @@ Examples
 Simple side-by-side select field
 ================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside1.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside1.rst.txt
 
 .. _tca_example_select_multiplesidebyside_5:
 
 Side-by-side view with filter
 =============================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside5.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside5.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside5.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside5.rst.txt
 
 .. _tca_example_select_multiplesidebyside_6:
 
 Side-by-side select with field controls
 =======================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside6.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
 
 .. _tca_example_select_multiplesidebyside_8:
 
 Using a MM table
 ================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside8.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside8.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside8.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside8.rst.txt

@@ -1,0 +1,24 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'text_21' => [
+           'label' => 'text_21',
+           'description' => 'renderType=textTable tableWizard numNewRows=3',
+           'config' => [
+               'type' => 'text',
+               'renderType' => 'textTable',
+               'cols' => 40,
+               'rows' => 5,
+               'fieldControl' => [
+                   'tableWizard' => [
+                       'options' => [
+                           'numNewRows' => 3,
+                       ],
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

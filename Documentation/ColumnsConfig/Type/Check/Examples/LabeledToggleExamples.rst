@@ -9,9 +9,9 @@ Examples
 Single checkbox with labeled toggle
 ===================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox19.rst.txt
+.. include:: /Images/Rst/Checkbox19.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox19.rst.txt
+.. include:: /CodeSnippets/Checkbox19.rst.txt
 
 
 
@@ -20,7 +20,7 @@ Single checkbox with labeled toggle
 Single checkbox with labeled toggle inverted state display
 ==========================================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox21.rst.txt
+.. include:: /Images/Rst/Checkbox21.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox21.rst.txt
+.. include:: /CodeSnippets/Checkbox21.rst.txt
 

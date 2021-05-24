@@ -1,0 +1,19 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'checkbox_7' => [
+           'exclude' => 1,
+           'label' => 'checkbox_7',
+           'description' => 'eval=maximumRecordsChecked, table wide',
+           'config' => [
+               'type' => 'check',
+               'eval' => 'maximumRecordsChecked',
+               'validation' => [
+                   'maximumRecordsChecked' => 1,
+               ],
+           ],
+       ],
+   ]
+   

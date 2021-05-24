@@ -1,0 +1,24 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'checkbox_19' => [
+           'exclude' => 1,
+           'label' => 'checkbox_19',
+           'description' => 'renderType=checkboxLabeledToggle single',
+           'config' => [
+               'type' => 'check',
+               'renderType' => 'checkboxLabeledToggle',
+               'items' => [
+                   [
+                       0 => 'foo',
+                       1 => '',
+                       'labelChecked' => 'Enabled',
+                       'labelUnchecked' => 'Disabled',
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

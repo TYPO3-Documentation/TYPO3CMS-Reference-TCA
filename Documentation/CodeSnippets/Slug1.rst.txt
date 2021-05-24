@@ -1,0 +1,32 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'slug_1' => [
+           'exclude' => 1,
+           'label' => 'slug_1',
+           'description' => 'field description',
+           'config' => [
+               'type' => 'slug',
+               'generatorOptions' => [
+                   'fields' => [
+                       'input_1',
+                       'input_2',
+                   ],
+                   'fieldSeparator' => '/',
+                   'prefixParentPageSlug' => true,
+                   'replacements' => [
+                       '/' => '',
+                   ],
+               ],
+               'appearance' => [
+                   'prefix' => 'TYPO3\\CMS\\Styleguide\\UserFunctions\\FormEngine\\SlugPrefix->getPrefix',
+               ],
+               'fallbackCharacter' => '-',
+               'eval' => 'uniqueInSite',
+               'default' => '',
+           ],
+       ],
+   ]
+   

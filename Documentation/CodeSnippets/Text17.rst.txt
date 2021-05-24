@@ -1,0 +1,17 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'text_17' => [
+           'label' => 'text_17',
+           'description' => 'renderType=textTable',
+           'config' => [
+               'type' => 'text',
+               'renderType' => 'textTable',
+               'cols' => '40',
+               'rows' => '5',
+           ],
+       ],
+   ]
+   

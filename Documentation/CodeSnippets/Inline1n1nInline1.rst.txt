@@ -1,0 +1,17 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'inline_1' => [
+           'exclude' => 1,
+           'label' => 'inline_1',
+           'config' => [
+               'type' => 'inline',
+               'foreign_table' => 'tx_styleguide_inline_1n1n_child',
+               'foreign_field' => 'parentid',
+               'foreign_table_field' => 'parenttable',
+           ],
+       ],
+   ]
+   

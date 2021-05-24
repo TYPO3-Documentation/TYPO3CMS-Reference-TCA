@@ -19,7 +19,7 @@ tableWizard
 
    Note the control button is only displayed after a new record has been saved the first time.
 
-   .. include:: /Includes/Images/Styleguide/RstIncludes/TableWizard.rst.txt
+   .. include:: /Images/Rst/Text21.rst.txt
 
    Available options:
 
@@ -38,4 +38,4 @@ Example
 
 Overriding defaults of a :code:`renderType='textTable'` element:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text21.rst.txt
+.. include:: /CodeSnippets/Text21.rst.txt

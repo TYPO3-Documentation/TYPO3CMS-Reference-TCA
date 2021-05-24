@@ -21,5 +21,5 @@ Examples
 Multiple checkboxes with a default value
 ----------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox16.rst.txt
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox16.rst.txt
+.. include:: /Images/Rst/Checkbox16.rst.txt
+.. include:: /CodeSnippets/Checkbox16.rst.txt

@@ -37,16 +37,16 @@ Examples
 An input field with placeholder that can be overridden
 -------------------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Input28.rst.txt
+.. include:: /Images/Rst/Input28.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input28.rst.txt
+.. include:: /CodeSnippets/Input28.rst.txt
 
 .. _tca_example_text_14:
 
 An text field with placeholder that can be overridden
 -----------------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Text14.rst.txt
+.. include:: /Images/Rst/Text14.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Text14.rst.txt
+.. include:: /CodeSnippets/Text14.rst.txt
 

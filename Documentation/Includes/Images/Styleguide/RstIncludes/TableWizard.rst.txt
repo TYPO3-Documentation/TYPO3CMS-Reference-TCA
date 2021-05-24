@@ -1,7 +1,0 @@
-.. Manual screenshot:
-
-.. figure:: /Includes/Images/Styleguide/ManualScreenshots/TableWizard.png
-   :alt: The table wizard
-   :class: with-shadow
-
-   The table wizard

@@ -1,0 +1,29 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'radio_1' => [
+           'exclude' => 1,
+           'label' => 'description',
+           'description' => 'radio_1 three options, one without label',
+           'config' => [
+               'type' => 'radio',
+               'items' => [
+                   [
+                       'foo',
+                       1,
+                   ],
+                   [
+                       '',
+                       2,
+                   ],
+                   [
+                       'foobar',
+                       3,
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

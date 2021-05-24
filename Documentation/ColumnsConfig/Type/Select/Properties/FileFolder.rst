@@ -61,6 +61,6 @@ Examples
 Select SVGs recursively from a folder
 =====================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle7.rst.txt
+.. include:: /Images/Rst/SelectSingle7.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle7.rst.txt
+.. include:: /CodeSnippets/SelectSingle7.rst.txt

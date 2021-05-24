@@ -1,0 +1,2185 @@
+{
+  "suites": {
+    "Introduction": {
+      "screenshots": {
+        "be_groups": [
+          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+          {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "be_groups"
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3/sysext/core"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "uid": 1,
+            "fields": "file_mountpoints",
+            "fileName": "FileMountpoints"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/be_groups.php",
+            "field": "columns/file_mountpoints",
+            "targetFileName": "FileMountpoints"
+          }
+        ],
+        "tt_content": [
+          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3/sysext/frontend"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tt_content"
+          },
+          {
+            "action": "makeScreenshotOfTable",
+            "fileName": "TtContent",
+            "pid": {
+              "action": "getUidByField",
+              "table": "pages",
+              "field": "title",
+              "value": "Customize"
+            },
+            "selector": ".recordlist",
+            "altText": "Control section of tt_content"
+          },
+
+          {
+            "action": "goToRecord",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tt_content",
+              "field": "header",
+              "value": "Playground"
+            }
+          },
+
+          {
+            "action": "click",
+            "link": ".form-select"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "fileName": "CtrlType",
+            "altText": "The type selector of a content elements"
+          },
+
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tt_content",
+              "field": "header",
+              "value": "Deliver business value"
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "hidden",
+            "fileName": "TtContentHidden"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tt_content.php",
+            "field": "columns/hidden",
+            "targetFileName": "TtContentHidden"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tt_content.php",
+            "field": "ctrl",
+            "targetFileName": "TtContentCtrl"
+          },
+          {
+            "action": "goToField",
+            "fields": "image"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "Image"
+          }
+        ]
+      }
+    },
+    "Styleguide": {
+      "screenshots": {
+        "options": [
+          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+          {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
+          {"action": "setScreenshotsImagePath", "path": "Images/AutomaticScreenshots"},
+          {"action": "createScreenshotsRstFile", "create": true}
+        ],
+        "inline_fal": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_fal"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_fal",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 2048
+          },
+          {
+            "action": "goToField",
+            "fields": "inline_1"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineFalInline1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_fal.php",
+            "field": "columns/inline_1",
+            "targetFileName": "InlineFalInline1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_fal.php",
+            "field": "columns/inline_flex_1",
+            "targetFileName": "InlineFalInline1Flexform"
+          }
+        ],
+        "input_basic": [
+          {"comment": "************************************"},
+          {"comment": "Screenshots from table tx_styleguide_elements_basic"},
+          {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_basic"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_basic",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "sys_language_uid",
+            "fileName": "SysLanguageUid"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/sys_language_uid",
+            "targetFileName": "SysLanguageUid"
+          },
+          {
+            "action": "goToField",
+            "fields": "input_1"
+          },
+          {
+            "action": "drawBox",
+            "selector": ".formengine-field-item-description"
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "fileName": "Label"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/input_1",
+            "targetFileName": "Input1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "input_28",
+            "fileName": "Input28"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/input_28",
+            "targetFileName": "Input28"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "input_29",
+            "fileName": "Input29"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/input_29",
+            "targetFileName": "Input29"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "input_30",
+            "fileName": "Input30"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/input_30",
+            "targetFileName": "Input30"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "input_33",
+            "fileName": "Input33"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/input_33",
+            "targetFileName": "Input33"
+          },
+          {
+            "action": "goToField",
+            "fields": "input_34"
+          },
+          {
+            "action": "click",
+            "link": "input"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "fileName": "Input34"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/input_34",
+            "targetFileName": "Input34"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "inputdatetime_3",
+            "fileName": "Inputdatetime3"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/inputdatetime_3",
+            "targetFileName": "Inputdatetime3"
+          }
+        ],
+        "none_basic": [
+          {"comment": "************************************"},
+          {"comment": "Screenshots from table tx_styleguide_elements_basic"},
+          {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_basic"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_basic",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "none_1",
+            "fileName": "None1"
+          }
+        ],
+        "radio_basic": [
+          {"comment": "************************************"},
+          {"comment": "Screenshots from table tx_styleguide_elements_basic"},
+          {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_basic"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_basic",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "radio_1",
+            "fileName": "Radio1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/radio_1",
+            "targetFileName": "Radio1"
+          }
+        ],
+        "checkbox_basic": [
+          {"comment": "************************************"},
+          {"comment": "Screenshots from table tx_styleguide_elements_basic"},
+          {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_basic"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_basic",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_2",
+            "fileName": "Checkbox2"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_2",
+            "targetFileName": "Checkbox2"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_3",
+            "fileName": "Checkbox3"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_3",
+            "targetFileName": "Checkbox3"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_7",
+            "fileName": "Checkbox7"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_7",
+            "targetFileName": "Checkbox7"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_8",
+            "fileName": "Checkbox8"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_8",
+            "targetFileName": "Checkbox8"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_12",
+            "fileName": "Checkbox12"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_12",
+            "targetFileName": "Checkbox12"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_16",
+            "fileName": "Checkbox16"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_16",
+            "targetFileName": "Checkbox16"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_17",
+            "fileName": "Checkbox17"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_17",
+            "targetFileName": "Checkbox17"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_18",
+            "fileName": "Checkbox18"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_18",
+            "targetFileName": "Checkbox18"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_19",
+            "fileName": "Checkbox19"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_19",
+            "targetFileName": "Checkbox19"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "checkbox_21",
+            "fileName": "Checkbox21"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/checkbox_21",
+            "targetFileName": "Checkbox21"
+          }
+        ],
+        "text_basic": [
+          {"comment": "************************************"},
+          {"comment": "Screenshots from table tx_styleguide_elements_basic"},
+          {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_basic"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_basic",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_4",
+            "fileName": "Text4"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_4",
+            "targetFileName": "Text4"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_5",
+            "fileName": "Text5"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_5",
+            "targetFileName": "Text5"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_6",
+            "fileName": "Text6"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_6",
+            "targetFileName": "Text6"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_7",
+            "fileName": "Text7"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_7",
+            "targetFileName": "Text7"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_9",
+            "fileName": "Text9"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_9",
+            "targetFileName": "Text9"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_11",
+            "fileName": "Text11"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_11",
+            "targetFileName": "Text11"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_14",
+            "fileName": "Text14"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_14",
+            "targetFileName": "Text14"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_15",
+            "fileName": "Text15"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_15",
+            "targetFileName": "Text15"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_17",
+            "fileName": "Text17"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_17",
+            "targetFileName": "Text17"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_19",
+            "fileName": "Text19"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_19",
+            "targetFileName": "Text19"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_20",
+            "fileName": "Text20"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_20",
+            "targetFileName": "Text20"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_21",
+            "fileName": "Text21"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
+            "field": "columns/text_21",
+            "targetFileName": "Text21"
+          }
+        ],
+        "basic_translation": [
+          {"comment": "************************************"},
+          {"comment": "Screenshots from table tx_styleguide_elements_basic translation "},
+          {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_basic"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_basic",
+              "field": "sys_language_uid",
+              "value": {
+                "action": "getUidByField",
+                "table": "sys_language",
+                "field": "title",
+                "value": "styleguide demo language german"
+              }
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "text_2",
+            "fileName": "TranslatedText2"
+          }
+        ],
+        "select": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_select"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_select",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_checkbox_1",
+            "fileName": "SelectCheckbox1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_checkbox_1",
+            "targetFileName": "SelectCheckbox1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_checkbox_2",
+            "fileName": "SelectCheckbox2"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_checkbox_2",
+            "targetFileName": "SelectCheckbox2"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_checkbox_3",
+            "fileName": "SelectCheckbox3"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_checkbox_3",
+            "targetFileName": "SelectCheckbox3"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_checkbox_5",
+            "fileName": "SelectCheckbox5"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_checkbox_5",
+            "targetFileName": "SelectCheckbox5"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_checkbox_7",
+            "fileName": "SelectCheckbox7"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_checkbox_7",
+            "targetFileName": "SelectCheckbox7"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_multiplesidebyside_1",
+            "fileName": "SelectMultiplesidebyside1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_multiplesidebyside_1",
+            "targetFileName": "SelectMultiplesidebyside1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_multiplesidebyside_2",
+            "fileName": "SelectMultiplesidebyside2"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_multiplesidebyside_2",
+            "targetFileName": "SelectMultiplesidebyside2"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_multiplesidebyside_5",
+            "fileName": "SelectMultiplesidebyside5"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_multiplesidebyside_5",
+            "targetFileName": "SelectMultiplesidebyside5"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_multiplesidebyside_6",
+            "fileName": "SelectMultiplesidebyside6"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_multiplesidebyside_6",
+            "targetFileName": "SelectMultiplesidebyside6"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_multiplesidebyside_8",
+            "fileName": "SelectMultiplesidebyside8"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_multiplesidebyside_8",
+            "targetFileName": "SelectMultiplesidebyside8"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_multiplesidebyside_10",
+            "fileName": "SelectMultiplesidebyside10"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_multiplesidebyside_10",
+            "targetFileName": "SelectMultiplesidebyside10"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_1",
+            "fileName": "SelectSingle1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_1",
+            "targetFileName": "SelectSingle1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_3",
+            "fileName": "SelectSingle3"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_3",
+            "targetFileName": "SelectSingle3"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_4",
+            "fileName": "SelectSingle4"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_4",
+            "targetFileName": "SelectSingle4"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_7",
+            "fileName": "SelectSingle7"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_7",
+            "targetFileName": "SelectSingle7"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_8",
+            "targetFileName": "SelectSingle8"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_10",
+            "fileName": "SelectSingle10"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_10",
+            "targetFileName": "SelectSingle10"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_12",
+            "fileName": "SelectSingle12"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_12",
+            "targetFileName": "SelectSingle12"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_13",
+            "targetFileName": "SelectSingle13"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_15",
+            "fileName": "SelectSingle15"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_15",
+            "targetFileName": "SelectSingle15"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_16",
+            "fileName": "SelectSingle16"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_16",
+            "targetFileName": "SelectSingle16"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_17",
+            "fileName": "SelectSingle17"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_17",
+            "targetFileName": "SelectSingle17"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_18",
+            "fileName": "SelectSingle18"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_18",
+            "targetFileName": "SelectSingle18"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_19",
+            "fileName": "SelectSingle19"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_19",
+            "targetFileName": "SelectSingle19"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_20",
+            "fileName": "SelectSingle20"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_single_20",
+            "targetFileName": "SelectSingle20"
+          },
+          {
+            "action": "createCodeSnippet",
+            "sourceFile": "Classes/UserFunctions/FormEngine/SelectItemSorter.php",
+            "targetFileName": "SelectItemSorter"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_singlebox_1",
+            "fileName": "SelectSinglebox1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_singlebox_1",
+            "targetFileName": "SelectSinglebox1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_singlebox_3",
+            "fileName": "SelectSinglebox3"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_singlebox_3",
+            "targetFileName": "SelectSinglebox3"
+          },
+          {
+            "action": "goToField",
+            "fields": "select_tree_1"
+          },
+          {
+            "action": "wait",
+            "timeout": 1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "SelectTree1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_tree_1",
+            "targetFileName": "SelectTree1"
+          },
+          {
+            "action": "goToField",
+            "fields": "select_tree_2"
+          },
+          {
+            "action": "wait",
+            "timeout": 1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "SelectTree2"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_tree_2",
+            "targetFileName": "SelectTree2"
+          },
+          {
+            "action": "goToField",
+            "fields": "select_tree_6"
+          },
+          {
+            "action": "wait",
+            "timeout": 1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "SelectTree6"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_tree_6",
+            "targetFileName": "SelectTree6"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_requestUpdate_1",
+            "fileName": "SelectRequestupdate1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
+            "field": "columns/select_requestUpdate_1",
+            "targetFileName": "SelectRequestupdate1"
+          }
+        ],
+        "select_translation": [
+          {"comment": "************************************"},
+          {"comment": "Screenshots from table tx_styleguide_elements_select translation "},
+          {"comment": "************************************"},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_select"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_select",
+              "field": "sys_language_uid",
+              "value": {
+                "action": "getUidByField",
+                "table": "sys_language",
+                "field": "title",
+                "value": "styleguide demo language german"
+              }
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_8",
+            "fileName": "TranslatedSelectSingle8"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "select_single_13",
+            "fileName": "TranslatedSelectSingle13"
+          }
+        ],
+        "rte": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_rte"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_rte",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "rte_1",
+            "fileName": "Rte1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
+            "field": "columns/rte_1",
+            "targetFileName": "Rte1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "rte_2",
+            "fileName": "Rte2"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
+            "field": "columns/rte_2",
+            "targetFileName": "Rte2"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "rte_4",
+            "fileName": "Rte4"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
+            "field": "columns/rte_3",
+            "targetFileName": "Rte4"
+          }
+        ],
+        "t3editor": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_t3editor"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_t3editor",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "t3editor_1",
+            "fileName": "T3editor1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_t3editor.php",
+            "field": "columns/t3editor_1",
+            "targetFileName": "T3editor1"
+          }
+        ],
+        "flex": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_flex"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_flex",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "flex_1",
+            "fileName": "Flex1",
+            "altText": "A field with a simple, one-field flex form"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_flex.php",
+            "field": "columns/flex_1",
+            "targetFileName": "Flex1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "flex_2",
+            "fileName": "Flex2",
+            "altText": "A flex form with two sheets and descriptions"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_flex.php",
+            "field": "columns/flex_2",
+            "targetFileName": "Flex2"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "flex_file_1",
+            "fileName": "FlexFile1",
+            "altText": "A field with a simple, one-field flex form"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_flex.php",
+            "field": "columns/flex_file_1",
+            "targetFileName": "FlexFile1"
+          },
+          {
+            "action": "createCodeSnippet",
+            "sourceFile": "Configuration/FlexForms/Simple.xml",
+            "targetFileName": "FlexFormFile1"
+          }
+        ],
+        "slugs": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_slugs"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_slugs",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "slug_1",
+            "fileName": "Slug1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
+            "field": "columns/slug_1",
+            "targetFileName": "Slug1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "slug_2",
+            "fileName": "Slug2"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
+            "field": "columns/slug_2",
+            "targetFileName": "Slug2"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "slug_3",
+            "fileName": "Slug3"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
+            "field": "columns/slug_3",
+            "targetFileName": "Slug3"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "slug_4",
+            "fileName": "Slug4"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
+            "field": "columns/slug_4",
+            "targetFileName": "Slug4"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "slug_5",
+            "fileName": "Slug5"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
+            "field": "columns/slug_5",
+            "targetFileName": "Slug5"
+          },
+          {
+            "action": "createCodeSnippet",
+            "sourceFile": "Classes/UserFunctions/FormEngine/SlugPrefix.php",
+            "targetFileName": "SlugPrefix"
+          }
+        ],
+        "elements_group": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_elements_group"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_elements_group",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "group_db_1",
+            "fileName": "GroupDb1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
+            "field": "columns/group_db_1",
+            "targetFileName": "GroupDb1"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "group_db_3",
+            "fileName": "GroupDb3"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
+            "field": "columns/group_db_3",
+            "targetFileName": "GroupDb3"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "group_db_8",
+            "fileName": "GroupDb8"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
+            "field": "columns/group_db_8",
+            "targetFileName": "GroupDb8"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "group_db_10",
+            "fileName": "GroupDb10"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
+            "field": "columns/group_db_10",
+            "targetFileName": "GroupDb10"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "group_db_11",
+            "fileName": "GroupDb11"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
+            "field": "columns/group_db_11",
+            "targetFileName": "GroupDb11"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "group_folder_1",
+            "fileName": "GroupFolder1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
+            "field": "columns/group_folder_1",
+            "targetFileName": "GroupFolder1"
+          }
+        ],
+        "inline_1n": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_1n"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_1n",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "goToField",
+            "fields": "inline_1"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "Inline1nInline1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_1n.php",
+            "field": "columns/inline_1",
+            "targetFileName": "Inline1nInline1"
+          }
+        ],
+        "inline_1n1n": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_1n1n"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_1n1n",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "goToField",
+            "fields": "inline_1"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-object .panel-collapse .form-irre-header-button"
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "Inline1n1nInline1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_1n1n.php",
+            "field": "columns/inline_1",
+            "targetFileName": "Inline1n1nInline1"
+          }
+        ],
+        "inline_mm": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_mm"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_mm",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineMmChildParents",
+            "captionText": "An inline field with MM relation defined in the opposite table"
+          },
+          {
+            "action": "goToField",
+            "fields": "inline_1"
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineMmInline1",
+            "altText": "An inline field with MM relation"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_mm.php",
+            "field": "columns/inline_1",
+            "targetFileName": "InlineMmInline1"
+          }
+        ],
+        "inline_mm_child": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_mm_child"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_mm_child.php",
+            "field": "columns/parents",
+            "targetFileName": "InlineMmChildParents"
+          }
+        ],
+        "inline_mn": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_mn"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_mn",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "goToField",
+            "fields": "inline_1"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineMnInline1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_mn.php",
+            "field": "columns/inline_1",
+            "targetFileName": "InlineMnInline1"
+          }
+        ],
+        "inline_mn_child": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_mn_child"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_mn_child",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "goToField",
+            "fields": "parents"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineMnChildParents"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_mn_child.php",
+            "field": "columns/parents",
+            "targetFileName": "InlineMnChildParents"
+          }
+        ],
+        "inline_mnsymmetric_branches": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_mnsymmetric"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_mnsymmetric",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "goToField",
+            "fields": "branches"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineMnSymetricBranches"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_mnsymmetric.php",
+            "field": "columns/branches",
+            "targetFileName": "InlineMnSymetricBranches"
+          }
+        ],
+        "inline_mnsymmetric_input": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_mnsymmetric"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_mnsymmetric",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "goToField",
+            "fields": "branches"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineMnSymetric11Branches"
+          }
+        ],
+        "inline_usecombination": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_inline_usecombination"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_inline_usecombination",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "goToField",
+            "fields": "inline_1"
+          },
+          {
+            "action": "click",
+            "link": ".form-irre-header-button"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".form-section",
+            "fileName": "InlineUsecombinationcInline1"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_inline_usecombination.php",
+            "field": "columns/inline_1",
+            "targetFileName": "InlineUsecombinationcInline1"
+          }
+        ],
+        "type": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_type"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_type",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "record_type",
+            "fileName": "RecordType"
+          },
+          {
+            "action": "goToRecord"
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".t3js-module-body",
+            "fileName": "CtrlTypeWithChangedFields"
+          },
+          {
+            "action": "selectOption",
+            "select": "select[name=\"data[tx_styleguide_type][1][record_type]\"]",
+            "option": "0"
+          },
+          {"action": "waitForModalDialogInMainFrame"},
+          {
+            "action": "makeScreenshotOfElement",
+            "fileName": "CtrlTypeChangeModal"
+          },
+          {"action": "click", "link": "OK"},
+          {"action": "wait", "timeout": 0.3},
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".t3js-module-body",
+            "fileName": "CtrlType0"
+          },
+          {
+            "action": "selectOption",
+            "select": "select[name=\"data[tx_styleguide_type][1][record_type]\"]",
+            "option": "withColumnsOverrides"
+          },
+          {"action": "waitForModalDialogInMainFrame"},
+          {"action": "click", "link": "OK"},
+          {"action": "wait", "timeout": 1},
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".t3js-module-body",
+            "fileName": "CtrlTypeWithOverriddenColumns"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
+            "field": "columns/record_type",
+            "targetFileName": "RecordType"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
+            "field": "ctrl",
+            "targetFileName": "CtrlTypeCtrl"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
+            "field": "types",
+            "targetFileName": "CtrlTypeTypes"
+          },
+
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "record_type",
+            "fileName": "RecordType"
+          }
+        ],
+        "typeforeign": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_typeforeign"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_typeforeign",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfRecord",
+            "fileName": "CtrlTypeForeign",
+            "selector": ".typo3-TCEforms",
+            "altText": "The type of the record is fetched from the record specified in field `foreign_table`"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "foreign_table",
+            "fileName": "TypeForeignForeignTable"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_typeforeign.php",
+            "field": "columns/foreign_table",
+            "targetFileName": "TypeForeignForeignTable"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_typeforeign.php",
+            "field": "ctrl",
+            "targetFileName": "TypeForeignTableCtrl"
+          }
+        ],
+        "ctrl_common": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_ctrl_common"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": 1
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "sys_language_uid",
+            "fileName": "SysLanguageUid",
+            "altText": "A typical sys_language_uid field"
+          },
+          {
+            "action": "makeScreenshotOfRecord",
+            "fileName": "CtrlDescriptionColumn",
+            "selector": "#EditDocumentController",
+            "altText": "Record information shown editing an example record"
+          },
+          {
+            "action": "goToRecord"
+          },
+          {
+            "action": "waitForText",
+            "text": "Access",
+            "timeout": 5
+          },
+          {
+            "action": "click",
+            "link": "Access"
+          },
+          {
+            "action": "wait",
+            "timeout": 0.1
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": "[role=\"tabpanel\"]",
+            "fileName": "CtrlEnableFields",
+            "altText": "Record information shown editing an example record"
+          },
+          {
+            "action": "makeScreenshotOfTable",
+            "fileName": "TxStyleguideCtrlCommon",
+            "pid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_ctrl_common",
+              "field": "uid",
+              "value": 1,
+              "uidField": "pid"
+            },
+            "selector": ".recordlist",
+            "altText": "A common example of the control section"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_common.php",
+            "field": "ctrl",
+            "targetFileName": "TxStyleguideCtrlCommon"
+          }
+        ],
+        "ctrl_minimal": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_ctrl_minimal"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": 1
+          },
+          {
+            "action": "makeScreenshotOfTable",
+            "fileName": "TxStyleguideCtrlMinimal",
+            "pid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_ctrl_minimal",
+              "field": "uid",
+              "value": 1,
+              "uidField": "pid"
+            },
+            "selector": ".recordlist",
+            "altText": "A minimal example of the control section"
+          },
+
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_minimal.php",
+            "field": "types",
+            "targetFileName": "TypeMinimal"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_minimal.php",
+            "targetFileName": "TxStyleguideCtrlMinimal"
+          }
+        ],
+        "palettes": [
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 1024
+          },
+          {
+            "action": "setScreenshotsDefaultTable",
+            "table": "tx_styleguide_palette"
+          },
+          {
+            "action": "setCodeSnippetsSourcePath",
+            "path": "typo3conf/ext/styleguide"
+          },
+          {
+            "action": "setScreenshotsDefaultUid",
+            "uid": {
+              "action": "getUidByField",
+              "table": "tx_styleguide_typeforeign",
+              "field": "sys_language_uid",
+              "value": 0
+            }
+          },
+          {
+            "action": "makeScreenshotOfRecord",
+            "fileName": "Palette",
+            "selector": ".typo3-TCEforms",
+            "altText": "Examples of different palettes in the extension styleguide"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
+            "field": "palettes",
+            "targetFileName": "Palettes"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
+            "field": "types",
+            "targetFileName": "PalettesTypes"
+          }
+        ]
+        }
+    }
+  }
+}

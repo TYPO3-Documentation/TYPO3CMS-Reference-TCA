@@ -1,7 +1,0 @@
-.. Automatic screenshot: Remove this line if you wand to manually change this file
-
-.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/Checkbox21.png
-   :alt: Screenshot of field tx_styleguide_elements_basic:checkbox_21
-   :class: with-shadow
-
-   :ref:`Screenshot of field tx_styleguide_elements_basic:checkbox_21 <tca_example_checkbox_21>`

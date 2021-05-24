@@ -1,0 +1,13 @@
+
+.. code-block:: xml
+   :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php
+
+   <rte_1>
+      <TCEforms>
+          <label>rte_1</label>
+          <config>
+              <type>text</type>
+              <enableRichtext>1</enableRichtext>
+          </config>
+      </TCEforms>
+   </rte_1>

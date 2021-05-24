@@ -36,9 +36,9 @@ Examples
 Group field with element browser enabled
 ----------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /Images/Rst/GroupDb1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb1.rst.txt
+.. include:: /CodeSnippets/GroupDb1.rst.txt
 
 
 Group field with element browser disabled
@@ -46,6 +46,6 @@ Group field with element browser disabled
 
 The element browser control can be disabled by setting :php:`disabled = true`:
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb3.rst.txt
+.. include:: /Images/Rst/GroupDb3.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb3.rst.txt
+.. include:: /CodeSnippets/GroupDb3.rst.txt

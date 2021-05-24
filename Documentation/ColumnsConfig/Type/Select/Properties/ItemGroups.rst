@@ -107,9 +107,9 @@ Examples
 SelectSingle field with itemGroups
 ----------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle16.rst.txt
+.. include:: /Images/Rst/SelectSingle16.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle16.rst.txt
+.. include:: /CodeSnippets/SelectSingle16.rst.txt
 
 
 .. _tca_example_select_single_17:
@@ -117,9 +117,9 @@ SelectSingle field with itemGroups
 SelectSingle field with itemGroups, size=6
 ------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSingle17.rst.txt
+.. include:: /Images/Rst/SelectSingle17.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSingle17.rst.txt
+.. include:: /CodeSnippets/SelectSingle17.rst.txt
 
 
 .. _tca_example_select_singlebox_3:
@@ -127,9 +127,9 @@ SelectSingle field with itemGroups, size=6
 SelectSingleBox field with itemGroups
 -------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
+.. include:: /Images/Rst/SelectSinglebox3.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectSinglebox3.rst.txt
+.. include:: /CodeSnippets/SelectSinglebox3.rst.txt
 
 
 .. _tca_example_select_checkbox_7:
@@ -137,9 +137,9 @@ SelectSingleBox field with itemGroups
 SelectCheckbox field with itemGroups
 ------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox7.rst.txt
+.. include:: /Images/Rst/SelectCheckbox7.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectCheckbox7.rst.txt
+.. include:: /CodeSnippets/SelectCheckbox7.rst.txt
 
 
 .. _tca_example_select_multiplesidebyside_10:
@@ -147,6 +147,6 @@ SelectCheckbox field with itemGroups
 Multiple side by side field with itemGroups
 -------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectMultiplesidebyside10.rst.txt
+.. include:: /Images/Rst/SelectMultiplesidebyside10.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectMultiplesidebyside10.rst.txt
+.. include:: /CodeSnippets/SelectMultiplesidebyside10.rst.txt

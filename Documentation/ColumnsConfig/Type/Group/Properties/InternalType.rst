@@ -36,15 +36,15 @@ Examples
 Internal type `db`- group relation to a single page
 ---------------------------------------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/GroupDb10.rst.txt
+.. include:: /Images/Rst/GroupDb10.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupDb10.rst.txt
+.. include:: /CodeSnippets/GroupDb10.rst.txt
 
 .. _tca_example_group_folder_1:
 
 Internal type `folder`
 ----------------------
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/GroupFolder1.rst.txt
+.. include:: /Images/Rst/GroupFolder1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/GroupFolder1.rst.txt
+.. include:: /CodeSnippets/GroupFolder1.rst.txt

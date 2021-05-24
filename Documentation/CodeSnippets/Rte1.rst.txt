@@ -1,0 +1,21 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'rte_1' => [
+           'exclude' => 1,
+           'label' => 'rte_1 description',
+           'description' => 'field description',
+           'config' => [
+               'type' => 'text',
+               'enableRichtext' => true,
+               'fieldControl' => [
+                   'fullScreenRichtext' => [
+                       'disabled' => false,
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

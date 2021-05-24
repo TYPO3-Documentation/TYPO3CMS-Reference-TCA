@@ -1,0 +1,21 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'select_single_12' => [
+           'exclude' => 1,
+           'label' => 'select_single_12 foreign_table selicon_field',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingle',
+               'foreign_table' => 'tx_styleguide_elements_select_single_12_foreign',
+               'fieldWizard' => [
+                   'selectIcons' => [
+                       'disabled' => false,
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

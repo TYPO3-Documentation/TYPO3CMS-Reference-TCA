@@ -9,6 +9,6 @@ Examples
 Link field
 ==========
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Input29.rst.txt
+.. include:: /Images/Rst/Input29.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Input29.rst.txt
+.. include:: /CodeSnippets/Input29.rst.txt

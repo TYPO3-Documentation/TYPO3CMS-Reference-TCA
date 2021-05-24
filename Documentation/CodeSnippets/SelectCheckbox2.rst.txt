@@ -1,0 +1,30 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'select_checkbox_2' => [
+           'exclude' => 1,
+           'label' => 'select_checkbox_2, maxitems=1',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectCheckBox',
+               'maxitems' => 1,
+               'items' => [
+                   [
+                       'foo 1',
+                       1,
+                   ],
+                   [
+                       'foo 2',
+                       2,
+                   ],
+                   [
+                       'foo 3',
+                       3,
+                   ],
+               ],
+           ],
+       ],
+   ]
+   

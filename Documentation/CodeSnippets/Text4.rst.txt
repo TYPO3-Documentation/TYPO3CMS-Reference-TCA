@@ -1,0 +1,17 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'text_4' => [
+           'exclude' => 1,
+           'label' => 'text_4',
+           'description' => 'cols=20, rows=2',
+           'config' => [
+               'type' => 'text',
+               'cols' => 20,
+               'rows' => 2,
+           ],
+       ],
+   ]
+   

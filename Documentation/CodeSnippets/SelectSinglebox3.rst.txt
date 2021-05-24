@@ -1,0 +1,45 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'select_singlebox_3' => [
+           'exclude' => 1,
+           'label' => 'select_singlebox_3',
+           'description' => 'itemGroups',
+           'config' => [
+               'type' => 'select',
+               'renderType' => 'selectSingleBox',
+               'items' => [
+                   [
+                       'item 1',
+                       1,
+                       '',
+                       'group1',
+                   ],
+                   [
+                       'item 2',
+                       2,
+                       '',
+                       'group1',
+                   ],
+                   [
+                       'item 3',
+                       3,
+                       '',
+                       'group3',
+                   ],
+                   [
+                       'item 4',
+                       3,
+                   ],
+               ],
+               'itemGroups' => [
+                   'group1' => 'Group 1 with items',
+                   'group2' => 'Group 2 with no items',
+                   'group3' => 'Group 3 with items',
+               ],
+           ],
+       ],
+   ]
+   

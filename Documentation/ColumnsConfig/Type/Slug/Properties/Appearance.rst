@@ -33,10 +33,10 @@ Example
 =======
 
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Slug1.rst.txt
+.. include:: /Images/Rst/Slug1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug1.rst.txt
+.. include:: /CodeSnippets/Slug1.rst.txt
 
 The user function can be implemented like this:
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Manual/SlugPrefix.rst.txt
+.. include:: /CodeSnippets/SlugPrefix.rst.txt

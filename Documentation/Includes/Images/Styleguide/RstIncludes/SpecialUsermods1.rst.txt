@@ -1,7 +1,0 @@
-.. Automatic screenshot: Remove this line if you wand to manually change this file
-
-.. figure:: /Includes/Images/Styleguide/AutomaticScreenshots/SpecialUsermods1.png
-   :alt: Screenshot of field tx_styleguide_elements_special:special_usermods_1
-   :class: with-shadow
-
-   :ref:`Screenshot of field tx_styleguide_elements_special:special_usermods_1 <tca_example_special_usermods_1>`

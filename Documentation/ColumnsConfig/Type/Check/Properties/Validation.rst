@@ -26,6 +26,6 @@ Only one record can be checked
 In the example below, only one record from the same table will be allowed to have that particular box checked.
 
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox8.rst.txt
+.. include:: /Images/Rst/Checkbox8.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox8.rst.txt
+.. include:: /CodeSnippets/Checkbox8.rst.txt

@@ -1,0 +1,17 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code:: php
+
+   'columns' => [
+      'text_2' => [
+         'l10n_mode' => 'prefixLangTitle',
+         'exclude' => 1,
+         'label' => 'text_2',
+         'description' => 'cols=20',
+         'config' => [
+            'type' => 'text',
+            'cols' => 20,
+         ],
+      ],
+   ]
+   

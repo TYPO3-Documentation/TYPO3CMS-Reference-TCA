@@ -10,9 +10,9 @@ Examples
 Slug field
 ==========
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Slug1.rst.txt
+.. include:: /Images/Rst/Slug1.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug1.rst.txt
+.. include:: /CodeSnippets/Slug1.rst.txt
 
 
 .. _tca_example_slug_2:
@@ -21,7 +21,7 @@ Slug field
 Another slug field
 ===================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Slug2.rst.txt
+.. include:: /Images/Rst/Slug2.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Slug2.rst.txt
+.. include:: /CodeSnippets/Slug2.rst.txt
 

@@ -29,5 +29,5 @@ eval
 Examples
 ========
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/Checkbox7.rst.txt
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/Checkbox7.rst.txt
+.. include:: /Images/Rst/Checkbox7.rst.txt
+.. include:: /CodeSnippets/Checkbox7.rst.txt

@@ -22,6 +22,6 @@ appearance - selectCheckBox
 Select checkbox, all divs expanded
 ==================================
 
-.. include:: /Includes/Images/Styleguide/RstIncludes/SelectCheckbox5.rst.txt
+.. include:: /Images/Rst/SelectCheckbox5.rst.txt
 
-.. include:: /Includes/Snippets/Styleguide/RstIncludes/SelectCheckbox5.rst.txt
+.. include:: /CodeSnippets/SelectCheckbox5.rst.txt

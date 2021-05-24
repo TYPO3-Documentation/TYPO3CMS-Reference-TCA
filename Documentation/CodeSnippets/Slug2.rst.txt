@@ -1,0 +1,25 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. code-block:: php
+
+   'columns' => [
+       'slug_2' => [
+           'exclude' => 1,
+           'label' => 'slug_2',
+           'config' => [
+               'type' => 'slug',
+               'size' => 50,
+               'generatorOptions' => [
+                   'fields' => [
+                       'input_1',
+                   ],
+                   'fieldSeparator' => '/',
+                   'prefixParentPageSlug' => true,
+               ],
+               'fallbackCharacter' => '-',
+               'eval' => 'uniqueInSite',
+               'default' => '',
+           ],
+       ],
+   ]
+   
