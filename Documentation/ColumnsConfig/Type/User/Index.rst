@@ -162,7 +162,7 @@ implementing a rendering. See :ref:`FormEngine docs
 
 
    The array :php:`$this->data` consists of the following parts:
-   
+
    * The row of the currently edited record in
      :php:`$this->data['databaseRow']`
    * The configuration from the TCA in
@@ -183,8 +183,7 @@ implementing a rendering. See :ref:`FormEngine docs
 
 The field would then look like this in the backend:
 
-.. figure:: Images/ExtendingTcaFeUsers.png
-   :alt: New fields for fe\_users table
+.. include:: /Images/ManualScreenshots/ExtendingTcaFeUsers.rst.txt
 
 This example is also described in TYPO3 Explained,
 :ref:`Extending TCA example <t3core:extending-examples-feusers>`.

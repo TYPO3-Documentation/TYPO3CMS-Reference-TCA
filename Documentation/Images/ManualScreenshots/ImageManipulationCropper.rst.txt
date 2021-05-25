@@ -1,0 +1,6 @@
+
+.. figure:: /Images/ManualScreenshots/ImageManipulationCropper.png
+    :alt: Image manipulation cropper modal
+    :class: with-shadow
+
+    Image manipulation cropper modal

@@ -22,8 +22,4 @@ defaultLanguageDifferences
    This wizard is important for editors who maintain translated records: They can see what has been
    changed in their localization parent between the last save operation of the overlay.
 
-   .. figure:: Images/DefaultLanguageDifferences.png
-      :alt: A field has been changed in default language record
-      :class: with-shadow
-
-      A field has been changed in default language record
+   .. include:: /Images/ManualScreenshots/DefaultLanguageDifferences.rst.txt

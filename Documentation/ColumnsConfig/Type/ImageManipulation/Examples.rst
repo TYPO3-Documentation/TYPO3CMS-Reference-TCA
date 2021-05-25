@@ -5,17 +5,9 @@
 Examples
 ========
 
-.. figure:: Images/Button.png
-    :alt: Image manipulation button in FAL
-    :class: with-shadow
+.. include:: /Images/ManualScreenshots/ImageManipulationButton.rst.txt
 
-    Image manipulation button in FAL
-
-.. figure:: Images/Cropper.png
-    :alt: Image manipulation cropper modal
-    :class: with-shadow
-
-    Image manipulation cropper modal
+.. include:: /Images/ManualScreenshots/ImageManipulationButton.rst.txt
 
 .. code-block:: php
 

@@ -2179,7 +2179,19 @@
             "targetFileName": "PalettesTypes"
           }
         ]
+      },
+      "sys_file_reference": [
+        {
+          "action": "setCodeSnippetsSourcePath",
+          "path": "typo3/sysext/core"
+        },
+        {
+          "action": "createPhpArrayCodeSnippet",
+          "sourceFile": "/Configuration/TCA/sys_file_reference.php",
+          "field": "crop",
+          "targetFileName": "ImageManipulationCrop"
         }
+      ]
     }
   }
 }
