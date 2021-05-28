@@ -11,29 +11,29 @@ items
    :Scope: Display  / Proc.
    :RenderType: all
 
-   Contains the elements for the selector box unless the property "foreign\_table" or "special" has been set
+   Contains the elements for the selector box unless the property :php:`foreign_table` or :php:`special` has been set
    in which case automated values are set in addition to any values listed in this array.
 
    Each element in this array is in itself an array where:
 
-   #1 First value is the **item label** (string or LLL reference)
+   #. First value is the **item label** (string or LLL reference).
 
-   #2 Second value is the **value of the item**
+   #. Second value is the **value of the item**.
 
       *  The special value `--div--` was used to insert a non-selectable
          value that appears as a divider label in the selector box. It is kept
          for backwards-compatible reasons. Use :ref:`item groups
          <columns-select-properties-item-groups>` for custom selects instead.
 
-      *  Values must not contain "," (comma) and "\|" (vertical bar). If you want to use "authMode" you should
-         also refrain from using ":" (colon).
+      *  Values must not contain `,` (comma) and `|` (vertical bar). If you want to use :php:`authMode`, you should
+         also refrain from using `:` (colon).
 
-   #3 Third value is an optional icon. For custom icons use a path prepended with "EXT:" to refer to an image
+   #. Third value is an optional icon. For custom icons use a path prepended with `EXT:` to refer to an image
       file found inside an extension or use an registered icon identifier.
 
-   #4 Fourth value is the key of the :ref:`item group <columns-select-properties-item-groups>`.
+   #. Fourth value is the key of the :ref:`item group <columns-select-properties-item-groups>`.
 
-   #5 Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
+   #. Fifth value is reserved as keyword :php:`EXPL_ALLOW` or :php:`EXPL_DENY`. See
       property :ref:`authMode / individual <columns-select-properties-authmode>` for more details.
 
 .. note::
