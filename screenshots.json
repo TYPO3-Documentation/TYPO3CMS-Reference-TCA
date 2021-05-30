@@ -200,6 +200,20 @@
             "targetFileName": "InlineFalInline1Flexform"
           }
         ],
+        "overview": [
+          {"action": "resizeWindow", "width": 1220,"height": 440},
+          {"action": "see", "text": "List"},
+          {"action": "click", "link": "List"},
+          {"action": "openPageTreePath", "path": ["styleguide TCA demo", "elements basic"]},
+          {"action": "switchToContentFrame"},
+          {"action": "waitForText", "text": "elements basic", "timeout": 5},
+          {
+            "action": "click",
+            "link": "#recordlist-tx_styleguide_elements_basic a[data-bs-original-title=\"Edit record\"]"
+          },
+          {"action": "waitForText", "text": "Edit Form engine elements", "timeout": 5},
+          {"action": "makeScreenshotOfWindow", "fileName": "StyleguideViewExample"}
+        ],
         "input_basic": [
           {"comment": "************************************"},
           {"comment": "Screenshots from table tx_styleguide_elements_basic"},

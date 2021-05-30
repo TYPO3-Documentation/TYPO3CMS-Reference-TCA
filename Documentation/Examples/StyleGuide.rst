@@ -44,7 +44,7 @@ How to use the `styleguide` extension
    between languages.
 
 
-   .. include:: /Images/ManualScreenshots/StyleguideViewExample.rst.txt
+   .. include:: /Images/Rst/StyleguideViewExample.rst.txt
 
 
    .. hint::
