@@ -1,6 +1,0 @@
-
-.. figure:: /Images/ManualScreenshots/ImageManipulationButton.png
-    :alt: Image manipulation button in FAL
-    :class: with-shadow
-
-    Image manipulation button in FAL

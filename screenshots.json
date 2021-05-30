@@ -2,6 +2,26 @@
   "suites": {
     "Introduction": {
       "screenshots": {
+        "actionsIdentifierImageManipulation": [
+          {"action": "resizeWindow", "width": 1024,"height": 768},
+          {"action": "see", "text": "Page"},
+          {"action": "click", "link": "Page"},
+          {"action": "openPageTreePath", "path": ["Congratulations"]},
+          {"action": "switchToContentFrame"},
+          {"action": "waitForText", "text": "Congratulations", "timeout": 5},
+          {"action": "click", "link": "div#element-tt_content-210 a[href*=edit]"},
+          {"action": "waitForText", "text": "Edit Page Content \"Deliver business value\" on page \"Congratulations\"", "timeout": 5},
+          {"action": "click", "link": "Images"},
+          {"action": "click", "link": "//div[@id=\"data-1-tt_content-210-image_records\"]/div[1]//button[contains(@class, \"form-irre-header-button\")]"},
+          {"action": "wait", "timeout": 0.5},
+          {"action": "resizeToFullPage"},
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": "//div[@id=\"data-1-tt_content-210-image_records\"]/div[1]//div[contains(@class, \"form-group\")][contains(., \"Image manipulation\")]",
+            "fileName": "ImageManipulationButton"
+          },
+          {"action": "resizeWindow", "width": 1024,"height": 768}
+        ],
         "be_groups": [
           {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
           {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
@@ -199,6 +219,33 @@
             "field": "columns/inline_flex_1",
             "targetFileName": "InlineFalInline1Flexform"
           }
+        ],
+        "overview": [
+          {"action": "amOnPage", "page":  "/typo3/main"},
+          {"action": "resizeWindow", "width": 1220,"height": 440},
+          {"action": "see", "text": "List"},
+          {"action": "click", "link": "List"},
+          {"action": "openPageTreePath", "path": ["styleguide TCA demo", "elements basic"]},
+          {"action": "switchToContentFrame"},
+          {"action": "waitForText", "text": "elements basic", "timeout": 5},
+          {
+            "action": "click",
+            "link": "#recordlist-tx_styleguide_elements_basic a[data-bs-original-title=\"Edit record\"]"
+          },
+          {"action": "waitForText", "text": "Edit Form engine elements", "timeout": 5},
+          {"action": "makeScreenshotOfWindow", "fileName": "StyleguideViewExample"},
+          {"action": "switchToMainFrame"},
+          {"action": "click", "link": "#typo3-cms-backend-backend-toolbaritems-helptoolbaritem a"},
+          {"action": "waitForText", "text": "Help", "timeout": 5},
+          {"action": "see", "text": "Styleguide"},
+          {"action": "click", "link": "Styleguide"},
+          {"action": "switchToContentFrame"},
+          {"action": "waitForText", "text": "TYPO3 CMS Backend Styleguide", "timeout": 5},
+          {"action": "click", "link": "TCA / Records"},
+          {"action": "waitForText", "text": "TCA test records", "timeout": 5},
+          {"action": "switchToMainFrame"},
+          {"action": "click", "link": "#typo3-cms-backend-backend-toolbaritems-helptoolbaritem a"},
+          {"action": "makeScreenshotOfWindow", "fileName": "StyleguideCreateTCA"}
         ],
         "input_basic": [
           {"comment": "************************************"},
