@@ -5,9 +5,7 @@
 Examples
 ========
 
-.. include:: /Images/ManualScreenshots/ImageManipulationButton.rst.txt
-
-.. include:: /Images/ManualScreenshots/ImageManipulationButton.rst.txt
+.. include:: /Images/Rst/ImageManipulationButton.rst.txt
 
 .. code-block:: php
 
