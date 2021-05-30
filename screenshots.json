@@ -221,7 +221,7 @@
           }
         ],
         "overview": [
-          {"action":  "amOnPage", "page":  "/typo3/main"},
+          {"action": "amOnPage", "page":  "/typo3/main"},
           {"action": "resizeWindow", "width": 1220,"height": 440},
           {"action": "see", "text": "List"},
           {"action": "click", "link": "List"},
@@ -233,7 +233,19 @@
             "link": "#recordlist-tx_styleguide_elements_basic a[data-bs-original-title=\"Edit record\"]"
           },
           {"action": "waitForText", "text": "Edit Form engine elements", "timeout": 5},
-          {"action": "makeScreenshotOfWindow", "fileName": "StyleguideViewExample"}
+          {"action": "makeScreenshotOfWindow", "fileName": "StyleguideViewExample"},
+          {"action": "switchToMainFrame"},
+          {"action": "click", "link": "#typo3-cms-backend-backend-toolbaritems-helptoolbaritem a"},
+          {"action": "waitForText", "text": "Help", "timeout": 5},
+          {"action": "see", "text": "Styleguide"},
+          {"action": "click", "link": "Styleguide"},
+          {"action": "switchToContentFrame"},
+          {"action": "waitForText", "text": "TYPO3 CMS Backend Styleguide", "timeout": 5},
+          {"action": "click", "link": "TCA / Records"},
+          {"action": "waitForText", "text": "TCA test records", "timeout": 5},
+          {"action": "switchToMainFrame"},
+          {"action": "click", "link": "#typo3-cms-backend-backend-toolbaritems-helptoolbaritem a"},
+          {"action": "makeScreenshotOfWindow", "fileName": "StyleguideCreateTCA"}
         ],
         "input_basic": [
           {"comment": "************************************"},

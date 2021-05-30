@@ -32,7 +32,7 @@ How to use the `styleguide` extension
    you can delete the example page tree by clicking the other button
    :guilabel:`Delete styleguide page tree and all styleguide data records`
 
-   .. include:: /Images/ManualScreenshots/StyleguideCreateTCA.rst.txt
+   .. include:: /Images/Rst/StyleguideCreateTCA.rst.txt
 
 
 3. Have a look at the examples
