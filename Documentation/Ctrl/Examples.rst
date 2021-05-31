@@ -38,8 +38,6 @@ Core table tt_content
 
 Table :code:`tt_content` makes much more excessive use of the :code:`['ctrl']` section:
 
-.. code-block:: php
-
 .. include:: /CodeSnippets/TtContentCtrl.rst.txt
 
 A few remarks:
