@@ -1,5 +1,0 @@
-
-.. figure:: /Images/ManualScreenshots/PluginFlexFormConfigurationCheck.png
-   :class: with-shadow
-
-   Checking the TCA configuration for the newly added Flexform

@@ -183,7 +183,7 @@ implementing a rendering. See :ref:`FormEngine docs
 
 The field would then look like this in the backend:
 
-.. include:: /Images/ManualScreenshots/ExtendingTcaFeUsers.rst.txt
+.. include:: /Images/Rst/ExtendingTcaFeUsers.rst.txt
 
 This example is also described in TYPO3 Explained,
 :ref:`Extending TCA example <t3core:extending-examples-feusers>`.
