@@ -1,6 +1,0 @@
-
-.. figure:: /Images/ManualScreenshots/ExtendingTcaFeUsers.png
-   :alt: New fields for fe\_users table
-   :class: with-shadow
-
-   New fields for fe\_users table

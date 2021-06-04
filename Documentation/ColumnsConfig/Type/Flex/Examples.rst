@@ -58,7 +58,7 @@ If we browse the definition for the "pi\_flexform" field in "tt\_content" below
 "$GLOBALS['TCA'] (Table configuration array)",
 we can see the following:
 
-.. include:: /Images/ManualScreenshots/PluginFlexFormConfigurationCheck.rst.txt
+.. include:: /Images/Rst/PluginFlexFormConfigurationCheck.rst.txt
 
 As you can see there are quite a few extensions that have added pointers to
 their Data Structures. Towards the bottom we can find the one we have just been

@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/ExtendingTcaFeUsers.png
+   :alt: New fields for fe\_users table
+   :class: with-shadow
+
+   New fields for fe\_users table

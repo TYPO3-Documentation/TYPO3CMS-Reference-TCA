@@ -1,5 +1,53 @@
 {
   "suites": {
+    "Examples": {
+      "screenshots": [
+        [
+          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
+          {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
+          {"action": "setScreenshotsImagePath", "path": "Images/AutomaticScreenshots"},
+          {"action": "createScreenshotsRstFile", "create": true},
+          {
+            "action": "resizeWindow",
+            "width": 640,
+            "height": 640
+          },
+
+          {
+            "action": "goToRecord",
+            "table": "tt_content",
+            "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "Advanced FlexForm in plugin"}
+          },
+
+          {
+            "action": "click",
+            "link": "Plugin"
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".module-body",
+            "fileName": "PluginFlexFormConfigurationCheck",
+            "captionText": "Checking the TCA configuration for the newly added Flexform"
+          },
+          {
+            "action": "goToRecord",
+            "table": "fe_users",
+            "uid": {"action": "getUidByField", "table": "fe_users", "field": "username", "value": "example_user"}
+          },
+          {
+            "action": "click",
+            "link": "Extended"
+          },
+          {
+            "action": "makeScreenshotOfElement",
+            "selector": ".module-body",
+            "fileName": "ExtendingTcaFeUsers",
+            "altText": "New fields for fe\\_users table",
+            "captionText": "New fields for fe\\_users table"
+          }
+        ]
+      ]
+    },
     "Introduction": {
       "screenshots": {
         "actionsIdentifierImageManipulation": [
