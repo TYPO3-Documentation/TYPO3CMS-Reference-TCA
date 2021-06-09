@@ -15,11 +15,11 @@ authMode
 
    explicitAllow
       All static values from the "items" array of the selector box will be added to a matrix in the backend user
-      configuration where a value must be explicitlyselected if a user (other than admin) is allowed to use it!)
+      configuration where a value must be explicitly selected if a user (other than admin) is allowed to use it!)
 
    explicitDeny
       All static values from the "items" array of the selector box will be added to a matrix in the backend user
-      configuration where a value must be explicitlyselected if a user should be denied access.
+      configuration where a value must be explicitly selected if a user should be denied access.
 
    individual
       State is individually set for each item in the selector box. This is done by the keywords
