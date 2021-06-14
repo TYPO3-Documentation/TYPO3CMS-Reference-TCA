@@ -18,7 +18,7 @@ array is a layer on top of the database tables that TYPO3 can operate on. It is 
 very central element of the TYPO3 architecture.
 
 Almost all code examples used in this manual come either from the TYPO3
-source code itself, from the extension  `example <https://github.com/TYPO3-Documentation/TYPO3CMS-Code-Examples>`__,
+source code itself, from the extension  `examples <https://github.com/TYPO3-Documentation/t3docs-examples>`__,
 or from extension `styleguide <https://github.com/TYPO3/styleguide>`__. Extension `styleguide` comes with
 a huge list of TCA examples and field combinations. Installing it locally in some test environment is a good
 idea since the extension is great as a "show-off" on what can be done with TCA. Even experienced developers
