@@ -84,7 +84,7 @@
             "height": 640
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "be_groups"
           },
           {
@@ -100,7 +100,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/be_groups.php",
-            "field": "columns/file_mountpoints",
+            "fields": ["columns/file_mountpoints"],
             "targetFileName": "FileMountpoints"
           }
         ],
@@ -116,7 +116,7 @@
             "path": "typo3/sysext/frontend"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tt_content"
           },
           {
@@ -157,7 +157,7 @@
           },
 
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tt_content",
@@ -173,13 +173,13 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tt_content.php",
-            "field": "columns/hidden",
+            "fields": ["columns/hidden"],
             "targetFileName": "TtContentHidden"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tt_content.php",
-            "field": "ctrl",
+            "fields": ["ctrl"],
             "targetFileName": "TtContentCtrl"
           },
           {
@@ -221,11 +221,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_fal"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_fal",
@@ -258,13 +258,13 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_fal.php",
-            "field": "columns/inline_1",
+            "fields": ["columns/inline_1"],
             "targetFileName": "InlineFalInline1"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_fal.php",
-            "field": "columns/inline_flex_1",
+            "fields": ["columns/inline_flex_1"],
             "targetFileName": "InlineFalInline1Flexform"
           }
         ],
@@ -309,11 +309,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_basic",
@@ -329,7 +329,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/sys_language_uid",
+            "fields": ["columns/sys_language_uid"],
             "targetFileName": "SysLanguageUid"
           },
           {
@@ -347,7 +347,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/input_1",
+            "fields": ["columns/input_1"],
             "targetFileName": "Input1"
           },
           {
@@ -358,7 +358,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/input_28",
+            "fields": ["columns/input_28"],
             "targetFileName": "Input28"
           },
           {
@@ -369,7 +369,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/input_29",
+            "fields": ["columns/input_29"],
             "targetFileName": "Input29"
           },
           {
@@ -380,7 +380,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/input_30",
+            "fields": ["columns/input_30"],
             "targetFileName": "Input30"
           },
           {
@@ -391,7 +391,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/input_33",
+            "fields": ["columns/input_33"],
             "targetFileName": "Input33"
           },
           {
@@ -413,7 +413,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/input_34",
+            "fields": ["columns/input_34"],
             "targetFileName": "Input34"
           },
           {
@@ -424,7 +424,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/inputdatetime_3",
+            "fields": ["columns/inputdatetime_3"],
             "targetFileName": "Inputdatetime3"
           }
         ],
@@ -442,11 +442,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_basic",
@@ -474,11 +474,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_basic",
@@ -494,7 +494,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/radio_1",
+            "fields": ["columns/radio_1"],
             "targetFileName": "Radio1"
           }
         ],
@@ -512,11 +512,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_basic",
@@ -532,7 +532,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_2",
+            "fields": ["columns/checkbox_2"],
             "targetFileName": "Checkbox2"
           },
           {
@@ -543,7 +543,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_3",
+            "fields": ["columns/checkbox_3"],
             "targetFileName": "Checkbox3"
           },
           {
@@ -554,7 +554,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_7",
+            "fields": ["columns/checkbox_7"],
             "targetFileName": "Checkbox7"
           },
           {
@@ -565,7 +565,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_8",
+            "fields": ["columns/checkbox_8"],
             "targetFileName": "Checkbox8"
           },
           {
@@ -576,7 +576,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_12",
+            "fields": ["columns/checkbox_12"],
             "targetFileName": "Checkbox12"
           },
           {
@@ -587,7 +587,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_16",
+            "fields": ["columns/checkbox_16"],
             "targetFileName": "Checkbox16"
           },
           {
@@ -598,7 +598,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_17",
+            "fields": ["columns/checkbox_17"],
             "targetFileName": "Checkbox17"
           },
           {
@@ -609,7 +609,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_18",
+            "fields": ["columns/checkbox_18"],
             "targetFileName": "Checkbox18"
           },
           {
@@ -620,7 +620,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_19",
+            "fields": ["columns/checkbox_19"],
             "targetFileName": "Checkbox19"
           },
           {
@@ -631,7 +631,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/checkbox_21",
+            "fields": ["columns/checkbox_21"],
             "targetFileName": "Checkbox21"
           }
         ],
@@ -649,11 +649,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_basic",
@@ -669,7 +669,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_4",
+            "fields": ["columns/text_4"],
             "targetFileName": "Text4"
           },
           {
@@ -680,7 +680,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_5",
+            "fields": ["columns/text_5"],
             "targetFileName": "Text5"
           },
           {
@@ -691,7 +691,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_6",
+            "fields": ["columns/text_6"],
             "targetFileName": "Text6"
           },
           {
@@ -702,7 +702,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_7",
+            "fields": ["columns/text_7"],
             "targetFileName": "Text7"
           },
           {
@@ -713,7 +713,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_9",
+            "fields": ["columns/text_9"],
             "targetFileName": "Text9"
           },
           {
@@ -724,7 +724,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_11",
+            "fields": ["columns/text_11"],
             "targetFileName": "Text11"
           },
           {
@@ -735,7 +735,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_14",
+            "fields": ["columns/text_14"],
             "targetFileName": "Text14"
           },
           {
@@ -746,7 +746,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_15",
+            "fields": ["columns/text_15"],
             "targetFileName": "Text15"
           },
           {
@@ -757,7 +757,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_17",
+            "fields": ["columns/text_17"],
             "targetFileName": "Text17"
           },
           {
@@ -768,7 +768,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_19",
+            "fields": ["columns/text_19"],
             "targetFileName": "Text19"
           },
           {
@@ -779,7 +779,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_20",
+            "fields": ["columns/text_20"],
             "targetFileName": "Text20"
           },
           {
@@ -790,7 +790,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "field": "columns/text_21",
+            "fields": ["columns/text_21"],
             "targetFileName": "Text21"
           }
         ],
@@ -808,11 +808,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_basic",
@@ -842,11 +842,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_select"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_select",
@@ -862,7 +862,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_checkbox_1",
+            "fields": ["columns/select_checkbox_1"],
             "targetFileName": "SelectCheckbox1"
           },
           {
@@ -873,7 +873,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_checkbox_2",
+            "fields": ["columns/select_checkbox_2"],
             "targetFileName": "SelectCheckbox2"
           },
           {
@@ -884,7 +884,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_checkbox_3",
+            "fields": ["columns/select_checkbox_3"],
             "targetFileName": "SelectCheckbox3"
           },
           {
@@ -895,7 +895,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_checkbox_5",
+            "fields": ["columns/select_checkbox_5"],
             "targetFileName": "SelectCheckbox5"
           },
           {
@@ -906,7 +906,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_checkbox_7",
+            "fields": ["columns/select_checkbox_7"],
             "targetFileName": "SelectCheckbox7"
           },
           {
@@ -917,7 +917,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_multiplesidebyside_1",
+            "fields": ["columns/select_multiplesidebyside_1"],
             "targetFileName": "SelectMultiplesidebyside1"
           },
           {
@@ -928,7 +928,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_multiplesidebyside_2",
+            "fields": ["columns/select_multiplesidebyside_2"],
             "targetFileName": "SelectMultiplesidebyside2"
           },
           {
@@ -939,7 +939,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_multiplesidebyside_5",
+            "fields": ["columns/select_multiplesidebyside_5"],
             "targetFileName": "SelectMultiplesidebyside5"
           },
           {
@@ -950,7 +950,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_multiplesidebyside_6",
+            "fields": ["columns/select_multiplesidebyside_6"],
             "targetFileName": "SelectMultiplesidebyside6"
           },
           {
@@ -961,7 +961,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_multiplesidebyside_8",
+            "fields": ["columns/select_multiplesidebyside_8"],
             "targetFileName": "SelectMultiplesidebyside8"
           },
           {
@@ -972,7 +972,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_multiplesidebyside_10",
+            "fields": ["columns/select_multiplesidebyside_10"],
             "targetFileName": "SelectMultiplesidebyside10"
           },
           {
@@ -983,7 +983,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_1",
+            "fields": ["columns/select_single_1"],
             "targetFileName": "SelectSingle1"
           },
           {
@@ -994,7 +994,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_3",
+            "fields": ["columns/select_single_3"],
             "targetFileName": "SelectSingle3"
           },
           {
@@ -1005,7 +1005,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_4",
+            "fields": ["columns/select_single_4"],
             "targetFileName": "SelectSingle4"
           },
           {
@@ -1016,13 +1016,13 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_7",
+            "fields": ["columns/select_single_7"],
             "targetFileName": "SelectSingle7"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_8",
+            "fields": ["columns/select_single_8"],
             "targetFileName": "SelectSingle8"
           },
           {
@@ -1033,7 +1033,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_10",
+            "fields": ["columns/select_single_10"],
             "targetFileName": "SelectSingle10"
           },
           {
@@ -1044,13 +1044,13 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_12",
+            "fields": ["columns/select_single_12"],
             "targetFileName": "SelectSingle12"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_13",
+            "fields": ["columns/select_single_13"],
             "targetFileName": "SelectSingle13"
           },
           {
@@ -1061,7 +1061,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_15",
+            "fields": ["columns/select_single_15"],
             "targetFileName": "SelectSingle15"
           },
           {
@@ -1072,7 +1072,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_16",
+            "fields": ["columns/select_single_16"],
             "targetFileName": "SelectSingle16"
           },
           {
@@ -1083,7 +1083,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_17",
+            "fields": ["columns/select_single_17"],
             "targetFileName": "SelectSingle17"
           },
           {
@@ -1094,7 +1094,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_18",
+            "fields": ["columns/select_single_18"],
             "targetFileName": "SelectSingle18"
           },
           {
@@ -1105,7 +1105,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_19",
+            "fields": ["columns/select_single_19"],
             "targetFileName": "SelectSingle19"
           },
           {
@@ -1116,7 +1116,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_single_20",
+            "fields": ["columns/select_single_20"],
             "targetFileName": "SelectSingle20"
           },
           {
@@ -1132,7 +1132,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_singlebox_1",
+            "fields": ["columns/select_singlebox_1"],
             "targetFileName": "SelectSinglebox1"
           },
           {
@@ -1143,7 +1143,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_singlebox_3",
+            "fields": ["columns/select_singlebox_3"],
             "targetFileName": "SelectSinglebox3"
           },
           {
@@ -1162,7 +1162,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_tree_1",
+            "fields": ["columns/select_tree_1"],
             "targetFileName": "SelectTree1"
           },
           {
@@ -1181,7 +1181,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_tree_2",
+            "fields": ["columns/select_tree_2"],
             "targetFileName": "SelectTree2"
           },
           {
@@ -1200,7 +1200,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_tree_6",
+            "fields": ["columns/select_tree_6"],
             "targetFileName": "SelectTree6"
           },
           {
@@ -1211,7 +1211,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
-            "field": "columns/select_requestUpdate_1",
+            "fields": ["columns/select_requestUpdate_1"],
             "targetFileName": "SelectRequestupdate1"
           }
         ],
@@ -1229,11 +1229,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_select"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_select",
@@ -1268,11 +1268,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_rte"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_rte",
@@ -1288,7 +1288,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
-            "field": "columns/rte_1",
+            "fields": ["columns/rte_1"],
             "targetFileName": "Rte1"
           },
           {
@@ -1299,7 +1299,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
-            "field": "columns/rte_2",
+            "fields": ["columns/rte_2"],
             "targetFileName": "Rte2"
           },
           {
@@ -1310,7 +1310,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
-            "field": "columns/rte_3",
+            "fields": ["columns/rte_3"],
             "targetFileName": "Rte4"
           }
         ],
@@ -1325,11 +1325,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_t3editor"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_t3editor",
@@ -1345,7 +1345,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_t3editor.php",
-            "field": "columns/t3editor_1",
+            "fields": ["columns/t3editor_1"],
             "targetFileName": "T3editor1"
           }
         ],
@@ -1360,11 +1360,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_flex"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_flex",
@@ -1381,7 +1381,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_flex.php",
-            "field": "columns/flex_1",
+            "fields": ["columns/flex_1"],
             "targetFileName": "Flex1"
           },
           {
@@ -1393,7 +1393,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_flex.php",
-            "field": "columns/flex_2",
+            "fields": ["columns/flex_2"],
             "targetFileName": "Flex2"
           },
           {
@@ -1405,7 +1405,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_flex.php",
-            "field": "columns/flex_file_1",
+            "fields": ["columns/flex_file_1"],
             "targetFileName": "FlexFile1"
           },
           {
@@ -1425,11 +1425,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_slugs"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_slugs",
@@ -1445,7 +1445,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
-            "field": "columns/slug_1",
+            "fields": ["columns/slug_1"],
             "targetFileName": "Slug1"
           },
           {
@@ -1456,7 +1456,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
-            "field": "columns/slug_2",
+            "fields": ["columns/slug_2"],
             "targetFileName": "Slug2"
           },
           {
@@ -1467,7 +1467,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
-            "field": "columns/slug_3",
+            "fields": ["columns/slug_3"],
             "targetFileName": "Slug3"
           },
           {
@@ -1478,7 +1478,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
-            "field": "columns/slug_4",
+            "fields": ["columns/slug_4"],
             "targetFileName": "Slug4"
           },
           {
@@ -1489,7 +1489,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_slugs.php",
-            "field": "columns/slug_5",
+            "fields": ["columns/slug_5"],
             "targetFileName": "Slug5"
           },
           {
@@ -1509,11 +1509,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_group"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_elements_group",
@@ -1529,7 +1529,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
-            "field": "columns/group_db_1",
+            "fields": ["columns/group_db_1"],
             "targetFileName": "GroupDb1"
           },
           {
@@ -1540,7 +1540,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
-            "field": "columns/group_db_3",
+            "fields": ["columns/group_db_3"],
             "targetFileName": "GroupDb3"
           },
           {
@@ -1551,7 +1551,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
-            "field": "columns/group_db_8",
+            "fields": ["columns/group_db_8"],
             "targetFileName": "GroupDb8"
           },
           {
@@ -1562,7 +1562,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
-            "field": "columns/group_db_10",
+            "fields": ["columns/group_db_10"],
             "targetFileName": "GroupDb10"
           },
           {
@@ -1573,7 +1573,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
-            "field": "columns/group_db_11",
+            "fields": ["columns/group_db_11"],
             "targetFileName": "GroupDb11"
           },
           {
@@ -1584,7 +1584,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
-            "field": "columns/group_folder_1",
+            "fields": ["columns/group_folder_1"],
             "targetFileName": "GroupFolder1"
           }
         ],
@@ -1599,11 +1599,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_1n"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_1n",
@@ -1631,7 +1631,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_1n.php",
-            "field": "columns/inline_1",
+            "fields": ["columns/inline_1"],
             "targetFileName": "Inline1nInline1"
           }
         ],
@@ -1646,11 +1646,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_1n1n"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_1n1n",
@@ -1682,7 +1682,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_1n1n.php",
-            "field": "columns/inline_1",
+            "fields": ["columns/inline_1"],
             "targetFileName": "Inline1n1nInline1"
           }
         ],
@@ -1697,11 +1697,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mm"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_mm",
@@ -1728,7 +1728,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mm.php",
-            "field": "columns/inline_1",
+            "fields": ["columns/inline_1"],
             "targetFileName": "InlineMmInline1"
           }
         ],
@@ -1743,13 +1743,13 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mm_child"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mm_child.php",
-            "field": "columns/parents",
+            "fields": ["columns/parents"],
             "targetFileName": "InlineMmChildParents"
           }
         ],
@@ -1764,11 +1764,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mn"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_mn",
@@ -1796,7 +1796,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mn.php",
-            "field": "columns/inline_1",
+            "fields": ["columns/inline_1"],
             "targetFileName": "InlineMnInline1"
           }
         ],
@@ -1811,11 +1811,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mn_child"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_mn_child",
@@ -1843,7 +1843,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mn_child.php",
-            "field": "columns/parents",
+            "fields": ["columns/parents"],
             "targetFileName": "InlineMnChildParents"
           }
         ],
@@ -1858,11 +1858,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mnsymmetric"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_mnsymmetric",
@@ -1890,7 +1890,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mnsymmetric.php",
-            "field": "columns/branches",
+            "fields": ["columns/branches"],
             "targetFileName": "InlineMnSymetricBranches"
           }
         ],
@@ -1905,11 +1905,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mnsymmetric"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_mnsymmetric",
@@ -1946,11 +1946,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_usecombination"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_inline_usecombination",
@@ -1978,7 +1978,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_usecombination.php",
-            "field": "columns/inline_1",
+            "fields": ["columns/inline_1"],
             "targetFileName": "InlineUsecombinationcInline1"
           }
         ],
@@ -1993,11 +1993,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_type"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_type",
@@ -2051,19 +2051,19 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
-            "field": "columns/record_type",
+            "fields": ["columns/record_type"],
             "targetFileName": "RecordType"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
-            "field": "ctrl",
+            "fields": ["ctrl"],
             "targetFileName": "CtrlTypeCtrl"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_type.php",
-            "field": "types",
+            "fields": ["types"],
             "targetFileName": "CtrlTypeTypes"
           },
 
@@ -2084,11 +2084,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_typeforeign"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_typeforeign",
@@ -2110,13 +2110,13 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_typeforeign.php",
-            "field": "columns/foreign_table",
+            "fields": ["columns/foreign_table"],
             "targetFileName": "TypeForeignForeignTable"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_typeforeign.php",
-            "field": "ctrl",
+            "fields": ["ctrl"],
             "targetFileName": "TypeForeignTableCtrl"
           }
         ],
@@ -2131,11 +2131,11 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_ctrl_common"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": 1
           },
           {
@@ -2188,7 +2188,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_common.php",
-            "field": "ctrl",
+            "fields": ["ctrl"],
             "targetFileName": "TxStyleguideCtrlCommon"
           }
         ],
@@ -2199,11 +2199,11 @@
             "height": 640
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_ctrl_minimal"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": 1
           },
           {
@@ -2223,7 +2223,7 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_minimal.php",
-            "field": "types",
+            "fields": ["types"],
             "targetFileName": "TypeMinimal"
           },
           {
@@ -2239,7 +2239,7 @@
             "height": 1024
           },
           {
-            "action": "setScreenshotsDefaultTable",
+            "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_palette"
           },
           {
@@ -2247,7 +2247,7 @@
             "path": "typo3conf/ext/styleguide"
           },
           {
-            "action": "setScreenshotsDefaultUid",
+            "action": "setNavigationDefaultUid",
             "uid": {
               "action": "getUidByField",
               "table": "tx_styleguide_typeforeign",
@@ -2264,13 +2264,13 @@
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
-            "field": "palettes",
+            "fields": ["palettes"],
             "targetFileName": "Palettes"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
-            "field": "types",
+            "fields": ["types"],
             "targetFileName": "PalettesTypes"
           }
         ]
@@ -2283,7 +2283,7 @@
         {
           "action": "createPhpArrayCodeSnippet",
           "sourceFile": "/Configuration/TCA/sys_file_reference.php",
-          "field": "crop",
+          "fields": ["crop"],
           "targetFileName": "ImageManipulationCrop"
         }
       ]
