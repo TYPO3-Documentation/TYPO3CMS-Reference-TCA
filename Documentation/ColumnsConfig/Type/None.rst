@@ -92,8 +92,8 @@ fieldInformation
 
 .. _columns-none-properties-format:
 
-none
-----
+format
+------
 
 .. include:: ../Properties/NoneFormat.rst.txt
 
