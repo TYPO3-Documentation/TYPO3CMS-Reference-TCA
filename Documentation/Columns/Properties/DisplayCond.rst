@@ -141,7 +141,7 @@ headline "Example" defined::
             'FIELD:header:=:Example'
          ]
       ]
-   ];
+   ],
 
 
 A complex example in a flexform
