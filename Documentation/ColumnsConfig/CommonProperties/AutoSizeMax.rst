@@ -27,10 +27,10 @@ autoSizeMax
       For fields of type `select` this option is only available with renderType
       :ref:`selectSingleBox <columns-select-rendertype-selectSingleBox>` or
       :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`. When using `selectSingleBox`
-      the number of **selectable** items is taken into account rather then the number of selected items.
+      the number of **selectable** items is taken into account rather than the number of selected items.
 
    .. note::
 
       For fields of type `inline` this option is only useful in combination with
-      :ref:`foreign\_selector <columns-inline-properties-foreign-selector>`. The field, `foreign_selector` is pointing
+      :ref:`foreign\_selector <columns-inline-properties-foreign-selector>`. Also the field, `foreign_selector` is pointing
       to, has to be of type `select`.
