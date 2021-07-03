@@ -1,5 +1,6 @@
 .. include:: /Includes.rst.txt
 .. _tca_property_autoSizeMax:
+.. _columns-inline-properties-autosizemax:
 
 ===========
 autoSizeMax
@@ -9,8 +10,27 @@ autoSizeMax
 
    :type: integer
    :Scope: Display
-   :Types: :ref:`group <columns-group>`
+   :Types: :ref:`select <columns-select>`, :ref:`group <columns-group>`, :ref:`inline <columns-inline>`
 
-   If set, then the height of element listing selector box will automatically be adjusted to the number of selected
-   elements, however never less than "size" and never larger than the integer value of "autoSizeMax" itself
-   (takes precedence over "size"). So "autoSizeMax" is the maximum height the selector can ever reach.
+   The maximum size (height) of the select field.
+
+   The size of the select field will be automatically adjusted to the number of selected items, however never less
+   than the specified :ref:`size <tca_property_size>` and never larger than the value of `autoSizeMax`
+   itself.
+
+   .. note::
+
+      Only has an effect if :ref:`maxitems <tca_property_maxitems>` is greater than 1.
+
+   .. note::
+
+      For fields of type `select` this option is only available with renderType
+      :ref:`selectSingleBox <columns-select-rendertype-selectSingleBox>` or
+      :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`. When using `selectSingleBox`
+      the number of **selectable** items is taken into account rather then the number of selected items.
+
+   .. note::
+
+      For fields of type `inline` this option is only useful in combination with
+      :ref:`foreign\_selector <columns-inline-properties-foreign-selector>`. The field, `foreign_selector` is pointing
+      to, has to be of type `select`.
