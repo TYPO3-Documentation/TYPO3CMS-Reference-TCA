@@ -121,7 +121,7 @@ displayCond
              'FIELD:header:=:Example'
           ]
        ]
-    ];
+    ],
 
    Using :code:`OR` and :code:`AND` within FlexForms works like this:
 
