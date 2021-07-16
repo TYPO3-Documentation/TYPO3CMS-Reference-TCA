@@ -13,4 +13,5 @@ localizeReferencesAtParentLocalization
 
    Defines whether referenced records should be localized when the current
    record gets localized. This does only apply if references are **not** stored using
-   `MM` tables.
+   `MM` tables. In addition, when using the type `group`, :ref:`foreign_table <columns-group-properties-foreign-table>`
+   has to reference the same table as in :ref:`allowed <columns-group-properties-allowed>`.
