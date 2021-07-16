@@ -10,4 +10,5 @@ Properties
 
    IsHiddenPalette
    Label
+   Description
    Showitem

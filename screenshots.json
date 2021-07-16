@@ -2259,13 +2259,25 @@
             "action": "makeScreenshotOfRecord",
             "fileName": "Palette",
             "selector": ".typo3-TCEforms",
-            "altText": "Examples of different palettes in the extension styleguide"
+            "captionText": "Examples of different palettes in the extension styleguide"
+          },
+          {
+            "action": "makeScreenshotOfRecord",
+            "fileName": "PaletteDescription",
+            "selector": "//*[contains(@class, 'form-section') and contains(., 'palette_1')]",
+            "captionText": "A palette with a description"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
             "fields": ["palettes"],
             "targetFileName": "Palettes"
+          },
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
+            "fields": ["palettes/palette_1"],
+            "targetFileName": "PaletteDescription"
           },
           {
             "action": "createPhpArrayCodeSnippet",
