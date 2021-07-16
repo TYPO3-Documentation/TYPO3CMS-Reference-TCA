@@ -9,8 +9,8 @@ localizeReferencesAtParentLocalization
 
    :type: boolean
    :Scope: Proc.
-   :Types: :ref:`group <columns-group>`
+   :Types: :ref:`group <columns-group>`, :ref:`select <columns-select>`
 
    Defines whether referenced records should be localized when the current
-   record gets localized. This does only apply if references are stored using
+   record gets localized. This does only apply if references are **not** stored using
    `MM` tables.
