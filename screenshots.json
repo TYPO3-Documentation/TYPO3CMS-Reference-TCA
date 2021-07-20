@@ -68,6 +68,7 @@
             "selector": "//div[@id=\"data-1-tt_content-210-image_records\"]/div[1]//div[contains(@class, \"form-group\")][contains(., \"Image manipulation\")]",
             "fileName": "ImageManipulationButton"
           },
+          {"action": "click", "link": "//div[@id=\"data-1-tt_content-210-image_records\"]/div[1]//button[contains(@class, \"form-irre-header-button\")]"},
           {"action": "resizeWindow", "width": 1024,"height": 768}
         ],
         "be_groups": [
@@ -188,16 +189,17 @@
           },
           {
             "action": "click",
-            "link": ".form-irre-header-button"
+            "link": ".panel-heading button.form-irre-header-button"
           },
-          {
-            "action": "wait",
-            "timeout": 0.1
-          },
+          {"action": "waitForText", "text": "Alternative Text"},
           {
             "action": "makeScreenshotOfElement",
             "selector": ".form-section",
             "fileName": "Image"
+          },
+          {
+            "action": "click",
+            "link": ".panel-heading button.form-irre-header-button"
           }
         ]
       }
