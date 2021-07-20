@@ -1,7 +1,6 @@
 .. Automatic screenshot: Remove this line if you want to manually change this file
 
 .. figure:: /Images/AutomaticScreenshots/InlineMmChildParents.png
-   :alt: 
    :class: with-shadow
 
    An inline field with MM relation defined in the opposite table
