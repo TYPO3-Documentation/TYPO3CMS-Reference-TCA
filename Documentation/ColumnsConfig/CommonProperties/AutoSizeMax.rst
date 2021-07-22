@@ -30,6 +30,6 @@ autoSizeMax
 
    .. note::
 
-      For fields of type `inline` this option is only useful in combination with
-      :ref:`foreign\_selector <columns-inline-properties-foreign-selector>`. Also the field, `foreign_selector` is pointing
-      to, has to be of type `select`.
+      For fields of type `inline` this option is only useful in combination with the
+      :ref:`foreign\_selector <columns-inline-properties-foreign-selector>`. The field that `foreign_selector` is pointing
+      to has to be of type `select`.
