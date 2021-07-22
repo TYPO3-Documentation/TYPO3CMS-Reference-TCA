@@ -14,9 +14,8 @@ autoSizeMax
 
    The maximum size (height) of the select field.
 
-   The size of the select field will be automatically adjusted to the number of selected items, however never less
-   than the specified :ref:`size <tca_property_size>` and never larger than the value of `autoSizeMax`
-   itself.
+   The size of the select field will be automatically adjusted based on the number of selected items. The select field
+   will never be smaller than the specified :ref:`size <tca_property_size>` and never larger than the value of `autoSizeMax`.
 
    .. note::
 
