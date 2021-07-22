@@ -17,7 +17,6 @@ Special properties
    :titlesonly:
 
    Appearance
-   AutoSizeMax
    BehaviourDisableMovingChildrenWithParent
    BehaviourEnableCascadingDelete
    CustomControls
@@ -42,6 +41,7 @@ Special properties
 Common properties
 =================
 
+*  :ref:`autoSizeMax <tca_property_autoSizeMax>`
 *  :ref:`behaviour > allowLanguageSynchronization <tca_property_behaviour_allowLanguageSynchronization>`
 *  :ref:`maxitems <tca_property_maxitems>`
 *  :ref:`minitems <tca_property_minitems>`
