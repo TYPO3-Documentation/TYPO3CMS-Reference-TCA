@@ -27,7 +27,8 @@ items
          also refrain from using `:` (colon).
 
    #. Third value is an optional icon. For custom icons use a path prepended with `EXT:` to refer to an image
-      file found inside an extension or use an registered icon identifier.
+      file found inside an extension or use an registered icon identifier. If configured on the :php:`foreign_table`,
+      :ref:`selicon-field` is respected.
    #. Fourth value is the key of the :ref:`item group <columns-select-properties-item-groups>`.
    #. Fifth value is reserved as keyword :php:`EXPL_ALLOW` or :php:`EXPL_DENY`. See
       property :ref:`authMode / individual <columns-select-properties-authmode>` for more details.
