@@ -1,11 +1,15 @@
 .. include:: /Includes.rst.txt
 .. _columns-select-properties-filefolder:
+.. _columns-select-properties-fileFolderConfig:
 
-==========
-fileFolder
-==========
+================
+fileFolderConfig
+================
 
-.. confval:: fileFolder
+
+.. _columns-select-properties-fileFolderConfig.folder:
+
+.. confval:: fileFolderConfig.folder
 
    :type: string
    :Scope: Display  / Proc.
@@ -23,34 +27,46 @@ fileFolder
    :ref:`fileFolder_extList <columns-select-properties-filefolder-extlist>`
    are selected.
 
-   Only the file reference relative to the "fileFolder" is stored.
+   Only the file reference relative to the "fileFolderConfig.folder" is stored.
 
    If the files are images (gif,png,jpg) they will be configured as icons
    (third parameter in items array).
 
+   This configuration can be overridden by :ref:`Page
+   TSconfig<t3tsconfig:fileFolderConfig>`.
+
 
 .. _columns-select-properties-filefolder-extlist:
+.. _columns-select-properties-fileFolderConfig-allowedExtensions:
 
-.. confval:: fileFolder_extList
+.. confval:: fileFolderConfig.allowedExtensions
 
    :type: string
    :Scope: Display  / Proc.
    :RenderType: all
 
-   List of extensions to select. If blank, all files are selected.
+   List of file extensions to select. If blank, all files are selected.
    Specify list in lowercase.
 
-.. _columns-select-properties-filefolder-recursions:
+   This configuration can be overridden by :ref:`Page
+   TSconfig<t3tsconfig:fileFolderConfig>`.
 
-.. confval:: fileFolder_recursions
+.. _columns-select-properties-filefolder-recursions:
+.. _columns-select-properties-fileFolderConfig-depth:
+
+.. confval:: fileFolderConfig.depth
 
    :type: integer
    :Scope: Display  / Proc.
    :RenderType: all
 
-   Depth of directory recursions. Default is 99. Specify in range from 0-99. 0 (zero) means no recursion
-   into subdirectories. Only useful in combination with property
-   :ref:`fileFolder <columns-select-properties-filefolder>`.
+   Depth of directory recursions. Default is 99. Specify in range from 0-99. 0
+   (zero) means no recursion into subdirectories. Only useful in combination
+   with property
+   :ref:`fileFolderConfig.folder <columns-select-properties-fileFolderConfig.folder>`.
+
+   This configuration can be overridden by :ref:`Page
+   TSconfig<t3tsconfig:fileFolderConfig>`.
 
 
 Examples
@@ -59,7 +75,7 @@ Examples
 .. _tca_example_select_single_7:
 
 Select SVGs recursively from a folder
-=====================================
+-------------------------------------
 
 .. include:: /Images/Rst/SelectSingle7.rst.txt
 
