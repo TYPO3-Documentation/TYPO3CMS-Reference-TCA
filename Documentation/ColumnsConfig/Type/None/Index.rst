@@ -17,9 +17,9 @@ Characteristics of `none`:
 
 * The DataHandler discards values send for type none and never persists or updates them in the database.
 * Type none is the only type that does **not** necessarily need a database field.
-* Type none fields does have a default renderType in FormEngine that displays the value as read only
+* Type none fields does have a default renderType in FormEngine that displays the value as readonly
   if a database field exists and the value can be formatted.
-* If no database field exists for none fields, an empty read only input field is rendered by default.
+* If no database field exists for none fields, an empty readonly input field is rendered by default.
 * Type none fields are designed to be not rendered at other places in the backend, for instance they can
   not be selected to be displayed in the list module "single table view" if everything has been configured
   correctly.
