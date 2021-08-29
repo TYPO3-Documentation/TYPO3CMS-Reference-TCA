@@ -6,8 +6,8 @@ displayCond
 ===========
 
 The display conditions are implemented in class
-:ref:`TYPO3\CMS\Backend\Form\FormDataProvider\EvaluateDisplayConditions
-<https://github.com/typo3/typo3/blob/master/typo3/sysext/backend/Classes/Form/FormDataProvider/EvaluateDisplayConditions.php>`,
+`TYPO3\\CMS\\Backend\\Form\\FormDataProvider\\EvaluateDisplayConditions
+<https://github.com/typo3/typo3/blob/master/typo3/sysext/backend/Classes/Form/FormDataProvider/EvaluateDisplayConditions.php>`_,
 which is a :ref:`FormDataProvider<t3coreapi:FormEngine-DataCompiling>`.
 It can be used for fields directly in the record as well as for
 FlexForm values.
