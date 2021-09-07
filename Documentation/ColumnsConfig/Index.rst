@@ -17,6 +17,7 @@ be influenced by further properties.
 
    Introduction/Index
    CommonProperties/Index
+   Type/Category/Index
    Type/Check/Index
    Type/Flex/Index
    Type/Group/Index
