@@ -135,24 +135,9 @@ MM
    the match fields for certain operations (for example, when a copy is created in a workspace) so that relations
    are carried over with the correct information.
 
-   `MM_oppositeUsage` is an array which references whichfields contain the references to the opposite side, so that
-   they can be queried for match field configuration.
-
-   This is used by the Core for system categories. Whenever a table is registered as being categorizable, an entry
-   in `MM_oppositeUsage` is created for the "sys_category" table.
-
-   Example
-     With "pages", "tt_content" and "sys_file_metadata" all registered as categorizable (using the default name
-     of "categories" for the relations field) plus extension "examples" installed, the TCA for "sys_category"
-     contains the following definition once fully assembled:
-
-     .. code-block:: php
-
-        $GLOBALS['TCA']['sys_category']['columns']['items']['config']['MM_oppositeUsage'] = [
-           'pages' => ['tx_examples_cats', 'categories'],
-           'sys_file_metadata' => ['categories'],
-           'tt_content' => ['categories'],
-        ];
+   `MM_oppositeUsage` is an array which references which fields contain the
+   references to the opposite side, so that they can be queried for match
+   field configuration.
 
 
 .. confval:: MM\_table\_where
