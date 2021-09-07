@@ -47,6 +47,7 @@ Select properties
 *  :ref:`foreign-table-prefix <columns-select-properties-foreign-table-prefix>`
 *  :ref:`foreign-table-where <columns-select-properties-foreign-table-where>`
 *  :ref:`items <columns-select-properties-items>`
+*  :ref:`MM <columns-select-properties-mm>`
 
 
 Common properties
@@ -66,7 +67,6 @@ Common properties
 *  :ref:`itemsProcFunc <tca_property_itemsProcFunc>`
 *  :ref:`localizeReferencesAtParentLocalization <tca_property_localizeReferencesAtParentLocalization>`
 *  :ref:`minitems <tca_property_minitems>`
-*  :ref:`MM <tca_property_MM>`
 *  :ref:`multiple <tca_property_multiple>`
 *  :ref:`readOnly <tca_property_readOnly>`
 *  :ref:`size <tca_property_size>`

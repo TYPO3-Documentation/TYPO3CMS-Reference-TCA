@@ -9,87 +9,47 @@ MM
 
    :type: string (table name)
    :Scope: Proc.
-   :Types: :ref:`group <columns-group>`
+   :Types: :ref:`group <columns-group>`, :ref:`select <columns-select>`, :ref:`inline <columns-inline>`
 
-   Means that the relation to the records of :ref:`foreign_table <columns-select-properties-foreign-table>`
-   (or table specified in :ref:`allowed <columns-group-properties-allowed>` property in case of the group field) is done
-   with a M-M relation with a third "join" table.
+   The relation of the records of the specified table gets stored in an
+   intermediate table. The name of this table is stored in the property `MM`.
 
-   The intermediate table has three columns as a minimum:
+   This property is used with :ref:`foreign_table (select) <columns-select-properties-foreign-table>`
+   for `select` fields, :ref:`allowed (group) <columns-group-properties-allowed>` for
+   `group` fields or :ref:`foreign_table (inline)
+   <columns-inline-properties-foreign-table>` for `inline` fields.
 
-   uid\_local, uid\_foreign (Required)
-     Storing uids of both sides. If done right, this is reflected in the table name - :code:`tx_foo_local_foreign_mm`
+   The table defined in this property is :ref:`automatically created by the
+   Database Analyzer <tca_property_MM_auto_creation_mm_table>` starting with
+   v11.4.
 
-   sorting (Required)
-     Is a required field used for ordering the items.
+   The field for which an MM configuration exists stores the number of records
+   in the relation on each update, so the field should be an integer.
 
-   sorting\_foreign
-     Is required if the relation is bidirectional (see description and example below table)
+.. note::
+   Using MM relations you can **only** store the relations for foreign tables
+   in the list. You cannot add properties like string values for the relation
+   itself.
 
-   tablenames
-     Is used if multiple tables are allowed in the relation.
+MM relations and FlexForms
+==========================
 
-   uid (auto-incremented and PRIMARY KEY)
-     May be used if you need the "multiple" feature (which allows the same record to be references multiple times
-     in the box. See :ref:`MM_hasUidField <columns-select-properties-mm-hasuidfield>` for type='select' and
-     :ref:`MM_hasUidField <columns-group-properties-mm-hasuidfield>` for type='group' fields.
+MM relations has been tested to work with FlexForms if not in a repeated
+element in a section.
 
-   further fields
-     May exist, in particular if :ref:`MM_match_fields <columns-select-properties-mm-match-fields>` /
-     :ref:`MM_match_fields <columns-group-properties-mm-match-fields>` is involved in the set up.
 
-   Example SQL #1
-     Most simple MM table
+Related configurations
+======================
 
-     .. code-block:: php
-
-        CREATE TABLE tx_testmmrelations_one_rel_mm (
-           uid_local int(11) DEFAULT '0' NOT NULL,
-           uid_foreign int(11) DEFAULT '0' NOT NULL,
-           sorting int(11) DEFAULT '0' NOT NULL,
-
-           KEY uid_local (uid_local),
-           KEY uid_foreign (uid_foreign)
-        );
-
-   Example SQL #2
-     Advanced with uid field, "ident" used with :ref:`MM_match_fields <columns-select-properties-mm-match-fields>`
-     and "sorting_foreign" for bidirectional MM relations:
-
-     .. code-block:: php
-
-      CREATE TABLE tx_testmmrelations_two_rel_mm (
-         uid int(11) NOT NULL auto_increment,
-         uid_local int(11) DEFAULT '0' NOT NULL,
-         uid_foreign int(11) DEFAULT '0' NOT NULL,
-         tablenames varchar(30) DEFAULT '' NOT NULL,
-         sorting int(11) DEFAULT '0' NOT NULL,
-         sorting_foreign int(11) DEFAULT '0' NOT NULL,
-         ident varchar(30) DEFAULT '' NOT NULL,
-
-         KEY uid_local (uid_local),
-         KEY uid_foreign (uid_foreign),
-         PRIMARY KEY (uid)
-      );
-
-   Value of field
-     The field name of the config is not used for data-storage anymore but rather it's set to the number of records
-     in the relation on each update, so the field should be an integer.
-
-   MM relations and flexforms
-     MM relations has been tested to work with flexforms if not in a repeated element in a section.
-
-   .. note::
-      Using MM relations you can ONLY store real relations for foreign tables in the list - no additional
-      string values or non-record values.
-
+.. _tca_property_MM_hasUidField:
 
 .. confval:: MM\_hasUidField
 
    :type: boolean
    :Scope: Proc.
 
-   If the "multiple" feature is used with MM relations you MUST set this value to true and include a UID field!
+   If the "multiple" feature is used with MM relations you **must** set this value
+   to true and include a UID field.
    Otherwise sorting and removing relations will be buggy.
 
 
@@ -154,3 +114,98 @@ MM
    The above example uses the special field quoting syntax :php:`{#...}` around identifiers of the
    :ref:`QueryHelper <t3coreapi:database-query-helper-quoteDatabaseIdentifiers>` to be as DBAL compatible
    as possible.
+
+.. _tca_property_MM_auto_creation_mm_table:
+
+Auto creation of intermediate MM tables from TCA
+================================================
+
+.. versionadded:: 11.4
+   Starting with v11.4 intermediate mm tables defined in :php:`['config']['MM']`
+   are created automatically and do not have to be defined in
+   file:`ext_tables.sql` anymore.
+
+TCA table column fields that define :php:`['config']['MM']` can
+drop specification of the intermediate mm table layout in:
+file:`ext_tables.sql`. The TYPO3 database analyzer
+takes care of proper schema definition.
+
+Extensions are strongly encouraged to drop :file:`ext_tables.sql`
+:sql:`CREATE TABLE` definitions for those intermediate tables referenced by
+:php:`TCA` table columns. Dropping these definitions allows the Core to adapt
+and migrate definitions if needed.
+
+The mm tables are automatically created if:
+
+*  A table column TCA config defines :php:`MM` with :php:`type='select'`,
+   :php:`type='group'` or :php:`type='inline'`.
+*  The "MM" intermediate table has *no* TCA table definition (!).
+*  A table of the resulting name is not defined in :file:`ext_tables.sql`.
+
+The schema analyzer takes care of further possible fields apart from
+:sql:`uid_local` and :sql:`uid_foreign`, like :sql:`sorting`,
+:sql:`sorting_foreign`, :sql:`tablenames`, :sql:`fieldname` and :sql:`uid`
+if necessary, depending on "local" side of the TCA definition.
+
+Example
+-------
+
+The "local" side of a mm table is defined as such in TCA:
+
+.. code-block:: php
+
+    ...
+    'columns' => [
+        ...
+        'myField' => [
+            'label' => 'myField',
+            'config' => [
+                'type' => 'group',
+                'foreign_table' => 'tx_myextension_myfield_child',
+                'MM' => 'tx_myextension_myfield_mm',
+            ]
+        ],
+        ...
+    ],
+    ...
+
+A table like the following will be automatically created in the Database
+Analyzer:
+
+.. code-block:: sql
+
+    CREATE TABLE tx_myextension_myfield_mm (
+        uid_local int(11) DEFAULT '0' NOT NULL,
+        uid_foreign int(11) DEFAULT '0' NOT NULL,
+        sorting int(11) DEFAULT '0' NOT NULL,
+
+        KEY uid_local (uid_local),
+        KEY uid_foreign (uid_foreign)
+    );
+
+Columns of the intermediate MM table
+------------------------------------
+
+The intermediate table has three columns as a minimum:
+
+uid\_local, uid\_foreign (Required)
+   Storing uids of both sides. If done right, this is reflected in the table name - :code:`tx_foo_local_foreign_mm`
+
+sorting (Required)
+   Is a required field used for ordering the items.
+
+sorting\_foreign
+   Is required if the relation is bidirectional (see description and example below table)
+
+tablenames
+   Is used if multiple tables are allowed in the relation.
+
+uid (auto-incremented and PRIMARY KEY)
+   May be used if you need the "multiple" feature (which allows the same record to be references multiple times
+   in the box. See :ref:`MM_hasUidField <columns-select-properties-mm-hasuidfield>` for type='select' and
+   :ref:`MM_hasUidField <columns-group-properties-mm-hasuidfield>` for type='group' fields.
+
+further fields
+   May exist, in particular if :ref:`MM_match_fields <columns-select-properties-mm-match-fields>` /
+   :ref:`MM_match_fields <columns-group-properties-mm-match-fields>` is involved in the set up.
+

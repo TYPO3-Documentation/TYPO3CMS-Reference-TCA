@@ -9,9 +9,13 @@ multiple
 
    :type: boolean
    :Scope: Display / Proc.
-   :Types: :ref:`group <columns-group>`
+   :Types: :ref:`group <columns-group>`, :ref:`selec <columns-select>`
 
    Allows the *same item* more than once in a list.
 
-   If used with bidirectional MM relations it must be set for both the native and foreign field configuration.
-   Also, with MM relations in general you must use a UID field in the join table, see description for "MM".
+   If used with bidirectional MM relations it must be set for both the native
+   and foreign field configuration.
+
+   The property :ref:`MM_hasUidField <tca_property_MM_hasUidField>` must be set
+   whenever `multiple` is used. Otherwise sorting and removing relations will
+   be buggy.

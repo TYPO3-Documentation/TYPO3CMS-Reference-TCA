@@ -19,9 +19,8 @@ Storage methods
 
 There are two main methods for this:
 
-- Stored in a comma list
-
-- Stored with a join table (MM relation)
+-  Stored in a :ref:`comma list <columns-group-data-commalist>`
+-  Stored with a join table (:ref:`MM relation<columns-group-data-mm>`)
 
 The default and most wide spread method is the comma list.
 
@@ -57,10 +56,16 @@ were "tt\_content,pages".
 The "MM" method
 ---------------
 
-Using the MM method you have to create a new database table which you configure with the key "MM". The table must
-contain a field, "uid\_local" which contains the reference to the uid of the record that contains the list of elements
-(the one you are editing). The "uid\_foreign" field contains the uid of the reference record you are referring to.
-In addition a "tablename" and "sorting" field exists if there are references to more than one table.
+.. versionadded:: 11.4
+   Starting with v11.4 intermediate mm tables defined in :php:`['config']['MM']`
+   are created automatically and do not have to be defined in
+   file:`ext_tables.sql` anymore.
+
+Using the MM method the Database Analyzer creates an intermediate MM table to
+store the relation data. The database fields in the affected tables only contain
+the number of records in the relation. You can read more about it here:
+`Auto creation of intermediate MM tables from TCA
+<tca_property_MM_auto_creation_mm_table>`
 
 Lets take the examples from before and see how they would be stored in an MM table:
 
