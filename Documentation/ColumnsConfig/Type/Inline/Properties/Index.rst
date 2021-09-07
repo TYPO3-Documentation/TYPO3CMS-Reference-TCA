@@ -32,6 +32,7 @@ Special properties
    ForeignUnique
    Mm
    OverrideChildTCa
+   ShowNewRecordLink
    Size
    SymmetricField
    SymmetricLabel
