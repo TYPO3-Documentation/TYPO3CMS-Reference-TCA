@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
-.. _columns-category-properties-exclusivekeys:
+.. _columns-category-properties-relationship:
 
-=============
-exclusiveKeys
-=============
+============
+relationship
+============
 
-.. confval:: exclusiveKeys
+.. confval:: relationship
 
    :type: string
    :Scope: Display  / Proc.
