@@ -51,6 +51,9 @@ It is possible to use markers in the WHERE clause:
 ###PAGE\_TSCONFIG\_STR###
    A value you can set from Page TSconfig dynamically.
 
+###SITE:<KEY>.<SUBKEY>###
+   A value from the site configuration, for example: `###SITE:mySetting.categoryPid###` or `###SITE:rootPageId###`.
+
 The markers are preprocessed so that the value of CURRENT\_PID and PAGE\_TSCONFIG\_ID are always integers
 (default is zero), PAGE\_TSCONFIG\_IDLIST will always be a comma-separated list of integers (default is zero)
 and PAGE\_TSCONFIG\_STR will be addslashes'ed before substitution (default is blank string).
