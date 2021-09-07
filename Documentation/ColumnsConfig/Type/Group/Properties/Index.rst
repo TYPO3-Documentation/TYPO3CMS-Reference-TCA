@@ -14,13 +14,6 @@
 .. _columns-group-properties-max-size:
 .. _columns-group-properties-maxitems:
 .. _columns-group-properties-minitems:
-.. _columns-group-properties-mm:
-.. _columns-group-properties-mm-hasuidfield:
-.. _columns-group-properties-mm-insert-fields:
-.. _columns-group-properties-mm-match-fields:
-.. _columns-group-properties-mm-opposite-field:
-.. _columns-group-properties-mm-table-where:
-.. _columns-group-properties-mm-opposite-usage:
 .. _columns-group-properties-multiple:
 .. _columns-group-properties-size:
 .. _columns-group-properties-readOnly:
@@ -42,6 +35,7 @@ Special properties
    HideMoveIcons
    HideSuggest
    InternalType
+   Mm
    PrependTname
    SuggestOptions
 
@@ -72,6 +66,5 @@ Common properties
 *  :ref:`localizeReferencesAtParentLocalization <tca_property_localizeReferencesAtParentLocalization>`
 *  :ref:`maxitems <tca_property_maxitems>`
 *  :ref:`minitems <tca_property_minitems>`
-*  :ref:`MM <tca_property_MM>`
 *  :ref:`readOnly <tca_property_readOnly>`
 *  :ref:`size <tca_property_size>`
