@@ -14,11 +14,11 @@ Select properties
 *  :ref:`disableNoMatchingValueElement <columns-select-properties-disableNoMatchingValueElement>`
 *  :ref:`exclusivekeys <columns-select-properties-exclusivekeys>`
 *  :ref:`filefolder <columns-select-properties-filefolder>`
-*  :ref:`filefolder-extlist <columns-select-properties-filefolder-extlist>`
-*  :ref:`filefolder-recursions <columns-select-properties-filefolder-recursions>`
-*  :ref:`foreign-table <columns-select-properties-foreign-table>`
-*  :ref:`foreign-table-prefix <columns-select-properties-foreign-table-prefix>`
-*  :ref:`foreign-table-where <columns-select-properties-foreign-table-where>`
+*  :ref:`filefolder_extlist <columns-select-properties-filefolder-extlist>`
+*  :ref:`filefolder_recursions <columns-select-properties-filefolder-recursions>`
+*  :ref:`foreign_table <columns-select-properties-foreign-table>`
+*  :ref:`foreign_table_prefix <columns-select-properties-foreign-table-prefix>`
+*  :ref:`foreign_table_where <columns-select-properties-foreign-table-where>`
 *  :ref:`items <columns-select-properties-items>`
 *  :ref:`MM <columns-select-properties-mm>`
 
