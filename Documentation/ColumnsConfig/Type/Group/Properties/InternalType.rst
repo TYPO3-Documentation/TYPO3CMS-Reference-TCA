@@ -10,6 +10,7 @@ internal\_type
    :Required: true
    :type: string
    :Scope: Display  / Proc.
+   :Default: db
 
    Configures the internal type of the group type of the element.
    There are two possible options to choose from:
@@ -18,7 +19,8 @@ internal\_type
       This will create a field where folders can be attached to the record.
 
    db
-      This will create a field where database records can be attached as references.
+      This will create a field where database records can be attached 
+      as references. As it is the default it can be ommitted.
 
    There is no default value, the property is required.
 
