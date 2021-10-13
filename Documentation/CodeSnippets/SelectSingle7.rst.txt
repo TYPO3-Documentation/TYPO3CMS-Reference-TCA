@@ -16,9 +16,9 @@
                    ],
                ],
                'fileFolderConfig' => [
-                  'folder' => 'EXT:styleguide/Resources/Public/Icons',
-                  'allowedExtensions' => 'svg',
-                  'depth' => 1,
+                   'folder' => 'EXT:styleguide/Resources/Public/Icons',
+                   'allowedExtensions' => 'svg',
+                   'depth' => 1,
                ],
                'fieldWizard' => [
                    'selectIcons' => [
