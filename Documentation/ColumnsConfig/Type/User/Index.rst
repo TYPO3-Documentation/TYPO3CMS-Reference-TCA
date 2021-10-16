@@ -118,8 +118,7 @@ implementing a rendering. See :ref:`FormEngine docs
                'id' => $fieldId,
                'name' => htmlspecialchars($parameterArray['itemFormElName']),
                'size' => $size,
-               'data-formengine-input-name' => htmlspecialchars($parameterArray['itemFormElName']),
-               'onChange' => implode('', $parameterArray['fieldChangeFunc']),
+               'data-formengine-input-name' => htmlspecialchars($parameterArray['itemFormElName'])
             ];
 
             $attributes['placeholder'] = 'Enter special value for user "'.htmlspecialchars(trim($row['username'])).
@@ -171,15 +170,12 @@ implementing a rendering. See :ref:`FormEngine docs
      :php:`$this->data['parameterArray']['itemFormElName']`
    * The current value of the field in
      :php:`$this->data['parameterArray']['itemFormElValue']`
-   * The JavaScript function to be called on changing the field in
-     :php:`$this->data['parameterArray']['fieldChangeFunc']`
 
 
    In order for the field to work, it is vital, that the corresponding
    HTML input field has a unique :html:`id` attribute, fills the
    attributes :html:`name` and :html:`data-formengine-input-name` with the
-   correct name, as provided in the :php:`itemFormElName` and calls the
-   function provided by :php:`fieldChangeFunc` on changing the data.
+   correct name, as provided in the :php:`itemFormElName`.
 
 The field would then look like this in the backend:
 
