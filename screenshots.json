@@ -19,7 +19,6 @@
             "table": "tt_content",
             "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "Advanced FlexForm in plugin"}
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": "Plugin"
@@ -35,7 +34,6 @@
             "table": "fe_users",
             "uid": {"action": "getUidByField", "table": "fe_users", "field": "username", "value": "example_user"}
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": "Extended"
@@ -59,18 +57,18 @@
           {"action": "openPageTreePath", "path": ["Congratulations"]},
           {"action": "switchToContentFrame"},
           {"action": "waitForText", "text": "Congratulations", "timeout": 5},
-          {"action": "click", "link": "div#element-tt_content-210 a[href*=edit]"},
+          {"action": "click", "link": "div#element-tt_content-223 a[href*=edit]"},
           {"action": "waitForText", "text": "Edit Page Content \"Deliver business value\" on page \"Congratulations\"", "timeout": 5},
           {"action": "click", "link": "Images"},
-          {"action": "click", "link": "//div[@id=\"data-1-tt_content-210-image_records\"]/div[1]//button[contains(@class, \"form-irre-header-button\")]"},
+          {"action": "click", "link": "//div[@id=\"data-1-tt_content-223-image_records\"]/div[1]//button[contains(@class, \"form-irre-header-button\")]"},
           {"action": "wait", "timeout": 0.5},
           {"action": "resizeToFullPage"},
           {
             "action": "makeScreenshotOfElement",
-            "selector": "//div[@id=\"data-1-tt_content-210-image_records\"]/div[1]//div[contains(@class, \"form-group\")][contains(., \"Image manipulation\")]",
+            "selector": "//div[@id=\"data-1-tt_content-223-image_records\"]/div[1]//div[contains(@class, \"form-group\")][contains(., \"Image manipulation\")]",
             "fileName": "ImageManipulationButton"
           },
-          {"action": "click", "link": "//div[@id=\"data-1-tt_content-210-image_records\"]/div[1]//button[contains(@class, \"form-irre-header-button\")]"},
+          {"action": "click", "link": "//div[@id=\"data-1-tt_content-223-image_records\"]/div[1]//button[contains(@class, \"form-irre-header-button\")]"},
           {"action": "resizeWindow", "width": 1024,"height": 768}
         ],
         "be_groups": [
@@ -137,6 +135,7 @@
               "value": "Customize"
             }
           },
+          {"action": "switchToMainFrame"},
           {"action": "click", "link":  "Hide Navigation"},
           {"action": "switchToContentFrame"},
           {
@@ -156,7 +155,6 @@
               "value": "Playground"
             }
           },
-          {"action": "switchToContentFrame"},
 
           {
             "action": "click",
@@ -202,7 +200,6 @@
             "action": "goToField",
             "fields": "image"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".panel-heading button.form-irre-header-button"
@@ -213,6 +210,7 @@
             "selector": ".form-section",
             "fileName": "Image"
           },
+          {"action": "cropScreenshot", "fileName": "Image", "position": "right-top", "height": 400, "width": 640},
           {
             "action": "click",
             "link": ".panel-heading button.form-irre-header-button"
@@ -264,7 +262,6 @@
             "action": "goToField",
             "fields": "inline_1"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".form-irre-header-button"
@@ -363,7 +360,6 @@
             "action": "goToField",
             "fields": "input_1"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "drawBox",
             "selector": ".formengine-field-item-description"
@@ -426,7 +422,6 @@
             "action": "goToField",
             "fields": "input_34"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": "input"
@@ -1203,7 +1198,6 @@
             "action": "goToField",
             "fields": "select_tree_1"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "wait",
             "timeout": 1
@@ -1223,7 +1217,6 @@
             "action": "goToField",
             "fields": "select_tree_2"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "wait",
             "timeout": 1
@@ -1243,7 +1236,6 @@
             "action": "goToField",
             "fields": "select_tree_6"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "wait",
             "timeout": 1
@@ -1699,7 +1691,6 @@
             "action": "goToField",
             "fields": "inline_1"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".form-irre-header-button"
@@ -1751,7 +1742,6 @@
             "action": "goToField",
             "fields": "inline_1"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".form-irre-header-button"
@@ -1814,7 +1804,6 @@
             "action": "goToField",
             "fields": "inline_1"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "makeScreenshotOfElement",
             "selector": ".form-section",
@@ -1880,7 +1869,6 @@
             "action": "goToField",
             "fields": "inline_1"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".form-irre-header-button"
@@ -1932,7 +1920,6 @@
             "action": "goToField",
             "fields": "parents"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".form-irre-header-button"
@@ -1984,7 +1971,6 @@
             "action": "goToField",
             "fields": "branches"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".form-irre-header-button"
@@ -2036,7 +2022,6 @@
             "action": "goToField",
             "fields": "branches"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".form-irre-header-button"
@@ -2082,7 +2067,6 @@
             "action": "goToField",
             "fields": "inline_1"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "click",
             "link": ".form-irre-header-button"
@@ -2138,7 +2122,6 @@
           {
             "action": "goToRecord"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "makeScreenshotOfElement",
             "selector": ".t3js-module-body",
@@ -2289,7 +2272,6 @@
           {
             "action": "goToRecord"
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "waitForText",
             "text": "Access",
@@ -2319,6 +2301,7 @@
               "uidField": "pid"
             }
           },
+          {"action": "switchToMainFrame"},
           {
             "action": "click",
             "link": "Hide Navigation"
@@ -2370,6 +2353,7 @@
               "uidField": "pid"
             }
           },
+          {"action": "switchToMainFrame"},
           {
             "action": "click",
             "link": "Hide Navigation"
