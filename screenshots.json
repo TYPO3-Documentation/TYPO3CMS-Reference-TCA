@@ -1341,6 +1341,7 @@
             "fields": "rte_1",
             "fileName": "Rte1"
           },
+          {"action": "cropScreenshot", "fileName": "Rte1", "position": "right-top", "height": 300, "width": 640},
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
@@ -1352,6 +1353,7 @@
             "fields": "rte_2",
             "fileName": "Rte2"
           },
+          {"action": "cropScreenshot", "fileName": "Rte2", "position": "right-top", "height": 300, "width": 640},
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
@@ -1360,14 +1362,39 @@
           },
           {
             "action": "makeScreenshotOfField",
-            "fields": "rte_4",
-            "fileName": "Rte4"
+            "fields": "rte_3",
+            "fileName": "Rte3"
           },
+          {"action": "cropScreenshot", "fileName": "Rte3", "position": "right-top", "height": 300, "width": 640},
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
             "fields": ["columns/rte_3"],
+            "targetFileName": "Rte3"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "rte_4",
+            "fileName": "Rte4"
+          },
+          {"action": "cropScreenshot", "fileName": "Rte4", "position": "right-top", "height": 300, "width": 640},
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
+            "fields": ["columns/rte_4"],
             "targetFileName": "Rte4"
+          },
+          {
+            "action": "makeScreenshotOfField",
+            "fields": "rte_5",
+            "fileName": "Rte5"
+          },
+          {"action": "cropScreenshot", "fileName": "Rte5", "position": "right-top", "height": 350, "width": 640},
+          {
+            "action": "createPhpArrayCodeSnippet",
+            "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
+            "fields": ["columns/rte_5"],
+            "targetFileName": "Rte5"
           },
           {"action": "switchToMainFrame"},
           {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}

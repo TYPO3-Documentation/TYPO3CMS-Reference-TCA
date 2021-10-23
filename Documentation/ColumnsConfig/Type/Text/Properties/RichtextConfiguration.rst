@@ -42,7 +42,14 @@ RTE with minimal configuration
 RTE with full configuration
 ---------------------------
 
-.. include:: /Images/Rst/Rte4.rst.txt
+.. include:: /Images/Rst/Rte5.rst.txt
 
-.. include:: /CodeSnippets/Rte4.rst.txt
+.. include:: /CodeSnippets/Rte5.rst.txt
 
+
+RTE with default configuration
+---------------------------
+
+.. include:: /Images/Rst/Rte2.rst.txt
+
+.. include:: /CodeSnippets/Rte2.rst.txt
