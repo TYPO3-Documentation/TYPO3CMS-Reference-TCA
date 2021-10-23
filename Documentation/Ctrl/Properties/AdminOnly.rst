@@ -15,12 +15,12 @@ adminOnly
 Examples
 ========
 
-   Table "sys\_template" is only editable only by admin users::
+Table "sys\_template" is only editable only by admin users::
 
-   .. code-block:: php
+.. code-block:: php
 
-      'ctrl' => [
-         'adminOnly' => 1,
-         ...
-      ],
+   'ctrl' => [
+      'adminOnly' => 1,
+      ...
+   ],
 
