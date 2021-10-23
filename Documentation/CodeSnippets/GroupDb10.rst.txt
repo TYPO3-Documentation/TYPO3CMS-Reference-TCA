@@ -8,7 +8,6 @@
            'label' => 'group_db_10 allowed=pages size=1',
            'config' => [
                'type' => 'group',
-               'internal_type' => 'db',
                'allowed' => 'pages',
                'maxitems' => 1,
                'minitems' => 0,

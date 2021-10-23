@@ -8,7 +8,6 @@
            'label' => 'group_db_3 allowed=tx_styleguide_staticdata, disabled elementBrowser',
            'config' => [
                'type' => 'group',
-               'internal_type' => 'db',
                'allowed' => 'tx_styleguide_staticdata',
                'fieldControl' => [
                    'elementBrowser' => [

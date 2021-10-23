@@ -9,7 +9,6 @@
            'description' => 'field description',
            'config' => [
                'type' => 'group',
-               'internal_type' => 'db',
                'allowed' => 'be_users,be_groups',
                'fieldControl' => [
                    'editPopup' => [

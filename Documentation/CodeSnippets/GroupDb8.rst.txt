@@ -8,7 +8,6 @@
            'label' => 'group_db_8 allowed=tx_styleguide_staticdata, multiple',
            'config' => [
                'type' => 'group',
-               'internal_type' => 'db',
                'hideSuggest' => false,
                'allowed' => 'tx_styleguide_staticdata',
                'multiple' => true,
