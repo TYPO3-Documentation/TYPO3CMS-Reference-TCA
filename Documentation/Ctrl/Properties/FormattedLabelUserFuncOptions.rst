@@ -7,7 +7,7 @@ formattedLabel\_userFunc\_options
 
 .. confval:: formattedLabel_userFunc_options
 
-   :type: string
+   :type: array
    :Scope: Display
 
 
