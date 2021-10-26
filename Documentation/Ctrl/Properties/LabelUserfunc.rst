@@ -59,7 +59,7 @@ label\_userFunc\_options
 
 .. confval:: label_userFunc_options
 
-   :type: string
+   :type: array
    :Scope: Display
 
 
