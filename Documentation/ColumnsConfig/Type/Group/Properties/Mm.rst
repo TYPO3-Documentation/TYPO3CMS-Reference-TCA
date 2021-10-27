@@ -21,6 +21,21 @@ MM
 
    There is additional information in the :ref:`MM common property description
    <tca_property_MM>`.
+   
+   Example::
+   
+      $fields = array(
+         'myextension_topic_manager' => array(
+              'exclude' => 1,
+              'label' => 'Project manager',
+              'config' => [
+                  'type' => 'group',
+                  'allowed' => 'tt_address',
+                  'foreign_table' => 'tt_address', // needed by Extbase
+                  'MM' => 'tx_ttaddress_news_myextensiontopicmanager',
+              ],
+          )
+       );
 
 
 Related configurations
