@@ -3,13 +3,13 @@
 .. code-block:: php
 
    'columns' => [
-       'rte_4' => [
+       'rte_3' => [
            'exclude' => 1,
-           'label' => 'rte_4 richtextConfiguration=minimal',
+           'label' => 'rte_3 eval=null',
            'config' => [
                'type' => 'text',
+               'eval' => 'null',
                'enableRichtext' => true,
-               'richtextConfiguration' => 'minimal',
            ],
        ],
    ]
