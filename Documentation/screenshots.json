@@ -3,7 +3,6 @@
     "Examples": {
       "screenshots": [
         [
-          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
           {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
           {"action": "setScreenshotsImagePath", "path": "Images/AutomaticScreenshots"},
           {"action": "createScreenshotsRstFile", "create": true},
@@ -72,7 +71,6 @@
           {"action": "resizeWindow", "width": 1024,"height": 768}
         ],
         "be_groups": [
-          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
           {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
           {
             "action": "resizeWindow",
@@ -110,7 +108,6 @@
           {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
         ],
         "tt_content": [
-          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
           {
             "action": "resizeWindow",
             "width": 640,
@@ -223,7 +220,6 @@
     "Styleguide": {
       "screenshots": {
         "options": [
-          {"action": "setScreenshotsDocumentationPath", "path": "Documentation"},
           {"action": "setCodeSnippetsTargetPath", "path": "CodeSnippets"},
           {"action": "setScreenshotsImagePath", "path": "Images/AutomaticScreenshots"},
           {"action": "createScreenshotsRstFile", "create": true}
