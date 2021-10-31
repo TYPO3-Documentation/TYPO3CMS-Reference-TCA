@@ -11,8 +11,6 @@
             "width": 640,
             "height": 640
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "goToRecord",
             "table": "tt_content",
@@ -90,8 +88,6 @@
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3/sysext/core"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "makeScreenshotOfField",
             "uid": 1,
@@ -103,14 +99,12 @@
             "sourceFile": "Configuration/TCA/be_groups.php",
             "fields": ["columns/file_mountpoints"],
             "targetFileName": "FileMountpoints"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "tt_content": [
           {
             "action": "resizeWindow",
-            "width": 640,
+            "width": 1024,
             "height": 640
           },
           {
@@ -121,19 +115,7 @@
             "action": "setNavigationDefaultTable",
             "table": "tt_content"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
-          {
-            "action": "goToTable",
-            "pid": {
-              "action": "getUidByField",
-              "table": "pages",
-              "field": "title",
-              "value": "Customize"
-            }
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "Hide Navigation"},
+          {"action": "amOnPage", "page": "/typo3/module/web/list?id=80&table=tt_content"},
           {"action": "switchToContentFrame"},
           {
             "action": "makeScreenshotOfElement",
@@ -141,8 +123,6 @@
             "selector": ".recordlist",
             "altText": "Control section of tt_content"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "Show Navigation"},
           {
             "action": "goToRecord",
             "uid": {
@@ -211,9 +191,7 @@
           {
             "action": "click",
             "link": ".panel-heading button.form-irre-header-button"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ]
       }
     },
@@ -252,8 +230,6 @@
             "width": 640,
             "height": 2048
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "goToField",
             "fields": "inline_1"
@@ -282,9 +258,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_fal.php",
             "fields": ["columns/inline_flex_1"],
             "targetFileName": "InlineFalInline1Flexform"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "overview": [
           {"action": "amOnPage", "page":  "/typo3/main"},
@@ -330,8 +304,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -446,9 +418,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
             "fields": ["columns/inputdatetime_3"],
             "targetFileName": "Inputdatetime3"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "none_basic": [
           {"comment": "************************************"},
@@ -467,8 +437,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -482,9 +450,7 @@
             "action": "makeScreenshotOfField",
             "fields": "none_1",
             "fileName": "None1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "radio_basic": [
           {"comment": "************************************"},
@@ -503,8 +469,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -524,9 +488,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
             "fields": ["columns/radio_1"],
             "targetFileName": "Radio1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "checkbox_basic": [
           {"comment": "************************************"},
@@ -545,8 +507,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -665,9 +625,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
             "fields": ["columns/checkbox_21"],
             "targetFileName": "Checkbox21"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "text_basic": [
           {"comment": "************************************"},
@@ -686,8 +644,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -828,9 +784,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
             "fields": ["columns/text_21"],
             "targetFileName": "Text21"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "basic_translation": [
           {"comment": "************************************"},
@@ -849,8 +803,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_basic"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -869,9 +821,7 @@
             "action": "makeScreenshotOfField",
             "fields": "text_2",
             "fileName": "TranslatedText2"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "select": [
           {
@@ -887,8 +837,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_select"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1257,9 +1205,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_select.php",
             "fields": ["columns/select_requestUpdate_1"],
             "targetFileName": "SelectRequestupdate1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "select_translation": [
           {"comment": "************************************"},
@@ -1278,8 +1224,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_select"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1303,9 +1247,7 @@
             "action": "makeScreenshotOfField",
             "fields": "select_single_13",
             "fileName": "TranslatedSelectSingle13"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "rte": [
           {
@@ -1321,8 +1263,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_rte"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1391,9 +1331,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_rte.php",
             "fields": ["columns/rte_5"],
             "targetFileName": "Rte5"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "t3editor": [
           {
@@ -1409,8 +1347,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_t3editor"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1430,9 +1366,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_t3editor.php",
             "fields": ["columns/t3editor_1"],
             "targetFileName": "T3editor1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "flex": [
           {
@@ -1448,8 +1382,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_flex"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1499,9 +1431,7 @@
             "action": "createCodeSnippet",
             "sourceFile": "Configuration/FlexForms/Simple.xml",
             "targetFileName": "FlexFormFile1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "slugs": [
           {
@@ -1517,8 +1447,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_slugs"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1587,9 +1515,7 @@
             "action": "createCodeSnippet",
             "sourceFile": "Classes/UserFunctions/FormEngine/SlugPrefix.php",
             "targetFileName": "SlugPrefix"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "elements_group": [
           {
@@ -1605,8 +1531,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_elements_group"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1681,9 +1605,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_group.php",
             "fields": ["columns/group_folder_1"],
             "targetFileName": "GroupFolder1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "inline_1n": [
           {
@@ -1699,8 +1621,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_1n"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1732,9 +1652,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_1n.php",
             "fields": ["columns/inline_1"],
             "targetFileName": "Inline1nInline1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "inline_1n1n": [
           {
@@ -1750,8 +1668,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_1n1n"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1787,9 +1703,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_1n1n.php",
             "fields": ["columns/inline_1"],
             "targetFileName": "Inline1n1nInline1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "inline_mm": [
           {
@@ -1805,8 +1719,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mm"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1816,7 +1728,6 @@
               "value": 0
             }
           },
-          {"action": "switchToContentFrame"},
           {
             "action": "makeScreenshotOfElement",
             "selector": ".form-section",
@@ -1838,9 +1749,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mm.php",
             "fields": ["columns/inline_1"],
             "targetFileName": "InlineMmInline1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "inline_mm_child": [
           {
@@ -1877,8 +1786,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mn"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1910,9 +1817,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mn.php",
             "fields": ["columns/inline_1"],
             "targetFileName": "InlineMnInline1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "inline_mn_child": [
           {
@@ -1928,8 +1833,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mn_child"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -1961,9 +1864,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mn_child.php",
             "fields": ["columns/parents"],
             "targetFileName": "InlineMnChildParents"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "inline_mnsymmetric_branches": [
           {
@@ -1979,8 +1880,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mnsymmetric"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -2012,9 +1911,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mnsymmetric.php",
             "fields": ["columns/branches"],
             "targetFileName": "InlineMnSymetricBranches"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "inline_mnsymmetric_input": [
           {
@@ -2030,8 +1927,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_mnsymmetric"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -2057,9 +1952,7 @@
             "action": "makeScreenshotOfElement",
             "selector": ".form-section",
             "fileName": "InlineMnSymetric11Branches"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "inline_usecombination": [
           {
@@ -2075,8 +1968,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_inline_usecombination"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -2108,9 +1999,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_usecombination.php",
             "fields": ["columns/inline_1"],
             "targetFileName": "InlineUsecombinationcInline1"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "type": [
           {
@@ -2126,8 +2015,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_type"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -2162,7 +2049,6 @@
           },
           {"action": "click", "link": "OK"},
           {"action": "wait", "timeout": 0.3},
-          {"action": "switchToContentFrame"},
           {
             "action": "makeScreenshotOfElement",
             "selector": ".t3js-module-body",
@@ -2176,7 +2062,6 @@
           {"action": "waitForModalDialogInMainFrame"},
           {"action": "click", "link": "OK"},
           {"action": "wait", "timeout": 1},
-          {"action": "switchToContentFrame"},
           {
             "action": "makeScreenshotOfElement",
             "selector": ".t3js-module-body",
@@ -2205,9 +2090,7 @@
             "action": "makeScreenshotOfField",
             "fields": "record_type",
             "fileName": "RecordType"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "typeforeign": [
           {
@@ -2223,8 +2106,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_typeforeign"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -2256,9 +2137,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_typeforeign.php",
             "fields": ["ctrl"],
             "targetFileName": "TypeForeignTableCtrl"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "ctrl_common": [
           {
@@ -2274,8 +2153,6 @@
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_ctrl_common"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": 1
@@ -2314,15 +2191,12 @@
             "fileName": "CtrlEnableFields",
             "altText": "Record information shown editing an example record"
           },
+          {"action": "amOnPage", "page": "/typo3/module/web/list?id=7&table=tx_styleguide_ctrl_common"},
+
           {
-            "action": "goToTable",
-            "pid": {
-              "action": "getUidByField",
-              "table": "tx_styleguide_ctrl_common",
-              "field": "uid",
-              "value": 1,
-              "uidField": "pid"
-            }
+            "action": "resizeWindow",
+            "width": 1024,
+            "height": 640
           },
           {"action": "switchToMainFrame"},
           {
@@ -2346,52 +2220,30 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_common.php",
             "fields": ["ctrl"],
             "targetFileName": "TxStyleguideCtrlCommon"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "ctrl_minimal": [
           {
             "action": "resizeWindow",
-            "width": 640,
+            "width": 1024,
             "height": 640
           },
           {
             "action": "setNavigationDefaultTable",
             "table": "tx_styleguide_ctrl_minimal"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": 1
           },
-          {
-            "action": "goToTable",
-            "pid": {
-              "action": "getUidByField",
-              "table": "tx_styleguide_ctrl_minimal",
-              "field": "uid",
-              "value": 1,
-              "uidField": "pid"
-            }
-          },
-          {"action": "switchToMainFrame"},
-          {
-            "action": "click",
-            "link": "Hide Navigation"
-          },
+          {"action": "amOnPage", "page": "/typo3/module/web/list?id=12&table=tx_styleguide_ctrl_minimal"},
+
           {"action": "switchToContentFrame"},
           {
             "action": "makeScreenshotOfElement",
             "fileName": "TxStyleguideCtrlMinimal",
             "selector": ".recordlist",
             "altText": "A minimal example of the control section"
-          },
-          {"action": "switchToMainFrame"},
-          {
-            "action": "click",
-            "link": "Show Navigation"
           },
           {
             "action": "createPhpArrayCodeSnippet",
@@ -2403,9 +2255,7 @@
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_ctrl_minimal.php",
             "targetFileName": "TxStyleguideCtrlMinimal"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ],
         "palettes": [
           {
@@ -2421,8 +2271,6 @@
             "action": "setCodeSnippetsSourcePath",
             "path": "typo3conf/ext/styleguide"
           },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"},
           {
             "action": "setNavigationDefaultUid",
             "uid": {
@@ -2461,9 +2309,7 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_palette.php",
             "fields": ["types"],
             "targetFileName": "PalettesTypes"
-          },
-          {"action": "switchToMainFrame"},
-          {"action": "click", "link":  "button.t3js-topbar-button-modulemenu"}
+          }
         ]
       },
       "sys_file_reference": [
