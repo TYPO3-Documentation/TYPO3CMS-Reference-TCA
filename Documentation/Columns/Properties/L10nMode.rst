@@ -46,7 +46,7 @@ prefixLangTitle
 The following example can be found in the :ref:`extension styleguide
 <styleguide>`. On translating a record in a new language the content of the
 field gets copied to the target language. It get prefixed with
-:text:`[Translate to <language name>:]`.
+:code:`[Translate to <language name>:]`.
 
 .. include:: /Images/Rst/TranslatedText2.rst.txt
 

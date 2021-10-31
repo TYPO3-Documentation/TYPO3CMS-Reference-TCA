@@ -25,20 +25,20 @@ itemsProcFunc
 Passed parameters
 =================
 
-* :php:`items` (passed by reference)
-* :php:`config` (TCA config of the field)
-* :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsconfig:itemsProcFunc>`)
-* :php:`table` (current table)
-* :php:`row` (current database record)
-* :php:`field` (current field name)
+*  :php:`items` (passed by reference)
+*  :php:`config` (TCA config of the field)
+*  :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsconfig:itemsProcFunc>`)
+*  :php:`table` (current table)
+*  :php:`row` (current database record)
+*  :php:`field` (current field name)
 
-.. versionadded:: 7.6
 The following parameter only exists if the field has a :ref:`flex parent <columns-flex>`.
 
 * :php:`flexParentDatabaseRow`
 
 .. versionadded:: 11.2
-The following parameters are filled if the current record has an :ref:`inline parent <columns-inline>`.
+   The following parameters are filled if the current record has an
+   :ref:`inline parent <columns-inline>`.
 
 * :php:`inlineParentUid`
 * :php:`inlineParentTableName`

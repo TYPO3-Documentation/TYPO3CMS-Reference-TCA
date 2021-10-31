@@ -12,7 +12,6 @@
 .. _columns-select-properties-itemsprocfunc:
 .. _columns-select-properties-localizereferencesatparentlocalization:
 .. _columns-select-properties-minitems:
-.. _columns-select-properties-mm:
 
 .. _columns-select-properties-mm-hasuidfield:
 .. _columns-select-properties-mm-match-fields:
