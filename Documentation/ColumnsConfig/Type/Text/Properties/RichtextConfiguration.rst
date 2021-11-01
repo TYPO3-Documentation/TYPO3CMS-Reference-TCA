@@ -48,7 +48,7 @@ RTE with full configuration
 
 
 RTE with default configuration
----------------------------
+------------------------------
 
 .. include:: /Images/Rst/Rte2.rst.txt
 

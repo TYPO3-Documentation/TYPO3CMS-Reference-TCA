@@ -157,7 +157,7 @@ implementing a rendering. See :ref:`FormEngine docs
          The returned data in :php:`$resultArray['html']` will be output in the
          TYPO3 Backend as it is passed. Therefore don't trust user input in
          order to prevent :ref:`cross-site scripting (XSS)
-         <t3core:security-xss>`.
+         <t3coreapi:security-xss>`.
 
 
    The array :php:`$this->data` consists of the following parts:
@@ -182,7 +182,7 @@ The field would then look like this in the backend:
 .. include:: /Images/Rst/ExtendingTcaFeUsers.rst.txt
 
 This example is also described in TYPO3 Explained,
-:ref:`Extending TCA example <t3core:extending-examples-feusers>`.
+:ref:`Extending TCA example <t3coreapi:extending-examples-feusers>`.
 
 .. _columns-user-properties-type:
 .. _columns-user-properties-notablewrapping:

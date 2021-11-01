@@ -16,9 +16,11 @@ versioningWS
    .. note::
       The field details explained here are outdated.
 
-   Versioning in TYPO3 is based on this scheme::
+   Versioning in TYPO3 is based on this scheme:
 
-   [Online version, pid>=0] 1- * [Offline versions, pid==1]
+   .. code-block:: none
+
+      [Online version, pid>=0] 1- * [Offline versions, pid==1]
 
    Offline versions are identified by having a pid value = -1 and they
    refer to their online version by the field "t3ver\_oid". Offline
@@ -56,40 +58,40 @@ versioningWS
      :code:`\TYPO3\CMS\Backend\Utility\BackendUtility::getMovePlaceholder()`).
 
    t3ver\_state
-     Contains special states of a version used when new, deleted, moved content requires versioning.
+      Contains special states of a version used when new, deleted, moved content requires versioning.
 
-     -  For an  **online** version:
+      -  For an  **online** version:
 
          -  "1" or "2" means that it is a temporary placeholder for a new element (which is the offline version of this record)
          -  "3" means it is a "move-to-location" placeholder and t3ver\_move\_id
-        holds uid of online record (with an offline version) to move . Unlike
-        for "1" and "2" there is  *no offline version* of this record type!
-        (V2 feature)
+            holds uid of online record (with an offline version) to move . Unlike
+            for "1" and "2" there is  *no offline version* of this record type!
+            (V2 feature)
          -  If "t3ver\_state" has a value >0 it should never be shown in Live workspace.
 
-     -  For an  **offline** version:
+      -  For an  **offline** version:
 
-        -  "1" or "2" means that when published, the element must be deleted (placeholder for delete-action).
-        -  "-1" means it is just an indication that the online version has the flag set to "1" (is a placeholder for
-        new records.). This only affects display, not processing anywhere.
-        -  "4" means this version is a "move-pointer" for the online record and an online "move-to-location"
-        (t3ver\_state=3) record exists. (V2 feature)
+         -  "1" or "2" means that when published, the element must be deleted (placeholder for delete-action).
+         -  "-1" means it is just an indication that the online version has the flag set to "1" (is a placeholder for
+            new records.). This only affects display, not processing anywhere.
+         -  "4" means this version is a "move-pointer" for the online record and an online "move-to-location"
+            (t3ver\_state=3) record exists. (V2 feature)
 
 
    t3ver\_stage
-     Contains the ID of the stage at which the record is. Special values are "0" which still refers to
-     "edit", "-10" refers to "ready to publish".
+      Contains the ID of the stage at which the record is. Special values are "0" which still refers to
+      "edit", "-10" refers to "ready to publish".
 
    t3ver\_count
-     0/offline=draft/never published, 0/online=current, 1/offline=archive, 1+=multiple online/offline
-     occurrences (incrementation happens when versions are swapped offline.)
+      0/offline=draft/never published, 0/online=current, 1/offline=archive, 1+=multiple online/offline
+      occurrences (incrementation happens when versions are swapped offline.)
 
    t3ver\_tstamp
-     Timestamp of last swap/publish action.
+      Timestamp of last swap/publish action.
 
    t3ver\_move\_id
-     For online records with t3ver\_state=3 this indicates the online record to move to this location upon publishing
-     of the offline version of the online record "t3ver\_move\_id" points to.
+      For online records with t3ver\_state=3 this indicates the online record to move to this location upon publishing
+      of the offline version of the online record "t3ver\_move\_id" points to.
 
    The fields **pid** and **uid** should have "signed" attributes in MySQL (so their content can be negative!)
 

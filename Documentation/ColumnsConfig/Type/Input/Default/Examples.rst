@@ -14,9 +14,6 @@ Simple input field
 
 .. include:: /CodeSnippets/Input1.rst.txt
 
-
-.. _tca_example_input_28:
-
 Input with placeholder and null handling
 ========================================
 

@@ -16,7 +16,7 @@ Select field properties
    Default
    DisableNonMatchingValueElement
    ExclusiveKeys
-   FileFolder
+   FileFolderConfig
    ForeignTable
    ForeignTablePrefix
    ForeignTableWhere

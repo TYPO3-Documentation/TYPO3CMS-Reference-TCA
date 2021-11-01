@@ -15,7 +15,7 @@ adminOnly
 Examples
 ========
 
-Table "sys\_template" is only editable only by admin users::
+Table :sql:`sys_template` is only editable only by admin users:
 
 .. code-block:: php
 
@@ -23,4 +23,3 @@ Table "sys\_template" is only editable only by admin users::
       'adminOnly' => 1,
       ...
    ],
-
