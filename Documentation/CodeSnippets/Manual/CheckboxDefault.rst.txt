@@ -1,5 +1,3 @@
-.. Automatic screenshot: Remove this line if you want to manually change this file
-
 .. code-block:: php
 
    'columns' => [
@@ -9,6 +7,7 @@
            'description' => 'cols=inline',
            'config' => [
                'type' => 'check',
+               'default' => 2,
                'items' => [
                    ['Mo', ''],
                    ['Tu', ''],

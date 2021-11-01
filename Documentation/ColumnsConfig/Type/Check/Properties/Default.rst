@@ -47,4 +47,4 @@ Multiple checkboxes with a default value
 
 Here "Tu", the second bit, is active by default.
 
-.. include:: /CodeSnippets/Checkbox16.rst.txt
+.. include:: /CodeSnippets/Manual/CheckboxDefault.rst.txt
