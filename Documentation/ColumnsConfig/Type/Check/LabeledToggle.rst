@@ -9,7 +9,7 @@ Labeled toggle checkbox
 The checkbox type with the
 :ref:`renderType checkboxLabeledToggle <columns-check-properties-renderType>` is
 displayed as a toggle switch where both states can be labelled
-(:guilabel`ON/OFF`, :guilabel`Visible/Hidden` or alike).
+(:guilabel:`ON` / :guilabel:`OFF`, :guilabel:`Visible` / :guilabel:`Hidden` or alike).
 
 
 .. include:: /Images/Rst/Checkbox19.rst.txt
