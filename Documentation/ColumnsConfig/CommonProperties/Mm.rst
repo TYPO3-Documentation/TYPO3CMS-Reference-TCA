@@ -143,9 +143,12 @@ The mm tables are automatically created if:
 *  A table of the resulting name is not defined in :file:`ext_tables.sql`.
 
 The schema analyzer takes care of further possible fields apart from
-:sql:`uid_local` and :sql:`uid_foreign`, like :sql:`sorting`,
-:sql:`sorting_foreign`, :sql:`tablenames`, :sql:`fieldname` and :sql:`uid`
-if necessary, depending on "local" side of the TCA definition.
+:sql:`uid_local` and :sql:`uid_foreign`, like :sql:`tablenames`,
+:sql:`fieldname` and :sql:`uid` if necessary, depending on local side of the
+TCA definition.
+
+The fields used for sorting :sql:`sorting` and :sql:`sorting_foreign` are
+always created, they do not need to be defined in TCA.
 
 Example
 -------
@@ -178,6 +181,7 @@ Analyzer:
         uid_local int(11) DEFAULT '0' NOT NULL,
         uid_foreign int(11) DEFAULT '0' NOT NULL,
         sorting int(11) DEFAULT '0' NOT NULL,
+        sorting_foreign int(11) DEFAULT '0' NOT NULL,
 
         KEY uid_local (uid_local),
         KEY uid_foreign (uid_foreign)
@@ -186,16 +190,14 @@ Analyzer:
 Columns of the intermediate MM table
 ------------------------------------
 
-The intermediate table has three columns as a minimum:
+The intermediate table may have the following fields:
 
-uid\_local, uid\_foreign (Required)
-   Storing uids of both sides. If done right, this is reflected in the table name - :code:`tx_foo_local_foreign_mm`
+uid\_local, uid\_foreign
+   Storing uids of both sides. If done right, this is reflected in the table
+   name - :code:`tx_foo_local_foreign_mm`
 
-sorting (Required)
-   Is a required field used for ordering the items.
-
-sorting\_foreign
-   Is required if the relation is bidirectional (see description and example below table)
+sorting, sorting\_foreign
+   Are required fields used for ordering the items.
 
 tablenames
    Is used if multiple tables are allowed in the relation.

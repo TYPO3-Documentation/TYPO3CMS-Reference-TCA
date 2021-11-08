@@ -10,9 +10,17 @@ foreign\_sortby
    :type: string
    :Scope: Display / Proc.
 
-   Define a field on the child record (or on the intermediate table) that stores the manual sorting information. It is
-   possible to have a different sorting, depending from which side of the relation we look at parent or child.
-   This property requires that the :ref:`foreign_field <columns-inline-properties-foreign-field>` approach is used.
+   Define a field on the child record that stores the manual sorting
+   information. It is possible to have a different sorting, depending from
+   which side of the relation we look at parent or child.
+
+   This property requires that the
+   :ref:`foreign_field <columns-inline-properties-foreign-field>` approach is
+   used.
+
+   When using :ref:`MM relations<columns-inline-properties-mm>` the field used
+   on the intermediate table is hardcoded to :sql:`sorting_foreign`. Setting
+   this property has no effect combined with an MM table.
 
    .. important::
       If you use the table only as an inline element, do not put the :ref:`sortby <ctrl-reference-sortby>` field
