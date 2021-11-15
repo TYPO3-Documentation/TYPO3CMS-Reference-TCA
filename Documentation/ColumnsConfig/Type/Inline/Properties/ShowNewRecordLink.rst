@@ -12,9 +12,9 @@ showNewRecordLink
    :Scope: Display
    :Default: true
 
-   Disables the :guilabel:`New record` link in TCA `inline` elements without
-   without simultaneously also disabling either the
-   :guilabel:`+` button in each inline records' header (using
+   Disables the :guilabel:`New record` link in TCA `inline` elements
+   without simultaneously disabling either the
+   :guilabel:`+` button in the header of each inline record (using
    :ref:`['appearance']['enabledControls']['new']
    <columns-inline-properties-appearance>`) or all other
    "level links" (using :ref:`['appearance']['levelLinksPosition'] = 'none'
