@@ -21,6 +21,28 @@ MM
 
    There is additional information in the :ref:`MM common property description
    <tca_property_MM>`.
+   
+   The table name use in the field :php:`MM` should be unique. It must be a valid SQL 
+   table name. It is best practise to use
+   the name of both referenced tables and of the field in which the reference is saved 
+   on local side. This way uniqueness can be ensured and it it possible to finde the field 
+   where the table is used quickly.
+   
+   Example::
+   
+      // table tx_table1
+      $fields = array(
+         'relation_table1_table2' => array(
+              'exclude' => 1,
+              'label' => 'Project manager',
+              'config' => [
+                  'type' => 'group',
+                  'allowed' => 'tx_table1',
+                  'foreign_table' => 'tx_table2', // needed by Extbase
+                  'MM' => 'table1_table2_relationtable1table2',
+              ],
+          )
+       );
 
 
 Related configurations
