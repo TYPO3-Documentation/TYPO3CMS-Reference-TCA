@@ -15,7 +15,7 @@ placeholder
    or another one. With a syntax like :code:`__row|field` the placeholder will take
    the value of the given field from the current record.
 
-   This can be recursive to follow a longer patch in a table record chain. If the designated field is a relation to
+   This can be recursive to follow a longer path in a table record chain. If the designated field is a relation to
    another table (is of type :ref:`select <columns-select>`, :ref:`group <columns-group>` or
    :ref:`inline <columns-inline>`), the related record will be loaded and the placeholder searched within it.
 
