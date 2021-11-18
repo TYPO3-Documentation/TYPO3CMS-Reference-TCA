@@ -32,7 +32,7 @@ treeConfig
    startingPoints (string, comma separated values)
       allows to set multiple records as roots for tree records.
 
-      The setting takes a CSV value, e.g. `2,3,4711`, which takes records of the pids
+      The setting takes a CSV value, e.g. `2,3,4711`, which takes records of the uids
       `2`, `3` and `4711` into account and creates a tree of these records.
 
       Additionally, each value used in `startingPoints` may be fed from a site
