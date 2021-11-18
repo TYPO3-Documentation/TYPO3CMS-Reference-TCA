@@ -25,8 +25,7 @@ treeConfig
 
    rootUid (integer, optional)
       Deprecated, use startingPoints (see below);
-      uid of the record that shall be considered as the root node of the tree. In general this might be
-      set by Page TSconfig, see :ref:`pagetsconfigtceformconfigtreeconfig`
+      uid of the record that shall be considered as the root node of the tree.
 
    startingPoints (string, comma separated values)
       allows to set multiple records as roots for tree records.
@@ -36,6 +35,9 @@ treeConfig
 
       Additionally, each value used in `startingPoints` may be fed from a site
       configuration by using the `###SITE:###` syntax.
+      
+      This property can also be set by page TSconfig, see 
+      :ref:`pagetsconfigtceformconfigtreeconfig`
 
       Example:
 
