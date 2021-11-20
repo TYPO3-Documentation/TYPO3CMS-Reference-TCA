@@ -15,7 +15,7 @@ languageField
       This field can only be used with the type
       :ref:`language <columns-language>`. All other field types will be
       automatically migrated on-the-fly possibly losing configurations.
-      See :ref;`Migration to the languge type <columns-languge-migration>`
+      See :ref:`Migration to the language type <columns-languge-migration>`
 
    This property contains the field name which contains a pointer to the
    language of the record. The field should have the type
