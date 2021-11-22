@@ -180,7 +180,7 @@ eval
       while the database value will be "1060698720".
 
    domainname
-      Allows a domain name such as "example.org" and automatically transforms
+      Allows a domain name such as :samp:`example.org` and automatically transforms
       the value to `punicode <https://en.wikipedia.org/wiki/Punycode>`_ if needed.
 
    double2
