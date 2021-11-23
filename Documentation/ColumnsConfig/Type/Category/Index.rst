@@ -16,7 +16,7 @@ Category
 While using the type :php:`category`, TYPO3 takes care of generating the
 necessary TCA configuration.
 Developers only have to define the TCA column and add :php:`category` as the
-desired TCA type.
+desired TCA type in the tables's TCA file (inside or outside of the Overrides folder).
 
 .. include:: /CodeSnippets/Manual/CategorySimple.rst.txt
 
