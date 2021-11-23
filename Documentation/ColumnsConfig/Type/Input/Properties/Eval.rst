@@ -26,7 +26,7 @@ eval
       Same as "alphanum" but allows also "\_" and "-" chars.
 
    domainname
-      Allows a domain name such as "example.com" and automatically transforms
+      Allows a domain name such as :samp:`example.org` and automatically transforms
       the value to `punicode <https://en.wikipedia.org/wiki/Punycode>`_ if needed.
 
    double2
