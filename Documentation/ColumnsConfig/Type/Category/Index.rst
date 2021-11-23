@@ -14,7 +14,7 @@ Category
    creating a "TCA overrides" file.
 
 While using the type :php:`category`, TYPO3 takes care of generating the
-necessary TCA configuration and also of adding the database column.
+necessary TCA configuration.
 Developers only have to define the TCA column and add :php:`category` as the
 desired TCA type.
 
