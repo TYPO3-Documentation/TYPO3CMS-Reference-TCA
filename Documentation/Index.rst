@@ -15,7 +15,7 @@ A complete reference to the Table Configuration Array :php:`$GLOBALS['TCA']`.
 
 :License:
       Open Publication License available from
-      http://www.opencontent.org/openpub/
+      https://www.opencontent.org/openpub/
 
 
 .. sidebar:: Contributors:
@@ -49,7 +49,7 @@ at hand.
 **Versions**
 
 TCA properties change between major versions. This manual has significant
-changes between between each TYPO3 LTS release. 
+changes between between each TYPO3 LTS release.
 Use the version selector of this documentation to select the
 documentation variant that fits.
 
@@ -90,4 +90,4 @@ Alternatively you can `file an issue
    Types/Index
    genindex
    Sitemap
-    
+
