@@ -1904,13 +1904,13 @@
           {
             "action": "makeScreenshotOfElement",
             "selector": ".form-section",
-            "fileName": "InlineMnSymetricBranches"
+            "fileName": "InlineMnSymmetricBranches"
           },
           {
             "action": "createPhpArrayCodeSnippet",
             "sourceFile": "Configuration/TCA/tx_styleguide_inline_mnsymmetric.php",
             "fields": ["columns/branches"],
-            "targetFileName": "InlineMnSymetricBranches"
+            "targetFileName": "InlineMnSymmetricBranches"
           }
         ],
         "inline_mnsymmetric_input": [
@@ -1951,7 +1951,7 @@
           {
             "action": "makeScreenshotOfElement",
             "selector": ".form-section",
-            "fileName": "InlineMnSymetric11Branches"
+            "fileName": "InlineMnSymmetric11Branches"
           }
         ],
         "inline_usecombination": [
