@@ -10,13 +10,13 @@ Category
    The TCA field type called `category` has been added to TYPO3 Core. Its main
    purpose is to simplify the TCA configuration when adding a category
    tree to a record. It therefore supersedes the :php:`CategoryRegistry` as well
-   as the :php:`ExtensionManagementUtility->makeCategorizable()`, which required
+   as the :php:`ExtensionManagementUtility->makeCategorizable()`, which has required
    creating a "TCA overrides" file.
 
 While using the type :php:`category`, TYPO3 takes care of generating the
-necessary TCA configuration and also adds the database column automatically.
-Developers only have to configure the TCA column and add it to the
-desired record types.
+necessary TCA configuration.
+Developers only have to define the TCA column and add :php:`category` as the
+desired TCA type in the tables's TCA file (inside or outside of the Overrides folder).
 
 .. include:: /CodeSnippets/Manual/CategorySimple.rst.txt
 
@@ -34,7 +34,7 @@ The following options can be overridden via :ref:`page TSconfig, TCE form
 
    It is still possible to configure a category tree with `type=select`
    and `renderType=selectTree`. This configuration will still work, but
-   could in most cases be simplified, using the new :php:`category` TCA type.
+   it can in most cases be simplified by using the new :php:`category` TCA type.
 
 
 .. toctree::
