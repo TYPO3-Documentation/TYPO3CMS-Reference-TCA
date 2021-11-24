@@ -18,6 +18,6 @@ symmetric\_field
 Example
 =======
 
-.. include:: /CodeSnippets/InlineMnSymetricInline1.rst.txt
+.. include:: /CodeSnippets/InlineMnSymmetricInline1.rst.txt
 
-.. include:: /CodeSnippets/InlineMnSymetricBranches.rst.txt
+.. include:: /CodeSnippets/InlineMnSymmetricBranches.rst.txt
