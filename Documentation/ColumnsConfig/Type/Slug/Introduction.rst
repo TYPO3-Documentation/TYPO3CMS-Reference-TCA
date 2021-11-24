@@ -6,7 +6,7 @@ Introduction
 
 The main purpose of this type is to define parts of a URL path to generate and resolve URLs.
 
-With a URL like `https://www.typo3.org/ch/community/values/core-values/` a URL slug is typically a part like
+With a URL like :samp:`https://www.typo3.org/ch/community/values/core-values/` a URL slug is typically a part like
 `/community` or `/community/values/core-values`.
 
 Within TYPO3, a slug is always part of the URL "path" - it does not contain scheme, host, HTTP verb, etc.
