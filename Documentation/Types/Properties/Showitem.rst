@@ -18,11 +18,11 @@ showitem
 
    Each comma separated token is one of the following:
 
-   fieldName;fieldLabel
+   ``fieldName;fieldLabel``
       Name of a field to show. Optionally an alternative label (string or LLL reference) to override
       the :ref:`default label from columns section <columns-properties-label>`.
 
-   --palette--;paletteLabel;paletteName
+   ``--palette--;paletteLabel;paletteName``
       Name of a :ref:`palette <palettes>` to show. The label (string or LLL reference) is optional. If set, it is
       shown above the single palette fields. The palette name is required and must reference a palette from
       the palette section.
@@ -32,7 +32,7 @@ showitem
          --palette--;;caching // Show palette "caching" without additional label
          --palette--;Caching;caching // Show palette "caching" with label "Caching"
 
-   --div--;tabLabel
+   ``--div--;tabLabel``
       Put all fields after this token onto a new tab and name the tab as given in "tabLabel" (string or LLL reference).
 
 Examples
