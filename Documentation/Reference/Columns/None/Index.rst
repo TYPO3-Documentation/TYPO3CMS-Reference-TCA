@@ -136,7 +136,7 @@ format
 
            option
              *(string)* A format definition according to PHP's :code:`sprintf()`
-             function (`see the reference <http://php.net/sprintf>`_).
+             function (`see the reference <https://www.php.net/sprintf>`_).
 
          md5
            Returns the md5 hash of the values.

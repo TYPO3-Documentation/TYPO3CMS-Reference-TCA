@@ -74,4 +74,4 @@ using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
 If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/).
+mailing list/forum (https://forum.typo3.org/index.php/f/44/).
