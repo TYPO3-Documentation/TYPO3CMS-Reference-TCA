@@ -15,7 +15,7 @@ A complete reference to the Table Configuration Array :php:`$GLOBALS['TCA']`.
 
 :License:
       Open Publication License available from
-      http://www.opencontent.org/openpub/
+      https://www.opencontent.org/openpub/
 
 
 .. sidebar:: Contributors:
@@ -89,4 +89,4 @@ Alternatively you can `file an issue
     Palettes/Index
     Types/Index
     Sitemap
-    
+
