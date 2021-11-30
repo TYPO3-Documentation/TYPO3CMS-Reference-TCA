@@ -85,12 +85,12 @@ The intermediate table :php:`tx_styleguide_inline_mn_mm` defines the following f
 
 
 .. _columns-inline-examples-symmetric-mm:
-.. _tca_example_inline_mn_symetric_11_branches:
+.. _tca_example_inline_mn_symmetric_11_branches:
 
 Attributes on symmetric intermediate table
 ==========================================
 
-.. include:: /Images/Rst/InlineMnSymetric11Branches.rst.txt
+.. include:: /Images/Rst/InlineMnSymmetric11Branches.rst.txt
 
 Record 1 is related to records 6 and 11 of the same table
 
@@ -101,23 +101,23 @@ also related to record A. However, the records are not stored in groups. If
 record A is related to B and C, B doesn't have to be related to C.
 
 
-.. include:: /Images/Rst/InlineMnSymetric11Branches.rst.txt
+.. include:: /Images/Rst/InlineMnSymmetric11Branches.rst.txt
 
-Record 11 is symetrically related to record 1 but not to 6
+Record 11 is symmetrically related to record 1 but not to 6
 
 The main table :php:`tx_styleguide_inline_mnsymmetric` has a field storing the
 inline relation, here: :php:`branches`.
 
-.. include:: /CodeSnippets/InlineMnSymetricBranches.rst.txt
+.. include:: /CodeSnippets/InlineMnSymmetricBranches.rst.txt
 
-Records of the main table can than have a symetric relationship to each other
+Records of the main table can than have a symmetric relationship to each other
 using the intermediate table :php:`tx_styleguide_inline_mnsymmetric_mm`.
 
 The intermediate table stores the uids of both sides of the relation in
 :php:`hotelid` and :php:`branchid`. Furthermore custom sorting can be defined in
 both directions.
 
-.. include:: /CodeSnippets/Manual/InlineMnSymetricMm.rst.txt
+.. include:: /CodeSnippets/Manual/InlineMnSymmetricMm.rst.txt
 
 .. note::
    :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
