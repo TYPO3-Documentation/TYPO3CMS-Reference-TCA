@@ -17,9 +17,10 @@ This type is very flexible in its display options with all its different
 :ref:`fieldControl <columns-group-properties-fieldControl>` and
 :ref:`fieldWizard <columns-group-properties-fieldWizard>` options. A lot of them are available by default, however they must be enabled: :php:`disabled' => 'false'`
 
-It is required to set :ref:`internal_type <columns-group-properties-internal-type>`. Most common usage is to model
-database relations (n:1 or n:m) with `internal_type='db'`.
-In this case property :ref:`allowed <columns-group-properties-allowed>` is required.
+Most common usage is to model database relations (n:1 or n:m) with
+:ref:`internal_type='db' <columns-group-properties-internal-type>` (default).
+In this case property :ref:`allowed <columns-group-properties-allowed>` is
+required.
 
 The group field uses either the CSV format to store uids of related records or an intermediate mm table
 (in this case :ref:`MM <columns-group-properties-mm>` property is required).

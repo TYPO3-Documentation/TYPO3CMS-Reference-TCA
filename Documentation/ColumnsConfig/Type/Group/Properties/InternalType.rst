@@ -7,9 +7,9 @@ internal\_type
 
 .. confval:: internal_type
 
-   :Required: true
+   :Required: false
    :type: string
-   :Scope: Display  / Proc.
+   :Scope: Display / Proc.
    :Default: db
 
    Configures the internal type of the group type of the element.
@@ -19,10 +19,8 @@ internal\_type
       This will create a field where folders can be attached to the record.
 
    db
-      This will create a field where database records can be attached 
-      as references. As it is the default it can be ommitted.
-
-   There is no default value, the property is required.
+      This will create a field where database records can be attached
+      as references. As it is the default it can be omitted.
 
 .. deprecated:: 9.5
    The internal types `file` and `file_reference` have been deprecated with
