@@ -6,8 +6,6 @@
 .. _columns-group-properties-behaviour:
 .. _columns-group-properties-default:
 .. _columns-group-properties-dontremaptablesoncopy:
-.. _columns-group-properties-fieldControl:
-.. _columns-group-properties-elementBrowser:
 .. _columns-group-properties-fieldInformation:
 .. _columns-group-properties-localizereferencesatparentlocalization:
 .. _columns-group-properties-max-size:
@@ -28,7 +26,7 @@ Special properties
 
    Allowed
    Appearance
-   FieldWizard
+   FieldControl
    Filter
    ForeignTable
    HideMoveIcons
@@ -49,8 +47,6 @@ Common properties
 
    *  :ref:`addRecord <tca_property_fieldControl_addRecord>`
    *  :ref:`editPopup <tca_property_fieldControl_editPopup>`
-   *  :ref:`elementBrowser <columns-group-properties-fieldWizard>`
-   *  :ref:`insertClipboard <tca_property_fieldControl_insertClipboard>`
    *  :ref:`listModule <tca_property_fieldControl_listModule>`
 
 *  :ref:`fieldInformation <tca_property_fieldInformation>`

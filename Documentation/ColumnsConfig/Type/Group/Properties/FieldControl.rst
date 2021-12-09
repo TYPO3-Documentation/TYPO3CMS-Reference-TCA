@@ -1,9 +1,12 @@
 .. include:: /Includes.rst.txt
-.. _columns-group-properties-fieldWizard:
+.. _columns-group-properties-fieldControl:
+.. _tca_property_fieldControl_elementBrowser:
+.. _columns-group-properties-elementBrowser:
+.. _tca_property_fieldControl_insertClipboard:
 
-===========
-fieldWizard
-===========
+============
+fieldControl
+============
 
 The field of type group can enable all common :ref:`field control options
 <tca_property_fieldControl>`. Furthermore the following are available:
@@ -26,7 +29,7 @@ The field of type group can enable all common :ref:`field control options
 
    The clipboard control adds a control button for :code:`type='group'` to paste records from
    a users clipboard into the selection. It is enabled by default for :code:`type='group'` and
-   shown below the :ref:`element browser <columns-group-properties-elementBrowser>` if the
+   shown below the **element browser** if the
    order has not been changed using the `before` and `after` keywords. It can be turned off by
    setting `disabled` to true, just like any other fieldControl.
 
