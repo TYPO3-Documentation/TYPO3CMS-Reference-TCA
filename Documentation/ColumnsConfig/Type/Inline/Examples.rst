@@ -117,7 +117,7 @@ The intermediate table stores the uids of both sides of the relation in
 :php:`hotelid` and :php:`branchid`. Furthermore custom sorting can be defined in
 both directions.
 
-.. include:: /CodeSnippets/Manual/InlineMnSymmetricMm.rst.txt
+.. include:: /CodeSnippets/Manual/InlineMnSymetricMm.rst.txt
 
 .. note::
    :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
