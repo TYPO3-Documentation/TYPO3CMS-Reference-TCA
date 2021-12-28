@@ -82,9 +82,16 @@ appearance
       if you want to replace it with your own implementation using a custom control,
       see :ref:`customControls <columns-inline-properties-customcontrols>`.
 
-   headerThumbnail (boolean)
+   headerThumbnail (array)
       Defines whether a thumbnail should be rendered in the inline elements' header. This is used by the File
-      Abstraction Layer to render a preview of the related image.
+      Abstraction Layer to render a preview of the related image. Can contain image processing instructions like `width` and `height`.
+
+      field (required)
+         The table column name, which contains the uid of the image reference. Usually this is :sql:`uid_local`.
+      width
+         The width of the thumbnail.
+      height
+         The height of the thumbnail.
 
    fileUploadAllowed (boolean)
       Defines whether the button "Select & upload file" should be rendered. This can be used for file fields to directly
