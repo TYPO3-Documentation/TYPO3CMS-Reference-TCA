@@ -18,16 +18,6 @@ linkPopup
 
    **Options:**
 
-   pid (string)
-      pid of the new record. Can be a hard pid setting, or one of these markers, see
-      :ref:`select foreign_table_where <columns-select-properties-foreign-table-where>`.
-      Falls back to "current pid" if not set, forces pid=0 if records of this table are only
-      allowed on root level.
-
-      - :code:`###CURRENT_PID###`
-      - :code:`###THIS_UID###`
-      - :code:`###SITEROOT###`
-
    allowedExtensions (string, list)
       Comma separated list of allowed file extensions. By default, all extensions are allowed.
 
