@@ -12,21 +12,23 @@ appearance
    :InternalType: all
 
    Options for refining the appearance of group-type fields. This property is
-   automatically used for :ref:`FAL<t3fal:start>` relations created by the function
-   :php:`ExtensionManagementUtility::getFileFieldTCAConfig`.
+   automatically used for :ref:`FAL <t3coreapi:fal>` relations created by the
+   function :php:`ExtensionManagementUtility::getFileFieldTCAConfig`.
 
    elementBrowserType (string)
-      Allows set an alternative element browser type ("db" or "file") than
-      would otherwise be rendered based on the "internal_type" setting.
-      This is used internally for :ref:`FAL<t3fal:start>` file fields, where
-      internal_type is "db" but the element browser should be the file element
+      Allows to set an alternative element browser type (`db` or `file`) that
+      would otherwise be rendered based on the :ref:`internal_type <columns-group-properties-internal-type>` setting.
+      This is used internally for :ref:`FAL <t3coreapi:fal>` file fields, where
+      internal_type is `db` but the element browser should be the file element
       browser anyway.
 
    elementBrowserAllowed (string)
       Makes it possible to set an alternative element browser allowed string
-      than would otherwise be taken from the "allowed" setting of this field.
-      This is used internally for :ref:`FAL<t3fal:start>` file fields, where
-      this is used to supply the comma list of allowed file types.
+      that would otherwise be taken from the :ref:`allowed <columns-group-properties-allowed>` setting of this field.
+      This is used internally for :ref:`FAL <t3coreapi:fal>` file fields, where
+      this is used to supply the comma list of allowed file types. This also
+      affects whether the "Add media by URL" button is shown if online media
+      file extensions (e.g. `youtube` or `vimeo`) are included.
 
 Examples
 ========
