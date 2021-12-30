@@ -5,25 +5,27 @@
 range
 =====
 
-:type: array
-:Scope: Proc.
+.. confval:: range
 
-An array which defines an integer range within which the value must be. Keys:
+   :type: array
+   :Scope: Proc.
 
-lower
-   Defines the earliest date.
+   An array which defines an integer range within which the value must be. Keys:
 
-upper
-   Defines the latest date.
+   lower
+      Defines the earliest date.
 
-It is allowed to specify only one of both of them.
+   upper
+      Defines the latest date.
 
-In this example the upper limit is set to the last day in year 2020 while the lowest possible value is
-set to the date of 2014:
+   It is allowed to specify only one of both of them.
 
-.. code-block:: php
+   In this example the upper limit is set to the last day in year 2020 while the lowest possible value is
+   set to the date of 2014:
 
-   'range' => [
-      'upper' => gmmktime(23, 59, 59, 12, 31, 2020),
-      'lower' => gmmktime(0, 0, 0, 1, 1, 2014),
-   ],
+   .. code-block:: php
+
+      'range' => [
+         'upper' => gmmktime(23, 59, 59, 12, 31, 2020),
+         'lower' => gmmktime(0, 0, 0, 1, 1, 2014),
+      ],
