@@ -5,6 +5,7 @@
 range
 =====
 
+.. confval:: range
 
    :type: array
    :Scope: Proc.
