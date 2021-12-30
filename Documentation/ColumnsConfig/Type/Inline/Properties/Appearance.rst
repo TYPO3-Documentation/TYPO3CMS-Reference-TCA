@@ -35,6 +35,10 @@ appearance
 
          'newRecordLinkTitle' => 'LLL:EXT:myext/Resources/Private/Language/locallang_db.xlf:my_new_record_label'
 
+   createNewRelationLinkTitle (string or LLL reference)
+      Overwrites the link text and title of the "Create new relation" button with a localised string.
+      Only useful, if the element browser is enabled. This is usually used together with FAL relations to change it to "Add file" or similar.
+
    levelLinksPosition (string)
       Values: 'top' (default), 'bottom', 'both', 'none'. Defines where to show the "New record" link in relation
       to the child records.
