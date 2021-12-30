@@ -5,28 +5,30 @@
 dbType
 ======
 
-:type: string
-:Scope: Proc.
+.. confval:: dbType
 
-If set, the date or time will not be stored as timestamp, but as native
-`date`, `time` or `datetime` field in the database. Keep in mind that no
-timezone conversion will happen.
+   :type: string
+   :Scope: Proc.
 
-**Examples**
+   If set, the date or time will not be stored as timestamp, but as native
+   `date`, `time` or `datetime` field in the database. Keep in mind that no
+   timezone conversion will happen.
 
-Datetime:
+Examples
+========
 
-:file:`ext_tables.sql`:
+Date and time picker stored in a datetime field
+-----------------------------------------------
 
 .. code-block:: sql
+   :caption: :file:`ext_tables.sql`
 
    CREATE TABLE tx_example_domain_model_foo (
       synced_at datetime default NULL
    )
 
-:file:`Configuration/TCA/tx_example_domain_model_foo.php`:
-
-.. code-block:: php
+.. code-block:: sql
+   :caption: :file:`Configuration/TCA/tx_example_domain_model_foo.php`
 
    'synced_at' => [
       'config' => [
@@ -38,18 +40,19 @@ Datetime:
    ],
 
 
-Time:
-
-:file:`ext_tables.sql`:
+Time picker stored in a datetime field
+-----------------------------------------------
 
 .. code-block:: sql
+   :caption: :file:`ext_tables.sql`
 
    CREATE TABLE tx_example_domain_model_foo (
       synced_at time default NULL
    )
 
-:file:`Configuration/TCA/tx_example_domain_model_foo.php`::
-
+.. code-block:: sql
+   :caption: :file:`Configuration/TCA/tx_example_domain_model_foo.php`
+   
    'synced_at' => [
       'config' => [
          'type' => 'input',
