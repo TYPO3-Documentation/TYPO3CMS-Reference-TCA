@@ -34,6 +34,9 @@ It is possible to use markers in the WHERE clause:
    .. note::
       The field name part of the marker is not in upper case letters.
       It must match the exact case used in the database.
+      
+      So for example :sql:`sys_language_uid` must be referenced using
+      `###REC_FIELD_sys_language_uid###`
 
 ###THIS\_UID###
    Current element uid (zero if new).
