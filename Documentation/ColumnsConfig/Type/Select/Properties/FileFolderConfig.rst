@@ -12,7 +12,7 @@ fileFolderConfig
 .. confval:: fileFolderConfig.folder
 
    :type: string
-   :Scope: Display  / Proc.
+   :Scope: Display / Proc.
    :RenderType: all
 
    Specifying a folder from where files are added to the item array.
@@ -22,9 +22,9 @@ fileFolderConfig
    prefix "EXT:" to point to an extension folder.
 
    Files from the folder is selected recursively to the level specified by
-   :ref:`fileFolder_recursions <columns-select-properties-filefolder-recursions>`
+   :ref:`fileFolderConfig.depth <columns-select-properties-fileFolderConfig-depth>`
    and only files of the extension defined by
-   :ref:`fileFolder_extList <columns-select-properties-filefolder-extlist>`
+   :ref:`fileFolderConfig.allowedExtensions <columns-select-properties-fileFolderConfig-allowedExtensions>`
    are selected.
 
    Only the file reference relative to the "fileFolderConfig.folder" is stored.
