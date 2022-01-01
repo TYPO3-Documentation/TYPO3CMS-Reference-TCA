@@ -32,19 +32,19 @@ valuePicker
 Example
 =======
 
-   .. code-block:: php
+.. code-block:: php
 
-      'input_33' => [
-         'label' => 'input_33',
-         'config' => [
-            'type' => 'input',
-            'valuePicker' => [
-               'items' => [
-                  ['spring', 'Spring'],
-                  ['summer', 'Summer'],
-                  ['autumn', 'Autumn'],
-                  ['winter', 'Winter'],
-               ],
+   'input_33' => [
+      'label' => 'input_33',
+      'config' => [
+         'type' => 'input',
+         'valuePicker' => [
+            'items' => [
+               ['spring', 'Spring'],
+               ['summer', 'Summer'],
+               ['autumn', 'Autumn'],
+               ['winter', 'Winter'],
             ],
          ],
       ],
+   ],
