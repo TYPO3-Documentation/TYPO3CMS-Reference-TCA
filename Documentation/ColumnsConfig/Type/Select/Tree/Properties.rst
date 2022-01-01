@@ -13,9 +13,12 @@ Select properties
 *  :ref:`default <columns-select-properties-default>`
 *  :ref:`disableNoMatchingValueElement <columns-select-properties-disableNoMatchingValueElement>`
 *  :ref:`exclusivekeys <columns-select-properties-exclusivekeys>`
-*  :ref:`filefolder <columns-select-properties-filefolder>`
-*  :ref:`filefolder_extlist <columns-select-properties-filefolder-extlist>`
-*  :ref:`filefolder_recursions <columns-select-properties-filefolder-recursions>`
+*  :ref:`fileFolderConfig <columns-select-properties-fileFolderConfig>`
+
+   *  :ref:`folder <columns-select-properties-fileFolderConfig.folder>`
+   *  :ref:`allowedExtensions <columns-select-properties-fileFolderConfig-allowedExtensions>`
+   *  :ref:`depth <columns-select-properties-fileFolderConfig-depth>`
+
 *  :ref:`foreign_table <columns-select-properties-foreign-table>`
 *  :ref:`foreign_table_prefix <columns-select-properties-foreign-table-prefix>`
 *  :ref:`foreign_table_where <columns-select-properties-foreign-table-where>`
