@@ -10,7 +10,7 @@ MM
    :type: string (table name)
    :Scope: Proc.
 
-   This value contains the name of the table in which to store an MM
+   This value contains the name of the table in which to store a MM
    relation. It is used together with
    :ref:`allowed (group) <columns-group-properties-allowed>`. If you use Extbase
    :ref:`foreign_table <columns-group-properties-foreign-table>` has to contain the
@@ -21,15 +21,17 @@ MM
 
    There is additional information in the :ref:`MM common property description
    <tca_property_MM>`.
-   
-   The table name use in the field :php:`MM` should be unique. It must be a valid SQL 
+
+   The table name used in the field :php:`MM` should be unique. It must be a valid SQL
    table name. It is best practise to use
-   the name of both referenced tables and of the field in which the reference is saved 
-   on local side. This way uniqueness can be ensured and it it possible to finde the field 
+   the name of both referenced tables and of the field in which the reference is saved
+   on local side. This way uniqueness can be ensured and it is possible to find the field
    where the table is used quickly.
-   
-   Example::
-   
+
+   Example:
+
+   .. code-block:: php
+
       // table tx_table1
       $fields = array(
          'relation_table1_table2' => array(
