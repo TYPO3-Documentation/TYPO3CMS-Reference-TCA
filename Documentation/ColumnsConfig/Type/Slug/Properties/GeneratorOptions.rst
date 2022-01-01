@@ -69,6 +69,10 @@ generatorOptions
    Disable it for shorter URLs, but take the higher chance of collision into
    consideration.
 
+   .. note::
+
+      This option is exclusively for page records. It won't have an effect on any other records.
+
 .. confval:: generatorOptions:replacements
 
    :type: array
