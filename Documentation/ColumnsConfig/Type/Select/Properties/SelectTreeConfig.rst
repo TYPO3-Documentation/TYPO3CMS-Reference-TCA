@@ -23,10 +23,6 @@ treeConfig
    parentField (string)
       Field name of the foreign\_table that references the uid of the parent record
 
-   rootUid (integer, optional)
-      Deprecated, use startingPoints (see below);
-      uid of the record that shall be considered as the root node of the tree.
-
    startingPoints (string, comma separated values)
       allows to set multiple records as roots for tree records.
 
@@ -35,8 +31,8 @@ treeConfig
 
       Additionally, each value used in `startingPoints` may be fed from a site
       configuration by using the `###SITE:###` syntax.
-      
-      This property can also be set by page TSconfig, see 
+
+      This property can also be set by page TSconfig, see
       :ref:`pagetsconfigtceformconfigtreeconfig`
 
       Example:
