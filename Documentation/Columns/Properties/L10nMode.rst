@@ -27,10 +27,10 @@ Localization mode (l10n_mode)
       by setting  :ref:`"l10n_display" <columns-properties-l10n-display>` to `defaultAsReadonly`.
 
    prefixLangTitle
-      The field value from the default language record gets copied when an localization overlay is created, but the
+      The field value from the default language record gets copied when a localization overlay is created, but the
       content is prefixed with the title of the target language. The field stays editable in the localized record.
-      Works only for field types like "text" and "input". The text that will be prepended can be configured by
-      page TSconfig property :ref:`TCEMAIN.translateToMessage <t3tsconfig:pagetcemain-translatetomessage>`
+      It only works for field types like "text" and "input". The text will be prepended and can be configured by
+      the page TSconfig property :ref:`TCEMAIN.translateToMessage <t3tsconfig:pagetcemain-translatetomessage>`
 
    If this property is not set for a given field, the value of the default language record is copied over to the
    localized record on creation, the field value is then distinct from the default language record, can be edited
