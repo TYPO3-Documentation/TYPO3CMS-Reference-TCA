@@ -29,7 +29,8 @@ Localization mode (l10n_mode)
    prefixLangTitle
       The field value from the default language record gets copied when an localization overlay is created, but the
       content is prefixed with the title of the target language. The field stays editable in the localized record.
-      Works only for field types like "text" and "input".
+      Works only for field types like "text" and "input". The text that will be prepended can be configured by
+      page TSconfig property :ref:`TCEMAIN.translateToMessage <t3tsconfig:pagetcemain-translatetomessage>`
 
    If this property is not set for a given field, the value of the default language record is copied over to the
    localized record on creation, the field value is then distinct from the default language record, can be edited
@@ -54,3 +55,17 @@ field gets copied to the target language. It get prefixed with
 The language mode is defined as follows:
 
 .. include:: /CodeSnippets/TranslatedText2.rst.txt
+
+
+.. _tca_example_l10n_mode:
+
+Disable the prefixLangTitle for the header field in tt_content
+--------------------------------------------------------------
+
+Use the default behaviour instead of :php:`prefixLangTitle`: the field will
+be copied without a prepended string.
+
+.. code-block::
+   :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php
+   
+   $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = ''
