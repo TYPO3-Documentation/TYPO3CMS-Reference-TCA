@@ -7,6 +7,7 @@ elementBrowserEntryPoints
 
 .. confval:: elementBrowserEntryPoints
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
 
