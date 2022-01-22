@@ -7,6 +7,7 @@ localizationStateSelector
 
 .. confval:: localizationStateSelector
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
    :type: array
    :Scope: fieldWizard
 

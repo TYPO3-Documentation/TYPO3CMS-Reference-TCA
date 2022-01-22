@@ -7,6 +7,7 @@ addRecord
 
 .. confval:: addRecord
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array
    :Scope: fieldControl
    :Types: :ref:`group <columns-group>`
@@ -56,6 +57,7 @@ Options
 
 .. confval:: disabled
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
    :type: boolean
    :Scope: fieldControl -> addRecord
    :Default: true
@@ -65,6 +67,7 @@ Options
 
 .. confval:: options[pid]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
    :type: string
    :Scope: fieldControl -> addRecord
    :Values: marker or an integer
@@ -83,6 +86,7 @@ Options
 
 .. confval:: options[table]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
    :type: string
    :Scope: fieldControl -> addRecord
    :Values: name of the table
@@ -95,6 +99,7 @@ Options
 
 .. confval:: options[title]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
    :type: string
    :Scope: fieldControl -> addRecord
    :Values: string or LLL reference
@@ -104,6 +109,7 @@ Options
 
 .. confval:: options[setValue]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
    :type: string
    :Scope: fieldControl -> addRecord
    :Values: string

@@ -7,6 +7,7 @@ Record types
 
 .. confval:: type
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Display / Proc.
 

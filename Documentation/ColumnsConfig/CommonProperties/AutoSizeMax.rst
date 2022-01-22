@@ -8,6 +8,7 @@ autoSizeMax
 
 .. confval:: autoSizeMax
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer
    :Scope: Display
    :Types: :ref:`select <columns-select>`, :ref:`group <columns-group>`, :ref:`inline <columns-inline>`

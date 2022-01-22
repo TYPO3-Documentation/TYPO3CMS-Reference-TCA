@@ -7,6 +7,7 @@ default
 
 .. confval:: default
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer / string
    :Scope: Display / Proc.
    :Types: :ref:`group <columns-group>`, :ref:`input <columns-input>`,

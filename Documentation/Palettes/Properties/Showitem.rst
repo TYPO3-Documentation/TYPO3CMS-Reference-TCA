@@ -9,6 +9,7 @@ showitem
 
 .. confval:: showitem
 
+   :Path: $GLOBALS['TCA'][$table]['palettes']
    :Required: true
    :type: string (list of field names)
 

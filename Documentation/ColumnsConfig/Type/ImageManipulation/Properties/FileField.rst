@@ -7,6 +7,7 @@ file_field
 
 .. confval:: file_field
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (field name)
    :Scope: Proc. / Display
 

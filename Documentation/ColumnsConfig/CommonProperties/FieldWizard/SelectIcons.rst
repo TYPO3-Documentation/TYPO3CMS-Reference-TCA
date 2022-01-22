@@ -7,6 +7,7 @@ selectIcons
 
 .. confval:: selectIcons
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
    :type: array
    :Scope: fieldWizard
 

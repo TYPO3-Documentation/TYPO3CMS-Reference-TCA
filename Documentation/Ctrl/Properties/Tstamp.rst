@@ -7,6 +7,7 @@ tstamp
 
 .. confval:: tstamp
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Proc.
 

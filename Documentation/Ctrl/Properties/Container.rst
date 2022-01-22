@@ -7,6 +7,7 @@ container
 
 .. confval:: container
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: array
    :Scope: Display
 

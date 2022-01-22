@@ -7,6 +7,7 @@ readOnly
 
 .. confval:: readOnly
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: boolean
    :Scope: Proc. / Display
 

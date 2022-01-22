@@ -7,6 +7,7 @@ pass\_content
 
 .. confval:: pass_content
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
 

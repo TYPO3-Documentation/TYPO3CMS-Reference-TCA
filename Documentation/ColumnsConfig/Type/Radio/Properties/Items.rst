@@ -7,6 +7,7 @@ items
 
 .. confval:: items
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :required: true
    :type: array
    :Scope: Display  / Proc.

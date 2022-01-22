@@ -7,6 +7,7 @@ label
 
 .. confval:: label
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Display
 

@@ -8,6 +8,7 @@ fixedFont
 
 .. confval:: fixedFont
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
    :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,

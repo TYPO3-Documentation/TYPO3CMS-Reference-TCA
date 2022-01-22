@@ -7,6 +7,7 @@ foreign\_table\_field
 
 .. confval:: foreign_table_field
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display  / Proc.
 

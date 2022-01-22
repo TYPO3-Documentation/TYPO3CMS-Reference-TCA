@@ -7,6 +7,7 @@ listModule
 
 .. confval:: listModule
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array
    :Scope: fieldControl
    :Types: :ref:`group <columns-group>`
@@ -23,6 +24,7 @@ Options
 
 .. confval:: disabled
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
    :type: boolean
    :Scope: fieldControl -> listModule
    :Default: true
@@ -32,6 +34,7 @@ Options
 
 .. confval:: options[pid]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
    :type: string
    :Scope: fieldControl -> addRecord
    :Values: marker or an integer
@@ -50,6 +53,7 @@ Options
 
 .. confval:: options[table]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
    :type: string
    :Scope: fieldControl -> listModule
    :Values: name of the table
@@ -62,6 +66,7 @@ Options
 
 .. confval:: options[title]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
    :type: string
    :Scope: fieldControl -> listModule
    :Values: string or LLL reference

@@ -7,6 +7,7 @@ wrap
 
 .. confval:: wrap
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (keyword)
    :Scope: Display
    :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,

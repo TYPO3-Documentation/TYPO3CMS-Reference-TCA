@@ -7,6 +7,7 @@ symmetric\_label
 
 .. confval:: symmetric_label
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display  / Proc.
 

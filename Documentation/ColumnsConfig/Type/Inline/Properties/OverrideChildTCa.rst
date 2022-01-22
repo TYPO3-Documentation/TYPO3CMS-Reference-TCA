@@ -7,6 +7,7 @@ overrideChildTca
 
 .. confval:: overrideChildTca
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
 
@@ -136,7 +137,7 @@ This overrides the foreign_selector field target field config, defined in the
 .. note::
    It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsOverrides>`
    of an inline parent in the :code:`['types']` section.
-   
+
 Example
 -------
 

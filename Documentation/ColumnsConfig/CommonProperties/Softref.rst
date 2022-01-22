@@ -7,6 +7,7 @@ softref
 
 .. confval:: softref
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Proc.
    :Types: :ref:`input <columns-input>`

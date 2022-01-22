@@ -5,6 +5,7 @@
 fieldControl
 ============
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
 .. confval:: fieldControl
 
    :type: array

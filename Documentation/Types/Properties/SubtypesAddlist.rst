@@ -7,6 +7,7 @@ subtypes\_addlist
 
 .. confval:: subtypes_addlist
 
+   :Path: $GLOBALS['TCA'][$table]['types'][$type]
    :type: array
 
 

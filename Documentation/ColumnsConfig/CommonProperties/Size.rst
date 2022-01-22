@@ -7,6 +7,7 @@ size
 
 .. confval:: size
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer
    :Scope: Display
    :Types: :ref:`group <columns-group>`

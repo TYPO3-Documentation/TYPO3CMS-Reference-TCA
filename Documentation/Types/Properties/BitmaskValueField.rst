@@ -7,6 +7,7 @@ bitmask\_value\_field
 
 .. confval:: bitmask_value_field
 
+   :Path: $GLOBALS['TCA'][$table]['types'][$type]
    :type: string (field name)
 
 

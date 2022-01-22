@@ -7,6 +7,7 @@ tableList
 
 .. confval:: tableList
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
    :type: array
    :Scope: fieldWizard
    :Types: :ref:`group <columns-group>`

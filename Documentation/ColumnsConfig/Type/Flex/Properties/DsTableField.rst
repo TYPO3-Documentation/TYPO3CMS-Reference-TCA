@@ -7,6 +7,7 @@ ds\_tableField
 
 .. confval:: ds_tableField
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display  / Proc.
 

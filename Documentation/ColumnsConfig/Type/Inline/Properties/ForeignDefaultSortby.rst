@@ -8,6 +8,7 @@ foreign\_default\_sortby
 
 .. confval:: foreign_default_sortby
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display
 

@@ -7,6 +7,7 @@ allowed
 
 .. confval:: allowed
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list)
    :Scope: Proc. / Display
    :InternalType: db

@@ -8,6 +8,7 @@ allowNonIdValues
 
 .. confval:: allowNonIdValues
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Proc.
    :RenderType: all

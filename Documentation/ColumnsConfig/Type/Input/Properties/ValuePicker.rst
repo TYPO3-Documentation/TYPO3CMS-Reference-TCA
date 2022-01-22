@@ -7,6 +7,7 @@ valuePicker
 
 .. confval:: valuePicker
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
    :RenderTypes: default, colorpicker, inputLink

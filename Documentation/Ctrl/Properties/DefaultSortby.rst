@@ -7,6 +7,7 @@ default\_sortby
 
 .. confval:: default_sortby
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Display
 

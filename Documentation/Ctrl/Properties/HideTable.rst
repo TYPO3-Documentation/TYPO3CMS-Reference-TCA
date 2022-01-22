@@ -7,6 +7,7 @@ hideTable
 
 .. confval:: hideTable
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: boolean
    :Scope: Display
 

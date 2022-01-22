@@ -7,6 +7,7 @@ MM
 
 .. confval:: MM
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (table name)
    :Scope: Proc.
 

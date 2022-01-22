@@ -7,6 +7,7 @@ label
 
 .. confval:: label
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
    :Required: true
    :type: string or LLL reference
    :Scope: Display

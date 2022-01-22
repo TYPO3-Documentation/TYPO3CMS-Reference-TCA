@@ -7,6 +7,7 @@ resetSelection
 
 .. confval:: resetSelection
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array
    :Scope: fieldControl
    :Types: :aspect:`Description`

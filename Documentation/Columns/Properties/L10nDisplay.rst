@@ -7,6 +7,7 @@ Localization display (l10n\_display)
 
 .. confval:: l10n_display
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
    :Required: false
    :type: string (list of keywords)
    :Scope: Display

@@ -8,6 +8,7 @@ allowLanguageSynchronization behaviour
 
 .. confval:: behaviour > allowLanguageSynchronization
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Proc.
    :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
@@ -17,9 +18,9 @@ allowLanguageSynchronization behaviour
       :ref:`radio <columns-radio>`
 
    Allows an editor to select in a localized record whether the value is copied
-   over from default or source language record, or if the field has an own value 
-   in the localization. If set to true and if the table supports localization 
-   and if a localized record is edited, this setting enables FieldWizard 
+   over from default or source language record, or if the field has an own value
+   in the localization. If set to true and if the table supports localization
+   and if a localized record is edited, this setting enables FieldWizard
    :ref:`LocalizationStateSelector <columns-input-properties-fieldWizard-localizationStateSelector>`:
    Two or three radio buttons shown below the field input. The state of this is
    stored in a json encoded array in the database table called :code:`l10n_state`.
