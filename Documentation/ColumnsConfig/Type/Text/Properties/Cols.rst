@@ -7,6 +7,7 @@ cols
 
 .. confval:: cols
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer
    :Scope: Display
 

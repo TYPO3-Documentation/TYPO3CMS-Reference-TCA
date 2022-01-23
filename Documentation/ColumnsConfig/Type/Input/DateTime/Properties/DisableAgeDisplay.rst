@@ -6,6 +6,8 @@ disableAgeDisplay
 =================
 
 .. confval:: disableAgeDisplay
+
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
 

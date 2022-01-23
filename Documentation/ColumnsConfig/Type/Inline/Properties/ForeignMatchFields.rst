@@ -7,6 +7,7 @@ foreign\_match\_fields
 
 .. confval:: foreign_match_fields
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Proc.
 

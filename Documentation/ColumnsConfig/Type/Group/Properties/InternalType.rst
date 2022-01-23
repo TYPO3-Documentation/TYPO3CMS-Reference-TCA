@@ -7,6 +7,7 @@ internal\_type
 
 .. confval:: internal_type
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :Required: false
    :type: string
    :Scope: Display / Proc.

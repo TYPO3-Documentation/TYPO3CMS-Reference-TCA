@@ -7,6 +7,7 @@ enablecolumns
 
 .. confval:: enablecolumns
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: array
    :Scope: Proc. / Display
 

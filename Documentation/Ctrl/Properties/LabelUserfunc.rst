@@ -7,6 +7,7 @@ label\_userFunc
 
 .. confval:: label_userFunc
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Display
 
@@ -17,17 +18,17 @@ label\_userFunc
    function overrules the :ref:`label <ctrl-reference-label>`, :ref:`label_alt <ctrl-reference-label-alt>`
    and :ref:`label_alt_force <ctrl-reference-label-alt-force>` settings.
 
-   When calling a method from a class, enter :php:`[classname]->[methodname]`. The passed argument is an array 
+   When calling a method from a class, enter :php:`[classname]->[methodname]`. The passed argument is an array
    which contains the following information about the record for which to get the title::
 
       $params['table'] = $table;
       $params['row'] = $row;
 
-   The resulting title must be written to $params['title'], which is passed by reference. 
+   The resulting title must be written to $params['title'], which is passed by reference.
 
    .. warning::
 
-      The title is passed later on through :code:`htmlspecialchars()` 
+      The title is passed later on through :code:`htmlspecialchars()`
       so it may not include any HTML formatting.
 
 Example

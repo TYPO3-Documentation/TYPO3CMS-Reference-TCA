@@ -7,6 +7,7 @@ title
 
 .. confval:: title
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string or LLL reference
    :Scope: Display
 

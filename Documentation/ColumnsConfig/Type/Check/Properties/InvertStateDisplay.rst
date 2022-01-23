@@ -7,6 +7,7 @@ invertStateDisplay
 
 .. confval:: invertStateDisplay
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
    :Default: false

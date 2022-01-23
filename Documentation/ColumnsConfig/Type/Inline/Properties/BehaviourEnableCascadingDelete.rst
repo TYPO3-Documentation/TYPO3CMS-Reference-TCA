@@ -6,6 +6,7 @@ enableCascadingDelete
 
 .. confval:: behaviour > enableCascadingDelete
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Proc.
 

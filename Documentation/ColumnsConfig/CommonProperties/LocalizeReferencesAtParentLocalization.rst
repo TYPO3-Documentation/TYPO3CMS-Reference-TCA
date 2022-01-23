@@ -7,6 +7,7 @@ localizeReferencesAtParentLocalization
 
 .. confval:: localizeReferencesAtParentLocalization
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Proc.
    :Types: :ref:`group <columns-group>`, :ref:`select <columns-select>`

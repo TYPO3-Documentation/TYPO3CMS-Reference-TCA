@@ -7,6 +7,7 @@ bitmask\_excludelist\_bits
 
 .. confval:: bitmask_excludelist_bits
 
+   :Path: $GLOBALS['TCA'][$table]['types'][$type]
    :type: array
 
 

@@ -7,6 +7,7 @@ search
 
 .. confval:: search
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Search
    :Types: :ref:`input <columns-input>`

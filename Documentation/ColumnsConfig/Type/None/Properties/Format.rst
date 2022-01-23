@@ -7,6 +7,7 @@ format
 
 .. confval:: format
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (keyword) + array
    :Scope: Display
 

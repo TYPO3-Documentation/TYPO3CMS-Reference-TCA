@@ -7,6 +7,7 @@ treeConfig
 
 .. confval:: treeConfig
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
    :RenderType: :ref:`selectTree <columns-select-rendertype-selectTree>`

@@ -7,6 +7,7 @@ enableRichtext
 
 .. confval:: enableRichtext
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display  / Proc.
    :RenderType: :ref:`default <columns-text-renderType-default>`

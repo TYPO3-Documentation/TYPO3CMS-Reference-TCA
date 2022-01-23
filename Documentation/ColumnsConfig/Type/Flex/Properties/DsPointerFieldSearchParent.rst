@@ -7,6 +7,7 @@ ds\_pointerField\_searchParent
 
 .. confval:: ds_pointerField_searchParent
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display  / Proc.
 

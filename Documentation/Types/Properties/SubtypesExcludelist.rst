@@ -7,6 +7,7 @@ subtypes\_excludelist
 
 .. confval:: subtypes_excludelist
 
+   :Path: $GLOBALS['TCA'][$table]['types'][$type]
    :type: array
 
 

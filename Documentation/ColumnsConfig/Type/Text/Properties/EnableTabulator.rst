@@ -7,6 +7,7 @@ enableTabulator
 
 .. confval:: enableTabulator
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
    :RenderType: :ref:`default <columns-text-renderType-default>`, :ref:`textTable <columns-text-renderType-textTable>`

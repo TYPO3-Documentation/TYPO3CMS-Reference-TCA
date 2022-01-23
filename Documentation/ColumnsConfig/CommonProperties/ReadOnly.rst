@@ -7,6 +7,7 @@ readOnly
 
 .. confval:: readOnly
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
    :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,

@@ -7,8 +7,8 @@ allowedExtensions
 
 .. confval:: allowedExtensions
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list of file extensions)
-
    :Scope: Proc. / Display
 
    List of image types (by file extension) which can be cropped. Defaults to

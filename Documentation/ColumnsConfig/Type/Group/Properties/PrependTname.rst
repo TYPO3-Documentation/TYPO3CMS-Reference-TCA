@@ -7,6 +7,7 @@ prepend\_tname
 
 .. confval:: prepend_tname
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Proc.
    :InternalType: db

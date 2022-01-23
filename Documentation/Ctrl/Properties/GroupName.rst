@@ -7,6 +7,7 @@ groupName
 
 .. confval:: groupName
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Special
 

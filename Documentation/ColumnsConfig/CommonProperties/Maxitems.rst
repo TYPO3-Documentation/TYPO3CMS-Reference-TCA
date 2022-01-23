@@ -7,6 +7,7 @@ maxitems
 
 .. confval:: maxitems
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer > 0
    :Scope: Display / Proc.
    :Types: :ref:`group <columns-group>`, :ref:`inline <columns-inline>`

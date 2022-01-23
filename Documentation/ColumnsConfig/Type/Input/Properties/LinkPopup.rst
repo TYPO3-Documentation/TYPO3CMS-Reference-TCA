@@ -9,6 +9,7 @@ linkPopup
 
 .. confval:: linkPopup
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: fieldControl
    :RenderTypes: inputLink

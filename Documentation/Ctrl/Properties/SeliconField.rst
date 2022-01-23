@@ -7,6 +7,7 @@ selicon\_field
 
 .. confval:: selicon_field
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Display
 

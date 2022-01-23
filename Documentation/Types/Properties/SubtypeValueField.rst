@@ -7,6 +7,7 @@ subtype\_value\_field
 
 .. confval:: subtype_value_field
 
+   :Path: $GLOBALS['TCA'][$table]['types'][$type]
    :type: string (field name)
 
 

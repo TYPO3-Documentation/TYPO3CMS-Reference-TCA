@@ -7,6 +7,7 @@ filter
 
 .. confval:: filter
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Proc. / Display
    :InternalType: db

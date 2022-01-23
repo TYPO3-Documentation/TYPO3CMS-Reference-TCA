@@ -7,6 +7,7 @@ foreign\_sortby
 
 .. confval:: foreign_sortby
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display / Proc.
 

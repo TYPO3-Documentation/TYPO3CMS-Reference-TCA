@@ -7,8 +7,8 @@ columnsOverrides
 
 .. confval:: columnsOverrides
 
+   :Path: $GLOBALS['TCA'][$table]['types'][$type]
    :type: array (columns fields overrides)
-
    :Scope: Display
 
 

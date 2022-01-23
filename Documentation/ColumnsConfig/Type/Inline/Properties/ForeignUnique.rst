@@ -7,6 +7,7 @@ foreign\_unique
 
 .. confval:: foreign\_unique
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display  / Proc.
 

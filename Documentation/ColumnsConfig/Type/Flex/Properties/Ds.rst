@@ -7,6 +7,7 @@ Data structure (ds)
 
 .. confval:: ds
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display  / Proc.
 

@@ -7,6 +7,7 @@ descriptionColumn
 
 .. confval:: descriptionColumn
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Display
 

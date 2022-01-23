@@ -15,6 +15,7 @@ FlexForm values.
 
 .. confval:: displayCond
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
    :Required: false
    :type: string / array
    :Scope: Display

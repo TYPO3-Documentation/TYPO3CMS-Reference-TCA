@@ -7,6 +7,7 @@ renderType
 
 .. confval:: renderType
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
    :Default: default

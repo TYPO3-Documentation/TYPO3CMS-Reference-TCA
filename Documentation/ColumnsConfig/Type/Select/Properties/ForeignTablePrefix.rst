@@ -6,6 +6,7 @@ foreign\_table\_prefix
 
 .. confval:: foreign_table_prefix
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string or LLL reference
    :Scope: Display
    :RenderType: all

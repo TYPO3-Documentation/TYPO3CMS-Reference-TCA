@@ -7,6 +7,7 @@ dbType
 
 .. confval:: dbType
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Proc.
 
@@ -52,7 +53,7 @@ Time picker stored in a datetime field
 
 .. code-block:: sql
    :caption: :file:`Configuration/TCA/tx_example_domain_model_foo.php`
-   
+
    'synced_at' => [
       'config' => [
          'type' => 'input',
