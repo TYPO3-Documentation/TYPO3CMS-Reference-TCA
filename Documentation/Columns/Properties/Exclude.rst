@@ -7,6 +7,7 @@ exclude
 
 .. confval:: exclude
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
    :Required: false
    :type: boolean
    :Scope: Proc. / Display

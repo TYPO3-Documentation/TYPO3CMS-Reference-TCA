@@ -7,6 +7,7 @@ fallbackCharacter
 
 .. confval:: fallbackCharacter
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Proc. / Display
    :Default: \-

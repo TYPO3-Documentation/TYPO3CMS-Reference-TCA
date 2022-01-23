@@ -7,6 +7,7 @@ typeicon\_classes
 
 .. confval:: typeicon_classes
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: array
    :Scope: Display
 

@@ -7,6 +7,7 @@ dontRemapTablesOnCopy
 
 .. confval:: dontRemapTablesOnCopy
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list of tables)
    :Scope: Proc.
    :Types: :aspect:`Description`

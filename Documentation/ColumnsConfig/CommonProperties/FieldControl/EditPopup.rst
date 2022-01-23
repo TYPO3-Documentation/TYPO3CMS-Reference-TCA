@@ -7,6 +7,7 @@ editPopup
 
 .. confval:: editPopup
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array
    :Scope: fieldControl
    :Types: :ref:`group <columns-group>`
@@ -23,6 +24,7 @@ Options
 
 .. confval:: disabled
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
    :type: boolean
    :Scope: fieldControl -> editPopup
    :Default: true
@@ -32,6 +34,7 @@ Options
 
 .. confval:: options[title]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
    :type: string
    :Scope: fieldControl -> editPopup
    :Values: string or LLL reference
@@ -41,6 +44,7 @@ Options
 
 .. confval:: options[windowOpenParameters]
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
    :type: string
    :Scope: fieldControl -> editPopup
    :Values: string or LLL reference

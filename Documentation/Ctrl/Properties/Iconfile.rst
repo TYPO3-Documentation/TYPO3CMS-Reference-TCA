@@ -7,6 +7,7 @@ iconfile
 
 .. confval:: iconfile
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Display
 

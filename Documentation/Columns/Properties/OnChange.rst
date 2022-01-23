@@ -7,6 +7,7 @@ onChange
 
 .. confval:: onChange
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
    :Required: false
    :type: string
    :Scope: Display

@@ -7,9 +7,9 @@ formattedLabel\_userFunc
 
 .. confval:: formattedLabel_userFunc
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Display
-
 
    Similar to :ref:`label_userFunc <ctrl-reference-label-userfunc>` but allows
    to return formatted HTML for the label **and is used only for the labels of

@@ -7,13 +7,15 @@ appearance
 
 .. confval:: appearance
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
 
    Properties that only apply to how the field is displayed in the backend.
 
-.. confval:: appearance:prefix
+.. confval:: prefix
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
    :type: userFunction
    :Scope: Display
 

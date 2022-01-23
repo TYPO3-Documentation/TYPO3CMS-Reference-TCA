@@ -7,6 +7,7 @@ cruser\_id
 
 .. confval:: cruser_id
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Proc.
 

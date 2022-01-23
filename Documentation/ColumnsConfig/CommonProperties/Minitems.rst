@@ -7,6 +7,7 @@ minitems
 
 .. confval:: minitems
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer > 0
    :Scope: Display
    :Types: :ref:`group <columns-group>`, :ref:`inline <columns-inline>`

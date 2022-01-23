@@ -7,6 +7,7 @@ multiSelectFilterItems
 
 .. confval:: multiSelectFilterItems
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
    :RenderType: :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`

@@ -7,6 +7,7 @@ showitem
 
 .. confval::  showitem
 
+   :Path: $GLOBALS['TCA'][$table]['types'][$type]
    :Required: true
    :type: string
    :Scope: string (list of field configuration sets)

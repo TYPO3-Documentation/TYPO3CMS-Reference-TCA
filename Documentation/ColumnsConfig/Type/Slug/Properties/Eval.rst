@@ -7,6 +7,7 @@ eval
 
 .. confval:: eval
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list of keywords)
    :Scope: Proc. / Display
 

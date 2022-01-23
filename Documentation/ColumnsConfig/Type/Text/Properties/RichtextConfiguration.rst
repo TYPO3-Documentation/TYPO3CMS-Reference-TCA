@@ -7,6 +7,7 @@ richtextConfiguration
 
 .. confval:: richtextConfiguration
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (keyword)
    :Scope: Display  / Proc.
    :RenderType: :ref:`default <columns-text-renderType-default>`

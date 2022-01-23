@@ -7,6 +7,7 @@ exclusiveKeys
 
 .. confval:: exclusiveKeys
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list of)
    :Scope: Display  / Proc.
    :RenderType: all

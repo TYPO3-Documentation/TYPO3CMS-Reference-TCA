@@ -7,6 +7,7 @@ Description
 
 .. confval:: description
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
    :Required: false
    :type: string or LLL reference
    :Scope: Display

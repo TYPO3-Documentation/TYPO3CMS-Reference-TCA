@@ -7,6 +7,7 @@ EXT
 
 .. confval:: EXT
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: array
    :Scope: (variable, depends on extension)
 

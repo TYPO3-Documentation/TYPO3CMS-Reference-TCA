@@ -7,6 +7,7 @@ format
 
 .. confval:: format
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (keyword)
    :Scope: Display
    :RenderType: :ref:`t3editor <columns-text-renderType-t3editor>`

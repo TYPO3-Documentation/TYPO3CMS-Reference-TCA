@@ -7,6 +7,7 @@ tableWizard
 
 .. confval:: tableWizard
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: fieldControl
    :Types: :aspect:`Description`

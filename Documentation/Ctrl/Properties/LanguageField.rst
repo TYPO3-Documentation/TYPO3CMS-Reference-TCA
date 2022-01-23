@@ -7,6 +7,7 @@ languageField
 
 .. confval:: languageField
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name of type :ref:`language <columns-language>`)
    :Scope: Proc. / Display
 

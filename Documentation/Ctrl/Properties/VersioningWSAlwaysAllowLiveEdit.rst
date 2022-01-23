@@ -7,6 +7,7 @@ versioningWS\_alwaysAllowLiveEdit
 
 .. confval:: versioningWS_alwaysAllowLiveEdit
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: boolean
    :Scope: Special
 

@@ -7,6 +7,7 @@ placeholder
 
 .. confval:: placeholder
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display
    :Types: :ref:`input <columns-input>`

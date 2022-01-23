@@ -7,6 +7,7 @@ label
 
 .. confval:: label
 
+   :Path: $GLOBALS['TCA'][$table]['palettes']
    :type: string
 
    Allows to display a localized label text as a dedicated entry into the palette declaration, instead as a part of

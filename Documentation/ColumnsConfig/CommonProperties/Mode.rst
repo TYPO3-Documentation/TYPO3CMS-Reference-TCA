@@ -7,6 +7,7 @@ mode
 
 .. confval:: mode
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (keywords)
    :Scope: Display
    :Types: :ref:`input <columns-input>`

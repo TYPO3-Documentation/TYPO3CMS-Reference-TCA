@@ -7,6 +7,7 @@ symmetric\_sortby
 
 .. confval:: symmetric_sortby
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display  / Proc.
 

@@ -7,6 +7,7 @@ validation
 
 .. confval:: validation
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Proc.
 

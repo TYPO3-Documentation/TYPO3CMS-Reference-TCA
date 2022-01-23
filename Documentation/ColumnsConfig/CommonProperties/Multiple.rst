@@ -7,6 +7,7 @@ multiple
 
 .. confval:: multiple
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display / Proc.
    :Types: :ref:`group <columns-group>`, :ref:`selec <columns-select>`

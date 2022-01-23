@@ -7,6 +7,7 @@ searchFields
 
 .. confval:: searchFields
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Search
 

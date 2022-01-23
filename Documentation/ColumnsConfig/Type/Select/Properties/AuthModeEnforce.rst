@@ -7,6 +7,7 @@ authMode\_enforce
 
 .. confval:: authMode_enforce
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (keyword)
    :Scope: Display  / Proc.
 

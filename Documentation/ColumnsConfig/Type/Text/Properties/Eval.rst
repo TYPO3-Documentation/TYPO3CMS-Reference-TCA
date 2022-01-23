@@ -7,6 +7,7 @@ eval
 
 .. confval::  eval
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list of keywords)
    :Scope: Display  / Proc.
    :RenderType: :ref:`default <columns-text-renderType-default>`

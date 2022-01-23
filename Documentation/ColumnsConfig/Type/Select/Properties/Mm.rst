@@ -7,6 +7,7 @@ MM
 
 .. confval:: MM
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (table name)
    :Scope: Proc.
 
@@ -39,6 +40,7 @@ Related configurations
 
 .. confval:: MM\_hasUidField
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Proc.
 
@@ -50,6 +52,7 @@ Related configurations
 
 .. confval:: MM\_insert\_fields
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Proc.
 
@@ -58,6 +61,7 @@ Related configurations
 .. _columns-select-properties-mm-match-fields:
 .. confval:: MM\_match\_fields
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display / Proc.
 
@@ -67,6 +71,7 @@ Related configurations
 
 .. confval:: MM\_opposite\_field
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (field name)
    :Scope: Proc.
 
@@ -87,6 +92,7 @@ Related configurations
 
 .. confval:: MM\_oppositeUsage
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Proc.
 
@@ -103,6 +109,7 @@ Related configurations
 
 .. confval:: MM\_table\_where
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (SQL WHERE)
    :Scope: Proc.
 

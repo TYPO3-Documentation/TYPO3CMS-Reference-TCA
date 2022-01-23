@@ -7,6 +7,7 @@ Localization mode (l10n_mode)
 
 .. confval:: l10n_mode
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
    :Required: false
    :type: string (keyword)
    :Scope: Display / Proc.
@@ -67,5 +68,5 @@ be copied without a prepended string.
 
 .. code-block::
    :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php
-   
+
    $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = ''

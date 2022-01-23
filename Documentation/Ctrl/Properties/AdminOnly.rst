@@ -7,6 +7,7 @@ adminOnly
 
 .. confval:: adminOnly
 
+   :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: boolean
    :Scope: Proc. / Display
 

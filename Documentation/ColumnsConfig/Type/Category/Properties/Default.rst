@@ -7,6 +7,7 @@ default value
 
 .. confval:: default
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display  / Proc.
    :RenderType: all
