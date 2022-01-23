@@ -13,7 +13,7 @@ The field of type group can enable all common :ref:`field control options
 
 .. confval:: elementBrowser
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array
    :Scope: fieldControl
    :Types: :ref:`group <columns-group>`
@@ -24,6 +24,7 @@ The field of type group can enable all common :ref:`field control options
 
 .. confval:: insertClipboard
 
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array
    :Scope: fieldControl
    :Types: :ref:`group <columns-group>`
