@@ -26,6 +26,7 @@ Special properties
 
    Allowed
    Appearance
+   ElementBrowserEntryPoints
    FieldControl
    Filter
    ForeignTable
