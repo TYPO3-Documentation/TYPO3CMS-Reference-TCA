@@ -58,7 +58,7 @@ used for the general element browser button.
 Open the element browser on different pages for tt_content and news records
 ----------------------------------------------------------------------------
 In case the group field allows
-more than one table or is of `interna_type=folder`, the `_default` key has
+more than one table or is of `internal_type=folder`, the `_default` key has
 to be set:
 
 .. code-block:: php
