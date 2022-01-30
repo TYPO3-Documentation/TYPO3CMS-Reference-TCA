@@ -19,7 +19,7 @@ useColumnsForDefaultValues
    create a new record from an existing one using the "New" button.
 
    This may still get overridden by the default values for the record. When assigning values to a new
-   record the following are used (applied in that order, e.g. Page TSconfig will overwrite User TSconfig):
+   record the following are used (applied in that order, e.g. Page TSconfig will override User TSconfig):
 
    #. User TSconfig
    #. Page TSconfig
