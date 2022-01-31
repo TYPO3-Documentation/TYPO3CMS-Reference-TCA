@@ -29,7 +29,7 @@ appearance
        "Create new <title of foreign\_table>", e.g. "Create new address"
 
    newRecordLinkTitle (string or LLL reference)
-      Overwrites the title of the "New record" link with a localised string. This will work only if
+      Overrides the title of the "New record" link with a localised string. This will work only if
       :code:`newRecordLinkAddTitle` is **not** set to true.
 
       Example::
@@ -37,7 +37,7 @@ appearance
          'newRecordLinkTitle' => 'LLL:EXT:myext/Resources/Private/Language/locallang_db.xlf:my_new_record_label'
 
    createNewRelationLinkTitle (string or LLL reference)
-      Overwrites the link text and title of the "Create new relation" button with a localised string.
+      Overrides the link text and title of the "Create new relation" button with a localised string.
       Only useful, if the element browser is enabled. This is usually used together with FAL relations to change it to "Add file" or similar.
 
    levelLinksPosition (string)
