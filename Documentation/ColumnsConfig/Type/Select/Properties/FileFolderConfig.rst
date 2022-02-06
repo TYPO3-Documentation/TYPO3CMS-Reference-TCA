@@ -22,7 +22,7 @@ fileFolderConfig
    :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()`. See :ref:`t3coreapi:Environment-public-path` .
    Alternatively use the prefix "EXT:" to point to an extension folder.
 
-   Files from the folder is selected recursively to the level specified by
+   Files from the folder are selected recursively to the level specified by
    :ref:`fileFolderConfig.depth <columns-select-properties-fileFolderConfig-depth>`
    and only files of the extension defined by
    :ref:`fileFolderConfig.allowedExtensions <columns-select-properties-fileFolderConfig-allowedExtensions>`
