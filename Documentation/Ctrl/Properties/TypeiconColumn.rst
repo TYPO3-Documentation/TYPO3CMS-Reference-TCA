@@ -12,8 +12,7 @@ typeicon\_column
    :Scope: Display
 
 
-    Field name, whose value decides *alternative icons* for the table records, the default icon
-    is the one defined with the :ref:`iconfile <ctrl-reference-iconfile>` value.
+    Field name, whose value decides *alternative icons* for the table records.
 
     The values in the field referenced by this property must match entries
     in the array defined in :ref:`typeicon_classes <ctrl-reference-typeicon-classes>`
