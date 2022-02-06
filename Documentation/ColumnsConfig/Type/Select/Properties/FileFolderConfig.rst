@@ -24,9 +24,9 @@ fileFolderConfig
 
    Files from the folder are selected recursively to the level specified by
    :ref:`fileFolderConfig.depth <columns-select-properties-fileFolderConfig-depth>`
-   and only files of the extension defined by
+   and only files of the extensions defined by
    :ref:`fileFolderConfig.allowedExtensions <columns-select-properties-fileFolderConfig-allowedExtensions>`
-   are selected.
+   are listed in the select box.
 
    Only the file reference relative to the "fileFolderConfig.folder" is stored.
 
