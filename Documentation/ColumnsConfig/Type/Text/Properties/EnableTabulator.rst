@@ -9,8 +9,7 @@ enableTabulator
 
    :type: boolean
    :Scope: Display
-   :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,
-      :ref:`default <columns-text-renderType-default>`
+   :RenderType: :ref:`default <columns-text-renderType-default>`, :ref:`textTable <columns-text-renderType-textTable>`
 
    Enabling this allows to use tabs in a text field. This works well together with
    :ref:`fixed-width fonts <columns-text-properties-fixedFont>` (monospace) for code editing.
@@ -25,6 +24,6 @@ Examples
 Fixed font field with tabulators enabled
 ----------------------------------------
 
-.. include:: /Images/Rst/Text4.rst.txt
+.. include:: /Images/Rst/Text15.rst.txt
 
-.. include:: /CodeSnippets/Text4.rst.txt
+.. include:: /CodeSnippets/Text15.rst.txt
