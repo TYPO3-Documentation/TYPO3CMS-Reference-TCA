@@ -19,14 +19,14 @@ fileFolderConfig
    Specifying a folder from where files are added to the item array.
 
    Specify the folder relative to the
-   :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()`, possibly using the
-   prefix "EXT:" to point to an extension folder.
+   :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()`. See :ref:`t3coreapi:Environment-public-path` .
+   Alternatively use the prefix "EXT:" to point to an extension folder.
 
-   Files from the folder is selected recursively to the level specified by
+   Files from the folder are selected recursively to the level specified by
    :ref:`fileFolderConfig.depth <columns-select-properties-fileFolderConfig-depth>`
-   and only files of the extension defined by
+   and only files of the extensions defined by
    :ref:`fileFolderConfig.allowedExtensions <columns-select-properties-fileFolderConfig-allowedExtensions>`
-   are selected.
+   are listed in the select box.
 
    Only the file reference relative to the "fileFolderConfig.folder" is stored.
 
