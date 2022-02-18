@@ -23,6 +23,7 @@
 
         'config' => [
             'type' => 'select',
+            'renderType' => 'selectSingle',
             'items' => [
                 ['', 0],
             ],
