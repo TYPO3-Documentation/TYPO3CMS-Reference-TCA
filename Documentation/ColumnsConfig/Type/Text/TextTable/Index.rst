@@ -1,11 +1,12 @@
 .. include:: /Includes.rst.txt
 .. _columns-text-renderType-textTable:
+.. _tca_property_fieldControl_tableWizard:
 
 =========
 textTable
 =========
 
-This page describes the :ref:`text <columns-text>` type with the renderType='textTable'.
+This page describes the :ref:`text <columns-text>` type with the :php:`renderType='textTable'`.
 
 .. code-block:: php
 
@@ -14,8 +15,11 @@ This page describes the :ref:`text <columns-text>` type with the renderType='tex
    'renderType' => 'textTable',
    // ...
 
-The :code:`renderType = 'textTable'` triggers a view to manage frontend table display in the backend.
-It is used for the "Table" tt\_content content element.
+The textTable render type triggers a view called "table wizard" to
+manage the frontend table display in the backend. It is used for the "Table"
+tt_content content element.
+
+.. include:: /Images/Rst/Text17.rst.txt
 
 .. toctree::
 
