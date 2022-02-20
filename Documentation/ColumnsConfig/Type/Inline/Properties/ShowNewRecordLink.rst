@@ -8,7 +8,7 @@ showNewRecordLink
 
 .. confval:: showNewRecordLink
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
    :type: boolean
    :Scope: Display
    :Default: true
