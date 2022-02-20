@@ -6,7 +6,7 @@ disableMovingChildrenWithParent behaviour
 
 .. confval:: behaviour > disableMovingChildrenWithParent
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']
    :type: boolean
    :Scope: Proc.
 
