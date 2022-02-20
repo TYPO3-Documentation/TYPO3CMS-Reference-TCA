@@ -744,7 +744,8 @@
           {
             "action": "makeScreenshotOfField",
             "fields": "text_17",
-            "fileName": "Text17"
+            "fileName": "Text17",
+            "captionText": "The table wizard allows to edit the code-like configuration of the tables with a visual editor."
           },
           {
             "action": "createPhpArrayCodeSnippet",
@@ -773,17 +774,6 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
             "fields": ["columns/text_20"],
             "targetFileName": "Text20"
-          },
-          {
-            "action": "makeScreenshotOfField",
-            "fields": "text_21",
-            "fileName": "Text21"
-          },
-          {
-            "action": "createPhpArrayCodeSnippet",
-            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "fields": ["columns/text_21"],
-            "targetFileName": "Text21"
           }
         ],
         "basic_translation": [

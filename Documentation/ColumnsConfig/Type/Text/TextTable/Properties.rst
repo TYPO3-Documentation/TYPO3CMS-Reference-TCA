@@ -5,7 +5,6 @@ Properties
 ==========
 
 
-*  :ref:`cols <columns-text-properties-cols>`
 *  :ref:`enableTabulator <columns-text-properties-enableTabulator>`
 *  :ref:`fixedFont <columns-text-properties-fixedFont>`
 *  :ref:`is\_in <columns-text-properties-is-in>`
