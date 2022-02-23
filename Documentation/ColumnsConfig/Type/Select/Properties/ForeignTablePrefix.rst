@@ -1,8 +1,9 @@
 .. include:: /Includes.rst.txt
 .. _columns-select-properties-foreign-table-prefix:
 
-foreign\_table\_prefix
-======================
+====================
+foreign_table_prefix
+====================
 
 .. confval:: foreign_table_prefix
 
