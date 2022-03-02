@@ -5,6 +5,11 @@
 internal\_type
 ==============
 
+.. versionchanged:: 12.0
+   The newly introduced column type :ref:`folder <columns-folder>` replaces
+   the combination of :php:`type => 'group'` together with
+   :php:`internal_type => 'folder'`.
+
 .. confval:: internal_type
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
@@ -17,18 +22,13 @@ internal\_type
    There are two possible options to choose from:
 
    folder
-      This will create a field where folders can be attached to the record.
+      For backward compatibility reasons this option can be used instead
+      of the column type :ref:`folder <columns-folder>`.
 
    db
       This will create a field where database records can be attached
       as references. As it is the default it can be omitted.
 
-.. deprecated:: 9.5
-   The internal types `file` and `file_reference` have been deprecated with
-   TYPO3 9 and removed with TYPO3 10. Extensions that used group fields
-   with these internal types should switch to use
-   :ref:`FAL references <tca_example_inline_fal_inline_1>` based on
-   type=inline instead.
 
 
 Examples
@@ -40,12 +40,3 @@ Internal type `db`- group relation to a single page
 .. include:: /Images/Rst/GroupDb10.rst.txt
 
 .. include:: /CodeSnippets/GroupDb10.rst.txt
-
-.. _tca_example_group_folder_1:
-
-Internal type `folder`
-----------------------
-
-.. include:: /Images/Rst/GroupFolder1.rst.txt
-
-.. include:: /CodeSnippets/GroupFolder1.rst.txt
