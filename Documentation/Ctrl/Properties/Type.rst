@@ -1,9 +1,9 @@
 .. include:: /Includes.rst.txt
 .. _ctrl-reference-type:
 
-============
-Record types
-============
+====
+type
+====
 
 .. confval:: type
 
