@@ -20,6 +20,7 @@ be influenced by further properties.
    Type/Category/Index
    Type/Check/Index
    Type/Flex/Index
+   Type/Folder/Index
    Type/Group/Index
    Type/ImageManipulation/Index
    Type/Inline/Index
