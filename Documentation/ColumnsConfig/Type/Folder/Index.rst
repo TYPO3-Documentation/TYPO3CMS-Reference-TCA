@@ -7,7 +7,7 @@ Folder
 
 .. versionadded:: 12.0
    A new TCA type :php:`folder` has been introduced, which replaces the old
-   combination of :php:`type => 'group'`.
+   combination of :php:`'type' => 'group'` and :php:`'internal_type' => 'folder'`.
 
 
 The TCA type :php:`folder` creates a field where folders can be attached to
