@@ -13,6 +13,7 @@ Common properties
    FieldControl
    FieldInformation
    FieldWizard
+   HideMoveIcons
    ItemsProcFunc
    LocalizeReferencesAtParentLocalization
    Maxitems

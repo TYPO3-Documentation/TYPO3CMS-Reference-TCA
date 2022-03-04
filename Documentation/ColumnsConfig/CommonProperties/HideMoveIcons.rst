@@ -10,6 +10,6 @@ hideMoveIcons
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
-   :InternalType: all
+   :Types: :ref:`group <columns-group>`, :ref:`folder <columns-folder>`
 
    Removes the move icons next to the selector box.

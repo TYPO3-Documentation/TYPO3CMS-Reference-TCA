@@ -10,7 +10,6 @@ hideSuggest
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
-   :InternalType: db
 
    The "suggest wizard" is added by default to all database relation group fields. After a couple of characters have
    been typed into this field, an ajax based search starts and shows a list of records matching the search word.

@@ -19,8 +19,8 @@ The field of type group can enable all common :ref:`field control options
    :Types: :ref:`group <columns-group>`
 
    The element browser field control used in :code:`type='group'` renders a
-   button to open an element browser depending on the selected :code:`internal_type`.
-   It is enabled by default if rendering a group element.
+   button to open an element browser. It is enabled by default if rendering a
+   group element.
 
 .. confval:: insertClipboard
 

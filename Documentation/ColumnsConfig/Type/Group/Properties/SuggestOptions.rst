@@ -10,7 +10,6 @@ suggestOptions
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
-   :InternalType: db
 
    Optional, additional suggest options used if the suggest wizard is not
    :ref:`hidden <columns-group-properties-hideSuggest>`. The suggest wizard options can also be overriden
@@ -25,7 +24,6 @@ suggestOptions
          'label' => 'Related records',
          'config' => [
             'type' => 'group',
-            'internal_type' => 'db',
             'allowed' => 'pages, tt_content',
             'suggestOptions' => [
                'default' => [

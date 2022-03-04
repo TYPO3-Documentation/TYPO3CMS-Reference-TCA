@@ -14,6 +14,7 @@
 .. _columns-group-properties-multiple:
 .. _columns-group-properties-size:
 .. _columns-group-properties-readOnly:
+.. _columns-group-properties-internal-type:
 
 ==========
 Properties
@@ -28,11 +29,10 @@ Special properties
    Appearance
    ElementBrowserEntryPoints
    FieldControl
+   FieldWizard
    Filter
    ForeignTable
-   HideMoveIcons
    HideSuggest
-   InternalType
    Mm
    PrependTname
    SuggestOptions
@@ -40,6 +40,7 @@ Special properties
 Common properties
 =================
 
+*  :ref:`hideMoveIcons <columns-group-properties-hideMoveIcons>`
 *  :ref:`autoSizeMax <tca_property_autoSizeMax>`
 *  :ref:`behaviour > allowLanguageSynchronization <tca_property_behaviour_allowLanguageSynchronization>`
 *  :ref:`default <tca_property_default>`
@@ -56,8 +57,6 @@ Common properties
    *  :ref:`defaultLanguageDifferences <tca_property_fieldwizard>`
    *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
    *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
-   *  :ref:`recordsOverview <tca_property_fieldWizard_recordsOverview>`
-   *  :ref:`tableList <tca_property_fieldWizard_tableList>`
 
 *  :ref:`localizeReferencesAtParentLocalization <tca_property_localizeReferencesAtParentLocalization>`
 *  :ref:`maxitems <tca_property_maxitems>`
