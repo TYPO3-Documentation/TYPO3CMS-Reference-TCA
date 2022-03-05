@@ -41,7 +41,7 @@ extension. The :php:`ctrl` section of its TCA contains a property called
 
 .. include:: /CodeSnippets/CtrlTypeCtrl.rst.txt
 
-This indicates that the field called :php:`record\_type` is to specify the type
+This indicates that the field called :php:`record_type` is to specify the type
 of any given record of the table. Let's look at how this field is defined in
 the property :php:`columns`:
 
