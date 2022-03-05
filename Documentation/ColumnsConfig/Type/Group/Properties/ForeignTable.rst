@@ -10,7 +10,6 @@ foreign\_table
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (table name)
    :Scope: Proc. / Display
-   :InternalType: db
 
    This property does not really exist for group-type fields. It is needed as
    a workaround for an Extbase limitation. It is used to resolve dependencies

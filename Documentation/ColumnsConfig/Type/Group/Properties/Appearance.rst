@@ -10,18 +10,16 @@ appearance
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
-   :InternalType: all
 
    Options for refining the appearance of group-type fields. This property is
    automatically used for :ref:`FAL <t3coreapi:fal>` relations created by the
    function :php:`ExtensionManagementUtility::getFileFieldTCAConfig`.
 
    elementBrowserType (string)
-      Allows to set an alternative element browser type (`db` or `file`) that
-      would otherwise be rendered based on the :ref:`internal_type <columns-group-properties-internal-type>` setting.
-      This is used internally for :ref:`FAL <t3coreapi:fal>` file fields, where
-      internal_type is `db` but the element browser should be the file element
-      browser anyway.
+      Allows to set the alternative element browser type `file` that would
+      otherwise be rendered as `db`. This is used internally for
+      :ref:`FAL <t3coreapi:fal>` file fields, where a group field's element
+      browser should be the file element browser.
 
    elementBrowserAllowed (string)
       Makes it possible to set an alternative element browser allowed string

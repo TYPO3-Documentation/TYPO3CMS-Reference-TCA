@@ -8,7 +8,7 @@ Group fields
 
 .. versionchanged:: 12.0
    The newly introduced column type :ref:`folder <columns-folder>` replaces
-   the combination of :php:`type => 'group'` together with
+   the old combination of :php:`type => 'group'` together with
    :php:`internal_type => 'folder'`.
 
 The group element (:php:`type' => 'group'`) in TYPO3 makes it possible to create references from a record of one table to many records from multiple tables in the system. The foreign tables can be the table itself (thus a self-reference) or any other table.
@@ -22,10 +22,9 @@ This type is very flexible in its display options with all its different
 :ref:`fieldControl <columns-group-properties-fieldControl>` and
 :ref:`fieldWizard <tca_property_fieldWizard>` options. A lot of them are available by default, however they must be enabled: :php:`disabled' => 'false'`
 
-Most common usage is to model database relations (n:1 or n:m) with
-:ref:`internal_type='db' <columns-group-properties-internal-type>` (default).
-In this case property :ref:`allowed <columns-group-properties-allowed>` is
-required.
+Most common usage is to model database relations (n:1 or n:m).
+The property :ref:`allowed <columns-group-properties-allowed>` is required, to
+define allowed relation tables.
 
 The group field uses either the CSV format to store uids of related records or an intermediate mm table
 (in this case :ref:`MM <columns-group-properties-mm>` property is required).

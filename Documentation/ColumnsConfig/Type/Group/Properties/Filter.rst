@@ -10,7 +10,6 @@ filter
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Proc. / Display
-   :InternalType: db
 
    Define filters for item values. Doesn't work in combination with a wizard.
 
@@ -57,7 +56,6 @@ The field configuration for the "mother" field could look like:
       'label' => 'Mother',
       'config' => [
          'type' => 'group',
-         'internal_type' => 'db',
          'allowed' => 'tx_myext_person',
          'size' => 1,
          'filter' => [

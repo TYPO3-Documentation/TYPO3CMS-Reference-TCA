@@ -11,10 +11,16 @@ Folder
 
 
 The TCA type :php:`folder` creates a field where folders can be attached to
-the record.
+the record. The values are stored as a combined identifier in a
+:ref:`comma-separated list (csv) <columns-group-data-commalist>`.
 
+.. _columns-folder-examples:
+.. _tca_example_group_folder_1:
 
-Example usage:
+Examples
+========
+
+.. include:: /Images/Rst/GroupFolder1.rst.txt
 
 .. code-block:: php
 

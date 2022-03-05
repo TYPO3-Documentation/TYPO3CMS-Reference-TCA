@@ -10,7 +10,6 @@ allowed
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list)
    :Scope: Proc. / Display
-   :InternalType: db
 
    A comma list of tables from :php:`$GLOBALS['TCA']`, for example "pages,be\_users".
 
