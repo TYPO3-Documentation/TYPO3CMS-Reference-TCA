@@ -9,7 +9,12 @@ Properties
 Special properties
 ==================
 
-*  :ref:`elementBrowserEntryPoints <columns-folder-properties-elementBrowserEntryPoints>`
+.. toctree::
+   :titlesonly:
+
+   ElementBrowserEntryPoints
+   FieldControl
+
 
 Common properties
 =================
@@ -18,7 +23,6 @@ Common properties
 *  :ref:`autoSizeMax <tca_property_autoSizeMax>`
 *  :ref:`behaviour > allowLanguageSynchronization <tca_property_behaviour_allowLanguageSynchronization>`
 *  :ref:`default <tca_property_default>`
-*  :ref:`fieldControl <columns-folder-properties-fieldControl>`
 *  :ref:`fieldInformation <tca_property_fieldInformation>`
 *  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
 

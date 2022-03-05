@@ -14,7 +14,6 @@ following are available:
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array
    :Scope: fieldControl
-   :Types: :ref:`folder <columns-folder>`
 
    The element browser field control used in :code:`type='folder'` renders a
    button to open an element browser to choose a folder.
