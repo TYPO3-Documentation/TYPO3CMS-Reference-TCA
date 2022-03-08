@@ -51,5 +51,6 @@ Common properties
 *  :ref:`mode <tca_property_mode>`
 *  :ref:`placeholder <tca_property_placeholder>`
 *  :ref:`readOnly <tca_property_readOnly>`
+*  :ref:`required <tca_property_required>`
 *  :ref:`search <tca_property_search>`
 *  :ref:`softref <tca_property_softref>`
