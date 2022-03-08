@@ -67,9 +67,6 @@ eval
       .. note::
          The value is visible while it is being entered!
 
-   required
-      A non-empty value is required in the field (otherwise the form cannot be saved).
-
    saltedPassword
       The value will be hashed using the password hash configuration for BE for all tables except :php:`fe_user`,
       where the password hash configuration for FE is used. Note this eval is typically only used core internally
@@ -99,6 +96,11 @@ eval
 
    Vendor\\Extension\\*
       User defined form evaluations.
+
+
+   .. deprecated:: 12.0
+      The keyword `required` is deprecated. Use the common property
+      :confval:`required` instead.
 
 Examples
 ========

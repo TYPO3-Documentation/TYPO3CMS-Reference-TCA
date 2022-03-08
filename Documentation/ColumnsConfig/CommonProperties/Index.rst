@@ -23,6 +23,7 @@ Common properties
    Multiple
    Placeholder
    ReadOnly
+   Required
    Search
    Size
    Softref

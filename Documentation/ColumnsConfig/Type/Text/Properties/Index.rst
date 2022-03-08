@@ -20,3 +20,9 @@ Properties
    RichtextConfiguration
    Rows
    Wrap
+
+
+Common properties
+=================
+
+*  :ref:`required <tca_property_required>`

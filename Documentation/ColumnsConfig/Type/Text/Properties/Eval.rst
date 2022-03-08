@@ -19,9 +19,6 @@ eval
 
    The evaluation functions will be executed in the list-order, available keywords:
 
-   required
-      A non-empty value is required in the field (otherwise the form cannot be saved).
-
    trim
       The value in the field will have white spaces around it trimmed away.
 
@@ -31,6 +28,10 @@ eval
 
    Vendor\\Extension\\*
       User defined form evaluations.
+
+   .. deprecated:: 12.0
+      The keyword `required` is deprecated. Use the common property
+      :confval:`required` instead.
 
 Examples
 ========
