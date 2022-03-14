@@ -1,15 +1,11 @@
-.. include:: /Includes.rst.txt
-.. _columns-inline-properties-appearance:
 
-==========
-appearance
-==========
+:aspect:`Datatype`
+    array
 
-.. confval:: appearance
+:aspect:`Scope`
+    Display
 
-   :type: array
-   :Scope: Display
-
+:aspect:`Description`
    Has information about the appearance of child-records, namely:
 
    collapseAll (boolean)
