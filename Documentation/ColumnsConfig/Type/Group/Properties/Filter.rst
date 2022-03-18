@@ -21,6 +21,11 @@ filter
    contains the array of values which should be filtered by the userFunc. The function must return the filtered
    array of values.
 
+   .. note::
+
+      Do not confuse the filter values with the page tree selector on the left side. To change the entry page in the navigation
+      use :ref:`elementBrowserEntryPoints <columns-group-properties-elementBrowserEntryPoints>` instead.
+
    Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied:
 
    .. code-block:: php
