@@ -6,9 +6,6 @@ conf.py:
   version: 7
   release: 7
   intersphinx_mapping:
-    t3cmsapi:
-    - http://typo3.org/api/typo3cms/
-    - null
     t3inside:
     - https://docs.typo3.org/typo3cms/InsideTypo3Reference/
     - null
