@@ -15,6 +15,12 @@ foreign\_sortby
    information. It is possible to have a different sorting, depending from
    which side of the relation we look at parent or child.
 
+   .. attention::
+      Do not confuse this property with :ref:`foreign_default_sortby <columns-inline-properties-foreign-default-sortby>`.
+      The `foreign_sortby` field contains an integer and is managed by the DataHandler. If by accident a content column
+      like "title" is set as `foreign_sortby`, the DataHandler will write these integers into that field, which is most
+      likely *not* what you want. Use `foreign_default_sortby` in this case.
+
    This property requires that the
    :ref:`foreign_field <columns-inline-properties-foreign-field>` approach is
    used.
