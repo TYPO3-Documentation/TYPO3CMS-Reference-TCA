@@ -25,6 +25,12 @@ searchFields
       :doc:`t3core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
 
 
+   .. note::
+
+      When searching as admin the fields `uid` and `pid` are automatically included.
+      For editors, `uid` and/or `pid` have to be added manually to the searchFields list.
+
+
 Examples
 ========
 
