@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 
-.. _columns-inline-properties-fshowNewRecordLink:
+.. _columns-inline-properties-showNewRecordLink:
 
 =================
 showNewRecordLink
