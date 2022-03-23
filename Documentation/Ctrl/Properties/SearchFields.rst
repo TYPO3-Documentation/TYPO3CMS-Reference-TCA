@@ -13,7 +13,15 @@ searchFields
 
 
    Comma-separated list of fields from the table that will be included when searching for records in the TYPO3 backend.
-   No record from a table will ever be found if that table does not have "searchFields" defined.
+   No record from a table will ever be found if that table does not have `searchFields` defined. Only fields of the
+   following TCA types are searchable:
+
+   *  :ref:`text <columns-text>`
+   *  :ref:`flex <columns-flex>`
+   *  :ref:`slug <columns-slug>`
+   *  :ref:`input <columns-input>`
+
+   Adding fields of different types to `searchFields` has no effect.
 
    There are more fine grained controls per column, see the documentation of the "search" key of any type in :ref:`columns-types`.
 
