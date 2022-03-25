@@ -1,11 +1,9 @@
-\|
-`Contributing <CONTRIBUTING.md>`__  \|
-`Help & Support <https://typo3.org/help>`__ \|
-`Settings <Documentation/Settings.cfg>`__ \|
-
 =============
 TCA Reference
 =============
 
+This document is the complete reference of the *Table Configuration Array*
+`$GLOBALS['TCA']`, which is a very central element of the TYPO3 architecture.
+
 :Repository:  https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA
-:Read online: https://docs.typo3.org/typo3cms/TCAReference/
+:Read online: https://docs.typo3.org/m/typo3/reference-tca/10.4/en-us/
