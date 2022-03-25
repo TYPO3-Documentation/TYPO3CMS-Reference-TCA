@@ -66,7 +66,7 @@ Disable the prefixLangTitle for the header field in tt_content
 Use the default behaviour instead of :php:`prefixLangTitle`: the field will
 be copied without a prepended string.
 
-.. code-block::
+.. code-block:: php
    :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php
 
    $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = ''

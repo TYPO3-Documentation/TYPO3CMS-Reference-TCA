@@ -28,7 +28,7 @@ File abstraction layer
 
 .. include:: /Images/Rst/InlineFalInline1.rst.txt
 
-Inline-type fields are massively used by the TYPO3 Core in the :doc:`File Abstraction Layer (FAL) <t3fal:Index>`.
+Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3coreapi:fal>`.
 
 FAL provides an API for registering an inline-type field with relations to the "sys_file_reference" table containing
 information related to existing media. Here an example from the
@@ -117,7 +117,7 @@ The intermediate table stores the uids of both sides of the relation in
 :php:`hotelid` and :php:`branchid`. Furthermore custom sorting can be defined in
 both directions.
 
-.. include:: /CodeSnippets/Manual/InlineMnSymmetricMm.rst.txt
+.. include:: /CodeSnippets/Manual/InlineMnSymetricMm.rst.txt
 
 .. note::
    :typoscript:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
