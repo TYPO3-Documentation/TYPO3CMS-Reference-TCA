@@ -897,7 +897,7 @@ File Abstraction Layer
 ----------------------
 
 Inline-type fields are massively used the TYPO3 CMS Core with
-regards to the :ref:`File Abstraction Layer (FAL) <t3fal:start>`.
+regards to the :doc:`File Abstraction Layer (FAL) <t3fal:Index>`.
 
 FAL provides an API for registering an inline-type field
 with relations to the "sys_file_reference" table containing information
