@@ -67,6 +67,4 @@ fieldWizard
    FieldWizard/DefaultLanguageDifferences
    FieldWizard/LocalizationStateSelector
    FieldWizard/OtherLanguageContent
-   FieldWizard/RecordsOverview
    FieldWizard/SelectIcons
-   FieldWizard/TableList

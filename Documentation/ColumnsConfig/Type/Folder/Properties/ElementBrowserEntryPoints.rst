@@ -16,7 +16,7 @@ elementBrowserEntryPoints
    behaviour.
 
    This configuration value contains an array. For the column type
-   :confval:`folder` only the value with the key `_default` is used.
+   :ref:`folder <columns-folder>` only the value with the key `_default` is used.
 
    When opening the element browser the folder with the `_default` key is
    preselected.
