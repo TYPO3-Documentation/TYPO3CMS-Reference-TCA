@@ -189,6 +189,11 @@ itemGroups
 
 .. include:: ../Properties/SelectItemGroups.rst.txt
 
+sortItems
+---------
+
+.. include:: ../Properties/SelectSortItems.rst.txt
+
 items
 -----
 

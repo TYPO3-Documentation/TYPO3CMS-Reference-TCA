@@ -1,0 +1,188 @@
+.. versionadded:: 10.4
+   `sortItems` allows sorting of static select items
+   by their values or labels.
+
+:aspect:`type`
+    array
+
+:aspect:`Scope`
+    Display
+
+:aspect:`RenderType`
+    all
+
+The property :php:`sortItems` allows
+sorting of static select items by their values or labels.
+
+Built-in orderings are to sort items by their labels or values.
+It is also possible to define custom sorting via PHP code.
+
+When using grouped select fields with
+:ref:`itemGroups<columns-select-properties-item-groups>`, sorting happens
+on a per-group basis - all items within one group are sorted - as the
+group ordering is preserved.
+
+
+**Examples**
+
+Sort items by label
+
+.. code-block:: php
+
+    'columns' => [
+        'select_single_18' => [
+            'exclude' => 1,
+            'label' => 'select_single_18',
+            'description' => 'sortItems label asc',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'Plum tree',
+                        1,
+                    ],
+                    [
+                        'Walnut tree',
+                        2,
+                    ],
+                    [
+                        'Apple tree',
+                        3,
+                    ],
+                    [
+                        'Cherry tree',
+                        4,
+                    ],
+                ],
+                'sortItems' => [
+                    'label' => 'asc',
+                ],
+                'size' => 4,
+            ],
+        ],
+    ]
+
+
+Sort items by value
+
+.. code-block:: php
+
+    'columns' => [
+        'select_single_19' => [
+            'exclude' => 1,
+            'label' => 'select_single_19',
+            'description' => 'sortItems value desc',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'Plum tree',
+                        1,
+                    ],
+                    [
+                        'Walnut tree',
+                        2,
+                    ],
+                    [
+                        'Apple tree',
+                        3,
+                    ],
+                    [
+                        'Cherry tree',
+                        4,
+                    ],
+                ],
+                'sortItems' => [
+                    'value' => 'desc',
+                ],
+                'size' => 4,
+            ],
+        ],
+    ]
+
+
+.. _tca_example_select_single_20:
+
+Sort items by a custom method
+
+The following custom method sorts the items by their reversed labels:
+
+.. code-block:: php
+
+    'columns' => [
+        'select_single_20' => [
+            'exclude' => 1,
+            'label' => 'select_single_20',
+            'description' => 'sortItems custom',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'Plum tree',
+                        1,
+                    ],
+                    [
+                        'Walnut tree',
+                        2,
+                    ],
+                    [
+                        'Apple tree',
+                        3,
+                    ],
+                    [
+                        'Cherry tree',
+                        4,
+                    ],
+                ],
+                'sortItems' => [
+                    'tx_styleguide' => 'TYPO3\\CMS\\Styleguide\\UserFunctions\\FormEngine\\SelectItemSorter->sortReverseTitles',
+                ],
+                'size' => 4,
+            ],
+        ],
+    ]
+
+.. code-block:: php
+
+    <?php
+
+    declare(strict_types=1);
+
+    namespace TYPO3\CMS\Styleguide\UserFunctions\FormEngine;
+
+    /**
+     * This file is part of the TYPO3 CMS project.
+     *
+     * It is free software; you can redistribute it and/or modify it under
+     * the terms of the GNU General Public License, either version 2
+     * of the License, or any later version.
+     *
+     * For the full copyright and license information, please read the
+     * LICENSE.txt file that was distributed with this source code.
+     *
+     * The TYPO3 project - inspiring people to share!
+     */
+
+    /**
+     * A user function to sort ites
+     */
+    class SelectItemSorter
+    {
+        /**
+         * Sort items by their reverse titles
+         *
+         * @param array $items
+         */
+        public function sortReverseTitles(&$items): void
+        {
+            @usort(
+                $items,
+                function ($item1, $item2) {
+                    return strcasecmp(strrev((string)$item1[0]), strrev((string)$item2[0]));
+                }
+            );
+        }
+    }

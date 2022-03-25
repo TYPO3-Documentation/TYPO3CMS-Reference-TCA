@@ -275,6 +275,15 @@ itemGroups
 
 .. include:: ../Properties/SelectItemGroups.rst.txt
 
+
+.. _columns-select-properties-sort-items:
+
+sortItems
+---------
+
+.. include:: ../Properties/SelectSortItems.rst.txt
+
+
 .. _columns-select-properties-items:
 
 items
