@@ -8,6 +8,12 @@
     Contains the elements for the selector box unless the property "foreign\_table" or "special" has been set
     in which case automated values are set in addition to any values listed in this array.
 
+    .. versionchanged:: 10.4
+
+        With the introduction of item groups, the former fourth (optional description) and fifth (authMode) entries
+        have been shifted one position up. This needs to be adjusted if upgrading from lower TYPO3 versions.
+
+
     Each element in this array is in itself an array where:
 
     - First value is the **item label** (string or LLL reference)
@@ -25,10 +31,12 @@
     - Third value is an optional icon. For custom icons use a path prepended with "EXT:" to refer to an image
       file found inside an extension or use an registered icon identifier.
 
-    - Fourth value is an optional description text. This is only shown when the list is shown
+    - Fourth value is the key of the :ref:`item group <columns-select-properties-item-groups>`.
+
+    - Fifth value is an optional description text. This is only shown when the list is shown
       with `renderType='selectCheckBox'`.
 
-    - Fifth value is reserved as keyword "EXPL\_ALLOW" or "EXPL\_DENY". See
+    - Sixth value is reserved as keyword :php:`EXPL_ALLOW` or :php:`EXPL_DENY`. See
       property :ref:`authMode / individual <columns-select-properties-authmode>` for more details.
 
     **Example:**
