@@ -120,7 +120,7 @@ both directions.
 .. include:: /CodeSnippets/Manual/InlineMnSymmetricMm.rst.txt
 
 .. note::
-   :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
+   :typoscript:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
    have special storage folders on a per-table-basis. See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
 
 .. _tca_example_inline_usecombinationc_inline_1:
