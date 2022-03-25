@@ -16,5 +16,5 @@ disableMovingChildrenWithParent behaviour
 
    This property can be especially useful if all child records should be gathered in one storage folder and their
    parents are spread out at different places in the page tree. In combination with the
-   :ref:`Tsconfig setting <t3tsconfig:usertoplevelobjects>` :ts:`TCAdefaults.<table>.pid = <page id>` children
+   :ref:`Tsconfig setting <t3tsconfig:usertoplevelobjects>` :typoscript:`TCAdefaults.<table>.pid = <page id>` children
    can be forced to be created in this folder and stay there.
