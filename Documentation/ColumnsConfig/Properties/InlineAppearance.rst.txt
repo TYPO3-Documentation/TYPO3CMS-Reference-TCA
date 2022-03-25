@@ -88,14 +88,14 @@
       Defines whether the button "Select & upload file" should be rendered. This can be used for file fields to directly
       upload files and create a reference to the file. The button is limited to file fields using File Abstraction Layer.
       It will only appear to backend users which have write access to the user upload folder. By default this folder is
-      :file:`fileadmin/user_upload` but it can be changed in User TSconfig using :ts:`options.defaultUploadFolder`.
+      :file:`fileadmin/user_upload` but it can be changed in User TSconfig using :typoscript:`options.defaultUploadFolder`.
       See the :ref:`TSconfig reference <t3tsconfig:useroptions>`.
 
       The button is shown by default unless this option is set to :php:`false`.
 
     elementBrowserEnabled (boolean)
       Hides or displays the element browser button in inline records
-    
+
     elementBrowserAllowed (string)
       Sets the list of allowed element types, e.g. file extensions for file fields. For file fields this also affects
       whether the "Add media by URL" button is shown if online media file extensions (e.g. `youtube` or `vimeo`) are
