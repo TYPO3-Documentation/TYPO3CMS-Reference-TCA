@@ -28,7 +28,7 @@ File abstraction layer
 
 .. include:: /Images/Rst/InlineFalInline1.rst.txt
 
-Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3fal:start>`.
+Inline-type fields are massively used by the TYPO3 Core in the :doc:`File Abstraction Layer (FAL) <t3fal:Index>`.
 
 FAL provides an API for registering an inline-type field with relations to the "sys_file_reference" table containing
 information related to existing media. Here an example from the
