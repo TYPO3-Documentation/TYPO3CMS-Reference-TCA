@@ -32,7 +32,7 @@ In case of the n:m (e.g. Organization has multiple categories) the uid of the se
 .. note::
 
    Since TYPO3 7.6, specifying renderType when using type='select' is mandatory,
-   see :doc:`t3core:Changelog/7.6/Deprecation-69822-DeprecateSelectFieldTca`.
+   see :doc:`ext_core:Changelog/7.6/Deprecation-69822-DeprecateSelectFieldTca`.
 
 The chosen renderType influences the behaviour of the element and how it will
 be displayed.
