@@ -1,92 +1,50 @@
-.. include:: Includes.txt
-.. _start:
+.. include:: /Includes.txt
 
 =============
 TCA Reference
 =============
 
-A complete reference to the Table Configuration Array :php:`$GLOBALS['TCA']`.
+:Version:
+   |release|
 
 :Language:
-      en
+   en
 
 :Author:
-      TYPO3 community (see :ref:`credits`)
+   TYPO3 contributors
 
 :License:
-      Open Publication License available from
-      https://www.opencontent.org/openpub/
+   This document is published under the
+   `Open Publication License <https://www.opencontent.org/openpub/>`__.
 
+:Rendered:
+   |today|
 
-.. sidebar:: Contributors:
+----
 
-   *  :ref:`How to contribute to documentation <h2document:contribute>`
-   *  :ref:`Link targets <Link-targets>`
-   *  `t3tca` is usually used in cross-referencing.
+This document is the complete reference of the *Table Configuration Array*
+`$GLOBALS['TCA']`, which is a very central element of the TYPO3 architecture.
 
-The content of this document is related to TYPO3, a GNU/GPL CMS/Framework
-available from https://typo3.org/.
+----
 
-
-**Official documentation**
-
-This document is included as part of the official TYPO3 documentation.
-
-
-**Core Manual**
-
-This document is a Core Manual. Core Manuals address the built in functionality
-of TYPO3 and are designed to provide the reader with in- depth information.
-Each Core Manual addresses a particular process or function and how it is
-implemented within the TYPO3 source code. These may include information on
-available APIs, specific configuration options, etc.
-
-Core Manuals are written as reference manuals. The reader should rely on the
-:ref:`sitemap` to identify what particular section will best address the task
-at hand.
-
-
-**Versions**
-
-TCA properties change between major versions, this main array had significant
-refactorings especially between core versions 6.2 to 7 LTS, and again between 7
-LTS and 8 LTS. Use the version selector of this documentation to select the
-documentation variant that fits.
-
-
-.. _credits:
-
-**Credits**
-
-The original reference to the TCA was written by Kasper Skårhøj. Subsequent
-versions have been updated by François Suter. Several Core Team members and
-other contributors maintained this document over time, see the list of
-`contributors on GitHub
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/graphs/contributors>`__.
-
-A big "Thank You!" goes to every single one of them.
-
-
-**Contribution**
-
-For general questions about the documentation get in touch with the
-`Documentation Team <https://typo3.org/community/teams/documentation>`__.
-
-If you find a bug in this manual, please do not be afraid to suggest a fix,
-e.g. by using the :guilabel:`"Edit on GitHub"` button in the top right corner.
-Alternatively you can `file an issue
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues>`__.
-
+**Table of Contents:**
 
 .. toctree::
-    :hidden:
+   :maxdepth: 2
+   :titlesonly:
 
-    Introduction/Index
-    Columns/Index
-    ColumnsConfig/Index
-    Ctrl/Index
-    Interface/Index
-    Palettes/Index
-    Types/Index
-    Sitemap
+   Introduction/Index
+   Columns/Index
+   ColumnsConfig/Index
+   Ctrl/Index
+   Interface/Index
+   Palettes/Index
+   Types/Index
 
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap
+   genindex
