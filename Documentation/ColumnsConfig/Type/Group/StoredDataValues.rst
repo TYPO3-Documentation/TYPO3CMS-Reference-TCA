@@ -64,8 +64,7 @@ The "MM" method
 Using the MM method the Database Analyzer creates an intermediate MM table to
 store the relation data. The database fields in the affected tables only contain
 the number of records in the relation. You can read more about it here:
-`Auto creation of intermediate MM tables from TCA
-<tca_property_MM_auto_creation_mm_table>`
+:ref:`Auto creation of intermediate MM tables from TCA <tca_property_MM_auto_creation_mm_table>`
 
 Lets take the examples from before and see how they would be stored in an MM table:
 
