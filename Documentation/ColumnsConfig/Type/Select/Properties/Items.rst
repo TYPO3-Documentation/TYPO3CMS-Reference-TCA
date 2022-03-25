@@ -15,6 +15,12 @@ items
    Contains the elements for the selector box unless the property :php:`foreign_table` or :php:`special` has been set
    in which case automated values are set in addition to any values listed in this array.
 
+   .. versionchanged:: 10.4
+
+       With the introduction of item groups, the former fourth (optional description) and fifth (authMode) entries
+       have been shifted one position up. This needs to be adjusted if upgrading from lower TYPO3 versions.
+
+
    Each element in this array is in itself an array where:
 
    #. First value is the **item label** (string or LLL reference).
@@ -31,7 +37,9 @@ items
       file found inside an extension or use an registered icon identifier. If configured on the :php:`foreign_table`,
       :ref:`selicon-field<ctrl-reference-selicon-field>` is respected.
    #. Fourth value is the key of the :ref:`item group <columns-select-properties-item-groups>`.
-   #. Fifth value is reserved as keyword :php:`EXPL_ALLOW` or :php:`EXPL_DENY`. See
+   #. Fifth value is an optional description text. This is only shown when the list is shown
+      with `renderType='selectCheckBox'`.
+   #. Sixth value is reserved as keyword :php:`EXPL_ALLOW` or :php:`EXPL_DENY`. See
       property :ref:`authMode / individual <columns-select-properties-authmode>` for more details.
 
 .. note::
