@@ -30,7 +30,7 @@ searchFields
       Fields of type :ref:`input <columns-input>` may be excluded from search by default,
       especially when using ``date``, ``time`` or ``int`` in ``eval``.
       To include them, modify the search query with this hook:
-      :doc:`t3core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
+      :doc:`ext_core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
 
 
    .. note::
