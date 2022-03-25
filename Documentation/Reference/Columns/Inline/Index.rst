@@ -1,4 +1,4 @@
-﻿.. include:: ../../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 
 .. _columns-inline:
@@ -25,7 +25,7 @@ backend view.
 
 .. note::
 
-   :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of
+   :typoscript:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of
    new child records. Thus, it's possible to have special storage folders
    on a per-table-basis. See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
 
@@ -240,7 +240,7 @@ appearance
       The button is limited to file fields using File Abstraction Layer. It will
       only appear to backend users which have write access to the user upload folder.
       By default this folder is :file:`fileadmin/user_upload` but it can be changed in
-      User TSconfig using :ts:`options.defaultUploadFolder`.
+      User TSconfig using :typoscript:`options.defaultUploadFolder`.
       See the :ref:`TSconfig reference <t3tsconfig:useroptions>`.
 
       The button is shown by default unless this option is set to :php:`false`.

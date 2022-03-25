@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 
 .. _columns:
@@ -434,7 +434,7 @@ displayCond
          .. code-block:: xml
 
             <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
-	    
+
 	 Using :code:`OR` and :code:`AND` within FlexForms works like this:
 
      .. code-block:: none

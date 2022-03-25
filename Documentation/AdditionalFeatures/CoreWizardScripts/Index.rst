@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 
 .. _core-wizards:
@@ -777,5 +777,5 @@ Here is another example with the link browser configured that it does not show t
          'softref' => 'typolink'
       )
    ),
-   
+
 End of document
