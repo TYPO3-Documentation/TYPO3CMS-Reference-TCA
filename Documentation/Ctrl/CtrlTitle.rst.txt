@@ -19,7 +19,7 @@ title
 
     You can insert plain text values, but the preferred way is to enter a
     reference to a localized string. Refer to the Localization section in
-    :ref:`Inside TYPO3 <t3inside:start>` for more details.
+    :doc:`Inside TYPO3 <t3inside:Index>` for more details.
 
     **Example for table "sys\_template"**
 

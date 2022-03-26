@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 .. _columns-group:
 
@@ -15,7 +15,7 @@ This is especially useful (compared to the "select" type) when records are scatt
 the Element Browser to be selected.
 
 Next to database relations, the group type is also able to handle files. Using `type='group'` for file handling
-however is considered outdated and should be based on the :ref:`FAL API<t3fal:start>` instead, and it can be
+however is considered outdated and should be based on the :doc:`FAL API <t3fal:Index>` instead, and it can be
 assumed that `internal_type='file'` and `internal_type='file_reference'` will be removed sooner or later.
 
 For database relations however, the `type='group'` field is the right and a powerful choice especially if dealing
