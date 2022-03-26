@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 .. _columns-inline:
 
@@ -96,7 +96,7 @@ This combines a table companies with persons (employees):
 File Abstraction Layer
 ----------------------
 
-Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3fal:start>`.
+Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3coreapi:fal>`.
 
 FAL provides an API for registering an inline-type field with relations to the "sys_file_reference" table containing
 information related to existing media. Here is how to use it for the "image" field of table "tt_content":
@@ -354,7 +354,7 @@ wife-husband-relationship in real life)
 
 
 .. note::
-   :ts:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
+   :typoscript:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
    have special storage folders on a per-table-basis. See the :ref:`TSconfig reference <t3tsconfig:usertoplevelobjects>`.
 
 .. _columns-inline-properties:
