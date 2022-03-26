@@ -1,4 +1,4 @@
-.. include:: /Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _columns-check-properties:
 .. _columns-check-properties-type:
