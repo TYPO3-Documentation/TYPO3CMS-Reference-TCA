@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 
 .. _ctrl:
@@ -120,7 +120,7 @@ title
 
          You can insert plain text values, but the preferred way is to enter a
          reference to a localized string. See the :ref:`examples <ctrl-examples>`. Refer to the
-         Localization section in :ref:`Inside TYPO3 <t3inside:start>`.
+         Localization section in :doc:`Inside TYPO3 <t3inside:Index>`.
          for more details.
 
          **Example:**

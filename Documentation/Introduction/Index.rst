@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _introduction:
@@ -20,7 +20,7 @@ Almost all code examples used in this manual come either from the TYPO3
 source code itself or from the extension "examples", which can be
 downloaded from the TER.
 
-This document used to be a chapter inside :ref:`TYPO3 Core APIs <t3coreapi:start>`.
+This document used to be a chapter inside :doc:`TYPO3 Core APIs <t3coreapi:Index>`.
 
 
 .. _new:

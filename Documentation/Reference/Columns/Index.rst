@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 
 .. _columns:
@@ -110,7 +110,7 @@ exclude
          they are members of a backend user group with this field added as an
          "Allowed Excludefield" (or "admin" user).
 
-         See :ref:`Inside TYPO3 <t3inside:start>` for more about permissions.
+         See :doc:`Inside TYPO3 <t3inside:Index>` for more about permissions.
 
    Scope
          Proc.
@@ -434,7 +434,7 @@ displayCond
          .. code-block:: xml
 
             <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
-	    
+
 	 Using :code:`OR` and :code:`AND` within FlexForms works like this:
 
      .. code-block:: none
