@@ -17,5 +17,5 @@ max
 
    If the form element edits a varchar(40) field in the database you should also set this value to 40.
    
-   .. note:: If you change this value and there is already content longer then :confval:`max` the input will
+   .. note:: If you reduce this value and there is already content longer then :confval:`max` the input will
       be cropped without notice on saving.
