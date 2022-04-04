@@ -11,7 +11,6 @@ Select field properties
 
    AllowNonIdValues
    AuthMode
-   AuthModeEnforce
    CheckBoxAppearance
    Default
    DisableNonMatchingValueElement

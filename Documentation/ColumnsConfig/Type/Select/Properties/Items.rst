@@ -39,8 +39,6 @@ items
    #. Fourth value is the key of the :ref:`item group <columns-select-properties-item-groups>`.
    #. Fifth value is an optional description text. This is only shown when the list is shown
       with `renderType='selectCheckBox'`.
-   #. Sixth value is reserved as keyword :php:`EXPL_ALLOW` or :php:`EXPL_DENY`. See
-      property :ref:`authMode / individual <columns-select-properties-authmode>` for more details.
 
 .. note::
 

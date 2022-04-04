@@ -1,3 +1,5 @@
+:orphan:
+
 .. include:: /Includes.rst.txt
 .. _columns-select-properties-authmode-enforce:
 
@@ -5,16 +7,21 @@
 authMode\_enforce
 =================
 
-.. confval:: authMode_enforce
+.. versionchanged:: 12.ß
+   Handling of TCA config option :php:`authMode_enforce` has been removed.
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string (keyword)
-   :Scope: Display  / Proc.
+Migration
+=========
 
-   Various additional enforcing options for :ref:`authMode <columns-select-properties-authmode>`, keywords:
+Using authMode_enforce='strict'
+-------------------------------
 
-   strict
-      If set, then permission to edit the record will be granted only if the "authMode" evaluates OK. The default
-      is that a record having an authMode configured field with a "non-allowed" value can be edited – just the
-      value of the authMode field cannot be set to a value that is not allowed. **Notice:** This works only when
-      maxitems <=1 (and no MM relations) since the "raw" value in the record is all that is evaluated!
+Extensions with select fields using :php:`authMode` previously had different handling
+if :php:`authMode_enforce => 'strict'` has been set: Let us say an editor accesses a record
+with an :php:`authMode` field being set to a value it has no access to. With :php:`authMode_enforce`
+*not* being set to :php:`strict`, the editor was still able to edit the record and set the value
+to something it had access to. With :php:`authMode_enforce` being set to :php:`strict`, the editor
+was not allowed to access the record. This has been streamlined: The backend interface no longer
+renders those records for the editor and an "access denied" message is rendered instead. To
+prevent this, a group this editor is member of needs to be adapted to allow access to this
+particular value in the "Explicitly allow field values" (:sql:`explicit_allowdeny`) field.
