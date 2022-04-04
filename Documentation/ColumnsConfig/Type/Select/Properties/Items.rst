@@ -17,8 +17,8 @@ items
 
    .. versionchanged:: 10.4
 
-       With the introduction of item groups, the former fourth (optional description) and fifth (authMode) entries
-       have been shifted one position up. This needs to be adjusted if upgrading from lower TYPO3 versions.
+       With the introduction of item groups, the former fourth (optional description) entry has been
+       shifted one position up. This needs to be adjusted if upgrading from lower TYPO3 versions.
 
 
    Each element in this array is in itself an array where:
@@ -39,8 +39,6 @@ items
    #. Fourth value is the key of the :ref:`item group <columns-select-properties-item-groups>`.
    #. Fifth value is an optional description text. This is only shown when the list is shown
       with `renderType='selectCheckBox'`.
-   #. Sixth value is reserved as keyword :php:`EXPL_ALLOW` or :php:`EXPL_DENY`. See
-      property :ref:`authMode / individual <columns-select-properties-authmode>` for more details.
 
 .. note::
 

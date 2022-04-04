@@ -12,32 +12,33 @@ authMode
    :Scope: Display  / Proc.
    :RenderType: all
 
-   Authorization mode for the selector box. Keywords are:
+   .. versionchanged:: 12.0
+      The only valid value for TCA config option :php:`authMode` is now:php:`explicitAllow`.
+      The values :php:`explicitDeny` and :php:`individual` are obsolete and no longer evaluated.
+
+   Authorization mode for the selector box. The only possible option is:
 
    explicitAllow
       All static values from the "items" array of the selector box will be added to a matrix in the backend user
       configuration where a value must be explicitly selected if a user (other than admin) is allowed to use it!)
 
-   explicitDeny
-      All static values from the "items" array of the selector box will be added to a matrix in the backend user
-      configuration where a value must be explicitly selected if a user should be denied access.
+Migration
+=========
 
-   individual
-      State is individually set for each item in the selector box. This is done by the keywords
-      " **EXPL\_ALLOW** " and " **EXPL\_DENY** " entered at the 5. position in the item array (see "items"
-      configuration). Items without any of these keywords can be selected as usual without any access
-      restrictions applied.
+Using authMode='explicitDeny'
+-----------------------------
 
-   .. note::
-      The authentication modes will work only with values that are statically present in the "items" configuration.
-      Any values added from foreign tables, file folder or by user processing will  *not* be configurable and the
-      evaluation of such values is not guaranteed for!
+The "deny list" approach for single field values has been removed, the only allowed option
+for :php:`authMode` is :php:`explicitAllow`. Extensions using config value :php:`explicitDeny`
+should be adapted to switch to :php:`explicitAllow` instead. The upgrade wizard
+"Migrate backend groups "explicit_allowdeny" field to simplified format." that transfers
+existing :sql:`be_groups` rows to the new format, **drops** any :sql:`DENY` fields and instructs
+admins to not set new access rights of affected backend groups.
 
-   maxitems > 1
-      "authMode" works also for selector boxes with maxitems > 1. In this case the list of values is traversed and each
-      value is evaluated. Any disallowed values will be removed.
+Using authMode='individual'
+---------------------------
 
-      If all submitted values turns out to be removed the result will be that the field is not written – basically
-      leaving the old value. For maxitems <=1 (single value) this means that a non-allowed value is just not written.
-      For multiple values (maxitems >1) it depends on whether any elements are left in the list after evaluation
-      of each value.
+Handling of :php:`authMode` being set to :php:`individual` has been fully dropped. There is
+no core-provided alternative. This has been an obscure setting since ever and there is no
+direct migration. Extensions that rely on this handling need to find a substitution based on
+Core hooks, Core events or other existing Core API functionality.
