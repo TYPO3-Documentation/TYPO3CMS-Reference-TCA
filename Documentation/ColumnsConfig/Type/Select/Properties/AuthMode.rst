@@ -12,10 +12,9 @@ authMode
    :Scope: Display  / Proc.
    :RenderType: all
 
-   .. versionchanged:: 12.ß
-      The only valid value for TCA config option :php:`authMode` on :php:`'type' => 'select'`
-      fields is now :php:`explicitAllow`. The values :php:`explicitDeny` and :php:`individual`
-      are invalid and no longer evaluated.
+   .. versionchanged:: 12.0
+      The only valid value for TCA config option :php:`authMode` is now:php:`explicitAllow`.
+      The values :php:`explicitDeny` and :php:`individual` are obsolete and no longer evaluated.
 
    Authorization mode for the selector box. The only possible option is:
 
@@ -33,13 +32,13 @@ The "deny list" approach for single field values has been removed, the only allo
 for :php:`authMode` is :php:`explicitAllow`. Extensions using config value :php:`explicitDeny`
 should be adapted to switch to :php:`explicitAllow` instead. The upgrade wizard
 "Migrate backend groups "explicit_allowdeny" field to simplified format." that transfers
-existing :sql:`be_groups` rows to the new format *drops* any :sql:`DENY` fields and instructs
-admins no set new access rights of affected backend groups.
+existing :sql:`be_groups` rows to the new format, **drops** any :sql:`DENY` fields and instructs
+admins to not set new access rights of affected backend groups.
 
 Using authMode='individual'
 ---------------------------
 
 Handling of :php:`authMode` being set to :php:`individual` has been fully dropped. There is
 no core-provided alternative. This has been an obscure setting since ever and there is no
-direct migration. Extension that rely on this handling need to find a substitution based on
+direct migration. Extensions that rely on this handling need to find a substitution based on
 Core hooks, Core events or other existing Core API functionality.

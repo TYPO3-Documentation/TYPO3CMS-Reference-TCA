@@ -17,8 +17,8 @@ items
 
    .. versionchanged:: 10.4
 
-       With the introduction of item groups, the former fourth (optional description) and fifth (authMode) entries
-       have been shifted one position up. This needs to be adjusted if upgrading from lower TYPO3 versions.
+       With the introduction of item groups, the former fourth (optional description) entry has been
+       shifted one position up. This needs to be adjusted if upgrading from lower TYPO3 versions.
 
 
    Each element in this array is in itself an array where:
