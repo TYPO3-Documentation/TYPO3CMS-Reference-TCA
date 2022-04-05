@@ -20,6 +20,7 @@ be influenced by further properties.
    Type/Category/Index
    Type/Check/Index
    Type/Color/Index
+   Type/Datetime/Index
    Type/Email/Index
    Type/Flex/Index
    Type/Folder/Index

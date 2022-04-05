@@ -374,29 +374,6 @@
             "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
             "fields": ["columns/input_33"],
             "targetFileName": "Input33"
-          },
-          {
-            "action": "goToField",
-            "fields": "input_34"
-          },
-          {
-            "action": "click",
-            "link": "input"
-          },
-          {
-            "action": "wait",
-            "timeout": 0.1
-          },
-          {
-            "action": "makeScreenshotOfField",
-            "fields": "inputdatetime_3",
-            "fileName": "Inputdatetime3"
-          },
-          {
-            "action": "createPhpArrayCodeSnippet",
-            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "fields": ["columns/inputdatetime_3"],
-            "targetFileName": "Inputdatetime3"
           }
         ],
         "none_basic": [

@@ -24,15 +24,17 @@ The following renderTypes are available:
 
 *  :ref:`default <columns-input-renderType-default>`: Can be a simple input
    field, a field with a value picker of predefined items or a value slider.
-*  :ref:`inputDateTime <columns-input-renderType-inputDateTime>`: Renders
-   an input field with date or time pickers.
 
 
 .. include:: /Images/Rst/Input1.rst.txt
 .. include:: /Images/Rst/Input28.rst.txt
 .. include:: /Images/Rst/Input30.rst.txt
 .. include:: /Images/Rst/Input33.rst.txt
-.. include:: /Images/Rst/Inputdatetime3.rst.txt
+
+.. deprecated:: 12.0
+   The :php:`renderType=inputDateTime` of TCA type :php:`input` has been
+   deprecated. Use the TCA type :ref:`datetime <columns-datetime>` instead.
+
 
 .. deprecated:: 12.0
    The :php:`renderType=colorpicker` of TCA type :php:`input` has been
@@ -42,5 +44,4 @@ The following renderTypes are available:
    :hidden:
 
    Default/Index
-   DateTime/Index
    Properties/Index
