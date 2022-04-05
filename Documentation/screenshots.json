@@ -388,16 +388,6 @@
             "timeout": 0.1
           },
           {
-            "action": "makeScreenshotOfElement",
-            "fileName": "Input34"
-          },
-          {
-            "action": "createPhpArrayCodeSnippet",
-            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "fields": ["columns/input_34"],
-            "targetFileName": "Input34"
-          },
-          {
             "action": "makeScreenshotOfField",
             "fields": "inputdatetime_3",
             "fileName": "Inputdatetime3"
