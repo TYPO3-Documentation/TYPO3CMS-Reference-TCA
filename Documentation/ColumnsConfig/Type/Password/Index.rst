@@ -55,10 +55,6 @@ The migration from :php:`eval='password'` and :php:`eval='saltedPassword'` to
         ]
     ]
 
-
-The migration from :php:`eval='password'` to
-:php:`type=password` is done like following:
-
     // Before
 
     'another_password_field => [

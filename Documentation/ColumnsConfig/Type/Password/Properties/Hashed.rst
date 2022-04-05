@@ -8,7 +8,7 @@ hashed
 .. confval:: hashed
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string (list of keywords)
+   :type: boolean
    :Scope: Proc.
    :Default: true
 
