@@ -1,5 +1,6 @@
 .. include:: /Includes.rst.txt
 
+.. _columns-input-renderType-colorpicker:
 .. _columns-color:
 
 =====
@@ -7,12 +8,11 @@ Color
 =====
 
 .. versionadded:: 12.0
-   The TCA type :php:`color` has been introduced.  It replaces the
+   The TCA type :php:`color` has been introduced. It replaces the
    :php:`renderType=colorpicker` of TCA type :php:`input`.
 
 
-The TCA type :php:`color` should be used to input values representing email
-addresses.
+The TCA type :php:`color` should be used to render a JavaScript based color-picker.
 
 Examples
 ========

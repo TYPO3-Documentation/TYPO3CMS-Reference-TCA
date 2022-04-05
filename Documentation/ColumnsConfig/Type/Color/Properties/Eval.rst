@@ -13,13 +13,16 @@ eval
 
    Configuration of field evaluation.
 
-   Some of these evaluation keywords will trigger a JavaScript pre- evaluation
-   in the form. Other evaluations will be performed in the backend. The
-   evaluation functions will be executed in the list-order. Keywords:
-
    null
       An empty value (string) will be stored as :code:`NULL` in the database,
       requires a proper sql definition.
+
+.. note::
+
+   The value of TCA type :php:`color` columns is automatically trimmed before
+   being stored in the database. Therefore, the :php:`eval=trim` option is no
+   longer needed and should be removed from the TCA configuration. The only
+   valid option for :php:`eval` is :php:`null`.
 
 Examples
 ========

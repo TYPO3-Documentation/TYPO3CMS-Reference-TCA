@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. _columns-email-properties:
+.. _columns-color-properties:
 
 ==========
 Properties
@@ -32,8 +32,3 @@ Common properties
 *  :ref:`placeholder <tca_property_placeholder>`
 *  :ref:`readOnly <tca_property_readOnly>`
 *  :ref:`required <tca_property_required>`
-
-.. note::
-
-    The softref definition :php:`softref=>email[subst]` is automatically applied
-    to all :php:`email` fields.
