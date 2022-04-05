@@ -33,7 +33,6 @@ The following renderTypes are available:
 .. include:: /Images/Rst/Input30.rst.txt
 .. include:: /Images/Rst/Input33.rst.txt
 .. include:: /Images/Rst/Input34.rst.txt
-:orphan:
 
 .. deprecated:: 12.0
    The :php:`renderType=inputDateTime` of TCA type :php:`input` has been
