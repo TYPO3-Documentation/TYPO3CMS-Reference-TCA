@@ -7,7 +7,7 @@
 showitem
 ========
 
-.. confval:: showitem
+.. confval:: showitem (palettes)
 
    :Path: $GLOBALS['TCA'][$table]['palettes']
    :Required: true

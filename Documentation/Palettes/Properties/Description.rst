@@ -8,7 +8,7 @@ description
 .. versionadded:: 11.3
    The palettes description property has been added with TYPO3 11.3.
 
-.. confval:: description
+.. confval:: description (palettes)
 
    :Path: $GLOBALS['TCA'][$table]['palettes']
    :type: string

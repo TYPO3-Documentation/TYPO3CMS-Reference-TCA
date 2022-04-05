@@ -5,7 +5,7 @@
 treeConfig
 ==========
 
-.. confval:: treeConfig
+.. confval:: treeConfig (type => category)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array

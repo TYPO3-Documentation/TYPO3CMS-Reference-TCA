@@ -5,7 +5,7 @@
 hashed
 ======
 
-.. confval:: hashed
+.. confval:: hashed (type => password)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean

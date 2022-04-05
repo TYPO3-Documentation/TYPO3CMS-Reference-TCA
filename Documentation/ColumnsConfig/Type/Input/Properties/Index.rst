@@ -23,17 +23,11 @@ Special properties
    Autocomplete
    Eval
    IsIn
-   LinkPopup
    Max
    Range
    Size
    Slider
    ValuePicker
-
-.. note::
-   Input fields with :php:`renderType => 'inputDateTime'` have a different set
-   of properties. See :ref:`inputDateTime properties
-   <columns-input-renderType-inputDateTime-properties>`
 
 Common properties
 =================

@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. _columns-link-properties-link:
+.. _columns-link-properties-size:
 
 ====
 size

@@ -5,7 +5,7 @@
 default
 =======
 
-.. confval:: default
+.. confval:: default (type => check)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer

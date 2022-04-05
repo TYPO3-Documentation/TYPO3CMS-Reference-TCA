@@ -6,7 +6,7 @@
 range
 =====
 
-.. confval:: range
+.. confval:: range (type => datetime)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array

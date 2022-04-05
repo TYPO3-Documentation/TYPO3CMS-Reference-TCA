@@ -5,7 +5,7 @@
 is\_in
 ======
 
-.. confval:: is_in
+.. confval:: is_in (type => text)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string

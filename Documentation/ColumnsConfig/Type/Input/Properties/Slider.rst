@@ -10,7 +10,6 @@ slider
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
-   :RenderTypes: default, inputLink
 
    Render a value slider next to the field. Only works for fields :ref:`evaluated <columns-input-properties-eval>`
    to integer and float. It is advised to also define a :ref:`range <columns-input-properties-range>` property,

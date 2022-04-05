@@ -5,7 +5,7 @@
 readOnly
 ========
 
-.. confval:: readOnly
+.. confval:: readOnly (ctrl)
 
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: boolean

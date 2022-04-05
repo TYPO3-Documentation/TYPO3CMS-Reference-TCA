@@ -5,7 +5,7 @@
 cols
 ====
 
-.. confval:: cols
+.. confval:: cols (type => none)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer

@@ -5,7 +5,7 @@
 size
 ====
 
-.. confval:: size
+.. confval:: size (type => password)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer

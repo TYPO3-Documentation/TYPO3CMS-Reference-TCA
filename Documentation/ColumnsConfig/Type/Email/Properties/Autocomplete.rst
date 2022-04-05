@@ -5,7 +5,7 @@
 autocomplete
 ============
 
-.. confval:: autocomplete
+.. confval:: autocomplete ('type' => 'email')
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean

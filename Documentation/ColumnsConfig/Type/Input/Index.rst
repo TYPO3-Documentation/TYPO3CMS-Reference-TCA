@@ -2,46 +2,75 @@
 
 .. _columns-input:
 .. _columns-input-introduction:
+.. _columns-input-renderType-default:
 
 =====
 Input
 =====
 
-:php:`type='input'` generates an :html:`<input>` field, possibly with additional
-features applied. There are a number of variants to this type and it is used in
-various different ways, for instance with some additional wizards or modals.
-Keep an eye on the different available renderTypes.
+:php:`type='input'` generates a html :html:`<input>` field with the :html:`type`
+attribute set to :html:`text`. It is possible to apply additional features such
+as the :ref:`valuePicker <columns-input-properties-valuePicker>`.
 
 In the database, this field is typically set to a `VARCHAR` or `CHAR` field with
 appropriate length.
-
-Most input fields share :ref:`common properties <columns-input-properties>`.
-Some properties only apply to certain render types. The render type
-:ref:`inputDateTime <columns-input-renderType-inputDateTime>` has several
-unique properties listed separately.
-
-The following renderTypes are available:
-
-*  :ref:`default <columns-input-renderType-default>`: Can be a simple input
-   field, a field with a value picker of predefined items or a value slider.
-
-
-.. include:: /Images/Rst/Input1.rst.txt
-.. include:: /Images/Rst/Input28.rst.txt
-.. include:: /Images/Rst/Input30.rst.txt
-.. include:: /Images/Rst/Input33.rst.txt
 
 .. deprecated:: 12.0
    The :php:`renderType=inputDateTime` of TCA type :php:`input` has been
    deprecated. Use the TCA type :ref:`datetime <columns-datetime>` instead.
 
-
 .. deprecated:: 12.0
    The :php:`renderType=colorpicker` of TCA type :php:`input` has been
    deprecated. Use the TCA type :ref:`color <columns-color>` instead.
 
-.. toctree::
-   :hidden:
+.. deprecated:: 12.0
+   The :php:`renderType=inputLink` of TCA type :php:`input` has been
+   deprecated. Use the TCA type :ref:`link <columns-link>` instead.
 
-   Default/Index
+.. _columns-input-examples:
+
+Examples
+========
+
+.. _tca_example_input_1:
+
+Simple input field
+------------------
+
+.. include:: /Images/Rst/Input1.rst.txt
+
+.. include:: /CodeSnippets/Input1.rst.txt
+
+Input with placeholder and null handling
+----------------------------------------
+
+.. include:: /Images/Rst/Input28.rst.txt
+
+.. include:: /CodeSnippets/Input28.rst.txt
+
+
+.. _tca_example_input_30:
+
+Value slider
+------------
+
+.. include:: /Images/Rst/Input30.rst.txt
+
+
+.. include:: /CodeSnippets/Input30.rst.txt
+
+
+.. _tca_example_input_33:
+
+Value picker
+------------
+
+.. include:: /Images/Rst/Input33.rst.txt
+
+
+.. include:: /CodeSnippets/Input33.rst.txt
+
+.. toctree::
+   :titlesonly:
+
    Properties/Index

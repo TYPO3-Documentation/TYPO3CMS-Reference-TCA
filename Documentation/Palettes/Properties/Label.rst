@@ -5,7 +5,7 @@
 label
 =====
 
-.. confval:: label
+.. confval:: label (palettes)
 
    :Path: $GLOBALS['TCA'][$table]['palettes']
    :type: string

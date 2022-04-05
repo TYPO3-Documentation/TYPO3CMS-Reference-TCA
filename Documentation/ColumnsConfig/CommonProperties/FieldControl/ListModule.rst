@@ -22,7 +22,7 @@ listModule
 Options
 =======
 
-.. confval:: disabled
+.. confval:: listModule disabled
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
    :type: boolean
@@ -32,7 +32,7 @@ Options
    Disables the field control. Needs to be set to :php:`false` to enable the
    :guilabel:`Create new` button
 
-.. confval:: options[pid]
+.. confval:: listModule options[pid]
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
    :type: string
@@ -51,7 +51,7 @@ Options
    -  :code:`###THIS_UID###`
    -  :code:`###SITEROOT###`
 
-.. confval:: options[table]
+.. confval:: listModule options[table]
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
    :type: string
@@ -64,7 +64,7 @@ Options
    `type='group'` fields and to :ref:`foreign_table
    <columns-select-properties-foreign-table>` for `type='select'` fields.
 
-.. confval:: options[title]
+.. confval:: listModule options[title]
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
    :type: string

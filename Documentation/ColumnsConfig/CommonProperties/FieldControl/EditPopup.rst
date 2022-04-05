@@ -22,7 +22,7 @@ editPopup
 Options
 =======
 
-.. confval:: disabled
+.. confval:: editPopup disabled
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
    :type: boolean
@@ -32,7 +32,7 @@ Options
    Disables the field control. Needs to be set to :php:`false` to enable the
    :guilabel:`Create new` button
 
-.. confval:: options[title]
+.. confval:: editPopup options[title]
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
    :type: string
@@ -42,7 +42,7 @@ Options
 
    Allows to set a different 'title' attribute to the popup icon.
 
-.. confval:: options[windowOpenParameters]
+.. confval:: editPopup options[windowOpenParameters]
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
    :type: string
