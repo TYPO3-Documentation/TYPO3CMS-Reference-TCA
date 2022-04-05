@@ -1,18 +1,9 @@
-.. include:: /Includes.rst.txt
-
-.. _columns-input-renderType-inputLink:
+:orphan:
 
 ==========
 Link input
 ==========
 
-This page describes the :ref:`input <columns-input>` type with the renderType='inputLink'.
-
-An input field used to handle links and mail addresses in the backend.
-
-Additionally to the common properties :ref:`tca_field_control_link_popup` can
-be set.
-
-.. toctree::
-
-   Examples
+.. deprecated:: 12.0
+   The renderType :php:`inputlink` is deprecated. Use the column type
+   :ref:`type => link <columns-link>` instead.

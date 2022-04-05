@@ -1,14 +1,9 @@
-.. include:: /Includes.rst.txt
+:orphan:
 
-========
-Examples
-========
+===================
+Link input examples
+===================
 
-.. _tca_example_input_29:
-
-Link field
-==========
-
-.. include:: /Images/Rst/Input29.rst.txt
-
-.. include:: /CodeSnippets/Input29.rst.txt
+.. deprecated:: 12.0
+   The renderType :php:`inputlink` is deprecated. Use the column type
+   :ref:`type => link <columns-link>` instead.
