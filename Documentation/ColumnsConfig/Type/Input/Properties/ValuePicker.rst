@@ -10,7 +10,6 @@ valuePicker
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Display
-   :RenderTypes: default, colorpicker, inputLink
 
    Renders a select box with static values next to the input field. When a value is selected in the box,
    the value is transferred to the field. Keys:

@@ -10,7 +10,6 @@ is\_in
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string
    :Scope: Display  / Proc.
-   :RenderTypes: default, colorpicker, inputLink
 
    If the evaluation type "is\_in" (see :ref:`eval <columns-input-properties-eval>`) is used for evaluation, then
    the characters in the input string should be found in this string as well. This value is also passed

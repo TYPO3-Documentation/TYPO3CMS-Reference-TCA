@@ -10,7 +10,6 @@ eval
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list of keywords)
    :Scope: Display  / Proc.
-   :RenderTypes: default, colorpicker, inputLink
 
    Configuration of field evaluation.
 
