@@ -26,8 +26,6 @@ The following renderTypes are available:
    field, a field with a value picker of predefined items or a value slider.
 *  :ref:`colorpicker <columns-input-renderType-colorpicker>`: An input
    field with a JavaScript color picker.
-*  :ref:`inputLink <columns-input-renderType-inputLink>`: An input field
-   used to handle links and mail addresses in the backend.
 
 
 .. include:: /Images/Rst/Input1.rst.txt
@@ -35,8 +33,6 @@ The following renderTypes are available:
 .. include:: /Images/Rst/Input30.rst.txt
 .. include:: /Images/Rst/Input33.rst.txt
 .. include:: /Images/Rst/Input34.rst.txt
-.. include:: /Images/Rst/Input29.rst.txt
-
 :orphan:
 
 .. deprecated:: 12.0
@@ -49,5 +45,4 @@ The following renderTypes are available:
 
    Default/Index
    ColorPicker/Index
-   Link/Index
    Properties/Index
