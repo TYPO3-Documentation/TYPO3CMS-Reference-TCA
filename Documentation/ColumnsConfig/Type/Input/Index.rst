@@ -28,8 +28,6 @@ The following renderTypes are available:
    field with a JavaScript color picker.
 *  :ref:`inputDateTime <columns-input-renderType-inputDateTime>`: Renders
    an input field with date or time pickers.
-*  :ref:`inputLink <columns-input-renderType-inputLink>`: An input field
-   used to handle links and mail addresses in the backend.
 
 
 .. include:: /Images/Rst/Input1.rst.txt
@@ -38,7 +36,6 @@ The following renderTypes are available:
 .. include:: /Images/Rst/Input33.rst.txt
 .. include:: /Images/Rst/Input34.rst.txt
 .. include:: /Images/Rst/Inputdatetime3.rst.txt
-.. include:: /Images/Rst/Input29.rst.txt
 
 
 .. toctree::
@@ -47,5 +44,4 @@ The following renderTypes are available:
    Default/Index
    ColorPicker/Index
    DateTime/Index
-   Link/Index
    Properties/Index

@@ -5,7 +5,7 @@
 eval
 ====
 
-.. confval:: eval
+.. confval:: eval ('type' => 'link')
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (list of keywords)

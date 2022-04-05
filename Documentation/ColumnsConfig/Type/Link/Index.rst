@@ -7,11 +7,25 @@ Link
 ====
 
 .. versionadded:: 12.0
-   The TCA type :php:`email` has been introduced. It replaces the
-   :php:`eval=email` option of TCA type :php:`input`.
+   The TCA type :php:`link` has been introduced. It replaces the
+   :php:`renderType=inputLink` option of TCA type :php:`input`.
 
-The TCA type :php:`email` should be used to input values representing email
-addresses.
+The TCA type :php:`link` should be used to input values representing typolinks.
+
+Example
+=======
+
+A simple link field:
+
+.. code-block:: php
+
+   'a_link_field' => [
+       'label' => 'Link',
+       'config' => [
+           'type' => 'link',
+           'allowedTypes' => ['page', 'url', 'record'],
+       ]
+   ]
 
 Migration
 =========
@@ -20,25 +34,50 @@ The migration from :php:`eval='email'` to :php:`type=email` is done like followi
 
 .. code-block:: php
 
-    // Before
+   // Before
 
-    'email_field => [
-        'label' => 'Email',
-        'config' => [
-            'type' => 'input',
-            'eval' => 'trim,email',
-            'max' => 255,
-        ]
-    ]
+   'a_link_field' => [
+       'label' => 'Link',
+       'config' => [
+           'type' => 'input',
+           'renderType' => 'inputLink',
+           'required' => true,
+           'size' => 20,
+           'max' => 1024,
+           'eval' => 'trim,null',
+           'fieldControl' => [
+               'linkPopup' => [
+                   'disabled' => true,
+                   'options' => [
+                       'title' => 'Browser title',
+                       'allowedExtensions' => 'jpg,png',
+                       'blindLinkFields' => 'class,target,title',
+                       'blindLinkOptions' => 'mail,folder,file,telephone',
+                   ],
+               ],
+           ],
+           'softref' => 'typolink',
+       ],
+   ],
 
    // After
 
-    'email_field => [
-        'label' => 'Email',
-        'config' => [
-            'type' => 'email',
-        ]
-    ]
+   'a_link_field' => [
+       'label' => 'Link',
+       'config' => [
+           'type' => 'link',
+           'required' => true,
+           'size' => 20,
+           'eval' => 'null',
+           'allowedTypes' => ['page', 'url', 'record'],
+           'appearance' => [
+               'enableBrowser' => false,
+               'browserTitle' => 'Browser title',
+               'allowedFileExtensions' => ['jpg', 'png'],
+               'allowedOptions' => ['params', 'rel'],
+           ],
+       ]
+   ]
 
 An automatic TCA migration is performed on the fly, migrating all occurrences
 to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error

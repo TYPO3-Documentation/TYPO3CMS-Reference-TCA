@@ -51,7 +51,6 @@ input
    .. include:: /Images/Rst/Input33.rst.txt
    .. include:: /Images/Rst/Input34.rst.txt
    .. include:: /Images/Rst/Inputdatetime3.rst.txt
-   .. include:: /Images/Rst/Input29.rst.txt
 
 none
    :ref:`Read only, virtual field <columns-none>`. No DataHandler processing.
