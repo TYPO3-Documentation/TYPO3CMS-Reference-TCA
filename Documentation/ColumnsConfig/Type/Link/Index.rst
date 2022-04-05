@@ -92,7 +92,7 @@ where code adoption has to take place.
 
 
 .. toctree::
-   :hidden:
+   :titlesonly:
 
    Properties/Index
 

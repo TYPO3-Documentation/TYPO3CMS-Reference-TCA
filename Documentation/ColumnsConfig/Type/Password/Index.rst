@@ -86,6 +86,6 @@ where code adoption has to take place.
    option is no longer needed and should be removed from the TCA configuration.
 
 .. toctree::
-   :hidden:
+   :titlesonly:
 
    Properties/Index
