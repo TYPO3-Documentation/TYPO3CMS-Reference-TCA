@@ -49,7 +49,6 @@ input
    .. include:: /Images/Rst/Input28.rst.txt
    .. include:: /Images/Rst/Input30.rst.txt
    .. include:: /Images/Rst/Input33.rst.txt
-   .. include:: /Images/Rst/Input34.rst.txt
    .. include:: /Images/Rst/Inputdatetime3.rst.txt
 
 none

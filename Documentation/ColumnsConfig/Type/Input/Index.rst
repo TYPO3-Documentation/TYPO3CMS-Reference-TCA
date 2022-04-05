@@ -24,24 +24,24 @@ The following renderTypes are available:
 
 *  :ref:`default <columns-input-renderType-default>`: Can be a simple input
    field, a field with a value picker of predefined items or a value slider.
-*  :ref:`colorpicker <columns-input-renderType-colorpicker>`: An input
-   field with a JavaScript color picker.
 
 
 .. include:: /Images/Rst/Input1.rst.txt
 .. include:: /Images/Rst/Input28.rst.txt
 .. include:: /Images/Rst/Input30.rst.txt
 .. include:: /Images/Rst/Input33.rst.txt
-.. include:: /Images/Rst/Input34.rst.txt
 
 .. deprecated:: 12.0
    The :php:`renderType=inputDateTime` of TCA type :php:`input` has been
    deprecated. Use the TCA type :ref:`datetime <columns-datetime>` instead.
 
 
+.. deprecated:: 12.0
+   The :php:`renderType=colorpicker` of TCA type :php:`input` has been
+   deprecated. Use the TCA type :ref:`color <columns-color>` instead.
+
 .. toctree::
    :hidden:
 
    Default/Index
-   ColorPicker/Index
    Properties/Index

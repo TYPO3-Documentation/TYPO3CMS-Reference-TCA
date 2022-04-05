@@ -1,15 +1,5 @@
-.. include:: /Includes.rst.txt
+:orphan:
 
-========
-Examples
-========
-
-
-.. _tca_example_input_34:
-
-Color picker field
-==================
-
-.. include:: /Images/Rst/Input34.rst.txt
-
-.. include:: /CodeSnippets/Input34.rst.txt
+.. deprecated:: 12.0
+   The :php:`renderType=colorpicker` of TCA type :php:`input` has been
+   deprecated. Use the TCA type :ref:`color <columns-color>` instead.
