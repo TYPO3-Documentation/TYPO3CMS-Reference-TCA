@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. _columns-datetime-datetime-properties-range:
+.. _columns-datetime-properties-range:
 
 =====
 range
