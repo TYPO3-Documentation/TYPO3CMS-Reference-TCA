@@ -11,9 +11,12 @@ Special properties
 .. toctree::
    :titlesonly:
 
+   AllowedTypes
+   Appearance
    Autocomplete
    Eval
    Size
+   ValuePicker
 
 Common properties
 =================

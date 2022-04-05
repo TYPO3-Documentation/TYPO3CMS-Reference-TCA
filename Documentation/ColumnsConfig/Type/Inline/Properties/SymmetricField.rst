@@ -19,6 +19,4 @@ symmetric\_field
 Example
 =======
 
-.. include:: /CodeSnippets/InlineMnSymmetricInline1.rst.txt
-
 .. include:: /CodeSnippets/InlineMnSymmetricBranches.rst.txt
