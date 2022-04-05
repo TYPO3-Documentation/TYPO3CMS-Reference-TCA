@@ -1,4 +1,5 @@
 .. include:: /Includes.rst.txt
+.. _columns-input-properties-dbtype:
 .. _columns-datetime-properties-dbtype:
 
 ======
