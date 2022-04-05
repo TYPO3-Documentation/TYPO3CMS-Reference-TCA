@@ -10,7 +10,6 @@ autocomplete
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
    :Scope: Display
-   :RenderTypes: default, colorpicker, link
 
    Controls the `autocomplete` attribute of a given input field. If set to true (default false),
    adds attribute :php:`autocomplete="on"` to the input field allowing browser auto filling the field:

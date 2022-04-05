@@ -10,7 +10,6 @@ range
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
    :Scope: Proc.
-   :RenderTypes: default, inputLink
 
    An array which defines an integer range within which the value must be. Keys:
 
