@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. _columns-email-properties-valuePicker:
+.. _columns-link-properties-valuePicker:
 
 ===========
 valuePicker

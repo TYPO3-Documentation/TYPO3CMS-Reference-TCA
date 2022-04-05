@@ -30,7 +30,7 @@ A simple link field:
 Migration
 =========
 
-The migration from :php:`eval='email'` to :php:`type=email` is done like following:
+The migration from :php:`renderType=inputLink` to :php:`type=link` is done like following:
 
 .. code-block:: php
 
@@ -85,13 +85,14 @@ where code adoption has to take place.
 
 .. note::
 
-   The value of TCA type :php:`email` columns is automatically trimmed before
+   The value of TCA type :php:`link` columns is automatically trimmed before
    being stored in the database. Therefore, the :php:`eval=trim` option is no
-   longer needed and should be removed from the TCA configuration.
+   longer needed and should be removed from the TCA configuration. The only
+   valid option for :php:`eval` is :php:`null`.
 
 
 .. toctree::
-   :titlesonly:
+   :hidden:
 
    Properties/Index
 
