@@ -19,6 +19,7 @@ be influenced by further properties.
    CommonProperties/Index
    Type/Category/Index
    Type/Check/Index
+   Type/Datetime/Index
    Type/Email/Index
    Type/Flex/Index
    Type/Folder/Index

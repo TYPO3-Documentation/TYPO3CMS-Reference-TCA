@@ -1,17 +1,5 @@
-.. include:: /Includes.rst.txt
+:orphan:
 
-.. _columns-input-renderType-inputDateTime:
-
-==============
-DateTime input
-==============
-
-This page describes the :ref:`input <columns-input>` type with renderType='inputDateTime'.
-
-Renders an input field with date or time pickers.
-
-.. toctree::
-   :titlesonly:
-
-   Examples
-   Properties/Index
+.. deprecated:: 12.0
+   The :php:`renderType=inputDateTime` of TCA type :php:`input` has been
+   deprecated. Use the TCA type :ref:`datetime <columns-datetime>` instead.

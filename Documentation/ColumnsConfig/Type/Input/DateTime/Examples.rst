@@ -1,14 +1,5 @@
-.. include:: /Includes.rst.txt
+:orphan:
 
-========
-Examples
-========
-
-.. _tca_example_inputdatetime_3:
-
-Date and time picker field
-==========================
-
-.. include:: /Images/Rst/Inputdatetime3.rst.txt
-
-.. include:: /CodeSnippets/Inputdatetime3.rst.txt
+.. deprecated:: 12.0
+   The :php:`renderType=inputDateTime` of TCA type :php:`input` has been
+   deprecated. Use the TCA type :ref:`datetime <columns-datetime>` instead.
