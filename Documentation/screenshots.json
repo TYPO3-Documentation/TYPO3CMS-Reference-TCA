@@ -355,17 +355,6 @@
           },
           {
             "action": "makeScreenshotOfField",
-            "fields": "input_29",
-            "fileName": "Input29"
-          },
-          {
-            "action": "createPhpArrayCodeSnippet",
-            "sourceFile": "Configuration/TCA/tx_styleguide_elements_basic.php",
-            "fields": ["columns/input_29"],
-            "targetFileName": "Input29"
-          },
-          {
-            "action": "makeScreenshotOfField",
             "fields": "input_30",
             "fileName": "Input30"
           },
