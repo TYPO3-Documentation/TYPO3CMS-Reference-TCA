@@ -49,3 +49,8 @@ where code adoption has to take place.
    The value of TCA type :php:`email` columns is automatically trimmed before
    being stored in the database. Therefore, the :php:`eval=trim` option is no
    longer needed and should be removed from the TCA configuration.
+
+.. toctree::
+   :hidden:
+
+   Properties/Index
