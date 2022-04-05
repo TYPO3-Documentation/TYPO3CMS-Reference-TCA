@@ -34,10 +34,6 @@ eval
       Converts the input to a floating point with 2 decimal positions, using the "." (period) as the decimal
       delimited (accepts also "," for the same).
 
-   email
-      This type adds a server-side validation of an email address. If the input does not contain a valid email
-      address, a flash message warning will be displayed.
-
    int
       Evaluates the input to an integer.
 
@@ -97,10 +93,13 @@ eval
    Vendor\\Extension\\*
       User defined form evaluations.
 
-
    .. deprecated:: 12.0
       The keyword `required` is deprecated. Use the common property
       :confval:`required` instead.
+
+   .. deprecated:: 12.0
+      The keyword `email` is deprecated. Use the column type
+      :ref:`columns-email` instead.
 
 Examples
 ========
