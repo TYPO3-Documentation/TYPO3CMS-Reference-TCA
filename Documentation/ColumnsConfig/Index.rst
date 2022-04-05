@@ -30,6 +30,7 @@ be influenced by further properties.
    Type/Link/Index
    Type/None/Index
    Type/Passthrough/Index
+   Type/Password/Index
    Type/Radio/Index
    Type/Select/Index
    Type/Slug/Index

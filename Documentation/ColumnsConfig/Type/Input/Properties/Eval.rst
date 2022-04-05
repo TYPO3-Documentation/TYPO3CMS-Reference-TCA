@@ -56,18 +56,6 @@ eval
    num
       Allows only 0-9 characters in the field.
 
-   password
-      Will show "\*\*\*\*\*\*\*" in the field after entering the value and moving to another field. Thus passwords
-      can be protected from display in the field.
-
-      .. note::
-         The value is visible while it is being entered!
-
-   saltedPassword
-      The value will be hashed using the password hash configuration for BE for all tables except :php:`fe_user`,
-      where the password hash configuration for FE is used. Note this eval is typically only used core internally
-      for tables :php:`be_users` and :php:`fe_users` on the :php:`password` field.
-
    trim
       The value in the field will have white spaces around it trimmed away.
 
@@ -100,6 +88,10 @@ eval
    .. deprecated:: 12.0
       The keyword `email` is deprecated. Use the column type
       :ref:`columns-email` instead.
+
+   .. deprecated:: 12.0
+      The keyword `password` and `saltedPassword` are deprecated.
+      Use the column type :ref:`columns-password` instead.
 
 Examples
 ========
