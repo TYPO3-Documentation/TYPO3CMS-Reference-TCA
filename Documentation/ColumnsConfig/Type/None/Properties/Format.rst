@@ -5,7 +5,7 @@
 format
 ======
 
-.. confval:: format
+.. confval:: format (type => none)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (keyword) + array

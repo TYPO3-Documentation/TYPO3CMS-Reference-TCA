@@ -5,7 +5,7 @@
 autocomplete
 ============
 
-.. confval:: autocomplete
+.. confval:: autocomplete (type => password)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean

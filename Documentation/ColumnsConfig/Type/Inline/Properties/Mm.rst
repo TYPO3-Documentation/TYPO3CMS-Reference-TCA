@@ -5,7 +5,7 @@
 MM
 ==
 
-.. confval:: MM
+.. confval:: MM (type => inline)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (table name)
@@ -27,7 +27,7 @@ MM
       and `New->newB`. Deleting the
       relation `New->orgA` will result in a broken relation `Org->orgA`.
 
-.. confval:: MM\_hasUidField
+.. confval:: MM\_hasUidField (type => inline)
 
    :type: boolean
    :Scope: Proc.
@@ -36,7 +36,7 @@ MM
    value to true. Otherwise sorting and removing relations
    will be buggy.
 
-.. confval:: MM\_opposite\_field
+.. confval:: MM\_opposite\_field (type => inline)
 
    :type: string (field name)
    :Scope: Proc.

@@ -5,7 +5,7 @@
 pass\_content
 =============
 
-.. confval:: pass_content
+.. confval:: pass_content (type => none)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean

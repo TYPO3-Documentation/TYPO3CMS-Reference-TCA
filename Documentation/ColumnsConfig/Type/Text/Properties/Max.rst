@@ -5,7 +5,7 @@
 max
 ===
 
-.. confval:: max
+.. confval:: max (type => text)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: integer

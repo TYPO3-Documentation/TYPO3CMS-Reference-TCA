@@ -5,7 +5,7 @@
 foreign\_table
 ==============
 
-.. confval:: foreign_table
+.. confval:: foreign_table (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (table name)

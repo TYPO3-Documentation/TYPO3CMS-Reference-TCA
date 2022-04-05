@@ -14,8 +14,10 @@ appearance
    Has information about the appearance of child-records, namely:
 
    allowedOptions (array)
-      Hide or show :confval:`allowedTypes` in the link browser.
+      Hide or show :ref:`allowedTypes <columns-link-properties-allowedTypes>`
+      in the link browser.
       While :php:`appearance[allowedOptions]` only affects the display in
-      link browser the :confval:`allowedTypes` configuration is also evaluated
+      link browser the :ref:`allowedTypes <columns-link-properties-allowedTypes>`
+      configuration is also evaluated
       in the :php:`Datahandler`, preventing the user from adding
       links of non allowed types.

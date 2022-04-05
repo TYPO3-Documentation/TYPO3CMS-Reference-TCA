@@ -5,7 +5,7 @@
 default value
 =============
 
-.. confval:: default
+.. confval:: default (type => category)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string

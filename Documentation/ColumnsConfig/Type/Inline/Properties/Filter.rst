@@ -5,7 +5,7 @@
 filter
 ======
 
-.. confval:: filter
+.. confval:: filter (type => inline)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array

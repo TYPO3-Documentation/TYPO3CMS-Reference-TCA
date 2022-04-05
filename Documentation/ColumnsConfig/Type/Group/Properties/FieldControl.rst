@@ -11,7 +11,7 @@ fieldControl
 The field of type group can enable all common :ref:`field control options
 <tca_property_fieldControl>`. Furthermore the following are available:
 
-.. confval:: elementBrowser
+.. confval:: elementBrowser (type => group)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array
@@ -22,7 +22,7 @@ The field of type group can enable all common :ref:`field control options
    button to open an element browser. It is enabled by default if rendering a
    group element.
 
-.. confval:: insertClipboard
+.. confval:: insertClipboard (type => group)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
    :type: array

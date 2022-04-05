@@ -5,7 +5,7 @@
 elementBrowserEntryPoints
 ==========================
 
-.. confval:: elementBrowserEntryPoints
+.. confval:: elementBrowserEntryPoints (type => group)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array

@@ -5,7 +5,7 @@
 items
 =====
 
-.. confval:: items
+.. confval:: items (type => radio)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :required: true

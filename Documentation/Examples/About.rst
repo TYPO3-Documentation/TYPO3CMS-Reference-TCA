@@ -34,8 +34,7 @@ The extension :file:`examples` can be installed via composer:
 
    composer require --dev t3docs/examples
 
-It can also be downloaded from the `TYPO3 extension repository
-<https://extensions.typo3.org/extension/examples/>`__
+It can also be downloaded from the :t3ext:`TYPO3 extension repository <examples/>`.
 
 
 .. _tca_examples_core:

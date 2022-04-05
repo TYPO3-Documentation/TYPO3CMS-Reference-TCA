@@ -5,7 +5,7 @@
 appearance
 ==========
 
-.. confval:: appearance
+.. confval:: appearance (type => slug)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
