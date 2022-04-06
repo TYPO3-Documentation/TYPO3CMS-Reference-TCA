@@ -14,27 +14,8 @@ be influenced by further properties.
 .. toctree::
    :maxdepth: 2
    :titlesonly:
+   :glob:
 
    Introduction/Index
    CommonProperties/Index
-   Type/Category/Index
-   Type/Check/Index
-   Type/Color/Index
-   Type/Datetime/Index
-   Type/Email/Index
-   Type/Flex/Index
-   Type/Folder/Index
-   Type/Group/Index
-   Type/ImageManipulation/Index
-   Type/Inline/Index
-   Type/Input/Index
-   Type/Language/Index
-   Type/Link/Index
-   Type/None/Index
-   Type/Passthrough/Index
-   Type/Password/Index
-   Type/Radio/Index
-   Type/Select/Index
-   Type/Slug/Index
-   Type/Text/Index
-   Type/User/Index
+   Type/*/Index

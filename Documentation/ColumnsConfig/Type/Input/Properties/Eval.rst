@@ -29,13 +29,6 @@ eval
       Allows a domain name such as :samp:`example.org` and automatically transforms
       the value to `punicode <https://en.wikipedia.org/wiki/Punycode>`_ if needed.
 
-   double2
-      Converts the input to a floating point with 2 decimal positions, using the "." (period) as the decimal
-      delimited (accepts also "," for the same).
-
-   int
-      Evaluates the input to an integer.
-
    is\_in
       Will filter out any character in the input string which is  *not* found in the string entered in the
       property :ref:`is\_in <columns-input-properties-is-in>`.
@@ -91,6 +84,10 @@ eval
    .. deprecated:: 12.0
       The keyword `password` and `saltedPassword` are deprecated.
       Use the column type :ref:`columns-password` instead.
+
+   .. deprecated:: 12.0
+      The keywords `int` and `double2` are deprecated. Use the column
+      type :ref:`columns-number` instead.
 
 Examples
 ========
