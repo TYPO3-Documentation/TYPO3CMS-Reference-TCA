@@ -81,27 +81,27 @@ format
 Examples
 ========
 
-     .. code-block:: php
+.. code-block:: php
 
-        'aField' => [
-           'config' => [
-              'type' => 'none',
-              'format' => 'date'
-              'format.' => [
-                 'strftime' => TRUE,
-                 'option' => '%x'
-              ],
-           ],
+   'aField' => [
+     'config' => [
+        'type' => 'none',
+        'format' => 'date'
+        'format.' => [
+           'strftime' => TRUE,
+           'option' => '%x'
         ],
+     ],
+   ],
 
-     .. code-block:: php
+.. code-block:: php
 
-        'aField' => [
-           'config' => [
-              'type' => 'none',
-              'format' => 'float'
-              'format.' => [
-                 'precision' => 8
-              ],
-           ],
+   'aField' => [
+     'config' => [
+        'type' => 'none',
+        'format' => 'float'
+        'format.' => [
+           'precision' => 8
         ],
+     ],
+   ],

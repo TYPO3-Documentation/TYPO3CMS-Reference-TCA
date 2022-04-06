@@ -11,11 +11,10 @@ Special properties
 ==================
 
 .. toctree::
+   :titlesonly:
+   :glob:
 
-   Cols   
-   Format   
-   PassContent   
-   Size   
+   *
 
 Common properties
 =================
