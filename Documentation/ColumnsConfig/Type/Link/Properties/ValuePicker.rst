@@ -38,8 +38,8 @@ Example
          'mode' => 'prepend'
          'valuePicker' => [
             'items' => [
-               ['https://', 'HTTPS'],
-               ['http://', 'HTTP'],
+               ['HTTPS', 'https://'],
+               ['HTTP', 'http://'],
             ],
          ],
       ],

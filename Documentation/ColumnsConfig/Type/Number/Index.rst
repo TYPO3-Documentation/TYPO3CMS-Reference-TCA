@@ -36,7 +36,7 @@ is done like following:
 
     // Before
 
-    'int_field => [
+    'int_field' => [
         'label' => 'Int field',
         'config' => [
             'type' => 'input',
@@ -46,7 +46,7 @@ is done like following:
 
     // After
 
-    'int_field => [
+    'int_field' => [
         'label' => 'Int field',
         'config' => [
             'type' => 'number',
@@ -63,7 +63,7 @@ is done like following:
 
     // Before
 
-    'double2_field => [
+    'double2_field' => [
         'label' => 'double2 field',
         'config' => [
             'type' => 'input',
@@ -73,7 +73,7 @@ is done like following:
 
     // After
 
-    'double2_field => [
+    'double2_field' => [
         'label' => 'double2 field',
         'config' => [
             'type' => 'number',

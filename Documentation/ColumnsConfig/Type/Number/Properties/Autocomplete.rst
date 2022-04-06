@@ -11,14 +11,14 @@ autocomplete
    :type: boolean
    :Scope: Display
 
-   Controls the `autocomplete` attribute of a given email field. If set to true (default false),
-   adds attribute :php:`autocomplete="on"` to the email input field allowing browser auto filling the field:
+   Controls the `autocomplete` attribute of a given number field. If set to true (default false),
+   adds attribute :php:`autocomplete="on"` to the number input field allowing browser auto filling the field:
 
    .. code-block:: php
       :emphasize-lines: 7
 
-      'email' => [
-         'label' => 'number',
+      'integer_field' => [
+         'label' => 'Integer field',
          'config' => [
             'type' => 'number',
             'size' => 20,

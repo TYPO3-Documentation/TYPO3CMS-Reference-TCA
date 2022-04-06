@@ -1,11 +1,12 @@
 .. include:: /Includes.rst.txt
+.. _columns-input-properties-slider:
 .. _columns-number-properties-slider:
 
 ======
 slider
 ======
 
-.. confval:: slider ('type' => 'number')
+.. confval:: slider
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
@@ -31,51 +32,51 @@ Integer slider between 0 and 100
 
 .. code-block:: php
 
-   'aField' => [
-     'label' => 'percent',
-     'config' => [
-       'type' => 'number'
-       'range' => [
-         'lower' => 0,
-         'upper' => 100
-       ],
-       'slider' => [
-         'step' => 1
-       ]
-     ],
-   ],
+    'aField' => [
+        'label' => 'percent',
+        'config' => [
+            'type' => 'number',
+            'range' => [
+                'lower' => 0,
+                'upper' => 100
+            ],
+            'slider' => [
+                'step' => 1
+            ]
+        ],
+    ],
 
 Integer slider between 0 and 10 000
 -----------------------------------
 
 .. code-block:: php
 
-   'aField' => [
-     'label' => 'percent',
-     'config' => [
-       'type' => 'number'
-       'slider' => [
-         'step' => 1
-       ]
-     ],
-   ],
+    'aField' => [
+        'label' => 'percent',
+        'config' => [
+            'type' => 'number',
+            'slider' => [
+                'step' => 1
+            ]
+        ],
+    ],
 
 Decimal slider between 0 and 1
 ------------------------------
 
 .. code-block:: php
 
-   'aField' => [
-     'label' => 'aLabel',
-     'config' => [
-       'type' => 'number'
-       'format' => 'decimal'
-       'range' => [
-         'lower' => 0,
-         'upper' => 1
-       ],
-       'slider' => [
-         'step' => 0.1
-       ]
-     ],
-   ],
+    'aField' => [
+        'label' => 'aLabel',
+        'config' => [
+            'type' => 'number',
+            'format' => 'decimal',
+            'range' => [
+                'lower' => 0,
+                'upper' => 1
+            ],
+            'slider' => [
+                'step' => 0.1
+            ]
+        ],
+    ],

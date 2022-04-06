@@ -5,7 +5,7 @@
 range
 =====
 
-.. confval:: range
+.. confval:: range ('type' => 'number')
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
@@ -29,13 +29,13 @@ Limit an integer to be within the range 10 to 1000
 
 .. code-block:: php
 
-   'aField' => [
-     'label' => 'aLabel',
-     'config' => [
-      'type' => 'number'
-       'range' => [
-         'lower' => 10,
-         'upper' => 1000
-       ],
-     ],
-   ],
+    'aField' => [
+        'label' => 'aLabel',
+        'config' => [
+            'type' => 'number',
+            'range' => [
+                'lower' => 10,
+                'upper' => 1000
+            ],
+        ],
+    ],

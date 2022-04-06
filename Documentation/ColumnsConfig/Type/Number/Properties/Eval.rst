@@ -13,10 +13,6 @@ eval
 
    Configuration of field evaluation.
 
-   Some of these evaluation keywords will trigger a JavaScript pre- evaluation
-   in the form. Other evaluations will be performed in the backend. The
-   evaluation functions will be executed in the list-order.
-
    Keywords:
 
    null

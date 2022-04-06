@@ -31,15 +31,15 @@ Example
 
 .. code-block:: php
 
-   'input_33' => [
-      'label' => 'input_33',
+   'number_field' => [
+      'label' => 'Number field',
       'config' => [
-         'type' => 'link',
-         'mode' => 'prepend'
+         'type' => 'number',
+         'mode' => ''
          'valuePicker' => [
             'items' => [
-               ['https://', 'HTTPS'],
-               ['http://', 'HTTP'],
+               ['One', '1'],
+               ['Two', '2'],
             ],
          ],
       ],
