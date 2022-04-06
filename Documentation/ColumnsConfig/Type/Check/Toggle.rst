@@ -1,6 +1,7 @@
 .. include:: /Includes.rst.txt
 .. _columns-check-checkboxToggle:
 
+===============
 Toggle checkbox
 ===============
 
