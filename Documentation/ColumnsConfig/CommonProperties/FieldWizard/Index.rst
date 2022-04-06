@@ -64,9 +64,10 @@ fieldWizard
 
 
 .. toctree::
-   FieldWizard/DefaultLanguageDifferences
-   FieldWizard/LocalizationStateSelector
-   FieldWizard/OtherLanguageContent
-   FieldWizard/RecordsOverview
-   FieldWizard/SelectIcons
-   FieldWizard/TableList
+
+   DefaultLanguageDifferences
+   LocalizationStateSelector
+   OtherLanguageContent
+   RecordsOverview
+   SelectIcons
+   TableList
