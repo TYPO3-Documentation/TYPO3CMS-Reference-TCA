@@ -16,10 +16,13 @@ searchFields
    No record from a table will ever be found if that table does not have `searchFields` defined. Only fields of the
    following TCA types are searchable:
 
+   *  :ref:`input <columns-input>`
    *  :ref:`text <columns-text>`
    *  :ref:`flex <columns-flex>`
+   *  :ref:`email <columns-email>`
+   *  :ref:`link <columns-link>`
    *  :ref:`slug <columns-slug>`
-   *  :ref:`input <columns-input>`
+   *  :ref:`color <columns-color>`
 
    Adding fields of different types to `searchFields` has no effect.
 
@@ -27,8 +30,7 @@ searchFields
 
    .. note::
 
-      Fields of type :ref:`input <columns-input>` may be excluded from search by default,
-      especially when using ``date``, ``time`` or ``int`` in ``eval``.
+      Fields of type :ref:`number <columns-number>` or :ref:`datetime <columns-datetime>` may be excluded from search by default.
       To include them, modify the search query with this hook:
       :doc:`ext_core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
 
