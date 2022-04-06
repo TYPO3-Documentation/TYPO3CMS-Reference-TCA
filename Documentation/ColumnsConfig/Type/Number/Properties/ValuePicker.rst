@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
-.. _columns-link-properties-valuePicker:
+.. _columns-number-properties-valuePicker:
 
 ===========
 valuePicker
 ===========
 
-.. confval:: valuePicker ('type' => 'link')
+.. confval:: valuePicker ('type' => 'number')
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
@@ -31,15 +31,15 @@ Example
 
 .. code-block:: php
 
-   'input_33' => [
-      'label' => 'input_33',
+   'number_field' => [
+      'label' => 'Number field',
       'config' => [
-         'type' => 'link',
-         'mode' => 'prepend'
+         'type' => 'number',
+         'mode' => ''
          'valuePicker' => [
             'items' => [
-               ['HTTPS', 'https://'],
-               ['HTTP', 'http://'],
+               ['One', '1'],
+               ['Two', '2'],
             ],
          ],
       ],

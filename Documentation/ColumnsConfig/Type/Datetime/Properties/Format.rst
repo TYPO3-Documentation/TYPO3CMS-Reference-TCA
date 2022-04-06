@@ -6,7 +6,7 @@
 format
 ======
 
-.. confval:: format
+.. confval:: format (type => datetime)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (keyword)

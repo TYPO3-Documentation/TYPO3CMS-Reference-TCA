@@ -1,14 +1,5 @@
 .. include:: /Includes.rst.txt
-.. _columns-input-properties:
-.. _columns-input-properties-type:
-.. _columns-input-properties-behaviour:
-.. _columns-input-properties-default:
-.. _columns-input-properties-fieldWizard-localizationStateSelector:
-.. _columns-input-properties-mode:
-.. _columns-input-properties-placeholder:
-.. _columns-input-properties-readOnly:
-.. _columns-input-properties-search:
-.. _columns-input-properties-softref:
+.. _columns-number-properties:
 
 ==========
 Properties
@@ -40,5 +31,3 @@ Common properties
 *  :ref:`placeholder <tca_property_placeholder>`
 *  :ref:`readOnly <tca_property_readOnly>`
 *  :ref:`required <tca_property_required>`
-*  :ref:`search <tca_property_search>`
-*  :ref:`softref <tca_property_softref>`
