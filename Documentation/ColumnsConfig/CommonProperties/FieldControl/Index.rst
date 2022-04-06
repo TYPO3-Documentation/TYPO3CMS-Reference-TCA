@@ -25,7 +25,7 @@ fieldControl
    .. include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
 
 .. toctree::
-   FieldControl/AddRecord
-   FieldControl/EditPopup
-   FieldControl/ListModule
-   FieldControl/ResetSelection
+   AddRecord
+   EditPopup
+   ListModule
+   ResetSelection

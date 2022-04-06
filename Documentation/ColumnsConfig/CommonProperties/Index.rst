@@ -10,9 +10,9 @@ Common properties
    BehaviourAllowLanguageSynchronization
    Default
    DontRemapTablesOnCopy
-   FieldControl
+   FieldControl/Index
    FieldInformation
-   FieldWizard
+   FieldWizard/Index
    HideMoveIcons
    ItemsProcFunc
    LocalizeReferencesAtParentLocalization
