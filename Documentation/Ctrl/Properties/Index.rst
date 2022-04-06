@@ -26,6 +26,8 @@ Properties
    Iconfile
    IsStatic
    Label
+   LabelAlt
+   LabelAltForce
    LabelUserfunc
    LanguageField
    OrigUid
