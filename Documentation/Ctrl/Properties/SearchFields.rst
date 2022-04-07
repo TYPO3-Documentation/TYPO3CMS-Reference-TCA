@@ -26,12 +26,13 @@ searchFields
 
    Adding fields of different types to `searchFields` has no effect.
 
-   There are more fine grained controls per column, see the documentation of the "search" key of any type in :ref:`columns-types`.
+   There are more fine grained controls per column, see the documentation of the "search" key of any 
+   type in :ref:`columns-types`.
 
    .. note::
 
-      Fields of type :ref:`number <columns-number>` or :ref:`datetime <columns-datetime>` may be excluded from search by default.
-      To include them, modify the search query with this hook:
+      Fields of type :ref:`number <columns-number>` or :ref:`datetime <columns-datetime>` 
+      may be excluded from search by default. To include them, modify the search query with this hook:
       :doc:`ext_core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
 
 
