@@ -60,7 +60,7 @@ Register an own node element::
 
 Use it as renderType in TCA::
 
-    'myMapElement' = [
+    'myMapElement' => [
         'label' => 'My map element',
         'config' => [
             'type' => 'user',
