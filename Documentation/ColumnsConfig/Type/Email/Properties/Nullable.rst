@@ -16,10 +16,12 @@ nullable
    :Default: false
    :Scope: Proc
 
-   If set to true an empty email (empty string) is saved as :sql:`NULL` in
-   the database.
+   If set to true, a checkbox will appear, which by default deactivates the
+   field. In the deactivated state the field is saved as :sql:`NULL` in the
+   database. By activating the checkbox it is possible to set a value, which
+   won't be saved as :sql:`NULL`, even an empty string.
 
-   When the :confval:`eval ('type' => 'email')` option is set to :php:`unique`
+   When the :ref:`eval <columns-email-properties-eval>` option is set to :php:`unique`
    or :php:`uniqueInPid` multiple :sql:`null` values are still possible.
 
    The database field should have the according :sql:`NULL` option set.

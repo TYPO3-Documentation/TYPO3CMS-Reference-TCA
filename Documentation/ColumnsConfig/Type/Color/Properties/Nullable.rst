@@ -16,8 +16,10 @@ nullable
    :Default: false
    :Scope: Proc
 
-   If set to true an empty color (empty string) is saved as :sql:`NULL` in
-   the database.
+   If set to true, a checkbox will appear, which by default deactivates the
+   field. In the deactivated state the field is saved as :sql:`NULL` in the
+   database. By activating the checkbox it is possible to set a value, which
+   won't be saved as :sql:`NULL`, even an empty string.
 
    The database field should have the according :sql:`NULL` option set.
 

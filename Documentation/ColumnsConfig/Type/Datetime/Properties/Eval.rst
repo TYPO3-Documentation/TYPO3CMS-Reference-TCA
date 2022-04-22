@@ -12,8 +12,6 @@ eval
    :type: string (list of keywords)
    :Scope: Display / Proc.
 
-   **Required**
-
    Configuration of field evaluation, possible values listed below:
 
    int

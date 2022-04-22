@@ -22,7 +22,7 @@ The migration from :php:`eval='email'` to :php:`type=email` is done like followi
 
     // Before
 
-    'email_field => [
+    'email_field' => [
         'label' => 'Email',
         'config' => [
             'type' => 'input',
@@ -33,7 +33,7 @@ The migration from :php:`eval='email'` to :php:`type=email` is done like followi
 
    // After
 
-    'email_field => [
+    'email_field' => [
         'label' => 'Email',
         'config' => [
             'type' => 'email',

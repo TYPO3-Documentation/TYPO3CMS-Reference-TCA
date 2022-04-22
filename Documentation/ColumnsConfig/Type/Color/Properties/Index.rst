@@ -8,7 +8,6 @@ Properties
 Special properties
 ==================
 
-
 .. toctree::
    :titlesonly:
    :glob:

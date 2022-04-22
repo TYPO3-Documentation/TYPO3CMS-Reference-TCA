@@ -76,7 +76,7 @@ eval
 
    .. deprecated:: 12.0
       The keyword `null` is deprecated. Use the property
-      :confval:`nullable (type => input)` instead.
+      :ref:`columns-input-properties-nullable` instead.
 
    .. deprecated:: 12.0
       The keyword `email` is deprecated. Use the column type
