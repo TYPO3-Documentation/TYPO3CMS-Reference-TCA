@@ -87,7 +87,7 @@ appearance
       .. versionadded:: 12.0
          Formerly known as `title` of `linkPopup.options`.
 
-         Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
+      Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
 
    enableBrowser (boolean)
       .. versionadded:: 12.0
