@@ -31,6 +31,12 @@ A simple link field:
 Migration
 =========
 
+The previously configured :php:`linkPopup` field control is now integrated
+into the new TCA type directly. Additionally, instead of exclude lists
+(:php:`blindLink[Fields|Options]`), does the new type now use include lists.
+Those lists are furthermore no longer comma separated, but PHP :php:`array`'s,
+with each option as a separate value.
+
 The migration from :php:`renderType=inputLink` to :php:`type=link` is done like following:
 
 .. code-block:: php
