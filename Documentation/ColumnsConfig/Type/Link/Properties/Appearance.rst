@@ -72,14 +72,14 @@ appearance
 
          // Allow only jpg and png file extensions
          'appearance' => [
-            'allowedOptions' => ['jpg', 'png'],
+            'allowedExtensions' => ['jpg', 'png'],
          ],
 
       .. code-block:: php
 
          // Allow all file extensions (or skip this option).
          'appearance' => [
-            'allowedOptions' => ['*'],
+            'allowedExtensions' => ['*'],
          ],
 
 
@@ -89,8 +89,30 @@ appearance
 
       Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
 
+      .. code-block:: php
+
+         // Either provide a LLL-reference (recommended)
+         'appearance' => [
+            'browserTitle' => 'LLL:EXT:Resources/Private/Language/locallang.xlf:my_custom_title',
+         ],
+
+      .. code-block:: php
+
+         // Or a simple string value
+         'appearance' => [
+            'browserTitle' => 'My custom title',
+         ],
+
    enableBrowser (boolean)
       .. versionadded:: 12.0
          Formerly known as `disabled` of `linkPopup`.
 
-      To disable the Link Browser altogether, the this option to :php:`false`.
+      The Link Browser is enabled by default.
+      To disable the Link Browser altogether, set this option to :php:`false`.
+
+      .. code-block:: php
+
+         // Disable the link browser
+         'appearance' => [
+            'enableBrowser' => false,
+         ],
