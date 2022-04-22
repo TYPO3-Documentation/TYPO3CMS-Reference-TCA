@@ -31,7 +31,7 @@ The password will be saved as plain text:
 
    'tx_mytable' => [
       'columns' => [
-         'my_password_field => [
+         'my_password_field' => [
             'label' => 'Password',
             'config' => [
                'type' => 'password',
