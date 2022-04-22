@@ -16,9 +16,6 @@ eval
    Some of these evaluation keywords will trigger a JavaScript pre- evaluation in the form. Other evaluations will be
    performed in the backend. The evaluation functions will be executed in the list-order. Keywords:
 
-   null
-      An empty value (string) will be stored as :code:`NULL` in the database, requires a proper sql definition.
-
    unique
       Requires the field to be unique for the *whole* table. Evaluated on the server only.
 

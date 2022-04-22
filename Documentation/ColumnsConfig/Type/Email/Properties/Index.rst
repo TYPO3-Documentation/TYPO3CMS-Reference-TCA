@@ -10,10 +10,9 @@ Special properties
 
 .. toctree::
    :titlesonly:
+   :glob:
 
-   Autocomplete
-   Eval
-   Size
+   *
 
 Common properties
 =================

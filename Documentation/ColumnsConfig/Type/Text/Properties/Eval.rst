@@ -22,16 +22,16 @@ eval
    trim
       The value in the field will have white spaces around it trimmed away.
 
-   null
-      An empty value (string) will be stored as :code:`NULL` in the database.
-      (requires a proper sql definition). Often combined with "mode" property.
-
    Vendor\\Extension\\*
       User defined form evaluations.
 
    .. deprecated:: 12.0
       The keyword `required` is deprecated. Use the common property
       :confval:`required` instead.
+
+   .. deprecated:: 12.0
+      The keyword `null` is deprecated. Use the property
+      :confval:`nullable (type => text)` instead.
 
 Examples
 ========

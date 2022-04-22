@@ -69,7 +69,7 @@ The migration from :php:`renderType=inputLink` to :php:`type=link` is done like 
            'type' => 'link',
            'required' => true,
            'size' => 20,
-           'eval' => 'null',
+           'nullable' => 'true',
            'allowedTypes' => ['page', 'url', 'record'],
            'appearance' => [
                'enableBrowser' => false,
@@ -88,8 +88,7 @@ where code adoption has to take place.
 
    The value of TCA type :php:`link` columns is automatically trimmed before
    being stored in the database. Therefore, the :php:`eval=trim` option is no
-   longer needed and should be removed from the TCA configuration. The only
-   valid option for :php:`eval` is :php:`null`.
+   longer needed and should be removed from the TCA configuration.
 
 
 .. toctree::

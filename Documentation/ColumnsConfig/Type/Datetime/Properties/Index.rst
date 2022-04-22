@@ -10,12 +10,9 @@ Special properties
 
 .. toctree::
    :titlesonly:
+   :glob:
 
-   DbType
-   DisableAgeDisplay
-   Eval
-   Format
-   Range
+   *
 
 Common properties
 =================

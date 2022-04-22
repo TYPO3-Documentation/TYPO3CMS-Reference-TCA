@@ -23,18 +23,22 @@ placeholder
    **Example from the "sys_file_reference" table:**
 
    .. code-block:: php
-      :emphasize-lines: 7
+      :emphasize-lines: 10
 
-      'title' => [
-         'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
-         'config' => [
-            'type' => 'input',
-            'size' => 20,
-            'eval' => 'null',
-            'placeholder' => '__row|uid_local|metadata|title',
-            'mode' => 'useOrOverridePlaceholder'
-         ]
-      ],
+        'title' => [
+            'l10n_mode' => 'prefixLangTitle',
+            'exclude' => true,
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.title',
+            'config' => [
+                'type' => 'input',
+                'size' => 20,
+                'max' => 255,
+                'nullable' => true,
+                'placeholder' => '__row|uid_local|metadata|title',
+                'mode' => 'useOrOverridePlaceholder',
+                'default' => null,
+            ],
+        ],
 
    In the above placeholder syntax, :code:`uid_local` points to the related "sys_file" record and :code:`metadata`
    points to the "sys_file_metadata" of the related "sys_file" record. From there we take the content

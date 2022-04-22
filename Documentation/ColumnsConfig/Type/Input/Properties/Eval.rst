@@ -42,9 +42,6 @@ eval
    nospace
       Removes all occurrences of space characters (:php:`chr(32)`)
 
-   null
-      An empty value (string) will be stored as :code:`NULL` in the database, requires a proper sql definition.
-
    num
       Allows only 0-9 characters in the field.
 
@@ -76,6 +73,10 @@ eval
    .. deprecated:: 12.0
       The keyword `required` is deprecated. Use the common property
       :confval:`required` instead.
+
+   .. deprecated:: 12.0
+      The keyword `null` is deprecated. Use the property
+      :ref:`columns-input-properties-nullable` instead.
 
    .. deprecated:: 12.0
       The keyword `email` is deprecated. Use the column type
