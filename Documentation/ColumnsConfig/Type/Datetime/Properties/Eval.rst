@@ -14,11 +14,7 @@ eval
 
    **Required**
 
-   Configuration of field evaluation, must be set to one of the value below:
-
-   null
-      An empty value (string) will be stored as :code:`NULL` in the database,
-      requires a proper SQL definition.
+   Configuration of field evaluation, possible values listed below:
 
    int
       The :php:`eval=int` option should always be set in case no specific

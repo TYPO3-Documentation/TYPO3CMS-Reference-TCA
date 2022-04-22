@@ -37,7 +37,8 @@ Date and time picker stored in a datetime field
          'type' => 'datetime',
          'renderType' => 'inputDateTime',
          'dbType' => 'datetime',
-         'eval' => 'datetime,null',
+         'eval' => 'datetime',
+         'nullable' => true,
       ],
    ],
 
@@ -59,7 +60,8 @@ Time picker stored in a datetime field
       'config' => [
          'type' => 'datetime',
          'dbType' => 'time',
-         'eval' => 'time,null',
+         'eval' => 'time',
+         'nullable' => true,
       ],
    ],
 

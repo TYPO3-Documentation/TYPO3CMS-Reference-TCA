@@ -8,12 +8,12 @@ Properties
 Special properties
 ==================
 
+
 .. toctree::
    :titlesonly:
+   :glob:
 
-   Eval
-   Size
-   ValuePicker
+   *
 
 Common properties
 =================

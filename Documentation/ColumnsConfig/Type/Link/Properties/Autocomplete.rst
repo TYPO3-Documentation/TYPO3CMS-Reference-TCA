@@ -22,7 +22,7 @@ autocomplete
          'config' => [
             'type' => 'email',
             'size' => 20,
-            'eval' => 'null',
+            'nullable' => 'true',
             'autocomplete' => true
          ]
       ],

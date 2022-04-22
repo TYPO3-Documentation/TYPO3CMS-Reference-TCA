@@ -30,7 +30,7 @@ placeholder
          'config' => [
             'type' => 'input',
             'size' => 20,
-            'eval' => 'null',
+            'nullable' => true,
             'placeholder' => '__row|uid_local|metadata|title',
             'mode' => 'useOrOverridePlaceholder'
          ]

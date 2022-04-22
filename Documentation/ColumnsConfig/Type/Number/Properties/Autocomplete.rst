@@ -22,7 +22,7 @@ autocomplete
          'config' => [
             'type' => 'number',
             'size' => 20,
-            'eval' => 'null',
+            'nullable' => true,
             'autocomplete' => true
          ]
       ],
