@@ -35,9 +35,7 @@ Date and time picker stored in a datetime field
    'synced_at' => [
       'config' => [
          'type' => 'datetime',
-         'renderType' => 'inputDateTime',
          'dbType' => 'datetime',
-         'eval' => 'datetime',
          'nullable' => true,
       ],
    ],
@@ -60,7 +58,7 @@ Time picker stored in a datetime field
       'config' => [
          'type' => 'datetime',
          'dbType' => 'time',
-         'eval' => 'time',
+         'format' => 'time',
          'nullable' => true,
       ],
    ],
