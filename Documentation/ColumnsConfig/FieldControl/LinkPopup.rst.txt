@@ -8,8 +8,25 @@
     The link browser control is typically used with `type='input'` with `renderType='inputLink'` adding a button
     which opens a popup to select an internal link to a page, an external link or a mail address.
 
-    **Options:**
+    **Example:**
+    
+    .. code-block:: php
 
+       'aField' => [
+           'config' => [
+               'fieldControl' => [
+                   'linkPopup' => [
+                       'options' => [
+                           'allowedExtensions' => '',
+                           'blindLinkFields' => '',
+                           'blindLinkOptions' => 'file,folder',
+                       ],
+                   ],
+               ],
+           ],
+       ],
+       
+    **Options:**
 
     allowedExtensions (string, list)
       Comma separated list of allowed file extensions. By default, all extensions are allowed.
@@ -20,7 +37,7 @@
 
     blindLinkOptions (string, list)
       Comma separated list of link options that should not be displayed. Possible values are
-      `file`, `folder`, `mail`, `page`, `spec`, `telephone` and `url`. By default, all link options are displayed.
+      `file`, `folder`, `mail`, `page`, `telephone` and `url`. By default, all link options are displayed.
 
     title (string or LLL reference)
       Allows to set a different 'title' attribute to the popup icon, defaults
