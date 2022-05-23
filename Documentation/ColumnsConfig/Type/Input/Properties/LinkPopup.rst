@@ -17,6 +17,22 @@ linkPopup
    The link browser control is typically used with `type='input'` with `renderType='inputLink'` adding a button
    which opens a modal to select an internal link to a page, an external link or a mail address.
 
+   **Example:**
+
+   .. code-block:: php
+
+      'aField' => [
+          'config' => [
+              'fieldControl' => [
+                  'linkPopup' => [
+                      'options' => [
+                          'blindLinkOptions' => 'file,folder',
+                      ],
+                  ],
+              ],
+          ],
+      ],
+
    **Options:**
 
    allowedExtensions (string, list)
