@@ -66,6 +66,7 @@ Time picker stored in a datetime field
 
 .. note::
 
-   When this property is *not set* you have to add :php:`int` to the
-   :ref:`eval option <columns-input-properties-eval>`.
-   (Otherwise the database might complain about invalid values.)
+   .. versionadded:: 12.0
+
+   When this property is *not set* the datetime value is automatically
+   converted to an :php:`int`.
