@@ -63,7 +63,6 @@ looks like the following:
             'format' => 'date',
             'required' => true,
             'size' => 20,
-            'eval' => 'int',
             'default' => 0,
         ]
     ]
@@ -71,6 +70,25 @@ looks like the following:
 An automatic TCA migration is performed on the fly, migrating all occurrences
 to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error
 where code adoption has to take place.
+
+Notes
+=====
+
+.. note::
+
+    .. versionadded:: 12.0
+
+    TYPO3 automatically creates database fields for all TCA type
+    :php:`datetime` columns, if those are not already manually
+    defined in the corresponding extensions' :file:`ext_tables.sql` file.
+
+.. note::
+
+   TYPO3 does not handle the following dates properly:
+
+   *  Before Christ (negative year)
+   *  double-digit years
+
 
 .. toctree::
    :titlesonly:
