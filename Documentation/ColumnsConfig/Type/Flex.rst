@@ -303,7 +303,7 @@ Array Elements
     For <ROOT> elements in the DS you can add application specific information about the
     sheet that the <ROOT> element represents.
 
-   Child elements
+    Child elements
          <sheetTitle>
 
          <sheetDescription>
@@ -477,7 +477,7 @@ format. The structure is as follows:
 :aspect:`Description`
     For each field name there is at least one element with the value, <vDEF>.
 
-   Child elements
+    Child elements
          <vDEF>
 
 
