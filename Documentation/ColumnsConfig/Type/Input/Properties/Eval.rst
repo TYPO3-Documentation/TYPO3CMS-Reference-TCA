@@ -180,7 +180,7 @@ saving the record:
 .. code-block:: php
 
    // Register the class to be available in 'eval' of TCA
-   $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']['Vendor\\Extension\\Evaluation\\ExampleEvaluation'] = '';
+   $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals'][\Vendor\Extension\Evaluation\ExampleEvaluation::class] = '';
 
 :file:`EXT:extension/Configuration/TCA/tx_example_record.php`:
 
@@ -190,7 +190,7 @@ saving the record:
       'example_field' => [
          'config' => [
             'type' => 'text',
-            'eval' => 'trim,Vendor\\Extension\\Evaluation\\ExampleEvaluation,required'
+            'eval' => 'trim,required,' . \Vendor\Extension\Evaluation\ExampleEvaluation::class
          ],
       ],
    ],
