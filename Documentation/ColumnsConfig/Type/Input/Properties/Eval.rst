@@ -175,22 +175,25 @@ saving the record:
       }
    }
 
-:file:`EXT:extension/ext_localconf.php`:
-
 .. code-block:: php
+   :caption: EXT:extension/ext_localconf.php
+
+   use Vendor\Extension\Evaluation\ExampleEvaluation;
+
+   // ....
 
    // Register the class to be available in 'eval' of TCA
-   $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']['Vendor\\Extension\\Evaluation\\ExampleEvaluation'] = '';
-
-:file:`EXT:extension/Configuration/TCA/tx_example_record.php`:
+   $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals'][ExampleEvaluation::class] = '';
 
 .. code-block:: php
+   :caption: EXT:extension/Configuration/TCA/tx_example_record.php
 
    'columns' => [
       'example_field' => [
          'config' => [
             'type' => 'text',
-            'eval' => 'trim,Vendor\\Extension\\Evaluation\\ExampleEvaluation,required'
+            'required' => true,
+            'eval' => 'trim,' . \Vendor\Extension\Evaluation\ExampleEvaluation::class
          ],
       ],
    ],
