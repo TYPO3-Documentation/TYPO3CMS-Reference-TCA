@@ -192,6 +192,7 @@ saving the record:
       'example_field' => [
          'config' => [
             'type' => 'text',
+            'required' => true,
             'eval' => 'trim,' . \Vendor\Extension\Evaluation\ExampleEvaluation::class
          ],
       ],
