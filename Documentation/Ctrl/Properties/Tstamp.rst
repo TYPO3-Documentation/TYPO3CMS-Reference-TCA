@@ -12,20 +12,23 @@ tstamp
    :Scope: Proc.
 
 
-   Field name, which is automatically updated to the current timestamp (UNIX-time in seconds) each time
-   the record is updated/saved in the system. Typically the name "tstamp" is used for that field.
+   Field name, which is automatically updated to the current timestamp
+   (UNIX-time in seconds) each time
+   the record is updated/saved in the system.
+
+   By convention the name :ref:`tstamp <field_tstamp>` is used for that field.
+
+   .. note::
+      The database field configured in this property is created automatically.
+      It does not have to be added to the :file:`ext_tables.sql`.
 
 Examples
 ========
 
-Example from the "haikus" table of the "example" extension::
+The following fields are set by the DataHandler automatically on creating or
+updating records, if they are configured in the :php:`ctrl` section of the TCA:
 
-   'ctrl' => [
-      'tstamp' => 'tstamp',
-      'crdate' => 'crdate',
-      'cruser_id' => 'cruser_id',
-      ...
-   ],
+.. include:: /CodeSnippets/Manual/Extension/Configuration/DataHandlerFields.rst.txt
 
 The above example shows the same definition for the :ref:`crdate <ctrl-reference-crdate>` and
 :ref:`cruser_id <ctrl-reference-cruser-id>` fields.

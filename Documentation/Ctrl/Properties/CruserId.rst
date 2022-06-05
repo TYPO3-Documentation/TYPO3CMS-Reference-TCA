@@ -12,6 +12,21 @@ cruser\_id
    :Scope: Proc.
 
 
-   Field name, which is automatically set to the uid of the backend user (be\_users) who originally created the record.
-   Is never modified again. Typically the name "cruser\_id" is used for that field.
-   See :ref:`tstamp <ctrl-reference-tstamp>` example.
+   Field name, which is automatically set to the uid of the backend user
+   (uid of the table :sql:`be_users`) who originally created the record.
+   Is never modified again.
+
+   By convention the name :ref:`cruser_id <field_cruser_id>`
+   is used for that field.
+
+   .. note::
+      The database field configured in this property is created automatically.
+      It does not have to be added to the :file:`ext_tables.sql`.
+
+Examples
+========
+
+The following fields are set by the DataHandler automatically on creating or
+updating records, if they are configured in the :php:`ctrl` section of the TCA:
+
+.. include:: /CodeSnippets/Manual/Extension/Configuration/DataHandlerFields.rst.txt

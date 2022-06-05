@@ -57,12 +57,10 @@ Soft delete
    handled separately by the DataHandler. Therefore it
    needs no definition in the :php:`columns` section.
 
-.. _field_hidden:
-.. _field_starttime:
-.. _field_fe_group:
-
 Enablecolumns
 =============
+
+.. _field_hidden:
 
 :sql:`hidden`
    This field is used to enable soft hiding of records. In can be configured
@@ -70,12 +68,18 @@ Enablecolumns
 
    .. include:: /CodeSnippets/Manual/Ctrl/Hidden.rst.txt
 
+
+.. _field_starttime:
+.. _field_endtime:
+
 :sql:`starttime` and :sql:`endtime`
    This field is used to enable records by a starttime and or disable them by
    a endtime. In can be configured
    by :ref:`ctrl->enablecolumns->starttime or endtime <ctrl-reference-enablecolumns>`:
 
    .. include:: /CodeSnippets/Manual/Ctrl/StarttimeEndtime.rst.txt
+
+.. _field_fe_group:
 
 :sql:`fe_group`
    This field is used to enable soft delete of records. In can be configured
@@ -107,3 +111,47 @@ Manual sorting in the backend
 
    Use :ref:`default_sortby <ctrl-reference-default-sortby>` if you want to
    sort by an existing field of the domain instead.
+
+.. _fields_for_datahandler:
+
+Fields managed by the DataHandler
+=================================
+
+The following fields are automatically set when a record is written by the
+:ref:`DataHandler <t3coreapi:_FormEngine-Introduction>`. They should never be
+displayed in backend forms or explicitly set, therefore they need no entry in
+`columns` section of the TCA.
+
+.. include:: /CodeSnippets/Manual/Extension/Configuration/DataHandlerFields.rst.txt
+
+.. _field_tstamp:
+
+:sql:`tstamp`
+   This field is automatically updated to the current timestamp
+   each time the record is updated or saved in the DataHandler.
+
+   It can be configured by setting :ref:`ctrl->tstamp <ctrl-reference-tstamp>`.
+
+.. _field_crdate:
+
+:sql:`crdate`
+   This field is automatically set to the current timestamp
+   if the record is created by the DataHandler.
+
+   It can be configured by setting :ref:`ctrl->crdate <ctrl-reference-crdate>`.
+
+.. _field_cruser_id:
+
+:sql:`cruser_id`
+   This field is automatically set to the uid of the backend user
+   who originally created the record if the record is created by the DataHandler.
+
+   It can be configured by setting :ref:`ctrl->cruser_id <ctrl-reference-cruser-id>`.
+
+.. _field_t3_origuid:
+
+:sql:`t3_origuid`
+   Field name, which contains the uid of the original record in case a
+   record is created as a copy or new version of another record.
+
+   It can be configured by setting :ref:`ctrl->cruser_id <ctrl-reference-origuid>`.

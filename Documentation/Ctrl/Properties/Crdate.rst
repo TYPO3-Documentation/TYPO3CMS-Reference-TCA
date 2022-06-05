@@ -11,8 +11,14 @@ crdate
    :type: string (field name)
    :Scope: Proc.
 
-   Field name, which is automatically set to the current timestamp when the record is created. Is never modified again.
-   Typically the name "crdate" is used for that field. See :ref:`tstamp <ctrl-reference-tstamp>` example.
+   Field name, which is automatically set to the current timestamp when
+   the record is created. Is never modified again.
+
+   By convention the name :ref:`crdate <field_crdate>` is used for that field.
+
+   .. note::
+      The database field configured in this property is created automatically.
+      It does not have to be added to the :file:`ext_tables.sql`.
 
 Examples
 ========
