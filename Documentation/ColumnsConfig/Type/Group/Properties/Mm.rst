@@ -34,8 +34,8 @@ MM
    .. code-block:: php
 
       // table tx_table1
-      $fields = array(
-         'relation_table1_table2' => array(
+      $fields = [
+         'relation_table1_table2' => [
               'exclude' => 1,
               'label' => 'Project manager',
               'config' => [
@@ -44,8 +44,8 @@ MM
                   'foreign_table' => 'tx_table2', // needed by Extbase
                   'MM' => 'table1_table2_relationtable1table2',
               ],
-          )
-       );
+          ],
+       ];
 
 
 Related configurations
