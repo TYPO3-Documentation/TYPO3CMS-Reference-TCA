@@ -21,7 +21,8 @@ sortby
    This feature is used by e.g. the "pages" table and "tt\_content" table (Content Elements) in order to output the
    pages or the content elements in the order expected by the editors. Extensions are expected to respect this field.
 
-   Typically the field name :code:`sorting` is dedicated to this feature.
+   Typically the field name :ref:`sorting <field_sorting>` is dedicated to
+   this feature.
 
    .. attention::
       Do not confuse this property with :ref:`default_sortby <ctrl-reference-default-sortby>`. The sortby field contains
@@ -29,10 +30,5 @@ sortby
       DataHandler will write these integers into that field, which is most likely *not* what you want. Use `default_sortby`
       in this case.
 
-   .. code-block:: php
-
-      'ctrl' => [
-         'sortby' => 'sorting',
-         ...
-      ],
+   .. include:: /CodeSnippets/Manual/Ctrl/Sorting.rst
 
