@@ -136,3 +136,98 @@ added to the parent record.
 
 .. include:: /CodeSnippets/InlineUsecombinationcInline1.rst.txt
 
+.. _inline-example-field-information:
+
+Add a custom fieldInformation
+=============================
+
+We show a very minimal example which adds a custom fieldInformation for the
+inline type in tt_content. Adding a fieldWizard is done in a similar way.
+
+As explained in the :ref:`description <columns-inline>`, :code:`fieldInformation`
+or :code:`fieldWizard` must be configured within the :code:`ctrl` **for the field
+type inline** - as it is a container.
+
+.. rst-class:: bignums-xxl
+
+#. Create a custom fieldInformation
+
+   .. code-block:: php
+      :caption: EXT:my_extension/Classes/FormEngine/FieldInformation/DemoFieldInformation
+
+         <?php
+         declare(strict_types=1);
+         namespace Myvendor\Myexample\FormEngine\FieldInformation;
+
+         use TYPO3\CMS\Backend\Form\AbstractNode;
+
+         class DemoFieldInformation extends AbstractNode
+         {
+             public function render()
+             {
+                 $result = $this->initializeResultArray();
+
+                  // Add fieldInformation only for this field name
+                  //   this may be changed accoringly
+                  if ($fieldName !== 'my_new_field') {
+                      return $result;
+                  }
+                  $text = $GLOBALS['LANG']->sL(
+                          'LLL:EXT:my_example/Resources/Private/Language/'
+                          . 'locallang_db.xlf:tt_content.fieldInformation.demo'
+                  );
+                  $result['html'] = $text;
+                  );
+                  return $result;
+             }
+         }
+
+#. Register this node type
+
+   .. code-block:: php
+      :caption: EXT:my_extension/ext_localconf.php
+
+         <?php
+         use Myvendor\Myexample\FormEngine\FieldInformation\DemoFieldInformation;
+
+         // ...
+
+         $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1654355506] = [
+             'nodeName' => 'demoFieldInformation',
+             'priority' => 30,
+             'class' => DemoFieldInformation::class,
+         ];
+
+#. Add the fieldInformation to the container for containerRenderType inline
+
+   .. code-block:: php
+      :caption: EXT:my_extension/Configuration/TCA/Overrrides/tt_content.php
+
+          $GLOBALS['TCA']['tt_content']['ctrl']['container']['inline']['fieldInformation'] = [
+              'demoFieldInformation' => [
+                  'renderType' => 'demoFieldInformation',
+              ],
+          ];
+
+#. A field my_new_field is created in the tt_content TCA:
+
+   .. code-block:: php
+      :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+
+          'my_new_field2' => [
+              'label' => 'inline field with field information',
+              'config' => [
+                  'type' => 'inline',
+                  // further configuration can be found in the examples above
+                  // ....
+              ],
+          ],
+          // ...
+
+.. seealso::
+
+   *  :ref:`['ctrl']['container'] <ctrl-reference-container>`
+   *  How to create custom fieldInformation, fieldControl or fieldWizard in
+      :ref:`FormEngine <FormEngine-Rendering-NodeExpansion>` chapter (TYPO3
+      Explained)
+   *  :ref:`fieldInformation <tca_property_fieldInformation>` property
