@@ -26,12 +26,12 @@ container
 
       'ctrl' => [
          'container' => [
-            'containerRenderType' => [
+            '<containerRenderType>' => [
                'fieldWizard' => [
-                  'aName' => [
-                     'renderType' => 'aRenderType',
-                     'before' => ['anotherName'],
-                     'after' => ['yetAnotherName'],
+                  '<aName>' => [
+                     'renderType' => '<aRenderType>',
+                     'before' => ['<anotherName>'],
+                     'after' => ['<yetAnotherName>'],
                      'disabled' => false,
                      'options' => [],
                   ],
@@ -40,16 +40,34 @@ container
          ],
       ],
 
-   -  "renderType" refers to a registered node name from :php:`NodeFactory`
+   <containerRenderType>
+      should be a defined container render type.
+      You can find more about the :code:`outerWrapContainer` and
+      :code:`inlineControlContainer` in the FormEngine documentation section on
+      :ref:`rendering <t3coreapi:FormEngine-Rendering>`.
+      Valid types are for example:
 
-   -  "before" and "after" can be set to sort single wizards relative to each other.
+      -  :code:`outerWrapContainer` type which corresponds to the
+         :php:`OuterWrapContainer` (class).
+      -  :code:`inlineControlContainer` type which corresponds to the
+         :php:`InlineControlContainer` class
+      -  :code:`inline` type which corresponds to the :php:`InlineControlContainer`
+         class.
 
-   -  "disabled" can be used to disable built in default wizards.
+   renderType
+      refers to a registered node name from :php:`NodeFactory`
 
-   -  Some wizards may support additional "options".
+   before, after
+      can be set to sort single wizards relative to each other.
 
-   -  Note, next to "fieldWizard", some containers may also implement "fieldInformation", which can be
-      manipulated the same way.
+   disabled
+      can be used to disable built in default wizards.
+
+   options
+      Some wizards may support additional "options".
+
+   Note, next to "fieldWizard", some containers may also implement "fieldInformation", which can be
+   manipulated the same way.
 
 Examples
 ========
