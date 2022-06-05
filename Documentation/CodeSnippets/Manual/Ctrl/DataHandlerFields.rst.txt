@@ -1,0 +1,14 @@
+.. code-block:: php
+   :caption: EXT:my_extension/Configuration/Backend/BackendAjaxRoutes.php
+
+   <?php
+
+   return [
+       'ctrl' => [
+           'tstamp' => 'tstamp',
+           'crdate' => 'crdate',
+           'cruser_id' => 'cruser_id',
+           'origUid' => 't3_origuid',
+           // ...
+       ],
+   ];

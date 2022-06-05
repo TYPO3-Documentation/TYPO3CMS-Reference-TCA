@@ -122,7 +122,7 @@ The following fields are automatically set when a record is written by the
 displayed in backend forms or explicitly set, therefore they need no entry in
 `columns` section of the TCA.
 
-.. include:: /CodeSnippets/Manual/Extension/Configuration/DataHandlerFields.rst.txt
+.. include:: /CodeSnippets/Manual/Ctrl/DataHandlerFields.rst.txt
 
 .. _field_tstamp:
 

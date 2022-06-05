@@ -28,7 +28,4 @@ Examples
 The following fields are set by the DataHandler automatically on creating or
 updating records, if they are configured in the :php:`ctrl` section of the TCA:
 
-.. include:: /CodeSnippets/Manual/Extension/Configuration/DataHandlerFields.rst.txt
-
-The above example shows the same definition for the :ref:`crdate <ctrl-reference-crdate>` and
-:ref:`cruser_id <ctrl-reference-cruser-id>` fields.
+.. include:: /CodeSnippets/Manual/Ctrl/DataHandlerFields.rst.txt

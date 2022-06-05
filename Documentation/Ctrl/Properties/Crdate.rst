@@ -23,9 +23,7 @@ crdate
 Examples
 ========
 
-Common table control configuration
-==================================
+The following fields are set by the DataHandler automatically on creating or
+updating records, if they are configured in the :php:`ctrl` section of the TCA:
 
-.. include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
-
-.. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+.. include:: /CodeSnippets/Manual/Ctrl/DataHandlerFields.rst.txt
