@@ -13,7 +13,7 @@ All data tables with a TCA definition need to have at least the following
 fields defined in the :file:`ext_tables.sql`:
 
 .. code-block:: sql
-   :code-block: EXT:my_extension/ext_tables.sql
+   :caption: EXT:my_extension/ext_tables.sql
 
    CREATE TABLE tx_myextension_domain_model_something (
       uid          INT(11)                 NOT NULL AUTO_INCREMENT,
