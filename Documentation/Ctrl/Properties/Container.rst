@@ -123,3 +123,8 @@ In PHP, the node has to implement an interface, but can return any additional HT
 "OuterWrapContainer" between the record title and the field body when editing a record:
 
 .. include:: /Images/ManualScreenshots/OuterFieldWizard.rst.txt
+
+Add fieldInformation to field of type inline
+--------------------------------------------
+
+This example can be found in :ref:`inline-example-field-information`.
