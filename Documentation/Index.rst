@@ -35,6 +35,7 @@ This document is the complete reference of the *Table Configuration Array*
 
    Introduction/Index
    Examples/Index
+   BestPractises/Index
    Columns/Index
    ColumnsConfig/Index
    Ctrl/Index

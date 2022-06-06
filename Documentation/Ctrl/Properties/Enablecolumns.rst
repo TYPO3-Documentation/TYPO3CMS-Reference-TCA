@@ -45,9 +45,64 @@ enablecolumns
 Examples
 ========
 
+Make table hideable
+===================
+
+.. include:: /CodeSnippets/Manual/Ctrl/Hidden.rst.txt
+
 Common enable fields
 ====================
 
 .. include:: /Images/Rst/CtrlEnableFields.rst.txt
 
 .. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+
+.. _enablefields_usage:
+
+Enablecolumns / enablefields usage
+==================================
+
+Most ways of retrieving records in the frontend automatically respect the
+:php:`ctrl->enablecolumns` settings:
+
+Enablecolumns in TypoScript
+---------------------------
+
+Records retrieved in TypoScript via the objects
+:ref:`RECORDS <t3tsref:cobj-records>`, :ref:`CONTENT <t3tsref:cobj-content>`
+automatically respect the settings in section
+:ref:`ctrl->enablecolumns <ctrl-reference-enablecolumns>`.
+
+Enablecolumns / enablefields in Extbase
+----------------------------------------
+
+In Extbase repositories the records are hidden in the frontend by default,
+however this behaviour can be disabled by setting
+:ref:`$querySettings->setIgnoreEnableFields(true) <t3extbasebook:extbase_query_orderings>`.
+
+Enablecolumns in queries
+-------------------------
+
+Using the QueryBuilder
+:ref:`enable columns restrictions are automatically applied <t3coreapi:database-select>`.
+
+The same is true when
+:ref:`select() is called on the connection <t3coreapi:database-connection-select>`.
+
+See the :ref:`<t3coreapi:database-restriction-builder>` for details.
+
+However this could be disabled by setting:
+
+.. code-block:: php
+   :caption: EXT:my_extension/SomeClass.php
+
+   // use TYPO3\CMS\Core\Utility\GeneralUtility;
+   // use TYPO3\CMS\Core\Database\ConnectionPool;
+   // use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction
+
+   $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('pages');
+   $queryBuilder
+      ->getRestrictions()
+      // Use with care, the following may reveal information:
+      ->removeAll()
+      ->add(GeneralUtility::makeInstance(DeletedRestriction::class));

@@ -20,3 +20,10 @@ delete
 
    This is a very common feature. Most tables use it throughout the TYPO3 Core. The core extension "recycler"
    can be used to "revive" those deleted records again.
+
+Example
+=======
+
+Enable soft delete for the following table:
+
+.. include:: /CodeSnippets/Manual/Ctrl/Delete.rst.txt
