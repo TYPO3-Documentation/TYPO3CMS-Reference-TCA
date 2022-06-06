@@ -14,7 +14,7 @@ cruser\_id
 
    Field name, which is automatically set to the uid of the backend user
    (uid of the table :sql:`be_users`) who originally created the record.
-   Is never modified again.
+   It is never modified again.
 
    By convention the name :ref:`cruser_id <field_cruser_id>`
    is used for that field.
