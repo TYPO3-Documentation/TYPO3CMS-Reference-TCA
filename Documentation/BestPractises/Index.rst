@@ -4,7 +4,7 @@
 Best practises
 ==============
 
-Some configurations are applied to almost all tables in TYPO3. See the following
+Some configuration settings are applied to almost all tables in TYPO3. See the following
 sections about best practises and conventions.
 
 .. toctree::
