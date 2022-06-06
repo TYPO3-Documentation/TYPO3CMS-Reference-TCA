@@ -26,14 +26,14 @@ not possible to use different names for these fields.
 Fields used by convention
 =========================
 
-.. warning::
-   Though it is possible to change the name of the following fields it is
-   highly recommended not to do as it is confusing to most developers and
-   might break third party extensions.
+.. warning::   
+   It is possible to change the names of the following fields, however this is
+   strongly discouraged as it breaks convention and may lead to compatibility
+   issues with third party extensions.
 
    All fields mentioned below get added to the database automatically. It is
    not recommended to define them in the :file:`ext_tables.sql`. Doing so
-   with incompatible SQL settings can lead to problems.
+   with incompatible SQL settings can lead to problems later on.
 
 
 .. _field_deleted:
@@ -42,14 +42,14 @@ Soft delete
 ===========
 
 :sql:`deleted`
-   This field is used to enable soft delete of records. In can be configured
+   This field is used to enable soft delete in records. In can be configured
    by setting :ref:`ctrl->deleted <ctrl-reference-delete>`:
 
 
    .. include:: /CodeSnippets/Manual/Ctrl/Delete.rst.txt
 
    .. warning::
-      If no :sql:`deleted` field is configured records will be hard deleted.
+      If no :sql:`deleted` field is configured, records will be hard deleted.
       The DataHandler in the backend and Extbase will automatically execute
       :sql:`DELETE` statements.
 
@@ -73,8 +73,8 @@ Enablecolumns
 .. _field_endtime:
 
 :sql:`starttime` and :sql:`endtime`
-   This field is used to enable records by a starttime and or disable them by
-   a endtime. In can be configured
+   This field is used to enable records by a starttime and or disable them with
+   an endtime. In can be configured
    by :ref:`ctrl->enablecolumns->starttime or endtime <ctrl-reference-enablecolumns>`:
 
    .. include:: /CodeSnippets/Manual/Ctrl/StarttimeEndtime.rst.txt
@@ -99,7 +99,7 @@ Manual sorting in the backend
 =============================
 
 :sql:`sorting`
-   This field is used manually sort records in the backend. In can be configured
+   This field is used to manually sort records in the backend. In can be configured
    by :ref:`ctrl->sortby <ctrl-reference-sortby>`:
 
    .. include:: /CodeSnippets/Manual/Ctrl/Sorting.rst
@@ -120,7 +120,7 @@ Fields managed by the DataHandler
 The following fields are automatically set when a record is written by the
 :ref:`DataHandler <t3coreapi:_FormEngine-Introduction>`. They should never be
 displayed in backend forms or explicitly set, therefore they need no entry in
-`columns` section of the TCA.
+the `columns` section of the TCA.
 
 .. include:: /CodeSnippets/Manual/Ctrl/DataHandlerFields.rst.txt
 
