@@ -18,9 +18,10 @@ languageField
       automatically migrated on-the-fly possibly losing configurations.
       See :ref:`Migration to the language type <columns-languge-migration>`
 
-   This property contains the field name which contains a pointer to the
+   This property contains the field name of the field which contains a pointer to the
    language of the record. The field should have the type
-   :ref:`language <columns-language>`.
+   :ref:`language <columns-language>`. The field is called
+   :ref:`sys_language_uid <field-sys_language_uid>` by convention.
 
    This TCA type automatically displays all available languages for the
    current context (the corresponding site configuration) and also automatically
@@ -34,3 +35,10 @@ languageField
    Also see the :ref:`Frontend Localization Guide <t3l10n:core-support-tca>`
    for a discussion about the effects of
    this property (and other TCA properties) on the localization process.
+
+Example
+=======
+
+.. include:: /Images/Rst/SysLanguageUid.rst.txt
+
+.. include:: /CodeSnippets/Manual/Ctrl/Language.rst.txt
