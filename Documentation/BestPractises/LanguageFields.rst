@@ -22,7 +22,6 @@ Language fields in detail
 .. _field-sys_language_uid:
 
 :sql:`sys_language_uid`
-
    This field gets defined in
    :ref:`ctrl->languageField <ctrl-reference-languagefield>`. If this field is
    defined a record in this table can be translated into another language.
@@ -32,7 +31,6 @@ Language fields in detail
 .. _field-l10n_parent:
 
 :sql:`l10n_parent`
-
    This field gets defined in
    :ref:`ctrl->transOrigPointerField <ctrl-reference-transorigpointerfield>`.
 
@@ -50,7 +48,6 @@ Language fields in detail
 .. _field-l10n_source:
 
 :sql:`l10n_source`
-
    This field gets defined in
    :ref:`ctrl->translationSource <ctrl-reference-translationSource>`.
 
@@ -63,7 +60,6 @@ Language fields in detail
 .. _field-l10n_diffsource:
 
 :sql:`l10n_diffsource`
-
    This field gets defined in
    :ref:`ctrl->transOrigPointerField <ctrl-reference-transorigpointerfield>`.
 
