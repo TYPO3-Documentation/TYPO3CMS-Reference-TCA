@@ -12,7 +12,7 @@ Color
    :php:`renderType=colorpicker` of TCA type :php:`input`.
 
 
-The TCA type :php:`color` should be used to render a JavaScript based color-picker.
+The TCA type :php:`color` should be used to render a JavaScript-based color picker.
 
 Examples
 ========
