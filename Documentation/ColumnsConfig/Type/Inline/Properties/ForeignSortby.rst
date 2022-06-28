@@ -29,7 +29,7 @@ foreign\_sortby
    on the intermediate table is hardcoded to :sql:`sorting_foreign`. Setting
    this property has no effect combined with an MM table.
 
-   .. important::
+   .. warning::
       If you use the table only as an inline element, do not put the :ref:`sortby <ctrl-reference-sortby>` field
       in the :ref:`ctrl <ctrl>` section, otherwise TYPO3 CMS will sort the entire table with every update.
       For example, if you have 10000 records, each with 4 inline elements, TYPO3 CMS will sort 40000 records even
