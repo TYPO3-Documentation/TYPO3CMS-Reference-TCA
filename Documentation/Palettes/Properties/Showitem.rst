@@ -28,7 +28,7 @@ showitem
    single lines. Note this line grouping only works well if the browser window size allows multiple fields
    next to each other, if the width is not sufficient the fields will wrap below each other anyways.
 
-   .. important::
+   .. caution::
       A field name must only appear once in the entire record. Do not reference a single field within
       the showitem list of a types section and again in a palette used in the same type. Don't use
       a field in multiple palettes referenced in a type, or multiple times in one palette.

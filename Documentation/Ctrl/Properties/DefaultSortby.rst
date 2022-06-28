@@ -35,7 +35,7 @@ Sort by title and then by bodytext::
       ...
    ],
 
-.. important::
+.. warning::
    Do not confuse this property with :ref:`sortby <ctrl-reference-sortby>`: default_sortby should be set only if there
    is no :ref:`sortby <ctrl-reference-sortby>`. The sortby field (typically set to `sorting`) contains an integer
    for explicit sorting , the backend then shows "up" and "down" buttons to manage sorting of records relative
