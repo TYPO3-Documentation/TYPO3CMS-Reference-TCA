@@ -27,7 +27,7 @@ columnsOverrides
    has been determined.
 
 
-   .. important::
+   .. attention::
       It is not possible to override any properties in "Proc." scope: The DataHandler does not take "columnsOverrides"
       into account. Only pure "Display" related properties can be overridden. This especially means that
       columns config 'type' must **not** be set to a different value.

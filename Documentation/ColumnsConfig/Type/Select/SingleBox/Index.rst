@@ -12,7 +12,7 @@ Renders a select field to select multiple entries from a given list.
 
 .. include:: /Images/Rst/SelectSinglebox1.rst.txt
 
-.. important::
+.. note::
 
    The name is misleading. This is a renderType which allows you to select
    **multiple** elements!
