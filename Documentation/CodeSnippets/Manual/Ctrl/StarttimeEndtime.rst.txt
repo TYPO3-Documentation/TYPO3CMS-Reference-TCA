@@ -17,7 +17,9 @@
                'exclude' => true,
                'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
                'config' => [
-                   'type' => 'datetime',
+                   'type' => 'input',
+                   'renderType' => 'inputDateTime',
+                   'eval' => 'datetime',
                    'default' => 0,
                ],
                'l10n_mode' => 'exclude',
@@ -27,8 +29,9 @@
                'exclude' => true,
                'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
                'config' => [
-                   'type' => 'datetime',
-                   'default' => 0,
+                   'type' => 'input',
+                   'renderType' => 'inputDateTime',
+                   'eval' => 'datetime',
                    'range' => [
                        'upper' => mktime(0, 0, 0, 1, 1, 2038),
                    ],
