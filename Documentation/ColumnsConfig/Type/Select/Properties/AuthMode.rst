@@ -13,7 +13,7 @@ authMode
    :RenderType: all
 
    .. versionchanged:: 12.0
-      The only valid value for TCA config option :php:`authMode` is now:php:`explicitAllow`.
+      The only valid value for TCA config option :php:`authMode` is now :php:`explicitAllow`.
       The values :php:`explicitDeny` and :php:`individual` are obsolete and no longer evaluated.
 
    Authorization mode for the selector box. The only possible option is:
@@ -38,7 +38,7 @@ admins to not set new access rights of affected backend groups.
 Using authMode='individual'
 ---------------------------
 
-Handling of :php:`authMode` being set to :php:`individual` has been fully dropped. There is
-no core-provided alternative. This has been an obscure setting since ever and there is no
+Handling of :php:`authMode` being set to :php:`individual` has been fully dropped. The Core provides no 
+alternative. This has been an obscure setting ever since and there is no
 direct migration. Extensions that rely on this handling need to find a substitution based on
 Core hooks, Core events or other existing Core API functionality.
