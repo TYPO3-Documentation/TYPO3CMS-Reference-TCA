@@ -38,7 +38,7 @@ Select field with foreign table via MM table
 Related configurations
 ======================
 
-.. confval:: MM\_hasUidField
+.. confval:: MM_hasUidField (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: boolean
@@ -50,7 +50,7 @@ Related configurations
    Otherwise sorting and removing relations will be buggy.
 
 
-.. confval:: MM\_insert\_fields
+.. confval:: MM_insert\_fields (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
@@ -59,7 +59,7 @@ Related configurations
    Array of field=>value pairs to insert when writing new MM relations.
 
 .. _columns-select-properties-mm-match-fields:
-.. confval:: MM\_match\_fields
+.. confval:: MM_match_fields (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
@@ -69,7 +69,7 @@ Related configurations
    writing/reading MM relations.
 
 
-.. confval:: MM\_opposite\_field
+.. confval:: MM_opposite_field (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (field name)
@@ -90,7 +90,7 @@ Related configurations
       Bidirectional references only get registered once on the native side in "sys\_refindex".
 
 
-.. confval:: MM\_oppositeUsage
+.. confval:: MM_oppositeUsage (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
@@ -107,7 +107,7 @@ Related configurations
    field configuration.
 
 
-.. confval:: MM\_table\_where
+.. confval:: MM_table_where (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: string (SQL WHERE)
