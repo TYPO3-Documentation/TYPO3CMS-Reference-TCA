@@ -26,7 +26,7 @@ not possible to use different names for these fields.
 Fields used by convention
 =========================
 
-.. warning::   
+.. warning::
    It is possible to change the names of the following fields, however this is
    strongly discouraged as it breaks convention and may lead to compatibility
    issues with third party extensions.
@@ -118,7 +118,7 @@ Fields managed by the DataHandler
 =================================
 
 The following fields are automatically set when a record is written by the
-:ref:`DataHandler <t3coreapi:_FormEngine-Introduction>`. They should never be
+:ref:`DataHandler <t3coreapi:datahandler-basics>`. They should never be
 displayed in backend forms or explicitly set, therefore they need no entry in
 the `columns` section of the TCA.
 
@@ -154,4 +154,4 @@ the `columns` section of the TCA.
    Field name, which contains the uid of the original record in case a
    record is created as a copy or new version of another record.
 
-   It can be configured by setting :ref:`ctrl->cruser_id <ctrl-reference-origuid>`.
+   It can be configured by setting :ref:`ctrl->origUid <ctrl-reference-origuid>`.
