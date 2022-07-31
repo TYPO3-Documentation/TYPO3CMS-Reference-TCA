@@ -89,7 +89,7 @@ Using the QueryBuilder
 The same is true when
 :ref:`select() is called on the connection <t3coreapi:database-connection-select>`.
 
-See the :ref:`<t3coreapi:database-restriction-builder>` for details.
+See the :ref:`t3coreapi:database-restriction-builder` for details.
 
 However this could be disabled by setting:
 
