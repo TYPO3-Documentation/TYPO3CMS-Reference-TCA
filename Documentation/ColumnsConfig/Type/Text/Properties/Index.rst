@@ -16,6 +16,7 @@ Properties
    FixedFont
    Format.rst
    IsIn
+   Min
    Max
    RichtextConfiguration
    Rows
