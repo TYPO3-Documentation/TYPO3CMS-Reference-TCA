@@ -11,7 +11,6 @@ Properties
    Container
    CopyAfterDuplFields
    Crdate
-   CruserId
    DefaultSortby
    Delete
    DescriptionColumn
