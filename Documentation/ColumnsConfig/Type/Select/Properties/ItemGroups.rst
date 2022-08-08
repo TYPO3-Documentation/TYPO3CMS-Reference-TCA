@@ -6,7 +6,7 @@ itemGroups
 ==========
 
 .. versionadded:: 10.4
-   Starting with TYPO3 10.4 item groups can be used in select fields to
+   Starting with TYPO3 v10.4 item groups can be used in select fields to
    group items.
 
 .. confval:: itemGroups
