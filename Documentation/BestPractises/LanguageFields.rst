@@ -8,13 +8,14 @@ Language fields
 
 See also the :ref:`Frontend Localization Guide <t3l10n:core-support-tca>`.
 
+.. note::
    It is possible to change the names of the following fields, however this is
    strongly discouraged as it breaks convention and may lead to compatibility
    issues with third party extensions.
 
-   All fields mentioned below get added to the database automatically. It is
-   not recommended to define them in the :file:`ext_tables.sql`. Doing so
-   with incompatible SQL settings can lead to problems later on.
+All fields mentioned below get added to the database automatically. It is
+not recommended to define them in the :file:`ext_tables.sql`. Doing so
+with incompatible SQL settings can lead to problems later on.
 
 Language fields in detail
 ==========================
