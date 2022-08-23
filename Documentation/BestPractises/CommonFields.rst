@@ -43,7 +43,7 @@ Soft delete
 
 :sql:`deleted`
    This field is used to enable soft delete in records. In can be configured
-   by setting :ref:`ctrl->deleted <ctrl-reference-delete>`:
+   by setting :ref:`ctrl->delete <ctrl-reference-delete>`:
 
 
    .. include:: /CodeSnippets/Manual/Ctrl/Delete.rst.txt
