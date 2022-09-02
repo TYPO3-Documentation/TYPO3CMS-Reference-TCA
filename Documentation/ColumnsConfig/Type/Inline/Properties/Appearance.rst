@@ -20,6 +20,11 @@ appearance
       Show only one child-record expanded each time. If a collapsed record is clicked, the currently
       open one collapses and the clicked one expands.
 
+   showNewRecordLink (boolean)
+      Disables the :guilabel:`New record` link in TCA `inline` elements without simultaneously disabling
+      the :guilabel:`+` button in the header of each inline record (using
+      :code:`['appearance']['enabledControls']['new']`).
+
    newRecordLinkAddTitle (boolean)
       Adds the title of the :ref:`foreign_table <columns-inline-properties-foreign-table>` to the "New record" link.
 
@@ -41,8 +46,9 @@ appearance
       Only useful, if the element browser is enabled. This is usually used together with FAL relations to change it to "Add file" or similar.
 
    levelLinksPosition (string)
-      Values: 'top' (default), 'bottom', 'both', 'none'. Defines where to show the "New record" link in relation
-      to the child records.
+      Values: 'top' (default), 'bottom', 'both'. Defines where to show the "New record" link in relation
+      to the child records. Value 'none' is no longer supported, use :code:`showAllLocalizationLink`,
+      :code:`showSynchronizationLink` and :code:`showNewRecordLink` with value :php:`false` instead.
 
    useCombination (boolean)
       This is only useful on bidirectional relations using an intermediate table with attributes. In a "combination" it
