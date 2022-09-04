@@ -9,18 +9,17 @@ Common fields
 Mandatory fields
 ================
 
-All data tables with a TCA definition need to have at least the following
-fields defined in the :file:`ext_tables.sql`:
+If there is a TCA definition for a table TYPO3 will automatically create the following
+fields:
 
-.. code-block:: sql
-   :caption: EXT:my_extension/ext_tables.sql
+:sql:`uid`
+    A unique identifier, integer, auto-incrementing. This field is used as table key
+    and to store inter record relationships.
 
-   CREATE TABLE tx_myextension_domain_model_something (
-      uid          INT(11)                 NOT NULL AUTO_INCREMENT,
-      pid          INT(11) DEFAULT '0'     NOT NULL,
-   )
+:sql:`pid`
+    The page the record is situated on or 0 if it is attached to no page
 
-There is no separate definition of these fields in the TCA configuration. It is
+There is no separate TCA definition of these fields in the TCA configuration. It is
 not possible to use different names for these fields.
 
 Fields used by convention
