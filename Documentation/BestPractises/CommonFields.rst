@@ -9,8 +9,7 @@ Common fields
 Mandatory fields
 ================
 
-If there is a TCA definition for a table TYPO3 will automatically create the following
-fields:
+If the table has a TCA definition, TYPO3 will automatically create the following fields:
 
 :sql:`uid`
     A unique identifier, integer, auto-incrementing. This field is used as table key
