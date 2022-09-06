@@ -12,14 +12,14 @@ Mandatory fields
 If the table has a TCA definition, TYPO3 will automatically create the following fields:
 
 :sql:`uid`
-    A unique identifier, integer, auto-incrementing. This field is used as table key
-    and to store inter record relationships.
+    An auto-incrementing unique identifier. This field is used as table key
+    and as a reference in relationships between records.
 
 :sql:`pid`
-    The page the record is situated on or 0 if it is attached to no page
+    The `uid` property of the parent page. The record is situated on this page. This value is 0 if the record is not connected to any page.
 
 There is no separate TCA definition of these fields in the TCA configuration. It is
-not possible to use different names for these fields.
+not possible to use other names for these fields.
 
 Fields used by convention
 =========================
