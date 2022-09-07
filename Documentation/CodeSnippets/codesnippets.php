@@ -726,13 +726,6 @@ return [
         'fields' => ['types'],
         'targetFileName' => 'PalettesTypes.rst.txt'
     ],
-
-    [
-        'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'typo3/sysext/core/Configuration/TCA/sys_file_reference.php',
-        'fields' => ['crop'],
-        'targetFileName' => 'ImageManipulationCrop.rst.txt'
-    ],
     [
         'action'=> 'createCodeSnippet',
         'sourceFile'=> 'typo3conf/ext/styleguide/Classes/UserFunctions/FormEngine/SelectItemSorter.php',
