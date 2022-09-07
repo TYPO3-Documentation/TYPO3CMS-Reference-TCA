@@ -5,7 +5,7 @@
     "license": "OPL-1.0",
     "require": {
         "typo3/cms-core": "^11.5",
-        "typo3/cms-styleguide": "main-dev"
+        "typo3/cms-styleguide": "^11.5"
     },
 
   "minimum-stability": "dev",
