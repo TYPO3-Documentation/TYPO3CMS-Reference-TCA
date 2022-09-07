@@ -61,13 +61,6 @@ return [
     [
         'action' => 'createPhpArrayCodeSnippet',
         'sourceFile' => 'typo3conf/ext/styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-        'fields' => ['columns/input_30'],
-        'targetFileName' => 'Input30.rst.txt'
-    ],
-
-    [
-        'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'typo3conf/ext/styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
         'fields' => ['columns/input_33'],
         'targetFileName' => 'Input33.rst.txt'
     ],
@@ -596,13 +589,6 @@ return [
 
     [
         'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'typo3conf/ext/styleguide/Configuration/TCA/tx_styleguide_elements_group.php',
-        'fields' => ['columns/group_folder_1'],
-        'targetFileName' => 'GroupFolder1.rst.txt'
-    ],
-
-    [
-        'action' => 'createPhpArrayCodeSnippet',
         'sourceFile' => 'typo3conf/ext/styleguide/Configuration/TCA/tx_styleguide_inline_1n.php',
         'fields' => ['columns/inline_1'],
         'targetFileName' => 'Inline1nInline1.rst.txt'
@@ -725,13 +711,6 @@ return [
         'sourceFile' => 'typo3conf/ext/styleguide/Configuration/TCA/tx_styleguide_palette.php',
         'fields' => ['types'],
         'targetFileName' => 'PalettesTypes.rst.txt'
-    ],
-
-    [
-        'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'typo3/sysext/core/Configuration/TCA/sys_file_reference.php',
-        'fields' => ['crop'],
-        'targetFileName' => 'ImageManipulationCrop.rst.txt'
     ],
     [
         'action'=> 'createCodeSnippet',

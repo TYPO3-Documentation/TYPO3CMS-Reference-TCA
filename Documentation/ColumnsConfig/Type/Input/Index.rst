@@ -48,18 +48,6 @@ Input with placeholder and null handling
 
 .. include:: /CodeSnippets/Input28.rst.txt
 
-
-.. _tca_example_input_30:
-
-Value slider
-------------
-
-.. include:: /Images/Rst/Input30.rst.txt
-
-
-.. include:: /CodeSnippets/Input30.rst.txt
-
-
 .. _tca_example_input_33:
 
 Value picker

@@ -47,7 +47,6 @@ input
 
    .. include:: /Images/Rst/Input1.rst.txt
    .. include:: /Images/Rst/Input28.rst.txt
-   .. include:: /Images/Rst/Input30.rst.txt
    .. include:: /Images/Rst/Input33.rst.txt
 
 none

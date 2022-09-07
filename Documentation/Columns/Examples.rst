@@ -13,20 +13,6 @@ The following examples all can be found in the
 :ref:`extension styleguide <styleguide>`.
 
 .. index::
-   Styleguide; input_30
-   Input; With slider
-
-Input field with slider
-=======================
-
-.. include:: /Images/Rst/Input30.rst.txt
-
-Input field with a slider, allowing integer values between -90 and 90:
-
-.. include:: /CodeSnippets/Input30.rst.txt
-
-
-.. index::
    Styleguide; select_single_12
    pair: selectSingle; Images
 
