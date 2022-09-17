@@ -78,7 +78,8 @@ Enablecolumns / enablefields in Extbase
 
 In Extbase repositories the records are hidden in the frontend by default,
 however this behaviour can be disabled by setting
-:ref:`$querySettings->setIgnoreEnableFields(true) <t3extbasebook:extbase_query_orderings>`.
+:php:`$querySettings->setIgnoreEnableFields(true)` in the
+:ref:`repository <t3coreapi:extbase-repository>`.
 
 Enablecolumns in queries
 -------------------------
