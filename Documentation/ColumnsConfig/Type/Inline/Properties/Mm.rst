@@ -27,7 +27,7 @@ MM
       and `New->newB`. Deleting the
       relation `New->orgA` will result in a broken relation `Org->orgA`.
 
-.. confval:: MM\_hasUidField
+.. confval:: MM_hasUidField
 
    :type: boolean
    :Scope: Proc.
@@ -36,7 +36,7 @@ MM
    value to true. Otherwise sorting and removing relations
    will be buggy.
 
-.. confval:: MM\_opposite\_field
+.. confval:: MM_opposite_field
 
    :type: string (field name)
    :Scope: Proc.

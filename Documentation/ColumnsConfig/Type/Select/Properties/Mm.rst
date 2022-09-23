@@ -50,7 +50,7 @@ Related configurations
    Otherwise sorting and removing relations will be buggy.
 
 
-.. confval:: MM_insert\_fields (type => select)
+.. confval:: MM_insert_fields (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
