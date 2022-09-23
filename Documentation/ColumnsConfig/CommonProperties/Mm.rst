@@ -44,7 +44,7 @@ Related configurations
 
 .. _tca_property_MM_hasUidField:
 
-.. confval:: MM\_hasUidField
+.. confval:: MM_hasUidField
 
    :type: boolean
    :Scope: Proc.
@@ -54,7 +54,7 @@ Related configurations
    Otherwise sorting and removing relations will be buggy.
 
 
-.. confval:: MM\_insert\_fields
+.. confval:: MM_insert_fields
 
    :type: array
    :Scope: Proc.
@@ -62,7 +62,7 @@ Related configurations
    Array of field=>value pairs to insert when writing new MM relations.
 
 
-.. confval:: MM\_match\_fields
+.. confval:: MM_match_fields
 
    :type: array
    :Scope: Display / Proc.
@@ -70,7 +70,7 @@ Related configurations
    Array of field=>value pairs to both insert and match against when writing/reading MM relations.
 
 
-.. confval:: MM\_opposite\_field
+.. confval:: MM_opposite_field
 
    :type: string (field name)
    :Scope: Proc.
@@ -86,7 +86,7 @@ Related configurations
       Bidirectional references only get registered once on the native side in "sys\_refindex".
 
 
-.. confval:: MM\_oppositeUsage
+.. confval:: MM_oppositeUsage
 
    :type: array
    :Scope: Proc.
@@ -101,7 +101,7 @@ Related configurations
    field configuration.
 
 
-.. confval:: MM\_table\_where
+.. confval:: MM_table_where
 
    :type: string (SQL WHERE)
    :Scope: Proc.

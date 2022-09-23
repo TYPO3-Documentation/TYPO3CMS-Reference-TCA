@@ -52,7 +52,7 @@ Related configurations
 ======================
 
 .. _columns-group-properties-mm-hasuidfield:
-.. confval:: MM\_hasUidField
+.. confval:: MM_hasUidField
 
    :type: boolean
    :Scope: Proc.
@@ -64,7 +64,7 @@ Related configurations
 
 
 .. _columns-group-properties-mm-insert-fields:
-.. confval:: MM\_insert\_fields
+.. confval:: MM_insert_fields
 
    :type: array
    :Scope: Proc.
@@ -72,7 +72,7 @@ Related configurations
    Array of field=>value pairs to insert when writing new MM relations.
 
 .. _columns-group-properties-mm-match-fields:
-.. confval:: MM\_match\_fields
+.. confval:: MM_match_fields
 
    :type: array
    :Scope: Display / Proc.
@@ -82,7 +82,7 @@ Related configurations
 
 
 .. _columns-group-properties-mm-opposite-field:
-.. confval:: MM\_opposite\_field
+.. confval:: MM_opposite_field
 
    :type: string (field name)
    :Scope: Proc.
@@ -103,7 +103,7 @@ Related configurations
 
 
 .. _columns-group-properties-mm-opposite-usage:
-.. confval:: MM\_oppositeUsage
+.. confval:: MM_oppositeUsage
 
    :type: array
    :Scope: Proc.
@@ -120,7 +120,7 @@ Related configurations
 
 
 .. _columns-group-properties-mm-table-where:
-.. confval:: MM\_table\_where
+.. confval:: MM_table_where
 
    :type: string (SQL WHERE)
    :Scope: Proc.
