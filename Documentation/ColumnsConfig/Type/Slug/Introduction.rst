@@ -19,8 +19,8 @@ characteristic last part of its slug is used as path segment. The segments are c
 separated by slashes. The resulting URL's path is therefore similar to the file paths in common operating
 systems.
 
-However slugs in TYPO3 are not limited to be separated by slashes. It is possible to use other seperators.
-Furthermore a single path segment may contain any sign allowed in URLs, including slashes.
+However, slugs in TYPO3 are not limited to be separated by slashes. It is possible to use other separators.
+Furthermore, a single path segment may contain any sign allowed in URLs, including slashes.
 
 It is not required to build hierarchical paths. It is possible to assign a single, unique path segment to
 each page in a deep page hierarchy. In TYPO3 the only requirement is that the slug for each
