@@ -6,9 +6,9 @@ Examples
 ========
 
 ..  versionadded:: 12.0
-    When using the `slug` type, TYPO3 takes care of generating the necessary
-    TCA configuration. Developers only need to define the TCA column and add
-    `slug` as the desired TCA type in the TCA file.
+    When using the `slug` type, TYPO3 takes care of generating the according
+    database field. A developer does not need to define this field in an
+    extension's :file:`ext_tables.sql` file.
 
 ..  _tca_example_slug_1:
 
