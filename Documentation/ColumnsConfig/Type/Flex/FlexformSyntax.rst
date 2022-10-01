@@ -31,8 +31,11 @@ documented here for TCA. The limitations are:
 
 .. _columns-flex-tceforms:
 
-For FlexForms the DS is extended with a tag, "<TCEforms>" which define all settings specific to the FlexForms usage.
-Also a few meta tag features are used.
+..  versionchanged:: 12.0
+    The superfluous array key `TCEforms` was removed and is not evaluated
+    anymore. Its sole purpose was to wrap real TCA definitions.
+
+    The tags `TCEforms` **should** be removed upon dropping TYPO3 v11 support.
 
 The tables below documents the extension elements:
 
@@ -58,17 +61,16 @@ Array Elements
 -------------------
 
 :aspect:`Element`
-    <TCEforms>
     A direct reflection of a ['columns']['field name']['config'] PHP array configuring a field in TCA. As XML,
     this is expressed by array2xml()'s output.
 
 .. _columns-flex-tceforms-array-root-tceforms:
 
-<ROOT><TCEforms>
-----------------
+<ROOT>
+------
 
 :aspect:`Element`
-    <ROOT><TCEforms>
+    <ROOT>
     For <ROOT> elements in the DS you can add application specific information about the
     sheet that the <ROOT> element represents.
 
