@@ -21,21 +21,6 @@ return [
         'fields' => ['ctrl'],
         'targetFileName' => 'TtContentCtrl.rst.txt'
     ],
-/*
- * todo: How can we raplace these, file was removed from styleguide
-    [
-        'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_fal.php',
-        'fields' => ['columns/inline_1'],
-        'targetFileName' => 'InlineFalInline1.rst.txt'
-    ],
-    [
-        'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_fal.php',
-        'fields' => ['columns/inline_flex_1'],
-        'targetFileName' => 'InlineFalInline1Flexform.rst.txt'
-    ],
-*/
     [
         'action' => 'createPhpArrayCodeSnippet',
         'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',

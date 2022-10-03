@@ -5,6 +5,10 @@
 Examples
 ========
 
+..  versionchanged:: 12.0
+    Inline fields should not be used anymore to handle files.  Use the TCA
+    column type :ref:`file <columns-file>` instead.
+
 .. _columns-inline-examples-images:
 .. _columns-inline-examples-1nRelation:
 .. _tca_example_inline_1n_inline_1:
@@ -18,42 +22,6 @@ This combines a table (for example companies) with a child table (for example
 employees).
 
 .. include:: /CodeSnippets/Inline1nInline1.rst.txt
-
-
-.. _columns-inline-examples-fal:
-.. _tca_example_inline_fal_inline_1:
-
-File abstraction layer
-======================
-
-.. include:: /Images/Rst/InlineFalInline1.rst.txt
-
-Inline-type fields are massively used by the TYPO3 Core in the :ref:`File Abstraction Layer (FAL) <t3coreapi:fal>`.
-
-FAL provides an API for registering an inline-type field with relations to the "sys_file_reference" table containing
-information related to existing media. Here an example from the
-:ref:`extension styleguide <styleguide>`:
-
-.. include:: /CodeSnippets/InlineFalInline1.rst.txt
-
-The method to call is :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig()` which takes
-four parameters. The first one is the name of the field, the second one is an array of configuration options which will
-be merged with the default configuration. The third one is the list of allowed file types and the fourth one
-(not used above) the list of disallowed file types. The default field configuration into which the
-options (second call parameter) are merged looks like:
-
-.. include:: /CodeSnippets/Manual/FileFieldTCAConfig.rst.txt
-
-
-Using inline FAL relations in flexforms
-=======================================
-
-It is also possible to use the inline FAL relations is a flexform. However
-there is no method which facilitates the generation of the code yet. So
-the configuration has to be written manually like this:
-
-.. include:: /CodeSnippets/InlineFalInline1Flexform.rst.txt
-
 
 .. _columns-inline-examples-asymmetric-mm:
 
