@@ -1,19 +1,17 @@
 {
-    "name": "typo3/reference-tca",
-    "type": "typo3-cms-documentation",
-    "description": "Complete reference to the Table Configuration Array $GLOBALS['TCA']",
-    "license": "OPL-1.0",
-    "require": {
-        "typo3/cms-core": "^12.0",
-        "typo3/cms-styleguide": "main-dev"
-    },
-
+  "name": "typo3/reference-tca",
+  "type": "typo3-cms-documentation",
+  "description": "Complete reference to the Table Configuration Array $GLOBALS['TCA']",
+  "license": "OPL-1.0",
+  "require": {
+    "typo3/cms-core": "^12.0"
+  },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "extra": {
     "typo3/cms": {
-      "app-dir": ".Build",
-      "web-dir": ".Build/public"
+      "web-dir": ".Build/public",
+      "extension-key": "t3docs-reference-tca"
     }
   },
   "config": {
@@ -53,6 +51,7 @@
     "typo3/cms-scheduler": "^12.0",
     "typo3/cms-seo": "^12.0",
     "typo3/cms-setup": "^12.0",
+    "typo3/cms-styleguide": "^12.0",
     "typo3/cms-sys-note": "^12.0",
     "typo3/cms-t3editor": "^12.0",
     "typo3/cms-tstemplate": "^12.0",
@@ -60,5 +59,13 @@
     "typo3/cms-workspaces": "^12.0",
     "t3docs/examples": "dev-main",
     "t3docs/site-package": "dev-main"
+  },
+  "scripts": {
+    "generate:codesnippets": [
+      ".Build/vendor/bin/typo3 codesnippet:create Documentation/CodeSnippets/"
+    ],
+    "generate": [
+      "@generate:codesnippets"
+    ]
   }
 }
