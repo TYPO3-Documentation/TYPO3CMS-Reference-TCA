@@ -37,7 +37,7 @@ FlexForm in a plugin
 ====================
 
 The Data Structure for a FlexForm can also be loaded in the :sql:`pi_flexform`
-field of the :sql:`tt_content` table by adding the following to in the
+field of the :sql:`tt_content` table by adding the following in the
 TCA Overrides of an extension:
 
 ..  code-block:: php
