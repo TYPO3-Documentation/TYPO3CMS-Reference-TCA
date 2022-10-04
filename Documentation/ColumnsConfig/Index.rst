@@ -11,11 +11,11 @@ The field type influences the rendering of the form field in the backend. It
 also influences the processing of data on saving the values. Those behaviour can
 be influenced by further properties.
 
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :glob:
+..  toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :glob:
 
-   Introduction/Index
-   CommonProperties/Index
-   Type/*/Index
+    Introduction/Index
+    CommonProperties/Index
+    Type/*/Index

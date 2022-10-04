@@ -6,6 +6,10 @@
 IRRE / inline
 =============
 
+..  versionchanged:: 12.0
+    Inline fields should not be used anymore to handle files.  Use the TCA
+    column type :ref:`file <columns-file>` instead.
+
 Inline-Relational-Record-Editing (IRRE) offers a way of directly editing parent-child-relations in one backend view.
 New child records are created using AJAX calls to prevent a reload of the complete backend view.
 
