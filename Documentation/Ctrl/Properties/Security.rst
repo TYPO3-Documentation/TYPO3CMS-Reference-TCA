@@ -36,7 +36,7 @@ security
     ..  code-block:: php
         :caption: EXT:sys_note/Configuration/TCA/sys_note.php
 
-        $GLOBALS['TCA']['sys_file'] = [
+        $GLOBALS['TCA']['sys_note'] = [
             'ctrl' => [
                 'security' => [
                     'ignorePageTypeRestriction' => true,
