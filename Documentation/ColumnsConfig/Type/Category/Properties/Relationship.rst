@@ -26,7 +26,6 @@ relationship
       Stores the uids of selected categories in a comma-separated list.
 
    `manyToMany` (default):
-
       Uses the intermediate table :sql:`sys_category_record_mm`
       and only stores the categories count on the local side. This is the use
       case, which was previously accomplished using
