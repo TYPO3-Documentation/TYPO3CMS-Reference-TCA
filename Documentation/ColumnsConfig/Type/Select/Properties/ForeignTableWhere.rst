@@ -47,13 +47,13 @@ It is possible to use markers in the WHERE clause:
 
 ###SITEROOT###
 
-###PAGE\_TSCONFIG\_ID###
+:ref:`###PAGE\_TSCONFIG\_ID### <t3tsconfig:page_tsconfig_id>`
    A value you can set from Page TSconfig dynamically.
 
-###PAGE\_TSCONFIG\_IDLIST###
+:ref:`###PAGE\_TSCONFIG\_IDLIST### <t3tsconfig:page_tsconfig_idlist>`
    A value you can set from Page TSconfig dynamically.
 
-###PAGE\_TSCONFIG\_STR###
+:ref:`###PAGE\_TSCONFIG\_STR### <t3tsconfig:page_tsconfig_str>`
    A value you can set from Page TSconfig dynamically.
 
 ###SITE:<KEY>.<SUBKEY>###
