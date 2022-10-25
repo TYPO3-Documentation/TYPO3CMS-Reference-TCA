@@ -18,13 +18,3 @@ exclude
 
    See :ref:`Access lists <t3coreapi:access-options-access-lists>` for more
    about permissions.
-
-Example
-=======
-
-Simple input field
-------------------
-
-.. include:: /Images/Rst/Input1.rst.txt
-
-.. include:: /CodeSnippets/Input1.rst.txt
