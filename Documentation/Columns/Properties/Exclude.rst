@@ -18,3 +18,23 @@ exclude
 
    See :ref:`Access lists <t3coreapi:access-options-access-lists>` for more
    about permissions.
+
+Example
+=======
+
+Simple input field
+------------------
+
+.. code-block:: php
+   [
+       'columns' => [
+           'input_2' => [
+               'label' => 'input_2 description',
+               'exclude' => true,
+               'config' => [
+                   'type' => 'input',
+                   
+               ],
+           ],
+       ],
+   ]
