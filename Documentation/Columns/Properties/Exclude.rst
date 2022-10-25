@@ -26,6 +26,7 @@ Simple input field
 ------------------
 
 .. code-block:: php
+
    [
        'columns' => [
            'input_2' => [
