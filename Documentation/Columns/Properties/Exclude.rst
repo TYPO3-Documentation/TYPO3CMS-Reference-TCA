@@ -25,6 +25,17 @@ Example
 Simple input field
 ------------------
 
-.. include:: /Images/Rst/Input1.rst.txt
+.. code-block:: php
 
-.. include:: /CodeSnippets/Input1.rst.txt
+   [
+       'columns' => [
+           'input_2' => [
+               'label' => 'input_2 description',
+               'exclude' => true,
+               'config' => [
+                   'type' => 'input',
+                   
+               ],
+           ],
+       ],
+   ]
