@@ -25,37 +25,38 @@ external XML file:
 
 The DataStructure used to render this field is found in the file
 "Simple.xml" inside the :file:`styleguide` extension.
-Notice the :xml:`<TCEforms>` tags:
+Notice the :xml:`<input_1>` tag:
 
 .. include:: /CodeSnippets/FlexFile1.rst.txt
 
-It's clear that the contents of :xml:`<TCEforms>` is a direct reflection of
+It's clear that the contents of :xml:`<input_1>` is a direct reflection of
 the field configurations we normally set up in the :php:`$GLOBALS['TCA']` array.
 
 
 FlexForm in a plugin
 ====================
 
-The Data Structure for a FlexForm can also be loaded in the "pi\_flexform"
-field of the "tt\_content" table by adding the
-following to the ext\_tables.php file of the extension:
+The Data Structure for a FlexForm can also be loaded in the :sql:`pi_flexform`
+field of the :sql:`tt_content` table by adding the following in the
+TCA Overrides of an extension:
 
-.. code-block:: php
+..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
-   $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['examples_pi1']
+    $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['myextension_pi1']
         = 'pi_flexform';
-   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-      'examples_pi1',
-      'FILE:EXT:examples/Configuration/FlexForms/Main.xml');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+        'myextension_pi1',
+        'FILE:EXT:examples/Configuration/FlexForms/Main.xml');
 
-In the first line the tt\_content field "pi\_flexform" is added to the display
-of fields when the plugin type is selected and set to "examples\_pi1". In the
+In the first line the :sql:`tt_content` field :sql:`pi_flexform` is added to the display
+of fields when the plugin type is selected and set to :php:`myextension_pi1`. In the
 second line the DS xml file is configured to be the source of the FlexForm DS
 used.
 
-If we browse the definition for the "pi\_flexform" field in "tt\_content" below
-"columns" using the Admin > Configuration module for
-"$GLOBALS['TCA'] (Table configuration array)",
+If we browse the definition for the :sql:`pi_flexform` field in :sql:`tt_content` below
+"columns" using the :guilabel:`Admin > Configuration` module for
+:guilabel:`$GLOBALS['TCA'] (Table configuration array)`,
 we can see the following:
 
 .. include:: /Images/Rst/PluginFlexFormConfigurationCheck.rst.txt
@@ -102,7 +103,7 @@ field:
 Example: Rich Text Editor in FlexForms
 ======================================
 
-Creating a RTE in FlexForms is done by enabling "enableRichtext" content to the
-<TCEforms> tag:
+Creating a RTE in FlexForms is done by enabling `enableRichtext` content to the
+tag of the field:
 
 .. include:: /CodeSnippets/Manual/FlexRte1.rst.txt
