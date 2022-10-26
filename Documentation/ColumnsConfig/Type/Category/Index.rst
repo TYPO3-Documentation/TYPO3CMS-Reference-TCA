@@ -32,10 +32,9 @@ The following options can be overridden via :ref:`page TSconfig, TCE form
 .. note::
 
    It is still possible to configure a category tree with `type=select`
-   and `renderType=selectTree`. This configuration will still work, but
-   it can in most cases be simplified by using the new :php:`category` TCA type.
-   However if you need to modifiy e. g. the `foreign_table_where` field, you
-   need to replicate the category type configuration manually to do so.
+   and `renderType=selectTree` when you want to override specific fields
+   like e. g. the `foreign_table_where` field, but in most cases the
+   simplified :php:`category` TCA type is sufficient.
 
 
 .. toctree::
