@@ -1,4 +1,4 @@
-﻿.. include:: /Includes.rst.txt
+.. include:: /Includes.rst.txt
 
 .. _columns-category:
 
@@ -29,12 +29,12 @@ The following options can be overridden via :ref:`page TSconfig, TCE form
 *  `readOnly`
 *  `treeConfig`
 
-
 .. note::
 
    It is still possible to configure a category tree with `type=select`
-   and `renderType=selectTree`. This configuration will still work, but
-   it can in most cases be simplified by using the new :php:`category` TCA type.
+   and `renderType=selectTree` when you want to override specific fields
+   like e. g. the `foreign_table_where` field, but in most cases the
+   simplified :php:`category` TCA type is sufficient.
 
 
 .. toctree::
