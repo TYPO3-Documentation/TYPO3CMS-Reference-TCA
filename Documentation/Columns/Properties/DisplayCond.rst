@@ -178,12 +178,3 @@ Flex form fields can access field values from various different sources:
    <displayCond>FIELD:flexField_1:!=:foo</displayCond>
    <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
    <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
-
-.. versionchanged:: 8
-
-    The display condition parser has been rewritten. It is now "strict"
-    and throws exceptions if the syntax of a display
-    condition is bogus. The exception message reveals details on what
-    exactly is broken. This helps with finding bugs in a display condition
-    configuration and reduces headaches with "Why is my field shown or not
-    shown?".
