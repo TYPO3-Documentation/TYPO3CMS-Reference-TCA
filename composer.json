@@ -21,6 +21,8 @@
       "typo3/cms-composer-installers": true,
       "typo3/class-alias-loader": true
     },
+    "bin-dir": ".Build/bin",
+    "sort-packages": true,
     "vendor-dir": ".Build/vendor"
   },
   "require-dev": {
@@ -61,5 +63,13 @@
     "typo3/cms-workspaces": "^11.5",
     "t3docs/examples": "11.5.x-dev",
     "t3docs/site-package": "^11.5"
+  },
+  "scripts": {
+    "generate": [
+      "@generate:codesnippets"
+    ],
+    "generate:codesnippets": [
+      ".Build/bin/typo3 codesnippet:create Documentation/"
+    ]
   }
 }
