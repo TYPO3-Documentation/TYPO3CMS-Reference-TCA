@@ -21,22 +21,9 @@ hashed
        the tables :php:`be_users` and :php:`fe_users`. In general it is not
        recommended to save passwords as plain text to the database.
 
-
 Examples
 ========
 
 The password will be saved as plain text:
 
-.. code-block:: php
-
-   'tx_mytable' => [
-      'columns' => [
-         'my_password_field' => [
-            'label' => 'Password',
-            'config' => [
-               'type' => 'password',
-               'hashed' => false,
-            ]
-         ]
-      ]
-   ]
+..  include:: _Password_2.rst.txt

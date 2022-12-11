@@ -14,19 +14,27 @@ Password
 The TCA type :php:`password` should be used to input values representing
 passwords.
 
-Example
-=======
+Examples
+========
 
 A simple password field:
+------------------------
 
-.. code-block:: php
+..  include:: Properties/_Password_1.rst.txt
 
-    'password_field' => [
-        'label' => 'Password',
-        'config' => [
-            'type' => 'password',
-        ]
-    ]
+A password field with password generator
+----------------------------------------
+
+..  figure:: /Images/ManualScreenshots/PasswordGeneratorAllChars.png
+    :alt: A password generator using special chars.
+    :class: with-shadow
+
+    A password generator using special chars.
+
+..  include:: Properties/_Password_6.rst.txt
+
+For more options on generating passwords see
+:ref:`Property passwordGenerator <columns-password-properties-passwordGenerator>`.
 
 Migration
 =========
@@ -34,7 +42,7 @@ Migration
 The migration from :php:`eval='password'` and :php:`eval='saltedPassword'` to
 :php:`type=password` is done like following:
 
-.. code-block:: php
+..  code-block:: php
 
     // Before
 
