@@ -5,7 +5,8 @@
 passwordGenerator
 =================
 
-    .. versionadded:: 12.1
+.. versionadded:: 12.1
+
 ..  confval:: passwordGenerator (type => password)
 
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']
@@ -79,7 +80,7 @@ Base64 random bytes, readonly
 
 Example: `zrt8sJd6GiqUI_EFgjPiedOj--D0NbTVOJz`
 
-..  figure:: /Images/ManualScreenshots/PasswordGeneratorAllChars.png
+..  figure:: /Images/ManualScreenshots/PasswordGeneratorBase64Readonly.png
     :alt: A password generator using base64 random bytes, readonly
     :class: with-shadow
 
