@@ -28,5 +28,8 @@
                'starttime' => 'starttime',
                'endtime' => 'endtime',
            ],
+           'security' => [
+               'ignorePageTypeRestriction' => true,
+           ],
        ],
    ]
