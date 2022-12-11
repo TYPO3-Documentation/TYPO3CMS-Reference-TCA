@@ -9,7 +9,7 @@ passwordGenerator
 
 ..  confval:: passwordGenerator (type => password)
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']`
     :type: boolean
     :Scope: Display
 
