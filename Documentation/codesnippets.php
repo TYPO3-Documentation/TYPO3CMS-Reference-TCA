@@ -713,4 +713,47 @@ return [
         'sourceFile' => 'EXT:styleguide/Classes/UserFunctions/FormEngine/SlugPrefix.php',
         'targetFileName' => 'CodeSnippets/SlugPrefix.rst.txt'
     ],
+    // TYPO3 12.0 and above
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_1'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/Properties/_Password_1.rst.txt',
+        'emphasizeLines' => ['7'],
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_2'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/Properties/_Password_2.rst.txt',
+        'emphasizeLines' => ['8'],
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_4'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/Properties/_Password_4.rst.txt',
+        'emphasizeLines' => ['15'],
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_5'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/Properties/_Password_5.rst.txt',
+        'emphasizeLines' => ['13', '16'],
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_6'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/Properties/_Password_6.rst.txt',
+        'emphasizeLines' => ['10', '14'],
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_7'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/Properties/_Password_7.rst.txt',
+        'emphasizeLines' => ['14', '15', '16'],
+    ],
 ];
