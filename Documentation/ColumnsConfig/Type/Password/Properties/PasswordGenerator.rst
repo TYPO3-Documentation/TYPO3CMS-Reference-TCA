@@ -97,7 +97,7 @@ title
 
 ..  t3-fieldcontrol-passwordgenerator:: title
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']`
     :Type: String / Localized String
     :Default: :php:`"LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.generatePassword"`
 
@@ -108,7 +108,7 @@ allowEdit
 
 ..  t3-fieldcontrol-passwordgenerator:: allowEdit
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']`
     :Type: boolean
     :Default: :php:`true`
 
@@ -124,7 +124,7 @@ passwordRules.length
 
 ..  t3-fieldcontrol-passwordgenerator:: passwordRules.length
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['length']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['length']`
     :Type: int
     :Default: :php:`16`
     :Minimum: :php:`8`
@@ -136,7 +136,7 @@ passwordRules.random
 
 ..  t3-fieldcontrol-passwordgenerator:: passwordRules.random
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['random']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['random']`
     :Type: String
     :Values: :php:`"hex"`, :php:`"base64"`
 
@@ -162,7 +162,7 @@ passwordRules.digitCharacters
 
 ..  t3-fieldcontrol-passwordgenerator:: passwordRules.digitCharacters
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['digitCharacters']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['digitCharacters']`
     :Type: boolean
     :Default: :php:`true`
 
@@ -174,7 +174,7 @@ passwordRules.lowerCaseCharacters
 
 ..  t3-fieldcontrol-passwordgenerator:: passwordRules.lowerCaseCharacters
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['lowerCaseCharacters']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['lowerCaseCharacters']`
     :Type: boolean
     :Default: :php:`true`
 
@@ -185,7 +185,7 @@ passwordRules.upperCaseCharacters
 
 ..  t3-fieldcontrol-passwordgenerator:: passwordRules.upperCaseCharacters
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['upperCaseCharacters']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['upperCaseCharacters']`
     :Type: boolean
     :Default: :php:`true`
 
@@ -196,7 +196,7 @@ passwordRules.specialCharacters
 
 ..  t3-fieldcontrol-passwordgenerator:: passwordRules.specialCharacters
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['specialCharacters']
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['specialCharacters']`
     :Type: boolean
     :Default: :php:`false`
 
