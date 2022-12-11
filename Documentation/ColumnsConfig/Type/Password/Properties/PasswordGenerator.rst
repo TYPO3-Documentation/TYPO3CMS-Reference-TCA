@@ -5,6 +5,7 @@
 passwordGenerator
 =================
 
+    .. versionadded:: 12.1
 ..  confval:: passwordGenerator (type => password)
 
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']
@@ -12,7 +13,7 @@ passwordGenerator
     :Scope: Display
 
     The control
-    renders a button next to password field allowing the user to generate
+    renders a button next to the password field allowing the user to generate
     a random password based on defined rules.
 
     Using the control adds the generated password to the corresponding field.
@@ -98,7 +99,7 @@ title
 ..  t3-fieldcontrol-passwordgenerator:: title
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']`
-    :Type: String / Localized String
+    :Type: String / localized string
     :Default: :php:`"LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.generatePassword"`
 
     Define a title for the control button.
@@ -112,7 +113,7 @@ allowEdit
     :Type: boolean
     :Default: :php:`true`
 
-    If set to :php:`false` the user cannot edit the generated password.
+    If set to :php:`false`, the user cannot edit the generated password.
 
 Password rules
 --------------
@@ -166,7 +167,7 @@ passwordRules.digitCharacters
     :Type: boolean
     :Default: :php:`true`
 
-    If set to :php:`false` the generated password contains no digit.
+    If set to :php:`false`, the generated password contains no digit.
 
 
 passwordRules.lowerCaseCharacters
@@ -178,7 +179,7 @@ passwordRules.lowerCaseCharacters
     :Type: boolean
     :Default: :php:`true`
 
-    If set to :php:`false` the generated password contains no lower case characters.
+    If set to :php:`false`, the generated password contains no lower case characters.
 
 passwordRules.upperCaseCharacters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -189,7 +190,7 @@ passwordRules.upperCaseCharacters
     :Type: boolean
     :Default: :php:`true`
 
-    If set to :php:`false` the generated password contains no upper case characters.
+    If set to :php:`false`, the generated password contains no upper case characters.
 
 passwordRules.specialCharacters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -200,5 +201,5 @@ passwordRules.specialCharacters
     :Type: boolean
     :Default: :php:`false`
 
-    If set to :php:`true` the generated password also contains special
+    If set to :php:`true`, the generated password also contains special
     characters (`!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~`).
