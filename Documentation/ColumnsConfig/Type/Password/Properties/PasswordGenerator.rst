@@ -47,7 +47,7 @@ Examples
 Include special characters
 --------------------------
 
-Example: `tA7'jZEIv!{96z.D`
+Example: `qe8)i2W1it-msR8`
 
 ..  figure:: /Images/ManualScreenshots/PasswordGeneratorAllChars.png
     :alt: A password generator using special chars.
@@ -60,14 +60,26 @@ Example: `tA7'jZEIv!{96z.D`
 Only digits, length 8 (minimum length)
 --------------------------------------
 
-Example: `90684069`
+Example: `28233371`
+
+..  figure:: /Images/ManualScreenshots/PasswordGeneratorDigits.png
+    :alt: A generated 8 digit number
+    :class: with-shadow
+
+    A generated 8 digit number
 
 ..  include:: _Password_7.rst.txt
 
 Hexadecimal random bytes, length 30
 -----------------------------------
 
-Example: `4617eb24bd001b04fa4e9645043b96`.
+Example: `0d95c0936c54b97bf908a3c963b508`.
+
+..  figure:: /Images/ManualScreenshots/PasswordGeneratorHexadecimal.png
+    :alt: A generated 30 characters long random hex string
+    :class: with-shadow
+
+    A generated 30 characters long random hex string
 
 The following example will generate a 30 characters long random hex string, which
 could be used for secret tokens or similar:
