@@ -22,20 +22,12 @@ Properties
 
 Special properties
 ==================
-.. toctree::
-   :titlesonly:
 
-   Allowed
-   Appearance
-   ElementBrowserEntryPoints
-   FieldControl
-   FieldWizard
-   Filter
-   ForeignTable
-   HideSuggest
-   Mm
-   PrependTname
-   SuggestOptions
+..  toctree::
+    :titlesonly:
+    :glob:
+
+    *
 
 Common properties
 =================

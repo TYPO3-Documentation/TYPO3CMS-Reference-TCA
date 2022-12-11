@@ -19,5 +19,4 @@ format
    .. note::
 
       The :php:`format` option defines only the display of the field value.
-      The storage format is defined via :confval:`dbType`
-      or :ref:`eval=int <columns-datetime-properties-eval>`.
+      The storage format is defined via :confval:`dbType`.

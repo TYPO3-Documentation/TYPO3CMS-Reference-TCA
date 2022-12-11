@@ -15,13 +15,11 @@ There can be multiple data structures defined in `TCA` and it depends on the
 configuration and the record which one is chosen. All the different "ds" properties
 allow to specify the lookup mechanism, see the :ref:`example section <columns-flex-ds-pointer>`.
 
-.. toctree::
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   Ds
-   DsPointerField
-   DsPointerFieldSearchParent
-   DsPointerFieldSearchParentSubField
-   DsTableField
+    *
 
 .. note::
 

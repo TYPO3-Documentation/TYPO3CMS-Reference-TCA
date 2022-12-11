@@ -15,15 +15,11 @@ Special properties
 Checkboxes (type = 'check') of all rendering types share the following
 Properties:
 
-.. toctree::
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   Cols
-   Default
-   Eval
-   InvertStateDisplay
-   Items
-   RenderType
-   Validation
+    *
 
 
 Common properties

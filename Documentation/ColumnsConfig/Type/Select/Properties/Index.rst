@@ -7,24 +7,11 @@ Select field properties
 .. note::
    Some of the properties listed here only apply to certain render types.
 
-.. toctree::
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   AllowNonIdValues
-   AuthMode
-   CheckBoxAppearance
-   Default
-   DisableNonMatchingValueElement
-   ExclusiveKeys
-   FileFolderConfig
-   ForeignTable
-   ForeignTablePrefix
-   ForeignTableWhere
-   ItemGroups
-   Items
-   Mm
-   MultiSelectFilterItems
-   SelectTreeConfig
-   SortItems
+    *
 
 
 Common properties

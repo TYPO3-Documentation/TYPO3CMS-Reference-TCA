@@ -50,6 +50,6 @@ search
       This means that the "bodytext" field of the "tt\_content" table will be searched in only for elements
       of type Text and Text & Images. This helps making any search more relevant.
 
-      The above example uses the special field quoting syntax :php:`{#...}` around identifiers of the
-      :ref:`QueryHelper <t3coreapi:database-query-helper-quoteDatabaseIdentifiers>` to be as DBAL compatible
-      as possible.
+
+      The above example uses the special field quoting syntax :php:`{#...}` around
+      identifiers of the to be as DBAL compatible as possible.

@@ -15,8 +15,8 @@ selicon\_field
    Field name, which contains the thumbnail image used to represent the record visually whenever it is shown
    in FormEngine as a foreign reference selectable from a selector box.
 
-   This field must be a :ref:`columns-inline-examples-fal` field where icon files are selected. Since only the
-   first icon file will be used, the :ref:`columns-inline-properties-maxitems` option should be used to allow only
+   This field must be a :ref:`columns-file` field where icon files are selected. Since only the
+   first icon file will be used, the :ref:`columns-file-properties-maxitems` option should be used to allow only
    selecting a single icon file.
 
    You should consider this a feature where you can attach an "icon" to a record which is typically selected as a
@@ -36,13 +36,13 @@ The table :sql:`tx_styleguide_elements_select_single_12_foreign` is defined as
 follows:
 
 
-.. include:: /CodeSnippets/Manual/SelectSingle12ForeignPart.rst.txt
-
+..  literalinclude:: _SeliconField.php
+    :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select_single_12_foreign.php
+    :emphasize-lines: 7, 12, 15
 
 It can be used in another table as a foreign relation, for example in a field
-with render type :php:`singleSelect`::
+with render type :php:`singleSelect`:
 
-.. include:: /CodeSnippets/SelectSingle12.rst.txt
-
+..  include:: /CodeSnippets/SelectSingle12.rst.txt
 
 You can find this example in the :ref:`extension styleguide <styleguide>`.

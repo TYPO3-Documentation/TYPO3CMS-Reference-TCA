@@ -9,11 +9,11 @@ Properties
 Special properties
 ==================
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   ElementBrowserEntryPoints
-   FieldControl
+    *
 
 
 Common properties

@@ -19,11 +19,9 @@ Field quoting
 =============
 
 The example below uses the special field quoting syntax :php:`{#...}`
-around identifiers of the
-:ref:`QueryHelper <t3coreapi:database-query-helper-quoteDatabaseIdentifiers>`
-to be as DBAL compatible as possible. Note that :php:`ORDER BY` and :php:`GROUP BY`
-should NOT be quoted, since they always receive proper quoting automatically
-through the API.
+around identifiers to be as DBAL compatible as possible. Note that
+:php:`ORDER BY` and :php:`GROUP BY` should *not* be quoted, since they always
+receive proper quoting automatically through the API.
 
 Markers inside the WHERE statement
 

@@ -13,13 +13,11 @@ Properties
 Special properties
 ==================
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   AllowedExtensions
-   CropVariants
-   FileField
-
+    *
 
 Common properties
 =================

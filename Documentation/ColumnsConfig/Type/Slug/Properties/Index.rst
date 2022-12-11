@@ -6,11 +6,8 @@
 Properties
 ==========
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   Appearance
-   Eval
-   FallbackCharacter
-   GeneratorOptions
-   PrependSlash
+    *

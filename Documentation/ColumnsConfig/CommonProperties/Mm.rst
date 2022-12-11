@@ -112,9 +112,8 @@ Related configurations
 
       {#uid_local} = ###THIS_UID###
 
-   The above example uses the special field quoting syntax :php:`{#...}` around identifiers of the
-   :ref:`QueryHelper <t3coreapi:database-query-helper-quoteDatabaseIdentifiers>` to be as DBAL compatible
-   as possible.
+   The above example uses the special field quoting syntax :php:`{#...}` around
+   identifiers of the to be as DBAL compatible as possible.
 
 .. _tca_property_MM_auto_creation_mm_table:
 

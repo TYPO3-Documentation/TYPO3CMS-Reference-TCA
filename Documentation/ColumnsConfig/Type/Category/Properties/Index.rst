@@ -9,13 +9,11 @@ Category field properties
 Special properties
 ==================
 
-.. toctree::
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   Default
-   ExclusiveKeys
-   Relationship
-   TreeConfig
-
+    *
 
 Common properties
 =================
