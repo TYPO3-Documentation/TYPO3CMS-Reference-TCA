@@ -5,6 +5,10 @@
 appearance
 ==========
 
+..  versionchanged:: 12.0
+    With the introduction of the TCA type :ref:`file <columns-file>`, the
+    following options for the TCA type `group` are no longer evaluated.
+
 .. confval:: appearance
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
