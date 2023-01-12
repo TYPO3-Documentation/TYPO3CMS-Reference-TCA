@@ -5,6 +5,11 @@
 pass\_content
 =============
 
+..  deprecated:: 12.2
+    Instances with field configs for :php:`type="none"` having key
+    :php:`pass_content` will trigger a deprecation warning during TCA cache
+    warmup. The option will be removed with TYPO3 v13.
+
 .. confval:: pass_content (type => none)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
