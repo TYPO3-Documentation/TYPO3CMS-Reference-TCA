@@ -1,16 +1,15 @@
-﻿.. include:: /Includes.rst.txt
+﻿..  include:: /Includes.rst.txt
 
-.. _columns-user:
+..  _columns-user:
 
 ====================
 Custom inputs (user)
 ====================
 
-.. contents:: Table of contents:
-   :local:
-   :depth: 1
+..  contents:: Table of contents:
+    :local:
 
-.. _columns-user-introduction:
+..  _columns-user-introduction:
 
 Introduction
 ============
@@ -21,20 +20,20 @@ These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <colum
 
 Characteristics of `user`:
 
-* A value sent to the DataHandler is just kept as is and put into the database field. Default FormEngine
-  however never sends values.
-* Unlike none, type user must have a database field.
-* FormEngine only renders a dummy element for type user fields by default. It should be combined with a
-  custom renderType.
-* Type user field values are rendered as-is at other places in the backend. They for instance can be selected
-  to be displayed in the list module "single table view".
-* Field updates by the DataHandler get logged and the history/undo function will work with such values.
+*   A value sent to the DataHandler is just kept as is and put into the database field. Default FormEngine
+    however never sends values.
+*   Unlike none, type user must have a database field.
+*   FormEngine only renders a dummy element for type user fields by default. It should be combined with a
+    custom renderType.
+*   Type user field values are rendered as-is at other places in the backend. They for instance can be selected
+    to be displayed in the list module "single table view".
+*   Field updates by the DataHandler get logged and the history/undo function will work with such values.
 
 The `user` field can be useful, if:
 
-* A special rendering and evaluation is needed for a value when editing records via FormEngine.
+*   A special rendering and evaluation is needed for a value when editing records via FormEngine.
 
-.. note::
+..  note::
     In previous versions of TYPO3 core, :php:`type='user'` had a property `userFunc` to call an own class
     method of some extension. This has been substituted with a custom element using a `renderType`.
     See example below.
@@ -55,143 +54,83 @@ implementing a rendering. See :ref:`FormEngine docs
 .. rst-class:: bignums
 
 
-1. Register the new renderType node element
+1.  Register the new renderType node element
 
-   Add to :file:`ext_localconf.php`::
+    Add to :file:`ext_localconf.php`:
 
-       $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][<current timestamp>] = [
-           'nodeName' => 'specialField',
-           'priority' => 40,
-           'class' => \T3docs\Examples\Form\Element\SpecialFieldElement::class,
-       ];
+    ..  code-block:: php
+        :caption: EXT:my_extension/ext_localconf.php
 
-
-2. Use the renderType in a TCA field definition
-
-   Add the field to the TCA definition, here in
-   :file:`Configuration/TCA/Overrides/fe_users.php`::
-
-      'tx_examples_special' => [
-         'exclude' => 0,
-         'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:fe_users.tx_examples_special',
-         'config' => [
-            'type' => 'user',
-            // renderType needs to be registered in ext_localconf.php
-            'renderType' => 'specialField',
-            'parameters' => [
-               'size' => '30',
-               'color' => '#F49700',
-            ],
-         ],
-      ],
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][<current timestamp>] = [
+            'nodeName' => 'specialField',
+            'priority' => 40,
+            'class' => \MyVendor\MyExtension\Form\Element\SpecialFieldElement::class,
+        ];
 
 
-3. Implement the FormElement class
+2.  Use the renderType in a TCA field definition
 
-   The :php:`renderType` can be implemented by extending the class
-   :php:`AbstractFormElement` and overriding the function :php:`render()`::
+    Add the field to the TCA definition, here in
+    :file:`Configuration/TCA/Overrides/fe_users.php`:
 
-      <?php
-      declare(strict_types = 1);
-      namespace T3docs\Examples\Form\Element;
+    ..  literalinclude:: _includes/_fe_users.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/fe_users.php
 
-      use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
-      use TYPO3\CMS\Core\Utility\GeneralUtility;
-      use TYPO3\CMS\Core\Utility\StringUtility;
+3.  Implement the FormElement class
 
-      class SpecialFieldElement extends AbstractFormElement
-      {
-         public function render():array
-         {
-            $row = $this->data['databaseRow'];
-            $parameterArray = $this->data['parameterArray'];
-            $color = $parameterArray['fieldConf']['config']['parameters']['color'];
-            $size = $parameterArray['fieldConf']['config']['parameters']['size'];
+    The :php:`renderType` can be implemented by extending the class
+    :php:`AbstractFormElement` and overriding the function :php:`render()`:
 
-            $fieldInformationResult = $this->renderFieldInformation();
-            $fieldInformationHtml = $fieldInformationResult['html'];
-            $resultArray = $this->mergeChildReturnIntoExistingResult($this->initializeResultArray(), $fieldInformationResult, false);
+    ..  literalinclude:: _includes/_SpecialFieldElement.php
+        :caption: EXT:my_extension/Classes/Form/Element/SpecialFieldElement.php
 
-            $fieldId = StringUtility::getUniqueId('formengine-textarea-');
+    ..  attention::
+        The returned data in :php:`$resultArray['html']` will be output in the
+        TYPO3 Backend as it is passed. Therefore don't trust user input in
+        order to prevent :ref:`cross-site scripting (XSS)
+        <t3coreapi:security-xss>`.
 
-            $attributes = [
-               'id' => $fieldId,
-               'name' => htmlspecialchars($parameterArray['itemFormElName']),
-               'size' => $size,
-               'data-formengine-input-name' => htmlspecialchars($parameterArray['itemFormElName'])
-            ];
+    The array :php:`$this->data` consists of the following parts:
 
-            $attributes['placeholder'] = 'Enter special value for user "'.htmlspecialchars(trim($row['username'])).
-               '" in size '. $size;
-            $classes = [
-               'form-control',
-               't3js-formengine-textarea',
-               'formengine-textarea',
-            ];
-            $itemValue = $parameterArray['itemFormElValue'];
-            $attributes['class'] = implode(' ', $classes);
+    *   The row of the currently edited record in
+        :php:`$this->data['databaseRow']`
+    *   The configuration from the TCA in
+        :php:`$this->data['parameterArray']['fieldConf']['config']`
+    *   The name of the input field in
+        :php:`$this->data['parameterArray']['itemFormElName']`
+    *   The current value of the field in
+        :php:`$this->data['parameterArray']['itemFormElValue']`
 
-            $html = [];
-            $html[] = '<div class="formengine-field-item t3js-formengine-field-item" style="padding: 5px; background-color: ' . $color . ';">';
-            $html[] = $fieldInformationHtml;
-            $html[] =   '<div class="form-wizards-wrap">';
-            $html[] =      '<div class="form-wizards-element">';
-            $html[] =         '<div class="form-control-wrap">';
-            $html[] =            '<input type="text" value="' . htmlspecialchars($itemValue, ENT_QUOTES) . '" ';
-            $html[]=               GeneralUtility::implodeAttributes($attributes, true);
-            $html[]=            ' />';
-            $html[] =         '</div>';
-            $html[] =      '</div>';
-            $html[] =   '</div>';
-            $html[] = '</div>';
-            $resultArray['html'] = implode(LF, $html);
-
-            return $resultArray;
-         }
-      }
-
-
-
-   .. attention::
-
-         The returned data in :php:`$resultArray['html']` will be output in the
-         TYPO3 Backend as it is passed. Therefore don't trust user input in
-         order to prevent :ref:`cross-site scripting (XSS)
-         <t3coreapi:security-xss>`.
-
-
-   The array :php:`$this->data` consists of the following parts:
-
-   * The row of the currently edited record in
-     :php:`$this->data['databaseRow']`
-   * The configuration from the TCA in
-     :php:`$this->data['parameterArray']['fieldConf']['config']`
-   * The name of the input field in
-     :php:`$this->data['parameterArray']['itemFormElName']`
-   * The current value of the field in
-     :php:`$this->data['parameterArray']['itemFormElValue']`
-
-
-   In order for the field to work, it is vital, that the corresponding
-   HTML input field has a unique :html:`id` attribute, fills the
-   attributes :html:`name` and :html:`data-formengine-input-name` with the
-   correct name, as provided in the :php:`itemFormElName`.
+    In order for the field to work, it is vital, that the corresponding
+    HTML input field has a unique :html:`id` attribute, fills the
+    attributes :html:`name` and :html:`data-formengine-input-name` with the
+    correct name, as provided in the :php:`itemFormElName`.
 
 The field would then look like this in the backend:
 
-.. include:: /Images/Rst/ExtendingTcaFeUsers.rst.txt
+..  include:: /Images/Rst/ExtendingTcaFeUsers.rst.txt
 
 This example is also described in TYPO3 Explained,
 :ref:`Extending TCA example <t3coreapi:extending-examples-feusers>`.
 
-.. _columns-user-properties-type:
-.. _columns-user-properties-notablewrapping:
-.. _columns-user-properties-parameters:
-.. _columns-user-properties-userfunc:
-.. _columns-user-properties:
+..  _columns-user-properties-notablewrapping:
+..  _columns-user-properties-parameters:
+..  _columns-user-properties-userfunc:
+..  _columns-user-properties:
 
-Properties renderType default
-=============================
+Properties
+==========
 
-The default renderType just renders a dummy entry to indicate a custom
-renderType should be added.
+..  _columns-user-properties-type:
+
+renderType
+----------
+
+..  confval:: renderType (type => user)
+
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['renderType']
+    :type: integer
+    :Scope: Display
+
+    The default renderType just renders a dummy entry to indicate a custom
+    renderType should be added. Additional render types
