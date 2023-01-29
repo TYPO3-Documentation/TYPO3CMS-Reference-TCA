@@ -15,7 +15,7 @@ selicon\_field
    Field name, which contains the thumbnail image used to represent the record visually whenever it is shown
    in FormEngine as a foreign reference selectable from a selector box.
 
-   This field must be a :ref:`columns-inline-examples-fal` field where icon files are selected. Since only the
+   This field must be a :ref:`columns-file` field where icon files are selected. Since only the
    first icon file will be used, the :ref:`columns-inline-properties-maxitems` option should be used to allow only
    selecting a single icon file.
 

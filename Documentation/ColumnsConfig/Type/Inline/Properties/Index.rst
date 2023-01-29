@@ -13,30 +13,11 @@ Properties
 Special properties
 ==================
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   Appearance
-   BehaviourDisableMovingChildrenWithParent
-   BehaviourEnableCascadingDelete
-   CustomControls
-   Filter
-   ForeignDefaultSortby
-   ForeignField
-   ForeignLabel
-   ForeignMatchFields
-   ForeignSelector
-   ForeignSortby
-   ForeignTable
-   ForeignTableField
-   ForeignUnique
-   Mm
-   OverrideChildTCa
-   ShowNewRecordLink
-   Size
-   SymmetricField
-   SymmetricLabel
-   SymmetricSortby
+    *
 
 
 Common properties
@@ -46,4 +27,3 @@ Common properties
 *  :ref:`behaviour > allowLanguageSynchronization <tca_property_behaviour_allowLanguageSynchronization>`
 *  :ref:`maxitems <tca_property_maxitems>`
 *  :ref:`minitems <tca_property_minitems>`
-
