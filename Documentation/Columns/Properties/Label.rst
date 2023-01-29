@@ -19,5 +19,6 @@ label
    .. note::
       Labels can be overridden in the
       :ref:`types definition <types-properties-showitem>` and the
-      :ref:`palettes definition <palettes-properties-showitem>`. They can also 
-      be overridden by the page TSconfig property :ref:`label <t3tsconfig:label>`.
+      :ref:`palettes definition <palettes-properties-showitem>`. They can also
+      be overridden by the page TSconfig property
+      :ref:`label <t3tsconfig:tceform_label>`.

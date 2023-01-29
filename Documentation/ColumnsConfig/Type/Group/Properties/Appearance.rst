@@ -32,15 +32,3 @@ appearance
       this is used to supply the comma list of allowed file types. This also
       affects whether the "Add media by URL" button is shown if online media
       file extensions (e.g. `youtube` or `vimeo`) are included.
-
-Examples
-========
-
-.. include:: /Images/Rst/InlineFalInline1.rst.txt
-
-.. include:: /CodeSnippets/InlineFalInline1.rst.txt
-
-Where :php:`ExtensionManagementUtility::getFileFieldTCAConfig` internally
-creates an array like this:
-
-.. include:: /CodeSnippets/Manual/FileFieldTCAConfig.rst.txt

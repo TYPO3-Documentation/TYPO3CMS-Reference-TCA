@@ -7,20 +7,11 @@
 Properties
 ==========
 
-.. toctree::
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   Cols
-   EnableRichtext
-   EnableTabulator
-   Eval
-   FixedFont
-   Format.rst
-   IsIn
-   Min
-   Max
-   RichtextConfiguration
-   Rows
-   Wrap
+    *
 
 
 Common properties
