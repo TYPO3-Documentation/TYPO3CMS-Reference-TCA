@@ -17,7 +17,6 @@ readOnly
       :ref:`datetime <columns-datetime>`,
       :ref:`email <columns-email>`,
       :ref:`file <columns-file>`,
-      :ref:`flex <columns-flex>`,
       :ref:`folder <columns-folder>`,
       :ref:`group <columns-group>`,
       :ref:`imageManipulation <columns-imageManipulation>`,
