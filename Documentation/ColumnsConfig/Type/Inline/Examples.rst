@@ -169,7 +169,7 @@ type inline** - as it is a container.
                  $result = $this->initializeResultArray();
 
                   // Add fieldInformation only for this field name
-                  //   this may be changed accoringly                                  
+                  //   this may be changed accordingly                                  
                   if ($fieldName !== 'my_new_field') {
                       return $result;
                   }
