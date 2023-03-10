@@ -133,19 +133,21 @@ type inline** - as it is a container.
          {
              public function render()
              {
+                 $fieldName = $this->data['fieldName'];                
                  $result = $this->initializeResultArray();
 
                   // Add fieldInformation only for this field name
-                  //   this may be changed accoringly
+                  //   this may be changed accoringly                                  
                   if ($fieldName !== 'my_new_field') {
                       return $result;
                   }
+                  
                   $text = $GLOBALS['LANG']->sL(
                           'LLL:EXT:my_example/Resources/Private/Language/'
                           . 'locallang_db.xlf:tt_content.fieldInformation.demo'
                   );
+                  
                   $result['html'] = $text;
-                  );
                   return $result;
              }
          }
@@ -169,7 +171,7 @@ type inline** - as it is a container.
 #. Add the fieldInformation to the container for containerRenderType inline
 
    .. code-block:: php
-      :caption: EXT:my_extension/Configuration/TCA/Overrrides/tt_content.php
+      :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
           $GLOBALS['TCA']['tt_content']['ctrl']['container']['inline']['fieldInformation'] = [
               'demoFieldInformation' => [
