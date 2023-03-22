@@ -24,16 +24,17 @@ The following options can be overridden via :ref:`page TSconfig, TCE form
 <t3tsconfig:pageTsConfigTceFormConfig>`:
 
 *  `size`
+*  `foreign_table_where`
 *  `maxitems`
 *  `minitems`
 *  `readOnly`
 *  `treeConfig`
 
+
 .. note::
 
    It is still possible to configure a category tree with `type=select`
-   and `renderType=selectTree` when you want to override specific fields
-   like e. g. the `foreign_table_where` field, but in most cases the
+   and `renderType=selectTree` when you want to override specific fields, but in most cases the
    simplified :php:`category` TCA type is sufficient.
 
 
