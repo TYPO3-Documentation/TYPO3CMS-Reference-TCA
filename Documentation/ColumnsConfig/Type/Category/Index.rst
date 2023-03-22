@@ -30,7 +30,6 @@ The following options can be overridden via :ref:`page TSconfig, TCE form
 *  `readOnly`
 *  `treeConfig`
 
-
 .. note::
 
    It is still possible to configure a category tree with `type=select`
