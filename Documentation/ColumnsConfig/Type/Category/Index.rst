@@ -24,7 +24,6 @@ The following options can be overridden via :ref:`page TSconfig, TCE form
 <t3tsconfig:pageTsConfigTceFormConfig>`:
 
 *  `size`
-*  `foreign_table_where`
 *  `maxitems`
 *  `minitems`
 *  `readOnly`
