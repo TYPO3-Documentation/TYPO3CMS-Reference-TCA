@@ -63,8 +63,8 @@ The configuration for a custom field :sql:`select_single_2` could look like this
            'type' => 'select',
            'renderType' => 'selectSingle',
            'items' => [
-               ['foo', 1],
-               ['bar', 'bar'],
+               ['label' => 'foo', 'value' => 1],
+               ['label' => 'bar', 'value' => 'bar'],
            ],
            'itemsProcFunc' => TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeSelect2ItemsProcFunc::class . '->itemsProcFunc',
        ],
@@ -86,8 +86,8 @@ The referenced :php:`itemsProcFunc` method should populate the items by filling 
          */
         public function itemsProcFunc(&$params): void
         {
-            $params['items'][] = ['item 1 from itemProcFunc()', 'val1'];
-            $params['items'][] = ['item 2 from itemProcFunc()', 'val2'];
+            $params['items'][] = ['label' => 'item 1 from itemProcFunc()', 'value' => 'val1'];
+            $params['items'][] = ['label' => 'item 2 from itemProcFunc()', 'value' => 'val2'];
         }
     }
 
