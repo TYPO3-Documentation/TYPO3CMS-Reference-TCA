@@ -11,7 +11,7 @@ Password
    :php:`eval=password` and :php:`eval=saltedPassword` option of
    TCA type :php:`input`.
 
-The TCA type :php:`password` should be used to input values representing
+The TCA type :php:`password` should be used for input values that represent
 passwords.
 
 Examples
