@@ -14,6 +14,16 @@ items
 
    An array of values which can be selected.
 
-   Each entry is in itself an array where the  *first entry* is the displayed *title* (string or LLL reference)
-   and the *second entry* is the *value* of the field in database if that radio is selected. Values can be
-   integer numbers or string values.
+   Each entry is in itself an associative array.
+
+   .. deprecated:: 12.3
+
+      Using the numerical index :php:`0` for setting the label and :php:`1` for
+      the value is deprecated. Use the newly introduced :php:`label` and
+      :php:`value` keys.
+
+   label (string or LLL reference)
+      The displayed title.
+
+   value (integer or string)
+      The value stored in the database.

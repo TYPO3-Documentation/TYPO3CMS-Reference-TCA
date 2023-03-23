@@ -17,7 +17,7 @@ items
       You can have a maximum of 31 checkboxes in such an array and each element is represented by a single bit
       in the integer value which ultimately goes into the database.
 
-   In this array each entry is itself an array where the first entry (index 0) is the label (string or LLL reference).
+   In this array each entry is itself an associative array.
    The value sent to the database will be an integer representing a bit mask based on the position of the checkbox
    in this array.
 
@@ -26,11 +26,19 @@ items
    .. code-block:: php
 
       'items' => [
-         ['Green tomatoes'], // Note these should be LLL references
-         ['Red peppers'],
+         ['label' => 'Green tomatoes'], // Note these should be LLL references
+         ['label' => 'Red peppers'],
       ],
 
+   .. deprecated:: 12.3
+
+      Using the numerical index :php:`0` for setting the label is deprecated.
+      Use the newly introduced :php:`label` key.
+
    Further properties can be set per item, but not all of them apply to all renderTypes:
+
+   label (string or LLL reference)
+      The displayed title.
 
    invertStateDisplay (boolean)
       All renderTypes. If set to true, checked / unchecked state are swapped in view: A checkbox is marked checked if
