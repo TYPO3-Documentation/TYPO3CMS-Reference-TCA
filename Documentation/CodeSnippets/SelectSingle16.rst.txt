@@ -14,26 +14,23 @@
                    'renderType' => 'selectSingle',
                    'items' => [
                        [
-                           'item 1',
-                           1,
-                           '',
-                           'group1',
+                           'label' => 'item 1',
+                           'value' => 1,
+                           'group' => 'group1',
                        ],
                        [
-                           'item 2',
-                           2,
-                           '',
-                           'group1',
+                           'label' => 'item 2',
+                           'value' => 2,
+                           'group' => 'group1',
                        ],
                        [
-                           'item 3',
-                           3,
-                           '',
-                           'group3',
+                           'label' => 'item 3',
+                           'value' => 3,
+                           'group' => 'group3',
                        ],
                        [
-                           'item 4',
-                           3,
+                           'label' => 'item 4',
+                           'value' => 3,
                        ],
                    ],
                    'itemGroups' => [

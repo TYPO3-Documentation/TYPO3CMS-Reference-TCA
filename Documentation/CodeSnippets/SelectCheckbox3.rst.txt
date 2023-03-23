@@ -13,30 +13,27 @@
                    'renderType' => 'selectCheckBox',
                    'items' => [
                        [
-                           'foo 1',
-                           1,
-                           '',
-                           null,
-                           [
+                           'label' => 'foo 1',
+                           'value' => 1,
+                           'description' => [
                                'title' => 'optional title',
                                'description' => 'optional description',
                            ],
                        ],
                        [
-                           'foo 2',
-                           2,
-                           'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
-                           null,
-                           'LLL:EXT:styleguide/Resources/Private/Language/locallang.xlf:translatedHelpTextForSelectCheckBox3',
+                           'label' => 'foo 2',
+                           'value' => 2,
+                           'icon' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+                           'description' => 'LLL:EXT:styleguide/Resources/Private/Language/locallang.xlf:translatedHelpTextForSelectCheckBox3',
                        ],
                        [
-                           'foo 3',
-                           3,
-                           'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+                           'label' => 'foo 3',
+                           'value' => 3,
+                           'icon' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
                        ],
                        [
-                           'foo 4',
-                           4,
+                           'label' => 'foo 4',
+                           'value' => 4,
                        ],
                    ],
                ],

@@ -13,20 +13,20 @@
                    'renderType' => 'selectSingle',
                    'items' => [
                        [
-                           'foo 1',
-                           1,
+                           'label' => 'foo 1',
+                           'value' => 1,
                        ],
                        [
-                           'foo 2',
-                           2,
+                           'label' => 'foo 2',
+                           'value' => 2,
                        ],
                        [
-                           'a divider',
-                           '--div--',
+                           'label' => 'a divider',
+                           'value' => '--div--',
                        ],
                        [
-                           'foo 3',
-                           3,
+                           'label' => 'foo 3',
+                           'value' => 3,
                        ],
                    ],
                    'size' => 6,

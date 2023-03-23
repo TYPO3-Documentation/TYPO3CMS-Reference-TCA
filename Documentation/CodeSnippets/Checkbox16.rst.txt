@@ -13,25 +13,25 @@
                    'type' => 'check',
                    'items' => [
                        [
-                           'Mo',
+                           'label' => 'Mo',
                        ],
                        [
-                           'Tu',
+                           'label' => 'Tu',
                        ],
                        [
-                           'We',
+                           'label' => 'We',
                        ],
                        [
-                           'Th',
+                           'label' => 'Th',
                        ],
                        [
-                           'Fr',
+                           'label' => 'Fr',
                        ],
                        [
-                           'Sa',
+                           'label' => 'Sa',
                        ],
                        [
-                           'Su',
+                           'label' => 'Su',
                        ],
                    ],
                    'cols' => 'inline',

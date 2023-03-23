@@ -13,16 +13,16 @@
                    'type' => 'radio',
                    'items' => [
                        [
-                           'foo',
-                           1,
+                           'label' => 'foo',
+                           'value' => 1,
                        ],
                        [
-                           '',
-                           2,
+                           'label' => '',
+                           'value' => 2,
                        ],
                        [
-                           'foobar',
-                           3,
+                           'label' => 'foobar',
+                           'value' => 3,
                        ],
                    ],
                ],

@@ -15,12 +15,12 @@
                    'renderType' => 'selectSingle',
                    'items' => [
                        [
-                           'foo',
-                           'foo',
+                           'label' => 'foo',
+                           'value' => 'foo',
                        ],
                        [
-                           'bar',
-                           'bar',
+                           'label' => 'bar',
+                           'value' => 'bar',
                        ],
                    ],
                ],

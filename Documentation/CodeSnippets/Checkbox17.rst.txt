@@ -14,7 +14,7 @@
                    'renderType' => 'checkboxToggle',
                    'items' => [
                        [
-                           0 => 'foo',
+                           'label' => 'foo',
                            'labelChecked' => 'Enabled',
                            'labelUnchecked' => 'Disabled',
                        ],

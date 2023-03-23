@@ -13,28 +13,28 @@
                    'renderType' => 'selectSingle',
                    'items' => [
                        [
-                           'First div with items',
-                           '--div--',
+                           'label' => 'First div with items',
+                           'value' => '--div--',
                        ],
                        [
-                           'item 1',
-                           1,
+                           'label' => 'item 1',
+                           'value' => 1,
                        ],
                        [
-                           'item 2',
-                           2,
+                           'label' => 'item 2',
+                           'value' => 2,
                        ],
                        [
-                           'Second div without items',
-                           '--div--',
+                           'label' => 'Second div without items',
+                           'value' => '--div--',
                        ],
                        [
-                           'Third div with items',
-                           '--div--',
+                           'label' => 'Third div with items',
+                           'value' => '--div--',
                        ],
                        [
-                           'item 3',
-                           3,
+                           'label' => 'item 3',
+                           'value' => 3,
                        ],
                    ],
                ],
