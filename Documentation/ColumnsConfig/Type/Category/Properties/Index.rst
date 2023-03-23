@@ -15,6 +15,7 @@ Special properties
    ExclusiveKeys
    Relationship
    TreeConfig
+   ForeignTableWhere
 
 
 Common properties
