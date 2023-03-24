@@ -5,7 +5,7 @@
 appearance
 ==========
 
-.. confval:: appearance (type => file)
+..  confval:: appearance (type => file)
 
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
@@ -22,7 +22,17 @@ appearance
 
     createNewRelationLinkTitle (string or LLL reference)
         Overrides the link text and title of the "Create new relation" button
-        with a localised string. Only useful, if the element browser is enabled.
+        with a localized string. Only useful, if the element browser is enabled.
+
+    addMediaLinkTitle (string or LLL reference)
+        ..  versionadded:: 12.3
+        Overrides the link text and title of the "Add media by URL" button
+        with a localized string. Only useful, if the element browser is enabled.
+
+    uploadFilesLinkTitle (string or LLL reference)
+        ..  versionadded:: 12.3
+        Overrides the link text and title of the "Select & upload files" button
+        with a localized string. Only useful, if the element browser is enabled.
 
     useSortable (boolean)
         Activate drag & drop.
@@ -75,4 +85,4 @@ appearance
     elementBrowserEnabled (boolean)
         Hides or displays the element browser button in inline records
 
-    This property can also be overridden by page TSconfig.
+    This property can also be overridden by :ref:`page TSconfig <tceform>`.
