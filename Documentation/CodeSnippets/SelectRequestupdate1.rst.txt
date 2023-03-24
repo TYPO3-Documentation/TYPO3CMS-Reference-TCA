@@ -14,16 +14,16 @@
                    'renderType' => 'selectSingle',
                    'items' => [
                        [
-                           'Just an item',
-                           1,
+                           'label' => 'Just an item',
+                           'value' => 1,
                        ],
                        [
-                           'bar',
-                           'bar',
+                           'label' => 'bar',
+                           'value' => 'bar',
                        ],
                        [
-                           'and yet another one',
-                           -1,
+                           'label' => 'and yet another one',
+                           'value' => -1,
                        ],
                    ],
                ],

@@ -13,16 +13,16 @@
                    'type' => 'check',
                    'items' => [
                        [
-                           'foo1',
+                           'label' => 'foo1',
                        ],
                        [
-                           'foo2',
+                           'label' => 'foo2',
                        ],
                        [
-                           'foo3',
+                           'label' => 'foo3',
                        ],
                        [
-                           'foo4',
+                           'label' => 'foo4',
                        ],
                    ],
                    'cols' => '3',

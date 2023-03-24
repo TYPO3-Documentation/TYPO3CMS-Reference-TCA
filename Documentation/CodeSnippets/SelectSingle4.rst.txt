@@ -13,14 +13,14 @@
                    'renderType' => 'selectSingle',
                    'items' => [
                        [
-                           'foo 1',
-                           'foo1',
-                           'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+                           'label' => 'foo 1',
+                           'value' => 'foo1',
+                           'icon' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
                        ],
                        [
-                           'foo 2',
-                           'foo2',
-                           'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
+                           'label' => 'foo 2',
+                           'value' => 'foo2',
+                           'icon' => 'EXT:styleguide/Resources/Public/Icons/tx_styleguide.svg',
                        ],
                    ],
                ],

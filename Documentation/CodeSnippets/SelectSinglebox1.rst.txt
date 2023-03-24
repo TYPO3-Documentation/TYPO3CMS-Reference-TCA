@@ -14,24 +14,24 @@
                    'renderType' => 'selectSingleBox',
                    'items' => [
                        [
-                           'foo 1',
-                           1,
+                           'label' => 'foo 1',
+                           'value' => 1,
                        ],
                        [
-                           'foo 2',
-                           2,
+                           'label' => 'foo 2',
+                           'value' => 2,
                        ],
                        [
-                           'divider',
-                           '--div--',
+                           'label' => 'divider',
+                           'value' => '--div--',
                        ],
                        [
-                           'foo 3',
-                           3,
+                           'label' => 'foo 3',
+                           'value' => 3,
                        ],
                        [
-                           'foo 4',
-                           4,
+                           'label' => 'foo 4',
+                           'value' => 4,
                        ],
                    ],
                ],

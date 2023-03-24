@@ -8,10 +8,9 @@
        'columns' => [
            'none_1' => [
                'label' => 'none_1',
-               'description' => 'pass_content=true',
+               'description' => 'default',
                'config' => [
                    'type' => 'none',
-                   'pass_content' => true,
                ],
            ],
        ],

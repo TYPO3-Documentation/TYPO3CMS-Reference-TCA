@@ -13,13 +13,13 @@
                    'type' => 'check',
                    'items' => [
                        [
-                           'foo',
+                           'label' => 'foo',
                        ],
                        [
-                           '',
+                           'label' => '',
                        ],
                        [
-                           0 => 'foobar',
+                           'label' => 'foobar',
                            'iconIdentifierChecked' => 'content-beside-text-img-below-center',
                            'iconIdentifierUnchecked' => 'content-beside-text-img-below-center',
                        ],

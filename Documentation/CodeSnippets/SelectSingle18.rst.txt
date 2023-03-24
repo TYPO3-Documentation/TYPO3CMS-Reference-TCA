@@ -14,20 +14,20 @@
                    'renderType' => 'selectSingle',
                    'items' => [
                        [
-                           'Plum tree',
-                           1,
+                           'label' => 'Plum tree',
+                           'value' => 1,
                        ],
                        [
-                           'Walnut tree',
-                           2,
+                           'label' => 'Walnut tree',
+                           'value' => 2,
                        ],
                        [
-                           'Apple tree',
-                           3,
+                           'label' => 'Apple tree',
+                           'value' => 3,
                        ],
                        [
-                           'Cherry tree',
-                           4,
+                           'label' => 'Cherry tree',
+                           'value' => 4,
                        ],
                    ],
                    'sortItems' => [

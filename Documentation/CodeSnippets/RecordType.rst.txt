@@ -13,16 +13,16 @@
                    'renderType' => 'selectSingle',
                    'items' => [
                        [
-                           'type 0',
-                           '0',
+                           'label' => 'type 0',
+                           'value' => '0',
                        ],
                        [
-                           'Type with changed fields',
-                           'withChangedFields',
+                           'label' => 'Type with changed fields',
+                           'value' => 'withChangedFields',
                        ],
                        [
-                           'Type with columnsOverrides',
-                           'withColumnsOverrides',
+                           'label' => 'Type with columnsOverrides',
+                           'value' => 'withColumnsOverrides',
                        ],
                    ],
                ],

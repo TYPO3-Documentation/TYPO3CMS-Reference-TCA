@@ -13,36 +13,36 @@
                    'renderType' => 'selectMultipleSideBySide',
                    'items' => [
                        [
-                           'two exclusive items',
-                           '--div--',
+                           'label' => 'two exclusive items',
+                           'value' => '--div--',
                        ],
                        [
-                           'foo 1',
-                           1,
+                           'label' => 'foo 1',
+                           'value' => 1,
                        ],
                        [
-                           'foo 2',
-                           2,
+                           'label' => 'foo 2',
+                           'value' => 2,
                        ],
                        [
-                           'casual multiple items',
-                           '--div--',
+                           'label' => 'casual multiple items',
+                           'value' => '--div--',
                        ],
                        [
-                           'foo 3',
-                           3,
+                           'label' => 'foo 3',
+                           'value' => 3,
                        ],
                        [
-                           'foo 4',
-                           4,
+                           'label' => 'foo 4',
+                           'value' => 4,
                        ],
                        [
-                           'foo 5',
-                           5,
+                           'label' => 'foo 5',
+                           'value' => 5,
                        ],
                        [
-                           'foo 6',
-                           6,
+                           'label' => 'foo 6',
+                           'value' => 6,
                        ],
                    ],
                    'multiple' => true,
