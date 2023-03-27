@@ -28,10 +28,10 @@ Sort by title::
       ...
    ],
 
-Sort by title and then by bodytext::
+Sort by title and then by creation date::
 
    'ctrl' => [
-      'default_sortby' => 'title ASC, bodytext ASC',
+      'default_sortby' => 'title ASC, crdate DESC',
       ...
    ],
 
