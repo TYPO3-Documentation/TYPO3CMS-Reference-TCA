@@ -1,118 +1,118 @@
-.. include:: /Includes.rst.txt
-.. _columns-link-properties-appearance:
+..  include:: /Includes.rst.txt
+..  _columns-link-properties-appearance:
 
 ==========
 appearance
 ==========
 
-.. confval:: appearance ('type' => 'link')
+..  confval:: appearance ('type' => 'link')
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Display
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Display
 
-   Has information about the appearance, namely:
+    Has information about the appearance, namely:
 
-   allowedOptions (array)
-      .. versionadded:: 12.0
-         Formerly known as `blindLinkFields` of `linkPopup.options`, which was a deny-list.
-         Now this is an include-list.
+    allowedOptions (array)
+        ..  versionadded:: 12.0
+            Formerly known as `blindLinkFields` of `linkPopup.options`, which was a deny-list.
+            Now this is an include-list.
 
-      Display certain options in the link browser.
-      To allow all options in the Link Browser, skip this configuration or set
-      it to :php:`['*']`. To deny all options in the Link Browser, set this
-      configuration to :php:`[]` (empty :php:`array`).
+        Display certain options in the link browser.
+        To allow all options in the Link Browser, skip this configuration or set
+        it to :php:`['*']`. To deny all options in the Link Browser, set this
+        configuration to :php:`[]` (empty :php:`array`).
 
-      class
-         Custom CSS classes for the link
+        class
+            Custom CSS classes for the link
 
-      params
-         Additional link parameters
+        params
+            Additional link parameters
 
-      target
-         Either empty, `_top` or `_blank`
+        target
+            Either empty, `_top` or `_blank`
 
-      title
-         The `title` attribute of the link
+        title
+            The `title` attribute of the link
 
-      rel
-         The link relationship. Only available for RTE enabled fields and if `buttons.link.relAttribute.enabled`
-         is enabled in the RTE YAML configuration.
+        rel
+            The link relationship. Only available for RTE enabled fields and if `buttons.link.relAttribute.enabled`
+            is enabled in the RTE YAML configuration.
 
-      .. code-block:: php
+        ..  code-block:: php
 
-         // Display only 'class' and 'params'
-         'appearance' => [
-            'allowedOptions' => ['class', 'params'],
-         ],
+            // Display only 'class' and 'params'
+            'appearance' => [
+                'allowedOptions' => ['class', 'params'],
+            ],
 
-      .. code-block:: php
+        ..  code-block:: php
 
-         // Allow all options (or skip this option).
-         'appearance' => [
-            'allowedOptions' => ['*'],
-         ],
+            // Allow all options (or skip this option).
+            'appearance' => [
+                'allowedOptions' => ['*'],
+            ],
 
-      .. code-block:: php
+        ..  code-block:: php
 
-         // Deny all options
-         'appearance' => [
-            'allowedOptions' => [],
-         ],
+            // Deny all options
+            'appearance' => [
+                'allowedOptions' => [],
+            ],
 
-   allowedExtensions (array)
-      .. versionadded:: 12.0
-         Formerly known as `allowedExtensions` of `linkPopup.options`.
+    allowedExtensions (array)
+        ..  versionadded:: 12.0
+            Formerly known as `allowedExtensions` of `linkPopup.options`.
 
-      An array of allowed file extensions. To allow all extensions, skip this
-      configuration or set it to :php:`['*']`. It's not possible to deny all
-      extensions.
+        An array of allowed file extensions. To allow all extensions, skip this
+        configuration or set it to :php:`['*']`. It's not possible to deny all
+        extensions.
 
-      .. code-block:: php
+        ..  code-block:: php
 
-         // Allow only jpg and png file extensions
-         'appearance' => [
-            'allowedExtensions' => ['jpg', 'png'],
-         ],
+            // Allow only jpg and png file extensions
+            'appearance' => [
+                'allowedExtensions' => ['jpg', 'png'],
+            ],
 
-      .. code-block:: php
+        .. code-block:: php
 
-         // Allow all file extensions (or skip this option).
-         'appearance' => [
-            'allowedExtensions' => ['*'],
-         ],
+            // Allow all file extensions (or skip this option).
+            'appearance' => [
+                'allowedExtensions' => ['*'],
+            ],
 
 
-   browserTitle (string, LLL)
-      .. versionadded:: 12.0
-         Formerly known as `title` of `linkPopup.options`.
+    browserTitle (string, LLL)
+        ..  versionadded:: 12.0
+            Formerly known as `title` of `linkPopup.options`.
 
-      Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
+        Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
 
-      .. code-block:: php
+        ..  code-block:: php
 
-         // Either provide a LLL-reference (recommended)
-         'appearance' => [
-            'browserTitle' => 'LLL:EXT:Resources/Private/Language/locallang.xlf:my_custom_title',
-         ],
+            // Either provide a LLL-reference (recommended)
+            'appearance' => [
+                'browserTitle' => 'LLL:EXT:Resources/Private/Language/locallang.xlf:my_custom_title',
+            ],
 
-      .. code-block:: php
+        ..  code-block:: php
 
-         // Or a simple string value
-         'appearance' => [
-            'browserTitle' => 'My custom title',
-         ],
+            // Or a simple string value
+            'appearance' => [
+                'browserTitle' => 'My custom title',
+            ],
 
-   enableBrowser (boolean)
-      .. versionadded:: 12.0
-         Formerly known as `disabled` of `linkPopup`.
+    enableBrowser (boolean)
+        .. versionadded:: 12.0
+            Formerly known as `disabled` of `linkPopup`.
 
-      The Link Browser is enabled by default.
-      To disable the Link Browser altogether, set this option to :php:`false`.
+        The Link Browser is enabled by default.
+        To disable the Link Browser altogether, set this option to :php:`false`.
 
-      .. code-block:: php
+        ..  code-block:: php
 
-         // Disable the link browser
-         'appearance' => [
-            'enableBrowser' => false,
-         ],
+            // Disable the link browser
+            'appearance' => [
+                'enableBrowser' => false,
+            ],
