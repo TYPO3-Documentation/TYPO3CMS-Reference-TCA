@@ -60,6 +60,28 @@ appearance
                 'allowedOptions' => [],
             ],
 
+        ..  versionadded:: 12.3
+
+        For custom email links, the options can be restricted:
+
+        body
+            The body of an email can be pre-filled.
+
+        cc
+            The "cc" field can be pre-filled.
+
+        bcc:
+            The "bcc" field can be pre-filled.
+
+        subject:
+            The subject of an email can be pre-filled.
+
+        ..  code-block:: php
+
+            'appearance' => [
+                'allowedOptions' => ['body', 'cc'],
+            ],
+
     allowedExtensions (array)
         ..  versionadded:: 12.0
             Formerly known as `allowedExtensions` of `linkPopup.options`.
