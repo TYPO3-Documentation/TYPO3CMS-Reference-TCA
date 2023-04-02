@@ -66,6 +66,11 @@ Related configurations
 .. _columns-group-properties-mm-insert-fields:
 .. confval:: MM_insert_fields (type => group)
 
+   .. deprecated:: 12.4
+      As there is no API to retrieve these values again, having a static value
+      in an additional column is useless. Therefore, this setting is removed
+      in TYPO3 v13. :ref:`More details <ext_core:deprecation-100335-1679998903>`
+
    :type: array
    :Scope: Proc.
 
