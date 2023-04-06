@@ -21,7 +21,7 @@
                    'maxitems' => 20,
                    'items' => [
                        [
-                           'label' => LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hide_at_login',
+                           'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hide_at_login',
                            'value' => -1,
                        ],
                        [
