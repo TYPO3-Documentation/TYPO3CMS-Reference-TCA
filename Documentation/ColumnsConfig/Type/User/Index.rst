@@ -155,7 +155,7 @@ dbType
 dbType = json example
 ~~~~~~~~~~~~~~~~~~~~~
 
-The system extension :t3ext:`reaction` uses a TCA field of type `user` with
+The system extension :t3ext:`webhooks` uses a TCA field of type `user` with
 the dbType `json`:
 
 ..  code-block:: php
