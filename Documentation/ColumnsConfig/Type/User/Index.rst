@@ -155,11 +155,11 @@ dbType
 dbType = json example
 ~~~~~~~~~~~~~~~~~~~~~
 
-The system extension :t3ext:`webhooks` uses a TCA field of type `user` with
+The system extension :t3ext:`reactions` uses a TCA field of type `user` with
 the dbType `json`:
 
 ..  code-block:: php
-    :caption: :t3src:`webhooks/Configuration/TCA/Overrides/sys_reaction_create_record.php` (excerpt)
+    :caption: :t3src:`reactions/Configuration/TCA/Overrides/sys_reaction_create_record.php` (excerpt)
 
     <?php
 
@@ -168,7 +168,7 @@ the dbType `json`:
         [
             // ...
             'fields' => [
-                'label' => 'LLL:EXT:webhooks/Resources/Private/Language/locallang_db.xlf:sys_reaction.fields',
+                'label' => 'LLL:EXT:reactions/Resources/Private/Language/locallang_db.xlf:sys_reaction.fields',
                 'config' => [
                     'type' => 'user',
                     'renderType' => 'fieldMap',
@@ -182,7 +182,7 @@ the dbType `json`:
 The implementing class receives the parsed JSON as PHP array:
 
 ..  literalinclude:: _includes/_FieldMapElement.php
-    :caption: :t3src:`webhooks/Classes/Form/Element/FieldMapElement.php` (excerpt)
+    :caption: :t3src:`reactions/Classes/Form/Element/FieldMapElement.php` (excerpt)
 
 ..  _columns-user-properties-renderType:
 
