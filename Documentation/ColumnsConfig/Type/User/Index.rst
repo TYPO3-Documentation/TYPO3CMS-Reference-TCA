@@ -105,6 +105,12 @@ implementing a rendering. See :ref:`FormEngine docs
     attributes :html:`name` and :html:`data-formengine-input-name` with the
     correct name, as provided in the :php:`itemFormElName`.
 
+    ..  note:: 
+        The returned data in :php:`$resultArray['html']` must be valid HTML.
+        Invalid HTML (e.g. not closed elements) may result in unexpected 
+        behaviour in TYPO3 (e.g. new inline elements not saved).
+
+
 The field would then look like this in the backend:
 
 ..  include:: /Images/Rst/ExtendingTcaFeUsers.rst.txt
