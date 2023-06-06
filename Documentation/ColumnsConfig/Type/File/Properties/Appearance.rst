@@ -26,11 +26,13 @@ appearance
 
     addMediaLinkTitle (string or LLL reference)
         ..  versionadded:: 12.3
+
         Overrides the link text and title of the "Add media by URL" button
         with a localized string. Only useful, if the element browser is enabled.
 
     uploadFilesLinkTitle (string or LLL reference)
         ..  versionadded:: 12.3
+
         Overrides the link text and title of the "Select & upload files" button
         with a localized string. Only useful, if the element browser is enabled.
 
