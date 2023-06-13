@@ -138,7 +138,10 @@ An example with multiple values and :code:`OR`:
    ];
 
 
-This is the same as::
+This is the same as:
+
+..  code-block:: php
+   :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
 
     $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond'] = 'FIELD:tx_mask_otherfield:IN:1,2,4'; 
 
