@@ -126,6 +126,27 @@ Multiple conditions can be combined::
    ],
 
 
+An example with multiple values and :code:`OR`:
+
+..  code-block:: php
+   :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
+
+   $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']['OR'] = [
+      'FIELD:tx_mask_otherfield:=:1',
+      'FIELD:tx_mask_otherfield:=:2',
+      'FIELD:tx_mask_otherfield:=:4',
+   ];
+
+
+This is the same as:
+
+..  code-block:: php
+   :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
+
+        $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']
+		  = 'FIELD:tx_mask_otherfield:IN:1,2,4'; 
+
+
 A complex example
 -----------------
 
