@@ -50,19 +50,6 @@ Related configurations
    Otherwise sorting and removing relations will be buggy.
 
 
-.. confval:: MM_insert_fields (type => select)
-
-   .. deprecated:: 12.4
-      As there is no API to retrieve these values again, having a static value
-      in an additional column is useless. Therefore, this setting is removed
-      in TYPO3 v13. :ref:`More details <ext_core:deprecation-100335-1679998903>`
-
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Proc.
-
-   Array of field=>value pairs to insert when writing new MM relations.
-
 .. _columns-select-properties-mm-match-fields:
 .. confval:: MM_match_fields (type => select)
 
