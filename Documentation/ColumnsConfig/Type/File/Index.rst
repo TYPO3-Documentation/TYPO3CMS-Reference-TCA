@@ -9,12 +9,11 @@ File
     The type `file` supersedes the usage of TCA type :php:`inline`
     with :php:`foreign_table` set to :php:`sys_file_reference`.
 
-The TCA type :php:`folder` creates a field where folders can be attached to
-the record. The values are stored as a combined identifier in a
-:ref:`comma-separated list (csv) <columns-group-data-commalist>`.
+The TCA type :php:`file` creates a field where files can be attached to
+the record.
 
-.. _columns-folder-examples:
-.. _tca_example_group_folder_1:
+.. _columns-file-examples:
+.. _tca_example_group_file_1:
 
 Examples
 ========
