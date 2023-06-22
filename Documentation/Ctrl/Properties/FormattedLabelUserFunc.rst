@@ -25,6 +25,12 @@ formattedLabel\_userFunc
 Examples
 ========
 
+..  todo: Use a new example, see https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues/727
+
+..  note::
+    This example is outdated: the :php:`UserFileInlineLabelService` class has
+    been deprecated with TYPO3 v12.0 and removed with TYPO3 v13.0.
+
 *  Example from table "sys_file_reference"::
 
       'formattedLabel_userFunc' => TYPO3\CMS\Core\Resource\Service\UserFileInlineLabelService::class . '->getInlineLabel',
