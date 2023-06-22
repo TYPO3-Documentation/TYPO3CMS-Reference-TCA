@@ -16,9 +16,10 @@ adminOnly
 Examples
 ========
 
-Table :sql:`sys_template` is only editable only by admin users:
+Table :sql:`my_table` is only editable by admin users:
 
 .. code-block:: php
+   :caption: EXT:my_sitepackage/Configuration/TCA/my_table.php
 
    'ctrl' => [
       'adminOnly' => 1,
