@@ -81,8 +81,7 @@ appearance
 
     fileByUrlAllowed (boolean)
          Defines whether the button "Add media by URL" should be rendered. This button is used to include media
-         URLs from e.g. Vimeo or YouTube. In addition to this, a valid online media identifier must be listed
-         in the allowed list of :ref:`elementBrowserAllowed <columns-group-properties-appearance>`.
+         URLs from, for example, Vimeo or YouTube.
 
     elementBrowserEnabled (boolean)
         Hides or displays the element browser button in inline records

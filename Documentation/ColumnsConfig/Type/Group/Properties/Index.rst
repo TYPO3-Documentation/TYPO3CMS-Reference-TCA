@@ -26,7 +26,6 @@ Special properties
    :titlesonly:
 
    Allowed
-   Appearance
    ElementBrowserEntryPoints
    FieldControl
    FieldWizard
