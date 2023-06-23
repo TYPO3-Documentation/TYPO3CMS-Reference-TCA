@@ -36,30 +36,70 @@ The following renderTypes are available:
 Simple text area
 ================
 
-.. include:: /Images/Rst/Text4.rst.txt
+A simple text area or a rich text field is rendered if no renderType is specified.
+
+..  include:: /Images/Rst/Text4.rst.txt
+
+See :ref:`render type "default" <columns-text-renderType-default>` 
+on how to configure such an editor.
+
+..  include:: /CodeSnippets/Text4.rst.txt
 
 Rich text editor field
 ======================
 
-.. include:: /Images/Rst/Rte1.rst.txt
+..  include:: /Images/Rst/Rte1.rst.txt
+
+See :ref:`property "enableRichtext" <columns-text-properties-enableRichtex>` 
+on how to configure such an editor.
+
+.. include:: /CodeSnippets/Rte1.rst.txt
+
+
+Code highlight editor
+=====================
+
+..  todo: include screenshot
+
+See :ref:`t3editor <columns-text-renderType-t3editor>` on how to configure such an editor.
+
+..  code-block:: php
+
+    // ...
+    'type' => 'text',
+    'renderType' => 't3editor',
+    // ...
 
 
 Backend layout editor
 =====================
 
-.. include:: /Images/Rst/Text20.rst.txt
+The backend layout wizard is displayed in order to edit records of table 
+:code:`backend_layout` in the backend.
+
+..  include:: /Images/Rst/Text20.rst.txt
+
+See :ref:`render type belayoutwizard <columns-text-renderType-belayoutwizard>` 
+on how to configure such an editor.
+
+..  include:: /CodeSnippets/Text20.rst.txt
 
 
 Text field with renderType textTable
 ====================================
 
-.. include:: /Images/Rst/Text17.rst.txt
+..  include:: /Images/Rst/Text17.rst.txt
 
-.. toctree::
-   :hidden:
+See :ref:`render type textTable <columns-text-renderType-textTable>` 
+on how to configure such an editor.
 
-   Properties/Index
-   Default/Index
-   BeLayoutWizard/Index
-   T3Editor/Index
-   TextTable/Index
+..  include:: /CodeSnippets/Text17.rst.txt
+
+..  toctree::
+    :hidden:
+
+    Properties/Index
+    Default/Index
+    BeLayoutWizard/Index
+    T3Editor/Index
+    TextTable/Index
