@@ -26,23 +26,23 @@ MM
    The table name used in the field :php:`MM` should be unique. It must be a valid SQL
    table name. It is best practise to use
    the name of both referenced tables and of the field in which the reference is saved
-   on local side. This way uniqueness can be ensured and it is possible to find the field
+   on local side. See also :ref:`naming conventions for mm tables <t3coreapi:naming-tables-mm>`. 
+   This way uniqueness can be ensured and it is possible to find the field
    where the table is used quickly.
 
    Example:
 
    .. code-block:: php
 
-      // table tx_table1
+      // table tx_myextension_domain_model_mymodel1
       $fields = [
          'relation_table1_table2' => [
-              'exclude' => 1,
-              'label' => 'Project manager',
+              'label' => 'Some relation from table 1 to table 2',
               'config' => [
                   'type' => 'group',
-                  'allowed' => 'tx_table1',
-                  'foreign_table' => 'tx_table2', // needed by Extbase
-                  'MM' => 'table1_table2_relationtable1table2',
+                  'allowed' => 'tx_myextension_domain_model_mymodel2',
+                  'foreign_table' => 'tx_myextension_domain_model_mymodel2', // needed by Extbase
+                  'MM' => 'tx_myextension_domain_model_mymodel1_mymodel2_mm',
               ],
           ],
        ];
