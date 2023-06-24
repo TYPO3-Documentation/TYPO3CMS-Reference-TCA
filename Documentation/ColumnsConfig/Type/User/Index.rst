@@ -105,9 +105,9 @@ implementing a rendering. See :ref:`FormEngine docs
     attributes :html:`name` and :html:`data-formengine-input-name` with the
     correct name, as provided in the :php:`itemFormElName`.
 
-    ..  note:: 
+    ..  note::
         The returned data in :php:`$resultArray['html']` must be valid HTML.
-        Invalid HTML (e.g. not closed elements) may result in unexpected 
+        Invalid HTML (e.g. not closed elements) may result in unexpected
         behaviour in TYPO3 (e.g. new inline elements not saved).
 
 
@@ -201,5 +201,10 @@ renderType
     :type: integer
     :Scope: Display
 
-    The default renderType just renders a dummy entry to indicate a custom
-    renderType should be added. Additional render types
+    The default renderType simply displays a dummy entry, indicating that a
+    custom renderType should be added. Additional render types can be defined
+    based on the requirements of the user type field. These render types
+    determine how the field is displayed and interacted with in the TYPO3
+    backend, allowing for specialized rendering and user interaction. Custom
+    render types provide a tailored experience for editing records
+    via the FormEngine.
