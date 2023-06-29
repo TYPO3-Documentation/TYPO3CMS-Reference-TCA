@@ -29,8 +29,11 @@ hierarchical data in a tree structure and does not directly handle the
 database operations. The actual data retrieval and manipulation need to
 be implemented separately.
 
+.. include:: /Images/Rst/SelectTree1.rst.txt
+
+
 .. toctree::
-:titlesonly:
+    :titlesonly:
 
 Examples
 Properties
