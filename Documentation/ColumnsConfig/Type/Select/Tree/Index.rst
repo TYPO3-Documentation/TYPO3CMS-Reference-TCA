@@ -6,7 +6,7 @@ selectTree
 ==========
 
 
-The selectTree render type is used to display hierarchical data in a
+The :php:`selectTree` render type is used to display hierarchical data in a
 tree structure.
 
 A field with the selectTree render type allows you to represent data in
