@@ -19,7 +19,7 @@ connection to the relevant database table. Optionally, you can also use
 sufficient on their own. The top-level item in the tree will always represent
 the descriptive name of the table.
 
-Regarding joining several tables, the selectTree field can handle multiple
+Regarding joining several tables, the :php:`selectTree` render type can handle multiple
 tables through the configuration options. By appropriately setting up the
 treeConfig and defining the relationships between the tables, you can create
 complex trees that span multiple database tables.
