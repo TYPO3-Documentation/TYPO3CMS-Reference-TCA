@@ -11,7 +11,7 @@ tree structure.
 
 A field with the :php:`selectTree` render type allows you to represent data in
 a hierarchical manner, similar to a tree. It is typically used when working
-with database tables that have a hierarchical structure. The properties  :ref:`treeConfig
+with database tables that have a hierarchical structure. The properties :ref:`treeConfig
 <columns-select-properties-treeconfig>` and
 :ref:`foreign_table <columns-select-properties-foreign-table>` are mandatory and must be provided to establish the
 connection to the relevant database table. Optionally, you can also use
