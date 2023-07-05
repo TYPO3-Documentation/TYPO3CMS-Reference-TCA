@@ -23,6 +23,10 @@ transOrigPointerField
    The target field must be configured in :php:`$GLOBALS['TCA'][<table>]['columns']`,
    at least as a passthrough type.
 
+ .. note::
+      Sometimes :sql:`l18n_parent` is used for this field in Core tables. This
+      is for historic reasons.
+
 Example
 =======
 
