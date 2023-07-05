@@ -26,10 +26,6 @@ translationSource
    to French with uid 17, and the Danish translation is later created based on the French translation, then the
    Danish translation has uid 13 set as :sql:`l18n_parent` and 17 as :sql:`l10n_source`.
 
-   .. note::
-      Sometimes :sql:`l18n_parent` is used for this field in Core tables. This
-      is for historic reasons.
-
 Example
 =======
 
