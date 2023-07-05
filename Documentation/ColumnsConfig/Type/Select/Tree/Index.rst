@@ -9,7 +9,7 @@ selectTree
 The :php:`selectTree` render type is used to display hierarchical data in a
 tree structure.
 
-A field with the selectTree render type allows you to represent data in
+A field with the :php:`selectTree` render type allows you to represent data in
 a hierarchical manner, similar to a tree. It is typically used when working
 with database tables that have a hierarchical structure. The field requires
 certain fields to be set in order to function properly. The treeConfig and
