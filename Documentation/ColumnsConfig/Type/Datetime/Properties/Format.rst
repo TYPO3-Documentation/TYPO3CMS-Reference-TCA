@@ -14,7 +14,7 @@ format
 
     Sets the output format if the field is set to read-only. Read-only fields
     with :code:`format` set to "date" will be formatted as "date", "datetime"
-    as "datetime" and "time" as "time".
+    as "datetime", "time" as "time" and "timesec" as "timesec".
 
     ..  note::
         The :php:`format` option defines how the field value will be displayed,
