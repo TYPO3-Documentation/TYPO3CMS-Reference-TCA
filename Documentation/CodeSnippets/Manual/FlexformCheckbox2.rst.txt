@@ -8,15 +8,19 @@
           <items type="array">
               <numIndex index="0" type="array">
                   <label>foo1</label>
+                  <value></value>
               </numIndex>
               <numIndex index="1" type="array">
                   <label>foo2</label>
+                  <value></value>
               </numIndex>
               <numIndex index="2" type="array">
                   <label>foo3</label>
+                  <value></value>
               </numIndex>
               <numIndex index="3" type="array">
                   <label>foo4</label>
+                  <value></value>
               </numIndex>
           </items>
           <cols>3</cols>
