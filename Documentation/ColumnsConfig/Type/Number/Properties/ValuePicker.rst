@@ -35,7 +35,7 @@ Example
       'label' => 'Number field',
       'config' => [
          'type' => 'number',
-         'mode' => ''
+         'mode' => '',
          'valuePicker' => [
             'items' => [
                ['One', '1'],
