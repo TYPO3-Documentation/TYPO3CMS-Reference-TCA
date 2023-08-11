@@ -5,6 +5,17 @@
 MM
 ==
 
+..  versionadded:: 11.4
+    TCA table column fields that define :php:`['config']['MM']` can omit the
+    specification of the intermediate MM table layout in
+    :ref:`ext_tables.sql <t3coreapi:ext_tables-sql>`. The TYPO3 database
+    analyzer takes care of proper schema definition.
+
+    Extensions are strongly encouraged to drop :sql:`CREATE TABLE` definitions
+    from the :file:`ext_tables.sql` file for those intermediate tables
+    referenced by TCA table columns. Dropping these definitions allows the Core
+    to adapt and migrate definitions if needed.
+
 ..  confval:: MM (type => inline)
 
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
