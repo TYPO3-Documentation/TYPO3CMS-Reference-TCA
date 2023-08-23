@@ -12,8 +12,8 @@ editPopup
    :Scope: fieldControl
    :Types: :ref:`group <columns-group>`
 
-   The edit popup field control gives a shortcut to edit referenced elements directly a popup. When a record is
-   selected and the edit button is clicked, that record opens in a new window for modification.
+   The edit popup field control shows a pencil icon to edit an element directly in a popup window.
+   When a record is selected and the edit button is clicked, that record opens in a new window for modification.
 
    .. note::
       The edit popup control is pre-configured, but disabled by default. Enable it if you need it, the button
