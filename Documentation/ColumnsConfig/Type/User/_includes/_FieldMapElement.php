@@ -8,7 +8,6 @@ use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 
 class FieldMapElement extends AbstractFormElement
 {
-
     public function render(): array
     {
         $parameterArray = $this->data['parameterArray'];
