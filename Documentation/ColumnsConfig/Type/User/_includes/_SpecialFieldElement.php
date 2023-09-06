@@ -1,5 +1,7 @@
 <?php
-declare(strict_types = 1);
+
+declare(strict_types=1);
+
 namespace MyVendor\MyExtension\Form\Element;
 
 use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
@@ -8,7 +10,7 @@ use TYPO3\CMS\Core\Utility\StringUtility;
 
 class SpecialFieldElement extends AbstractFormElement
 {
-    public function render():array
+    public function render(): array
     {
         $row = $this->data['databaseRow'];
         $parameterArray = $this->data['parameterArray'];
@@ -25,11 +27,11 @@ class SpecialFieldElement extends AbstractFormElement
             'id' => $fieldId,
             'name' => htmlspecialchars($parameterArray['itemFormElName']),
             'size' => $size,
-            'data-formengine-input-name' => htmlspecialchars($parameterArray['itemFormElName'])
+            'data-formengine-input-name' => htmlspecialchars($parameterArray['itemFormElName']),
         ];
 
-        $attributes['placeholder'] = 'Enter special value for user "'.htmlspecialchars(trim($row['username'])).
-            '" in size '. $size;
+        $attributes['placeholder'] = 'Enter special value for user "' . htmlspecialchars(trim($row['username'])) .
+            '" in size ' . $size;
         $classes = [
             'form-control',
             't3js-formengine-textarea',
@@ -45,8 +47,8 @@ class SpecialFieldElement extends AbstractFormElement
         $html[] =      '<div class="form-wizards-element">';
         $html[] =         '<div class="form-control-wrap">';
         $html[] =            '<input type="text" value="' . htmlspecialchars($itemValue, ENT_QUOTES) . '" ';
-        $html[]=               GeneralUtility::implodeAttributes($attributes, true);
-        $html[]=            ' />';
+        $html[] =               GeneralUtility::implodeAttributes($attributes, true);
+        $html[] =            ' />';
         $html[] =         '</div>';
         $html[] =      '</div>';
         $html[] =   '</div>';
