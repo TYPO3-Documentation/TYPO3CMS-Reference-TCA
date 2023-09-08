@@ -153,7 +153,7 @@ These are basically divided in two main categories:
   can only be edited by admin-users, may only exist in the tree root
   etc.
 
-- For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
+For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
 
 :ref:`Full reference <ctrl>`
 
