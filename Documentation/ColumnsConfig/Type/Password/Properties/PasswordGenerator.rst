@@ -160,7 +160,7 @@ passwordRules.random
         Generates a random password in hexadecimal format. Example:
         `d0f4030d568ab483b8442735e9e3a7`.
 
-    :php:`"hex"`
+    :php:`"base64"`
         Generates a random password in base64 format. Example:
         `dtbpykd4vf1hda_Ag9kG983y-_N2zyLZzof`.
 
