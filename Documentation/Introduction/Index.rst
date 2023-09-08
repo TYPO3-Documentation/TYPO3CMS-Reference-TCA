@@ -54,15 +54,15 @@ to existing tables and add new tables. Several required extensions that are
 always loaded, already deliver some TCA files in their
 :file:`Configuration/TCA` directories.
 
-Most importantly, the extension "core" comes with a definition of pages,
+Most importantly, the extension "cms-core" comes with a definition of pages,
 be_users and further tables needed by the whole system.
-The extension "frontend" comes with the tables tt_content, fe_users, sys_template and more.
-See the directories :file:`typo3/sysext/core/Configuration/TCA/` and
-:file:`typo3/sysext/frontend/Configuration/TCA/` for the complete list of the TYPO3 CMS tables.
+The extension "cms-frontend" comes with the tables tt_content, fe_users, sys_template and more.
+See the directories :file:`vendor/typo3/cms-core/Configuration/TCA/` and
+:file:`vendor/typo3/cms-frontend/Configuration/TCA/` for the complete list of the TYPO3 CMS tables.
 
 The TCA definition of a new table with the name "database-table-name" must be done in the
 extension directory :file:`Configuration/TCA/` with :file:`database-table-name.php` as filename.
-An example is :file:`EXT:sys_note/Configuration/TCA/sys_note.php` for table "sys_note". This file will be
+An example is :file:`EXT:cms-sys_note/Configuration/TCA/sys_note.php` for table "sys_note". This file will be
 found by the bootstrap code (if starting a TYPO3 request). It must return an
 array with the content of the TCA setting or :code:`NULL` if the table
 should not be defined (depending on the extension's internal logic).
