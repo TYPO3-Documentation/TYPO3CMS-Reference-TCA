@@ -73,11 +73,11 @@ class validateRstFiles
                 $shortPath = ltrim($shortPath, '/\\');
                 $count++;
                 printf(
-                        '%-10s | %-12s | %-17s | %s ' . chr(10),
-                        $this->messages['include']['title'],
-                        $this->messages['reference']['title'],
-                        $this->messages['index']['title'],
-                        $shortPath
+                    '%-10s | %-12s | %-17s | %s ' . chr(10),
+                    $this->messages['include']['title'],
+                    $this->messages['reference']['title'],
+                    $this->messages['index']['title'],
+                    $shortPath
                 );
                 if ($this->messages['include']['message']) {
                     printf($this->messages['include']['message'] . chr(10));
