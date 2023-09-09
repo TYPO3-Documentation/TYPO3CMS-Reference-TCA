@@ -102,9 +102,9 @@ class validateRstFiles
     {
         $finder = new Finder();
         $finder
-                ->files()
-                ->in($this->baseDir)
-                ->name('/\.rst$/');
+            ->files()
+            ->in($this->baseDir)
+            ->name('/\.rst$/');
 
         return $finder;
     }
@@ -112,18 +112,18 @@ class validateRstFiles
     protected function clearMessages()
     {
         $this->messages = [
-                'include' => [
-                        'title' => '',
-                        'message' => '',
-                ],
-                'reference' => [
-                        'title' => '',
-                        'message' => '',
-                ],
-                'index' => [
-                        'title' => '',
-                        'message' => '',
-                ],
+            'include' => [
+                'title' => '',
+                'message' => '',
+            ],
+            'reference' => [
+                'title' => '',
+                'message' => '',
+            ],
+            'index' => [
+                'title' => '',
+                'message' => '',
+            ],
         ];
 
         $this->isError = false;
@@ -132,18 +132,18 @@ class validateRstFiles
     protected function validateContent(string $fileContent)
     {
         $checkForRequired = [
-                [
-                        'type' => 'include',
-                        'regex' => '#^\.\.\s+include::\s+\/Includes\.rst\.txt|\:orphan\:#m',
-                        'title' => 'no include',
-                        'message' => 'insert \'..  include:: /Includes.rst.txt\' in first line of the file',
-                ],
-                [
-                        'type' => 'include',
-                        'regex' => '#\={2,}\n.*\n\={2,}#m',
-                        'title' => 'no title',
-                        'message' => 'Each document must have a title with multiple === above and below',
-                ],
+            [
+                'type' => 'include',
+                'regex' => '#^\.\.\s+include::\s+\/Includes\.rst\.txt|\:orphan\:#m',
+                'title' => 'no include',
+                'message' => 'insert \'..  include:: /Includes.rst.txt\' in first line of the file',
+            ],
+            [
+                'type' => 'include',
+                'regex' => '#\={2,}\n.*\n\={2,}#m',
+                'title' => 'no title',
+                'message' => 'Each document must have a title with multiple === above and below',
+            ],
         ];
 
         foreach ($checkForRequired as $values) {
@@ -155,12 +155,12 @@ class validateRstFiles
         }
 
         $checkForForbidden = [
-                [
-                        'type' => 'include',
-                        'regex' => '#\.\. *important::#m',
-                        'title' => 'admonition warning forbidden',
-                        'message' => 'use ".. attention" instead of ".. important"',
-                ],
+            [
+                'type' => 'include',
+                'regex' => '#\.\. *important::#m',
+                'title' => 'admonition warning forbidden',
+                'message' => 'use ".. attention" instead of ".. important"',
+            ],
         ];
 
         foreach ($checkForForbidden as $values) {
