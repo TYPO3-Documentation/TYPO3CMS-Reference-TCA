@@ -1,5 +1,8 @@
+..  include:: /Includes.rst.txt
+
+============
 Introduction
-------------
+============
 
 Section :code:`['columns'][*]['config']` (where :code:`*` stands for a table column) is the main workhorse when it comes to single field configuration.
 The main property is :code:`type`, it specifies the DataHandler processing and database value. Additionally,
