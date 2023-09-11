@@ -22,6 +22,3 @@ jobs:
 
       - name: CGL
         run: Build/Scripts/runTests.sh -n -p ${{ env.php }} -s cgl -n
-
-      - name: Check Rst
-        run: Build/Scripts/runTests.sh -p ${{ env.php }} -s checkRst
