@@ -30,5 +30,5 @@ sortby
       DataHandler will write these integers into that field, which is most likely *not* what you want. Use `default_sortby`
       in this case.
 
-   .. include:: /CodeSnippets/Manual/Ctrl/Sorting.rst
+   .. include:: /CodeSnippets/Manual/Ctrl/Sorting.rst.txt
 
