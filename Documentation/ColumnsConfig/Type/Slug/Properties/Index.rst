@@ -3,6 +3,7 @@
 .. _columns-slug-properties:
 .. _columns-slug-properties-type:
 
+==========
 Properties
 ==========
 
