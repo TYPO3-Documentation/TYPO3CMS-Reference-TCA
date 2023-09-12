@@ -44,7 +44,8 @@
     "typo3/cms-t3editor": "^12.4",
     "typo3/cms-tstemplate": "^12.4",
     "typo3/cms-viewpage": "^12.4",
-    "typo3/cms-workspaces": "^12.4"
+    "typo3/cms-workspaces": "^12.4",
+    "typo3/coding-standards": "^0.7.1"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -53,6 +54,7 @@
       "typo3/cms-composer-installers": true,
       "typo3/class-alias-loader": true
     },
+    "bin-dir": ".Build/bin",
     "vendor-dir": ".Build/vendor"
   },
   "extra": {
@@ -62,6 +64,22 @@
     }
   },
   "scripts": {
+    "check": [
+      "@check:php"
+    ],
+    "check:php": [
+      "@check:php:lint",
+      "@check:php:cs"
+    ],
+    "check:php:cs": "Build/Scripts/runTests.sh -n -s cgl",
+    "check:php:lint": "Build/Scripts/runTests.sh -s lint",
+    "fix": [
+      "@fix:php"
+    ],
+    "fix:php": [
+      "@fix:php:cs"
+    ],
+    "fix:php:cs": "Build/Scripts/runTests.sh -s cgl",
     "generate": [
       "@generate:codesnippets"
     ],
