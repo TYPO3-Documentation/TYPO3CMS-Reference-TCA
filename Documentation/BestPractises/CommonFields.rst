@@ -83,7 +83,7 @@ Enablecolumns
    This field is used to enable soft delete of records. In can be configured
    by :ref:`ctrl->enablecolumns->fe_group <ctrl-reference-enablecolumns>`:
 
-   .. include:: /CodeSnippets/Manual/Ctrl/FeGroup.rst
+   .. include:: /CodeSnippets/Manual/Ctrl/FeGroup.rst.txt
 
 .. warning::
    These enable fields are only respected in the frontend if you
@@ -100,7 +100,7 @@ Manual sorting in the backend
    This field is used to manually sort records in the backend. In can be configured
    by :ref:`ctrl->sortby <ctrl-reference-sortby>`:
 
-   .. include:: /CodeSnippets/Manual/Ctrl/Sorting.rst
+   .. include:: /CodeSnippets/Manual/Ctrl/Sorting.rst.txt
 
 .. attention::
    The sortby field contains an integer and is managed by the DataHandler. It
