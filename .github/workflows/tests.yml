@@ -21,4 +21,4 @@ jobs:
         run: Build/Scripts/runTests.sh -p ${{ env.php }} -s lint
 
       - name: CGL
-        run: Build/Scripts/runTests.sh -n -p ${{ env.php }} -s cgl -n
+        run: Build/Scripts/runTests.sh -n -p ${{ env.php }} -s cgl
