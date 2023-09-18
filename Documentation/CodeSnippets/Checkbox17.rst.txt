@@ -15,8 +15,6 @@
                    'items' => [
                        [
                            'label' => 'foo',
-                           'labelChecked' => 'Enabled',
-                           'labelUnchecked' => 'Disabled',
                        ],
                    ],
                ],
