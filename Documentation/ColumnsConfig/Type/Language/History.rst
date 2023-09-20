@@ -6,7 +6,7 @@ History
 =======
 
 A new TCA field type called `language` was added to TYPO3 Core with v11.2.
-It's main purpose is to simplify the TCA language configuration. It therefore
+Its main purpose is to simplify the TCA language configuration. It therefore
 supersedes the `special=languages` option of TCA columns with `type=select` as
 well as the now mis-use of the `foreign_table` option, being set to
 `sys_language`.
