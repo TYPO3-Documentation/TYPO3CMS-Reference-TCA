@@ -59,6 +59,8 @@ FlexForm values.
             Evaluates if the bit specified by the value in "Part 3" is set in the field's value
             (considered as an integer)
 
+      -  Part 3 is the comma separated list of string or numeric values
+
    REC:NEW
       This can be used to test whether the current record is new or not.
 
