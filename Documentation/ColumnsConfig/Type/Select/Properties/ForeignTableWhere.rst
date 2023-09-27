@@ -61,7 +61,7 @@ It is possible to use markers in the WHERE clause:
 
 The markers are preprocessed so that the value of CURRENT\_PID and PAGE\_TSCONFIG\_ID are always integers
 (default is zero), PAGE\_TSCONFIG\_IDLIST will always be a comma-separated list of integers (default is zero)
-and PAGE\_TSCONFIG\_STR will be addslashes'ed before substitution (default is blank string).
+and PAGE\_TSCONFIG\_STR will be quoted before substitution (default is blank string).
 
 More information about markers set by Page TSconfig can be found in
 the :ref:`TSconfig reference <t3tsconfig:pagetceformconfobj>`.
