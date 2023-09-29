@@ -39,7 +39,7 @@ FlexForm values.
 
          REQ
             Requires the field to have a "true" value. False values are "" (blank string) and 0 (zero).
-            Everything else is true. For the REQ evaluation type Part3 of the rules string must be the string "true"
+            Everything else is true. For the REQ evaluation type Part 3 of the rules string must be the string "true"
             or "false". If "true" then the rule returns "true" if the evaluation is true. If "false" then the rule
             returns "true" if the evaluation is false.
 
@@ -58,6 +58,8 @@ FlexForm values.
          **BIT / !BIT**
             Evaluates if the bit specified by the value in "Part 3" is set in the field's value
             (considered as an integer)
+
+      -  Part 3 is a comma separated list of string or numeric values
 
    REC:NEW
       This can be used to test whether the current record is new or not.
