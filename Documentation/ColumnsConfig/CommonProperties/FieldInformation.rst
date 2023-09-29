@@ -24,7 +24,7 @@ fieldInformation
 ..  hint:: 
 
     :php:`fieldInformation` is not implemented by default. Use :ref:`columns-properties-description`
-    display general information below a fields title.
+    to display general information below a fields title.
 
 Example
 =======
