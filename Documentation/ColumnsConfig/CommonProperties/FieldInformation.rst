@@ -20,3 +20,8 @@ fieldInformation
    works identical to the "fieldWizard" property, no default configuration in the core exists (yet).
    In contrast to "fieldWizard", HTML returned by fieldInformation is limited, see
    :ref:`FormEngine docs <t3coreapi:FormEngine-Rendering-NodeExpansion>` for more details.
+
+..  hint:: 
+
+    :php:`fieldInformation` is not implemented by default. Use :ref:`columns-properties-description`
+    display general information below a fields title.
