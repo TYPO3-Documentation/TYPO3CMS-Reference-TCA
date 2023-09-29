@@ -25,3 +25,60 @@ fieldInformation
 
     :php:`fieldInformation` is not implemented by default. Use :ref:`columns-properties-description`
     display general information below a fields title.
+
+Example
+=======
+
+You can have a look at the extension `georgringer/news` in version 9.4 for an example:
+https://github.com/georgringer/news/blob/9.4.0/Configuration/TCA/tx_news_domain_model_news.php#L521
+(with `georgringer/news ^10.0` this was moved to a non-public extension).
+
+..  code-block:: php
+    :caption: EXT:news/Configuration/TCA/tx_news_domain_model_news.php (Excerpt)
+
+        'tags' => [
+            'config' => [
+                // ...
+                'fieldInformation' => [
+                    'tagInformation' => [
+                        'renderType' => 'NewsStaticText',
+                        'options' => [
+                            'labels' => [
+                                [
+                                    'label' => '',
+                                    'bold' => true,
+                                    'italic' => true,
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ]
+
+
+The implementation can be found in https://github.com/georgringer/news/blob/9.4.0/Classes/Backend/FieldInformation/StaticText.php:
+
+..  code-block:: php
+
+    <?php
+    
+    declare(strict_types=1);
+    
+    namespace GeorgRinger\News\Backend\FieldInformation;
+    
+    use TYPO3\CMS\Backend\Form\AbstractNode;
+    
+    class StaticText extends AbstractNode
+    {
+        public function render(): array
+        {
+            // ...
+
+            return [
+                'requireJsModules' => [
+                    'TYPO3/CMS/News/TagSuggestWizard',
+                ],
+                'html' => '...>',
+            ];
+        }
+    }
