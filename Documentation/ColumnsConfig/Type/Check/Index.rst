@@ -6,6 +6,12 @@
 Checkboxes
 ==========
 
+..  versionadded:: 13.0
+    When using the `check` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
+
 
 Introduction
 ============
