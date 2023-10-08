@@ -11,6 +11,11 @@ Color
    The TCA type :php:`color` has been introduced. It replaces the
    :php:`renderType=colorpicker` of TCA type :php:`input`.
 
+..  versionadded:: 13.0
+    When using the `color` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
 
 The TCA type :php:`color` should be used to render a JavaScript-based color picker.
 
