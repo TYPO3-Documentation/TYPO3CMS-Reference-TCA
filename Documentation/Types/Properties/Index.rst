@@ -1,17 +1,14 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 ==========
 Properties
 ==========
 
 
-.. toctree::
+..  toctree::
 
-   BitmaskExcludelistBits
-   BitmaskValueField
-   ColumnsOverrides
-   Showitem
-   SubtypeValueField
-   SubtypesAddlist
-   SubtypesExcludelist
-
+    ColumnsOverrides
+    Showitem
+    SubtypeValueField
+    SubtypesAddlist
+    SubtypesExcludelist
