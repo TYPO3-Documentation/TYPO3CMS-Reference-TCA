@@ -5,11 +5,6 @@
 Examples
 ========
 
-..  versionadded:: 12.0
-    When using the `slug` type, TYPO3 takes care of generating the according
-    database field. A developer does not need to define this field in an
-    extension's :file:`ext_tables.sql` file.
-
 ..  _tca_example_slug_1:
 
 Slug field
