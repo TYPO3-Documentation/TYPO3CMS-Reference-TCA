@@ -13,6 +13,12 @@ Category
    as the :php:`ExtensionManagementUtility->makeCategorizable()`, which has required
    creating a "TCA overrides" file.
 
+..  versionadded:: 12.0
+    When using the `category` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
+
 While using the type :php:`category`, TYPO3 takes care of generating the
 necessary TCA configuration.
 Developers only have to define the TCA column and add :php:`category` as the

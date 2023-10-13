@@ -7,9 +7,14 @@
 Datetime
 ========
 
-.. versionadded:: 12.0
-   The TCA type :php:`datetime` has been introduced. It replaces the
-   :php:`renderType=inputDateTime` of TCA type :php:`input`.
+..  versionadded:: 12.0
+    The TCA type :php:`datetime` has been introduced. It replaces the
+    :php:`renderType=inputDateTime` of TCA type :php:`input`.
+
+    When using the `datetime` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
 
 The TCA type :php:`datetime` should be used to input values representing a
 date time or datetime.
