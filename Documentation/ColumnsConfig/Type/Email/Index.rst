@@ -6,9 +6,15 @@
 Email
 =====
 
-.. versionadded:: 12.0
-   The TCA type :php:`email` has been introduced. It replaces the
-   :php:`eval=email` option of TCA type :php:`input`.
+..  versionadded:: 12.0
+    The TCA type :php:`email` has been introduced. It replaces the
+    :php:`eval=email` option of TCA type :php:`input`.
+
+..  versionadded:: 13.0
+    When using the `flex` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
 
 The TCA type :php:`email` should be used to input values representing email
 addresses.
