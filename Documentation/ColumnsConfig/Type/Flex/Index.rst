@@ -5,7 +5,7 @@
 FlexForm field
 ==============
 
-..  versionadded:: 12.0
+..  versionadded:: 13.0
     When using the `flex` type, TYPO3 takes care of
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
     A developer does not need to define this field in an extension's
