@@ -6,6 +6,12 @@
 Text areas & RTE
 ================
 
+..  versionadded:: 13.0
+    When using the `text` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
+
 ..  contents:: Table of contents:
     :local:
     :depth: 1
