@@ -9,6 +9,12 @@ File
     The type `file` supersedes the usage of TCA type :php:`inline`
     with :php:`foreign_table` set to :php:`sys_file_reference`.
 
+..  versionadded:: 13.0
+    When using the `file` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
+
 The TCA type :php:`file` creates a field where files can be attached to
 the record.
 
