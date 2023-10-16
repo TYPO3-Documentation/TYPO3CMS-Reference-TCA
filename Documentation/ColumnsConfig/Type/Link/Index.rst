@@ -11,6 +11,12 @@ Link
    The TCA type :php:`link` has been introduced. It replaces the
    :php:`renderType=inputLink` option of TCA type :php:`input`.
 
+..  versionadded:: 13.0
+    When using the :php:`link` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
+
 The TCA type :php:`link` should be used to input values representing typolinks.
 
 Example
