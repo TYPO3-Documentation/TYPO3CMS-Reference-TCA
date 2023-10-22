@@ -19,6 +19,12 @@ Color
 
 The TCA type :php:`color` should be used to render a JavaScript-based color picker.
 
+..  versionadded:: 13.0
+
+:ref:`Color palettes <t3tsconfig:pagecolorpalettes>` can be defined via
+:ref:`page TSconfig <setting-page-tsconfig>`. This way, for example, colors
+defined in a corporate design can be made accessible in an easy way.
+
 Examples
 ========
 
