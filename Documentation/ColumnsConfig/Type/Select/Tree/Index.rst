@@ -15,19 +15,19 @@ with database tables that have a hierarchical structure. The properties :ref:`tr
 <columns-select-properties-treeconfig>` and
 :ref:`foreign_table <columns-select-properties-foreign-table>` are mandatory and must be provided to establish the
 connection to the relevant database table. Optionally, you can also use
-:ref:`items <columns-select-properties-items>` or :ref:`itemsProcFunc 
+:ref:`items <columns-select-properties-items>` or :ref:`itemsProcFunc
 <tca_property_itemsProcFunc>` to pass the values, but these are not
 sufficient on their own. The top-level item in the tree will always represent
 the descriptive name of the table.
 
 Regarding joining several tables, the :php:`selectTree` render type can handle multiple
-tables through the configuration options. 
+tables through the configuration options.
 
 .. include:: /Images/Rst/SelectTree1.rst.txt
 
 
-.. toctree::
+..  toctree::
     :titlesonly:
 
-Examples
-Properties
+    Examples
+    Properties
