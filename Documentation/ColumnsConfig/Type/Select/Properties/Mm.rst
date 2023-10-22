@@ -127,7 +127,7 @@ Related configurations
 
     Additional where clause used when reading MM relations.
 
-   Example:
+    Example:
 
     ..  code-block:: text
 
