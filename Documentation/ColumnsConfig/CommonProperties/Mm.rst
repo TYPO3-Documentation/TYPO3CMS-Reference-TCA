@@ -42,18 +42,6 @@ element in a section.
 Related configurations
 ======================
 
-.. _tca_property_MM_hasUidField:
-
-.. confval:: MM_hasUidField
-
-   :type: boolean
-   :Scope: Proc.
-
-   If the "multiple" feature is used with MM relations you **must** set this value
-   to true and include a UID field.
-   Otherwise sorting and removing relations will be buggy.
-
-
 .. confval:: MM_match_fields
 
    :type: array
@@ -106,6 +94,17 @@ Related configurations
 
    The above example uses the special field quoting syntax :php:`{#...}` around
    identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as possible.
+
+
+.. _tca_property_MM_hasUidField:
+..  confval:: MM_hasUidField
+
+    ..  versionchanged:: 13.0
+        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
+        from TCA. The :sql:`uid` column is added as primary key automatically,
+        if :php:`multiple = true` is set, otherwise a combined primary key of
+        fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually
+        :sql:`tablenames` and :sql:`fieldname` is used.
 
 .. _tca_property_MM_auto_creation_mm_table:
 

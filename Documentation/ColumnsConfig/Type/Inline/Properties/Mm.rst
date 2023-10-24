@@ -38,15 +38,6 @@ MM
         and `New->newB`. Deleting the relation `New->orgA` will result in a
         broken relation `Org->orgA`.
 
-..  confval:: MM_hasUidField (type => inline)
-
-    :type: boolean
-    :Scope: Proc.
-
-    If the :ref:`multiple <tca_property_multiple>` property is set with MM
-    relations you **must** set this value to :php:`true` and include a UID field.
-    Otherwise, sorting and removing relations will be buggy.
-
 
 ..  confval:: MM_opposite_field (type => inline)
 
@@ -67,6 +58,16 @@ MM
     ..  note::
         Bidirectional references only get registered once on the native side in
         :sql:`sys_refindex`.
+
+
+..  confval:: MM_hasUidField (type => inline)
+
+    ..  versionchanged:: 13.0
+        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
+        from TCA. The :sql:`uid` column is added as primary key automatically,
+        if :php:`multiple = true` is set, otherwise a combined primary key of
+        fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually
+        :sql:`tablenames` and :sql:`fieldname` is used.
 
 
 Examples
