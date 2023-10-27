@@ -1,15 +1,25 @@
-.. include:: /Includes.rst.txt
-.. _columns-flex-properties-ds-pointerfield-searchparent:
+:orphan:
+
+..  include:: /Includes.rst.txt
+..  _columns-flex-properties-ds-pointerfield-searchparent:
 
 ==============================
 ds\_pointerField\_searchParent
 ==============================
 
-.. confval:: ds_pointerField_searchParent
+..  versionchanged:: 13.0
+    This configuration option is not handled anymore.
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string
-   :Scope: Display  / Proc.
+Migration
+=========
 
-   Used to search for Data Structure recursively back in the table assuming that the table is a tree table.
-   This value points to the "pid" field.
+There are appropriate events that allow the manipulation of the data structure
+lookup logic:
+
+*   :ref:`AfterFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`AfterFlexFormDataStructureParsedEvent`
+*   :ref:`BeforeFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`BeforeFlexFormDataStructureParsedEvent`
+
+Those can be used to re-implement the logic that has been removed from TYPO3
+Core if needed.
