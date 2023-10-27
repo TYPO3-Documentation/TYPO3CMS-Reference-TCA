@@ -19,9 +19,6 @@ allow to specify the lookup mechanism, see the :ref:`example section <columns-fl
 
    Ds
    DsPointerField
-   DsPointerFieldSearchParent
-   DsPointerFieldSearchParentSubField
-   DsTableField
 
 .. note::
 

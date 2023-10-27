@@ -1,14 +1,25 @@
-.. include:: /Includes.rst.txt
-.. _columns-flex-properties-ds-pointerfield-searchparent-subfield:
+:orphan:
+
+..  include:: /Includes.rst.txt
+..  _columns-flex-properties-ds-pointerfield-searchparent-subfield:
 
 ========================================
 ds\_pointerField\_searchParent\_subField
 ========================================
 
-.. confval:: ds_pointerField_searchParent_subField
+..  versionchanged:: 13.0
+    This configuration option is not handled anymore.
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string
-   :Scope: Display  / Proc.
+Migration
+=========
 
-   Points to a field in the "rootline" which may contain a pointer to the "next-level" template.
+There are appropriate events that allow the manipulation of the data structure
+lookup logic:
+
+*   :ref:`AfterFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`AfterFlexFormDataStructureParsedEvent`
+*   :ref:`BeforeFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`BeforeFlexFormDataStructureParsedEvent`
+
+Those can be used to re-implement the logic that has been removed from TYPO3
+Core if needed.

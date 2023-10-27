@@ -1,35 +1,25 @@
-.. include:: /Includes.rst.txt
-.. _columns-flex-properties-ds-tablefield:
+:orphan:
+
+..  include:: /Includes.rst.txt
+..  _columns-flex-properties-ds-tablefield:
 
 ==============
 ds\_tableField
 ==============
 
-.. confval:: ds_tableField
+..  versionchanged:: 13.0
+    This configuration option is not handled anymore.
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string
-   :Scope: Display  / Proc.
+Migration
+=========
 
-   Contains the value "[table]:[field name]" from which to fetch Data Structure XML.
+There are appropriate events that allow the manipulation of the data structure
+lookup logic:
 
-   :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>` is in this case the pointer which
-   should contain the uid of a record from that table.
+*   :ref:`AfterFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`AfterFlexFormDataStructureParsedEvent`
+*   :ref:`BeforeFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`BeforeFlexFormDataStructureParsedEvent`
 
-Examples
-========
-
-This is used by TemplaVoila extension for instance where a field in the "tt\_content" table points to
-a TemplaVoila Data Structure record:
-
-.. code-block:: php
-
-   'tx_templavoila_flex' => [
-      'label' => '...',
-      'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
-      'config' => [
-         'type' => 'flex',
-         'ds_pointerField' => 'tx_templavoila_ds',
-         'ds_tableField' => 'tx_templavoila_datastructure:dataprot',
-      ],
-   ],
+Those can be used to re-implement the logic that has been removed from TYPO3
+Core if needed.
