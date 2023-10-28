@@ -85,6 +85,10 @@ on a selected "tt_content" element plugin.
 Data structure lookup with tree traversal
 =========================================
 
+..  note::
+    This example will stop working with TYPO3 v13.
+    :ref:`More information <columns-flex-properties-ds-pointerfield-searchparent>`
+
 .. code-block:: php
 
     'config' => [
@@ -102,6 +106,10 @@ inheritance of data structure definition to sub pages and sub trees.
 
 Data structure lookup with tree traversal and pointing to a row in a foreign table
 ==================================================================================
+
+..  note::
+    This example will stop working with TYPO3 v13.
+    :ref:`More information <columns-flex-properties-ds-pointerfield-searchparent>`
 
 .. code-block:: php
 

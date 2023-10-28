@@ -1,20 +1,30 @@
-.. include:: /Includes.rst.txt
-.. _columns-flex-properties-ds-tablefield:
+..  include:: /Includes.rst.txt
+..  _columns-flex-properties-ds-tablefield:
 
 ==============
 ds\_tableField
 ==============
 
-.. confval:: ds_tableField
+..  note::
+    This configuration option will not be handled anymore with TYPO3 v13+.
+    Beginning with TYPO3 v12 you can migrate to PSR-14 events to manipulate the
+    data structure lookup logic:
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string
-   :Scope: Display  / Proc.
+    *   :ref:`AfterFlexFormDataStructureIdentifierInitializedEvent`
+    *   :ref:`AfterFlexFormDataStructureParsedEvent`
+    *   :ref:`BeforeFlexFormDataStructureIdentifierInitializedEvent`
+    *   :ref:`BeforeFlexFormDataStructureParsedEvent`
 
-   Contains the value "[table]:[field name]" from which to fetch Data Structure XML.
+..  confval:: ds_tableField
 
-   :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>` is in this case the pointer which
-   should contain the uid of a record from that table.
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Display  / Proc.
+
+    Contains the value "[table]:[field name]" from which to fetch Data Structure XML.
+
+    :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>` is in this case the pointer which
+    should contain the uid of a record from that table.
 
 Examples
 ========
