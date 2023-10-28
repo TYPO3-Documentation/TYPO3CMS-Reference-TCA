@@ -30,8 +30,8 @@ This specifies the preview renderer to be used for any record in
         = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
 
 
-Table has a "type" field/attribute
-----------------------------------
+Table has a :php:`type` field/attribute
+---------------------------------------
 
 This specifies the preview renderer only for records of type :php:`$type` as
 determined by the type field of your table.
@@ -41,8 +41,8 @@ determined by the type field of your table.
     $GLOBALS['TCA']['tx_myextension_domain_model_mytable']['types'][$type]['previewRenderer']
         = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
 
-Table has a "subtype_value_field" setting
------------------------------------------
+Table has a :php:`subtype_value_field` setting
+----------------------------------------------
 
 If your table and field have a :php:`subtype_value_field` TCA setting (like
 :sql:`tt_content.list_type`) and you want to register a preview renderer that
