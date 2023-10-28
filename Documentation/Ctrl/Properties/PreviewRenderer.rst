@@ -21,11 +21,12 @@ Have also a look at :ref:`t3coreapi:ConfigureCE-Preview` for more details.
 Use for any record in a table
 -----------------------------
 
-This specifies the preview renderer to be used for any record in :sql:`my_table`:
+This specifies the preview renderer to be used for any record in
+:sql:`tx_myextension_domain_model_mytable`:
 
 ..  code-block:: php
 
-    $GLOBALS['TCA']['my_table']['ctrl']['previewRenderer']
+    $GLOBALS['TCA']['tx_myextension_domain_model_mytable']['ctrl']['previewRenderer']
         = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
 
 
@@ -37,7 +38,7 @@ determined by the type field of your table.
 
 ..  code-block:: php
 
-    $GLOBALS['TCA']['my_table']['types'][$type]['previewRenderer']
+    $GLOBALS['TCA']['tx_myextension_domain_model_mytable']['types'][$type]['previewRenderer']
         = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
 
 Table has a "subtype_value_field" setting
@@ -50,7 +51,7 @@ type is selected and you can not match it with the "type" of the record alone):
 
 ..  code-block:: php
 
-    $GLOBALS['TCA'][$table]['types'][$type]['previewRenderer'][$subType]
+    $GLOBALS['TCA'][tx_myextension_domain_model_mytable]['types'][$type]['previewRenderer'][$subType]
         = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
 
 Where :php:`$type` is for example :php:`list` (indicating a plugin) and
