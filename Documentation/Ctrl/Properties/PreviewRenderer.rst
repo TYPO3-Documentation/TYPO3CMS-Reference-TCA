@@ -11,7 +11,7 @@ previewRenderer
    :type: string
    :Scope: Display
 
-   Configure a backend preview for a content element.
+   Configures a backend preview for a content element.
 
 Examples
 ========
