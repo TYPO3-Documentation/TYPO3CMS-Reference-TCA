@@ -42,7 +42,7 @@ Table has a :php:`type` field/attribute
 ---------------------------------------
 
 This specifies the preview renderer only for records of type :php:`$type` as
-determined by the type field of your table.
+determined by the :ref:`type field <types>` of your table.
 
 ..  code-block:: php
 
@@ -52,10 +52,12 @@ determined by the type field of your table.
 Table has a :php:`subtype_value_field` setting
 ----------------------------------------------
 
-If your table and field have a :php:`subtype_value_field` TCA setting (like
-:sql:`tt_content.list_type`) and you want to register a preview renderer that
-applies only when that value is selected (for example, when a certain plugin
-type is selected and you can not match it with the "type" of the record alone):
+If your table and field have a
+:ref:`subtype_value_field <types-properties-subtype-value-field>` TCA setting
+(like :sql:`tt_content.list_type`) and you want to register a preview renderer
+that applies only when that value is selected (for example, when a certain
+plugin type is selected and you can not match it with the type of the record
+alone):
 
 ..  code-block:: php
 
