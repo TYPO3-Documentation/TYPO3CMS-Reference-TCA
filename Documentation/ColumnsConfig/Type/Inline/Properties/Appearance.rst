@@ -27,7 +27,7 @@ appearance
 
     expandSingle (boolean)
         Show only one child record expanded each time. If a collapsed record is clicked, the currently
-        opened one collapses and the clicked one expands.
+        open one collapses and the clicked one expands.
 
     showNewRecordLink (boolean)
         Disables the :guilabel:`New record` link in TCA `inline` elements without simultaneously disabling
