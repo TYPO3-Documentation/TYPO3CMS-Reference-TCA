@@ -6,7 +6,7 @@ appearance
 ==========
 
 ..  versionchanged:: 12.0
-    The following properties have been remove:
+    The following properties have been removed:
 
     -   :php:`[appearance][headerThumbnail]`
     -   :php:`[appearance][fileUploadAllowed]`
@@ -20,13 +20,13 @@ appearance
     :type: array
     :Scope: Display
 
-    Has information about the appearance of child-records, namely:
+    Has information about the appearance of child records, namely:
 
     collapseAll (boolean)
-        Show all child-records collapsed (if false, all are expanded)
+        Show all child records collapsed (if false, all are expanded)
 
     expandSingle (boolean)
-        Show only one child-record expanded each time. If a collapsed record is clicked, the currently
+        Show only one child record expanded each time. If a collapsed record is clicked, the currently
         open one collapses and the clicked one expands.
 
     showNewRecordLink (boolean)
@@ -43,7 +43,7 @@ appearance
          "Create new <title of foreign\_table>", e.g. "Create new address"
 
     newRecordLinkTitle (string or LLL reference)
-        Overrides the title of the "New record" link with a localised string. This will work only if
+        Overrides the title of the "New record" link with a localized string. This will work only if
         :code:`newRecordLinkAddTitle` is **not** set to true.
 
         Example::
@@ -67,7 +67,7 @@ appearance
         the :ref:`foreign_selector <columns-inline-properties-foreign-selector>`.
 
     suppressCombinationWarning (boolean)
-        Suppresses the warning FlashMessage that will be displayed when using **useCombination**.
+        Suppresses the warning flash message that will be displayed when using **useCombination**.
         You can also override the message with your own message using the example below.
 
         Example::
