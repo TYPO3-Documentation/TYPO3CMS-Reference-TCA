@@ -23,7 +23,7 @@ richtextConfiguration
    all core backend RTE instances to use that configuration.
 
    If this property is not specified for an RTE field, the system will fall back to the `default`
-   configuration.
+   configuration. The preset can be overridden with Page TSconfig :ref:`RTE <t3tsconfig:pageTsRte>`.
 
 Examples
 ========
