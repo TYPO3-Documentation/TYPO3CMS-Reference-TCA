@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-file:
+..  include:: /Includes.rst.txt
+..  _columns-file:
 
 ====
 File
@@ -12,13 +12,13 @@ File
 The TCA type :php:`file` creates a field where files can be attached to
 the record.
 
-.. _columns-file-examples:
-.. _tca_example_group_file_1:
+..  _columns-file-examples:
+..  _tca_example_group_file_1:
 
 Examples
 ========
 
-.. code-block:: php
+..  code-block:: php
 
     'columns' => [
         'my_image' => [
@@ -30,6 +30,8 @@ Examples
             ],
         ],
     ],
+
+..  _columns-file-migration:
 
 Migration
 =========
