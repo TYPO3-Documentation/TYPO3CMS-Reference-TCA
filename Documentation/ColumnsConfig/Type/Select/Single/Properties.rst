@@ -38,7 +38,6 @@ Select properties
 *  :ref:`authmode > enforce <columns-select-properties-authmode-enforce>`
 *  :ref:`default <columns-select-properties-default>`
 *  :ref:`disableNoMatchingValueElement <columns-select-properties-disableNoMatchingValueElement>`
-*  :ref:`exclusiveKeys <columns-select-properties-exclusivekeys>`
 *  :ref:`fileFolderConfig <columns-select-properties-fileFolderConfig>`
 
    *  :ref:`folder <columns-select-properties-fileFolderConfig.folder>`
@@ -51,6 +50,10 @@ Select properties
 *  :ref:`items <columns-select-properties-items>`
 *  :ref:`MM <columns-select-properties-mm>`
 
+.. note::
+
+    The property :ref:`exclusiveKeys <columns-select-properties-exclusivekeys>`
+    is available only for the renderTypes selectMultipleSideBySide and selectTree.
 
 Common properties
 =================
