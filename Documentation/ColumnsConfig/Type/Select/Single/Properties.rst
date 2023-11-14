@@ -33,7 +33,7 @@ Properties
 Select properties
 =================
 
-*  :ref:`allowNonIdValues <columns-select-properties-allowNonIdValues>`
+*  :ref:`allowNonIdValues <columns-select-properties-allownonidvalues>`
 *  :ref:`authmode <columns-select-properties-authmode>`
 *  :ref:`authmode > enforce <columns-select-properties-authmode-enforce>`
 *  :ref:`default <columns-select-properties-default>`
