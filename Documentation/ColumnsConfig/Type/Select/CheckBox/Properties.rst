@@ -7,7 +7,7 @@ Properties
 Select properties
 =================
 
-*  :ref:`allownonidvalues <columns-select-properties-allownonidvalues>`
+*  :ref:`allowNonIdValues <columns-select-properties-allownonidvalues>`
 *  :ref:`appearance <columns-select-properties-appearance-selectCheckBox>`
 *  :ref:`authmode <columns-select-properties-authmode>`
 *  :ref:`authmode > enforce <columns-select-properties-authmode-enforce>`
