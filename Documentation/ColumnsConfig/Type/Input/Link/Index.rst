@@ -10,8 +10,8 @@ This page describes the :ref:`input <columns-input>` type with the renderType='i
 
 An input field used to handle links and mail addresses in the backend.
 
-Additionally to the common properties :ref:`tca_field_control_link_popup` can
-be set.
+Additionally to the :ref:`common properties <columns-input-properties>`,
+:ref:`tca_field_control_link_popup` can be set.
 
 .. toctree::
 

@@ -10,6 +10,10 @@ This page describes the :ref:`input <columns-input>` type with renderType='color
 
 An input field with a JavaScript color picker.
 
+Most input fields share :ref:`common properties <columns-input-properties>`.
+
 .. toctree::
 
    Examples
+
+

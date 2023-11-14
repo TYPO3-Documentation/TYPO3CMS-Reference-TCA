@@ -13,6 +13,9 @@ This normal workhorse input element is used if no renderType is set and no speci
 It can display a simple input field, an input field with a value picker of predefined
 values or a value slider.
 
+Most input fields share :ref:`common properties <columns-input-properties>`.
+
 .. toctree::
 
    Examples
+
