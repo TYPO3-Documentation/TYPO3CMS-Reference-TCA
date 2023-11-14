@@ -25,11 +25,6 @@ Select properties
 *  :ref:`items <columns-select-properties-items>`
 *  :ref:`MM <columns-select-properties-mm>`
 
-.. note::
-
-    The property :ref:`exclusiveKeys <columns-select-properties-exclusivekeys>`
-    is available only for the renderTypes selectMultipleSideBySide and selectTree.
-
 Common properties
 =================
 
