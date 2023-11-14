@@ -22,7 +22,7 @@ generatorOptions
 
    In the *two-dimensional array*, elements of the first level will be concatenated,
    elements of the second level are used as several options for a slug segment,
-   where the first not empty one is used.
+   where the first one not empty is used.
 
    Thus, it can be used as nested array to combine multiple fields using both
    concatenation and several options, for example
