@@ -20,7 +20,17 @@ generatorOptions
 
    Insert several field names (of type string) that will be considered during slug construction.
 
-   Can also be used as nested array to combine multiple fields :php:`[['nav_title', 'title'], 'other_field']`.
+   In the *two-dimensional array*, elements of the first level will be concatenated,
+   elements of the second level are used as several options for a slug, where
+   the first not empty one is used.
+
+   Thus, it can be used as nested array to combine multiple fields using both
+   concatenation and several options, for example
+   :php:`[['nav_title', 'title'], 'other_field']`.
+
+   If a *simple array* is used, each string will be used in the same way, as if
+   it were enclosed in an array, for example :php:`['title', 'subtitle']` has
+   the same result as :php:`[['title'], ['subtitle']]` and results in concatenation.
 
    .. admonition:: Info
       :class: attention
@@ -28,26 +38,24 @@ generatorOptions
       Inserting multiple fields in a simple array would result in an
       concatenated slug.
 
-      Nested array values would result in "take `nav_title` if not empty,
-      otherwise take value from `title`".
+      Nested array values (for example :php:`[['nav_title', 'title']]`) would
+      result in "take `nav_title` if not empty, otherwise take value from `title`".
 
    Examples:
 
-   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
-   | Configuration value                                       | Values of an example page record                                                                                                     | Resulting slug                             |
-   +===========================================================+======================================================================================================================================+============================================+
-   |:php:`['nav_title', 'title']`                              | :php:`['title' => 'Products', 'nav_title' => '', 'subtitle' => '']`                                                                  | `/products`                                |
-   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
-   |:php:`['nav_title', 'title']`                              | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => '']`                                                     | `/best-products/products`                  |
-   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
-   |:php:`[['nav_title', 'title']]`                            | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => '']`                                                     | `/best-products`                           |
-   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
-   |:php:`['subtitle', 'nav_title', 'title']`                  | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => 'Product subtitle']`                                     | `/product-subtitle/best-products/products` |
-   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
-   |:php:`[['nav_title', 'title'], 'subtitle']`                | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => 'Product subtitle']`                                     | `/best-products/product-subtitle`          |
-   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
-   |:php:`[['seo_title', 'title'], ['nav_title', 'subtitle']]` | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => 'Product subtitle', 'seo_title' => 'SEO product title']` | `/seo-product-title/best-products`         |
-   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+   +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+   | Configuration value                                              | Values of an example page record                                                                                                     | Resulting slug                             |
+   +==================================================================+======================================================================================================================================+============================================+
+   |:php:`[['nav_title', 'title']]`                                   | :php:`['title' => 'Products', 'nav_title' => '']`                                                                                    | `/products`                                |
+   +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+   |:php:`[['nav_title', 'title']]`                                   | :php:`['title' => 'Products', 'nav_title' => 'Best products']`                                                                       | `/best-products`                           |
+   +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+   |:php:`['title', 'subtitle']`  or :php:`[['title'], ['subtitle']]` | :php:`['title' => 'Products', 'subtitle' => 'Product subtitle']`                                                                     | `/products/product-subtitle`               |
+   +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+   |:php:`[['nav_title', 'title'], 'subtitle']`                       | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => 'Product subtitle']`                                     | `/best-products/product-subtitle`          |
+   +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+   |:php:`[['seo_title', 'title'], ['nav_title', 'subtitle']]`        | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => 'Product subtitle', 'seo_title' => 'SEO product title']` | `/seo-product-title/best-products`         |
+   +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
 
 
 .. confval:: generatorOptions:fieldSeparator
