@@ -15,6 +15,11 @@ exclusiveKeys
    List of keys that exclude any other keys in a select box where multiple
    items could be selected.
 
+.. note::
+
+    The property :php:`exclusiveKeys` is not available for all select types,
+    only for the renderTypes selectMultipleSideBySide and selectTree.
+
 Examples
 ========
 
