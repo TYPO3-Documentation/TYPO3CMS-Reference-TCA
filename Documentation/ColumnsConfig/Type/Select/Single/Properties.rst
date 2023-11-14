@@ -14,7 +14,6 @@
 .. _columns-select-properties-minitems:
 
 .. _columns-select-properties-mm-hasuidfield:
-.. _columns-select-properties-mm-match-fields:
 .. _columns-select-properties-mm-opposite-field:
 .. _columns-select-properties-mm-opposite-usage:
 .. _columns-select-properties-mm-oppositeusage:
