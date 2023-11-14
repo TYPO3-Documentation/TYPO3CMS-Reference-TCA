@@ -43,7 +43,7 @@
     "typo3/cms-install": "dev-main as 12.1",
     "typo3/cms-linkvalidator": "dev-main as 12.1",
     "typo3/cms-lowlevel": "dev-main as 12.1",
-    "typo3/cms-opendocs": "dev-main as 12.1",,
+    "typo3/cms-opendocs": "dev-main as 12.1",
     "typo3/cms-reactions": "dev-main as 12.1",
     "typo3/cms-recycler": "dev-main as 12.1",
     "typo3/cms-redirects": "dev-main as 12.1",
