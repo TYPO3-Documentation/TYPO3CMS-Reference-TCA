@@ -12,7 +12,6 @@ Select properties
 *  :ref:`authmode > enforce <columns-select-properties-authmode-enforce>`
 *  :ref:`default <columns-select-properties-default>`
 *  :ref:`disableNoMatchingValueElement <columns-select-properties-disableNoMatchingValueElement>`
-*  :ref:`exclusivekeys <columns-select-properties-exclusivekeys>`
 *  :ref:`filefolder <columns-select-properties-filefolder>`
 *  :ref:`filefolder_extlist <columns-select-properties-filefolder-extlist>`
 *  :ref:`filefolder_recursions <columns-select-properties-filefolder-recursions>`
@@ -21,7 +20,6 @@ Select properties
 *  :ref:`foreign_table_where <columns-select-properties-foreign-table-where>`
 *  :ref:`items <columns-select-properties-items>`
 *  :ref:`MM <columns-select-properties-mm>`
-
 
 Common properties
 =================
