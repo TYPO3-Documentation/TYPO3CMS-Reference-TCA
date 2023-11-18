@@ -44,7 +44,7 @@ generatorOptions
    +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
    |:php:`['nav_title', 'title'], 'subtitle'`                        | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => 'Product subtitle']`                                     | `/best-products/product-subtitle` |
    +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
-   |:php:`['seo_title', 'title'], ['nav_title', 'subtitle']`         | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => 'Product subtitle', 'seo_title' => 'SEO product title']` | `/seo-product-title/products`     |
+   |:php:`['seo_title', 'title'], ['nav_title', 'subtitle']`         | :php:`['title' => 'Products', 'nav_title' => 'Best products', 'subtitle' => 'Product subtitle', 'seo_title' => 'SEO product title']` | `/seo-product-title/best-products`|
    +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
 
 
