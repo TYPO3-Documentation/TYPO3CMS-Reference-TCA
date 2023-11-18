@@ -19,6 +19,7 @@ Select properties
 *  :ref:`foreign_table_prefix <columns-select-properties-foreign-table-prefix>`
 *  :ref:`foreign_table_where <columns-select-properties-foreign-table-where>`
 *  :ref:`items <columns-select-properties-items>`
+*  :ref:`itemGroups <columns-select-properties-item-groups>`
 *  :ref:`MM <columns-select-properties-mm>`
 
 Common properties
