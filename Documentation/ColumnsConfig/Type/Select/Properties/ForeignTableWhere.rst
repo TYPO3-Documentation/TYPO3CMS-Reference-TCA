@@ -13,11 +13,9 @@ foreign_table_where
    :RenderType: all
 
    The items from :ref:`foreign_table <columns-select-properties-foreign-table>`
-   are selected with this WHERE-clause. The WHERE-clause is effectively
-   appended to the existing WHERE-clause (which contains default constraints,
-   such as 'NOT deleted') and must begin with AND. Additional clauses such as
-   ORDER BY may be added after the WHERE-clause. The result must be a valid SQL
-   statement.
+   are selected with this :sql:`WHERE` clause. The :sql:`WHERE` clause is effectively
+   appended to the existing :sql:`WHERE` clause (which contains default constraints,
+   such as :sql:`NOT deleted) and must begin with :sql:`AND`.
 
 Field quoting
 =============
