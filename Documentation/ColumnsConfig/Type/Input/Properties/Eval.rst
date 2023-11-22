@@ -117,7 +117,7 @@ if filled in and on the server the value is required to be unique for all record
 
 .. code-block:: php
 
-    'eval' => 'nospace,lower,unique,required'
+    'eval' => 'nospace,lower,unique'
 
 
 Custom eval rules
