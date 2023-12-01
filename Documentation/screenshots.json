@@ -825,32 +825,6 @@
           },
           {"action": "cropScreenshot", "fileName": "Rte5", "position": "right-top", "height": 350, "width": 640}
         ],
-        "t3editor": [
-          {
-            "action": "resizeWindow",
-            "width": 640,
-            "height": 640
-          },
-
-          {
-            "action": "setNavigationDefaultTable",
-            "table": "tx_styleguide_elements_t3editor"
-          },
-          {
-            "action": "setNavigationDefaultUid",
-            "uid": {
-              "action": "getUidByField",
-              "table": "tx_styleguide_elements_t3editor",
-              "field": "sys_language_uid",
-              "value": 0
-            }
-          },
-          {
-            "action": "makeScreenshotOfField",
-            "fields": "t3editor_1",
-            "fileName": "T3editor1"
-          }
-        ],
         "flex": [
           {
             "action": "resizeWindow",

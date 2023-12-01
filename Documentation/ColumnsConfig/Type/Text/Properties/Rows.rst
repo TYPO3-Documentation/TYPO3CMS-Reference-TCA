@@ -11,7 +11,7 @@ rows
    :type: integer
    :Scope: Display
    :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,
-      :ref:`t3editor <columns-text-renderType-t3editor>`,
+      :ref:`codeEditor <columns-text-renderType-codeEditor>`,
       :ref:`default <columns-text-renderType-default>`
 
    The number of rows in the textarea. May be corrected for harmonization between browsers. Will also

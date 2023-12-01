@@ -34,10 +34,16 @@ The following :php:`renderTypes` are available:
 *   :ref:`belayoutwizard <columns-text-renderType-belayoutwizard>`: The backend
     layout wizard is displayed in order to edit records of table
     :sql:`backend_layout` in the backend.
-*   :ref:`t3editor <columns-text-renderType-t3editor>`: The
-    :php:`renderType = 't3editor'` triggers a code highlighter, if extension
-    :doc:`t3editor <ext_t3editor:Index>` is loaded, otherwise falls back to
-    the "default" renderType.
+*   :ref:`codeEditor <columns-text-renderType-codeEditor>`: This render type
+    triggers a code highlighter.
+
+    ..  versionchanged:: 13.0
+        In previous TYPO3 versions, the code editor was available via the system
+        extension "t3editor". The functionality was moved into the system
+        extension "backend". The render type :php:`t3editor` was renamed to
+        :php:`codeEditor`. A TCA migration from the old value to the new one is
+        in place.
+
 *   :ref:`textTable <columns-text-renderType-textTable>`: The
     :php:`renderType = 'textTable'` triggers a view to manage frontend table
     display in the backend. It is used for the "table" :sql:`tt_content` content
@@ -71,17 +77,21 @@ on how to configure such an editor.
 Code highlight editor
 =====================
 
-..  todo: include screenshot
+..  figure:: /Images/ManualScreenshots/Codeeditor.png
+    :alt: Code editor with highlighting HTML
+    :class: with-shadow
 
-See :ref:`t3editor <columns-text-renderType-t3editor>` on how to configure such
-an editor.
+    Code editor with highlighting HTML
+
+See :ref:`codeEditor <columns-text-renderType-codeEditor>` on how to configure
+such an editor.
 
 ..  code-block:: php
 
     [
         // ...
         'type' => 'text',
-        'renderType' => 't3editor',
+        'renderType' => 'codeEditor',
         // ...
     ]
 
