@@ -1,27 +1,36 @@
-.. include:: /Includes.rst.txt
-.. _columns-text-renderType-t3editor:
+..  include:: /Includes.rst.txt
+..  _columns-text-renderType-codeEditor:
+..  _columns-text-renderType-t3editor:
 
-========
-t3editor
-========
+==================================
+codeEditor (previously "t3editor")
+==================================
 
-This page describes the :ref:`text <columns-text>` type with the renderType='t3editor'.
+..  versionchanged:: 13.0
+    In previous TYPO3 versions, the code editor was available via the system
+    extension "t3editor". The functionality was moved into the system extension
+    "backend". The render type :php:`t3editor` was renamed to :php:`codeEditor`.
+    A TCA migration from the old value to the new one is in place.
 
-.. code-block:: php
 
-   // ...
-   'type' => 'text',
-   'renderType' => 't3editor',
-   // ...
+This page describes the :ref:`text <columns-text>` type with the
+:php:`renderType='codeEditor'`.
 
-The :code:`renderType = 't3editor'` triggers a code highlighter if extension `t3editor` is loaded, otherwise
-falls back to "default" renderType.
+..  code-block:: php
 
-System extension "t3editor" provides an enhanced textarea for TypoScript input, with not only syntax highlighting but
-also auto-complete suggestions. Beyond that the "t3editor" extension makes it possible to add syntax highlighting
-to textarea fields, for several languages.
+    // ...
+    'type' => 'text',
+    'renderType' => 'codeEditor',
+    // ...
 
-.. toctree::
+The :php:`renderType='codeEditor'` triggers a code highlighter.
 
-   Examples
-   Properties
+The code editor provides an enhanced textarea for
+:ref:`TypoScript <t3tsref:start>` input, with not only syntax highlighting, but
+also autocomplete suggestions. Beyond that the code editor makes it possible to
+add syntax highlighting to textarea fields for several languages.
+
+..  toctree::
+
+    Examples
+    Properties

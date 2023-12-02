@@ -1,28 +1,53 @@
-.. include:: /Includes.rst.txt
-.. _columns-text-properties-format:
+..  include:: /Includes.rst.txt
+..  _columns-text-properties-format:
 
 ======
 format
 ======
 
-.. confval:: format (type => text)
+..  confval:: format (type => text)
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string (keyword)
-   :Scope: Display
-   :RenderType: :ref:`t3editor <columns-text-renderType-t3editor>`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (keyword)
+    :Scope: Display
+    :RenderType: :ref:`codeEditor <columns-text-renderType-codeEditor>`
 
-   The value specifies the language t3editor should handle. Allowed values:
-   `css`, `html`, `javascript`, `php`, `typoscript`, `xml`
+    The value specifies the language the code editor should handle. Allowed
+    values:
 
+    *   :php:`css`
+    *   :php:`html`
+    *   :php:`javascript`
+    *   :php:`php`
+    *   :php:`typoscript`
+    *   :php:`xml`
 
 Examples
 ========
 
-T3editor with format HTML
--------------------------
+Code editor with format HTML
+----------------------------
 
+..  figure:: /Images/ManualScreenshots/Codeeditor.png
+    :alt: Code editor with highlighting HTML
+    :class: with-shadow
 
-.. include:: /Images/Rst/T3editor1.rst.txt
+    Code editor with highlighting HTML
 
-.. include:: /CodeSnippets/T3editor1.rst.txt
+..  code-block:: php
+    :caption: Excerpt of TCA definition (EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_mytable.php)
+
+    [
+        'columns' => [
+            'codeeditor1' => [
+                'label' => 'codeEditor_1 format=html, rows=7',
+                'description' => 'field description',
+                'config' => [
+                    'type' => 'text',
+                    'renderType' => 'codeEditor',
+                    'format' => 'html',
+                    'rows' => 7,
+                ],
+            ],
+        ],
+    ]

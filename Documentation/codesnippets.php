@@ -476,13 +476,6 @@ return [
 
     [
         'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_t3editor.php',
-        'fields' => ['columns/t3editor_1'],
-        'targetFileName' => 'CodeSnippets/T3editor1.rst.txt',
-    ],
-
-    [
-        'action' => 'createPhpArrayCodeSnippet',
         'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_flex.php',
         'fields' => ['columns/flex_1'],
         'targetFileName' => 'CodeSnippets/Flex1.rst.txt',

@@ -79,7 +79,7 @@ slug
 
 text
    :ref:`A multiline text field <columns-text>`. Used for RTE display,
-   t3editor and some more.
+   code editor and some more.
 
    .. include:: /Images/Rst/Text4.rst.txt
    .. include:: /Images/Rst/Rte1.rst.txt
