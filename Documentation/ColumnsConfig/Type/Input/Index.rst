@@ -15,17 +15,15 @@ as the :ref:`valuePicker <columns-input-properties-valuePicker>`.
 In the database, this field is typically set to a `VARCHAR` or `CHAR` field with
 appropriate length.
 
-.. deprecated:: 12.0
-   The :php:`renderType=inputDateTime` of TCA type :php:`input` has been
-   deprecated. Use the TCA type :ref:`datetime <columns-datetime>` instead.
+..  deprecated:: 12.0
+    The following render types have been deprecated:
 
-.. deprecated:: 12.0
-   The :php:`renderType=colorpicker` of TCA type :php:`input` has been
-   deprecated. Use the TCA type :ref:`color <columns-color>` instead.
-
-.. deprecated:: 12.0
-   The :php:`renderType=inputLink` of TCA type :php:`input` has been
-   deprecated. Use the TCA type :ref:`link <columns-link>` instead.
+    *   :php:`renderType=inputDateTime`: Use the TCA type
+        :ref:`datetime <columns-datetime>` instead.
+    *   :php:`renderType=colorpicker`: Use the TCA type
+        :ref:`color <columns-color>` instead.
+    *   :php:`renderType=inputLink`: Use the TCA type :ref:`link <columns-link>`
+        instead.
 
 .. _columns-input-examples:
 
