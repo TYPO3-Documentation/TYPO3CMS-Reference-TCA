@@ -44,7 +44,7 @@ An input field with placeholder that can be overridden
 
 .. _tca_example_text_14:
 
-An text field with placeholder that can be overridden
+A text field with placeholder that can be overridden
 -----------------------------------------------------
 
 .. include:: /Images/Rst/Text14.rst.txt
