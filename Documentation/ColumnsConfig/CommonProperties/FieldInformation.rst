@@ -85,7 +85,7 @@ The implementation can be found in https://github.com/georgringer/news/blob/9.4.
 
 The custom FieldInformation must be rendered in :file:`ext_localconf.php`:
 
-.. code-block:: php
+..  code-block:: php
     :caption: EXT:news/ext_localconf.php
 
 
