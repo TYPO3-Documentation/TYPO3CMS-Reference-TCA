@@ -15,7 +15,7 @@ foreign_table_where
    The items from :ref:`foreign_table <columns-select-properties-foreign-table>`
    are selected with this :sql:`WHERE` clause. The :sql:`WHERE` clause is effectively
    appended to the existing :sql:`WHERE` clause (which contains default constraints,
-   such as :sql:`NOT deleted) and must begin with :sql:`AND`.
+   such as :sql:`NOT deleted`) and must begin with :sql:`AND`.
 
 Field quoting
 =============
