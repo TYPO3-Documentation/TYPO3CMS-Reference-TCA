@@ -21,7 +21,7 @@ fieldInformation
    In contrast to "fieldWizard", HTML returned by fieldInformation is limited, see
    :ref:`FormEngine docs <t3coreapi:FormEngine-Rendering-NodeExpansion>` for more details.
 
-..  hint:: 
+..  hint::
 
     :php:`fieldInformation` is not implemented by default. Use :ref:`columns-properties-description`
     to display general information below a fields title.
@@ -61,13 +61,13 @@ The implementation can be found in https://github.com/georgringer/news/blob/9.4.
 ..  code-block:: php
 
     <?php
-    
+
     declare(strict_types=1);
-    
+
     namespace GeorgRinger\News\Backend\FieldInformation;
-    
+
     use TYPO3\CMS\Backend\Form\AbstractNode;
-    
+
     class StaticText extends AbstractNode
     {
         public function render(): array
@@ -82,3 +82,16 @@ The implementation can be found in https://github.com/georgringer/news/blob/9.4.
             ];
         }
     }
+
+The custom FieldInformation must be rendered in :file:`ext_localconf.php`:
+
+..  code-block:: php
+    :caption: EXT:news/ext_localconf.php
+
+
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1552726986] = [
+        'nodeName' => 'NewsStaticText',
+        'priority' => 70,
+        'class' => \GeorgRinger\News\Backend\FieldInformation\StaticText::class
+    ];
+
