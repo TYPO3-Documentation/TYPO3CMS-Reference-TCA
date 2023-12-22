@@ -12,6 +12,7 @@ Select properties
 *  :ref:`authmode <columns-select-properties-authmode>`
 *  :ref:`authmode > enforce <columns-select-properties-authmode-enforce>`
 *  :ref:`default <columns-select-properties-default>`
+*  :ref:`dbFieldLength <columns-select-properties-dbFieldLength>`
 *  :ref:`disableNoMatchingValueElement <columns-select-properties-disableNoMatchingValueElement>`
 *  :ref:`fileFolderConfig <columns-select-properties-fileFolderConfig>`
 

@@ -13,6 +13,7 @@ Select field properties
    AuthMode
    CheckBoxAppearance
    Default
+   DbFieldLength
    DisableNonMatchingValueElement
    ExclusiveKeys
    FileFolderConfig
