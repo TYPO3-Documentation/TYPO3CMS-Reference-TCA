@@ -112,7 +112,7 @@ Another example without usage of the API method would therefore look like this:
             'label' => 'My image',
             'config' => [
                 'type' => 'file',
-                'allowed' => ['jpg','png','gif'],
+                'allowed' => 'jpg,png,gif',
             ],
         ],
     ],
