@@ -18,6 +18,7 @@ Select field properties
    ExclusiveKeys
    FileFolderConfig
    ForeignTable
+   ForeignTableItemGroup
    ForeignTablePrefix
    ForeignTableWhere
    ItemGroups
