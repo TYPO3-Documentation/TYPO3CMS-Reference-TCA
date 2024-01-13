@@ -5,10 +5,6 @@
 sortItems
 =========
 
-.. versionadded:: 10.4
-   `sortItems` allows sorting of static select items
-   by their values or labels.
-
 .. confval:: sortItems
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']

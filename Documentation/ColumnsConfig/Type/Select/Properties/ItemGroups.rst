@@ -5,10 +5,6 @@
 itemGroups
 ==========
 
-.. versionadded:: 10.4
-   Starting with TYPO3 v10.4 item groups can be used in select fields to
-   group items.
-
 .. confval:: itemGroups
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
