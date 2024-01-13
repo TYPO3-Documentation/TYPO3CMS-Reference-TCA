@@ -13,12 +13,13 @@ Special properties
 
    Default
    ExclusiveKeys
-   Relationship
-   TreeConfig
    ForeignTable
    ForeignTablePrefix
    ForeignTableWhere
+   ItemGroups
    Mm
+   Relationship
+   TreeConfig
 
 
 Common properties
