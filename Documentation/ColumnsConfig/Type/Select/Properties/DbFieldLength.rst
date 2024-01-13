@@ -26,22 +26,22 @@ dbFieldLength
     use :php:`dbFieldLength` for :php:`type=select` fields to increase or
     decrease the default length.
 
-    Example
-    =======
+Example
+=======
 
-    ..  code-block:: php
-        :caption: Excerpt from EXT:my_extension/Configuration/TCA/myextension_domain_model_mytable.php
+..  code-block:: php
+    :caption: Excerpt from EXT:my_extension/Configuration/TCA/myextension_domain_model_mytable.php
 
-        'my_field' => [
-            'label' => 'My field',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['label' => '', 'value' => ''],
-                    ['label' => 'Some label', 'value' => 'some'],
-                    ['label' => 'Another label', 'value' => 'another'],
-                ],
-                'default' => '',
-                'dbFieldLength' => 10,
-        ],
+    'my_field' => [
+        'label' => 'My field',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['label' => '', 'value' => ''],
+                ['label' => 'Some label', 'value' => 'some'],
+                ['label' => 'Another label', 'value' => 'another'],
+            ],
+            'default' => '',
+            'dbFieldLength' => 10,
+    ],
