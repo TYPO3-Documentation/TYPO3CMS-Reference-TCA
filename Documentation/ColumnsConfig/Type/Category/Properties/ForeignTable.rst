@@ -10,7 +10,6 @@ foreign\_table
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc. / Display
-    :RenderType: all
 
     The item-array will be filled with records from the table defined here.
     The table must have a TCA definition.

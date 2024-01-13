@@ -10,7 +10,6 @@ foreign_table_prefix
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string or LLL reference
     :Scope: Display
-    :RenderType: all
 
     Label prefix to the title of the records from the foreign-table.
 
