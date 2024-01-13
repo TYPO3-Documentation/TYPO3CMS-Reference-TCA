@@ -26,9 +26,11 @@ itemGroups
    In the renderType `selectCheckbox` the groups are displayed as accordions
    containing the check boxes.
 
-   In other renderTypes a non selectable item with the
+   In other renderTypes a non-selectable item with the
    group name gets displayed.
 
+   Item groups can also be defined for items in
+   :ref:`foreign tables <columns-select-properties-foreign-table-item-group>`.
 
 API methods
 ===========
