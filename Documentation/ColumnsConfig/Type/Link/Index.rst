@@ -108,7 +108,7 @@ Create an URL
 To create a URL from such a link field in a Fluid template, use the
 :html:`<f:link.typolink>` or :html:`<f:uri.typolink>` view helper.
 
-In PHP code, use `LinkFactory::create` or `LinkFactory::createUri`:
+In PHP code, use :php:`LinkFactory::create()` or :php:`LinkFactory::createUri()`:
 
 .. code-block:: php
 
