@@ -10,7 +10,6 @@ allowed
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string / array
     :Scope: Proc. / Display
-    :Default: `common-image-types`
 
     One of the following reserved strings:
 
