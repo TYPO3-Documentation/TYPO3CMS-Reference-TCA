@@ -75,7 +75,7 @@ The migration from :php:`renderType=inputLink` to :php:`type=link` is done like 
            'type' => 'link',
            'required' => true,
            'size' => 20,
-           'nullable' => 'true',
+           'nullable' => true,
            'allowedTypes' => ['page', 'url', 'record'],
            'appearance' => [
                'enableBrowser' => false,
