@@ -96,6 +96,31 @@ where code adoption has to take place.
    being stored in the database. Therefore, the :php:`eval=trim` option is no
    longer needed and should be removed from the TCA configuration.
 
+Create an URL
+=============
+
+To create a URL from such a link field in a Fluid template, use the
+:html:`<f:link.typolink>` or :html:`<f:uri.typolink>` view helper.
+
+In PHP code, use :php:`LinkFactory::create()` or :php:`LinkFactory::createUri()`:
+
+.. code-block:: php
+
+   use TYPO3\CMS\Core\Utility\GeneralUtility;
+   use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
+   use TYPO3\CMS\Frontend\Typolink\LinkFactory;
+
+   $contentObject = GeneralUtility::makeInstance(ContentObjectRenderer::class);
+   $linkFactory = GeneralUtility::makeInstance(LinkFactory::class);
+   $link = $linkFactory->create(
+       '',
+       [
+           'parameter'        => $tcaLinkValue,
+           'forceAbsoluteUrl' => true,
+       ],
+       $contentObject
+   );
+   $url = $link->getUrl();
 
 .. toctree::
    :titlesonly:
