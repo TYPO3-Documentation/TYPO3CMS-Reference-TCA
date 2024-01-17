@@ -114,14 +114,19 @@ In PHP code, use `ContentObjectRenderer::createUrl`:
 
    use TYPO3\CMS\Core\Utility\GeneralUtility;
    use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
+   use TYPO3\CMS\Frontend\Typolink\LinkFactory;
 
    $contentObject = GeneralUtility::makeInstance(ContentObjectRenderer::class);
-   $url = $contentObject->createUrl(
+   $linkFactory = GeneralUtility::makeInstance(LinkFactory::class);
+   $link = $linkFactory->create(
+       '',
        [
            'parameter'        => $tcaLinkValue,
            'forceAbsoluteUrl' => true,
-       ]
+       ],
+       $contentObject
    );
+   $url = $link->getUrl();
 
 .. toctree::
    :titlesonly:
