@@ -5,7 +5,7 @@
 itemGroups
 ==========
 
-.. confval:: itemGroups
+.. confval:: itemGroups (type => select)
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
