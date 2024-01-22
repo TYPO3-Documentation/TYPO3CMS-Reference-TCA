@@ -16,5 +16,5 @@ hideAtCopy
    specified, then records will be disabled/hidden when they are copied.
 
    .. seealso::
-   It is possible to disable this feature on a page and user or group level using the Page
-   TSconfig option :ref:`disableHideAtCopy <t3tsconfig:pagetcemaintables-disablehideatcopy>`.
+      It is possible to disable this feature on a page and user or group level using the Page
+      TSconfig option :ref:`disableHideAtCopy <t3tsconfig:pagetcemaintables-disablehideatcopy>`.
