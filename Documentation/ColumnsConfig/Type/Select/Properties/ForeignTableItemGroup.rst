@@ -7,7 +7,7 @@ foreign\_table\_item\_group
 
 ..  versionadded:: 13.0
 
-..  confval:: foreign-table-item-group (type => select)
+..  confval:: foreign_table_item_group (type => select)
 
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (column name)
