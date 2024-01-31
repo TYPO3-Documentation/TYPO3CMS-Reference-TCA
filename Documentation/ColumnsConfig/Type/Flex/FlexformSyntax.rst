@@ -34,7 +34,7 @@ documented here for TCA. The limitations are:
     Since TYPO3 13.0, also :php:`type='select'` (when using
     :php:`foreign_table`) is not allowed and will raise an exception
     when used. Note this only applies to FlexForm sections, not general
-    flexform usage.
+    FlexForm usage.
 
 .. _columns-flex-tceforms:
 
