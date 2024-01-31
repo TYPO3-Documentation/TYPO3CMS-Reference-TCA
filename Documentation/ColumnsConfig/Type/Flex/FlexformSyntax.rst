@@ -32,7 +32,7 @@ documented here for TCA. The limitations are:
 .. versionchanged:: 13.0
 
     Since TYPO3 13.0, also :php:`type='select'` (when using
-    :php:`foreign_table`) is not allowed to be used and will raise an exception
+    :php:`foreign_table`) is not allowed and will raise an exception
     when used. Note this only applies to flex form sections, not general
     flexform usage.
 
