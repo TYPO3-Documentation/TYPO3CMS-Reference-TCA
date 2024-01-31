@@ -27,7 +27,7 @@ documented here for TCA. The limitations are:
 -  Charset follows that of the current backend UTF-8. When storing FlexForm information in external files,
    make sure that they are using UTF-8 too.
 
--  :php:`type='inline'` and other types that point to different tables are not allowed in flex form section containers.
+-  :php:`type='inline'` and other types that point to different tables are not allowed in FlexForm section containers.
 
 .. versionchanged:: 13.0
 
