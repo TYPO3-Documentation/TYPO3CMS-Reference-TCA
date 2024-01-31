@@ -23,6 +23,8 @@ searchFields
    *  :ref:`link <columns-link>`
    *  :ref:`slug <columns-slug>`
    *  :ref:`color <columns-color>`
+   *  :ref:`json <columns-json>`
+   *  :ref:`uuid <columns-uuid>`
 
    Adding fields of different types to `searchFields` has no effect.
 
