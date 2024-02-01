@@ -27,7 +27,14 @@ documented here for TCA. The limitations are:
 -  Charset follows that of the current backend UTF-8. When storing FlexForm information in external files,
    make sure that they are using UTF-8 too.
 
--  :php:`type='inline'` and other type's that point to different tables are not allowed in flex form section containers.
+-  :php:`type='inline'` and other types that point to different tables are not allowed in FlexForm section containers.
+
+.. versionchanged:: 13.0
+
+    Since TYPO3 13.0, also :php:`type='select'` (when using
+    :php:`foreign_table`) is not allowed and will raise an exception
+    when used. Note this only applies to FlexForm sections, not general
+    FlexForm usage.
 
 .. _columns-flex-tceforms:
 
