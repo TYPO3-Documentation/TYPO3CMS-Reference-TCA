@@ -8,10 +8,10 @@
 Default checkbox
 ================
 
-The checkbox with :ref:`renderType default <columns-check-properties-renderType>`
+The checkbox with :ref:`renderType check <columns-check-properties-renderType>`
 is typically a single checkbox or a group of checkboxes.
 
-Its state can be inverted via :code:`invertStateDisplay`.
+Its state can be inverted via :php:`invertStateDisplay`.
 
 .. _columns-check-examples:
 .. _columns-check-examples-single:
