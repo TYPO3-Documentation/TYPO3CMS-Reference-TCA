@@ -22,6 +22,8 @@ cruser\_id
    .. note::
       The database field configured in this property is created automatically.
       It does not have to be added to the :file:`ext_tables.sql`.
+      This field is removed in TYPO3 12 (Breaking: #98024).
+
 
 Examples
 ========
