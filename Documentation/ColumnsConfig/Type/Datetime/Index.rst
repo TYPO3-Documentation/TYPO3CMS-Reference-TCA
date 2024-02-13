@@ -16,6 +16,11 @@ Datetime
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
+..  versionchanged:: 13.0
+    The database type has changed from :sql:`int unsigned` to :sql:`bigint unsigned`
+    when the field is auto-generated. This allows to store dates until 2106.
+
+
 The TCA type :php:`datetime` should be used to input values representing a
 date time or datetime.
 
