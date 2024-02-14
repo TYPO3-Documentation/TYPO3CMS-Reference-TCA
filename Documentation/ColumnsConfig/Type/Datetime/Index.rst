@@ -17,8 +17,12 @@ Datetime
     :file:`ext_tables.sql` file.
 
 ..  versionchanged:: 13.0
-    The database type has changed from :sql:`int unsigned` to :sql:`bigint unsigned`
-    when the field is auto-generated. This allows to store dates until 2106.
+    The database type has changed from :sql:`int signed` to :sql:`bigint signed`
+    when the field is auto-generated (with the exception of the columns
+    :sql:`tstamp`, :sql:`crdate`, :sql:`starttime`, :sql:`endtime` that
+    still use :sql:`int signed`).
+    This allows to store dates from some million years ago to far into the
+    future.
 
 
 The TCA type :php:`datetime` should be used to input values representing a
@@ -27,7 +31,7 @@ date time or datetime.
 Example
 =======
 
-A simple date field, stored as :sql:`int` in the database:
+A simple date field, stored as :sql:`bigint` in the database:
 
 .. code-block:: php
 
@@ -36,7 +40,6 @@ A simple date field, stored as :sql:`int` in the database:
         'config' => [
             'type' => 'datetime',
             'format' => 'date',
-            'eval' => 'int',
             'default' => 0,
         ]
     ]
