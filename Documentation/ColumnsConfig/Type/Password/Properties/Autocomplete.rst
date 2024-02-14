@@ -15,7 +15,7 @@ autocomplete
    adds attribute :php:`autocomplete="on"` to the input field allowing browser auto filling the field:
 
    .. code-block:: php
-      :emphasize-lines: 7
+      :emphasize-lines: 6
 
       'title' => [
          'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
