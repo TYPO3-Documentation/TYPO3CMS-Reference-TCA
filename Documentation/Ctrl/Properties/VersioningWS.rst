@@ -45,9 +45,6 @@ versioningWS
    t3ver\_id
      Incremental integer (version number)
 
-   t3ver\_label
-     Version label, e.g. "1.1.1" or "Christmas edition"
-
    t3ver\_wsid
      For offline versions: Workspace ID of version.
      For all workspace Ids apart from 0 (zero) there can be only one
@@ -103,7 +100,6 @@ versioningWS
       t3ver_oid int(11) DEFAULT '0' NOT NULL,
       t3ver_id int(11) DEFAULT '0' NOT NULL,
       t3ver_wsid int(11) DEFAULT '0' NOT NULL,
-      t3ver_label varchar(30) DEFAULT '' NOT NULL,
       t3ver_state tinyint(4) DEFAULT '0' NOT NULL,
       t3ver_stage int(11) DEFAULT '0' NOT NULL,
 
