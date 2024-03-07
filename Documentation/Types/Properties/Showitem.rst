@@ -37,7 +37,7 @@ showitem
       Put all fields after this token onto a new tab and name the tab as given in "tabLabel" (string or LLL reference).
 
 Extensions can modify `showitem` values by utilizing
-php:`ExtensionManagementUtility::addToAllTCAtypes()`.
+:php:`ExtensionManagementUtility::addToAllTCAtypes()`.
 See :ref:`t3coreapi:extending-examples` for details.
 
 
