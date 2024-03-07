@@ -42,9 +42,6 @@ versioningWS
      For offline versions; pointing back to online
      version uid. For online: 0 (zero)
 
-   t3ver\_id
-     Incremental integer (version number)
-
    t3ver\_wsid
      For offline versions: Workspace ID of version.
      For all workspace Ids apart from 0 (zero) there can be only one
