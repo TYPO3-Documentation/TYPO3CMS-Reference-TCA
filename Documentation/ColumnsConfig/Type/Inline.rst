@@ -180,7 +180,6 @@ options (second call parameter) are merged looks like:
                 'height' => '45c',
             ],
             'showPossibleLocalizationRecords' => false,
-            'showRemovedLocalizationRecords' => false,
             'showSynchronizationLink' => false,
             'showAllLocalizationLink' => false,
 
