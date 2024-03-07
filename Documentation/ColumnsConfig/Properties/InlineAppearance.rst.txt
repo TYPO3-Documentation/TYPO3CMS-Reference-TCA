@@ -64,9 +64,6 @@ appearance
     showPossibleLocalizationRecords (boolean)
       Show unlocalized records which are in the original language, but not yet localized.
 
-    showRemovedLocalizationRecords (boolean)
-      Show records which were once localized but do not exist in the original language anymore.
-
     showAllLocalizationLink (boolean)
       Defines whether to show the "localize all records" link to fetch untranslated records from the original language.
 
