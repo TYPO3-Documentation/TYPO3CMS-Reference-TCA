@@ -30,8 +30,9 @@ treeConfig
       The setting takes a CSV value, e.g. `2,3,4711`, which takes records of the uids
       `2`, `3` and `4711` into account and creates a tree of these records.
 
-      Additionally, each value used in `startingPoints` may be fed from a site
-      configuration by using the `###SITE:###` syntax.
+      Additionally, each value used in `startingPoints` may be fed from a
+      :ref:`site configuration <t3coreapi:sitehandling>`
+      by using the `###SITE:###` syntax.
 
       Example:
 
@@ -69,4 +70,3 @@ treeConfig
       nonSelectableLevels (list, default "0")
          Comma-separated list of levels that will not be selectable, by default the root
          node (which is "0") cannot be selected
-
