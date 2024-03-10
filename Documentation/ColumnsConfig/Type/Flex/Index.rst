@@ -5,7 +5,7 @@
 FlexForm field
 ==============
 
-Renders a :ref:`FlexForm <flexforms>` element. Essentially, this consists in a
+Renders a :ref:`FlexForm <t3coreapi:flexforms>` element. Essentially, this consists in a
 hierarchically organized set of fields which will have their values saved into a
 single field in the database, stored as XML.
 

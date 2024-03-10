@@ -13,7 +13,7 @@ passwordPolicy
     :type: string
     :Scope: Display, Proc.
 
-    This option assigns a :ref:`password policy <password-policies>` to fields
+    This option assigns a :ref:`password policy <t3coreapi:password-policies>` to fields
     of the type `password`. For configured fields, the password policy validator
     will be used in :ref:`DataHandler <t3coreapi:tce-database-basics>` to ensure,
     that the new password complies with the configured password policy.

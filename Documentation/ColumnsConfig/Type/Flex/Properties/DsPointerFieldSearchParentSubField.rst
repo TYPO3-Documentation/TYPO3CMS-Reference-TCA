@@ -10,10 +10,10 @@ ds\_pointerField\_searchParent\_subField
     Beginning with TYPO3 v12 you can migrate to PSR-14 events to manipulate the
     data structure lookup logic:
 
-    *   :ref:`AfterFlexFormDataStructureIdentifierInitializedEvent`
-    *   :ref:`AfterFlexFormDataStructureParsedEvent`
-    *   :ref:`BeforeFlexFormDataStructureIdentifierInitializedEvent`
-    *   :ref:`BeforeFlexFormDataStructureParsedEvent`
+*   :ref:`t3coreapi:AfterFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`t3coreapi:AfterFlexFormDataStructureParsedEvent`
+*   :ref:`t3coreapi:BeforeFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`t3coreapi:BeforeFlexFormDataStructureParsedEvent`
 
 ..  confval:: ds_pointerField_searchParent_subField
 

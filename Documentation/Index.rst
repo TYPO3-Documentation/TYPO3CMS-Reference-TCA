@@ -50,4 +50,3 @@ This document is the complete reference of the *Table Configuration Array*
    :hidden:
 
    Sitemap
-   genindex
