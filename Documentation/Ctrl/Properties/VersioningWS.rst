@@ -92,7 +92,7 @@ versioningWS
 
    **Corresponding SQL definitions:**
 
-   .. code-block:: mysql
+   .. code-block:: sql
 
       t3ver_oid int(11) DEFAULT '0' NOT NULL,
       t3ver_id int(11) DEFAULT '0' NOT NULL,
