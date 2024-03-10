@@ -41,8 +41,13 @@ passwordGenerator
 ..  contents:: Table of Content
     :local:
 
+.. _columns-password-properties-passwordGenerator_examples:
+
 Examples
 ========
+
+
+.. _columns-password-properties-passwordGenerator_include_special_chars:
 
 Include special characters
 --------------------------
@@ -57,6 +62,8 @@ Example: `qe8)i2W1it-msR8`
 
 ..  include:: _Password_6.rst.txt
 
+.. _columns-password-properties-passwordGenerator_only_digits:
+
 Only digits, length 8 (minimum length)
 --------------------------------------
 
@@ -69,6 +76,9 @@ Example: `28233371`
     A generated 8 digit number
 
 ..  include:: _Password_7.rst.txt
+
+
+.. _columns-password-properties-passwordGenerator_hexadecimal:
 
 Hexadecimal random bytes, length 30
 -----------------------------------
@@ -86,6 +96,7 @@ could be used for secret tokens or similar:
 
 ..  include:: _Password_4.rst.txt
 
+.. _columns-password-properties-passwordGenerator_base64:
 
 Base64 random bytes, readonly
 ------------------------------
@@ -100,16 +111,23 @@ Example: `zrt8sJd6GiqUI_EFgjPiedOj--D0NbTVOJz`
 
 ..  include:: _Password_5.rst.txt
 
+.. _columns-password-properties-passwordGenerator_properties:
+
 Properties
 ==========
+
+.. _columns-password-properties-passwordGenerator_fieldControl:
 
 Field control options
 ---------------------
 
+
+.. _columns-password-properties-passwordGenerator_fieldControl_title:
+
 title
 ~~~~~
 
-..  t3-fieldcontrol-passwordgenerator:: title
+..  confval:: title
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']`
     :Type: String / localized string
@@ -117,10 +135,12 @@ title
 
     Define a title for the control button.
 
+.. _columns-password-properties-passwordGenerator_fieldControl_allowedit:
+
 allowEdit
 ~~~~~~~~~
 
-..  t3-fieldcontrol-passwordgenerator:: allowEdit
+..  confval:: allowEdit
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']`
     :Type: boolean
@@ -128,15 +148,19 @@ allowEdit
 
     If set to :php:`false`, the user cannot edit the generated password.
 
+.. _columns-password-properties-passwordGenerator_passwordRules:
+
 Password rules
 --------------
 
 Define rules for the password.
 
+.. _columns-password-properties-passwordGenerator_passwordRules_length:
+
 passwordRules.length
 ~~~~~~~~~~~~~~~~~~~~
 
-..  t3-fieldcontrol-passwordgenerator:: passwordRules.length
+..  confval:: passwordRules.length
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['length']`
     :Type: int
@@ -145,10 +169,12 @@ passwordRules.length
 
     Defines the amount of characters for the generated password.
 
+.. _columns-password-properties-passwordGenerator_passwordRules_random:
+
 passwordRules.random
 ~~~~~~~~~~~~~~~~~~~~
 
-..  t3-fieldcontrol-passwordgenerator:: passwordRules.random
+..  confval:: passwordRules.random
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['random']`
     :Type: String
@@ -165,16 +191,18 @@ passwordRules.random
         `dtbpykd4vf1hda_Ag9kG983y-_N2zyLZzof`.
 
     ..  note::
-        Defining the :t3-fieldcontrol-passwordgenerator:`passwordRules.random`
+        Defining the `passwordRules.random`
         password rule takes precedence over any character definition, which
         should therefore be omitted as soon as
-        :t3-fieldcontrol-passwordgenerator:`passwordRules.random` is set to one
+        `passwordRules.random` is set to one
         of the available encodings: :php:`hex` or :php:`base64`.
+
+.. _columns-password-properties-passwordGenerator_passwordRules_digitcharacters:
 
 passwordRules.digitCharacters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-..  t3-fieldcontrol-passwordgenerator:: passwordRules.digitCharacters
+..  confval:: passwordRules.digitCharacters
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['digitCharacters']`
     :Type: boolean
@@ -182,11 +210,13 @@ passwordRules.digitCharacters
 
     If set to :php:`false`, the generated password contains no digit.
 
+.. _columns-password-properties-passwordGenerator_passwordRules_lowercasecharacters:
+
 
 passwordRules.lowerCaseCharacters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-..  t3-fieldcontrol-passwordgenerator:: passwordRules.lowerCaseCharacters
+..  confval:: passwordRules.lowerCaseCharacters
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['lowerCaseCharacters']`
     :Type: boolean
@@ -194,10 +224,12 @@ passwordRules.lowerCaseCharacters
 
     If set to :php:`false`, the generated password contains no lower case characters.
 
+.. _columns-password-properties-passwordGenerator_passwordRules_uppercasecharacters:
+
 passwordRules.upperCaseCharacters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-..  t3-fieldcontrol-passwordgenerator:: passwordRules.upperCaseCharacters
+..  confval:: passwordRules.upperCaseCharacters
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['upperCaseCharacters']`
     :Type: boolean
@@ -205,10 +237,12 @@ passwordRules.upperCaseCharacters
 
     If set to :php:`false`, the generated password contains no upper case characters.
 
+.. _columns-password-properties-passwordGenerator_passwordRules_specialcharacters:
+
 passwordRules.specialCharacters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-..  t3-fieldcontrol-passwordgenerator:: passwordRules.specialCharacters
+..  confval:: passwordRules.specialCharacters
 
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['specialCharacters']`
     :Type: boolean
