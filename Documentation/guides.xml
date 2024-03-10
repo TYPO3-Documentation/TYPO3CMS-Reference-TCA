@@ -12,6 +12,7 @@
             edit-on-github-branch="main"
             edit-on-github="TYPO3-Documentation/TYPO3CMS-Reference-TCA"
             typo3-core-preferred="main"
+            interlink-shortcode="t3tca"
     />
     <project title="TCA Reference"
              release="main (development)"
