@@ -86,4 +86,4 @@ appearance
     elementBrowserEnabled (boolean)
         Hides or displays the element browser button in inline records
 
-    This property can also be overridden by :ref:`page TSconfig <tceform>`.
+    This property can also be overridden by :ref:`page TSconfig <t3tsconfig:tceform>`.
