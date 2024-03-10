@@ -32,7 +32,7 @@ languageField
    these languages and if this option is set, edit access for languages
    will be enforced for this table.
 
-   Also see the :ref:`Frontend Localization Guide <t3l10n:core-support-tca>`
+   Also see the :ref:`Frontend Localization Guide <t3translate:core-support-tca>`
    for a discussion about the effects of
    this property (and other TCA properties) on the localization process.
 
