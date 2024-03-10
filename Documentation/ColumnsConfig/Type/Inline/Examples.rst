@@ -165,20 +165,20 @@ type inline** - as it is a container.
          {
              public function render()
              {
-                 $fieldName = $this->data['fieldName'];                
+                 $fieldName = $this->data['fieldName'];
                  $result = $this->initializeResultArray();
 
                   // Add fieldInformation only for this field name
-                  //   this may be changed accordingly                                  
+                  //   this may be changed accordingly
                   if ($fieldName !== 'my_new_field') {
                       return $result;
                   }
-                  
+
                   $text = $GLOBALS['LANG']->sL(
                           'LLL:EXT:my_example/Resources/Private/Language/'
                           . 'locallang_db.xlf:tt_content.fieldInformation.demo'
                   );
-                  
+
                   $result['html'] = $text;
                   return $result;
              }
@@ -230,6 +230,6 @@ type inline** - as it is a container.
 
    *  :ref:`['ctrl']['container'] <ctrl-reference-container>`
    *  How to create custom fieldInformation, fieldControl or fieldWizard in
-      :ref:`FormEngine <FormEngine-Rendering-NodeExpansion>` chapter (TYPO3
+      :ref:`FormEngine <t3coreapi:FormEngine-Rendering-NodeExpansion>` chapter (TYPO3
       Explained)
    *  :ref:`fieldInformation <tca_property_fieldInformation>` property

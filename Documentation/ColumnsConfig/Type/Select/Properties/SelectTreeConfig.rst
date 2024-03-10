@@ -36,9 +36,9 @@ treeConfig
 
       Additionally, each value used in `startingPoints` may be fed from a site
       configuration by using the `###SITE:###` syntax.
-      
-      This property can also be set by page TSconfig, see 
-      :ref:`pagetsconfigtceformconfigtreeconfig`
+
+      This property can also be set by page TSconfig, see
+      :ref:`t3tsconfig:pagetsconfigtceformconfigtreeconfig`
 
       Example:
 

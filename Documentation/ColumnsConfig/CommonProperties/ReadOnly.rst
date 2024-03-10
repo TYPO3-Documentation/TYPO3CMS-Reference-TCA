@@ -14,7 +14,6 @@ readOnly
    :Types:
       :ref:`category <columns-category>`,
       :ref:`check <columns-check>`,
-      :ref:`email <columns-email>`,
       :ref:`group <columns-group>`,
       :ref:`imageManipulation <columns-imageManipulation>`,
       :ref:`inline <columns-inline>`,

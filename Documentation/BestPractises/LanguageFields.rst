@@ -6,7 +6,7 @@
 Language fields
 ================
 
-See also the :ref:`Frontend Localization Guide <t3l10n:core-support-tca>`.
+See also the :ref:`Frontend Localization Guide <t3translate:core-support-tca>`.
 
 .. note::
    It is possible to change the names of the following fields, however this is
