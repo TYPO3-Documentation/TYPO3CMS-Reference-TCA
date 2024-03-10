@@ -16,10 +16,10 @@ Migration
 There are appropriate events that allow the manipulation of the data structure
 lookup logic:
 
-*   :ref:`AfterFlexFormDataStructureIdentifierInitializedEvent`
-*   :ref:`AfterFlexFormDataStructureParsedEvent`
-*   :ref:`BeforeFlexFormDataStructureIdentifierInitializedEvent`
-*   :ref:`BeforeFlexFormDataStructureParsedEvent`
+*   :ref:`t3coreapi:AfterFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`t3coreapi:AfterFlexFormDataStructureParsedEvent`
+*   :ref:`t3coreapi:BeforeFlexFormDataStructureIdentifierInitializedEvent`
+*   :ref:`t3coreapi:BeforeFlexFormDataStructureParsedEvent`
 
 Those can be used to re-implement the logic that has been removed from TYPO3
 Core if needed.

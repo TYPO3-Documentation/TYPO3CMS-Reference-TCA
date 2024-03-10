@@ -34,7 +34,7 @@ treeConfig
       configuration by using the `###SITE:###` syntax.
 
       This property can also be set by page TSconfig, see
-      :ref:`pagetsconfigtceformconfigtreeconfig`
+      :ref:`t3tsconfig:pagetsconfigtceformconfigtreeconfig`
 
       Example:
 
