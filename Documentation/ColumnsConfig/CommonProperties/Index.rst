@@ -21,6 +21,7 @@ Common properties
    Mm
    Mode
    Multiple
+   Nullable
    Placeholder
    ReadOnly
    Required
