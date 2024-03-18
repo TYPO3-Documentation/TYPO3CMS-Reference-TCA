@@ -19,7 +19,7 @@ nullable
    If set to true, a checkbox will appear, which by default deactivates the
    field. In the deactivated state the field is saved as :sql:`NULL` in the
    database. By activating the checkbox it is possible to set a value.
-   If nothing is entered then an empty string will be saved and not a :sql:`NULL`.
+   If nothing is entered into the field, then an empty string will be saved and not a :sql:`NULL`.
 
    The database field must allow the :sql:`NULL` value.
 
