@@ -1,29 +1,29 @@
-.. include:: /Includes.rst.txt
-.. _ctrl-reference-title:
+..  include:: /Includes.rst.txt
+..  _ctrl-reference-title:
 
 =====
 title
 =====
 
-.. confval:: title
+..  confval:: title
+    :name: ctrl-title
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: string or LLL reference
+    :Scope: Display
 
-   :Path: $GLOBALS['TCA'][$table]['ctrl']
-   :type: string or LLL reference
-   :Scope: Display
 
+    Contains the *system name* of the table. Is used for display in the
+    backend.
 
-   Contains the *system name* of the table. Is used for display in the
-   backend.
+    For instance the "tt\_content" table is of course named "tt\_content"
+    technically. However in the backend display it will be shown as
+    "Page Content" when the backend language is English. When another
+    language is chosen, like Danish, then the label "Sideindhold" is shown
+    instead. This value is managed by the "title" value.
 
-   For instance the "tt\_content" table is of course named "tt\_content"
-   technically. However in the backend display it will be shown as
-   "Page Content" when the backend language is English. When another
-   language is chosen, like Danish, then the label "Sideindhold" is shown
-   instead. This value is managed by the "title" value.
-
-   You can insert plain text values, but the preferred way is to enter a
-   reference to a localized string. Refer to the :ref:`Localization <t3coreapi:internationalization>`
-   section for more details.
+    You can insert plain text values, but the preferred way is to enter a
+    reference to a localized string. Refer to the :ref:`Localization <t3coreapi:internationalization>`
+    section for more details.
 
 
 Examples
