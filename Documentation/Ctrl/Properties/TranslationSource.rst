@@ -6,7 +6,7 @@ translationSource
 =================
 
 .. confval:: translationSource
-
+   :name: ctrl-translationSource
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Proc. / Display

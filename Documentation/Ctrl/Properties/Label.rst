@@ -5,8 +5,8 @@
 label
 =====
 
-.. confval:: label (ctrl)
-
+.. confval:: label
+   :name: ctrl-label
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Display

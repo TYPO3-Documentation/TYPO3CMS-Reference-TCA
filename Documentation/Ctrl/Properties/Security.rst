@@ -10,7 +10,7 @@ security
 ========
 
 ..  confval:: security
-
+    :name: ctrl-security
     :Path: $GLOBALS['TCA'][$table]['ctrl']
     :type: array
     :Scope: Display

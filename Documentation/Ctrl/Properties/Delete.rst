@@ -6,7 +6,7 @@ delete
 ======
 
 .. confval:: delete
-
+   :name: ctrl-delete
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Proc. / Display
