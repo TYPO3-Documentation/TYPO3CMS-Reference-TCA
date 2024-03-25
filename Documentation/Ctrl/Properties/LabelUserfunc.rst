@@ -6,11 +6,10 @@ label\_userFunc
 ===============
 
 .. confval:: label_userFunc
-
+   :name: ctrl-label-userFunc
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Display
-
 
    Function or method reference. This can be used whenever the label or
    :ref:`label_alt <ctrl-reference-label-alt>` options don't offer enough flexibility, e.g. when you want

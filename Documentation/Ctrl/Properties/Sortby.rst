@@ -6,7 +6,7 @@ sortby
 ======
 
 .. confval:: sortby
-
+   :name: ctrl-sortby
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Proc. / Display

@@ -7,7 +7,7 @@ label\_alt
 ==========
 
 .. confval:: label_alt
-
+   :name: ctrl-label-alt
    :type: String (comma-separated list of field names)
    :Scope: Display
 

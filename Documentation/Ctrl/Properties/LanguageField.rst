@@ -6,11 +6,10 @@ languageField
 =============
 
 .. confval:: languageField
-
+   :name: ctrl-languageField
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name of type :ref:`language <columns-language>`)
    :Scope: Proc. / Display
-
 
    .. deprecated:: 11.2
       This field can only be used with the type

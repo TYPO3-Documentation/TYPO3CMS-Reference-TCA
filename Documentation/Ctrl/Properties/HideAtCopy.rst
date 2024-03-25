@@ -6,7 +6,7 @@ hideAtCopy
 ==========
 
 .. confval:: hideAtCopy
-
+   :name: ctrl-hideAtCopy
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: boolean
    :Scope: Proc.

@@ -6,7 +6,7 @@ container
 =========
 
 .. confval:: container
-
+   :name: ctrl-container
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: array
    :Scope: Display
