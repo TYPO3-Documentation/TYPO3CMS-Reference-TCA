@@ -1,16 +1,16 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 ==========
 Properties
 ==========
 
-.. toctree::
+..  toctree::
 
-   Config
-   Description
-   DisplayCond
-   Exclude
-   L10nDisplay
-   L10nMode
-   Label
-   OnChange
+    Config
+    Description
+    DisplayCond
+    Exclude
+    L10nDisplay
+    L10nMode
+    Label
+    OnChange
