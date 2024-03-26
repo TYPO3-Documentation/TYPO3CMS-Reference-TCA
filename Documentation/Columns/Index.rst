@@ -1,5 +1,5 @@
-﻿.. include:: /Includes.rst.txt
-.. _columns:
+﻿..  include:: /Includes.rst.txt
+..  _columns:
 
 ===========================
 Field definitions (columns)
@@ -16,7 +16,7 @@ database relation selector box. Each type allows a set of additional "renderType
 
 The basic structure looks like this:
 
-.. code-block:: php
+..  code-block:: php
 
     'columns' => [
         'aField' => [
@@ -24,9 +24,9 @@ The basic structure looks like this:
             'config' => [
                 'type' => 'aType',
                 'renderType' => 'aRenderType',
-                ...
+                // ...
             ],
-            ...
+            // ...
         ],
     ],
 
@@ -34,10 +34,10 @@ Properties on the level parallel to "label" are valid for all "type" and "render
 They are listed below. The list of properties within the "config" section depend on the specific "type" and "renderType"
 combination and are explained in detail in the :ref:`['columns']['config'] <columns-types>` section.
 
-.. _columns-properties:
+..  _columns-properties:
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Examples
-   Properties/Index
+    Examples
+    Properties/Index

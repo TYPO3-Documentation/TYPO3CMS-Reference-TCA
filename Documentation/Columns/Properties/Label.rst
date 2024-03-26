@@ -1,24 +1,24 @@
-.. include:: /Includes.rst.txt
-.. _columns-properties-label:
+..  include:: /Includes.rst.txt
+..  _columns-properties-label:
 
 =====
 label
 =====
 
-.. confval:: label
+..  confval:: label
+    :name: columns-label
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]
+    :Required: true
+    :type: string or LLL reference
+    :Scope: Display
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
-   :Required: true
-   :type: string or LLL reference
-   :Scope: Display
+    The name of the field as shown in the form:
 
-   The name of the field as shown in the form:
+    ..  include:: /Images/Rst/Label.rst.txt
 
-   .. include:: /Images/Rst/Label.rst.txt
-
-   .. note::
-      Labels can be overridden in the
-      :ref:`types definition <types-properties-showitem>` and the
-      :ref:`palettes definition <palettes-properties-showitem>`. They can also
-      be overridden by the page TSconfig property
-      :ref:`label <t3tsconfig:tceform_label>`.
+    ..  note::
+        Labels can be overridden in the
+        :ref:`types definition <types-properties-showitem>` and the
+        :ref:`palettes definition <palettes-properties-showitem>`. They can also
+        be overridden by the page TSconfig property
+        :ref:`label <t3tsconfig:tceform_label>`.
