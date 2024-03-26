@@ -5,8 +5,8 @@
 foreign_table_prefix
 ====================
 
-..  confval:: foreign_table_prefix (type => category)
-
+..  confval:: foreign_table_prefix
+    :name: category-foreign-table-prefix
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string or LLL reference
     :Scope: Display
