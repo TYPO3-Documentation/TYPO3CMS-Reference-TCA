@@ -6,7 +6,7 @@ transOrigDiffSourceField
 ========================
 
 .. confval:: transOrigDiffSourceField
-
+   :name: ctrl-transOrigDiffSourceField
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Proc. / Display

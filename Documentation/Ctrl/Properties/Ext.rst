@@ -6,7 +6,7 @@ EXT
 ===
 
 .. confval:: EXT
-
+   :name: ctrl-ext
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: array
    :Scope: (variable, depends on extension)
