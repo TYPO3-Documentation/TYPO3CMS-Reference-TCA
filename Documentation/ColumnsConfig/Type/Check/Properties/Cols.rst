@@ -1,23 +1,23 @@
-.. include:: /Includes.rst.txt
-.. _columns-check-properties-cols:
+..  include:: /Includes.rst.txt
+..  _columns-check-properties-cols:
 
 ====
 cols
 ====
 
-.. confval:: cols
+..  confval:: cols
+    :name: check-cols
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: integer/string
+    :Scope: Display
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: integer/string
-   :Scope: Display
+    In how many columns the checkboxes will be shown. Makes sense only if the 'items' property is defining multiple
+    checkboxes.
 
-   In how many columns the checkboxes will be shown. Makes sense only if the 'items' property is defining multiple
-   checkboxes.
+    Allowed values are 1, 2, 3, ..., 31 or `inline`, 1 being default. If set to `inline` the checkboxes are
+    "floating" and there will be as many in one row as fits to browser width.
 
-   Allowed values are 1, 2, 3, ..., 31 or `inline`, 1 being default. If set to `inline` the checkboxes are
-   "floating" and there will be as many in one row as fits to browser width.
-
-   Note checkboxes will still wrap if browser width is not sufficient.
+    Note checkboxes will still wrap if browser width is not sufficient.
 
 Examples
 ========
@@ -25,11 +25,11 @@ Examples
 Fixes columns
 -------------
 
-.. include:: /Images/Rst/Checkbox2.rst.txt
-.. include:: /CodeSnippets/Checkbox2.rst.txt
+..  include:: /Images/Rst/Checkbox2.rst.txt
+..  include:: /CodeSnippets/Checkbox2.rst.txt
 
 Inline columns
 --------------
 
-.. include:: /Images/Rst/Checkbox16.rst.txt
-.. include:: /CodeSnippets/Checkbox16.rst.txt
+..  include:: /Images/Rst/Checkbox16.rst.txt
+..  include:: /CodeSnippets/Checkbox16.rst.txt
