@@ -174,7 +174,7 @@ headline "Example" defined:
     ],
 
 
-A complex example in a flexform
+A complex example in a FlexForm
 -------------------------------
 
 Using :code:`OR` and :code:`AND` within FlexForms works like this:
