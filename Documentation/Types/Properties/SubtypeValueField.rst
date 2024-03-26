@@ -21,7 +21,7 @@ Examples
 ========
 
 ..  code-block:: php
-    :capition: EXT:frontend/Configuration/TCA/tt_content.php (Excerpt)
+    :caption: EXT:frontend/Configuration/TCA/tt_content.php (Excerpt)
 
     'subtype_value_field' => 'list_type',
     'subtypes_excludelist' => [
