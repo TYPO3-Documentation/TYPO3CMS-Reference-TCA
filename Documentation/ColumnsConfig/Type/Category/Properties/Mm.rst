@@ -16,8 +16,8 @@ MM
     referenced by TCA table columns. Dropping these definitions allows the Core
     to adapt and migrate definitions if needed.
 
-..  confval:: MM (type => category)
-
+..  confval:: MM
+    :name: category-mm
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc.
