@@ -28,7 +28,7 @@ Remove fields `recursive` and `pages` from the subtype `example_registration`:
 
 
 ..  code-block:: php
-    :capition: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php (Excerpt)
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php (Excerpt)
 
     $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']
         ['example_registration'] = 'recursive,pages';
