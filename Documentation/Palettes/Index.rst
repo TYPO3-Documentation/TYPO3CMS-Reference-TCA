@@ -1,6 +1,6 @@
-﻿.. include:: /Includes.rst.txt
+﻿..  include:: /Includes.rst.txt
 
-.. _palettes:
+..  _palettes:
 
 ==========================
 Grouping fields (palettes)
@@ -14,12 +14,12 @@ group multiple related fields in one combined section.
 Each palette has a name and can be referenced by name from within the
 :ref:`['types'] section <types>`.
 
-To modify existing palettes you can use the utility functions 
-:php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette` and 
+To modify existing palettes you can use the utility functions
+:php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette` and
 :php:`ExtensionManagementUtility::addFieldsToAllPalettesOfField`.
 
 
-.. toctree::
+..  toctree::
 
-   Examples
-   Properties/Index
+    Examples
+    Properties/Index
