@@ -1,11 +1,11 @@
-.. include:: /Includes.rst.txt
-.. _columns-flex-facts:
+..  include:: /Includes.rst.txt
+..  _columns-flex-facts:
 
 ===============
 FlexForm syntax
 ===============
 
-.. note::
+..  note::
     This section is still messy, should be merged with the section from :ref:`Core API <t3coreapi:t3ds>`
     and :ref:`t3coreapi:flexforms` and should be much easier to understand.
 
@@ -18,25 +18,25 @@ inside a <T3DataStructure> XML document. When you configure a FlexForm
 field in a Data Structure (DS) you can use basically all column types
 documented here for TCA. The limitations are:
 
--  "unique" and "uniqueInPid" evaluation is not available
+*   "unique" and "uniqueInPid" evaluation is not available
 
--  You cannot nest FlexForm configurations inside of FlexForms.
+*   You cannot nest FlexForm configurations inside of FlexForms.
 
--  You cannot add, change or remove fields in FlexForms without copying the data structure and changing the configuration accordingly.
+*   You cannot add, change or remove fields in FlexForms without copying the data structure and changing the configuration accordingly.
 
--  Charset follows that of the current backend UTF-8. When storing FlexForm information in external files,
-   make sure that they are using UTF-8 too.
+*   Charset follows that of the current backend UTF-8. When storing FlexForm information in external files,
+    make sure that they are using UTF-8 too.
 
--  :php:`type='inline'` and other types that point to different tables are not allowed in FlexForm section containers.
+*   :php:`type='inline'` and other types that point to different tables are not allowed in FlexForm section containers.
 
-.. versionchanged:: 13.0
+..  versionchanged:: 13.0
 
     Since TYPO3 13.0, also :php:`type='select'` (when using
     :php:`foreign_table`) is not allowed and will raise an exception
     when used. Note this only applies to FlexForm sections, not general
     FlexForm usage.
 
-.. _columns-flex-tceforms:
+..  _columns-flex-tceforms:
 
 ..  versionchanged:: 12.0
     The superfluous array key `TCEforms` was removed and is not evaluated
@@ -47,12 +47,12 @@ documented here for TCA. The limitations are:
 The tables below documents the extension elements:
 
 
-.. _columns-flex-tceforms-array:
+..  _columns-flex-tceforms-array:
 
 Array Elements
 ==============
 
-.. _columns-flex-tceforms-array-meta:
+..  _columns-flex-tceforms-array-meta:
 
 <meta>
 ------
@@ -62,7 +62,7 @@ Array Elements
     Can contain application specific meta settings. For FlexForms this means a definition of how languages
     are handled in the form.
 
-.. _columns-flex-tceforms-array-application-tag:
+..  _columns-flex-tceforms-array-application-tag:
 
 <[application tag]>
 -------------------
@@ -71,7 +71,7 @@ Array Elements
     A direct reflection of a ['columns']['field name']['config'] PHP array configuring a field in TCA. As XML,
     this is expressed by array2xml()'s output.
 
-.. _columns-flex-tceforms-array-root-tceforms:
+..  _columns-flex-tceforms-array-root-tceforms:
 
 <ROOT>
 ------
@@ -89,12 +89,12 @@ Array Elements
         <sheetShortDescr>
 
 
-.. _columns-flex-tceforms-value:
+..  _columns-flex-tceforms-value:
 
 Value Elements
 ==============
 
-.. _columns-flex-tceforms-value-sheettitle:
+..  _columns-flex-tceforms-value-sheettitle:
 
 <sheetTitle>
 ------------
@@ -106,7 +106,7 @@ Value Elements
     string or LLL reference
     Specifies the title of the sheet.
 
-.. _columns-flex-tceforms-value-sheetdescription:
+..  _columns-flex-tceforms-value-sheetdescription:
 
 <sheetDescription>
 ------------------
@@ -118,7 +118,7 @@ Value Elements
     string or LLL reference
     Specifies a description for the sheet shown in the flexform.
 
-.. _columns-flex-tceforms-value-sheetshortdescr:
+..  _columns-flex-tceforms-value-sheetshortdescr:
 
 <sheetShortDescr>
 -----------------
@@ -131,7 +131,7 @@ Value Elements
     Specifies a short description of the sheet used in the tab-menu.
 
 
-.. _columns-flex-sheets:
+..  _columns-flex-sheets:
 
 Sheets and FlexForms
 ====================
@@ -140,7 +140,7 @@ FlexForms always resolve sheet definitions in a Data Structure. If only one shee
 the "sDEF" sheet (default). In that case no tab-menu for sheets will appear (see examples below).
 
 
-.. _columns-flex-data-format:
+..  _columns-flex-data-format:
 
 FlexForm data format, <T3FlexForms>
 ===================================
@@ -150,9 +150,9 @@ When saving FlexForm elements the content is stored as XML using
 format. The structure is as follows:
 
 
-.. _columns-flex-data-format-array:
+..  _columns-flex-data-format-array:
 
-.. _columns-flex-data-format-array-t3flexforms:
+..  _columns-flex-data-format-array-t3flexforms:
 
 <T3FlexForms>
 -------------
@@ -166,7 +166,7 @@ format. The structure is as follows:
 
         <data>
 
-.. _columns-flex-data-format-array-meta:
+..  _columns-flex-data-format-array-meta:
 
 <meta>
 ------
@@ -175,7 +175,7 @@ format. The structure is as follows:
     <meta>
     Meta data for the content. For instance information about which sheet is active etc.
 
-.. _columns-flex-data-format-array-data:
+..  _columns-flex-data-format-array-data:
 
 <data>
 ------
@@ -187,7 +187,7 @@ format. The structure is as follows:
     Child elements
          <sheet>
 
-.. _columns-flex-data-format-array-sheet:
+..  _columns-flex-data-format-array-sheet:
 
 <sheets>
 --------
@@ -201,7 +201,7 @@ format. The structure is as follows:
 
         <s\_[sheet keys]>
 
-.. _columns-flex-data-format-array-sdef:
+..  _columns-flex-data-format-array-sdef:
 
 <sDEF>
 """"""
@@ -213,7 +213,7 @@ format. The structure is as follows:
     Child elements
         <lDEF>
 
-.. _columns-flex-data-format-array-ldef:
+..  _columns-flex-data-format-array-ldef:
 
 <lDEF>
 ------
@@ -225,7 +225,7 @@ format. The structure is as follows:
     Child elements
         <[field name]>
 
-.. _columns-flex-data-format-array-field-name:
+..  _columns-flex-data-format-array-field-name:
 
 <[field name]>
 --------------
@@ -238,9 +238,9 @@ format. The structure is as follows:
         <vDEF>
 
 
-.. _columns-flex-data-format-value:
+..  _columns-flex-data-format-value:
 
-.. _columns-flex-data-format-value-vdef:
+..  _columns-flex-data-format-value-vdef:
 
 <vDEF>
 ------

@@ -1,12 +1,12 @@
-.. include:: /Includes.rst.txt
-.. _columns-flex-properties-ds:
+..  include:: /Includes.rst.txt
+..  _columns-flex-properties-ds:
 
 ===================
 Data structure (ds)
 ===================
 
 ..  confval:: ds
-
+    :name: flex-ds
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display  / Proc.

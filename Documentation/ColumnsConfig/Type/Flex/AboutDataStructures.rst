@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-flex-ds-pointer:
+..  include:: /Includes.rst.txt
+..  _columns-flex-ds-pointer:
 
 ========================
 About the data structure
@@ -20,7 +20,7 @@ used in different scenarios.
 One data structure only
 =======================
 
-.. code-block:: php
+..  code-block:: php
 
     'config' => [
         'type' => 'flex',
@@ -38,7 +38,7 @@ is parsed and the flex form defined in there is displayed.
 Data structure selection depends on a field value
 =================================================
 
-.. code-block:: php
+..  code-block:: php
 
     'config' => [
         'type' => 'flex',
@@ -60,7 +60,7 @@ to "Default.xml".
 Data structure selection depends on a combination of two field values
 =====================================================================
 
-.. code-block:: php
+..  code-block:: php
 
     'config' => [
         'type' => 'flex',
