@@ -7,8 +7,8 @@ foreign\_table\_item\_group
 
 ..  versionadded:: 13.0
 
-..  confval:: foreign_table_item_group (type => category)
-
+..  confval:: foreign_table_item_group
+    :name: category-foreign-table-item-group
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (column name)
     :Scope: Proc. / Display

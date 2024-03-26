@@ -1,17 +1,17 @@
-.. include:: /Includes.rst.txt
-.. _columns-category-properties-exclusivekeys:
+..  include:: /Includes.rst.txt
+..  _columns-category-properties-exclusivekeys:
 
 =============
 exclusiveKeys
 =============
 
-.. confval:: exclusiveKeys
+..  confval:: exclusiveKeys
+    :name: category-exclusiveKeys
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (list of)
+    :Scope: Display  / Proc.
+    :RenderType: all
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string (list of)
-   :Scope: Display  / Proc.
-   :RenderType: all
-
-   List of keys that exclude any other keys in a select box where multiple
-   items could be selected. See also :ref:`property exclusiveKeys of selectTree
-   <columns-select-properties-exclusivekeys>`.
+    List of keys that exclude any other keys in a select box where multiple
+    items could be selected. See also :ref:`property exclusiveKeys of selectTree
+    <columns-select-properties-exclusivekeys>`.

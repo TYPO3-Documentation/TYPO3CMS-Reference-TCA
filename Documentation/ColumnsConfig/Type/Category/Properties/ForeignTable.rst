@@ -5,8 +5,8 @@
 foreign\_table
 ==============
 
-..  confval:: foreign_table (type => category)
-
+..  confval:: foreign_table
+    :name: category-foreign-table
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc. / Display

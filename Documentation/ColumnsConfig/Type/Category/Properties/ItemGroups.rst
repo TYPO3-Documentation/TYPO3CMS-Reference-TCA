@@ -5,8 +5,8 @@
 itemGroups
 ==========
 
-..  confval:: itemGroups (type => category)
-
+..  confval:: itemGroups
+    :name: category-item-groups
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display  / Proc.
