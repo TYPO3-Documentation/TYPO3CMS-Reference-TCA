@@ -1,33 +1,33 @@
-.. include:: /Includes.rst.txt
-.. _palettes-properties-description:
+..  include:: /Includes.rst.txt
+..  _palettes-properties-description:
 
 ===========
 description
 ===========
 
-.. versionadded:: 11.3
-   The palettes description property has been added with TYPO3 v11.3.
+..  versionadded:: 11.3
+    The palettes description property has been added with TYPO3 v11.3.
 
-.. confval:: description (palettes)
+..  confval:: description
+    :name: palettes-description
+    :Path: $GLOBALS['TCA'][$table]['palettes']
+    :type: string
 
-   :Path: $GLOBALS['TCA'][$table]['palettes']
-   :type: string
+    Allows to display a localized description text into the palette declaration.
+    It will be displayed below the
+    :ref:`palette label<palettes-properties-label>`.
 
-   Allows to display a localized description text into the palette declaration.
-   It will be displayed below the
-   :ref:`palette label<palettes-properties-label>`.
+    This additional help text can be used to clarify some field usages directly
+    in the UI.
 
-   This additional help text can be used to clarify some field usages directly
-   in the UI.
+    ..  note::
 
-   .. note::
-
-      In contrast to the palette label, the description property can not
-      be overwritten on a record type basis.
+        In contrast to the palette label, the description property can not
+        be overwritten on a record type basis.
 
 Example
 =======
 
-.. include:: /Images/Rst/PaletteDescription.rst.txt
+..  include:: /Images/Rst/PaletteDescription.rst.txt
 
-.. include:: /CodeSnippets/PaletteDescription.rst.txt
+..  include:: /CodeSnippets/PaletteDescription.rst.txt

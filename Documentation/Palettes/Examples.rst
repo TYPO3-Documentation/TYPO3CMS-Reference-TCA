@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _palettes-examples:
+..  include:: /Includes.rst.txt
+..  _palettes-examples:
 
 ========
 Examples
@@ -7,17 +7,17 @@ Examples
 
 The TCA of the styleguide extension provides palettes with different properties.
 
-.. include:: /Images/Rst/Palette.rst.txt
+..  include:: /Images/Rst/Palette.rst.txt
 
 Palettes get defined in the section :php:`palettes` of the tables TCA array.
 
 The following TCA section specifies the different palettes.
 
-.. include:: /CodeSnippets/Palettes.rst.txt
+..  include:: /CodeSnippets/Palettes.rst.txt
 
 The palettes then get referenced in the :php:`types` section:
 
-.. include:: /CodeSnippets/PalettesTypes.rst.txt
+..  include:: /CodeSnippets/PalettesTypes.rst.txt
 
 
 
@@ -29,7 +29,11 @@ specific label in the 'types' array for a palette overrides the default label
 that was defined within the 'palettes' array. There is no way to unset a label
 that is set within the 'palettes' array. It will always be displayed.
 
-Example::
+Example:
+
+
+..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
 
    'types' => [
       'myType' => [

@@ -1,43 +1,49 @@
-.. include:: /Includes.rst.txt
-.. _palettes-properties-label:
+..  include:: /Includes.rst.txt
+..  _palettes-properties-label:
 
 =====
 label
 =====
 
-.. confval:: label (palettes)
+..  confval:: label
+    :name: palettes-label
+    :Path: $GLOBALS['TCA'][$table]['palettes']
+    :type: string
 
-   :Path: $GLOBALS['TCA'][$table]['palettes']
-   :type: string
+    Allows to display a localized label text as a dedicated entry into the palette declaration, instead as a part of
+    the types configuration.
+    By using the explicit label entry, code duplication upon reusing existing palettes can be reduced. The label is
+    always shown with the palette, no matter where it is referenced.
 
-   Allows to display a localized label text as a dedicated entry into the palette declaration, instead as a part of
-   the types configuration.
-   By using the explicit label entry, code duplication upon reusing existing palettes can be reduced. The label is
-   always shown with the palette, no matter where it is referenced.
+    Before:
 
-   Before::
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
 
-         'types' => [
+        'types' => [
             'myType' => [
-               'showitem' => 'aField, --palette--;LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription;aPalette, someOtherField',
+                'showitem' => 'aField, --palette--;LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription;aPalette, someOtherField',
             ],
-         ],
-         'palettes' => [
+        ],
+        'palettes' => [
             'aPalette' => [
-               'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
+                'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
             ],
-         ],
+        ],
 
-   After::
+    After:
 
-         'types' => [
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
+
+        'types' => [
             'myType' => [
-               'showitem' => 'aField, --palette--;;aPalette, someOtherField',
+                'showitem' => 'aField, --palette--;;aPalette, someOtherField',
             ],
-         ],
-         'palettes' => [
+        ],
+        'palettes' => [
             'aPalette' => [
-               'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
-               'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
+                'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
+                'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
             ],
-         ],
+        ],
