@@ -37,7 +37,7 @@ Examples
 Example adding "nowrap" to a text type for type "text":
 
 ..  code-block:: php
-    :capition: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
 
     'types' => [
         'text' => [
