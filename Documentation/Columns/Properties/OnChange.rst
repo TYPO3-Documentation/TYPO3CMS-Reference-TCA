@@ -1,27 +1,27 @@
-.. include:: /Includes.rst.txt
-.. _columns-properties-onChange:
+..  include:: /Includes.rst.txt
+..  _columns-properties-onChange:
 
 ========
 onChange
 ========
 
-.. confval:: onChange
+..  confval:: onChange
+    :name: columns-onChange
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]
+    :Required: false
+    :type: string
+    :Scope: Display
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
-   :Required: false
-   :type: string
-   :Scope: Display
+    If set to `reload`, it triggers a form reload once the value of this field
+    is changed. This is automatically set for fields specified as
+    :ref:`record type <ctrl-reference-type>` in the control section.
 
-   If set to `reload`, it triggers a form reload once the value of this field
-   is changed. This is automatically set for fields specified as
-   :ref:`record type <ctrl-reference-type>` in the control section.
+    The :php:`onChange` property is useful for fields which are targets of a
+    :ref:`display condition's FIELD: evaluation <columns-properties-displaycond>`.
 
-   The :php:`onChange` property is useful for fields which are targets of a
-   :ref:`display condition's FIELD: evaluation <columns-properties-displaycond>`.
+    On changing the field a modal gets displayed prompting to reload the record.
 
-   On changing the field a modal gets displayed prompting to reload the record.
-
-   .. include:: /Images/Rst/CtrlTypeChangeModal.rst.txt
+    ..  include:: /Images/Rst/CtrlTypeChangeModal.rst.txt
 
 Examples
 ========
@@ -29,5 +29,5 @@ Examples
 Select field triggering reload
 ------------------------------
 
-.. include:: /Images/Rst/SelectRequestupdate1.rst.txt
-.. include:: /CodeSnippets/SelectRequestupdate1.rst.txt
+..  include:: /Images/Rst/SelectRequestupdate1.rst.txt
+..  include:: /CodeSnippets/SelectRequestupdate1.rst.txt
