@@ -1,15 +1,15 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-input-renderType-colorpicker:
-.. _columns-color:
+..  _columns-input-renderType-colorpicker:
+..  _columns-color:
 
 =====
 Color
 =====
 
-.. versionadded:: 12.0
-   The TCA type :php:`color` has been introduced. It replaces the
-   :php:`renderType=colorpicker` of TCA type :php:`input`.
+..  versionadded:: 12.0
+    The TCA type :php:`color` has been introduced. It replaces the
+    :php:`renderType=colorpicker` of TCA type :php:`input`.
 
 
 The TCA type :php:`color` should be used to render a JavaScript-based color picker.
@@ -19,7 +19,7 @@ Examples
 
 A simple color picker:
 
-.. code-block:: php
+..  code-block:: php
 
     'a_color_field' => [
         'label' => 'Color field',
@@ -35,7 +35,7 @@ Migration
 A complete migration from :php:`renderType=colorpicker` to :php:`type=color`
 looks like the following:
 
-.. code-block:: php
+..  code-block:: php
 
     // Before
 
@@ -76,7 +76,7 @@ An automatic TCA migration is performed on the fly, migrating all occurrences
 to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error
 where code adoption has to take place.
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Properties/Index
+    Properties/Index
