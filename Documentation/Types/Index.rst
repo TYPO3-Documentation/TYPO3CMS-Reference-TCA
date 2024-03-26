@@ -1,11 +1,11 @@
-﻿.. include:: /Includes.rst.txt
-.. _types:
+﻿..  include:: /Includes.rst.txt
+..  _types:
 
 ==============================
 Fields to be displayed (types)
 ==============================
 
-.. note::
+..  note::
     :ref:`Click here if you are looking for ['columns']['config']['type']. <columns-types>`
 
 The ['types'] section plays a crucial role in TCA to specify which fields from the :ref:`['columns'] section <columns>`
@@ -17,9 +17,8 @@ Multiple types can be configured, which one is selected depends on the value of 
 `Single Table Inheritance <https://en.wikipedia.org/wiki/Single_Table_Inheritance>`__ in Object-orientated
 programming.
 
+..  toctree::
 
-.. toctree::
-
-   Introduction
-   Examples
-   Properties/Index
+    Introduction
+    Examples
+    Properties/Index
