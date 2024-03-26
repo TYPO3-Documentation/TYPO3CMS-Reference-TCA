@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-properties-displaycond:
+..  include:: /Includes.rst.txt
+..  _columns-properties-displaycond:
 
 ===========
 displayCond
@@ -13,94 +13,94 @@ It can be used for fields directly in the record as well as for
 FlexForm values.
 
 
-.. confval:: displayCond
+..  confval:: displayCond
+    :name: columns-displayCond
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]
+    :Required: false
+    :type: string / array
+    :Scope: Display
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]
-   :Required: false
-   :type: string / array
-   :Scope: Display
+    Contains one or more condition rules for whether to display the field or not.
 
-   Contains one or more condition rules for whether to display the field or not.
+    Conditions can be grouped and nested using boolean operators :code:`AND` or :code:`OR` as
+    array keys. See examples below.
 
-   Conditions can be grouped and nested using boolean operators :code:`AND` or :code:`OR` as
-   array keys. See examples below.
+    A rule is a string divided into several parts by ":" (colons). The first part is the rule-type and the subsequent
+    parts depend on the rule type.
 
-   A rule is a string divided into several parts by ":" (colons). The first part is the rule-type and the subsequent
-   parts depend on the rule type.
+    The following rules are available:
 
-   The following rules are available:
+    FIELD
+        This evaluates based on another field's value in the record.
 
-   FIELD
-      This evaluates based on another field's value in the record.
+        -  Part 1 is the field name
 
-      -  Part 1 is the field name
+        -  Part 2 is the evaluation type. These are the possible options:
 
-      -  Part 2 is the evaluation type. These are the possible options:
+            REQ
+                Requires the field to have a "true" value. False values are "" (blank string) and 0 (zero).
+                Everything else is true. For the REQ evaluation type Part 3 of the rules string must be the string "true"
+                or "false". If "true" then the rule returns "true" if the evaluation is true. If "false" then the rule
+                returns "true" if the evaluation is false.
 
-         REQ
-            Requires the field to have a "true" value. False values are "" (blank string) and 0 (zero).
-            Everything else is true. For the REQ evaluation type Part 3 of the rules string must be the string "true"
-            or "false". If "true" then the rule returns "true" if the evaluation is true. If "false" then the rule
-            returns "true" if the evaluation is false.
+            **> / < / >= / <=**
+                Evaluates if the field value is greater than, less than the value in "Part 3"
 
-         **> / < / >= / <=**
-            Evaluates if the field value is greater than, less than the value in "Part 3"
+            **= / !=**
+                Evaluates if the field value is equal to value in "Part 3"
 
-         **= / !=**
-            Evaluates if the field value is equal to value in "Part 3"
+            **IN / !IN**
+                Evaluates if the field value is in the comma list equal to value in "Part 3"
 
-         **IN / !IN**
-            Evaluates if the field value is in the comma list equal to value in "Part 3"
+            **- / !-**
+                Evaluates if the field value is in the range specified by value in "Part 3" ([min] - [max])
 
-         **- / !-**
-            Evaluates if the field value is in the range specified by value in "Part 3" ([min] - [max])
+            **BIT / !BIT**
+                Evaluates if the bit specified by the value in "Part 3" is set in the field's value
+                (considered as an integer)
 
-         **BIT / !BIT**
-            Evaluates if the bit specified by the value in "Part 3" is set in the field's value
-            (considered as an integer)
+        -  Part 3 is a comma separated list of string or numeric values
 
-      -  Part 3 is a comma separated list of string or numeric values
-
-   REC:NEW
-      This can be used to test whether the current record is new or not.
+    REC:NEW
+        This can be used to test whether the current record is new or not.
 
 
-   HIDE\_FOR\_NON\_ADMINS
-      This will hide the field for all non-admin users while admins can see it.
-      Useful for FlexForm container fields which are not supposed to be edited directly via the FlexForm but
-      rather through some other interface.
+    HIDE\_FOR\_NON\_ADMINS
+        This will hide the field for all non-admin users while admins can see it.
+        Useful for FlexForm container fields which are not supposed to be edited directly via the FlexForm but
+        rather through some other interface.
 
-   USER
-      userFunc call with a fully qualified class name.
+    USER
+        userFunc call with a fully qualified class name.
 
-      Additional parameters can be passed separated by colon:
-      :php:`USER:Evoweb\\Example\\User\\MyConditionMatcher->checkHeader:some:more:info`
+        Additional parameters can be passed separated by colon:
+        :php:`USER:Evoweb\\Example\\User\\MyConditionMatcher->checkHeader:some:more:info`
 
-      The following arguments are passed as array to the userFunc:
+        The following arguments are passed as array to the userFunc:
 
-      -  :php:`record`: the currently edited record
-      -  :php:`flexContext`: details about the FlexForm if the condition is used in one
-      -  :php:`flexformValueKey`: `vDEF`
-      -  :php:`conditionParameters`: additional parameters
+        -  :php:`record`: the currently edited record
+        -  :php:`flexContext`: details about the FlexForm if the condition is used in one
+        -  :php:`flexformValueKey`: `vDEF`
+        -  :php:`conditionParameters`: additional parameters
 
-      The called method is expected to return a :php:`bool` value: :php:`true` if the field should be displayed, :php:`false` otherwise.
+        The called method is expected to return a :php:`bool` value: :php:`true` if the field should be displayed, :php:`false` otherwise.
 
-   VERSION:IS
-      Evaluate if a record is a "versioned" record from workspaces.
+    VERSION:IS
+        Evaluate if a record is a "versioned" record from workspaces.
 
-      -  Part 1 is the type:
+        -  Part 1 is the type:
 
-         IS
-            Part 2 is "true" or "false": If true, the field is shown only if the record is a version (pid == -1).
-            Example to show a field in "Live" workspace only: :php:`VERSION:IS:false`
+            IS
+                Part 2 is "true" or "false": If true, the field is shown only if the record is a version (pid == -1).
+                Example to show a field in "Live" workspace only: :php:`VERSION:IS:false`
 
-   In FlexForm, display conditions can be attached to single fields in sheets, to sheets itself, to flex section fields
-   and to flex section container element fields. :code:`FIELD` references can be prefixed with a sheet name to
-   reference a field from a neighbor sheet, see examples below.
+    In FlexForm, display conditions can be attached to single fields in sheets, to sheets itself, to flex section fields
+    and to flex section container element fields. :code:`FIELD` references can be prefixed with a sheet name to
+    reference a field from a neighbor sheet, see examples below.
 
-.. tip::
-   Fields used in a conditions should have the column option
-   :confval:`onChange` set to reload.
+..  tip::
+    Fields used in a conditions should have the column option
+    :confval:`columns-onChange` set to reload.
 
 
 Examples
@@ -110,43 +110,47 @@ Simple display condition
 ------------------------
 
 This example will require the field named "tx\_templavoila\_ds" to be true, otherwise the field for which this rule
-is set will not be displayed::
+is set will not be displayed:
 
-   'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
+..  code-block:: php
+
+    'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
 
 
 Combining conditions
 --------------------
 
-Multiple conditions can be combined::
+Multiple conditions can be combined:
 
-   'displayCond' => [
-      'AND' => [
-         'FIELD:tx_templavoila_ds:REQ:true',
-         'FIELD:header:=:Headline',
-      ],
-   ],
+..  code-block:: php
+
+    'displayCond' => [
+        'AND' => [
+            'FIELD:tx_templavoila_ds:REQ:true',
+            'FIELD:header:=:Headline',
+        ],
+    ],
 
 
 An example with multiple values and :code:`OR`:
 
 ..  code-block:: php
-   :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
 
-   $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']['OR'] = [
-      'FIELD:tx_mask_otherfield:=:1',
-      'FIELD:tx_mask_otherfield:=:2',
-      'FIELD:tx_mask_otherfield:=:4',
-   ];
+    $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']['OR'] = [
+        'FIELD:tx_mask_otherfield:=:1',
+        'FIELD:tx_mask_otherfield:=:2',
+        'FIELD:tx_mask_otherfield:=:4',
+    ];
 
 
 This is the same as:
 
 ..  code-block:: php
-   :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
 
-        $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']
-		  = 'FIELD:tx_mask_otherfield:IN:1,2,4'; 
+          $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']
+		  = 'FIELD:tx_mask_otherfield:IN:1,2,4';
 
 
 A complex example
@@ -155,17 +159,19 @@ A complex example
 Going further the next example defines the following conditions: for the
 "example_field" field to be displayed, the content element must be in the
 default language. Furthermore it must be a text-type element or have the
-headline "Example" defined::
+headline "Example" defined:
 
-   'displayCond' => [
-      'AND' => [
-         'FIELD:sys_language_uid:=:0',
-         'OR' => [
-            'FIELD:CType:=:text',
-            'FIELD:header:=:Example'
-         ]
-      ]
-   ],
+..  code-block:: php
+
+    'displayCond' => [
+        'AND' => [
+            'FIELD:sys_language_uid:=:0',
+            'OR' => [
+                'FIELD:CType:=:text',
+                'FIELD:header:=:Example'
+            ]
+        ]
+    ],
 
 
 A complex example in a flexform
@@ -173,17 +179,17 @@ A complex example in a flexform
 
 Using :code:`OR` and :code:`AND` within FlexForms works like this:
 
-.. code-block:: xml
+..  code-block:: xml
 
-   <displayCond>
-      <and>
-         <value1>FIELD:sys_language_uid:=:0</value1>
-         <or>
-            <value1>FIELD:CType:=:text</value1>
-            <value2>FIELD:header:=:Example</value2>
-         </or>
-      </and>
-   </displayCond>
+    <displayCond>
+        <and>
+            <value1>FIELD:sys_language_uid:=:0</value1>
+            <or>
+                <value1>FIELD:CType:=:text</value1>
+                <value2>FIELD:header:=:Example</value2>
+            </or>
+        </and>
+    </displayCond>
 
 
 Access values in a flexform
@@ -191,13 +197,13 @@ Access values in a flexform
 
 Flex form fields can access field values from various different sources:
 
-.. code-block:: xml
+..  code-block:: xml
 
-   <!-- Hide field if value of record field "header" is not "true" -->
-   <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
-   <!-- Hide field if value of parent record field "field_1" is not "foo" -->
-   <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
-   <!-- Hide field if value of neighbour field "flexField_1 on same sheet is not "foo" -->
-   <displayCond>FIELD:flexField_1:!=:foo</displayCond>
-   <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
-   <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
+    <!-- Hide field if value of record field "header" is not "true" -->
+    <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
+    <!-- Hide field if value of parent record field "field_1" is not "foo" -->
+    <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
+    <!-- Hide field if value of neighbour field "flexField_1 on same sheet is not "foo" -->
+    <displayCond>FIELD:flexField_1:!=:foo</displayCond>
+    <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
+    <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
