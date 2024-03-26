@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-check-checkboxLabeledToggle:
+..  _columns-check-checkboxLabeledToggle:
 
 =======================
 Labeled toggle checkbox
@@ -18,24 +18,24 @@ Its state can be inverted via :ref:`invertStateDisplay
 Examples
 ========
 
-.. _tca_example_checkbox_19:
+..  _tca_example_checkbox_19:
 
 Single checkbox with labeled toggle
 -----------------------------------
 
-.. include:: /Images/Rst/Checkbox19.rst.txt
+..  include:: /Images/Rst/Checkbox19.rst.txt
 
-.. include:: /CodeSnippets/Checkbox19.rst.txt
+..  include:: /CodeSnippets/Checkbox19.rst.txt
 
 
 
-.. _tca_example_checkbox_21:
+..  _tca_example_checkbox_21:
 
 Single checkbox with labeled toggle inverted state display
 ----------------------------------------------------------
 
-.. include:: /Images/Rst/Checkbox21.rst.txt
+..  include:: /Images/Rst/Checkbox21.rst.txt
 
-.. include:: /CodeSnippets/Checkbox21.rst.txt
+..  include:: /CodeSnippets/Checkbox21.rst.txt
 
 
