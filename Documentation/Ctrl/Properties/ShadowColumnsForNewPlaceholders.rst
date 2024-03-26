@@ -6,7 +6,7 @@ shadowColumnsForNewPlaceholders
 ===============================
 
 .. confval:: shadowColumnsForNewPlaceholders
-
+   :name: ctrl-shadowColumnsForNewPlaceholders
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (list of field names)
    :Scope: Proc.

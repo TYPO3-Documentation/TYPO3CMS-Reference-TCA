@@ -6,7 +6,7 @@ prependAtCopy
 =============
 
 .. confval:: prependAtCopy
-
+   :name: ctrl-prependAtCopy
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string or LLL reference
    :Scope: Proc.

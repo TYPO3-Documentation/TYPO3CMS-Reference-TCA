@@ -6,7 +6,7 @@ label
 =====
 
 .. confval:: label
-
+   :name: ctrl-label
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Display
@@ -36,7 +36,7 @@ label\_alt
 ==========
 
 .. confval:: label_alt
-
+   :name: ctrl-label-alt
    :type: String (comma-separated list of field names)
    :Scope: Display
 
@@ -67,7 +67,7 @@ label\_alt\_force
 =================
 
 .. confval:: label_alt_force
-
+   :name: ctrl-label-alt-force
    :type: boolean
    :Scope: Display
 

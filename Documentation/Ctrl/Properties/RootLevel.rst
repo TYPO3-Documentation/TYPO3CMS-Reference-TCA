@@ -5,11 +5,11 @@
 rootLevel
 =========
 
-.. confval:: rootLevel
-
-   :Path: $GLOBALS['TCA'][$table]['ctrl']
-   :type: [0, 1, -1]
-   :Scope: Proc. / Display
+..  confval:: rootLevel
+    :name: ctrl-rootLevel
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: [0, 1, -1]
+    :Scope: Proc. / Display
 
 
    Determines where a record may exist in the page tree. There are three options depending on the value:

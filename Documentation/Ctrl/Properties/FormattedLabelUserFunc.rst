@@ -6,7 +6,7 @@ formattedLabel\_userFunc
 ========================
 
 .. confval:: formattedLabel_userFunc
-
+   :name: ctrl-formattedlabel-userfunc
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Display

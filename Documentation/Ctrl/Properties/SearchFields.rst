@@ -6,7 +6,7 @@ searchFields
 ============
 
 .. confval:: searchFields
-
+   :name: ctrl-searchFields
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Search
@@ -25,18 +25,18 @@ searchFields
 
    There are more fine grained controls per column, see the documentation of the "search" key of any type in :ref:`columns-types`.
 
-   .. note::
+   ..  note::
 
-      Fields of type :ref:`input <columns-input>` may be excluded from search by default,
-      especially when using ``date``, ``time`` or ``int`` in ``eval``.
-      To include them, modify the search query with this hook:
-      :doc:`ext_core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
+       Fields of type :ref:`input <columns-input>` may be excluded from search by default,
+       especially when using ``date``, ``time`` or ``int`` in ``eval``.
+       To include them, modify the search query with this hook:
+       :doc:`ext_core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
 
 
-   .. note::
+   ..  note::
 
-      When searching as admin the fields `uid` and `pid` are automatically included.
-      For editors, `uid` and/or `pid` have to be added manually to the searchFields list.
+       When searching as admin the fields `uid` and `pid` are automatically included.
+       For editors, `uid` and/or `pid` have to be added manually to the searchFields list.
 
 
 Examples

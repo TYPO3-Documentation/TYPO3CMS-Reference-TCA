@@ -6,6 +6,7 @@ selicon\_field
 ==============
 
 .. confval:: selicon_field
+   :name: ctrl-selicon-field
 
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
@@ -40,7 +41,7 @@ follows:
 
 
 It can be used in another table as a foreign relation, for example in a field
-with render type :php:`singleSelect`::
+with render type :php:`singleSelect`:
 
 .. include:: /CodeSnippets/SelectSingle12.rst.txt
 

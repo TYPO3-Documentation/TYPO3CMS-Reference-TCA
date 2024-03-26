@@ -6,7 +6,7 @@ versioningWS
 ============
 
 .. confval:: versioningWS
-
+   :name: ctrl-versioningWS
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: boolean
    :Scope: Proc.

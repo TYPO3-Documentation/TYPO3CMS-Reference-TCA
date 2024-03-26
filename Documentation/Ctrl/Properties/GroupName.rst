@@ -6,7 +6,7 @@ groupName
 =========
 
 .. confval:: groupName
-
+   :name: ctrl-groupName
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Special
