@@ -6,7 +6,7 @@ crdate
 ======
 
 .. confval:: crdate
-
+   :name: ctrl-crdate
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string (field name)
    :Scope: Proc.

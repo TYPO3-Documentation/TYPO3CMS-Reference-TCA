@@ -6,7 +6,7 @@ is\_static
 ==========
 
 .. confval:: is_static
-
+   :name: ctrl-is-static
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: boolean
    :Scope: Used by import/export

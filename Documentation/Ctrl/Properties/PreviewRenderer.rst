@@ -6,7 +6,7 @@ previewRenderer
 ===============
 
 .. confval:: previewRenderer
-
+   :name: ctrl-previewRenderer
    :Path: $GLOBALS['TCA'][$table]['ctrl']
    :type: string
    :Scope: Display
