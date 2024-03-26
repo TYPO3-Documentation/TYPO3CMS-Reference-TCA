@@ -1,5 +1,4 @@
-.. include:: /Includes.rst.txt
-
+..  include:: /Includes.rst.txt
 
 ============
 Introduction
@@ -11,16 +10,16 @@ its different content elements is a good example on what can be done with ['type
 
 The basic ['types'] structure looks like this:
 
-.. code-block:: php
+..  code-block:: php
 
-    'types' => [
-        '0' => [
-            'showitem' => 'aField, anotherField',
-        ],
-        'anotherType' => [
-            'showitem' => 'aField, aDifferentField',
-        ],
-    ],
+     'types' => [
+          '0' => [
+                'showitem' => 'aField, anotherField',
+          ],
+          'anotherType' => [
+                'showitem' => 'aField, aDifferentField',
+          ],
+     ],
 
 So, the basic array has a key field with type names (here '0', and 'anotherType'), with a series of possible
 properties each, most importantly the :ref:`showitem <types-properties-showitem>` property.
