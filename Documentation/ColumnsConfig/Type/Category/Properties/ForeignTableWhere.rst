@@ -5,8 +5,8 @@
 foreign_table_where
 ===================
 
-..  confval:: foreign_table_where (type => category)
-
+..  confval:: foreign_table_where
+    :name: category-foreign-table-where
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (SQL WHERE)
     :Scope: Proc. / Display
