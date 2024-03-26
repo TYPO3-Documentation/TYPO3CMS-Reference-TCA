@@ -1,14 +1,14 @@
-.. include:: /Includes.rst.txt
-.. _palettes-properties:
+..  include:: /Includes.rst.txt
+..  _palettes-properties:
 
 ==========
 Properties
 ==========
 
 
-.. toctree::
+..  toctree::
 
-   IsHiddenPalette
-   Label
-   Description
-   Showitem
+    IsHiddenPalette
+    Label
+    Description
+    Showitem
