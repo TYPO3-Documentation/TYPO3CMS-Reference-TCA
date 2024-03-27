@@ -1,10 +1,10 @@
-.. include:: /Includes.rst.txt
-.. _columns-inline-properties:
-.. _columns-inline-properties-type:
-.. _columns-inline-properties-behaviour:
-.. _columns-inline-properties-maxitems:
-.. _columns-inline-properties-minitems:
-.. _columns-inline-properties-mm-match-fields:
+..  include:: /Includes.rst.txt
+..  _columns-inline-properties:
+..  _columns-inline-properties-type:
+..  _columns-inline-properties-behaviour:
+..  _columns-inline-properties-maxitems:
+..  _columns-inline-properties-minitems:
+..  _columns-inline-properties-mm-match-fields:
 
 ==========
 Properties
@@ -18,7 +18,6 @@ Special properties
     :glob:
 
     *
-
 
 Common properties
 =================
