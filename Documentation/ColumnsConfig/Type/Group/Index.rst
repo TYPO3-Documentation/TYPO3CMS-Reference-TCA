@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
-.. _columns-group:
-.. _columns-group-introduction:
+..  include:: /Includes.rst.txt
+..  _columns-group:
+..  _columns-group-introduction:
 
 ============
 Group fields
@@ -27,9 +27,9 @@ The group field uses either the CSV format to store uids of related records or a
 
 You can read more on how data is structured in :ref:`columns-group-data` chapter.
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Examples
-   StoredDataValues
-   Properties/Index
+    Examples
+    StoredDataValues
+    Properties/Index
