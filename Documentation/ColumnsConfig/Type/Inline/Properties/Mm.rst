@@ -61,7 +61,7 @@ MM
 
 
 ..  confval:: MM_hasUidField
-    :name: inline-mm-ohasUidField
+    :name: inline-mm-hasUidField
 
     ..  versionchanged:: 13.0
         This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
