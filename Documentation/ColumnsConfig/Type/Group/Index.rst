@@ -1,15 +1,15 @@
-.. include:: /Includes.rst.txt
-.. _columns-group:
-.. _columns-group-introduction:
+..  include:: /Includes.rst.txt
+..  _columns-group:
+..  _columns-group-introduction:
 
 ============
 Group fields
 ============
 
-.. versionchanged:: 12.0
-   The newly introduced column type :ref:`folder <columns-folder>` replaces
-   the old combination of :php:`type => 'group'` together with
-   :php:`internal_type => 'folder'`.
+..  versionchanged:: 12.0
+    The newly introduced column type :ref:`folder <columns-folder>` replaces
+    the old combination of :php:`type => 'group'` together with
+    :php:`internal_type => 'folder'`.
 
 The group element (:php:`type' => 'group'`) in TYPO3 makes it possible to create references from a record of one table to many records from multiple tables in the system. The foreign tables can be the table itself (thus a self-reference) or any other table.
 This is especially useful (compared to the "select" type) when records are scattered over the page tree and require
@@ -31,9 +31,9 @@ The group field uses either the CSV format to store uids of related records or a
 
 You can read more on how data is structured in :ref:`columns-group-data` chapter.
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Examples
-   StoredDataValues
-   Properties/Index
+    Examples
+    StoredDataValues
+    Properties/Index

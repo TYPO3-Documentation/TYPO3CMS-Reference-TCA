@@ -1,30 +1,30 @@
-.. include:: /Includes.rst.txt
-.. _columns-group-properties-elementBrowserEntryPoints:
+..  include:: /Includes.rst.txt
+..  _columns-group-properties-elementBrowserEntryPoints:
 
 ==========================
 elementBrowserEntryPoints
 ==========================
 
-.. confval:: elementBrowserEntryPoints (type => group)
+..  confval:: elementBrowserEntryPoints
+    :name: group-elementBrowserEntryPoints
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Display
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Display
+    By default, the last selected page  is used when opening the element browser.
+    Setting this configuration value changes this behaviour.
 
-   By default, the last selected page  is used when opening the element browser.
-   Setting this configuration value changes this behaviour.
+    This configuration value is a PHP :php:`array`, containing `table => id`
+    pairs. When opening the element browser for a specific table (buttons below
+    the group field), the defined page is then always selected by default. There
+    is also the special `_default` key, used for the general element browser
+    button (on the right side of the group field), which is not dedicated to a
+    specific table.
 
-   This configuration value is a PHP :php:`array`, containing `table => id`
-   pairs. When opening the element browser for a specific table (buttons below
-   the group field), the defined page is then always selected by default. There
-   is also the special `_default` key, used for the general element browser
-   button (on the right side of the group field), which is not dedicated to a
-   specific table.
+    This configuration value also supports the known
+    markers `###SITEROOT###`, `###CURRENT_PID###` and `###PAGE_TSCONFIG_<key>###`.
 
-   This configuration value also supports the known
-   markers `###SITEROOT###`, `###CURRENT_PID###` and `###PAGE_TSCONFIG_<key>###`.
-
-   Each `table => id` pair can also be overridden via page TSconfig.
+    Each `table => id` pair can also be overridden via page TSconfig.
 
 Examples
 ========
@@ -32,7 +32,7 @@ Examples
 Open the element browser on page 123 for tt_content elements
 -------------------------------------------------------------
 
-.. code-block:: php
+..  code-block:: php
 
     'simple_group' => [
         'label' => 'Simple group field',
@@ -47,7 +47,7 @@ Open the element browser on page 123 for tt_content elements
 
 This could then be overridden via page TSconfig:
 
-.. code-block:: typoscript
+..  code-block:: typoscript
 
     TCEFORM.my_table.simple_group.config.elementBrowserEntryPoints.tt_content = 321
 
@@ -59,7 +59,7 @@ Open the element browser on different pages for tt_content and news records
 In case the group field allows more than one table, the `_default` key has to
 be set:
 
-.. code-block:: php
+..  code-block:: php
 
     'extended_group' => [
         'label' => 'Extended group field',
@@ -76,6 +76,6 @@ be set:
 
 Of course, the `_default` key can also be overridden via page TSconfig:
 
-.. code-block:: typoscript
+..  code-block:: typoscript
 
     TCEFORM.my_table.extended_group.config.elementBrowserEntryPoints._default = 122

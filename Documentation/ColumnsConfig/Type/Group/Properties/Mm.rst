@@ -16,8 +16,8 @@ MM
     referenced by TCA table columns. Dropping these definitions allows the Core
     to adapt and migrate definitions if needed.
 
-..  confval:: MM (type => group)
-
+..  confval:: MM
+    :name: group-mm
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc.
@@ -88,8 +88,8 @@ Related configurations
     Array of field => value pairs to insert when writing new MM relations.
 
 ..  _columns-group-properties-mm-match-fields:
-..  confval:: MM_match_fields (type => group)
-
+..  confval:: MM_match_fields
+    :name: group-mm-match-fields
     :type: array
     :Scope: Display / Proc.
 
@@ -98,8 +98,8 @@ Related configurations
 
 
 ..  _columns-group-properties-mm-opposite-field:
-..  confval:: MM_opposite_field (type => group)
-
+..  confval:: MM_opposite_field
+    :name: group-mm-opposite-field
     :type: string (field name)
     :Scope: Proc.
 
@@ -120,8 +120,8 @@ Related configurations
 
 
 ..  _columns-group-properties-mm-opposite-usage:
-..  confval:: MM_oppositeUsage (type => group)
-
+..  confval:: MM_oppositeUsage
+    :name: group-mm-opposite-usage
     :type: array
     :Scope: Proc.
 
@@ -138,8 +138,8 @@ Related configurations
 
 
 ..  _columns-group-properties-mm-table-where:
-..  confval:: MM_table_where (type => group)
-
+..  confval:: MM_table_where
+    :name: group-mm-table-where
     :type: string (SQL WHERE)
     :Scope: Proc.
 
