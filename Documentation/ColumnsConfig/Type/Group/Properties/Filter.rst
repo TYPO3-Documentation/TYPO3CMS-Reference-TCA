@@ -1,48 +1,48 @@
-.. include:: /Includes.rst.txt
-.. _columns-group-properties-filter:
+..  include:: /Includes.rst.txt
+..  _columns-group-properties-filter:
 
 ======
 filter
 ======
 
-.. confval:: filter
+..  confval:: filter
+    :name: group-filter
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Proc. / Display
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Proc. / Display
+    Define filters for item values. Doesn't work in combination with a wizard.
 
-   Define filters for item values. Doesn't work in combination with a wizard.
+    This is useful when only foreign records matching certain criteria should be allowed to be used as values in the
+    group field. The values are filtered in the Element Browser as well as during processing in DataHandler. Filter
+    userFuncs should have two input arguments ($parameters and $parentObject). The first argument ($parameters) is an
+    array with the parameters of the filter as configured in the TCA, but with the additional parameter "values", which
+    contains the array of values which should be filtered by the userFunc. The function must return the filtered
+    array of values.
 
-   This is useful when only foreign records matching certain criteria should be allowed to be used as values in the
-   group field. The values are filtered in the Element Browser as well as during processing in DataHandler. Filter
-   userFuncs should have two input arguments ($parameters and $parentObject). The first argument ($parameters) is an
-   array with the parameters of the filter as configured in the TCA, but with the additional parameter "values", which
-   contains the array of values which should be filtered by the userFunc. The function must return the filtered
-   array of values.
+    ..  note::
 
-   .. note::
+        Do not confuse the filter values with the page tree selector on the left side. To change the entry page in the navigation
+        use :ref:`elementBrowserEntryPoints <columns-group-properties-elementBrowserEntryPoints>` instead.
 
-      Do not confuse the filter values with the page tree selector on the left side. To change the entry page in the navigation
-      use :ref:`elementBrowserEntryPoints <columns-group-properties-elementBrowserEntryPoints>` instead.
+    Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied:
 
-   Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied:
+    ..  code-block:: php
 
-   .. code-block:: php
-
-      'filter' => [
-         [
-            'userFunc' => \Vendor\Extension\MyClass::class . '->doFilter',
-            'parameters' => [
-               // optional parameters for the filter go here
+        'filter' => [
+            [
+                'userFunc' => \Vendor\Extension\MyClass::class . '->doFilter',
+                'parameters' => [
+                    // optional parameters for the filter go here
+                ],
             ],
-         ],
-         [
-            'userFunc' => \Vendor\Extension\OtherClass::class . '->myFilter',
-            'parameters' => [
-               // optional parameters for the filter go here
+            [
+                'userFunc' => \Vendor\Extension\OtherClass::class . '->myFilter',
+                'parameters' => [
+                    // optional parameters for the filter go here
+                ],
             ],
-         ],
-      ],
+        ],
 
 Examples
 ========
@@ -55,35 +55,35 @@ case, you could use the filter functionality to make sure only females can be se
 
 The field configuration for the "mother" field could look like:
 
-.. code-block:: php
+..  code-block:: php
 
-   'mother' => [
-      'label' => 'Mother',
-      'config' => [
-         'type' => 'group',
-         'allowed' => 'tx_myext_person',
-         'size' => 1,
-         'filter' => [
-            [
-               'userFunc' => \Vendor\Extension\MyClass::class . '->doFilter',
-               'parameters' => [
-                  'evaluateGender' => 'female',
-               ],
+    'mother' => [
+        'label' => 'Mother',
+        'config' => [
+            'type' => 'group',
+            'allowed' => 'tx_myext_person',
+            'size' => 1,
+            'filter' => [
+                [
+                    'userFunc' => \Vendor\Extension\MyClass::class . '->doFilter',
+                    'parameters' => [
+                        'evaluateGender' => 'female',
+                    ],
+                ],
             ],
-         ],
-      ]
-   ],
+        ]
+    ],
 
 The corresponding filter class would look like:
 
-.. code-block:: php
+..  code-block:: php
 
-   class MyClass
-   {
-      public function doFilter(array $parameters, $parentObject)
-      {
-         $fieldValues = $parameters['values'];
-         // do the filtering here
-         return $fieldValues;
-      }
-   }
+    class MyClass
+    {
+        public function doFilter(array $parameters, $parentObject)
+        {
+            $fieldValues = $parameters['values'];
+            // do the filtering here
+            return $fieldValues;
+        }
+    }
