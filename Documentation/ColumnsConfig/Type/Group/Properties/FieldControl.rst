@@ -12,7 +12,7 @@ The field of type group can enable all common :ref:`field control options
 <tca_property_fieldControl>`. Furthermore the following are available:
 
 ..  confval:: elementBrowser
-    :name: group-fieldControl
+    :name: group-elementBrowser
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
     :type: array
     :Scope: fieldControl
