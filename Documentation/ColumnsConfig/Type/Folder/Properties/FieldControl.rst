@@ -10,7 +10,7 @@ The field of type folder can enable all common
 following are available:
 
 ..  confval:: elementBrowser
-    :name: folder-fieldControl
+    :name: folder-elementBrowser
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
     :type: array
     :Scope: fieldControl
