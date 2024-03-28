@@ -7,9 +7,9 @@ Password
 ========
 
 ..  versionadded:: 12.0
-   The TCA type :php:`password` has been introduced. It replaces the
-   :php:`eval=password` and :php:`eval=saltedPassword` option of
-   TCA type :php:`input`.
+    The TCA type :php:`password` has been introduced. It replaces the
+    :php:`eval=password` and :php:`eval=saltedPassword` option of
+    TCA type :php:`input`.
 
 The TCA type :php:`password` should be used for input values that represent
 passwords.
@@ -89,11 +89,11 @@ where code adoption has to take place.
 
 ..  note::
 
-   The value of TCA type :php:`password` column is automatically trimmed before
-   being stored (and optionally hashed) in the database. Therefore, the :php:`eval=trim`
-   option is no longer needed and should be removed from the TCA configuration.
+    The value of TCA type :php:`password` column is automatically trimmed before
+    being stored (and optionally hashed) in the database. Therefore, the :php:`eval=trim`
+    option is no longer needed and should be removed from the TCA configuration.
 
 ..  toctree::
-   :titlesonly:
+    :titlesonly:
 
-   Properties/Index
+    Properties/Index
