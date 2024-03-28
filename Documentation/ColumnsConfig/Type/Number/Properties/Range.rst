@@ -1,25 +1,25 @@
-.. include:: /Includes.rst.txt
-.. _columns-number-properties-range:
+..  include:: /Includes.rst.txt
+..  _columns-number-properties-range:
 
 =====
 range
 =====
 
-.. confval:: range ('type' => 'number')
+..  confval:: range
+    :name: number-range
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Proc.
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Proc.
+    An array which defines an integer range within which the value must be. Keys:
 
-   An array which defines an integer range within which the value must be. Keys:
+    lower
+       Defines the lower integer value.
 
-   lower
-      Defines the lower integer value.
+    upper
+       Defines the upper integer value.
 
-   upper
-      Defines the upper integer value.
-
-   It is allowed to specify only one of both of them.
+    It is allowed to specify only one of both of them.
 
 
 Example
@@ -27,7 +27,7 @@ Example
 
 Limit an integer to be within the range 10 to 1000
 
-.. code-block:: php
+..  code-block:: php
 
     'aField' => [
         'label' => 'aLabel',
