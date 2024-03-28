@@ -1,5 +1,5 @@
-﻿.. include:: /Includes.rst.txt
-.. _columns-radio:
+﻿..  include:: /Includes.rst.txt
+..  _columns-radio:
 
 =============
 Radio buttons
@@ -14,10 +14,10 @@ Radio buttons
 This type creates a set of radio buttons. The value is typically stored as integer value, each radio
 item has one assigned number, but it can be a string, too.
 
-.. include:: /Images/Rst/Radio1.rst.txt
+..  include:: /Images/Rst/Radio1.rst.txt
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Examples
-   Properties/Index
+    Examples
+    Properties/Index

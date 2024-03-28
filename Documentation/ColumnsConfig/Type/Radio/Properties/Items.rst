@@ -1,29 +1,29 @@
-.. include:: /Includes.rst.txt
-.. _columns-radio-properties-items:
+..  include:: /Includes.rst.txt
+..  _columns-radio-properties-items:
 
 =====
 items
 =====
 
-.. confval:: items (type => radio)
+..  confval:: items (type => radio)
+    :name: radio-items
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :required: true
+    :type: array
+    :Scope: Display  / Proc.
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :required: true
-   :type: array
-   :Scope: Display  / Proc.
+    An array of values which can be selected.
 
-   An array of values which can be selected.
+    Each entry is in itself an associative array.
 
-   Each entry is in itself an associative array.
+    ..  deprecated:: 12.3
 
-   .. deprecated:: 12.3
+        Using the numerical index :php:`0` for setting the label and :php:`1` for
+        the value is deprecated. Use the newly introduced :php:`label` and
+        :php:`value` keys.
 
-      Using the numerical index :php:`0` for setting the label and :php:`1` for
-      the value is deprecated. Use the newly introduced :php:`label` and
-      :php:`value` keys.
+    label (string or LLL reference)
+        The displayed title.
 
-   label (string or LLL reference)
-      The displayed title.
-
-   value (integer or string)
-      The value stored in the database.
+    value (integer or string)
+        The value stored in the database.
