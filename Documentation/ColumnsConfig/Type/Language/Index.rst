@@ -1,13 +1,13 @@
-﻿.. include:: /Includes.rst.txt
+﻿..  include:: /Includes.rst.txt
 
-.. _columns-language:
+..  _columns-language:
 
 ===============
 Language fields
 ===============
 
-.. versionadded:: 11.2
-   The TCA field type called `language` has been added to TYPO3 Core.
+..  versionadded:: 11.2
+    The TCA field type called `language` has been added to TYPO3 Core.
 
 ..  versionadded:: 13.0
     When using the `language` type, TYPO3 takes care of
@@ -22,14 +22,14 @@ installation.
 A special language :guilabel:`All languages` is automatically added.
 
 
-.. include:: /CodeSnippets/SysLanguageUid.rst.txt
+..  include:: /CodeSnippets/SysLanguageUid.rst.txt
 
 
-.. toctree::
+..  toctree::
    :titlesonly:
 
-   Introduction
-   Examples
-   Properties/Index
-   Migration
-   History
+    Introduction
+    Examples
+    Properties/Index
+    Migration
+    History
