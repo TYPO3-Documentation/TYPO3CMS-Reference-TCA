@@ -1,6 +1,6 @@
-﻿.. include:: /Includes.rst.txt
-.. _columns-inline:
-.. _columns-inline-introduction:
+﻿..  include:: /Includes.rst.txt
+..  _columns-inline:
+..  _columns-inline-introduction:
 
 =============
 IRRE / inline
@@ -27,18 +27,18 @@ question (for instance a description). This information can be overwritten for t
 "tt_content" by adding a new description in table "sys_file_reference". The various inline and field properties
 like "placeholder" help managing this complex setup in TCA.
 
-.. hint::
+..  hint::
 
-   The type inline does not have the properties :code:`fieldInformation`,
-   :code:`fieldControl` or :code:`fieldWizard` like the other types. This is
-   due to the fact that this type is a container and not an element. You can
-   still add fieldInformation or fieldWizard, but this must be configured
-   within the :code:`ctrl`. Please see the
-   :ref:`example <inline-example-field-information>`.
+    The type inline does not have the properties :code:`fieldInformation`,
+    :code:`fieldControl` or :code:`fieldWizard` like the other types. This is
+    due to the fact that this type is a container and not an element. You can
+    still add fieldInformation or fieldWizard, but this must be configured
+    within the :code:`ctrl`. Please see the
+    :ref:`example <inline-example-field-information>`.
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Properties/Index
-   Examples
+    Properties/Index
+    Examples
 

@@ -16,8 +16,8 @@ MM
     referenced by TCA table columns. Dropping these definitions allows the Core
     to adapt and migrate definitions if needed.
 
-..  confval:: MM (type => inline)
-
+..  confval:: MM
+    :name: inline-mm
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc.
@@ -48,8 +48,8 @@ MM
     Otherwise, sorting and removing relations will be buggy.
 
 
-..  confval:: MM_opposite_field (type => inline)
-
+..  confval:: MM_opposite_field
+    :name: inline-mm-opposite-field
     :type: string (field name)
     :Scope: Proc.
 

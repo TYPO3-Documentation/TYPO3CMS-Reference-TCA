@@ -1,15 +1,15 @@
-.. include:: /Includes.rst.txt
-.. _columns-inline-properties-appearance:
+..  include:: /Includes.rst.txt
+..  _columns-inline-properties-appearance:
 
 ==========
 appearance
 ==========
 
-.. confval:: appearance
-
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Display
+..  confval:: appearance
+    :name: inline-appearance
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Display
 
    Has information about the appearance of child-records, namely:
 

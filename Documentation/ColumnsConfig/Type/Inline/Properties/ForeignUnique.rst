@@ -1,17 +1,17 @@
-.. include:: /Includes.rst.txt
-.. _columns-inline-properties-foreign-unique:
+..  include:: /Includes.rst.txt
+..  _columns-inline-properties-foreign-unique:
 
 ===============
 foreign\_unique
 ===============
 
-.. confval:: foreign\_unique
+..  confval:: foreign\_unique
+    :name: inline-foreign-unique
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Display  / Proc.
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string
-   :Scope: Display  / Proc.
-
-    Field which must be unique for all children of a parent record.
+     Field which must be unique for all children of a parent record.
 
 Example
 =======
