@@ -86,6 +86,7 @@ generatorOptions
 
 ..  confval:: generatorOptions:postModifiers
 
+    :name: slug-generatorOptions-postModifiers
     :type: array
     :Scope: Proc. / Display
 
