@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-slug-introduction:
+..  include:: /Includes.rst.txt
+..  _columns-slug-introduction:
 
 ============
 Introduction
@@ -32,10 +32,10 @@ be shown and edited via regular backend forms, and is also evaluated during pers
 
 The default behaviour of a slug is as follows:
 
-* A slug only contains characters which are allowed within URLs. Spaces, commas and other special characters are
-  converted to a fallback character.
-* A slug is always lower-cased.
-* A slug is unicode-aware.
+*   A slug only contains characters which are allowed within URLs. Spaces, commas and other special characters are
+    converted to a fallback character.
+*   A slug is always lower-cased.
+*   A slug is unicode-aware.
 
 It is possible to build a default value from the rootline (very helpful for pages, or categorized slugs),
 but also to just generate a "speaking" segment from e.g. a news title.
