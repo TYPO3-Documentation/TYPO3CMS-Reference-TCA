@@ -12,7 +12,7 @@ dbFieldLength
     of the database field with this option in TCA directly.
 
 ..  confval:: dbFieldLength
-
+    :name: select-dbFieldLength
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer
     :Default: 255

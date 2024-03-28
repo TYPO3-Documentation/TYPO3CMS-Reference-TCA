@@ -16,8 +16,8 @@ MM
     referenced by TCA table columns. Dropping these definitions allows the Core
     to adapt and migrate definitions if needed.
 
-..  confval:: MM (type => select)
-
+..  confval:: MM
+    :name: select-mm
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc.
@@ -50,8 +50,8 @@ Related configurations
 ======================
 
 ..  _columns-select-properties-mm-match-fields:
-..  confval:: MM_match_fields (type => select)
-
+..  confval:: MM_match_fields
+    :name: select-mm-match-fields
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display / Proc.
@@ -60,8 +60,8 @@ Related configurations
     writing/reading MM relations.
 
 
-..  confval:: MM_opposite_field (type => select)
-
+..  confval:: MM_opposite_field
+    :name: select-mm-opposite-field
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (field name)
     :Scope: Proc.
@@ -82,8 +82,8 @@ Related configurations
         :sql:`sys_refindex`.
 
 
-..  confval:: MM_oppositeUsage (type => select)
-
+..  confval:: MM_oppositeUsage
+    :name: select-mm-oppositeUsage
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Proc.
@@ -100,8 +100,8 @@ Related configurations
     field configuration.
 
 
-..  confval:: MM_table_where (type => select)
-
+..  confval:: MM_table_where
+    :name: select-mm-table-where
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (SQL WHERE)
     :Scope: Proc.
@@ -119,7 +119,8 @@ Related configurations
     possible.
 
 
-..  confval:: MM_hasUidField (type => select)
+..  confval:: MM_hasUidField
+    :name: select-mm-hasUidField
 
     ..  versionchanged:: 13.0
         This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`

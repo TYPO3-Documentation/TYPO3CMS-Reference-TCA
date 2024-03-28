@@ -5,8 +5,8 @@
 default value
 =============
 
-..  confval:: default (type => select)
-
+..  confval:: default
+    :name: select-default
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string
     :Scope: Display  / Proc.

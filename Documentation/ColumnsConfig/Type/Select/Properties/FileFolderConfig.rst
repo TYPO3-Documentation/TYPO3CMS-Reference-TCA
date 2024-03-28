@@ -9,8 +9,8 @@ fileFolderConfig
 
 ..  _columns-select-properties-fileFolderConfig.folder:
 
-..  confval:: fileFolderConfig.folder
-
+..  confval:: fileFolderConfig[folder]
+    :name: select-fileFolderConfig-folder
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string
     :Scope: Display / Proc.
@@ -40,8 +40,8 @@ fileFolderConfig
 ..  _columns-select-properties-filefolder-extlist:
 ..  _columns-select-properties-fileFolderConfig-allowedExtensions:
 
-..  confval:: fileFolderConfig.allowedExtensions
-
+..  confval:: fileFolderConfig[allowedExtensions]
+    :name: select-fileFolderConfig-allowedExtensions
     :type: string
     :Scope: Display  / Proc.
     :RenderType: all
@@ -55,8 +55,8 @@ fileFolderConfig
 ..  _columns-select-properties-filefolder-recursions:
 ..  _columns-select-properties-fileFolderConfig-depth:
 
-..  confval:: fileFolderConfig.depth
-
+..  confval:: fileFolderConfig[depth]
+    :name: select-fileFolderConfig-depth
     :type: integer
     :Scope: Display  / Proc.
     :RenderType: all

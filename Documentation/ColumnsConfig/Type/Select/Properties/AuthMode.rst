@@ -6,7 +6,7 @@ authMode
 ========
 
 ..  confval:: authMode
-
+    :name: select-authMode
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (keyword)
     :Scope: Display  / Proc.

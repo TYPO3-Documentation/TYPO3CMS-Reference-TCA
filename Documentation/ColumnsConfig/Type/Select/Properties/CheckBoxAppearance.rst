@@ -5,8 +5,8 @@
 appearance - selectCheckBox
 ===========================
 
-..  confval:: appearance > selectCheckBox
-
+..  confval:: appearance[selectCheckBox]
+    :name: select-appearance-selectCheckBox
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display

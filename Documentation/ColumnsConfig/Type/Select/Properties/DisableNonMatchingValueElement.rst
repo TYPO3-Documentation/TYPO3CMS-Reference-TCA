@@ -6,7 +6,7 @@ disableNoMatchingValueElement
 =============================
 
 ..  confval:: disableNoMatchingValueElement
-
+    :name: select-disableNoMatchingValueElement
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: boolean
     :Scope: Display

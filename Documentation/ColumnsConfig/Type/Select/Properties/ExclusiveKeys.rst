@@ -5,8 +5,8 @@
 exclusiveKeys
 =============
 
-..  confval:: exclusiveKeys (type => select)
-
+..  confval:: exclusiveKeys
+    :name: select-exclusiveKeys
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (list of)
     :Scope: Display  / Proc.

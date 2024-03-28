@@ -7,7 +7,7 @@ allowNonIdValues
 ================
 
 ..  confval:: allowNonIdValues
-
+    :name: select-allowNonIdValues
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: boolean
     :Scope: Proc.

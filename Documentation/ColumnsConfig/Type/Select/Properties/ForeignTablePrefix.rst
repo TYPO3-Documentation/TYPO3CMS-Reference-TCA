@@ -5,8 +5,8 @@
 foreign_table_prefix
 ====================
 
-..  confval:: foreign_table_prefix (type => select)
-
+..  confval:: foreign_table_prefix
+    :name: select-foreign-table-prefix
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string or LLL reference
     :Scope: Display
