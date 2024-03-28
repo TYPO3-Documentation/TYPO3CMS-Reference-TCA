@@ -1,4 +1,4 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 =========================
 Language field properties
@@ -9,4 +9,4 @@ of the associated TCA and TSconfig options can still be applied. This includes
 for example the `selectIcons` field wizard, as well as the :typoscript:`keepItems`
 and :typoscript:`removeItems` page TSconfig options.
 
-.. todo: add a list of properties here.
+..  todo: add a list of properties here.

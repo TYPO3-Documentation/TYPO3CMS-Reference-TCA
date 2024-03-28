@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-languge-migration:
+..  include:: /Includes.rst.txt
+..  _columns-languge-migration:
 
 =========
 Migration
@@ -11,54 +11,54 @@ where code adaption has to take place. Occurrences are all columns, defined as
 :php:`$TCA['ctrl']['languageField']`, as well as all columns, using the
 `special=languages` option in combination with `type=select`.
 
-.. note::
+..  note::
 
-   The migration resets the whole `config` array to use the new TCA
-   type. Custom setting such as field wizards are not evaluated until the TCA
-   configuration is adapted.
+    The migration resets the whole `config` array to use the new TCA
+    type. Custom setting such as field wizards are not evaluated until the TCA
+    configuration is adapted.
 
-.. code-block:: php
+..  code-block:: php
 
-   // Before
+    // Before
 
-   'config' => [
-      'type' => 'select',
-      'renderType' => 'selectSingle',
-      'foreign_table' => 'sys_language',
-      'items' => [
-         ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages', -1],
-         ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 0]
-      ],
-      'default' => 0
-   ]
+    'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'foreign_table' => 'sys_language',
+        'items' => [
+            ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages', -1],
+            ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 0]
+        ],
+        'default' => 0
+    ]
 
-   // After
+    // After
 
-   'config' => [
-      'type' => 'language'
-   ]
+    'config' => [
+        'type' => 'language'
+    ]
 
-.. code-block:: php
+..  code-block:: php
 
-   // Before
+    // Before
 
-   'config' => [
-      'type' => 'select',
-      'renderType' => 'selectSingle',
-      'special' => 'languages',
-      'items' => [
-         [
-            'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-            -1,
-            'flags-multiple'
-         ],
-      ],
-      'default' => 0,
-   ]
+    'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'special' => 'languages',
+        'items' => [
+            [
+                'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                -1,
+                'flags-multiple'
+            ],
+        ],
+        'default' => 0,
+    ]
 
-   // After
+    // After
 
-   'config' => [
-      'type' => 'language'
-   ]
+    'config' => [
+        'type' => 'language'
+    ]
 
