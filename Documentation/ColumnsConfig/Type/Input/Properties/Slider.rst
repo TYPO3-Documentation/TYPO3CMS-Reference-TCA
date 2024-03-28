@@ -1,11 +1,11 @@
-.. include:: /Includes.rst.txt
-.. _columns-input-properties-slider:
+..  include:: /Includes.rst.txt
+..  _columns-input-properties-slider:
 
 ======
 slider
 ======
 
-.. confval:: slider
+..  confval:: slider
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array

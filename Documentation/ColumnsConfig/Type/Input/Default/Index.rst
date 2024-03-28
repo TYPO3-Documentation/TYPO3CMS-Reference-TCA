@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-input-renderType-default:
+..  _columns-input-renderType-default:
 
 =============
 Default input
@@ -15,7 +15,7 @@ values or a value slider.
 
 Most input fields share :ref:`common properties <columns-input-properties>`.
 
-.. toctree::
+..  toctree::
 
-   Examples
+    Examples
 

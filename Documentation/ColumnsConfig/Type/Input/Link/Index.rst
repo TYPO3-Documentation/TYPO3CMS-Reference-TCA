@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-input-renderType-inputLink:
+..  _columns-input-renderType-inputLink:
 
 ==========
 Link input
@@ -13,6 +13,6 @@ An input field used to handle links and mail addresses in the backend.
 Additionally to the :ref:`common properties <columns-input-properties>`,
 :ref:`tca_field_control_link_popup` can be set.
 
-.. toctree::
+..  toctree::
 
-   Examples
+    Examples

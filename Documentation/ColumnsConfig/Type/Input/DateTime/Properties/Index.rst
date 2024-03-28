@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-input-renderType-inputDateTime-properties:
+..  include:: /Includes.rst.txt
+..  _columns-input-renderType-inputDateTime-properties:
 
 ==========
 Properties
@@ -8,14 +8,14 @@ Properties
 Special properties
 ==================
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   DbType
-   DisableAgeDisplay
-   Eval
-   Format
-   Range
+    DbType
+    DisableAgeDisplay
+    Eval
+    Format
+    Range
 
 Common properties
 =================
@@ -26,9 +26,9 @@ Common properties
 *  :ref:`fieldInformation <tca_property_fieldInformation>`
 *  :ref:`fieldWizard <tca_property_fieldWizard>` with the following options
 
-   *  :ref:`defaultLanguageDifferences <tca_property_fieldwizard>`
-   *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
-   *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
+    *  :ref:`defaultLanguageDifferences <tca_property_fieldwizard>`
+    *  :ref:`localizationStateSelector <tca_property_fieldWizard_localizationStateSelector>`
+    *  :ref:`otherLanguageContent <tca_property_fieldWizard_otherLanguageContent>`
 
 *  :ref:`mode <tca_property_mode>`
 *  :ref:`placeholder <tca_property_placeholder>`

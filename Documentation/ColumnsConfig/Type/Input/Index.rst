@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-input:
-.. _columns-input-introduction:
+..  _columns-input:
+..  _columns-input-introduction:
 
 =====
 Input
@@ -22,30 +22,30 @@ unique properties listed separately.
 
 The following renderTypes are available:
 
-*  :ref:`default <columns-input-renderType-default>`: Can be a simple input
-   field, a field with a value picker of predefined items or a value slider.
-*  :ref:`colorpicker <columns-input-renderType-colorpicker>`: An input
-   field with a JavaScript color picker.
-*  :ref:`inputDateTime <columns-input-renderType-inputDateTime>`: Renders
-   an input field with date or time pickers.
-*  :ref:`inputLink <columns-input-renderType-inputLink>`: An input field
-   used to handle links and mail addresses in the backend.
+*   :ref:`default <columns-input-renderType-default>`: Can be a simple input
+    field, a field with a value picker of predefined items or a value slider.
+*   :ref:`colorpicker <columns-input-renderType-colorpicker>`: An input
+    field with a JavaScript color picker.
+*   :ref:`inputDateTime <columns-input-renderType-inputDateTime>`: Renders
+    an input field with date or time pickers.
+*   :ref:`inputLink <columns-input-renderType-inputLink>`: An input field
+    used to handle links and mail addresses in the backend.
 
 
-.. include:: /Images/Rst/Input1.rst.txt
-.. include:: /Images/Rst/Input28.rst.txt
-.. include:: /Images/Rst/Input30.rst.txt
-.. include:: /Images/Rst/Input33.rst.txt
-.. include:: /Images/Rst/Input34.rst.txt
-.. include:: /Images/Rst/Inputdatetime3.rst.txt
-.. include:: /Images/Rst/Input29.rst.txt
+..  include:: /Images/Rst/Input1.rst.txt
+..  include:: /Images/Rst/Input28.rst.txt
+..  include:: /Images/Rst/Input30.rst.txt
+..  include:: /Images/Rst/Input33.rst.txt
+..  include:: /Images/Rst/Input34.rst.txt
+..  include:: /Images/Rst/Inputdatetime3.rst.txt
+..  include:: /Images/Rst/Input29.rst.txt
 
 
-.. toctree::
-   :hidden:
+..  toctree::
+    :hidden:
 
-   Default/Index
-   ColorPicker/Index
-   DateTime/Index
-   Link/Index
-   Properties/Index
+    Default/Index
+    ColorPicker/Index
+    DateTime/Index
+    Link/Index
+    Properties/Index

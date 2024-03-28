@@ -1,15 +1,15 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 ========
 Examples
 ========
 
 
-.. _tca_example_input_34:
+..  _tca_example_input_34:
 
 Color picker field
 ==================
 
-.. include:: /Images/Rst/Input34.rst.txt
+..  include:: /Images/Rst/Input34.rst.txt
 
-.. include:: /CodeSnippets/Input34.rst.txt
+..  include:: /CodeSnippets/Input34.rst.txt

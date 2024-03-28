@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-input-renderType-colorpicker:
+..  _columns-input-renderType-colorpicker:
 
 ===========
 Colorpicker
@@ -12,8 +12,8 @@ An input field with a JavaScript color picker.
 
 Most input fields share :ref:`common properties <columns-input-properties>`.
 
-.. toctree::
+..  toctree::
 
-   Examples
+    Examples
 
 

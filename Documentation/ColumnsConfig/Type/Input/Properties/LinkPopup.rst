@@ -1,13 +1,13 @@
-.. include:: /Includes.rst.txt
-.. _tca_property_fieldControl_linkPopup:
+..  include:: /Includes.rst.txt
+..  _tca_property_fieldControl_linkPopup:
 
-.. _tca_field_control_link_popup:
+..  _tca_field_control_link_popup:
 
 =========
 linkPopup
 =========
 
-.. confval:: linkPopup
+..  confval:: linkPopup
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
@@ -19,7 +19,7 @@ linkPopup
 
    **Example:**
 
-   .. code-block:: php
+   ..  code-block:: php
 
       'aField' => [
           'config' => [

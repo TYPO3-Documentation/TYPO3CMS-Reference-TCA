@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-input-renderType-inputDateTime:
+..  _columns-input-renderType-inputDateTime:
 
 ==============
 DateTime input
@@ -10,8 +10,8 @@ This page describes the :ref:`input <columns-input>` type with renderType='input
 
 Renders an input field with date or time pickers.
 
-.. toctree::
+..  toctree::
    :titlesonly:
 
-   Examples
-   Properties/Index
+    Examples
+    Properties/Index

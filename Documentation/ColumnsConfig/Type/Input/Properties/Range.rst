@@ -1,11 +1,11 @@
-.. include:: /Includes.rst.txt
-.. _columns-input-properties-range:
+..  include:: /Includes.rst.txt
+..  _columns-input-properties-range:
 
 =====
 range
 =====
 
-.. confval:: range
+..  confval:: range
 
    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
    :type: array
@@ -28,7 +28,7 @@ Example
 
 Limit an integer to be within the range 10 to 1000
 
-.. code-block:: php
+..  code-block:: php
 
    'eval' => 'int',
    'range' => [
