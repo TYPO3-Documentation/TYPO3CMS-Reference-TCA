@@ -5,8 +5,8 @@
 appearance
 ==========
 
-..  confval:: appearance ('type' => 'link')
-
+..  confval:: appearance
+    :name: link-appearance
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display
@@ -97,7 +97,7 @@ appearance
                 'allowedExtensions' => ['jpg', 'png'],
             ],
 
-        .. code-block:: php
+        ..  code-block:: php
 
             // Allow all file extensions (or skip this option).
             'appearance' => [
@@ -126,7 +126,7 @@ appearance
             ],
 
     enableBrowser (boolean)
-        .. versionadded:: 12.0
+        ..  versionadded:: 12.0
             Formerly known as `disabled` of `linkPopup`.
 
         The Link Browser is enabled by default.
