@@ -38,7 +38,7 @@ An example configuration looks like the following:
         ],
     ],
 
-.. toctree::
+..  toctree::
    :titlesonly:
 
    Properties/Index
