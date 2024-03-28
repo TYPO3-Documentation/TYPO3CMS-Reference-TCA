@@ -6,8 +6,8 @@
 size
 ====
 
-..  confval:: size ('type' => 'uuid')
-
+..  confval:: size
+    :name: uuid-size
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer
     :Scope: Display
