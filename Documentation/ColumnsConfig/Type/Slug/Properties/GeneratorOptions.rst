@@ -76,6 +76,7 @@ generatorOptions
 
 ..  confval:: generatorOptions:replacements
 
+    :name: slug-generatorOptions-replacements
     :type: array
     :Scope: Proc. / Display
 
