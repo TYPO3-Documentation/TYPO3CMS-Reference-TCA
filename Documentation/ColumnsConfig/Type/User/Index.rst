@@ -39,7 +39,7 @@ The `user` field can be useful, if:
     See example below.
 
 
-.. _columns-user-examples:
+..  _columns-user-examples:
 
 Examples
 ========
@@ -50,7 +50,7 @@ The example registers an own node element, a TCA field using it and a class
 implementing a rendering. See :ref:`FormEngine docs
 <t3coreapi:FormEngine-Rendering-NodeFactory>` for more details on this.
 
-.. rst-class:: bignums
+..  rst-class:: bignums
 
 
 1.  Register the new renderType node element
@@ -131,8 +131,8 @@ Properties
 renderType
 ----------
 
-..  confval:: renderType (type => user)
-
+..  confval:: renderType
+    :name: user-renderType
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['renderType']
     :type: integer
     :Scope: Display
