@@ -1,17 +1,17 @@
-.. include:: /Includes.rst.txt
-.. _columns-slug-properties-prependSlash:
+..  include:: /Includes.rst.txt
+..  _columns-slug-properties-prependSlash:
 
 ============
 prependSlash
 ============
 
-.. confval:: prependSlash
+..  confval:: prependSlash
+    :name: slug-prependSlash
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: boolean
+    :Scope: Proc. / Display
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: boolean
-   :Scope: Proc. / Display
+    Defines whether a slug field should contain a prepending slash, for example for nested categories with speaking segments.
 
-   Defines whether a slug field should contain a prepending slash, for example for nested categories with speaking segments.
-
-   If not set, this defaults to :php:`false`. (Exception: for the :sql:`pages.slug` field this defaults to :php:`true`
-   and cannot be changed.)
+    If not set, this defaults to :php:`false`. (Exception: for the :sql:`pages.slug` field this defaults to :php:`true`
+    and cannot be changed.)
