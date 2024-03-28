@@ -16,8 +16,8 @@ MM
     referenced by TCA table columns. Dropping these definitions allows the Core
     to adapt and migrate definitions if needed.
 
-..  confval:: MM (type => inline)
-
+..  confval:: MM
+    :name: inline-mm
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc.
@@ -39,8 +39,8 @@ MM
         broken relation `Org->orgA`.
 
 
-..  confval:: MM_opposite_field (type => inline)
-
+..  confval:: MM_opposite_field
+    :name: inline-mm-opposite-field
     :type: string (field name)
     :Scope: Proc.
 
@@ -60,7 +60,8 @@ MM
         :sql:`sys_refindex`.
 
 
-..  confval:: MM_hasUidField (type => inline)
+..  confval:: MM_hasUidField
+    :name: inline-mm-hasUidField
 
     ..  versionchanged:: 13.0
         This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
