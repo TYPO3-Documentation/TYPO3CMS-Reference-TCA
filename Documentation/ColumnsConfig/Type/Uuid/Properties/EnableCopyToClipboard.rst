@@ -6,8 +6,8 @@
 enableCopyToClipboard
 =====================
 
-..  confval:: enableCopyToClipboard ('type' => 'uuid')
-
+..  confval:: enableCopyToClipboard
+    :name: uuid-enableCopyToClipboard
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: boolean
     :Scope: Display

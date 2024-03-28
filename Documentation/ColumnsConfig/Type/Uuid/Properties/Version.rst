@@ -6,8 +6,8 @@
 version
 =======
 
-..  confval:: version ('type' => 'uuid')
-
+..  confval:: version
+    :name: uuid-version
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer
     :Scope: Display
