@@ -16,14 +16,14 @@ In the database, this field is typically set to a `VARCHAR` or `CHAR` field with
 appropriate length.
 
 ..  deprecated:: 12.0
-     The following render types have been deprecated:
+    The following render types have been deprecated:
 
-     *    :php:`renderType=inputDateTime`: Use the TCA type
-          :ref:`datetime <columns-datetime>` instead.
-     *    :php:`renderType=colorpicker`: Use the TCA type
-          :ref:`color <columns-color>` instead.
-     *    :php:`renderType=inputLink`: Use the TCA type :ref:`link <columns-link>`
-          instead.
+    *   :php:`renderType=inputDateTime`: Use the TCA type
+        :ref:`datetime <columns-datetime>` instead.
+    *   :php:`renderType=colorpicker`: Use the TCA type
+        :ref:`color <columns-color>` instead.
+    *   :php:`renderType=inputLink`: Use the TCA type :ref:`link <columns-link>`
+        instead.
 
 ..  _columns-input-examples:
 
