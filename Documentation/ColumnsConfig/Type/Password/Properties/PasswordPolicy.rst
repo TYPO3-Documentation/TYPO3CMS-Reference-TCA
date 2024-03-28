@@ -7,8 +7,8 @@ passwordPolicy
 
 ..  versionadded:: 12.3
 
-..  confval:: passwordPolicy (type => password)
-
+..  confval:: passwordPolicy
+    :name: password-passwordPolicy
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordPolicy']`
     :type: string
     :Scope: Display, Proc.
