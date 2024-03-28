@@ -61,6 +61,7 @@ generatorOptions
 
 ..  confval:: generatorOptions:prefixParentPageSlug
 
+    :name: slug-generatorOptions-prefixParentPageSlug
     :type: boolean
     :Default: true
     :Scope: Proc. / Display
