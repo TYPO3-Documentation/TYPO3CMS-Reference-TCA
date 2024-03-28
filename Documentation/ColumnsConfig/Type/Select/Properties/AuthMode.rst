@@ -1,26 +1,26 @@
-.. include:: /Includes.rst.txt
-.. _columns-select-properties-authmode:
+..  include:: /Includes.rst.txt
+..  _columns-select-properties-authmode:
 
 ========
 authMode
 ========
 
-.. confval:: authMode
+..  confval:: authMode
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string (keyword)
-   :Scope: Display  / Proc.
-   :RenderType: all
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (keyword)
+    :Scope: Display  / Proc.
+    :RenderType: all
 
-   .. versionchanged:: 12.0
-      The only valid value for TCA config option :php:`authMode` is now :php:`explicitAllow`.
-      The values :php:`explicitDeny` and :php:`individual` are obsolete and no longer evaluated.
+    ..  versionchanged:: 12.0
+        The only valid value for TCA config option :php:`authMode` is now :php:`explicitAllow`.
+        The values :php:`explicitDeny` and :php:`individual` are obsolete and no longer evaluated.
 
-   Authorization mode for the selector box. The only possible option is:
+    Authorization mode for the selector box. The only possible option is:
 
-   explicitAllow
-      All static values from the "items" array of the selector box will be added to a matrix in the backend user
-      configuration where a value must be explicitly selected if a user (other than admin) is allowed to use it!)
+    explicitAllow
+        All static values from the "items" array of the selector box will be added to a matrix in the backend user
+        configuration where a value must be explicitly selected if a user (other than admin) is allowed to use it!)
 
 Migration
 =========
@@ -38,7 +38,7 @@ admins to not set new access rights of affected backend groups.
 Using authMode='individual'
 ---------------------------
 
-Handling of :php:`authMode` being set to :php:`individual` has been fully dropped. The Core provides no 
+Handling of :php:`authMode` being set to :php:`individual` has been fully dropped. The Core provides no
 alternative. This has been an obscure setting ever since and there is no
 direct migration. Extensions that rely on this handling need to find a substitution based on
 Core hooks, Core events or other existing Core API functionality.

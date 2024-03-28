@@ -82,11 +82,11 @@ Related configurations
         :sql:`sys_refindex`.
 
 
-.. confval:: MM_oppositeUsage (type => select)
+..  confval:: MM_oppositeUsage (type => select)
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Proc.
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Proc.
 
     In a MM bidirectional relation using
     :ref:`group match fields <columns-group-properties-mm-match-fields>`

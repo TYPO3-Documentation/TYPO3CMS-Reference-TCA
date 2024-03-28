@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-select-rendertype-selectSingleBox:
+..  include:: /Includes.rst.txt
+..  _columns-select-rendertype-selectSingleBox:
 
 ========================================
 Select multiple values (selectSingleBox)
@@ -10,16 +10,16 @@ renderType='selectSingleBox'.
 
 Renders a select field to select multiple entries from a given list.
 
-.. include:: /Images/Rst/SelectSinglebox1.rst.txt
+..  include:: /Images/Rst/SelectSinglebox1.rst.txt
 
-.. note::
+..  note::
 
-   The name is misleading. This is a renderType which allows you to select
-   **multiple** elements!
+    The name is misleading. This is a renderType which allows you to select
+    **multiple** elements!
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Examples
-   Properties
+    Examples
+    Properties
 
