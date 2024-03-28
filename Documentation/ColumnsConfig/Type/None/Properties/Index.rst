@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
-.. _columns-none-properties:
-.. _columns-none-properties-type:
-.. _columns-none-properties-fieldInformation:
+..  include:: /Includes.rst.txt
+..  _columns-none-properties:
+..  _columns-none-properties-type:
+..  _columns-none-properties-fieldInformation:
 
 ==========
 Properties
@@ -10,15 +10,14 @@ Properties
 Special properties
 ==================
 
-.. toctree::
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   Cols   
-   Format   
-   PassContent   
-   Size   
+    *
 
 Common properties
 =================
 
-*  :ref:`fieldInformation <tca_property_fieldInformation>`
+*   :ref:`fieldInformation <tca_property_fieldInformation>`
 
