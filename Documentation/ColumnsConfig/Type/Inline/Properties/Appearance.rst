@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-inline-properties-appearance:
+..  include:: /Includes.rst.txt
+..  _columns-inline-properties-appearance:
 
 ==========
 appearance
@@ -14,8 +14,8 @@ appearance
 
     Use the TCA column type :ref:`file <columns-file>` to handle files.
 
-.. confval:: appearance (type => inline)
-
+..  confval:: appearance
+    :name: inline-appearance
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display
