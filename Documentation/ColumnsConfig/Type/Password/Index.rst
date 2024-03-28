@@ -1,12 +1,12 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-password:
+..  _columns-password:
 
 ========
 Password
 ========
 
-.. versionadded:: 12.0
+..  versionadded:: 12.0
    The TCA type :php:`password` has been introduced. It replaces the
    :php:`eval=password` and :php:`eval=saltedPassword` option of
    TCA type :php:`input`.
@@ -93,13 +93,13 @@ An automatic TCA migration is performed on the fly, migrating all occurrences
 to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error
 where code adoption has to take place.
 
-.. note::
+..  note::
 
    The value of TCA type :php:`password` column is automatically trimmed before
    being stored (and optionally hashed) in the database. Therefore, the :php:`eval=trim`
    option is no longer needed and should be removed from the TCA configuration.
 
-.. toctree::
+..  toctree::
    :titlesonly:
 
    Properties/Index
