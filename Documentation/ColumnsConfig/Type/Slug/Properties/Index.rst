@@ -1,17 +1,14 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-slug-properties:
-.. _columns-slug-properties-type:
+..  _columns-slug-properties:
+..  _columns-slug-properties-type:
 
 ==========
 Properties
 ==========
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
+    :glob:
 
-   Appearance
-   Eval
-   FallbackCharacter
-   GeneratorOptions
-   PrependSlash
+    *
