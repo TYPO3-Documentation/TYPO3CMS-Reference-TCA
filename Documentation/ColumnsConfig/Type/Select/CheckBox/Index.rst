@@ -18,6 +18,7 @@ The select checkbox stores the values as comma separated values.
 The field in the database is of type text or varchar.
 
 ..  code-block::sql
+
     CREATE TABLE tx_styleguide_elements_select (
         select_checkbox_7 text,
     );
