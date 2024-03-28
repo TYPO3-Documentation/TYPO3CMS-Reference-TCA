@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _columns-select-rendertype-selectTree:
+..  include:: /Includes.rst.txt
+..  _columns-select-rendertype-selectTree:
 
 ==========
 selectTree
@@ -23,7 +23,7 @@ the descriptive name of the table.
 Regarding joining several tables, the :php:`selectTree` render type can handle multiple
 tables through the configuration options.
 
-.. include:: /Images/Rst/SelectTree1.rst.txt
+..  include:: /Images/Rst/SelectTree1.rst.txt
 
 
 ..  toctree::

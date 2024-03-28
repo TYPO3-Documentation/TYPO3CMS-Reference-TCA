@@ -1,14 +1,14 @@
 :orphan:
 
-.. include:: /Includes.rst.txt
-.. _columns-select-properties-authmode-enforce:
+..  include:: /Includes.rst.txt
+..  _columns-select-properties-authmode-enforce:
 
 =================
 authMode\_enforce
 =================
 
-.. versionchanged:: 12.0
-   Handling of TCA config option :php:`authMode_enforce` has been removed.
+..  versionchanged:: 12.0
+    Handling of TCA config option :php:`authMode_enforce` has been removed.
 
 Migration
 =========
