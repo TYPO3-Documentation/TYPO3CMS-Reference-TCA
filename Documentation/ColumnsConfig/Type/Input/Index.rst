@@ -1,8 +1,8 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-input:
-.. _columns-input-introduction:
-.. _columns-input-renderType-default:
+..  _columns-input:
+..  _columns-input-introduction:
+..  _columns-input-renderType-default:
 
 =====
 Input
@@ -25,38 +25,38 @@ appropriate length.
     *   :php:`renderType=inputLink`: Use the TCA type :ref:`link <columns-link>`
         instead.
 
-.. _columns-input-examples:
+..  _columns-input-examples:
 
 Examples
 ========
 
-.. _tca_example_input_1:
+..  _tca_example_input_1:
 
 Simple input field
 ------------------
 
-.. include:: /Images/Rst/Input1.rst.txt
+..  include:: /Images/Rst/Input1.rst.txt
 
-.. include:: /CodeSnippets/Input1.rst.txt
+..  include:: /CodeSnippets/Input1.rst.txt
 
 Input with placeholder and null handling
 ----------------------------------------
 
-.. include:: /Images/Rst/Input28.rst.txt
+..  include:: /Images/Rst/Input28.rst.txt
 
-.. include:: /CodeSnippets/Input28.rst.txt
+..  include:: /CodeSnippets/Input28.rst.txt
 
-.. _tca_example_input_33:
+..  _tca_example_input_33:
 
 Value picker
 ------------
 
-.. include:: /Images/Rst/Input33.rst.txt
+..  include:: /Images/Rst/Input33.rst.txt
 
 
-.. include:: /CodeSnippets/Input33.rst.txt
+..  include:: /CodeSnippets/Input33.rst.txt
 
-.. toctree::
-   :titlesonly:
+..  toctree::
+    :titlesonly:
 
-   Properties/Index
+    Properties/Index
