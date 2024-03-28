@@ -50,6 +50,7 @@ generatorOptions
 
 ..  confval:: generatorOptions:fieldSeparator
 
+    :name: slug-generatorOptions-fieldSeparator
     :type: string
     :Scope: Proc. / Display
     :Default: "/"
