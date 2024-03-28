@@ -87,21 +87,15 @@ The "first level" of the :php:`$GLOBALS['TCA']` array is made of the table names
 they appear in the database):
 
 ..  code-block::php
-    :caption: EXT:my_extension/Configuration/Overrides/pages.php
+    :caption: The array looks like this
 
     $GLOBALS['TCA']['pages'] = [
         // ...
     ];
 
-..  code-block::php
-    :caption: EXT:my_extension/Configuration/Overrides/tt_content.php
-
     $GLOBALS['TCA']['tt_content'] = [
         // ...
     ];
-
-..  code-block::php
-    :caption: EXT:my_extension/Configuration/Overrides/tx_examples_haiku.php
 
     $GLOBALS['TCA']['tx_examples_haiku'] = [
         // ...
@@ -121,9 +115,8 @@ backend. The various parts on this second level are called "sections".
 
 The general structure (looking at a single table) is as follows:
 
-
 ..  code-block::php
-    :caption: EXT:my_extension/Configuration/Overrides/tx_examples_haiku.php
+    :caption: The array looks like this
 
     $GLOBALS['TCA']['tx_examples_haiku'] = [
         'ctrl' => [
