@@ -1,7 +1,5 @@
-﻿.. include:: /Includes.rst.txt
-
-
-.. _columns-text-properties:
+﻿..  include:: /Includes.rst.txt
+..  _columns-text-properties:
 
 ==========
 Properties

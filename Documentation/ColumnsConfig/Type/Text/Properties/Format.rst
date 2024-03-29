@@ -5,12 +5,12 @@
 format
 ======
 
-.. confval:: format
-
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string (keyword)
-   :Scope: Display
-   :RenderType: :ref:`t3editor <columns-text-renderType-t3editor>`
+..  confval:: format
+    :name: text-format
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (keyword)
+    :Scope: Display
+    :RenderType: :ref:`t3editor <columns-text-renderType-t3editor>`
 
    The value specifies the language t3editor should handle. Allowed values:
    `css`, `html`, `javascript`, `php`, `typoscript`, `xml`
