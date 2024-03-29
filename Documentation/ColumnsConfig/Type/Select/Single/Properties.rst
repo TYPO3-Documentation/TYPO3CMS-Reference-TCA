@@ -1,29 +1,29 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-select-properties:
-.. _columns-select-properties-type:
-.. _columns-select-properties-behaviour:
+..  _columns-select-properties:
+..  _columns-select-properties-type:
+..  _columns-select-properties-behaviour:
 
-.. _columns-select-properties-dontremaptablesoncopy:
-.. _columns-select-single-properties-fieldControl:
-.. _columns-select-properties-fieldInformation:
-.. _columns-select-properties-fieldWizard:
+..  _columns-select-properties-dontremaptablesoncopy:
+..  _columns-select-single-properties-fieldControl:
+..  _columns-select-properties-fieldInformation:
+..  _columns-select-properties-fieldWizard:
 
-.. _columns-select-properties-itemsprocfunc:
-.. _columns-select-properties-localizereferencesatparentlocalization:
-.. _columns-select-properties-minitems:
+..  _columns-select-properties-itemsprocfunc:
+..  _columns-select-properties-localizereferencesatparentlocalization:
+..  _columns-select-properties-minitems:
 
-.. _columns-select-properties-mm-hasuidfield:
-.. _columns-select-properties-mm-opposite-field:
-.. _columns-select-properties-mm-opposite-usage:
-.. _columns-select-properties-mm-oppositeusage:
+..  _columns-select-properties-mm-hasuidfield:
+..  _columns-select-properties-mm-opposite-field:
+..  _columns-select-properties-mm-opposite-usage:
+..  _columns-select-properties-mm-oppositeusage:
 
-.. _columns-select-properties-mm-table-where:
-.. _columns-select-properties-multiple:
-.. _columns-select-properties-readOnly:
-.. _columns-select-properties-size:
-.. _columns-select-properties-fieldControl:
-.. _columns-select-properties-maxitems:
+..  _columns-select-properties-mm-table-where:
+..  _columns-select-properties-multiple:
+..  _columns-select-properties-readOnly:
+..  _columns-select-properties-size:
+..  _columns-select-properties-fieldControl:
+..  _columns-select-properties-maxitems:
 
 ==========
 Properties
