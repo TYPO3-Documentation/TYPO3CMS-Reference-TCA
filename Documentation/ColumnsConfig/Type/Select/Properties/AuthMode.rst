@@ -1,22 +1,22 @@
-.. include:: /Includes.rst.txt
-.. _columns-select-properties-authmode:
+..  include:: /Includes.rst.txt
+..  _columns-select-properties-authmode:
 
 ========
 authMode
 ========
 
-.. confval:: authMode
+..  confval:: authMode
+    :name: select-authMode
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (keyword)
+    :Scope: Display  / Proc.
+    :RenderType: all
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string (keyword)
-   :Scope: Display  / Proc.
-   :RenderType: all
+    Authorization mode for the selector box. Keywords are:
 
-   Authorization mode for the selector box. Keywords are:
-
-   explicitAllow
-      All static values from the "items" array of the selector box will be added to a matrix in the backend user
-      configuration where a value must be explicitly selected if a user (other than admin) is allowed to use it!)
+    explicitAllow
+        All static values from the "items" array of the selector box will be added to a matrix in the backend user
+        configuration where a value must be explicitly selected if a user (other than admin) is allowed to use it!)
 
    explicitDeny
       All static values from the "items" array of the selector box will be added to a matrix in the backend user

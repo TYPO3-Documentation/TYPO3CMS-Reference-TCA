@@ -1,37 +1,37 @@
-.. include:: /Includes.rst.txt
-.. _columns-select-properties-item-groups:
+..  include:: /Includes.rst.txt
+..  _columns-select-properties-item-groups:
 
 ==========
 itemGroups
 ==========
 
-.. versionadded:: 10.4
-   Starting with TYPO3 v10.4 item groups can be used in select fields to
-   group items.
+..  versionadded:: 10.4
+    Starting with TYPO3 v10.4 item groups can be used in select fields to
+    group items.
 
-.. confval:: itemGroups
+..  confval:: itemGroups
+    :name: select-itemGroups
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Display  / Proc.
+    :RenderType: all
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Display  / Proc.
-   :RenderType: all
+    Contains an array of key-value pairs. The key contains the id of the item
+    group, the value contains the label of the item group or its language
+    reference.
 
-   Contains an array of key-value pairs. The key contains the id of the item
-   group, the value contains the label of the item group or its language
-   reference.
+    Only groups containing items will be displayed. In the select field first all
+    items with no group defined are listed then the item groups in the order of
+    their definition, each group with the corresponding items.
 
-   Only groups containing items will be displayed. In the select field first all
-   items with no group defined are listed then the item groups in the order of
-   their definition, each group with the corresponding items.
+    In the renderType `selectSingle` item groups are rendered as
+    :html:`<optgroup>`.
 
-   In the renderType `selectSingle` item groups are rendered as
-   :html:`<optgroup>`.
+    In the renderType `selectCheckbox` the groups are displayed as accordions
+    containing the check boxes.
 
-   In the renderType `selectCheckbox` the groups are displayed as accordions
-   containing the check boxes.
-
-   In other renderTypes a non selectable item with the
-   group name gets displayed.
+    In other renderTypes a non-selectable item with the
+    group name gets displayed.
 
 
 API methods
@@ -48,15 +48,15 @@ for modifying an existing TCA definition.
 For existing select fields additional item groups can be added via the
 api method :php:`ExtensionManagementUtility::addTcaSelectItemGroup`.
 
-.. code-block:: php
+..  code-block:: php
 
-   ExtensionManagementUtility::addTcaSelectItemGroup(
-       'tt_content',
-       'CType',
-       'sliders',
-       'LLL:EXT:my_slider_mixtape/Resources/Private/Language/locallang_tca.xlf:tt_content.group.sliders',
-       'after:lists'
-   );
+    ExtensionManagementUtility::addTcaSelectItemGroup(
+        'tt_content',
+        'CType',
+        'sliders',
+        'LLL:EXT:my_slider_mixtape/Resources/Private/Language/locallang_tca.xlf:tt_content.group.sliders',
+        'after:lists'
+    );
 
 When adding a new select field, itemGroups should be added directly in the
 original TCA definition without using the API method. Use the API within
@@ -70,18 +70,18 @@ Using the API method :php:`ExtensionManagementUtility::addTcaSelectItem` a
 a fourth parameter in the array can be used to specify the id of the item
 group.
 
-.. code-block:: php
+..  code-block:: php
 
-   ExtensionManagementUtility::addTcaSelectItem(
-       'tt_content',
-       'CType',
-       [
-           'LLL:EXT:my_slider_mixtape/Resources/Private/Locallang/locallang_tca.xlf:tt_content.CType.slickslider',
-           'slickslider',
-           'EXT:my_slider_mixtape/Resources/Public/Icons/slickslider.png',
-           'sliders'
-       ]
-   );
+    ExtensionManagementUtility::addTcaSelectItem(
+        'tt_content',
+        'CType',
+        [
+            'LLL:EXT:my_slider_mixtape/Resources/Private/Locallang/locallang_tca.xlf:tt_content.CType.slickslider',
+            'slickslider',
+            'EXT:my_slider_mixtape/Resources/Public/Icons/slickslider.png',
+            'sliders'
+        ]
+    );
 
 History
 =======
@@ -103,51 +103,51 @@ table.
 Examples
 ========
 
-.. _tca_example_select_single_16:
+..  _tca_example_select_single_16:
 
 SelectSingle field with itemGroups
 ----------------------------------
 
-.. include:: /Images/Rst/SelectSingle16.rst.txt
+..  include:: /Images/Rst/SelectSingle16.rst.txt
 
-.. include:: /CodeSnippets/SelectSingle16.rst.txt
+..  include:: /CodeSnippets/SelectSingle16.rst.txt
 
 
-.. _tca_example_select_single_17:
+..  _tca_example_select_single_17:
 
 SelectSingle field with itemGroups, size=6
 ------------------------------------------
 
-.. include:: /Images/Rst/SelectSingle17.rst.txt
+..  include:: /Images/Rst/SelectSingle17.rst.txt
 
-.. include:: /CodeSnippets/SelectSingle17.rst.txt
+..  include:: /CodeSnippets/SelectSingle17.rst.txt
 
 
-.. _tca_example_select_singlebox_3:
+..  _tca_example_select_singlebox_3:
 
 SelectSingleBox field with itemGroups
 -------------------------------------
 
-.. include:: /Images/Rst/SelectSinglebox3.rst.txt
+..  include:: /Images/Rst/SelectSinglebox3.rst.txt
 
-.. include:: /CodeSnippets/SelectSinglebox3.rst.txt
+..  include:: /CodeSnippets/SelectSinglebox3.rst.txt
 
 
-.. _tca_example_select_checkbox_7:
+..  _tca_example_select_checkbox_7:
 
 SelectCheckbox field with itemGroups
 ------------------------------------
 
-.. include:: /Images/Rst/SelectCheckbox7.rst.txt
+..  include:: /Images/Rst/SelectCheckbox7.rst.txt
 
-.. include:: /CodeSnippets/SelectCheckbox7.rst.txt
+..  include:: /CodeSnippets/SelectCheckbox7.rst.txt
 
 
-.. _tca_example_select_multiplesidebyside_10:
+..  _tca_example_select_multiplesidebyside_10:
 
 Multiple side by side field with itemGroups
 -------------------------------------------
 
-.. include:: /Images/Rst/SelectMultiplesidebyside10.rst.txt
+..  include:: /Images/Rst/SelectMultiplesidebyside10.rst.txt
 
-.. include:: /CodeSnippets/SelectMultiplesidebyside10.rst.txt
+..  include:: /CodeSnippets/SelectMultiplesidebyside10.rst.txt
