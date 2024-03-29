@@ -16,8 +16,8 @@ MM
     referenced by TCA table columns. Dropping these definitions allows the Core
     to adapt and migrate definitions if needed.
 
-..  confval:: MM (type => select)
-
+..  confval:: MM
+    :name: select-mm
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc.
@@ -74,8 +74,8 @@ Related configurations
     Array of field => value pairs to insert when writing new MM relations.
 
 ..  _columns-select-properties-mm-match-fields:
-..  confval:: MM_match_fields (type => select)
-
+..  confval:: MM_match_fields
+    :name: select-mm-match-fields
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display / Proc.
@@ -84,8 +84,8 @@ Related configurations
     writing/reading MM relations.
 
 
-..  confval:: MM_opposite_field (type => select)
-
+..  confval:: MM_opposite_field
+    :name: select-mm-opposite-field
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (field name)
     :Scope: Proc.
@@ -106,11 +106,11 @@ Related configurations
         :sql:`sys_refindex`.
 
 
-.. confval:: MM_oppositeUsage (type => select)
-
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: array
-   :Scope: Proc.
+..  confval:: MM_oppositeUsage
+    :name: select-mm-oppositeUsage
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Proc.
 
     In a MM bidirectional relation using
     :ref:`group match fields <columns-group-properties-mm-match-fields>`
@@ -124,8 +124,8 @@ Related configurations
     field configuration.
 
 
-..  confval:: MM_table_where (type => select)
-
+..  confval:: MM_table_where
+    :name: select-mm-table-where
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (SQL WHERE)
     :Scope: Proc.

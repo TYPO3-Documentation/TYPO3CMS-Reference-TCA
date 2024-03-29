@@ -1,6 +1,6 @@
-﻿.. include:: /Includes.rst.txt
+﻿..  include:: /Includes.rst.txt
 
-.. _columns-select:
+..  _columns-select:
 
 =============
 Select fields
@@ -34,25 +34,25 @@ be displayed.
 
 The following renderTypes are available:
 
-*  :ref:`selectSingle <columns-select-rendertype-selectSingle>`: Select one
-   element from a list of elements
-*  :ref:`selectSingleBox <columns-select-rendertype-selectSingleBox>`: Select
-   one or more elements from a list of elements
-*  :ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`: One or
-   more checkboxes are displayed instead of a select list.
-*  :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`:
-   Two select fields, items can be selected from the right field, selected
-   items are displayed in the left select.
-*  :ref:`selectTree <columns-select-rendertype-selectTree>`: A tree for
-   selecting hierarchical data items.
+*   :ref:`selectSingle <columns-select-rendertype-selectSingle>`: Select one
+    element from a list of elements
+*   :ref:`selectSingleBox <columns-select-rendertype-selectSingleBox>`: Select
+    one or more elements from a list of elements
+*   :ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`: One or
+    more checkboxes are displayed instead of a select list.
+*   :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`:
+    Two select fields, items can be selected from the right field, selected
+    items are displayed in the left select.
+*   :ref:`selectTree <columns-select-rendertype-selectTree>`: A tree for
+    selecting hierarchical data items.
 
-.. toctree::
-   :hidden:
+..  toctree::
+    :hidden:
 
-   Properties/Index
-   Single/Index
-   SingleBox/Index
-   CheckBox/Index
-   MultipleSideBySide/Index
-   Tree/Index
+    Properties/Index
+    Single/Index
+    SingleBox/Index
+    CheckBox/Index
+    MultipleSideBySide/Index
+    Tree/Index
 
