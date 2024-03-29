@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _columns-text-renderType-belayoutwizard:
+..  _columns-text-renderType-belayoutwizard:
 
 ==============
 belayoutwizard
@@ -12,7 +12,7 @@ The :code:`renderType = 'belayoutwizard'` is a special renderType to display the
 wizard when editing records of table :code:`backend_layout` in the backend. It stored a custom
 syntax representing the Web -> Page layout in the database.
 
-.. toctree::
+..  toctree::
 
-   Examples
-   Properties
+    Examples
+    Properties
