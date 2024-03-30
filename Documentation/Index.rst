@@ -1,25 +1,25 @@
-.. include:: /Includes.rst.txt
-..  _start:
+..  include:: /Includes.rst.txt
+..    _start:
 
 =============
 TCA Reference
 =============
 
 :Version:
-   |release|
+    |release|
 
 :Language:
-   en
+    en
 
 :Author:
-   TYPO3 contributors
+    TYPO3 contributors
 
 :License:
-   This document is published under the
-   `Open Publication License <https://www.opencontent.org/openpub/>`__.
+    This document is published under the
+    `Open Publication License <https://www.opencontent.org/openpub/>`__.
 
 :Rendered:
-   |today|
+    |today|
 
 ----
 
@@ -30,23 +30,23 @@ This document is the complete reference of the *Table Configuration Array*
 
 **Table of Contents:**
 
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
+..  toctree::
+    :maxdepth: 2
+    :titlesonly:
 
-   Introduction/Index
-   Examples/Index
-   BestPractises/Index
-   Columns/Index
-   ColumnsConfig/Index
-   Ctrl/Index
-   Interface/Index
-   Palettes/Index
-   Types/Index
+    Introduction/Index
+    Examples/Index
+    BestPractises/Index
+    Columns/Index
+    ColumnsConfig/Index
+    Ctrl/Index
+    Interface/Index
+    Palettes/Index
+    Types/Index
 
-.. Meta Menu
+..  Meta Menu
 
-.. toctree::
-   :hidden:
+..  toctree::
+    :hidden:
 
-   Sitemap
+    Sitemap
