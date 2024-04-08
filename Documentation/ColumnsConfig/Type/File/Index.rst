@@ -115,6 +115,7 @@ Another example without usage of the API method would therefore look like this:
             'label' => 'My image',
             'config' => [
                 'type' => 'file',
+                // Can also be an array of file extensions as of TYPO3 v12.4.14+
                 'allowed' => 'jpg,png,gif',
             ],
         ],
