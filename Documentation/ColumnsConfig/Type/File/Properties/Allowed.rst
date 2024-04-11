@@ -11,7 +11,7 @@ allowed
     :type: string / array
     :Scope: Proc. / Display
 
-    One or more (comma separated) of the following reserved strings:
+    One or more (comma-separated) of the following reserved strings:
 
     `common-image-types`
         Gets replaced with the value from
