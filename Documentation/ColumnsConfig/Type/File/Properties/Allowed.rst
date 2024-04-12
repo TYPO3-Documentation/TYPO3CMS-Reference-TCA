@@ -34,6 +34,6 @@ allowed
 
 ..  versionadded:: 12.4.14
     Due to a bug, the array notation only properly works
-    since TYPO3 v12.4.1 (and 13.1.0) and upwards. Use the string notation
+    since TYPO3 v12.4.1 and upwards. Use the string notation
     for earlier versions instead.
 
