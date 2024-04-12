@@ -11,7 +11,7 @@ allowed
     :type: string / array
     :Scope: Proc. / Display
 
-    One of the following reserved strings:
+    One or more (comma-separated) of the following reserved strings:
 
     `common-image-types`
         Gets replaced with the value from
@@ -25,5 +25,15 @@ allowed
         Gets replaced with the value from
         :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext']`.
 
-    or an array of allowed file
-    endings, for example :php:`['jpg','png','svg']`.
+    Additionally, specific allowed file extensions can be added (comma
+    separated), for example
+    :php:`'common-image-types, common-text-types, gz, zip`.
+
+    You can also use the array notation of allowed file extensions, for example
+    :php:`['jpg','png','svg']` or :php:`['common-image-types', 'gz', 'zip']`.
+
+..  versionadded:: 12.4.14
+    Due to a bug, the array notation only properly works
+    since TYPO3 v12.4.1 (and 13.1.0) and upwards. Use the string notation
+    for earlier versions instead.
+
