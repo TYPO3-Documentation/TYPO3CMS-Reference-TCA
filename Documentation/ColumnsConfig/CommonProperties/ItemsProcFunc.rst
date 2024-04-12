@@ -32,6 +32,8 @@ Passed parameters
 *  :php:`table` (current table)
 *  :php:`row` (current database record)
 *  :php:`field` (current field name)
+*  :php:`effectivePid` (correct page id)
+*  :php:`site` (current site)
 
 The following parameter only exists if the field has a :ref:`flex parent <columns-flex>`.
 
