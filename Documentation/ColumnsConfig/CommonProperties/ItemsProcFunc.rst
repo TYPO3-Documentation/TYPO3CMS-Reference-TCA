@@ -26,12 +26,17 @@ itemsProcFunc
 Passed parameters
 =================
 
+..  versionadded:: 12.4.10
+    The parameters :php:`effectivePid` and :php:`site` have been added.
+
 *  :php:`items` (passed by reference)
 *  :php:`config` (TCA config of the field)
 *  :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsconfig:itemsProcFunc>`)
 *  :php:`table` (current table)
 *  :php:`row` (current database record)
 *  :php:`field` (current field name)
+*  :php:`effectivePid` (correct page ID)
+*  :php:`site` (current site)
 
 The following parameter only exists if the field has a :ref:`flex parent <columns-flex>`.
 
