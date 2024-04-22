@@ -15,7 +15,8 @@ These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <colum
 
 Characteristics of `none`:
 
-*   The DataHandler discards values send for type none and never persists or updates them in the database.
+*   The :ref:`DataHandler <t3coreapi:datahandler-basics>` discards values send for type none and never
+    persists or updates them in the database.
 *   Type none is the only type that does **not** necessarily need a database field.
 *   Type none fields does have a default renderType in FormEngine that displays the value as readonly
     if a database field exists and the value can be formatted.
