@@ -33,7 +33,7 @@ However, :code:`m:n` relations can be setup using intermediate tables. An :code:
 relation is where a child has many parents. In addition to the main parent-child
 relation fields in the intermediate table, fields can be added to attach
 additional information to the parent-child relation. One example of this is
-"FAL" / resource handling in the core. A parent record
+"FAL" / resource handling in the Core. A parent record
 (for instance table "tt_content") is connected via table "sys_file_reference" to
 a media resource in "sys_file". A sys_file record has table "sys_file_metadata"
 as a child record which holds meta information about the file (for instance a
