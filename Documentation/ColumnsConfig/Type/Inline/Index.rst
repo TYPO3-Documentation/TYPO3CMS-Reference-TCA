@@ -16,7 +16,7 @@ IRRE / inline
     Developers do not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-Inline-Relational-Record-Editing (IRRE) is a way of editing parent-child-relations in the backend view.
+Inline Relational Record Editing (IRRE) is a way of editing parent-child-relations in the backend view.
 Instead of child records already having to exist, new child records are created
 using AJAX calls (to prevent reloading the complete backend view).
 
