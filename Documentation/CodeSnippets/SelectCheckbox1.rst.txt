@@ -25,6 +25,10 @@
                            'label' => 'foo 3',
                            'value' => 3,
                        ],
+                       [
+                           'label' => 'foo 4 (empty)',
+                           'value' => '',
+                       ],
                    ],
                ],
            ],
