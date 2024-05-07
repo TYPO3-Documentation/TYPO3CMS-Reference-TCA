@@ -7,9 +7,7 @@
 
    declare(strict_types=1);
 
-   namespace TYPO3\CMS\Styleguide\UserFunctions\FormEngine;
-
-   /**
+   /*
     * This file is part of the TYPO3 CMS project.
     *
     * It is free software; you can redistribute it and/or modify it under
@@ -22,12 +20,16 @@
     * The TYPO3 project - inspiring people to share!
     */
 
+   namespace TYPO3\CMS\Styleguide\UserFunctions\FormEngine;
+
    /**
     * A user function to compare two fields
+    *
+    * @internal
     */
    use TYPO3\CMS\Backend\Form\FormDataProvider\TcaSlug;
 
-   class SlugPrefix
+   final class SlugPrefix
    {
        public function getPrefix(array $parameters, TcaSlug $reference): string
        {
