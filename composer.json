@@ -9,7 +9,7 @@
   "require-dev": {
     "t3docs/codesnippet": "dev-main",
     "t3docs/examples": "^12.0",
-    "t3docs/site-package": "dev-main",
+    "t3docs/site-package": "^12.0",
     "typo3/cms-adminpanel": "^12.4",
     "typo3/cms-backend": "^12.4",
     "typo3/cms-belog": "^12.4",
@@ -64,22 +64,6 @@
     }
   },
   "scripts": {
-    "check": [
-      "@check:php"
-    ],
-    "check:php": [
-      "@check:php:lint",
-      "@check:php:cs"
-    ],
-    "check:php:cs": "Build/Scripts/runTests.sh -n -s cgl",
-    "check:php:lint": "Build/Scripts/runTests.sh -s lint",
-    "fix": [
-      "@fix:php"
-    ],
-    "fix:php": [
-      "@fix:php:cs"
-    ],
-    "fix:php:cs": "Build/Scripts/runTests.sh -s cgl",
     "generate": [
       "@generate:codesnippets"
     ],
