@@ -3,3 +3,4 @@
 .idea/
 .Build/*
 composer.lock
+/composer.json.testing
