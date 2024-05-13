@@ -17,7 +17,6 @@
                                'input_2',
                            ],
                        ],
-                       'prefixParentPageSlug' => false,
                    ],
                    'fallbackCharacter' => '-',
                    'eval' => 'uniqueInSite',
