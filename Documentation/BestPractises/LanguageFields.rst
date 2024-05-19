@@ -69,8 +69,6 @@ Language fields in detail
     record with those stored in this field. If they differ, there will
     be a display in the form of the difference visually:
 
-    ..  include:: /Images/ManualScreenshots/OtherLanguageContent.rst.txt
-
     ..  note::
         Sometimes :sql:`l18n_diffsource` is used for this field in Core tables. This
         has historic reasons.
