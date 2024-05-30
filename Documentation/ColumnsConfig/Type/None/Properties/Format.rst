@@ -74,9 +74,9 @@ format
     user
         Calls a user-defined function to format the values. The only option is the reference to the function:
 
-    userFunc
-        *(string)* Reference to the user-defined function. The function receives the field configuration and the
-        field's value as parameters.
+        userFunc
+            *(string)* Reference to the user-defined function. The function receives the field configuration and the
+            field's value as parameters.
 
 Examples
 ========
@@ -103,5 +103,17 @@ Examples
          'format.' => [
             'precision' => 8
          ],
+      ],
+    ],
+
+..  code-block:: php
+
+    'aField' => [
+      'config' => [
+        'type' => 'none',
+        'format' => 'user',
+        'format.' => [
+            'userFunc' => 'Evoweb\Example\Utility\MyCustomValue->getErrorMssg',
+        ],
       ],
     ],
