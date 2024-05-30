@@ -1,14 +1,10 @@
 ..  include:: /Includes.rst.txt
+..  _types-properties:
 
 ==========
 Properties
 ==========
 
-
 ..  toctree::
 
-    ColumnsOverrides
-    Showitem
-    SubtypeValueField
-    SubtypesAddlist
-    SubtypesExcludelist
+    *

@@ -12,14 +12,27 @@ items
     :Scope: Display  / Proc.
     :RenderType: all
 
-    Contains the elements for the selector box unless the property :php:`foreign_table` or :php:`special` has been set
-    in which case automated values are set in addition to any values listed in this array.
+    Contains the elements for the selector box unless the property
+    :php:`foreign_table` or :php:`special` has been set in which case
+    automated values are set in addition to any values listed in this array.
+
+    ..  versionchanged:: 13.0
+        Auto-registration of New content element wizard via TCA introduced.
+        If your extension supports both TYPO3 v12 and v13, keep the page TSconfig
+        option :confval:`newContentElement.wizardItems <t3tsconfig:mod-wizards-newcontentelement-wizarditems>`
+        until dropping TYPO3 v12 support.
+
+    Items registered for the field :sql:`CType` of table :sql:`tt_content` get
+    automatically added to the :guilabel:`New content element` wizard. Settings
+    from the items property can be overridden via page TSconfig
+    :confval:`newContentElement.wizardItems <t3tsconfig:mod-wizards-newcontentelement-wizarditems>`.
+
+    See also :ref:`Add content elements to the Content Element Wizard <t3coreapi:content-element-wizard>`.
 
     ..  deprecated:: 12.3
 
         Using the numerical indexes 0 - 4 is deprecated. Use the newly introduced
         keys.
-
 
     Each element in this array is in itself an associative array.
 
