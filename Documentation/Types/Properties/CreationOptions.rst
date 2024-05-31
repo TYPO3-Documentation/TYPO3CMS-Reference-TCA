@@ -13,7 +13,7 @@ creationOptions
     ..  versionadded:: 13.0
         The page TSconfig option
         :confval:`newContentElement.wizardItems.[group].elements.[name] <t3tsconfig:mod-wizards-newcontentelement-wizarditems>`
-        option can be defined through TCA as well:
+        can be defined through TCA as well:
 
     ..  confval:: saveAndClose
         :name: types-creationOptions-saveAndClose
