@@ -20,6 +20,7 @@ appearance
     :Scope: Display
 
     Provides a string that is displayed in front of the input field.
+    The URL of the site is set by default if nothing has been defined.
 
     Assign a user function. It receives two arguments:
 
