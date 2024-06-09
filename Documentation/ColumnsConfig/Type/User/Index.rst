@@ -44,7 +44,7 @@ The `user` field can be useful, if:
 Examples
 ========
 
-This example is part of the TYPO3 Documentation Team extension :t3ext:`examples/`.
+This example is part of the TYPO3 Documentation Team extension :composer:`t3docs/examples`.
 
 The example registers an own node element, a TCA field using it and a class
 implementing a rendering. See :ref:`FormEngine docs
