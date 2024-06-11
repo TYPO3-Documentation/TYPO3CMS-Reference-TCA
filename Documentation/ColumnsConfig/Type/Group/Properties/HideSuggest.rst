@@ -15,6 +15,9 @@ hideSuggest
     The "suggest wizard" is added by default to all database relation group fields. After a couple of characters have
     been typed into this field, an ajax based search starts and shows a list of records matching the search word.
 
+    The syntax for the search is: `"multiple words" something`, so you can enclose words which need to be
+    found next to another within double quotes.
+
     A :ref:`set of options <columns-group-properties-suggestOptions>` is available to configure search details.
 
     Setting this property to `true` disables the suggest wizard.
