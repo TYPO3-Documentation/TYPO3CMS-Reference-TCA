@@ -22,7 +22,7 @@ mode
 
    .. warning::
       In order for this property to apply properly, the DB column must be allowed
-      to be :sql:`NULL`, and property :php:`nullable` must be set.
+      to be :sql:`NULL`, and property :php:`nullable` must be set to :php:`true`.
 
 Examples
 ========
