@@ -33,7 +33,7 @@ appropriate length.
 
     Extension authors who need or want to override default
     TCA schema details for whatever reason, can of course
-    do so by defining something specific in ext_tables.sql.
+    do so by defining something specific in :file:`ext_tables.sql`.
 
 ..  _columns-input-examples:
 
