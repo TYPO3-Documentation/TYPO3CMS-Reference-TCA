@@ -25,6 +25,16 @@ appropriate length.
     *   :php:`renderType=inputLink`: Use the TCA type :ref:`link <columns-link>`
         instead.
 
+..  versionchanged:: 13.2
+    Tables with TCA columns set to `type="input"` do not
+    need an `ext_tables.sql` entry anymore. The Core now
+    creates this field automatically. For short input fields allowing less
+    then 255 chars :sql:`VARCHAR()` is used, :sql:`TEXT` for larger input fields.
+
+    Extension authors who need or want to override default
+    TCA schema details for whatever reason, can of course
+    do so by defining something specific in ext_tables.sql.
+
 ..  _columns-input-examples:
 
 Examples
