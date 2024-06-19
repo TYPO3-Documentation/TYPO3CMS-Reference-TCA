@@ -27,7 +27,7 @@ appropriate length.
 
 ..  versionchanged:: 13.2
     Tables with TCA columns set to `type="input"` do not
-    need an `ext_tables.sql` entry anymore. The Core now
+    need an :file:`ext_tables.sql` entry anymore. The Core now
     creates this field automatically. For short input fields allowing less
     than 255 chars :sql:`VARCHAR()` is used, :sql:`TEXT` for larger input fields.
 
