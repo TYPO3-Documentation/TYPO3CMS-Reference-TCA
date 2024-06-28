@@ -207,3 +207,5 @@ Flex form fields can access field values from various different sources:
     <displayCond>FIELD:flexField_1:!=:foo</displayCond>
     <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
     <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
+    <!-- Hide field for new records -->
+    <displayCond>REC:NEW:true</displayCond>
