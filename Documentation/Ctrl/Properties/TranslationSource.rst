@@ -13,7 +13,7 @@ translationSource
 
 
    Name of the field, by convention
-   :ref:`l10n_parent <field-l10n_parent>` is used by translations to point back to
+   :ref:`l10n_source <field-l10n_source>` is used by translations to point back to
    the original record (i.e. the record in any language from which they are a
    translated).
 
