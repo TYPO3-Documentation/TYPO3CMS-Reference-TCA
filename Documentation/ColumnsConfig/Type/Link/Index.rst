@@ -96,6 +96,11 @@ where code adoption has to take place.
    being stored in the database. Therefore, the :php:`eval=trim` option is no
    longer needed and should be removed from the TCA configuration.
 
+.. note::
+
+    The prior softref definition :php:`softref=>typolink` is now automatically applied
+    to all :php:`link` fields.
+
 Create an URL
 =============
 
