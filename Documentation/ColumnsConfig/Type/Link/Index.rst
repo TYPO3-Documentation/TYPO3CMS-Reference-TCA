@@ -98,7 +98,7 @@ where code adoption has to take place.
 
 .. note::
 
-    The softref definition :php:`softref=>typolink` is automatically applied
+    The prior softref definition :php:`softref=>typolink` is now automatically applied
     to all :php:`link` fields.
 
 Create an URL
