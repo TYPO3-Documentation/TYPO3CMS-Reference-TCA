@@ -61,9 +61,11 @@ FlexForm values.
 
         -  Part 3 is a comma separated list of string or numeric values
 
-    REC:NEW
-        This can be used to test whether the current record is new or not.
+    REC:NEW:true
+        This will show the field for new records which have not been saved yet.
 
+    REC:NEW:false
+        This will show the field for existing records which have already been saved.
 
     HIDE\_FOR\_NON\_ADMINS
         This will hide the field for all non-admin users while admins can see it.
@@ -186,5 +188,3 @@ Flex form fields can access field values from various different sources:
     <displayCond>FIELD:flexField_1:!=:foo</displayCond>
     <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
     <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
-    <!-- Hide field for new records -->
-    <displayCond>REC:NEW:true</displayCond>
