@@ -2,9 +2,9 @@
 
 ..  _fields_language:
 
-================
+===============
 Language fields
-================
+===============
 
 See also the :ref:`Frontend Localization Guide <t3translate:core-support-tca>`.
 
@@ -18,7 +18,7 @@ not recommended to define them in the :file:`ext_tables.sql`. Doing so
 with incompatible SQL settings can lead to problems later on.
 
 Language fields in detail
-==========================
+=========================
 
 ..  _field-sys_language_uid:
 
@@ -74,6 +74,8 @@ Language fields in detail
         has historic reasons.
 
 Example: enable table for localization and translation:
-========================================================
+=======================================================
 
-..  include:: /CodeSnippets/Manual/Ctrl/Language.rst.txt
+..  literalinclude:: /CodeSnippets/Manual/Ctrl/Language.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+
