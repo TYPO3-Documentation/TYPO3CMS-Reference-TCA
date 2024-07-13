@@ -32,7 +32,7 @@ The `passthrough` field can be useful, if:
 
 * A field needs no rendering, but some data handling using hooks of the `DataHandler`.
 * The passthrough type is used by TYPO3 core to handle meta data on records rows that are not shown as fields
-  if editing records and only have data logic attached to it. An example is the `l18n_diffsource` field whose
+  if editing records and only have data logic attached to it. An example is the `l10n_diffsource` field whose
   data is rendered differently in FormEngine at other places if editing a record but still updated and handled
   by the `DataHandler`.
 

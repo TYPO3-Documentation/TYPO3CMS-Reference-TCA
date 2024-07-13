@@ -24,7 +24,7 @@ translationSource
 
    For example, if a tt_content record in default language English with uid 13 exists, this record is translated
    to French with uid 17, and the Danish translation is later created based on the French translation, then the
-   Danish translation has uid 13 set as :sql:`l18n_parent` and 17 as :sql:`l10n_source`.
+   Danish translation has uid 13 set as :sql:`l10n_parent` and 17 as :sql:`l10n_source`.
 
 Example
 =======
