@@ -1,46 +1,46 @@
-.. include:: /Includes.rst.txt
-.. _ctrl-reference-enablecolumns:
+..  include:: /Includes.rst.txt
+..  _ctrl-reference-enablecolumns:
 
 =============
 enablecolumns
 =============
 
-.. confval:: enablecolumns
-   :name: ctrl-enablecolumns
-   :Path: $GLOBALS['TCA'][$table]['ctrl']
-   :type: array
-   :Scope: Proc. / Display
+..  confval:: enablecolumns
+    :name: ctrl-enablecolumns
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: array
+    :Scope: Proc. / Display
 
 
-   Specifies which *publishing control features* are automatically implemented for the table.
+    Specifies which *publishing control features* are automatically implemented for the table.
 
-   This includes that records can be "disabled" or "hidden", have a starting and/or ending time and be access
-   controlled so only a certain front end user group can access them. This property is used by the
-   :ref:`RestrictionBuilder <t3coreapi:database-restriction-builder>` to create SQL fragments.
+    This includes that records can be "disabled" or "hidden", have a starting and/or ending time and be access
+    controlled so only a certain front end user group can access them. This property is used by the
+    :ref:`RestrictionBuilder <t3coreapi:database-restriction-builder>` to create SQL fragments.
 
-   These are the keys in the array you can use. Each of the values must be a field name in the table which
-   should be used for the feature:
+    These are the keys in the array you can use. Each of the values must be a field name in the table which
+    should be used for the feature:
 
-   disabled
-      Defines which field serves as hidden/disabled flag.
+    disabled
+        Defines which field serves as hidden/disabled flag.
 
-   starttime
-      Defines which field contains the starting time.
+    starttime
+        Defines which field contains the starting time.
 
-   endtime
-      Defines which field contains the ending time.
+    endtime
+        Defines which field contains the ending time.
 
-   fe\_group
-      Defines which field is used for access control via a selection of FE user groups.
+    fe\_group
+        Defines which field is used for access control via a selection of FE user groups.
 
-   .. note::
-      In general these fields do *not* affect the access or display in the backend! They are primarily
-      related to the frontend. However the icon of records having these features enabled will
-      normally change as these examples show:
+    .. note::
+        In general these fields do *not* affect the access or display in the backend! They are primarily
+        related to the frontend. However the icon of records having these features enabled will
+        normally change as these examples show:
 
-   .. include:: /Images/Rst/CtrlEnableFields.rst.txt
+    ..  include:: /Images/Rst/CtrlEnableFields.rst.txt
 
-   See also the :ref:`delete <ctrl-reference-delete>` feature which is related, but is active for both frontend and backend.
+    See also the :ref:`delete <ctrl-reference-delete>` feature which is related, but is active for both frontend and backend.
 
 Examples
 ========
@@ -48,7 +48,8 @@ Examples
 Make table hideable
 ===================
 
-.. include:: /CodeSnippets/Manual/Ctrl/Hidden.rst.txt
+..  literalinclude:: /CodeSnippets/Manual/Ctrl/Hidden.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 Common enable fields
 ====================
@@ -91,19 +92,3 @@ The same is true when
 :ref:`select() is called on the connection <t3coreapi:database-connection-select>`.
 
 See the :ref:`t3coreapi:database-restriction-builder` for details.
-
-However this could be disabled by setting:
-
-.. code-block:: php
-   :caption: EXT:my_extension/SomeClass.php
-
-   // use TYPO3\CMS\Core\Utility\GeneralUtility;
-   // use TYPO3\CMS\Core\Database\ConnectionPool;
-   // use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction
-
-   $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('pages');
-   $queryBuilder
-      ->getRestrictions()
-      // Use with care, the following may reveal information:
-      ->removeAll()
-      ->add(GeneralUtility::makeInstance(DeletedRestriction::class));
