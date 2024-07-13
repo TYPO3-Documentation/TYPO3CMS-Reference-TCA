@@ -21,8 +21,8 @@ Opacity
 
 ..  _columns-color-properties-opacity-example:
 
-Example: Allow opaque colors
-============================
+Example: Allow adjustment of opacity in a color picker
+======================================================
 
 ..  figure:: /Images/ManualScreenshots/ColorOpacity.png
     :alt: A color picker with adjustable opacity
