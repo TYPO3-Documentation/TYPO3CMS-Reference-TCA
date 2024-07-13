@@ -2,9 +2,9 @@
 
 ..  _fields_common:
 
-================
+=============
 Common fields
-================
+=============
 
 Mandatory fields
 ================
@@ -43,8 +43,9 @@ Soft delete
     This field is used to enable soft delete in records. In can be configured
     by setting :ref:`ctrl->delete <ctrl-reference-delete>`:
 
+    ..  literalinclude:: /CodeSnippets/Manual/Ctrl/Delete.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
-    ..  include:: /CodeSnippets/Manual/Ctrl/Delete.rst.txt
 
     ..  warning::
         If no :sql:`deleted` field is configured, records will be hard deleted.
@@ -64,8 +65,8 @@ Enablecolumns
     This field is used to enable soft hiding of records. In can be configured
     by setting :ref:`ctrl->enablecolumns->disabled <ctrl-reference-enablecolumns>`:
 
-    ..  include:: /CodeSnippets/Manual/Ctrl/Hidden.rst.txt
-
+    ..  literalinclude:: /CodeSnippets/Manual/Ctrl/Hidden.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  _field_starttime:
 ..  _field_endtime:
@@ -75,7 +76,8 @@ Enablecolumns
     an endtime. In can be configured
     by :ref:`ctrl->enablecolumns->starttime or endtime <ctrl-reference-enablecolumns>`:
 
-    ..  include:: /CodeSnippets/Manual/Ctrl/StarttimeEndtime.rst.txt
+    ..  literalinclude:: /CodeSnippets/Manual/Ctrl/StarttimeEndtime.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  _field_fe_group:
 
@@ -83,7 +85,8 @@ Enablecolumns
     This field is used to enable soft delete of records. In can be configured
     by :ref:`ctrl->enablecolumns->fe_group <ctrl-reference-enablecolumns>`:
 
-    ..  include:: /CodeSnippets/Manual/Ctrl/FeGroup.rst.txt
+    ..  literalinclude:: /CodeSnippets/Manual/Ctrl/FeGroup.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  warning::
     These enable fields are only respected in the frontend if you
@@ -100,7 +103,8 @@ Manual sorting in the backend
     This field is used to manually sort records in the backend. In can be configured
     by :ref:`ctrl->sortby <ctrl-reference-sortby>`:
 
-    ..  include:: /CodeSnippets/Manual/Ctrl/Sorting.rst.txt
+    ..  literalinclude:: /CodeSnippets/Manual/Ctrl/Sorting.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  attention::
     The sortby field contains an integer and is managed by the DataHandler. It
@@ -120,7 +124,8 @@ The following fields are automatically set when a record is written by the
 displayed in backend forms or explicitly set, therefore they need no entry in
 the `columns` section of the TCA.
 
-..  include:: /CodeSnippets/Manual/Ctrl/DataHandlerFields.rst.txt
+..  literalinclude:: /CodeSnippets/Manual/Ctrl/DataHandlerFields.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  _field_tstamp:
 
