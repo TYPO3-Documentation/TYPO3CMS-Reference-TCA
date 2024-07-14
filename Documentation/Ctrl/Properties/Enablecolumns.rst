@@ -98,7 +98,7 @@ Enablecolumns / enablefields usage
 Most ways of retrieving records in the frontend automatically respect the
 :php:`ctrl->enablecolumns` settings:
 
-.. _enablefields_usage-typoscript:
+..  _enablefields_usage-typoscript:
 
 Enablecolumns in TypoScript
 ---------------------------
