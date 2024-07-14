@@ -14,7 +14,7 @@ transOrigDiffSourceField
     ..  versionchanged:: 13.3
         The column definition is :ref:`auto-created <ctrl-auto-created-columns>`.
 
-    Column name, by convention by convention
+    Column name, by convention
     :ref:`l10n_diffsource <field-l10n_diffsource>`, which will be updated with
     the value of the original
     language record whenever the translation record is updated. This
