@@ -17,7 +17,7 @@ test-docs: ## Test the documentation rendering
 
 .PHONY: codesnippets
 codesnippets: ## Regenerate automatic code snippets
-	.Build/vendor/bin/typo3 codesnippet:create Documentation/CodeSnippets/
+	.Build/bin/typo3 codesnippet:create Documentation/
 
 .PHONY: test
 test: test-lint test-cgl test-docs ## Runs all test suites
@@ -30,12 +30,13 @@ test-lint: ## Lint PHP includes
 test-cgl: ## Test coding guidelines to PHP includes
 	Build/Scripts/runTests.sh -n -s cgl
 
+.PHONY: fix
+fix: fix-cgl## Apply automatic fixes
+
 .PHONY: fix-cgl
 fix-cgl: ## Apply coding guidelines to PHP includes
 	Build/Scripts/runTests.sh -s cgl
 
-.PHONY: test-docs
-test-docs: ## Test the documentation rendering
-	mkdir -p Documentation-GENERATED-temp
-
-	docker run --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log --output-format=html
+.PHONY: install
+install: ## Update composer
+	Build/Scripts/runTests.sh -s composerUpdate
