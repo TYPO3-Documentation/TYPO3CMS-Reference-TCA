@@ -29,5 +29,5 @@ translationSource
 Example
 =======
 
-..  literalinclude:: /CodeSnippets/Manual/Ctrl/Language.php
+..  literalinclude:: _CodeSnippets/_Language.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php

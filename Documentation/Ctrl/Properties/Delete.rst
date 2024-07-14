@@ -26,5 +26,5 @@ Example
 
 Enable soft delete for the following table:
 
-..  literalinclude:: /CodeSnippets/Manual/Ctrl/Delete.php
+..  literalinclude:: _CodeSnippets/_Delete.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php

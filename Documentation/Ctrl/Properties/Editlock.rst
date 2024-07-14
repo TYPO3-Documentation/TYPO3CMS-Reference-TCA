@@ -22,3 +22,12 @@ editlock
 
     This feature is used on the pages table, where it also prevents editing of records on that page (except other pages)!
     Also, no new records (including pages) can be created on the page.
+
+..  _ctrl-reference-editlock-example:
+
+Example: A table with editlock
+==============================
+
+If the checkbox is set, the affected record can only be edited by admins.
+
+..  literalinclude:: _CodeSnippets/_Editlock.php

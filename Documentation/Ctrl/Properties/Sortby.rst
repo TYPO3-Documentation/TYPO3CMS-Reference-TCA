@@ -30,5 +30,5 @@ sortby
         DataHandler will write these integers into that field, which is most likely *not* what you want. Use `default_sortby`
         in this case.
 
-    ..  literalinclude:: /CodeSnippets/Manual/Ctrl/Sorting.php
+    ..  literalinclude:: _CodeSnippets/_Sorting.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
