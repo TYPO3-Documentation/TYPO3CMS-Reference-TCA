@@ -18,7 +18,7 @@ If the table has a TCA definition, TYPO3 will automatically create the following
     and as a reference in relationships between records.
 
 :sql:`pid`
-    The `uid` property of the parent page. The record is situated on this page.
+    The `uid` field of the parent page. The record is situated on this page.
     If this value is 0 if the record is not connected to any page.
 
 There is no separate TCA definition of these fields in the TCA configuration. It is
