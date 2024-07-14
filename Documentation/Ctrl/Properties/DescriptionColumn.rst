@@ -24,7 +24,7 @@ descriptionColumn
 
     ..  include:: _AutoCreateWarning.rst.txt
 
-.. _ctrl-reference-descriptionColumn-example:
+..  _ctrl-reference-descriptionColumn-example:
 
 Example: Create a table that has a description column
 =====================================================
