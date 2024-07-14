@@ -4,7 +4,7 @@ $jsonField = [
     'config' => [
         'type' => 'json',
         'behaviour' => [
-            'allowLanguageSynchronization' => true
-        ]
-    ]
+            'allowLanguageSynchronization' => true,
+        ],
+    ],
 ];
