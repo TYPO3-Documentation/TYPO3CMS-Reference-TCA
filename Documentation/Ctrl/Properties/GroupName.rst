@@ -5,13 +5,21 @@
 groupName
 =========
 
-.. confval:: groupName
-   :name: ctrl-groupName
-   :Path: $GLOBALS['TCA'][$table]['ctrl']
-   :type: string
-   :Scope: Special
+..  confval:: groupName
+    :name: ctrl-groupName
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: string
+    :Scope: Special
 
+    This option can be used to group records in the new record wizard. If you define a new table and set
+    its "groupName" to the key of another extension, the table will appear in the list of records from that
+    other extension in the new record wizard.
 
-   This option can be used to group records in the new record wizard. If you define a new table and set
-   its "groupName" to the key of another extension, the table will appear in the list of records from that
-   other extension in the new record wizard.
+    We really appreciate you setting the `ctrl` property `title` to a localized value (`LLL:EXT:`), otherwise 
+    it may happen that TYPO3 cannot extract the correct extension key from your table name, resulting in  
+    wrong icons in list of new record wizard. This only happens if your extension key contains
+    underscores `_`, but the second part of your table name does not. For example: If your extension key 
+    is `my_extension` the table names will normally start with `tx_myextension`. Since `myextension` does not
+    match the real extension key `my_extension`, the icon of your extension cannot be retrieved from your 
+    extension. Instead of a localized `title`, you can also set `groupName` to your real extension
+    key: `my_extension`.
