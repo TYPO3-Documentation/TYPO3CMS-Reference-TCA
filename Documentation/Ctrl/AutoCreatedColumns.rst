@@ -12,8 +12,8 @@ Auto-created columns from 'ctrl'
     of boilerplate field definitions in :ref:`columns` and rely on TYPO3 core to create
     them automatically when dropping TYPO3 v12.4 support.
 
-Certain :php:`ctrl` settings, such as the :ref:`ctrl-enablecolumns` and
-:ref:`ctrl-reference-languagefield` settings require TCA :php:`columns` definitions.
+Certain :php:`ctrl` settings, such as the :confval:`ctrl-enablecolumns` and
+:confval:`ctrl-languagefield` settings require TCA :php:`columns` definitions.
 
 ..  warning::
     Columns created automatically by being defined in the ctrl section of the TCA

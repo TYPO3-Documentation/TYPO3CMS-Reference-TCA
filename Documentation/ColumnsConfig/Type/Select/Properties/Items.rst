@@ -92,18 +92,6 @@ A more complex example could be this (includes icons):
 
 ..  include:: /CodeSnippets/SelectSingle4.rst.txt
 
-..  _tca_example_sys_language_uid:
-
-A typical sys_language_uid field
---------------------------------
-
-The icons can also be referenced by their identifier in the
-:ref:`Icon API<t3coreapi:icon>`
-
-..  include:: /Images/Rst/SysLanguageUid.rst.txt
-
-..  include:: /CodeSnippets/SysLanguageUid.rst.txt
-
 
 Select checkbox field with icons and descriptions
 -------------------------------------------------
