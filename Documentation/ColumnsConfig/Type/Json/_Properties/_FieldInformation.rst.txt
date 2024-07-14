@@ -1,0 +1,6 @@
+..  confval:: fieldInformation
+    :type: string
+    :name: json-fieldInformation
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']
+
+    See :confval:`fieldInformation` for details.

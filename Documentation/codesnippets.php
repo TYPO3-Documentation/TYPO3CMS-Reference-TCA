@@ -737,4 +737,10 @@ return [
         'targetFileName' => 'ColumnsConfig/Type/Password/Properties/_Password_7.rst.txt',
         'emphasizeLines' => ['14', '15', '16'],
     ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:webhooks/Configuration/TCA/sys_webhook.php',
+        'fields' => ['columns/additional_headers'],
+        'targetFileName' => 'ColumnsConfig/Type/Json/_Examples/SysWebHook.rst.php',
+    ],
 ];

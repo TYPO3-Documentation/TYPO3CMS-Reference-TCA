@@ -1,0 +1,6 @@
+..  confval:: default
+    :type: string
+    :name: json-default
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['default']
+
+    Default value set if a new record is created.

@@ -45,6 +45,7 @@
     "typo3/cms-t3editor": "dev-main as 13.3",
     "typo3/cms-tstemplate": "dev-main as 13.3",
     "typo3/cms-viewpage": "dev-main as 13.3",
+    "typo3/cms-webhooks": "dev-main as 13.3",
     "typo3/cms-workspaces": "dev-main as 13.3"
   },
   "minimum-stability": "dev",
