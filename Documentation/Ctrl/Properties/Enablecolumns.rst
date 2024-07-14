@@ -108,7 +108,7 @@ Records retrieved in TypoScript via the objects
 automatically respect the settings in section
 :ref:`ctrl->enablecolumns <ctrl-reference-enablecolumns>`.
 
-.. _enablefields_usage-extbase:
+..  _enablefields_usage-extbase:
 
 Enablecolumns / enablefields in Extbase
 ----------------------------------------
@@ -118,7 +118,7 @@ however this behaviour can be disabled by setting
 :php:`$querySettings->setIgnoreEnableFields(true)` in the
 :ref:`repository <t3coreapi:extbase-repository>`.
 
-.. _enablefields_usage-queries:
+..  _enablefields_usage-queries:
 
 Enablecolumns in queries
 -------------------------
