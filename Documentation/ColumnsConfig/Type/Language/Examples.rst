@@ -10,4 +10,5 @@ Examples
 Simple language field
 =====================
 
-..  include:: /CodeSnippets/SysLanguageUid.rst.txt
+..  literalinclude:: _languageField.php
+    :caption: EXT:myExtension/Configuration/Overrides/someTable.php

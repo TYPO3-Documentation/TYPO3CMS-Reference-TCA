@@ -1,0 +1,9 @@
+..  warning::
+    Columns created automatically by being defined by this property
+    still need to be added manually to the palettes and types definition.
+
+    Due to the :ref:`TCA loading order <ctrl-auto-created-columns-loading-order>`
+    these columns are only created if the according ctrl property was added in
+    the original definition in :file:`Configuration/TCA/<tablename>.php`, not
+    if they were defined in the overrides like
+    :file:`Configuration/TCA/Overrides/something.php`.

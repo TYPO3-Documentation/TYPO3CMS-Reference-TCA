@@ -11,7 +11,10 @@ transOrigDiffSourceField
     :type: string (field name)
     :Scope: Proc. / Display
 
-    Field name, by convention by convention
+    ..  versionchanged:: 13.3
+        The column definition is :ref:`auto-created <ctrl-auto-created-columns>`.
+
+    Column name, by convention
     :ref:`l10n_diffsource <field-l10n_diffsource>`, which will be updated with
     the value of the original
     language record whenever the translation record is updated. This
@@ -21,20 +24,25 @@ transOrigDiffSourceField
     help for translators so they can quickly grasp the changes that
     happened to the default language text.
 
-    The field type in the database should be a large text field (clob/blob). If
+    The column in the database is auto created. If you ever override it,
+    it should be at least a large text field (clob/blob). If
     you do not define the field in the file :file:`ext_tables.sql` it is
     automatically created with the correct type.
 
-    This field needs no configuration in :php:`$GLOBALS['TCA'][<table>]['columns']`,
-    but if you do, select the :ref:`passthrough <columns-passthrough>` type.
-    That will enable the undo function to also work on this field.
+    The column definition is :ref:`auto-created <ctrl-auto-created-columns>`. If
+    it is :ref:`overridden <ctrl-auto-created-columns-override>` it must still
+    be of type :ref:`columns-passthrough`.
 
-    .. note::
+    ..  note::
         Sometimes :sql:`l18n_diffsource` is used for this field in Core tables.
         This has historic reasons.
 
-Example
-=======
+    ..  include:: _AutoCreateWarning.rst.txt
+
+..  _ctrl-reference-transorigdiffsourcefield-example:
+
+Example: Display changes in from the original language
+======================================================
 
 ..  include:: /Images/ManualScreenshots/OtherLanguageContent.rst.txt
 

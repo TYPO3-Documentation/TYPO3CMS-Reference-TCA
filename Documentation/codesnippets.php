@@ -13,22 +13,9 @@ return [
     [
         'action' => 'createPhpArrayCodeSnippet',
         'sourceFile' => 'EXT:frontend/Configuration/TCA/tt_content.php',
-        'fields' => ['columns/hidden'],
-        'targetFileName' => 'CodeSnippets/TtContentHidden.rst.txt',
-    ],
-    [
-        'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'EXT:frontend/Configuration/TCA/tt_content.php',
         'fields' => ['ctrl'],
         'targetFileName' => 'CodeSnippets/TtContentCtrl.rst.txt',
     ],
-    [
-        'action' => 'createPhpArrayCodeSnippet',
-        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-        'fields' => ['columns/sys_language_uid'],
-        'targetFileName' => 'CodeSnippets/SysLanguageUid.rst.txt',
-    ],
-
     [
         'action' => 'createPhpArrayCodeSnippet',
         'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',

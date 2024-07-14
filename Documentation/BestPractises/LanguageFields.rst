@@ -6,6 +6,11 @@
 Language fields
 ===============
 
+..  versionchanged:: 13.3
+    The column definitions for these settings are
+    :ref:`auto-created <ctrl-auto-created-columns>`.
+    See also :ref:`ctrl-reference-languagefield-migration`.
+
 See also the :ref:`Frontend Localization Guide <t3translate:core-support-tca>`.
 
 ..  note::
@@ -13,9 +18,12 @@ See also the :ref:`Frontend Localization Guide <t3translate:core-support-tca>`.
     strongly discouraged as it breaks convention and may lead to compatibility
     issues with third party extensions.
 
-All fields mentioned below get added to the database automatically. It is
-not recommended to define them in the :file:`ext_tables.sql`. Doing so
-with incompatible SQL settings can lead to problems later on.
+All columns mentioned below get :ref:`auto-created <ctrl-auto-created-columns>`
+in the TCA and added to the database automatically. It is
+not recommended to define them in the TCA overrides or :file:`ext_tables.sql`. Doing so
+with incompatible settings can lead to problems later on.
+
+..  _fields_language-fields:
 
 Language fields in detail
 =========================
@@ -73,7 +81,9 @@ Language fields in detail
         Sometimes :sql:`l18n_diffsource` is used for this field in Core tables. This
         has historic reasons.
 
-Example: enable table for localization and translation:
+..  _fields_language-example:
+
+Example: Enable table for localization and translation:
 =======================================================
 
 ..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_Language.php
