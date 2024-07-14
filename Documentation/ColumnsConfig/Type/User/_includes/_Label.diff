@@ -1,0 +1,10 @@
+         $attributes['class'] = implode(' ', $classes);
+ 
+         $html = [];
++        $versionInformation = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
++        if ($versionInformation->getMajorVersion() > 12) {
++            $html[] = $this->renderLabel($fieldId);
++        }
+         $html[] = '<div class="formengine-field-item t3js-formengine-field-item" style="padding: 5px; background-color: ' . $color . ';">';
+         $html[] = $fieldInformationHtml;
+         $html[] =   '<div class="form-wizards-wrap">';
