@@ -5,12 +5,11 @@
 multiple
 ========
 
-.. confval:: multiple
-
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: boolean
-   :Scope: Display / Proc.
-   :Types: :ref:`group <columns-group>`, :ref:`select <columns-select>`
+..  confval:: multiple
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: boolean
+    :Scope: Display / Proc.
+    :Types: :ref:`group <columns-group>`, :ref:`select <columns-select>`
 
    Allows the *same item* more than once in a list.
 

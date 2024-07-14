@@ -1,29 +1,28 @@
-.. include:: /Includes.rst.txt
-.. _tca_property_placeholder:
+..  include:: /Includes.rst.txt
+..  _tca_property_placeholder:
 
 ===========
 placeholder
 ===========
 
-.. confval:: placeholder
+..  confval:: placeholder
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Display
+    :Types: :ref:`input <columns-input>`
 
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :type: string
-   :Scope: Display
-   :Types: :ref:`input <columns-input>`
+    Placeholder text for the field. This can be a simple string or a reference to a value in the current record
+    or another one. With a syntax like :code:`__row|field` the placeholder will take
+    the value of the given field from the current record.
 
-   Placeholder text for the field. This can be a simple string or a reference to a value in the current record
-   or another one. With a syntax like :code:`__row|field` the placeholder will take
-   the value of the given field from the current record.
+    This can be recursive to follow a longer path in a table record chain. If the designated field is a relation to
+    another table (is of type :ref:`select <columns-select>`, :ref:`group <columns-group>` or
+    :ref:`inline <columns-inline>`), the related record will be loaded and the placeholder searched within it.
 
-   This can be recursive to follow a longer path in a table record chain. If the designated field is a relation to
-   another table (is of type :ref:`select <columns-select>`, :ref:`group <columns-group>` or
-   :ref:`inline <columns-inline>`), the related record will be loaded and the placeholder searched within it.
+    **Example from the "sys_file_reference" table:**
 
-   **Example from the "sys_file_reference" table:**
-
-   .. code-block:: php
-      :emphasize-lines: 10
+    ..  code-block:: php
+        :emphasize-lines: 10
 
         'title' => [
             'l10n_mode' => 'prefixLangTitle',
@@ -40,6 +39,6 @@ placeholder
             ],
         ],
 
-   In the above placeholder syntax, :code:`uid_local` points to the related "sys_file" record and :code:`metadata`
-   points to the "sys_file_metadata" of the related "sys_file" record. From there we take the content
-   of the :code:`title` field as placeholder value.
+    In the above placeholder syntax, :code:`uid_local` points to the related "sys_file" record and :code:`metadata`
+    points to the "sys_file_metadata" of the related "sys_file" record. From there we take the content
+    of the :code:`title` field as placeholder value.
