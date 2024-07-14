@@ -46,7 +46,7 @@ capabilities should be set in base files only: Adding them at a later point - fo
 example in a different extension - is brittle and there is a risk the main
 extension can not deal with such an added capability properly.
 
-.. _ctrl-auto-created-columns-override:
+..  _ctrl-auto-created-columns-override:
 
 Overriding definitions from auto-created TCA columns
 ----------------------------------------------------
