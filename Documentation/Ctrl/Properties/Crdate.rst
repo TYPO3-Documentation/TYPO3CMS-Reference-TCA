@@ -26,5 +26,5 @@ Examples
 The following fields are set by the DataHandler automatically on creating or
 updating records, if they are configured in the :php:`ctrl` section of the TCA:
 
-..  literalinclude:: /CodeSnippets/Manual/Ctrl/DataHandlerFields.php
+..  literalinclude:: _CodeSnippets/_DataHandlerFields.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
