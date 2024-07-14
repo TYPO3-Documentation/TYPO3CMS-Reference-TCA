@@ -68,12 +68,12 @@ As example, "base" :php:`pages` file defines this (step 1 above):
 
 The Core thus creates this :php:`columns` definition (step 2 above):
 
-..  literalinclude:: _AutoCreatedColumns/_OverrrideHiddenDefault.php
+..  literalinclude:: _AutoCreatedColumns/_autoCreatePages.php
     :caption: Column entries created by the Core
 
 When an editor creates a new page, it should be "disabled" by default to
 avoid having a new page online in the website before it is set up completely.
 A :file:`Configuration/TCA/Overrides/pages.php` file does this:
 
-..  literalinclude:: _AutoCreatedColumns/_OverrrideHiddenDefault.php
+..  literalinclude:: _AutoCreatedColumns/_OverrideHiddenDefault.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
