@@ -1,0 +1,15 @@
+..  confval:: rows
+    :name: json-rows
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rows']
+    :type: integer
+    :Scope: Display
+    :default: 5
+
+    The number of rows in the JSON editor. May be corrected for harmonization
+    between browsers. Will also automatically be increased if the content in
+    the field is found to be of a certain length, thus the
+    field will automatically fit the content. Default is 5. Max value is 20.
+
+    .. todo: add link after added to TSconfig reference
+
+    This value can be overridden by page TSconfig.
