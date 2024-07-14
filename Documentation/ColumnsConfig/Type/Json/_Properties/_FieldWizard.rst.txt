@@ -1,0 +1,6 @@
+..  confval:: fieldWizard
+    :type: string
+    :name: json-fieldWizard
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
+
+    See :confval:`fieldWizard` for details.

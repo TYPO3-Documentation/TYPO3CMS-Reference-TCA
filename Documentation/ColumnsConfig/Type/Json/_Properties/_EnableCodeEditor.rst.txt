@@ -1,0 +1,11 @@
+..  confval:: enableCodeEditor
+    :name: json-enableCodeEditor
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['enableCodeEditor']
+    :type: boolean
+    :default: true
+
+    In case enableCodeEditor is set to `true`, which is the default and the
+    system extension :composer:`typo3/cms-t3editor` is installed and active,
+    the JSON value is rendered in the corresponding code editor.
+
+    Otherwise it is rendered in a standard textarea HTML element.

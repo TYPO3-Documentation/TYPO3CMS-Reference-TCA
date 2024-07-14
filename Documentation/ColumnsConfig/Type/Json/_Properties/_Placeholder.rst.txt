@@ -1,0 +1,7 @@
+..  confval:: placeholder
+    :type: string
+    :name: json-placeholder
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['placeholder']
+    :Scope: Display
+
+    Placeholder text for the field.
