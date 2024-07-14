@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-.. _ctrl-auto-created-columns:
+..  include:: /Includes.rst.txt
+..  _ctrl-auto-created-columns:
 
 ================================
 Auto-created columns from 'ctrl'
