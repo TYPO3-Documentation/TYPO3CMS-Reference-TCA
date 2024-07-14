@@ -11,21 +11,15 @@ languageField
     :type: string (field name of type :ref:`language <columns-language>`)
     :Scope: Proc. / Display
 
-    .. deprecated:: 11.2
-      This field can only be used with the type
-      :ref:`language <columns-language>`. All other field types will be
-      automatically migrated on-the-fly possibly losing configurations.
-      See :ref:`Migration to the language type <columns-languge-migration>`
+    ..  versionchanged:: 13.3
+        The column definition is :ref:`auto-created <ctrl-auto-created-columns>`.
 
-    This property contains the field name of the field which contains a pointer to the
-    language of the record. The field should have the type
-    :ref:`language <columns-language>`. The field is called
-    :ref:`sys_language_uid <field-sys_language_uid>` by convention.
+    This property contains the column name of the column which contains the identifier
+    language of the record. The column definition is :ref:`auto-created <ctrl-auto-created-columns>`.
+    If it is :ref:`overridden <ctrl-auto-created-columns-override>` it must still
+    be of type :ref:`columns-language`.
 
-    This TCA type automatically displays all available languages for the
-    current context (the corresponding site configuration) and also automatically
-    adds the special `-1` language (meaning `all languages`) for all record
-    types, except `pages`.
+    The column is called :php:`sys_language_uid` by convention.
 
     Backend users can be limited to have edit access for only certain of
     these languages and if this option is set, edit access for languages
@@ -35,8 +29,25 @@ languageField
     for a discussion about the effects of
     this property (and other TCA properties) on the localization process.
 
-Example
-=======
+    ..  include:: _AutoCreateWarning.rst.txt
+
+
+..  _ctrl-reference-languagefield-migration:
+
+Migration: Remove language column definitions from TCA
+======================================================
+
+On dropping TYPO3 v12.4 support extensions authors can drop the column
+definitions of the language fields. They need to keep the :ref:`palettes` and
+:ref:`type` definitions, however:
+
+..  literalinclude:: _CodeSnippets/_Language.diff
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+
+..  _ctrl-reference-languagefield-example:
+
+Example: A table with localization support
+==========================================
 
 .. include:: /Images/Rst/SysLanguageUid.rst.txt
 

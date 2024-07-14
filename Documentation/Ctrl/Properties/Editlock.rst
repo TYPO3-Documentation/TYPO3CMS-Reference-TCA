@@ -11,6 +11,8 @@ editlock
     :type: string (field name)
     :Scope: Proc. / Display
 
+    ..  versionchanged:: 13.3
+        The column definition is :ref:`auto-created <ctrl-auto-created-columns>`.
 
     Field name, which – if set – will prevent all editing of the record for non-admin users.
 
@@ -22,6 +24,8 @@ editlock
 
     This feature is used on the pages table, where it also prevents editing of records on that page (except other pages)!
     Also, no new records (including pages) can be created on the page.
+
+    ..  include:: _AutoCreateWarning.rst.txt
 
 ..  _ctrl-reference-editlock-example:
 

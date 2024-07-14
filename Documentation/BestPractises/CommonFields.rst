@@ -6,6 +6,8 @@
 Common fields
 =============
 
+..  _fields_mandatory:
+
 Mandatory fields
 ================
 
@@ -16,10 +18,13 @@ If the table has a TCA definition, TYPO3 will automatically create the following
     and as a reference in relationships between records.
 
 :sql:`pid`
-    The `uid` property of the parent page. The record is situated on this page. This value is 0 if the record is not connected to any page.
+    The `uid` property of the parent page. The record is situated on this page.
+    If this value is 0 if the record is not connected to any page.
 
 There is no separate TCA definition of these fields in the TCA configuration. It is
 not possible to use other names for these fields.
+
+..  _fields_convention:
 
 Fields used by convention
 =========================
@@ -32,7 +37,6 @@ Fields used by convention
     All fields mentioned below get added to the database automatically. It is
     not recommended to define them in the :file:`ext_tables.sql`. Doing so
     with incompatible SQL settings can lead to problems later on.
-
 
 ..  _field_deleted:
 
@@ -58,6 +62,11 @@ Soft delete
 
 Enablecolumns
 =============
+
+..  versionchanged:: 13.3
+    The column definitions for these settings are
+    :ref:`auto-created <ctrl-auto-created-columns>`.
+    See also :ref:`ctrl-reference-enablecolumns-migration`.
 
 ..  _field_hidden:
 
@@ -93,7 +102,6 @@ Enablecolumns
     use proper queries or Extbase repository settings in your extensions code.
     See :ref:`enablefields_usage` for more information.
 
-
 ..  _field_sorting:
 
 Manual sorting in the backend
@@ -108,7 +116,7 @@ Manual sorting in the backend
 
 ..  attention::
     The sortby field contains an integer and is managed by the DataHandler. It
-    therefore should have no definition in the columns section. Any value in this
+    therefore should have no definition in the :ref:`columns` section. Any value in this
     field can be changed at any time by the DataHandler.
 
     Use :ref:`default_sortby <ctrl-reference-default-sortby>` if you want to
@@ -122,7 +130,7 @@ Fields managed by the DataHandler
 The following fields are automatically set when a record is written by the
 :ref:`DataHandler <t3coreapi:datahandler-basics>`. They should never be
 displayed in backend forms or explicitly set, therefore they need no entry in
-the `columns` section of the TCA.
+the :ref:`columns` section of the TCA.
 
 ..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_DataHandlerFields.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php

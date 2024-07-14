@@ -22,7 +22,7 @@ Certain :php:`ctrl` settings, such as the :confval:`ctrl-enablecolumns` and
     Due to the :ref:`TCA loading order <ctrl-auto-created-columns-loading-order>`
     these columns are only created if the according ctrl property was added in
     the original definition in :file:`Configuration/TCA/<tablename>.php`, not
-    if they where defined in the overrides like :file:`Configuration/TCA/Overrides/something.php`.
+    if they were defined in the overrides like :file:`Configuration/TCA/Overrides/something.php`.
 
 .. _ctrl-auto-created-columns-loading-order:
 
