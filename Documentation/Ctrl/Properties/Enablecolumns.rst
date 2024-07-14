@@ -48,7 +48,7 @@ Examples
 Make table hideable
 ===================
 
-..  literalinclude:: /CodeSnippets/Manual/Ctrl/Hidden.php
+..  literalinclude:: _CodeSnippets/_Hidden.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 Common enable fields
