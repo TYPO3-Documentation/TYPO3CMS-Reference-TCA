@@ -64,7 +64,7 @@ then override single properties in :file:`Configuration/TCA/Overrides` files.
 As example, "base" :php:`pages` file defines this (step 1 above):
 
 ..  literalinclude:: _AutoCreatedColumns/_pages.php
-    :caption:
+    :caption: EXT:core/Configuration/TCA/pages.php (Excerpt)
 
 The Core thus creates this :php:`columns` definition (step 2 above):
 
