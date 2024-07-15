@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-category-properties-exclusivekeys:
-
-=============
-exclusiveKeys
-=============
 
 ..  confval:: exclusiveKeys
     :name: category-exclusiveKeys

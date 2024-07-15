@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-category-properties-treeconfig:
-
-==========
-treeConfig
-==========
 
 ..  confval:: treeConfig
     :name: category-treeConfig
