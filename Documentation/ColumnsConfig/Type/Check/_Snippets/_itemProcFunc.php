@@ -1,6 +1,6 @@
 <?php
 
-use \MyVendor\MyExtension\UserFunctions\MyItemsProcFunc;
+use MyVendor\MyExtension\UserFunctions\MyItemsProcFunc;
 
 return [
     'columns' => [
@@ -15,6 +15,6 @@ return [
                 ],
                 'itemsProcFunc' => MyItemsProcFunc::class . '->itemsProcFunc',
             ],
-        ]
-    ]
+        ],
+    ],
 ];
