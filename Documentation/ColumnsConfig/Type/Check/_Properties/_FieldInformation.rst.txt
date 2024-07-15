@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: check-fieldInformation
+
+    For details see :confval:`fieldInformation`.

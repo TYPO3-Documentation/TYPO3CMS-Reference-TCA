@@ -15,10 +15,12 @@ Its state can be inverted via :ref:`invertStateDisplay
 <columns-check-properties-invertStateDisplay>`
 
 
+..  _columns-check-checkboxLabeledToggle-example:
+
 Examples
 ========
 
-..  _tca_example_checkbox_19:
+..  _columns-check-checkboxLabeledToggle-example-19:
 
 Single checkbox with labeled toggle
 -----------------------------------
