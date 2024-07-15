@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-category-properties-relationship:
-
-============
-relationship
-============
 
 ..  confval:: relationship
     :name: category-relationship

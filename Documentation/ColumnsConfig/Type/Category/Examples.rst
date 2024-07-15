@@ -1,9 +1,10 @@
-..  include:: /Includes.rst.txt
+:navigation-title: Examples
+..  literalinclude:: /Includes.rst.txt
 ..  _columns-category-examples:
 
-========
-Examples
-========
+====================================
+Examples: TCA column type `category`
+====================================
 
 ..  _columns-category-simple-example:
 
@@ -13,8 +14,8 @@ Simple category field
 In the following example a category tree is displayed and multiple categories
 can be selected.
 
-..  include:: /CodeSnippets/Manual/CategorySimple.rst.txt
-
+..  literalinclude:: _Snippets/_CategorySimple.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
 
 The relationship gets stored in the intermediate table
 :sql:`sys_category_record_mm`. Category counts are only stored on the
@@ -24,6 +25,7 @@ local side.
     This is the use case, which was previously accomplished using
     :php:`ExtensionManagementUtility->makeCategorizable()` up to v11.
 
+..  _columns-category-one-to-one-example:
 
 One to one relation category field
 ==================================
@@ -31,8 +33,10 @@ One to one relation category field
 In the following example a category tree is displayed, but only one
 category can be selected.
 
-..  include:: /CodeSnippets/Manual/CategoryOneTo.rst.txt
+..  literalinclude:: _Snippets/_CategoryOneTo.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
 
+..  _columns-category-flexform-example:
 
 Category field used in FlexForm
 ===============================
@@ -45,4 +49,5 @@ is `oneToMany`.
 An example of the "oneToMany" use case is EXT:news,
 which allows to only display news of specific categories in the list view:
 
-..  include:: /CodeSnippets/Manual/CategoryFlexform.rst.txt
+..  literalinclude:: _Snippets/_CategoryFlexform.xml
+    :caption: EXT:my_extension/Configuration/FlexForm/SomeFlexForm.xml
