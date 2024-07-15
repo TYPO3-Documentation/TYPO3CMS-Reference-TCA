@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-category-properties-foreign-table-where:
-
-===================
-foreign_table_where
-===================
 
 ..  confval:: foreign_table_where
     :name: category-foreign-table-where

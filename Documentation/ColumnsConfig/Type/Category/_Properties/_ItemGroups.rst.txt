@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-category-properties-item-groups:
-
-==========
-itemGroups
-==========
 
 ..  confval:: itemGroups
     :name: category-item-groups

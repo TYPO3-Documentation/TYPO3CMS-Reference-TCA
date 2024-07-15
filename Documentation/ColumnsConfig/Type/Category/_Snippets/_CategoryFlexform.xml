@@ -1,0 +1,13 @@
+<T3DataStructure>
+    <ROOT>
+        <sheetTitle>aTitle</sheetTitle>
+        <type>array</type>
+        <el>
+            <categories>
+                <config>
+                    <type>category</type>
+                </config>
+            </categories>
+        </el>
+    </ROOT>
+</T3DataStructure>

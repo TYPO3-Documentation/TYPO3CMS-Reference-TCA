@@ -1,0 +1,8 @@
+..  confval:: size
+    :name: category-size
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['size']
+    :type: integer
+    :Scope: Display
+
+    Maximal number of elements to be displayed
+    by default
