@@ -1,15 +1,11 @@
-..  include:: /Includes.rst.txt
 ..  _columns-check-properties-items:
-
-=====
-items
-=====
 
 ..  confval:: items
     :name: check-items
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display
+    :Example: :ref:`tca_example_checkbox_3`
 
     If set, this array will create an array of checkboxes instead of just a single "on/off" checkbox.
 
@@ -57,11 +53,3 @@ items
 
     labelUnchecked (string)
         Mandatory property for renderType `checkboxLabeledToggle`: Text shown if element is not selected.
-
-..  _tca_example_checkbox_3:
-
-Examples
-========
-
-..  include:: /Images/Rst/Checkbox3.rst.txt
-..  include:: /CodeSnippets/Checkbox3.rst.txt

@@ -1,10 +1,11 @@
+:navigation-title: Checkboxes
 ..  include:: /Includes.rst.txt
 
 ..  _columns-check:
 
-==========
-Checkboxes
-==========
+=======================
+TCA column type `check`
+=======================
 
 
 Introduction
@@ -45,10 +46,56 @@ The following renderTypes are available:
     switch where both states can be labelled (ON/OFF, Visible / Hidden or alike).
     Its state can be inverted via :code:`invertStateDisplay`
 
+..  _columns-check-properties:
+
+Properties of the TCA column type `check`
+=========================================
+
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Cols.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Default.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Eval.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldInformation.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldWizard.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_InvertStateDisplay.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Items.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ItemsProcFunc.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ReadOnly.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_RenderType.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Validation.rst.txt
+        :show-buttons:
+
 ..  toctree::
     :hidden:
 
     Default
     Toggle
     LabeledToggle
-    Properties/Index
+    Examples

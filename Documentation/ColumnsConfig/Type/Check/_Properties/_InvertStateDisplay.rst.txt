@@ -1,0 +1,12 @@
+..  _columns-check-properties-invertStateDisplay:
+
+..  confval:: invertStateDisplay
+    :name: check-invertStateDisplay
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: boolean
+    :Scope: Display
+    :Default: false
+    :Example: :ref:`columns-checkbox-examples-18`
+
+    The state of a checkbox can be displayed inverted when this property is
+    set to true.

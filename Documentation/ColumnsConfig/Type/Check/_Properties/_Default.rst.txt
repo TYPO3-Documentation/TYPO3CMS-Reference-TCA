@@ -1,15 +1,11 @@
-..  include:: /Includes.rst.txt
 ..  _columns-check-properties-default:
-
-=======
-default
-=======
 
 ..  confval:: default
     :name: check-default
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer
     :Scope: Display / Proc.
+    :Examples: :ref:`columns-checkbox-examples-16`
 
     The default value of the checkbox(es).
 
@@ -37,15 +33,3 @@ default
     the binary representation and set the desired bits at the appropriate
     position to 1. Then convert the binary number to decimal. You can either use
     a calculator with programmer mode or search online for "binary to decimal".
-
-Examples
-========
-
-Multiple checkboxes with a default value
-----------------------------------------
-
-..  include:: /Images/Rst/Checkbox16.rst.txt
-
-Here "Tu", the second bit, is active by default.
-
-..  include:: /CodeSnippets/Manual/CheckboxDefault.rst.txt

@@ -1,15 +1,11 @@
-..  include:: /Includes.rst.txt
 ..  _columns-check-properties-cols:
-
-====
-cols
-====
 
 ..  confval:: cols
     :name: check-cols
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer/string
     :Scope: Display
+    :Examples: :ref:`columns-checkbox-examples-2`, :ref:`columns-checkbox-examples-16`
 
     In how many columns the checkboxes will be shown. Makes sense only if the 'items' property is defining multiple
     checkboxes.
@@ -20,16 +16,9 @@ cols
     Note checkboxes will still wrap if browser width is not sufficient.
 
 Examples
-========
-
 Fixes columns
 -------------
 
 ..  include:: /Images/Rst/Checkbox2.rst.txt
 ..  include:: /CodeSnippets/Checkbox2.rst.txt
 
-Inline columns
---------------
-
-..  include:: /Images/Rst/Checkbox16.rst.txt
-..  include:: /CodeSnippets/Checkbox16.rst.txt
