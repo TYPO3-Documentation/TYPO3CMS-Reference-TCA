@@ -16,10 +16,12 @@ additional labels for the states can be defined.
 
 Its state can be inverted via :code:`invertStateDisplay`.
 
+..  _columns-check-checkboxToggle-examples:
+
 Examples
 ========
 
-..  _tca_example_checkbox_17:
+..  _columns-check-checkboxToggle-examples-17:
 
 Example: Single checkbox with toggle
 ------------------------------------
@@ -30,7 +32,7 @@ Example: Single checkbox with toggle
 `checkboxToggle`: Instead of checkboxes, a toggle item is displayed.
 
 
-..  _tca_example_checkbox_18:
+..  _columns-check-checkboxToggle-examples-18:
 
 Example: Single checkbox with toggle inverted state display
 -----------------------------------------------------------

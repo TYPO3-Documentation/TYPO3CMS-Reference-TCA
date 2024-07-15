@@ -1,15 +1,11 @@
-..  include:: /Includes.rst.txt
 ..  _columns-check-properties-eval:
-
-====
-eval
-====
 
 ..  confval:: eval
     :name: check-eval
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (list of keywords)
     :Scope: Proc. / Display
+    :Example: :ref:`tca_example_checkbox_7`
 
     Configuration of field evaluation.
 
@@ -24,11 +20,3 @@ eval
 
     maximumRecordsCheckedInPid
         Similar to :code:`maximumRecordsChecked` but with the validation scope limited to records stored in the same page.
-
-..  _tca_example_checkbox_7:
-
-Examples
-========
-
-..  include:: /Images/Rst/Checkbox7.rst.txt
-..  include:: /CodeSnippets/Checkbox7.rst.txt
