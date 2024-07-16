@@ -1,6 +1,7 @@
 
 /Documentation-GENERATED-temp
 .idea/
-.Build/*
+.Build
 composer.lock
 /composer.json.testing
+/var/
