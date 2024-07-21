@@ -1,13 +1,8 @@
-..  include:: /Includes.rst.txt
 ..  _columns-color-properties-opacity:
-
-=======
-Opacity
-=======
 
 ..  confval:: opacity
     :name: color-opacity
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['opacity']
     :type: bool
     :default: false
 
@@ -21,8 +16,7 @@ Opacity
 
 ..  _columns-color-properties-opacity-example:
 
-Example: Allow adjustment of opacity in a color picker
-======================================================
+..  rubric:: Example: Allow adjustment of opacity in a color picker
 
 ..  figure:: /Images/ManualScreenshots/ColorOpacity.png
     :alt: A color picker with adjustable opacity
@@ -30,8 +24,9 @@ Example: Allow adjustment of opacity in a color picker
     A color picker with adjustable opacity
 
 ..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/some_table.php
 
-    $myColorField =  [
+    $temporaryColumns['aColorField'] = [
         'label' => 'My Color',
         'config' => [
             'type' => 'color',

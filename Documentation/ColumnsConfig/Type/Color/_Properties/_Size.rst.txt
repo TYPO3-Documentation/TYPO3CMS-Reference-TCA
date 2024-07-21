@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-color-properties-size:
-
-====
-size
-====
 
 ..  confval:: size
     :name: color-size
