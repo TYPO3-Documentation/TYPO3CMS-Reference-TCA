@@ -48,8 +48,8 @@ A simple color picker:
 
 ..  _columns-color-properties:
 
-Properties of the TCA column type `category`
-============================================
+Properties of the TCA column type `color`
+=========================================
 
 ..  confval-menu::
     :display: table
