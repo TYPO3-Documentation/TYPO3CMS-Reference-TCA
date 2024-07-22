@@ -1,12 +1,7 @@
-..  include:: /Includes.rst.txt
 ..  _columns-file-properties-overrideChildTca:
 
-================
-overrideChildTca
-================
-
-.. confval:: overrideChildTca (type => file)
-
+..  confval:: overrideChildTca
+    :name: file-overrideChildTca
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display
