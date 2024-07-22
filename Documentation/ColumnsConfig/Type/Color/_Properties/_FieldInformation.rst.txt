@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: color-fieldInformation
+
+    For details see :confval:`fieldInformation`.
