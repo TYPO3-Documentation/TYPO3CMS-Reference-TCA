@@ -1,0 +1,4 @@
+..  confval:: fieldControl
+    :name: datetime-fieldControl
+
+    For details see :confval:`fieldControl`.

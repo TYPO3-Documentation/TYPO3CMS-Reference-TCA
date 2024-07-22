@@ -1,0 +1,14 @@
+..  confval:: placeholder
+    :name: datetime-placeholder
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['placeholder']
+    :type: integer Unix timestamp
+    :Scope: Display
+
+    Placeholder, containing a default date.
+
+    ..  literalinclude:: _Properties/_PlaceHolder.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+
+    ..  note::
+        As the TCA is cached it is not possible to set dynamic values such as
+        :php:`now()`.

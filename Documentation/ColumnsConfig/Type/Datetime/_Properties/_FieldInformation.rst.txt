@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: datetime-fieldInformation
+
+    For details see :confval:`fieldInformation`.

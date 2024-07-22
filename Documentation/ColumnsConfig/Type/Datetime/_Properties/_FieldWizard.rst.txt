@@ -1,0 +1,23 @@
+..  confval:: fieldWizard
+    :name: datetime-fieldWizard
+
+    ..  confval:: defaultLanguageDifferences
+        :name: datetime-fieldWizard-defaultLanguageDifferences
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
+        :type: array
+
+        For details see :confval:`fieldWizard-defaultLanguageDifferences`.
+
+    ..  confval:: localizationStateSelector
+        :name: datetime-fieldWizard-localizationStateSelector
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
+        :type: array
+
+        For details see :confval:`fieldWizard-localizationStateSelector`.
+
+    ..  confval:: otherLanguageContent
+        :name: datetime-fieldWizard-otherLanguageContent
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
+        :type: array
+
+        For details see :confval:`fieldWizard-otherLanguageContent`.
