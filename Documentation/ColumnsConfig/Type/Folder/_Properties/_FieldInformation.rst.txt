@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: folder-fieldInformation
+
+    For details see :confval:`fieldInformation`.
