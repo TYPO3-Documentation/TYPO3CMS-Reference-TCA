@@ -25,8 +25,8 @@ mode
     of using an empty value defined for the reference.
 
     ..  warning::
-        In order for this property to apply properly, the DB column must be allowed
-        to be :sql:`NULL`, and property :php:`nullable` must be set to :php:`true`.
+        In order for this property to apply properly, option :confval:`email-nullable`
+        **must** be set to `true`.
 
 Examples
 ========
