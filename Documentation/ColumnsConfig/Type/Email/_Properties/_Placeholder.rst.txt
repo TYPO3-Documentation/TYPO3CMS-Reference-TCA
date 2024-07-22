@@ -1,0 +1,10 @@
+..  confval:: placeholder
+    :name: email-placeholder
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['placeholder']
+    :type: integer Unix timestamp
+    :Scope: Display
+
+    Placeholder, containing a default date.
+
+    ..  literalinclude:: _Properties/_PlaceHolder.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
