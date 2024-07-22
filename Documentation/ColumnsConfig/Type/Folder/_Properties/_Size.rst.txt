@@ -1,0 +1,14 @@
+..  _columns-folder-properties-size:
+
+..  confval:: size
+    :name: folder-size
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: integer
+    :Scope: Display
+
+    The minimum size (height) of the select field.
+
+    The size of the select field will be automatically adjusted based on
+    the number of selected items. The select field will never be smaller than
+    the specified `size` and never larger than
+    the value of :confval:`folder-autoSizeMax`.

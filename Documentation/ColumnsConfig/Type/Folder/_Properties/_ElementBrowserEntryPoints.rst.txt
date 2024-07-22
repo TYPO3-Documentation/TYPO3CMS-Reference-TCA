@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-folder-properties-elementBrowserEntryPoints:
-
-==========================
-elementBrowserEntryPoints
-==========================
 
 ..  confval:: elementBrowserEntryPoints
     :name: folder-elementBrowserEntryPoints
@@ -21,11 +16,7 @@ elementBrowserEntryPoints
     When opening the element browser the folder with the `_default` key is
     preselected.
 
-Examples
-========
-
-Open the element type on a specific folder
--------------------------------------------
+..  rubric:: Example: Open the element type on a specific folder
 
 You can also define an entry point with the `_default` key:
 

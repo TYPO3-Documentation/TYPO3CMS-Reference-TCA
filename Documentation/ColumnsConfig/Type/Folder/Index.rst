@@ -14,6 +14,10 @@ The TCA type :php:`folder` creates a field where folders can be attached to
 the record. The values are stored as a combined identifier in a
 :ref:`comma-separated list (csv) <columns-group-data-commalist>`.
 
+
+..  contents:: Table of contents
+
+
 ..  _columns-folder-examples:
 ..  _tca_example_group_folder_1:
 
@@ -32,9 +36,50 @@ Examples
         ],
     ],
 
+..  _columns-folder-properties:
 
-..  toctree::
-    :titlesonly:
+Properties of the TCA column type `folder`
+==========================================
 
-    Properties/Index
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_AutoSizeMax.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ElementBrowserEntryPoints.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldControl.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldInformation.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldWizard.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_HideMoveIcons.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Maxitems.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Minitems.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Multiple.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ReadOnly.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Size.rst.txt
+        :show-buttons:
+
 
