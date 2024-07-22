@@ -8,7 +8,7 @@ return [
             'config' => [
                 'type' => 'file',
                 'maxitems' => 6,
-                'allowed' => 'common-image-types'
+                'allowed' => 'common-image-types',
             ],
         ],
         // ...
