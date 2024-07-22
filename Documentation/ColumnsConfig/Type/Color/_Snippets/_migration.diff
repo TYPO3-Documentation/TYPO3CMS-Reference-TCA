@@ -1,0 +1,17 @@
+ 'a_color_field' => [
+     'label' => 'Color field',
+     'config' => [
+-        'type' => 'input',
+-        'renderType' => 'colorpicker',
++        'type' => 'color',
+         'required' => true,
+         'size' => 20,
+-        'max' => 1024,
+-        'eval' => 'trim',
+         'valuePicker' => [
+             'items' => [
+                 ['typo3 orange', '#FF8700'],
+             ],
+         ],
+     ],
+ ],

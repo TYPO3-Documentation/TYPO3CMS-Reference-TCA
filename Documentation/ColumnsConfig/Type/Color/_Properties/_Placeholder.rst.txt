@@ -1,0 +1,9 @@
+..  confval:: placeholder
+    :name: color-placeholder
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['placeholder']
+    :type: string, hexadecimal color representation
+    :Scope: Display
+
+    Placeholder, containing a hexadecimal color representation.
+
+    ..  literalinclude:: _Properties/_PlaceHolder.php

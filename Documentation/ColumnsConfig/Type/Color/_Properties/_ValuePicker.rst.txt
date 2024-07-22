@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-color-properties-valuePicker:
-
-===========
-valuePicker
-===========
 
 ..  confval:: valuePicker
     :name: color-valuePicker
@@ -19,26 +14,7 @@ valuePicker
         drop-down (LLL reference possible) the second being the hex-value transferred to the input field.
         The value should have exactly 7 characters, as this is the maximum for a hex-value.
 
-..  note::
+..  rubric:: Example
 
-    The :php:`valuePicker` allows to define default color codes via :php:`items`
-    for a TCA type :php:`color` field.
-
-Example
-=======
-
-..  code-block:: php
-
-    'a_color_field' => [
-        'label' => 'Color field',
-        'config' => [
-            'type' => 'color',
-            'required' => true,
-            'size' => 20,
-            'valuePicker' => [
-                'items' => [
-                    ['typo3 orange', '#FF8700'],
-                ],
-            ],
-        ],
-    ],
+..  literalinclude:: _Properties/_ValuePicker.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/some_table.php
