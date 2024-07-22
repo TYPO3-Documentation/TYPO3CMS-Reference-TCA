@@ -1,14 +1,9 @@
-..  include:: /Includes.rst.txt
 ..  _columns-input-properties-format:
 ..  _columns-datetime-properties-format:
 
-======
-format
-======
-
-..  confval:: format (type => datetime)
-
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+..  confval:: format
+    :name: datetime-format
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['format']
     :type: string (keyword)
     :Scope: Display
 
