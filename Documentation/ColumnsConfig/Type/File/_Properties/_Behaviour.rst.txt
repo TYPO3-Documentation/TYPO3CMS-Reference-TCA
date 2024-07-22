@@ -1,0 +1,52 @@
+..  _columns-file-properties-behaviour-allowLanguageSynchronization:
+
+..  confval:: behaviour
+    :name: file-behaviour
+
+    ..  confval:: allowLanguageSynchronization
+        :name: file-allowLanguageSynchronization
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['allowLanguageSynchronization']
+        :type: boolean
+        :Scope: Proc.
+
+        Allows an editor to select in a localized record whether the value is copied
+        over from default or source language record, or if the field has an own value
+        in the localization. If set to true and if the table supports localization
+        and if a localized record is edited, this setting enables FieldWizard
+        :ref:`LocalizationStateSelector <columns-input-properties-fieldWizard-localizationStateSelector>`:
+        Two or three radio buttons shown below the field input. The state of this is
+        stored in a json encoded array in the database table called :code:`l10n_state`.
+        It tells the DataHandler which fields of the localization records should be kept
+        in sync if the underlying default or source record changes.
+
+        This property can also be overridden by page TSconfig.
+
+    ..  _columns-file-properties-behaviour-disableMovingChildrenWithParent:
+    ..  todo:: Does this make sense? sys_file_references are always stored on the root level...
+
+    ..  confval:: disableMovingChildrenWithParent
+        :name: file-disableMovingChildrenWithParent
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['disableMovingChildrenWithParent']
+        :type: boolean
+        :Scope: Proc.
+
+        Default false. Disables that child records get moved along with their parent records. Usually if in a parent-child
+        relation a parent record is moved to a different page (eg. via cut+paste from clipboard), the children are relocated
+        along with the parent. This flag disables the child move.
+
+        This property can also be overridden by page TSconfig.
+
+    ..  _columns-file-properties-behaviour-enableCascadingDelete:
+
+    ..  confval:: enableCascadingDelete
+        :name: file-enableCascadingDelete
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['enableCascadingDelete']
+        :type: boolean
+        :Scope: Proc.
+        :Default: true
+
+        Usually when the parent record is deleted all attached
+        :sql:`sys_file_references` are deleted. This default behaviour can be
+        disabled here.
+
+        This property can also be overridden by page TSconfig.

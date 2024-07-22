@@ -1,12 +1,7 @@
-..  include:: /Includes.rst.txt
 ..  _columns-file-properties-allowed:
 
-=======
-allowed
-=======
-
-..  confval:: allowed (type => file)
-
+..  confval:: allowed
+    :name: file-allowed
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string / array
     :Scope: Proc. / Display
@@ -32,8 +27,8 @@ allowed
     You can also use the array notation of allowed file extensions, for example
     :php:`['jpg','png','svg']` or :php:`['common-image-types', 'gz', 'zip']`.
 
-..  versionadded:: 12.4.14
-    Due to a bug, the array notation only properly works
-    since TYPO3 v12.4.1 (and 13.1.0) and upwards. Use the string notation
-    for earlier versions instead.
+    ..  versionadded:: 12.4.14
+        Due to a bug, the array notation only properly works
+        since TYPO3 v12.4.1 (and 13.1.0) and upwards. Use the string notation
+        for earlier versions instead.
 

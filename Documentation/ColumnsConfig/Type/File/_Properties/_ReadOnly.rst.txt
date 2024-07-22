@@ -1,12 +1,7 @@
-..  include:: /Includes.rst.txt
 ..  _columns-file-properties-readOnly:
 
-========
-readOnly
-========
-
-.. confval:: readOnly (type => file)
-
+..  confval:: readOnly
+    :name: file-readOnly
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: boolean
     :Scope: Display
@@ -16,6 +11,6 @@ readOnly
 
     This property can also be overridden by page TSconfig.
 
-    .. warning::
+    ..  warning::
         This property affects only the display. It is still possible to write
         to those fields when using the :ref:`DataHandler <t3coreapi:tce>`.
