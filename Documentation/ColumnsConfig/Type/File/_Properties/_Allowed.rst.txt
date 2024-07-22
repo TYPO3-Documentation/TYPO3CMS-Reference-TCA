@@ -1,12 +1,7 @@
-..  include:: /Includes.rst.txt
 ..  _columns-file-properties-allowed:
 
-=======
-allowed
-=======
-
-..  confval:: allowed (type => file)
-
+..  confval:: allowed
+    :name: file-allowed
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string / array
     :Scope: Proc. / Display

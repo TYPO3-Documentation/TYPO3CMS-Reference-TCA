@@ -1,12 +1,7 @@
-..  include:: /Includes.rst.txt
 ..  _columns-file-properties-maxitems:
 
-========
-maxitems
-========
-
-.. confval:: maxitems (type => file)
-
+..  confval:: maxitems
+    :name: file-maxitems
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer > 0
     :Scope: Display / Proc.

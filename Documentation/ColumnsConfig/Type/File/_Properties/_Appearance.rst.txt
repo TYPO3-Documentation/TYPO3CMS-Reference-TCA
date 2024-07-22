@@ -1,12 +1,7 @@
-..  include:: /Includes.rst.txt
 ..  _columns-file-properties-appearance:
 
-==========
-appearance
-==========
-
-..  confval:: appearance (type => file)
-
+..  confval:: appearance
+    :name: file-appearance
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display

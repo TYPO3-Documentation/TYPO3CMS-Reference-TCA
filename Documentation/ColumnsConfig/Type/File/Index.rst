@@ -15,110 +15,64 @@ the record.
 ..  seealso::
     :ref:`t3coreapi:fal-using-fal-examples-file-folder-get-references`
 
+..  contents:: Table of contents
+
 ..  _columns-file-examples:
 ..  _tca_example_group_file_1:
 
 Examples
 ========
 
-..  code-block:: php
+..  literalinclude:: _Snippets/_file-field.php
+    :caption: EXT:my_extension/Configuration/TCA/some_table.php
 
-    'columns' => [
-        'my_image' => [
-            'label' => 'My image',
-            'config' => [
-                'type' => 'file',
-                'maxitems' => 6,
-                'allowed' => 'common-image-types'
-            ],
-        ],
-    ],
+..  _columns-file-properties:
+
+Properties of the TCA column type `file`
+========================================
+
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_Allowed.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Appearance.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Behaviour.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Disallowed.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldInformation.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldWizard.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Maxitems.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Minitems.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_OverrideChildTCa.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ReadOnly.rst.txt
+        :show-buttons:
 
 ..  _columns-file-migration:
 
 Migration
 =========
 
-..  code-block:: php
-
-    // Before
-    'columns' => [
-        'image' => [
-            'label' => 'My image',
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'image',
-                [
-                    'maxitems' => 6,
-                ],
-                $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-            ),
-        ],
-    ],
-
-    // After
-    'columns' => [
-        'image' => [
-            'label' => 'My image',
-            'config' => [
-                'type' => 'file',
-                'maxitems' => 6,
-                'allowed' => 'common-image-types'
-            ],
-        ],
-    ],
-
+..  literalinclude:: _Snippets/_migration.diff
 
 Another example without usage of the API method would therefore look like this:
 
-..  code-block:: php
-
-    // Before
-    'columns' => [
-        'image' => [
-            'label' => 'My image',
-            'config' => [
-                'type' => 'inline',
-                'foreign_table' => 'sys_file_reference',
-                'foreign_field' => 'uid_foreign',
-                'foreign_sortby' => 'sorting_foreign',
-                'foreign_table_field' => 'tablenames',
-                'foreign_match_fields' => [
-                    'fieldname' => 'image',
-                ],
-                'foreign_label' => 'uid_local',
-                'foreign_selector' => 'uid_local',
-                'overrideChildTca' => [
-                    'columns' => [
-                        'uid_local' => [
-                            'config' => [
-                                'appearance' => [
-                                    'elementBrowserType' => 'file',
-                                    'elementBrowserAllowed' => 'jpg,png,gif',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-            ]
-        ],
-    ],
-
-    // After
-    'columns' => [
-        'image' => [
-            'label' => 'My image',
-            'config' => [
-                'type' => 'file',
-                // Can also be an array of file extensions as of TYPO3 v12.4.14+
-                'allowed' => 'jpg,png,gif',
-            ],
-        ],
-    ],
-
-Properties
-==========
-
-.. toctree::
-   :titlesonly:
-
-   Properties/Index
+..  literalinclude:: _Snippets/_migration2.diff
