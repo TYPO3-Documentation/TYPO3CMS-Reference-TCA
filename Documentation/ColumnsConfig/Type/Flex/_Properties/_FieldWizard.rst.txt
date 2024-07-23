@@ -1,0 +1,23 @@
+..  confval:: fieldWizard
+    :name: flex-fieldWizard
+
+    ..  confval:: defaultLanguageDifferences
+        :name: flex-fieldWizard-defaultLanguageDifferences
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
+        :type: array
+
+        For details see :confval:`fieldWizard-defaultLanguageDifferences`.
+
+    ..  confval:: localizationStateSelector
+        :name: flex-fieldWizard-localizationStateSelector
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
+        :type: array
+
+        For details see :confval:`fieldWizard-localizationStateSelector`.
+
+    ..  confval:: otherLanguageContent
+        :name: flex-fieldWizard-otherLanguageContent
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
+        :type: array
+
+        For details see :confval:`fieldWizard-otherLanguageContent`.
