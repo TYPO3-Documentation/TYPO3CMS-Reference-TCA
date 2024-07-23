@@ -66,6 +66,23 @@ Properties of the TCA column type `flex`
     ..  include:: _Properties/_ReadOnly.rst.txt
         :show-buttons:
 
+
+..  _columns-flex-special-ds:
+
+Defining multiple data structures for different records
+=======================================================
+
+There can be multiple data structures defined in `TCA` and it depends on the
+configuration and the record which one is chosen. If the :confval:`flex-ds`
+and :confval:`flex-ds-pointerField` are not sufficient, you can use the
+:ref:`Events <columns-flex-events>` to manipulate with data structure should be
+displayed.
+
+..  note::
+    It is **not** possible to override these properties in
+    :ref:`TCA type columnsOverrides <types-properties-columnsOverrides>` or to manipulate
+    them in an inline parent-child relation from the parent `TCA`.
+
 ..  _columns-flex-events:
 
 Events to manipulate the FlexForm data structure
