@@ -1,12 +1,7 @@
-.. include:: /Includes.rst.txt
-.. _columns-flex-properties-ds:
-
-===================
-Data structure (ds)
-===================
+..  _columns-flex-properties-ds:
 
 ..  confval:: ds
-
+    :name: flex-ds
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display  / Proc.
@@ -26,11 +21,7 @@ Data structure (ds)
     *   Make a reference to an external XML file
     *   Either enter XML directly
 
-Examples
-========
-
-Example with XML in external file
----------------------------------
+..  rubric:: Example with XML in external file
 
 ..  include:: /CodeSnippets/FlexFile1.rst.txt
 
@@ -38,7 +29,6 @@ The included file:
 
 ..  include:: /CodeSnippets/FlexFormFile1.rst.txt
 
-Example with XML directly entered
----------------------------------
+..  rubric:: Example with XML directly entered
 
 ..  include:: /CodeSnippets/Flex2.rst.txt

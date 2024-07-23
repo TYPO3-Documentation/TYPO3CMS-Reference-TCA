@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: flex-fieldInformation
+
+    For details see :confval:`fieldInformation`.

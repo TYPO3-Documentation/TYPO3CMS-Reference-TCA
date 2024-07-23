@@ -1,0 +1,16 @@
+..  _columns-flex-properties-ds-tablefield:
+
+..  confval:: ds_tableField
+    :name: flex-ds_tableField
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Display  / Proc.
+
+    ..  deprecated:: This configuration option will not be handled anymore with TYPO3 v13+.
+        Beginning with TYPO3 v12 you can migrate to PSR-14 :ref:`events <columns-flex-events>` to manipulate the
+        data structure lookup logic.
+
+    Contains the value "[table]:[field name]" from which to fetch Data Structure XML.
+
+    :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>` is in this case the pointer which
+    should contain the uid of a record from that table.

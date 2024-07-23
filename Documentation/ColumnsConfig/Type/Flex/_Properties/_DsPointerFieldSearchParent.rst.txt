@@ -1,0 +1,14 @@
+..  _columns-flex-properties-ds-pointerfield-searchparent:
+
+..  confval:: ds_pointerField_searchParent
+    :name: flex-ds_pointerField_searchParent
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Display  / Proc.
+
+    ..  deprecated:: This configuration option will not be handled anymore with TYPO3 v13+.
+        Beginning with TYPO3 v12 you can migrate to PSR-14 :ref:`events <columns-flex-events>` to manipulate the
+        data structure lookup logic.
+
+    Used to search for Data Structure recursively back in the table assuming that the table is a tree table.
+    This value points to the "pid" field.
