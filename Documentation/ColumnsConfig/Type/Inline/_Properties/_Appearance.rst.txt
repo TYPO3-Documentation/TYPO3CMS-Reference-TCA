@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-appearance:
-
-==========
-appearance
-==========
 
 ..  versionchanged:: 12.0
     The following properties have been removed:

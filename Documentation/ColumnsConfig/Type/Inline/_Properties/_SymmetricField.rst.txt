@@ -1,10 +1,5 @@
-..  include:: /Includes.rst.txt
 
 ..  _columns-inline-properties-symmetric-field:
-
-================
-symmetric\_field
-================
 
 ..  confval:: symmetric_field
     :name: inline-symmetric-field
@@ -16,7 +11,6 @@ symmetric\_field
     bidirectional symmetric relations. :code:`symmetric_field` defines in which field on
     the :ref:`foreign_table <columns-inline-properties-foreign-table>` the uid of the "other" parent is stored.
 
-Example
-=======
+..  rubric:: Example
 
 ..  include:: /CodeSnippets/InlineMnSymmetricBranches.rst.txt

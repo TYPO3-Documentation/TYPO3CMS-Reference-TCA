@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-foreign-table-field:
-
-=====================
-foreign\_table\_field
-=====================
 
 ..  confval:: foreign_table_field
     :name: inline-foreign-table-field

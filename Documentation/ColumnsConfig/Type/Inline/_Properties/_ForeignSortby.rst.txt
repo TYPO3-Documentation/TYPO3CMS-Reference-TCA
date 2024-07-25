@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-foreign-sortby:
-
-===============
-foreign\_sortby
-===============
 
 ..  confval:: foreign_sortby
     :name: inline-foreign-sortby
