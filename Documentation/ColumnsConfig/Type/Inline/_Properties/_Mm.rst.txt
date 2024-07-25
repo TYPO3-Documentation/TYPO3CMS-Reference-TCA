@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-mm:
-
-==
-MM
-==
 
 ..  versionadded:: 11.4
     TCA table column fields that define :php:`['config']['MM']` can omit the
@@ -68,14 +63,15 @@ MM
         Bidirectional references only get registered once on the native side in
         :sql:`sys_refindex`.
 
+..  confval:: MM_hasUidField
+    :name: inline-mm-hasUidField
 
 Examples
 ========
 
 ..  _tca_example_inline_mm_inline_1:
 
-Inline field with MM table configured
--------------------------------------
+..  rubric:: Example: Inline field with MM table configured
 
 ..  include:: /Images/ManualScreenshots/InlineMmInline1.rst.txt
 
@@ -83,8 +79,7 @@ Inline field with MM table configured
 
 ..  _tca_example_inline_mm_child_parents:
 
-Opposite field to display MM relations two ways
------------------------------------------------
+..  rubric:: Example: Opposite field to display MM relations two ways
 
 ..  include:: /Images/ManualScreenshots/InlineMmChildParents.rst.txt
 

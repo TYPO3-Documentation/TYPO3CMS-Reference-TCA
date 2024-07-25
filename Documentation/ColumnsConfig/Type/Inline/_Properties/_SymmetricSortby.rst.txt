@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-symmetric-sortby:
-
-=================
-symmetric\_sortby
-=================
 
 ..  confval:: symmetric_sortby
     :name: inline-symmetric-sortby
