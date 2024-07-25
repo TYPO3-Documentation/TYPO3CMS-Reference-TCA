@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-imageManipulation-properties-allowedExtensions:
-
-=================
-allowedExtensions
-=================
 
 ..  confval:: allowedExtensions
     :name: imageManipulation-allowedExtensions
