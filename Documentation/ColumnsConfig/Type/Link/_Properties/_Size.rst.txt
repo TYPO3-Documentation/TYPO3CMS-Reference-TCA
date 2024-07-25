@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-link-properties-size:
-
-====
-size
-====
 
 ..  confval:: size
     :name: link-size
