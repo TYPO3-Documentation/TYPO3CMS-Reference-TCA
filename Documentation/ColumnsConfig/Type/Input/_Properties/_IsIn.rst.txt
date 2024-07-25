@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-input-properties-is-in:
-
-======
-is\_in
-======
 
 ..  confval:: is_in
     :name: input-is-in

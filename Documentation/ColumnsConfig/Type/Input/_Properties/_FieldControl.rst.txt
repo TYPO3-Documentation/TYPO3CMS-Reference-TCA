@@ -1,0 +1,4 @@
+..  confval:: fieldControl
+    :name: input-fieldControl
+
+    For details see :confval:`fieldControl`.

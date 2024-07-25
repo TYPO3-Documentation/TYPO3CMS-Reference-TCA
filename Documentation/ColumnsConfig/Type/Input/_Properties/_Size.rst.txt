@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-input-properties-size:
-
-====
-size
-====
 
 ..  confval:: size
     :name: input-size

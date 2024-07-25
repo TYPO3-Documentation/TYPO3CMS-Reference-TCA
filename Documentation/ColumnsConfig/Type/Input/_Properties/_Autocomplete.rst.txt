@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-input-properties-autocomplete:
-
-============
-autocomplete
-============
 
 ..  confval:: autocomplete
     :name: input-autocomplete
