@@ -13,9 +13,9 @@ $myCropVariantField = [
                         'y' => 0.85,
                         'width' => 0.9,
                         'height' => 0.1,
-                    ]
+                    ],
                 ],
             ],
         ],
-    ]
+    ],
 ];

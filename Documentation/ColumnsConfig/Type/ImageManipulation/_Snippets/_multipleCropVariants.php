@@ -10,11 +10,11 @@ $multipleCropVariantField = [
                 'allowedAspectRatios' => [
                     '4:3' => [
                         'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
-                        'value' => 4 / 3
+                        'value' => 4 / 3,
                     ],
                     'NaN' => [
                         'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
-                        'value' => 0.0
+                        'value' => 0.0,
                     ],
                 ],
             ],
@@ -23,14 +23,14 @@ $multipleCropVariantField = [
                 'allowedAspectRatios' => [
                     '4:3' => [
                         'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
-                        'value' => 4 / 3
+                        'value' => 4 / 3,
                     ],
                     'NaN' => [
                         'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
-                        'value' => 0.0
+                        'value' => 0.0,
                     ],
                 ],
             ],
-        ]
+        ],
     ],
 ];
