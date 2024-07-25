@@ -1,0 +1,116 @@
+..  _columns-group-properties-fieldControl:
+..  _tca_property_fieldControl_elementBrowser:
+..  _columns-group-properties-elementBrowser:
+..  _tca_property_fieldControl_insertClipboard:
+
+..  confval:: fieldControl
+    :name: group-fieldControl
+
+    The field of type group can enable all common :ref:`field control options
+    <tca_property_fieldControl>`. Furthermore the following are available:
+
+    ..  confval:: addRecord
+        :name: group-fieldControl-addRecord
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :type: array
+        :Scope: fieldControl
+        :Types: :ref:`group <columns-group>`
+
+        Control button to directly add a related record. Leaves the current view and opens a new form to add
+        a new record. On 'Save and close', the record is directly selected as referenced element
+        in the `type='group'` field. If multiple tables are :ref:`allowed <columns-group-properties-allowed>`, the
+        first table from the allowed list is selected, if no specific `table` option is given.
+
+        ..  note::
+
+            The add record control is disabled by default, enable it if needed. It
+            is shown below the `edit popup` control if not changed by `below` or
+            `after` settings.
+
+        ..  rubric:: Example: Group field with add popup enabled
+
+        ..  include:: /Images/Rst/GroupDb1.rst.txt
+
+        ..  include:: /CodeSnippets/GroupDb1.rst.txt
+
+    ..  confval:: editPopup
+        :name: group-fieldControl-editPopup
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :type: array
+        :Scope: fieldControl
+        :Types: :ref:`group <columns-group>`
+
+        The edit popup field control shows a pencil icon to edit an element directly in a popup window.
+        When a record is selected and the edit button is clicked, that record opens in a new window for modification.
+
+        For details see :ref:`tca_property_fieldControl_editPopup`.
+
+        ..  note::
+            The edit popup control is pre-configured, but disabled by default. Enable it if you need it, the button
+            is by default shown below `element browser` and `insert clipboard`.
+
+        ..  rubric:: Example: Group field with edit popup enabled
+
+        ..  include:: /Images/Rst/GroupDb1.rst.txt
+
+        ..  include:: /CodeSnippets/GroupDb1.rst.txt
+
+    ..  confval:: listModule
+        :name: group-fieldControl-listModule
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :type: array
+        :Scope: fieldControl
+        :Types: :ref:`group <columns-group>`
+
+        The list module control button opens the Web > List module for only one table and allows the user to manipulate
+        stuff there.
+
+        For details see :ref:`tca_property_fieldControl_listModule`.
+
+        ..  note::
+            The list module control is disabled by default, enable it if needed. It is shown below the `add record`
+            control if not changed by `below` or `after` settings.
+
+        ..  rubric:: Example: Group field with add list module enabled
+
+        ..  include:: /Images/Rst/GroupDb1.rst.txt
+
+        ..  include:: /CodeSnippets/GroupDb1.rst.txt
+
+    ..  confval:: elementBrowser
+        :name: group-fieldControl-elementBrowser
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :type: array
+        :Scope: fieldControl
+        :Types: :ref:`group <columns-group>`
+
+        The element browser field control used in :code:`type='group'` renders a
+        button to open an element browser. It is enabled by default if rendering a
+        group element.
+
+    ..  confval:: insertClipboard
+        :name: group-fieldControl-insertClipboard
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :type: array
+        :Scope: fieldControl
+        :Types: :ref:`group <columns-group>`
+
+        The clipboard control adds a control button for :code:`type='group'` to paste records from
+        a users clipboard into the selection. It is enabled by default for :code:`type='group'` and
+        shown below the **element browser** if the
+        order has not been changed using the `before` and `after` keywords. It can be turned off by
+        setting `disabled` to true, just like any other fieldControl.
+
+    ..  rubric:: Example: Group field with element browser enabled
+
+    ..  include:: /Images/Rst/GroupDb1.rst.txt
+
+    ..  include:: /CodeSnippets/GroupDb1.rst.txt
+
+    ..  rubric:: Example: Group field with element browser disabled
+
+    The element browser control can be disabled by setting :php:`disabled = true`:
+
+    ..  include:: /Images/Rst/GroupDb3.rst.txt
+
+    ..  include:: /CodeSnippets/GroupDb3.rst.txt
