@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-foreign-label:
-
-==============
-foreign\_label
-==============
 
 ..  confval:: foreign_label
     :name: inline-foreign-label

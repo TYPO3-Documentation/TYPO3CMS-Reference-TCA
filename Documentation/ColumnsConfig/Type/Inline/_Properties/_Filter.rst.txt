@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-filter:
-
-======
-filter
-======
 
 ..  confval:: filter
     :name: inline-filter

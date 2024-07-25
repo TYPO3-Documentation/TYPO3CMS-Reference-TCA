@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-foreign-selector:
-
-=================
-foreign\_selector
-=================
 
 ..  confval:: foreign_selector
     :name: inline-foreign-selector

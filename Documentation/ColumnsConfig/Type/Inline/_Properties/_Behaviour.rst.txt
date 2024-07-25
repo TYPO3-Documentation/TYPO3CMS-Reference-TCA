@@ -1,0 +1,47 @@
+..  confval:: behaviour
+    :name: inline-behaviour
+
+    ..  confval:: allowLanguageSynchronization
+        :type: boolean
+        :name: inline-behaviour-allowLanguageSynchronization
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['allowLanguageSynchronization']
+        :Scope: Proc.
+        :default: false
+
+        Allows an editor to select in a localized record whether the value is copied
+        over from default or source language record, or if the field has an own value
+        in the localization. If set to true and if the table supports localization
+        and if a localized record is edited, this setting enables FieldWizard
+        :ref:`LocalizationStateSelector <columns-input-properties-fieldWizard-localizationStateSelector>`:
+        Two or three radio buttons shown below the field input. The state of this is
+        stored in a json encoded array in the database table called :code:`l10n_state`.
+        It tells the DataHandler which fields of the localization records should be kept
+        in sync if the underlying default or source record changes.
+
+        ..  literalinclude:: _Properties/_AllowLanguageSynchronization.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
+
+    ..  confval:: disableMovingChildrenWithParent
+        :name: inline-behaviour-disableMovingChildrenWithParent
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']
+        :type: boolean
+        :Scope: Proc.
+
+        Default false. Disables that child records get moved along with their parent records. Usually if in a parent-child
+        relation a parent record is moved to a different page (eg. via cut+paste from clipboard), the children are relocated
+        along with the parent. This flag disables the child move.
+
+        This property can be especially useful if all child records should be gathered in one storage folder and their
+        parents are spread out at different places in the page tree. In combination with the
+        :ref:`Tsconfig setting <t3tsconfig:usertoplevelobjects>` :typoscript:`TCAdefaults.<table>.pid = <page id>` children
+        can be forced to be created in this folder and stay there.
+
+    ..  confval:: enableCascadingDelete
+        :name: inline-behaviour-enableCascadingDelete
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']
+        :type: boolean
+        :Scope: Proc.
+
+        Default true. Usually in inline relations, if a parent is deleted, all children are deleted along with the parent.
+        This flag can be used to disable that cascading delete. Example usage: A frontend user (parent) has assigned
+        invoices (children). If a frontend user is deleted, it could be useful to keep the invoices.

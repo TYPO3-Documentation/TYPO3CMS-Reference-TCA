@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-customcontrols:
-
-==============
-customControls
-==============
 
 ..  confval:: customControls
     :name: inline-customControls

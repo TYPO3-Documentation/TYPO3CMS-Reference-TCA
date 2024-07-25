@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-inline-properties-symmetric-label:
-
-================
-symmetric\_label
-================
 
 ..  confval:: symmetric_label
     :name: inline-symmetric-label
