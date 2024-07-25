@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-link-properties-valuePicker:
-
-===========
-valuePicker
-===========
 
 ..  confval:: valuePicker
     :name: link-valuePicker
@@ -26,21 +21,6 @@ valuePicker
         An array with selectable items. Each item is an array with the first value being the label in the select
         drop-down (LLL reference possible) the second being the value transferred to the input field.
 
-Example
-=======
+..  rubric:: Example: A link field with value picker
 
-..  code-block:: php
-
-    'input_33' => [
-        'label' => 'input_33',
-        'config' => [
-            'type' => 'link',
-            'mode' => 'prepend'
-            'valuePicker' => [
-                'items' => [
-                    ['HTTPS', 'https://'],
-                    ['HTTP', 'http://'],
-                ],
-            ],
-        ],
-    ],
+..  literalinclude:: _Snippets/_valuePicker.php
