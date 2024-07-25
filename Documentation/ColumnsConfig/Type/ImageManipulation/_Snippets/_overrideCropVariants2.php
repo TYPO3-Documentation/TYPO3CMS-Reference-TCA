@@ -16,11 +16,11 @@ $GLOBALS['TCA']['tt_content']['types']['textmedia']['columnsOverrides']['assets'
             'allowedAspectRatios' => [
                 '4:3' => [
                     'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
-                    'value' => 4 / 3
+                    'value' => 4 / 3,
                 ],
                 'NaN' => [
                     'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
-                    'value' => 0.0
+                    'value' => 0.0,
                 ],
             ],
         ],
