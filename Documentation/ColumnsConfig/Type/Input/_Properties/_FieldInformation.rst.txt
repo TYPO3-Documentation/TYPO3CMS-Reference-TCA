@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: input-fieldInformation
+
+    For details see :confval:`fieldInformation`.

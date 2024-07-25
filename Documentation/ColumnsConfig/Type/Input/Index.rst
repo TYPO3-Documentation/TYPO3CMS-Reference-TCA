@@ -63,10 +63,118 @@ Value picker
 
 ..  include:: /Images/Rst/Input33.rst.txt
 
-
 ..  include:: /CodeSnippets/Input33.rst.txt
 
-..  toctree::
-    :titlesonly:
+..  _columns-input-properties:
 
-    Properties/Index
+Properties of the TCA column type `input`
+============================================
+
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Autocomplete.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Default.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Eval.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldControl.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldInformation.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldWizard.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_IsIn.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Max.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Min.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Mode.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Nullable.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Placeholder.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ReadOnly.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Required.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Search.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Size.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Softref.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ValuePicker.rst.txt
+        :show-buttons:
+
+..  _columns-input-eval:
+
+Input fields with eval
+======================
+
+..  _columns-input-eval-trim:
+
+Trim white space
+----------------
+
+Trimming the value for white space before storing in the database:
+
+..  literalinclude:: _Snippets/_trimmedField.php
+
+..  _columns-input-eval-combined:
+
+Combine eval rules
+------------------
+
+By this configuration the field will be stripped for any space characters, converted to lowercase, only accepted
+if filled in and on the server the value is required to be unique for all records from this table:
+
+..  code-block:: php
+
+    'eval' => 'nospace,lower,unique'
+
+..  _columns-input-eval-custom:
+
+Custom eval rules
+-----------------
+
+You can supply own form evaluations in an extension by creating a class with three functions, one which returns
+the JavaScript code for client side validation called `returnFieldJS()` and two for the server side:
+`deevaluateFieldValue()` called when opening the record and `evaluateFieldValue()` called for validation when
+saving the record:
+
+:file:`EXT:extension/Classes/Evaluation/ExampleEvaluation.php`
+
+..  literalinclude:: _Snippets/_ExampleEvaluation.php
+    :caption: EXT:my_extension/Classes/EvaluationExampleEvaluation.php
+
+..  literalinclude:: _Snippets/_ext_localconf.php
+    :caption: EXT:my_extension/ext_localconf.php
+
+..  literalinclude:: _Snippets/_tx_example_record.php
+    :caption: EXT:extension/Configuration/TCA/tx_example_record.php
