@@ -120,79 +120,23 @@ type inline** - as it is a container.
 
 #. Create a custom fieldInformation
 
-    ..  code-block:: php
-        :caption: EXT:my_extension/Classes/FormEngine/FieldInformation/DemoFieldInformation
-
-        <?php
-        declare(strict_types=1);
-        namespace Myvendor\Myexample\FormEngine\FieldInformation;
-
-        use TYPO3\CMS\Backend\Form\AbstractNode;
-
-        class DemoFieldInformation extends AbstractNode
-        {
-            public function render()
-            {
-                $fieldName = $this->data['fieldName'];
-                $result = $this->initializeResultArray();
-
-                 // Add fieldInformation only for this field name
-                 //   this may be changed accordingly
-                 if ($fieldName !== 'my_new_field') {
-                     return $result;
-                 }
-
-                 $text = $GLOBALS['LANG']->sL(
-                         'LLL:EXT:my_example/Resources/Private/Language/'
-                         . 'locallang_db.xlf:tt_content.fieldInformation.demo'
-                 );
-
-                 $result['html'] = $text;
-                 return $result;
-            }
-        }
+    ..  literalinclude:: _Snippets/_DemoFieldInformation.php
+        :caption: EXT:my_extension/Classes/FormEngine/FieldInformation/DemoFieldInformation.php
 
 #. Register this node type
 
-    ..  code-block:: php
-         :caption: EXT:my_extension/ext_localconf.php
-
-         <?php
-         use Myvendor\Myexample\FormEngine\FieldInformation\DemoFieldInformation;
-
-         // ...
-
-         $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1654355506] = [
-             'nodeName' => 'demoFieldInformation',
-             'priority' => 30,
-             'class' => DemoFieldInformation::class,
-         ];
+    ..  literalinclude:: _Snippets/_ext_localconf.php
+        :caption: EXT:my_extension/ext_localconf.php
 
 #. Add the fieldInformation to the container for containerRenderType inline
 
-    ..  code-block:: php
+    ..  literalinclude:: _Snippets/_tt_content.php
         :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-
-        $GLOBALS['TCA']['tt_content']['ctrl']['container']['inline']['fieldInformation'] = [
-            'demoFieldInformation' => [
-                'renderType' => 'demoFieldInformation',
-            ],
-        ];
 
 #. A field my_new_field is created in the tt_content TCA:
 
-    ..  code-block:: php
+    ..  literalinclude:: _Snippets/_tt_content2.php
         :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-
-        'my_new_field2' => [
-            'label' => 'inline field with field information',
-            'config' => [
-                'type' => 'inline',
-                // further configuration can be found in the examples above
-                // ....
-            ],
-        ],
-        // ...
 
 ..  seealso::
 
@@ -212,65 +156,17 @@ Overrides the crop variants
 
 This example overrides the crop variants in a configured fal relation:
 
-..  code-block:: php
-
-    'assets' => [
-        'config' => [
-            'overrideChildTca' => [
-                'columns' => [
-                    'crop' => [
-                        'config' => [
-                            'cropVariants' => [
-                                'default' => [
-                                    'disabled' => true,
-                                ],
-                                'mobile' => [
-                                    'title' => 'LLL:EXT:ext_key/Resources/Private/Language/locallang.xlf:imageManipulation.mobile',
-                                    'cropArea' => [
-                                        'x' => 0.1,
-                                        'y' => 0.1,
-                                        'width' => 0.8,
-                                        'height' => 0.8,
-                                    ],
-                                    'allowedAspectRatios' => [
-                                        '4:3' => [
-                                            'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
-                                            'value' => 4 / 3
-                                        ],
-                                        'NaN' => [
-                                            'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
-                                            'value' => 0.0
-                                        ],
-                                    ],
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-            ],
-        ],
-    ],
-
+..  literalinclude:: _Snippets/_overrideChildTcaCropVariants.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 Define which fields to show in the child table
 ----------------------------------------------
 
-This example overrides the :ref:`showitem <types-properties-showitem>` field of the child table TCA:
+This example overrides the :ref:`showitem <types-properties-showitem>` field of
+the child table TCA:
 
-..  code-block:: php
-
-    'anInlineField' => [
-        'config' => [
-            'type' => 'inline',
-            'overrideChildTca' => [
-                'types' => [
-                    'aForeignType' => [
-                        'showitem' => 'aChildField',
-                    ],
-                ],
-            ],
-        ],
-    ],
+..  literalinclude:: _Snippets/_overrideChildTcaShowItems.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 Override the default value of a child tables field
 --------------------------------------------------
@@ -278,23 +174,8 @@ Override the default value of a child tables field
 This overrides the :code:`default` columns property of a child field in an inline relation from within
 the parent if a new child is created:
 
-..  code-block:: php
-
-    'anInlineField' => [
-        'config' => [
-            'type' => 'inline',
-            'overrideChildTca' => [
-                'columns' => [
-                    'CType' => [
-                        'config' => [
-                            'default' => 'image',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-    ];
-
+..  literalinclude:: _Snippets/_overrideChildTcaDefault.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 Override the foreign_selector field target
 ------------------------------------------
@@ -302,49 +183,16 @@ Override the foreign_selector field target
 This overrides the foreign_selector field target field config, defined in the
 :ref:`foreign_selector <columns-inline-properties-foreign-selector>` property. This is used in FAL inline relations:
 
-..  code-block:: php
 
-    'anInlineField' => [
-        'config' => [
-            'type' => 'inline',
-            'foreign_selector' => 'uid_local',
-            'overrideChildTca' => [
-                'columns' => [
-                    'uid_local' => [
-                        'config' => [
-                            'appearance' => [
-                                'elementBrowserType' => 'file',
-                                'elementBrowserAllowed' => $allowedFileExtensions
-                            ],
-                        ],
-                    ],
-                ],
-            ],
-        ],
-    ],
+..  literalinclude:: _Snippets/_overrideChildTcaForeignSelector.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 ..  note::
     It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsOverrides>`
     of an inline parent in the :code:`['types']` section.
 
-Example
--------
+Example: Override by type
+-------------------------
 
-..  code-block:: php
-
-    'tt_content' => [
-        'types' => [
-            'myCType' => [
-                  'columnsOverrides' => [
-                       'myForeignTableColumnInTtContent' => [
-                            'config' => [
-                                  'overrideChildTca' => [
-                                       //...  same as above
-                                  ],
-                            ],
-                       ],
-                  ],
-            ],
-        ],
-    ],
-
+..  literalinclude:: _Snippets/_overrideChildTcaForeignSelector.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
