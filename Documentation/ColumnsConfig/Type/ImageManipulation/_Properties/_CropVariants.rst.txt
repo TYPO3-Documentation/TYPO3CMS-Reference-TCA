@@ -1,0 +1,10 @@
+..  _columns-imageManipulation-properties-cropVariants:
+
+..  confval:: cropVariants
+    :name: imageManipulation-cropVariants
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Proc. / Display
+
+    Main crop, focus area and cover area configuration. For details see
+    :ref:`columns-imageManipulation-crop-variant`.

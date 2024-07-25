@@ -1,0 +1,21 @@
+
+..  _columns-imageManipulation-properties-fieldControl:
+
+
+..  confval:: fieldControl
+    :name: imageManipulation-fieldControl
+
+    The field of type imageManipulation can enable all common
+    :ref:`field control options <tca_property_fieldControl>`. Furthermore the
+    following are available:
+
+    ..  confval:: elementBrowser
+        :name: imageManipulation-elementBrowser
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :type: array
+        :Scope: fieldControl
+
+        The element browser field control used in :code:`type='imageManipulation'` renders a
+        button to open an element browser to choose a imageManipulation.
+
+        It is enabled by default if rendering a imageManipulation element.

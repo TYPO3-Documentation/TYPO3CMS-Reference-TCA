@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-imageManipulation-properties-fileField:
-
-==========
-file_field
-==========
 
 ..  confval:: file_field
     :name: imageManipulation-file-field
