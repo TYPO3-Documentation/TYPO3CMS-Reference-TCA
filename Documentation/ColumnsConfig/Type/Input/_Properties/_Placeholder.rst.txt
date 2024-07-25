@@ -1,0 +1,14 @@
+..  confval:: placeholder
+    :name: input-placeholder
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['placeholder']
+    :type: string
+    :Scope: Display
+
+    Placeholder, containing a default value.
+
+    ..  literalinclude:: _Properties/_PlaceHolder.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+
+    ..  note::
+        As the TCA is cached it is not possible to set dynamic values such as
+        :php:`now()`.

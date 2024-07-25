@@ -1,0 +1,25 @@
+..  _columns-input-properties-fieldwizard-localizationstateselector:
+
+..  confval:: fieldWizard
+    :name: input-fieldWizard
+
+    ..  confval:: defaultLanguageDifferences
+        :name: input-fieldWizard-defaultLanguageDifferences
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
+        :type: array
+
+        For details see :confval:`fieldWizard-defaultLanguageDifferences`.
+
+    ..  confval:: localizationStateSelector
+        :name: input-fieldWizard-localizationStateSelector
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
+        :type: array
+
+        For details see :confval:`fieldWizard-localizationStateSelector`.
+
+    ..  confval:: otherLanguageContent
+        :name: input-fieldWizard-otherLanguageContent
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
+        :type: array
+
+        For details see :confval:`fieldWizard-otherLanguageContent`.
