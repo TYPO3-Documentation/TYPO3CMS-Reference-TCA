@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-link-properties-appearance:
-
-==========
-appearance
-==========
 
 ..  confval:: appearance
     :name: link-appearance

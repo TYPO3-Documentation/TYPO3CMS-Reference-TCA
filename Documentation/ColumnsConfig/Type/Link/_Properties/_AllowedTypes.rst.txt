@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-link-properties-allowedTypes:
-
-============
-allowedTypes
-============
 
 ..  versionadded:: 12.0
     Instead of the former exclude list :php:`blindLinkOptions` of :php:`linkPopup.options`,

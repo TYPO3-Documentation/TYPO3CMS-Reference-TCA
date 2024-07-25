@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: link-fieldInformation
+
+    For details see :confval:`fieldInformation`.
