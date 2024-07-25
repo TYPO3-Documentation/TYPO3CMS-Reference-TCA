@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-input-properties-max:
-
-===
-max
-===
 
 ..  confval:: max
     :name: input-max

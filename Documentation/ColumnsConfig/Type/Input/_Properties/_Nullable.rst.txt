@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-input-properties-nullable:
-
-========
-nullable
-========
 
 ..  versionchanged:: 12.0
     This option was introduced to replace the TCA :php:`eval` option with
@@ -24,7 +19,7 @@ nullable
     The database field must allow the :sql:`NULL` value.
 
 
-Example:
+..  rubric:: Example: A nullable field
 
 ..  code-block:: php
     :caption: EXT:some_extension/Configuration/TCA/tx_sometable.php
