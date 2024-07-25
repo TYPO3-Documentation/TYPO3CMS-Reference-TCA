@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-group-properties-mm:
-
-==
-MM
-==
 
 ..  versionadded:: 11.4
     TCA table column fields that define :php:`['config']['MM']` can omit the
@@ -42,7 +37,7 @@ MM
     This way uniqueness can be ensured and it is possible to find the field
     where the table is used quickly.
 
-    Example:
+    ..  rubric:: Example:
 
     ..  code-block:: php
 
@@ -63,9 +58,10 @@ MM
 Related configurations
 ======================
 
-..  _columns-group-properties-mm-hasuidfield:
-..  confval:: MM_hasUidField (type => group)
 
+..  _columns-group-properties-mm-hasuidfield:
+..  confval:: MM_hasUidField
+    :name: group-mm-hasUidField
     :type: boolean
     :Scope: Proc.
 
@@ -75,27 +71,26 @@ Related configurations
 
 
 ..  _columns-group-properties-mm-insert-fields:
-..  confval:: MM_insert_fields (type => group)
+..  confval:: MM_insert_fields
+    :name: group-mm-match-fields
+    :type: array
+    :Scope: Proc.
 
     ..  deprecated:: 12.4
         As there is no API to retrieve these values again, having a static value
         in an additional column is useless. Therefore, this setting is removed
         in TYPO3 v13. :ref:`More details <ext_core:deprecation-100335-1679998903>`
 
-    :type: array
-    :Scope: Proc.
-
     Array of field => value pairs to insert when writing new MM relations.
 
 ..  _columns-group-properties-mm-match-fields:
 ..  confval:: MM_match_fields
-    :name: group-mm-match-fields
+    :name: group-mm-mmatch_fields
     :type: array
     :Scope: Display / Proc.
 
     Array of field => value pairs to both insert and match against when
     writing/reading MM relations.
-
 
 ..  _columns-group-properties-mm-opposite-field:
 ..  confval:: MM_opposite_field
@@ -118,7 +113,6 @@ Related configurations
         Bidirectional references only get registered once on the native side in
         :sql:`sys_refindex`.
 
-
 ..  _columns-group-properties-mm-opposite-usage:
 ..  confval:: MM_oppositeUsage
     :name: group-mm-opposite-usage
@@ -135,7 +129,6 @@ Related configurations
     :php:`MM_oppositeUsage` is an array which references which fields contain
     the references to the opposite side, so that they can be queried for match
     field configuration.
-
 
 ..  _columns-group-properties-mm-table-where:
 ..  confval:: MM_table_where

@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-group-properties-allowed:
-
-=======
-allowed
-=======
 
 ..  confval:: allowed
     :name: group-allowed
@@ -24,11 +19,7 @@ allowed
         :ref:`allowed <columns-group-properties-allowed>` property
         (but with just one table name).
 
-Examples
-========
-
-Group relation to be_groups and be_users
-----------------------------------------
+..  rubric:: Example: Group relation to be_groups and be_users
 
 ..  include:: /Images/Rst/GroupDb1.rst.txt
 

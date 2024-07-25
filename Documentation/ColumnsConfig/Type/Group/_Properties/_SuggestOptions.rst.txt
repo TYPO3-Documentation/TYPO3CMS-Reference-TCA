@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-group-properties-suggestOptions:
-
-==============
-suggestOptions
-==============
 
 ..  confval:: suggestOptions
     :name: group-suggestOptions
@@ -146,11 +141,7 @@ suggestOptions
                ],
             ],
 
-Examples
-========
-
-Only show pages with doktype=1 in the suggest options
-=====================================================
+..  rubric:: Example: Only show pages with doktype=1 in the suggest options
 
 ..  include:: /Images/Rst/GroupDb10.rst.txt
 

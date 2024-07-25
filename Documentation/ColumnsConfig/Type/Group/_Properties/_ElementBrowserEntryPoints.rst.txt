@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-group-properties-elementBrowserEntryPoints:
-
-==========================
-elementBrowserEntryPoints
-==========================
 
 ..  confval:: elementBrowserEntryPoints
     :name: group-elementBrowserEntryPoints
@@ -26,11 +21,7 @@ elementBrowserEntryPoints
 
     Each `table => id` pair can also be overridden via page TSconfig.
 
-Examples
-========
-
-Open the element browser on page 123 for tt_content elements
--------------------------------------------------------------
+..  rubric:: Example: Open the element browser on page 123 for tt_content elements
 
 ..  code-block:: php
 
@@ -54,8 +45,8 @@ This could then be overridden via page TSconfig:
 Since only one table is allowed, the defined entry point is also automatically
 used for the general element browser button.
 
-Open the element browser on different pages for tt_content and news records
-----------------------------------------------------------------------------
+..  rubric:: Example: Open the element browser on different pages for tt_content and news records
+
 In case the group field allows more than one table, the `_default` key has to
 be set:
 

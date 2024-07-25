@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-group-properties-filter:
-
-======
-filter
-======
 
 ..  confval:: filter
     :name: group-filter
@@ -44,8 +39,7 @@ filter
             ],
         ],
 
-Examples
-========
+..  rubric:: Example:
 
 Say you have a "person" table with fields "gender" (radio buttons) as well as "mother" and "father", both group
 fields with relations to the same table.
