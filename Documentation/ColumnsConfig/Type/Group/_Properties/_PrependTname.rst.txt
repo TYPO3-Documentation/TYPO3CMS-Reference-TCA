@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-group-properties-prepend-tname:
-
-==============
-prepend\_tname
-==============
 
 ..  confval:: prepend_tname
     :name: group-prepend-tname

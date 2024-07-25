@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-group-properties-mm:
-
-==
-MM
-==
 
 ..  versionadded:: 11.4
     TCA table column fields that define :php:`['config']['MM']` can omit the
@@ -42,7 +37,7 @@ MM
     This way uniqueness can be ensured and it is possible to find the field
     where the table is used quickly.
 
-    Example:
+    ..  rubric:: Example:
 
     ..  code-block:: php
 
@@ -59,10 +54,6 @@ MM
             ],
         ];
 
-
-Related configurations
-======================
-
 ..  _columns-group-properties-mm-match-fields:
 ..  confval:: MM_match_fields
     :name: group-mm-match-fields
@@ -71,7 +62,6 @@ Related configurations
 
     Array of field => value pairs to both insert and match against when
     writing/reading MM relations.
-
 
 ..  _columns-group-properties-mm-opposite-field:
 ..  confval:: MM_opposite_field
@@ -94,7 +84,6 @@ Related configurations
         Bidirectional references only get registered once on the native side in
         :sql:`sys_refindex`.
 
-
 ..  _columns-group-properties-mm-opposite-usage:
 ..  confval:: MM_oppositeUsage
     :name: group-mm-opposite-usage
@@ -111,7 +100,6 @@ Related configurations
     :php:`MM_oppositeUsage` is an array which references which fields contain
     the references to the opposite side, so that they can be queried for match
     field configuration.
-
 
 ..  _columns-group-properties-mm-table-where:
 ..  confval:: MM_table_where

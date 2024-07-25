@@ -5,7 +5,6 @@
 Examples
 ========
 
-
 ..  _tca_example_group_db_10:
 
 Group relation to a single page

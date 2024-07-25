@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-group-properties-hideSuggest:
-
-===========
-hideSuggest
-===========
 
 ..  confval:: hideSuggest
     :name: group-hideSuggest
@@ -20,13 +15,9 @@ hideSuggest
 
     Setting this property to `true` disables the suggest wizard.
 
-Examples
-========
-
 ..  _tca_example_group_db_11:
 
-Suggest wizard is hidden
-------------------------
+..  rubric:: Example: Suggest wizard is hidden
 
 ..  include:: /Images/Rst/GroupDb11.rst.txt
 
@@ -34,8 +25,7 @@ Suggest wizard is hidden
 
 ..  _tca_example_group_db_8:
 
-Suggest wizard is shown
-------------------------
+..  rubric:: Example: Suggest wizard is shown
 
 ..  include:: /Images/Rst/GroupDb8.rst.txt
 
