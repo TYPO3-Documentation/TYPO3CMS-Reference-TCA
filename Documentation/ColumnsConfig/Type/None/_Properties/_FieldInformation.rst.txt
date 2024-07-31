@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: none-fieldInformation
+
+    For details see :confval:`fieldInformation`.
