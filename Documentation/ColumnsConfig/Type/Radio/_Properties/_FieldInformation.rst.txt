@@ -1,0 +1,6 @@
+..  _columns-radio-properties-fieldInformation:
+
+..  confval:: fieldInformation
+    :name: radio-fieldInformation
+
+    For details see :confval:`fieldInformation`.

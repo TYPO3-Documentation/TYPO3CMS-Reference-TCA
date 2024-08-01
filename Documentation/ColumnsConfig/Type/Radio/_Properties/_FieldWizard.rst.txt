@@ -1,0 +1,18 @@
+..  _columns-radio-properties-fieldWizard:
+
+..  confval:: fieldWizard
+    :name: radio-fieldWizard
+
+    ..  confval:: defaultLanguageDifferences
+        :name: radio-fieldWizard-defaultLanguageDifferences
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
+        :type: array
+
+        For details see :confval:`fieldWizard-defaultLanguageDifferences`.
+
+    ..  confval:: otherLanguageContent
+        :name: radio-fieldWizard-otherLanguageContent
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
+        :type: array
+
+        For details see :confval:`fieldWizard-otherLanguageContent`.
