@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-password-properties-size:
-
-====
-size
-====
 
 ..  confval:: size
     :name: password-size
