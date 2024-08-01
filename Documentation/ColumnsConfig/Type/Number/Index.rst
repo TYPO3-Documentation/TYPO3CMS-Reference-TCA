@@ -29,8 +29,67 @@ The TCA type :php:`number` should be used to input values representing numbers.
     :ref:`range[lower] <columns-number-properties-range>` and
     :ref:`range[upper] <columns-number-properties-range>` options.
 
-Migration
-=========
+..  _columns-number-properties:
+
+Properties of the TCA column type `number`
+=========================================
+
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Autocomplete.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Default.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldControl.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldInformation.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldWizard.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Format.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Mode.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Nullable.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Range.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ReadOnly.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Required.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Size.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Slider.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_ValuePicker.rst.txt
+        :show-buttons:
+
+..  _columns-number-migration:
+
+Migration: from type=input to type=number
+=========================================
+
+..  _columns-number-migration-int:
 
 Migration from eval='int'
 -------------------------
@@ -38,26 +97,9 @@ Migration from eval='int'
 The migration from :php:`eval='int'` to :php:`type=number`
 is done like following:
 
-..  code-block:: php
+..  literalinclude:: _Snippets/_migration_int.diff
 
-    // Before
-
-    'int_field' => [
-        'label' => 'Int field',
-        'config' => [
-            'type' => 'input',
-            'eval' => 'int',
-        ]
-    ]
-
-    // After
-
-    'int_field' => [
-        'label' => 'Int field',
-        'config' => [
-            'type' => 'number',
-        ]
-    ]
+..  _columns-number-migration-double:
 
 Migration from eval='double2'
 -----------------------------
@@ -65,33 +107,9 @@ Migration from eval='double2'
 The migration from :php:`eval=double2` to :php:`type=number`
 is done like following:
 
-..  code-block:: php
 
-    // Before
-
-    'double2_field' => [
-        'label' => 'double2 field',
-        'config' => [
-            'type' => 'input',
-            'eval' => 'double2',
-        ]
-    ]
-
-    // After
-
-    'double2_field' => [
-        'label' => 'double2 field',
-        'config' => [
-            'type' => 'number',
-            'format' => 'decimal'
-        ]
-    ]
+..  literalinclude:: _Snippets/_migration_double.diff
 
 An automatic TCA migration is performed on the fly, migrating all occurrences
 to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error
 where code adoption has to take place.
-
-..  toctree::
-    :titlesonly:
-
-    Properties/Index

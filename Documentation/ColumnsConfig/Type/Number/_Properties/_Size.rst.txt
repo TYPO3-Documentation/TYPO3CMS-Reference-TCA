@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-number-properties-size:
-
-====
-size
-====
 
 ..  confval:: size
     :name: number-size
