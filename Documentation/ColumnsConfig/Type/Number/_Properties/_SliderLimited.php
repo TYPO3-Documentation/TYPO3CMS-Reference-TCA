@@ -6,10 +6,10 @@ $temporaryColumns['numberField'] = [
         'type' => 'number',
         'range' => [
             'lower' => 0,
-            'upper' => 100
+            'upper' => 100,
         ],
         'slider' => [
-            'step' => 1
-        ]
+            'step' => 1,
+        ],
     ],
 ];
