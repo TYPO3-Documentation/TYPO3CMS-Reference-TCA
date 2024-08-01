@@ -6,6 +6,6 @@ $temporaryColumns['numberField'] = [
         'type' => 'number',
         'size' => 20,
         'nullable' => true,
-        'autocomplete' => true
-    ]
+        'autocomplete' => true,
+    ],
 ];

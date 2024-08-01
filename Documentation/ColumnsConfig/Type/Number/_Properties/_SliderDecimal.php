@@ -7,10 +7,10 @@ $temporaryColumns['numberField'] = [
         'format' => 'decimal',
         'range' => [
             'lower' => 0,
-            'upper' => 1
+            'upper' => 1,
         ],
         'slider' => [
-            'step' => 0.1
-        ]
+            'step' => 0.1,
+        ],
     ],
 ];

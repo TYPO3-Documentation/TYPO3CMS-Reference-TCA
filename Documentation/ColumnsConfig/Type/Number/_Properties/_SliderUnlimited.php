@@ -5,7 +5,7 @@ $temporaryColumns['numberField'] = [
     'config' => [
         'type' => 'number',
         'slider' => [
-            'step' => 1
-        ]
+            'step' => 1,
+        ],
     ],
 ];

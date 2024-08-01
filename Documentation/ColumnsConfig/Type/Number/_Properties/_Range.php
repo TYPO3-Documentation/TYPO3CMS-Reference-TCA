@@ -6,7 +6,7 @@ $temporaryColumns['numberField'] = [
         'type' => 'number',
         'range' => [
             'lower' => 10,
-            'upper' => 1000
+            'upper' => 1000,
         ],
     ],
 ];
