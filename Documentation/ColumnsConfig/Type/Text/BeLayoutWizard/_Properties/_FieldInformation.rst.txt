@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: text-belayout-fieldInformation
+
+    For details see :confval:`fieldInformation`.
