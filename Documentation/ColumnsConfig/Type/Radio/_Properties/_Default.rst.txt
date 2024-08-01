@@ -1,0 +1,10 @@
+..  _columns-radio-properties-default:
+
+..  confval:: default
+    :name: radio-default
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['default']
+    :type: string
+    :Scope: Display  / Proc.
+
+    Default value set if a new record is created. If empty, no radio gets
+    selected.

@@ -5,13 +5,31 @@
 Radiobuttons
 ============
 
-This type creates a set of radio buttons. The value is typically stored as integer value, each radio
-item has one assigned number, but it can be a string, too.
+This type creates a set of radio buttons. The value is typically
+stored as integer value, each radio item has one assigned number,
+but it can be a string, too.
+
+..  contents:: Table of contents
+
+..  _columns-radio-examples:
+..  _tca_example_radio_1:
+
+Example: Set of radio buttons field
+===================================
 
 .. include:: /Images/Rst/Radio1.rst.txt
 
-.. toctree::
-   :titlesonly:
+..  include:: /CodeSnippets/Radio1.rst.txt
 
-   Examples
-   Properties/Index
+..  _columns-radio-properties:
+
+Properties of the TCA column type `radio`
+=========================================
+
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+        :show-buttons:

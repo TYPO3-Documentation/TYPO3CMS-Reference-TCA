@@ -1,16 +1,11 @@
-.. include:: /Includes.rst.txt
-.. _columns-radio-properties-items:
+..  _columns-radio-properties-items:
 
-=====
-items
-=====
-
-.. confval:: items (type => radio)
-
-   :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-   :required: true
-   :type: array
-   :Scope: Display  / Proc.
+..  confval:: items
+    :name: radio-items
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :required: true
+    :type: array
+    :Scope: Display  / Proc.
 
    An array of values which can be selected.
 
