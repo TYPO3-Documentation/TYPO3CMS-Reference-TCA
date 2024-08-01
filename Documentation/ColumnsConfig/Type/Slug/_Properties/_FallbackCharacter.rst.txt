@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-slug-properties-fallbackCharacter:
-
-=================
-fallbackCharacter
-=================
 
 ..  confval:: fallbackCharacter
     :name: slug-fallbackCharacter
@@ -16,11 +11,7 @@ fallbackCharacter
     :ref:`fieldSeparator <columns-slug-properties-generatorOptions>`.
 
 
-Examples
-========
-
-fallbackCharacter and fieldSeparator set
-----------------------------------------
+..  rubric:: Example: fallbackCharacter and fieldSeparator set
 
 ..  include:: /Images/Rst/Slug2.rst.txt
 
