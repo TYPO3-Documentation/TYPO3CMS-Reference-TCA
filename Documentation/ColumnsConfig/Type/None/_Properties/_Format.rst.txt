@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-none-properties-format:
-
-======
-format
-======
 
 ..  confval:: format
     :name: none-format
@@ -79,8 +74,6 @@ format
             field's value as parameters.
 
 Examples
-========
-
 ..  code-block:: php
 
     'aField' => [

@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-none-properties-size:
-
-====
-size
-====
 
 ..  confval:: size
     :name: none-size
@@ -20,33 +15,8 @@ size
     `size`. In order to simplify the available configuration, `cols` has been
     dropped in favour of `size`.
 
-Migration
-=========
+..  rubric:: Migration
 
 Rename the option `cols` to `size`.
 
-Before:
-
-..  code-block:: php
-
-    'columns' => [
-        'aColumn' => [
-            'config' => [
-                'type' => 'none',
-                'cols' => 20,
-            ],
-        ],
-    ],
-
-After:
-
-..  code-block:: php
-
-    'columns' => [
-        'aColumn' => [
-            'config' => [
-                'type' => 'none',
-                'size' => 20,
-            ],
-        ],
-    ],
+..  literalinclude:: _Properties/_cols_migration.diff
