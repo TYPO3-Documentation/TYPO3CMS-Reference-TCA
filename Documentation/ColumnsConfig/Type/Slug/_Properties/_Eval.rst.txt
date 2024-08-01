@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-slug-properties-eval:
-
-====
-eval
-====
 
 ..  confval:: eval
     :name: slug-eval
@@ -33,11 +28,7 @@ eval
     No other eval setting is checked for. It is possible to set different eval options, however it is
     recommended not to do so.
 
-Examples
-========
-
-eval = uniqueInSite
--------------------
+..  rubric:: Example: eval = uniqueInSite
 
 ..  include:: /Images/Rst/Slug2.rst.txt
 
