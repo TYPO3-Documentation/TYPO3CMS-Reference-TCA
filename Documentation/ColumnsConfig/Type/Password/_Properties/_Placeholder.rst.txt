@@ -1,0 +1,9 @@
+..  confval:: placeholder
+    :name: password-placeholder
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['placeholder']
+    :type: string, hexadecimal password representation
+    :Scope: Display
+
+    Placeholder, containing a hexadecimal password representation.
+
+    ..  literalinclude:: _Snippets/_PlaceHolder.php
