@@ -1,56 +1,15 @@
 ..  include:: /Includes.rst.txt
-..  _columns-password-properties-passwordGenerator:
-
-=================
-passwordGenerator
-=================
-
-..  versionadded:: 12.1
-
-..  confval:: passwordGenerator
-    :name: password-passwordGenerator
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']`
-    :type: boolean
-    :Scope: Display
-
-    The control
-    renders a button next to the password field allowing the user to generate
-    a random password based on defined rules.
-
-    Using the control adds the generated password to the corresponding field.
-    The password is visible to the backend user only once and stored encrypted
-    in the database. Integrators are also able to define whether the user
-    is allowed to edit the generated password before saving.
-
-    ..  figure:: /Images/ManualScreenshots/PasswordGenerator.png
-        :alt: A basic password generator
-        :class: with-shadow
-
-        A basic password generator
-
-    ..  figure:: /Images/ManualScreenshots/PasswordGeneratorAfterSaving.png
-        :alt: The same field as above after saving - the password is not displayed anymore
-        :class: with-shadow
-
-        The same field as above after saving - the password is not displayed anymore
-
-    ..  literalinclude:: _PasswordGenerator.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_table.php
-        :emphasize-lines: 8-10
-
-..  contents:: Table of Content
-    :local:
 
 ..  _columns-password-properties-passwordGenerator_examples:
 
-Examples
-========
-
+===========================
+Password generator examples
+===========================
 
 ..  _columns-password-properties-passwordGenerator_include_special_chars:
 
 Include special characters
---------------------------
+==========================
 
 Example: `qe8)i2W1it-msR8`
 
@@ -60,12 +19,12 @@ Example: `qe8)i2W1it-msR8`
 
     A password generator using special chars.
 
-..  include:: _Password_6.rst.txt
+..  include:: _Snippets/_Password_6.rst.txt
 
 ..  _columns-password-properties-passwordGenerator_only_digits:
 
 Only digits, length 8 (minimum length)
---------------------------------------
+======================================
 
 Example: `28233371`
 
@@ -75,13 +34,13 @@ Example: `28233371`
 
     A generated 8 digit number
 
-..  include:: _Password_7.rst.txt
+..  include:: _Snippets/_Password_7.rst.txt
 
 
 ..  _columns-password-properties-passwordGenerator_hexadecimal:
 
 Hexadecimal random bytes, length 30
------------------------------------
+===================================
 
 Example: `0d95c0936c54b97bf908a3c963b508`.
 
@@ -94,12 +53,12 @@ Example: `0d95c0936c54b97bf908a3c963b508`.
 The following example will generate a 30 characters long random hex string, which
 could be used for secret tokens or similar:
 
-..  include:: _Password_4.rst.txt
+..  include:: _Snippets/_Password_4.rst.txt
 
 ..  _columns-password-properties-passwordGenerator_base64:
 
 Base64 random bytes, readonly
-------------------------------
+==============================
 
 Example: `zrt8sJd6GiqUI_EFgjPiedOj--D0NbTVOJz`
 
@@ -109,7 +68,7 @@ Example: `zrt8sJd6GiqUI_EFgjPiedOj--D0NbTVOJz`
 
     A password generator using base64 random bytes, readonly.
 
-..  include:: _Password_5.rst.txt
+..  include:: _Snippets/_Password_5.rst.txt
 
 ..  _columns-password-properties-passwordGenerator_properties:
 
@@ -119,12 +78,12 @@ Properties
 ..  _columns-password-properties-passwordGenerator_fieldControl:
 
 Field control options
----------------------
+=====================
 
 ..  _columns-password-properties-passwordGenerator_fieldControl_title:
 
 title
-~~~~~
+-----
 
 ..  confval:: title
     :name: password-passwordGenerator-title
@@ -137,7 +96,7 @@ title
 ..  _columns-password-properties-passwordGenerator_fieldControl_allowedit:
 
 allowEdit
-~~~~~~~~~
+---------
 
 ..  confval:: allowEdit
     :name: password-passwordGenerator-allowEdit
@@ -150,14 +109,14 @@ allowEdit
 ..  _columns-password-properties-passwordGenerator_passwordRules:
 
 Password rules
---------------
+==============
 
 Define rules for the password.
 
 ..  _columns-password-properties-passwordGenerator_passwordRules_length:
 
 passwordRules.length
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 ..  confval:: passwordRules.length
     :name: password-passwordRules-length
@@ -171,7 +130,7 @@ passwordRules.length
 ..  _columns-password-properties-passwordGenerator_passwordRules_random:
 
 passwordRules.random
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 ..  confval:: passwordRules.random
     :name: password-passwordRules-random
@@ -199,7 +158,7 @@ passwordRules.random
 ..  _columns-password-properties-passwordGenerator_passwordRules_digitcharacters:
 
 passwordRules.digitCharacters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 ..  confval:: passwordRules.digitCharacters
     :name: password-passwordRules-digitCharacters
@@ -213,7 +172,7 @@ passwordRules.digitCharacters
 
 
 passwordRules.lowerCaseCharacters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 ..  confval:: passwordRules.lowerCaseCharacters
     :name: password-passwordRules-lowerCaseCharacters
@@ -226,7 +185,7 @@ passwordRules.lowerCaseCharacters
 ..  _columns-password-properties-passwordGenerator_passwordRules_uppercasecharacters:
 
 passwordRules.upperCaseCharacters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 ..  confval:: passwordRules.upperCaseCharacters
     :name: password-passwordRules-upperCaseCharacters
@@ -239,7 +198,7 @@ passwordRules.upperCaseCharacters
 ..  _columns-password-properties-passwordGenerator_passwordRules_specialcharacters:
 
 passwordRules.specialCharacters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 ..  confval:: passwordRules.specialCharacters
     :name: password-passwordRules-specialCharacters

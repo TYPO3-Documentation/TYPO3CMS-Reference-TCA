@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-password-properties-hashed:
-
-======
-hashed
-======
 
 ..  confval:: hashed
     :name: password-hashed
@@ -21,9 +16,6 @@ hashed
         the tables :php:`be_users` and :php:`fe_users`. In general it is not
         recommended to save passwords as plain text to the database.
 
-Examples
-========
+..  rubric:: Example: The password will be saved as plain text:
 
-The password will be saved as plain text:
-
-..  include:: _Password_2.rst.txt
+..  include:: _Snippets/_Password_2.rst.txt
