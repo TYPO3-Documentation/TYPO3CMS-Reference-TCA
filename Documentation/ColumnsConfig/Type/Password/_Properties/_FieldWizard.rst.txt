@@ -1,0 +1,23 @@
+..  confval:: fieldWizard
+    :name: password-fieldWizard
+
+    ..  confval:: defaultLanguageDifferences
+        :name: password-fieldWizard-defaultLanguageDifferences
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
+        :type: array
+
+        For details see :confval:`fieldWizard-defaultLanguageDifferences`.
+
+    ..  confval:: localizationStateSelector
+        :name: password-fieldWizard-localizationStateSelector
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
+        :type: array
+
+        For details see :confval:`fieldWizard-localizationStateSelector`.
+
+    ..  confval:: otherLanguageContent
+        :name: password-fieldWizard-otherLanguageContent
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
+        :type: array
+
+        For details see :confval:`fieldWizard-otherLanguageContent`.

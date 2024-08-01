@@ -1,0 +1,9 @@
+..  confval:: required
+    :name: password-required
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: boolean
+    :Scope: Display / Proc.
+    :Default: false
+
+    If set to true a non-empty value is required in the field. Otherwise the
+    form cannot be saved.
