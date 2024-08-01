@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-number-properties-valuePicker:
-
-===========
-valuePicker
-===========
 
 ..  confval:: valuePicker
     :name: number-valuePicker
@@ -26,21 +21,6 @@ valuePicker
         An array with selectable items. Each item is an array with the first value being the label in the select
         drop-down (LLL reference possible) the second being the value transferred to the input field.
 
-Example
-=======
+..  rubric:: Example: Number field with value picker
 
-..  code-block:: php
-
-    'number_field' => [
-        'label' => 'Number field',
-        'config' => [
-            'type' => 'number',
-            'mode' => '',
-            'valuePicker' => [
-                'items' => [
-                    ['One', '1'],
-                    ['Two', '2'],
-                ],
-            ],
-        ],
-    ],
+..  literalinclude:: _Properties/_ValuePicker.php
