@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-number-properties-format:
-
-======
-format
-======
 
 ..  confval:: format
     :name: number-format
