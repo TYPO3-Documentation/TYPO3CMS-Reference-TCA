@@ -39,10 +39,38 @@ of type `none` fields is a "virtual" field that is combined with a custom
 :ref:`renderType <t3coreapi:FormEngine-Rendering-NodeExpansion>` by an extension.
 The TYPO3 core makes little or no use of `none` fields itself.
 
+..  _columns-none-examples:
+..  _tca_example_none_1:
 
-..  toctree::
-    :titlesonly:
+Example: Simple none field
+==========================
 
-    Examples
-    Properties/Index
+..  include:: /Images/Rst/None1.rst.txt
+
+..  include:: /CodeSnippets/None1.rst.txt
+
+
+..  _columns-none-properties:
+..  _columns-none-properties-type:
+..  _columns-none-properties-fieldInformation:
+
+Properties of the TCA column type `none`
+========================================
+
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_FieldInformation.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Format.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_PassContent.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Size.rst.txt
+        :show-buttons:
 
