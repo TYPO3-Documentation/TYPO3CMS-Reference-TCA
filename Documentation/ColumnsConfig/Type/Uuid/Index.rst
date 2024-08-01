@@ -23,22 +23,37 @@ configuration when working with fields containing a `UUID`_.
     When this type of TCA is used, the corresponding database columns are
     automatically added.
 
+
+..  contents:: Table of contents
+
 Example
 =======
 
 An example configuration looks like the following:
 
-..  code-block:: php
+..  literalinclude:: _Snippets/_basic.php
 
-    'my_identifier' => [
-        'label' => 'My record identifier',
-        'config' => [
-            'type' => 'uuid',
-            'version' => 6,
-        ],
-    ],
+..  _columns-uuid-properties:
 
-..  toctree::
-   :titlesonly:
+Properties of the TCA column type `uuid`
+========================================
 
-   Properties/Index
+..  confval-menu::
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_EnableCopyToClipboard.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_FieldInformation.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Required.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Size.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Version.rst.txt
+        :show-buttons:
