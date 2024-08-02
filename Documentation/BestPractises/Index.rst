@@ -1,7 +1,7 @@
 ..  include:: /Includes.rst.txt
 
 ==============
-Best practises
+Best practices
 ==============
 
 Some configuration settings are applied to almost all tables in TYPO3. See the following
