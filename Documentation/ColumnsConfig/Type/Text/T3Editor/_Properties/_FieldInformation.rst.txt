@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: text-t3editor-fieldInformation
+
+    For details see :confval:`fieldInformation`.
