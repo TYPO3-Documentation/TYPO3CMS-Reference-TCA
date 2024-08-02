@@ -1,0 +1,24 @@
+..  include:: /Includes.rst.txt
+..  _columns-text-properties-format:
+
+======
+format
+======
+
+..  confval:: format
+    :name: text-format
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (keyword)
+    :Scope: Display
+
+    The value specifies the language the code editor should handle. Allowed
+    values:
+
+    *   :php:`css`
+    *   :php:`html`
+    *   :php:`javascript`
+    *   :php:`php`
+    *   :php:`typoscript`
+    *   :php:`xml`
+
+    See also :ref:`tca_example_codeEditor_1`.
