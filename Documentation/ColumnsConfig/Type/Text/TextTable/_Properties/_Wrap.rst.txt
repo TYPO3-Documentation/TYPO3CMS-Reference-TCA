@@ -1,0 +1,28 @@
+..  confval:: wrap
+    :name: text-table-wrap
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (keyword)
+    :Scope: Display
+    :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,
+        :ref:`default <columns-text-renderType-default>`
+
+    Determines the wrapping of the textarea field. Does not apply to RTE fields. There are two options:
+
+    virtual (default)
+      The textarea automatically wraps the lines like it would be expected for editing a text.
+
+    off
+      The textarea will *not* wrap the lines as you would expect when editing some kind of code.
+
+..  rubric:: Example: Textarea with no wrapping
+
+..  include:: /Images/Rst/Text5.rst.txt
+
+..  include:: /CodeSnippets/Text5.rst.txt
+
+..  rubric:: Example: Textarea with virtual wrapping
+
+..  include:: /Images/Rst/Text6.rst.txt
+
+..  include:: /CodeSnippets/Text6.rst.txt
+
