@@ -1,0 +1,7 @@
+..  confval:: default
+    :name: text-default
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['default']
+    :type: string
+    :Scope: Display  / Proc.
+
+    Default value set if a new record is created.

@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-text-properties-min:
-
-===
-min
-===
 
 ..  versionadded:: 12.0
 

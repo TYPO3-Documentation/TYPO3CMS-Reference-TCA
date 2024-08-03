@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-text-properties-maxlength:
-
-===
-max
-===
 
 ..  confval:: max
     :name: text-max
@@ -19,13 +14,9 @@ max
 
     Does not apply for RTE fields.
 
-Examples
-========
-
 ..  _tca_example_text_11:
 
-Textarea with a maximum of 30 characters
-----------------------------------------
+..  rubric:: Example: Textarea with a maximum of 30 characters
 
 ..  include:: /Images/Rst/Text11.rst.txt
 
