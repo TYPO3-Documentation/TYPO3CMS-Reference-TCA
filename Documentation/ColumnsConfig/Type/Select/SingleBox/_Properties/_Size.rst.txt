@@ -1,0 +1,11 @@
+..  _columns-select-singlebox-properties-size:
+
+..  confval:: size
+    :name: select-singlebox-size
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: integer
+    :Scope: Display
+    :Default: 1
+
+    Height of the box in FormEngine. This value should not be set to a
+    number smaller than 2.

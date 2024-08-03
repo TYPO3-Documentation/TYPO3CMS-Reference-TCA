@@ -1,0 +1,14 @@
+..  confval:: multiple
+    :name: select-singlebox-multiple
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: boolean
+    :Scope: Display / Proc.
+
+    Allows the *same item* more than once in a list.
+
+    If used with bidirectional MM relations it must be set for both the native
+    and foreign field configuration.
+
+    ..  versionchanged:: 13.0
+        The property :confval:`select-singlebox-mm-hasUidField` is
+        obsolete. It had to be defined previously when using `multiple`.

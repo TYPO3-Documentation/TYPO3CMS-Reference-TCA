@@ -75,6 +75,9 @@ Properties of the TCA column type `select` with renderType `selectSingle`
     ..  include:: _Properties/_Behaviour.rst.txt
         :show-buttons:
 
+    ..  include:: _Properties/_DbFieldLength.rst.txt
+        :show-buttons:
+
     ..  include:: _Properties/_Default.rst.txt
         :show-buttons:
 
