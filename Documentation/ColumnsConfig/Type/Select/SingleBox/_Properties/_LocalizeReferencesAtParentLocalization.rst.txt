@@ -1,0 +1,10 @@
+
+..  confval:: localizeReferencesAtParentLocalization
+    :name: select-singlebox-localizeReferencesAtParentLocalization
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: boolean
+    :Scope: Proc.
+
+    Defines whether referenced records should be localized when the current
+    record gets localized. This only applies if references are **not** stored using
+    :confval:`select-singlebox-mm` tables.
