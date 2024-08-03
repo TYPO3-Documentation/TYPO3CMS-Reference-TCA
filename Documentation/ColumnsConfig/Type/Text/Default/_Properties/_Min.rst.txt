@@ -1,11 +1,6 @@
-.. include:: /Includes.rst.txt
-.. _columns-text-properties-min:
+..  _columns-text-properties-min:
 
-===
-min
-===
-
-.. versionadded:: 12.0
+..  versionadded:: 12.0
 
 .. confval:: min (type => text)
 

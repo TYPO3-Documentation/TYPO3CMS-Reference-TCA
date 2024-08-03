@@ -7,8 +7,15 @@ Text areas & RTE
 ================
 
 ..  contents:: Table of contents:
-    :local:
-    :depth: 1
+
+..  toctree::
+    :hidden:
+
+    Default/Index
+    RichTextEditor
+    BeLayoutWizard/Index
+    T3Editor/Index
+    TextTable/Index
 
 ..  _columns-text-introduction:
 
@@ -92,7 +99,6 @@ on how to configure such an editor.
 
 ..  include:: /CodeSnippets/Text20.rst.txt
 
-
 Text field with renderType textTable
 ====================================
 
@@ -102,12 +108,3 @@ See :ref:`render type textTable <columns-text-renderType-textTable>`
 on how to configure such an editor.
 
 ..  include:: /CodeSnippets/Text17.rst.txt
-
-..  toctree::
-    :hidden:
-
-    Properties/Index
-    Default/Index
-    BeLayoutWizard/Index
-    T3Editor/Index
-    TextTable/Index

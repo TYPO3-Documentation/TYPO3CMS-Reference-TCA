@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-text-properties-wrap:
-
-====
-wrap
-====
 
 ..  confval:: wrap
     :name: text-wrap
@@ -23,8 +18,6 @@ wrap
 
 
 Examples
-========
-
 ..  _tca_example_text_5:
 
 Textarea with no wraping

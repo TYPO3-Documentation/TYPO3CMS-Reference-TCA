@@ -1,0 +1,18 @@
+..  _columns-text-properties-cols:
+
+..  confval:: cols
+    :name: text-cols
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: integer
+    :Scope: Display
+
+    Abstract value for the width of the :code:`<textarea>` field. To set
+    the textarea to the full width of the form area, use the value 50. Default is 30.
+
+    Does not apply to RTE fields.
+
+..  rubric:: Example: A simple text editor with 20 width
+
+..  include:: /Images/Rst/Text4.rst.txt
+
+..  include:: /CodeSnippets/Text4.rst.txt

@@ -1,10 +1,5 @@
-..  include:: /Includes.rst.txt
 
 ..  _columns-text-properties-fixedFont:
-
-=========
-fixedFont
-=========
 
 ..  confval:: fixedFont
     :name: text-fixedFont
@@ -17,12 +12,7 @@ fixedFont
 
     Does not apply to RTE fields.
 
-
-Examples
-========
-
-Fixed font field with tabulators enabled
-----------------------------------------
+..  rubric:: Example: Fixed font field with tabulators enabled
 
 ..  include:: /Images/Rst/Text15.rst.txt
 
