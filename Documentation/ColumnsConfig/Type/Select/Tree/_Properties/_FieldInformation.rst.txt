@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: select-tree-fieldInformation
+
+    For details see :confval:`fieldInformation`.

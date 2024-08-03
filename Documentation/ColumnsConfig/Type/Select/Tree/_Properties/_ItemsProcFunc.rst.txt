@@ -1,0 +1,8 @@
+..  confval:: itemsProcFunc
+    :name: select-tree-itemsProcFunc
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (class->method reference)
+    :Scope: Display / Proc.
+
+    PHP method which is called to fill or manipulate the items array.
+    See :ref:`tca_property_itemsProcFunc` about details.

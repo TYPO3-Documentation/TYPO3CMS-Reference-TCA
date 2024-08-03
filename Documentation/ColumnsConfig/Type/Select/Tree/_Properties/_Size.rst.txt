@@ -1,0 +1,11 @@
+..  _columns-select-tree-properties-size:
+
+..  confval:: size
+    :name: select-tree-size
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: integer
+    :Scope: Display
+    :Default: 1
+
+    Maximal number of elements to be displayed in the tree
+    by default
