@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-text-properties-eval:
-
-====
-eval
-====
 
 ..  confval:: eval
     :name: text-eval
@@ -33,13 +28,9 @@ eval
         The keyword `null` is deprecated. Use the property
         :confval:`text-nullable` instead.
 
-Examples
-========
-
 ..  _tca_example_text_7:
 
-Trimming input
---------------
+..  rubric:: Example: Trimming input
 
 Trimming the value for white space before storing in the database:
 
@@ -47,11 +38,9 @@ Trimming the value for white space before storing in the database:
 
 ..  include:: /CodeSnippets/Text7.rst.txt
 
-
 ..  _tca_example_text_9:
 
-Custom form evaluation
-----------------------
+..  rubric:: Example: Custom form evaluation
 
 ..  include:: /Images/Rst/Text9.rst.txt
 
@@ -63,13 +52,7 @@ called for validation when saving the record:
 
 :file:`EXT:styleguide/Classes/UserFunctions/FormEngine/TypeText9Eval.php`
 
-..  include:: /CodeSnippets/Manual/TypeText9Eval.rst.txt
+..  literalinclude:: _Snippets/_TypeText9Eval.php
 
-:file:`EXT:styleguide/ext_localconf.php`:
-
-..  code-block:: php
-
-    // Register the class to be available in 'eval' of TCA
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']
-        ['TYPO3\\CMS\\Styleguide\\UserFunctions\\FormEngine\\TypeText9Eval'] = '';
-
+..  literalinclude:: _Snippets/_formevals_ext_localconf.php
+    :caption: EXT:styleguide/ext_localconf.php
