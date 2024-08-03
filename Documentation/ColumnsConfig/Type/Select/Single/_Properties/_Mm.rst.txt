@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
-..  _columns-select-properties-mm:
-
-==
-MM
-==
+..  _columns-select-single-properties-mm:
 
 ..  versionadded:: 11.4
     TCA table column fields that define :php:`['config']['MM']` can omit the
@@ -17,14 +12,14 @@ MM
     to adapt and migrate definitions if needed.
 
 ..  confval:: MM
-    :name: select-mm
+    :name: select-single-mm
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (table name)
     :Scope: Proc.
 
     This value contains the name of the table in which to store a MM relation.
     It is used together with
-    :ref:`foreign_table <columns-select-properties-foreign-table>`.
+    :confval:`select-single-foreign-table`.
 
     The database field with a MM property only stores the number of records
     in the relation.
@@ -32,37 +27,18 @@ MM
     Please have a look into the additional information
     in the :ref:`MM common property description <tca_property_MM>`.
 
+..  _tca_example_select_single_15:
 
-Related configurations
-======================
+..  rubric:: Example: Select field with foreign table via MM table
 
-..  confval:: MM_hasUidField (type => select)
+..  include:: /Images/Rst/SelectSingle15.rst.txt
 
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: boolean
-    :Scope: Proc.
+..  include:: /CodeSnippets/SelectSingle15.rst.txt
 
-    If the :ref:`multiple <tca_property_multiple>` property is set with MM
-    relations you **must** set this value to :php:`true` and include a UID field.
-    Otherwise, sorting and removing relations will be buggy.
+..  _columns-select-single-properties-mm-match-fields:
 
-
-..  confval:: MM_insert_fields (type => select)
-
-    ..  deprecated:: 12.4
-        As there is no API to retrieve these values again, having a static value
-        in an additional column is useless. Therefore, this setting is removed
-        in TYPO3 v13. :ref:`More details <ext_core:deprecation-100335-1679998903>`
-
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: array
-    :Scope: Proc.
-
-    Array of field => value pairs to insert when writing new MM relations.
-
-..  _columns-select-properties-mm-match-fields:
 ..  confval:: MM_match_fields
-    :name: select-mm-match-fields
+    :name: select-single-mm-match-fields
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display / Proc.
@@ -72,7 +48,7 @@ Related configurations
 
 
 ..  confval:: MM_opposite_field
-    :name: select-mm-opposite-field
+    :name: select-single-mm-opposite-field
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (field name)
     :Scope: Proc.
@@ -94,13 +70,13 @@ Related configurations
 
 
 ..  confval:: MM_oppositeUsage
-    :name: select-mm-oppositeUsage
+    :name: select-single-mm-oppositeUsage
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Proc.
 
     In a MM bidirectional relation using
-    :ref:`group match fields <columns-group-properties-mm-match-fields>`
+    :confval:`match fields <select-single-mm-match-fields>`
     the opposite side needs to know about the match fields for certain operations
     (for example, when a copy is created in a
     :doc:`workspace <ext_workspaces:Index>`) so that relations are carried over
@@ -112,7 +88,7 @@ Related configurations
 
 
 ..  confval:: MM_table_where
-    :name: select-mm-table-where
+    :name: select-single-mm-table-where
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (SQL WHERE)
     :Scope: Proc.
@@ -128,3 +104,14 @@ Related configurations
     The above example uses the special field quoting syntax :php:`{#...}`
     around identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as
     possible.
+
+
+..  confval:: MM_hasUidField
+    :name: select-single-mm-hasUidField
+
+    ..  versionchanged:: 13.0
+        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
+        from TCA. The :sql:`uid` column is added as primary key automatically,
+        if :php:`multiple = true` is set, otherwise a combined primary key of
+        fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually
+        :sql:`tablenames` and :sql:`fieldname` is used.

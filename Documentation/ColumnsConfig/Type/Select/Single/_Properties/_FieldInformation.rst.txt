@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: select-single-fieldInformation
+
+    For details see :confval:`fieldInformation`.

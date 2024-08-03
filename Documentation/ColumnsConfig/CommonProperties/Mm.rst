@@ -202,8 +202,7 @@ tablenames
 
 uid (auto-incremented and PRIMARY KEY)
     May be used if you need the "multiple" feature (which allows the same record to be references multiple times
-    in the box. See :ref:`MM_hasUidField <columns-select-properties-mm-hasuidfield>` for type='select' and
-    :ref:`MM_hasUidField <columns-group-properties-mm-hasuidfield>` for type='group' fields.
+    in the box. See :ref:`MM_hasUidField <columns-group-properties-mm-hasuidfield>` for type='group' fields.
 
 further fields
     May exist, in particular if :ref:`MM_match_fields <columns-select-properties-mm-match-fields>` /

@@ -58,40 +58,6 @@ items
 Examples
 ========
 
-..  _tca_example_select_single_1:
-
-Simple items definition with label and value
---------------------------------------------
-
-..  include:: /Images/Rst/SelectSingle1.rst.txt
-
-..  include:: /CodeSnippets/SelectSingle1.rst.txt
-
-
-..  _tca_example_select_single_4:
-
-Items definition with label, value and icon
--------------------------------------------
-
-A more complex example could be this (includes icons):
-
-..  include:: /Images/Rst/SelectSingle4.rst.txt
-
-..  include:: /CodeSnippets/SelectSingle4.rst.txt
-
-..  _tca_example_sys_language_uid:
-
-A typical sys_language_uid field
---------------------------------
-
-The icons can also be referenced by their identifier in the
-:ref:`Icon API<t3coreapi:icon>`
-
-..  include:: /Images/Rst/SysLanguageUid.rst.txt
-
-..  include:: /CodeSnippets/SysLanguageUid.rst.txt
-
-
 Select checkbox field with icons and descriptions
 -------------------------------------------------
 
