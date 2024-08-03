@@ -1,0 +1,14 @@
+..  _columns-select-tree-properties-items:
+
+..  confval:: items
+    :name: select-tree-items
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Display  / Proc.
+    :RenderType: all
+
+    Contains the elements for the selector box unless the property
+    :php:`foreign_table` or :php:`special` has been set in which case
+    automated values are set in addition to any values listed in this array.
+
+    For examples see also :confval:`property items of singleSelect <select-single-items>`.

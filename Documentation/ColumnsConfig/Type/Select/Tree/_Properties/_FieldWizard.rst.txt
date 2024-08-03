@@ -1,0 +1,9 @@
+..  confval:: fieldWizard
+    :name: select-tree-fieldWizard
+
+    ..  confval:: localizationStateSelector
+        :name: select-tree-fieldWizard-localizationStateSelector
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
+        :type: array
+
+        For details see :confval:`fieldWizard-localizationStateSelector`.
