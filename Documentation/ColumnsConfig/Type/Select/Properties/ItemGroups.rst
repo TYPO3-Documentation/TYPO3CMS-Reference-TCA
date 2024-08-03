@@ -137,17 +137,6 @@ SelectSingleBox field with itemGroups
 
 ..  include:: /CodeSnippets/SelectSinglebox3.rst.txt
 
-
-..  _tca_example_select_checkbox_7:
-
-SelectCheckbox field with itemGroups
-------------------------------------
-
-..  include:: /Images/Rst/SelectCheckbox7.rst.txt
-
-..  include:: /CodeSnippets/SelectCheckbox7.rst.txt
-
-
 ..  _tca_example_select_multiplesidebyside_10:
 
 Multiple side by side field with itemGroups
