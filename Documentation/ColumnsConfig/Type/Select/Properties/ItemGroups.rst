@@ -32,8 +32,13 @@ itemGroups
     Item groups can also be defined for items in
     :ref:`foreign tables <columns-select-properties-foreign-table-item-group>`.
 
-API methods
-===========
+
+..  _columns-select-properties-item-groups-api:
+
+Item group API methods
+======================
+
+..  _columns-select-properties-item-groups-api-custom:
 
 Adding custom select item groups
 --------------------------------
@@ -60,6 +65,8 @@ When adding a new select field, itemGroups should be added directly in the
 original TCA definition without using the API method. Use the API within
 :file:`TCA/Configuration/Overrides/` files to extend an existing TCA select
 field with grouping.
+
+..  _columns-select-properties-item-groups-api-attach:
 
 Attaching select items to item groups
 -------------------------------------

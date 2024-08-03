@@ -67,4 +67,3 @@ fieldWizard
     DefaultLanguageDifferences
     LocalizationStateSelector
     OtherLanguageContent
-    SelectIcons

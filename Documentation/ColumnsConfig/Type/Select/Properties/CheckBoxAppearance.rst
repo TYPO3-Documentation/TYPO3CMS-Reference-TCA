@@ -10,7 +10,6 @@ appearance - selectCheckBox
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display
-    :RenderType: :ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`
 
     Options for refining the appearance of `selectCheckBox` fields.
 
