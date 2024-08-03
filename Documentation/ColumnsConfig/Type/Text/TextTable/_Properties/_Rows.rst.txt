@@ -3,9 +3,6 @@
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer
     :Scope: Display
-    :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,
-        :ref:`codeEditor <columns-text-renderType-codeEditor>`,
-        :ref:`default <columns-text-renderType-default>`
 
     The number of rows in the textarea. May be corrected for harmonization between browsers. Will also
     automatically be increased if the content in the field is found to be of a certain length, thus the

@@ -20,12 +20,6 @@ to textarea fields, for several languages.
 Example: Code highlighting with code editor
 ===========================================
 
-..  figure:: /Images/ManualScreenshots/Codeeditor.png
-    :alt: Code editor with highlighting HTML
-    :class: with-shadow
-
-    Code editor with highlighting HTML
-
 ..  literalinclude:: _Snippets/_Format.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_domain_model_mytable.php
 
