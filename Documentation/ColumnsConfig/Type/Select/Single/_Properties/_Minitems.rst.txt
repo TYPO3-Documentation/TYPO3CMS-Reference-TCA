@@ -1,0 +1,8 @@
+..  confval:: minitems
+    :name: select-single-minitems
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: integer > 0
+    :Scope: Display
+
+    Minimum number of child items. Defaults to 0. JavaScript record validation
+    prevents the record from being saved if the limit is not satisfied.

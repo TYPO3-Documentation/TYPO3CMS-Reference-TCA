@@ -1,12 +1,7 @@
-..  include:: /Includes.rst.txt
-..  _columns-select-properties-items:
-
-=====
-items
-=====
+..  _columns-select-single-properties-items:
 
 ..  confval:: items
-    :name: select-items
+    :name: select-single-items
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
     :Scope: Display  / Proc.
@@ -45,7 +40,7 @@ items
         *  The special value `--div--` was used to insert a non-selectable
             value that appears as a divider label in the selector box. It is kept
             for backwards-compatible reasons. Use :ref:`item groups
-            <columns-select-properties-item-groups>` for custom selects instead.
+            <columns-select-single-properties-item-groups>` for custom selects instead.
         *  Values must not contain `,` (comma) and `|` (vertical bar). If you want to use :php:`authMode`, you should
             also refrain from using `:` (colon).
 
@@ -55,34 +50,37 @@ items
         :ref:`selicon-field<ctrl-reference-selicon-field>` is respected.
 
     group (string)
-        The key of the :ref:`item group <columns-select-properties-item-groups>`.
+        The key of the :ref:`item group <columns-select-single-properties-item-groups>`.
 
     description (string or array)
         Fifth value is an optional description text. This is only shown when the list is shown
         with `renderType='selectCheckBox'`.
 
-..  note::
+    ..  note::
 
         When having a zero as :php:`value` and the field is of type :code:`int(10)` in the database, make sure to define
-        the :ref:`default value <columns-select-properties-default>` as well in TCA: :php:`'default' => 0`. Otherwise
+        the :ref:`default value <columns-select-single-properties-default>` as well in TCA: :php:`'default' => 0`. Otherwise
         issues may arise, e.g. with MySQL strict mode.
 
+..  _tca_example_select_single_1:
 
-Examples
-========
+..  rubric:: Example: Simple items definition with label and value
 
-Select checkbox field with icons and descriptions
--------------------------------------------------
+..  include:: /Images/Rst/SelectSingle1.rst.txt
 
-Descriptions are only displayed in render type `selectCheckbox`.
+..  include:: /CodeSnippets/SelectSingle1.rst.txt
 
-..  include:: /Images/Rst/SelectCheckbox3.rst.txt
+..  _tca_example_select_single_4:
 
-..  include:: /CodeSnippets/SelectCheckbox3.rst.txt
+..  rubric:: Example: Items definition with label, value and icon
 
+A more complex example could be this (includes icons):
 
-SelectSingle field with itemGroups
------------------------------------
+..  include:: /Images/Rst/SelectSingle4.rst.txt
+
+..  include:: /CodeSnippets/SelectSingle4.rst.txt
+
+..  rubric:: Example: SelectSingle field with itemGroups
 
 A select single field of size 6 with 3 item groups and one item without group.
 

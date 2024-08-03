@@ -1,0 +1,11 @@
+..  _columns-select-single-properties-default:
+
+..  confval:: default
+    :name: select-single-default
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Display  / Proc.
+    :RenderType: all
+
+    Default value set if a new record is created. If empty, the first element in
+    the items array is selected.

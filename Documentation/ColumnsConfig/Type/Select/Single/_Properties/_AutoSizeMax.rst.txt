@@ -1,0 +1,17 @@
+
+..  confval:: autoSizeMax
+    :name: select-single-autoSizeMax
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: integer
+    :Scope: Display
+
+    The maximum size (height) of the select field.
+
+    The size of the select field will be automatically adjusted based on
+    the number of selected items. The select field will never be smaller than
+    the specified :confval:`size <select-single-size>` and never larger than
+    the value of `autoSizeMax`.
+
+    ..  note::
+        Only has an effect if :confval:`maxitems <select-single-maxitems>` is
+        greater than 1.
