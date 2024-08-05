@@ -1,0 +1,85 @@
+..  confval:: addRecord
+    :name: select-byside-fieldControl-addRecord
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
+    :type: array
+    :Scope: fieldControl
+    :Types: :ref:`group <columns-group>`
+
+    Control button to directly add a related record. Leaves the current
+    view and opens a new form to add a new record. On 'Save and close', the
+    record is directly selected.
+
+    ..  note::
+        The add record control is disabled by default, enable it with
+        :confval:`select-byside-fieldControl-addRecord-disabled`.
+
+    ..  confval:: disabled
+        :name: select-byside-fieldControl-addRecord-disabled
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
+        :type: boolean
+        :Scope: fieldControl -> addRecord
+        :Default: true
+
+        Disables the field control. Needs to be set to :php:`false` to enable the
+        :guilabel:`Create new` button
+
+    ..  confval:: options
+        :name: select-byside-fieldControl-addRecord-options
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']
+
+        ..  confval:: pid
+            :name: select-byside-fieldControl-addRecord-options-pid
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['pid']
+            :type: string
+            :Scope: fieldControl -> addRecord
+            :Values: marker or an integer
+            :Default: ###CURRENT_PID###
+
+            pid of the new record. Can be an hard pid setting, or one of these markers,
+            see :ref:`select foreign_table_where
+            <columns-select-properties-foreign-table-where>`.
+
+            Falls back to "current pid" if not set, forces pid=0 if records of this
+            table are only allowed on root level.
+
+            -  :code:`###CURRENT_PID###`
+            -  :code:`###THIS_UID###`
+            -  :code:`###SITEROOT###`
+
+        ..  confval:: title
+            :name: select-byside-fieldControl-addRecord-options-title
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['title']
+            :type: string
+            :Values: string or LLL reference
+            :Default: LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.createNew
+
+            Allows to set a different 'title' attribute to the popup icon.
+
+        ..  confval:: setValue
+            :name: select-byside-fieldControl-addRecord-options-setValue
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['setValue']
+            :type: string
+            :Values: string
+            :Default: append
+
+            Can be one of 'set', 'prepend' or 'append'. With 'set' the given selection
+            is substituted with the new record, 'prepend' adds the new record on top of
+            the list, 'append' adds it at the bottom.
+
+..  _tca_example_select_multiplesidebyside_1:
+
+..  rubric:: Example: Multiple sidebyside select field with "Add record" enabled
+
+..  include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
+
+..  include:: /CodeSnippets/SelectMultiplesidebyside1.rst.txt
+
+..  rubric:: Example: Select field with options
+
+The field controls are also used in the core. The following example is from
+the table :sql:`be_groups`:
+
+..  include:: /Images/Rst/FileMountpoints.rst.txt
+
+..  include:: /CodeSnippets/FileMountpoints.rst.txt
+

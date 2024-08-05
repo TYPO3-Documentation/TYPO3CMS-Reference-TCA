@@ -1,0 +1,9 @@
+
+..  confval:: exclusiveKeys
+    :name: select-byside-exclusiveKeys
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (list of)
+    :Scope: Display  / Proc.
+
+    List of keys that exclude any other keys in a select box where multiple
+    items could be selected.
