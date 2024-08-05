@@ -1,0 +1,4 @@
+..  confval:: fieldInformation
+    :name: select-checkbox-fieldInformation
+
+    For details see :confval:`fieldInformation`.
