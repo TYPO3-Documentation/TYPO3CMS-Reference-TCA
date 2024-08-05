@@ -1,0 +1,59 @@
+..  include:: /Includes.rst.txt
+..  _tca_property_fieldControl_editPopup:
+
+=========
+editPopup
+=========
+
+..  confval:: editPopup
+    :name: select-byside-fieldControl-editPopup
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
+    :type: array
+    :Scope: fieldControl
+
+    The edit popup field control shows a pencil icon to edit an element directly
+    in a popup window.
+
+    When a record is selected and the edit button is clicked, that record opens
+    in a new window for modification.
+
+    ..  note::
+        The edit popup control is pre-configured, but disabled by default.
+
+    ..  confval:: disabled
+        :name: select-byside-fieldControl-editPopup-disabled
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
+        :type: boolean
+        :Scope: fieldControl -> editPopup
+        :Default: true
+
+        Disables the field control. Needs to be set to :php:`false` to enable the
+        :guilabel:`Create new` button
+
+    ..  confval:: options
+        :name: select-byside-fieldControl-editPopup-options-title
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']
+
+        ..  confval:: title
+            :name: select-byside-fieldControl-editPopup-options-title
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['title']
+            :type: string
+            :Values: string or LLL reference
+            :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.edit
+
+            Allows to set a different 'title' attribute to the popup icon.
+
+        ..  confval:: windowOpenParameters
+            :name: select-byside-fieldControl-editPopup-options-windowOpenParameters
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['windowOpenParameters']
+            :type: string
+            :Values: string or LLL reference
+            :Default: height=800,width=600,status=0,menubar=0,scrollbars=1
+
+            Allows to set a different size of the popup, defaults
+
+..  rubric:: Example: Multiple side-by-side select with edit popup
+
+..  include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
+
+..  include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt

@@ -1,0 +1,71 @@
+..  _columns-select-byside-properties-filefolder:
+..  _columns-select-byside-properties-fileFolderConfig:
+..  _columns-select-byside-properties-fileFolderConfig.folder:
+
+..  confval:: fileFolderConfig
+    :name: select-byside-fileFolderConfig
+
+    ..  _columns-select-byside-properties-filefolder-extlist:
+    ..  _columns-select-byside-properties-fileFolderConfig-allowedExtensions:
+
+    ..  confval:: allowedExtensions
+        :name: select-byside-fileFolderConfig-allowedExtensions
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['allowedExtensions']
+        :type: string
+        :Scope: Display  / Proc.
+
+        List of file extensions to select. If blank, all files are selected.
+        Specify list in lowercase.
+
+        This configuration can be overridden by :ref:`Page
+        TSconfig<t3tsconfig:fileFolderConfig>`.
+
+    ..  _columns-select-byside-properties-filefolder-recursions:
+    ..  _columns-select-byside-properties-fileFolderConfig-depth:
+
+    ..  confval:: depth
+        :name: select-byside-fileFolderConfig-depth
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['depth']
+        :type: integer
+        :Scope: Display  / Proc.
+        :RenderType: all
+
+        Depth of directory recursions. Default is 99. Specify in range from 0-99. 0
+        (zero) means no recursion into subdirectories. Only useful in combination
+        with property :confval:`select-byside-fileFolderConfig-folder`.
+
+        This configuration can be overridden by :ref:`Page
+        TSconfig<t3tsconfig:fileFolderConfig>`.
+
+
+    ..  confval:: folder
+        :name: select-byside-fileFolderConfig-folder
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['folder']
+        :type: string
+        :Scope: Display / Proc.
+
+        Specifying a folder from where files are added to the item array.
+
+        Specify the folder relative to the
+        :php:`\TYPO3\CMS\Core\Core\Environment::getPublicPath()`. See :ref:`t3coreapi:Environment-public-path` .
+        Alternatively use the prefix "EXT:" to point to an extension folder.
+
+        Files from the folder are selected recursively to the level specified by
+        :confval:`select-byside-fileFolderConfig-depth`
+        and only files of the extensions defined by
+        :confval:`select-byside-fileFolderConfig-allowedExtensions`
+        are listed in the select box.
+
+        Only the file reference relative to the :confval:`select-byside-fileFolderConfig-folder` is stored.
+
+        If the files are images (gif,png,jpg) they will be configured as icons
+        (third parameter in items array).
+
+        This configuration can be overridden by :ref:`Page
+        TSconfig<t3tsconfig:fileFolderConfig>`.
+
+    ..  rubric:: Examples: Select SVGs recursively from a folder
+
+    ..  include:: /Images/Rst/SelectSingle7.rst.txt
+
+    ..  include:: /CodeSnippets/SelectSingle7.rst.txt

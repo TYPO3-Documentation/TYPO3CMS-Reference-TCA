@@ -1,0 +1,33 @@
+..  confval:: fieldWizard
+    :name: select-byside-fieldWizard
+
+    ..  confval:: defaultLanguageDifferences
+        :name: select-byside-fieldWizard-defaultLanguageDifferences
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
+        :type: array
+
+        For details see :confval:`fieldWizard-defaultLanguageDifferences`.
+
+    ..  confval:: localizationStateSelector
+        :name: select-byside-fieldWizard-localizationStateSelector
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
+        :type: array
+
+        For details see :confval:`fieldWizard-localizationStateSelector`.
+
+    ..  confval:: otherLanguageContent
+        :name: select-byside-fieldWizard-otherLanguageContent
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
+        :type: array
+
+        For details see :confval:`fieldWizard-otherLanguageContent`.
+
+    ..  _tca_property_fieldWizard_selectIcons:
+
+    ..  confval:: selectIcons
+        :name: fieldWizard-selectIcons
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['selectIcons']
+        :type: array
+        :Scope: fieldWizard
+
+        Render thumbnails of icons below the select drop-down. Disabled by default.
