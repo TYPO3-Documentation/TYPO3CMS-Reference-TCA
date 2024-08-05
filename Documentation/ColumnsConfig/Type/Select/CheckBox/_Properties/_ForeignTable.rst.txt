@@ -1,0 +1,22 @@
+..  _columns-select-checkbox-properties-foreign-table:
+
+..  confval:: foreign_table
+    :name: select-checkbox-foreign-table
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (table name)
+    :Scope: Proc. / Display
+    :RenderType: all
+
+    The item-array will be filled with records from the table defined here.
+    The table must have a TCA definition.
+
+    The uids of the chosen records will be saved in a comma separated list
+    by default.
+
+    Use `property MM <columns-select-checkbox-properties-mm>` to store the values in an
+    intermediate MM table instead.
+
+    ..  deprecated:: 11.2
+        Usage of the `foreign_table` relation with the table `sys_language`
+        Has been deprecated. Use TCA field type called
+        :ref:`language<columns-language>` instead.

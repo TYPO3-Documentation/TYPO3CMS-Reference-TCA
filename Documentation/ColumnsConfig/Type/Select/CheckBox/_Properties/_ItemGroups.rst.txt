@@ -1,0 +1,23 @@
+..  _columns-select-checkbox-properties-item-groups:
+
+..  confval:: itemGroups
+    :name: select-checkbox-itemGroups
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: array
+    :Scope: Display  / Proc.
+    :RenderType: all
+
+    Contains an array of key-value pairs. The key contains the id of the item
+    group, the value contains the label of the item group or its language
+    reference.
+
+    Only groups containing items will be displayed. In the select field first all
+    items with no group defined are listed then the item groups in the order of
+    their definition, each group with the corresponding items.
+
+    Item groups are rendered as :html:`<optgroup>`.
+
+    Item groups can also be defined for items in
+    :confval:`foreign tables <select-checkbox-foreign-table>`.
+
+    See also :ref:`columns-select-properties-item-groups-api`
