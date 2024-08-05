@@ -1,17 +1,14 @@
+:navigation-title: Examples
+
 ..  include:: /Includes.rst.txt
 
-========
-Examples
-========
+..  _columns-select-rendertype-selectMultipleSideBySide-examples:
 
-..  _tca_example_select_multiplesidebyside_1:
+========================================================
+Advanced examples for multiple side-by-side select boxes
+========================================================
 
-Simple side-by-side select field
-================================
-
-..  include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
-
-..  include:: /CodeSnippets/SelectMultiplesidebyside1.rst.txt
+See also: `tca_example_select_multiplesidebyside_1`.
 
 ..  _tca_example_select_multiplesidebyside_5:
 

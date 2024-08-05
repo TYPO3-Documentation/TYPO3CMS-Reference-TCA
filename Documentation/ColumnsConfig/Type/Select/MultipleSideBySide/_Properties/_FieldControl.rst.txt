@@ -1,0 +1,11 @@
+..  confval:: fieldControl
+    :name: select-byside-fieldControl
+
+    ..  include:: /ColumnsConfig/Type/Select/MultipleSideBySide/_Properties/_FieldControl/_AddRecord.rst.txt
+        :show-buttons:
+
+    ..  include:: /ColumnsConfig/Type/Select/MultipleSideBySide/_Properties/_FieldControl/_EditPopup.rst.txt
+        :show-buttons:
+
+    ..  include:: /ColumnsConfig/Type/Select/MultipleSideBySide/_Properties/_FieldControl/_ResetSelection.rst.txt
+        :show-buttons:
