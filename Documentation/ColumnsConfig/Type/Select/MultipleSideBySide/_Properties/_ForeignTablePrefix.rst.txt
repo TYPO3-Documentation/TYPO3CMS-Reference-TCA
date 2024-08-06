@@ -8,9 +8,3 @@
     :RenderType: all
 
     Label prefix to the title of the records from the foreign-table.
-
-..  rubric:: Example: Select single field with foreign_prefix and foreign_where
-
-..  include:: /Images/Rst/SelectSingle3.rst.txt
-
-..  include:: /CodeSnippets/SelectSingle3.rst.txt
