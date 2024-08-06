@@ -19,15 +19,3 @@
         Usage of the `foreign_table` relation with the table `sys_language`
         Has been deprecated. Use TCA field type called
         :ref:`language<columns-language>` instead.
-
-..  rubric:: Example: Select singe field with enabled selectIcons
-
-..  include:: /Images/Rst/SelectSingle12.rst.txt
-
-..  include:: /CodeSnippets/SelectSingle12.rst.txt
-
-..  rubric:: Example: Select field with foreign table via MM table
-
-..  include:: /Images/Rst/SelectSingle15.rst.txt
-
-..  include:: /CodeSnippets/SelectSingle15.rst.txt

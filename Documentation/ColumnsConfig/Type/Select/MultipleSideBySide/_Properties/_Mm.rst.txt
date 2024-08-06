@@ -27,14 +27,6 @@
     Please have a look into the additional information
     in the :ref:`MM common property description <tca_property_MM>`.
 
-..  _tca_example_select_single_15:
-
-..  rubric:: Example: Select field with foreign table via MM table
-
-..  include:: /Images/Rst/SelectSingle15.rst.txt
-
-..  include:: /CodeSnippets/SelectSingle15.rst.txt
-
 ..  _columns-select-byside-properties-mm-match-fields:
 
 ..  confval:: MM_match_fields

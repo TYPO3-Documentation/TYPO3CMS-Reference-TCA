@@ -1,4 +1,3 @@
-..  _tca_property_fieldControl_resetSelection:
 
 ..  confval:: resetSelection
     :name: select-byside-fieldControl-resetSelection
