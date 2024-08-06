@@ -63,9 +63,3 @@
 
         This configuration can be overridden by :ref:`Page
         TSconfig<t3tsconfig:fileFolderConfig>`.
-
-    ..  rubric:: Examples: Select SVGs recursively from a folder
-
-    ..  include:: /Images/Rst/SelectSingle7.rst.txt
-
-    ..  include:: /CodeSnippets/SelectSingle7.rst.txt

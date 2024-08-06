@@ -66,8 +66,6 @@
             is substituted with the new record, 'prepend' adds the new record on top of
             the list, 'append' adds it at the bottom.
 
-..  _tca_example_select_multiplesidebyside_1:
-
 ..  rubric:: Example: Multiple sidebyside select field with "Add record" enabled
 
 ..  include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt

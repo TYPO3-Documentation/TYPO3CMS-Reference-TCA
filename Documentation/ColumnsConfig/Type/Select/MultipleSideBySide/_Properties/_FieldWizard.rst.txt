@@ -22,10 +22,8 @@
 
         For details see :confval:`fieldWizard-otherLanguageContent`.
 
-    ..  _tca_property_fieldWizard_selectIcons:
-
     ..  confval:: selectIcons
-        :name: fieldWizard-selectIcons
+        :name: select-byside-fieldWizard-selectIcons
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['selectIcons']
         :type: array
         :Scope: fieldWizard
