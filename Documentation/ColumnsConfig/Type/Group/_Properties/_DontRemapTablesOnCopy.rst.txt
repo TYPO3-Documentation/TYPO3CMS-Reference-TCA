@@ -1,3 +1,5 @@
+..  _tca_property_dontRemapTablesOnCopy:
+
 ..  confval:: dontRemapTablesOnCopy
     :name: group-dontRemapTablesOnCopy
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
