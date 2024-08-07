@@ -1,3 +1,5 @@
+..  _tca_property_softref:
+
 ..  confval:: softref
     :name: input-softref
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']

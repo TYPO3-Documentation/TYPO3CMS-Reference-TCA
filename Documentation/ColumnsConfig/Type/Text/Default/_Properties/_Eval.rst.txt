@@ -22,7 +22,7 @@
 
     ..  deprecated:: 12.0
         The keyword `required` is deprecated. Use the common property
-        :confval:`required` instead.
+        :confval:`text-required` instead.
 
     ..  deprecated:: 12.0
         The keyword `null` is deprecated. Use the property

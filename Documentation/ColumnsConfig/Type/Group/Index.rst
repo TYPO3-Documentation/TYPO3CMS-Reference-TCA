@@ -105,6 +105,9 @@ Properties of the TCA column type `group`
     ..  include:: _Properties/_HideSuggest.rst.txt
         :show-buttons:
 
+    ..  include:: _Properties/_LocalizeReferencesAtParentLocalization.rst.txt
+        :show-buttons:
+
     ..  include:: _Properties/_Maxitems.rst.txt
         :show-buttons:
 
@@ -112,6 +115,9 @@ Properties of the TCA column type `group`
         :show-buttons:
 
     ..  include:: _Properties/_Mm.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_Multiple.rst.txt
         :show-buttons:
 
     ..  include:: _Properties/_PrependTname.rst.txt

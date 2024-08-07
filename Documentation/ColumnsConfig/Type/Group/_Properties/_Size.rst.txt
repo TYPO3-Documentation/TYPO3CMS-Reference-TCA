@@ -1,4 +1,5 @@
 ..  _columns-group-properties-size:
+..  _tca_property_size:
 
 ..  confval:: size
     :name: group-size
