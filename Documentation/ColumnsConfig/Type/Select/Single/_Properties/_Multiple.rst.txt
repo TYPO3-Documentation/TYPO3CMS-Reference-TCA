@@ -9,6 +9,5 @@
     If used with bidirectional MM relations it must be set for both the native
     and foreign field configuration.
 
-    ..  versionchanged:: 13.0
-        The property :confval:`select-single-mm-hasUidField` is
-        obsolete. It had to be defined previously when using `multiple`.
+    The property :confval:`select-single-mm-hasUidField` has to be defined when
+    using `multiple`.

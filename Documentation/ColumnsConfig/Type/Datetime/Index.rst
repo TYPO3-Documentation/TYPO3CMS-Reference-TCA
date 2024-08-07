@@ -16,14 +16,6 @@ Datetime
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-..  versionchanged:: 13.0
-    The database type has changed from :sql:`int signed` to :sql:`bigint signed`
-    when the field is auto-generated (with the exception of the columns
-    :sql:`tstamp`, :sql:`crdate`, :sql:`starttime`, :sql:`endtime` that
-    still use :sql:`int signed`).
-    This allows to store dates from some million years ago to far into the
-    future.
-
 The TCA type :php:`datetime` should be used to input values representing a
 date time or datetime.
 

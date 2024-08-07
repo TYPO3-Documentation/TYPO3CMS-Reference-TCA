@@ -97,13 +97,11 @@
     around identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as
     possible.
 
-
 ..  confval:: MM_hasUidField
     :name: select-singlebox-mm-hasUidField
+    :type: boolean
+    :Scope: Proc.
 
-    ..  versionchanged:: 13.0
-        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
-        from TCA. The :sql:`uid` column is added as primary key automatically,
-        if :php:`multiple = true` is set, otherwise a combined primary key of
-        fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually
-        :sql:`tablenames` and :sql:`fieldname` is used.
+    If the "multiple" feature is used with MM relations you **must** set this value
+    to true and include a UID field.
+    Otherwise sorting and removing relations will be buggy.
