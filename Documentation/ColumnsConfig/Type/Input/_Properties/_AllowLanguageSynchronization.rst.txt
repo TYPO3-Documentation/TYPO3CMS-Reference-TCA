@@ -1,3 +1,5 @@
+..  _tca_property_behaviour_allowLanguageSynchronization:
+
 ..  confval:: behaviour
     :name: input-behaviour
 

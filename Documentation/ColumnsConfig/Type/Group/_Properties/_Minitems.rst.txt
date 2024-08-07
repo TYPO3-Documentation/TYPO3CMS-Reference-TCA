@@ -1,3 +1,4 @@
+..  _tca_property_minitems:
 ..  confval:: minitems
     :name: group-minitems
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
