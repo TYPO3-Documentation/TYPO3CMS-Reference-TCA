@@ -1,3 +1,4 @@
+..  _columns-select-properties-foreign-table-where:
 ..  _columns-select-single-properties-foreign-table-where:
 
 ..  confval:: foreign_table_where

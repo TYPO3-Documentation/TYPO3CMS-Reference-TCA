@@ -1,5 +1,3 @@
-..  _columns-select-checkbox-properties-foreign-table-prefix:
-
 ..  confval:: foreign_table_prefix
     :name: select-checkbox-foreign-table-prefix
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']

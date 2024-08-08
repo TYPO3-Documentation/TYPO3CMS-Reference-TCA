@@ -1,47 +1,16 @@
 ..  include:: /Includes.rst.txt
+
 ..  _columns-select-properties-item-groups:
-
-==========
-itemGroups
-==========
-
-..  confval:: itemGroups
-    :name: select-itemGroups
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: array
-    :Scope: Display  / Proc.
-    :RenderType: all
-
-    Contains an array of key-value pairs. The key contains the id of the item
-    group, the value contains the label of the item group or its language
-    reference.
-
-    Only groups containing items will be displayed. In the select field first all
-    items with no group defined are listed then the item groups in the order of
-    their definition, each group with the corresponding items.
-
-    In the renderType `selectSingle` item groups are rendered as
-    :html:`<optgroup>`.
-
-    In the renderType `selectCheckbox` the groups are displayed as accordions
-    containing the check boxes.
-
-    In other renderTypes a non-selectable item with the
-    group name gets displayed.
-
-    Item groups can also be defined for items in
-    :ref:`foreign tables <columns-select-properties-foreign-table-item-group>`.
-
-
 ..  _columns-select-properties-item-groups-api:
 
+======================
 Item group API methods
 ======================
 
 ..  _columns-select-properties-item-groups-api-custom:
 
 Adding custom select item groups
---------------------------------
+================================
 
 Registration of a select item group takes place in
 :file:`Configuration/TCA/tx_mytable.php` for new TCA tables, and in
@@ -69,7 +38,7 @@ field with grouping.
 ..  _columns-select-properties-item-groups-api-attach:
 
 Attaching select items to item groups
--------------------------------------
+=====================================
 
 Using the API method :php:`ExtensionManagementUtility::addTcaSelectItem` a
 a fourth parameter in the array can be used to specify the id of the item
@@ -88,6 +57,9 @@ group.
         ]
     );
 
+
+..  _columns-select-properties-item-groups-history:
+
 History
 =======
 
@@ -103,45 +75,3 @@ adding item groups caused tedious work for developers or integrators.
 Grouping can now be configured on a per-item
 basis. Custom groups can be added via an API or when defining TCA for a new
 table.
-
-
-Examples
-========
-
-..  _tca_example_select_single_16:
-
-SelectSingle field with itemGroups
-----------------------------------
-
-..  include:: /Images/Rst/SelectSingle16.rst.txt
-
-..  include:: /CodeSnippets/SelectSingle16.rst.txt
-
-
-..  _tca_example_select_single_17:
-
-SelectSingle field with itemGroups, size=6
-------------------------------------------
-
-..  include:: /Images/Rst/SelectSingle17.rst.txt
-
-..  include:: /CodeSnippets/SelectSingle17.rst.txt
-
-
-..  _tca_example_select_singlebox_3:
-
-SelectSingleBox field with itemGroups
--------------------------------------
-
-..  include:: /Images/Rst/SelectSinglebox3.rst.txt
-
-..  include:: /CodeSnippets/SelectSinglebox3.rst.txt
-
-..  _tca_example_select_multiplesidebyside_10:
-
-Multiple side by side field with itemGroups
--------------------------------------------
-
-..  include:: /Images/Rst/SelectMultiplesidebyside10.rst.txt
-
-..  include:: /CodeSnippets/SelectMultiplesidebyside10.rst.txt

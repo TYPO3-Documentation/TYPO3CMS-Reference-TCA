@@ -1,3 +1,6 @@
+..  _columns-select-properties-allownonidvalues:
+..  _columns-selectSingle-properties-allownonidvalues:
+
 ..  confval:: allowNonIdValues
     :name: select-single-allowNonIdValues
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
