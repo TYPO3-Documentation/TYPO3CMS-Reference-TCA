@@ -1,3 +1,5 @@
+..  _columns-select-properties-itemsprocfunc:
+
 ..  confval:: itemsProcFunc
     :name: select-single-itemsProcFunc
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
