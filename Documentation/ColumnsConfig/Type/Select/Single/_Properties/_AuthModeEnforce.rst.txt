@@ -1,4 +1,4 @@
-
+..  _columns-select-properties-authmode-enforce:
 ..  _columns-select-single-properties-authmode-enforce:
 
 ..  versionchanged:: 12.0

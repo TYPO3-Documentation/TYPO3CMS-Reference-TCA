@@ -1,4 +1,5 @@
 ..  _columns-select-single-properties-mm:
+..  _columns-select-properties-mm:
 
 ..  versionadded:: 11.4
     TCA table column fields that define :php:`['config']['MM']` can omit the
@@ -36,6 +37,7 @@
 ..  include:: /CodeSnippets/SelectSingle15.rst.txt
 
 ..  _columns-select-single-properties-mm-match-fields:
+..  _columns-select-properties-mm-match-fields:
 
 ..  confval:: MM_match_fields
     :name: select-single-mm-match-fields

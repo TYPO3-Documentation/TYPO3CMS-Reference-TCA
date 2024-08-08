@@ -49,10 +49,10 @@ The following renderTypes are available:
 ..  toctree::
     :hidden:
 
-    Properties/Index
     Single/Index
     SingleBox/Index
     CheckBox/Index
     MultipleSideBySide/Index
     Tree/Index
+    Properties/Index
 

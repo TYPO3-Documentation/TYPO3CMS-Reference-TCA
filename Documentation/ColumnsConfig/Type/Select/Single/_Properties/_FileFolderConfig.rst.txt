@@ -1,3 +1,5 @@
+..  _columns-select-properties-filefolder:
+..  _columns-select-properties-fileFolderConfig:
 ..  _columns-select-single-properties-filefolder:
 ..  _columns-select-single-properties-fileFolderConfig:
 ..  _columns-select-single-properties-fileFolderConfig.folder:

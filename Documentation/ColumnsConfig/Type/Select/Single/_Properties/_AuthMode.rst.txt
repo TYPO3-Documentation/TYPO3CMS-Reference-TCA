@@ -1,3 +1,4 @@
+..  _columns-select-properties-authmode:
 ..  _columns-select-single-properties-authmode:
 
 ..  confval:: authMode

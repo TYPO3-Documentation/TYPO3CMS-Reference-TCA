@@ -103,6 +103,9 @@ Properties of the TCA column type `select` with renderType `selectMultipleSideBy
     ..  include:: _Properties/_Multiple.rst.txt
         :show-buttons:
 
+    ..  include:: _Properties/_MultiSelectFilterItems.rst.txt
+        :show-buttons:
+
     ..  include:: _Properties/_ReadOnly.rst.txt
         :show-buttons:
 

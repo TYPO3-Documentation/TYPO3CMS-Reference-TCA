@@ -1,3 +1,4 @@
+..  _columns-select-properties-foreign-table-prefix:
 ..  _columns-select-single-properties-foreign-table-prefix:
 
 ..  confval:: foreign_table_prefix
