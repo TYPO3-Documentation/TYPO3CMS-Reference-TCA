@@ -1,3 +1,4 @@
+..  _columns-select-properties-foreign-table:
 ..  _columns-select-single-properties-foreign-table:
 
 ..  confval:: foreign_table

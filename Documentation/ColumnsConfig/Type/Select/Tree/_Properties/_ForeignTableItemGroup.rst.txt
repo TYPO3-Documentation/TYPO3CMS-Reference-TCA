@@ -1,0 +1,14 @@
+..  confval:: foreign_table_item_group
+    :name: select-checkbox-foreign-table-item-group
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string (column name)
+    :Scope: Proc. / Display
+
+    ..  versionadded:: 13.0
+
+    This property references a specific field in the
+    :ref:`foreign table <columns-select-properties-foreign-table>`, which
+    holds an :ref:`item group <columns-select-properties-item-groups>`
+    identifier.
+
+    See also :confval:`select-foreign-table-item-group`.

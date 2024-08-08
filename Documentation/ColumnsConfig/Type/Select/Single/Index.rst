@@ -99,6 +99,9 @@ Properties of the TCA column type `select` with renderType `selectSingle`
     ..  include:: _Properties/_ForeignTable.rst.txt
         :show-buttons:
 
+    ..  include:: _Properties/_ForeignTableItemGroup.rst.txt
+        :show-buttons:
+
     ..  include:: _Properties/_ForeignTablePrefix.rst.txt
         :show-buttons:
 
@@ -130,4 +133,7 @@ Properties of the TCA column type `select` with renderType `selectSingle`
         :show-buttons:
 
     ..  include:: _Properties/_Size.rst.txt
+        :show-buttons:
+
+    ..  include:: _Properties/_SortItems.rst.txt
         :show-buttons:
