@@ -45,6 +45,9 @@ Properties of the TCA column type `text`, render type `t3editor`
     ..  include:: _Properties/_FieldWizard.rst.txt
         :show-buttons:
 
+    ..  include:: _Properties/_Format.rst.txt
+        :show-buttons:
+
     ..  include:: _Properties/_ReadOnly.rst.txt
         :show-buttons:
 
