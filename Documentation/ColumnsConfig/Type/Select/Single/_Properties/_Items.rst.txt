@@ -25,11 +25,6 @@
 
     See also :ref:`Add content elements to the Content Element Wizard <t3coreapi:content-element-wizard>`.
 
-    ..  deprecated:: 12.3
-
-        Using the numerical indexes 0 - 4 is deprecated. Use the newly introduced
-        keys.
-
     Each element in this array is in itself an associative array.
 
     label (string or LLL reference)

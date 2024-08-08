@@ -8,6 +8,9 @@ textTable
 This page describes the :ref:`text <columns-text>` type with the
 :php:`renderType='textTable'`.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 The textTable render type triggers a view called "table wizard" to
 manage the frontend table display in the backend. It is used for the "Table"
 tt_content content element.

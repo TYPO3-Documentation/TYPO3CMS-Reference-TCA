@@ -36,14 +36,6 @@ documented here for TCA. The limitations are:
     when used. Note this only applies to FlexForm sections, not general
     FlexForm usage.
 
-..  _columns-flex-tceforms:
-
-..  versionchanged:: 12.0
-    The superfluous array key `TCEforms` was removed and is not evaluated
-    anymore. Its sole purpose was to wrap real TCA definitions.
-
-    The tag `TCEforms` **should** be removed upon dropping TYPO3 v11 support.
-
 The tables below documents the extension elements:
 
 

@@ -1,7 +1,5 @@
 ..  _columns-text-properties-min:
 
-..  versionadded:: 12.0
-
 ..  confval:: min
     :name: text-min
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']

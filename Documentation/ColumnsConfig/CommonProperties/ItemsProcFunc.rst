@@ -26,9 +26,6 @@ itemsProcFunc
 Passed parameters
 =================
 
-..  versionadded:: 12.4.10
-    The parameters :php:`effectivePid` and :php:`site` have been added.
-
 *  :php:`items` (passed by reference)
 *  :php:`config` (TCA config of the field)
 *  :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsconfig:itemsProcFunc>`)

@@ -8,6 +8,9 @@ Select multiple values (selectSingleBox)
 This page describes the :ref:`select <columns-select>` type with
 renderType='selectSingleBox'.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 ..  note::
 
     The name is misleading. This is a renderType which allows you to select
@@ -41,9 +44,6 @@ Properties of the TCA column type `select` with renderType `selectSingleBox`
         :show-buttons:
 
     ..  include:: _Properties/_AuthMode.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AuthModeEnforce.rst.txt
         :show-buttons:
 
     ..  include:: _Properties/_AutoSizeMax.rst.txt

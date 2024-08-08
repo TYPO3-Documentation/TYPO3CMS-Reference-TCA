@@ -9,9 +9,6 @@
     Has information about the appearance, namely:
 
     allowedOptions (array)
-        ..  versionadded:: 12.0
-            Formerly known as `blindLinkFields` of `linkPopup.options`, which was a deny-list.
-            Now this is an include-list.
 
         Display certain options in the link browser.
         To allow all options in the Link Browser, skip this configuration or set
@@ -55,8 +52,6 @@
                 'allowedOptions' => [],
             ],
 
-        ..  versionadded:: 12.3
-
         For custom email links, the options can be restricted:
 
         body
@@ -78,8 +73,6 @@
             ],
 
     allowedExtensions (array)
-        ..  versionadded:: 12.0
-            Formerly known as `allowedExtensions` of `linkPopup.options`.
 
         An array of allowed file extensions. To allow all extensions, skip this
         configuration or set it to :php:`['*']`. It's not possible to deny all
@@ -101,8 +94,6 @@
 
 
     browserTitle (string, LLL)
-        ..  versionadded:: 12.0
-            Formerly known as `title` of `linkPopup.options`.
 
         Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
 
@@ -121,8 +112,6 @@
             ],
 
     enableBrowser (boolean)
-        ..  versionadded:: 12.0
-            Formerly known as `disabled` of `linkPopup`.
 
         The Link Browser is enabled by default.
         To disable the Link Browser altogether, set this option to :php:`false`.

@@ -1,19 +1,5 @@
 ..  _columns-link-properties-allowedTypes:
 
-..  versionadded:: 12.0
-    Instead of the former exclude list :php:`blindLinkOptions` of :php:`linkPopup.options`,
-    the type :php:`link` uses now include lists. Those lists are furthermore no
-    longer comma separated, but PHP arrays, with each option as a separate value.
-
-    The replacement for the previously used :php:`blindLinkOptions` option is the
-    :php:`allowedTypes` configuration. The :php:`allowedTypes` configuration is
-    also evaluated in the :php:`DataHandler`, preventing the user from adding
-    links of non-allowed types.
-
-    To allow all link types, skip the :php:`allowedTypes` configuration or set
-    it to :php:`['*']`. It's not possible to deny all types.
-
-
 ..  confval:: allowedTypes
     :name: link-allowedTypes
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']

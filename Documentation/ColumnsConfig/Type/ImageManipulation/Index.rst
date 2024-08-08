@@ -15,6 +15,9 @@ Image manipulation
 The type "imageManipulation" generates a button showing an image cropper in the backend for image files.
 It is typically only used in FAL relations. The crop information is stored as an JSON array into the field.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 ..  contents::
 
 ..  _columns-imageManipulation-examples:

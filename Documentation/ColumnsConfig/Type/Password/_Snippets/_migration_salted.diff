@@ -1,8 +1,0 @@
-  'password_field' => [
-      'label' => 'Password',
-      'config' => [
--         'type' => 'input',
--         'eval' => 'trim,password,saltedPassword',
-+         'type' => 'password',
-      ],
-  ],

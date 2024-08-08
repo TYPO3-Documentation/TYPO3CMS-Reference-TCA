@@ -10,6 +10,9 @@ This page describes the :ref:`select <columns-select>` type with
 renderType='selectCheckBox'. For differences to `type="check"` see
 :ref:`selectCheckBox-check-compared`.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 ..  contents:: Table of contents
 
 ..  toctree::
@@ -57,9 +60,6 @@ Properties of the TCA column type `select` with renderType `selectCheckBox`
         :show-buttons:
 
     ..  include:: _Properties/_AuthMode.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AuthModeEnforce.rst.txt
         :show-buttons:
 
     ..  include:: _Properties/_AutoSizeMax.rst.txt
