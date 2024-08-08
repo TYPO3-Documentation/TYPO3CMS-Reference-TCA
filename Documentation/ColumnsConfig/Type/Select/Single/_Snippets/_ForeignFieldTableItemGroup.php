@@ -9,7 +9,7 @@ $selectField = [
             [
                 'label' => 'static item 1',
                 'value' => 'static-1',
-                'group' => 'group1'
+                'group' => 'group1',
             ],
         ],
         'itemGroups' => [
@@ -17,6 +17,6 @@ $selectField = [
             'group2' => 'Group 2 from foreign table',
         ],
         'foreign_table' => 'tx_myextension_foreign_table',
-        'foreign_table_item_group' => 'itemgroup'
+        'foreign_table_item_group' => 'itemgroup',
     ],
 ];
