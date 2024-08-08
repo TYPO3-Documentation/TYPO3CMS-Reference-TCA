@@ -15,6 +15,9 @@ This type creates a set of radio buttons. The value is typically
 stored as integer value, each radio item has one assigned number,
 but it can be a string, too.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 ..  contents:: Table of contents
 
 ..  _columns-radio-examples:

@@ -8,6 +8,9 @@ text (multiline)
 
 This page describes the :ref:`text <columns-text>` type with no renderType (default).
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 `type='text'` without a given specific renderType either renders a simple
 `<textarea>` or a :ref:`Rich Text field <rich-text-editor-examples>` if
 :confval:`text-enableRichtext` is enabled in TCA and

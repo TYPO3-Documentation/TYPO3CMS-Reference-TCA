@@ -64,23 +64,3 @@
 
     Vendor\\Extension\\*
         User defined form evaluations.
-
-    ..  deprecated:: 12.0
-        The keyword `required` is deprecated. Use the common property
-        :confval:`input-required` instead.
-
-    ..  deprecated:: 12.0
-        The keyword `null` is deprecated. Use the property
-        :confval:`input-nullable` instead.
-
-    ..  deprecated:: 12.0
-        The keyword `email` is deprecated. Use the column type
-        :ref:`columns-email` instead.
-
-    ..  deprecated:: 12.0
-        The keyword `password` and `saltedPassword` are deprecated.
-        Use the column type :ref:`columns-password` instead.
-
-    ..  deprecated:: 12.0
-        The keywords `int` and `double2` are deprecated. Use the column
-        type :ref:`columns-number` instead.

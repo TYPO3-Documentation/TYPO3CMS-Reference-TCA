@@ -6,19 +6,16 @@
 Number
 ======
 
-..  versionadded:: 12.0
-    The TCA type :php:`number` has been introduced. It replaces the
-    :php:`eval=int` and :php:`eval=double2` options of TCA type :php:`input`.
-
 ..  versionadded:: 13.0
     When using the `number` type, TYPO3 takes care of
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-
 The TCA type :php:`number` should be used to input values representing numbers.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
 
 ..  note::
 
@@ -42,33 +39,3 @@ Properties of the TCA column type `number`
 
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-..  _columns-number-migration:
-
-Migration: from type=input to type=number
-=========================================
-
-..  _columns-number-migration-int:
-
-Migration from eval='int'
--------------------------
-
-The migration from :php:`eval='int'` to :php:`type=number`
-is done like following:
-
-..  literalinclude:: _Snippets/_migration_int.diff
-
-..  _columns-number-migration-double:
-
-Migration from eval='double2'
------------------------------
-
-The migration from :php:`eval=double2` to :php:`type=number`
-is done like following:
-
-
-..  literalinclude:: _Snippets/_migration_double.diff
-
-An automatic TCA migration is performed on the fly, migrating all occurrences
-to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error
-where code adoption has to take place.

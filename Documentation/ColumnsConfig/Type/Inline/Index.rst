@@ -6,10 +6,6 @@
 IRRE / inline
 =============
 
-..  versionchanged:: 12.0
-    Inline fields should not be used anymore to handle files.  Use the TCA
-    column type :ref:`file <columns-file>` instead.
-
 ..  versionadded:: 13.0
     When using the `inline` type, TYPO3
     :ref:`generates the correct database fields <t3coreapi:auto-generated-db-structure>`.
@@ -19,6 +15,13 @@ IRRE / inline
 Inline Relational Record Editing (IRRE) is a way of editing parent-child-relations in the backend view.
 Instead of child records already having to exist, new child records are created
 using AJAX calls (to prevent reloading the complete backend view).
+
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
+..  note::
+    Inline fields should not be used anymore to handle files.  Use the TCA
+    column type :ref:`file <columns-file>` instead.
 
 The type='inline' is a powerful element that can handle many types of relation,
 including simple :code:`1:n` and nested :code:`1:n-1:n` relations, aswell as :code:`m:n`

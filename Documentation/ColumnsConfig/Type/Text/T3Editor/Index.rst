@@ -21,6 +21,9 @@ This page describes the :ref:`text <columns-text>` type with the
 
 The :php:`renderType='codeEditor'` triggers a code highlighter.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 The code editor provides an enhanced textarea for
 :ref:`TypoScript <t3tsref:start>` input, with not only syntax highlighting, but
 also autocomplete suggestions. Beyond that the code editor makes it possible to

@@ -1,7 +1,5 @@
 ..  _columns-input-properties-min:
 
-..  versionadded:: 12.0
-
 ..  confval:: min
     :name: input-min
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']

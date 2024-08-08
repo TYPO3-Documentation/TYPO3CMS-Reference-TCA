@@ -5,10 +5,6 @@
 File
 ====
 
-..  versionadded:: 12.0
-    The type `file` supersedes the usage of TCA type :php:`inline`
-    with :php:`foreign_table` set to :php:`sys_file_reference`.
-
 ..  versionadded:: 13.0
     When using the `file` type, TYPO3 takes care of
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
@@ -16,7 +12,9 @@ File
     :file:`ext_tables.sql` file.
 
 The TCA type :php:`file` creates a field where files can be attached to
-the record.
+the record. The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 
 ..  seealso::
     :ref:`t3coreapi:fal-using-fal-examples-file-folder-get-references`
@@ -45,14 +43,3 @@ Properties of the TCA column type `file`
 
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-..  _columns-file-migration:
-
-Migration
-=========
-
-..  literalinclude:: _Snippets/_migration.diff
-
-Another example without usage of the API method would therefore look like this:
-
-..  literalinclude:: _Snippets/_migration2.diff
