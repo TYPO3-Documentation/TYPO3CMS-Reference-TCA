@@ -6,9 +6,6 @@
 Json
 ====
 
-..  versionadded:: 12.3
-    The TCA field type `json` has been added to TYPO3 Core.
-
 When using the `json` type, TYPO3 takes care of
 :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
 A developer does not need to define this field in an extension's

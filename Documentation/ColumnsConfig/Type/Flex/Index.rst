@@ -15,6 +15,9 @@ Renders a :ref:`FlexForm <t3coreapi:flexforms>` element. Essentially, this consi
 hierarchically organized set of fields which will have their values saved into a
 single field in the database, stored as XML.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 The general idea is: There is a data structure that defines which and how single
 fields should be displayed, re-using all the TCA column type possibilities. The
 actual values of single fields are then stored in an XML representation within

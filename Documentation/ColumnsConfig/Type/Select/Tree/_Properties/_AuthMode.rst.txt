@@ -7,10 +7,6 @@
     :Scope: Display  / Proc.
     :RenderType: all
 
-    ..  versionchanged:: 12.0
-        The only valid value for TCA config option :php:`authMode` is now :php:`explicitAllow`.
-        The values :php:`explicitDeny` and :php:`individual` are obsolete and no longer evaluated.
-
     Authorization mode for the selector box. The only possible option is:
 
     explicitAllow

@@ -35,9 +35,3 @@ rootLevel
         To enable the creation of records on any kind of page,
         :ref:`ignorePageTypeRestriction <ctrl-security-ignorePageTypeRestriction>`
         must be used.
-
-        ..  versionchanged:: 12.0
-            Before TYPO3 v12.0 the PHP API call
-            :php:`ExtensionManagementUtility::allowTableOnStandardPages()` must be
-            used (instead of :php:`ignorePageTypeRestriction`) which was found
-            in :file:`ext_tables.php` files.

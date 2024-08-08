@@ -27,8 +27,8 @@
     You can also use the array notation of allowed file extensions, for example
     :php:`['jpg','png','svg']` or :php:`['common-image-types', 'gz', 'zip']`.
 
-    ..  versionadded:: 12.4.14
+    ..  versionadded:: 13.1.0
         Due to a bug, the array notation only properly works
-        since TYPO3 v12.4.1 (and 13.1.0) and upwards. Use the string notation
+        since TYPO3 13.1.0 and v12.4.1 and upwards. Use the string notation
         for earlier versions instead.
 

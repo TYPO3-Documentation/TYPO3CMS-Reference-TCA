@@ -13,6 +13,8 @@ Select fields
     :file:`ext_tables.sql` file. The field length can be adjusted with the
     option :ref:`columns-select-properties-dbFieldLength`.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+for all render types of select boxes fields are generated automatically.
 
 ..  _columns-select-introduction:
 

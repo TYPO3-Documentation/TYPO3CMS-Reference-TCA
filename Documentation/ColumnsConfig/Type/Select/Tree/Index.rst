@@ -9,6 +9,9 @@ selectTree
 The :php:`selectTree` render type is used to display hierarchical data in a
 tree structure.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 A field with the :php:`selectTree` render type allows you to represent data in
 a hierarchical manner, similar to a tree. It is typically used when working
 with database tables that have a hierarchical structure. The properties :ref:`treeConfig
@@ -49,9 +52,6 @@ Properties of the TCA column type `select` with renderType `selectTree`
         :show-buttons:
 
     ..  include:: _Properties/_AuthMode.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AuthModeEnforce.rst.txt
         :show-buttons:
 
     ..  include:: _Properties/_Behaviour.rst.txt
