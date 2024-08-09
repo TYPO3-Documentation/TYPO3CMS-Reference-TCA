@@ -26,32 +26,12 @@ Properties of the TCA column type `imageManipulation`
 =====================================================
 
 ..  confval-menu::
+    :name: imageManipulation
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowedExtensions.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_CropVariants.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FileField.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
 ..  _columns-imagemanipulation-crop-variant:

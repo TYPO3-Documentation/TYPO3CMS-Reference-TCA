@@ -8,6 +8,8 @@ TCA column type `check`
 =======================
 
 
+..  _columns-check-introduction:
+
 Introduction
 ============
 
@@ -31,8 +33,6 @@ details please see: :ref:`selectCheckBox-check-compared`.
 ..  include:: /Images/Rst/Checkbox19.rst.txt
 ..  include:: /Images/Rst/Checkbox17.rst.txt
 
-..  _columns-check-introduction:
-
 ..  warning::
     Resorting the 'items' of a type='check' config results in single items moving to different bit positions.
     It might be required to migrate existing field data if doing so.
@@ -52,44 +52,12 @@ Properties of the TCA column type `check`
 =========================================
 
 ..  confval-menu::
+    :name: check
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Cols.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Default.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Eval.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_InvertStateDisplay.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Items.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ItemsProcFunc.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_RenderType.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Validation.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
 ..  toctree::

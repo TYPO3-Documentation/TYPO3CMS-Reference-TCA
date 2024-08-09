@@ -1,5 +1,5 @@
 ..  confval:: rows
-    :name: text-codeEditor-rows
+    :name: text-t3editor-rows
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer
     :Scope: Display

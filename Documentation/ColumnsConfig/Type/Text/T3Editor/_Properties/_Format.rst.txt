@@ -21,4 +21,4 @@ format
     *   :php:`typoscript`
     *   :php:`xml`
 
-    See also :ref:`tca_example_codeEditor_1`.
+    See also :ref:`tca_example_t3Editor_1`.

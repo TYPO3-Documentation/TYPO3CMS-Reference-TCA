@@ -48,47 +48,12 @@ Properties of the TCA column type `category`
 ============================================
 
 ..  confval-menu::
+    :name: category
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_Default.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ExclusiveKeys.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTable.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTablePrefix.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTableWhere.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ItemGroups.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Maxitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Minitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Mm.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Relationship.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_TreeConfig.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
 ..  toctree::

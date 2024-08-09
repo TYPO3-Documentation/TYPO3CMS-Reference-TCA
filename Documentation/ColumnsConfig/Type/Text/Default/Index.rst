@@ -45,72 +45,10 @@ Properties of the TCA column type `text` with or without enabled rich text
 ==========================================================================
 
 ..  confval-menu::
+    :name: text
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Cols.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Default.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_EnableRichtext.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_EnableTabulator.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Eval.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FixedFont.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_IsIn.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Max.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Min.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Nullable.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Placeholder.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Required.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_RichtextConfiguration.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Rows.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Search.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Softref.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Wrap.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:

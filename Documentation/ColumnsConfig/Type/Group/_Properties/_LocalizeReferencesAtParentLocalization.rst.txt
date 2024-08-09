@@ -1,3 +1,4 @@
+..  _columns-group-properties-localizereferencesatparentlocalization:
 ..  _tca_property_localizeReferencesAtParentLocalization:
 
 ..  confval:: localizeReferencesAtParentLocalization

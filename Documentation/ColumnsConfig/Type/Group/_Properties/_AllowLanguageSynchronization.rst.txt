@@ -1,3 +1,5 @@
+..  _columns-group-properties-behaviour:
+
 ..  confval:: behaviour
     :name: group-behaviour
 

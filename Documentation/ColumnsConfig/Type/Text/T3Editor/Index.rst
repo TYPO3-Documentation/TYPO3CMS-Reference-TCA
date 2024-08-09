@@ -29,30 +29,10 @@ Properties of the TCA column type `text`, render type `t3editor`
 ================================================================
 
 ..  confval-menu::
+    :name: t3editor
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Format.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Search.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Softref.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
