@@ -47,44 +47,10 @@ Properties of the TCA column type `folder`
 ==========================================
 
 ..  confval-menu::
+    :name: folder
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-    ..  include:: _Properties/_AutoSizeMax.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ElementBrowserEntryPoints.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_HideMoveIcons.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Maxitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Minitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Multiple.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
-        :show-buttons:
-
-

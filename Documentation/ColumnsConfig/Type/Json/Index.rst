@@ -27,8 +27,16 @@ JSON for the input of additional HTTP request header data:
 
 ..  include:: _Examples/SysWebHook.rst.php
 
+..  _columns-json-properties:
 
-..  toctree::
-    :titlesonly:
+Properties of the TCA column type `json`
+========================================
 
-    Properties
+..  confval-menu::
+    :name: json
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_*.rst.txt
+        :show-buttons:

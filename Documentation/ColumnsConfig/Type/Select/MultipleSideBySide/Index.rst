@@ -36,81 +36,10 @@ Properties of the TCA column type `select` with renderType `selectMultipleSideBy
 =====================================================================================
 
 ..  confval-menu::
+    :name: selectMultipleSideBySide
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowNonIdValues.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AuthMode.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AuthModeEnforce.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AutoSizeMax.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Behaviour.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_DbFieldLength.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Default.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_DisableNonMatchingValueElement.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ExclusiveKeys.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FileFolderConfig.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTable.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTablePrefix.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTableWhere.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Items.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ItemsProcFunc.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Maxitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Minitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Mm.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Multiple.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_MultiSelectFilterItems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:

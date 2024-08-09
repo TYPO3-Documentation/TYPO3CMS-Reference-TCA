@@ -59,82 +59,15 @@ and field properties in the TCA such as "placeholder" to set this up.
 
 ..  _columns-inline-properties:
 ..  _columns-inline-properties-type:
-..  _columns-inline-properties-behaviour:
-..  _columns-inline-properties-maxitems:
-..  _columns-inline-properties-minitems:
-..  _columns-inline-properties-mm-match-fields:
 
 Properties of the TCA column type `inline`
 ==========================================
 
-
 ..  confval-menu::
+    :name: inline
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_Appearance.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AutoSizeMax.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Behaviour.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_CustomControls.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Filter.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignDefaultSortby.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignField.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignLabel.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignMatchFields.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignSelector.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignSortby.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTable.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTableField.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignUnique.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Maxitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Minitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Mm.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_OverrideChildTCa.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_SymmetricField.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_SymmetricLabel.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_SymmetricSortby.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:

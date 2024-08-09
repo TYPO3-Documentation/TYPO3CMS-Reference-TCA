@@ -56,21 +56,10 @@ Properties of the TCA column type `slug`
 ========================================
 
 ..  confval-menu::
+    :name: slug
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_Appearance.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Eval.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FallbackCharacter.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_GeneratorOptions.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_PrependSlash.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:

@@ -32,15 +32,10 @@ Properties of the TCA column type `text`, render type `belayoutwizard`
 ======================================================================
 
 ..  confval-menu::
+    :name: belayoutwizard
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_Default.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:

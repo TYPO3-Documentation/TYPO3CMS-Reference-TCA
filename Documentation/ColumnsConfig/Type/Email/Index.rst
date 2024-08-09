@@ -29,41 +29,12 @@ Properties of the TCA column type `email`
 =========================================
 
 ..  confval-menu::
+    :name: email
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Autocomplete.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Eval.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Mode.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Nullable.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Placeholder.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Required.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
     .. note::

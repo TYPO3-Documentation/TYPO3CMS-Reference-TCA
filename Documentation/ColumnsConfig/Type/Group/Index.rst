@@ -48,87 +48,15 @@ You can read more on how data is structured in :ref:`columns-group-data` chapter
 
 ..  _columns-group-properties:
 ..  _columns-group-properties-type:
-..  _columns-group-properties-autosizemax:
-..  _columns-group-properties-behaviour:
-..  _columns-group-properties-default:
-..  _columns-group-properties-dontremaptablesoncopy:
-..  _columns-group-properties-fieldInformation:
-..  _columns-group-properties-localizereferencesatparentlocalization:
-..  _columns-group-properties-max-size:
-..  _columns-group-properties-maxitems:
-..  _columns-group-properties-minitems:
-..  _columns-group-properties-multiple:
-..  _columns-group-properties-readOnly:
-..  _columns-group-properties-internal-type:
 
 Properties of the TCA column type `group`
-==========================================
+=========================================
 
 ..  confval-menu::
+    :name: group
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_Allowed.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AutoSizeMax.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_DontRemapTablesOnCopy.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ElementBrowserEntryPoints.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Filter.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ForeignTable.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_HideMoveIcons.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_HideSuggest.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_LocalizeReferencesAtParentLocalization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Maxitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Minitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Mm.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Multiple.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_PrependTname.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_SuggestOptions.rst.txt
-        :show-buttons:
-
