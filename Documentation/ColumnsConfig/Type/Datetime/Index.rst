@@ -53,55 +53,13 @@ Properties of the TCA column type `datetime`
 ============================================
 
 ..  confval-menu::
+    :name: datetime
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-    ..  include:: _Properties/_DbType.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Default.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_DisableAgeDisplay.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Format.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Mode.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Nullable.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Placeholder.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Range.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Search.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Softref.rst.txt
-        :show-buttons:
-
 
 ..  _columns-datetime-migration:
 

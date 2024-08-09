@@ -29,52 +29,10 @@ Properties of the TCA column type `text`, render type `textTable`
 ==================================================================
 
 ..  confval-menu::
+    :name: textTable
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-    ..  include:: _Properties/_Default.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_EnableTabulator.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FixedFont.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_IsIn.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Max.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Placeholder.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Rows.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Search.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Softref.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Wrap.rst.txt
-        :show-buttons:
-

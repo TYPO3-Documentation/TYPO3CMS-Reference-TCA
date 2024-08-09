@@ -1,6 +1,8 @@
 ..  confval:: behaviour
     :name: inline-behaviour
 
+    ..  _columns-inline-properties-behaviour:
+
     ..  confval:: allowLanguageSynchronization
         :type: boolean
         :name: inline-behaviour-allowLanguageSynchronization

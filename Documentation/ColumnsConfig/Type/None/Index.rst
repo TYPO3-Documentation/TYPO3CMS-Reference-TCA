@@ -58,19 +58,10 @@ Properties of the TCA column type `none`
 ========================================
 
 ..  confval-menu::
+    :name: none
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_FieldInformation.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-    ..  include:: _Properties/_Format.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_PassContent.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
-        :show-buttons:
-

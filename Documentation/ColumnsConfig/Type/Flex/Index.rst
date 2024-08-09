@@ -41,26 +41,12 @@ Properties of the TCA column type `flex`
     :ref:`Events <columns-flex-events>` to replace their logic if needed.
 
 ..  confval-menu::
+    :name: flex
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Ds.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_DsPointerField.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
 

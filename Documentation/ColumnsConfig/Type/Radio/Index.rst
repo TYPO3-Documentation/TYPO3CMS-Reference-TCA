@@ -33,9 +33,10 @@ Properties of the TCA column type `radio`
 =========================================
 
 ..  confval-menu::
+    :name: radio
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:

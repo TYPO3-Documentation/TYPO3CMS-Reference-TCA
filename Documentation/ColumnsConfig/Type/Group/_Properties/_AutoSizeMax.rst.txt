@@ -1,5 +1,5 @@
+..  _columns-group-properties-autosizemax:
 ..  _tca_property_autoSizeMax:
-..  _columns-inline-properties-autosizemax:
 
 ..  confval:: autoSizeMax
     :name: group-autoSizeMax

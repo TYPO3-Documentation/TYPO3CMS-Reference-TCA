@@ -58,53 +58,12 @@ Properties of the TCA column type `password`
 ============================================
 
 ..  confval-menu::
+    :name: password
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_AllowLanguageSynchronization.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Autocomplete.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Default.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldControl.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Hashed.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Mode.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Nullable.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_PasswordGenerator.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_PasswordPolicy.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Placeholder.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Required.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
 ..  _columns-password-migration:

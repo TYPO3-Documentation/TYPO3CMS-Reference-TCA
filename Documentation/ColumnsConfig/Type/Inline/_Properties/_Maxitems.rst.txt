@@ -1,3 +1,5 @@
+..  _columns-inline-properties-maxitems:
+
 ..  confval:: maxitems
     :name: inline-maxitems
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
