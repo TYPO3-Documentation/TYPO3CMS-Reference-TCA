@@ -50,7 +50,7 @@ You can read more on how data is structured in :ref:`columns-group-data` chapter
 ..  _columns-group-properties-type:
 
 Properties of the TCA column type `group`
-==========================================
+=========================================
 
 ..  confval-menu::
     :name: group
