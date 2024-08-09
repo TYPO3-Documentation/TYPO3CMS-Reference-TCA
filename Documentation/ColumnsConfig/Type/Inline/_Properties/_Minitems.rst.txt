@@ -1,3 +1,5 @@
+..  _columns-inline-properties-minitems:
+
 ..  confval:: minitems
     :name: inline-minitems
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']

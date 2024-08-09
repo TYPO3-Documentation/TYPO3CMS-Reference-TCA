@@ -1,3 +1,4 @@
+..  _columns-group-properties-minitems:
 ..  _tca_property_minitems:
 ..  confval:: minitems
     :name: group-minitems

@@ -26,6 +26,8 @@ configuration when working with fields containing a `UUID`_.
 
 ..  contents:: Table of contents
 
+..  _columns-uuid-example:
+
 Example
 =======
 
@@ -39,21 +41,10 @@ Properties of the TCA column type `uuid`
 ========================================
 
 ..  confval-menu::
+    :name: uuid
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_EnableCopyToClipboard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Required.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Version.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:

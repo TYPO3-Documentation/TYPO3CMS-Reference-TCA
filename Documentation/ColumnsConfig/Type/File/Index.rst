@@ -38,38 +38,12 @@ Properties of the TCA column type `file`
 ========================================
 
 ..  confval-menu::
+    :name: file
     :display: table
     :type:
     :Scope:
 
-    ..  include:: _Properties/_Allowed.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Appearance.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Behaviour.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Disallowed.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldInformation.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_FieldWizard.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Maxitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Minitems.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_OverrideChildTCa.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_ReadOnly.rst.txt
+    ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
 ..  _columns-file-migration:
