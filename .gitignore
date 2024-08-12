@@ -3,3 +3,6 @@
 .idea/
 .Build/*
 composer.lock
+/var/
+/composer.json.testing
+/.Build/
