@@ -38,8 +38,8 @@ MM
         and `New->newB`. Deleting the relation `New->orgA` will result in a
         broken relation `Org->orgA`.
 
-..  confval:: MM_hasUidField (type => inline)
-
+..  confval:: MM_hasUidField
+    :name: inline-mm-hasUidField-field
     :type: boolean
     :Scope: Proc.
 
