@@ -33,8 +33,8 @@
         and `New->newB`. Deleting the relation `New->orgA` will result in a
         broken relation `Org->orgA`.
 
-..  confval:: MM_hasUidField (type => inline)
-
+..  confval:: MM_hasUidField
+    :name: inline-mm-hasUidField
     :type: boolean
     :Scope: Proc.
 
@@ -62,12 +62,6 @@
     ..  note::
         Bidirectional references only get registered once on the native side in
         :sql:`sys_refindex`.
-
-..  confval:: MM_hasUidField
-    :name: inline-mm-hasUidField
-
-Examples
-========
 
 ..  _tca_example_inline_mm_inline_1:
 
