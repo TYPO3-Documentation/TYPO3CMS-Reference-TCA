@@ -26,8 +26,8 @@
             ['label' => 'Red peppers'],
         ],
 
-    Use the :php:`label` key instead of the numerical
-    index :php:`0` as was done in previous versions.
+    Use the :php:`label` key, instead of the numerical
+    index :php:`0` which was done in previous versions.
 
     Further properties can be set per item, but not all of them apply to all renderTypes:
 

@@ -11,7 +11,7 @@ necessary TCA configuration.
 Developers only have to define the TCA column and add :php:`category` as the
 desired TCA type in the tables's TCA file (inside or outside of the Overrides folder).
 
- The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
 ..  literalinclude:: _Snippets/_CategorySimple.php
