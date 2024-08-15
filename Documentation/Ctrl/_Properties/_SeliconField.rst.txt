@@ -1,4 +1,4 @@
-.. _ctrl-reference-selicon-field:
+..  _ctrl-reference-selicon-field:
 
 .. confval:: selicon_field
    :name: ctrl-selicon-field
@@ -21,7 +21,7 @@
 
 ..  rubric:: Example: Select foreign records from a drop-down using selicon
 
-.. include:: /Images/Rst/SelectSingle12.rst.txt
+..  include:: /Images/Rst/SelectSingle12.rst.txt
 
 
 The table :sql:`tx_styleguide_elements_select_single_12_foreign` is defined as
