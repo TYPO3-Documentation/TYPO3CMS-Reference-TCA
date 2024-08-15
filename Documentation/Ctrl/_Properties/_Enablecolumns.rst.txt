@@ -30,7 +30,7 @@
     `fe_group`
         Defines which field is used for access control via a selection of FE user groups.
 
-    .. note::
+    ..  note::
         In general these fields do *not* affect the access or display in the backend! They are primarily
         related to the frontend. However the icon of records having these features enabled will
         normally change as these examples show:

@@ -23,6 +23,6 @@
 
     ..  rubric:: Example: Create a table that has a description column
 
-    .. include:: /Images/Rst/CtrlDescriptionColumn.rst.txt
+    ..  include:: /Images/Rst/CtrlDescriptionColumn.rst.txt
 
     .. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
