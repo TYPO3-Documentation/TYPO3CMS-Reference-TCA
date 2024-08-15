@@ -42,11 +42,11 @@
         :ref:`rendering <t3coreapi:FormEngine-Rendering>`.
         Valid types are for example:
 
-        -  :code:`outerWrapContainer` type which corresponds to the
+        -   :code:`outerWrapContainer` type which corresponds to the
             :php:`OuterWrapContainer` (class).
-        -  :code:`inlineControlContainer` type which corresponds to the
+        -   :code:`inlineControlContainer` type which corresponds to the
             :php:`InlineControlContainer` class
-        -  :code:`inline` type which corresponds to the :php:`InlineControlContainer`
+        -   :code:`inline` type which corresponds to the :php:`InlineControlContainer`
             class.
 
     renderType
