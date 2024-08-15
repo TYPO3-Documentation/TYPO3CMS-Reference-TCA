@@ -25,16 +25,16 @@ These properties are basically divided into two main categories:
 
     *
 
-.. _tca_example_ctrl_common:
+..  _tca_example_ctrl_common:
 
 Example: Common table control configuration
 ===========================================
 
 For advanced examples see :ref:`ctrl-examples`.
 
-.. include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
+..  include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
 
-.. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
 
 ..  _ctrl-reference:
 
