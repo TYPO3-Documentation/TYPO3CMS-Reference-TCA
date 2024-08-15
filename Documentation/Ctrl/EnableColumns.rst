@@ -1,7 +1,7 @@
 :navigation-title: Enabling columns
 
-.. include:: /Includes.rst.txt
-.. _ctrl-enablecolumns:
+..  include:: /Includes.rst.txt
+..  _ctrl-enablecolumns:
 
 =======================================================
 How to use `enablecolumns` in the `ctrl` section of TCA
