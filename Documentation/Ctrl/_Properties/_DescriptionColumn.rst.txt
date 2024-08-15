@@ -25,4 +25,4 @@
 
     ..  include:: /Images/Rst/CtrlDescriptionColumn.rst.txt
 
-    .. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+    ..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
