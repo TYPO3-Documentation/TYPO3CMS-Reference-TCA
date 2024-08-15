@@ -12,7 +12,7 @@
 
     ..  rubric:: Example from `tt_content` table::
 
-       'ctrl' => [
-          'copyAfterDuplFields' => 'colPos, sys_language_uid',
-          ...
-       ],
+        'ctrl' => [
+            'copyAfterDuplFields' => 'colPos, sys_language_uid',
+            ...
+        ],
