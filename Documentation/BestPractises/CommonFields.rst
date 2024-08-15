@@ -47,7 +47,7 @@ Soft delete
     This field is used to enable soft delete in records. In can be configured
     by setting :ref:`ctrl->delete <ctrl-reference-delete>`:
 
-    ..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_Delete.php
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_Delete.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 
@@ -74,7 +74,7 @@ Enablecolumns
     This field is used to enable soft hiding of records. In can be configured
     by setting :ref:`ctrl->enablecolumns->disabled <ctrl-reference-enablecolumns>`:
 
-    ..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_Hidden.php
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_Hidden.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  _field_starttime:
@@ -85,7 +85,7 @@ Enablecolumns
     an endtime. In can be configured
     by :ref:`ctrl->enablecolumns->starttime or endtime <ctrl-reference-enablecolumns>`:
 
-    ..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_StarttimeEndtime.php
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_StarttimeEndtime.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  _field_fe_group:
@@ -94,7 +94,7 @@ Enablecolumns
     This field is used to enable soft delete of records. In can be configured
     by :ref:`ctrl->enablecolumns->fe_group <ctrl-reference-enablecolumns>`:
 
-    ..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_FeGroup.php
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_FeGroup.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  warning::
@@ -111,7 +111,7 @@ Manual sorting in the backend
     This field is used to manually sort records in the backend. In can be configured
     by :ref:`ctrl->sortby <ctrl-reference-sortby>`:
 
-    ..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_Sorting.php
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_Sorting.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  attention::
@@ -132,7 +132,7 @@ The following fields are automatically set when a record is written by the
 displayed in backend forms or explicitly set, therefore they need no entry in
 the :ref:`columns` section of the TCA.
 
-..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_DataHandlerFields.php
+..  literalinclude:: /Ctrl/_CodeSnippets/_DataHandlerFields.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  _field_tstamp:

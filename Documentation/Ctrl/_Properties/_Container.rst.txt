@@ -1,0 +1,67 @@
+..  _ctrl-reference-container:
+
+..  confval:: container
+    :name: ctrl-container
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: array
+    :Scope: Display
+    :Examples: :ref:`tca_example_ctrl_container`
+
+    Array to configure additional items in render containers of :ref:`FormEngine <t3coreapi:FormEngine>`,
+    see section :ref:`Node expansion <t3coreapi:FormEngine-Rendering-NodeExpansion>`.
+
+    Next to single elements, some render container allow to be "enriched" with additional information via
+    the "node expansion" API. Currently, the :php:`OuterWrapContainer` implements :php:`fieldWizard` and
+    :php:`fieldInformation`. :php:`InlineControlContainer` implements :php:`fieldWizard` and comes with
+    the default wizard :php:`localizationStateSelector`. Custom containers may implement expansion nodes, too,
+    and if implemented correctly will automatically have their configuration merged with the definition
+    provided in this TCA array.
+
+    The basic array looks like::
+
+        'ctrl' => [
+            'container' => [
+                '<containerRenderType>' => [
+                    'fieldWizard' => [
+                        '<aName>' => [
+                            'renderType' => '<aRenderType>',
+                            'before' => ['<anotherName>'],
+                            'after' => ['<yetAnotherName>'],
+                            'disabled' => false,
+                            'options' => [],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+
+    <containerRenderType>
+        should be a defined container render type.
+        You can find more about the :code:`outerWrapContainer` and
+        :code:`inlineControlContainer` in the FormEngine documentation section on
+        :ref:`rendering <t3coreapi:FormEngine-Rendering>`.
+        Valid types are for example:
+
+        -  :code:`outerWrapContainer` type which corresponds to the
+            :php:`OuterWrapContainer` (class).
+        -  :code:`inlineControlContainer` type which corresponds to the
+            :php:`InlineControlContainer` class
+        -  :code:`inline` type which corresponds to the :php:`InlineControlContainer`
+            class.
+
+    renderType
+        refers to a registered node name from :php:`NodeFactory`
+
+    before, after
+        can be set to sort single wizards relative to each other.
+
+    disabled
+        can be used to disable built in default wizards.
+
+    options
+        Some wizards may support additional "options".
+
+    Note, next to "fieldWizard", some containers may also implement "fieldInformation", which can be
+    manipulated the same way.
+
+    See also :ref:`tca_example_ctrl_container`.
