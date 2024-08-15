@@ -33,7 +33,7 @@
 
     ..  rubric:: Example: Define a translation origin
 
-    .. include:: /Images/Rst/TranslatedText2.rst.txt
+    ..  include:: /Images/Rst/TranslatedText2.rst.txt
 
     ..  literalinclude:: _CodeSnippets/_Language.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
