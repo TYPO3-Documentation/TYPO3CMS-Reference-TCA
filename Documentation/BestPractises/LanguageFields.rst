@@ -76,6 +76,6 @@ Language fields in detail
 Example: enable table for localization and translation:
 =======================================================
 
-..  literalinclude:: /Ctrl/Properties/_CodeSnippets/_Language.php
+..  literalinclude:: /Ctrl/_CodeSnippets/_Language.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 

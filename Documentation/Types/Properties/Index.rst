@@ -4,14 +4,7 @@
 Properties
 ==========
 
+..  toctree::
+    :glob:
 
-.. toctree::
-
-   BitmaskExcludelistBits
-   BitmaskValueField
-   ColumnsOverrides
-   Showitem
-   SubtypeValueField
-   SubtypesAddlist
-   SubtypesExcludelist
-
+    *

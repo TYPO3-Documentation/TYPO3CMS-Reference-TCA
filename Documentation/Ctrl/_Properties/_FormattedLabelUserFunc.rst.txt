@@ -1,0 +1,18 @@
+..  _ctrl-reference-formattedlabel-userfunc:
+
+..  confval:: formattedLabel_userFunc
+    :name: ctrl-formattedlabel-userfunc
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: string
+    :Scope: Display
+
+    Similar to :ref:`label_userFunc <ctrl-reference-label-userfunc>` but allows
+    to return formatted HTML for the label **and is used only for the labels of
+    inline (IRRE) records**. The referenced user function may receive optional
+    arguments using the :ref:`formattedLabel_userFunc_options
+    <ctrl-reference-formattedlabel-userfunc-options>` property.
+
+    ..  tip::
+
+        Read more about :ref:`Inline Relational Record Editing (IRRE)
+        <columns-inline>`.

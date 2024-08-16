@@ -1,0 +1,39 @@
+..  _ctrl-reference-enablecolumns:
+
+..  confval:: enablecolumns
+    :name: ctrl-enablecolumns
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: array
+    :Scope: Proc. / Display
+
+    Specifies which *publishing control features* are automatically implemented for the table.
+
+    This includes that records can be "disabled" or "hidden", have a starting and/or ending time and be access
+    controlled so only a certain front end user group can access them. This property is used by the
+    :ref:`RestrictionBuilder <t3coreapi:database-restriction-builder>` to create SQL fragments.
+
+    These are the keys in the array you can use. Each of the values must be a field name in the table which
+    should be used for the feature:
+
+    `disabled`
+        Defines which field serves as hidden/disabled flag.
+
+    `starttime`
+        Defines which field contains the starting time.
+
+    `endtime`
+        Defines which field contains the ending time.
+
+    `fe_group`
+        Defines which field is used for access control via a selection of FE user groups.
+
+    ..  note::
+        In general these fields do *not* affect the access or display in the backend! They are primarily
+        related to the frontend. However the icon of records having these features enabled will
+        normally change as these examples show:
+
+    ..  include:: /Images/Rst/CtrlEnableFields.rst.txt
+
+    See also the :ref:`delete <ctrl-reference-delete>` and
+    :ref:`ctrl-reference-editlock` features which are related,
+    but are active for both frontend and backend.

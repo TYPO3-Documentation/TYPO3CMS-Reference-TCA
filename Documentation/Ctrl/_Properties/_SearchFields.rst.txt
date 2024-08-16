@@ -1,0 +1,48 @@
+..  _ctrl-reference-searchfields:
+
+..  confval:: searchFields
+    :name: ctrl-searchFields
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: string
+    :Scope: Search
+
+
+    Comma-separated list of fields from the table that will be included when searching for records in the TYPO3 backend.
+    No record from a table will ever be found if that table does not have `searchFields` defined. Only fields of the
+    following TCA types are searchable:
+
+    *   :ref:`input <columns-input>`
+    *   :ref:`text <columns-text>`
+    *   :ref:`flex <columns-flex>`
+    *   :ref:`email <columns-email>`
+    *   :ref:`link <columns-link>`
+    *   :ref:`slug <columns-slug>`
+    *   :ref:`color <columns-color>`
+    *   :ref:`json <columns-json>`
+    *   :ref:`uuid <columns-uuid>`
+
+    Adding fields of different types to `searchFields` has no effect.
+
+    There are more fine grained controls per column, see the documentation of the "search" key of any
+    type in :ref:`columns-types`.
+
+    ..  note::
+
+        Fields of type :ref:`number <columns-number>` or :ref:`datetime <columns-datetime>`
+        may be excluded from search by default. To include them, modify the search query with this hook:
+        :doc:`ext_core:Changelog/9.2/Feature-71911-AddConstraintHookInDatabaseRecordListMakeSearchString`.
+
+
+    ..  note::
+
+        When searching as admin the fields `uid` and `pid` are automatically included.
+        For editors, `uid` and/or `pid` have to be added manually to the searchFields list.
+
+    ..  rubric:: Example from "tt\_content" table
+
+    ..  code-block:: php
+
+        'ctrl' => [
+            'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform',
+            ...
+        ],
