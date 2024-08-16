@@ -12,6 +12,9 @@ Text areas & RTE
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
+The :ref:`according database fields <t3coreapi:auto-generated-db-structure>`
+for all render types are generated automatically.
+
 ..  contents:: Table of contents:
 
 ..  toctree::

@@ -6,11 +6,6 @@
 Email
 =====
 
-..  versionadded:: 12.0
-    The TCA type :php:`email` has been introduced. It replaces the
-    :php:`eval=email` option of TCA type :php:`input`. See also
-    :ref:`columns-email-migration`.
-
 ..  versionadded:: 13.0
     When using the `email` type, TYPO3 takes care of
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
@@ -18,7 +13,8 @@ Email
     :file:`ext_tables.sql` file.
 
 The TCA type :php:`email` should be used to input values representing email
-addresses.
+addresses. The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
 
 ..  contents:: Table of contents
 
@@ -41,22 +37,3 @@ Properties of the TCA column type `email`
 
         The softref definition :php:`'softref' => 'email[subst]'` is automatically applied
         to all :php:`email` fields.
-
-
-..  _columns-email-migration:
-
-Migration
-=========
-
-The migration from :php:`eval='email'` to :php:`type=email` is done like following:
-
-..  literalinclude:: _Snippets/_migration.diff
-
-An automatic TCA migration is performed on the fly, migrating all occurrences
-to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error
-where code adoption has to take place.
-
-..  note::
-    The value of TCA type :php:`email` columns is automatically trimmed before
-    being stored in the database. Therefore, the :php:`eval=trim` option is no
-    longer needed and should be removed from the TCA configuration.

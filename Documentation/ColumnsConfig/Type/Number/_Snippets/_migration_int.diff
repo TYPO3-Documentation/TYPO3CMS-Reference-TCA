@@ -1,8 +1,0 @@
-  'int_field' => [
-      'label' => 'Int field',
-      'config' => [
--         'type' => 'input',
--         'eval' => 'int',
-+         'type' => 'number',
-      ],
-  ],

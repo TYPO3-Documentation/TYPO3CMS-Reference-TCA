@@ -5,8 +5,8 @@
 Examples
 ========
 
-..  versionchanged:: 12.0
-    Inline fields should not be used anymore to handle files.  Use the TCA
+..  note::
+    Inline fields should not be used to handle files.  Use the TCA
     column type :ref:`file <columns-file>` instead.
 
 ..  _columns-inline-examples-images:

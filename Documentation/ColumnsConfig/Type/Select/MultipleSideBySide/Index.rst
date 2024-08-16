@@ -9,6 +9,9 @@ selectMultipleSideBySide
 This page describes the :ref:`select <columns-select>` type with
 :php:`'renderType' => 'selectMultipleSideBySide'`.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 It displays two select fields. The items can be selected from the right field.
 All selected items are displayed in the left field.
 

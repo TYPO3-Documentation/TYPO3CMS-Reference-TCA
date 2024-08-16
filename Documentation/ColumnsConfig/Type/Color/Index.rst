@@ -7,11 +7,6 @@
 Color
 =====
 
-..  versionadded:: 12.0
-    The TCA type :php:`color` has been introduced. It replaces the
-    :php:`renderType=colorpicker` of TCA type :php:`input`. See
-    :ref:`columns-color-migration`.
-
 ..  versionadded:: 13.0
     When using the `color` type, TYPO3 takes care of
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
@@ -19,6 +14,8 @@ Color
     :file:`ext_tables.sql` file.
 
 The TCA type :php:`color` should be used to render a JavaScript-based color picker.
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
 
 ..  versionadded:: 13.0
     :ref:`Color palettes <t3tsconfig:pagecolorpalettes>` have been added.
@@ -59,17 +56,3 @@ Properties of the TCA column type `color`
 
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-..  _columns-color-migration:
-
-Migration: from renderType `colorpicker` to TCA type color
-==========================================================
-
-A complete migration from :php:`renderType=colorpicker` to :php:`type=color`
-looks like the following:
-
-..  literalinclude:: _Snippets/_migration.diff
-
-An automatic TCA migration is performed on the fly, migrating all occurrences
-to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error
-where code adoption has to take place.

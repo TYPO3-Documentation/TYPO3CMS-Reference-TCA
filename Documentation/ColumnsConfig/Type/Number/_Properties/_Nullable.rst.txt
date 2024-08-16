@@ -1,9 +1,5 @@
 ..  _columns-number-properties-nullable:
 
-..  versionchanged:: 12.0
-    This option was introduced to replace the TCA :php:`eval` option with
-    :php:`null` as value.
-
 ..  confval:: nullable
     :name: number-nullable
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']

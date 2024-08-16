@@ -7,11 +7,6 @@
 Link
 ====
 
-..  versionadded:: 12.0
-    The TCA type :php:`link` has been introduced. It replaces the
-    :php:`renderType=inputLink` option of TCA type :php:`input`. See also
-    :ref:`columns-link-migration`
-
 ..  versionadded:: 13.0
     When using the :php:`link` type, TYPO3 takes care of
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
@@ -19,6 +14,9 @@ Link
     :file:`ext_tables.sql` file.
 
 The TCA type :php:`link` should be used to input values representing typolinks.
+
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
 
 ..  contents::
 
@@ -47,38 +45,6 @@ Properties of the TCA column type `link`
 
     The softref definition :php:`softref=typolink` is automatically applied
     to all TCA type :php:`link` columns.
-
-
-..  _columns-link-migration:
-
-Migration
-=========
-
-The previously configured :php:`linkPopup` field control is now integrated
-into the new TCA type directly. Additionally, instead of exclude lists
-(:php:`blindLink[Fields|Options]`), does the new type now use include lists.
-Those lists are furthermore no longer comma separated, but PHP :php:`array`'s,
-with each option as a separate value.
-
-The migration from :php:`renderType=inputLink` to :php:`type=link` is done like following:
-
-..  literalinclude:: _Snippets/_migration.diff
-
-An automatic TCA migration is performed on the fly, migrating all occurrences
-to the new TCA type and triggering a PHP :php:`E_USER_DEPRECATED` error
-where code adoption has to take place.
-
-..  note::
-
-    The value of TCA type :php:`link` columns is automatically trimmed before
-    being stored in the database. Therefore, the :php:`eval=trim` option is no
-    longer needed and should be removed from the TCA configuration.
-
-.. note::
-
-    The prior softref definition :php:`softref=>typolink` is now automatically applied
-    to all :php:`link` fields.
-
 
 ..  _columns-link-create-url:
 

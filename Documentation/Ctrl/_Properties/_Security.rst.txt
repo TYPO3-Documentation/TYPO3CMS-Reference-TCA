@@ -60,10 +60,5 @@
         (page ID `0`), thus bypassing this usual restriction.
 
     ignorePageTypeRestriction
-        ..  versionadded:: 12.0
-            This is a replacement for the previous PHP API call
-            :php:`ExtensionManagementUtility::allowTableOnStandardPages()` which
-            was found in :file:`ext_tables.php` files.
-
         Allows to use a TCA table on any kind of page doktype unless a doktype
         has a restriction set in the :php:`PageDoktypeRegistry` API class.

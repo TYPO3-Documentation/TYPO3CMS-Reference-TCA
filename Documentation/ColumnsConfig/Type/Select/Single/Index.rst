@@ -8,6 +8,9 @@ selectSingle
 Single select fields display a select field from which only one value can be
 chosen.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
 The renderType selectSingle creates a drop-down box with items to select a
 single value. Only if :confval:`select-single-size` is set to a
 value greater than one, a box is rendered containing all selectable elements

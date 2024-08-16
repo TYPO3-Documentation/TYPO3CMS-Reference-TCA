@@ -26,10 +26,8 @@
             ['label' => 'Red peppers'],
         ],
 
-    ..  deprecated:: 12.3
-
-        Using the numerical index :php:`0` for setting the label is deprecated.
-        Use the newly introduced :php:`label` key.
+    Use the :php:`label` key, instead of the numerical
+    index :php:`0` which was done in previous versions.
 
     Further properties can be set per item, but not all of them apply to all renderTypes:
 

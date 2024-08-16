@@ -12,28 +12,18 @@ Input
 attribute set to :html:`text`. It is possible to apply additional features such
 as the :ref:`valuePicker <columns-input-properties-valuePicker>`.
 
-In the database, this field is typically set to a `VARCHAR` or `CHAR` field with
-appropriate length.
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically. For short input fields allowing less
+than 255 chars :sql:`VARCHAR()` is used, :sql:`TEXT` for larger input fields.
 
-..  deprecated:: 12.0
-    The following render types have been deprecated:
-
-    *   :php:`renderType=inputDateTime`: Use the TCA type
-        :ref:`datetime <columns-datetime>` instead.
-    *   :php:`renderType=colorpicker`: Use the TCA type
-        :ref:`color <columns-color>` instead.
-    *   :php:`renderType=inputLink`: Use the TCA type :ref:`link <columns-link>`
-        instead.
+Extension authors who need or want to override default
+TCA schema details for whatever reason, can of course
+do so by defining something specific in :file:`ext_tables.sql`.
 
 ..  versionchanged:: 13.2
     Tables with TCA columns set to `type="input"` do not
     need an :file:`ext_tables.sql` entry anymore. The Core now
-    creates this column automatically. For short input fields allowing less
-    than 255 chars :sql:`VARCHAR()` is used, :sql:`TEXT` for larger input fields.
-
-    Extension authors who need or want to override default
-    TCA schema details for whatever reason, can of course
-    do so by defining something specific in :file:`ext_tables.sql`.
+    creates this column automatically.
 
 ..  _columns-input-examples:
 
