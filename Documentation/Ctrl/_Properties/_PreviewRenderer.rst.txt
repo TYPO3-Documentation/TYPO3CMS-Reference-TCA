@@ -1,0 +1,24 @@
+..  _ctrl-reference-previewrenderer:
+
+..  confval:: previewRenderer
+    :name: ctrl-previewRenderer
+    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :type: string
+    :Scope: Display
+
+    Configures a backend preview for a content element.
+
+    Have also a look at :ref:`t3coreapi:ConfigureCE-Preview` for more details.
+
+    Use :confval:`property previewRenderer of section types <types-previewRenderer>`
+    to configure the preview for a certain type or subtype only.
+
+    ..  rubric:: Example: Use for any record in a table
+
+    This specifies the preview renderer to be used for any record in
+    :sql:`tx_myextension_domain_model_mytable`:
+
+    ..  code-block:: php
+
+        $GLOBALS['TCA']['tx_myextension_domain_model_mytable']['ctrl']['previewRenderer']
+            = \MyVendor\MyExtension\Preview\PreviewRenderer::class;

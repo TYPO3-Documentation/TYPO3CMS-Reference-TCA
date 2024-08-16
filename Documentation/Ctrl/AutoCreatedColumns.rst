@@ -1,3 +1,5 @@
+:navigation-title: Auto-created columns
+
 ..  include:: /Includes.rst.txt
 ..  _ctrl-auto-created-columns:
 
@@ -63,17 +65,17 @@ then override single properties in :file:`Configuration/TCA/Overrides` files.
 
 As example, "base" :php:`pages` file defines this (step 1 above):
 
-..  literalinclude:: _AutoCreatedColumns/_pages.php
+..  literalinclude:: _CodeSnippets/_AutoCreatedColumns/_pages.php
     :caption: EXT:core/Configuration/TCA/pages.php (Excerpt)
 
 The Core thus creates this :php:`columns` definition (step 2 above):
 
-..  literalinclude:: _AutoCreatedColumns/_autoCreatePages.php
+..  literalinclude:: _CodeSnippets/_AutoCreatedColumns/_autoCreatePages.php
     :caption: Column entries created by the Core
 
 When an editor creates a new page, it should be "disabled" by default to
 avoid having a new page online in the website before it is set up completely.
 A :file:`Configuration/TCA/Overrides/pages.php` file does this:
 
-..  literalinclude:: _AutoCreatedColumns/_OverrideHiddenDefault.php
+..  literalinclude:: _CodeSnippets/_AutoCreatedColumns/_OverrideHiddenDefault.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
