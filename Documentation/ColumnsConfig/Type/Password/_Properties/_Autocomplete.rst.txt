@@ -7,9 +7,9 @@
     :Scope: Display
     :Default: false
 
-    Controls the `autocomplete` attribute of a given input field. If set to true,
-    adds attribute :php:`autocomplete="on"` to the input field allowing browser
-    auto filling the field:
+    By default, the :php:`autocomplete=new-password` attribute will be added to the
+    resulting input field. If :php:`autocomplete=true` is configured in TCA, a
+    :php:`autocomplete=current-password` attribute will be added to the element.
 
     ..  literalinclude:: _Snippets/_Autocomplete.php
         :emphasize-lines: 6
