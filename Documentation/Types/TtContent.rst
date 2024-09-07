@@ -91,11 +91,11 @@ Additional fields that are subsequently added to the end of the table using
 
 ..  _types-content-migration:
 
-Migration: Remove system fields from showitems on dropping TYPO3 12.4 support
-=============================================================================
+Migration: Remove system fields from showitems on dropping TYPO3 v12.4 support
+==============================================================================
 
 It is sufficient to apply changes to the :confval:`types-showitem` section
-of content types once dropping TYPO3 12.4 support in extensions.
+of content types once dropping TYPO3 v12.4 support in extensions.
 
 In site packages or extensions only supporting TYPO3 v13.3 or above you can
 migrate the :confval:`types-showitem` right away:
