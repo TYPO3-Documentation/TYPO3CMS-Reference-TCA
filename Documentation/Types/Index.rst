@@ -59,6 +59,15 @@ Properties of `types` section of TCA
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
+..  versionchanged:: 13.0
+    The properties `bitmask_excludelist_bits` and `bitmask_excludelist_bits`
+    been removed, it is not considered anymore when rendering
+    records in the backend record editing interface.
+
+    In case, extensions still use this setting, they should switch to casual
+    :php:`$GLOBALS['TCA']['someTable']['ctrl']['type']` fields instead, which
+    can be powered by columns based on string values.
+
 ..  _types-example:
 
 Extended examples for using the `types` section of TCA
