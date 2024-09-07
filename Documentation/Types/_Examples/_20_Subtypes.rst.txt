@@ -1,0 +1,44 @@
+
+..  _types-example-subtypes:
+
+Examples for handling subtypes
+------------------------------
+
+..  _types-example-subtypes-remove:
+
+Remove fields for a certain subtype
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Demonstrates property: :confval:`types-subtypes-excludelist`.
+
+Remove fields `recursive` and `pages` from the subtype `example_registration`:
+
+
+..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php (Excerpt)
+
+    $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']
+        ['example_registration'] = 'recursive,pages';
+
+..  _types-example-subtypes-remove-types:
+
+Example: Remove a field from certain types
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Demonstrates property: :confval:`types-subtypes-excludelist` and
+:confval:`types-subtype-value-field`.
+
+..  code-block:: php
+    :caption: EXT:frontend/Configuration/TCA/tt_content.php (Excerpt)
+
+    'subtype_value_field' => 'list_type',
+    'subtypes_excludelist' => [
+        '2' => 'layout',
+        '3' => 'layout',
+        '5' => 'layout',
+        // ...
+        '21' => 'layout'
+    ],
+
+Above example removes the 'layout' field from the 'types' definition if field
+'list_type' is set to '2', '3' and so forth.

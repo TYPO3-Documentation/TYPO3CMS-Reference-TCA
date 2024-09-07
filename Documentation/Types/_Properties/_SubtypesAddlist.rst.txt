@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _types-properties-subtypes-addlist:
-
-=================
-subtypes\_addlist
-=================
 
 ..  confval:: subtypes_addlist
     :name: types-subtypes-addlist

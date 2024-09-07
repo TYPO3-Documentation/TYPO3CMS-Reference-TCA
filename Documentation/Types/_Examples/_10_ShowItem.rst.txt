@@ -1,0 +1,67 @@
+
+..  _types-example-showitem:
+
+Showitem examples
+-----------------
+
+Demonstrates property: :confval:`types-showitem`.
+
+Extensions can also modify `showitem` values by utilizing
+:php:`ExtensionManagementUtility::addToAllTCAtypes()`.
+See :ref:`t3coreapi:extending-examples` for details.
+
+..  _types-example-showitem-3-fields:
+
+A form with 3 fields
+~~~~~~~~~~~~~~~~~~~~
+
+..  code-block:: php
+
+    'types' => [
+        '0' => [
+            'showitem' => 'hidden, title, poem,',
+        ],
+    ],
+
+The above example shows three fields of the form. Since no further '--div--' are specified, there would be only
+one tab. In this case FormEngine will suppress that single tab and just show all specified fields without
+a tabbing indicator.
+
+..  _types-example-showitem-2-tabs:
+
+A form with two tabs
+~~~~~~~~~~~~~~~~~~~~
+
+..  code-block:: php
+
+    'types' => [
+        '0' => [
+            'showitem' => '
+                hidden, title, poem,
+                --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2,
+            '
+        ],
+    ],
+
+Put three fields on first tab "General" and the two fields "image1" and
+"image2" on a second tab with the localized name found in
+"EXT:examples/locallang_db.xml:tx_examples_haiku.images".
+
+..  _types-example-showitem-rename-general:
+
+Rename the tab "General"
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  code-block:: php
+
+    'types' => [
+        '0' => [
+            'showitem' => '
+                --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, hidden, title, poem,
+                --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2,
+            '
+        ],
+    ],
+
+Similar to the example before, but rename the "General" tab to the string
+specified in label "LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images".

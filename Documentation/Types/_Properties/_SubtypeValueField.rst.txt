@@ -1,0 +1,12 @@
+..  _types-properties-subtype-value-field:
+
+..  confval:: subtype_value_field
+    :name: types-subtype-value-field
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :type: string (field name)
+    :Example: :ref:`types-example-subtypes-remove-types`
+
+    Field name, which holds a value being a key in the
+    :confval:`types-subtypes-excludelist` array.
+    This allows to add and hide fields found in the types configuration,
+    based on the value of another field in the row.

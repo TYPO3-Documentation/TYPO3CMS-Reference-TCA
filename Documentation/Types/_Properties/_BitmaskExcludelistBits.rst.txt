@@ -1,0 +1,19 @@
+
+.. _types-properties-bitmask-excludelist-bits:
+
+..  confval:: bitmask_excludelist_bits
+    :name: types-bitmask_excludelist_bits
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :type: array
+
+
+    ..  warning:: This will be removed in TYPO3 without replacement.
+
+        In case, extensions still use this setting, they should switch to casual
+        :php:`$GLOBALS['TCA']['someTable']['ctrl']['type']` fields instead, which
+        can be powered by columns based on string values.
+
+    See :ref:`bitmask\_value\_field <types-properties-bitmask-value-field>`.
+
+    Syntax:
+      "[+/-][bit-number]" => "[comma-separated list of fields (from the main types-config) excluded]"

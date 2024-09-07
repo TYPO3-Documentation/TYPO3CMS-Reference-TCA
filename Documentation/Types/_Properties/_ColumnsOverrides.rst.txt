@@ -1,16 +1,11 @@
-..  include:: /Includes.rst.txt
 ..  _types-properties-columnsOverrides:
-
-================
-columnsOverrides
-================
 
 ..  confval:: columnsOverrides
     :name: types-columnsOverrides
     :Path: $GLOBALS['TCA'][$table]['types'][$type]
     :type: array (columns fields overrides)
     :Scope: Display
-
+    :Examples: :ref:`Examples for columnsOverrides <types-examples-columnsOverrides>`
 
     Changed or added ['columns'] field display definitions.
 
@@ -30,26 +25,3 @@ columnsOverrides
         It is not possible to override any properties in "Proc." scope: The DataHandler does not take "columnsOverrides"
         into account. Only pure "Display" related properties can be overridden. This especially means that
         columns config 'type' must **not** be set to a different value.
-
-Examples
-========
-
-Example adding "nowrap" to a text type for type "text":
-
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
-
-    'types' => [
-        'text' => [
-            'showitem' => 'hidden, myText',
-            'columnsOverrides' => [
-                'myText' => [
-                    'config' => [
-                        'wrap' => 'off',
-                    ],
-                ],
-            ],
-        ],
-        // ...
-    ],
-

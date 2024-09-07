@@ -1,0 +1,44 @@
+
+..  _types-examples-columnsOverrides:
+
+Examples for columnsOverrides in type section of TCA
+----------------------------------------------------
+
+Demonstrates property: :confval:`types-columnsOverrides`.
+
+Type :php:`withOverriddenColumns` shows the fields and overrides
+part of the configuration of the fields:
+
+..  include:: /Images/Rst/CtrlTypeWithOverriddenColumns.rst.txt
+
+..  note::
+    It is a good idea to give all "types" speaking names, except the default
+    type :php:`0`. Therefore we named the other types  :php:`withChangedFields`
+    and :php:`withOverriddenColumns` instead of 1, 2 etc. In a real life example
+    they should have names from the domain.
+
+..  _types-examples-columnsOverrides-nowrap:
+
+Example adding "nowrap" to a text type for type "text"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Demonstrates property: :confval:`types-columnsOverrides`.
+
+Example adding "nowrap" to a text type for type "text":
+
+..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
+
+    'types' => [
+        'text' => [
+            'showitem' => 'hidden, myText',
+            'columnsOverrides' => [
+                'myText' => [
+                    'config' => [
+                        'wrap' => 'off',
+                    ],
+                ],
+            ],
+        ],
+        // ...
+    ],

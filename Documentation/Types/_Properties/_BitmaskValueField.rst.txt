@@ -1,0 +1,22 @@
+..  _types-properties-bitmask-value-field:
+
+..  confval:: bitmask_value_field
+    :name: types-bitmask_value_field
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :type: string (field name)
+
+    ..  warning:: This will be removed in TYPO3 without replacement.
+
+        In case, extensions still use this setting, they should switch to casual
+        :php:`$GLOBALS['TCA']['someTable']['ctrl']['type']` fields instead, which
+        can be powered by columns based on string values.
+
+    Field name, which holds a value being the integer (bit-mask) for the 'bitmask\_excludelist\_bits' array.
+
+    It works much like 'subtype\_value\_field' but excludes fields based on whether a bit from the value field is set.
+    See property :ref:`bitmask\_excludelist\_bits <types-properties-bitmask-excludelist-bits>`.
+
+    These two properties are rarely used, but pretty powerful if a 'type=radio' or 'type=check' field
+    is set as bitmask\_value\_field.
+
+    [+/-] indicates whether the bit [bit-number] is set or not.
