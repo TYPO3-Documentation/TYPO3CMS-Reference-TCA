@@ -1,0 +1,15 @@
+..  _types-properties-subtypes-excludelist:
+
+..  confval:: subtypes_excludelist
+    :name: types-subtypes-excludelist
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :type: array
+    :Example: :ref:`types-example-subtypes-remove`, :ref:`types-example-subtypes-remove-types`
+
+    See :ref:`property subtype_value_field <types-properties-subtype-value-field>`.
+
+
+    ..  code-block:: plaintext
+        :caption: Syntax
+
+        "[field value]" => "[comma-separated list of fields (from the main types-config) which are removed]"

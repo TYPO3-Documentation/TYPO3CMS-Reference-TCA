@@ -1,24 +1,14 @@
-..  include:: /Includes.rst.txt
+..  _types-example-previewRenderer:
 
-===============
-previewRenderer
-===============
+PreviewRenderer examples
+------------------------
 
-..  confval:: previewRenderer
-    :name: types-previewRenderer
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['previewRenderer']
-    :type: string
-    :Scope: Display
+..  _types-example-previewRenderer-for-type:
 
-    Configures a backend preview for a content element.
+Table has a `type` field/attribute
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    Have also a look at :ref:`t3coreapi:ConfigureCE-Preview` for more details.
-
-    Use :confval:`property previewRenderer of section ctrl <ctrl-previewRenderer>`
-    to configure the preview globally for the whole table.
-
-Table has a :php:`type` field/attribute
----------------------------------------
+Demonstrates property: :confval:`types-previewRenderer`.
 
 This specifies the preview renderer only for records of type :php:`$type` as
 determined by the :ref:`type field <types>` of your table.
@@ -28,8 +18,12 @@ determined by the :ref:`type field <types>` of your table.
     $GLOBALS['TCA']['tx_myextension_domain_model_mytable']['types'][$type]['previewRenderer']
         = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
 
-Table has a :php:`subtype_value_field` setting
-----------------------------------------------
+..  _types-example-previewRenderer-for-subtype:
+
+Table has a `subtype_value_field` setting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Demonstrates property: :confval:`types-previewRenderer`.
 
 If your table and field have a
 :ref:`subtype_value_field <types-properties-subtype-value-field>` TCA setting
@@ -37,6 +31,7 @@ If your table and field have a
 that applies only when that value is selected (for example, when a certain
 plugin type is selected and you can not match it with the type of the record
 alone):
+
 
 ..  code-block:: php
 
