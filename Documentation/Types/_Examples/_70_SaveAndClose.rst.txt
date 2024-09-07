@@ -1,0 +1,10 @@
+..  _types-example-creation-option:
+
+Example: Activate save and close for divider content element
+------------------------------------------------------------
+
+Demonstrates property: :confval:`types-creationOptions-saveAndClose`.
+
+..  literalinclude:: /Types/_CodeSnippets/_creationOptions.php
+    :language: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php

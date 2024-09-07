@@ -1,0 +1,17 @@
+
+..  confval:: previewRenderer
+    :name: types-previewRenderer
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['previewRenderer']
+    :type: string
+    :Scope: Display
+    :Examples: `types-example-previewRenderer`
+
+    To configure a preview renderer for the whole table see
+    :confval:`ctrl-previewRenderer`.
+
+    Configures a backend preview for a content element.
+
+    Have also a look at :ref:`t3coreapi:ConfigureCE-Preview` for more details.
+
+    Use :confval:`property previewRenderer of section ctrl <ctrl-previewRenderer>`
+    to configure the preview globally for the whole table.

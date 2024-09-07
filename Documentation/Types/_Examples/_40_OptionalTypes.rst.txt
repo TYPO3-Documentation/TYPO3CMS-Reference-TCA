@@ -1,0 +1,34 @@
+
+..  _types-optional:
+
+Optional additional types
+-------------------------
+
+The power of the "types" configuration becomes clear when you want the form
+composition of a record to depend on a value from the record. Let's look at the
+:sql:`tx_styleguide_type` table from the :ref:`styleguide <styleguide>`
+extension. The :php:`ctrl` section of its TCA contains a property called
+:php: `type`:
+
+..  include:: /CodeSnippets/CtrlTypeCtrl.rst.txt
+
+This indicates that the field called :php:`record_type` is to specify the type
+of any given record of the table. Let's look at how this field is defined in
+the property :php:`columns`:
+
+..  include:: /CodeSnippets/RecordType.rst.txt
+
+There's nothing unusual here. It's a pretty straightforward select field, with
+three options. Finally, in the :php:`types` section, we define what fields
+should appear and in what order for every value of the type field:
+
+..  include:: /CodeSnippets/CtrlTypeTypes.rst.txt
+
+The result if the following display when type :php:`0` is chosen:
+
+..  include:: /Images/Rst/CtrlType0.rst.txt
+
+Changing to type :php:`withChangedFields` reloads the form and displays
+the a different set of fields:
+
+..  include:: /Images/Rst/CtrlTypeWithChangedFields.rst.txt
