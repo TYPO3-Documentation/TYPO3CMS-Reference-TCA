@@ -54,7 +54,7 @@ type's :confval:`types-showitem` definition.
 If the content element defines the :guilabel:`Extended` tab, it will be
 inserted at the end, including all fields added to the type via API methods,
 without specifying a position, via
-:php:`ExtensionManagementUtility::addToAllTcaTypes()`. See
+:php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTcaTypes()`. See
 :ref:`types-content-examples-extended` for an example.
 
 ..  _types-content-examples:
@@ -68,11 +68,15 @@ Basic custom content element with header and bodytext
 -----------------------------------------------------
 
 ..  literalinclude:: _CodeSnippets/_basic_content_element.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 The following tabs are shown, the header palette and bodytext field are shown
 in palette general:
 
 ..  figure:: /Images/ManualScreenshots/tt_content_basic.png
+    :alt: Screenshot of the content element form created by the code
+
+    Screenshot of the content element form created by the code
 
 ..  _types-content-examples-extended:
 
@@ -80,14 +84,18 @@ Extended content element with custom fields
 -------------------------------------------
 
 ..  literalinclude:: _CodeSnippets/_extended_content_element.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 The following tabs are shown:
 
 ..  figure:: /Images/ManualScreenshots/tt_content_extended.png
+    :alt: Screenshot of the content element form created by the code
+
+    Screenshot of the content element form created by the code
 
 Additional fields that are subsequently added to the end of the table using
-:php:`ExtensionManagementUtility::addToAllTcaTypes()` will appear in the tab
-:guilabel:`Extended`.
+:php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTcaTypes()`
+will appear in the tab :guilabel:`Extended`.
 
 ..  _types-content-migration:
 
@@ -101,6 +109,8 @@ In site packages or extensions only supporting TYPO3 v13.3 or above you can
 migrate the :confval:`types-showitem` right away:
 
 ..  literalinclude:: _CodeSnippets/tt_content_migration.diff
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php (diff)
 
 So the tabs :guilabel:`General`, :guilabel:`Language`, :guilabel:`Access`
-and :guilabel:`Notes` are now added automatically.
+and :guilabel:`Notes` are now added automatically together with the
+corresponding system fields.

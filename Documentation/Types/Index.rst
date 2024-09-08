@@ -20,7 +20,8 @@ programming.
 ..  contents:: Table of Contents
     :depth: 1
 
-..  toctree:: Subpages
+..  toctree::
+    :caption: Subpages
     :glob:
     :titlesonly:
 
