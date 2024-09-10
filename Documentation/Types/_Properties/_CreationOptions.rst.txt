@@ -17,7 +17,25 @@
         :default: false
         :Examples: :ref:`types-example-creation-option`
 
-        If true, clicking on the new element wizard directs the user back to
-        the page module directly instead of showing the edit form from the form
-        engine. Can be overridden with page TSconfig
-        :confval:`newContentElement.wizardItems.[group].elements.[name] <t3tsconfig:mod-wizards-newcontentelement-wizarditems>`.
+        ..  versionadded:: 13.0
+
+        If true, clicking on the new element wizard will take the user directly
+        to the page module, rather than showing the edit form from the form
+        engine.
+
+        Can be overridden with page TSconfig option
+        :confval:`saveAndClose <t3tsconfig:mod-wizards-newcontentelement-wizarditems-group-elements-name-saveandclose>`.
+
+    ..  confval:: defaultValues
+        :name: types-creationOptions-defaultValues
+        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['defaultValues']
+        :type: array
+        :Examples: :ref:`types-example-creation-option`
+
+        ..  versionadded:: 13.0
+
+        Default values inserted into the fields of the `tt_content` record on
+        creation via the "New Content Element" wizard
+
+        Can be overridden with page TSconfig option
+        :confval:`tt_content_defValues <t3tsconfig:mod-wizards-newcontentelement-wizarditems-group-elements-name-tt-content-defvalues>`.

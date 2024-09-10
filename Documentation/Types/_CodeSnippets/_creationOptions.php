@@ -8,6 +8,9 @@ $GLOBALS['TCA']['tt_content'] = array_merge_recursive(
             'div' => [
                 'creationOptions' => [
                     'saveAndClose' => true,
+                    'defaultValues' => [
+                        'bodytext' => '<p>some text</p>',
+                    ],
                 ],
             ],
         ],
