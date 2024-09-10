@@ -20,6 +20,19 @@ programming.
 ..  contents:: Table of Contents
     :depth: 1
 
+..  toctree::
+    :caption: Subpages
+    :glob:
+    :titlesonly:
+
+    *
+
+..  versionchanged:: 13.3
+    Creating content elements has been simplified by removing the need to
+    define the system fields for each element again and again. This shrinks
+    down a content element's :confval:`types-showitem` to just the element
+    specific fields. See also :ref:`types-content`.
+
 ..  _types-introduction:
 
 Introduction
