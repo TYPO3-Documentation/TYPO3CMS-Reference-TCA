@@ -11,9 +11,9 @@ class SomeService
         private readonly LinkFactory $linkFactory,
     ) {}
 
-    public function getLink(string $tcaLinkValue, ContentObjectRenderer $contentObjectRenderer): string
+    public function getUri(string $tcaLinkValue, ContentObjectRenderer $contentObjectRenderer): string
     {
-        $link = $this->linkFactory->create(
+        return $this->linkFactory->createUri(
             '',
             [
                 'parameter'        => $tcaLinkValue,
@@ -21,6 +21,5 @@ class SomeService
             ],
             $contentObjectRenderer
         );
-        return $link->getUrl();
     }
 }
