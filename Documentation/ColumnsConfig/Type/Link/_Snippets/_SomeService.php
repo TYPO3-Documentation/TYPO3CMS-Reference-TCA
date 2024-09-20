@@ -14,11 +14,7 @@ class SomeService
     public function getUri(string $tcaLinkValue, ContentObjectRenderer $contentObjectRenderer): string
     {
         return $this->linkFactory->createUri(
-            '',
-            [
-                'parameter'        => $tcaLinkValue,
-                'forceAbsoluteUrl' => true,
-            ],
+            $tcaLinkValue,
             $contentObjectRenderer
         );
     }
