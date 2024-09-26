@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _palettes-properties-description:
-
-===========
-description
-===========
 
 ..  versionadded:: 11.3
     The palettes description property has been added with TYPO3 v11.3.
@@ -25,8 +20,7 @@ description
         In contrast to the palette label, the description property can not
         be overwritten on a record type basis.
 
-Example
-=======
+..  rubric:: Example
 
 ..  include:: /Images/Rst/PaletteDescription.rst.txt
 
