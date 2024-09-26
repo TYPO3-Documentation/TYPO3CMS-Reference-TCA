@@ -1,0 +1,36 @@
+..  _columns-properties-config:
+
+..  confval:: config
+    :name: columns-config
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Required: true
+    :type: array
+    :Scope: Proc. / Display
+    :Example: :ref:`columns-example-basic`
+
+    Contains the main configuration properties of the fields display and
+    processing behavior.
+
+    The possibilities for this array depend on the value of the array keys
+    :confval:`columns-config-type` and :confval:`columns-config-rendertype`
+    within the array.
+
+    ..  confval:: type
+        :name: columns-config-type
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['type']
+        :Required: true
+        :type: string, one of the :ref:`column types <columns-types>`
+
+        The `type` influences the rendering of the form field in the backend.
+        It also influences the processing of data on saving the values.
+
+    ..  confval:: rendertype
+        :name: columns-config-rendertype
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rendertype']
+        :Required: true
+        :type: string
+
+        For some :confval:`columns-config-type` definitions there are additional
+        render types available that mainly influence rendering. For example
+        :ref:`Select fields <columns-select>` and
+        :ref:`Text areas <columns-text>` provide different render types.
