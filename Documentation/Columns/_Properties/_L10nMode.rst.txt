@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-properties-l10n-mode:
-
-=============================
-Localization mode (l10n_mode)
-=============================
 
 ..  confval:: l10n_mode
     :name: columns-l10n-mode
@@ -11,6 +6,7 @@ Localization mode (l10n_mode)
     :Required: false
     :type: string (keyword)
     :Scope: Display / Proc.
+    :Example: :ref:`tca_example_translated_text_2`, :ref:`tca_example_l10n_mode`
 
     Only active if the :ref:`['ctrl']['languageField'] <ctrl-reference-languagefield>` property is set.
 
@@ -36,37 +32,3 @@ Localization mode (l10n_mode)
     If this property is not set for a given field, the value of the default language record is copied over to the
     localized record on creation, the field value is then distinct from the default language record, can be edited
     at will and will never be overwritten by the DataHandler if the value of the default language record changes.
-
-Examples
-========
-
-..  _tca_example_translated_text_2:
-
-prefixLangTitle
----------------
-
-The following example can be found in the :ref:`extension styleguide
-<styleguide>`. On translating a record in a new language the content of the
-field gets copied to the target language. It get prefixed with
-:code:`[Translate to <language name>:]`.
-
-..  include:: /Images/Rst/TranslatedText2.rst.txt
-
-
-The language mode is defined as follows:
-
-..  include:: /CodeSnippets/TranslatedText2.rst.txt
-
-
-..  _tca_example_l10n_mode:
-
-Disable the prefixLangTitle for the header field in tt_content
---------------------------------------------------------------
-
-Use the default behaviour instead of :php:`prefixLangTitle`: the field will
-be copied without a prepended string.
-
-..  code-block:: php
-    :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php
-
-    $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = ''
