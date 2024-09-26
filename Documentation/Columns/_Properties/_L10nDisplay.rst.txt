@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-properties-l10n-display:
-
-====================================
-Localization display (l10n\_display)
-====================================
 
 ..  confval:: l10n_display
     :name: columns-l10n-display
@@ -11,6 +6,7 @@ Localization display (l10n\_display)
     :Required: false
     :type: string (list of keywords)
     :Scope: Display
+    :Example: :ref:`tca_example_translated_select_single_13`, :ref:`tca_example_translated_select_single_8`
 
     Localization display, see :ref:`l10n\_mode <columns-properties-l10n-mode>`.
 
@@ -29,34 +25,3 @@ Localization display (l10n\_display)
         :ref:`l10n_mode <columns-properties-l10n-mode>` is set to
         :php:`'exclude'`. While `exclude` defines the field not to be
         translatable, this option activates the display of the default data.
-
-
-Examples
-========
-
-..  _tca_example_translated_select_single_13:
-
-Select field with `defaultAsReadonly`
--------------------------------------
-
-The following field has the option :php:`'l10n_display' => 'defaultAsReadonly'`
-set:
-
-..  include:: /Images/Rst/TranslatedSelectSingle13.rst.txt
-
-Complete TCA definition of the field:
-
-..  include:: /CodeSnippets/SelectSingle13.rst.txt
-
-..  _tca_example_translated_select_single_8:
-
-Translated field without `l10n_display` definition
---------------------------------------------------
-
-The following has no :php:`'l10n_display'` definition:
-
-..  include:: /Images/Rst/TranslatedSelectSingle8.rst.txt
-
-Complete TCA definition of the field:
-
-..  include:: /CodeSnippets/SelectSingle8.rst.txt
