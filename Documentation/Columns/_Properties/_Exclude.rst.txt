@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-properties-exclude:
-
-=======
-exclude
-=======
 
 ..  confval:: exclude
     :name: columns-exclude
@@ -19,11 +14,7 @@ exclude
     See :ref:`Access lists <t3coreapi:access-options-access-lists>` for more
     about permissions.
 
-Example
-=======
-
-Simple input field
-------------------
+..  rubric:: Example: Simple input field
 
 ..  code-block:: php
 

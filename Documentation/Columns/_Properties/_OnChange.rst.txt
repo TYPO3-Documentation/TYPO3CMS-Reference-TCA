@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-properties-onChange:
-
-========
-onChange
-========
 
 ..  confval:: onChange
     :name: columns-onChange
@@ -23,11 +18,7 @@ onChange
 
     ..  include:: /Images/Rst/CtrlTypeChangeModal.rst.txt
 
-Examples
-========
-
-Select field triggering reload
-------------------------------
+..  rubric:: Example: Select field triggering reload
 
 ..  include:: /Images/Rst/SelectRequestupdate1.rst.txt
 ..  include:: /CodeSnippets/SelectRequestupdate1.rst.txt

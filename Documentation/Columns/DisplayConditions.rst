@@ -1,0 +1,227 @@
+..  include:: /Includes.rst.txt
+
+..  _columns-displaycond:
+
+=================================
+Display conditions in TCA columns
+=================================
+
+Display conditions (:confval:`$GLOBALS['TCA'][$table]['columns'][$field][displayCond] <columns-displayCond>`)
+can be used to only display the affected field if certain other fields are set
+to certain values.
+
+Conditions can be grouped and nested using boolean operators :code:`AND` or :code:`OR` as
+array keys. See examples below.
+
+..  contents:: Table of contents
+
+..  _columns-displaycond-rules:
+
+Rules in display conditions
+===========================
+
+A rule is a string divided into several parts by ":" (colons). The first part is
+the rule-type and the subsequent parts depend on the rule type.
+
+The following rules are available:
+
+FIELD
+    This evaluates based on another field's value in the record.
+
+    -  Part 1 is the field name
+
+    -  Part 2 is the evaluation type. These are the possible options:
+
+        REQ
+            Requires the field to have a "true" value. False values are "" (blank string) and 0 (zero).
+            Everything else is true. For the REQ evaluation type Part 3 of the rules string must be the string "true"
+            or "false". If "true" then the rule returns "true" if the evaluation is true. If "false" then the rule
+            returns "true" if the evaluation is false.
+
+        **> / < / >= / <=**
+            Evaluates if the field value is greater than, less than the value in "Part 3"
+
+        **= / !=**
+            Evaluates if the field value is equal to value in "Part 3"
+
+        **IN / !IN**
+            Evaluates if the field value is in the comma list equal to value in "Part 3"
+
+        **- / !-**
+            Evaluates if the field value is in the range specified by value in "Part 3" ([min] - [max])
+
+        **BIT / !BIT**
+            Evaluates if the bit specified by the value in "Part 3" is set in the field's value
+            (considered as an integer)
+
+    -  Part 3 is a comma separated list of string or numeric values
+
+REC:NEW:true
+    This will show the field for new records which have not been saved yet.
+
+REC:NEW:false
+    This will show the field for existing records which have already been saved.
+
+HIDE\_FOR\_NON\_ADMINS
+    This will hide the field for all non-admin users while admins can see it.
+    Useful for FlexForm container fields which are not supposed to be edited directly via the FlexForm but
+    rather through some other interface.
+
+USER
+    userFunc call with a fully qualified class name.
+
+    Additional parameters can be passed separated by colon:
+    :php:`USER:Evoweb\\Example\\User\\MyConditionMatcher->checkHeader:some:more:info`
+
+    The following arguments are passed as array to the userFunc:
+
+    -  :php:`record`: the currently edited record
+    -  :php:`flexContext`: details about the FlexForm if the condition is used in one
+    -  :php:`flexformValueKey`: `vDEF`
+    -  :php:`conditionParameters`: additional parameters
+
+    The called method is expected to return a :php:`bool` value: :php:`true` if the field should be displayed, :php:`false` otherwise.
+
+VERSION:IS
+    Evaluate if a record is a "versioned" record from workspaces.
+
+    -  Part 1 is the type:
+
+        IS
+            Part 2 is "true" or "false": If true, the field is shown only if the record is a version (pid == -1).
+            Example to show a field in "Live" workspace only: :php:`VERSION:IS:false`
+
+In FlexForm, display conditions can be attached to single fields in sheets, to sheets itself, to flex section fields
+and to flex section container element fields. :code:`FIELD` references can be prefixed with a sheet name to
+reference a field from a neighbor sheet, see examples below.
+
+..  tip::
+    Fields used in a conditions should have the column option
+    :confval:`columns-onChange` set to reload.
+
+..  _columns-displaycond-examples:
+
+Examples for display conditions
+===============================
+
+..  _columns-displaycond-examples-basic:
+
+Basic display condition
+------------------------
+
+This example will require the field named "tx\_templavoila\_ds" to be true, otherwise the field for which this rule
+is set will not be displayed:
+
+..  code-block:: php
+
+    'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
+
+..  _columns-displaycond-examples-combined:
+
+Combining conditions
+--------------------
+
+Multiple conditions can be combined:
+
+..  code-block:: php
+
+    'displayCond' => [
+        'AND' => [
+            'FIELD:tx_templavoila_ds:REQ:true',
+            'FIELD:header:=:Headline',
+        ],
+    ],
+
+
+An example with multiple values and :code:`OR`:
+
+..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
+
+    $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']['OR'] = [
+        'FIELD:tx_mask_otherfield:=:1',
+        'FIELD:tx_mask_otherfield:=:2',
+        'FIELD:tx_mask_otherfield:=:4',
+    ];
+
+
+This is the same as:
+
+..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
+
+          $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']
+		  = 'FIELD:tx_mask_otherfield:IN:1,2,4';
+
+
+..  _columns-displaycond-examples-complex:
+
+A complex example
+-----------------
+
+Going further the next example defines the following conditions: for the
+"example_field" field to be displayed, the content element must be in the
+default language. Furthermore it must be a text-type element or have the
+headline "Example" defined:
+
+..  code-block:: php
+
+    'displayCond' => [
+        'AND' => [
+            'FIELD:sys_language_uid:=:0',
+            'OR' => [
+                'FIELD:CType:=:text',
+                'FIELD:header:=:Example'
+            ]
+        ]
+    ],
+
+..  _columns-displaycond-examples-flexform:
+
+A complex example in a FlexForm
+-------------------------------
+
+Using :code:`OR` and :code:`AND` within FlexForms works like this:
+
+..  code-block:: xml
+
+    <displayCond>
+        <and>
+            <value1>FIELD:sys_language_uid:=:0</value1>
+            <or>
+                <value1>FIELD:CType:=:text</value1>
+                <value2>FIELD:header:=:Example</value2>
+            </or>
+        </and>
+    </displayCond>
+
+
+..  _columns-displaycond-examples-flexform-value:
+
+Access values in a flexform
+---------------------------
+
+Flex form fields can access field values from various different sources:
+
+..  code-block:: xml
+
+    <!-- Hide field if value of record field "header" is not "true" -->
+    <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
+    <!-- Hide field if value of parent record field "field_1" is not "foo" -->
+    <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
+    <!-- Hide field if value of neighbour field "flexField_1 on same sheet is not "foo" -->
+    <displayCond>FIELD:flexField_1:!=:foo</displayCond>
+    <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
+    <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
+
+
+..  _columns-displaycond-technical:
+
+Technical background
+====================
+
+The display conditions are implemented in class
+:php:`\TYPO3\CMS\Backend\Form\FormDataProvider\EvaluateDisplayConditions`,
+which is a :ref:`FormDataProvider <t3coreapi:FormEngine-DataCompiling>`.
+It can be used for fields directly in the record as well as for
+FlexForm values.

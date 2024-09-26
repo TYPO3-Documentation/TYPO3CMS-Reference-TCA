@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-properties-label:
-
-=====
-label
-=====
 
 ..  confval:: label
     :name: columns-label
@@ -11,6 +6,7 @@ label
     :Required: true
     :type: string or LLL reference
     :Scope: Display
+    :Example: :ref:`columns-example-basic`
 
     The name of the field as shown in the form:
 

@@ -14,30 +14,43 @@ submitted data.
 Each field can be configured as a certain "type" (**required!**), for instance a checkbox, an input field, or a
 database relation selector box. Each type allows a set of additional "renderType"s (**sometimes required!**). Each "type" and "renderType" combination comes with a set of additional properties.
 
-The basic structure looks like this:
+..  contents:: Content on this page
 
-..  code-block:: php
+..  toctree::
+    :caption: Subpages
+    :titlesonly:
+    :glob:
 
-    'columns' => [
-        'aField' => [
-            'label' => 'someLabel',
-            'config' => [
-                'type' => 'aType',
-                'renderType' => 'aRenderType',
-                // ...
-            ],
-            // ...
-        ],
-    ],
+    *
 
-Properties on the level parallel to "label" are valid for all "type" and "renderType" combinations.
+..  _columns-example-basic:
+
+Example: A basic input field
+============================
+
+The basic structure of a field definition in TCA looks like this:
+
+..  include:: /Images/Rst/Input1.rst.txt
+
+..  include:: /CodeSnippets/Input1.rst.txt
+
+You can find this example in the :ref:`extension styleguide <styleguide>`.
+
+Properties on the level parallel to :confval:`label <t3tca:columns-label>`
+are valid for all "type" and "renderType" combinations.
 They are listed below. The list of properties within the "config" section depend on the specific "type" and "renderType"
 combination and are explained in detail in the :ref:`['columns']['config'] <columns-types>` section.
 
 ..  _columns-properties:
 
-..  toctree::
-    :titlesonly:
+Properties of `columns` section of TCA
+======================================
 
-    Examples
-    Properties/Index
+..  confval-menu::
+    :name: columns
+    :display: table
+    :type:
+    :Scope:
+
+    ..  include:: _Properties/_*.rst.txt
+        :show-buttons:

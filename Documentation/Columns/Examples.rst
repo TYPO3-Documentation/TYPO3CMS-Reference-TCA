@@ -1,5 +1,7 @@
 ..  include:: /Includes.rst.txt
 
+..  _columns-example:
+
 ========
 Examples
 ========
@@ -15,6 +17,8 @@ The following examples all can be found in the
 ..  index::
     Styleguide; select_single_12
     pair: selectSingle; Images
+
+..  _columns-example-drop down:
 
 Select drop-down for records represented by images
 ==================================================
@@ -40,3 +44,59 @@ Inline relation (IRRE) spanning multiple tables
 Inline relation to a foreign table:
 
 ..  include:: /CodeSnippets/Inline1n1nInline1.rst.txt
+
+..  _tca_example_translated_text_2:
+
+Example: prefixLangTitle
+========================
+
+The following example can be found in the :ref:`extension styleguide
+<styleguide>`. On translating a record in a new language the content of the
+field gets copied to the target language. It get prefixed with
+:code:`[Translate to <language name>:]`.
+
+..  include:: /Images/Rst/TranslatedText2.rst.txt
+
+The language mode is defined as follows:
+
+..  include:: /CodeSnippets/TranslatedText2.rst.txt
+
+..  _tca_example_l10n_mode:
+
+Disable the prefixLangTitle for the header field in tt_content
+==============================================================
+
+Use the default behaviour instead of :php:`prefixLangTitle`: the field will
+be copied without a prepended string.
+
+..  code-block:: php
+    :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php
+
+    $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = ''
+
+..  _tca_example_translated_select_single_13:
+
+Select field with `defaultAsReadonly`
+=====================================
+
+The following field has the option :php:`'l10n_display' => 'defaultAsReadonly'`
+set:
+
+..  include:: /Images/Rst/TranslatedSelectSingle13.rst.txt
+
+Complete TCA definition of the field:
+
+..  include:: /CodeSnippets/SelectSingle13.rst.txt
+
+..  _tca_example_translated_select_single_8:
+
+Translated field without `l10n_display` definition
+==================================================
+
+The following has no :php:`'l10n_display'` definition:
+
+..  include:: /Images/Rst/TranslatedSelectSingle8.rst.txt
+
+Complete TCA definition of the field:
+
+..  include:: /CodeSnippets/SelectSingle8.rst.txt
