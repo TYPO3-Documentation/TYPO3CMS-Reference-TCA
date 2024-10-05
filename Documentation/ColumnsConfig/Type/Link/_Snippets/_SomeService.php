@@ -11,16 +11,11 @@ class SomeService
         private readonly LinkFactory $linkFactory,
     ) {}
 
-    public function getLink(string $tcaLinkValue, ContentObjectRenderer $contentObjectRenderer): string
+    public function getUri(string $tcaLinkValue, ContentObjectRenderer $contentObjectRenderer): string
     {
-        $link = $this->linkFactory->create(
-            '',
-            [
-                'parameter'        => $tcaLinkValue,
-                'forceAbsoluteUrl' => true,
-            ],
+        return $this->linkFactory->createUri(
+            $tcaLinkValue,
             $contentObjectRenderer
         );
-        return $link->getUrl();
     }
 }
