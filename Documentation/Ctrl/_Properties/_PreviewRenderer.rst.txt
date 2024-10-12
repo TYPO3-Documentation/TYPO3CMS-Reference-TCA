@@ -11,7 +11,7 @@
     Have also a look at :ref:`t3coreapi:ConfigureCE-Preview` for more details.
 
     Use :confval:`property previewRenderer of section types <types-previewRenderer>`
-    to configure the preview for a certain type or subtype only.
+    to configure the preview for a certain type only.
 
     ..  rubric:: Example: Use for any record in a table
 

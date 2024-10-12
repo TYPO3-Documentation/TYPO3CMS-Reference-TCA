@@ -32,39 +32,24 @@ Notice the :xml:`<input_1>` tag:
 It's clear that the contents of :xml:`<input_1>` is a direct reflection of
 the field configurations we normally set up in the :php:`$GLOBALS['TCA']` array.
 
+..  _columns-flex-example-plugin:
 
 FlexForm in a plugin
 ====================
 
-The Data Structure for a FlexForm can also be loaded in the :sql:`pi_flexform`
+The data structure for a FlexForm can also be loaded in the :sql:`pi_flexform`
 field of the :sql:`tt_content` table by adding the following in the
-TCA Overrides of an extension:
+TCA Overrides of an extension, see this example from the EXT:blog_example:
 
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: _CodeSnippets/_tt_content_plugin.php
+    :caption: EXT:blog_example/Configuration/TCA/Overrides/tt_content.php
 
-    $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['myextension_pi1']
-        = 'pi_flexform';
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-        'myextension_pi1',
-        'FILE:EXT:examples/Configuration/FlexForms/Main.xml');
+In line 18ff the field :sql:`pi_flexform` is added to the display
+of fields when the record type of the plugin is selected.
 
-In the first line the :sql:`tt_content` field :sql:`pi_flexform` is added to the display
-of fields when the plugin type is selected and set to :php:`myextension_pi1`. In the
-second line the DS xml file is configured to be the source of the FlexForm DS
-used.
-
-If we browse the definition for the :sql:`pi_flexform` field in :sql:`tt_content` below
-"columns" using the :guilabel:`Admin > Configuration` module for
-:guilabel:`$GLOBALS['TCA'] (Table configuration array)`,
-we can see the following:
-
-..  include:: /Images/Rst/PluginFlexFormConfigurationCheck.rst.txt
-
-As you can see there are quite a few extensions that have added pointers to
-their Data Structures. Towards the bottom we can find the one we have just been
-looking at.
-
+In line 25ff the method `addPiFlexFormValue()` from class
+:php-short:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility` is used to
+register the FlexForm.
 
 ..  _columns-flex-example-sheets:
 ..  _tca_example_flex_1:

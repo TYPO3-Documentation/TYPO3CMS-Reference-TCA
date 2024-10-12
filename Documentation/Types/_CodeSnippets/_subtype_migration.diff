@@ -1,0 +1,48 @@
+ 'ctrl' => [
+         'type' => 'type',
+ ],
+ 'columns' => [
+     'type' => [
+         'config' => [
+             'type' => 'select',
+             'renderType' => 'selectSingle',
+             'items' => [
+                 [
+                     'label' => 'A record type',
+                     'value' => 'a_record_type'
+                 ],
++                [
++                    'label' => 'A sub type',
++                    'value' => 'a_sub_type'
++                ],
+             ]
+         ]
+     ],
+-    'subtype' => [
+-        'config' => [
+-            'type' => 'select',
+-            'renderType' => 'selectSingle',
+-            'items' => [
+-                [
+-                    'label' => 'A sub type',
+-                    'value' => 'a_sub_type'
+-                ]
+-            ]
+-        ]
+-    ],
+ ],
+ 'types' => [
+     'a_record_type' => [
+         'showitem' => 'aField,bField',
+-        'subtype_value_field' => 'subtype',
+-        'subtypes_addlist' => [
+-            'a_sub_type' => 'pi_flexform'
+-        ],
+-        'subtypes_excludelist' => [
+-            'a_sub_type' => 'bField'
+-         ],
+     ],
++    'a_sub_type' => [
++        'showitem' => 'aField,pi_flexform'
++    ]
+ ]

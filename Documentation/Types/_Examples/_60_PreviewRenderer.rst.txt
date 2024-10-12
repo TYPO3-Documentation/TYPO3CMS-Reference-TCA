@@ -1,12 +1,16 @@
 ..  _types-example-previewRenderer:
+..  _types-example-previewRenderer-for-type:
 
 PreviewRenderer examples
 ------------------------
 
-..  _types-example-previewRenderer-for-type:
+..  deprecated:: 13.4
+    Registration of subtypes has been deprecated.  Registration of custom
+    types should therefore always be done by using
+    :confval:`record types <ctrl-type>`.
 
-Table has a `type` field/attribute
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    If you used PreviewRenderer with a subtype see section
+    :ref:`migration-subtype-previewrenderer`.
 
 Demonstrates property: :confval:`types-previewRenderer`.
 
@@ -15,29 +19,5 @@ determined by the :ref:`type field <types>` of your table.
 
 ..  code-block:: php
 
-    $GLOBALS['TCA']['tx_myextension_domain_model_mytable']['types'][$type]['previewRenderer']
+    $GLOBALS['TCA']['tt_content']['types'][$type]['previewRenderer']
         = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
-
-..  _types-example-previewRenderer-for-subtype:
-
-Table has a `subtype_value_field` setting
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Demonstrates property: :confval:`types-previewRenderer`.
-
-If your table and field have a
-:ref:`subtype_value_field <types-properties-subtype-value-field>` TCA setting
-(like :sql:`tt_content.list_type`) and you want to register a preview renderer
-that applies only when that value is selected (for example, when a certain
-plugin type is selected and you can not match it with the type of the record
-alone):
-
-
-..  code-block:: php
-
-    $GLOBALS['TCA'][tx_myextension_domain_model_mytable]['types'][$type]['previewRenderer'][$subType]
-        = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
-
-Where :php:`$type` is for example :php:`list` (indicating a plugin) and
-:php:`$subType` is the value of the :php:`list_type` field when the
-type of plugin you want to target is selected as plugin type.
