@@ -42,6 +42,7 @@ field of the :sql:`tt_content` table by adding the following in the
 TCA Overrides of an extension, see this example from the EXT:blog_example:
 
 ..  literalinclude:: _CodeSnippets/_tt_content_plugin.php
+    :linenos:
     :caption: EXT:blog_example/Configuration/TCA/Overrides/tt_content.php
 
 In line 18ff the field :sql:`pi_flexform` is added to the display
