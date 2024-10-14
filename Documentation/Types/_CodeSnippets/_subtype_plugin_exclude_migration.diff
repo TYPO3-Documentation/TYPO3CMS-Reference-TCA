@@ -1,0 +1,7 @@
+ $pluginSignature = ExtensionUtility::registerPlugin(
+     'blog_example',
+     'Pi1',
+     'A Blog Example',
+ );
+-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature]
+-    = 'pages,recursive';
