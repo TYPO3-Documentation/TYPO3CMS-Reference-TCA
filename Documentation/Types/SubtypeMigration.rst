@@ -31,7 +31,7 @@ method `addPiFlexFormValue()`:
     :caption: EXT:my_extension/Configuration/Overrides/tt_content.php
 
 The fields :sql:`pages` and :sql:`recursive` used to be added
-automatically to plugins when using the now outdated subtype "list-type".
+automatically to plugins when using the now outdated subtype "list_type".
 Therefore they have to be added manually when doing the migration.
 
 ..  _migration-subtype-subtypes-excludelist:
@@ -50,7 +50,7 @@ place:
 
 If any other fields have been removed with this method you can only remove
 them by overriding
-:confval:`$GLOBALS['TCA']['tt_content']['types'][$pluginSignature]['showitems] <types-showitem>`
+:confval:`$GLOBALS['TCA']['tt_content']['types'][$pluginSignature]['showitem'] <types-showitem>`
 or via page TSconfig.
 
 ..  _migration-subtype-custom:
