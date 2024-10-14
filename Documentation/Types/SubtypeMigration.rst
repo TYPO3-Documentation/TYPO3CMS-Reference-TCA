@@ -23,7 +23,7 @@ If you used plugins with the now deprecated subtypes, you probably used
 :ref:`FlexForm <t3coreapi:flexforms>` for configuration purposes.
 
 Migrate by adding the field :sql:`pi_flexform` with the utility method
-:php-short:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility` method
+:php-short:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility`
 `addToAllTCAtypes()` instead. You also have to change the parameters used for
 method `addPiFlexFormValue()`:
 
