@@ -87,7 +87,7 @@ Register an own node in a :file:`ext_localconf.php`:
 Register the new node as `fieldWizard` of `tt_content` table in an
 :file:`Configuration/TCA/Overrides/tt_content.php` file:
 
-..  literalinclude:: _CodeSnippets/_WizardRegistration/_ext_localconf.php
+..  literalinclude:: _CodeSnippets/_WizardRegistration/_tca_overrides.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 In PHP, the node has to implement an interface, but can return any additional HTML which is rendered in the
