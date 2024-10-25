@@ -20,8 +20,7 @@ MM
     <columns-inline-properties-foreign-table>` for `inline` fields.
 
     The table defined in this property is :ref:`automatically created by the
-    Database Analyzer <tca_property_MM_auto_creation_mm_table>` starting with
-    v11.4.
+    Database Analyzer <tca_property_MM_auto_creation_mm_table>`.
 
     The field for which an MM configuration exists stores the number of records
     in the relation on each update, so the field should be an integer.
@@ -106,10 +105,9 @@ Related configurations
 Auto creation of intermediate MM tables from TCA
 ================================================
 
-..  versionadded:: 11.4
-    Starting with v11.4 intermediate mm tables defined in :php:`['config']['MM']`
-    are created automatically and do not have to be defined in
-    :file:`ext_tables.sql` anymore.
+..  note::
+    The intermediate mm tables defined in :php:`['config']['MM']`
+    are created automatically.
 
 TCA table column fields that define :php:`['config']['MM']` can
 drop specification of the intermediate mm table layout in:
