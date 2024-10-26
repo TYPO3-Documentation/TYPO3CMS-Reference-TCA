@@ -56,10 +56,9 @@ were "tt\_content,pages".
 The "MM" method
 ---------------
 
-..  versionadded:: 11.4
-    Starting with v11.4 intermediate mm tables defined in :php:`['config']['MM']`
-    are created automatically and do not have to be defined in
-    file:`ext_tables.sql` anymore.
+..  note::
+    The intermediate mm tables defined in :php:`['config']['MM']`
+    are created automatically.
 
 Using the MM method the Database Analyzer creates an intermediate MM table to
 store the relation data. The database fields in the affected tables only contain

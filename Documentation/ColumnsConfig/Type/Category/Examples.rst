@@ -21,10 +21,6 @@ The relationship gets stored in the intermediate table
 :sql:`sys_category_record_mm`. Category counts are only stored on the
 local side.
 
-..  note::
-    This is the use case, which was previously accomplished using
-    :php:`ExtensionManagementUtility->makeCategorizable()` up to v11.
-
 ..  _columns-category-one-to-one-example:
 
 One to one relation category field
