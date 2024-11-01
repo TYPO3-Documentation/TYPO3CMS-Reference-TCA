@@ -31,12 +31,19 @@ This document is the complete reference of the *Table Configuration Array*
 **Table of Contents:**
 
 ..  toctree::
-    :maxdepth: 2
+    :caption: About table configuration
+    :maxdepth: 1
     :titlesonly:
 
     Introduction/Index
     Examples/Index
     BestPractises/Index
+
+..  toctree::
+    :caption: Reference
+    :maxdepth: 1
+    :titlesonly:
+
     Columns/Index
     ColumnsConfig/Index
     Ctrl/Index
@@ -47,6 +54,7 @@ This document is the complete reference of the *Table Configuration Array*
 ..  Meta Menu
 
 ..  toctree::
+    :caption: Appendix
     :hidden:
 
     Sitemap
