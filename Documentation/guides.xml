@@ -9,7 +9,7 @@
             project-contact="https://typo3.slack.com/archives/C028JEPJL"
             project-repository="https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA"
             project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TCA/issues"
-            edit-on-github-branch="12.4"
+            edit-on-github-branch="main"
             edit-on-github="TYPO3-Documentation/TYPO3CMS-Reference-TCA"
             typo3-core-preferred="main"
             interlink-shortcode="t3tca"
