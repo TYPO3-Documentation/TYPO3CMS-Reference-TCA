@@ -10,9 +10,11 @@
     from the "previous" record transferred when they are *copied* to the
     position *after* another record from same table.
 
-    ..  rubric:: Example from `tt_content` table::
+    ..  rubric:: Example from `tt_content` table:
 
-        'ctrl' => [
-            'copyAfterDuplFields' => 'colPos, sys_language_uid',
-            ...
-        ],
+        ..  code-block: php
+
+            'ctrl' => [
+                'copyAfterDuplFields' => 'colPos, sys_language_uid',
+                // ...
+            ],
