@@ -1,6 +1,6 @@
 ..  _columns-inline-properties-foreign-unique:
 
-..  confval:: foreign\_unique
+..  confval:: foreign_unique
     :name: inline-foreign-unique
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string
