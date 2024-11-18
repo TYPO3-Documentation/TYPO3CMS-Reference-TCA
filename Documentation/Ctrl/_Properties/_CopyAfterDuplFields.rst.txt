@@ -12,9 +12,9 @@
 
     ..  rubric:: Example from `tt_content` table:
 
-        ..  code-block: php
+    ..  code-block: php
 
-            'ctrl' => [
-                'copyAfterDuplFields' => 'colPos, sys_language_uid',
-                // ...
-            ],
+        'ctrl' => [
+            'copyAfterDuplFields' => 'colPos, sys_language_uid',
+            // ...
+        ],
