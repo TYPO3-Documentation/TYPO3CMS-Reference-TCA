@@ -11,7 +11,7 @@ This page describes the :ref:`text <columns-text>` type with no renderType (defa
 `type='text'` without a given specific renderType either renders a simple
 `<textarea>` or a :ref:`Rich Text field <rich-text-editor-examples>` if
 :confval:`text-enableRichtext` is enabled in TCA and
-:ref:`page TSconfig <t3tsconfig:pageTsRte>`.
+:ref:`page TSconfig <t3tsref:pageTsRte>`.
 
 ..  contents:: Table of contents:
 

@@ -12,4 +12,4 @@
     the UUID to the clipboard of the operating system.
 
     This column configuration can be overwritten by
-    :ref:`page TSconfig <t3tsconfig:tceform>`.
+    :ref:`page TSconfig <t3tsref:tceform>`.

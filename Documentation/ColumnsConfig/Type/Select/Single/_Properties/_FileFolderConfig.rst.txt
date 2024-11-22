@@ -20,7 +20,7 @@
         Specify list in lowercase.
 
         This configuration can be overridden by :ref:`Page
-        TSconfig<t3tsconfig:fileFolderConfig>`.
+        TSconfig<t3tsref:fileFolderConfig>`.
 
     ..  _columns-select-single-properties-filefolder-recursions:
     ..  _columns-select-single-properties-fileFolderConfig-depth:
@@ -37,7 +37,7 @@
         with property :confval:`select-single-fileFolderConfig-folder`.
 
         This configuration can be overridden by :ref:`Page
-        TSconfig<t3tsconfig:fileFolderConfig>`.
+        TSconfig<t3tsref:fileFolderConfig>`.
 
 
     ..  confval:: folder
@@ -64,7 +64,7 @@
         (third parameter in items array).
 
         This configuration can be overridden by :ref:`Page
-        TSconfig<t3tsconfig:fileFolderConfig>`.
+        TSconfig<t3tsref:fileFolderConfig>`.
 
     ..  rubric:: Examples: Select SVGs recursively from a folder
 

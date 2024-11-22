@@ -42,13 +42,13 @@ It is possible to use markers in the WHERE clause:
 
 ###SITEROOT###
 
-:ref:`###PAGE\_TSCONFIG\_ID### <t3tsconfig:tceform-page_tsconfig_id>`
+:ref:`###PAGE\_TSCONFIG\_ID### <t3tsref:tceform-page_tsconfig_id>`
     A value you can set from Page TSconfig dynamically.
 
-:ref:`###PAGE\_TSCONFIG\_IDLIST### <t3tsconfig:tceform-page_tsconfig_idlist>`
+:ref:`###PAGE\_TSCONFIG\_IDLIST### <t3tsref:tceform-page_tsconfig_idlist>`
     A value you can set from Page TSconfig dynamically.
 
-:ref:`###PAGE\_TSCONFIG\_STR### <t3tsconfig:tceform-page_tsconfig_str>`
+:ref:`###PAGE\_TSCONFIG\_STR### <t3tsref:tceform-page_tsconfig_str>`
     A value you can set from Page TSconfig dynamically.
 
 ###SITE:<KEY>.<SUBKEY>###
@@ -59,7 +59,7 @@ The markers are preprocessed so that the value of CURRENT\_PID and PAGE\_TSCONFI
 and PAGE\_TSCONFIG\_STR will be quoted before substitution (default is blank string).
 
 More information about markers set by Page TSconfig can be found in
-the :ref:`TSconfig reference <t3tsconfig:pagetceformconfobj>`.
+the :ref:`TSconfig reference <t3tsref:pagetceformconfobj>`.
 
 ..  rubric:: Example: Select single field with foreign_prefix and foreign_where
 

@@ -15,7 +15,7 @@
     Items registered for the field :sql:`CType` of table :sql:`tt_content` get
     automatically added to the :guilabel:`New content element` wizard. Settings
     from the items property can be overridden via page TSconfig
-    :confval:`newContentElement.wizardItems <t3tsconfig:mod-wizards-newcontentelement-wizarditems>`.
+    :confval:`newContentElement.wizardItems <t3tsref:mod-wizards-newcontentelement-wizarditems>`.
 
     See also :ref:`Add content elements to the Content Element Wizard <t3coreapi:content-element-wizard>`.
 

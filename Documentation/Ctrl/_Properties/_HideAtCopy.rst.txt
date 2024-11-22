@@ -12,4 +12,4 @@
 
     ..  seealso::
         It is possible to disable this feature on a page and user or group level using the Page
-        TSconfig option :ref:`disableHideAtCopy <t3tsconfig:pagetcemaintables-disablehideatcopy>`.
+        TSconfig option :ref:`disableHideAtCopy <t3tsref:pagetcemaintables-disablehideatcopy>`.
