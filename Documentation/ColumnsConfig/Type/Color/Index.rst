@@ -18,10 +18,10 @@ The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
 ..  versionadded:: 13.0
-    :ref:`Color palettes <t3tsconfig:pagecolorpalettes>` have been added.
+    :ref:`Color palettes <t3tsref:pagecolorpalettes>` have been added.
 
-:ref:`Color palettes <t3tsconfig:pagecolorpalettes>` can be defined via
-:ref:`page TSconfig <t3tsconfig:setting-page-tsconfig>`. This way, for example,
+:ref:`Color palettes <t3tsref:pagecolorpalettes>` can be defined via
+:ref:`page TSconfig <t3tsref:setting-page-tsconfig>`. This way, for example,
 colors defined in a corporate design can be selected by a simple click.
 
 ..  contents::

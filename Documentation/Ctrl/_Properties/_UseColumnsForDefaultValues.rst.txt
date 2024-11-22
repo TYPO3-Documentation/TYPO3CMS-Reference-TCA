@@ -10,7 +10,7 @@
    When a new record is created, this defines the fields from the 'previous' record that should be used as default values.
 
    What is considered the 'previous' record depends on how the record is created. For example, if
-   TSconfig :ref:`options.saveDocNew <t3tsconfig:useroptions-saveDocNew>` is enabled, you can
+   TSconfig :ref:`options.saveDocNew <t3tsref:useroptions-saveDocNew>` is enabled, you can
    create a new record from an existing one using the "New" button.
 
    This may still get overridden by the default values for the record. When assigning values to a new
