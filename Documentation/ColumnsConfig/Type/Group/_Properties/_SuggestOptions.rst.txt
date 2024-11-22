@@ -8,7 +8,7 @@
 
     Optional, additional suggest options used if the suggest wizard is not
     :ref:`hidden <columns-group-properties-hideSuggest>`. The suggest wizard options can also be overriden
-    on a :ref:`page TSconfig <t3tsconfig:pagetceformsuggest>` level.
+    on a :ref:`page TSconfig <t3tsref:pagetceformsuggest>` level.
 
     Suggestions can be configured differently for each table. Settings in "default" are applied to all tables.
     In the example below, there is a special setting for the "pages" table to search only standard pages.

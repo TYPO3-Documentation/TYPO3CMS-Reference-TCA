@@ -18,7 +18,7 @@ is generated automatically.
     :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
 
 The following options can be overridden via :ref:`page TSconfig, TCE form
-<t3tsconfig:pageTsConfigTceFormConfig>`:
+<t3tsref:pageTsConfigTceFormConfig>`:
 
 *   `size`
 *   `maxitems`

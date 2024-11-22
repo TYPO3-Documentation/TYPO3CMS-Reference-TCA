@@ -66,7 +66,7 @@
         upload files and create a reference to the file. The button is limited to file fields using File Abstraction Layer.
         It will only appear to backend users which have write access to the user upload folder. By default this folder is
         :file:`fileadmin/user_upload` but it can be changed in User TSconfig using :typoscript:`options.defaultUploadFolder`.
-        See the :ref:`TSconfig reference <t3tsconfig:useroptions>`.
+        See the :ref:`TSconfig reference <t3tsref:useroptions>`.
 
         The button is shown by default unless this option is set to :php:`false`.
 
@@ -77,4 +77,4 @@
     elementBrowserEnabled (boolean)
         Hides or displays the element browser button in inline records
 
-    This property can also be overridden by :ref:`page TSconfig <t3tsconfig:tceform>`.
+    This property can also be overridden by :ref:`page TSconfig <t3tsref:tceform>`.

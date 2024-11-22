@@ -12,4 +12,4 @@
     Default is 30.
 
     This column configuration can be overwritten by
-    :ref:`page TSconfig <t3tsconfig:tceform>`.
+    :ref:`page TSconfig <t3tsref:tceform>`.
