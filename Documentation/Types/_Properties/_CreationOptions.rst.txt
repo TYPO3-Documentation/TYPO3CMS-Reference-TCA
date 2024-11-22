@@ -7,7 +7,7 @@
 
     ..  versionadded:: 13.0
         The page TSconfig option
-        :confval:`newContentElement.wizardItems.[group].elements.[name] <t3tsconfig:mod-wizards-newcontentelement-wizarditems>`
+        :confval:`newContentElement.wizardItems.[group].elements.[name] <t3tsref:mod-wizards-newcontentelement-wizarditems>`
         can be defined through TCA as well:
 
     ..  confval:: saveAndClose
@@ -24,7 +24,7 @@
         engine.
 
         Can be overridden with page TSconfig option
-        :confval:`saveAndClose <t3tsconfig:mod-wizards-newcontentelement-wizarditems-group-elements-name-saveandclose>`.
+        :confval:`saveAndClose <t3tsref:mod-wizards-newcontentelement-wizarditems-group-elements-name-saveandclose>`.
 
     ..  confval:: defaultValues
         :name: types-creationOptions-defaultValues
@@ -38,4 +38,4 @@
         creation via the "New Content Element" wizard
 
         Can be overridden with page TSconfig option
-        :confval:`tt_content_defValues <t3tsconfig:mod-wizards-newcontentelement-wizarditems-group-elements-name-tt-content-defvalues>`.
+        :confval:`tt_content_defValues <t3tsref:mod-wizards-newcontentelement-wizarditems-group-elements-name-tt-content-defvalues>`.

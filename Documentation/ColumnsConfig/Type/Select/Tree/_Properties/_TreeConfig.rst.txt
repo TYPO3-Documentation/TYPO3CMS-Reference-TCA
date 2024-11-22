@@ -48,7 +48,7 @@
         configuration by using the `###SITE:###` syntax.
 
         This property can also be set by page TSconfig, see
-        :ref:`t3tsconfig:pagetsconfigtceformconfigtreeconfig`
+        :ref:`t3tsref:pagetsconfigtceformconfigtreeconfig`
 
         Example:
 

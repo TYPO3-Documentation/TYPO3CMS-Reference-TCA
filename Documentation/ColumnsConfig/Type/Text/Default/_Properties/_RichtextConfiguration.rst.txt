@@ -18,6 +18,6 @@
     all core backend RTE instances to use that configuration.
 
     If this property is not specified for an RTE field, the system will fall back to the `default`
-    configuration. The preset can be overridden with page TSconfig :ref:`RTE <t3tsconfig:pageTsRte>`.
+    configuration. The preset can be overridden with page TSconfig :ref:`RTE <t3tsref:pageTsRte>`.
 
     See also :ref:`rich-text-editor-examples`.
