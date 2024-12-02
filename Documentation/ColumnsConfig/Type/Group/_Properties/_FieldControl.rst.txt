@@ -33,6 +33,16 @@
 
         ..  include:: /CodeSnippets/GroupDb1.rst.txt
 
+        ..  confval:: renderType
+            :name: group-fieldcontrol-addrecord-rendertype
+            :type: string
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['renderType']
+            :Required: true
+            :Default: addRecord
+
+            Use a render type from core or your own. Custom render types can be
+            registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
+
     ..  confval:: editPopup
         :name: group-fieldControl-editPopup
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
@@ -54,6 +64,16 @@
         ..  include:: /Images/Rst/GroupDb1.rst.txt
 
         ..  include:: /CodeSnippets/GroupDb1.rst.txt
+
+        ..  confval:: renderType
+            :name: group-fieldcontrol-editpopup-rendertype
+            :type: string
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['renderType']
+            :Required: true
+            :Default: editPopup
+
+            Use a render type from core or your own. Custom render types can be
+            registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
 
     ..  confval:: listModule
         :name: group-fieldControl-listModule
@@ -77,6 +97,16 @@
 
         ..  include:: /CodeSnippets/GroupDb1.rst.txt
 
+        ..  confval:: renderType
+            :name: group-fieldcontrol-listmodule-rendertype
+            :type: string
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['renderType']
+            :Required: true
+            :Default: listModule
+
+            Use a render type from core or your own. Custom render types can be
+            registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
+
     ..  confval:: elementBrowser
         :name: group-fieldControl-elementBrowser
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
@@ -88,12 +118,33 @@
         button to open an element browser. It is enabled by default if rendering a
         group element.
 
+        ..  confval:: renderType
+            :name: group-fieldcontrol-elementbrowser-rendertype
+            :type: string
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']['renderType']
+            :Required: true
+            :Default: elementBrowser
+
+            Use a render type from the Core or an Extension. Custom render types can be
+            registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
+
+
     ..  confval:: insertClipboard
         :name: group-fieldControl-insertClipboard
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
         :type: array
         :Scope: fieldControl
         :Types: :ref:`group <columns-group>`
+
+        ..  confval:: renderType
+            :name: group-fieldcontrol-insertclipboard-rendertype
+            :type: string
+            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['insertClipboard']['renderType']
+            :Required: true
+            :Default: insertClipboard
+
+            Use a render type from core or your own. Custom render types can be
+            registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
 
         The clipboard control adds a control button for :code:`type='group'` to paste records from
         a users clipboard into the selection. It is enabled by default for :code:`type='group'` and
