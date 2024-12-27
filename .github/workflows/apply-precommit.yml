@@ -32,8 +32,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create and push changes if needed
+      - name: Check for existing PR
         if: env.FIX_NEEDED == 'true'
+        id: check_pr
+        run: |
+          EXISTING_PR=$(gh pr list --state open --search "Fix whitespace issues" --json number -q '.[].number')
+          if [[ -n "$EXISTING_PR" ]]; then
+            echo "EXISTING_PR=true" >> $GITHUB_ENV
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create and push changes if needed
+        if: env.FIX_NEEDED == 'true' && env.EXISTING_PR != 'true'
         id: create_branch
         run: |
           git config user.name "github-actions[bot]"
@@ -49,7 +60,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Open Pull Request
-        if: env.FIX_NEEDED == 'true'
+        if: env.FIX_NEEDED == 'true' && env.EXISTING_PR != 'true'
         uses: repo-sync/pull-request@v2
         with:
           source_branch: ${{ env.branch_name }}
