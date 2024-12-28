@@ -34,7 +34,7 @@ documented here for TCA. The limitations are:
     Since TYPO3 13.0, also :php:`type='select'` (when using
     :php:`foreign_table`) is not allowed and will raise an exception
     when used. Note this only applies to FlexForm sections, not general
-    FlexForm usage. For details and migration see 
+    FlexForm usage. For details and migration see
     :ref:`Breaking: #102970 - No database relations in FlexForm container sections <changelog:breaking-102970-1706447911>`.
 
 The tables below documents the extension elements:
@@ -244,4 +244,3 @@ format. The structure is as follows:
 :aspect:`Format`
     string
     Content of the field in default or localized versions.
-

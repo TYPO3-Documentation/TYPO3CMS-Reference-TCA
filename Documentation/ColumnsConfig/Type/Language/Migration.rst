@@ -61,4 +61,3 @@ where code adaption has to take place. Occurrences are all columns, defined as
     'config' => [
         'type' => 'language'
     ]
-

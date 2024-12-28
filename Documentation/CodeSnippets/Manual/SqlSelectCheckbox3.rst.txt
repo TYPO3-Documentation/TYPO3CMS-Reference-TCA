@@ -4,4 +4,3 @@
    CREATE TABLE tx_styleguide_elements_select (
       select_checkbox_3 text,
    );
-

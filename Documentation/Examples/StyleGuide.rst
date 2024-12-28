@@ -67,4 +67,3 @@ How to use the `styleguide` extension
    definition in a working example.
 
    .. include:: /Images/ManualScreenshots/StyleguideTcaDefinition.rst.txt
-

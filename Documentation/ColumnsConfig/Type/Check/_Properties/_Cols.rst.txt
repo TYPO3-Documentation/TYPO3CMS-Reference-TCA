@@ -21,4 +21,3 @@ Fixes columns
 
 ..  include:: /Images/Rst/Checkbox2.rst.txt
 ..  include:: /CodeSnippets/Checkbox2.rst.txt
-

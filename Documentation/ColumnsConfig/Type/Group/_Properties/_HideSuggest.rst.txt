@@ -30,5 +30,3 @@
 ..  include:: /Images/Rst/GroupDb8.rst.txt
 
 ..  include:: /CodeSnippets/GroupDb8.rst.txt
-
-

@@ -63,4 +63,3 @@ Common examples are taken from the following tables:
 
 :sql:`tt_content`
    :file:`public/typo3/sysext/frontend/Configuration/TCA/tt_content.php`
-

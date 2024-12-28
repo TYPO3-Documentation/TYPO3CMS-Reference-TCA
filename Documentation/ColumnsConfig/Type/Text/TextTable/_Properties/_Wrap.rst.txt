@@ -25,4 +25,3 @@
 ..  include:: /Images/Rst/Text6.rst.txt
 
 ..  include:: /CodeSnippets/Text6.rst.txt
-

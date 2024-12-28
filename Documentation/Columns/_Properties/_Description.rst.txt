@@ -16,4 +16,3 @@
 
     The field can be used with a string that will be directly output or with a
     language reference.
-
