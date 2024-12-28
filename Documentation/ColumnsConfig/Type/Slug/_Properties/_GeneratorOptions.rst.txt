@@ -151,5 +151,3 @@ to **'some-job-in-city1-city2'**.
 ..  include:: /Images/Rst/Slug3.rst.txt
 
 ..  include:: /CodeSnippets/Slug3.rst.txt
-
-

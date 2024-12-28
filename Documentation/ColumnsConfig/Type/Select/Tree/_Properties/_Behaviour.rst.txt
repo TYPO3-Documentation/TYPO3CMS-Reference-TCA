@@ -20,4 +20,3 @@
 
         ..  literalinclude:: _Snippets/_AllowLanguageSynchronization.php
             :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
-

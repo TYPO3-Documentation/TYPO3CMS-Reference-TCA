@@ -36,4 +36,3 @@
             return 'custom slug prefix';
         }
     }
-    

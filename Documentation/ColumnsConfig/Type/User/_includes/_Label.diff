@@ -1,5 +1,5 @@
          $attributes['class'] = implode(' ', $classes);
- 
+
          $html = [];
 +        $versionInformation = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
 +        if ($versionInformation->getMajorVersion() > 12) {

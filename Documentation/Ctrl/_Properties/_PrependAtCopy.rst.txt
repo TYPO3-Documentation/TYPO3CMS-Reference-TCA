@@ -15,4 +15,3 @@
 
    Note it is possible to disable this feature on a page and user or group level using the Page
    TSconfig option :ref:`disablePrependAtCopy <t3tsref:pagetcemaintables-disableprependatcopy>`.
-

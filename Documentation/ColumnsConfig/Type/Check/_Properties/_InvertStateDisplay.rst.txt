@@ -10,4 +10,3 @@
 
     The state of a checkbox can be displayed inverted when this property is
     set to true.
-

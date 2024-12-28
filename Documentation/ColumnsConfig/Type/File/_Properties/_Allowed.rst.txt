@@ -31,4 +31,3 @@
         Due to a bug, the array notation only properly works
         since TYPO3 13.1.0 and v12.4.1 and upwards. Use the string notation
         for earlier versions instead.
-

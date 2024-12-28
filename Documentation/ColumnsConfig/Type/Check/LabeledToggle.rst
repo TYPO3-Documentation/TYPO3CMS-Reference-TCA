@@ -39,5 +39,3 @@ Single checkbox with labeled toggle inverted state display
 ..  include:: /Images/Rst/Checkbox21.rst.txt
 
 ..  include:: /CodeSnippets/Checkbox21.rst.txt
-
-

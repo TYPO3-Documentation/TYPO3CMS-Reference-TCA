@@ -64,4 +64,3 @@ The following renderTypes are available:
     MultipleSideBySide/Index
     Tree/Index
     Properties/Index
-

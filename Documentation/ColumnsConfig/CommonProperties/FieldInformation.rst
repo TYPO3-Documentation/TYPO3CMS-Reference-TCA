@@ -93,4 +93,3 @@ The custom FieldInformation must be rendered in :file:`ext_localconf.php`:
         'priority' => 70,
         'class' => \GeorgRinger\News\Backend\FieldInformation\StaticText::class
     ];
-

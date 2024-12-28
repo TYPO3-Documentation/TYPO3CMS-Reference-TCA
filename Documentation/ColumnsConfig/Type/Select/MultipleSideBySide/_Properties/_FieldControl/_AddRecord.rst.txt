@@ -80,4 +80,3 @@ the table :sql:`be_groups`:
 ..  include:: /Images/Rst/FileMountpoints.rst.txt
 
 ..  include:: /CodeSnippets/FileMountpoints.rst.txt
-
