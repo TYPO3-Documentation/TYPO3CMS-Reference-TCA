@@ -2,6 +2,8 @@
 
 namespace MVendor\MyExtension\Evaluation;
 
+use TYPO3\CMS\Core\Page\JavaScriptModuleInstruction;
+
 /**
  * Class for field value validation/evaluation to be used in 'eval' of TCA
  */
@@ -14,7 +16,13 @@ class ExampleEvaluation
      */
     public function returnFieldJS()
     {
-        return 'return value + " [added by JavaScript on field blur]";';
+        // you can return JavaScript code directly:
+        //return 'return value + " [added by JavaScript on field blur]";';
+
+        // or you can use JavaScriptModuleInstruction.
+        // In this case you should add your JavaScript modules using
+        // Configuration/JavaScriptModules.php
+        return JavaScriptModuleInstruction::create('@myvendor/myextension/example-evaluation.js', 'FormEngineEvaluation');
     }
 
     /**
