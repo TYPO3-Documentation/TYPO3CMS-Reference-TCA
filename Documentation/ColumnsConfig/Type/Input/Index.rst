@@ -103,7 +103,13 @@ Custom eval rules
 You can supply own form evaluations in an extension by creating a class with three functions, one which returns
 the JavaScript code for client side validation called `returnFieldJS()` and two for the server side:
 `deevaluateFieldValue()` called when opening the record and `evaluateFieldValue()` called for validation when
-saving the record:
+saving the record.
+
+.. hint::
+
+    See EXT:redirects :php:`\TYPO3\CMS\Redirects\Evaluation\SourceHost` for a
+    working example. For more information about adding JavaScript modules
+    see :ref:`ES6 in the TYPO3 Backend <t3coreapi:backend-javascript-es6>`.
 
 :file:`EXT:extension/Classes/Evaluation/ExampleEvaluation.php`
 
