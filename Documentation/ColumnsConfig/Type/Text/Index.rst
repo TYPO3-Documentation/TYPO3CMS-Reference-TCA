@@ -37,7 +37,7 @@ The following :php:`renderTypes` are available:
     :sql:`backend_layout` in the backend.
 *   :ref:`t3editor <columns-text-renderType-t3editor>`: The
     :php:`renderType = 't3editor'` triggers a code highlighter, if extension
-    :doc:`t3editor <ext_t3editor:Index>` is loaded, otherwise falls back to
+    `t3editor <https://docs.typo3.org/c/typo3/cms-t3editor/12.4/en-us/Index.html#typo3-t3editor>`__ is loaded, otherwise falls back to
     the "default" renderType.
 *   :ref:`textTable <columns-text-renderType-textTable>`: The
     :php:`renderType = 'textTable'` triggers a view to manage frontend table
