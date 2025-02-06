@@ -72,7 +72,7 @@
                 'allowedOptions' => ['body', 'cc'],
             ],
 
-    allowedExtensions (array)
+    allowedFileExtensions (array)
 
         An array of allowed file extensions. To allow all extensions, skip this
         configuration or set it to :php:`['*']`. It's not possible to deny all
@@ -82,14 +82,14 @@
 
             // Allow only jpg and png file extensions
             'appearance' => [
-                'allowedExtensions' => ['jpg', 'png'],
+                'allowedFileExtensions' => ['jpg', 'png'],
             ],
 
         ..  code-block:: php
 
             // Allow all file extensions (or skip this option).
             'appearance' => [
-                'allowedExtensions' => ['*'],
+                'allowedFileExtensions' => ['*'],
             ],
 
 
