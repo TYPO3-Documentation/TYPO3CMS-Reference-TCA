@@ -19,7 +19,7 @@ Migrate plugins with FlexForms added via `subtypes_addlist`
 ===========================================================
 
 If you used plugins with the now deprecated subtypes, you probably used
-:confval:`types-subtypes-addlist` to display a
+`types-subtypes-addlist` to display a
 :ref:`FlexForm <t3coreapi:flexforms>` for configuration purposes.
 
 Migrate by adding the field :sql:`pi_flexform` with the utility method
@@ -40,7 +40,7 @@ Migrate plugins with fields removed via `subtypes_excludelist`
 ==============================================================
 
 Many extension author used the now deprecated option
-:confval:`types-subtypes-excludelist` to hide these automatically added fields.
+`types-subtypes-excludelist` to hide these automatically added fields.
 
 The same effect can now be used by simply not adding the fields in the first
 place:
@@ -58,9 +58,9 @@ or via page TSconfig.
 Migrate custom tables using subtypes
 ====================================
 
-Replace any :confval:`types-subtype-value-field` configuration with dedicated record
-types. Please also consider migrating corresponding :confval:`types-subtypes-addlist`
-and :confval:`types-subtypes-excludelist` definitions accordingly.
+Replace any `types-subtype-value-field` configuration with dedicated record
+types. Please also consider migrating corresponding `types-subtypes-addlist`
+and `types-subtypes-excludelist` definitions accordingly.
 
 ..  literalinclude:: _CodeSnippets/_subtype_plugin_exclude_migration.diff
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
