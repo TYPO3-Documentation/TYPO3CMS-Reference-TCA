@@ -1,0 +1,35 @@
+:orphan:
+
+..  _not-found:
+
+===================
+Content was removed
+===================
+
+TYPO3 14.0
+==========
+
+..  _interface:
+..  _interface-examples:
+..  _interface-properties:
+..  _interface-properties-maxdblistitems:
+..  _interface-properties-maxsingledblistitems:
+
+Remove TCA interface settings for list view
+===========================================
+
+`Breaking: #106412 - TCA interface settings for list view removed <https://docs.typo3.org/permalink/changelog:breaking-106412-1742592429>`_
+the TCA options `['interface']['maxSingleDBListItems']`
+and `['interface']['maxDBListItems']` are removed and not evaluated anymore.
+
+..  confval:: maxDBListItems
+    :Path: $GLOBALS['TCA'][$table]['interface']
+
+    Removed with TYPO3 14.0. Use TSconfig
+    `mod.web_list.itemsLimitSingleTable <https://docs.typo3.org/permalink/t3tsref:pagetsconfigweblist-itemslimitsingletable>`_.
+
+..  confval:: maxSingleDBListItems
+    :Path: $GLOBALS['TCA'][$table]['interface']
+
+    Removed with TYPO3 14.0. Use TSconfig
+    `listOnlyInSingleTableView <https://docs.typo3.org/permalink/t3tsref:pagetsconfigweblist-listonlyinsingletableview>`_.
