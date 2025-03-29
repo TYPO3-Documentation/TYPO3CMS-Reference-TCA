@@ -47,7 +47,6 @@ This document is the complete reference of the *Table Configuration Array*
     Columns/Index
     ColumnsConfig/Index
     Ctrl/Index
-    Interface/Index
     Palettes/Index
     Types/Index
 

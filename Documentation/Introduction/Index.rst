@@ -122,9 +122,6 @@ The general structure (looking at a single table) is as follows:
         'ctrl' => [
             // ....
         ],
-        'interface' => [
-            // ....
-        ],
         'columns' => [
             // ....
         ],
@@ -161,15 +158,6 @@ These are basically divided in two main categories:
 For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
 
 :ref:`Full reference <ctrl>`
-
-
-['interface'] Backend interface handling
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The "interface" section contains properties related to the tables
-display in the backend, mostly the Web > List module.
-
-:ref:`Full reference <interface>`
 
 
 ['columns'] Individual fields
