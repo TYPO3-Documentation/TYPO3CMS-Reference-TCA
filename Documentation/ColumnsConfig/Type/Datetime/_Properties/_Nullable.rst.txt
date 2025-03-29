@@ -9,8 +9,21 @@
 
     If nothing is entered into the field, then it will be saved as :sql:`NULL`.
 
-    The database field must allow the :sql:`NULL` value.
+    ..  versionchanged:: 14.0. 13.4
 
+    For nullable integer-based datetime fields, the value `0` explicitly
+    represents the Unix epoch time (`1970-01-01T00:00:00Z`) instead of being
+    interpreted as an empty value by FormEngine.
+
+    Only an explicit `null` database value will be considered an empty value.
+
+    Nullable database fields will be automatically created with `NULL` as a
+    default value:
+
+    ..  code-block:: sql
+        :caption: Nullable datetime schema after this change
+
+        `mydatefield` bigint(20) DEFAULT NULL
 
 ..  rubric:: Example:
 
