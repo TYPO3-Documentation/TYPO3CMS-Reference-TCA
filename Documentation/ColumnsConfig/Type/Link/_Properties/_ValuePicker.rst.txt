@@ -17,6 +17,11 @@
         prepend
             The selected value is prepended to an existing value of the input field
 
+    ..  versionchanged:: 14.0
+        It is now possible to define associative array keys for the :php:`items`
+        configuration of TCA configuration :php:`valuePicker`. The
+        new keys are called: :php:`label` and :php:`value`.
+
     items (array)
         An array with selectable items. Each item is an array with the first value being the label in the select
         drop-down (LLL reference possible) the second being the value transferred to the input field.

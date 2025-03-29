@@ -8,7 +8,10 @@ $temporaryColumns['aColorField'] = [
         'size' => 20,
         'valuePicker' => [
             'items' => [
-                ['typo3 orange', '#FF8700'],
+                [
+                    'label' => 'TYPO3 orange',
+                    'value' => '#FF8700',
+                ],
             ],
         ],
     ],
