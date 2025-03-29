@@ -16,20 +16,20 @@
                     'valuePicker' => [
                         'items' => [
                             [
-                                'spring',
-                                'Spring',
+                                'value' => 'spring',
+                                'label' => 'Spring',
                             ],
                             [
-                                'summer',
-                                'Summer',
+                                'value' => 'summer',
+                                'label' => 'Summer',
                             ],
                             [
-                                'autumn',
-                                'Autumn',
+                                'value' => 'autumn',
+                                'label' => 'Autumn',
                             ],
                             [
-                                'winter',
-                                'Winter',
+                                'value' => 'winter',
+                                'label' => 'Winter',
                             ],
                         ],
                     ],
