@@ -7,8 +7,14 @@ $myLinkField = [
         'mode' => 'prepend',
         'valuePicker' => [
             'items' => [
-                ['HTTPS', 'https://'],
-                ['HTTP', 'http://'],
+                [
+                    'value' => 'HTTPS',
+                    'label' => 'https://',
+                ],
+                [
+                    'value' => 'HTTP',
+                    'label' => 'http://',
+                ],
             ],
         ],
     ],
