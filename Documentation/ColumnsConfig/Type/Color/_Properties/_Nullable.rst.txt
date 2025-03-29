@@ -17,7 +17,7 @@
 
 Example:
 
-..  literalinclude:: _Properties/_Nullable.rst.txt
+..  literalinclude:: _Properties/_Nullable.php
     :caption: EXT:some_extension/Configuration/TCA/tx_sometable.php
 
 
