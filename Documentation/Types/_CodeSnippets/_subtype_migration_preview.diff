@@ -1,9 +1,0 @@
- $pluginSignature = ExtensionUtility::registerPlugin(
-     'blog_example',
-     'Pi1',
-     'A Blog Example',
- );
--$GLOBALS['TCA']['tt_content']['types']['list_type']['previewRenderer'][$pluginSignature]
--        = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
-+$GLOBALS['TCA']['tt_content']['types'][$pluginSignature]['previewRenderer']
-+        = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
