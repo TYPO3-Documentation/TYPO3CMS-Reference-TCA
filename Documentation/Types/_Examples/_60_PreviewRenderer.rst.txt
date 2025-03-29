@@ -4,14 +4,6 @@
 PreviewRenderer examples
 ------------------------
 
-..  deprecated:: 13.4
-    Registration of subtypes has been deprecated.  Registration of custom
-    types should therefore always be done by using
-    :confval:`record types <ctrl-type>`.
-
-    If you used PreviewRenderer with a subtype see section
-    :ref:`migration-subtype-previewrenderer`.
-
 Demonstrates property: :confval:`types-previewRenderer`.
 
 This specifies the preview renderer only for records of type :php:`$type` as

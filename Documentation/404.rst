@@ -33,3 +33,37 @@ and `['interface']['maxDBListItems']` are removed and not evaluated anymore.
 
     Removed with TYPO3 14.0. Use TSconfig
     `listOnlyInSingleTableView <https://docs.typo3.org/permalink/t3tsref:pagetsconfigweblist-listonlyinsingletableview>`_.
+
+..  _types-example-subtypes:
+..  _types-example-subtypes-remove:
+..  _types-example-subtypes-remove-types:
+..  _migration-subtype:
+..  _types-properties-subtypes-addlist:
+..  _types-properties-subtype-value-field:
+..  _types-properties-subtypes-excludelist:
+..  _migration-subtype-flexform:
+..  _migration-subtype-subtypes-excludelist:
+..  _migration-subtype-custom:
+..  _types-example-previewRenderer-for-subtype:
+..  _migration-subtype-previewrenderer:
+
+Remove deprecated ctrl subtype* options
+=======================================
+
+See also `Migration from subtypes to types <https://docs.typo3.org/permalink/t3tca:migration-subtype@13.4>`_.
+
+..  confval:: subtypes_addlist
+    :name: types-subtypes-addlist
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+
+    Removed with TYPO3 14.0, deprecated with 13.4.
+
+..  confval:: subtypes_excludelist
+    :name: types-subtypes-excludelist
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+
+    Removed with TYPO3 14.0, deprecated with 13.4.
+
+..  confval:: subtype_value_field
+    :name: types-subtype-value-field
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]
