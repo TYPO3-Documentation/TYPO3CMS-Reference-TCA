@@ -60,7 +60,14 @@
         Converts to uppercase (only A-Z plus a selected set of Western European special chars).
 
     year
-        Evaluates the input to a year between 1970 and 2038. If you need any year, then use "int" evaluation instead.
+        Evaluates the input to any number.
+        This is actually a historically wrongly named evaluation that suggested only values between 1970 and 2038
+        would be allowed, which was never enforced properly though, and only applied
+        in certain column definitions (signed integer, stripping negative values).
+        Instead, better use the `TCA type='number'` instead, and set TCA restrictions for `range.lower=1970`
+        and `range.upper=2038` (or any other number) values, see
+        :ref:`range <t3tca:confval-number-range>`. This type will then already ensure
+        only numbers can be picked.
 
     Vendor\\Extension\\*
         :ref:`User defined form evaluations <columns-input-eval-custom>`.
