@@ -18,9 +18,11 @@
             The selected value is prepended to an existing value of the input field
 
     ..  versionchanged:: 14.0
-        It is now required to define associative array keys for the :php:`items`
-        configuration of TCA configuration :php:`valuePicker`. The
-        new keys are called: :php:`label` and :php:`value`.
+        It is now recommended to define associative array keys for the
+        :php:`items` configuration of the TCA configuration :php:`valuePicker`.
+        The recommended keys are: :php:`label` and :php:`value`. Existing
+        numeric array configurations will be automatically migrated to the new
+        associative format during TCA processing.
 
     items (array)
         An array with selectable items. Each item is an array with the first
