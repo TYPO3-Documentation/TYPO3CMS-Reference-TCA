@@ -1,0 +1,33 @@
+<settings.country>
+    <label>Country</label>
+    <config>
+        <type>country</type>
+        <labelField>iso2</labelField>
+        <prioritizedCountries>
+            <numIndex index="0">AT</numIndex>
+            <numIndex index="1">CH</numIndex>
+        </prioritizedCountries>
+        <filter>
+            <onlyCountries>
+                <numIndex index="0">DE</numIndex>
+                <numIndex index="1">AT</numIndex>
+                <numIndex index="2">CH</numIndex>
+                <numIndex index="3">FR</numIndex>
+                <numIndex index="4">IT</numIndex>
+                <numIndex index="5">HU</numIndex>
+                <numIndex index="6">US</numIndex>
+                <numIndex index="7">GR</numIndex>
+                <numIndex index="8">ES</numIndex>
+            </onlyCountries>
+            <excludeCountries>
+                <numIndex index="0">DE</numIndex>
+                <numIndex index="1">ES</numIndex>
+            </excludeCountries>
+        </filter>
+        <sortItems>
+            <label>asc</label>
+        </sortItems>
+        <default>HU</default>
+        <required>0</required>
+    </config>
+</settings.country>

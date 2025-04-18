@@ -1,0 +1,8 @@
+<settings.country>
+    <label>Country of Receiver</label>
+    <config>
+        <type>country</type>
+        <labelField>iso2</labelField>
+        <default>CH</default>
+    </config>
+</settings.country>

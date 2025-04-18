@@ -1,0 +1,9 @@
+..  confval:: prioritizedCountries
+    :name: country-prioritizedCountries
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['prioritizedCountries']
+    :type: array of strings
+    :Scope: Display
+    :Default: `[]`
+    :Example: `['DE', 'AT', 'CH']`
+
+    Countries (ISO2 or ISO3 codes) which are listed before all others countries.
