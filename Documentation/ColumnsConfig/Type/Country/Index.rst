@@ -50,7 +50,7 @@ as default value. The localized name is displayed to the backend users.
 Extended country picker example
 ===============================
 
-The following example demonstrates most of the available properties of the
+The following example demonstrates most of the properties of the
 country picker TCA type:
 
 .. tabs::
@@ -70,8 +70,8 @@ Additional countries can be added via the
 
 ..  _columns-country-properties:
 
-Properties of the TCA column type `country`
-===========================================
+Properties of TCA column type `country`
+=======================================
 
 ..  confval-menu::
     :name: country
