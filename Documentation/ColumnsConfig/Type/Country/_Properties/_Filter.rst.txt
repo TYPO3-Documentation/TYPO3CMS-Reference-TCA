@@ -1,0 +1,28 @@
+..  confval:: filter
+    :name: country-filter
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']
+
+    ..  confval:: onlyCountries
+        :name: country-filter-onlyCountries
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']['onlyCountries']
+        :type: array of strings
+        :Scope: Display
+        :Default: `[]`
+        :Example: `['DE', 'AT', 'CH']`
+
+        Restrict the displayed countries (ISO2 or ISO3 codes) to the ones listed.
+
+        Additional countries can be added via the
+        `BeforeCountriesEvaluatedEvent <https://docs.typo3.org/permalink/t3coreapi:beforecountriesevaluatedevent>`_.
+
+    ..  confval:: excludeCountries
+        :name: country-filter-excludeCountries
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']['excludeCountries']
+        :type: array of strings
+        :Scope: Display
+        :Default: `[]`
+        :Example: `['DE', 'AT', 'CH']`
+
+        Exclude the countries (ISO2 or ISO3 codes) in this list from being
+        displayed in the selector.
+
