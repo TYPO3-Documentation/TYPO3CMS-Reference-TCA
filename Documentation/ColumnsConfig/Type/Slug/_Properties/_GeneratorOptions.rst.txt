@@ -70,6 +70,36 @@
 
             This option is exclusively for page records. It won't have an effect on any other records.
 
+    ..  confval:: regexReplacements
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['regexReplacements']
+        :name: slug-generatorOptions-regex-replacements
+        :type: array
+        :Scope: Proc. / Display
+
+        ..  versionadded:: 14.0
+
+        A replacement config array to provide regex based definitions. This way
+        it is possible to define case-insensitive or wildcard replacements.
+
+        ..  code-block:: php
+            :caption: Example
+
+            $GLOBALS['TCA']['mytable']['columns']['slug']['config']['generatorOptions']['regexReplacements'] = [
+                  '/foo/i' => 'bar', // case-insensitive replace of Foo, foo, FOO,... with "bar", ignoring casing
+                  '/\(.*\)/' => '',  // Remove string wrapped in parentheses
+                  '@\(.*\)@' => '',  // Remove string wrapped in parentheses with custom regex delimiter
+               ],
+            ];
+
+            .. note::
+
+               Pattern replacements operate on the original, unsanitized field values —
+               they are not lowercased or processed. Replacements apply only to fields
+               defined in :php:`['generatorOptions']['fields']`.
+
+               Automatic character detection or escaping is not performed, so patterns must
+               be written carefully.
+
     ..  confval:: replacements
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['replacements']
         :name: slug-generatorOptions-replacements
