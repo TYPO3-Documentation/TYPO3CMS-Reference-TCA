@@ -10,5 +10,3 @@
 
     ..  figure:: /Images/ManualScreenshots/CountrySizeBasic.png
         :alt: A country select box
-
-
