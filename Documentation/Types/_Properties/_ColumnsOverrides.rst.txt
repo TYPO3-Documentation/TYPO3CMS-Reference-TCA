@@ -25,3 +25,8 @@
         It is not possible to override any properties in "Proc." scope: The DataHandler does not take "columnsOverrides"
         into account. Only pure "Display" related properties can be overridden. This especially means that
         columns config 'type' must **not** be set to a different value.
+
+    ..  deprecated:: 12.4
+        Setting the TCA option :ref:`allowLanguageSynchronization <t3tca:confval-input-behaviour-allowlanguagesynchronization>`
+        for a specific column in a record type via :php:`columnsOverrides`
+        is not supported.
