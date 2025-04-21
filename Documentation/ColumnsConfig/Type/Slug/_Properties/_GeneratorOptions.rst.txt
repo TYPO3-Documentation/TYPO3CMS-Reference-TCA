@@ -78,23 +78,23 @@
 
         ..  versionadded:: 14.0
 
-        A replacement config array to provide regex based definitions. This way
-        it is possible to define case-insensitive or wildcard replacements.
+        A config array to provide regex based definitions for string replacement.
+        Case-insensitive and wildcard replacement is possible.
 
         ..  code-block:: php
             :caption: Example
 
             $GLOBALS['TCA']['mytable']['columns']['slug']['config']['generatorOptions']['regexReplacements'] = [
-                  '/foo/i' => 'bar', // case-insensitive replace of Foo, foo, FOO,... with "bar", ignoring casing
-                  '/\(.*\)/' => '',  // Remove string wrapped in parentheses
-                  '@\(.*\)@' => '',  // Remove string wrapped in parentheses with custom regex delimiter
+                  '/foo/i' => 'bar', // case-insensitive replacement of Foo, foo, FOO,... with "bar", ignoring case
+                  '/\(.*\)/' => '',  // Remove string in parentheses
+                  '@\(.*\)@' => '',  // Remove string in parentheses with custom regex delimiter
                ],
             ];
 
             .. note::
 
-               Pattern replacements operate on the original, unsanitized field values —
-               they are not lowercased or processed. Replacements apply only to fields
+               Pattern replacement operates on original, unsanitized field values —
+               values are not converted to lowercase or processed. Replacement applies only to fields
                defined in :php:`['generatorOptions']['fields']`.
 
                Automatic character detection or escaping is not performed, so patterns must
