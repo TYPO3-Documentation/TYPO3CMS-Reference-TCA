@@ -8,7 +8,7 @@ The power of the "types" configuration becomes clear when you want the form
 composition of a record to depend on a value from the record. Let's look at the
 :sql:`tx_styleguide_type` table from the :ref:`styleguide <styleguide>`
 extension. The :php:`ctrl` section of its TCA contains a property called
-:php: `type`:
+:php:`type`:
 
 ..  include:: /CodeSnippets/CtrlTypeCtrl.rst.txt
 
