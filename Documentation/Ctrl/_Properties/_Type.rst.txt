@@ -37,7 +37,9 @@
 
 
 Examples
-the type stored in a field
+========
+
+The type stored in a field
 --------------------------
 
 .. include:: /Images/Rst/CtrlType0.rst.txt
