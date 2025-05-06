@@ -11,7 +11,7 @@
 
     Does not apply to RTE fields.
 
-..  rubric:: Example: A simple text editor with 20 width
+..  rubric:: Example: A simple text editor with 2 rows
 
 ..  include:: /Images/Rst/Text4.rst.txt
 
