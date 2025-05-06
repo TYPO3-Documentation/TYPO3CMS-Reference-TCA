@@ -20,8 +20,8 @@
 Examples
 ..  _tca_example_text_5:
 
-Textarea with no wraping
-------------------------
+Textarea with no wrapping
+-------------------------
 
 ..  include:: /Images/Rst/Text5.rst.txt
 
@@ -30,8 +30,8 @@ Textarea with no wraping
 
 ..  _tca_example_text_6:
 
-Textarea with virtual wraping
------------------------------
+Textarea with virtual wrapping
+------------------------------
 
 ..  include:: /Images/Rst/Text6.rst.txt
 
