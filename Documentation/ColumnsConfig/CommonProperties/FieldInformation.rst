@@ -22,8 +22,10 @@ fieldInformation
 
 ..  hint::
 
-    :php:`fieldInformation` is not implemented by default. Use :ref:`columns-properties-description`
-    to display general information below a fields title.
+    Currently, :php:`fieldInformation` is implement for all form elements,
+    except in cases where it does not make sense. You can use
+    :ref:`description <columns-properties-description>` to display general
+    information between a fields title and the form element itself.
 
 Example
 =======
