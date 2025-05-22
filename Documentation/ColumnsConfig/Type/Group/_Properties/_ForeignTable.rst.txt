@@ -6,8 +6,16 @@
     :type: string (table name)
     :Scope: Proc. / Display
 
-    This property does not really exist for group-type fields. It is needed as
-    a workaround for an Extbase limitation. It is used to resolve dependencies
+    ..  tip::
+        ..  versionadded:: 13.4.10
+            Starting with TYPO3 13.4.10, this option is no longer needed.
+            For extbase, the proper type is inferred from the first entry
+            in the `allowed  <https://docs.typo3.org/permalink/t3tca:confval-group-allowed>`_
+            TCA configuration option. You should only set this option if you
+            need backward compatibility to previous TYPO3 versions.
+
+    This property does not really exist for group-type fields. It was needed as
+    a workaround for an Extbase limitation. It was used to resolve dependencies
     during Extbase persistence. It should hold the same values as property
     :ref:`allowed <columns-group-properties-allowed>`. Notice that only one
     table name is allowed here in contrast to the property
