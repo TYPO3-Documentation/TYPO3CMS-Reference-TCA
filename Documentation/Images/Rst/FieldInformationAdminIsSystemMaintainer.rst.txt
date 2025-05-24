@@ -1,0 +1,3 @@
+.. figure:: /Images/ManualScreenshots/FieldInformationAdminIsSystemMaintainer.png
+   :alt: Shows a red rect where the adminIsSystemMaintainer as part of fieldInformation is rendered
+   :class: with-shadow

@@ -1,7 +1,7 @@
-
 /Documentation-GENERATED-temp
-.idea/
 .Build/*
+.DS_Store
+.idea/
 composer.lock
 /composer.json.testing
 /var/
