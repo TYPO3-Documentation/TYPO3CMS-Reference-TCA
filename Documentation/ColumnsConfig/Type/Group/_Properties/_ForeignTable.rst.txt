@@ -9,7 +9,7 @@
     ..  tip::
         ..  versionchanged:: 13.4.10
             Starting with TYPO3 13.4.10, this option is no longer needed.
-            For extbase, the proper type is inferred from the first entry
+            For Extbase, the proper type is inferred from the first entry
             in the `allowed  <https://docs.typo3.org/permalink/t3tca:confval-group-allowed>`_
             TCA configuration option. You should only set this option if you
             need backward compatibility to previous TYPO3 versions.
