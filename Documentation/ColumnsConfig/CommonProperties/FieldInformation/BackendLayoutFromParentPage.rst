@@ -16,8 +16,12 @@ the used backend layout from parent pages (recursive).
     :type: array
     :Scope: fieldInformation
 
+..  _tca_property_fieldInformation_backendLayoutFromParentPage_examples:
+
 Examples
 ========
+
+..  _tca_property_fieldInformation_backendLayoutFromParentPage_examples_addBackendLayoutFromParentPage:
 
 Adding backendLayoutFromParentPage
 ----------------------------------
