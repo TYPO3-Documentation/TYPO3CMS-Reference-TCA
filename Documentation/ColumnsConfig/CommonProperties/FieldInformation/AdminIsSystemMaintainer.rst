@@ -18,8 +18,12 @@ will be rendered between the label and the form element.
     :type: array
     :Scope: fieldInformation
 
+..  _tca_property_fieldInformation_adminIsSystemMaintainer_example:
+
 Examples
 ========
+
+..  _tca_property_fieldInformation_adminIsSystemMaintainer_example_addAdminIsSystemMaintainer:
 
 Adding adminIsSystemMaintainer
 ------------------------------

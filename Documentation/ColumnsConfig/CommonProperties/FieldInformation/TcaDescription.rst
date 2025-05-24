@@ -57,8 +57,12 @@ Currently, following form elements supports `tcaDescription`:
 *   UserSysFileStorageIsPublicElement.php
 *   UuidElement.php
 
+..  _tca_property_fieldInformation_tcaDescription_examples:
+
 Examples
 ========
+
+..  _tca_property_fieldInformation_tcaDescription_examples_activateTcaDescription:
 
 Activate tcaDescription
 -----------------------
@@ -89,6 +93,8 @@ rendering of `fieldInformation`.
             ],
         ],
     ],
+
+..  _tca_property_fieldInformation_tcaDescription_examples_renderDescription:
 
 Render a description
 --------------------

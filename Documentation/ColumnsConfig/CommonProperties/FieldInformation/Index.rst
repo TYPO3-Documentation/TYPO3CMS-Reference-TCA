@@ -22,6 +22,8 @@ Currently, TYPO3 comes with following implemented `fieldInformation` nodes:
     BackendLayoutFromParentPage
     TcaDescription
 
+..  _tca_property_fieldInformation_example:
+
 Example
 =======
 
