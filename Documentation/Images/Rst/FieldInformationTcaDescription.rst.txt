@@ -1,0 +1,3 @@
+.. figure:: /Images/ManualScreenshots/FieldInformationTcaDescription.png
+   :alt: Shows a red rect where the tcaDescription as part of fieldInformation is rendered
+   :class: with-shadow
