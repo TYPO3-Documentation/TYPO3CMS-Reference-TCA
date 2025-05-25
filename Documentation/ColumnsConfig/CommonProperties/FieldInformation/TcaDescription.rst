@@ -40,7 +40,8 @@ For most of the TYPO3 own form elements it is not needed to activate
 to any kind of form elements you have to make sure the element supports the
 rendering of `fieldInformation`.
 
-..  include:: /CodeSnippets/Manual/FieldInformationTcaDescription.rst.txt
+..  literalinclude:: /CodeSnippets/Manual/FieldInformationTcaDescription.php
+    :caption: EXT:my_extkey/Configuration/TCA/Overrides/pages.php
 
 ..  _tca_property_fieldInformation_tcaDescription_examples_renderDescription:
 
@@ -50,4 +51,5 @@ Render a description
 As `tcaDescription` is activated for most of the TYPO3 own form elements,
 it just needs to set the `description` property:
 
-..  include:: /CodeSnippets/Manual/FieldInformationRenderDescription.rst.txt
+..  literalinclude:: /CodeSnippets/Manual/FieldInformationRenderDescription.php
+    :caption: EXT:seo/Configuration/TCA/Overrides/pages.php
