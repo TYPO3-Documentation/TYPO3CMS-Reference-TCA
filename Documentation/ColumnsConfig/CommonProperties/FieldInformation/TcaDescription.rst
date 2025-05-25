@@ -38,7 +38,7 @@ Activate tcaDescription
 For most of the TYPO3 own form elements it is not needed to activate
 `tcaDescription` as it is activated by default. Before adding `tcaDescription`
 to any kind of form elements you have to make sure the element supports the
-rendering of `fieldInformation`.
+rendering of `fieldInformation  <https://docs.typo3.org/permalink/t3tca:confval-fieldinformation>`_.
 
 ..  literalinclude:: /CodeSnippets/Manual/FieldInformationTcaDescription.php
     :caption: EXT:my_extkey/Configuration/TCA/Overrides/pages.php
