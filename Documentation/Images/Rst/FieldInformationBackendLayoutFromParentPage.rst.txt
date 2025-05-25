@@ -1,3 +1,0 @@
-.. figure:: /Images/ManualScreenshots/FieldInformationBackendLayoutFromParentPage.png
-   :alt: Shows a red rect where the backendLayoutFromParentPage as part of fieldInformation is rendered
-   :class: with-shadow
