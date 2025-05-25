@@ -18,8 +18,8 @@ the label and the form element itself.
 Currently, TYPO3 comes with following implemented `fieldInformation` nodes:
 
 ..  toctree::
-    AdminIsSystemMaintainer
-    BackendLayoutFromParentPage
+    :titlesonly:
+
     TcaDescription
 
 ..  _tca_property_fieldInformation_example:

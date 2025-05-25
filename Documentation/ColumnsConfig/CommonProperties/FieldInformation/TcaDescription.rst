@@ -24,38 +24,6 @@ translated output. Else it will render the text unmodified.
         `<span>`, `<code>`.
 
 `tcaDescription` is activated for most of the TYPO3 form elements by default.
-Currently, following form elements supports `tcaDescription`:
-
-*   BackendLayoutWizardElement.php
-*   CategoryElement.php
-*   CheckboxElement.php
-*   CheckboxLabeledToggleElement.php
-*   CheckboxToggleElement.php
-*   CodeEditorElement.php
-*   ColorElement.php
-*   DatetimeElement.php
-*   EmailElement.php
-*   FolderElement.php
-*   GroupElement.php
-*   ImageManipulationElement.php
-*   InputSlugElement.php
-*   InputTextElement.php
-*   JsonElement.php
-*   LinkElement.php
-*   NoneElement.php
-*   NumberElement.php
-*   PasswordElement.php
-*   RadioElement.php
-*   SelectCheckBoxElement.php
-*   SelectMultipleSideBySideElement.php
-*   SelectSingleBoxElement.php
-*   SelectSingleElement.php
-*   SelectTreeElement.php
-*   TablePermissionElement.php
-*   TextElement.php
-*   TextTableElement.php
-*   UserSysFileStorageIsPublicElement.php
-*   UuidElement.php
 
 ..  _tca_property_fieldInformation_tcaDescription_examples:
 
@@ -72,27 +40,7 @@ For most of the TYPO3 own form elements it is not needed to activate
 to any kind of form elements you have to make sure the element supports the
 rendering of `fieldInformation`.
 
-..  code-block:: php
-    :caption: EXT:my_ext/Configuration/TCA/Overrides/pages.php
-
-    [
-        'columns' => [
-            'my_own_column' => [
-                'label' => 'My own column',
-                'description' => 'LLL:EXT:seo/Resources/Private/Language/locallang_tca.xlf:pages.canonical_link.description',
-                'config' => [
-                    'type' => 'input',
-                    'renderType' => 'mySpecialRenderingForInputElements',
-                    'default' => '',
-                    'fieldInformation' => [
-                        'tcaDescription' => [
-                            'renderType' => 'tcaDescription',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-    ],
+..  include:: /CodeSnippets/Manual/FieldInformationTcaDescription.rst.txt
 
 ..  _tca_property_fieldInformation_tcaDescription_examples_renderDescription:
 
@@ -102,4 +50,4 @@ Render a description
 As `tcaDescription` is activated for most of the TYPO3 own form elements,
 it just needs to set the `description` property:
 
-..  include:: /CodeSnippets/Manual/FieldInformation.rst.txt
+..  include:: /CodeSnippets/Manual/FieldInformationRenderDescription.rst.txt
