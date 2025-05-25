@@ -49,7 +49,7 @@ Render a description
 --------------------
 
 As `tcaDescription` is activated for most of the TYPO3 own form elements,
-it just needs to set the `description` property:
+it just needs to set the `description  <https://docs.typo3.org/permalink/t3tca:confval-columns-description>`_ property:
 
 ..  literalinclude:: /CodeSnippets/Manual/FieldInformationRenderDescription.php
     :caption: EXT:seo/Configuration/TCA/Overrides/pages.php
