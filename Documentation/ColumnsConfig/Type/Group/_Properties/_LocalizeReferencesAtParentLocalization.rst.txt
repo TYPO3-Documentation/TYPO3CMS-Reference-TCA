@@ -8,5 +8,4 @@
 
     Defines whether referenced records should be localized when the current
     record gets localized. This only applies if references are **not** stored using
-    `MM` tables. :ref:`foreign_table <columns-group-properties-foreign-table>`
-    has to reference the same table in :ref:`allowed <columns-group-properties-allowed>`.
+    `MM` tables.
