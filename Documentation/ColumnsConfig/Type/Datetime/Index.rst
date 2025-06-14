@@ -16,7 +16,8 @@ Datetime
     future.
 
 The TCA type :php:`datetime` should be used to input values representing a
-date time or datetime.  The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+date time or datetime.
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically as :sql:`bigint signed`.
 
 ..  note::

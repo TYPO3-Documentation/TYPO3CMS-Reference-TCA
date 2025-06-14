@@ -29,5 +29,5 @@
         ];
 
     ..  note::
-        As the TCA is cached it is not possible to set dynamic values such as
+        As the TCA is cached, it is not possible to set dynamic values such as
         :php:`now()`.

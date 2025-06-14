@@ -60,6 +60,11 @@
         Converts to uppercase (only A-Z plus a selected set of Western European special chars).
 
     year
+        ..  versionchanged:: 14.0
+            The previous implementation simply cast the year to an integer.
+            Consider using more appropriate field types like 'number' or
+            'datetime' for better data handling and validation.
+
         Evaluates the input to any number.
         This is actually a historically wrongly named evaluation that suggested
         only values between 1970 and 2038 would be allowed, which was never
