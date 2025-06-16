@@ -125,8 +125,19 @@ implementing a rendering. See :ref:`FormEngine docs
         Invalid HTML (e.g. not closed elements) may result in unexpected
         behaviour in TYPO3 (e.g. new inline elements not saved).
 
+3.  Configure Dependency Injection
 
-The field would then look like this in the backend:
+    Since TYPO3 v12, FormElements should utilize `Dependency injection <https://docs.typo3.org/permalink/t3coreapi:dependency-injection>`_ (DI), see
+    `Deprecation: #100670 - DI-aware FormEngine nodes <https://docs.typo3.org/permalink/changelog:deprecation-100670-1681916011>`_.
+
+    To achieve this, the custom FormElement needs to be marked as a DI-aware class
+    with an entry in :the file file:`EXT:my_extension/Configuration/Services.yaml` like:
+
+    ..  code-block::
+        MyVendor\MyExtension\Form\Element\SpecialFieldElement:
+        public: true
+
+After these steps, the field would then look like this in the backend:
 
 ..  include:: /Images/Rst/ExtendingTcaFeUsers.rst.txt
 
