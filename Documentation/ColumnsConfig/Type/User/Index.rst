@@ -52,8 +52,20 @@ implementing a rendering. See :ref:`FormEngine docs
 
 ..  rst-class:: bignums
 
+1.  Verify Extension Compatibility with Dependency Injection (DI)
 
-1.  Register the new renderType node element
+    ..  versionchanged:: 13.0
+
+        Form Elements are now instantiated using Dependency Injection (DI).
+        Therefore, ensure your TYPO3 extension includes a properly
+        configured :file:`Configuration/Services.yaml` file.
+
+    Make sure your extension contains a `Configuration/Services.yaml` file with
+    the minimal configuration. For the minimal content, see the section about
+    :ref:`Services.yaml declaring service defaults <https://docs.typo3.org/permalink/t3coreapi:dependency-injection-in-extensions>`_
+    in the TYPO3 documentation.
+
+2.  Register the new renderType node element
 
     Add to :file:`ext_localconf.php`:
 
@@ -67,7 +79,7 @@ implementing a rendering. See :ref:`FormEngine docs
         ];
 
 
-2.  Use the renderType in a TCA field definition
+3.  Use the renderType in a TCA field definition
 
     Add the field to the TCA definition, here in
     :file:`Configuration/TCA/Overrides/fe_users.php`:
@@ -75,7 +87,7 @@ implementing a rendering. See :ref:`FormEngine docs
     ..  literalinclude:: _includes/_fe_users.php
         :caption: EXT:my_extension/Configuration/TCA/Overrides/fe_users.php
 
-3.  Implement the FormElement class
+4.  Implement the FormElement class
 
     The :php:`renderType` can be implemented by extending the class
     :php:`AbstractFormElement` and overriding the function :php:`render()`:
