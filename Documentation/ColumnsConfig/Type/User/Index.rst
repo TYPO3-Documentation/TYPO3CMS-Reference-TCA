@@ -61,7 +61,7 @@ implementing a rendering. See :ref:`FormEngine docs
         Therefore, ensure your TYPO3 extension includes a properly
         configured :file:`Configuration/Services.yaml` file.
 
-    Make sure your extension contains a `Configuration/Services.yaml` file with
+    Make sure your extension contains a :file:`Configuration/Services.yaml` file with
     the minimal configuration. For the minimal content, see the section about
     `Services.yaml declaring service defaults <https://docs.typo3.org/permalink/t3coreapi:dependency-injection-in-extensions>`_
     in the TYPO3 documentation.
