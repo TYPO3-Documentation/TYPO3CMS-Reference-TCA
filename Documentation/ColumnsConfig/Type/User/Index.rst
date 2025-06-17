@@ -56,7 +56,8 @@ implementing a rendering. See :ref:`FormEngine docs
 
     ..  versionchanged:: 13.0
 
-        Form Elements are now instantiated using Dependency Injection (DI).
+        Form Elements are now instantiated using
+        `Dependency injection <https://docs.typo3.org/permalink/t3coreapi:dependency-injection>`_.
         Therefore, ensure your TYPO3 extension includes a properly
         configured :file:`Configuration/Services.yaml` file.
 
