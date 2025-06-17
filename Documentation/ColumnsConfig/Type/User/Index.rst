@@ -62,7 +62,7 @@ implementing a rendering. See :ref:`FormEngine docs
 
     Make sure your extension contains a `Configuration/Services.yaml` file with
     the minimal configuration. For the minimal content, see the section about
-    :ref:`Services.yaml declaring service defaults <https://docs.typo3.org/permalink/t3coreapi:dependency-injection-in-extensions>`_
+    `Services.yaml declaring service defaults <https://docs.typo3.org/permalink/t3coreapi:dependency-injection-in-extensions>`_
     in the TYPO3 documentation.
 
 2.  Register the new renderType node element
