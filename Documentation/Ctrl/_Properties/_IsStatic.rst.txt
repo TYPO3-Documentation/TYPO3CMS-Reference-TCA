@@ -10,7 +10,7 @@
         Modern TYPO3 projects rarely rely on static data tables, and better
         mechanisms now exist for managing read-only or reference data. One can
         use TCA options like `readOnly`, `editlock` or backend access control
-        to limit editing if needed.
+        to restrict editing if needed.
 
     This marks a table to be "static".
 
