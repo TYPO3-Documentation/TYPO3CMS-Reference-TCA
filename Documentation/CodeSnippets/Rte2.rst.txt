@@ -7,10 +7,10 @@
     [
         'columns' => [
             'rte_2' => [
-                'label' => 'rte_2 default value',
+                'label' => 'rte_2 default value, acts as placeholder for rte_7',
                 'config' => [
                     'type' => 'text',
-                    'default' => 'rte_2',
+                    'default' => '<p><strong>rte_2</strong> default.</p>',
                     'enableRichtext' => true,
                 ],
             ],
