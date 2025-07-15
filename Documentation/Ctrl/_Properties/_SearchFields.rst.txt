@@ -6,44 +6,27 @@
     :type: string
     :Scope: Search
 
+    ..  versionchanged:: 14.0
 
-    Comma-separated list of fields from the table that will be included when searching for records in the TYPO3 backend.
-    No record from a table will ever be found if that table does not have `searchFields` defined. Only fields of the
-    following TCA types are searchable:
+        TYPO3 now automatically includes all fields of suitable types in
+        backend search operations, e.g., in the List module.
 
-    *   :ref:`input <columns-input>`
-    *   :ref:`text <columns-text>`
-    *   :ref:`flex <columns-flex>`
-    *   :ref:`email <columns-email>`
-    *   :ref:`link <columns-link>`
-    *   :ref:`slug <columns-slug>`
-    *   :ref:`color <columns-color>`
-    *   :ref:`json <columns-json>`
-    *   :ref:`uuid <columns-uuid>`
+        Therefore this option has been removed.
 
-    Adding fields of different types to `searchFields` has no effect.
+        Fields can be removed from the search by setting
+        `searchable  <https://docs.typo3.org/permalink/t3tca:confval-input-searchable>`_
+        to `false`.
 
-    There are more fine grained controls per column, see the documentation of the "search" key of any
-    type in :ref:`columns-types`.
+        If :php:`$GLOBALS['TCA'][$table]['ctrl']['searchFields']` is set an
+        automatic TCA migration sets all suitable fields, which are not included
+        in the :php:`searchFields` configuration, to :php:`searchable => false` to
+        keep current behavior.
 
-    ..  note::
+        ..  rubric:: Migration
 
-        Fields of type :ref:`number <columns-number>` or :ref:`datetime <columns-datetime>`
-        may be excluded from search by default. To include them, modify the
-        search query with this event:
-        `ModifyDatabaseQueryForRecordListingEvent <https://docs.typo3.org/permalink/t3coreapi:modifydatabasequeryforrecordlistingevent>`_.
+        If your extension previously relied on the :php:`searchFields` TCA option,
+        remove it from the :php:`ctrl` section and instead define :php:`'searchable' => false`
+        on fields that should be excluded from search results.
 
-
-    ..  note::
-
-        When searching as admin the fields `uid` and `pid` are automatically included.
-        For editors, `uid` and/or `pid` have to be added manually to the searchFields list.
-
-    ..  rubric:: Example from "tt\_content" table
-
-    ..  code-block:: php
-
-        'ctrl' => [
-            'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform',
-            ...
-        ],
+        No action is needed if the default behavior (search all suitable fields)
+        is acceptable.
