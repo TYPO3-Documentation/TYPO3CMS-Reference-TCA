@@ -37,6 +37,9 @@
                         ],
                     ],
                 ],
+                'authenticationContext' => [
+                    'group' => 'be.userManagement',
+                ],
             ],
         ],
     ]
