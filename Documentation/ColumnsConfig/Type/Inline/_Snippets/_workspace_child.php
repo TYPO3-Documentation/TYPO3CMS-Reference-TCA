@@ -10,6 +10,6 @@ return [
         'parentid' => [
             'label' => 'Parent',
             // ...
-        ]
-    ]
+        ],
+    ],
 ];

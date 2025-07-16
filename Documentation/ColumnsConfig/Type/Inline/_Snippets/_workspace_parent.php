@@ -14,6 +14,6 @@ return [
                 'foreign_table' => 'tx_myextension_mychild',
                 'foreign_field' => 'parentid',
             ],
-        ]
-    ]
+        ],
+    ],
 ];
