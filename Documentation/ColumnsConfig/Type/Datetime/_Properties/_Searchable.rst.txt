@@ -7,7 +7,7 @@
 
     ..  versionadded:: 14.0
         TYPO3 now automatically includes all fields of suitable types in
-        backend search operations, e.g., in the List module.
+        backend search operations in the List module.
 
         This option can be used to explicitly exclude fields from being searchable,
         instead of having to list them in the now removed option
