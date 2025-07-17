@@ -74,3 +74,34 @@ Properties of the TCA column type `inline`
 
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
+
+..  _columns-inline-workspaces:
+
+Inline fields and workspaces
+============================
+
+..  deprecated:: 14.0
+    Using a workspace aware parent table with a not workspace aware child table
+    is deprecated in TYPO3 v14. An automatic TCA migration is in place to scan
+    TCA columns for this scenario and to add :php:`versioningWS = true;` to
+    the affected child tables.
+
+TCA tables that are used as `inline` child table in a standard
+`foreign_table  <https://docs.typo3.org/permalink/t3tca:confval-inline-properties-foreign-table>`_
+relationship must be declared workspace aware if the parent table is workspace
+aware. A typical scenario are inline child tables attached to the
+`tt_content` table as the latter is workspace aware by default.
+
+Example for workspace-aware parent table:
+
+..  literalinclude:: _Snippets/_workspace_parent.php
+    :caption: packages/my_extension/Configuration/TCA/tx_myextension_myparent.php
+
+If the parent table is workspace aware, `versioningWS  <https://docs.typo3.org/permalink/t3tca:confval-ctrl-versioningws>`_
+set to `true`, the child table must also be made parent aware:
+
+..  literalinclude:: _Snippets/_workspace_child.php
+    :caption: packages/my_extension/Configuration/TCA/tx_myextension_mychild.php
+
+The same applies if an inline field is used within a
+`FlexForm field <https://docs.typo3.org/permalink/t3tca:columns-flex>`_.
