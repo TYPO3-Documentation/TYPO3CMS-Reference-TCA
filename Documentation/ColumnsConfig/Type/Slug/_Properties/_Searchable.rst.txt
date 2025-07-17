@@ -1,0 +1,29 @@
+..  confval:: searchable
+    :name: slug-searchable
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['searchable']
+    :type: boolean
+    :Scope: Display
+    :Default: `true`
+
+    ..  versionadded:: 14.0
+        TYPO3 now automatically includes all fields of suitable types in
+        backend search operations in the List module.
+
+        This option can be used to explicitly exclude fields from being searchable,
+        instead of having to list them in the now removed option
+        `$GLOBALS['TCA'][$table]['ctrl']['searchFields'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-searchfields>`_.
+
+    By default, all fields of type `slug` are considered searchable.
+    To exclude a field from being searchable, set the following in the
+    field's TCA configuration:
+
+    ..  code-block:: php
+        :caption: packages/my_extension/Configuration/TCA/Overrides/tx_my_table.php
+
+        $GLOBALS['TCA']['tx_my_table']['columns']['my_field'] = [
+            'label' => 'My field',
+            'config' => [
+                'type' => 'slug',
+                'searchable' => false,
+            ],
+        ];
