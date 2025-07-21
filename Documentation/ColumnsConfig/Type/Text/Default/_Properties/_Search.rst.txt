@@ -1,43 +1,12 @@
-..  confval:: search
-    :name: text-search
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']
-    :type: array
-    :Scope: Search
-    :Types: :ref:`input <columns-input>`
+..  versionchanged:: 14.0
 
-    Defines additional search-related options for a given field.
+    The following TCA field  level search configuration options have been
+    **removed**:
 
-    ..  confval:: pidonly
-        :name: text-search-pidonly
-        :type: boolean
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['pidonly']
+    * :php:`search.case`
+    * :php:`search.pidonly`
+    * :php:`search.andWhere`
 
-        Searches in the column only if search happens on the single page, does
-        not search the field if searching in the whole table.
+    They have not been supported by the Core or common Extensions.
 
-    ..  confval:: case
-        :name: text-search-case
-        :type: boolean
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['case']
-
-        Makes the search case-sensitive. This requires a proper database
-        collation for the field, see your database documentation.
-
-    ..  confval:: andWhere
-        :name: text-search-andWhere
-        :type: string
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['andWhere']
-
-        Additional SQL WHERE statement without 'AND'. With this it is possible
-        to place an additional condition on the field when it is searched
-
-        ..  literalinclude:: _Snippets/_Search.php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
-
-        This means that the "my_editor" field of the "tx_mytable" table will
-        be searched in only for elements of type X and Y. This helps making any
-        search more relevant.
-
-        The above example uses the special field quoting syntax :php:`{#...}`
-        around identifiers to be as :ref:`DBAL <t3coreapi:database>` compatible as
-        possible.
+    See: `Breaking: #106976 - Removal of TCA search field configuration options <https://docs.typo3.org/permalink/changelog:breaking-106976-1750865819>`_
