@@ -11,25 +11,45 @@
 
 ..  confval:: appearance
     :name: inline-appearance
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
     :type: array
     :Scope: Display
 
     Has information about the appearance of child records, namely:
 
-    collapseAll (boolean)
+    ..  confval:: collapseAll
+        :name: inline-appearance-collapseAll
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['collapseAll']
+        :type: boolean
+        :Scope: Display
+
         Show all child records collapsed (if false, all are expanded)
 
-    expandSingle (boolean)
+    ..  confval:: expandSingle
+        :name: inline-appearance-expandSingle
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['expandSingle']
+        :type: boolean
+        :Scope: Display
+
         Show only one child record expanded each time. If a collapsed record is clicked, the currently
         open one collapses and the clicked one expands.
 
-    showNewRecordLink (boolean)
+    ..  confval:: showNewRecordLink
+        :name: inline-appearance-showNewRecordLink
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showNewRecordLink']
+        :type: boolean
+        :Scope: Display
+        :default: True
+
         Disables the :guilabel:`New record` link in TCA `inline` elements without simultaneously disabling
         the :guilabel:`+` button in the header of each inline record (using
         :code:`['appearance']['enabledControls']['new']`).
 
-    newRecordLinkAddTitle (boolean)
+    ..  confval:: newRecordLinkAddTitle
+        :name: inline-appearance-newRecordLinkAddTitle
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['newRecordLinkAddTitle']
+        :type: boolean
+
         Adds the title of the :ref:`foreign_table <columns-inline-properties-foreign-table>` to the "New record" link.
 
         false
@@ -37,7 +57,11 @@
         true
          "Create new <title of foreign\_table>", e.g. "Create new address"
 
-    newRecordLinkTitle (string or LLL reference)
+    ..  confval:: newRecordLinkTitle
+        :name: inline-appearance-newRecordLinkTitle
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['newRecordLinkTitle']
+        :type: string or LLL reference
+
         Overrides the title of the "New record" link with a localized string. This will work only if
         :code:`newRecordLinkAddTitle` is **not** set to true.
 
@@ -45,23 +69,41 @@
 
             'newRecordLinkTitle' => 'LLL:EXT:myext/Resources/Private/Language/locallang_db.xlf:my_new_record_label'
 
-    createNewRelationLinkTitle (string or LLL reference)
+    ..  confval:: createNewRelationLinkTitle
+        :name: inline-appearance-createNewRelationLinkTitle
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['createNewRelationLinkTitle']
+        :type: string or LLL reference
+
         Overrides the link text and title of the "Create new relation" button with a localised string.
         Only useful, if the element browser is enabled. This is usually used together with FAL relations to change it to "Add file" or similar.
 
-    levelLinksPosition (string)
-        Values: 'top' (default), 'bottom', 'both'. Defines where to show the "New record" link in relation
+    ..  confval:: levelLinksPosition
+        :name: inline-appearance-levelLinksPosition
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['levelLinksPosition']
+        :type: string
+        :Values: 'top' (default), 'bottom', 'both'.
+
+        Defines where to show the "New record" link in relation
         to the child records. Value 'none' is no longer supported, use :code:`showAllLocalizationLink`,
         :code:`showSynchronizationLink` and :code:`showNewRecordLink` with value :php:`false` instead.
 
-    useCombination (boolean)
+    ..  confval:: useCombination
+        :name: inline-appearance-useCombination
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['useCombination']
+        :type: boolean
+
         This is only useful on bidirectional relations using an intermediate table with attributes. In a "combination" it
         is possible to edit the attributes AND the related child record itself. If using a
         :ref:`foreign_selector <columns-inline-properties-foreign-selector>` in such a case, the
         :ref:`foreign_unique <columns-inline-properties-foreign-unique>` property  **must** be set to the same field as
         the :ref:`foreign_selector <columns-inline-properties-foreign-selector>`.
 
-    suppressCombinationWarning (boolean)
+    ..  confval:: suppressCombinationWarning
+        :name: inline-appearance-suppressCombinationWarning
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['suppressCombinationWarning']
+        :type: boolean
+        :default: false
+
         Suppresses the warning flash message that will be displayed when using **useCombination**.
         You can also override the message with your own message using the example below.
 
@@ -74,28 +116,56 @@
                  ],
             ],
 
-    useSortable (boolean)
-        Activate drag & drop.
+    ..  confval:: useSortable
+        :name: inline-appearance-useSortable
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['useSortable']
+        :type: boolean
 
-    showPossibleLocalizationRecords (boolean)
+        Activate drag & drop sorting.
+
+    ..  confval:: showPossibleLocalizationRecords
+        :name: inline-appearance-showPossibleLocalizationRecords
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleLocalizationRecords']
+        :type: boolean
+
         Show unlocalized records which are in the original language, but not yet localized.
 
-    showAllLocalizationLink (boolean)
+    ..  confval:: showAllLocalizationLink
+        :name: inline-appearance-showAllLocalizationLink
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showAllLocalizationLink']
+        :type: boolean
+
         Defines whether to show the "localize all records" link to fetch untranslated records from the original language.
 
-    showSynchronizationLink (boolean)
+    ..  confval:: showSynchronizationLink
+        :name: inline-appearance-showSynchronizationLink
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showSynchronizationLink']
+        :type: boolean
+
         Defines whether to show a "synchronize" link to update to a 1:1 translation with the original language.
 
-    enabledControls (array)
+    ..  confval:: enabledControls
+        :name: inline-appearance-enabledControls
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['enabledControls']
+        :type: array
+
         Associative array with the keys 'info', 'new', 'dragdrop', 'sort', 'hide', 'delete', 'localize'. If the accordant
         values are set to a boolean value (true or false), the control is shown or hidden in the header of each record.
 
-    showPossibleRecordsSelector (boolean)
+    ..  confval:: showPossibleRecordsSelector
+        :name: inline-appearance-showPossibleRecordsSelector
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleRecordsSelector']
+        :type: boolean
+
         Can be used to hide the foreign record selector from the interface, even if you have a
         :ref:`foreign_selector <columns-inline-properties-foreign-selector>` configured. This can be used to keep the
         technical functionality of the :ref:`foreign_selector <columns-inline-properties-foreign-selector>` but is useful
         if you want to replace it with your own implementation using a custom control,
         see :ref:`customControls <columns-inline-properties-customcontrols>`.
 
-    elementBrowserEnabled (boolean)
+    ..  confval:: elementBrowserEnabled
+        :name: inline-appearance-elementBrowserEnabled
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleRecordsSelector']
+        :type: boolean
+
         Hides or displays the element browser button in inline records
