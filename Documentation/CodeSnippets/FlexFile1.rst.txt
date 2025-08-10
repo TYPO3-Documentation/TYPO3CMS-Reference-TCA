@@ -11,9 +11,7 @@
                 'description' => 'field description',
                 'config' => [
                     'type' => 'flex',
-                    'ds' => [
-                        'default' => 'FILE:EXT:styleguide/Configuration/FlexForms/Simple.xml',
-                    ],
+                    'ds' => 'FILE:EXT:styleguide/Configuration/FlexForms/Simple.xml',
                 ],
             ],
         ],
