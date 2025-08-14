@@ -1,10 +1,9 @@
 ..  _columns-flex-properties-ds-pointerfield:
 
-..  confval:: ds_pointerField
-    :name: flex-ds-pointerField
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: string
-    :Scope: Display  / Proc.
+..  versionchanged:: 14.0
+    Option `ds_pointerField` has been removed. Use
+    `ds  <https://docs.typo3.org/permalink/t3tca:confval-flex-ds>`_ in
+    combination with `columnsOverrides  <https://docs.typo3.org/permalink/t3tca:confval-types-columnsoverrides>`_.
 
-    Field name(s) in the record which point to the field where the key for
-    "ds" is found. Up to two field names can be specified comma separated.
+    See `Breaking: #107047 - Remove pointer field functionality of TCA flex <https://docs.typo3.org/permalink/changelog:breaking-107047-1751982363>`_
+    for migration.

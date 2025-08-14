@@ -3,32 +3,28 @@
 ..  confval:: ds
     :name: flex-ds
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: array
+    :type: string
     :Scope: Display  / Proc.
 
-    Data Structure(s) defined in an array.
+    ..  versionchanged:: 14.0
+        Multiple entries are no longer supported. Instead use
+         `columnsOverrides  <https://docs.typo3.org/permalink/t3tca:confval-types-columnsoverrides>`_.
 
-    Each key is a value that can be pointed to by :ref:`ds_pointerField <columns-flex-properties-ds-pointerfield>`.
-    Default key is "default" which is what you should use if you do not have a :code:`ds_pointerField` value of course.
+        See `Breaking: #107047 - Remove pointer field functionality of TCA flex <https://docs.typo3.org/permalink/changelog:breaking-107047-1751982363>`_
+        for migration.
 
-    If you specified more than one :code:`ds_pointerField`, the keys in this "ds" array should contain comma-separated
-    value pairs where the asterisk \* matches all values (see the example below). If you don't need to switch for the
-    second :code:`ds_pointerField`, it's also possible to use only the first :code:`ds_pointerField`'s value as a key in
-    the "ds" array without necessarily suffixing it with ",\*" for a catch-all on the second :code:`ds_pointerField`.
+    This field can either contain a file reference to the file containing
+    the FlexForm's XML (`'ds' => 'FILE:EXT:news/Configuration/FlexForm.xml'`)
+    or contain the XML content directly (`'ds' => '<T3DataStructure>...'`).
 
-    For each value in the array there are two options:
+    ..  rubric:: Example with XML in external file
 
-    *   Make a reference to an external XML file
-    *   Either enter XML directly
+    ..  include:: /CodeSnippets/FlexFile1.rst.txt
 
-..  rubric:: Example with XML in external file
+    The included file:
 
-..  include:: /CodeSnippets/FlexFile1.rst.txt
+    ..  include:: /CodeSnippets/FlexFormFile1.rst.txt
 
-The included file:
+    ..  rubric:: Example with XML directly entered
 
-..  include:: /CodeSnippets/FlexFormFile1.rst.txt
-
-..  rubric:: Example with XML directly entered
-
-..  include:: /CodeSnippets/Flex2.rst.txt
+    ..  include:: /CodeSnippets/Flex2.rst.txt

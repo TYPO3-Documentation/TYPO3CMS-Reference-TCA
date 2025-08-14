@@ -58,11 +58,10 @@ Properties of the TCA column type `flex`
 Defining multiple data structures for different records
 =======================================================
 
-There can be multiple data structures defined in `TCA` and it depends on the
-configuration and the record which one is chosen. If the :confval:`flex-ds`
-and :confval:`flex-ds-pointerField` are not sufficient, you can use the
-:ref:`Events <columns-flex-events>` to manipulate with data structure should be
-displayed.
+There can be multiple data structures defined in `TCA` and which one is chosen
+depends on the configuration and the record . You can use
+:confval:`flex-ds` or :ref:`Events <columns-flex-events>` to manipulate
+which data structure should be displayed.
 
 ..  note::
     It is **not** possible to override these properties in
