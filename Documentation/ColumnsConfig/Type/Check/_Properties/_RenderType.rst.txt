@@ -3,7 +3,7 @@
 ..  confval:: renderType
     :name: check-renderType
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: boolean
+    :type: string
     :Scope: Display
     :Default: check
     :Examples: :ref:`default <columns-checkbox-examples-2>`, :ref:`checkboxToggle <tca_example_checkbox_17>`, :ref:`checkboxLabeledToggle <tca_example_checkbox_19>`
