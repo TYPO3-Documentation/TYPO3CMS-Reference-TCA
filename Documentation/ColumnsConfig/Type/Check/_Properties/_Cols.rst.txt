@@ -14,10 +14,3 @@
     "floating" and there will be as many in one row as fits to browser width.
 
     Note checkboxes will still wrap if browser width is not sufficient.
-
-Examples
-Fixes columns
--------------
-
-..  include:: /Images/Rst/Checkbox2.rst.txt
-..  include:: /CodeSnippets/Checkbox2.rst.txt
