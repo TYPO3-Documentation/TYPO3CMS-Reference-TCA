@@ -1,9 +1,4 @@
-..  include:: /Includes.rst.txt
 ..  _columns-select-properties-sort-items:
-
-=========
-sortItems
-=========
 
 ..  confval:: sortItems
     :name: select-sortItems
@@ -24,13 +19,9 @@ sortItems
     group ordering is preserved.
 
 
-Examples
-========
-
 ..  _tca_example_select_single_18:
 
-Sort items by label
--------------------
+..  rubric:: Example: Sort items by label
 
 ..  include:: /Images/Rst/SelectSingle18.rst.txt
 
@@ -39,8 +30,7 @@ Sort items by label
 
 ..  _tca_example_select_single_19:
 
-Sort items by value
--------------------
+..  rubric:: Example: Sort items by value
 
 ..  include:: /Images/Rst/SelectSingle19.rst.txt
 
@@ -49,8 +39,7 @@ Sort items by value
 
 ..  _tca_example_select_single_20:
 
-Sort items by a custom method
------------------------------
+..  rubric:: Example: Sort items by a custom method
 
 The following custom method sorts the items by their reversed labels:
 
