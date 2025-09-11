@@ -123,13 +123,10 @@ This example is also described in TYPO3 Explained,
 ..  _columns-user-properties-userfunc:
 ..  _columns-user-properties:
 
-Properties
-==========
+Properties of the TCA column type `user`
+========================================
 
 ..  _columns-user-properties-renderType:
-
-renderType
-----------
 
 ..  confval:: renderType
     :name: user-renderType
