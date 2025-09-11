@@ -15,7 +15,9 @@ is generated automatically.
 It displays two select fields. The items can be selected from the right field.
 All selected items are displayed in the left field.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  toctree::
     :titlesonly:

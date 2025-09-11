@@ -13,10 +13,14 @@ Email
     :file:`ext_tables.sql` file.
 
 The TCA type :php:`email` should be used to input values representing email
-addresses. The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+addresses.
+
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-email-properties:
 

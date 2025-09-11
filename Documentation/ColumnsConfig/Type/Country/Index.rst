@@ -19,8 +19,9 @@ or TypoScript output.
     *   `Country API <https://docs.typo3.org/permalink/t3coreapi:country-api>`_
     *   `Form.countrySelect ViewHelper <f:form.countrySelect> <https://docs.typo3.org/permalink/t3viewhelper:typo3-fluid-form-countryselect>`_
 
-..  contents::
-    :caption: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-country-example:
 

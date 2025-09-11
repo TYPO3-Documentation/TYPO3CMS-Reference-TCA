@@ -7,8 +7,6 @@
 The `none` field
 ================
 
-..  include:: /Images/Rst/None1.rst.txt
-
 There are three columns config types that do similar things but still have subtle differences between them.
 These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <columns-passthrough>` and the
 :ref:`user type <columns-user>`.
@@ -38,6 +36,10 @@ Since the formatting part of `none` fields can be done with `input` type as well
 of type `none` fields is a "virtual" field that is combined with a custom
 :ref:`renderType <t3coreapi:FormEngine-Rendering-NodeExpansion>` by an extension.
 The TYPO3 core makes little or no use of `none` fields itself.
+
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-none-examples:
 ..  _tca_example_none_1:

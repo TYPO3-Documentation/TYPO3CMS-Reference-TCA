@@ -8,6 +8,7 @@ Custom inputs (user)
 
 ..  contents:: Table of contents:
     :local:
+    :depth: 1
 
 ..  _columns-user-introduction:
 

@@ -15,7 +15,9 @@ The textTable render type triggers a view called "table wizard" to
 manage the frontend table display in the backend. It is used for the "Table"
 tt_content content element.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _tca_example_text_17:
 

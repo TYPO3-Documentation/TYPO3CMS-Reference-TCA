@@ -12,20 +12,23 @@ File
     :file:`ext_tables.sql` file.
 
 The TCA type :php:`file` creates a field where files can be attached to
-the record. The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
-is generated automatically.
+the record.
 
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
 
 ..  seealso::
     :ref:`t3coreapi:fal-using-fal-examples-file-folder-get-references`
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-file-examples:
 ..  _tca_example_group_file_1:
 
-Examples
-========
+Example
+=======
 
 ..  literalinclude:: _Snippets/_file-field.php
     :caption: EXT:my_extension/Configuration/TCA/some_table.php

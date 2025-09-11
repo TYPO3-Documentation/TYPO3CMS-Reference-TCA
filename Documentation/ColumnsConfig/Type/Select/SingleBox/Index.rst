@@ -5,6 +5,8 @@
 Select multiple values (selectSingleBox)
 ========================================
 
+Renders a select field to select multiple entries from a given list.
+
 This page describes the :ref:`select <columns-select>` type with
 renderType='selectSingleBox'.
 
@@ -16,9 +18,9 @@ is generated automatically.
     The name is misleading. This is a renderType which allows you to select
     **multiple** elements!
 
-Renders a select field to select multiple entries from a given list.
-
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _tca_example_select_singlebox_1:
 

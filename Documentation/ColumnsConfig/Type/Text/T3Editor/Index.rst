@@ -29,7 +29,9 @@ The code editor provides an enhanced textarea for
 also autocomplete suggestions. Beyond that the code editor makes it possible to
 add syntax highlighting to textarea fields for several languages.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _tca_example_codeEditor_1:
 ..  _tca_example_t3editor_1:

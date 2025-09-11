@@ -16,7 +16,9 @@ single value. Only if :confval:`select-single-size` is set to a
 value greater than one, a box is rendered containing all selectable elements
 from which one can be chosen.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-select-rendertype-selectSingle-examples:
 

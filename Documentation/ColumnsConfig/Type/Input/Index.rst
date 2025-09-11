@@ -25,6 +25,10 @@ do so by defining something specific in :file:`ext_tables.sql`.
     need an :file:`ext_tables.sql` entry anymore. The Core now
     creates this column automatically.
 
+..  contents:: Table of contents:
+    :local:
+    :depth: 2
+
 ..  _columns-input-examples:
 
 Examples

@@ -17,7 +17,9 @@ display the backend layout wizard when editing records of table
 `backend_layout` in the backend. It is stored a custom
 syntax representing the page layout in the database.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _tca_example_backend_layout:
 ..  _tca_example_text_20:

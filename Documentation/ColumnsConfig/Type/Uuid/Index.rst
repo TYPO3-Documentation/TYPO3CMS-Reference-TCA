@@ -14,7 +14,9 @@ is generated automatically.
 
 ..  _UUID: https://en.wikipedia.org/wiki/Universally_unique_identifier
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-uuid-example:
 

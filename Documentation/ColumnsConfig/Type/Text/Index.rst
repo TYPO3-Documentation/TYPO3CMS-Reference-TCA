@@ -16,6 +16,8 @@ The :ref:`according database fields <t3coreapi:auto-generated-db-structure>`
 for all render types are generated automatically.
 
 ..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  toctree::
     :hidden:

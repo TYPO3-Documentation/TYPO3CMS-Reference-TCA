@@ -13,19 +13,20 @@ Color
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-The TCA type :php:`color` should be used to render a JavaScript-based color picker.
-The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
-is generated automatically.
-
 ..  versionadded:: 13.0
     :ref:`Color palettes <t3tsref:pagecolorpalettes>` have been added.
+
+The TCA type :php:`color` can be used to render a JavaScript-based color picker.
+
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
 
 :ref:`Color palettes <t3tsref:pagecolorpalettes>` can be defined via
 :ref:`page TSconfig <t3tsref:setting-page-tsconfig>`. This way, for example,
 colors defined in a corporate design can be selected by a simple click.
 
-..  contents::
-    :caption: Table of contents
+..  contents:: Table of contents:
+    :depth: 1
 
 ..  _columns-color-example:
 

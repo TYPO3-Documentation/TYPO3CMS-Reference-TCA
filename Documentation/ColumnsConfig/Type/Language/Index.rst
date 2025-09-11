@@ -26,9 +26,6 @@ A special language :guilabel:`All languages` is automatically added.
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
-..  literalinclude:: _languageField.php
-    :caption: EXT:myExtension/Configuration/Overrides/someTable.php
-
 ..  toctree::
     :titlesonly:
 
@@ -37,3 +34,6 @@ is generated automatically.
     Properties/Index
     Migration
     History
+
+..  literalinclude:: _languageField.php
+    :caption: EXT:myExtension/Configuration/Overrides/someTable.php

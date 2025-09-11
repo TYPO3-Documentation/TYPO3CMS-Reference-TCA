@@ -14,16 +14,19 @@ Folder
 The TCA type :php:`folder` creates a field where folders can be attached to
 the record. The values are stored as a combined identifier in a
 :ref:`comma-separated list (csv) <columns-group-data-commalist>`.
+
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-folder-examples:
 ..  _tca_example_group_folder_1:
 
-Examples
-========
+Example
+=======
 
 ..  include:: /Images/Rst/GroupFolder1.rst.txt
 
