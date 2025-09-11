@@ -1,5 +1,7 @@
 ..  include:: /Includes.rst.txt
+
 ..  _columns-languge-history:
+..  _columns-language-history:
 
 =======
 History
@@ -21,7 +23,7 @@ available site languages from the `sys_language` table. This effectively reduces
 quite an amount of code and complexity, since no relations have to be fetched
 and processed anymore. This also makes the `sys_refindex` table a bit smaller,
 since no entries have to be added for this relation anymore. To clean up your
-exisiting reference index, you might use the CLI command
+existing reference index, you might use the CLI command
 :php:`bin/typo3 referenceindex:update`.
 
 Another pain point was the special `-1` language which always had to be added
