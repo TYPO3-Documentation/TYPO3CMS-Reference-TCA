@@ -53,7 +53,9 @@ and field properties in the TCA such as "placeholder" to set this up.
     in the :code:`ctrl`. Please see the
     :ref:`example <inline-example-field-information>`.
 
-..  contents::
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  toctree::
     :titlesonly:

@@ -13,7 +13,9 @@ renderType='selectCheckBox'. For differences to `type="check"` see
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  toctree::
     :titlesonly:
