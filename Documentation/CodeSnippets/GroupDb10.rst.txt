@@ -11,7 +11,7 @@
                 'config' => [
                     'type' => 'group',
                     'allowed' => 'pages',
-                    'maxitems' => 1,
+                    'relationship' => 'manyToOne',
                     'minitems' => 0,
                     'size' => 1,
                     'suggestOptions' => [

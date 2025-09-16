@@ -24,6 +24,10 @@
                             'label' => 'Type with columnsOverrides',
                             'value' => 'withColumnsOverrides',
                         ],
+                        [
+                            'label' => 'Type with no fields',
+                            'value' => 'withoutFieldsToRender',
+                        ],
                     ],
                 ],
             ],
