@@ -19,10 +19,27 @@ TCA column type `category`
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
+The TCA type :php:`category` can be used to render a category tree.
+
 While using the type :php:`category`, TYPO3 takes care of generating the
 necessary TCA configuration.
 Developers only have to define the TCA column and add :php:`category` as the
 desired TCA type in the tables's TCA file (inside or outside of the Overrides folder).
+
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
+
+..  toctree::
+    :titlesonly:
+
+    Examples
+
+Example: Simple category field
+==============================
 
 ..  literalinclude:: _Snippets/_CategorySimple.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
@@ -55,9 +72,3 @@ Properties of the TCA column type `category`
 
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-..  toctree::
-    :titlesonly:
-    :hidden:
-
-    Examples

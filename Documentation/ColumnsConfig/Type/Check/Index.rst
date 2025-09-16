@@ -8,12 +8,27 @@ TCA column type `check`
 =======================
 
 
+The TCA type :php:`check` can be used to render checkboxes.
+
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
+
+..  toctree::
+    :titlesonly:
+
+    Default
+    Toggle
+    LabeledToggle
+    Examples
+
 ..  _columns-check-introduction:
 
 Introduction
 ============
-
-This type creates checkbox(es).
 
 There can be between 1 and 31 checkboxes. The corresponding database field must be of type integer.
 Each checkbox corresponds to a single bit of the integer value, even if there is only one checkbox.
@@ -59,11 +74,3 @@ Properties of the TCA column type `check`
 
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-..  toctree::
-    :hidden:
-
-    Default
-    Toggle
-    LabeledToggle
-    Examples

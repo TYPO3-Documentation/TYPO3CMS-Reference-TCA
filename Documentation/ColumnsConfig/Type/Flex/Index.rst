@@ -14,7 +14,9 @@ fields should be displayed, re-using all the TCA column type possibilities. The
 actual values of single fields are then stored in an XML representation within
 this "flex" field.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  toctree::
     :titlesonly:
@@ -22,7 +24,6 @@ this "flex" field.
     AboutDataStructures
     FlexformSyntax
     Examples
-
 
 ..  _columns-flex-properties:
 

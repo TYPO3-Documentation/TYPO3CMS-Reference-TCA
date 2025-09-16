@@ -14,7 +14,12 @@ Link
 
 The TCA type :php:`link` should be used to input values representing typolinks.
 
-..  contents::
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-link-example:
 
