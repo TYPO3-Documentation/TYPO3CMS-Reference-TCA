@@ -14,6 +14,8 @@ In TCA a :abbr:`RTE (rich ext editor)` is a normal `text` field with the
 option :confval:`text-enableRichtext` enabled.
 
 ..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _rich-text-editor-examples:
 

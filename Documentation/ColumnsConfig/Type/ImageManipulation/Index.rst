@@ -18,7 +18,9 @@ It is typically only used in FAL relations. The crop information is stored as an
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
-..  contents::
+..  contents:: Table of contents:
+    :local:
+    :depth: 2
 
 ..  _columns-imageManipulation-examples:
 
