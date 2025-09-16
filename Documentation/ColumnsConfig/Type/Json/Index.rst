@@ -6,10 +6,14 @@
 Json
 ====
 
-When using the `json` type, TYPO3 takes care of
-:ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
-A developer does not need to define this field in an extension's
-:file:`ext_tables.sql` file.
+Renders a text area to enter json data.
+
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-json-examples-simple:
 

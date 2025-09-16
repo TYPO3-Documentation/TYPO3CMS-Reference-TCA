@@ -5,7 +5,6 @@
 selectTree
 ==========
 
-
 The :php:`selectTree` render type is used to display hierarchical data in a
 tree structure.
 
@@ -26,7 +25,9 @@ the descriptive name of the table.
 Regarding joining several tables, the :php:`selectTree` render type can handle multiple
 tables through the configuration options.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _tca_example_select_tree_1:
 

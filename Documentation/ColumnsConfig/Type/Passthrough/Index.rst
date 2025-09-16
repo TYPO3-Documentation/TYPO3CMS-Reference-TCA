@@ -6,9 +6,9 @@
 Pass through / virtual field
 ============================
 
-.. contents:: Table of contents:
-   :local:
-   :depth: 1
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 .. _columns-passthrough-introduction:
 
@@ -63,7 +63,7 @@ This field is found in a number of tables, for instance the "pages" table. It is
 .. _columns-passthrough-properties-default:
 
 
-Properties
-==========
+Properties of the TCA column type `passthrough`
+===============================================
 
 *  :ref:`default <tca_property_default>`
