@@ -10,7 +10,12 @@ This page describes the :ref:`select <columns-select>` type with
 renderType='selectCheckBox'. For differences to `type="check"` see
 :ref:`selectCheckBox-check-compared`.
 
-..  contents:: Table of contents
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  toctree::
     :titlesonly:

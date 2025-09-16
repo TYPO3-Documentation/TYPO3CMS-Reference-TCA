@@ -13,7 +13,9 @@ System extension "t3editor" provides an enhanced textarea for TypoScript input, 
 also auto-complete suggestions. Beyond that the "t3editor" extension makes it possible to add syntax highlighting
 to textarea fields, for several languages.
 
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _tca_example_t3editor_1:
 

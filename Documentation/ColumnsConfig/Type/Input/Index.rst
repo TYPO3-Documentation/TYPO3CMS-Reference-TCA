@@ -25,6 +25,10 @@ appropriate length.
     *   :php:`renderType=inputLink`: Use the TCA type :ref:`link <columns-link>`
         instead.
 
+..  contents:: Table of contents:
+    :local:
+    :depth: 2
+
 ..  _columns-input-examples:
 
 Examples

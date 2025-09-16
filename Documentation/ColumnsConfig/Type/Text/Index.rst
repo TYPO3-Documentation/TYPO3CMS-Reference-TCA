@@ -7,6 +7,8 @@ Text areas & RTE
 ================
 
 ..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  toctree::
     :hidden:

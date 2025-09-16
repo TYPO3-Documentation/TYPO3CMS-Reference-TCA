@@ -23,8 +23,9 @@ configuration when working with fields containing a `UUID`_.
     When this type of TCA is used, the corresponding database columns are
     automatically added.
 
-
-..  contents:: Table of contents
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-uuid-example:
 

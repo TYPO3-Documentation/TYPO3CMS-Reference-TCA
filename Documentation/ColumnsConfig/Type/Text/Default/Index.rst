@@ -14,6 +14,8 @@ This page describes the :ref:`text <columns-text>` type with no renderType (defa
 :ref:`page TSconfig <t3tsref:pageTsRte>`.
 
 ..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-text-examples:
 

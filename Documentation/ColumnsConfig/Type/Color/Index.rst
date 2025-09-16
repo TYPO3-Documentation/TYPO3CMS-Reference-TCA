@@ -13,10 +13,17 @@ Color
     :ref:`columns-color-migration`.
 
 
-The TCA type :php:`color` should be used to render a JavaScript-based color picker.
+The TCA type :php:`color` can be used to render a JavaScript-based color picker.
 
-..  contents::
-    :caption: Table of contents
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
+:ref:`Color palettes <t3tsref:pagecolorpalettes>` can be defined via
+:ref:`page TSconfig <t3tsref:setting-page-tsconfig>`. This way, for example,
+colors defined in a corporate design can be selected by a simple click.
+
+..  contents:: Table of contents:
+    :depth: 1
 
 ..  _columns-color-example:
 

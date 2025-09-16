@@ -23,6 +23,10 @@ The TCA type :php:`number` should be used to input values representing numbers.
     :ref:`range[lower] <columns-number-properties-range>` and
     :ref:`range[upper] <columns-number-properties-range>` options.
 
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
+
 ..  _columns-number-properties:
 
 Properties of the TCA column type `number`

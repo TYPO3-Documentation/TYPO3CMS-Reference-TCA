@@ -14,7 +14,12 @@ Email
 The TCA type :php:`email` should be used to input values representing email
 addresses.
 
-..  contents:: Table of contents
+The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+is generated automatically.
+
+..  contents:: Table of contents:
+    :local:
+    :depth: 1
 
 ..  _columns-email-properties:
 
