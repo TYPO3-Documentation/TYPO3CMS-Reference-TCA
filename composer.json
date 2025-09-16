@@ -9,7 +9,7 @@
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^3.46",
     "t3docs/codesnippet": "dev-main",
-    "t3docs/examples": "dev-main",
+    "t3docs/examples": "^13.2",
     "t3docs/site-package": "dev-main",
     "typo3/cms-adminpanel": "^13.4",
     "typo3/cms-backend": "^13.4",
