@@ -6,6 +6,10 @@
 Pass through / virtual field
 ============================
 
+..  warning::
+    Database fields for the type `passthrough` are not automatically created.
+    You need to define them in the file `ext_tables.sql  <https://docs.typo3.org/permalink/t3coreapi:ext-tables-sql>`_.
+
 ..  contents:: Table of contents:
     :local:
     :depth: 1
