@@ -30,8 +30,9 @@ Select values from a checkbox list
 ..  include:: /Images/Rst/Checkbox3.rst.txt
 
 On the contrary the type :ref:`check <columns-check>` saves multiple values
-as bits. Therefore if the first value is chosen it stores `1`, if only the
-second is chosen it stores `2` and if both are chosen `3`.
+as bits. Therefore if the first value is chosen it stores `1` (binary `00000001`),
+if only the second is chosen it stores `2` (binary `00000010`) and if both are
+chosen `3` (binary `00000011`).
 
 ..  include:: /CodeSnippets/Checkbox3.rst.txt
 
