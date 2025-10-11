@@ -1,44 +1,16 @@
 
 ..  _types-examples-columnsOverrides:
+..  _types-examples-columnsOverrides-nowrap:
 
 Examples for columnsOverrides in type section of TCA
 ----------------------------------------------------
 
 Demonstrates property: :confval:`types-columnsOverrides`.
 
-Type :php:`withOverriddenColumns` shows the fields and overrides
-part of the configuration of the fields:
+For example the special blog post type might require the author to be set and
+use a different render type and description for the content:
 
-..  include:: /Images/Rst/CtrlTypeWithOverriddenColumns.rst.txt
+..  literalinclude:: _CodeSnippets/_tx_blogexample_post_codeeditor.php
 
-..  note::
-    It is a good idea to give all "types" speaking names, except the default
-    type :php:`0`. Therefore we named the other types  :php:`withChangedFields`
-    and :php:`withOverriddenColumns` instead of 1, 2 etc. In a real life example
-    they should have names from the domain.
-
-..  _types-examples-columnsOverrides-nowrap:
-
-Example adding "nowrap" to a text type for type "text"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Demonstrates property: :confval:`types-columnsOverrides`.
-
-Example adding "nowrap" to a text type for type "text":
-
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
-
-    'types' => [
-        'text' => [
-            'showitem' => 'hidden, myText',
-            'columnsOverrides' => [
-                'myText' => [
-                    'config' => [
-                        'wrap' => 'off',
-                    ],
-                ],
-            ],
-        ],
-        // ...
-    ],
+While the field type `type` cannot be changed in the `columnsOverrides` the
+render type `renderType` can be changed.

@@ -1,0 +1,11 @@
+
+..  _types-examples-creationOptions-defaultValues:
+
+Override default values by type
+-------------------------------
+
+A blog post of type link should have a different default value for the author
+field then other blog post types:
+
+..  literalinclude:: _CodeSnippets/_tx_blogexample_post_linkauthor.php
+    :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_post.php
