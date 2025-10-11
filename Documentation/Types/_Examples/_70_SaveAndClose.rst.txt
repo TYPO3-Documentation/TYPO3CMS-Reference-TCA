@@ -1,10 +1,15 @@
 ..  _types-example-creation-option:
 
-Example: Activate save and close for divider content element
-------------------------------------------------------------
+Example: Create the blog plugin at once
+---------------------------------------
 
 Demonstrates property: :confval:`types-creationOptions-saveAndClose`.
 
-..  literalinclude:: /Types/_CodeSnippets/_creationOptions.php
-    :language: php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+When editors create a new blog plugin in the plugin is automatically saved and
+the user returned to the page module:
+
+..  literalinclude:: /Types/_CodeSnippets/_tt_content_blogexample_list.php
+    :caption: EXT:blog_example/Configuration/TCA/Overrides/tt_content_blogexample_list.php
+
+..  note::
+    This property only takes effect in the table `tt_content`.
