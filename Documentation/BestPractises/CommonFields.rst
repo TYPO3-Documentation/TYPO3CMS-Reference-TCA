@@ -11,17 +11,17 @@ Common fields
 Mandatory fields
 ================
 
-If the table has a TCA definition, TYPO3 will automatically create the following fields:
+If a table has a TCA definition, TYPO3 will automatically create the following fields:
 
 :sql:`uid`
-    An auto-incrementing unique identifier. This field is used as table key
-    and as a reference in relationships between records.
+    An auto-incrementing unique identifier. This field is the table key
+    and is used as a reference in relationships between records.
 
 :sql:`pid`
-    The `uid` field of the parent page. The record is situated on this page.
-    If this value is 0 the record is not connected to any page.
+    The `uid` field of the parent page. A record is situated on its parent page.
+    If this value is 0 the record is not connected to a page.
 
-There is no separate TCA definition of these fields in the TCA configuration. It is
+These fields are not defined anywhere else in the TCA configuration. It is
 not possible to use other names for these fields.
 
 ..  _fields_convention:
@@ -30,13 +30,13 @@ Fields used by convention
 =========================
 
 ..  warning::
-    It is possible to change the names of the following fields, however this is
-    strongly discouraged as it breaks convention and may lead to compatibility
+    It is possible to change the names of the following fields, but it is
+    strongly discouraged. Doing so breaks convention and may lead to compatibility
     issues with third party extensions.
 
-    All fields mentioned below get added to the database automatically. It is
-    not recommended to define them in the :file:`ext_tables.sql`. Doing so
-    with incompatible SQL settings can lead to problems later on.
+    All the fields mentioned below are added to the database automatically. You do
+    not need to define these fields in :file:`ext_tables.sql` and doing so may lead to
+    problems later on. You only need to configure the fields in the TCA php files.
 
 ..  _field_deleted:
 
@@ -44,7 +44,7 @@ Soft delete
 ===========
 
 :sql:`deleted`
-    This field is used to enable soft delete in records. In can be configured
+    This field enables soft delete in records. Configure it
     by setting :ref:`ctrl->delete <ctrl-reference-delete>`:
 
     ..  literalinclude:: /Ctrl/_CodeSnippets/_Delete.php
@@ -52,13 +52,13 @@ Soft delete
 
 
     ..  warning::
-        If no :sql:`deleted` field is configured, records will be hard deleted.
-        The DataHandler in the backend and Extbase will automatically execute
-        :sql:`DELETE` statements.
+        If you do not configure this field, records will be hard deleted.
+        The backend DataHandler and Extbase will automatically execute
+        (hard) :sql:`DELETE` statements.
 
-    The :sql:`deleted` field is never directly visible in backend forms. It is
-    handled separately by the DataHandler. Therefore it
-    needs no definition in the :php:`columns` section.
+    The :sql:`deleted` field is not visible in backend forms. It is
+    handled separately by the DataHandler and therefore does not need to be
+    defined in the :php:`columns` section.
 
 Enablecolumns
 =============
@@ -71,7 +71,7 @@ Enablecolumns
 ..  _field_hidden:
 
 :sql:`hidden`
-    This field is used to enable soft hiding of records. In can be configured
+    This field enables soft hiding of records. Configure it
     by setting :ref:`ctrl->enablecolumns->disabled <ctrl-reference-enablecolumns>`:
 
     ..  literalinclude:: /Ctrl/_CodeSnippets/_Hidden.php
@@ -81,9 +81,9 @@ Enablecolumns
 ..  _field_endtime:
 
 :sql:`starttime` and :sql:`endtime`
-    This field is used to enable records by a starttime and or disable them with
-    an endtime. In can be configured
-    by :ref:`ctrl->enablecolumns->starttime or endtime <ctrl-reference-enablecolumns>`:
+    These fields can enable records at a starttime and disable them at
+    an endtime. Configure them
+    by setting :ref:`ctrl->enablecolumns->starttime or endtime <ctrl-reference-enablecolumns>`:
 
     ..  literalinclude:: /Ctrl/_CodeSnippets/_StarttimeEndtime.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
@@ -91,15 +91,15 @@ Enablecolumns
 ..  _field_fe_group:
 
 :sql:`fe_group`
-    This field is used to enable soft delete of records. In can be configured
-    by :ref:`ctrl->enablecolumns->fe_group <ctrl-reference-enablecolumns>`:
+    This field defines which field is used for access control. Configure it
+    by setting :ref:`ctrl->enablecolumns->fe_group <ctrl-reference-enablecolumns>`:
 
     ..  literalinclude:: /Ctrl/_CodeSnippets/_FeGroup.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  warning::
-    These enable fields are only respected in the frontend if you
-    use proper queries or Extbase repository settings in your extensions code.
+    These fields that enable records ("enable fields") are only respected in the frontend if you
+    use the correct queries and Extbase repository settings in your extension code.
     See :ref:`enablefields_usage` for more information.
 
 ..  _field_sorting:
@@ -108,19 +108,19 @@ Manual sorting in the backend
 =============================
 
 :sql:`sorting`
-    This field is used to manually sort records in the backend. In can be configured
-    by :ref:`ctrl->sortby <ctrl-reference-sortby>`:
+    This field is used to sort records in the backend. Configure it
+    by setting :ref:`ctrl->sortby <ctrl-reference-sortby>`:
 
     ..  literalinclude:: /Ctrl/_CodeSnippets/_Sorting.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  attention::
     The sortby field contains an integer and is managed by the DataHandler. It
-    therefore should have no definition in the :ref:`columns` section. Any value in this
+    should not be defined in the :ref:`columns` section in a TCA file. The value of this
     field can be changed at any time by the DataHandler.
 
     Use :ref:`default_sortby <ctrl-reference-default-sortby>` if you want to
-    sort by an existing field of the domain instead.
+    sort by a field that belongs to the domain.
 
 ..  _fields_for_datahandler:
 
@@ -129,8 +129,8 @@ Fields managed by the DataHandler
 
 The following fields are automatically set when a record is written by the
 :ref:`DataHandler <t3coreapi:datahandler-basics>`. They should never be
-displayed in backend forms or explicitly set, therefore they need no entry in
-the :ref:`columns` section of the TCA.
+displayed in backend forms or explicitly set. They do not need to be defined
+in the :ref:`columns` section of the TCA.
 
 ..  literalinclude:: /Ctrl/_CodeSnippets/_DataHandlerFields.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
@@ -139,7 +139,7 @@ the :ref:`columns` section of the TCA.
 
 :sql:`tstamp`
     This field is automatically updated to the current timestamp
-    each time the record is updated or saved in the DataHandler.
+    when the record is updated or saved in the DataHandler.
 
     It can be configured by setting :ref:`ctrl->tstamp <ctrl-reference-tstamp>`.
 
@@ -154,7 +154,7 @@ the :ref:`columns` section of the TCA.
 ..  _field_t3_origuid:
 
 :sql:`t3_origuid`
-    Field name, which contains the uid of the original record in case a
+    Field name containing the uid of the original record if a
     record is created as a copy or new version of another record.
 
     It can be configured by setting :ref:`ctrl->origUid <ctrl-reference-origuid>`.
