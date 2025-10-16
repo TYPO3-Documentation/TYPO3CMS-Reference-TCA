@@ -25,7 +25,7 @@ When setting up the XML file there are some limitations:
 
 *   configuration cannot be recursively nested.
 
-*   You cannot add, change or remove fields. You need make a copy and then change the configuration in the copy.
+*   You cannot add, change or remove fields. You need to make a copy and then change the configuration in the copy.
 
 *   The charset will be the same as the current backend UTF-8. Make sure that the
     files use UTF-8.
