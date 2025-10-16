@@ -6,20 +6,21 @@ FlexForm syntax
 ===============
 
 ..  note::
-    See :ref:`Core API <t3coreapi:t3ds>`
-    and :ref:`t3coreapi:flexforms` for further information.
+    Read this section together with :ref:`Core API <t3coreapi:t3ds>`
+    and :ref:`t3coreapi:flexforms` to make this topic easier to understand.
 
 FlexForms provide a way for editors to set values for plugins by providing a "form-within-a-form"
 in the backend.
 
 FlexForms have 2 parts: a setup XML file with root <T3DataStructure> and an XML
 document inside a field in the tt_content database table with root <T3FlexForms>.
-The setup file consists of field types (the same as TCA fields). The database field
-consists of the values entered by the editor in the backend form. The function
-:code:`\TYPO3\CMS\Core\Utility\GeneralUtility::xml2array()` saves the values entered
-into the backend form into the database XML.
+The setup file consists of data structures containing TCA field information that
+are used to generate the backend form. The XML document in the database is the TCA field
+information plus the values entered by the editory in the backend form (saved there
+by function :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::xml2array()`)
 
-When setting up the XML file there are some limitations:
+
+When creating the XML setup file there are some limitations:
 
 *   "unique" and "uniqueInPid" are not available
 
@@ -41,7 +42,7 @@ When setting up the XML file there are some limitations:
     FlexForm usage. For details and migration see
     :ref:`Breaking: #102970 - No database relations in FlexForm container sections <changelog:breaking-102970-1706447911>`.
 
-There are 2 types of elements in a FlexForm XML file - array elements and value
+There are 2 types of elements in the XML setup file - array elements and value
 elements:
 
 
@@ -65,7 +66,7 @@ Array Elements
 -------------------
 
 :aspect:`Element`
-    The same as ['columns']['field name']['config'] for a field in TCA.
+    The same as ['columns']['field name']['config'] in TCA fields.
 
 ..  _columns-flex-tceforms-array-root-tceforms:
 
