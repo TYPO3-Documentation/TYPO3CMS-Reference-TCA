@@ -1,67 +1,41 @@
 
 ..  _types-example-showitem:
-
-Showitem examples
------------------
-
-Demonstrates property: :confval:`types-showitem`.
-
-Extensions can also modify `showitem` values by utilizing
-:php:`ExtensionManagementUtility::addToAllTCAtypes()`.
-See :ref:`t3coreapi:extending-examples` for details.
-
 ..  _types-example-showitem-3-fields:
 
-A form with 3 fields
-~~~~~~~~~~~~~~~~~~~~
+Display all fields on one page of the form
+------------------------------------------
 
-..  code-block:: php
+The table containing the blog comments does not contain many fields. So they can
+all be displayed on one page of the backend form without using tabs:
 
-    'types' => [
-        '0' => [
-            'showitem' => 'hidden, title, poem,',
-        ],
-    ],
+..  literalinclude:: _CodeSnippets/_tx_blogexample_comment_showitem.php
+    :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_comment.php
 
-The above example shows three fields of the form. Since no further '--div--' are specified, there would be only
-one tab. In this case FormEngine will suppress that single tab and just show all specified fields without
-a tabbing indicator.
-
+..  _types-examples-required-tabs:
 ..  _types-example-showitem-2-tabs:
-
-A form with two tabs
-~~~~~~~~~~~~~~~~~~~~
-
-..  code-block:: php
-
-    'types' => [
-        '0' => [
-            'showitem' => '
-                hidden, title, poem,
-                --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2,
-            '
-        ],
-    ],
-
-Put three fields on first tab "General" and the two fields "image1" and
-"image2" on a second tab with the localized name found in
-"EXT:examples/locallang_db.xml:tx_examples_haiku.images".
-
 ..  _types-example-showitem-rename-general:
 
-Rename the tab "General"
-~~~~~~~~~~~~~~~~~~~~~~~~
+Group fields using tabs and use palettes
+----------------------------------------
 
-..  code-block:: php
+If a table has a larger number of fields, grouping them into tabs and palettes
+can improves the backend user experience. Palettes have the additional value
+that they can be reused across different record types.
 
-    'types' => [
-        '0' => [
-            'showitem' => '
-                --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, hidden, title, poem,
-                --div--;LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images, image1, image2,
-            '
-        ],
-    ],
+..  literalinclude:: _CodeSnippets/_tx_blogexample_post_tabs.php
+    :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_post.php
 
-Similar to the example before, but rename the "General" tab to the string
-specified in label "LLL:EXT:examples/locallang_db.xml:tx_examples_haiku.images".
+The syntax for tabs is:
+
+`--div--;<label>`
+
+Where label can be a string or an LLL reference (preferred).
+
+The syntax to insert a palette is:
+
+`--palette--;<label>;<paletteName>`
+
+The label can be omitted.
+
+..  seealso::
+    `Grouping fields (palettes) <https://docs.typo3.org/permalink/t3tca:palettes>`_
