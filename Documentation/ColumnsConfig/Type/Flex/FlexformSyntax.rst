@@ -16,7 +16,7 @@ FlexForms have 2 parts: a setup XML file with root <T3DataStructure> and an XML
 document inside a field in the tt_content database table with root <T3FlexForms>.
 The setup file consists of data structures containing TCA field information that
 are used to generate the backend form. The XML document in the database is the TCA field
-information plus the values entered by the editory in the backend form (saved there
+information plus the values entered by the editor in the backend form (saved there
 by function :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::xml2array()`)
 
 
