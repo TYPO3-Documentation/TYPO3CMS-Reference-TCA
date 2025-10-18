@@ -12,7 +12,8 @@ listModule
     :Scope: fieldControl
     :Types: :ref:`group <columns-group>`
 
-    The list module control button opens the Web > List module for only one table and allows the user to manipulate
+    The list module control button opens the :guilabel:`Content > List` module
+    for only one table and allows the user to manipulate
     stuff there.
 
     ..  note::
