@@ -7,50 +7,53 @@ IRRE / inline
 =============
 
 ..  versionadded:: 13.0
-    When using the `inline` type, TYPO3
-    :ref:`generates the correct database fields <t3coreapi:auto-generated-db-structure>`.
-    Developers do not need to define this field in an extension's
+    TYPO3 :ref:`generates the correct database fields <t3coreapi:auto-generated-db-structure>`
+    for the `inline` type. Developers do not need to define this field in an extension
     :file:`ext_tables.sql` file.
 
-Inline Relational Record Editing (IRRE) is a way of editing parent-child-relations in the backend view.
-Instead of child records already having to exist, new child records are created
-using AJAX calls (to prevent reloading the complete backend view).
+Inline Relational Record Editing (IRRE) is a convenient way of editing
+parent-child relations in the backend.
+New child records can be created directly in the backend view
+(by AJAX call, so that the backend view is not reloaded).
 
-The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
+The :ref:`database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
 ..  note::
-    Inline fields should not be used anymore to handle files.  Use the TCA
-    column type :ref:`file <columns-file>` instead.
+    Inline fields should not be used to handle files. Use TCA
+    column type :ref:`file <columns-file>`.
 
-The type='inline' is a powerful element that can handle many types of relation,
-including simple :code:`1:n` and nested :code:`1:n-1:n` relations, aswell as :code:`m:n`
-relations with different view aspects and localization setups. When combined with
-'ctrl' and 'types' properties in the TCA a huge amount of different views are possible.
+The 'inline' TCA type is a powerful element that handles links between records.
+It can handle :code:`1:n`,
+nested :code:`1:n-1:n` and  :code:`m:n` relations and the
+different views and localizations. When used with
+'ctrl' and 'types' properties, many different backend views are possible.
 
-The inline type was mainly designed to handle :code:`1:n` relations,
+The inline type is mainly used to handle :code:`1:n` relations (1 to many),
 where one parent record has many children and each child has only one
-parent. Children can not be transferred from one parent to another.
+parent. A child record cannot be moved between parents.
 
-However, :code:`m:n` relations can be setup using intermediate tables. An :code:`m:n`
-relation is where a child has many parents. In addition to the main parent-child
-relation fields in the intermediate table, fields can be added to attach
-additional information to the parent-child relation. One example of this is
+However, the inline type can also be used for :code:`m:n` relations (many to many).
+An :code:`m:n` relation is where a child has many parents. The relation is set up
+using an intermediate table.
+The intermediate table contains the parent and child relation fields as well as any extra fields
+providing additional information about the relation. One example of this is
 "FAL" / resource handling in the Core. A parent record
-(for instance table "tt_content") is connected via table "sys_file_reference" to
-a media resource in "sys_file". A sys_file record has table "sys_file_metadata"
-as a child record which holds meta information about the file (for instance a
-description). This information can be overwritten for the specific file resource used in
-"tt_content" by adding a new description in "sys_file_reference". There are inline
-and field properties in the TCA such as "placeholder" to set this up.
+(in table "tt_content") is linked to
+a media resource in "sys_file" via the intermediate table "sys_file_reference".
+The sys_file child record has itself table "sys_file_metadata"
+as a child record holding meta information about the file (for example, a
+description). This information can be overwritten for a file resource used by
+"tt_content" by adding a new description in "sys_file_reference". TCA properties
+such as "placeholders" can be used to set this up.
 
 ..  hint::
 
     The inline type does not have :code:`fieldInformation`,
-    :code:`fieldControl` or :code:`fieldWizard` properties like other types. This is
-    due to the fact that it is a container and not an element. You can
+    :code:`fieldControl` or :code:`fieldWizard` properties like other types
+    because it is a container rather than an element. You can
     still add fieldInformation or fieldWizard, but they must be configured
-    in the :code:`ctrl`. Please see the
+    in the :code:`ctrl`. See
     :ref:`example <inline-example-field-information>`.
 
 ..  contents:: Table of contents:
