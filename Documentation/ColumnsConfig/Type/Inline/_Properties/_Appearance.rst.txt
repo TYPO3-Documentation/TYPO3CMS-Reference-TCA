@@ -22,8 +22,8 @@
         :type: boolean
         :Scope: Display
 
-        Show only one child record expanded each time. If a collapsed record is clicked, the currently
-        open one collapses and the clicked one expands.
+        Show only one child record expanded at a time. If a collapsed record is clicked, the currently
+        open record collapses and the clicked on one expands.
 
     ..  confval:: showNewRecordLink
         :name: inline-appearance-showNewRecordLink
@@ -66,7 +66,7 @@
         :type: string or LLL reference
 
         Overrides the link text and title of the "Create new relation" button with a localised string.
-        Only useful, if the element browser is enabled. This is usually used together with FAL relations to change it to "Add file" or similar.
+        Only useful if the element browser is enabled. This is usually used together with FAL relations to change it to "Add file" or similar.
 
     ..  confval:: levelLinksPosition
         :name: inline-appearance-levelLinksPosition
@@ -85,7 +85,7 @@
 
         This is only useful on bidirectional relations using an intermediate table with attributes. In a "combination" it
         is possible to edit the attributes AND the related child record itself. If using a
-        :ref:`foreign_selector <columns-inline-properties-foreign-selector>` in such a case, the
+        :ref:`foreign_selector <columns-inline-properties-foreign-selector>`, the
         :ref:`foreign_unique <columns-inline-properties-foreign-unique>` property  **must** be set to the same field as
         the :ref:`foreign_selector <columns-inline-properties-foreign-selector>`.
 
@@ -119,7 +119,7 @@
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleLocalizationRecords']
         :type: boolean
 
-        Show unlocalized records which are in the original language, but not yet localized.
+        Show unlocalized records which are in the original language but not yet localized.
 
     ..  confval:: showAllLocalizationLink
         :name: inline-appearance-showAllLocalizationLink
@@ -140,8 +140,9 @@
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['enabledControls']
         :type: array
 
-        Associative array with the keys 'info', 'new', 'dragdrop', 'sort', 'hide', 'delete', 'localize'. If the accordant
-        values are set to a boolean value (true or false), the control is shown or hidden in the header of each record.
+        Associative array with keys 'info', 'new', 'dragdrop', 'sort', 'hide', 'delete', 'localize'.
+        If a value is set to a boolean (true or false), the respective control
+        is shown/hidden in the record header.
 
     ..  confval:: showPossibleRecordsSelector
         :name: inline-appearance-showPossibleRecordsSelector
