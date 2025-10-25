@@ -26,18 +26,6 @@
 
     ..  include:: /Ctrl/_CodeSnippets/_AutoCreatedColumns/_AutoCreateWarning.rst.txt
 
-
-..  _ctrl-reference-languagefield-migration:
-
-..  rubric:: Migration: Remove language column definitions from TCA
-
-On dropping TYPO3 v12.4 support extensions authors can drop the column
-definitions of the language fields. They need to keep the :ref:`palettes` and
-:ref:`types` definitions, however:
-
-..  literalinclude:: _CodeSnippets/_Language.diff
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
 ..  _ctrl-reference-languagefield-example:
 
 ..  rubric:: Example: A table with localization support

@@ -1,9 +1,0 @@
- 'email_field' => [
-     'label' => 'Email',
-     'config' => [
--        'type' => 'input',,
--        'eval' => 'trim,email',
-+        'type' => 'email'
--        'max' => 255,
-     ]
- ],

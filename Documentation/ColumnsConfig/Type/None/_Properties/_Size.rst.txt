@@ -8,9 +8,3 @@
 
     Value for the width of the :code:`<input>` field. To set the input field to the full width of
     the form area, use the value 50. Default is 30.
-
-..  rubric:: Migration
-
-Rename the option `cols` to `size`.
-
-..  literalinclude:: _Properties/_cols_migration.diff

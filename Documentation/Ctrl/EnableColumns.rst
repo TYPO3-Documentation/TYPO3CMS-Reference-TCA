@@ -7,18 +7,13 @@
 How to use `enablecolumns` in the `ctrl` section of TCA
 =======================================================
 
-..  _ctrl-reference-enablecolumns-migration:
+All enable column definitions (hidden, starttime, endtime, fe_groups) are
+automatically created if they are registered in the `ctrl` section in the main
+TCA (not in the overrides) of a table.
 
-Migration
-=========
-
-Migration: Remove enable column definitions (hidden, starttime, endtime, fe_groups) from TCA
-On dropping TYPO3 v12.4 support extensions authors can drop the column
-definitions of the enable fields. They need to keep the :ref:`palettes` and
-:ref:`types` definitions, however:
-
-..  literalinclude:: _CodeSnippets/_Enablecolumns.diff
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+:ref:`palettes` as known from Core TCA definitions have to be defined in the
+TCA of a custom table however. If the fields should be editable by backend users,
+the also have to be added to the :ref:`types` definitions.
 
 ..  _ctrl-reference-enablecolumns-examples:
 

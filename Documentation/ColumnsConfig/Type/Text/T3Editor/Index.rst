@@ -14,7 +14,7 @@ codeEditor (previously "t3editor")
     `codeEditor`.
 
     A TCA migration from the old value to the new one is in place. See also
-    :ref:`columns-text-renderType-codeEditor-migration`.
+    :ref:`t3tca/13.4:columns-text-renderType-codeEditor-migration`.
 
 This page describes the :ref:`text <columns-text>` type with the
 :php:`renderType='codeEditor'`.
@@ -61,13 +61,3 @@ Properties of the TCA column type `text`, render type `codeEditor`
 
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
-
-..  _columns-text-renderType-codeEditor-migration:
-
-Migration from render type `t3editor` to render type `codeEditor`
-=================================================================
-
-The migration from render type `t3editor` to render type `codeEditor` is pretty
-straight forward: Replace the render type. All other properties stayed the same.
-
-..  literalinclude:: _Snippets/_migration.diff
