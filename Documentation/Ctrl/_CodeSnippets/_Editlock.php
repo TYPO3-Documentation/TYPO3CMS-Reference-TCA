@@ -9,10 +9,7 @@ return [
     ],
     'palettes' => [
         'access' => [
-            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access',
-            'showitem' => '
-                editlock
-            ',
+            'showitem' => 'editlock',
         ],
     ],
     'types' => [

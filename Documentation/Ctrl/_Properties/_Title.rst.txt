@@ -15,22 +15,14 @@
     language is chosen, like Danish, then the label "Sideindhold" is shown
     instead. This value is managed by the "title" value.
 
-    You can insert plain text values, but the preferred way is to enter a
-    reference to a localized string. Refer to the :ref:`Localization <t3coreapi:internationalization>`
-    section for more details.
-
-    ..  rubric:: Example for table `sys_template`
-
     ..  code-block::
+        :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_domain_model_blog.php
 
-        'ctrl' => [
-            'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:sys_template',
-        ],
+        return [
+            'ctrl' => [
+                'title' => 'LLL:blog_example.db:tx_blogexample_domain_model_blog',
+                // ...
+            ],
+        ];
 
-    In the above example the :code:`LLL:` prefix tells the system to look up a
-    label from a localized file. The next prefix code:`EXT:frontend` will look for
-    the data in the extension with the key "frontend". In that extension the
-    file :file:`locallang_tca.xlf` contains a XML structure inside of which one
-    label tag has an index attribute named "sys\_template". This tag
-    contains the value to display in the default language. Other languages
-    are provided by the language packs.
+    ..  include:: /_Includes/_LabelReference.rst.txt

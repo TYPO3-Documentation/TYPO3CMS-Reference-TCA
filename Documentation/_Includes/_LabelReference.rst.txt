@@ -1,0 +1,5 @@
+It is possible to insert plain text values here, however it is recommended
+to keep all labels in a translation file and reference the label with the
+special syntax shown above.
+
+See also `TYPO3 Explained: Label references / LLL strings <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_

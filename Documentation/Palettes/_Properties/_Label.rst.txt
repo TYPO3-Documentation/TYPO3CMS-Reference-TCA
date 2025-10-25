@@ -17,7 +17,7 @@
 
         'types' => [
             'myType' => [
-                'showitem' => 'aField, --palette--;LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription;aPalette, someOtherField',
+                'showitem' => 'aField, --palette--;LLL:my_extension.db:aPaletteDescription;aPalette, someOtherField',
             ],
         ],
         'palettes' => [
@@ -38,7 +38,7 @@
         ],
         'palettes' => [
             'aPalette' => [
-                'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
+                'label' => 'LLL:my_extension.db:aPaletteDescription',
                 'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
             ],
         ],

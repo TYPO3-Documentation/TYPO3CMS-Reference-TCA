@@ -38,7 +38,7 @@ Options
     :type: string
     :Scope: fieldControl -> editPopup
     :Values: string or LLL reference
-    :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.edit
+    :Default: `LLL:core.core:labels.edit`
 
     Allows to set a different 'title' attribute to the popup icon.
 

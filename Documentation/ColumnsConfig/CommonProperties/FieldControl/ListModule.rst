@@ -71,7 +71,7 @@ Options
     :type: string
     :Scope: fieldControl -> listModule
     :Values: string or LLL reference
-    :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.list
+    :Default: `LLL:core.core:labels.list`
 
     Allows to set a different 'title' attribute to the popup icon.
 

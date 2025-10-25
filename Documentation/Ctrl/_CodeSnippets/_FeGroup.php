@@ -9,7 +9,7 @@ return [
     ],
     'palettes' => [
         'access' => [
-            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access',
+            'label' => 'LLL:core.form.tabs:access',
             'showitem' => '
                 fe_group,
             ',

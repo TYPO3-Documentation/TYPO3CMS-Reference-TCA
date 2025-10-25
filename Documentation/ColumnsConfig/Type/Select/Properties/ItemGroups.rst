@@ -26,7 +26,7 @@ api method :php:`ExtensionManagementUtility::addTcaSelectItemGroup`.
         'tt_content',
         'CType',
         'sliders',
-        'LLL:EXT:my_slider_mixtape/Resources/Private/Language/locallang_tca.xlf:tt_content.group.sliders',
+        'LLL:my_extension.db:tt_content.group.sliders',
         'after:lists'
     );
 
@@ -50,9 +50,9 @@ group.
         'tt_content',
         'CType',
         [
-            'LLL:EXT:my_slider_mixtape/Resources/Private/Locallang/locallang_tca.xlf:tt_content.CType.slickslider',
+            'LLL:my_extension.db:tt_content.CType.slickslider',
             'slickslider',
-            'EXT:my_slider_mixtape/Resources/Public/Icons/slickslider.png',
+            'EXT:my_extension/Resources/Public/Icons/slickslider.png',
             'sliders'
         ]
     );

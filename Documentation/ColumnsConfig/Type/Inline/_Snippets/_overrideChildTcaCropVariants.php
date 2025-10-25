@@ -11,7 +11,7 @@ $GLOBALS['TCA']['tt_content']['columns']['assets'] = [
                                 'disabled' => true,
                             ],
                             'mobile' => [
-                                'title' => 'LLL:EXT:ext_key/Resources/Private/Language/locallang.xlf:imageManipulation.mobile',
+                                'title' => 'LLL:my_extension.wizards:imageManipulation.mobile',
                                 'cropArea' => [
                                     'x' => 0.1,
                                     'y' => 0.1,
@@ -20,11 +20,11 @@ $GLOBALS['TCA']['tt_content']['columns']['assets'] = [
                                 ],
                                 'allowedAspectRatios' => [
                                     '4:3' => [
-                                        'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                        'title' => 'LLL:core.wizards:imwizard.ratio.4_3',
                                         'value' => 4 / 3,
                                     ],
                                     'NaN' => [
-                                        'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                        'title' => 'LLL:core.wizards:imwizard.ratio.free',
                                         'value' => 0.0,
                                     ],
                                 ],

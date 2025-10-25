@@ -4,7 +4,7 @@ return [
     // ...
     'columns' => [
         'my_image_manipulation' => [
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.crop',
+            'label' => 'LLL:my_extension.db:my_image_manipulation',
             'config' => [
                 'type' => 'imageManipulation',
             ],
