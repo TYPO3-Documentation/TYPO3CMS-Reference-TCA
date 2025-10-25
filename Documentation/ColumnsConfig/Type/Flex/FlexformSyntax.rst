@@ -99,7 +99,7 @@ Value Elements
     <sheetTitle>
 
 :aspect:`Format`
-    string or LLL reference with the title of the sheet.
+    plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_ with the title of the sheet.
 
 ..  _columns-flex-tceforms-value-sheetdescription:
 
@@ -110,7 +110,7 @@ Value Elements
     <sheetDescription>
 
 :aspect:`Format`
-    string or LLL reference
+    plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     with a description of the sheet shown in the FlexForm.
 
 ..  _columns-flex-tceforms-value-sheetshortdescr:
@@ -122,7 +122,7 @@ Value Elements
     <sheetShortDescr>
 
 :aspect:`Format`
-    string or LLL reference
+    plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     with a description of the sheet. The description is used in the tab-menu.
 
 

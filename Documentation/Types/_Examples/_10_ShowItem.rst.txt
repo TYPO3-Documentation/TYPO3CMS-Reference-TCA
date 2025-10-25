@@ -29,7 +29,7 @@ The syntax for tabs is:
 
 `--div--;<label>`
 
-Where label can be a string or an LLL reference (preferred).
+Where label can be plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_ (preferred).
 
 The syntax to insert a palette is:
 

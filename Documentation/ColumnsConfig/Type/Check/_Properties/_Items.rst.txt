@@ -22,7 +22,7 @@
     ..  code-block:: php
 
         'items' => [
-            ['label' => 'Green tomatoes'], // Note these should be LLL references
+            ['label' => 'Green tomatoes'], // Note these should be label references
             ['label' => 'Red peppers'],
         ],
 
@@ -31,7 +31,7 @@
 
     Further properties can be set per item, but not all of them apply to all renderTypes:
 
-    label (string or LLL reference)
+    label (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_)
         The displayed title.
 
     invertStateDisplay (boolean)
