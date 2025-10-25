@@ -15,15 +15,15 @@
         Show only one child-record expanded each time. If a collapsed record is
         clicked, the currently open one collapses and the clicked one expands.
 
-    createNewRelationLinkTitle (string or LLL reference)
+    createNewRelationLinkTitle (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_)
         Overrides the link text and title of the "Create new relation" button
         with a localized string. Only useful, if the element browser is enabled.
 
-    addMediaLinkTitle (string or LLL reference)
+    addMediaLinkTitle (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_)
         Overrides the link text and title of the "Add media by URL" button
         with a localized string. Only useful, if the element browser is enabled.
 
-    uploadFilesLinkTitle (string or LLL reference)
+    uploadFilesLinkTitle (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_)
         Overrides the link text and title of the "Select & upload files" button
         with a localized string. Only useful, if the element browser is enabled.
 

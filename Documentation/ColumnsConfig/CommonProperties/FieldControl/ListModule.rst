@@ -70,7 +70,7 @@ Options
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
     :type: string
     :Scope: fieldControl -> listModule
-    :Values: string or LLL reference
+    :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     :Default: `LLL:core.core:labels.list`
 
     Allows to set a different 'title' attribute to the popup icon.

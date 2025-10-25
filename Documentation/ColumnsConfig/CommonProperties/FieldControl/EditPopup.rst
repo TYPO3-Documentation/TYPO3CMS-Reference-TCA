@@ -37,7 +37,7 @@ Options
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
     :type: string
     :Scope: fieldControl -> editPopup
-    :Values: string or LLL reference
+    :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     :Default: `LLL:core.core:labels.edit`
 
     Allows to set a different 'title' attribute to the popup icon.
@@ -47,7 +47,7 @@ Options
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
     :type: string
     :Scope: fieldControl -> editPopup
-    :Values: string or LLL reference
+    :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     :Default: height=800,width=600,status=0,menubar=0,scrollbars=1
 
     Allows to set a different size of the popup, defaults

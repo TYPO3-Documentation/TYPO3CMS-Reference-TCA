@@ -18,7 +18,7 @@
 
     items (array)
         An array with selectable items. Each item is an array with the first value being the label in the select
-        drop-down (LLL reference possible) the second being the hex-value transferred to the input field.
+        drop-down (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_) the second being the hex-value transferred to the input field.
         The value should have exactly 7 characters, as this is the maximum for a hex-value.
 
 ..  rubric:: Example

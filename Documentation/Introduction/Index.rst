@@ -279,6 +279,6 @@ record type
     The record type can be considered as a switch in the interpretation
     of the whole record.
 
-LLL reference
-    A localized string fetched from a locallang file
-    by prefixing the string with :code:`LLL:`.
+Label reference
+    A localized string fetched from a locallang file. The syntax is described in
+    `TYPO3 explained: label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_

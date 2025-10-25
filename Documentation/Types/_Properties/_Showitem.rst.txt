@@ -15,11 +15,11 @@
     Each comma separated token is one of the following:
 
     `fieldName;fieldLabel`
-        Name of a field to show. Optionally an alternative label (string or LLL reference) to override
+        Name of a field to show. Optionally an alternative label (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_) to override
         the :ref:`default label from columns section <columns-properties-label>`.
 
     `--palette--;paletteLabel;paletteName`
-        Name of a :ref:`palette <palettes>` to show. The label (string or LLL reference) is optional. If set, it is
+        Name of a :ref:`palette <palettes>` to show. The label (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_) is optional. If set, it is
         shown above the single palette fields. The palette name is required and must reference a palette from
         the palette section.
 
@@ -29,7 +29,7 @@
             --palette--;Caching;caching // Show palette "caching" with label "Caching"
 
     `--div--;tabLabel`
-        Put all fields after this token onto a new tab and name the tab as given in "tabLabel" (string or LLL reference).
+        Put all fields after this token onto a new tab and name the tab as given in "tabLabel" (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_).
 
     ..  note::
         It is good practice to add a comma in excess behind the very last field name
