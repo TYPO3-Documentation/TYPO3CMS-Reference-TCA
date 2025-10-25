@@ -1,9 +1,0 @@
-  'columns' => [
-      'aColumn' => [
-          'config' => [
-              'type' => 'none',
--             'cols' => 20,
-+             'size' => 20,
-          ],
-      ],
-  ],

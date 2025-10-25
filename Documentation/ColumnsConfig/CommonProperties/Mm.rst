@@ -89,17 +89,6 @@ Related configurations
     The above example uses the special field quoting syntax :php:`{#...}` around
     identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as possible.
 
-
-..  _tca_property_MM_hasUidField:
-
-..  confval:: MM_hasUidField
-    ..  versionchanged:: 13.0
-        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
-        from TCA. The :sql:`uid` column is added as primary key automatically,
-        if :php:`multiple = true` is set, otherwise a combined primary key of
-        fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually
-        :sql:`tablenames` and :sql:`fieldname` is used.
-
 ..  _tca_property_MM_auto_creation_mm_table:
 
 Auto creation of intermediate MM tables from TCA

@@ -11,8 +11,8 @@ Automatically added system fields to content types (`tt_content`)
 ..  versionchanged:: 13.3
     Creating content elements has been simplified by removing the need to
     define the system fields for each element again and again. This shrinks
-    down a content element's :confval:`types-showitem` to just the element
-    specific fields. See also :ref:`Migration <types-content-migration>`.
+    down a content element's :confval:`t3tca/13.4:types-showitem` to just the element
+    specific fields. See also :ref:`Migration <t3tca/13.4:types-content-migration>`.
     Added with :ref:`changelog:feature-104814-1725444916`.
 
 The following tabs / palettes are added automatically to the :confval:`types-showitem`
@@ -96,21 +96,3 @@ The following tabs are shown:
 Additional fields that are subsequently added to the end of the table using
 :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTcaTypes()`
 will appear in the tab :guilabel:`Extended`.
-
-..  _types-content-migration:
-
-Migration: Remove system fields from showitems on dropping TYPO3 v12.4 support
-==============================================================================
-
-It is sufficient to apply changes to the :confval:`types-showitem` section
-of content types once dropping TYPO3 v12.4 support in extensions.
-
-In site packages or extensions only supporting TYPO3 v13.3 or above you can
-migrate the :confval:`types-showitem` right away:
-
-..  literalinclude:: _CodeSnippets/tt_content_migration.diff
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php (diff)
-
-So the tabs :guilabel:`General`, :guilabel:`Language`, :guilabel:`Access`
-and :guilabel:`Notes` are now added automatically together with the
-corresponding system fields.

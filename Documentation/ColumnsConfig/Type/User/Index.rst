@@ -97,20 +97,9 @@ implementing a rendering. See :ref:`FormEngine docs
     ..  literalinclude:: _includes/_SpecialFieldElement.php
         :caption: EXT:my_extension/Classes/Form/Element/SpecialFieldElement.php
 
-    ..  versionchanged:: 13.3
-        The label of a custom field does not get rendered automatically anymore
-        but must be rendered with :php:`$this->renderLabel($fieldId)` or
-        :php:`$this->wrapWithFieldsetAndLegend()`.
-
-    ..  rubric:: Migration
-
-    If the custom field is used with TYPO3 v13, add :php:`$this->renderLabel($fieldId)`
-    to the output. If your extension should be compatible with both TYPO3 v12.4
-    and v13 make a version check first and only add this for major versions
-    larger then 12.
-
-    ..  literalinclude:: _includes/_Label.diff
-        :caption: EXT:my_extension/Classes/Form/Element/SpecialFieldElement.php
+    The label of a custom field does not get rendered automatically
+    but must be rendered with :php:`$this->renderLabel($fieldId)` or
+    :php:`$this->wrapWithFieldsetAndLegend()`.
 
     ..  attention::
         The returned data in :php:`$resultArray['html']` will be output in the
@@ -138,7 +127,6 @@ implementing a rendering. See :ref:`FormEngine docs
         The returned data in :php:`$resultArray['html']` must be valid HTML.
         Invalid HTML (e.g. not closed elements) may result in unexpected
         behaviour in TYPO3 (e.g. new inline elements not saved).
-
 
 The field would then look like this in the backend:
 

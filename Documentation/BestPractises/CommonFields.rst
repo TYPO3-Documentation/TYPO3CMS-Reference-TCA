@@ -63,11 +63,6 @@ Soft delete
 Enablecolumns
 =============
 
-..  versionchanged:: 13.3
-    The column definitions for these settings are
-    :ref:`auto-created <ctrl-auto-created-columns>`.
-    See also :ref:`ctrl-reference-enablecolumns-migration`.
-
 ..  _field_hidden:
 
 :sql:`hidden`
