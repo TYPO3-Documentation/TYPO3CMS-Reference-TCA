@@ -5,11 +5,11 @@ return [
         '0' => [
             'showitem' => '
             record_type, blog, title, date, author, content,
-            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+            --div--;core.form.tabs:access,
                 hidden,
                 --palette--;;paletteStartStop,
                 fe_group,
-            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+            --div--;core.form.tabs:language,
                  --palette--;;paletteLanguage,
             ',
         ],
