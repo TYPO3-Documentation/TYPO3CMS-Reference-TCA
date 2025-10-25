@@ -48,7 +48,7 @@ $GLOBALS['TCA']['tt_content']['types']['my_extension_extended-text']['showitem']
     --div--;My tab,
         my_extension_link,
         my_extension_link_text,
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,';
+    --div--;core.form.tabs:extended,';
 
 // This field will be added in tab "Extended"
 ExtensionManagementUtility::addToAllTCAtypes(
