@@ -32,7 +32,7 @@
             :name: select-byside-fieldControl-editPopup-options-title
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['title']
             :type: string
-            :Values: string or LLL reference
+            :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
             :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.edit
 
             Allows to set a different 'title' attribute to the popup icon.
@@ -41,7 +41,7 @@
             :name: select-byside-fieldControl-editPopup-options-windowOpenParameters
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['windowOpenParameters']
             :type: string
-            :Values: string or LLL reference
+            :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
             :Default: height=800,width=600,status=0,menubar=0,scrollbars=1
 
             Allows to set a different size of the popup, defaults

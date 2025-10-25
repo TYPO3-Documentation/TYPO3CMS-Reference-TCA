@@ -4,7 +4,7 @@
 ..  confval:: foreign_table_prefix
     :name: select-single-foreign-table-prefix
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: string or LLL reference
+    :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     :Scope: Display
     :RenderType: all
 

@@ -51,7 +51,7 @@
     ..  confval:: newRecordLinkTitle
         :name: inline-appearance-newRecordLinkTitle
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['newRecordLinkTitle']
-        :type: string or LLL reference
+        :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
 
         Overrides the title of the "New record" link with a localized string. This will work only if
         :code:`newRecordLinkAddTitle` is **not** set to true.
@@ -63,7 +63,7 @@
     ..  confval:: createNewRelationLinkTitle
         :name: inline-appearance-createNewRelationLinkTitle
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['createNewRelationLinkTitle']
-        :type: string or LLL reference
+        :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
 
         Overrides the link text and title of the "Create new relation" button with a localised string.
         Only useful if the element browser is enabled. This is usually used together with FAL relations to change it to "Add file" or similar.

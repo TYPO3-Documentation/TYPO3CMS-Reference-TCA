@@ -27,7 +27,7 @@
 
     Each element in this array is in itself an associative array.
 
-    label (string or LLL reference)
+    label (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_)
         The displayed title.
 
     value (integer or string)

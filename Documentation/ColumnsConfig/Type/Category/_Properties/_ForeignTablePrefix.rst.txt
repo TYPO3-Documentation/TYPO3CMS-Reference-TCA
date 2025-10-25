@@ -3,7 +3,7 @@
 ..  confval:: foreign_table_prefix
     :name: category-foreign-table-prefix
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: string or LLL reference
+    :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     :Scope: Display
 
     Label prefix to the title of the records from the foreign-table.

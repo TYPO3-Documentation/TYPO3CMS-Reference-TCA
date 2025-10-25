@@ -102,8 +102,8 @@ Options
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']
     :type: string
     :Scope: fieldControl -> addRecord
-    :Values: string or LLL reference
-    :Default: LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.createNew
+    :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
+    :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.createNew
 
     Allows to set a different 'title' attribute to the popup icon.
 
