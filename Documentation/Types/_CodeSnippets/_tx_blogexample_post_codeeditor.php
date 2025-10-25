@@ -2,7 +2,7 @@
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:blog_example/.../locallang_db.xlf:post_title',
+        'title' => 'LLL:blog_example.db:tx_blogexample_domain_model_post',
         // ...
     ],
     'types' => [

@@ -101,7 +101,7 @@
 
             // Either provide a LLL-reference (recommended)
             'appearance' => [
-                'browserTitle' => 'LLL:EXT:Resources/Private/Language/locallang.xlf:my_custom_title',
+                'browserTitle' => 'LLL:my_extension.db:my_custom_title',
             ],
 
         ..  code-block:: php

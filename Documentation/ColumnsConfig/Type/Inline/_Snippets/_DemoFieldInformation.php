@@ -20,8 +20,7 @@ class DemoFieldInformation extends AbstractNode
         }
 
         $text = $GLOBALS['LANG']->sL(
-            'LLL:EXT:my_example/Resources/Private/Language/'
-            . 'locallang_db.xlf:tt_content.fieldInformation.demo'
+            'my_extension.db:tt_content.fieldInformation.demo'
         );
 
         $result['html'] = $text;

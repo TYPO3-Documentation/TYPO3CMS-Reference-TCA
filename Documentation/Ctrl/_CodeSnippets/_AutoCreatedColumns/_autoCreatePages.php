@@ -1,7 +1,7 @@
 <?php
 
 $GLOBALS['TCA']['pages']['columns']['disabled'] = [
-    'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.enabled',
+    'label' => 'LLL:core.general:LGL.enabled',
     'exclude' => true,
     'config' => [
         'type' => 'check',

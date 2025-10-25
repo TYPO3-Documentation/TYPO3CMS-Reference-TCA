@@ -58,7 +58,7 @@
 
         Example::
 
-            'newRecordLinkTitle' => 'LLL:EXT:myext/Resources/Private/Language/locallang_db.xlf:my_new_record_label'
+            'newRecordLinkTitle' => 'LLL:my_extension.db:my_new_record_label'
 
     ..  confval:: createNewRelationLinkTitle
         :name: inline-appearance-createNewRelationLinkTitle
@@ -100,10 +100,10 @@
 
         Example::
 
-            $GLOBALS['TCA']['tx_demo_domain_model_demoinline']['columns']['irre_records']['config'] = [
+            $GLOBALS['TCA']['tx_myextension_mytable']['columns']['irre_records']['config'] = [
                  'appearance' => [
-                    'overwriteCombinationWarningMessage' => 'LLL:EXT:demo/Resources/Private/Language/locallang_db.xlf:tx_demo_domain_model_demoinline.irre_records.useCombinationWarning',
-                    'useCombination' => TRUE
+                    'overwriteCombinationWarningMessage' => 'LLL:my_extension.db:my_message',
+                    'useCombination' => true,
                  ],
             ],
 

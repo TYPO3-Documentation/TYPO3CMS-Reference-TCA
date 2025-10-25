@@ -13,7 +13,7 @@
         :emphasize-lines: 7
 
         'title' => [
-            'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
+            'label' => 'LLL:core.tca:sys_file_reference.title',
             'config' => [
                 'type' => 'input',
                 'size' => 20,

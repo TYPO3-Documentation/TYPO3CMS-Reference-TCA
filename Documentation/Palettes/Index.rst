@@ -63,17 +63,17 @@ Example:
 ..  code-block:: php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
 
-   'types' => [
+    'types' => [
       'myType' => [
          'showitem' => 'aField, --palette--;;aPalette, someOtherField',
       ],
-   ],
-   'palettes' => [
+    ],
+    'palettes' => [
       'aPalette' => [
-         'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
+         'label' => 'LLL:my_extension.db:aPaletteDescription',
          'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
       ],
-   ],
+    ],
 
 ..  _palettes-properties:
 

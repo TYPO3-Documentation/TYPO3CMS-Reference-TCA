@@ -103,7 +103,7 @@ Options
     :type: string
     :Scope: fieldControl -> addRecord
     :Values: string or LLL reference
-    :Default: LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.createNew
+    :Default: `LLL:core.core:labels.createNew`
 
     Allows to set a different 'title' attribute to the popup icon.
 

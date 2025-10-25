@@ -2,7 +2,7 @@
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:blog_example/.../locallang_db.xlf:post_title',
+        'title' => 'LLL:blog_example.db:tx_blogexample_domain_model_post',
         'label' => 'title',
         'type' => 'record_type',
         'typeicon_classes' => [
@@ -25,7 +25,7 @@ return [
     ],
     'columns' => [
         'record_type' => [
-            'label' => 'LLL:EXT:blog_example/.../post_types',
+            'label' => 'LLL:blog_example.labels:post_types',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',

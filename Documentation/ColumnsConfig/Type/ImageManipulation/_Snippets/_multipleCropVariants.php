@@ -6,27 +6,27 @@ $multipleCropVariantField = [
         'type' => 'imageManipulation',
         'cropVariants' => [
             'mobile' => [
-                'title' => 'LLL:EXT:ext_key/Resources/Private/Language/locallang.xlf:imageManipulation.mobile',
+                'title' => 'LLL:my_extension.db:imageManipulation.mobile',
                 'allowedAspectRatios' => [
                     '4:3' => [
-                        'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                        'title' => 'LLL:core.wizards:imwizard.ratio.4_3',
                         'value' => 4 / 3,
                     ],
                     'NaN' => [
-                        'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                        'title' => 'LLL:core.wizards:imwizard.ratio.free',
                         'value' => 0.0,
                     ],
                 ],
             ],
             'desktop' => [
-                'title' => 'LLL:EXT:ext_key/Resources/Private/Language/locallang.xlf:imageManipulation.desktop',
+                'title' => 'LLL:my_extension.db:imageManipulation.desktop',
                 'allowedAspectRatios' => [
                     '4:3' => [
-                        'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                        'title' => 'LLL:core.wizards:imwizard.ratio.4_3',
                         'value' => 4 / 3,
                     ],
                     'NaN' => [
-                        'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                        'title' => 'LLL:core.wizards:imwizard.ratio.free',
                         'value' => 0.0,
                     ],
                 ],

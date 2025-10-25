@@ -89,7 +89,7 @@ title
     :name: password-passwordGenerator-title
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']`
     :Type: String / localized string
-    :Default: :php:`"LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.generatePassword"`
+    :Default: `LLL:core.core:labels.generatePassword`
 
     Define a title for the control button.
 
