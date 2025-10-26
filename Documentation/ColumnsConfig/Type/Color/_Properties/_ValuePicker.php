@@ -8,8 +8,8 @@ $temporaryColumns['my_color'] = [
         'valuePicker' => [
             'items' => [
                 ['label' => 'TYPO3 orange', 'value' => '#FF8700'],
-                ['label' => 'Black',        'value' => '#000000'],
-                ['label' => 'White',        'value' => '#FFFFFF'],
+                ['label' => 'Black', 'value' => '#000000'],
+                ['label' => 'White', 'value' => '#FFFFFF'],
             ],
         ],
     ],
