@@ -10,20 +10,20 @@
     item is selected, its value replaces the current input value.
 
     ..  versionchanged:: 14.0
-        The :php:`mode` option no longer supports :php:`append` or
-        :php:`prepend`. Value Picker always behaves like a replace operation.
-        Any legacy :php:`mode` setting is ignored. See also
+        The `mode` option no longer supports `append` or
+        `prepend`. Value Picker always behaves like a replace operation.
+        Any legacy `mode` setting is ignored. See also
         `Breaking: #107677 - Drop prepend and append modes from TCA Value Picker <https://docs.typo3.org/permalink/changelog:breaking-107677-1760339783>`_.
 
         It is now recommended to define associative array keys for the
-        :php:`items` configuration of the TCA configuration :php:`valuePicker`.
-        The recommended keys are: :php:`label` and :php:`value`. Existing
+        `items` configuration of the TCA configuration `valuePicker`.
+        The recommended keys are: `label` and `value`. Existing
         numeric array configurations will be automatically migrated to the new
         associative format during TCA processing.
 
     items (array)
         A list of selectable items. Each item should be an associative array:
-        :php:`['label' => 'Shown label', 'value' => 'storedValue']`.
+        `['label' => 'Shown label', 'value' => 'storedValue']`.
         The label can be plain text or a
         `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_.
 
