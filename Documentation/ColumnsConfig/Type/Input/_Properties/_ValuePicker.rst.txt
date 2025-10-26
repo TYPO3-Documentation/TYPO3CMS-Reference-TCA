@@ -6,18 +6,15 @@
     :type: array
     :Scope: Display
 
-    Renders a select box with static values next to the input field. When a value is selected in the box,
-    the value is transferred to the field. Keys:
-
-    mode (keyword)
-        blank (or not set)
-            The selected value substitutes the value in the input field
-        append
-            The selected value is appended to an existing value of the input field
-        prepend
-            The selected value is prepended to an existing value of the input field
+    Renders a select box with static values next to the input field. When an
+    item is selected, its value replaces the current input value.
 
     ..  versionchanged:: 14.0
+        The :php:`mode` option no longer supports :php:`append` or
+        :php:`prepend`. Value Picker always behaves like a replace operation.
+        Any legacy :php:`mode` setting is ignored. See also
+        `Breaking: #107677 - Drop prepend and append modes from TCA Value Picker <https://docs.typo3.org/permalink/changelog:breaking-107677-1760339783>`_.
+
         It is now recommended to define associative array keys for the
         :php:`items` configuration of the TCA configuration :php:`valuePicker`.
         The recommended keys are: :php:`label` and :php:`value`. Existing
@@ -25,25 +22,11 @@
         associative format during TCA processing.
 
     items (array)
-        An array with selectable items. Each item is an array with the first value being the label in the select
-        drop-down (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_)
-        the second being the value transferred to the input field.
+        A list of selectable items. Each item should be an associative array:
+        :php:`['label' => 'Shown label', 'value' => 'storedValue']`.
+        The label can be plain text or a
+        `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_.
 
 ..  rubric:: Example: An input field with value picker
 
-..  code-block:: php
-
-    'input_33' => [
-        'label' => 'input_33',
-        'config' => [
-            'type' => 'input',
-            'valuePicker' => [
-                'items' => [
-                    ['spring', 'Spring'],
-                    ['summer', 'Summer'],
-                    ['autumn', 'Autumn'],
-                    ['winter', 'Winter'],
-                ],
-            ],
-        ],
-    ],
+..  literalinclude:: _Properties/_ValuePicker.php

@@ -4,17 +4,12 @@ $temporaryColumns['numberField'] = [
     'label' => 'Number field',
     'config' => [
         'type' => 'number',
-        'mode' => '',
         'valuePicker' => [
             'items' => [
-                [
-                    'label' => 'One',
-                    'value' => '1',
-                ],
-                [
-                    'label' => 'Two',
-                    'value' => '2',
-                ],
+                ['label' => 'Ten', 'value' => 10],
+                ['label' => 'Twenty', 'value' => 20],
+                ['label' => 'Fifty', 'value' => 50],
+                ['label' => 'One hundred', 'value' => 100],
             ],
         ],
     ],
