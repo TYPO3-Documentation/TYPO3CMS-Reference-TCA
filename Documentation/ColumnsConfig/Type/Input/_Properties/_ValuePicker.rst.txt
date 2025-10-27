@@ -7,7 +7,7 @@
     :Scope: Display
 
     Renders a select box with static values next to the input field. When an
-    item is selected, its value replaces the current input value.
+    item is selected, the value replaces the current input value.
 
     ..  versionchanged:: 14.0
         The `mode` option no longer supports `append` or
