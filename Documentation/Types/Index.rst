@@ -7,23 +7,21 @@ Record types
 ============
 
 ..  seealso::
-    The `Field types (config > type) <https://docs.typo3.org/permalink/t3tca:columns-types>`_
-    are a concept different from the record types.
+    `Field types (config > type) <https://docs.typo3.org/permalink/t3tca:columns-types>`_
+    are a different concept to record types.
 
-The `types` section is mandatory for all table definitions.
+A `types` section is mandatory in all table definitions.
 
-Basic tables with only one type use this section to define which fields should
-be displayed in the backend form in the property `showitem`.
+The `types` section is an array of types `$GLOBALS['TCA'][$table]['types']` each
+containing a `showitem` key which determines which fields will be displayed in
+the backend form for the record. Most TCA tables will only contain one type.
 
-If the table should provide multiple record types, the field containing the type
-must be defined in
-`$GLOBALS['TCA'][$table]['ctrl']['type'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-type>`_
-and all supported types must be array entries in `$GLOBALS['TCA'][$table]['types']`.
+However, it is possible to have many types in the same table with different fields
+being displayed depending on the type. Then a new database field needs to be created
+to save the type with the data. This field is set in
+`$GLOBALS['TCA'][$table]['ctrl']['type'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-type>`_.
 
-Each entry in the `types` array is an array with at least the property `showitem`
-defined.
-
-Defining multiple types in one table is similar to what is often done with
+Defining multiple types in one table is similar to
 `Single Table Inheritance <https://en.wikipedia.org/wiki/Single_Table_Inheritance>`_
 in Object-orientated programming.
 
@@ -49,32 +47,30 @@ in Object-orientated programming.
 A basic table without distinct types
 ====================================
 
-When the table record does not support multiple types it still needs to define
-one type in order to define which fields should be displayed in the backend
-form for the default type.
+A table record supporting only one type defines
+which fields should be displayed in the backend form for the default type.
 
-For example the comment of a blog post can be stored in a table that supports
-no additional types:
+As an example, a comment on a blog post can be stored in a table as follows:
 
 ..  literalinclude:: _CodeSnippets/_tx_blogexample_comment.php
     :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_comment.php
 
-Omitting the `types` section is not supported by TYPO3.
+The `types` section is mandatory.
 
 ..  _types-optional:
 
 Supporting multiple record types in the same table
 ==================================================
 
-When a table supports multiple record types, the type of a record must be
-saved in a dedicated column, commonly named `record_type` or just `type`.
-Commonly a select field is used for that purpose.
+If a table supports multiple record types, the type of the record must be
+saved in a dedicated database field, commonly named `record_type` or just `type`.
+Usually a select field is used for that purpose.
 
-The name of this table is registered in the `ctrl` section via property
+The name of this field is registered in the `ctrl` section via property
 `type <https://docs.typo3.org/permalink/t3tca:confval-ctrl-type>`_.
 
-For example a blog post might have one of several types where the fields
-displayed in the backend differ
+As an example, a blog post might have several types where the fields
+displayed in the backend differ:
 
 ..  literalinclude:: _CodeSnippets/_tx_blogexample_post.php
     :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_post.php
@@ -84,9 +80,9 @@ For each record type you can define additional
 and change field display definitions via
 `columnsOverrides  <https://docs.typo3.org/permalink/t3tca:confval-types-columnsoverrides>`_.
 
-It is also possible to define distinct `previewRenderers <https://docs.typo3.org/permalink/t3tca:confval-types-previewrenderer>`_.
+It is also possible to define `previewRenderers <https://docs.typo3.org/permalink/t3tca:confval-types-previewrenderer>`_.
 
-You can also define individual icons per type, using property
+You can also define icons for each type using the property
 `ctrl -> typeicon_classes <https://docs.typo3.org/permalink/t3tca:confval-ctrl-typeicon-classes>`_.
 
 ..  _types-properties:
@@ -105,10 +101,10 @@ Properties of `types` section of TCA
 
 ..  versionchanged:: 13.0
     The properties `bitmask_excludelist_bits` and `bitmask_excludelist_bits`
-    been removed, it is not considered anymore when rendering
+    have been removed, it is not considered anymore when rendering
     records in the backend record editing interface.
 
-    In case, extensions still use this setting, they should switch to casual
+    Extensions still using this setting should switch to casual
     :php:`$GLOBALS['TCA']['someTable']['ctrl']['type']` fields instead, which
     can be powered by columns based on string values.
 
