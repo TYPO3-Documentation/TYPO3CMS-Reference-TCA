@@ -5,9 +5,9 @@
     :Scope: fieldControl
     :Types: :ref:`group <columns-group>`
 
-    Control button to directly add a related record. Leaves the current
+    Button control that adds a related record. Leaves the current
     view and opens a new form to add a new record. On 'Save and close', the
-    record is directly selected.
+    record is selected.
 
     ..  note::
         The add record control is disabled by default, enable it with
@@ -35,12 +35,12 @@
             :Values: marker or an integer
             :Default: ###CURRENT_PID###
 
-            pid of the new record. Can be an hard pid setting, or one of these markers,
-            see :ref:`select foreign_table_where
+            pid of the new record. Can be a hard pid or a marker.
+            See :ref:`select foreign_table_where
             <columns-select-properties-foreign-table-where>`.
 
-            Falls back to "current pid" if not set, forces pid=0 if records of this
-            table are only allowed on root level.
+            Takes the value of "current pid" if not set, forces pid=0 if records from this
+            table are only allowed at root level.
 
             -  :code:`###CURRENT_PID###`
             -  :code:`###THIS_UID###`
@@ -53,7 +53,7 @@
             :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
             :Default: `LLL:core.core:labels.createNew`
 
-            Allows to set a different 'title' attribute to the popup icon.
+            Sets the 'title' attribute of the popup icon.
 
         ..  confval:: setValue
             :name: select-byside-fieldControl-addRecord-options-setValue
@@ -62,9 +62,9 @@
             :Values: string
             :Default: append
 
-            Can be one of 'set', 'prepend' or 'append'. With 'set' the given selection
-            is substituted with the new record, 'prepend' adds the new record on top of
-            the list, 'append' adds it at the bottom.
+            Can be one of 'set', 'prepend' or 'append'. 'Set' substitutes the
+            new record for the selected record, 'prepend' adds the new record to the top of
+            the list and 'append' adds it at the bottom.
 
 ..  rubric:: Example: Multiple sidebyside select field with "Add record" enabled
 
