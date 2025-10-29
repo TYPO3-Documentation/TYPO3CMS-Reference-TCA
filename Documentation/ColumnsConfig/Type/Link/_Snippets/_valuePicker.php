@@ -1,20 +1,15 @@
 <?php
 
 $myLinkField = [
-    'label' => 'input_33',
+    'label' => 'My favorite web page',
     'config' => [
         'type' => 'link',
         'mode' => 'prepend',
         'valuePicker' => [
             'items' => [
-                [
-                    'value' => 'HTTPS',
-                    'label' => 'https://',
-                ],
-                [
-                    'value' => 'HTTP',
-                    'label' => 'http://',
-                ],
+                ['label' => 'TYPO3.org', 'value' => 'https://typo3.org'],
+                ['label' => 'TYPO3 Documentation', 'value' => 'https://docs.typo3.org'],
+                ['label' => 'TYPO3 Ticket System', 'value' => 'https://forge.typo3.org'],
             ],
         ],
     ],
