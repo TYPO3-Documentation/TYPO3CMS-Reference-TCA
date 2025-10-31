@@ -27,7 +27,7 @@ The DataStructure used to render this field is found in the file
 "Simple.xml" inside the :file:`styleguide` extension.
 Notice the :xml:`<input_1>` tag:
 
-..  include:: /CodeSnippets/FlexFile1.rst.txt
+..  include:: /CodeSnippets/FlexFormFile1.rst.txt
 
 It's clear that the contents of :xml:`<input_1>` is a direct reflection of
 the field configurations we normally set up in the :php:`$GLOBALS['TCA']` array.
