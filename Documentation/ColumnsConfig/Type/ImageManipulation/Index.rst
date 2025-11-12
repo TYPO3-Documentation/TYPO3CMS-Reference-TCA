@@ -112,27 +112,18 @@ to sys_file_reference, which will then apply in every record, which reference im
 Configuration per content element
 ---------------------------------
 
-It is however also possible to provide a configuration per content element. If you for example want a different
-cropping configuration for tt_content images, then you can add the following to your `image` field configuration of tt_content records:
+It is however also possible to provide a configuration per content element, e.g. for tt_content images:
 
 ..  literalinclude:: _Snippets/_overrideCropVariants.php
-
-Please note, that you need to specify the target column name as array key. Most of the time this will be `crop`
-as this is the default field name for image manipulation in `sys_file_reference`
 
 ..  _columns-imageManipulation-crop-variants-specific-content-element:
 
 Define a cropping configuration for a specific content element
 --------------------------------------------------------------
 
-It is also possible to set the cropping configuration only for a specific tt_content element type by using the
-`columnsOverrides` feature:
+It is also possible to set the cropping configuration only for a specific content element type:
 
-..  literalinclude:: _Snippets/_overrideCropVariants.php
-
-Please note, that the array for ``overrideChildTca`` is merged with the child TCA, so are the crop variants that are defined
-in the child TCA (most likely sys_file_reference). Because you cannot remove crop variants easily, it is possible to disable them
-for certain field types by setting the array key for a crop variant ``disabled`` to the value ``true``
+..  literalinclude:: _Snippets/_overrideCropVariantsCType.php
 
 ..  _columns-imageManipulation-crop-variants-allowedAspectRatios:
 
