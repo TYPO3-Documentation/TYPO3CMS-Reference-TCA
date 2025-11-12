@@ -125,19 +125,6 @@ It is also possible to set the cropping configuration only for a specific conten
 
 ..  literalinclude:: _Snippets/_overrideCropVariantsCType.php
 
-..  _columns-imageManipulation-crop-variants-allowedAspectRatios:
-
-Disable an aspect ratio
------------------------
-
-Not only cropVariants but also aspect ratios can be disabled by adding a
-"disabled" key to the array.
-
-..  literalinclude:: _Snippets/_disabledAspectRatioCropVariant.php
-
-This works for each field, that defines cropVariants for any
-:sql:`sys_file_reference` usage.
-
 ..  _columns-imageManipulation-crop-variants-viewHelper:
 
 Crop variants in ViewHelpers
