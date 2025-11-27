@@ -6,7 +6,7 @@ Example: Create the blog plugin at once
 Demonstrates property: :confval:`types-creationOptions-saveAndClose`.
 
 When editors create a new blog plugin in the plugin is automatically saved and
-the user returned to the page module:
+the user returned to the :guilabel:`Content > Layout` module:
 
 ..  literalinclude:: /Types/_CodeSnippets/_tt_content_blogexample_list.php
     :caption: EXT:blog_example/Configuration/TCA/Overrides/tt_content_blogexample_list.php

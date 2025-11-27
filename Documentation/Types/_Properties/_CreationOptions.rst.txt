@@ -20,8 +20,8 @@
         ..  versionadded:: 13.0
 
         If true, clicking on the new element wizard will take the user directly
-        to the page module, rather than showing the edit form from the form
-        engine.
+        to the :guilabel:`Content > Layout` module, rather than showing the
+        edit form from the form engine.
 
         Can be overridden with page TSconfig option
         :confval:`saveAndClose <t3tsref:mod-wizards-newcontentelement-wizarditems-group-elements-name-saveandclose>`.

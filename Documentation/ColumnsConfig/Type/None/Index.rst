@@ -20,8 +20,8 @@ Characteristics of `none`:
     if a database field exists and the value can be formatted.
 *   If no database field exists for `none` fields, an empty readonly input field is rendered by default.
 *   Type `none` fields are designed to be not rendered at other places in the backend, for instance they can
-    not be selected to be displayed in the list module "single table view" if everything has been configured
-    correctly.
+    not be selected to be displayed in the :guilabel:`Content > Records` module
+    "single table view" if everything has been configured correctly.
 
 The `none` field can be useful, if:
 

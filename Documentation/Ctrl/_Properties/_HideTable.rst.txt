@@ -7,4 +7,4 @@
     :Scope: Display
 
 
-    Hide this table in record listings, especially the list module.
+    Hide this table in record listings, especially the :guilabel:`Content > Records` module.

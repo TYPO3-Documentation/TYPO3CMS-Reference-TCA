@@ -82,13 +82,13 @@
         :Scope: fieldControl
         :Types: :ref:`group <columns-group>`
 
-        The list module control button opens the :guilabel:`Content > List module`
+        The list module control button opens the :guilabel:`Content > Records` module
         for only one table and allows the user to manipulate stuff there.
 
         For details see :ref:`tca_property_fieldControl_listModule`.
 
         ..  note::
-            The list module control is disabled by default, enable it if needed. It is shown below the `add record`
+            The :guilabel:`Content > Records` module control is disabled by default, enable it if needed. It is shown below the `add record`
             control if not changed by `below` or `after` settings.
 
         ..  rubric:: Example: Group field with add list module enabled
