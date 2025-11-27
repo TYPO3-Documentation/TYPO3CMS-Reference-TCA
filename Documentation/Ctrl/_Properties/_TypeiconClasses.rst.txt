@@ -10,7 +10,7 @@
     referenced in the :ref:`typeicon_column <ctrl-reference-typeicon-column>` property. The values correspond
     to icons registered in the :ref:`Icon API <t3coreapi:icon>`. With the key `default`, a default icon is
     defined, which is used when no matching key is found. The default icon is also used in the
-    "Create new record" dialog from the List module. For using and configuring `typeicon_classes`
+    "Create new record" dialog from the :guilabel:`Content > Records` module. For using and configuring `typeicon_classes`
     for custom page types, please see :ref:`Create a new Page Type<t3coreapi:page-types-example>`.
 
     ..  rubric:: Example from the `tt_content` table:

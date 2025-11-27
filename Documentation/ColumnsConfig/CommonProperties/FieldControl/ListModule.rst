@@ -12,7 +12,7 @@ listModule
     :Scope: fieldControl
     :Types: :ref:`group <columns-group>`
 
-    The list module control button opens the :guilabel:`Content > List` module
+    The list module control button opens the :guilabel:`Content > Records` module
     for only one table and allows the user to manipulate
     stuff there.
 
