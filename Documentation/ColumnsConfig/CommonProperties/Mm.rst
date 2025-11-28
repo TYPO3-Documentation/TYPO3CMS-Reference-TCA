@@ -137,7 +137,7 @@ The "local" side of a mm table is defined as such in TCA:
             'label' => 'myField',
             'config' => [
                 'type' => 'group',
-                'foreign_table' => 'tx_myextension_myfield_child',
+                'allowed' => 'tx_myextension_myfield_child',
                 'MM' => 'tx_myextension_myfield_mm',
             ]
         ],
