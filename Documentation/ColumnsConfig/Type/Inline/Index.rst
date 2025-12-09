@@ -109,3 +109,62 @@ set to `true`, the child table must also be made parent-aware:
 
 The same applies if an inline field is used inside a
 `FlexForm field <https://docs.typo3.org/permalink/t3tca:columns-flex>`_.
+
+..  _columns-inline-page-type-restrictions:
+
+Inline fields in content `tt_content` or on regular pages
+=========================================================
+
+If the parent table can be created on regular pages, most comonly when the inline field is 
+created in table `tt_content`, the child table must also be allowed on regular tables.
+
+Otherwise you will see the following error on saving:
+
+..  warning::
+    Attempt to insert record on pages:42 where table "tx_myextension_domain_model_something" is not allowed.
+
+To allow the child table on regular pages, set 
+`$GLOBALS['TCA'][$table]['ctrl']['security']['ignorePageTypeRestriction'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-security>`_
+to true:
+
+..  code-block:: php
+    :caption: EXT:my_table/Configuration/TCA/tx_myextension_domain_model_something.php
+
+    return [
+        'ctrl' => [
+    	    // ...
+            'security' => [
+               'ignorePageTypeRestriction' => true,
+            ],
+        ],
+    ];
+
+..  _columns-inline-rootlevel-restrictions:
+
+Inline fields on root level tables
+==================================
+
+If the parent table can be or is alway created on root level, the child table has
+also to be allowed on root level.
+
+This could for example happen if you add an inline field to system tables like `sys_file_metadata` or `be_users.
+
+Set `$GLOBALS['TCA'][$table]['ctrl']['rootLevel'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-rootlevel>`_
+to `-1` allowed on both root level and regular pages or to `1` allowed only on root level.
+
+If regular non-admin backend user must be able to edit the table, add 
+`$GLOBALS['TCA'][$table]['ctrl']['security']['ignoreRootLevelRestriction'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-security>`_
+
+..  code-block:: php
+    :caption: EXT:my_table/Configuration/TCA/tx_myextension_mymetadata.php
+
+    return [
+        'ctrl' => [
+    	    // Can only be created at root level
+            'rootLevel' => 1
+            'security' => [
+               'ignoreRootLevelRestriction' => true,
+            ],
+        ],
+    ];
+
