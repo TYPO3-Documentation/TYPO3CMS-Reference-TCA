@@ -115,15 +115,15 @@ The same applies if an inline field is used inside a
 Inline fields in content `tt_content` or on regular pages
 =========================================================
 
-If the parent table can be created on regular pages, most comonly when the inline field is 
-created in table `tt_content`, the child table must also be allowed on regular tables.
+If a parent table can be created on regular pages, most commonly when the inline field is
+created in table `tt_content`, the child table must also be allowed on regular pages.
 
 Otherwise you will see the following error on saving:
 
 ..  warning::
     Attempt to insert record on pages:42 where table "tx_myextension_domain_model_something" is not allowed.
 
-To allow the child table on regular pages, set 
+To allow the child table on regular pages, set
 `$GLOBALS['TCA'][$table]['ctrl']['security']['ignorePageTypeRestriction'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-security>`_
 to true:
 
@@ -144,15 +144,15 @@ to true:
 Inline fields on root level tables
 ==================================
 
-If the parent table can be or is alway created on root level, the child table has
-also to be allowed on root level.
+If a parent table can be or is always created on root level, the child table has
+to also be allowed on root level.
 
-This could for example happen if you add an inline field to system tables like `sys_file_metadata` or `be_users.
+An example of this is if you add an inline field to system tables like `sys_file_metadata` or `be_users`.
 
 Set `$GLOBALS['TCA'][$table]['ctrl']['rootLevel'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-rootlevel>`_
-to `-1` allowed on both root level and regular pages or to `1` allowed only on root level.
+to `-1` to allow on both root level and regular pages or set to `1` to allow only on root level.
 
-If regular non-admin backend user must be able to edit the table, add 
+If regular non-admin backend users need to be able to edit the table, add
 `$GLOBALS['TCA'][$table]['ctrl']['security']['ignoreRootLevelRestriction'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-security>`_
 
 ..  code-block:: php
