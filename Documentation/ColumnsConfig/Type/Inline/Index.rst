@@ -167,4 +167,3 @@ If regular non-admin backend users need to be able to edit the table, add
             ],
         ],
     ];
-
