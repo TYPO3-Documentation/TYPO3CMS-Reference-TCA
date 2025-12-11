@@ -1,4 +1,4 @@
-﻿..  include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 ..  _columns-select:
 
@@ -11,7 +11,7 @@ Select fields
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file. The field length can be adjusted with the
-    option :ref:`columns-select-properties-dbFieldLength`.
+    option :ref:`dbFieldLength <columns-select-properties-dbFieldLength>`.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 for all render types of select boxes fields are generated automatically.
