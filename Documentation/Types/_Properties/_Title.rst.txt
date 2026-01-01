@@ -1,5 +1,3 @@
-..  _ctrl-reference-title:
-
 ..  confval:: title
     :name: types-title
     :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['title']
