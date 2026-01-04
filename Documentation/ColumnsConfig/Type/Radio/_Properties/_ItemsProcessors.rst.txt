@@ -1,0 +1,31 @@
+..  confval:: itemsProcessors
+    :name: radio-itemsProcessors
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcessors']
+    :type: array
+    :Scope: Display / Proc.
+
+    ..  versionadded:: 14.0
+
+    An array with numerical keys that can contain item processors implementing
+    :php-short:`\TYPO3\CMS\Core\DataHandling\ItemsProcessorInterface`.
+
+    Each item processor is executed sequentially based on its numerical array key.
+    The item processor can add modify or remove items from the
+    :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItemCollection` influencing
+    which items are displayed finally.
+
+    A :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` for a field of
+    type `radio` must be of type `radio` and must provide a label and value.
+    The value can be an integer or string.
+
+    ..  code-block:: php
+
+        $items->add(
+            new SelectItem(
+                type: 'radio',
+                label: 'LLL:my_extension.db:my_item',
+                value: 42,
+            )
+        );
+
+    See also `Item processor registration and implementation <https://docs.typo3.org/permalink/t3tca:tca-property-itemsprocessors>`_
