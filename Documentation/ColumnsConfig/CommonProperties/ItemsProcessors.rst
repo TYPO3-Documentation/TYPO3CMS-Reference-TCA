@@ -40,7 +40,7 @@ TCA item processor implementation
 All processors must implement the
 :php-short:`\TYPO3\CMS\Core\DataHandling\ItemsProcessorInterface`.
 
-Processors receive two parameters:
+Processors have two parameters:
 
 *   A :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItemCollection` instance
     containing the current items.
@@ -55,11 +55,11 @@ untyped arrays.
 ..  literalinclude:: _codesnippets/SpecialRelationsProcessor.php
     :caption: EXT:my_extension/Classes/Processors/SpecialRelationsProcessor.php
 
-Each processor may receive custom parameters. These parameters are exposed
+You can add your own parameters to processors. They are exposed
 via the processor context.
 
-Custom parameters can be provided in TCA or page TSconfig and are accessible
-through `$context->processorParameters`.
+Add parameters via TCA or page TSconfig and access them through
+`$context->processorParameters`.
 
 For example, the following item processor configuration:
 
@@ -74,7 +74,7 @@ For example, the following item processor configuration:
         ],
     ],
 
-Can access `$context->processorParameters['foo']`. The value can be overridden
+can access `$context->processorParameters['foo']`. The value can be overridden
 or extended, for example via a site setting defined in page TSconfig:
 
 ..  code-block:: typoscript
@@ -85,7 +85,7 @@ or extended, for example via a site setting defined in page TSconfig:
 Registering item processors in FlexForms
 ========================================
 
-Registration of processors is also possible within FlexForms:
+Registration of processors is also possible inside FlexForms:
 
 ..  code-block:: xml
     :caption: EXT:my_package/Configuration/FlexForms/SomeForm.xml

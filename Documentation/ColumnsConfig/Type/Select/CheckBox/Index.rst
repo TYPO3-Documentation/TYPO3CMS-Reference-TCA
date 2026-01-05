@@ -109,6 +109,9 @@ Properties of the TCA column type `select` with renderType `selectCheckBox`
     ..  include:: _Properties/_Items.rst.txt
         :show-buttons:
 
+    ..  include:: _Properties/_ItemsProcessors.rst.txt
+        :show-buttons:
+
     ..  include:: _Properties/_ItemsProcFunc.rst.txt
         :show-buttons:
 

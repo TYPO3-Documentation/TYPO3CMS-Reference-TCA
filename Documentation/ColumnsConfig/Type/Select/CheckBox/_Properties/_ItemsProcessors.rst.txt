@@ -24,9 +24,9 @@
     `type: 'select'` and must provide a `label` and a `value`. The value can be
     an integer or a string.
 
-    Use the special value `'--div--'` to insert a divider that cannot be selected.
+    Use the special value `'--div--'` to insert a divider (that cannot be selected).
 
-    You can additionally use all arguments supported by the
+    You can also use any arguments supported by the
     `items <https://docs.typo3.org/permalink/t3tca:confval-select-checkbox-items>`_
     array, including `group`, `icon` and `description`.
 

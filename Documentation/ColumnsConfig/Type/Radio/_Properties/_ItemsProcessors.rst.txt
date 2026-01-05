@@ -10,9 +10,9 @@
     :php-short:`\TYPO3\CMS\Core\DataHandling\ItemsProcessorInterface`.
 
     Each item processor is executed sequentially based on its numerical array key.
-    The item processor can add modify or remove items from the
-    :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItemCollection` influencing
-    which items are displayed finally.
+    The item processor can add, modify or remove items from the
+    :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItemCollection`, influencing
+    which items are displayed.
 
     A :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` for a field of
     type `radio` must be of type `radio` and must provide a label and value.
