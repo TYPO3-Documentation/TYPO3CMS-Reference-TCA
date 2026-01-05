@@ -1,0 +1,36 @@
+..  confval:: itemsProcessors
+    :name: select-singlebox-itemsProcessors
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcessors']
+    :type: array
+    :Scope: Display / Proc.
+
+    ..  versionadded:: 14.0
+
+    An array indexed numerically. Each entry defines an item processor implementing
+    :php-short:`\TYPO3\CMS\Core\DataHandling\ItemsProcessorInterface`.
+
+    Item processors are executed sequentially based on their numerical array key.
+    Each processor can add, modify, or remove items from the
+    :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItemCollection`, influencing
+    which items are ultimately displayed.
+
+    This option can be combined with
+    `itemsProcFunc <https://docs.typo3.org/permalink/t3tca:confval-select-singlebox-itemsprocfunc>`_.
+    If both are configured, `itemsProcFunc` is executed first and `itemsProcessors`
+    are executed afterwards.
+
+    For fields of type `select`, each
+    :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` must be created with
+    `type: 'select'` and must provide a `label` and a `value`. The value can be an
+    integer or a string. Use the special value `'--div--'` to insert a divider
+    (that cannot be selected).
+
+    You can also use any arguments supported by the
+    `items <https://docs.typo3.org/permalink/t3tca:confval-select-singlebox-items>`_
+    array, including `group` to group items. Rendering the `icon` or `description`
+    is not supported.
+
+    ..  literalinclude:: /ColumnsConfig/Type/Select/SingleBox/_Snippets/_itemsProcessors.php
+        :caption: EXT:my_extension/Classes/Processors/SomeItemProcessor.php
+
+    See also `Item processor registration and implementation <https://docs.typo3.org/permalink/t3tca:tca-property-itemsprocessors>`_

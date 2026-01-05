@@ -2,7 +2,7 @@
 
 ..  confval:: itemsProcFunc
     :name: radio-itemsProcFunc
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcessors']
     :type: string (class->method reference)
     :Scope: Display / Proc.
     :Example: :ref:`tca_example_checkbox_itemsProcFunc`
