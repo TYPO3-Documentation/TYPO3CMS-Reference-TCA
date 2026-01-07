@@ -1,9 +1,0 @@
-..  _columns-select-checkbox-properties-size:
-
-..  confval:: size
-    :name: select-checkbox-size
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :type: integer
-    :Scope: Display
-
-    Size of the input field.
