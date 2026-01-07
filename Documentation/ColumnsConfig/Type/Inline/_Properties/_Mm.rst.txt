@@ -50,16 +50,6 @@
         :sql:`sys_refindex`.
 
 
-..  confval:: MM_hasUidField
-    :name: inline-mm-hasUidField
-
-    ..  versionchanged:: 13.0
-        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
-        from TCA. The :sql:`uid` column is added as primary key automatically,
-        if :php:`multiple = true` is set, otherwise a combined primary key of
-        fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually
-        :sql:`tablenames` and :sql:`fieldname` is used.
-
 ..  _tca_example_inline_mm_inline_1:
 
 ..  rubric:: Example: Inline field with MM table configured
