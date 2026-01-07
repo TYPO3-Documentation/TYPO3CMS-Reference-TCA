@@ -1,0 +1,61 @@
+..  _columns-select-checkbox-properties-relationship:
+
+..  confval:: relationship
+    :name: select-checkbox-relationship
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['relationship']
+    :type: string
+    :Scope: Display  / Proc.
+    :RenderType: all
+
+    ..  versionadded:: 13.3
+
+    If the select field uses the option `foreign_table <https://docs.typo3.org/permalink/t3tca:confval-select-checkbox-foreign-table>`_
+    combined with `MM  <https://docs.typo3.org/permalink/t3tca:confval-select-checkbox-mm>`_,
+    this setting influences the `Record object <https://docs.typo3.org/permalink/t3coreapi:database-record-objects>`_
+    representing this database record to be used in Fluid templates.
+
+    Fields of TCA type `select` without a `relationship` will always provide an
+    array of static values.
+
+    If this option is set to
+    `oneToOne` or `manyToOne`, then a :php:`\TYPO3\CMS\Core\Domain\Record` object
+    or :php:`NULL` is provided as value for the field. `maxitems  <https://docs.typo3.org/permalink/t3tca:confval-select-checkbox-maxitems>`_
+    is automatically set to 1.
+
+    In the other cases a collection
+    (:php:`\TYPO3\CMS\Core\Collection\LazyRecordCollection`) of
+    :php:`\TYPO3\CMS\Core\Domain\Record` objects is attached as value.
+
+    All possible values are:
+
+    `manyToOne`
+        The current record may have a relationship to maximal one record.
+
+    `oneToOne`
+        Same as `manyToOne` but record it references may also just have maximal
+        one relation to the current record type. This is currently not enforced.
+
+    `manyToMany` (default):
+        The current record can have a relationship to multiple records.
+
+    `oneToMany`
+        Same as `manyToMany` but record it references may just have maximal
+        one relation to the current record type. This is currently not enforced.
+
+    In the following example an select field only accepts one record. It
+    is not necessary to set `maxitems  <https://docs.typo3.org/permalink/t3tca:confval-select-checkbox-maxitems>`_.
+
+    ..  code-block:: php
+
+        $GLOBALS['TCA'][$myTable]['columns']['myfield'] = [
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectCheckBox',
+                'relationship' => 'manyToOne'
+            ]
+        ];
+
+    The limiting behaviour of the TCA option `maxitems  <https://docs.typo3.org/permalink/t3tca:confval-select-checkbox-maxitems>`_
+    is kept for backward compatibility. This means
+    it is possible to have a :php:`oneToMany` relation with maximum one value
+    allowed.

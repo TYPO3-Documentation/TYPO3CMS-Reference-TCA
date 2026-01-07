@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+
+entity "Course" as CO {
+  *uid : int
+  *pid : int
+  title : string
+  code : string
+  credits : int
+  --
+  teacher : Record<Teacher>
+}
+
+entity "Teacher" as TE {
+  *uid : int
+  *pid : int
+  name : string
+  email : string
+}
+
+CO "0-N" -->  "0-1" TE: teacher
+
+@enduml

@@ -48,6 +48,94 @@ is generated automatically.
     Examples
     StoredDataValues
 
+
+..  _columns-group-record-objects:
+
+Group properties in record objects
+==================================
+
+..  versionadded:: 13.3
+
+..  _columns-group-record-objects-many-to-many:
+
+Many to many relationships in a group field
+-------------------------------------------
+
+If option `relationship <https://docs.typo3.org/permalink/t3tca:confval-category-relationship>`_
+is set to `manyToMany` (default) the `record object <https://docs.typo3.org/permalink/t3coreapi:record-objects>`_
+provides a collection (:php-short:`\TYPO3\CMS\Core\Collection\LazyRecordCollection`)
+of :php-short:`\TYPO3\CMS\Core\Domain\Record` objects, where each represents a
+record of the target table.
+
+..  tabs::
+
+    ..  group-tab:: UML
+
+        ..  uml:: _codesnippets/_many_to_many.plantuml
+            :caption: Students know which courses they are in
+
+    ..  group-tab:: Fluid
+
+        The group fields can then be displayed like this in Fluid:
+
+        ..  code-block:: html
+            :caption: Displaying a `manyToMany` relationship to courses in Fluid
+
+            <ul>
+                <f:for each="{student.courses}" as="course">
+                    <li>{course.title}: ({course.code}), {course.credits}</li>
+                </f:for>
+            </ul>
+
+    ..  group-tab:: TCA
+
+        ..  literalinclude:: _codesnippets/_relationship-many-to-many.php
+
+The relationship in the above example is uni-directional: While students knows
+about their courses, the course would not know which or how many students
+use it
+
+In order to have a true bi-directional many-to-many relationship, table "myitem"
+also need a field pointing to "mytable" and that field must also have the
+relationship many-to-many. Then you can use the option
+`MM_opposite_field  <https://docs.typo3.org/permalink/t3tca:confval-group-mm-opposite-field>`_
+to point from "mytable" to the field in "myitem". If both fields use the same
+`MM  <https://docs.typo3.org/permalink/t3tca:confval-group-mm>`_ table changing
+the relationship on one side also changes the relationship on the other side.
+
+..  _columns-group-record-objects-many-to-one:
+
+Many to one relationships in a group field
+------------------------------------------
+
+If option `relationship <https://docs.typo3.org/permalink/t3tca:confval-category-relationship>`_
+is set `manyToMOne` or `oneToOne`, the property represents a
+:php-short:`\TYPO3\CMS\Core\Domain\Record` object directly, so it can be output
+like
+
+..  tabs::
+
+    ..  group-tab:: UML
+
+        ..  uml:: _codesnippets/_many_to_one.plantuml
+            :caption: Each Course has one Teacher
+
+    ..  group-tab:: Fluid
+
+        The group field can then be displayed like this in Fluid (single record, no loop):
+
+        ..  code-block:: html
+            :caption: Displaying a single `teacher` record in Fluid
+
+            Teacher: {course.teacher.name}
+
+    ..  group-tab:: TCA
+
+        ..  literalinclude:: _codesnippets/_relationship-many-to-one.php
+
+This example is unidirectional: While the course has a teacher assigned, the
+teacher does not know which courses they are teaching.
+
 ..  _columns-group-properties:
 ..  _columns-group-properties-type:
 
