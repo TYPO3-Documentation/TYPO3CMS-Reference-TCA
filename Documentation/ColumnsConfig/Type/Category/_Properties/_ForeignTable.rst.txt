@@ -12,5 +12,5 @@
     The uids of the chosen records will be saved in a comma-separated list
     by default.
 
-    Use `property MM <columns-category-properties-mm>` to store the values in an
+    Use :ref:`property MM <columns-category-properties-mm>` to store the values in an
     intermediate MM table instead.
