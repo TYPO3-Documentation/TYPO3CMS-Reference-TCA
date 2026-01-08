@@ -1,0 +1,47 @@
+..  confval:: title
+    :name: types-title
+    :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['title']
+    :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
+    :Scope: Display
+
+    ..  versionadded:: 14.0
+        It is now possible to define a type-specific `title` in the TCA
+        `types` section. See also
+        `Feature: #108027 - Type-specific title in TCA types section <https://docs.typo3.org/permalink/changelog:feature-108027-1762779249>`_.
+
+    The `title` in the TCA `types` section defines a type specific title that
+    is displayed in the backend when creating or editing a record of that type.
+
+    The value is also available in the **Schema API**
+    (:php:`\TYPO3\CMS\Core\Schema\TcaSchemaFactory`),
+    making type-specific titles available when using :php:`$schema->getTitle()`
+    and in the **FormEngine**
+    (:php-short:`\TYPO3\CMS\Backend\Form\FormDataProvider\TcaTypesCtrlOverrides`
+    data provider).
+
+    ..  code-block::
+        :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_domain_model_post.php
+
+        return [
+            'ctrl' => [
+                'title' => 'LLL:blog_example.db:post.title',
+                'type' => 'record_type',
+                // ... other ctrl configuration
+            ],
+            'types' => [
+                '0' => [
+                    'showitem' => 'blog, title, date, author, content, comments, ',
+                ],
+                'link' => [
+                    'title' =>  'LLL:blog_example.db:link.title',
+                    'showitem' => ' blog, title, date, author, link, ',
+                ],
+                'special' => [
+                    'title' =>  'LLL:blog_example.db:special.title',
+                    'showitem' => 'blog, title, date, author, content, tags, comments, ',
+                ],
+            ],
+            // ... columns configuration
+        ];
+
+    ..  include:: /_Includes/_LabelReference.rst.txt

@@ -17,9 +17,11 @@ return [
             'showitem' => 'blog, title, date, author, content, comments, ',
         ],
         'link' => [
+            'title' =>  'LLL:blog_example.db:link.title',
             'showitem' => ' blog, title, date, author, link, ',
         ],
         'special' => [
+            'title' =>  'LLL:blog_example.db:special.title',
             'showitem' => 'blog, title, date, author, content, tags, comments, ',
         ],
     ],
