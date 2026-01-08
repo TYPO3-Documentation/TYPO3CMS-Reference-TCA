@@ -115,16 +115,4 @@
     possible.
 
 
-..  _columns-group-properties-mm-hasuidfield:
-..  confval:: MM_hasUidField
-    :name: group-mm-hasuidfield
-
-    ..  versionchanged:: 13.0
-        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
-        from TCA. The :sql:`uid` column is added as primary key automatically,
-        if :php:`multiple = true` is set, otherwise a combined primary key of
-        fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually
-        :sql:`tablenames` and :sql:`fieldname` is used.
-
-
 ..  todo: add Examples
