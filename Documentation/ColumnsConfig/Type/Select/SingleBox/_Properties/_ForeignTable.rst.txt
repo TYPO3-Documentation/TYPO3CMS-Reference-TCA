@@ -13,7 +13,7 @@
     The uids of the chosen records will be saved in a comma separated list
     by default.
 
-    Use `property MM <columns-select-singlebox-properties-mm>` to store the values in an
+    Use :ref:`property MM <columns-select-singlebox-properties-mm>` to store the values in an
     intermediate MM table instead.
 
 ..  rubric:: Example: Select singe field with enabled selectIcons
