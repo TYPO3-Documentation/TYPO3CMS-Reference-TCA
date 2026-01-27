@@ -96,8 +96,8 @@ and to flex section container element fields. :code:`FIELD` references can be pr
 reference a field from a neighbor sheet, see examples below.
 
 ..  tip::
-    Fields used in a conditions should have the column option
-    :confval:`columns-onChange` set to reload.
+    Fields used in a condition should have the column option
+    :confval:`columns-onChange` set to `reload`.
 
 ..  _columns-displaycond-examples:
 
