@@ -7,9 +7,26 @@
     :type: string (keyword)
     :Scope: Display
 
+    Keywords: :php:`data`, :php:`datetime`, :php:`time`, :php:`timesec`, :php:`datetimesec`
+
+    ..  versionadded:: 14.0
+
+        New format :php:`datetimesec` to have the possibility to store times with seconds.
+        Previously, only a datepicker for *hour* and *minute* was available.
+
     Sets the output format if the field is set to read-only. Read-only fields
     with :code:`format` set to "date" will be formatted as "date", "datetime"
-    as "datetime", "time" as "time" and "timesec" as "timesec".
+    as "datetime", "time" as "time", "timesec" as "timesec" and "datetimesec" as "datetimesec".
+
+    The format :php:`datetimesec` is only allowed for:
+
+    *   empty :php:`['config']['dbType']` (defaults to integer-based storage type)
+    *   :php:`['config']['dbType'] = 'datetime'` (native date and time storage type)
+
+    Other types (`date`, `time`, `timesec`) do not support both components and would yield unconsistent data.
+
+    :php:`datetimesec` can be set for any TCA field that already internally receives a
+    UNIX timestamp value.
 
     ..  note::
         The :php:`format` option defines how the field value will be displayed,
