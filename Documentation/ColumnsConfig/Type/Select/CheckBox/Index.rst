@@ -46,6 +46,7 @@ The select checkbox stores the values as comma separated values.
 
 
 ..  _columns-select-selectCheckBox-properties:
+..  _columns-select-checkbox-properties-size:
 
 Properties of the TCA column type `select` with renderType `selectCheckBox`
 ===========================================================================
@@ -62,9 +63,6 @@ Properties of the TCA column type `select` with renderType `selectCheckBox`
         :show-buttons:
 
     ..  include:: _Properties/_AuthMode.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_AutoSizeMax.rst.txt
         :show-buttons:
 
     ..  include:: _Properties/_Behaviour.rst.txt
@@ -124,11 +122,5 @@ Properties of the TCA column type `select` with renderType `selectCheckBox`
     ..  include:: _Properties/_Mm.rst.txt
         :show-buttons:
 
-    ..  include:: _Properties/_Multiple.rst.txt
-        :show-buttons:
-
     ..  include:: _Properties/_ReadOnly.rst.txt
-        :show-buttons:
-
-    ..  include:: _Properties/_Size.rst.txt
         :show-buttons:
