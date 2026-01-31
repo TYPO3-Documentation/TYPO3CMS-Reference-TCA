@@ -7,19 +7,28 @@
 Datetime
 ========
 
-..  versionchanged:: 13.0
-    The database type has changed from :sql:`int signed` to :sql:`bigint signed`
-    when the field is auto-generated (with the exception of the columns
-    :sql:`tstamp`, :sql:`crdate`, :sql:`starttime`, :sql:`endtime` that
-    still use :sql:`int signed`).
-    This allows to store dates from some million years ago to far into the
-    future.
+..  versionchanged:: 14.0
+    The TCA configuration config option `type=datetime` can now specify
+    the `format=datetimesec` format to offer a date/time picker for entering
+    a date (*day, month, year*) with a specific time (*hour, minute, second*).
+
+    Previously, only a datepicker for *hour* and *minute* was available,
+    even though the utilized component (Flatpickr) supports entering seconds.
+
+    This  format can either be specified for `dbType=datetime` (native SQL datetime
+    columns based on a timestamp that always includes seconds) or
+    for the `integer`-based storage without a `dbType` option (UNIX timestamp).
+
 
 The TCA type :php:`datetime` should be used to input values representing a
 date time or datetime.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
-is generated automatically as :sql:`bigint signed`.
+is generated automatically as :sql:`bigint signed` (with the exception of the columns
+:sql:`tstamp`, :sql:`crdate`, :sql:`starttime`, :sql:`endtime` that
+still use :sql:`int signed`).
+This allows to store dates from some million years ago to far into the
+future.
 
 ..  note::
 
@@ -40,6 +49,17 @@ Example: A simple date field, stored as bigint
 A simple date field, stored as :sql:`bigint` in the database:
 
 ..  literalinclude:: _Snippets/_datefield.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+
+
+..  _columns-datetimesec-example:
+
+Example: A simple date field with seconds
+==============================================
+
+A simple date field, formated with :php:`datetimesec`.
+
+..  literalinclude:: _Snippets/_datetimesec.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
 
 
