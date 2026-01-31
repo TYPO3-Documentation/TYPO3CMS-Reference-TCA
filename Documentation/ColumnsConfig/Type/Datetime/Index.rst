@@ -60,7 +60,7 @@ Example: A simple date field with seconds
 A simple date field, formated with :php:`datetimesec`.
 
 ..  literalinclude:: _Snippets/_datetimesec.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
 
 
 ..  _columns-datetime-properties:
