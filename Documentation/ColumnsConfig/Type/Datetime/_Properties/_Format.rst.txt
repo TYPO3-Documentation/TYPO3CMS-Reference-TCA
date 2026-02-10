@@ -7,7 +7,7 @@
     :type: string (keyword)
     :Scope: Display
 
-    Keywords: :php:`data`, :php:`datetime`, :php:`time`, :php:`timesec`, :php:`datetimesec`
+    Keywords: `date`, `datetime`, `time`, `timesec`, `datetimesec`
 
     ..  versionadded:: 14.0
 
@@ -29,7 +29,7 @@
     UNIX timestamp value.
 
     ..  note::
-        The :php:`format` option defines how the field value will be displayed,
+        The `format` option defines how the field value will be displayed,
         for example, in FormEngine. The storage format is defined via
         :ref:`dbType <columns-datetime-properties-dbtype>` and falls back to
         `eval=integer`.
