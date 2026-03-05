@@ -9,6 +9,8 @@ jobs:
   lint:
     if: github.repository_owner == 'TYPO3-documentation'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write        # needed to push commit
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
