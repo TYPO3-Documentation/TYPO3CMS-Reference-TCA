@@ -8,7 +8,10 @@
 
     Has information about the appearance, namely:
 
-    allowedOptions (array)
+    ..  confval:: allowedOptions
+        :name: link-appearance-allowedOptions
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['allowedOptions']
+        :type: array
 
         Display certain options in the link browser.
         To allow all options in the Link Browser, skip this configuration or set
@@ -72,7 +75,10 @@
                 'allowedOptions' => ['body', 'cc'],
             ],
 
-    allowedFileExtensions (array)
+    ..  confval:: allowedFileExtensions
+        :name: link-appearance-allowedFileExtensions
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['allowedFileExtensions']
+        :type: array
 
         An array of allowed file extensions. To allow all extensions, skip this
         configuration or set it to :php:`['*']`. It's not possible to deny all
@@ -92,8 +98,10 @@
                 'allowedFileExtensions' => ['*'],
             ],
 
-
-    browserTitle (string, LLL)
+    ..  confval:: browserTitle
+        :name: link-appearance-browserTitle
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['browserTitle']
+        :type: string, LLL
 
         Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
 
@@ -111,7 +119,10 @@
                 'browserTitle' => 'My custom title',
             ],
 
-    enableBrowser (boolean)
+    ..  confval:: enableBrowser
+        :name: link-appearance-enableBrowser
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['enableBrowser']
+        :type: boolean
 
         The Link Browser is enabled by default.
         To disable the Link Browser altogether, set this option to :php:`false`.
