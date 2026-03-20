@@ -17,7 +17,9 @@ format
     *   :php:`css`
     *   :php:`html`
     *   :php:`javascript`
+    *   :php:`json`
     *   :php:`php`
+    *   :php:`sql`
     *   :php:`typoscript`
     *   :php:`xml`
 
