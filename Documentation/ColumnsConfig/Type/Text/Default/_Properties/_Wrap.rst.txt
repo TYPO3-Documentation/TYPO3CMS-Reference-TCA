@@ -17,7 +17,8 @@
       The textarea will *not* wrap the lines as you would expect when editing some kind of code.
 
 
-Examples
+..  rubric:: Examples
+
 ..  _tca_example_text_5:
 
 Textarea with no wrapping

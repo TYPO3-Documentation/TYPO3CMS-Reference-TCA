@@ -73,7 +73,7 @@
             *(string)* Reference to the user-defined function. The function receives the field configuration and the
             field's value as parameters.
 
-Examples
+..  rubric:: Examples
 
 ..  code-block:: php
 
