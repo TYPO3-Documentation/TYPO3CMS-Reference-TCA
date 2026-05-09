@@ -16,7 +16,7 @@ TYPO3 14.0
 ..  _interface-properties-maxsingledblistitems:
 
 Remove TCA interface settings for list view
-===========================================
+-------------------------------------------
 
 `Breaking: #106412 - TCA interface settings for list view removed <https://docs.typo3.org/permalink/changelog:breaking-106412-1742592429>`_
 the TCA options `['interface']['maxSingleDBListItems']`
@@ -48,7 +48,7 @@ and `['interface']['maxDBListItems']` are removed and not evaluated anymore.
 ..  _migration-subtype-previewrenderer:
 
 Remove deprecated ctrl subtype* options
-=======================================
+---------------------------------------
 
 See also `Migration from subtypes to types <https://docs.typo3.org/permalink/t3tca:migration-subtype@13.4>`_.
 
@@ -67,3 +67,14 @@ See also `Migration from subtypes to types <https://docs.typo3.org/permalink/t3t
 ..  confval:: subtype_value_field
     :name: types-subtype-value-field
     :Path: $GLOBALS['TCA'][$table]['types'][$type]
+
+..  _columns-group-properties-foreign-table:
+
+Remove property `foreign_table` from group fields
+-------------------------------------------------
+
+Starting with TYPO3 13.4.10, this option is no longer needed.
+For Extbase, the proper type is inferred from the first entry
+in the `allowed  <https://docs.typo3.org/permalink/t3tca:confval-group-allowed>`_
+TCA configuration option. You should only set this option if you
+need backward compatibility to previous TYPO3 versions.

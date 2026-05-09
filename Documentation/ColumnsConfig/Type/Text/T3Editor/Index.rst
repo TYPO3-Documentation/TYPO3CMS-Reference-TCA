@@ -2,19 +2,9 @@
 ..  _columns-text-renderType-codeEditor:
 ..  _columns-text-renderType-t3editor:
 
-==================================
-codeEditor (previously "t3editor")
-==================================
-
-..  versionchanged:: 13.0
-    In previous TYPO3 versions, the code editor was available via the system
-    extension :composer:`typo3/cms-t3editor`. The functionality was moved into
-    the system extension :composer:`typo3/cms-backend`. The render type
-    `t3editor` was renamed to
-    `codeEditor`.
-
-    A TCA migration from the old value to the new one is in place. See also
-    :ref:`t3tca/13.4:columns-text-renderType-codeEditor-migration`.
+==========
+codeEditor
+==========
 
 This page describes the :ref:`text <columns-text>` type with the
 :php:`renderType='codeEditor'`.
