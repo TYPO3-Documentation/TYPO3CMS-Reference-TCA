@@ -12,6 +12,18 @@ configuration when working with fields containing a `UUID`_.
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
+..  versionchanged:: 14.0
+    The TYPO3 Doctrine implementation can now handle the proper matching
+    database type for UUIDs.
+
+    PostgreSQL natively supports the UUID data type and is way faster
+    than the prior `VARCHAR(36)` generated from the string type.
+
+    The Doctrine DBAL GUID type uses a fixed field column size of `CHAR(36)`
+    for non-PostgreSQL databases, which is compatible as long
+    as valid UUID values were persisted in the configured database
+    table.
+
 ..  _UUID: https://en.wikipedia.org/wiki/Universally_unique_identifier
 
 ..  contents:: Table of contents:
