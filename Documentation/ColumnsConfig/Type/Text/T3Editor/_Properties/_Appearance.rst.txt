@@ -1,0 +1,17 @@
+..  confval:: appearance
+    :name: text-t3editor-appearance
+
+    ..  confval:: lineWrapping
+        :type: boolean
+        :name: text-t3editor-appearance-lineWrapping
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['lineWrapping']
+        :Scope: Proc.
+        :default: false
+
+        ..  versionadded:: 14.2
+
+        When enabled, long lines are wrapped within the editor instead of
+        requiring horizontal scrolling.
+
+        ..  literalinclude:: _Snippets/_AppearanceLineWrapping.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
