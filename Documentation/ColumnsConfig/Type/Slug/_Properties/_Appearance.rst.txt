@@ -14,14 +14,26 @@
         :type: userFunction
         :Scope: Display
 
+        ..  versionadded:: 14.2
+            The user function now receives the full TCA field configuration
+            (:php:`config`) and the field name (:php:`fieldName`) as additional
+            parameters.
+
         Provides a string that is displayed in front of the input field.
         The URL of the site is set by default if nothing has been defined.
 
         Assign a user function. It receives two arguments:
 
-        *  The first argument is the parameters array containing the site object,
-           the language id, the current table and the current row.
-        *  The second argument is the reference object :php:`TcaSlug`.
+        *   The first argument is the parameters array containing
+
+            *   :php:`site` - The current site object
+            *   :php:`languageId` - The current language ID (int)
+            *   :php:`table` - The table name (string)
+            *   :php:`row` - The current record data (array)
+            *   :php:`fieldName` - The name of the slug field (string)
+            *   :php:`config` - The full TCA configuration array of the slug field
+
+        *   The second argument is the reference object :php:`TcaSlug`.
 
         The user function should return the string which is then used for display
         purposes.
