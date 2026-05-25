@@ -31,8 +31,14 @@
             The `title` attribute of the link
 
         rel
-            The link relationship. Only available for RTE enabled fields and if `buttons.link.relAttribute.enabled`
-            is enabled in the RTE YAML configuration.
+            The link relationship.
+
+            ..  versionchanged:: 14.2
+                No longer limited to RTE-enabled fields.
+
+            For RTE-enabled fields,
+            `buttons.link.relAttribute.enabled <https://docs.typo3.org/permalink/t3tsref:buttons-link-relattribute-enabled>`_,
+            must be enabled.
 
         ..  code-block:: php
 
