@@ -1,0 +1,21 @@
+..  _types-properties-allowedRecordTypes:
+
+..  confval:: allowedRecordTypes
+    :name: types-allowedRecordTypes
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['allowedRecordTypes']
+    :type: array of table names or `['*']`
+    :Default: `['pages', 'sys_category', 'sys_file_reference', 'sys_file_collection']`
+
+    ..  versionadded:: 14.2
+        This property replaces the now deprecated method
+        :php:`PageDoktypeRegistry->addAllowedRecordTypes()`. See also
+        `Deprecation: #108557 - TCA option allowedRecordTypes for Page Types <https://docs.typo3.org/permalink/changelog:deprecation-108557-1768610680>`_
+
+    ..  note::
+        This property is only interpreted in the table :sql:`pages`.
+
+    The array can contain a list of table names or a single entry with an asterisk
+    `*` to allow all types within a page type.
+
+    See `TYPO3 Explained: Create new Page Type <https://docs.typo3.org/permalink/t3coreapi:page-types-example>`_
+    for a complete example.
