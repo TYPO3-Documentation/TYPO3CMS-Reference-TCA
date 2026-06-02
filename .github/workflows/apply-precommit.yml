@@ -6,68 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint:
-    if: github.repository_owner == 'TYPO3-documentation'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write        # needed to push commit
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up Python
-        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
-        with:
-          python-version: '3.x'
-
-      - name: Install pre-commit
-        run: pip install pre-commit
-
-      - name: Run pre-commit hooks and apply fixes
-        id: pre-commit
-        run: |
-          # Run pre-commit with auto-fix and ignore exit code
-          pre-commit run --all-files --hook-stage=manual --show-diff-on-failure || true
-          # Check if any files were modified
-          git diff --exit-code || echo "FIX_NEEDED=true" >> $GITHUB_ENV
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Check for existing PR
-        if: env.FIX_NEEDED == 'true'
-        id: check_pr
-        run: |
-          EXISTING_PR=$(gh pr list --state open --search "Fix whitespace issues" --json number -q '.[].number')
-          if [[ -n "$EXISTING_PR" ]]; then
-            echo "EXISTING_PR=true" >> $GITHUB_ENV
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create and push changes if needed
-        if: env.FIX_NEEDED == 'true' && env.EXISTING_PR != 'true'
-        id: create_branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Create a new branch for the changes
-          BRANCH_NAME="fix/whitespace-$(date +'%Y%m%d%H%M%S')"
-          git checkout -b "$BRANCH_NAME"
-          git add .
-          git commit -m "fix: apply whitespace fixes"
-          git push origin "$BRANCH_NAME"
-          echo "branch_name=$BRANCH_NAME" >> $GITHUB_ENV
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Open Pull Request
-        if: env.FIX_NEEDED == 'true' && env.EXISTING_PR != 'true'
-        uses: repo-sync/pull-request@7e79a9f5dc3ad0ce53138f01df2fad14a04831c5
-        with:
-          source_branch: ${{ env.branch_name }}
-          destination_branch: ${{ github.ref_name }}
-          pr_title: "Fix whitespace issues"
-          pr_body: "This PR automatically applies whitespace fixes."
-          token: ${{ secrets.GITHUB_TOKEN }}
+  fix-whitespace:
+    uses: TYPO3-Documentation/.github/.github/workflows/reusable-apply-precommit.yml@6cdf90e700f7c32376aa2cb2d96a201b67c77ed2
+    secrets:
+      APP_CLIENT_ID: ${{ secrets.APP_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
