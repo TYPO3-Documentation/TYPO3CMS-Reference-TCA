@@ -53,7 +53,7 @@ It is possible to use markers in the WHERE clause:
     A value you can set from Page TSconfig dynamically.
 
 ###SITE:<KEY>.<SUBKEY>###
-    A value from the site configuration, for example: `###SITE:mySetting.categoryPid###` or `###SITE:rootPageId###`.
+    A value from the site configuration, for example: `###SITE:mySetting.categoryPid###` or `###SITE:rootPageId###`. Also values of extension configuration settings are possible. E.g. if there is `settings.sitepackage.imprintPageUid` defined in `EXT:sitepackage/Configuration/Sets/Sitepackage/settings.definitions.yaml` and set in `config/sites/mysite/settings.yaml`: `###SITE:settings.sitepackage.imprintPageUid###`
 
 The markers are preprocessed so that the value of CURRENT\_PID and PAGE\_TSCONFIG\_ID are always integers
 (default is zero), PAGE\_TSCONFIG\_IDLIST will always be a comma-separated list of integers (default is zero)
