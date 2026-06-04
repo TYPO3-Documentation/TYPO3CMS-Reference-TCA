@@ -1,0 +1,28 @@
+..  confval:: wizardSteps
+    :name: types-wizardSteps
+    :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['wizardSteps']
+    :type: array
+    :Scope: Table :sql:`tables` only
+
+    ..  versionadded:: 14.2
+        It is possible to configure fields, steps (and their order)
+        in the page creation wizard using TCA. See
+        `Feature: #109271 - Add TCA configuration for page creation wizard steps <https://docs.typo3.org/permalink/changelog:feature-109271-1742217000>`_.
+
+    Defines the steps shown in the page creation wizard for the `pages` table.
+
+    Each step is identified by a unique key and contains a localized title and a
+    list of fields to display in that step. The configured steps are sorted and
+    may be positioned relative to other steps by using the `before` or `after`
+    options.
+
+    The configuration can be defined per page type, allowing different wizard
+    steps and field assignments depending on the selected page type.
+
+    Required fields that are not assigned to any configured wizard step are added
+    automatically to a fallback step, which is appended at the end of the wizard.
+
+    ..  literalinclude:: /Types/_CodeSnippets/_page_wizardSteps.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
+
+    For a complete example see `TYPO3 Explained, Create new page type <https://docs.typo3.org/permalink/t3coreapi:page-types-example>`_.
