@@ -8,8 +8,6 @@ fieldInformation
 The `fieldInformation` is a reserved area within a single form element between
 the label and the form element itself.
 
-..  include:: /Images/Rst/FieldInformationTcaDescription.rst.txt
-
 ..  confval:: fieldInformation
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: array
