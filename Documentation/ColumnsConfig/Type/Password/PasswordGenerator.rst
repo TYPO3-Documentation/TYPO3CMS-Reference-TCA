@@ -106,12 +106,69 @@ allowEdit
 
     If set to :php:`false`, the user cannot edit the generated password.
 
+..  _columns-password-properties-passwordGenerator-passwordPolicy:
+
+Password policy
+===============
+
+..  confval:: passwordPolicy
+    :name: password-passwordGenerator-passwordPolicy
+    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordPolicy']`
+    :Type: string
+    :Default: `default`
+
+    ..  versionadded:: 14.2
+
+    This option can be used to configure which
+    `Password policy <https://docs.typo3.org/permalink/t3coreapi:password-policies>`_
+    should be used for the password field. Use the key of the policy as
+    defined in :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']`.
+
+    If the policy defines a `generator`
+    section, the field control uses that generator.
+
+    ..  literalinclude:: _Snippets/_PasswordPolicy.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/fe_users.php
+
+
 ..  _columns-password-properties-passwordGenerator_passwordRules:
 
 Password rules
 ==============
 
+..  deprecated:: 14.2
+    The `passwordRules` option of the `passwordGenerator` field control has been
+    deprecated. Password generation is now configured through
+    `Password policies <https://docs.typo3.org/permalink/t3coreapi:password-policies>`_
+    registered in :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']`.
+
 Define rules for the password.
+
+..  _columns-password-properties-passwordGenerator_passwordRules-migration:
+
+Migration from `passwordRules` to password policies
+---------------------------------------------------
+
+Replace the `passwordRules` option with a `Password policiy <https://docs.typo3.org/permalink/t3coreapi:password-policies>`_ reference.
+
+..  code-block:: diff
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/be_users.php
+
+     'fieldControl' => [
+         'passwordGenerator' => [
+             'renderType' => 'passwordGenerator',
+             'options' => [
+    -            'passwordRules' => [
+    -                'length' => 20,
+    -                'upperCaseCharacters' => true,
+    -                'lowerCaseCharacters' => true,
+    -                'digitCharacters' => true,
+    -                'specialCharacters' => false,
+    -            ],
+    +            'passwordPolicy' => 'myCustomPolicy',
+             ],
+         ],
+     ],
 
 ..  _columns-password-properties-passwordGenerator_passwordRules_length:
 
@@ -125,6 +182,8 @@ passwordRules.length
     :Default: :php:`16`
     :Minimum: :php:`8`
 
+    ..  deprecated:: 14.2
+
     Defines the amount of characters for the generated password.
 
 ..  _columns-password-properties-passwordGenerator_passwordRules_random:
@@ -137,6 +196,8 @@ passwordRules.random
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['random']`
     :Type: String
     :Values: :php:`"hex"`, :php:`"base64"`
+
+    ..  deprecated:: 14.2
 
     Defines the encoding of random bytes. Overrules character definitions.
 
@@ -166,6 +227,8 @@ passwordRules.digitCharacters
     :Type: boolean
     :Default: :php:`true`
 
+    ..  deprecated:: 14.2
+
     If set to :php:`false`, the generated password contains no digit.
 
 ..  _columns-password-properties-passwordGenerator_passwordRules_lowercasecharacters:
@@ -180,6 +243,8 @@ passwordRules.lowerCaseCharacters
     :Type: boolean
     :Default: :php:`true`
 
+    ..  deprecated:: 14.2
+
     If set to :php:`false`, the generated password contains no lower case characters.
 
 ..  _columns-password-properties-passwordGenerator_passwordRules_uppercasecharacters:
@@ -193,6 +258,8 @@ passwordRules.upperCaseCharacters
     :Type: boolean
     :Default: :php:`true`
 
+    ..  deprecated:: 14.2
+
     If set to :php:`false`, the generated password contains no upper case characters.
 
 ..  _columns-password-properties-passwordGenerator_passwordRules_specialcharacters:
@@ -205,6 +272,8 @@ passwordRules.specialCharacters
     :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['specialCharacters']`
     :Type: boolean
     :Default: :php:`false`
+
+    ..  deprecated:: 14.2
 
     If set to :php:`true`, the generated password also contains special
     characters (`!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~`).
