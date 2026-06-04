@@ -213,6 +213,42 @@ return [
     ],
     [
         'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_1'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/_Snippets/_Password_1.rst.txt',
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_2'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/_Snippets/_Password_2.rst.txt',
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_4'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/_Snippets/_Password_4.rst.txt',
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_5'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/_Snippets/_Password_5.rst.txt',
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_6'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/_Snippets/_Password_6.rst.txt',
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
+        'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
+        'fields' => ['columns/password_7'],
+        'targetFileName' => 'ColumnsConfig/Type/Password/_Snippets/_Password_7.rst.txt',
+    ],
+    [
+        'action' => 'createPhpArrayCodeSnippet',
         'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
         'fields' => ['columns/select_checkbox_1'],
         'targetFileName' => 'CodeSnippets/SelectCheckbox1.rst.txt',
