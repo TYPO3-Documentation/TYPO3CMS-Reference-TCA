@@ -5,10 +5,39 @@
     :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']
     :type: list of options
 
-    ..  versionadded:: 13.0
-        The page TSconfig option
-        :confval:`newContentElement.wizardItems.[group].elements.[name] <t3tsref:mod-wizards-newcontentelement-wizarditems>`
-        can be defined through TCA as well:
+    ..  confval:: defaultValues
+        :name: types-creationOptions-defaultValues
+        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['defaultValues']
+        :type: array
+        :Examples: :ref:`types-example-creation-option`
+
+        Default values inserted into the fields of the `tt_content` record on
+        creation via the "New Content Element" wizard
+
+        Can be overridden with page TSconfig option
+        :confval:`tt_content_defValues <t3tsref:mod-wizards-newcontentelement-wizarditems-group-elements-name-tt-content-defvalues>`.
+
+    ..  confval:: enableDirectRecordTypeCreation
+        :name: types-creationOptions-enableDirectRecordTypeCreation
+        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['enableDirectRecordTypeCreation']
+        :type: bool
+        :default: true
+
+        ..  versionadded:: 14.0
+
+        Record types registered via TCA are automatically displayed in the
+        "Create new record" component in the backend module
+        :guilabel:`Content > Records`.
+
+        A record type can be removed from that component via:
+
+        ..  code-block:: php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/my_table.php
+
+            $GLOBALS['TCA']['my_table']['types']['my_type']['creationOptions']['enableDirectRecordTypeCreation'] = false;
+
+        Event :php:`\TYPO3\CMS\Backend\Controller\Event\ModifyNewRecordCreationLinksEvent`
+        can be used for more sophisticated modification of the dialogue.
 
     ..  confval:: saveAndClose
         :name: types-creationOptions-saveAndClose
@@ -17,8 +46,6 @@
         :default: false
         :Examples: :ref:`types-example-creation-option`
 
-        ..  versionadded:: 13.0
-
         If true, clicking on the new element wizard will take the user directly
         to the :guilabel:`Content > Layout` module, rather than showing the
         edit form from the form engine.
@@ -26,16 +53,19 @@
         Can be overridden with page TSconfig option
         :confval:`saveAndClose <t3tsref:mod-wizards-newcontentelement-wizarditems-group-elements-name-saveandclose>`.
 
-    ..  confval:: defaultValues
-        :name: types-creationOptions-defaultValues
-        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['defaultValues']
-        :type: array
-        :Examples: :ref:`types-example-creation-option`
+    ..  confval:: title
+        :name: types-creationOptions-title
+        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['title']
+        :type: string | language reference
 
-        ..  versionadded:: 13.0
+        ..  versionadded:: 14.0
 
-        Default values inserted into the fields of the `tt_content` record on
-        creation via the "New Content Element" wizard
+        With this option it is possible to set an
+        individual title for the record type, to be used as label on the
+        creation link in the "Create new record" component.
 
-        Can be overridden with page TSconfig option
-        :confval:`tt_content_defValues <t3tsref:mod-wizards-newcontentelement-wizarditems-group-elements-name-tt-content-defvalues>`.
+        ..  code-block:: php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/my_table.php
+
+            $GLOBALS['TCA']['my_table']['types']['my_type']['creationOptions']['title']
+                = 'my_extension.db.myType:title';
