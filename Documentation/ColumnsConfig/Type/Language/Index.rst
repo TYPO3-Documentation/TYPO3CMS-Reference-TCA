@@ -61,6 +61,19 @@ types, except `pages`.
 In records on root level (`pid=0`) or on a page, outside of a site context,
 all languages from all site configurations are displayed in the new field.
 
+..  versionchanged:: 14.2
+    Fields of type `language` are now hidden by default if only one language is
+    available.
+
+Fields of type `language` are hidden by default if only one language is
+available. They can be displayed nonetheless by setting
+`showIfEmpty <https://docs.typo3.org/permalink/t3tca:confval-select-single-showIfEmpty>`_.
+
+Reasons why only one language is available include:
+
+*   Only one language has been configured in the
+
+
 ..  _columns-language-examples:
 ..  _columns-language-simple-example:
 
