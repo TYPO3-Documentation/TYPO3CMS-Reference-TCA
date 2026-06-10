@@ -44,7 +44,7 @@
     In this example:
 
     *   All types use :php:`header` as the primary label field (from :php:`ctrl['label']`).
-    *   The **article** type additionally displays the :php:`teaser` field if :php:`header` is empty.
+    *   The **article** type displays the :php:`teaser` field if :php:`header` is empty.
     *   The **event** type displays :php:`header` together with :php:`event_date` and :php:`location`
         (since :php:`label_alt_force` is enabled).
 
