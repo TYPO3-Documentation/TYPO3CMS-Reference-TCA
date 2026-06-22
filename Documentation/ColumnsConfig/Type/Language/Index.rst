@@ -65,13 +65,13 @@ all languages from all site configurations are displayed in the new field.
     Fields of type `language` are now hidden by default if only one language is
     available.
 
-Fields of type `language` are hidden by default if only one language is
-available. They can be displayed nonetheless by setting
+`language` fields are hidden by default if only one language is
+available. If they should be displayed, set
 `showIfEmpty <https://docs.typo3.org/permalink/t3tca:confval-select-single-showIfEmpty>`_.
 
 Reasons why only one language is available include:
 
-*   Only one language has been configured in the
+*   Only one language has been configured in :doc:`Site Management <t3translate:SettingUpLanguages/Index#site-management>`
 
 
 ..  _columns-language-examples:

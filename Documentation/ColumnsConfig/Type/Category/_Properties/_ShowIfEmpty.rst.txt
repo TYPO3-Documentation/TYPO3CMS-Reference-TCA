@@ -6,11 +6,11 @@
     :Default: false
 
     ..  versionchanged:: 14.2
-        Starting with TYPO3 14.2 relational fields are hidden when no selectable
-        items are available. This option can be used to disable the behaviour.
+        Starting with TYPO3, 14.2 relational fields are hidden when no
+        selectable items are available. Option `showIfEmpty` will disable this behaviour.
 
-    By default a field of type `category` is hidden when no categories are
-    available. Setting `showIfEmpty` to true, shows the field even if no options
+    By default, `category` fields are hidden when no categories are
+    available. Setting `showIfEmpty` to true displays this field type, even if no options
     are available.
 
     ..  code-block:: php
@@ -18,6 +18,6 @@
 
         $GLOBALS['TCA']['pages']['columns']['categories']['config']['showIfEmpty'] = true;
 
-    Possible reasons, why no categories are available: No category records
-    have been created yet, all categories have been deleted, or
-    the current user has no permissions for any of the existing categories.
+    Possible reasons why categories may not be available: no category records
+    have been created, all categories have been deleted, or
+    the current user has no permissions to access any of the categories.
