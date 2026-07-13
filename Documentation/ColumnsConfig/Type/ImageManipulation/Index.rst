@@ -143,6 +143,8 @@ Disable an aspect ratio
 
 Not only cropVariants but also aspect ratios can be disabled by adding a "disabled" key to the array.
 
+..  literalinclude:: _Snippets/_disabledAspectRatioCropVariant.php
+
 ..  _columns-imageManipulation-crop-variants-viewHelper:
 
 Crop variants in ViewHelpers
