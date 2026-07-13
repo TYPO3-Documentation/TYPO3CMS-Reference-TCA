@@ -133,6 +133,7 @@ Disable a crop variant
 Please note, that while the array for ``overrideChildTca`` is merged with the child TCA, the crop variants replace those
 defined in the child TCA (most likely sys_file_reference), as long as the default configuration is in use.
 If however the crop variants have already been overriden in the child TCA, the crop variants are merged.
+
 Because you cannot remove crop variants easily, it is possible to disable them for certain field types by setting the
 array key for a crop variant ``disabled`` to the value ``true``
 
@@ -141,7 +142,7 @@ array key for a crop variant ``disabled`` to the value ``true``
 Disable an aspect ratio
 -----------------------
 
-Not only cropVariants but also aspect ratios can be disabled by adding a "disabled" key to the array.
+Not only cropVariants but also aspect ratios can be disabled by adding a ``disabled`` key to the array.
 
 ..  literalinclude:: _Snippets/_disabledAspectRatioCropVariant.php
 
