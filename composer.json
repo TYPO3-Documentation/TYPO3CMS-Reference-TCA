@@ -7,10 +7,10 @@
     "typo3/cms-core": "^13.4"
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3.46",
+    "friendsofphp/php-cs-fixer": "*",
     "t3docs/codesnippet": "dev-main",
-    "t3docs/examples": "^13.2",
-    "t3docs/site-package": "dev-main",
+    "t3docs/examples": "*",
+    "t3docs/site-package": "*",
     "typo3/cms-adminpanel": "^13.4",
     "typo3/cms-backend": "^13.4",
     "typo3/cms-belog": "^13.4",
