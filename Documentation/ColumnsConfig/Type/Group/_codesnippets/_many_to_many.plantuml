@@ -1,0 +1,23 @@
+@startuml
+    left to right direction
+
+    entity "Student" as ST {
+      *uid : int
+      *pid : int
+      name : string
+      email : string
+      --
+      courses : LazyRecordCollection<Course>
+    }
+
+    entity "Course" as CO {
+      *uid : int
+      *pid : int
+      title : string
+      code : string
+      credits : int
+    }
+
+    ' Navigability only from student to course
+    ST "0..M" --> "0..N" CO : courses
+    @enduml
