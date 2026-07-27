@@ -1,0 +1,35 @@
+..  confval:: showIfEmpty
+    :name: select-single-showIfEmpty
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['showIfEmpty']
+    :type: boolean
+    :Scope: Display
+    :Default: false
+
+    ..  versionchanged:: 14.2
+        Starting with TYPO3 14.2, relational fields are hidden when no selectable
+        items are available. Option `showIfEmpty` will disable this behaviour.
+
+    By default, `select` fields and any render types are hidden when no
+    select items are available. Setting `showIfEmpty` to true displays the field
+    even if no options are available.
+
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
+
+        $GLOBALS['TCA']['pages']['columns']['some_select_field']['config']['showIfEmpty'] = true;
+
+    Possible reasons why no select items are available:
+
+    *   a `foreign_table <https://docs.typo3.org/permalink/t3tca:confval-select-single-foreign-table>`_
+        is used and the referenced table has no records or none matching the
+        `foreign_table_where <https://docs.typo3.org/permalink/t3tca:confval-select-single-foreign-table-where>`_.
+    *   a `foreign_table <https://docs.typo3.org/permalink/t3tca:confval-select-single-foreign-table>`_
+        is used and the currently logged in user has no permissions for the
+        referenced table or its records.
+    *   All items have been hidden via page TSconfig, for example,
+        `removeItems <https://docs.typo3.org/permalink/t3tsref:tceform-removeitems>`_
+        or `keepItems <https://docs.typo3.org/permalink/t3tsref:confval-tceform-keepitems>`_
+        are inproperly configured.
+    *   The `itemsProcessors <https://docs.typo3.org/permalink/t3tca:confval-select-single-itemsprocessors>`_
+        or `itemsProcFunc <https://docs.typo3.org/permalink/t3tca:confval-select-single-itemsprocfunc>`_
+        had no result.
