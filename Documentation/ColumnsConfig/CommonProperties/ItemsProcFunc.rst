@@ -23,6 +23,8 @@ itemsProcFunc
     in the key :php:`items`. By modifying the array of items, you alter the list of items. A method may throw an
     exception which will be displayed as a proper error message to the user.
 
+..  _tca-property-items-proc-func-passed-parameters:
+
 Passed parameters
 =================
 
@@ -49,6 +51,8 @@ The following parameters are filled if the current record has an
 *   :php:`inlineTopMostParentUid`
 *   :php:`inlineTopMostParentTableName`
 *   :php:`inlineTopMostParentFieldName`
+
+..  _tca-property-items-proc-func-example:
 
 Example
 =======
