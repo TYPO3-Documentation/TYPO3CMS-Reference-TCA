@@ -30,12 +30,16 @@ MM
     in the list. You cannot add properties like string values for the relation
     itself.
 
+..  _columns-config-common-properties-mm:
+
 MM relations and FlexForms
 ==========================
 
 MM relations has been tested to work with FlexForms if not in a repeated
 element in a section.
 
+
+..  _columns-config-common-properties-mm-related-configurations:
 
 Related configurations
 ======================
@@ -123,6 +127,8 @@ TCA definition.
 The fields used for sorting :sql:`sorting` and :sql:`sorting_foreign` are
 always created, they do not need to be defined in TCA.
 
+..  _tca-property-mm-auto-creation-mm-table-example:
+
 Example
 -------
 
@@ -159,6 +165,8 @@ Analyzer:
         KEY uid_local (uid_local),
         KEY uid_foreign (uid_foreign)
     );
+
+..  _tca-property-mm-auto-creation-mm-table-columns-intermediate-mm:
 
 Columns of the intermediate MM table
 ------------------------------------

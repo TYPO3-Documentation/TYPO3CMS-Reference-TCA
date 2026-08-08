@@ -1,5 +1,7 @@
 ..  include:: /Includes.rst.txt
 
+..  _columns-config-common-properties:
+
 ===================
 Properties in depth
 ===================
