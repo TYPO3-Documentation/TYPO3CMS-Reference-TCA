@@ -23,8 +23,12 @@ addRecord
         is shown below the `edit popup` control if not changed by `below` or
         `after` settings.
 
+..  _tca-property-field-control-add-record-examples:
+
 Examples
 ========
+
+..  _tca-property-field-control-add-record-examples-select-field:
 
 Select field
 ------------
@@ -34,6 +38,8 @@ Select field
 ..  include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
 
 
+..  _tca-property-field-control-add-record-examples-group-field:
+
 Group field
 -----------
 
@@ -41,6 +47,8 @@ Group field
 
 ..  include:: /CodeSnippets/GroupDb1.rst.txt
 
+
+..  _tca-property-field-control-add-record-examples-select-field-2:
 
 Select field with options
 -------------------------
@@ -51,6 +59,8 @@ the table :sql:`be_groups`:
 ..  include:: /Images/Rst/FileMountpoints.rst.txt
 
 ..  include:: /CodeSnippets/FileMountpoints.rst.txt
+
+..  _tca-property-field-control-add-record-options:
 
 Options
 =======
