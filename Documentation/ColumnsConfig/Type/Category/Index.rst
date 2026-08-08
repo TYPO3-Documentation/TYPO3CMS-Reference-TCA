@@ -25,6 +25,8 @@ is generated automatically.
 
     Examples
 
+..  _columns-category-example-simple-category:
+
 Example: Simple category field
 ==============================
 

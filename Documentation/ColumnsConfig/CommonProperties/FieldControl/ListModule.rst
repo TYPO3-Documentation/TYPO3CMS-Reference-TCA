@@ -20,6 +20,8 @@ listModule
         The list module control is disabled by default, enable it if needed. It is shown below the `add record`
         control if not changed by `below` or `after` settings.
 
+..  _tca-property-field-control-list-module-options:
+
 Options
 =======
 
@@ -76,8 +78,12 @@ Options
     Allows to set a different 'title' attribute to the popup icon.
 
 
+..  _tca-property-field-control-list-module-examples:
+
 Examples
 ========
+
+..  _tca-property-field-control-list-module-examples-select-field:
 
 Select field
 ------------
@@ -86,6 +92,8 @@ Select field
 
 ..  include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
 
+
+..  _tca-property-field-control-list-module-examples-group-field:
 
 Group field
 -----------

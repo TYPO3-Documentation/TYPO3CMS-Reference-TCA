@@ -82,6 +82,8 @@ or extended, for example via a site setting defined in page TSconfig:
 
     TCEFORM.example_table.content.itemsProcessors.100.foo = {$myExtension.bar}
 
+..  _tca-property-items-processors-registering-item-processors:
+
 Registering item processors in FlexForms
 ========================================
 

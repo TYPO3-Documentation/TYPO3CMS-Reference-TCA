@@ -43,6 +43,8 @@ Simple input field
 
 ..  include:: /CodeSnippets/Input1.rst.txt
 
+..  _columns-input-examples-input-placeholder-null:
+
 Input with placeholder and null handling
 ----------------------------------------
 

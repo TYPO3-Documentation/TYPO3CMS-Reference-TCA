@@ -19,6 +19,8 @@ editPopup
         The edit popup control is pre-configured, but disabled by default. Enable it if you need it, the button
         is by default shown below `element browser` and `insert clipboard`.
 
+..  _tca-property-field-control-edit-popup-options:
+
 Options
 =======
 
@@ -52,8 +54,12 @@ Options
 
     Allows to set a different size of the popup, defaults
 
+..  _tca-property-field-control-edit-popup-examples:
+
 Examples
 ========
+
+..  _tca-property-field-control-edit-popup-examples-select-field:
 
 Select field
 ------------
@@ -61,6 +67,8 @@ Select field
 ..  include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
 
 ..  include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
+
+..  _tca-property-field-control-edit-popup-examples-group-field:
 
 Group field
 -----------

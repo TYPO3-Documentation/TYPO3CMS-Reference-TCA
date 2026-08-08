@@ -60,6 +60,8 @@ Soft delete
     handled separately by the DataHandler and therefore does not need to be
     defined in the :php:`columns` section.
 
+..  _fields-common-enablecolumns:
+
 Enablecolumns
 =============
 
