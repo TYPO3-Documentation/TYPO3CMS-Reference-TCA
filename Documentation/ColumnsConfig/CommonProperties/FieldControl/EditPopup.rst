@@ -24,6 +24,9 @@ editPopup
 Options
 =======
 
+disabled
+--------
+
 ..  confval:: disabled
     :name: fieldControl-editPopup-disabled
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
@@ -34,6 +37,9 @@ Options
     Disables the field control. Needs to be set to :php:`false` to enable the
     :guilabel:`Create new` button
 
+options[title]
+--------------
+
 ..  confval:: options[title]
     :name: fieldControl-editPopup-options-title
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
@@ -43,6 +49,9 @@ Options
     :Default: `LLL:core.core:labels.edit`
 
     Allows to set a different 'title' attribute to the popup icon.
+
+options[windowOpenParameters]
+-----------------------------
 
 ..  confval:: options[windowOpenParameters]
     :name: fieldControl-editPopup-options-windowOpenParameters
