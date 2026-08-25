@@ -66,10 +66,10 @@ options[pid]
 
 ..  _tca-property-field-control-list-module-options-table:
 
-listModule options[table]
--------------------------
+options[table]
+--------------
 
-..  confval:: listModule options[table]
+..  confval:: options[table]
     :name: fieldControl-listModule-options-table
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
     :type: string
