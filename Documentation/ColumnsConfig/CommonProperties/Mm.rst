@@ -40,12 +40,22 @@ element in a section.
 Related configurations
 ======================
 
+..  _columns-config-common-properties-mm-related-configurations-mm-match-fields:
+
+MM_match_fields
+---------------
+
 ..  confval:: MM_match_fields
     :type: array
     :Scope: Display / Proc.
 
     Array of field=>value pairs to both insert and match against when writing/reading MM relations.
 
+
+..  _columns-config-common-properties-mm-related-configurations-mm-opposite-field:
+
+MM_opposite_field
+-----------------
 
 ..  confval:: MM_opposite_field
     :type: string (field name)
@@ -62,6 +72,11 @@ Related configurations
         Bidirectional references only get registered once on the native side in "sys\_refindex".
 
 
+..  _columns-config-common-properties-mm-related-configurations-mm-opposite-usage:
+
+MM_oppositeUsage
+----------------
+
 ..  confval:: MM_oppositeUsage
     :type: array
     :Scope: Proc.
@@ -75,6 +90,11 @@ Related configurations
     references to the opposite side, so that they can be queried for match
     field configuration.
 
+
+..  _columns-config-common-properties-mm-related-configurations-mm-table-where:
+
+MM_table_where
+--------------
 
 ..  confval:: MM_table_where
     :type: string (SQL WHERE)
