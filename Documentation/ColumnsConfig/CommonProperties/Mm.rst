@@ -44,6 +44,8 @@ element in a section.
 Related configurations
 ======================
 
+..  _columns-config-common-properties-mm-related-configurations-mm-match-fields:
+
 MM_match_fields
 ---------------
 
@@ -53,6 +55,8 @@ MM_match_fields
 
     Array of field=>value pairs to both insert and match against when writing/reading MM relations.
 
+
+..  _columns-config-common-properties-mm-related-configurations-mm-opposite-field:
 
 MM_opposite_field
 -----------------
@@ -72,6 +76,8 @@ MM_opposite_field
         Bidirectional references only get registered once on the native side in "sys\_refindex".
 
 
+..  _columns-config-common-properties-mm-related-configurations-mm-opposite-usage:
+
 MM_oppositeUsage
 ----------------
 
@@ -88,6 +94,8 @@ MM_oppositeUsage
     references to the opposite side, so that they can be queried for match
     field configuration.
 
+
+..  _columns-config-common-properties-mm-related-configurations-mm-table-where:
 
 MM_table_where
 --------------

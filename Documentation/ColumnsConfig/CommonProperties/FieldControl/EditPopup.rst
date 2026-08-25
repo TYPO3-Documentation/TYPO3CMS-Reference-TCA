@@ -24,6 +24,8 @@ editPopup
 Options
 =======
 
+..  _tca-property-field-control-edit-popup-options-disabled:
+
 disabled
 --------
 
@@ -37,6 +39,8 @@ disabled
     Disables the field control. Needs to be set to :php:`false` to enable the
     :guilabel:`Create new` button
 
+..  _tca-property-field-control-edit-popup-options-title:
+
 options[title]
 --------------
 
@@ -49,6 +53,8 @@ options[title]
     :Default: `LLL:core.core:labels.edit`
 
     Allows to set a different 'title' attribute to the popup icon.
+
+..  _tca-property-field-control-edit-popup-options-window-open-parameters:
 
 options[windowOpenParameters]
 -----------------------------

@@ -25,6 +25,8 @@ listModule
 Options
 =======
 
+..  _tca-property-field-control-list-module-options-disabled:
+
 disabled
 --------
 
@@ -37,6 +39,8 @@ disabled
 
     Disables the field control. Needs to be set to :php:`false` to enable the
     :guilabel:`Create new` button
+
+..  _tca-property-field-control-list-module-options-pid:
 
 options[pid]
 ------------
@@ -60,6 +64,8 @@ options[pid]
     -  :code:`###THIS_UID###`
     -  :code:`###SITEROOT###`
 
+..  _tca-property-field-control-list-module-options-table:
+
 listModule options[table]
 -------------------------
 
@@ -75,6 +81,8 @@ listModule options[table]
     :ref:`allowed <columns-group-properties-allowed>` list if not set for
     `type='group'` fields and to :ref:`foreign_table
     <columns-select-properties-foreign-table>` for `type='select'` fields.
+
+..  _tca-property-field-control-list-module-options-title:
 
 options[title]
 --------------
