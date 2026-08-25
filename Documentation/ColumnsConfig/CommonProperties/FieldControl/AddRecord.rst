@@ -65,6 +65,11 @@ the table :sql:`be_groups`:
 Options
 =======
 
+..  _tca-property-field-control-add-record-options-disabled:
+
+disabled
+--------
+
 ..  confval:: disabled
     :name: fieldControl-addRecord-disabled
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
@@ -74,6 +79,11 @@ Options
 
     Disables the field control. Needs to be set to :php:`false` to enable the
     :guilabel:`Create new` button
+
+..  _tca-property-field-control-add-record-options-pid:
+
+options[pid]
+------------
 
 ..  confval:: options[pid]
     :name: fieldControl-addRecord-options-pid
@@ -94,6 +104,11 @@ Options
     -  :code:`###THIS_UID###`
     -  :code:`###SITEROOT###`
 
+..  _tca-property-field-control-add-record-options-table:
+
+options[table]
+--------------
+
 ..  confval:: options[table]
     :name: fieldControl-addRecord-options-table
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']
@@ -107,6 +122,11 @@ Options
     `type='group'` fields and to :ref:`foreign_table
     <columns-select-properties-foreign-table>` for `type='select'` fields.
 
+..  _tca-property-field-control-add-record-options-title:
+
+options[title]
+--------------
+
 ..  confval:: options[title]
     :name: fieldControl-addRecord-options-title
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']
@@ -116,6 +136,11 @@ Options
     :Default: `LLL:core.core:labels.createNew`
 
     Allows to set a different 'title' attribute to the popup icon.
+
+..  _tca-property-field-control-add-record-options-set-value:
+
+options[setValue]
+-----------------
 
 ..  confval:: options[setValue]
     :name: fieldControl-addRecord-options-setValue

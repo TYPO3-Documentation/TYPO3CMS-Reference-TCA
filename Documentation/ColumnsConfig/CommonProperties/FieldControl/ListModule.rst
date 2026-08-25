@@ -25,6 +25,11 @@ listModule
 Options
 =======
 
+..  _tca-property-field-control-list-module-options-disabled:
+
+disabled
+--------
+
 ..  confval:: disabled
     :name: fieldControl-listModule-disabled
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
@@ -34,6 +39,11 @@ Options
 
     Disables the field control. Needs to be set to :php:`false` to enable the
     :guilabel:`Create new` button
+
+..  _tca-property-field-control-list-module-options-pid:
+
+options[pid]
+------------
 
 ..  confval:: options[pid]
     :name: fieldControl-listModule-options-pid
@@ -54,7 +64,12 @@ Options
     -  :code:`###THIS_UID###`
     -  :code:`###SITEROOT###`
 
-..  confval:: listModule options[table]
+..  _tca-property-field-control-list-module-options-table:
+
+options[table]
+--------------
+
+..  confval:: options[table]
     :name: fieldControl-listModule-options-table
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
     :type: string
@@ -66,6 +81,11 @@ Options
     :ref:`allowed <columns-group-properties-allowed>` list if not set for
     `type='group'` fields and to :ref:`foreign_table
     <columns-select-properties-foreign-table>` for `type='select'` fields.
+
+..  _tca-property-field-control-list-module-options-title:
+
+options[title]
+--------------
 
 ..  confval:: options[title]
     :name: fieldControl-listModule-options-title
