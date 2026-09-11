@@ -124,6 +124,7 @@ Combining conditions
 Multiple conditions can be combined:
 
 ..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
     'displayCond' => [
         'AND' => [
@@ -165,6 +166,7 @@ default language. Furthermore it must be a text-type element or have the
 headline "Example" defined:
 
 ..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
     'displayCond' => [
         'AND' => [
@@ -184,6 +186,7 @@ A complex example in a FlexForm
 Using :code:`OR` and :code:`AND` within FlexForms works like this:
 
 ..  code-block:: xml
+    :caption: EXT:my_extension/Configuration/FlexForms/SomeFlexForm.xml
 
     <displayCond>
         <and>
@@ -204,6 +207,7 @@ Access values in a flexform
 Flex form fields can access field values from various different sources:
 
 ..  code-block:: xml
+    :caption: EXT:my_extension/Configuration/FlexForms/SomeFlexForm.xml
 
     <!-- Hide field if value of record field "header" is not "true" -->
     <displayCond>FIELD:parentRec.header:REQ:true</displayCond>

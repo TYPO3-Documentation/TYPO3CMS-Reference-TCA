@@ -22,6 +22,7 @@ fieldWizard
     For example, type='check' comes with this default wizards configuration:
 
     ..  code-block:: php
+        :caption: EXT:backend/Classes/Form/Element/CheckboxElement.php
 
         protected $defaultFieldWizard = [
             'localizationStateSelector' => [
@@ -45,6 +46,7 @@ fieldWizard
     :php:`localizationStateSelector` wizard.
 
     ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
         'aField' => [
             'config' => [
