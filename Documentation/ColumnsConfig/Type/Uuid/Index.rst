@@ -38,6 +38,7 @@ Example
 An example configuration looks like the following:
 
 ..  literalinclude:: _Snippets/_basic.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
 ..  _columns-uuid-properties:
 

@@ -70,6 +70,7 @@ Disable a built-in wizard
 -------------------------
 
 ..  literalinclude:: _CodeSnippets/_disableFieldWizard.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 This disables the default :php:`localizationStateSelector` fieldWizard of
 :php:`inlineControlContainer`.
