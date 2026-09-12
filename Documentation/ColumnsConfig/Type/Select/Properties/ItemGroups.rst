@@ -21,6 +21,7 @@ For existing select fields additional item groups can be added via the
 api method :php:`ExtensionManagementUtility::addTcaSelectItemGroup`.
 
 ..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
     ExtensionManagementUtility::addTcaSelectItemGroup(
         'tt_content',
@@ -45,6 +46,7 @@ a fourth parameter in the array can be used to specify the id of the item
 group.
 
 ..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
     ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
