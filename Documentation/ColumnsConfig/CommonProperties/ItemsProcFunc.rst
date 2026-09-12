@@ -56,6 +56,7 @@ Example
 The configuration for a custom field :sql:`select_single_2` could look like this:
 
 ..  code-block:: php
+    :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php
 
    'select_single_2' => [
        'exclude' => 1,
@@ -74,6 +75,7 @@ The configuration for a custom field :sql:`select_single_2` could look like this
 The referenced :php:`itemsProcFunc` method should populate the items by filling :php:`$params['items']`:
 
 ..  code-block:: php
+    :caption: EXT:styleguide/Classes/UserFunctions/FormEngine/TypeSelect2ItemsProcFunc.php
 
     /**
      * A user function used in select_2

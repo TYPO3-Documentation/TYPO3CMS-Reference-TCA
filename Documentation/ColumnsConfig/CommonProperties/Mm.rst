@@ -160,6 +160,7 @@ Example
 The "local" side of a mm table is defined as such in TCA:
 
 ..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
     ...
     'columns' => [
@@ -180,6 +181,7 @@ A table like the following will be automatically created in the Database
 Analyzer:
 
 ..  code-block:: sql
+    :caption: Table created automatically by the Database Analyzer
 
     CREATE TABLE tx_myextension_myfield_mm (
         uid_local int(11) DEFAULT '0' NOT NULL,

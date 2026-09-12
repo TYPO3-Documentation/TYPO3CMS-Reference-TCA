@@ -57,6 +57,7 @@ https://github.com/georgringer/news/blob/9.4.0/Configuration/TCA/tx_news_domain_
 The implementation can be found in https://github.com/georgringer/news/blob/9.4.0/Classes/Backend/FieldInformation/StaticText.php:
 
 ..  code-block:: php
+    :caption: EXT:news/Classes/Backend/FieldInformation/StaticText.php
 
     <?php
 
