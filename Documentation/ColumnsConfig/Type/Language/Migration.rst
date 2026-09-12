@@ -20,6 +20,7 @@ where code adaption has to take place. Occurrences are all columns, defined as
     configuration is adapted.
 
 ..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
     // Before
 
@@ -41,6 +42,7 @@ where code adaption has to take place. Occurrences are all columns, defined as
     ]
 
 ..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
     // Before
 
