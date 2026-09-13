@@ -1,13 +1,13 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _tca_examples:
+..  _tca_examples:
 
 ==================
 About the examples
 ==================
 
 
-.. _tca_examples_extension_styleguide:
+..  _tca_examples_extension_styleguide:
 
 Extension styleguide
 ====================
@@ -19,7 +19,7 @@ are examples with different properties set to different values.
 Read here about how to :ref:`install and use the styleguide extension
 <styleguide>`.
 
-.. _tca_examples_extension_examples:
+..  _tca_examples_extension_examples:
 
 Extension examples
 ==================
@@ -30,14 +30,14 @@ extension :file:`stylguide` nor in the TYPO3 Core.
 
 The extension :file:`examples` can be installed via composer:
 
-.. code-block:: console
+..  code-block:: console
 
-   composer require --dev t3docs/examples
+    composer require --dev t3docs/examples
 
 It can also be downloaded from the :t3ext:`TYPO3 extension repository <examples>`.
 
 
-.. _tca_examples_core:
+..  _tca_examples_core:
 
 Examples from the TYPO3 Core
 ============================
@@ -49,17 +49,17 @@ corresponding file in the system extension.
 Common examples are taken from the following tables:
 
 :sql:`pages`
-   :file:`public/typo3/sysext/core/Configuration/TCA/pages.php`
+    :file:`public/typo3/sysext/core/Configuration/TCA/pages.php`
 
 :sql:`sys_category`
-   :file:`public/typo3/sysext/core/Configuration/TCA/sys_category.php`
+    :file:`public/typo3/sysext/core/Configuration/TCA/sys_category.php`
 
 :sql:`sys_file`
-   :file:`public/typo3/sysext/core/Configuration/TCA/sys_file.php`
+    :file:`public/typo3/sysext/core/Configuration/TCA/sys_file.php`
 
 :sql:`sys_template`
-   :file:`public/typo3/sysext/frontend/Configuration/TCA/sys_template.php`
+    :file:`public/typo3/sysext/frontend/Configuration/TCA/sys_template.php`
 
 
 :sql:`tt_content`
-   :file:`public/typo3/sysext/frontend/Configuration/TCA/tt_content.php`
+    :file:`public/typo3/sysext/frontend/Configuration/TCA/tt_content.php`

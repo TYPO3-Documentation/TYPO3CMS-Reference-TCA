@@ -19,8 +19,8 @@ Storage methods
 
 There are two main methods for this:
 
--  Stored in a :ref:`comma list <columns-group-data-commalist>`
--  Stored with a join table (:ref:`MM relation<columns-group-data-mm>`)
+-   Stored in a :ref:`comma list <columns-group-data-commalist>`
+-   Stored with a join table (:ref:`MM relation<columns-group-data-mm>`)
 
 The default and most wide spread method is the comma list.
 
