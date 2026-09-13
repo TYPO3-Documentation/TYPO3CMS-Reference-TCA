@@ -7,10 +7,10 @@ Group fields
 ============
 
 ..  versionadded:: 13.0
-     When using the `group` type, TYPO3 takes care of
-     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
-     A developer does not need to define this field in an extension's
-     :file:`ext_tables.sql` file.
+    When using the `group` type, TYPO3 takes care of
+    :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
+    A developer does not need to define this field in an extension's
+    :file:`ext_tables.sql` file.
 
 The group element (:php:`type' => 'group'`) in TYPO3 makes it possible to create
 references from a record of one table to many records from multiple tables in the system.

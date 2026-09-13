@@ -178,7 +178,7 @@ The structure of the XML is as follows:
     Contains the main data: sheets, language sections, fields and values.
 
     Child elements
-         <sheet>
+        <sheet>
 
 ..  _columns-flex-data-format-array-sheet:
 
