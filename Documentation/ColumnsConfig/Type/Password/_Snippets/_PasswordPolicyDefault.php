@@ -1,11 +1,11 @@
 <?php
 
 $passwordField = [
+  'config' => [
+    'label' => 'Your Password',
     'config' => [
-        'label' => 'Your Password',
-        'config' => [
-            'type' => 'password',
-            'passwordPolicy' => 'default',
-        ],
+      'type' => 'password',
+      'passwordPolicy' => 'default',
     ],
+  ],
 ];

@@ -1,11 +1,11 @@
 <?php
 
 $passwordField = [
+  'config' => [
+    'label' => 'Your Password',
     'config' => [
-        'label' => 'Your Password',
-        'config' => [
-            'type' => 'password',
-            'passwordPolicy' => $GLOBALS['TYPO3_CONF_VARS']['BE']['passwordPolicy'] ?? '',
-        ],
+      'type' => 'password',
+      'passwordPolicy' => $GLOBALS['TYPO3_CONF_VARS']['BE']['passwordPolicy'] ?? '',
     ],
+  ],
 ];

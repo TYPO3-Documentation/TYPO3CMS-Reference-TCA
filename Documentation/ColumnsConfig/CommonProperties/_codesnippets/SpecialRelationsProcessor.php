@@ -11,18 +11,18 @@ use TYPO3\CMS\Core\Schema\Struct\SelectItemCollection;
 
 final class SpecialRelationsProcessor implements ItemsProcessorInterface
 {
-    public function processItems(
-        SelectItemCollection $items,
-        ItemsProcessorContext $context,
-    ): SelectItemCollection {
-        $items->add(
-            new SelectItem(
-                type: 'select',
-                label: sprintf('Extra item: %s', $context->processorParameters['foo'] ?? ''),
-                value: 42,
-            )
-        );
+  public function processItems(
+    SelectItemCollection $items,
+    ItemsProcessorContext $context,
+  ): SelectItemCollection {
+    $items->add(
+      new SelectItem(
+        type: 'select',
+        label: sprintf('Extra item: %s', $context->processorParameters['foo'] ?? ''),
+        value: 42,
+      )
+    );
 
-        return $items;
-    }
+    return $items;
+  }
 }

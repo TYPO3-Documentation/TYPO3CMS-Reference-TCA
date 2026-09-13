@@ -1,10 +1,10 @@
 <?php
 
 $emailField = [
-    'config' => [
-        'type' => 'email',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'email',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];
