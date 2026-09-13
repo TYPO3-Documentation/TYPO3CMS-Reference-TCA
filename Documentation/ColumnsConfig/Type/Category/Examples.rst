@@ -1,5 +1,5 @@
 :navigation-title: Examples
-..  literalinclude:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 ..  _columns-category-examples:
 
 ====================================
