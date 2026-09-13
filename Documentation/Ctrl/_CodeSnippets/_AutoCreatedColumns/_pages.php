@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'ctrl' => [
-        'enablecolumns' => [
-            'disabled' => 'disabled',
-        ],
+  'ctrl' => [
+    'enablecolumns' => [
+      'disabled' => 'disabled',
     ],
-    // ...
+  ],
+  // ...
 ];

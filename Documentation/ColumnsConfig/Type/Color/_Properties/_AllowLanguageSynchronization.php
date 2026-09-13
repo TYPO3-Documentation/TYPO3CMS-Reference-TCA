@@ -1,10 +1,10 @@
 <?php
 
 $colorField = [
-    'config' => [
-        'type' => 'color',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'color',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

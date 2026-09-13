@@ -1,10 +1,10 @@
 <?php
 
 $datetimeField = [
-    'config' => [
-        'type' => 'datetime',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'datetime',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

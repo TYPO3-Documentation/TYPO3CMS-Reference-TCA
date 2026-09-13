@@ -1,11 +1,11 @@
 <?php
 
 $passwordField = [
+  'config' => [
+    'title' => 'A nullable field',
     'config' => [
-        'title' => 'A nullable field',
-        'config' => [
-            'type' => 'password',
-            'nullable' => true,
-        ],
+      'type' => 'password',
+      'nullable' => true,
     ],
+  ],
 ];

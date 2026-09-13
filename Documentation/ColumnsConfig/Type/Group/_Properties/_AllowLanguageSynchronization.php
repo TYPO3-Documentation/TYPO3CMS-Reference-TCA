@@ -1,10 +1,10 @@
 <?php
 
 $groupField = [
-    'config' => [
-        'type' => 'group',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'group',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];
