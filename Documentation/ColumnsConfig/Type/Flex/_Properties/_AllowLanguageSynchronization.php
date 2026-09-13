@@ -1,10 +1,10 @@
 <?php
 
 $flexField = [
-    'config' => [
-        'type' => 'flex',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'flex',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

@@ -1,10 +1,10 @@
 <?php
 
 $numberField = [
-    'config' => [
-        'type' => 'number',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'number',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

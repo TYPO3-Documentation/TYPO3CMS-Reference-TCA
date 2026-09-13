@@ -1,10 +1,10 @@
 <?php
 
 $jsonField = [
-    'config' => [
-        'type' => 'json',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'json',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

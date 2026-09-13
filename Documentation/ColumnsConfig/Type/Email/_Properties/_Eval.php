@@ -1,9 +1,9 @@
 <?php
 
 $temporaryColumns['email'] = [
-    'label' => 'aLabel',
-    'config' => [
-        'type' => 'email',
-        'eval' => 'uniqueInPid',
-    ],
+  'label' => 'aLabel',
+  'config' => [
+    'type' => 'email',
+    'eval' => 'uniqueInPid',
+  ],
 ];
