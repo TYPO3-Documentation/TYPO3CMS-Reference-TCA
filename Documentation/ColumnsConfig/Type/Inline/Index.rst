@@ -127,7 +127,7 @@ to true:
 
     return [
         'ctrl' => [
-    	    // ...
+            // ...
             'security' => [
                'ignorePageTypeRestriction' => true,
             ],
@@ -155,7 +155,7 @@ If regular non-admin backend users need to be able to edit the table, add
 
     return [
         'ctrl' => [
-    	    // Can only be created at root level
+            // Can only be created at root level
             'rootLevel' => 1
             'security' => [
                'ignoreRootLevelRestriction' => true,
