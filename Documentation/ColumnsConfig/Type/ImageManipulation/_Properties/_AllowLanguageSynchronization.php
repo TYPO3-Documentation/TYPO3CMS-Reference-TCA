@@ -1,10 +1,10 @@
 <?php
 
 $imageManipulationField = [
-    'config' => [
-        'type' => 'imageManipulation',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'imageManipulation',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

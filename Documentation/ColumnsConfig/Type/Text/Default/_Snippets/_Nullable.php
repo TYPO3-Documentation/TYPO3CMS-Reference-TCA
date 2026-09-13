@@ -1,9 +1,9 @@
 <?php
 
 $textTableField = [
-    'title' => 'A nullable field',
-    'config' => [
-        'type' => 'text',
-        'nullable' => true,
-    ],
+  'title' => 'A nullable field',
+  'config' => [
+    'type' => 'text',
+    'nullable' => true,
+  ],
 ];

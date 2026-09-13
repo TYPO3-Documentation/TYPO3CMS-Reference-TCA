@@ -1,10 +1,10 @@
 <?php
 
 $radioField = [
-    'config' => [
-        'type' => 'radio',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'radio',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];
