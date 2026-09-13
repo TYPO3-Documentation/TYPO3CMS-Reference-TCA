@@ -1,12 +1,12 @@
 <?php
 
 return [
-    // ...
-    'types' => [
-        '0' => [
-            'creationOptions' => [
-                'saveAndClose' => true,
-            ],
-        ],
+  // ...
+  'types' => [
+    '0' => [
+      'creationOptions' => [
+        'saveAndClose' => true,
+      ],
     ],
+  ],
 ];

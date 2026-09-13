@@ -1,10 +1,10 @@
 <?php
 
 $inputField = [
-    'config' => [
-        'type' => 'input',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'input',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

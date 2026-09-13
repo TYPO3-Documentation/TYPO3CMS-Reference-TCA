@@ -1,10 +1,10 @@
 <?php
 
 $linkField = [
-    'config' => [
-        'type' => 'link',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'link',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

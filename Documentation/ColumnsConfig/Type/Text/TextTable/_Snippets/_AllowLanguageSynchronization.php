@@ -1,11 +1,11 @@
 <?php
 
 $textTableField = [
-    'config' => [
-        'type' => 'text',
-        'renderType' => 'textTable',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'text',
+    'renderType' => 'textTable',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

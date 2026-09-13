@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'ctrl' => [
-        'sortby' => 'sorting',
-    ],
+  'ctrl' => [
+    'sortby' => 'sorting',
+  ],
 ];
