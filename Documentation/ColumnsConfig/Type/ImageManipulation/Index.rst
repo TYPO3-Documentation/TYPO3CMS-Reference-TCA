@@ -30,6 +30,7 @@ Example: A basic image manipulation field
 ..  include:: /Images/Rst/ImageManipulationButton.rst.txt
 
 ..  literalinclude:: _Snippets/_basic.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  _columns-imageManipulation-properties:
 
@@ -54,6 +55,7 @@ If no :confval:`imageManipulation-cropVariants` are configured, the following
 default configuration is used:
 
 ..  literalinclude:: _Snippets/_defaultCropVariants.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
 ..  _columns-imageManipulation-crop-variants-multiple:
 
@@ -65,6 +67,7 @@ is specified with the "title" and the actual (floating point) ratio with the "va
 PHP type float, not only a string.
 
 ..  literalinclude:: _Snippets/_multipleCropVariants.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
 ..  _columns-imageManipulation-crop-variants-initial:
 
@@ -77,6 +80,7 @@ coordinates and width and height must be specified for that. The below example h
 the previous image cropper provided by default.
 
 ..  literalinclude:: _Snippets/_cropAreaCropVariants.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
 ..  _columns-imageManipulation-crop-variants-focusArea:
 
@@ -91,6 +95,7 @@ attribute when using the `<f:image />` view helper.
 The below example adds a focus area, which is initially one third of the size of the image and centered.
 
 ..  literalinclude:: _Snippets/_focusAreaCropVariants.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
 ..  _columns-imageManipulation-crop-variants-coverAreas:
 
@@ -103,6 +108,7 @@ so called cover areas. These areas are shown inside the crop area. The focus are
 the cover areas.
 
 ..  literalinclude:: _Snippets/_coverAreaCropVariants.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
 The above configuration examples are basically meant to add one single cropping configuration
 to sys_file_reference, which will then apply in every record, which reference images.
@@ -115,6 +121,7 @@ Configuration per content element
 It is however also possible to provide a configuration per content element, e.g. for tt_content images:
 
 ..  literalinclude:: _Snippets/_overrideCropVariants.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 ..  _columns-imageManipulation-crop-variants-specific-content-element:
 
@@ -124,6 +131,7 @@ Define a cropping configuration for a specific content element
 It is also possible to set the cropping configuration only for a specific content element type:
 
 ..  literalinclude:: _Snippets/_overrideCropVariantsCType.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 ..  _columns-imageManipulation-crop-variants-disable:
 
@@ -145,6 +153,7 @@ Disable an aspect ratio
 Not only cropVariants but also aspect ratios can be disabled by adding a ``disabled`` key to the array.
 
 ..  literalinclude:: _Snippets/_disabledAspectRatioCropVariant.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 ..  _columns-imageManipulation-crop-variants-viewHelper:
 

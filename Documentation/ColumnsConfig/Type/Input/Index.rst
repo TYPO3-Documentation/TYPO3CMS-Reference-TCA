@@ -86,6 +86,7 @@ Trim white space
 Trimming the value for white space before storing in the database:
 
 ..  literalinclude:: _Snippets/_trimmedField.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
 ..  _columns-input-eval-combined:
 
