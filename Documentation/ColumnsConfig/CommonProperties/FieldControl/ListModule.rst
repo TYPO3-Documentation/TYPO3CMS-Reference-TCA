@@ -60,9 +60,9 @@ options[pid]
     Falls back to "current pid" if not set, forces pid=0 if records of this
     table are only allowed on root level.
 
-    -  :code:`###CURRENT_PID###`
-    -  :code:`###THIS_UID###`
-    -  :code:`###SITEROOT###`
+    -   :code:`###CURRENT_PID###`
+    -   :code:`###THIS_UID###`
+    -   :code:`###SITEROOT###`
 
 ..  _tca-property-field-control-list-module-options-table:
 
