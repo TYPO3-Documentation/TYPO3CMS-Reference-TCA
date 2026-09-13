@@ -28,6 +28,7 @@ Example: A basic link field
 ===========================
 
 ..  literalinclude:: _Snippets/_basic.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
 ..  _columns-link-properties:
 
