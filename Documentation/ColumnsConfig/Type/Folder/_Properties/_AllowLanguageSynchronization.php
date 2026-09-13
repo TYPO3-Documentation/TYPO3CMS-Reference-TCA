@@ -1,10 +1,10 @@
 <?php
 
 $folderField = [
-    'config' => [
-        'type' => 'folder',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'folder',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

@@ -1,12 +1,12 @@
 <?php
 
 $passwordField = [
+  'config' => [
+    'label' => 'Your Password',
     'config' => [
-        'label' => 'Your Password',
-        'config' => [
-            'type' => 'password',
-            'size' => 20,
-            'autocomplete' => true,
-        ],
+      'type' => 'password',
+      'size' => 20,
+      'autocomplete' => true,
     ],
+  ],
 ];

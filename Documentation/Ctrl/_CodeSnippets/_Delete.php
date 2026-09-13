@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'ctrl' => [
-        'delete' => 'deleted',
-        // ...
-    ],
+  'ctrl' => [
+    'delete' => 'deleted',
+    // ...
+  ],
 ];

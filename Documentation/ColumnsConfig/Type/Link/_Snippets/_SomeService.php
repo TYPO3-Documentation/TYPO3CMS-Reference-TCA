@@ -7,15 +7,15 @@ use TYPO3\CMS\Frontend\Typolink\LinkFactory;
 
 class SomeService
 {
-    public function __construct(
-        private readonly LinkFactory $linkFactory,
-    ) {}
+  public function __construct(
+    private readonly LinkFactory $linkFactory,
+  ) {}
 
-    public function getUri(string $tcaLinkValue, ContentObjectRenderer $contentObjectRenderer): string
-    {
-        return $this->linkFactory->createUri(
-            $tcaLinkValue,
-            $contentObjectRenderer
-        );
-    }
+  public function getUri(string $tcaLinkValue, ContentObjectRenderer $contentObjectRenderer): string
+  {
+    return $this->linkFactory->createUri(
+      $tcaLinkValue,
+      $contentObjectRenderer
+    );
+  }
 }

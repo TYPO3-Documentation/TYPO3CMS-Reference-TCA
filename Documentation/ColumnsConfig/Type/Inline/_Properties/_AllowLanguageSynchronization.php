@@ -1,10 +1,10 @@
 <?php
 
 $inlineField = [
-    'config' => [
-        'type' => 'inline',
-        'behaviour' => [
-            'allowLanguageSynchronization' => true,
-        ],
+  'config' => [
+    'type' => 'inline',
+    'behaviour' => [
+      'allowLanguageSynchronization' => true,
     ],
+  ],
 ];

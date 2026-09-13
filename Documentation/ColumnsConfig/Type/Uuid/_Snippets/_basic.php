@@ -1,9 +1,9 @@
 <?php
 
 $uuidField = [
-    'label' => 'My record identifier',
-    'config' => [
-        'type' => 'uuid',
-        'version' => 6,
-    ],
+  'label' => 'My record identifier',
+  'config' => [
+    'type' => 'uuid',
+    'version' => 6,
+  ],
 ];
