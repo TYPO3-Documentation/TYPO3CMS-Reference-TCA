@@ -51,19 +51,19 @@ that is set within the 'palettes' array. It will always be displayed.
 Example:
 
 ..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
+     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
 
-   'types' => [
-      'myType' => [
-         'showitem' => 'aField, --palette--;;aPalette, someOtherField',
-      ],
-   ],
-   'palettes' => [
-      'aPalette' => [
-         'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
-         'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
-      ],
-   ],
+    'types' => [
+       'myType' => [
+          'showitem' => 'aField, --palette--;;aPalette, someOtherField',
+       ],
+    ],
+    'palettes' => [
+       'aPalette' => [
+          'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
+          'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
+       ],
+    ],
 
 ..  _palettes-properties:
 

@@ -46,11 +46,11 @@ Make table hideable
 Common enable fields
 ====================
 
-.. include:: /Images/Rst/CtrlEnableFields.rst.txt
+..  include:: /Images/Rst/CtrlEnableFields.rst.txt
 
-.. include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
 
-.. _enablefields_usage:
+..  _enablefields_usage:
 
 Enablecolumns / enablefields usage
 ==================================

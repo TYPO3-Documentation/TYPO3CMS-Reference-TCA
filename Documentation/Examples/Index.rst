@@ -1,11 +1,11 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 ========
 Examples
 ========
 
-.. toctree::
-   :glob:
-   :titlesonly:
+..  toctree::
+    :glob:
+    :titlesonly:
 
-   *
+    *
