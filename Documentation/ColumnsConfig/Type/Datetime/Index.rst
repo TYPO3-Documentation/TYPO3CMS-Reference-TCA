@@ -25,8 +25,8 @@ is generated automatically as :sql:`bigint signed`.
 
     TYPO3 does not handle the following dates properly:
 
-    *  Before Christ (negative year)
-    *  double-digit years
+    *   Before Christ (negative year)
+    *   double-digit years
 
 ..  contents:: Table of contents:
     :local:

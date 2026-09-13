@@ -37,7 +37,7 @@ Properties of the TCA column type `email`
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
-    .. note::
+    ..  note::
 
         The softref definition :php:`'softref' => 'email[subst]'` is automatically applied
         to all :php:`email` fields.

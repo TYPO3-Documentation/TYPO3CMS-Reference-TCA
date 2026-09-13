@@ -118,25 +118,25 @@ type inline** - as it is a container.
 
 ..  rst-class:: bignums-xxl
 
-#. Create a custom fieldInformation
+#.  Create a custom fieldInformation
 
-    ..  literalinclude:: _Snippets/_DemoFieldInformation.php
-        :caption: EXT:my_extension/Classes/FormEngine/FieldInformation/DemoFieldInformation.php
+     ..  literalinclude:: _Snippets/_DemoFieldInformation.php
+         :caption: EXT:my_extension/Classes/FormEngine/FieldInformation/DemoFieldInformation.php
 
-#. Register this node type
+#.  Register this node type
 
-    ..  literalinclude:: _Snippets/_ext_localconf.php
-        :caption: EXT:my_extension/ext_localconf.php
+     ..  literalinclude:: _Snippets/_ext_localconf.php
+         :caption: EXT:my_extension/ext_localconf.php
 
-#. Add the fieldInformation to the container for containerRenderType inline
+#.  Add the fieldInformation to the container for containerRenderType inline
 
-    ..  literalinclude:: _Snippets/_tt_content.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+     ..  literalinclude:: _Snippets/_tt_content.php
+         :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
-#. A field my_new_field is created in the tt_content TCA:
+#.  A field my_new_field is created in the tt_content TCA:
 
-    ..  literalinclude:: _Snippets/_tt_content2.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+     ..  literalinclude:: _Snippets/_tt_content2.php
+         :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 ..  seealso::
 
