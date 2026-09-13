@@ -34,7 +34,7 @@ Example: Define a basic country picker
 The following code displays a basic country picker with Suisse (Iso code `CH`)
 as default value. The localized name is displayed to the backend users.
 
-.. tabs::
+..  tabs::
 
     ..  group-tab:: TCA
 
@@ -54,7 +54,7 @@ Extended country picker example
 The following example demonstrates most of the properties of the
 country picker TCA type:
 
-.. tabs::
+..  tabs::
 
     ..  group-tab:: TCA
 

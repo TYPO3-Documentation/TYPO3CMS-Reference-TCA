@@ -28,14 +28,14 @@ itemsProcFunc
 Passed parameters
 =================
 
-*  :php:`items` (passed by reference)
-*  :php:`config` (TCA config of the field)
-*  :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsref:itemsProcFunc>`)
-*  :php:`table` (current table)
-*  :php:`row` (current database record)
-*  :php:`field` (current field name)
-*  :php:`effectivePid` (correct page ID)
-*  :php:`site` (current site)
+*   :php:`items` (passed by reference)
+*   :php:`config` (TCA config of the field)
+*   :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsref:itemsProcFunc>`)
+*   :php:`table` (current table)
+*   :php:`row` (current database record)
+*   :php:`field` (current field name)
+*   :php:`effectivePid` (correct page ID)
+*   :php:`site` (current site)
 
 The following parameter only exists if the field has a :ref:`flex parent <columns-flex>`.
 
@@ -62,19 +62,19 @@ The configuration for a custom field :sql:`select_single_2` could look like this
 ..  code-block:: php
     :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php
 
-   'select_single_2' => [
-       'exclude' => 1,
-       'label' => 'select_single_2 itemsProcFunc',
-       'config' => [
-           'type' => 'select',
-           'renderType' => 'selectSingle',
-           'items' => [
-               ['label' => 'foo', 'value' => 1],
-               ['label' => 'bar', 'value' => 'bar'],
-           ],
-           'itemsProcFunc' => TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeSelect2ItemsProcFunc::class . '->itemsProcFunc',
-       ],
-   ]
+    'select_single_2' => [
+        'exclude' => 1,
+        'label' => 'select_single_2 itemsProcFunc',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['label' => 'foo', 'value' => 1],
+                ['label' => 'bar', 'value' => 'bar'],
+            ],
+            'itemsProcFunc' => TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeSelect2ItemsProcFunc::class . '->itemsProcFunc',
+        ],
+    ]
 
 The referenced :php:`itemsProcFunc` method should populate the items by filling :php:`$params['items']`:
 

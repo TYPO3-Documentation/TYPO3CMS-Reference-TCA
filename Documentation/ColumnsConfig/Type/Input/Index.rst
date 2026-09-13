@@ -112,7 +112,7 @@ the JavaScript code for client side validation called `returnFieldJS()` and two 
 `deevaluateFieldValue()` called when opening the record and `evaluateFieldValue()` called for validation when
 saving the record.
 
-.. hint::
+..  hint::
 
     See EXT:redirects :php:`\TYPO3\CMS\Redirects\Evaluation\SourceHost` for a
     working example. For more information about adding JavaScript modules
