@@ -26,7 +26,7 @@ Auto-created columns from 'ctrl'
     Setting them in the overrides like :file:`Configuration/TCA/Overrides/something.php`
     has no effect.
 
-.. _ctrl-auto-created-columns-loading-order:
+..  _ctrl-auto-created-columns-loading-order:
 
 Load order when building TCA
 ----------------------------
