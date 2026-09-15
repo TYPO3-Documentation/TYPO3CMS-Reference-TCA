@@ -59,7 +59,7 @@ a column in a "base" TCA file (:file:`Configuration/TCA`) - the Core will not ov
 Or, a developer can decide to let the Core auto-create a column, but
 then override single properties in :file:`Configuration/TCA/Overrides` files.
 
-For example, if this is a :sql:`pages` "base" file (loading step 1):
+For example, if this is a `pages` "base" file (loading step 1):
 
 ..  literalinclude:: _CodeSnippets/_AutoCreatedColumns/_pages.php
     :caption: EXT:core/Configuration/TCA/pages.php (Excerpt)

@@ -18,7 +18,7 @@ can be selected.
     :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
 
 The relationship gets stored in the intermediate table
-:sql:`sys_category_record_mm`. Category counts are only stored on the
+`sys_category_record_mm`. Category counts are only stored on the
 local side.
 
 ..  _columns-category-one-to-one-example:
