@@ -92,7 +92,8 @@ implementing a rendering. See :ref:`FormEngine docs
 4.  Implement the FormElement class
 
     The `renderType` can be implemented by extending the class
-    :php:`AbstractFormElement` and overriding the function :php:`render()`:
+    :php-short:`\TYPO3\CMS\Backend\Form\Element\AbstractFormElement` and
+    overriding the function :php:`render()`:
 
     ..  literalinclude:: _includes/_SpecialFieldElement.php
         :caption: EXT:my_extension/Classes/Form/Element/SpecialFieldElement.php
