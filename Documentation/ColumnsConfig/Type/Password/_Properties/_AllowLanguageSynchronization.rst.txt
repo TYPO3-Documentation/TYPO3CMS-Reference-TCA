@@ -14,7 +14,7 @@
         and if a localized record is edited, this setting enables FieldWizard
         :ref:`LocalizationStateSelector <columns-input-properties-fieldWizard-localizationStateSelector>`:
         Two or three radio buttons shown below the field input. The state of this is
-        stored in a json encoded array in the database table called :code:`l10n_state`.
+        stored in a json encoded array in the database table called `l10n_state`.
         It tells the DataHandler which fields of the localization records should be kept
         in sync if the underlying default or source record changes.
 

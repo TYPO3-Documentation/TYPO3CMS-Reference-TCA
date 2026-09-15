@@ -14,7 +14,7 @@
 
 ..  rubric:: Field quoting
 
-The example below uses the special field quoting syntax :php:`{#...}` around
+The example below uses the special field quoting syntax `{#...}` around
 identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as possible.
 Note that :sql:`ORDER BY` and :sql:`GROUP BY`
 should NOT be quoted, since they always receive proper quoting automatically

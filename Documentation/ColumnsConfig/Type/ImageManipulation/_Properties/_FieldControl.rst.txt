@@ -15,7 +15,7 @@
         :type: array
         :Scope: fieldControl
 
-        The element browser field control used in :code:`type='imageManipulation'` renders a
+        The element browser field control used in `type='imageManipulation'` renders a
         button to open an element browser to choose a imageManipulation.
 
         It is enabled by default if rendering a imageManipulation element.

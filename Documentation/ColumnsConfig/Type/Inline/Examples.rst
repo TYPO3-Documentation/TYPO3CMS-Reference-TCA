@@ -112,8 +112,8 @@ Add a custom fieldInformation
 We show a very minimal example which adds a custom fieldInformation for the
 inline type in tt_content. Adding a fieldWizard is done in a similar way.
 
-As explained in the :ref:`description <columns-inline>`, :code:`fieldInformation`
-or :code:`fieldWizard` must be configured within the :code:`ctrl` **for the field
+As explained in the :ref:`description <columns-inline>`, `fieldInformation`
+or `fieldWizard` must be configured within the `ctrl` **for the field
 type inline** - as it is a container.
 
 ..  rst-class:: bignums-xxl
@@ -177,7 +177,7 @@ the child table TCA:
 Override the default value of a child tables field
 --------------------------------------------------
 
-This overrides the :code:`default` columns property of a child field in an inline relation from within
+This overrides the `default` columns property of a child field in an inline relation from within
 the parent if a new child is created:
 
 ..  literalinclude:: _Snippets/_overrideChildTcaDefault.php
@@ -197,7 +197,7 @@ This overrides the foreign_selector field target field config, defined in the
 
 ..  note::
     It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsOverrides>`
-    of an inline parent in the :code:`['types']` section.
+    of an inline parent in the `['types']` section.
 
 ..  _columns-inline-properties-override-child-tca-examples-example-override:
 

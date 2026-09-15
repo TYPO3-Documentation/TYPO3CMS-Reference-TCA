@@ -31,7 +31,7 @@
 
    It is also possible to make the type depend on the value of a related record,
    for example to switch using the type field of a
-   foreign table. The syntax is :code:`relation_field:foreign_type_field`.
+   foreign table. The syntax is `relation_field:foreign_type_field`.
    For example the `sys_file_metadata` table takes its type from the
    `sys_file` table.
 
@@ -45,7 +45,7 @@ The type stored in a field
 .. include:: /Images/Rst/CtrlType0.rst.txt
 
 The table `tx_styleguide_type` table from the "examples" extension defines different types. The field used for differentiating
-the types is the "record\_type" field. Hence we have the following in the :code:`['ctrl']` section
+the types is the "record\_type" field. Hence we have the following in the `['ctrl']` section
 of the tx\_examples\_dummy table:
 
 .. include:: /CodeSnippets/CtrlTypeCtrl.rst.txt
