@@ -48,19 +48,19 @@ corresponding file in the system extension.
 
 Common examples are taken from the following tables:
 
-:sql:`pages`
+`pages`
     :file:`public/typo3/sysext/core/Configuration/TCA/pages.php`
 
-:sql:`sys_category`
+`sys_category`
     :file:`public/typo3/sysext/core/Configuration/TCA/sys_category.php`
 
-:sql:`sys_file`
+`sys_file`
     :file:`public/typo3/sysext/core/Configuration/TCA/sys_file.php`
 
-:sql:`sys_template`
+`sys_template`
     :file:`public/typo3/sysext/frontend/Configuration/TCA/sys_template.php`
 
 
-:sql:`tt_content`
+`tt_content`
     :file:`public/typo3/sysext/frontend/Configuration/TCA/tt_content.php`
 

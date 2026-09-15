@@ -10,7 +10,7 @@ Datetime
 ..  versionchanged:: 13.0
     The database type has changed from :sql:`int signed` to :sql:`bigint signed`
     when the field is auto-generated (with the exception of the columns
-    :sql:`tstamp`, :sql:`crdate`, :sql:`starttime`, :sql:`endtime` that
+    `tstamp`, `crdate`, `starttime`, `endtime` that
     still use :sql:`int signed`).
     This allows to store dates from some million years ago to far into the
     future.

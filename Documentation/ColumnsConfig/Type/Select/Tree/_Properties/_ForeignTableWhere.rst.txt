@@ -16,7 +16,7 @@
 
 The example below uses the special field quoting syntax :php:`{#...}` around
 identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as possible.
-Note that :php:`ORDER BY` and :php:`GROUP BY`
+Note that :sql:`ORDER BY` and :sql:`GROUP BY`
 should NOT be quoted, since they always receive proper quoting automatically
 through the API.
 
@@ -31,7 +31,7 @@ It is possible to use markers in the WHERE clause:
         The field name part of the marker is not in upper case letters.
         It must match the exact case used in the database.
 
-        So for example :sql:`sys_language_uid` must be referenced using
+        So for example `sys_language_uid` must be referenced using
         `###REC_FIELD_sys_language_uid###`
 
 ###THIS\_UID###

@@ -19,7 +19,7 @@ The "deny list" approach for single field values has been removed, the only allo
 for `authMode` is `explicitAllow`. Extensions using config value `explicitDeny`
 should be adapted to switch to `explicitAllow` instead. The upgrade wizard
 "Migrate backend groups "explicit_allowdeny" field to simplified format." that transfers
-existing :sql:`be_groups` rows to the new format, **drops** any :sql:`DENY` fields and instructs
+existing `be_groups` rows to the new format, **drops** any `DENY` fields and instructs
 admins to not set new access rights of affected backend groups.
 
 ..  rubric:: Migration: Using authMode='individual'

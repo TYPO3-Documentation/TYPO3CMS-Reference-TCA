@@ -30,7 +30,7 @@ Language fields in detail
 
 ..  _field-sys_language_uid:
 
-:sql:`sys_language_uid`
+`sys_language_uid`
     This field gets defined in
     :ref:`ctrl->languageField <ctrl-reference-languagefield>`. If this field is
     defined a record in this table can be translated into another language.
@@ -39,7 +39,7 @@ Language fields in detail
 
 ..  _field-l10n_parent:
 
-:sql:`l10n_parent`
+`l10n_parent`
     This field gets defined in
     :ref:`ctrl->transOrigPointerField <ctrl-reference-transorigpointerfield>`.
 
@@ -51,24 +51,24 @@ Language fields in detail
     ..  include:: /Images/ManualScreenshots/OtherLanguageContent.rst.txt
 
     ..  note::
-        Sometimes :sql:`l18n_parent` is used for this field in Core tables. This
+        Sometimes `l18n_parent` is used for this field in Core tables. This
         is for historic reasons.
 
 ..  _field-l10n_source:
 
-:sql:`l10n_source`
+`l10n_source`
     This field gets defined in
     :ref:`ctrl->translationSource <ctrl-reference-translationSource>`.
 
     This field contains the uid of the record the translation was created from.
     For example if your default language is English and you already translated a
     record into German you can base the Suisse-German translation on the German
-    record. In this case :sql:`l10n_parent` would contain the uid of the English
-    record while :sql:`l10n_source` contains the uid of the German record.
+    record. In this case `l10n_parent` would contain the uid of the English
+    record while `l10n_source` contains the uid of the German record.
 
 ..  _field-l10n_diffsource:
 
-:sql:`l10n_diffsource`
+`l10n_diffsource`
     This field gets defined in
     :ref:`ctrl->transOrigPointerField <ctrl-reference-transorigpointerfield>`.
 
@@ -78,7 +78,7 @@ Language fields in detail
     be a display in the form of the difference visually:
 
     ..  note::
-        Sometimes :sql:`l18n_diffsource` is used for this field in Core tables. This
+        Sometimes `l18n_diffsource` is used for this field in Core tables. This
         has historic reasons.
 
 ..  _fields_language-example:

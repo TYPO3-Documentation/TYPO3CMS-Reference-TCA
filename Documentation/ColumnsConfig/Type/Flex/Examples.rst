@@ -14,7 +14,7 @@ Simple FlexForm
 The extension :ref:`styleguide <styleguide>` provides some sample FlexForms.
 The "simple FlexForm" field provides a very basic
 configuration with just a select-type field to choose a page from the
-table :sql:`pages`.
+table `pages`.
 
 ..  include:: /Images/Rst/FlexFile1.rst.txt
 
@@ -37,15 +37,15 @@ the field configurations we normally set up in the :php:`$GLOBALS['TCA']` array.
 FlexForm in a plugin
 ====================
 
-The data structure for a FlexForm can also be loaded in the :sql:`pi_flexform`
-field of the :sql:`tt_content` table by adding the following in the
+The data structure for a FlexForm can also be loaded in the `pi_flexform`
+field of the `tt_content` table by adding the following in the
 TCA Overrides of an extension, see this example from the extension :composer:`t3docs/blog-example`:
 
 ..  literalinclude:: _CodeSnippets/_tt_content_plugin.php
     :linenos:
     :caption: EXT:blog_example/Configuration/TCA/Overrides/tt_content.php
 
-In line 18ff the field :sql:`pi_flexform` is added to the display
+In line 18ff the field `pi_flexform` is added to the display
 of fields when the record type of the plugin is selected.
 
 In line 25ff the method `addPiFlexFormValue()` from class

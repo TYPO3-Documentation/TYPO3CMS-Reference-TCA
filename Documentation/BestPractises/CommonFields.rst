@@ -13,11 +13,11 @@ Mandatory fields
 
 If a table has a TCA definition, TYPO3 will automatically create the following fields:
 
-:sql:`uid`
+`uid`
     An auto-incrementing unique identifier. This field is the table key
     and is used as a reference in relationships between records.
 
-:sql:`pid`
+`pid`
     The `uid` field of the parent page. A record is situated on its parent page.
     If this value is 0 the record is not connected to a page.
 
@@ -43,7 +43,7 @@ Fields used by convention
 Soft delete
 ===========
 
-:sql:`deleted`
+`deleted`
     This field enables soft delete in records. Configure it
     by setting :ref:`ctrl->delete <ctrl-reference-delete>`:
 
@@ -56,7 +56,7 @@ Soft delete
         The backend DataHandler and Extbase will automatically execute
         (hard) :sql:`DELETE` statements.
 
-    The :sql:`deleted` field is not visible in backend forms. It is
+    The `deleted` field is not visible in backend forms. It is
     handled separately by the DataHandler and therefore does not need to be
     defined in the `columns` section.
 
@@ -70,7 +70,7 @@ Enablecolumns
 
 ..  _field_hidden:
 
-:sql:`hidden`
+`hidden`
     This field enables soft hiding of records. Configure it
     by setting :ref:`ctrl->enablecolumns->disabled <ctrl-reference-enablecolumns>`:
 
@@ -80,7 +80,7 @@ Enablecolumns
 ..  _field_starttime:
 ..  _field_endtime:
 
-:sql:`starttime` and :sql:`endtime`
+`starttime` and `endtime`
     These fields can enable records at a starttime and disable them at
     an endtime. Configure them
     by setting :ref:`ctrl->enablecolumns->starttime or endtime <ctrl-reference-enablecolumns>`:
@@ -90,7 +90,7 @@ Enablecolumns
 
 ..  _field_fe_group:
 
-:sql:`fe_group`
+`fe_group`
     This field defines which field is used for access control. Configure it
     by setting :ref:`ctrl->enablecolumns->fe_group <ctrl-reference-enablecolumns>`:
 
@@ -107,7 +107,7 @@ Enablecolumns
 Manual sorting in the backend
 =============================
 
-:sql:`sorting`
+`sorting`
     This field is used to sort records in the backend. Configure it
     by setting :ref:`ctrl->sortby <ctrl-reference-sortby>`:
 
@@ -137,7 +137,7 @@ in the :ref:`columns` section of the TCA.
 
 ..  _field_tstamp:
 
-:sql:`tstamp`
+`tstamp`
     This field is automatically updated to the current timestamp
     when the record is updated or saved in the DataHandler.
 
@@ -145,7 +145,7 @@ in the :ref:`columns` section of the TCA.
 
 ..  _field_crdate:
 
-:sql:`crdate`
+`crdate`
     This field is automatically set to the current timestamp
     if the record is created by the DataHandler.
 
@@ -153,7 +153,7 @@ in the :ref:`columns` section of the TCA.
 
 ..  _field_t3_origuid:
 
-:sql:`t3_origuid`
+`t3_origuid`
     Field name containing the uid of the original record if a
     record is created as a copy or new version of another record.
 
