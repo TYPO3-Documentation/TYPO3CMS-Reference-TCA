@@ -110,7 +110,7 @@ MM_table_where
 
        {#uid_local} = ###THIS_UID###
 
-    The above example uses the special field quoting syntax :php:`{#...}` around
+    The above example uses the special field quoting syntax `{#...}` around
     identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as possible.
 
 ..  _tca_property_MM_auto_creation_mm_table:
@@ -129,13 +129,13 @@ takes care of proper schema definition.
 
 Extensions are strongly encouraged to drop :file:`ext_tables.sql`
 :sql:`CREATE TABLE` definitions for those intermediate tables referenced by
-:php:`TCA` table columns. Dropping these definitions allows the Core to adapt
+`TCA` table columns. Dropping these definitions allows the Core to adapt
 and migrate definitions if needed.
 
 The mm tables are automatically created if:
 
-*   A table column TCA config defines `MM` with :php:`type='select'`,
-    :php:`type='group'` or :php:`type='inline'`.
+*   A table column TCA config defines `MM` with `type='select'`,
+    `type='group'` or `type='inline'`.
 *   The "MM" intermediate table has *no* TCA table definition (!).
 *   A table of the resulting name is not defined in :file:`ext_tables.sql`.
 
@@ -197,7 +197,7 @@ The intermediate table may have the following fields:
 
 uid\_local, uid\_foreign
     Storing uids of both sides. If done right, this is reflected in the table
-    name - :code:`tx_foo_local_foreign_mm`
+    name - `tx_foo_local_foreign_mm`
 
 sorting, sorting\_foreign
     Are required fields used for ordering the items.

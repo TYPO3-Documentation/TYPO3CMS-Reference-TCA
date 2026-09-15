@@ -12,7 +12,7 @@
     This allows different field column definitions to be applied when a record of this type is edited. Currently,
     only the display of form fields is affected, not data handling.
 
-    A typical property that can be changed is :code:`renderType`.
+    A typical property that can be changed is `renderType`.
 
     The core uses this property to override the "bodytext" field config of table "tt_content". If a record
     of type "text" is edited, it adds "enableRichtext = 1" to trigger an RTE to the default "bodytext" configuration,

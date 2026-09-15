@@ -6,7 +6,7 @@ textTable
 =========
 
 This page describes the :ref:`text <columns-text>` type with the
-:php:`renderType='textTable'`.
+`renderType='textTable'`.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
