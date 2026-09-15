@@ -114,7 +114,7 @@
         :Scope: fieldControl
         :Types: :ref:`group <columns-group>`
 
-        The element browser field control used in :code:`type='group'` renders a
+        The element browser field control used in `type='group'` renders a
         button to open an element browser. It is enabled by default if rendering a
         group element.
 
@@ -146,8 +146,8 @@
             Use a render type from core or your own. Custom render types can be
             registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
 
-        The clipboard control adds a control button for :code:`type='group'` to paste records from
-        a users clipboard into the selection. It is enabled by default for :code:`type='group'` and
+        The clipboard control adds a control button for `type='group'` to paste records from
+        a users clipboard into the selection. It is enabled by default for `type='group'` and
         shown below the **element browser** if the
         order has not been changed using the `before` and `after` keywords. It can be turned off by
         setting `disabled` to true, just like any other fieldControl.

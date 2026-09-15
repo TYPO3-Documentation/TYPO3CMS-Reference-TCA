@@ -17,7 +17,7 @@ document inside a field in the tt_content database table with root <T3FlexForms>
 The setup file consists of data structures containing TCA field information that
 are used to generate the backend form. The XML document in the database is the TCA field
 information plus the values entered by the editor in the backend form (saved there
-by function :code:`\TYPO3\CMS\Core\Utility\GeneralUtility::xml2array()`)
+by function `\TYPO3\CMS\Core\Utility\GeneralUtility::xml2array()`)
 
 
 When creating the XML setup file there are some limitations:
@@ -31,12 +31,12 @@ When creating the XML setup file there are some limitations:
 *   The charset will be the same as the current backend UTF-8. Make sure that the
     files use UTF-8.
 
-*   :php:`type='inline'` and types that point to other database tables are not
+*   `type='inline'` and types that point to other database tables are not
     allowed.
 
 ..  versionchanged:: 13.0
 
-    Since TYPO3 13.0, :php:`type='select'` (if using
+    Since TYPO3 13.0, `type='select'` (if using
     `foreign_table`) is not allowed and will raise an exception.
     Note this only applies to FlexForm sections, not general
     FlexForm usage. For details and migration see

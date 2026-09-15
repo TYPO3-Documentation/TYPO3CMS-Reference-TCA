@@ -42,9 +42,9 @@
             Takes the value of "current pid" if not set, forces pid=0 if records from this
             table are only allowed at root level.
 
-            -  :code:`###CURRENT_PID###`
-            -  :code:`###THIS_UID###`
-            -  :code:`###SITEROOT###`
+            -  `###CURRENT_PID###`
+            -  `###THIS_UID###`
+            -  `###SITEROOT###`
 
         ..  confval:: title
             :name: select-byside-fieldControl-addRecord-options-title

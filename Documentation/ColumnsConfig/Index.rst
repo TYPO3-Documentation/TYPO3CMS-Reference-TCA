@@ -11,9 +11,9 @@ The field type influences the rendering of the form field in the backend. It
 also influences the processing of data on saving the values. Those behaviour can
 be influenced by further properties.
 
-Section :code:`['columns'][*]['config']` (where :code:`*` stands for a table column) is the main workhorse when it comes to single field configuration.
-The main property is :code:`type`, it specifies the DataHandler processing and database value. Additionally,
-property :code:`renderType` specifies how a field is rendered. The renderType is sometimes optional. Both properties
+Section `['columns'][*]['config']` (where `*` stands for a table column) is the main workhorse when it comes to single field configuration.
+The main property is `type`, it specifies the DataHandler processing and database value. Additionally,
+property `renderType` specifies how a field is rendered. The renderType is sometimes optional. Both properties
 together specify the set of properties that are valid for one field.
 
 This section of the documentation is first split by type to give an overview of what can be done

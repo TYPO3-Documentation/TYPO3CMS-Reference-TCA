@@ -30,7 +30,7 @@ Passed parameters
 
 *   `items` (passed by reference)
 *   `config` (TCA config of the field)
-*   :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsref:itemsProcFunc>`)
+*   `TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsref:itemsProcFunc>`)
 *   `table` (current table)
 *   `row` (current database record)
 *   `field` (current field name)
