@@ -55,7 +55,7 @@
         like `width` and `height`.
 
         field (required)
-            The table column name, which contains the uid of the image reference. Usually this is :sql:`uid_local`.
+            The table column name, which contains the uid of the image reference. Usually this is `uid_local`.
         width
             The width of the thumbnail.
         height

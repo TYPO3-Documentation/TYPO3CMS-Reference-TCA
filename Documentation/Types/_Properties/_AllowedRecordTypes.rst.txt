@@ -12,7 +12,7 @@
         `Deprecation: #108557 - TCA option allowedRecordTypes for Page Types <https://docs.typo3.org/permalink/changelog:deprecation-108557-1768610680>`_
 
     ..  note::
-        This property is only interpreted in the table :sql:`pages`.
+        This property is only interpreted in the table `pages`.
 
     The array can contain a list of table names or a single entry with an asterisk
     `*` to allow all types within a page type.

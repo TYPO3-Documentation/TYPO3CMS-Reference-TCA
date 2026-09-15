@@ -54,7 +54,7 @@ Select field with options
 -------------------------
 
 The field controls are also used in the core. The following example is from
-the table :sql:`be_groups`:
+the table `be_groups`:
 
 ..  include:: /Images/Rst/FileMountpoints.rst.txt
 

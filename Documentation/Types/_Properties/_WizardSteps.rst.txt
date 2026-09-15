@@ -2,7 +2,7 @@
     :name: types-wizardSteps
     :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['wizardSteps']
     :type: array
-    :Scope: Table :sql:`tables` only
+    :Scope: Table `tables` only
 
     ..  versionadded:: 14.2
         It is possible to configure fields, steps (and their order)
