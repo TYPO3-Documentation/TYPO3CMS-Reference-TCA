@@ -10,12 +10,14 @@
     Array to configure additional items in render containers of :ref:`FormEngine <t3coreapi:FormEngine>`,
     see section :ref:`Node expansion <t3coreapi:FormEngine-Rendering-NodeExpansion>`.
 
-    Next to single elements, some render container allow to be "enriched" with additional information via
-    the "node expansion" API. Currently, the :php:`OuterWrapContainer` implements `fieldWizard` and
-    `fieldInformation`. :php:`InlineControlContainer` implements `fieldWizard` and comes with
-    the default wizard `localizationStateSelector`. Custom containers may implement expansion nodes, too,
-    and if implemented correctly will automatically have their configuration merged with the definition
-    provided in this TCA array.
+    Next to single elements, some render container allow to be "enriched" with
+    additional information via the "node expansion" API. Currently, the
+    :php:`OuterWrapContainer` implements `fieldWizard` and `fieldInformation`.
+    :php-short:`\TYPO3\CMS\Backend\Form\Container\InlineControlContainer`
+    implements `fieldWizard` and comes with the default wizard
+    `localizationStateSelector`. Custom containers may implement expansion
+    nodes, too, and if implemented correctly will automatically have their
+    configuration merged with the definition provided in this TCA array.
 
     The basic array looks like::
 
@@ -45,12 +47,15 @@
         -   :code:`outerWrapContainer` type which corresponds to the
             :php:`OuterWrapContainer` (class).
         -   :code:`inlineControlContainer` type which corresponds to the
-            :php:`InlineControlContainer` class
-        -   :code:`inline` type which corresponds to the :php:`InlineControlContainer`
+            :php-short:`\TYPO3\CMS\Backend\Form\Container\InlineControlContainer`
+            class
+        -   :code:`inline` type which corresponds to the
+            :php-short:`\TYPO3\CMS\Backend\Form\Container\InlineControlContainer`
             class.
 
     renderType
-        refers to a registered node name from :php:`NodeFactory`
+        refers to a registered node name from
+        :php-short:`\TYPO3\CMS\Backend\Form\NodeFactory`
 
     before, after
         can be set to sort single wizards relative to each other.

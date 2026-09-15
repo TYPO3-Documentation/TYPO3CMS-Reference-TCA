@@ -25,7 +25,9 @@ These are the :ref:`none type <columns-none>`, the :ref:`passthrough type <colum
 
 Characteristics of `passthrough`:
 
-*   A value sent to the :php:`DataHandler` is kept as is and put into the database field. However, the default TYPO3 backend forms never send data for a `passthrough` field.
+*   A value sent to the :php-short:`\TYPO3\CMS\Core\DataHandling\DataHandler` is
+    kept as is and put into the database field. However, the default TYPO3
+    backend forms never send data for a `passthrough` field.
 *   Unlike the field type `none`, the field type `passthrough` must have a database field.
 *   The TYPO3 backend forms do not render anything for `passthrough` fields by default. But they can be combined with a custom
     `renderType` to display something. A field of type `user` is better suited for such use cases, though.

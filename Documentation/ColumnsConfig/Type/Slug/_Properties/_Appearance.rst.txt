@@ -21,7 +21,8 @@
 
         *  The first argument is the parameters array containing the site object,
            the language id, the current table and the current row.
-        *  The second argument is the reference object :php:`TcaSlug`.
+        *  The second argument is the reference object
+           :php-short:`\TYPO3\CMS\Backend\Form\FormDataProvider\TcaSlug`.
 
         The user function should return the string which is then used for display
         purposes.
