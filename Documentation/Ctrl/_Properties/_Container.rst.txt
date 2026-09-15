@@ -12,7 +12,8 @@
 
     Next to single elements, some render container allow to be "enriched" with
     additional information via the "node expansion" API. Currently, the
-    :php:`OuterWrapContainer` implements `fieldWizard` and `fieldInformation`.
+    :php-short:`\TYPO3\CMS\Backend\Form\Container\FormWrapContainer`
+    implements `fieldWizard` and `fieldInformation`.
     :php-short:`\TYPO3\CMS\Backend\Form\Container\InlineControlContainer`
     implements `fieldWizard` and comes with the default wizard
     `localizationStateSelector`. Custom containers may implement expansion
@@ -39,13 +40,14 @@
 
     <containerRenderType>
         should be a defined container render type.
-        You can find more about the `outerWrapContainer` and
+        You can find more about the `formWrapContainer` and
         `inlineControlContainer` in the FormEngine documentation section on
         :ref:`rendering <t3coreapi:FormEngine-Rendering>`.
         Valid types are for example:
 
-        -   `outerWrapContainer` type which corresponds to the
-            :php:`OuterWrapContainer` (class).
+        -   `formWrapContainer` type which corresponds to the
+            :php-short:`\TYPO3\CMS\Backend\Form\Container\FormWrapContainer`
+            class.
         -   `inlineControlContainer` type which corresponds to the
             :php-short:`\TYPO3\CMS\Backend\Form\Container\InlineControlContainer`
             class

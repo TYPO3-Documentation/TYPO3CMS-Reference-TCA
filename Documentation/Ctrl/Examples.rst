@@ -91,8 +91,9 @@ Register the new node as `fieldWizard` of `tt_content` table in an
 ..  literalinclude:: _CodeSnippets/_WizardRegistration/_tca_overrides.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
-In PHP, the node has to implement an interface, but can return any additional HTML which is rendered in the
-"OuterWrapContainer" between the record title and the field body when editing a record:
+In PHP, the node has to implement an interface, but can return any additional
+HTML. The `FormWrapContainer` renders it above the fields when editing a
+record:
 
 ..  include:: /Images/ManualScreenshots/OuterFieldWizard.rst.txt
 
