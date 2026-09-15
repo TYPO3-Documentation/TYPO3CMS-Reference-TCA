@@ -114,7 +114,7 @@ MM_table_where
 
 ..  confval:: MM_hasUidField
     ..  versionchanged:: 13.0
-        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
+        This setting is obsolete. Remove all occurrences of `MM_hasUidField`
         from TCA. The :sql:`uid` column is added as primary key automatically,
         if :php:`multiple = true` is set, otherwise a combined primary key of
         fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually
@@ -141,7 +141,7 @@ and migrate definitions if needed.
 
 The mm tables are automatically created if:
 
-*   A table column TCA config defines :php:`MM` with :php:`type='select'`,
+*   A table column TCA config defines `MM` with :php:`type='select'`,
     :php:`type='group'` or :php:`type='inline'`.
 *   The "MM" intermediate table has *no* TCA table definition (!).
 *   A table of the resulting name is not defined in :file:`ext_tables.sql`.

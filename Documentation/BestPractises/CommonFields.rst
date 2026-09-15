@@ -58,7 +58,7 @@ Soft delete
 
     The :sql:`deleted` field is not visible in backend forms. It is
     handled separately by the DataHandler and therefore does not need to be
-    defined in the :php:`columns` section.
+    defined in the `columns` section.
 
 Enablecolumns
 =============

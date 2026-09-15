@@ -6,11 +6,11 @@
 TCA column type `category`
 ==========================
 
-The TCA type :php:`category` can be used to render a category tree.
+The TCA type `category` can be used to render a category tree.
 
-While using the type :php:`category`, TYPO3 takes care of generating the
+While using the type `category`, TYPO3 takes care of generating the
 necessary TCA configuration.
-Developers only have to define the TCA column and add :php:`category` as the
+Developers only have to define the TCA column and add `category` as the
 desired TCA type in the tables's TCA file (inside or outside of the Overrides folder).
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
@@ -44,7 +44,7 @@ The following options can be overridden via :ref:`page TSconfig, TCE form
 
     It is still possible to configure a category tree with `type=select`
     and `renderType=selectTree` when you want to override specific fields,
-    but in most cases the simplified :php:`category` TCA type is sufficient.
+    but in most cases the simplified `category` TCA type is sufficient.
 
 ..  _columns-category-properties:
 

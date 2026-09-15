@@ -12,7 +12,7 @@ Password
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-The TCA type :php:`password` should be used for input values that represent
+The TCA type `password` should be used for input values that represent
 passwords.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`

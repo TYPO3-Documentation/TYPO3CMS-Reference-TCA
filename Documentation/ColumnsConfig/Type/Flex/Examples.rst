@@ -18,7 +18,7 @@ table :sql:`pages`.
 
 ..  include:: /Images/Rst/FlexFile1.rst.txt
 
-The corresponding TCA column loads the DataStructure (:php:`ds`) form an
+The corresponding TCA column loads the DataStructure (`ds`) form an
 external XML file:
 
 ..  include:: /CodeSnippets/FlexFile1.rst.txt

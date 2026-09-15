@@ -43,7 +43,7 @@ fieldWizard
         ];
 
     This is be merged with the configuration from TCA, if there is any. Below example disables the default
-    :php:`localizationStateSelector` wizard.
+    `localizationStateSelector` wizard.
 
     ..  code-block:: php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
@@ -59,9 +59,9 @@ fieldWizard
         ],
 
     It is possible to add own wizards by adding them to the TCA of the according field and pointing to a registered
-    renderType, to resort wizards by overriding the :php:`before` and :php:`after` keys, to hand over additional
-    options in the optional :php:`options` array to specific wizards, and to disable single wizards using the
-    :php:`disabled` key. Developers should have a look at the
+    renderType, to resort wizards by overriding the `before` and `after` keys, to hand over additional
+    options in the optional `options` array to specific wizards, and to disable single wizards using the
+    `disabled` key. Developers should have a look at the
     :ref:`FormEngine docs <t3coreapi:FormEngine-Rendering-NodeExpansion>` for details.
 
 

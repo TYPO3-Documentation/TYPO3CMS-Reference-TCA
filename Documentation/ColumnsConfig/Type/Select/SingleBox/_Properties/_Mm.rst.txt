@@ -42,13 +42,13 @@
 
     If you want to make a MM relation editable from the foreign side
     (bidirectional) of the relation as well, you need to set
-    :php:`MM_opposite_field` on the foreign side to the field name on
+    `MM_opposite_field` on the foreign side to the field name on
     the local side.
 
     For example, if the field :sql:`companies.employees` is your local side and
     you want to make the same relation editable from the foreign side of the
     relation in a field called :sql:`persons.employers`, you would need to set
-    the :php:`MM_opposite_field` value of the TCA configuration of the
+    the `MM_opposite_field` value of the TCA configuration of the
     :sql:`persons.employers` field to the string "employees".
 
     ..  note::
@@ -69,7 +69,7 @@
     :doc:`workspace <ext_workspaces:Index>`) so that relations are carried over
     with the correct information.
 
-    :php:`MM_oppositeUsage` is an array which references which fields contain
+    `MM_oppositeUsage` is an array which references which fields contain
     the references to the opposite side, so that they can be queried for match
     field configuration.
 
@@ -97,7 +97,7 @@
     :name: select-singlebox-mm-hasUidField
 
     ..  versionchanged:: 13.0
-        This setting is obsolete. Remove all occurrences of :php:`MM_hasUidField`
+        This setting is obsolete. Remove all occurrences of `MM_hasUidField`
         from TCA. The :sql:`uid` column is added as primary key automatically,
         if :php:`multiple = true` is set, otherwise a combined primary key of
         fields :sql:`uid_local`, :sql:`uid_foreign` plus eventually

@@ -30,13 +30,13 @@ The TCA of the styleguide extension provides palettes with different properties.
 
 ..  include:: /Images/Rst/Palette.rst.txt
 
-Palettes get defined in the section :php:`palettes` of the tables TCA array.
+Palettes get defined in the section `palettes` of the tables TCA array.
 
 The following TCA section specifies the different palettes.
 
 ..  include:: /CodeSnippets/Palettes.rst.txt
 
-The palettes then get referenced in the :php:`types` section:
+The palettes then get referenced in the `types` section:
 
 ..  include:: /CodeSnippets/PalettesTypes.rst.txt
 

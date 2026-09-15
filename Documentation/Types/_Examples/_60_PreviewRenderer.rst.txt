@@ -14,7 +14,7 @@ PreviewRenderer examples
 
 Demonstrates property: :confval:`types-previewRenderer`.
 
-This specifies the preview renderer only for records with the c :php:`blogexample_list`
+This specifies the preview renderer only for records with the c `blogexample_list`
 as determined by the field `Ctype` of the table `tt_content`.
 
 This could be used to preview the blog plugin in the page module.

@@ -66,7 +66,7 @@ Example: A basic slug field
 ===========================
 
 This example limits the length of the slug to 50 characters. It takes only the
-field :php:`input_1` into account for generating the slug.
+field :sql:`input_1` into account for generating the slug.
 
 ..  include:: /Images/Rst/Slug2.rst.txt
 
@@ -79,7 +79,7 @@ Example: A slug field with prefix hook
 
 This example uses a custom slug prefix hook via
 :php:`config['appearance']['prefix']` to adapt the displayed prefix. It takes
-the two fields :php:`input_1` and :php:`input_2` into account for generating
+the two fields :sql:`input_1` and :sql:`input_2` into account for generating
 the slug.
 
 ..  include:: /Images/Rst/Slug1.rst.txt
