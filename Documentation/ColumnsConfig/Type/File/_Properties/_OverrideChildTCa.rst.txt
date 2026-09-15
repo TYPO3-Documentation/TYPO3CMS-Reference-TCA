@@ -6,5 +6,5 @@
     :type: array
     :Scope: Display
 
-    Override the TCA of the :sql:`sys_file_reference` records representing
+    Override the TCA of the `sys_file_reference` records representing
     the files attached to this record.

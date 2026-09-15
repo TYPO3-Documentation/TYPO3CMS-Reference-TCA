@@ -11,7 +11,7 @@
     :Scope: Display
 
     Array of sub-properties. This is used, for example, in the Core for the
-    :sql:`sys_file` table:
+    `sys_file` table:
 
     ..  code-block:: php
         :caption: EXT:core/Configuration/TCA/sys_file.php
@@ -27,7 +27,7 @@
             ],
         ];
 
-    And `ignorePageTypeRestriction` is used for the :sql:`sys_note` table:
+    And `ignorePageTypeRestriction` is used for the `sys_note` table:
 
     ..  code-block:: php
         :caption: EXT:sys_note/Configuration/TCA/sys_note.php

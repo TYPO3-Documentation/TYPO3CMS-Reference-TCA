@@ -29,7 +29,7 @@ Select field with foreign table relation and field wizard:
 
 ..  include:: /CodeSnippets/SelectSingle12.rst.txt
 
-The table :sql:`tx_styleguide_elements_select_single_12_foreign` is defined as
+The table `tx_styleguide_elements_select_single_12_foreign` is defined as
 follows:
 
 ..  include:: /CodeSnippets/Manual/SelectSingle12ForeignPart.rst.txt

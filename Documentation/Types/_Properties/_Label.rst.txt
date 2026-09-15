@@ -15,7 +15,7 @@
     automatically benefit from this feature without any code changes. This includes
     record lists, page trees, history views, workspaces, and similar backend modules.
 
-    This is especially useful for tables like :sql:`tt_content` where different content
+    This is especially useful for tables like `tt_content` where different content
     element types may benefit from showing different fields. For example, an "Image"
     content element could display the image caption, while a "Text" element shows the
     header field.
@@ -43,9 +43,9 @@
 
     In this example:
 
-    *   All types use :sql:`header` as the primary label field (from :php:`ctrl['label']`).
-    *   The **article** type displays the :sql:`teaser` field if :sql:`header` is empty.
-    *   The **event** type displays :sql:`header` together with :sql:`event_date` and :sql:`location`
+    *   All types use `header` as the primary label field (from :php:`ctrl['label']`).
+    *   The **article** type displays the `teaser` field if `header` is empty.
+    *   The **event** type displays `header` together with `event_date` and `location`
         (since `label_alt_force` is enabled).
 
 ..  confval:: label_alt
