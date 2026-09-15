@@ -13,7 +13,7 @@ TCA column type `check`
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-The TCA type :php:`check` can be used to render checkboxes.
+The TCA type `check` can be used to render checkboxes.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.

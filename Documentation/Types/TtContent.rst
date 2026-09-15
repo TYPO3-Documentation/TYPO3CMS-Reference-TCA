@@ -40,7 +40,7 @@ or :guilabel:`Categories`) is defined in between. It's also possible to start
 with a custom tab by defining a `--div--` as the first item in the
 :confval:`types-showitem`. In this case, the :guilabel:`General` tab will be omitted.
 
-All those system fields, which are added based on the :php:`ctrl` section are
+All those system fields, which are added based on the `ctrl` section are
 also automatically removed from any custom palette and from the customized
 type's :confval:`types-showitem` definition.
 

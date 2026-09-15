@@ -12,7 +12,7 @@ Number
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-The TCA type :php:`number` should be used to input values representing numbers.
+The TCA type `number` should be used to input values representing numbers.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.

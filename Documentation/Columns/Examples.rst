@@ -66,7 +66,7 @@ The language mode is defined as follows:
 Disable the prefixLangTitle for the header field in tt_content
 ==============================================================
 
-Use the default behaviour instead of :php:`prefixLangTitle`: the field will
+Use the default behaviour instead of `prefixLangTitle`: the field will
 be copied without a prepended string.
 
 ..  code-block:: php

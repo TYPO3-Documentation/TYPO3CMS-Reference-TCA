@@ -32,7 +32,7 @@ follows:
 
 
 It can be used in another table as a foreign relation, for example in a field
-with render type :php:`singleSelect`:
+with render type `singleSelect`:
 
 .. include:: /CodeSnippets/SelectSingle12.rst.txt
 

@@ -11,11 +11,11 @@
 
     ..  versionchanged:: 14.0
         It is now recommended to define associative array keys for
-        :php:`items` using :php:`label` and :php:`value`. Existing numeric
+        `items` using `label` and `value`. Existing numeric
         arrays are automatically migrated during TCA processing.
 
         The Value Picker always behaves like a replace operation. Previous
-        :php:`mode` variants like :php:`append` and :php:`prepend` were removed. See also
+        `mode` variants like `append` and `prepend` were removed. See also
         `Breaking: #107677 - Drop prepend and append modes from TCA Value Picker <https://docs.typo3.org/permalink/changelog:breaking-107677-1760339783>`_.
 
 
@@ -24,7 +24,7 @@
         :php:`['label' => 'Shown label', 'value' => '#RRGGBB']`.
         The label can be plain text or a
         `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_.
-        The :php:`value` must be a hex color with exactly 7 characters,
+        The `value` must be a hex color with exactly 7 characters,
         including the leading hash (for example, :php:`'#FF8700'`).
 
 ..  rubric:: Example

@@ -5,13 +5,13 @@
 selectTree
 ==========
 
-The :php:`selectTree` render type is used to display hierarchical data in a
+The `selectTree` render type is used to display hierarchical data in a
 tree structure.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
-A field with the :php:`selectTree` render type allows you to represent data in
+A field with the `selectTree` render type allows you to represent data in
 a hierarchical manner, similar to a tree. It is typically used when working
 with database tables that have a hierarchical structure. The properties :ref:`treeConfig
 <columns-select-properties-treeconfig>` and
@@ -22,7 +22,7 @@ connection to the relevant database table. Optionally, you can also use
 sufficient on their own. The top-level item in the tree will always represent
 the descriptive name of the table.
 
-Regarding joining several tables, the :php:`selectTree` render type can handle multiple
+Regarding joining several tables, the `selectTree` render type can handle multiple
 tables through the configuration options.
 
 ..  contents:: Table of contents:

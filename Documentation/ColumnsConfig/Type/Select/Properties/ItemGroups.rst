@@ -71,8 +71,8 @@ handled via placeholder ``--div--`` items,
 which then rendered as :html:`<optgroup>` HTML elements in a dropdown.
 
 In larger installations or TYPO3 instances with lots of extensions, Plugins
-or Content Types (:php:`tt_content.CType`), or custom
-Page Types (:php:`pages.doktype`) drop down lists could grow large and
+or Content Types (:sql:`tt_content.CType`), or custom
+Page Types (:sql:`pages.doktype`) drop down lists could grow large and
 adding item groups caused tedious work for developers or integrators.
 Grouping can now be configured on a per-item
 basis. Custom groups can be added via an API or when defining TCA for a new
