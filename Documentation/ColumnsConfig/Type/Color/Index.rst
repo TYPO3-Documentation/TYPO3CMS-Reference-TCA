@@ -16,7 +16,7 @@ Color
 ..  versionadded:: 13.0
     :ref:`Color palettes <t3tsref:pagecolorpalettes>` have been added.
 
-The TCA type :php:`color` can be used to render a JavaScript-based color picker.
+The TCA type `color` can be used to render a JavaScript-based color picker.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.

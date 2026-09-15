@@ -153,7 +153,7 @@ passwordRules.random
         password rule takes precedence over any character definition, which
         should therefore be omitted as soon as
         `passwordRules.random` is set to one
-        of the available encodings: :php:`hex` or :php:`base64`.
+        of the available encodings: `hex` or `base64`.
 
 ..  _columns-password-properties-passwordGenerator_passwordRules_digitcharacters:
 

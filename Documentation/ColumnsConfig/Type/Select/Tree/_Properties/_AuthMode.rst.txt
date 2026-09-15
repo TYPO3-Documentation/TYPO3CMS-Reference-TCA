@@ -16,15 +16,15 @@
 ..  rubric:: Migration: Using authMode='explicitDeny'
 
 The "deny list" approach for single field values has been removed, the only allowed option
-for :php:`authMode` is :php:`explicitAllow`. Extensions using config value :php:`explicitDeny`
-should be adapted to switch to :php:`explicitAllow` instead. The upgrade wizard
+for `authMode` is `explicitAllow`. Extensions using config value `explicitDeny`
+should be adapted to switch to `explicitAllow` instead. The upgrade wizard
 "Migrate backend groups "explicit_allowdeny" field to simplified format." that transfers
 existing :sql:`be_groups` rows to the new format, **drops** any :sql:`DENY` fields and instructs
 admins to not set new access rights of affected backend groups.
 
 ..  rubric:: Migration: Using authMode='individual'
 
-Handling of :php:`authMode` being set to :php:`individual` has been fully dropped.
+Handling of `authMode` being set to `individual` has been fully dropped.
 The Core provides no alternative. This has been an obscure setting ever since and there is no
 direct migration. Extensions that rely on this handling need to find a substitution based on
 Core hooks, Core events or other existing Core API functionality.

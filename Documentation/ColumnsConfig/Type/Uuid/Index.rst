@@ -6,7 +6,7 @@
 Uuid
 ====
 
-The main purpose of the TCA type :php:`uuid` is to simplify the TCA
+The main purpose of the TCA type `uuid` is to simplify the TCA
 configuration when working with fields containing a `UUID`_.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`

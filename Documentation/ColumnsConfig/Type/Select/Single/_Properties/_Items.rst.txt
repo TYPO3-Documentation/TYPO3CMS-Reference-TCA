@@ -9,7 +9,7 @@
     :RenderType: all
 
     Contains the elements for the selector box unless the property
-    :php:`foreign_table` or :php:`special` has been set in which case
+    `foreign_table` or `special` has been set in which case
     automated values are set in addition to any values listed in this array.
 
     ..  versionchanged:: 13.0
@@ -37,12 +37,12 @@
             value that appears as a divider label in the selector box. It is kept
             for backwards-compatible reasons. Use :ref:`item groups
             <columns-select-single-properties-item-groups>` for custom selects instead.
-        *  Values must not contain `,` (comma) and `|` (vertical bar). If you want to use :php:`authMode`, you should
+        *  Values must not contain `,` (comma) and `|` (vertical bar). If you want to use `authMode`, you should
             also refrain from using `:` (colon).
 
     icon (EXT: path or icon identifier)
         Optional icon. For custom icons use a path prepended with `EXT:` to refer to an image
-        file found inside an extension or use an registered icon identifier. If configured on the :php:`foreign_table`,
+        file found inside an extension or use an registered icon identifier. If configured on the `foreign_table`,
         :ref:`selicon-field<ctrl-reference-selicon-field>` is respected.
 
     group (string)
@@ -54,7 +54,7 @@
 
     ..  note::
 
-        When having a zero as :php:`value` and the field is of type :code:`int(10)` in the database, make sure to define
+        When having a zero as `value` and the field is of type :code:`int(10)` in the database, make sure to define
         the :ref:`default value <columns-select-single-properties-default>` as well in TCA: :php:`'default' => 0`. Otherwise
         issues may arise, e.g. with MySQL strict mode.
 

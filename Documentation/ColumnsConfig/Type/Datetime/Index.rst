@@ -15,7 +15,7 @@ Datetime
     This allows to store dates from some million years ago to far into the
     future.
 
-The TCA type :php:`datetime` should be used to input values representing a
+The TCA type `datetime` should be used to input values representing a
 date time or datetime.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`

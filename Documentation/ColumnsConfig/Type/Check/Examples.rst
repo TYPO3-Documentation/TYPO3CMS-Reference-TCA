@@ -60,7 +60,7 @@ The configuration for a custom field :sql:`select_single_2` could look like this
 ..  literalinclude:: _Snippets/_itemProcFunc.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
-The referenced :php:`itemsProcFunc` method should populate the items
+The referenced `itemsProcFunc` method should populate the items
 by filling :php:`$params['items']`:
 
 ..  literalinclude:: _Snippets/_MyItemsProcFunc.php

@@ -64,7 +64,7 @@ Type in relation to a foreign table's field
 .. include:: /Images/Rst/CtrlTypeForeign.rst.txt
 
 The following table :sql:`tx_styleguide_type_foreign` stores its relation to
-the table :sql:`tx_styleguide_type` in the field :php:`foreign_table`.
+the table :sql:`tx_styleguide_type` in the field `foreign_table`.
 
 The type of the table :sql:`tx_styleguide_type_foreign` comes from the content
 of the field `tx_styleguide_type:record_type` of the related field.
@@ -76,7 +76,7 @@ this:
 
 .. include:: /CodeSnippets/TypeForeignTableCtrl.rst.txt
 
-The field :php:`foreign_table` in the same table is a normal singleSelect field.
+The field `foreign_table` in the same table is a normal singleSelect field.
 It can be any kind of 1 - 1 or 1 - n relation.
 
 .. include:: /CodeSnippets/TypeForeignForeignTable.rst.txt

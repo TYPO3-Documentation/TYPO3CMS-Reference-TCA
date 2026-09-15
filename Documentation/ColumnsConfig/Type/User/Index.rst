@@ -91,7 +91,7 @@ implementing a rendering. See :ref:`FormEngine docs
 
 4.  Implement the FormElement class
 
-    The :php:`renderType` can be implemented by extending the class
+    The `renderType` can be implemented by extending the class
     :php:`AbstractFormElement` and overriding the function :php:`render()`:
 
     ..  literalinclude:: _includes/_SpecialFieldElement.php
@@ -132,7 +132,7 @@ implementing a rendering. See :ref:`FormEngine docs
     In order for the field to work, it is vital, that the corresponding
     HTML input field has a unique :html:`id` attribute, fills the
     attributes :html:`name` and :html:`data-formengine-input-name` with the
-    correct name, as provided in the :php:`itemFormElName`.
+    correct name, as provided in the `itemFormElName`.
 
     ..  note::
         The returned data in :php:`$resultArray['html']` must be valid HTML.

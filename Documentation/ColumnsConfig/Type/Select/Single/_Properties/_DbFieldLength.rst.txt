@@ -13,11 +13,11 @@
         for `select` fields since TYPO3 v13, a developer can adjust the length
         of the database field with this option in TCA directly.
 
-    The TCA config option :php:`dbFieldLength` contains an integer value
+    The TCA config option `dbFieldLength` contains an integer value
     that is applied to :sql:`varchar` fields (not :sql:`text`) and defines the
     length of the database field. It will not be respected for fields that
     resolve to an integer type. Developers who wish to optimize field length can
-    use :php:`dbFieldLength` for :php:`type=select` fields to increase or
+    use `dbFieldLength` for :php:`type=select` fields to increase or
     decrease the default length.
 
 ..  rubric:: Example: Increase the dbFieldLength for a select field
