@@ -39,7 +39,7 @@ In the backend, it is rendered in various shapes: It can be rendered as a simple
 :html:`<textarea>`, as a :ref:`rich text editor (RTE) <t3coreapi:rte>`, as a
 code block with syntax highlighting, and others.
 
-The following :php:`renderTypes` are available:
+The following `renderTypes` are available:
 
 *   :ref:`default <columns-text-renderType-default>`: A simple text area
     or a rich text field is rendered, if no renderType is specified.
@@ -52,8 +52,8 @@ The following :php:`renderTypes` are available:
     ..  versionchanged:: 13.0
         In previous TYPO3 versions, the code editor was available via the system
         extension "t3editor". The functionality was moved into the system
-        extension "backend". The render type :php:`t3editor` was renamed to
-        :php:`codeEditor`. A TCA migration from the old value to the new one is
+        extension "backend". The render type `t3editor` was renamed to
+        `codeEditor`. A TCA migration from the old value to the new one is
         in place.
 
 *   :ref:`textTable <columns-text-renderType-textTable>`: The

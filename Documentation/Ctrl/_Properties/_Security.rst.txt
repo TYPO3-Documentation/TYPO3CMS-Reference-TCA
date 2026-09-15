@@ -27,7 +27,7 @@
             ],
         ];
 
-    And :php:`ignorePageTypeRestriction` is used for the :sql:`sys_note` table:
+    And `ignorePageTypeRestriction` is used for the :sql:`sys_note` table:
 
     ..  code-block:: php
         :caption: EXT:sys_note/Configuration/TCA/sys_note.php

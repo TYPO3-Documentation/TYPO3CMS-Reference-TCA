@@ -14,13 +14,13 @@ format
     The value specifies the language the code editor should handle. Allowed
     values:
 
-    *   :php:`css`
-    *   :php:`html`
-    *   :php:`javascript`
-    *   :php:`json`
-    *   :php:`php`
-    *   :php:`sql`
-    *   :php:`typoscript`
-    *   :php:`xml`
+    *   `css`
+    *   `html`
+    *   `javascript`
+    *   `json`
+    *   `php`
+    *   `sql`
+    *   `typoscript`
+    *   `xml`
 
     See also :ref:`tca_example_codeEditor_1`.

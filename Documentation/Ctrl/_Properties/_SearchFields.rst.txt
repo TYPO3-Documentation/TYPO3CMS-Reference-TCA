@@ -19,13 +19,13 @@
 
         If :php:`$GLOBALS['TCA'][$table]['ctrl']['searchFields']` is set an
         automatic TCA migration sets all suitable fields, which are not included
-        in the :php:`searchFields` configuration, to :php:`searchable => false` to
+        in the `searchFields` configuration, to :php:`searchable => false` to
         keep current behavior.
 
         ..  rubric:: Migration
 
-        If your extension previously relied on the :php:`searchFields` TCA option,
-        remove it from the :php:`ctrl` section and instead define :php:`'searchable' => false`
+        If your extension previously relied on the `searchFields` TCA option,
+        remove it from the `ctrl` section and instead define :php:`'searchable' => false`
         on fields that should be excluded from search results.
 
         No action is needed if the default behavior (search all suitable fields)

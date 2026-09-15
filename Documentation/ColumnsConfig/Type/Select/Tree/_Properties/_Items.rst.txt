@@ -8,7 +8,7 @@
     :RenderType: all
 
     Contains the elements for the selector box unless the property
-    :php:`foreign_table` or :php:`special` has been set in which case
+    `foreign_table` or `special` has been set in which case
     automated values are set in addition to any values listed in this array.
 
     For examples see also :confval:`property items of singleSelect <select-single-items>`.

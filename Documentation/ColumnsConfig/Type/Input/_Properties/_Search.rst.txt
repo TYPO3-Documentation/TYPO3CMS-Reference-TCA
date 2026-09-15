@@ -5,9 +5,9 @@
     The following TCA field  level search configuration options have been
     **removed**:
 
-    * :php:`search.case`
-    * :php:`search.pidonly`
-    * :php:`search.andWhere`
+    * `search.case`
+    * `search.pidonly`
+    * `search.andWhere`
 
     They have not been supported by the Core or common Extensions.
 

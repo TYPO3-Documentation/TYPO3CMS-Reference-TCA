@@ -11,7 +11,7 @@
     is changed. This is automatically set for fields specified as
     :ref:`record type <ctrl-reference-type>` in the control section.
 
-    The :php:`onChange` property is useful for fields which are targets of a
+    The `onChange` property is useful for fields which are targets of a
     :ref:`display condition's FIELD: evaluation <columns-properties-displaycond>`.
 
     On changing the field a modal gets displayed prompting to reload the record.

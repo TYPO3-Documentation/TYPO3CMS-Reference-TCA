@@ -75,10 +75,10 @@ USER
 
     The following arguments are passed as array to the userFunc:
 
-    -   :php:`record`: the currently edited record
-    -   :php:`flexContext`: details about the FlexForm if the condition is used in one
-    -   :php:`flexformValueKey`: `vDEF`
-    -   :php:`conditionParameters`: additional parameters
+    -   `record`: the currently edited record
+    -   `flexContext`: details about the FlexForm if the condition is used in one
+    -   `flexformValueKey`: `vDEF`
+    -   `conditionParameters`: additional parameters
 
     The called method is expected to return a :php:`bool` value: :php:`true` if the field should be displayed, :php:`false` otherwise.
 
