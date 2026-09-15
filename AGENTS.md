@@ -51,9 +51,14 @@ them made the pages noisy for nothing.
 | What it is | How to write it |
 | --- | --- |
 | TCA key or keyword (`ctrl`, `foreign_table`, `select`) | plain backticks |
-| Database table or column (`tt_content`, `sys_language_uid`) | `:sql:` |
+| Database table or column (`tt_content`, `CType`) | plain backticks |
+| Actual SQL (`WHERE`, `NULL`, `varchar`, `ORDER BY`) | `:sql:` |
 | PHP class, variable, array fragment, `true`, `int` | `:php:` |
 | A file path | `:file:` |
+
+A role is only right where its modal says something true. `:sql:` announces
+"Code written in SQL", which fits a keyword or a column type but not the name
+of a table — a table name is an identifier, like a TCA key.
 
 ## Commit message format
 

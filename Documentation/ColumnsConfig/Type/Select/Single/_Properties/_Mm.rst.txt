@@ -55,15 +55,15 @@
     `MM_opposite_field` on the foreign side to the field name on
     the local side.
 
-    For example, if the field :sql:`companies.employees` is your local side and
+    For example, if the field `companies.employees` is your local side and
     you want to make the same relation editable from the foreign side of the
-    relation in a field called :sql:`persons.employers`, you would need to set
+    relation in a field called `persons.employers`, you would need to set
     the `MM_opposite_field` value of the TCA configuration of the
-    :sql:`persons.employers` field to the string "employees".
+    `persons.employers` field to the string "employees".
 
     ..  note::
         Bidirectional references only get registered once on the native side in
-        :sql:`sys_refindex`.
+        `sys_refindex`.
 
 
 ..  confval:: MM_oppositeUsage

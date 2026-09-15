@@ -16,7 +16,7 @@
     ..  rubric:: Example: Use for any record in a table
 
     This specifies the preview renderer to be used for any record in
-    :sql:`tx_myextension_domain_model_mytable`:
+    `tx_myextension_domain_model_mytable`:
 
     ..  code-block:: php
 

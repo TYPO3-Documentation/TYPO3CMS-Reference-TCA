@@ -140,11 +140,11 @@ The mm tables are automatically created if:
 *   A table of the resulting name is not defined in :file:`ext_tables.sql`.
 
 The schema analyzer takes care of further possible fields apart from
-:sql:`uid_local` and :sql:`uid_foreign`, like :sql:`tablenames`,
-:sql:`fieldname` and :sql:`uid` if necessary, depending on local side of the
+`uid_local` and `uid_foreign`, like `tablenames`,
+`fieldname` and `uid` if necessary, depending on local side of the
 TCA definition.
 
-The fields used for sorting :sql:`sorting` and :sql:`sorting_foreign` are
+The fields used for sorting `sorting` and `sorting_foreign` are
 always created, they do not need to be defined in TCA.
 
 ..  _tca-property-mm-auto-creation-mm-table-example:

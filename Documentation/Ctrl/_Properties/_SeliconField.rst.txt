@@ -24,7 +24,7 @@
 ..  include:: /Images/Rst/SelectSingle12.rst.txt
 
 
-The table :sql:`tx_styleguide_elements_select_single_12_foreign` is defined as
+The table `tx_styleguide_elements_select_single_12_foreign` is defined as
 follows:
 
 

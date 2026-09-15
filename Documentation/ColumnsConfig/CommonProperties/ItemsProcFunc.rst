@@ -57,7 +57,7 @@ The following parameters are filled if the current record has an
 Example
 =======
 
-The configuration for a custom field :sql:`select_single_2` could look like this:
+The configuration for a custom field `select_single_2` could look like this:
 
 ..  code-block:: php
     :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php
