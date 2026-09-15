@@ -29,7 +29,7 @@
     be of type :ref:`columns-passthrough`.
 
     ..  note::
-        Sometimes :sql:`l18n_diffsource` is used for this field in Core tables.
+        Sometimes `l18n_diffsource` is used for this field in Core tables.
         This has historic reasons.
 
     ..  include:: /Ctrl/_CodeSnippets/_AutoCreatedColumns/_AutoCreateWarning.rst.txt

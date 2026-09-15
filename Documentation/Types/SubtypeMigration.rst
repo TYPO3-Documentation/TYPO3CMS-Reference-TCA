@@ -22,7 +22,7 @@ If you used plugins with the now deprecated subtypes, you probably used
 :confval:`types-subtypes-addlist` to display a
 :ref:`FlexForm <t3coreapi:flexforms>` for configuration purposes.
 
-Migrate by adding the field :sql:`pi_flexform` with the utility method
+Migrate by adding the field `pi_flexform` with the utility method
 :php-short:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility`
 `addToAllTCAtypes()` instead. You also have to change the parameters used for
 method `addPiFlexFormValue()`:
@@ -30,7 +30,7 @@ method `addPiFlexFormValue()`:
 ..  literalinclude:: _CodeSnippets/_subtype_plugin_migration.diff
     :caption: EXT:my_extension/Configuration/Overrides/tt_content.php
 
-The fields :sql:`pages` and :sql:`recursive` used to be added
+The fields `pages` and `recursive` used to be added
 automatically to plugins when using the now outdated subtype "list_type".
 Therefore they have to be added manually when doing the migration.
 

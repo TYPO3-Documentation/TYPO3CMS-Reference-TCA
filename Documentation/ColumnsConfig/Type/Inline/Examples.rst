@@ -33,21 +33,21 @@ Attributes on anti-symmetric intermediate table
 The record has two child records displayed inline.
 
 This example combines records from a parent table
-:sql:`tx_styleguide_inline_mn` with records from the child table
-:sql:`tx_styleguide_inline_mn_child` using the intermediate table
-:sql:`tx_styleguide_inline_mn_mm`. It is also possible to add
+`tx_styleguide_inline_mn` with records from the child table
+`tx_styleguide_inline_mn_child` using the intermediate table
+`tx_styleguide_inline_mn_mm`. It is also possible to add
 attributes to every relation – in this example a checkbox.
 
-The parent table :sql:`tx_styleguide_inline_mn` contains the following column:
+The parent table `tx_styleguide_inline_mn` contains the following column:
 
 ..  include:: /CodeSnippets/InlineMnInline1.rst.txt
 
-If the child table :sql:`tx_styleguide_inline_mn_child` wants to display its parents also it needs to define a
+If the child table `tx_styleguide_inline_mn_child` wants to display its parents also it needs to define a
 column like in this example:
 
 ..  include:: /CodeSnippets/InlineMnChildParents.rst.txt
 
-The intermediate table :sql:`tx_styleguide_inline_mn_mm` defines the following fields:
+The intermediate table `tx_styleguide_inline_mn_mm` defines the following fields:
 
 ..  include:: /CodeSnippets/Manual/InlineMnMm.rst.txt
 
@@ -73,16 +73,16 @@ record A is related to B and C, B doesn't have to be related to C.
 
 Record 11 is symmetrically related to record 1 but not to 6
 
-The main table :sql:`tx_styleguide_inline_mnsymmetric` has a field storing the
-inline relation, here: :sql:`branches`.
+The main table `tx_styleguide_inline_mnsymmetric` has a field storing the
+inline relation, here: `branches`.
 
 ..  include:: /CodeSnippets/InlineMnSymmetricBranches.rst.txt
 
 Records of the main table can than have a symmetric relationship to each other
-using the intermediate table :sql:`tx_styleguide_inline_mnsymmetric_mm`.
+using the intermediate table `tx_styleguide_inline_mnsymmetric_mm`.
 
 The intermediate table stores the uids of both sides of the relation in
-:sql:`hotelid` and :sql:`branchid`. Furthermore custom sorting can be defined in
+`hotelid` and `branchid`. Furthermore custom sorting can be defined in
 both directions.
 
 ..  include:: /CodeSnippets/Manual/InlineMnSymetricMm.rst.txt

@@ -55,7 +55,7 @@ Example: Three checkboxes, two with labels, one without
 Example: Checkboxes with itemsProcFunc
 ======================================
 
-The configuration for a custom field :sql:`select_single_2` could look like this:
+The configuration for a custom field `select_single_2` could look like this:
 
 ..  literalinclude:: _Snippets/_itemProcFunc.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php

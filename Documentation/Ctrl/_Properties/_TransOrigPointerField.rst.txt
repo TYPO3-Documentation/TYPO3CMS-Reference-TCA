@@ -24,7 +24,7 @@
     be of type :ref:`columns-passthrough`.
 
     ..  note::
-        Sometimes :sql:`l18n_parent` is used for this field in Core tables. This
+        Sometimes `l18n_parent` is used for this field in Core tables. This
         is for historic reasons.
 
     ..  include:: /Ctrl/_CodeSnippets/_AutoCreatedColumns/_AutoCreateWarning.rst.txt

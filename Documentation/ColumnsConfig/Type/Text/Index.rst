@@ -45,7 +45,7 @@ The following `renderTypes` are available:
     or a rich text field is rendered, if no renderType is specified.
 *   :ref:`belayoutwizard <columns-text-renderType-belayoutwizard>`: The backend
     layout wizard is displayed in order to edit records of table
-    :sql:`backend_layout` in the backend.
+    `backend_layout` in the backend.
 *   :ref:`codeEditor <columns-text-renderType-codeEditor>`: This render type
     triggers a code highlighter.
 
@@ -58,7 +58,7 @@ The following `renderTypes` are available:
 
 *   :ref:`textTable <columns-text-renderType-textTable>`: The
     :php:`renderType = 'textTable'` triggers a view to manage frontend table
-    display in the backend. It is used for the "table" :sql:`tt_content` content
+    display in the backend. It is used for the "table" `tt_content` content
     element.
 
 
@@ -112,7 +112,7 @@ Backend layout editor
 =====================
 
 The backend layout wizard is displayed in order to edit records of table
-:sql:`backend_layout` in the backend.
+`backend_layout` in the backend.
 
 ..  include:: /Images/Rst/Text20.rst.txt
 

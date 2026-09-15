@@ -46,7 +46,7 @@
         :Default: true
 
         Usually when the parent record is deleted all attached
-        :sql:`sys_file_references` are deleted. This default behaviour can be
+        `sys_file_references` are deleted. This default behaviour can be
         disabled here.
 
         This property can also be overridden by page TSconfig.

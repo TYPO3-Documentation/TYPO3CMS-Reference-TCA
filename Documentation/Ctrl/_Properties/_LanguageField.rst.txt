@@ -14,7 +14,7 @@
     If it is :ref:`overridden <ctrl-auto-created-columns-override>` it must still
     be of type :ref:`columns-language`.
 
-    The column is called :sql:`sys_language_uid` by convention.
+    The column is called `sys_language_uid` by convention.
 
     Backend users can be limited to have edit access for only certain of
     these languages and if this option is set, edit access for languages

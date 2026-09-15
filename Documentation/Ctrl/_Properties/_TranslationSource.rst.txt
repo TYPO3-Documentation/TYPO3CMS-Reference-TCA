@@ -25,8 +25,8 @@
     For example, if a tt_content record in default language English with uid
     13 exists, this record is translated to French with uid 17, and the
     Danish translation is later created based on the French translation, then the
-    Danish translation has uid 13 set as :sql:`l10n_parent` and 17 as
-    :sql:`l10n_source`.
+    Danish translation has uid 13 set as `l10n_parent` and 17 as
+    `l10n_source`.
 
     The column in the database is auto created. If you ever override it,
     it should be at least a large text field (clob/blob). If
