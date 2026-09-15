@@ -8,7 +8,7 @@ Auto-created columns from 'ctrl'
 ================================
 
 ..  versionadded:: 13.3
-    :ref:`columns <columns>` are now added to the :php:`TCA` by default if they are not
+    :ref:`columns <columns>` are now added to the `TCA` by default if they are not
     explicitly set in :ref:`ctrl <ctrl>` sections in the base TCA php files. TYPO3 creates
     them automatically, meaning developers no longer have to create lots of
     boilerplate fields definitions.

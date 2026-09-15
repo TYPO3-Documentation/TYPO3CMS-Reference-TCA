@@ -14,7 +14,7 @@ additional labels for the states can be defined.
 ..  include:: /Images/Rst/Checkbox17.rst.txt
 ..  include:: /Images/Rst/Checkbox18.rst.txt
 
-Its state can be inverted via :code:`invertStateDisplay`.
+Its state can be inverted via `invertStateDisplay`.
 
 ..  _columns-check-checkboxToggle-examples:
 

@@ -39,17 +39,17 @@
 
     <containerRenderType>
         should be a defined container render type.
-        You can find more about the :code:`outerWrapContainer` and
-        :code:`inlineControlContainer` in the FormEngine documentation section on
+        You can find more about the `outerWrapContainer` and
+        `inlineControlContainer` in the FormEngine documentation section on
         :ref:`rendering <t3coreapi:FormEngine-Rendering>`.
         Valid types are for example:
 
-        -   :code:`outerWrapContainer` type which corresponds to the
+        -   `outerWrapContainer` type which corresponds to the
             :php:`OuterWrapContainer` (class).
-        -   :code:`inlineControlContainer` type which corresponds to the
+        -   `inlineControlContainer` type which corresponds to the
             :php-short:`\TYPO3\CMS\Backend\Form\Container\InlineControlContainer`
             class
-        -   :code:`inline` type which corresponds to the
+        -   `inline` type which corresponds to the
             :php-short:`\TYPO3\CMS\Backend\Form\Container\InlineControlContainer`
             class.
 

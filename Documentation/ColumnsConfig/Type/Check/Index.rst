@@ -64,7 +64,7 @@ The following renderTypes are available:
     a toggle item is displayed.
 *   :ref:`checkboxLabeledToggle <columns-check-checkboxLabeledToggle>`: A toggle
     switch where both states can be labelled (ON/OFF, Visible / Hidden or alike).
-    Its state can be inverted via :code:`invertStateDisplay`
+    Its state can be inverted via `invertStateDisplay`
 
 ..  _columns-check-properties:
 

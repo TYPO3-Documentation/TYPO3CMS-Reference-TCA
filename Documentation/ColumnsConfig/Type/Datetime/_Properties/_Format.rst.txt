@@ -8,7 +8,7 @@
     :Scope: Display
 
     Sets the output format if the field is set to read-only. Read-only fields
-    with :code:`format` set to "date" will be formatted as "date", "datetime"
+    with `format` set to "date" will be formatted as "date", "datetime"
     as "datetime", "time" as "time" and "timesec" as "timesec".
 
     ..  note::

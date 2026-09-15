@@ -54,7 +54,11 @@ them made the pages noisy for nothing.
 | Database table or column (`tt_content`, `CType`) | plain backticks |
 | Actual SQL (`WHERE`, `NULL`, `varchar`, `ORDER BY`) | `:sql:` |
 | PHP class, variable, array fragment, `true`, `int` | `:php:` |
+| An HTML element or attribute (`<input>`, `autocomplete="on"`) | `:html:` |
 | A file path | `:file:` |
+
+Do not use `:code:`. It renders exactly like plain backticks — same element,
+no info button — so it only hides whether anyone thought about the question.
 
 A role is only right where its modal says something true. `:sql:` announces
 "Code written in SQL", which fits a keyword or a column type but not the name
