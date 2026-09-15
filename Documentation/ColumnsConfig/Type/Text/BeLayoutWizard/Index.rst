@@ -12,7 +12,7 @@ This page describes the :ref:`text <columns-text>` type with
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
-The :code:`renderType = 'belayoutwizard'` is a special renderType to
+The `renderType = 'belayoutwizard'` is a special renderType to
 display the backend layout wizard when editing records of table
 `backend_layout` in the backend. It is stored a custom
 syntax representing the page layout in the database.

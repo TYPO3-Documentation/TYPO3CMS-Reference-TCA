@@ -15,7 +15,7 @@
         :type: array
         :Scope: fieldControl
 
-        The element browser field control used in :code:`type='folder'` renders a
+        The element browser field control used in `type='folder'` renders a
         button to open an element browser to choose a folder.
 
         It is enabled by default if rendering a folder element.

@@ -15,7 +15,7 @@
         Previously, only a datepicker for *hour* and *minute* was available.
 
     Sets the output format if the field is set to read-only. Read-only fields
-    with :code:`format` set to "date" will be formatted as "date", "datetime"
+    with `format` set to "date" will be formatted as "date", "datetime"
     as "datetime", "time" as "time", "timesec" as "timesec" and "datetimesec" as "datetimesec".
 
     The format `datetimesec` is only allowed for:

@@ -22,7 +22,7 @@
 
     ..  warning::
 
-        The title is passed later on through :code:`htmlspecialchars()`
+        The title is passed later on through :php:`htmlspecialchars()`
         so it may not include any HTML formatting.
 
     ..  rubric:: Example
@@ -35,7 +35,7 @@
             'label_userFunc' => \Documentation\Examples\Userfuncs\Tca::class . '->haikuTitle',
         ],
 
-    Class :code:`Documentation\Examples\Userfuncs\Tca` contains the code itself::
+    Class `Documentation\Examples\Userfuncs\Tca` contains the code itself::
 
         public function haikuTitle(&$parameters)
         {
@@ -56,6 +56,6 @@
     The array of options is passed to the user function in the parameters array with key "options".
 
     ..  note::
-        When the :code:`label_userFunc` is used for inline (IRRE)
+        When the `label_userFunc` is used for inline (IRRE)
         elements, the options are **not** passed. If you need options
         use :ref:`formattedLabel_userFunc <ctrl-reference-formattedlabel-userfunc>` instead.

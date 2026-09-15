@@ -10,7 +10,7 @@ Display conditions (:confval:`$GLOBALS['TCA'][$table]['columns'][$field][display
 can be used to only display the affected field if certain other fields are set
 to certain values.
 
-Conditions can be grouped and nested using boolean operators :code:`AND` or :code:`OR` as
+Conditions can be grouped and nested using boolean operators :sql:`AND` or :sql:`OR` as
 array keys. See examples below.
 
 ..  contents:: Table of contents
@@ -92,7 +92,7 @@ VERSION:IS
              Example to show a field in "Live" workspace only: :php:`VERSION:IS:false`
 
 In FlexForm, display conditions can be attached to single fields in sheets, to sheets itself, to flex section fields
-and to flex section container element fields. :code:`FIELD` references can be prefixed with a sheet name to
+and to flex section container element fields. `FIELD` references can be prefixed with a sheet name to
 reference a field from a neighbor sheet, see examples below.
 
 ..  tip::
@@ -134,7 +134,7 @@ Multiple conditions can be combined:
     ],
 
 
-An example with multiple values and :code:`OR`:
+An example with multiple values and :sql:`OR`:
 
 ..  code-block:: php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
@@ -183,7 +183,7 @@ headline "Example" defined:
 A complex example in a FlexForm
 -------------------------------
 
-Using :code:`OR` and :code:`AND` within FlexForms works like this:
+Using :sql:`OR` and :sql:`AND` within FlexForms works like this:
 
 ..  code-block:: xml
     :caption: EXT:my_extension/Configuration/FlexForms/SomeFlexForm.xml
