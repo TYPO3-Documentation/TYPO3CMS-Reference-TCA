@@ -11,7 +11,7 @@ File
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-The TCA type :php:`file` creates a field where files can be attached to
+The TCA type `file` creates a field where files can be attached to
 the record.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`

@@ -20,7 +20,7 @@ itemsProcFunc
     This becomes handy when using an IDE and doing operations like renaming classes.
 
     The provided method will have an array of parameters passed to it. The items array is passed by reference
-    in the key :php:`items`. By modifying the array of items, you alter the list of items. A method may throw an
+    in the key `items`. By modifying the array of items, you alter the list of items. A method may throw an
     exception which will be displayed as a proper error message to the user.
 
 ..  _tca-property-items-proc-func-passed-parameters:
@@ -28,29 +28,29 @@ itemsProcFunc
 Passed parameters
 =================
 
-*   :php:`items` (passed by reference)
-*   :php:`config` (TCA config of the field)
+*   `items` (passed by reference)
+*   `config` (TCA config of the field)
 *   :php:`TSconfig` (The matching :ref:`itemsProcFunc TSconfig <t3tsref:itemsProcFunc>`)
-*   :php:`table` (current table)
-*   :php:`row` (current database record)
-*   :php:`field` (current field name)
-*   :php:`effectivePid` (correct page ID)
-*   :php:`site` (current site)
+*   `table` (current table)
+*   `row` (current database record)
+*   `field` (current field name)
+*   `effectivePid` (correct page ID)
+*   `site` (current site)
 
 The following parameter only exists if the field has a :ref:`flex parent <columns-flex>`.
 
-*   :php:`flexParentDatabaseRow`
+*   `flexParentDatabaseRow`
 
 The following parameters are filled if the current record has an
 :ref:`inline parent <columns-inline>`.
 
-*   :php:`inlineParentUid`
-*   :php:`inlineParentTableName`
-*   :php:`inlineParentFieldName`
-*   :php:`inlineParentConfig`
-*   :php:`inlineTopMostParentUid`
-*   :php:`inlineTopMostParentTableName`
-*   :php:`inlineTopMostParentFieldName`
+*   `inlineParentUid`
+*   `inlineParentTableName`
+*   `inlineParentFieldName`
+*   `inlineParentConfig`
+*   `inlineTopMostParentUid`
+*   `inlineTopMostParentTableName`
+*   `inlineTopMostParentFieldName`
 
 ..  _tca-property-items-proc-func-example:
 
@@ -76,7 +76,7 @@ The configuration for a custom field :sql:`select_single_2` could look like this
         ],
     ]
 
-The referenced :php:`itemsProcFunc` method should populate the items by filling :php:`$params['items']`:
+The referenced `itemsProcFunc` method should populate the items by filling :php:`$params['items']`:
 
 ..  code-block:: php
     :caption: EXT:styleguide/Classes/UserFunctions/FormEngine/TypeSelect2ItemsProcFunc.php

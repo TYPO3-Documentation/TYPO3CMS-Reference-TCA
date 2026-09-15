@@ -7,7 +7,7 @@
     :Scope: Display
     :RenderType: all
 
-    The property :php:`sortItems` allows
+    The property `sortItems` allows
     sorting of static select items by their values or labels.
 
     Built-in orderings are to sort items by their labels or values.

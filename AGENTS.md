@@ -33,6 +33,28 @@ https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument):
 6. **Validate before committing** — run `make test-docs`.
 7. **Never commit or push without being asked.**
 
+## Which role for a TCA key
+
+This manual names TCA keys on nearly every page, so it is worth stating: a
+key is not PHP. Write it in plain backticks.
+
+```rst
+The `foreign_table` key points at the table, and `nullable` decides whether
+an empty value is stored as :php:`null`.
+```
+
+The `:php:` role is not decoration — it renders an info button whose modal
+tells the reader "Code written in PHP, dynamic server-side scripting
+language". That is wrong next to `ctrl` or `MM_opposite_field`, and 260 of
+them made the pages noisy for nothing.
+
+| What it is | How to write it |
+| --- | --- |
+| TCA key or keyword (`ctrl`, `foreign_table`, `select`) | plain backticks |
+| Database table or column (`tt_content`, `sys_language_uid`) | `:sql:` |
+| PHP class, variable, array fragment, `true`, `int` | `:php:` |
+| A file path | `:file:` |
+
 ## Commit message format
 
 Follow https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Howto/EditLocal.html:

@@ -11,9 +11,9 @@
     see section :ref:`Node expansion <t3coreapi:FormEngine-Rendering-NodeExpansion>`.
 
     Next to single elements, some render container allow to be "enriched" with additional information via
-    the "node expansion" API. Currently, the :php:`OuterWrapContainer` implements :php:`fieldWizard` and
-    :php:`fieldInformation`. :php:`InlineControlContainer` implements :php:`fieldWizard` and comes with
-    the default wizard :php:`localizationStateSelector`. Custom containers may implement expansion nodes, too,
+    the "node expansion" API. Currently, the :php:`OuterWrapContainer` implements `fieldWizard` and
+    `fieldInformation`. :php:`InlineControlContainer` implements `fieldWizard` and comes with
+    the default wizard `localizationStateSelector`. Custom containers may implement expansion nodes, too,
     and if implemented correctly will automatically have their configuration merged with the definition
     provided in this TCA array.
 

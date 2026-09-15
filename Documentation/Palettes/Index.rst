@@ -11,7 +11,7 @@ Grouping fields (palettes)
     translation reference formats (for example `core.form.tabs:*`) instead of
     the full `LLL:EXT:` path format in `showitem` strings.
 
-    Custom extensions that programmatically manipulate TCA :php:`showitem` strings
+    Custom extensions that programmatically manipulate TCA `showitem` strings
     from core tables and expect the full `LLL:EXT:` path format will break.
 
     See also: `Breaking: #107789 - Core TCA showitem strings use short form references <https://docs.typo3.org/permalink/changelog:breaking-107789-1729603200>`_.
@@ -40,13 +40,13 @@ The TCA of the styleguide extension provides palettes with different properties.
 
 ..  include:: /Images/Rst/Palette.rst.txt
 
-Palettes get defined in the section :php:`palettes` of the tables TCA array.
+Palettes get defined in the section `palettes` of the tables TCA array.
 
 The following TCA section specifies the different palettes.
 
 ..  include:: /CodeSnippets/Palettes.rst.txt
 
-The palettes then get referenced in the :php:`types` section:
+The palettes then get referenced in the `types` section:
 
 ..  include:: /CodeSnippets/PalettesTypes.rst.txt
 
