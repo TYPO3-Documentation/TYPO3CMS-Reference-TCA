@@ -57,7 +57,8 @@ Create an URL
 To create a URL from such a link field in a Fluid template, use the
 :html:`<f:link.typolink>` or :html:`<f:uri.typolink>` view helper.
 
-In PHP code, use :php:`LinkFactory::create()` or :php:`LinkFactory::createUri()`:
+In PHP code, inject :php-short:`\TYPO3\CMS\Frontend\Typolink\LinkFactory`
+and call :php:`create()` or :php:`createUri()` on it:
 
 ..  literalinclude:: _Snippets/_SomeService.php
     :caption: EXT:my_extension/Classes/Service/MyService.php
