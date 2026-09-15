@@ -11,3 +11,14 @@
     The format property defines, which type of number should be handled. The
     `integer` format is a simple number, whereas the `decimal` format
     is a float value with two decimal places.
+
+    ..  warning::
+        The two decimal places are fixed. The :php:`DataHandler` rounds every
+        value it saves to them, and the automatically generated database column
+        is a :sql:`decimal(10,2)`, so even a column declared with more decimals
+        in :file:`ext_tables.sql` loses them on the next save.
+
+        This matters when moving a field from type `input` to type `number`.
+        Geographic coordinates are the common case: two decimals put a latitude
+        on a grid of roughly one kilometre, so a stored position can move by up
+        to about 500 metres.
