@@ -24,7 +24,8 @@
         Uses the intermediate table :sql:`sys_category_record_mm`
         and only stores the categories count on the local side. This is the use
         case, which was previously accomplished using
-        :php:`ExtensionManagementUtility->makeCategorizable()`.
+        :php:`ExtensionManagementUtility::makeCategorizable()`, a static method
+        removed in TYPO3 v12.
 
     In the following example a category tree is displayed, but only one
     category can be selected.
