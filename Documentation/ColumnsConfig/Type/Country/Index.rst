@@ -9,7 +9,7 @@ Country picker TCA type
 
 ..  versionadded:: 14.0
 
-The TCA type :php:`country` can be used to render a country picker. Its main
+The TCA type `country` can be used to render a country picker. Its main
 purpose is to use the
 `Country API <https://docs.typo3.org/permalink/t3coreapi:country-api>`_ to provide
 a country selection in the backend and use the stored representation in Extbase

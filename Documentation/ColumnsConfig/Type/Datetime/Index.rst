@@ -20,7 +20,7 @@ Datetime
     for the `integer`-based storage without a `dbType` option (UNIX timestamp).
 
 
-The TCA type :php:`datetime` should be used to input values representing a
+The TCA type `datetime` should be used to input values representing a
 date time or datetime.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
@@ -57,7 +57,7 @@ A simple date field, stored as :sql:`bigint` in the database:
 Example: A simple date field with seconds
 ==============================================
 
-A simple date field, formated with :php:`datetimesec`.
+A simple date field, formated with `datetimesec`.
 
 ..  literalinclude:: _Snippets/_datetimesec.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php

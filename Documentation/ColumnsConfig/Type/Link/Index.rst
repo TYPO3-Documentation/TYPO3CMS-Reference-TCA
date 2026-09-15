@@ -8,12 +8,12 @@ Link
 ====
 
 ..  versionadded:: 13.0
-    When using the :php:`link` type, TYPO3 takes care of
+    When using the `link` type, TYPO3 takes care of
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-The TCA type :php:`link` should be used to input values representing typolinks.
+The TCA type `link` should be used to input values representing typolinks.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
@@ -47,7 +47,7 @@ Properties of the TCA column type `link`
 ..  note::
 
     The softref definition :php:`softref=typolink` is automatically applied
-    to all TCA type :php:`link` columns.
+    to all TCA type `link` columns.
 
 ..  _columns-link-create-url:
 

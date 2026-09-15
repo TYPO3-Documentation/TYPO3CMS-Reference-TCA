@@ -134,7 +134,7 @@ and migrate definitions if needed.
 
 The mm tables are automatically created if:
 
-*   A table column TCA config defines :php:`MM` with :php:`type='select'`,
+*   A table column TCA config defines `MM` with :php:`type='select'`,
     :php:`type='group'` or :php:`type='inline'`.
 *   The "MM" intermediate table has *no* TCA table definition (!).
 *   A table of the resulting name is not defined in :file:`ext_tables.sql`.

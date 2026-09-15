@@ -7,13 +7,13 @@
     :Scope: Proc.
     :Default: true
 
-    If :php:`hashed` is set to :php:`false`, if the field value will be saved as
+    If `hashed` is set to :php:`false`, if the field value will be saved as
     plaintext to the database.
 
     ..  note::
 
         The configuration :php:`'hashed' => false` has no effect for all fields in
-        the tables :php:`be_users` and :php:`fe_users`. In general it is not
+        the tables :sql:`be_users` and :sql:`fe_users`. In general it is not
         recommended to save passwords as plain text to the database.
 
 ..  rubric:: Example: The password will be saved as plain text:

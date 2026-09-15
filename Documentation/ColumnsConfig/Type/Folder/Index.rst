@@ -11,7 +11,7 @@ Folder
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file.
 
-The TCA type :php:`folder` creates a field where folders can be attached to
+The TCA type `folder` creates a field where folders can be attached to
 the record. The values are stored as a combined identifier in a
 :ref:`comma-separated list (csv) <columns-group-data-commalist>`.
 

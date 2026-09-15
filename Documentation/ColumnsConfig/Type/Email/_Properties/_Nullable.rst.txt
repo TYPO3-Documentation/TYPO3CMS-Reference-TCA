@@ -12,8 +12,8 @@
     database. By activating the checkbox it is possible to set a value.
     If nothing is entered into the field, then an empty string will be saved and not a :sql:`NULL`.
 
-    When the :ref:`eval <columns-email-properties-eval>` option is set to :php:`unique`
-    or :php:`uniqueInPid` multiple :sql:`null` values are still possible.
+    When the :ref:`eval <columns-email-properties-eval>` option is set to `unique`
+    or `uniqueInPid` multiple :sql:`null` values are still possible.
 
     The database field must allow the :sql:`NULL` value.
 

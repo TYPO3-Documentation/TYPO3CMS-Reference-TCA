@@ -37,7 +37,7 @@ When creating the XML setup file there are some limitations:
 ..  versionchanged:: 13.0
 
     Since TYPO3 13.0, :php:`type='select'` (if using
-    :php:`foreign_table`) is not allowed and will raise an exception.
+    `foreign_table`) is not allowed and will raise an exception.
     Note this only applies to FlexForm sections, not general
     FlexForm usage. For details and migration see
     :ref:`Breaking: #102970 - No database relations in FlexForm container sections <changelog:breaking-102970-1706447911>`.
