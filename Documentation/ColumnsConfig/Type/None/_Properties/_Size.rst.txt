@@ -6,5 +6,5 @@
     :type: integer
     :Scope: Display
 
-    Value for the width of the :code:`<input>` field. To set the input field to the full width of
+    Value for the width of the :html:`<input>` field. To set the input field to the full width of
     the form area, use the value 50. Default is 30.

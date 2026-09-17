@@ -24,17 +24,17 @@ is generated automatically.
     column type :ref:`file <columns-file>`.
 
 The 'inline' TCA type is a powerful element that handles links between records.
-It can handle :code:`1:n`,
-nested :code:`1:n-1:n` and  :code:`m:n` relations and the
+It can handle `1:n`,
+nested `1:n-1:n` and  `m:n` relations and the
 different views and localizations. When used with
 'ctrl' and 'types' properties, many different backend views are possible.
 
-The inline type is mainly used to handle :code:`1:n` relations (1 to many),
+The inline type is mainly used to handle `1:n` relations (1 to many),
 where one parent record has many children and each child has only one
 parent. A child record cannot be moved between parents.
 
-However, the inline type can also be used for :code:`m:n` relations (many to many).
-An :code:`m:n` relation is where a child has many parents. The relation is set up
+However, the inline type can also be used for `m:n` relations (many to many).
+An `m:n` relation is where a child has many parents. The relation is set up
 using an intermediate table.
 The intermediate table contains the parent and child relation fields as well as any extra fields
 providing additional information about the relation. One example of this is
@@ -49,11 +49,11 @@ such as "placeholders" can be used to set this up.
 
 ..  hint::
 
-    The inline type does not have :code:`fieldInformation`,
-    :code:`fieldControl` or :code:`fieldWizard` properties like other types
+    The inline type does not have `fieldInformation`,
+    `fieldControl` or `fieldWizard` properties like other types
     because it is a container rather than an element. You can
     still add fieldInformation or fieldWizard, but they must be configured
-    in the :code:`ctrl`. See
+    in the `ctrl`. See
     :ref:`example <inline-example-field-information>`.
 
 ..  contents:: Table of contents:

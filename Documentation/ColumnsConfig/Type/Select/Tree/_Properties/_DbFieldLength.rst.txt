@@ -16,7 +16,7 @@
     that is applied to :sql:`varchar` fields (not :sql:`text`) and defines the
     length of the database field. It will not be respected for fields that
     resolve to an integer type. Developers who wish to optimize field length can
-    use `dbFieldLength` for :php:`type=select` fields to increase or
+    use `dbFieldLength` for `type=select` fields to increase or
     decrease the default length.
 
 ..  rubric:: Example: Increase the dbFieldLength for a select field

@@ -43,9 +43,9 @@
         version of an element per ID. For online: 0 (zero) unless t3ver\_state
         is set in which case it plays a role for previews in the backend (to
         no de-select placeholders for workspaces, see
-        :code:`\TYPO3\CMS\Backend\Utility\BackendUtility::versioningPlaceholderClause())`
+        `\TYPO3\CMS\Backend\Utility\BackendUtility::versioningPlaceholderClause())`
         and for publishing of move-to-actions (see
-        :code:`\TYPO3\CMS\Backend\Utility\BackendUtility::getMovePlaceholder()`).
+        `\TYPO3\CMS\Backend\Utility\BackendUtility::getMovePlaceholder()`).
 
     `t3ver_state`
         Contains special states of a version used when new, deleted, moved content requires versioning.

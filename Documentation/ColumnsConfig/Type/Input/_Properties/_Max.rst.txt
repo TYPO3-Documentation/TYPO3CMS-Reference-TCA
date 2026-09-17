@@ -6,7 +6,7 @@
     :type: integer
     :Scope: Display
 
-    Value for the "maxlength" attribute of the :code:`<input>` field. Javascript prevents adding more than
+    Value for the "maxlength" attribute of the :html:`<input>` field. Javascript prevents adding more than
     these number of characters.
 
     If the form element edits a varchar(40) field in the database you should also set this value to 40.
