@@ -56,7 +56,7 @@
 
             ExtensionManagementUtility::addRecordType(
               [
-                'label' => 'LLL:EXT:my_extension/Resources/Private/Language/locallang.xlf:my_element.title',
+                'label' => 'my_extension.messages:my_element.title',
                 'value' => 'my_element',
                 'icon' => 'content-header',
                 'iconOverlay' => 'actions-approve',
