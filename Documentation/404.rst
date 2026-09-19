@@ -43,6 +43,27 @@ deprecated. Password generation is now configured through
 `Password policies <https://docs.typo3.org/permalink/t3coreapi:password-policies>`_
 registered in :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']`.
 
+..  _tca_property_fieldInformation_tcaDescription:
+..  _tca_property_fieldInformation_tcaDescription_examples:
+..  _tca_property_fieldInformation_tcaDescription_examples_activateTcaDescription:
+..  _tca_property_fieldInformation_tcaDescription_examples_renderDescription:
+..  _confval-fieldinformation-tcadescription:
+
+Field information tcaDescription removed
+========================================
+
+..  versionchanged:: 15.0
+    See `Breaking: #109783 - Deprecated functionality removed <https://docs.typo3.org/permalink/changelog:breaking-109783-1776735296>`_
+    and `Deprecation: #109280 - FormEngine TcaDescription fieldInformation <https://docs.typo3.org/permalink/changelog:deprecation-109280-1742109280>`_.
+
+The `tcaDescription` field information render type was deprecated with
+TYPO3 14.2 and removed with TYPO3 15.0. Field descriptions configured in
+`description <https://docs.typo3.org/permalink/t3tca:confval-columns-description>`_
+are rendered next to the field label automatically, so no field
+information has to be configured for them.
+
+Remove any `tcaDescription` entry from the `fieldInformation` of your TCA.
+
 ..  _not-found-14:
 
 TYPO3 v14
