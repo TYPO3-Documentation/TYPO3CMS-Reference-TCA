@@ -13,12 +13,8 @@ the label and the form element itself.
     :type: array
     :Scope: Display
 
-Currently, TYPO3 comes with following implemented `fieldInformation` nodes:
-
-..  toctree::
-    :titlesonly:
-
-    TcaDescription
+Extensions can register their own field information nodes, as shown in the
+following example.
 
 ..  _tca_property_fieldInformation_example:
 
