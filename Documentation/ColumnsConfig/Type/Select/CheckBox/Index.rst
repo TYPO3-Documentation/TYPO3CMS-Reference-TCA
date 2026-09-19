@@ -125,5 +125,8 @@ Properties of the TCA column type `select` with renderType `selectCheckBox`
     ..  include:: _Properties/_ReadOnly.rst.txt
         :show-buttons:
 
+    ..  include:: _Properties/_Relationship.rst.txt
+        :show-buttons:
+
     ..  include:: _Properties/_ShowIfEmpty.rst.txt
         :show-buttons:

@@ -1,0 +1,37 @@
+..  _columns-folder-properties-relationship:
+
+..  confval:: relationship
+    :name: folder-relationship
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Proc.
+
+    ..  versionadded:: 13.3
+
+    Defines whether the field holds one folder or several. This decides
+    which value a
+    `Record object <https://docs.typo3.org/permalink/t3coreapi:database-record-objects>`_
+    provides for this field, for example in a Fluid template.
+
+    `oneToOne`, `manyToOne`
+        The field provides a single
+        :php-short:`\TYPO3\CMS\Core\Resource\Folder` object, or :php:`null`
+        if no folder is selected. :confval:`maxitems <folder-maxitems>` is
+        set to `1` automatically, overriding any other value.
+
+    With any other value, or if `relationship` is not set, the field
+    provides a
+    :php-short:`\TYPO3\CMS\Core\Resource\Collection\LazyFolderCollection`.
+    It contains each selected folder followed by all of its subfolders,
+    recursively.
+
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_gallery.php
+
+        'folder' => [
+          'label' => 'Folder',
+          'config' => [
+            'type' => 'folder',
+            'relationship' => 'manyToOne',
+          ],
+        ],
