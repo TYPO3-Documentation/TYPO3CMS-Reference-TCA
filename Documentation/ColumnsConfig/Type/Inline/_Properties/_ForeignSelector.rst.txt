@@ -17,3 +17,17 @@
     The :ref:`automatic generation <tca_property_MM_auto_creation_mm_table>` of MM tables also uses this field name.
     It depends whether `uid_local` of the MM table points to the opposite table (of the perspective of your inline field).
     In case of the opposite direction the field name `uid_foreign` is usually used.
+
+    ..  rubric:: Using a group field as foreign selector
+
+    The field referenced by `foreign_selector` can also be of type
+    :ref:`group <columns-group>`. The child records are then selected from
+    the table defined in its :ref:`allowed <columns-group-properties-allowed>`
+    option. Only **one table** is supported here: if `allowed` lists several
+    tables, only the first one is used.
+
+    Example using an intermediate table and the
+    :confval:`useCombination <inline-appearance-useCombination>` feature:
+
+    ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_foreignSelectorGroup.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/foreign_selector_group.php
