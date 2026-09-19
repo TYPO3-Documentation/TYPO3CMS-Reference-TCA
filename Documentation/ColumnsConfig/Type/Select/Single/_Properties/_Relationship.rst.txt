@@ -1,0 +1,15 @@
+..  _columns-select-single-properties-relationship:
+
+..  confval:: relationship
+    :name: select-single-relationship
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Proc.
+    :Default: `manyToOne` if `foreign_table` is set
+
+    ..  include:: /ColumnsConfig/Type/Select/_Includes/_Relationship.rst.txt
+
+    If `relationship` is not set and the field has a `foreign_table`, TYPO3
+    sets it to `manyToOne`, so the field provides a single record. With
+    :confval:`MM <select-single-mm>`, it is set to `manyToMany` instead,
+    and the field provides a collection.

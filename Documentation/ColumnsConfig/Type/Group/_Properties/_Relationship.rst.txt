@@ -1,0 +1,55 @@
+..  _columns-group-properties-relationship:
+
+..  confval:: relationship
+    :name: group-relationship
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Proc.
+
+    ..  versionadded:: 13.3
+
+    Defines whether the field holds one related record or several. This
+    decides which value a
+    `Record object <https://docs.typo3.org/permalink/t3coreapi:database-record-objects>`_
+    provides for this field, for example in a Fluid template.
+
+    `oneToOne`, `manyToOne`
+        The field provides a single
+        :php-short:`\TYPO3\CMS\Core\Domain\Record` object, or :php:`null` if
+        no record is related. :confval:`maxitems <group-maxitems>` is set to
+        `1` automatically, overriding any other value.
+
+    `oneToMany`
+        The field provides a
+        :php-short:`\TYPO3\CMS\Core\Collection\LazyRecordCollection` of
+        :php-short:`\TYPO3\CMS\Core\Domain\Record` objects.
+
+    If `relationship` is not set, the field also provides a collection. So
+    does a field with :confval:`MM <group-mm>`, whatever `relationship` says.
+    Any other value, including `manyToMany`, throws an exception unless `MM`
+    is set.
+
+    `maxitems` does not change the result the other way round: a field
+    without `relationship` still provides a collection, even if `maxitems`
+    is `1`.
+
+    In the following example, each course has one teacher:
+
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_course.php
+
+        'teacher' => [
+          'label' => 'Teacher',
+          'config' => [
+            'type' => 'group',
+            'allowed' => 'tx_myextension_teacher',
+            'relationship' => 'manyToOne',
+          ],
+        ],
+
+    The teacher can then be output without a loop:
+
+    ..  code-block:: html
+        :caption: EXT:my_extension/Resources/Private/Templates/Course.html
+
+        Teacher: {course.teacher.name}
