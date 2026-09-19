@@ -39,6 +39,32 @@
         file found inside an extension or use an registered icon identifier. If configured on the `foreign_table`,
         :ref:`selicon-field<ctrl-reference-selicon-field>` is respected.
 
+    iconOverlay (icon identifier)
+        ..  versionadded:: 13.4.19
+
+        Optional overlay shown on top of the `icon` in the
+        :guilabel:`New content element` wizard. Only used for items of the
+        field `CType` of table `tt_content`. This replaces setting
+        `iconOverlay` in page TSconfig
+        :confval:`newContentElement.wizardItems <t3tsref:mod-wizards-newcontentelement-wizarditems>`,
+        which still works.
+
+        ..  code-block:: php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+
+            use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+            ExtensionManagementUtility::addRecordType(
+              [
+                'label' => 'LLL:EXT:my_extension/Resources/Private/Language/locallang.xlf:my_element.title',
+                'value' => 'my_element',
+                'icon' => 'content-header',
+                'iconOverlay' => 'actions-approve',
+                'group' => 'default',
+              ],
+              '--palette--;;headers',
+            );
+
     group (string)
         The key of the :ref:`item group <columns-select-single-properties-item-groups>`.
 
