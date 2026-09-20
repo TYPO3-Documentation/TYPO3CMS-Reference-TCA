@@ -125,6 +125,31 @@
         only apply while a slug is generated from other fields. A slug typed in
         by an editor is left alone.
 
+        ..  versionchanged:: 15.0
+            :changelog: important-110501-1787666881
+
+            Slugs of existing pages only change when they are generated anew.
+
+        The `pages` table replaces a slash in the page title with `-`:
+
+        ..  code-block:: php
+            :caption: Configuration/TCA/pages.php of EXT:core
+
+            'replacements' => [
+              '/' => '-',
+            ],
+
+        A page titled `Support 24/7` is given the slug `/support-24-7`. With
+        the slash kept, it would be `/support-24/7`, which looks like a subpage
+        `7` of a page `/support-24`.
+
+        To keep slashes in generated page slugs, unset the option:
+
+        ..  code-block:: php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
+
+            unset($GLOBALS['TCA']['pages']['columns']['slug']['config']['generatorOptions']['replacements']);
+
     ..  confval:: postModifiers
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['postModifiers']
         :name: slug-generatorOptions-postModifiers
