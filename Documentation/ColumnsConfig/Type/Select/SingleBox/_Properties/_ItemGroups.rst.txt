@@ -20,7 +20,7 @@
     Item groups can also be defined for items in
     :confval:`foreign tables <select-singlebox-foreign-table>`.
 
-    See also :ref:`columns-select-properties-item-groups-api`
+    See also :ref:`item group API methods <columns-select-properties-item-groups-api>`
 
 ..  rubric:: Example: SelectSingle field with itemGroups
 

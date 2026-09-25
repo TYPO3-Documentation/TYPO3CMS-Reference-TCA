@@ -7,4 +7,4 @@
     :Scope: Display / Proc.
 
     PHP method which is called to fill or manipulate the items array.
-    See :ref:`tca_property_itemsProcFunc` about details.
+    See :ref:`itemsProcFunc <tca_property_itemsProcFunc>` about details.

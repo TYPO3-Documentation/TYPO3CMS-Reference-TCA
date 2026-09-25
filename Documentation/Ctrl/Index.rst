@@ -30,7 +30,7 @@ These properties are basically divided into two main categories:
 Example: Common table control configuration
 ===========================================
 
-For advanced examples see :ref:`ctrl-examples`.
+For advanced examples see :ref:`ctrl examples <ctrl-examples>`.
 
 ..  include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
 

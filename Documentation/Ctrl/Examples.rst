@@ -102,4 +102,4 @@ record:
 Add fieldInformation to field of type inline
 --------------------------------------------
 
-This example can be found in :ref:`inline-example-field-information`.
+This example can be found in :ref:`the example with a custom fieldInformation <inline-example-field-information>`.

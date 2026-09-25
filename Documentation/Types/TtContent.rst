@@ -21,7 +21,7 @@ property of table `tt_content`:
 
     The underlined tabs are added automatically.
 
-See :ref:`types-content-examples-extended` for an example.
+See :ref:`an extended content element with custom fields <types-content-examples-extended>` for an example.
 
 ..  note::
 
@@ -31,7 +31,7 @@ See :ref:`types-content-examples-extended` for an example.
 
 In case one of those palettes has been changed to no longer
 include the corresponding system fields, those fields are added individually
-depending on their definition in the :ref:`ctrl` section.
+depending on their definition in the :ref:`ctrl <ctrl>` section.
 
 By default, all custom fields - the ones still defined in :confval:`types-showitem` - are
 added after the `general` palette and are therefore added to the
@@ -48,7 +48,7 @@ If the content element defines the :guilabel:`Extended` tab, it will be
 inserted at the end, including all fields added to the type via API methods,
 without specifying a position, via
 :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTcaTypes()`. See
-:ref:`types-content-examples-extended` for an example.
+:ref:`an extended content element with custom fields <types-content-examples-extended>` for an example.
 
 ..  _types-content-examples:
 

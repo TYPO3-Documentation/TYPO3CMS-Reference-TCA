@@ -3,7 +3,7 @@
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: string (class->method reference)
     :Scope: Display / Proc.
-    :Example: :ref:`tca_example_checkbox_itemsProcFunc`
+    :Example: :ref:`the checkbox example with itemsProcFunc <tca_example_checkbox_itemsProcFunc>`
 
     PHP method which is called to fill or manipulate the items array.
     It is recommended to use the actual FQCN with :php:`class` and then concatenate the method:

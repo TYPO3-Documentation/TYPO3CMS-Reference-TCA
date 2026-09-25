@@ -6,7 +6,7 @@
     :Required: false
     :type: string (keyword)
     :Scope: Display / Proc.
-    :Example: :ref:`tca_example_translated_text_2`, :ref:`tca_example_l10n_mode`
+    :Example: :ref:`prefixLangTitle <tca_example_translated_text_2>`, :ref:`Disable the prefixLangTitle for the header field in tt_content <tca_example_l10n_mode>`
 
     Only active if the :ref:`['ctrl']['languageField'] <ctrl-reference-languagefield>` property is set.
 

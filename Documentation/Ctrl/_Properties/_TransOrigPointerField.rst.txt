@@ -21,7 +21,7 @@
 
     The column definition is :ref:`auto-created <ctrl-auto-created-columns>`. If
     it is :ref:`overridden <ctrl-auto-created-columns-override>` it must still
-    be of type :ref:`columns-passthrough`.
+    be of type :ref:`passthrough <columns-passthrough>`.
 
     ..  note::
         Sometimes `l18n_parent` is used for this field in Core tables. This
