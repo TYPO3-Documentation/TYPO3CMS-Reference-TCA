@@ -110,6 +110,45 @@
         with the key being the string to replace and the value being the replacement
         string.
 
+        ..  literalinclude:: _Snippets/_Replacements.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
+            :visible-lines: 20-33
+            :emphasize-lines: 26-28
+
+        A product titled `Fish & Chips` is given the slug `fish-and-chips`
+        instead of `fish-chips`.
+
+        The replacements are applied to each field of
+        :confval:`fields <slug-generatorOptions-fields>` on its own, before the
+        parts are joined with the
+        :confval:`fieldSeparator <slug-generatorOptions-fieldSeparator>`. They
+        only apply while a slug is generated from other fields. A slug typed in
+        by an editor is left alone.
+
+        ..  versionchanged:: 15.0
+            The `pages` table replaces a slash in the page title with `-`:
+
+            ..  code-block:: php
+                :caption: Configuration/TCA/pages.php of EXT:core
+
+                'replacements' => [
+                  '/' => '-',
+                ],
+
+            A page titled `Support 24/7` is given the slug `/support-24-7`
+            instead of `/support-24/7`, which looked like a subpage `7` of a
+            page `/support-24`. Slugs of existing pages only change when they
+            are generated anew.
+
+            To keep the previous behavior, unset the option:
+
+            ..  code-block:: php
+                :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
+
+                unset($GLOBALS['TCA']['pages']['columns']['slug']['config']['generatorOptions']['replacements']);
+
+            See `Important: #110501 - Slashes in page titles no longer end up in generated slugs <https://docs.typo3.org/permalink/changelog:important-110501-1787666881>`_.
+
     ..  confval:: postModifiers
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['postModifiers']
         :name: slug-generatorOptions-postModifiers
