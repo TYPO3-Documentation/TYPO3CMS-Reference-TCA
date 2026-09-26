@@ -39,7 +39,7 @@ in Object-orientated programming.
     Creating content elements has been simplified by removing the need to
     define the system fields for each element again and again. This shrinks
     down a content element's :confval:`types-showitem` to just the element
-    specific fields. See also :ref:`types-content`.
+    specific fields. See also :ref:`Automatically added system fields to content types (tt_content) <types-content>`.
 
 ..  _types-required:
 ..  _types-examples-required-minimal:

@@ -6,7 +6,7 @@
     :Required: true
     :type: array
     :Scope: Proc. / Display
-    :Example: :ref:`columns-example-basic`
+    :Example: :ref:`Example: A basic input field <columns-example-basic>`
 
     Contains the main configuration properties of the fields display and
     processing behavior.

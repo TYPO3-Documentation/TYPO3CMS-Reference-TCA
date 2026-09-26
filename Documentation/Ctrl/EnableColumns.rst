@@ -14,8 +14,8 @@ Migration
 
 Migration: Remove enable column definitions (hidden, starttime, endtime, fe_groups) from TCA
 On dropping TYPO3 v12.4 support extensions authors can drop the column
-definitions of the enable fields. They need to keep the :ref:`palettes` and
-:ref:`types` definitions, however:
+definitions of the enable fields. They need to keep the :ref:`palettes <palettes>` and
+:ref:`types <types>` definitions, however:
 
 ..  literalinclude:: _CodeSnippets/_Enablecolumns.diff
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
@@ -89,4 +89,4 @@ Using the QueryBuilder
 The same is true when
 :ref:`select() is called on the connection <t3coreapi:database-connection-select>`.
 
-See the :ref:`t3coreapi:database-restriction-builder` for details.
+See the :ref:`restriction builder <t3coreapi:database-restriction-builder>` for details.

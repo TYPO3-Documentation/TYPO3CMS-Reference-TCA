@@ -101,4 +101,4 @@ In PHP, the node has to implement an interface, but can return any additional HT
 Add fieldInformation to field of type inline
 --------------------------------------------
 
-This example can be found in :ref:`inline-example-field-information`.
+This example can be found in :ref:`Add a custom fieldInformation <inline-example-field-information>`.

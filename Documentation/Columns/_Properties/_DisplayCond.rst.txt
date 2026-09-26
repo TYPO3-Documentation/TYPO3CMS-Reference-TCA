@@ -6,8 +6,8 @@
     :Required: false
     :type: string / array
     :Scope: Display
-    :Example: :ref:`columns-displaycond-examples`
+    :Example: :ref:`Examples for display conditions <columns-displaycond-examples>`
 
     Contains one or more condition rules for whether to display the field or not.
 
-    Read more in the dedicated chapter :ref:`columns-displaycond`.
+    Read more in the dedicated chapter :ref:`displayCond <columns-displaycond>`.

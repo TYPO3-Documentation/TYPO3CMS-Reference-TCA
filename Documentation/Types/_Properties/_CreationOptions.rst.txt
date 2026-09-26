@@ -15,7 +15,7 @@
         :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['saveAndClose']
         :type: bool
         :default: false
-        :Examples: :ref:`types-example-creation-option`
+        :Examples: :ref:`Example: Create the blog plugin at once <types-example-creation-option>`
 
         ..  versionadded:: 13.0
 
@@ -30,7 +30,7 @@
         :name: types-creationOptions-defaultValues
         :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['defaultValues']
         :type: array
-        :Examples: :ref:`types-example-creation-option`
+        :Examples: :ref:`Example: Create the blog plugin at once <types-example-creation-option>`
 
         ..  versionadded:: 13.0
 

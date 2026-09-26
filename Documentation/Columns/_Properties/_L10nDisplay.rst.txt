@@ -6,7 +6,7 @@
     :Required: false
     :type: string (list of keywords)
     :Scope: Display
-    :Example: :ref:`tca_example_translated_select_single_13`, :ref:`tca_example_translated_select_single_8`
+    :Example: :ref:`Select field with defaultAsReadonly <tca_example_translated_select_single_13>`, :ref:`Translated field without l10n_display definition <tca_example_translated_select_single_8>`
 
     Localization display, see :ref:`l10n\_mode <columns-properties-l10n-mode>`.
 

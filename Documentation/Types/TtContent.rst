@@ -13,7 +13,7 @@ Automatically added system fields to content types (`tt_content`)
     define the system fields for each element again and again. This shrinks
     down a content element's :confval:`types-showitem` to just the element
     specific fields. See also :ref:`Migration <types-content-migration>`.
-    Added with :ref:`changelog:feature-104814-1725444916`.
+    Added with :ref:`Feature: #104814 <changelog:feature-104814-1725444916>`.
 
 The following tabs / palettes are added automatically to the :confval:`types-showitem`
 property of table `tt_content`:
@@ -28,7 +28,7 @@ property of table `tt_content`:
 
     The underlined tabs are added automatically.
 
-See :ref:`types-content-examples-extended` for an example.
+See :ref:`Extended content element with custom fields <types-content-examples-extended>` for an example.
 
 ..  note::
 
@@ -38,7 +38,7 @@ See :ref:`types-content-examples-extended` for an example.
 
 In case one of those palettes has been changed to no longer
 include the corresponding system fields, those fields are added individually
-depending on their definition in the :ref:`ctrl` section.
+depending on their definition in the :ref:`ctrl <ctrl>` section.
 
 By default, all custom fields - the ones still defined in :confval:`types-showitem` - are
 added after the `general` palette and are therefore added to the
@@ -55,7 +55,7 @@ If the content element defines the :guilabel:`Extended` tab, it will be
 inserted at the end, including all fields added to the type via API methods,
 without specifying a position, via
 :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTcaTypes()`. See
-:ref:`types-content-examples-extended` for an example.
+:ref:`Extended content element with custom fields <types-content-examples-extended>` for an example.
 
 ..  _types-content-examples:
 

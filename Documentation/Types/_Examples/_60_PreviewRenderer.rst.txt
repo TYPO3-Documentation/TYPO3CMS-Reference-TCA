@@ -10,7 +10,7 @@ PreviewRenderer examples
     :confval:`record types <ctrl-type>`.
 
     If you used PreviewRenderer with a subtype see section
-    :ref:`migration-subtype-previewrenderer`.
+    :ref:`Migration: PreviewRenderer for subtypes <migration-subtype-previewrenderer>`.
 
 Demonstrates property: :confval:`types-previewRenderer`.
 

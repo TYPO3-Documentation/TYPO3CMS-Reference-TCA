@@ -24,7 +24,7 @@
     Adding fields of different types to `searchFields` has no effect.
 
     There are more fine grained controls per column, see the documentation of the "search" key of any
-    type in :ref:`columns-types`.
+    type in :ref:`Field types (config > type) <columns-types>`.
 
     ..  note::
 

@@ -53,7 +53,7 @@
         The edit popup field control shows a pencil icon to edit an element directly in a popup window.
         When a record is selected and the edit button is clicked, that record opens in a new window for modification.
 
-        For details see :ref:`tca_property_fieldControl_editPopup`.
+        For details see :ref:`editPopup <tca_property_fieldControl_editPopup>`.
 
         ..  note::
             The edit popup control is pre-configured, but disabled by default. Enable it if you need it, the button
@@ -85,7 +85,7 @@
         The list module control button opens the Web > List module for only one table and allows the user to manipulate
         stuff there.
 
-        For details see :ref:`tca_property_fieldControl_listModule`.
+        For details see :ref:`listModule <tca_property_fieldControl_listModule>`.
 
         ..  note::
             The list module control is disabled by default, enable it if needed. It is shown below the `add record`

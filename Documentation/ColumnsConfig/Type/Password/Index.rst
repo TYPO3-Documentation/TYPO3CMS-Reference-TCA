@@ -50,7 +50,7 @@ Example: A password field with password generator
 
 For more options on generating passwords see
 :ref:`Property passwordGenerator <columns-password-properties-passwordGenerator>`
-and :ref:`columns-password-properties-passwordGenerator_examples`.
+and :ref:`Password generator examples <columns-password-properties-passwordGenerator_examples>`.
 
 ..  _columns-password-properties:
 

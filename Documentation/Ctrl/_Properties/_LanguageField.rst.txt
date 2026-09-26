@@ -12,7 +12,7 @@
     This property contains the column name of the column which contains the identifier
     language of the record. The column definition is :ref:`auto-created <ctrl-auto-created-columns>`.
     If it is :ref:`overridden <ctrl-auto-created-columns-override>` it must still
-    be of type :ref:`columns-language`.
+    be of type :ref:`Language fields <columns-language>`.
 
     The column is called `sys_language_uid` by convention.
 
@@ -32,8 +32,8 @@
 ..  rubric:: Migration: Remove language column definitions from TCA
 
 On dropping TYPO3 v12.4 support extensions authors can drop the column
-definitions of the language fields. They need to keep the :ref:`palettes` and
-:ref:`types` definitions, however:
+definitions of the language fields. They need to keep the :ref:`palettes <palettes>` and
+:ref:`types <types>` definitions, however:
 
 ..  literalinclude:: _CodeSnippets/_Language.diff
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php

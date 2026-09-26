@@ -9,7 +9,8 @@ Language fields
 ..  versionchanged:: 13.3
     The column definitions for these settings are
     :ref:`auto-created <ctrl-auto-created-columns>`.
-    See also :ref:`ctrl-reference-languagefield-migration`.
+    See also :ref:`the migration of the language field
+    <ctrl-reference-languagefield-migration>`.
 
 See also the :ref:`Frontend Localization Guide <t3translate:core-support-tca>`.
 

@@ -14,7 +14,7 @@
     validation and reset the value to an empty string, if `min` is not
     reached.
 
-    When using `min` in combination with :ref:`columns-input-properties-max`,
+    When using `min` in combination with :ref:`max <columns-input-properties-max>`,
     one has to make sure, the `min` value is less than or equal `max`.
     Otherwise the option is ignored.
 
