@@ -2,7 +2,7 @@
 
 ..  confval:: customControls
     :name: inline-customControls
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['customControls']
     :type: array
     :Scope: Display
 

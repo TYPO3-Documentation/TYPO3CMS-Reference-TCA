@@ -2,10 +2,10 @@
 
 ..  confval:: relationship
     :name: select-single-relationship
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['relationship']
     :type: string
     :Scope: Proc.
-    :Default: `manyToOne` if `foreign_table` is set
+    :default: `manyToOne` if `foreign_table` is set
 
     ..  include:: /ColumnsConfig/Type/Select/_Includes/_Relationship.rst.txt
 

@@ -2,9 +2,9 @@
 
 ..  confval:: richtextConfiguration
     :name: text-richtextConfiguration
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['richtextConfiguration']
     :type: string (keyword)
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
     :RenderType: :ref:`default <columns-text-renderType-default>`
 
     The value is a key in :php:`$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']` array and specifies the

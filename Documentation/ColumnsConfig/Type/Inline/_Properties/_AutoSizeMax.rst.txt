@@ -1,7 +1,7 @@
 
 ..  confval:: autoSizeMax
     :name: inline-autoSizeMax
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['autoSizeMax']
     :type: integer
     :Scope: Display
 

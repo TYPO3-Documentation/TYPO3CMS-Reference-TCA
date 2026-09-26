@@ -2,7 +2,7 @@
 
 ..  confval:: description
     :name: palettes-description
-    :Path: $GLOBALS['TCA'][$table]['palettes']
+    :Path: $GLOBALS['TCA'][$table]['palettes'][$palette]['description']
     :type: string
 
     Allows to display a localized description text into the palette declaration.

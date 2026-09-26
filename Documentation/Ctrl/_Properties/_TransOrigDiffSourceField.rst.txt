@@ -2,9 +2,9 @@
 
 ..  confval:: transOrigDiffSourceField
     :name: ctrl-transOrigDiffSourceField
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['transOrigDiffSourceField']
     :type: string (field name)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     ..  versionchanged:: 13.3
         The column definition is :ref:`auto-created <ctrl-auto-created-columns>`.

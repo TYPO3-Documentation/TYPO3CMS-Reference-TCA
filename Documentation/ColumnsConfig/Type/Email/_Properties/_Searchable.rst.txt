@@ -3,7 +3,7 @@
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['searchable']
     :type: boolean
     :Scope: Display
-    :Default: `true`
+    :default: `true`
 
     ..  versionadded:: 14.0
         TYPO3 now automatically includes all fields of suitable types in

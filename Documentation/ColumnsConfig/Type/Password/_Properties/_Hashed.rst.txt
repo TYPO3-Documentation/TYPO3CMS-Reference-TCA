@@ -2,10 +2,10 @@
 
 ..  confval:: hashed
     :name: password-hashed
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['hashed']
     :type: boolean
     :Scope: Proc.
-    :Default: true
+    :default: true
 
     If `hashed` is set to :php:`false`, if the field value will be saved as
     plaintext to the database.

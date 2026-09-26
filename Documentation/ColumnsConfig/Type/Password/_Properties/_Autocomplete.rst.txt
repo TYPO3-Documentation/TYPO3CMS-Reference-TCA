@@ -2,10 +2,10 @@
 
 ..  confval:: autocomplete
     :name: password-autocomplete
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['autocomplete']
     :type: boolean
     :Scope: Display
-    :Default: false
+    :default: false
 
     By default, the :php:`autocomplete=new-password` attribute will be added to the
     resulting input field. If :php:`autocomplete=true` is configured in TCA, a

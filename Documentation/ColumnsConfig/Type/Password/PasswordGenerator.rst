@@ -87,9 +87,9 @@ title
 
 ..  confval:: title
     :name: password-passwordGenerator-title
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']`
-    :Type: String / localized string
-    :Default: `LLL:core.core:labels.generatePassword`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']
+    :type: String / localized string
+    :default: `LLL:core.core:labels.generatePassword`
 
     Define a title for the control button.
 
@@ -100,9 +100,9 @@ allowEdit
 
 ..  confval:: allowEdit
     :name: password-passwordGenerator-allowEdit
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']`
-    :Type: boolean
-    :Default: :php:`true`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']
+    :type: boolean
+    :default: :php:`true`
 
     If set to :php:`false`, the user cannot edit the generated password.
 
@@ -113,9 +113,9 @@ Password policy
 
 ..  confval:: passwordPolicy
     :name: password-passwordGenerator-passwordPolicy
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordPolicy']`
-    :Type: string
-    :Default: `default`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordPolicy']
+    :type: string
+    :default: `default`
 
     ..  versionadded:: 14.2
 

@@ -121,7 +121,7 @@
 
     ..  confval:: appearance
         :name: select-treeConfig-appearance
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']
         :type: array
 
         ..  confval:: showHeader
@@ -151,7 +151,7 @@
             :name: select-treeConfig-nonSelectableLevels
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['nonSelectableLevels']
             :type: string (comma separated list)
-            :Default: `0`
+            :default: `0`
 
             Comma-separated list of levels that will not be selectable, by default the root
             node (which is "0") cannot be selected

@@ -2,10 +2,10 @@
 
 ..  confval:: exclude
     :name: columns-exclude
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]
-    :Required: false
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['exclude']
+    :required: false
     :type: boolean
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     If set, all backend users are prevented from editing the field unless they
     are members of a backend user group with this field added as an

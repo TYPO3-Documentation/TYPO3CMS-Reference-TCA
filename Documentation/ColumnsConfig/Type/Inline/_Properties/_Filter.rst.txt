@@ -2,9 +2,9 @@
 
 ..  confval:: filter
     :name: inline-filter
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']
     :type: array
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     Possibility to define user functions to filter out child items.
 

@@ -7,9 +7,9 @@ otherLanguageContent
 
 ..  confval:: otherLanguageContent
     :name: fieldWizard-otherLanguageContent
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
     :type: array
-    :Scope: fieldWizard
+    :Scope: Display
     :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
         :ref:`group <columns-group>`,
         :ref:`imageManipulation <columns-imageManipulation>`,

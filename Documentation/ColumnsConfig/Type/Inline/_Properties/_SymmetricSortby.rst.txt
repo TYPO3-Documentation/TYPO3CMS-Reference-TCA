@@ -2,9 +2,9 @@
 
 ..  confval:: symmetric_sortby
     :name: inline-symmetric-sortby
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['symmetric_sortby']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     This works like :ref:`foreign_sortby <columns-inline-properties-foreign-sortby>`, but in case of using bidirectional
     symmetric relations. Each side of a symmetric relation could have its own sorting, so `symmetric_sortby`

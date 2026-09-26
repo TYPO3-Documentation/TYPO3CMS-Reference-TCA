@@ -1,6 +1,6 @@
 ..  confval:: itemsProcFunc
     :name: select-byside-itemsProcFunc
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcFunc']
     :type: string (class->method reference)
     :Scope: Display / Proc.
 

@@ -2,7 +2,7 @@
 
 ..  confval:: container
     :name: ctrl-container
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['container']
     :type: array
     :Scope: Display
     :Examples: :ref:`extended container examples <tca_example_ctrl_container>`
