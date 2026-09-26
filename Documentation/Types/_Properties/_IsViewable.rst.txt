@@ -1,0 +1,36 @@
+..  _types-properties-isViewable:
+
+..  confval:: isViewable
+    :name: types-isViewable
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['isViewable']
+    :type: boolean
+    :Default: true
+
+    ..  versionadded:: 14.2
+        See `Feature: #97898 - TCA option isViewable for Page Types <https://docs.typo3.org/permalink/changelog:feature-97898-1737639600>`_.
+
+    ..  note::
+        This property is only interpreted in the table `pages`.
+
+    Defines whether a page of this page type can be viewed in the frontend.
+    A page type that is not viewable:
+
+    *   cannot be linked, neither in the link browser nor by a TypoLink in
+        the frontend,
+    *   answers a direct call in the frontend with a 404 error,
+    *   has no preview button in the backend.
+
+    TYPO3 sets this to `false` for the page types spacer (199) and folder
+    (254). All other page types are viewable as long as the option is not
+    set.
+
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
+
+        $GLOBALS['TCA']['pages']['types']['116']['isViewable'] = false;
+
+    In the backend, the page TSconfig setting
+    `TCEMAIN.preview.disableButtonForDokType <https://docs.typo3.org/permalink/t3tsref:confval-tcemain-preview>`_
+    decides instead: as soon as it is set for a page, the preview button and
+    the link browser follow that list of page types and `isViewable` is not
+    considered for them. The frontend always follows `isViewable`.
