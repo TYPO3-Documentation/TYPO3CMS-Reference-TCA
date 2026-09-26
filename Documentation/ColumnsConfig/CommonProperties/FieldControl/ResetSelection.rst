@@ -7,9 +7,9 @@ resetSelection
 
 ..  confval:: resetSelection
     :name: fieldControl-resetSelection
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['resetSelection']
     :type: array
-    :Scope: fieldControl
+    :Scope: Display
     :Types: :aspect:`Description`
 
     Render a button next to the select box to reset a changed selection to

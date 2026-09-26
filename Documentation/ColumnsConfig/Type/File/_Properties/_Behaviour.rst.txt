@@ -43,7 +43,7 @@
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['enableCascadingDelete']
         :type: boolean
         :Scope: Proc.
-        :Default: true
+        :default: true
 
         Usually when the parent record is deleted all attached
         `sys_file_references` are deleted. This default behaviour can be

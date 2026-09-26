@@ -2,7 +2,7 @@
 
 .. confval:: type
    :name: ctrl-type
-   :Path: $GLOBALS['TCA'][$table]['ctrl']
+   :Path: $GLOBALS['TCA'][$table]['ctrl']['type']
    :type: string (field name)
    :Scope: Display / Proc.
 

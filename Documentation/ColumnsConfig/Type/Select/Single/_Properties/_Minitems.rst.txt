@@ -1,6 +1,6 @@
 ..  confval:: minitems
     :name: select-single-minitems
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['minitems']
     :type: integer > 0
     :Scope: Display
 

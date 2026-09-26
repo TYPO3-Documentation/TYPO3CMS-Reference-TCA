@@ -1,7 +1,7 @@
 
 ..  confval:: isHiddenPalette
     :name: palettes-isHiddenPalette
-    :Path: $GLOBALS['TCA'][$table]['palettes']
+    :Path: $GLOBALS['TCA'][$table]['palettes'][$palette]['isHiddenPalette']
     :type: boolean
 
     If set to true, this palette will never be shown, but the fields of the palette are technically

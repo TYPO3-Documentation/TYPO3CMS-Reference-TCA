@@ -7,7 +7,7 @@ format
 
 ..  confval:: format
     :name: text-format
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['format']
     :type: string (keyword)
     :Scope: Display
 

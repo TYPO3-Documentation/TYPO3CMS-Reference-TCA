@@ -4,7 +4,7 @@
     :name: types-isViewable
     :Path: $GLOBALS['TCA'][$table]['types'][$type]['isViewable']
     :type: boolean
-    :Default: true
+    :default: true
 
     ..  versionadded:: 14.2
         See `Feature: #97898 - TCA option isViewable for Page Types <https://docs.typo3.org/permalink/changelog:feature-97898-1737639600>`_.

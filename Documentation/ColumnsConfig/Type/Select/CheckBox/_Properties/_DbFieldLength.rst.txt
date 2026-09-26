@@ -1,9 +1,9 @@
 
 ..  confval:: dbFieldLength
     :name: select-checkbox-dbFieldLength
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['dbFieldLength']
     :type: integer
-    :Default: 255
+    :default: 255
     :Scope: Proc.
 
     ..  versionadded:: 13.0

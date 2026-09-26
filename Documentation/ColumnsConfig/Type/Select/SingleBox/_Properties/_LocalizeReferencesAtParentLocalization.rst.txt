@@ -1,7 +1,7 @@
 
 ..  confval:: localizeReferencesAtParentLocalization
     :name: select-singlebox-localizeReferencesAtParentLocalization
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['localizeReferencesAtParentLocalization']
     :type: boolean
     :Scope: Proc.
 

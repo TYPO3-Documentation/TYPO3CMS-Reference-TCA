@@ -2,7 +2,7 @@
 
 ..  confval:: autocomplete
     :name: link-autocomplete
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['autocomplete']
     :type: boolean
     :Scope: Display
 

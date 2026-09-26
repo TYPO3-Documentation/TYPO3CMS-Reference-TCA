@@ -1,6 +1,6 @@
 ..  confval:: rows
     :name: text-codeEditor-rows
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rows']
     :type: integer
     :Scope: Display
 

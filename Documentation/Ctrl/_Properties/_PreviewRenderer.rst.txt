@@ -2,7 +2,7 @@
 
 ..  confval:: previewRenderer
     :name: ctrl-previewRenderer
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['previewRenderer']
     :type: string
     :Scope: Display
 

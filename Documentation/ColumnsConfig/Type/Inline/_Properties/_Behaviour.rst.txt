@@ -25,7 +25,7 @@
 
     ..  confval:: disableMovingChildrenWithParent
         :name: inline-behaviour-disableMovingChildrenWithParent
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['disableMovingChildrenWithParent']
         :type: boolean
         :Scope: Proc.
 
@@ -40,7 +40,7 @@
 
     ..  confval:: enableCascadingDelete
         :name: inline-behaviour-enableCascadingDelete
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['enableCascadingDelete']
         :type: boolean
         :Scope: Proc.
 

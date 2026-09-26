@@ -3,7 +3,7 @@
 
 ..  confval:: multiple
     :name: group-multiple
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['multiple']
     :type: boolean
     :Scope: Display / Proc.
 

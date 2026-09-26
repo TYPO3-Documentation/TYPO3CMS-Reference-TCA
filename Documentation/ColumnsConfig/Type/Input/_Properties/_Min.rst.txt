@@ -2,7 +2,7 @@
 
 ..  confval:: min
     :name: input-min
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['min']
     :type: integer
     :Scope: Display
 

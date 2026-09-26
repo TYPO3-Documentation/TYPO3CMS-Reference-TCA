@@ -3,9 +3,9 @@
 
 ..  confval:: symmetric_field
     :name: inline-symmetric-field
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['symmetric_field']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     This works like :ref:`foreign_field <columns-inline-properties-foreign-field>`, but in case of using
     bidirectional symmetric relations. `symmetric_field` defines in which field on

@@ -2,9 +2,9 @@
 
 ..  confval:: foreign_table
     :name: select-singlebox-foreign-table
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table']
     :type: string (table name)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
     :RenderType: all
 
     The item-array will be filled with records from the table defined here.

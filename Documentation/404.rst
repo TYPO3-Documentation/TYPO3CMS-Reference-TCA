@@ -26,7 +26,8 @@ maxDBListItems
 ~~~~~~~~~~~~~~
 
 ..  confval:: maxDBListItems
-    :Path: $GLOBALS['TCA'][$table]['interface']
+    :name: maxDBListItems
+    :Path: $GLOBALS['TCA'][$table]['interface']['maxDBListItems']
 
     Removed with TYPO3 14.0. Use TSconfig
     `mod.web_list.itemsLimitSingleTable <https://docs.typo3.org/permalink/t3tsref:pagetsconfigweblist-itemslimitsingletable>`_.
@@ -37,7 +38,8 @@ maxSingleDBListItems
 ~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: maxSingleDBListItems
-    :Path: $GLOBALS['TCA'][$table]['interface']
+    :name: maxSingleDBListItems
+    :Path: $GLOBALS['TCA'][$table]['interface']['maxSingleDBListItems']
 
     Removed with TYPO3 14.0. Use TSconfig
     `listOnlyInSingleTableView <https://docs.typo3.org/permalink/t3tsref:pagetsconfigweblist-listonlyinsingletableview>`_.
@@ -64,7 +66,7 @@ subtypes_addlist
 
 ..  confval:: subtypes_addlist
     :name: types-subtypes-addlist
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['subtypes_addlist']
 
     Removed with TYPO3 14.0, deprecated with 13.4.
 
@@ -75,7 +77,7 @@ subtypes_excludelist
 
 ..  confval:: subtypes_excludelist
     :name: types-subtypes-excludelist
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['subtypes_excludelist']
 
     Removed with TYPO3 14.0, deprecated with 13.4.
 
@@ -86,7 +88,7 @@ subtype_value_field
 
 ..  confval:: subtype_value_field
     :name: types-subtype-value-field
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['subtype_value_field']
 
 ..  _columns-group-properties-foreign-table:
 

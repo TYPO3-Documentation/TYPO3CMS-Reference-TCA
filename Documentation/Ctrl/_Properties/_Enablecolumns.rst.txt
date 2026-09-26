@@ -2,9 +2,9 @@
 
 ..  confval:: enablecolumns
     :name: ctrl-enablecolumns
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['enablecolumns']
     :type: array
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     ..  versionchanged:: 13.3
         The column definitions for these settings are :ref:`auto-created <ctrl-auto-created-columns>`.

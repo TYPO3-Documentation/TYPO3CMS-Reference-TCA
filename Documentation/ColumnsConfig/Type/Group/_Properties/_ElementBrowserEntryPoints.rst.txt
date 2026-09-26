@@ -2,7 +2,7 @@
 
 ..  confval:: elementBrowserEntryPoints
     :name: group-elementBrowserEntryPoints
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['elementBrowserEntryPoints']
     :type: array
     :Scope: Display
 

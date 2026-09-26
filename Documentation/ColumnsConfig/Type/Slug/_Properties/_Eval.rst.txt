@@ -2,9 +2,9 @@
 
 ..  confval:: eval
     :name: slug-eval
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['eval']
     :type: string (list of keywords)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     Configuration of field evaluation.
 
