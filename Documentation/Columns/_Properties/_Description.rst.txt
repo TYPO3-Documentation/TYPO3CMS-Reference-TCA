@@ -2,11 +2,11 @@
 
 ..  confval:: description
     :name: columns-description
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]
-    :Required: false
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['description']
+    :required: false
     :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     :Scope: Display
-    :Example: :ref:`Example: A basic input field <columns-example-basic>`
+    :Examples: :ref:`Example: A basic input field <columns-example-basic>`
 
     The property can be used to display an additional help text between the field label and
     the user input when editing records. As an example, the Core uses the description property

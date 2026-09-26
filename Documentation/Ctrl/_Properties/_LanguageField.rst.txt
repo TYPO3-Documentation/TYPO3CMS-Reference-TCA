@@ -2,9 +2,9 @@
 
 ..  confval:: languageField
     :name: ctrl-languageField
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['languageField']
     :type: string (field name of type :ref:`language <columns-language>`)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     ..  versionchanged:: 13.3
         The column definition is :ref:`auto-created <ctrl-auto-created-columns>`.

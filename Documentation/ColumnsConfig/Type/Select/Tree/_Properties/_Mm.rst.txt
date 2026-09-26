@@ -8,7 +8,7 @@
 
 ..  confval:: MM
     :name: select-tree-mm
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM']
     :type: string (table name)
     :Scope: Proc.
 
@@ -26,7 +26,7 @@
 
 ..  confval:: MM_match_fields
     :name: select-tree-mm-match-fields
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM_match_fields']
     :type: array
     :Scope: Display / Proc.
 
@@ -36,7 +36,7 @@
 
 ..  confval:: MM_opposite_field
     :name: select-tree-mm-opposite-field
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM_opposite_field']
     :type: string (field name)
     :Scope: Proc.
 
@@ -58,7 +58,7 @@
 
 ..  confval:: MM_oppositeUsage
     :name: select-tree-mm-oppositeUsage
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM_oppositeUsage']
     :type: array
     :Scope: Proc.
 
@@ -76,7 +76,7 @@
 
 ..  confval:: MM_table_where
     :name: select-tree-mm-table-where
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM_table_where']
     :type: string (SQL WHERE)
     :Scope: Proc.
 

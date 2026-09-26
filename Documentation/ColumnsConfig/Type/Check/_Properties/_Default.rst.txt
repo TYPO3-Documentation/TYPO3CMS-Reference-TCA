@@ -2,7 +2,7 @@
 
 ..  confval:: default
     :name: check-default
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['default']
     :type: integer
     :Scope: Display / Proc.
     :Examples: :ref:`Example: Checkboxes with Inline columns and default value <columns-checkbox-examples-16>`

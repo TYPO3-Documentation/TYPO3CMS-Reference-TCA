@@ -2,7 +2,7 @@
 
 ..  confval:: sortItems
     :name: select-sortItems
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['sortItems']
     :type: array
     :Scope: Display
     :RenderType: all

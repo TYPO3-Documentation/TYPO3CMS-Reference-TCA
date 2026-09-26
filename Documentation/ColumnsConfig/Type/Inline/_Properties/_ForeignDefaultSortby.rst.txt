@@ -3,7 +3,7 @@
 
 ..  confval:: foreign_default_sortby
     :name: inline-foreign-default-sortby
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_default_sortby']
     :type: string
     :Scope: Display
 

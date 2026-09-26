@@ -3,7 +3,7 @@
 
 ..  confval:: version
     :name: uuid-version
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['version']
     :type: integer
     :Scope: Display
 

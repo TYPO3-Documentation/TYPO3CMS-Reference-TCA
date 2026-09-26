@@ -2,9 +2,9 @@
 
 ..  confval:: EXT
     :name: ctrl-ext
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['EXT']
     :type: array
-    :Scope: (variable, depends on extension)
+    :Scope: Special
 
 
     User-defined content for extensions. You can use this as you like.

@@ -2,7 +2,7 @@
 
 ..  confval:: columnsOverrides
     :name: types-columnsOverrides
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['columnsOverrides']
     :type: array (columns fields overrides)
     :Scope: Display
     :Examples: :ref:`Examples for columnsOverrides <types-examples-columnsOverrides>`

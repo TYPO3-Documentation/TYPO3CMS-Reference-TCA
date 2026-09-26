@@ -2,7 +2,7 @@
 
 ..  confval:: overrideChildTca
     :name: file-overrideChildTca
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['overrideChildTca']
     :type: array
     :Scope: Display
 

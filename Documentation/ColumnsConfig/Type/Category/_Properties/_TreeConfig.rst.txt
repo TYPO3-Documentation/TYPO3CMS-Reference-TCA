@@ -2,7 +2,7 @@
 
 ..  confval:: treeConfig
     :name: category-treeConfig
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']
     :type: array
     :Scope: Display
     :RenderType: :ref:`selectTree <columns-select-rendertype-selectTree>`

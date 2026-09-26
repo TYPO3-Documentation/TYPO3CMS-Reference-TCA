@@ -2,10 +2,10 @@
 
 ..  confval:: autocomplete
     :name: number-autocomplete
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['autocomplete']
     :type: boolean
     :Scope: Display
-    :Default: false
+    :default: false
 
     Controls the `autocomplete` attribute of a given number field. If set to true,
     adds attribute :html:`autocomplete="on"` to the number input field allowing

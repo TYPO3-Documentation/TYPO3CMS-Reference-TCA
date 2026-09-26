@@ -1,6 +1,6 @@
 ..  confval:: readOnly
     :name: email-readOnly
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['readOnly']
     :type: boolean
     :Scope: Display
 

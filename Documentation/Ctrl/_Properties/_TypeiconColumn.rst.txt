@@ -2,7 +2,7 @@
 
 ..  confval:: typeicon_column
     :name: ctrl-typeicon-column
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['typeicon_column']
     :type: string (field name)
     :Scope: Display
 

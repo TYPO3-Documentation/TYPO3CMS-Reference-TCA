@@ -2,10 +2,10 @@
 
 ..  confval:: foreign_table_where
     :name: category-foreign-table-where
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table_where']
     :type: string (SQL WHERE)
-    :Scope: Proc. / Display
-    :Default: :sql:`AND {#sys_category}.{#sys_language_uid} IN (-1, 0)`
+    :Scope: Display / Proc.
+    :default: :sql:`AND {#sys_category}.{#sys_language_uid} IN (-1, 0)`
 
     The items from :ref:`foreign_table <columns-category-properties-foreign-table>`
     are selected with this :sql:`WHERE` clause. If set make sure to append the

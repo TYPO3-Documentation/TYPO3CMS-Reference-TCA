@@ -6,8 +6,8 @@ itemsProcFunc
 =============
 
 ..  confval:: itemsProcFunc
-
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :name: itemsProcFunc
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcFunc']
     :type: string (class->method reference)
     :Scope: Display / Proc.
     :Types: :ref:`check <columns-check>`, :ref:`select <columns-select>`, :ref:`radio <columns-radio>`

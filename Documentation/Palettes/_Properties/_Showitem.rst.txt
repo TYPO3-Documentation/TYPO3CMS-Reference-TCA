@@ -4,8 +4,8 @@
 
 ..  confval:: showitem
     :name: palettes-showitem
-    :Path: $GLOBALS['TCA'][$table]['palettes']
-    :Required: true
+    :Path: $GLOBALS['TCA'][$table]['palettes'][$palette]['showitem']
+    :required: true
     :type: string (list of field names)
 
     Specifies which fields are displayed in which order in the palette,

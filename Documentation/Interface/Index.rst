@@ -34,18 +34,20 @@ Properties of TCA section `interface`
     :Default:
 
     ..  confval:: maxDBListItems
-        :Path: $GLOBALS['TCA'][$table]['interface']
+        :name: maxDBListItems
+        :Path: $GLOBALS['TCA'][$table]['interface']['maxDBListItems']
         :type: integer
-        :Default: 20
+        :default: 20
 
         Maximum number of items shown in the List module.
 
     ..  _interface-properties-maxsingledblistitems:
 
     ..  confval:: maxSingleDBListItems
-        :Path: $GLOBALS['TCA'][$table]['interface']
+        :name: maxSingleDBListItems
+        :Path: $GLOBALS['TCA'][$table]['interface']['maxSingleDBListItems']
         :type: integer
-        :Default: 100
+        :default: 100
 
         Maximum number of items shown in the List module, if this table is listed
         in extended mode (listing only a single table).

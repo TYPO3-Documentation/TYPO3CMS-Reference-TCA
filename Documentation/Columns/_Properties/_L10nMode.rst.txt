@@ -2,11 +2,11 @@
 
 ..  confval:: l10n_mode
     :name: columns-l10n-mode
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]
-    :Required: false
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['l10n_mode']
+    :required: false
     :type: string (keyword)
     :Scope: Display / Proc.
-    :Example: :ref:`Example: prefixLangTitle <tca_example_translated_text_2>`, :ref:`Disable the prefixLangTitle for the header field in tt_content <tca_example_l10n_mode>`
+    :Examples: :ref:`Example: prefixLangTitle <tca_example_translated_text_2>`, :ref:`Disable the prefixLangTitle for the header field in tt_content <tca_example_l10n_mode>`
 
     Only active if the :ref:`['ctrl']['languageField'] <ctrl-reference-languagefield>` property is set.
 

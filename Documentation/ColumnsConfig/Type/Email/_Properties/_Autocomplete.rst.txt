@@ -2,7 +2,7 @@
 
 ..  confval:: autocomplete
     :name: email-autocomplete
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['autocomplete']
     :type: boolean
     :Scope: Display
     :default: false

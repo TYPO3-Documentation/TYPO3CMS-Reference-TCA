@@ -2,7 +2,7 @@
 
 ..  confval:: appearance
     :name: slug-appearance
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
     :type: array
     :Scope: Display
 
@@ -10,7 +10,7 @@
 
     ..  confval:: prefix
         :name: slug-appearance-prefix
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['prefix']
         :type: userFunction
         :Scope: Display
 

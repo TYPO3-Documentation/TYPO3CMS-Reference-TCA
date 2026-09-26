@@ -2,9 +2,9 @@
 
 ..  confval:: delete
     :name: ctrl-delete
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['delete']
     :type: string (field name)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
 
     Field name, which indicates if a record is considered deleted or not.

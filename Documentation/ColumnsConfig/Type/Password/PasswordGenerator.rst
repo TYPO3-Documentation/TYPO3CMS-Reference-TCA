@@ -87,9 +87,9 @@ title
 
 ..  confval:: title
     :name: password-passwordGenerator-title
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']`
-    :Type: String / localized string
-    :Default: :php:`"LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.generatePassword"`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']
+    :type: String / localized string
+    :default: :php:`"LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.generatePassword"`
 
     Define a title for the control button.
 
@@ -100,9 +100,9 @@ allowEdit
 
 ..  confval:: allowEdit
     :name: password-passwordGenerator-allowEdit
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']`
-    :Type: boolean
-    :Default: :php:`true`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']
+    :type: boolean
+    :default: :php:`true`
 
     If set to :php:`false`, the user cannot edit the generated password.
 
@@ -120,9 +120,9 @@ passwordRules.length
 
 ..  confval:: passwordRules.length
     :name: password-passwordRules-length
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['length']`
-    :Type: int
-    :Default: :php:`16`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['length']
+    :type: int
+    :default: :php:`16`
     :Minimum: :php:`8`
 
     Defines the amount of characters for the generated password.
@@ -134,8 +134,8 @@ passwordRules.random
 
 ..  confval:: passwordRules.random
     :name: password-passwordRules-random
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['random']`
-    :Type: String
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['random']
+    :type: String
     :Values: :php:`"hex"`, :php:`"base64"`
 
     Defines the encoding of random bytes. Overrules character definitions.
@@ -162,9 +162,9 @@ passwordRules.digitCharacters
 
 ..  confval:: passwordRules.digitCharacters
     :name: password-passwordRules-digitCharacters
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['digitCharacters']`
-    :Type: boolean
-    :Default: :php:`true`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['digitCharacters']
+    :type: boolean
+    :default: :php:`true`
 
     If set to :php:`false`, the generated password contains no digit.
 
@@ -176,9 +176,9 @@ passwordRules.lowerCaseCharacters
 
 ..  confval:: passwordRules.lowerCaseCharacters
     :name: password-passwordRules-lowerCaseCharacters
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['lowerCaseCharacters']`
-    :Type: boolean
-    :Default: :php:`true`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['lowerCaseCharacters']
+    :type: boolean
+    :default: :php:`true`
 
     If set to :php:`false`, the generated password contains no lower case characters.
 
@@ -189,9 +189,9 @@ passwordRules.upperCaseCharacters
 
 ..  confval:: passwordRules.upperCaseCharacters
     :name: password-passwordRules-upperCaseCharacters
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['upperCaseCharacters']`
-    :Type: boolean
-    :Default: :php:`true`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['upperCaseCharacters']
+    :type: boolean
+    :default: :php:`true`
 
     If set to :php:`false`, the generated password contains no upper case characters.
 
@@ -202,9 +202,9 @@ passwordRules.specialCharacters
 
 ..  confval:: passwordRules.specialCharacters
     :name: password-passwordRules-specialCharacters
-    :Path: :php:`$GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['specialCharacters']`
-    :Type: boolean
-    :Default: :php:`false`
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['specialCharacters']
+    :type: boolean
+    :default: :php:`false`
 
     If set to :php:`true`, the generated password also contains special
     characters (`!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~`).

@@ -2,7 +2,7 @@
 
 ..  confval:: appearance
     :name: link-appearance
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
     :type: array
     :Scope: Display
 

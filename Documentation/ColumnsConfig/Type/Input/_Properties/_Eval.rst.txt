@@ -2,9 +2,9 @@
 
 ..  confval:: eval
     :name: input-eval
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['eval']
     :type: string (list of keywords)
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     Configuration of field evaluation. See also :ref:`Input fields with eval <columns-input-eval>`.
 

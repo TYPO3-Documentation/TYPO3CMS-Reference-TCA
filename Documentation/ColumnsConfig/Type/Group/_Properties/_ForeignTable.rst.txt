@@ -2,9 +2,9 @@
 
 ..  confval:: foreign_table
     :name: group-foreign-table
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table']
     :type: string (table name)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     ..  tip::
         ..  versionchanged:: 13.4.10
