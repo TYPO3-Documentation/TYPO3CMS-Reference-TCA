@@ -70,6 +70,55 @@
                  ],
             ],
 
+        ..  rubric:: Markers in startingPoints
+
+        ..  versionadded:: 15.0
+            :changelog: feature-75037-1758268800
+
+        `startingPoints` resolves these markers, which are also known from
+        :confval:`select-tree-foreign-table-where`:
+
+        `###CURRENT_PID###`
+            The page ID the record is stored on.
+
+        `###SITEROOT###`
+            The uid of the site root page in the rootline of the record.
+
+        :ref:`###PAGE_TSCONFIG_ID### <t3tsref:tceform-page_tsconfig_id>`
+            A single ID set in page TSconfig.
+
+        :ref:`###PAGE_TSCONFIG_IDLIST### <t3tsref:tceform-page_tsconfig_idlist>`
+            A comma-separated list of IDs set in page TSconfig.
+
+        A marker that cannot be resolved, such as `###SITEROOT###` for a record
+        outside of a site, is removed from the list. It is not read as `0`,
+        the root of the whole tree.
+
+        The markers are resolved after the page TSconfig override, so they
+        also work in `TCEFORM.<table>.<field>.config.treeConfig.startingPoints`.
+        They can be combined with static IDs and with the `###SITE:###`
+        syntax.
+
+        ..  code-block:: php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php
+
+            'categories' => [
+              'config' => [
+                'type' => 'select',
+                'renderType' => 'selectTree',
+                'foreign_table' => 'tx_myextension_category',
+                'treeConfig' => [
+                  'parentField' => 'parent',
+                  'startingPoints' => '###PAGE_TSCONFIG_IDLIST###',
+                ],
+              ],
+            ],
+
+        ..  code-block:: typoscript
+            :caption: EXT:my_extension/Configuration/page.tsconfig
+
+            TCEFORM.tx_myextension_table.categories.PAGE_TSCONFIG_IDLIST = 12,34
+
     ..  confval:: appearance
         :name: select-treeConfig-appearance
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['']

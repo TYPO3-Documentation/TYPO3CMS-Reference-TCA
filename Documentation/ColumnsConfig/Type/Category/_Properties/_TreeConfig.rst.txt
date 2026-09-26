@@ -51,6 +51,16 @@
 
         This will evaluate to :php:`'startingPoints' => '1,2,123'`.
 
+        ..  versionadded:: 15.0
+            :changelog: feature-75037-1758268800
+
+        `startingPoints` also resolves the markers `###CURRENT_PID###`,
+        `###SITEROOT###`, `###PAGE_TSCONFIG_ID###` and
+        `###PAGE_TSCONFIG_IDLIST###`. A marker that cannot be resolved is
+        removed from the list. See
+        :confval:`startingPoints of the select tree <select-treeConfig-startingPoints>`
+        for what each marker stands for and an example.
+
     appearance (array, optional)
         showHeader (boolean)
             Whether to show the header of the tree that contains a field to filter the records and allows to expand or
