@@ -10,4 +10,4 @@
     opened inline of the given parent. Display related TCA properties of the child table can be
     overridden in `types` and `columns` section.
 
-    See also :ref:`columns-inline-properties-overrideChildTca-examples`.
+    See also :ref:`the examples with overrideChildTca <columns-inline-properties-overrideChildTca-examples>`.

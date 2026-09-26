@@ -5,7 +5,7 @@
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer/string
     :Scope: Display
-    :Examples: :ref:`columns-checkbox-examples-2`, :ref:`columns-checkbox-examples-16`
+    :Examples: :ref:`Default checkboxes with fixed columns <columns-checkbox-examples-2>`, :ref:`Checkboxes with Inline columns and default value <columns-checkbox-examples-16>`
 
     In how many columns the checkboxes will be shown. Makes sense only if the 'items' property is defining multiple
     checkboxes.

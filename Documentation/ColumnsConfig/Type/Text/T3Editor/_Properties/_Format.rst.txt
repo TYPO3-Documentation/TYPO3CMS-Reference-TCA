@@ -23,4 +23,4 @@ format
     *   `typoscript`
     *   `xml`
 
-    See also :ref:`tca_example_codeEditor_1`.
+    See also :ref:`Code highlighting with the code editor <tca_example_codeEditor_1>`.
