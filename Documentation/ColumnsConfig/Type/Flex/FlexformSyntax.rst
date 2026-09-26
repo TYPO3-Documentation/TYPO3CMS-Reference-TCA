@@ -7,7 +7,7 @@ FlexForm syntax
 
 ..  note::
     Read this section together with :ref:`Core API <t3coreapi:t3ds>`
-    and :ref:`t3coreapi:flexforms` to make this topic easier to understand.
+    and :ref:`FlexForms <t3coreapi:flexforms>` to make this topic easier to understand.
 
 FlexForms provide a way for editors to set values for plugins by providing a "form-within-a-form"
 in the backend.

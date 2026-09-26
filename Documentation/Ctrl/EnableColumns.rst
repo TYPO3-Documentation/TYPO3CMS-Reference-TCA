@@ -11,9 +11,9 @@ All enable column definitions (hidden, starttime, endtime, fe_groups) are
 automatically created if they are registered in the `ctrl` section in the main
 TCA (not in the overrides) of a table.
 
-:ref:`palettes` as known from Core TCA definitions have to be defined in the
+:ref:`palettes <palettes>` as known from Core TCA definitions have to be defined in the
 TCA of a custom table however. If the fields should be editable by backend users,
-the also have to be added to the :ref:`types` definitions.
+the also have to be added to the :ref:`types <types>` definitions.
 
 ..  _ctrl-reference-enablecolumns-examples:
 
@@ -84,4 +84,4 @@ Using the QueryBuilder
 The same is true when
 :ref:`select() is called on the connection <t3coreapi:database-connection-select>`.
 
-See the :ref:`t3coreapi:database-restriction-builder` for details.
+See the :ref:`restriction builder <t3coreapi:database-restriction-builder>` for details.

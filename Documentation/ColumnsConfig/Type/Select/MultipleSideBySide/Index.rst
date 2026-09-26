@@ -33,7 +33,7 @@ Example: Basic side-by-side select field
 
 ..  include:: /CodeSnippets/SelectMultiplesidebyside1.rst.txt
 
-For more examples see also :ref:`columns-select-rendertype-selectMultipleSideBySide-examples`.
+For more examples see also :ref:`the advanced examples <columns-select-rendertype-selectMultipleSideBySide-examples>`.
 
 ..  _columns-select-multiplesidebyside-properties:
 
