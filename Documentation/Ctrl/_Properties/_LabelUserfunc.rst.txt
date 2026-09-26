@@ -35,7 +35,7 @@
             'label_userFunc' => \Documentation\Examples\Userfuncs\Tca::class . '->haikuTitle',
         ],
 
-    Class `Documentation\Examples\Userfuncs\Tca` contains the code itself::
+    Class :php:`Documentation\Examples\Userfuncs\Tca` contains the code itself::
 
         public function haikuTitle(&$parameters)
         {
