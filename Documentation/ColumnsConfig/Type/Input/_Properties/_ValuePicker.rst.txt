@@ -2,7 +2,7 @@
 
 ..  confval:: valuePicker
     :name: input-valuePicker
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['valuePicker']
     :type: array
     :Scope: Display
 

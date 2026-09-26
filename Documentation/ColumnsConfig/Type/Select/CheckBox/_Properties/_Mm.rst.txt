@@ -8,7 +8,7 @@
 
 ..  confval:: MM
     :name: select-checkbox-mm
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM']
     :type: string (table name)
     :Scope: Proc.
 
@@ -27,7 +27,7 @@
 
 ..  confval:: MM_match_fields
     :name: select-checkbox-mm-match-fields
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM_match_fields']
     :type: array
     :Scope: Display / Proc.
 
@@ -37,7 +37,7 @@
 
 ..  confval:: MM_opposite_field
     :name: select-checkbox-mm-opposite-field
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM_opposite_field']
     :type: string (field name)
     :Scope: Proc.
 
@@ -59,7 +59,7 @@
 
 ..  confval:: MM_oppositeUsage
     :name: select-checkbox-mm-oppositeUsage
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM_oppositeUsage']
     :type: array
     :Scope: Proc.
 
@@ -77,7 +77,7 @@
 
 ..  confval:: MM_table_where
     :name: select-checkbox-mm-table-where
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM_table_where']
     :type: string (SQL WHERE)
     :Scope: Proc.
 

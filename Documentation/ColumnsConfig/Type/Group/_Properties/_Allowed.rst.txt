@@ -2,9 +2,9 @@
 
 ..  confval:: allowed
     :name: group-allowed
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowed']
     :type: string (list)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     A comma list of tables from :php:`$GLOBALS['TCA']`, for example "pages,be\_users".
 

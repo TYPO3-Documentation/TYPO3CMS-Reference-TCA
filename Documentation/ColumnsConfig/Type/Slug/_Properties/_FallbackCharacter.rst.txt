@@ -2,10 +2,10 @@
 
 ..  confval:: fallbackCharacter
     :name: slug-fallbackCharacter
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fallbackCharacter']
     :type: string
-    :Scope: Proc. / Display
-    :Default: \-
+    :Scope: Display / Proc.
+    :default: \-
 
     Character that represents the separator of slug sections, that contain the
     :ref:`fieldSeparator <columns-slug-properties-generatorOptions>`.

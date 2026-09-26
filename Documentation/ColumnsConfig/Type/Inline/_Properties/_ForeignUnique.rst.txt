@@ -2,9 +2,9 @@
 
 ..  confval:: foreign_unique
     :name: inline-foreign-unique
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_unique']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
      Field which must be unique for all children of a parent record.
 

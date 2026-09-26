@@ -2,7 +2,7 @@
 
 ..  confval:: relationship
     :name: inline-relationship
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['relationship']
     :type: string
     :Scope: Proc.
 

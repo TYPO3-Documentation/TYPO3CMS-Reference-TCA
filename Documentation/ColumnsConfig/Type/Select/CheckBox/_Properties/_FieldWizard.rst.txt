@@ -26,6 +26,6 @@
         :name: select-checkbox-fieldWizard-selectIcons
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['selectIcons']
         :type: array
-        :Scope: fieldWizard
+        :Scope: Display
 
         Render thumbnails of icons below the select drop-down. Disabled by default.

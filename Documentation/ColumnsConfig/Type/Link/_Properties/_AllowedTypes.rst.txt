@@ -2,9 +2,9 @@
 
 ..  confval:: allowedTypes
     :name: link-allowedTypes
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowedTypes']
     :type: array of keywords
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     page
         Links to internal pages

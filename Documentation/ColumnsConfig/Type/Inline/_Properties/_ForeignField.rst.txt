@@ -2,9 +2,9 @@
 
 ..  confval:: foreign_field
     :name: inline-foreign-field
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_field']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     The `foreign_field` is the field of the child record pointing to the parent record. This defines
     where to store the uid of the parent record.

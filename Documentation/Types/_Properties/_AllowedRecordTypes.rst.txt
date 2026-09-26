@@ -4,7 +4,7 @@
     :name: types-allowedRecordTypes
     :Path: $GLOBALS['TCA'][$table]['types'][$type]['allowedRecordTypes']
     :type: array of table names or `['*']`
-    :Default: `['pages', 'sys_category', 'sys_file_reference', 'sys_file_collection']`
+    :default: `['pages', 'sys_category', 'sys_file_reference', 'sys_file_collection']`
 
     ..  versionadded:: 14.2
         This property replaces the now deprecated method

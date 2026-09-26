@@ -9,9 +9,9 @@ For general fieldWizard documentation see :ref:`here <tca_property_fieldWizard>`
 
     ..  confval:: recordsOverview
         :name: group-recordsOverview
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['recordsOverview']
         :type: array
-        :Scope: fieldWizard
+        :Scope: Display
 
         Render an overview of the selected records with correct icon and click menu and title. Allows to
         perform actions on the selected records directly. Links the record title to a direct editing form.
@@ -22,7 +22,7 @@ For general fieldWizard documentation see :ref:`here <tca_property_fieldWizard>`
 
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
         :type: array
-        :Scope: fieldWizard
+        :Scope: Display
 
         Render a list of allowed tables and link to element browser. This field wizard is enabled by default.
         This wizard allows to easily select records from a popup.

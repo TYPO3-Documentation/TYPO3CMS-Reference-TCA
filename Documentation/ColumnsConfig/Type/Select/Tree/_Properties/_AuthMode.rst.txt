@@ -2,9 +2,9 @@
 
 ..  confval:: authMode
     :name: select-tree-authMode
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['authMode']
     :type: string (keyword)
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
     :RenderType: all
 
     Authorization mode for the selector box. The only possible option is:

@@ -157,7 +157,7 @@
 
     ..  confval:: elementBrowserEnabled
         :name: inline-appearance-elementBrowserEnabled
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleRecordsSelector']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['elementBrowserEnabled']
         :type: boolean
 
         Hides or displays the element browser button in inline records

@@ -2,7 +2,7 @@
 
 ..  confval:: label_userFunc
     :name: ctrl-label-userFunc
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['label_userFunc']
     :type: string
     :Scope: Display
 

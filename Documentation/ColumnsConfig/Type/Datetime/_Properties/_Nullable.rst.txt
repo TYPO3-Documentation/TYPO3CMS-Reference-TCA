@@ -4,8 +4,8 @@
     :name: datetime-nullable
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['nullable']
     :type: boolean
-    :Default: false
-    :Scope: Proc
+    :default: false
+    :Scope: Proc.
 
     If nothing is entered into the field, then it will be saved as :sql:`NULL`.
 

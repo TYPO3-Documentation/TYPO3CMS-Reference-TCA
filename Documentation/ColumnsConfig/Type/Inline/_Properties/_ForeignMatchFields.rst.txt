@@ -2,7 +2,7 @@
 
 ..  confval:: foreign_match_fields
     :name: inline-foreign-match-fields
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_match_fields']
     :type: array
     :Scope: Proc.
 

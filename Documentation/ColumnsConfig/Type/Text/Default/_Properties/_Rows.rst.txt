@@ -2,7 +2,7 @@
 
 ..  confval:: rows
     :name: text-rows
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rows']
     :type: integer
     :Scope: Display
     :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,
