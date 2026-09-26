@@ -17,3 +17,38 @@
     The :ref:`automatic generation <tca_property_MM_auto_creation_mm_table>` of MM tables also uses this field name.
     It depends whether `uid_local` of the MM table points to the opposite table (of the perspective of your inline field).
     In case of the opposite direction the field name `uid_foreign` is usually used.
+
+    ..  rubric:: Using a group field as foreign selector
+
+    The field referenced by `foreign_selector` can also be of type
+    :ref:`group <columns-group>`. The child records are then selected from
+    the table defined in its :ref:`allowed <columns-group-properties-allowed>`
+    option. Only **one table** is supported here: if `allowed` lists several
+    tables, only the first one is used.
+
+    An event lists its speakers. Each speaker is a person, and the
+    intermediate table stores the role the person has at this event. The
+    group field `speaker` of the intermediate table is the selector: an
+    editor picks a person, and a new intermediate record is created for it:
+
+    ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_foreignSelectorGroupEvent.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_event.php
+        :visible-lines: 17-27
+        :emphasize-lines: 24
+
+    ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_foreignSelectorGroupEventSpeaker.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_event_speaker.php
+        :visible-lines: 19-39
+        :emphasize-lines: 23
+
+    The person table `tx_myextension_person` needs no field for the
+    relation.
+
+    Without an attribute such as the role, an intermediate table is not
+    needed: a :ref:`group <columns-group>` or :ref:`select <columns-select>`
+    field with an :confval:`MM <group-mm>` table on the event
+    does the job.
+
+    With :confval:`useCombination <inline-appearance-useCombination>`, the
+    person itself can be edited inside each intermediate record. Such an
+    edit changes the person everywhere it is used, not only for this event.
