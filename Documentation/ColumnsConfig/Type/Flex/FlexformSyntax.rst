@@ -17,7 +17,7 @@ document inside a field in the tt_content database table with root <T3FlexForms>
 The setup file consists of data structures containing TCA field information that
 are used to generate the backend form. The XML document in the database is the TCA field
 information plus the values entered by the editor in the backend form (saved there
-by function `\TYPO3\CMS\Core\Utility\GeneralUtility::xml2array()`)
+by function :php:`\TYPO3\CMS\Core\Utility\GeneralUtility::xml2array()`)
 
 
 When creating the XML setup file there are some limitations:
