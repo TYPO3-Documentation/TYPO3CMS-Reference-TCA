@@ -17,9 +17,9 @@ codeEditor (previously "t3editor")
     :ref:`Migration from render type t3editor to render type codeEditor <columns-text-renderType-codeEditor-migration>`.
 
 This page describes the :ref:`text <columns-text>` type with the
-:php:`renderType='codeEditor'`.
+`renderType='codeEditor'`.
 
-The :php:`renderType='codeEditor'` triggers a code highlighter.
+The `renderType='codeEditor'` triggers a code highlighter.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.

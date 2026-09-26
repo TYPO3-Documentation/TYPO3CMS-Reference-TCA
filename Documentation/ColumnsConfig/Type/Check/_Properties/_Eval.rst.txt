@@ -19,4 +19,4 @@
         The actual limit is defined with the validation property :ref:`validation <columns-check-properties-validation>`.
 
     maximumRecordsCheckedInPid
-        Similar to :code:`maximumRecordsChecked` but with the validation scope limited to records stored in the same page.
+        Similar to `maximumRecordsChecked` but with the validation scope limited to records stored in the same page.

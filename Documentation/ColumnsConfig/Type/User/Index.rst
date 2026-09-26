@@ -35,7 +35,7 @@ The `user` field can be useful, if:
 *   A special rendering and evaluation is needed for a value when editing records via FormEngine.
 
 ..  note::
-    In previous versions of TYPO3 core, :php:`type='user'` had a property `userFunc` to call an own class
+    In previous versions of TYPO3 core, `type='user'` had a property `userFunc` to call an own class
     method of some extension. This has been substituted with a custom element using a `renderType`.
     See example below.
 

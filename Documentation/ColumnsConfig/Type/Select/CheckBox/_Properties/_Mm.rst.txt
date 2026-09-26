@@ -89,7 +89,7 @@
 
         {#uid_local} = ###THIS_UID###
 
-    The above example uses the special field quoting syntax :php:`{#...}`
+    The above example uses the special field quoting syntax `{#...}`
     around identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as
     possible.
 

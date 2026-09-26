@@ -20,11 +20,11 @@ Minimal table configuration
 
 ..  include:: /CodeSnippets/TxStyleguideCtrlMinimal.rst.txt
 
-Property :code:`label` is a mandatory setting, but the above properties are a recommended
+Property `label` is a mandatory setting, but the above properties are a recommended
 minimum. The list module shows an icon and a translated title of the table, and it uses the value of
-field :code:`title` as title for single rows. Single record administration however is limited with this setup: This
+field `title` as title for single rows. Single record administration however is limited with this setup: This
 table does not implement soft delete, record rows can not be sorted between each other, record localization is not
-possible, and much more. In the database, only columns :code:`uid`, :code:`pid` and :code:`title` are needed
+possible, and much more. In the database, only columns `uid`, `pid` and `title` are needed
 in :file:`ext_tables.sql` with this setup.
 
 
@@ -33,7 +33,7 @@ in :file:`ext_tables.sql` with this setup.
 Core table tt_content
 =====================
 
-Table :code:`tt_content` makes much more excessive use of the :code:`['ctrl']` section:
+Table `tt_content` makes much more excessive use of the `['ctrl']` section:
 
 ..  include:: /CodeSnippets/TtContentCtrl.rst.txt
 

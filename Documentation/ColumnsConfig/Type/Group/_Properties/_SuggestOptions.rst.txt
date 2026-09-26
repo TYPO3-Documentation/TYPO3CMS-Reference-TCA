@@ -47,7 +47,7 @@
         Add a CSS class to every list item of the result list.
 
     maxItemsInResultList (integer)
-        Maximum number of results to display, default is :code:`10`.
+        Maximum number of results to display, default is `10`.
 
     maxPathTitleLength (integer)
         Maximum number of characters to display when a path element is too long.
@@ -102,7 +102,7 @@
         User function to manipulate the displayed records in the results.
 
     searchCondition (string)
-        Additional WHERE clause (not prepended with :code:`AND`).
+        Additional WHERE clause (not prepended with :sql:`AND`).
 
         ..  note::
             Basically identical to 'addWhere' - one will vanish sooner or later.
@@ -124,8 +124,8 @@
             ],
 
     searchWholePhrase (boolean)
-        Whether to do a :code:`LIKE=%mystring%` (searchWholePhrase = 1) or a :code:`LIKE=mystring%`
-        (to do a real find as you type), default is :code:`0`.
+        Whether to do a `LIKE=%mystring%` (searchWholePhrase = 1) or a `LIKE=mystring%`
+        (to do a real find as you type), default is `0`.
 
         **Example**
 

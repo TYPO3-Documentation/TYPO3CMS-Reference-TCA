@@ -8,7 +8,7 @@
 Input
 =====
 
-:php:`type='input'` generates a html :html:`<input>` field with the :html:`type`
+`type='input'` generates a html :html:`<input>` field with the :html:`type`
 attribute set to :html:`text`. It is possible to apply additional features such
 as the :ref:`valuePicker <columns-input-properties-valuePicker>`.
 

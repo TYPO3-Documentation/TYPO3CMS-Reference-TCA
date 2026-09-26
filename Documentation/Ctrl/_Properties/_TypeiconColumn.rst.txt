@@ -18,4 +18,4 @@
 
     .. note::
 
-        The pages table has a special configuration and relies on the :code:`$GLOBALS['PAGES_TYPES']` array.
+        The pages table has a special configuration and relies on the `$GLOBALS['PAGES_TYPES']` array.
