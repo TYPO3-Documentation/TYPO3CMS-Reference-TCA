@@ -15,7 +15,7 @@ Language fields
 ..  versionchanged:: 13.3
     The TCA column `sys_language_uid` will be created automatically if the
     setting :confval:`ctrl-languageField` was made in the original TCA
-    definition. See also :ref:`ctrl-auto-created-columns`;
+    definition. See also :ref:`auto-created columns <ctrl-auto-created-columns>`;
 
 This field type displays all languages available in the current site context.
 Outside of the site context it displays all languages available in the

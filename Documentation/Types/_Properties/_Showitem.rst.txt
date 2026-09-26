@@ -5,7 +5,7 @@
     :Path: $GLOBALS['TCA'][$table]['types'][$type]['showitem']
     :Required: true
     :type: string (list of field configuration sets)
-    :Examples: :ref:`types-example-showitem`
+    :Examples: :ref:`Display all fields on one page of the form <types-example-showitem>`
 
     Configuration of the displayed order of fields in FormEngine and their tab alignment.
 
@@ -40,4 +40,4 @@
 
     Extensions can also modify `showitem` values by utilizing
     :php:`ExtensionManagementUtility::addToAllTCAtypes()`.
-    See :ref:`t3coreapi:extending-examples` for details.
+    See :ref:`customization examples <t3coreapi:extending-examples>` for details.

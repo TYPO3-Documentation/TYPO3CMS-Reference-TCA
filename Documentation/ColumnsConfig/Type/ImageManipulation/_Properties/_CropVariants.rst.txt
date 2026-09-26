@@ -7,4 +7,4 @@
     :Scope: Proc. / Display
 
     Main crop, focus area and cover area configuration. For details see
-    :ref:`columns-imageManipulation-crop-variant`.
+    :ref:`crop variants <columns-imageManipulation-crop-variant>`.

@@ -6,7 +6,7 @@
     :type: string (list of keywords)
     :Scope: Display  / Proc.
 
-    Configuration of field evaluation. See also :ref:`columns-input-eval`.
+    Configuration of field evaluation. See also :ref:`input fields with eval <columns-input-eval>`.
 
     Some of these evaluation keywords will trigger a JavaScript pre- evaluation in the form. Other evaluations will be
     performed in the backend. The evaluation functions will be executed in the list-order. Keywords:
