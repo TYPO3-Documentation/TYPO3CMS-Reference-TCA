@@ -110,6 +110,21 @@
         with the key being the string to replace and the value being the replacement
         string.
 
+        ..  literalinclude:: _Snippets/_Replacements.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
+            :visible-lines: 20-33
+            :emphasize-lines: 26-28
+
+        A product titled `Fish & Chips` is given the slug `fish-and-chips`
+        instead of `fish-chips`.
+
+        The replacements are applied to each field of
+        :confval:`fields <slug-generatorOptions-fields>` on its own, before the
+        parts are joined with the
+        :confval:`fieldSeparator <slug-generatorOptions-fieldSeparator>`. They
+        only apply while a slug is generated from other fields. A slug typed in
+        by an editor is left alone.
+
     ..  confval:: postModifiers
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['postModifiers']
         :name: slug-generatorOptions-postModifiers
