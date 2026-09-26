@@ -3,7 +3,7 @@
 ..  confval:: fieldWizard
     :name: group-fieldWizard
 
-For general fieldWizard documentation see :ref:`here <tca_property_fieldWizard>`.
+    For general fieldWizard documentation see :ref:`here <tca_property_fieldWizard>`.
 
     ..  _tca_property_fieldWizard_recordsOverview:
 
@@ -19,8 +19,8 @@ For general fieldWizard documentation see :ref:`here <tca_property_fieldWizard>`
     ..  _tca_property_fieldWizard_tableList:
 
     ..  confval:: tableList
-
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
+        :name: tableList
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['tableList']
         :type: array
         :Scope: Display
 

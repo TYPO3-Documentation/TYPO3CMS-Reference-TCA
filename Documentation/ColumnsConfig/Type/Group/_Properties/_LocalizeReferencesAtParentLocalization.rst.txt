@@ -2,6 +2,7 @@
 ..  _tca_property_localizeReferencesAtParentLocalization:
 
 ..  confval:: localizeReferencesAtParentLocalization
+    :name: localizeReferencesAtParentLocalization
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['localizeReferencesAtParentLocalization']
     :type: boolean
     :Scope: Proc.
