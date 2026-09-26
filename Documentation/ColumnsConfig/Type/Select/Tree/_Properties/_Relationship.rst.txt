@@ -1,0 +1,12 @@
+..  _columns-select-tree-properties-relationship:
+
+..  confval:: relationship
+    :name: select-tree-relationship
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Proc.
+
+    ..  include:: /ColumnsConfig/Type/Select/_Includes/_Relationship.rst.txt
+
+    If `relationship` is not set, a field with `foreign_table` provides a
+    collection.
