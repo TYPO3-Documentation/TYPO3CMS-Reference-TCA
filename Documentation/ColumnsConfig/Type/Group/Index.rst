@@ -33,7 +33,7 @@ define allowed relation tables.
 The group field uses either the CSV format to store uids of related records or an intermediate mm table
 (in this case :ref:`MM <columns-group-properties-mm>` property is required).
 
-You can read more on how data is structured in :ref:`columns-group-data` chapter.
+You can read more on how data is structured in :ref:`Stored data values <columns-group-data>` chapter.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.

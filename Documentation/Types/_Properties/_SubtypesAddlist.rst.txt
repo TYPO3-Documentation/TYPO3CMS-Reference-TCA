@@ -8,9 +8,9 @@
     ..  deprecated:: 13.4
         Registration of subtypes has been deprecated.  Registration of custom
         types should therefore always be done by using
-        :confval:`record types <ctrl-type>`. See also :ref:`migration-subtype`.
+        :confval:`record types <ctrl-type>`. See also :ref:`Migration from subtypes to types <migration-subtype>`.
 
-        See also :ref:`migration-subtype`.
+        See also :ref:`Migration from subtypes to types <migration-subtype>`.
 
     A list of fields to add when the :ref:`subtype_value_field <types-properties-subtype-value-field>`
     matches a key in this array.

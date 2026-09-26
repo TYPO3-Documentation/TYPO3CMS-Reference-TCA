@@ -18,7 +18,7 @@ The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
 
 ..  seealso::
-    :ref:`t3coreapi:fal-using-fal-examples-file-folder-get-references`
+    :ref:`getting referenced files <t3coreapi:fal-using-fal-examples-file-folder-get-references>`
 
 ..  contents:: Table of contents:
     :local:

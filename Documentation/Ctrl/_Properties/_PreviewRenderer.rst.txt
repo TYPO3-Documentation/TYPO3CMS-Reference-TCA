@@ -8,7 +8,7 @@
 
     Configures a backend preview for a content element.
 
-    Have also a look at :ref:`t3coreapi:ConfigureCE-Preview` for more details.
+    Have also a look at :ref:`configure a custom backend preview <t3coreapi:ConfigureCE-Preview>` for more details.
 
     Use :confval:`property previewRenderer of section types <types-previewRenderer>`
     to configure the preview for a certain type only.

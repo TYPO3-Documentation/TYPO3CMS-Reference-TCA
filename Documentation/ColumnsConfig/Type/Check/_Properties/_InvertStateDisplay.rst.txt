@@ -6,7 +6,7 @@
     :type: boolean
     :Scope: Display
     :Default: false
-    :Example: :ref:`columns-checkbox-examples-18`
+    :Example: :ref:`Example: Toggle checkbox with invertStateDisplay <columns-checkbox-examples-18>`
 
     The state of a checkbox can be displayed inverted when this property is
     set to true.

@@ -11,14 +11,14 @@
         types should therefore always be done by using
         :confval:`record types <ctrl-type>`.
 
-        See also :ref:`migration-subtype-previewrenderer`.
+        See also :ref:`Migration: PreviewRenderer for subtypes <migration-subtype-previewrenderer>`.
 
     To configure a preview renderer for the whole table see
     :confval:`ctrl-previewRenderer`.
 
     Configures a backend preview for a content element.
 
-    Have also a look at :ref:`t3coreapi:ConfigureCE-Preview` for more details.
+    Have also a look at :ref:`configure a custom backend preview <t3coreapi:ConfigureCE-Preview>` for more details.
 
     Use :confval:`property previewRenderer of section ctrl <ctrl-previewRenderer>`
     to configure the preview globally for the whole table.

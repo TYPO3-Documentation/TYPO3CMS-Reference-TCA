@@ -78,7 +78,7 @@ Events to manipulate the FlexForm data structure
 There are appropriate events that allow the manipulation of the data structure
 lookup logic:
 
-*   :ref:`t3coreapi:AfterFlexFormDataStructureIdentifierInitializedEvent`
-*   :ref:`t3coreapi:AfterFlexFormDataStructureParsedEvent`
-*   :ref:`t3coreapi:BeforeFlexFormDataStructureIdentifierInitializedEvent`
-*   :ref:`t3coreapi:BeforeFlexFormDataStructureParsedEvent`
+*   :ref:`AfterFlexFormDataStructureIdentifierInitializedEvent <t3coreapi:AfterFlexFormDataStructureIdentifierInitializedEvent>`
+*   :ref:`AfterFlexFormDataStructureParsedEvent <t3coreapi:AfterFlexFormDataStructureParsedEvent>`
+*   :ref:`BeforeFlexFormDataStructureIdentifierInitializedEvent <t3coreapi:BeforeFlexFormDataStructureIdentifierInitializedEvent>`
+*   :ref:`BeforeFlexFormDataStructureParsedEvent <t3coreapi:BeforeFlexFormDataStructureParsedEvent>`

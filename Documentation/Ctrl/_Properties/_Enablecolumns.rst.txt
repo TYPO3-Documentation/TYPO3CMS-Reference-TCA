@@ -40,5 +40,5 @@
     ..  include:: /Ctrl/_CodeSnippets/_AutoCreatedColumns/_AutoCreateWarning.rst.txt
 
     See also the :ref:`delete <ctrl-reference-delete>` and
-    :ref:`ctrl-reference-editlock` features which are related,
+    :ref:`editlock <ctrl-reference-editlock>` features which are related,
     but are active for both frontend and backend.

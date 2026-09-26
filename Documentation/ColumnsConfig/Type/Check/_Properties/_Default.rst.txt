@@ -5,7 +5,7 @@
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :type: integer
     :Scope: Display / Proc.
-    :Examples: :ref:`columns-checkbox-examples-16`
+    :Examples: :ref:`Example: Checkboxes with Inline columns and default value <columns-checkbox-examples-16>`
 
     The default value of the checkbox(es).
 

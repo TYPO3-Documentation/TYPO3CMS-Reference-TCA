@@ -66,7 +66,7 @@ Enablecolumns
 ..  versionchanged:: 13.3
     The column definitions for these settings are
     :ref:`auto-created <ctrl-auto-created-columns>`.
-    See also :ref:`ctrl-reference-enablecolumns-migration`.
+    See also :ref:`Migration <ctrl-reference-enablecolumns-migration>`.
 
 ..  _field_hidden:
 
@@ -100,7 +100,7 @@ Enablecolumns
 ..  warning::
     These fields that enable records ("enable fields") are only respected in the frontend if you
     use the correct queries and Extbase repository settings in your extension code.
-    See :ref:`enablefields_usage` for more information.
+    See :ref:`enablecolumns usage <enablefields_usage>` for more information.
 
 ..  _field_sorting:
 
@@ -116,7 +116,7 @@ Manual sorting in the backend
 
 ..  attention::
     The sortby field contains an integer and is managed by the DataHandler. It
-    should not be defined in the :ref:`columns` section in a TCA file. The value of this
+    should not be defined in the :ref:`columns <columns>` section in a TCA file. The value of this
     field can be changed at any time by the DataHandler.
 
     Use :ref:`default_sortby <ctrl-reference-default-sortby>` if you want to
@@ -130,7 +130,7 @@ Fields managed by the DataHandler
 The following fields are automatically set when a record is written by the
 :ref:`DataHandler <t3coreapi:datahandler-basics>`. They should never be
 displayed in backend forms or explicitly set. They do not need to be defined
-in the :ref:`columns` section of the TCA.
+in the :ref:`columns <columns>` section of the TCA.
 
 ..  literalinclude:: /Ctrl/_CodeSnippets/_DataHandlerFields.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
