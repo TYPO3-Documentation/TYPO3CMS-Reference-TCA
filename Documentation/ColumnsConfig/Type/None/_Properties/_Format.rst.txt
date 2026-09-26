@@ -60,7 +60,7 @@
         Returns the md5 hash of the values.
 
     filesize
-        Formats the values as file size using `\TYPO3\CMS\Core\Utility\GeneralUtility::formatSize()`.
+        Formats the values as file size using :php:`\TYPO3\CMS\Core\Utility\GeneralUtility::formatSize()`.
         One option exists:
 
         appendByteSize

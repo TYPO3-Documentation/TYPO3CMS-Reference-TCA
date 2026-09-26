@@ -95,7 +95,7 @@
             ],
 
     receiverClass (string)
-        PHP class alternative receiver class, default is `TYPO3\\CMS\\Backend\\Form\\Wizard\\SuggestWizardDefaultReceiver`.
+        PHP class alternative receiver class, default is :php:`TYPO3\CMS\Backend\Form\Wizard\SuggestWizardDefaultReceiver`.
         Can be used to implement an own search strategy.
 
     renderFunc (string)
