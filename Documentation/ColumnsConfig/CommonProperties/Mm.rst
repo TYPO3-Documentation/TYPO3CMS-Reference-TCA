@@ -6,6 +6,7 @@ MM
 ==
 
 ..  confval:: MM
+    :name: MM
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM']
     :type: string (table name)
     :Scope: Proc.
@@ -50,6 +51,7 @@ MM_match_fields
 ---------------
 
 ..  confval:: MM_match_fields
+    :name: MM_match_fields
     :type: array
     :Scope: Display / Proc.
 
@@ -62,6 +64,7 @@ MM_opposite_field
 -----------------
 
 ..  confval:: MM_opposite_field
+    :name: MM_opposite_field
     :type: string (field name)
     :Scope: Proc.
 
@@ -82,6 +85,7 @@ MM_oppositeUsage
 ----------------
 
 ..  confval:: MM_oppositeUsage
+    :name: MM_oppositeUsage
     :type: array
     :Scope: Proc.
 
@@ -101,6 +105,7 @@ MM_table_where
 --------------
 
 ..  confval:: MM_table_where
+    :name: MM_table_where
     :type: string (SQL WHERE)
     :Scope: Proc.
 

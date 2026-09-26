@@ -86,6 +86,7 @@ maxDBListItems
 ~~~~~~~~~~~~~~
 
 ..  confval:: maxDBListItems
+    :name: maxDBListItems
     :Path: $GLOBALS['TCA'][$table]['interface']['maxDBListItems']
 
     Removed with TYPO3 14.0. Use TSconfig
@@ -97,6 +98,7 @@ maxSingleDBListItems
 ~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: maxSingleDBListItems
+    :name: maxSingleDBListItems
     :Path: $GLOBALS['TCA'][$table]['interface']['maxSingleDBListItems']
 
     Removed with TYPO3 14.0. Use TSconfig
