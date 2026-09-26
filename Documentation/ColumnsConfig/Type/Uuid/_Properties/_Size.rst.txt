@@ -3,7 +3,7 @@
 
 ..  confval:: size
     :name: uuid-size
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['size']
     :type: integer
     :Scope: Display
 

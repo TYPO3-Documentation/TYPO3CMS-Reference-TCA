@@ -6,7 +6,7 @@
 
 ..  confval:: security
     :name: ctrl-security
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['security']
     :type: array
     :Scope: Display
 

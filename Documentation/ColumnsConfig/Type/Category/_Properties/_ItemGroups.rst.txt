@@ -2,9 +2,9 @@
 
 ..  confval:: itemGroups
     :name: category-item-groups
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemGroups']
     :type: array
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
     :RenderType: all
 
     Contains an array of key-value pairs. The key contains the id of the item

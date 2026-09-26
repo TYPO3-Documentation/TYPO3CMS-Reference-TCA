@@ -2,9 +2,9 @@
 
 ..  confval:: ds
     :name: flex-ds
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['ds']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     ..  versionchanged:: 14.0
         Multiple entries are no longer supported. Instead use

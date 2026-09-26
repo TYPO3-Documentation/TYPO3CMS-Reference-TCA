@@ -1,6 +1,6 @@
 ..  confval:: dontRemapTablesOnCopy
     :name: select-checkbox-dontRemapTablesOnCopy
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['dontRemapTablesOnCopy']
     :type: string (list of tables)
     :Scope: Proc.
 

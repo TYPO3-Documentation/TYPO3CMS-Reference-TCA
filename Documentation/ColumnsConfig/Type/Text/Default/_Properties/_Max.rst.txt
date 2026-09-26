@@ -2,7 +2,7 @@
 
 ..  confval:: max
     :name: text-max
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['max']
     :type: integer
     :Scope: Display
     :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,

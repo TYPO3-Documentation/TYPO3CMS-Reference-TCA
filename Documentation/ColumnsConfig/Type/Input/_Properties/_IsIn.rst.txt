@@ -2,9 +2,9 @@
 
 ..  confval:: is_in
     :name: input-is-in
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['is_in']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     If the evaluation type "is\_in" (see :ref:`eval <columns-input-properties-eval>`) is used for evaluation, then
     the characters in the input string should be found in this string as well. This value is also passed

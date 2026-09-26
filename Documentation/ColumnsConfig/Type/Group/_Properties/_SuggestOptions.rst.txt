@@ -2,7 +2,7 @@
 
 ..  confval:: suggestOptions
     :name: group-suggestOptions
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['suggestOptions']
     :type: array
     :Scope: Display
 

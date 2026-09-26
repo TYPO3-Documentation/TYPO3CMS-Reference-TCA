@@ -1,6 +1,6 @@
 ..  confval:: softref
     :name: text-softref
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['softref']
     :type: string
     :Scope: Proc.
     :Types: :ref:`input <columns-input>`

@@ -2,9 +2,9 @@
 
 ..  confval:: sortby
     :name: ctrl-sortby
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['sortby']
     :type: string (field name)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     Field name, which is used to manage the **order** of the records when displayed.
 

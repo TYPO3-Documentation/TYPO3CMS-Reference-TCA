@@ -1,6 +1,6 @@
 ..  confval:: itemsProcessors
     :name: check-itemsProcessors
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcessors']
     :type: array
     :Scope: Display / Proc.
 

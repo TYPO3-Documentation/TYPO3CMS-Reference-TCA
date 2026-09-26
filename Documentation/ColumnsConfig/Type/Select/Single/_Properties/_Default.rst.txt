@@ -3,9 +3,9 @@
 
 ..  confval:: default
     :name: select-single-default
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['default']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
     :RenderType: all
 
     Default value set if a new record is created. If empty, the first element in

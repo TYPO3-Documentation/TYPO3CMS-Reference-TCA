@@ -2,9 +2,9 @@
 
 ..  confval:: prependSlash
     :name: slug-prependSlash
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['prependSlash']
     :type: boolean
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     Defines whether a slug field should contain a prepending slash, for example
     for nested categories with speaking segments.

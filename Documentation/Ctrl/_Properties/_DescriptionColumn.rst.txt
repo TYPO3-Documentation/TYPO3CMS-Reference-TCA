@@ -2,7 +2,7 @@
 
 ..  confval:: descriptionColumn
     :name: ctrl-descriptionColumn
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['descriptionColumn']
     :type: string (field name)
     :Scope: Display
 

@@ -3,6 +3,6 @@
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['sortItems']['label']
     :type: string, one of `asc`, `desc`
     :Scope: Display
-    :Default: `asc`
+    :default: `asc`
 
     Sort order of the select items in the country picker.

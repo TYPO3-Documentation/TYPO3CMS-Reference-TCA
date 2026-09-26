@@ -9,7 +9,8 @@ The `fieldInformation` is a reserved area within a single form element between
 the label and the form element itself.
 
 ..  confval:: fieldInformation
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :name: fieldInformation
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']
     :type: array
     :Scope: Display
 
