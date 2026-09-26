@@ -14,7 +14,7 @@
         :name: select-single-fileFolderConfig-allowedExtensions
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['allowedExtensions']
         :type: string
-        :Scope: Display  / Proc.
+        :Scope: Display / Proc.
 
         List of file extensions to select. If blank, all files are selected.
         Specify list in lowercase.
@@ -29,7 +29,7 @@
         :name: select-single-fileFolderConfig-depth
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['depth']
         :type: integer
-        :Scope: Display  / Proc.
+        :Scope: Display / Proc.
         :RenderType: all
 
         Depth of directory recursions. Default is 99. Specify in range from 0-99. 0

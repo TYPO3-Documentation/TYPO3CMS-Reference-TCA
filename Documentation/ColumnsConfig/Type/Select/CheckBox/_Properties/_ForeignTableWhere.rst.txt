@@ -2,9 +2,9 @@
 
 ..  confval:: foreign_table_where
     :name: select-checkbox-foreign-table-where
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table_where']
     :type: string (SQL WHERE)
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
     :RenderType: all
 
     The items from :confval:`select-checkbox-foreign-table`

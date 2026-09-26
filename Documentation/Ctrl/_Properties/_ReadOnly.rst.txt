@@ -2,9 +2,9 @@
 
 ..  confval:: readOnly
     :name: ctrl-readOnly
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['readOnly']
     :type: boolean
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     Records from this table may not be edited in the TYPO3 backend. Such tables are usually called "static".
     If set, this property is often combined with a :file:`ext_tables_static+adt.sql` file to automatically

@@ -2,7 +2,7 @@
 
 ..  confval:: multiSelectFilterItems
     :name: select-multiSelectFilterItems
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['multiSelectFilterItems']
     :type: array
     :Scope: Display
 

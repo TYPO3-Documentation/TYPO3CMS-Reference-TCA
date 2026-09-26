@@ -3,10 +3,10 @@
 ..  confval:: config
     :name: columns-config
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
-    :Required: true
+    :required: true
     :type: array
-    :Scope: Proc. / Display
-    :Example: :ref:`the basic input field example <columns-example-basic>`
+    :Scope: Display / Proc.
+    :Examples: :ref:`the basic input field example <columns-example-basic>`
 
     Contains the main configuration properties of the fields display and
     processing behavior.
@@ -18,7 +18,7 @@
     ..  confval:: type
         :name: columns-config-type
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['type']
-        :Required: true
+        :required: true
         :type: string, one of the :ref:`column types <columns-types>`
 
         The `type` influences the rendering of the form field in the backend.
@@ -27,7 +27,7 @@
     ..  confval:: rendertype
         :name: columns-config-rendertype
         :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rendertype']
-        :Required: true
+        :required: true
         :type: string
 
         For some :confval:`columns-config-type` definitions there are additional

@@ -2,9 +2,9 @@
 
 ..  confval:: foreign_selector
     :name: inline-foreign-selector
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_selector']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     A selector is used to show all possible child records that could be used to create a relation with the parent record.
     It will be rendered as a multi-select-box. On clicking on an item inside the selector a new relation is created.

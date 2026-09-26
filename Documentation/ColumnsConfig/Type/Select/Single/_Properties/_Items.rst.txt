@@ -3,9 +3,9 @@
 
 ..  confval:: items
     :name: select-single-items
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['items']
     :type: array
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
     :RenderType: all
 
     Contains the elements for the selector box unless the property

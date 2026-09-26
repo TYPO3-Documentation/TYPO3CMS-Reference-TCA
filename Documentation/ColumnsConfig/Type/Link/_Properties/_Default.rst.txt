@@ -4,6 +4,6 @@
     :name: link-default
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['default']
     :type: string
-    :Scope: Display  / Proc.
+    :Scope: Display / Proc.
 
     Default value set if a new record is created.

@@ -2,9 +2,9 @@
 
 ..  confval:: adminOnly
     :name: ctrl-adminOnly
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['adminOnly']
     :type: boolean
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     Records can be changed  *only* by "admin"-users (having the "admin" flag set).
 

@@ -2,7 +2,7 @@
 
 ..  confval:: default_sortby
     :name: ctrl-default-sortby
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['default_sortby']
     :type: string
     :Scope: Display
 

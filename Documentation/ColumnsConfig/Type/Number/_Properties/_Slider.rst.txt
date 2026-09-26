@@ -3,7 +3,7 @@
 
 ..  confval:: slider
     :name: number-slider
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['slider']
     :type: array
     :Scope: Display
 

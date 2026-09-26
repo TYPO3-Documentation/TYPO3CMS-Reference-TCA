@@ -7,7 +7,7 @@ fieldWizard
 
 ..  confval:: fieldWizard
     :name: fieldWizard
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
     :type: array
     :Scope: Display
     :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,

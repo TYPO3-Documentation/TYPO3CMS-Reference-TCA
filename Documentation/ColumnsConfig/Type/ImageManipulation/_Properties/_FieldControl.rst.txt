@@ -11,9 +11,9 @@
 
     ..  confval:: elementBrowser
         :name: imageManipulation-elementBrowser
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']
         :type: array
-        :Scope: fieldControl
+        :Scope: Display
 
         The element browser field control used in `type='imageManipulation'` renders a
         button to open an element browser to choose a imageManipulation.

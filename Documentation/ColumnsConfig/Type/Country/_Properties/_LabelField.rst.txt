@@ -3,4 +3,4 @@
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['labelField']
     :type: string, one of `localizedName`, `name`, `iso2`, `iso3`, `officialName`, `localizedOfficialName`
     :Scope: Display
-    :Default: `name`
+    :default: `name`
