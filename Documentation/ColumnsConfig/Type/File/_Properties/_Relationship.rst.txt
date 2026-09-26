@@ -1,0 +1,53 @@
+..  _columns-file-properties-relationship:
+
+..  confval:: relationship
+    :name: file-relationship
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :type: string
+    :Scope: Proc.
+
+    ..  versionadded:: 13.3
+
+    Defines whether the field holds one file reference or several. This
+    decides which value a
+    `Record object <https://docs.typo3.org/permalink/t3coreapi:database-record-objects>`_
+    provides for this field, for example in a Fluid template.
+
+    `oneToOne`, `manyToOne`
+        The field provides a single
+        :php-short:`\TYPO3\CMS\Core\Resource\FileReference` object, or
+        :php:`null` if no file is attached. :confval:`maxitems <file-maxitems>`
+        is set to `1` automatically, overriding any other value.
+
+    `oneToMany`
+        The field provides a
+        :php-short:`\TYPO3\CMS\Core\Resource\Collection\LazyFileReferenceCollection`
+        of :php-short:`\TYPO3\CMS\Core\Resource\FileReference` objects.
+
+    If `relationship` is not set, the field also provides a collection. Any
+    other value, including `manyToMany`, throws an exception.
+
+    `maxitems` does not change the result the other way round: a field
+    without `relationship` still provides a collection, even if `maxitems`
+    is `1`.
+
+    In the following example, a record has exactly one image:
+
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_teaser.php
+
+        'image' => [
+          'label' => 'Image',
+          'config' => [
+            'type' => 'file',
+            'allowed' => 'common-image-types',
+            'relationship' => 'manyToOne',
+          ],
+        ],
+
+    The image can then be output without a loop:
+
+    ..  code-block:: html
+        :caption: EXT:my_extension/Resources/Private/Templates/Teaser.html
+
+        <f:image image="{teaser.image}" />
