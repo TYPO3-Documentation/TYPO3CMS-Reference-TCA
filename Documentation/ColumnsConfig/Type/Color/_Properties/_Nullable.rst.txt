@@ -2,10 +2,10 @@
 
 ..  confval:: nullable
     :name: color-nullable
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['nullable']
     :type: boolean
-    :Default: false
-    :Scope: Proc
+    :default: false
+    :Scope: Proc.
 
     If set to true, a checkbox will appear, which by default deactivates the
     field. In the deactivated state the field is saved as :sql:`NULL` in the

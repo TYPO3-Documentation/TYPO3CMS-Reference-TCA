@@ -2,7 +2,7 @@
 
 ..  confval:: hideSuggest
     :name: group-hideSuggest
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['hideSuggest']
     :type: boolean
     :Scope: Display
 

@@ -1,6 +1,6 @@
 ..  confval:: hideDeleteIcon
     :name: folder-hideDeleteIcon
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['hideDeleteIcon']
     :type: boolean
     :Scope: Display
 

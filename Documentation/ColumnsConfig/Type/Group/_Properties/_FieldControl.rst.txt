@@ -11,9 +11,9 @@
 
     ..  confval:: addRecord
         :name: group-fieldControl-addRecord
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
         :type: array
-        :Scope: fieldControl
+        :Scope: Display
         :Types: :ref:`group <columns-group>`
 
         Control button to directly add a related record. Leaves the current view and opens a new form to add
@@ -37,17 +37,17 @@
             :name: group-fieldcontrol-addrecord-rendertype
             :type: string
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['renderType']
-            :Required: true
-            :Default: addRecord
+            :required: true
+            :default: addRecord
 
             Use a render type from core or your own. Custom render types can be
             registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
 
     ..  confval:: editPopup
         :name: group-fieldControl-editPopup
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
         :type: array
-        :Scope: fieldControl
+        :Scope: Display
         :Types: :ref:`group <columns-group>`
 
         The edit popup field control shows a pencil icon to edit an element directly in a popup window.
@@ -69,17 +69,17 @@
             :name: group-fieldcontrol-editpopup-rendertype
             :type: string
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['renderType']
-            :Required: true
-            :Default: editPopup
+            :required: true
+            :default: editPopup
 
             Use a render type from core or your own. Custom render types can be
             registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
 
     ..  confval:: listModule
         :name: group-fieldControl-listModule
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
         :type: array
-        :Scope: fieldControl
+        :Scope: Display
         :Types: :ref:`group <columns-group>`
 
         The list module control button opens the Web > List module for only one table and allows the user to manipulate
@@ -101,17 +101,17 @@
             :name: group-fieldcontrol-listmodule-rendertype
             :type: string
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['renderType']
-            :Required: true
-            :Default: listModule
+            :required: true
+            :default: listModule
 
             Use a render type from core or your own. Custom render types can be
             registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
 
     ..  confval:: elementBrowser
         :name: group-fieldControl-elementBrowser
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']
         :type: array
-        :Scope: fieldControl
+        :Scope: Display
         :Types: :ref:`group <columns-group>`
 
         The element browser field control used in `type='group'` renders a
@@ -122,8 +122,8 @@
             :name: group-fieldcontrol-elementbrowser-rendertype
             :type: string
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']['renderType']
-            :Required: true
-            :Default: elementBrowser
+            :required: true
+            :default: elementBrowser
 
             Use a render type from the Core or an Extension. Custom render types can be
             registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.
@@ -131,17 +131,17 @@
 
     ..  confval:: insertClipboard
         :name: group-fieldControl-insertClipboard
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['insertClipboard']
         :type: array
-        :Scope: fieldControl
+        :Scope: Display
         :Types: :ref:`group <columns-group>`
 
         ..  confval:: renderType
             :name: group-fieldcontrol-insertclipboard-rendertype
             :type: string
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['insertClipboard']['renderType']
-            :Required: true
-            :Default: insertClipboard
+            :required: true
+            :default: insertClipboard
 
             Use a render type from core or your own. Custom render types can be
             registered with the `NodeFactory <https://docs.typo3.org/permalink/t3coreapi:FormEngine-Rendering-NodeFactory>`_.

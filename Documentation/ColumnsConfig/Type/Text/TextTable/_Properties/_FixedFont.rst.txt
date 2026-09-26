@@ -1,6 +1,6 @@
 ..  confval:: fixedFont
     :name: text-table-fixedFont
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fixedFont']
     :type: boolean
     :Scope: Display
     :RenderType: :ref:`default <columns-text-renderType-default>`, :ref:`textTable <columns-text-renderType-textTable>`

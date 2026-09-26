@@ -2,8 +2,8 @@
 
 ..  confval:: onChange
     :name: columns-onChange
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]
-    :Required: false
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['onChange']
+    :required: false
     :type: string
     :Scope: Display
 

@@ -3,7 +3,7 @@
 
 ..  confval:: disableNoMatchingValueElement
     :name: select-single-disableNoMatchingValueElement
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['disableNoMatchingValueElement']
     :type: boolean
     :Scope: Display
     :RenderType: all

@@ -2,7 +2,7 @@
 
 ..  confval:: hideTable
     :name: ctrl-hideTable
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['hideTable']
     :type: boolean
     :Scope: Display
 

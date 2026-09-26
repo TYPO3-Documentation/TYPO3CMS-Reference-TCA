@@ -2,11 +2,11 @@
 
 ..  confval:: displayCond
     :name: columns-displayCond
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]
-    :Required: false
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['displayCond']
+    :required: false
     :type: string / array
     :Scope: Display
-    :Example: :ref:`Examples for display conditions <columns-displaycond-examples>`
+    :Examples: :ref:`Examples for display conditions <columns-displaycond-examples>`
 
     Contains one or more condition rules for whether to display the field or not.
 

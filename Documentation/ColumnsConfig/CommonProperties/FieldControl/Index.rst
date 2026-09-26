@@ -7,7 +7,7 @@ fieldControl
 
 ..  confval:: fieldControl
     :name: fieldControl
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
     :type: array
     :Scope: Display
     :Types: :ref:`group <columns-group>`,

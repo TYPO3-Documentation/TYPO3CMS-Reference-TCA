@@ -8,7 +8,7 @@
 
 ..  confval:: MM
     :name: group-mm
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM']
     :type: string (table name)
     :Scope: Proc.
 

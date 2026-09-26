@@ -1,6 +1,6 @@
 ..  confval:: hideMoveIcons
     :name: folder-hideMoveIcons
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['hideMoveIcons']
     :type: boolean
     :Scope: Display
 

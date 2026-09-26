@@ -11,7 +11,8 @@ the label and the form element itself.
 ..  include:: /Images/Rst/FieldInformationTcaDescription.rst.txt
 
 ..  confval:: fieldInformation
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :name: fieldInformation
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']
     :type: array
     :Scope: Display
 

@@ -7,9 +7,9 @@ editPopup
 
 ..  confval:: editPopup
     :name: fieldControl-editPopup
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
     :type: array
-    :Scope: fieldControl
+    :Scope: Display
     :Types: :ref:`group <columns-group>`
 
     The edit popup field control shows a pencil icon to edit an element directly in a popup window.
@@ -29,10 +29,10 @@ disabled
 
 ..  confval:: disabled
     :name: fieldControl-editPopup-disabled
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['disabled']
     :type: boolean
-    :Scope: fieldControl -> editPopup
-    :Default: true
+    :Scope: Display
+    :default: true
 
     Disables the field control. Needs to be set to :php:`false` to enable the
     :guilabel:`Create new` button
@@ -44,11 +44,11 @@ options[title]
 
 ..  confval:: options[title]
     :name: fieldControl-editPopup-options-title
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['title']
     :type: string
-    :Scope: fieldControl -> editPopup
+    :Scope: Display
     :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
-    :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.edit
+    :default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.edit
 
     Allows to set a different 'title' attribute to the popup icon.
 
@@ -59,11 +59,11 @@ options[windowOpenParameters]
 
 ..  confval:: options[windowOpenParameters]
     :name: fieldControl-editPopup-options-windowOpenParameters
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['windowOpenParameters']
     :type: string
-    :Scope: fieldControl -> editPopup
+    :Scope: Display
     :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
-    :Default: height=800,width=600,status=0,menubar=0,scrollbars=1
+    :default: height=800,width=600,status=0,menubar=0,scrollbars=1
 
     Allows to set a different size of the popup, defaults
 

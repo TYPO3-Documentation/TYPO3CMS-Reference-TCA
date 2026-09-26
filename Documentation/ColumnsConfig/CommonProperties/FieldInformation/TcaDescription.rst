@@ -14,9 +14,9 @@ translated output. Else it will render the text unmodified.
 
 ..  confval:: tcaDescription
     :name: fieldInformation-tcaDescription
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']['tcaDescription']
     :type: array
-    :Scope: fieldInformation
+    :Scope: Display
 
     ..  note::
         The HTML tags for this specific area are limited to:

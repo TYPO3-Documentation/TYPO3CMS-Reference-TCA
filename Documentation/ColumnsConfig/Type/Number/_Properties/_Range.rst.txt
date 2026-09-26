@@ -2,7 +2,7 @@
 
 ..  confval:: range
     :name: number-range
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['range']
     :type: array
     :Scope: Proc.
 

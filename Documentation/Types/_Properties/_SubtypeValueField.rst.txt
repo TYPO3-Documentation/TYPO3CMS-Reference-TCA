@@ -2,7 +2,7 @@
 
 ..  confval:: subtype_value_field
     :name: types-subtype-value-field
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['subtype_value_field']
     :type: string (field name)
 
     ..  deprecated:: 13.4

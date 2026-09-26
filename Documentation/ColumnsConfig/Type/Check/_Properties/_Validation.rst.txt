@@ -2,10 +2,10 @@
 
 ..  confval:: validation
     :name: check-validation
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['validation']
     :type: array
     :Scope: Proc.
-    :Example: :ref:`Example: Only one record can be checked <tca_example_checkbox_8>`
+    :Examples: :ref:`Example: Only one record can be checked <tca_example_checkbox_8>`
 
     Values for the :ref:`eval <columns-check-properties-eval>` rules. The keys of the array must correspond to the
     keyword of the related evaluation rule. For `maximumRecordsChecked` and `maximumRecordsCheckedInPid`

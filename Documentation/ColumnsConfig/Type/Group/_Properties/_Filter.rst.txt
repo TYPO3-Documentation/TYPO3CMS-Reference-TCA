@@ -2,9 +2,9 @@
 
 ..  confval:: filter
     :name: group-filter
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']
     :type: array
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     Define filters for item values. Doesn't work in combination with a wizard.
 

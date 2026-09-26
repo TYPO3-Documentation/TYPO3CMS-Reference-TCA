@@ -7,9 +7,9 @@ listModule
 
 ..  confval:: listModule
     :name: fieldControl-listModule
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
     :type: array
-    :Scope: fieldControl
+    :Scope: Display
     :Types: :ref:`group <columns-group>`
 
     The list module control button opens the Web > List module for only one table and allows the user to manipulate
@@ -29,10 +29,10 @@ disabled
 
 ..  confval:: disabled
     :name: fieldControl-listModule-disabled
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['disabled']
     :type: boolean
-    :Scope: fieldControl -> listModule
-    :Default: true
+    :Scope: Display
+    :default: true
 
     Disables the field control. Needs to be set to :php:`false` to enable the
     :guilabel:`Create new` button
@@ -44,11 +44,11 @@ options[pid]
 
 ..  confval:: options[pid]
     :name: fieldControl-listModule-options-pid
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['pid']
     :type: string
-    :Scope: fieldControl -> addRecord
+    :Scope: Display
     :Values: marker or an integer
-    :Default: ###CURRENT_PID###
+    :default: ###CURRENT_PID###
 
     List records from this pid. Can be an hard pid setting, or one of
     these markers, see :ref:`select foreign_table_where
@@ -68,11 +68,11 @@ options[table]
 
 ..  confval:: options[table]
     :name: fieldControl-listModule-options-table
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['table']
     :type: string
-    :Scope: fieldControl -> listModule
+    :Scope: Display
     :Values: name of the table
-    :Default: First table from property `allowed` / `foreign_table`
+    :default: First table from property `allowed` / `foreign_table`
 
     List records of this table only, falls back to first table from
     :ref:`allowed <columns-group-properties-allowed>` list if not set for
@@ -86,11 +86,11 @@ options[title]
 
 ..  confval:: options[title]
     :name: fieldControl-listModule-options-title
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['title']
     :type: string
-    :Scope: fieldControl -> listModule
+    :Scope: Display
     :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
-    :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.list
+    :default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.list
 
     Allows to set a different 'title' attribute to the popup icon.
 

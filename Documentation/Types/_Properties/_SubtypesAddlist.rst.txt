@@ -2,7 +2,7 @@
 
 ..  confval:: subtypes_addlist
     :name: types-subtypes-addlist
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]
+    :Path: $GLOBALS['TCA'][$table]['types'][$type]['subtypes_addlist']
     :type: array
 
     ..  deprecated:: 13.4

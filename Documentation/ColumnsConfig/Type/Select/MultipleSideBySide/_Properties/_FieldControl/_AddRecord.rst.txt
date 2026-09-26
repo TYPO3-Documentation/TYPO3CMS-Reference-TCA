@@ -2,7 +2,7 @@
     :name: select-byside-fieldControl-addRecord
     :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
     :type: array
-    :Scope: fieldControl
+    :Scope: Display
     :Types: :ref:`group <columns-group>`
 
     Button control that adds a related record. Leaves the current
@@ -15,10 +15,10 @@
 
     ..  confval:: disabled
         :name: select-byside-fieldControl-addRecord-disabled
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
+        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['disabled']
         :type: boolean
-        :Scope: fieldControl -> addRecord
-        :Default: true
+        :Scope: Display
+        :default: true
 
         Disables the field control. Needs to be set to :php:`false` to enable the
         :guilabel:`Create new` button
@@ -31,9 +31,9 @@
             :name: select-byside-fieldControl-addRecord-options-pid
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['pid']
             :type: string
-            :Scope: fieldControl -> addRecord
+            :Scope: Display
             :Values: marker or an integer
-            :Default: ###CURRENT_PID###
+            :default: ###CURRENT_PID###
 
             pid of the new record. Can be a hard pid or a marker.
             See :ref:`select foreign_table_where
@@ -51,7 +51,7 @@
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['title']
             :type: string
             :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
-            :Default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.createNew
+            :default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.createNew
 
             Sets the 'title' attribute of the popup icon.
 
@@ -60,7 +60,7 @@
             :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['setValue']
             :type: string
             :Values: string
-            :Default: append
+            :default: append
 
             Can be one of 'set', 'prepend' or 'append'. 'Set' substitutes the
             new record for the selected record, 'prepend' adds the new record to the top of

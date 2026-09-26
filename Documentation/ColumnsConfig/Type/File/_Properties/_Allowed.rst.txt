@@ -2,9 +2,9 @@
 
 ..  confval:: allowed
     :name: file-allowed
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowed']
     :type: string / array
-    :Scope: Proc. / Display
+    :Scope: Display / Proc.
 
     One or more (comma-separated) of the following reserved strings:
 

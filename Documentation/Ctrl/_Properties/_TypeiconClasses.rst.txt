@@ -2,7 +2,7 @@
 
 ..  confval:: typeicon_classes
     :name: ctrl-typeicon-classes
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['typeicon_classes']
     :type: array
     :Scope: Display
 

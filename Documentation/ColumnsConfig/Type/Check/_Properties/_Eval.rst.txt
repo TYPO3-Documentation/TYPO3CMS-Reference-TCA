@@ -2,10 +2,10 @@
 
 ..  confval:: eval
     :name: check-eval
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['eval']
     :type: string (list of keywords)
-    :Scope: Proc. / Display
-    :Example: :ref:`Example: Checkbox limited to a maximal number of checked records <tca_example_checkbox_7>`
+    :Scope: Display / Proc.
+    :Examples: :ref:`Example: Checkbox limited to a maximal number of checked records <tca_example_checkbox_7>`
 
     Configuration of field evaluation.
 

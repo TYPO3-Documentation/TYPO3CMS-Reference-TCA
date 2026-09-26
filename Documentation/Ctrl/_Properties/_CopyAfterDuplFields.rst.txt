@@ -2,7 +2,7 @@
 
 ..  confval:: copyAfterDuplFields
     :name: ctrl-copyAfterDuplFields
-    :Path: $GLOBALS['TCA'][$table]['ctrl']
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['copyAfterDuplFields']
     :type: string (list of field names)
     :Scope: Proc.
 
