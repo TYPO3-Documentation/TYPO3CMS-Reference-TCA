@@ -3,7 +3,8 @@
 
 ..  confval:: label_alt
     :name: ctrl-label-alt
-    :type: String (comma-separated list of field names)
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['label_alt']
+    :type: string (comma-separated list of field names)
     :Scope: Display
 
 

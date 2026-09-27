@@ -3,7 +3,7 @@
 ..  confval:: previewRenderer
     :name: ctrl-previewRenderer
     :TCA path: $GLOBALS['TCA'][$table]['ctrl']['previewRenderer']
-    :type: string
+    :type: string (class name)
     :Scope: Display
 
     Configures a backend preview for a content element.

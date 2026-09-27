@@ -3,6 +3,7 @@
 
 ..  confval:: label_alt_force
     :name: ctrl-label-alt-force
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['label_alt_force']
     :type: boolean
     :Scope: Display
 
