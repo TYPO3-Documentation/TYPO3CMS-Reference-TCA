@@ -1,23 +1,21 @@
 ..  _ctrl-reference-selicon-field:
 
-.. confval:: selicon_field
-   :name: ctrl-selicon-field
+..  confval:: selicon_field
+    :name: ctrl-selicon-field
+    :Path: $GLOBALS['TCA'][$table]['ctrl']['selicon_field']
+    :type: string (field name)
+    :Scope: Display
 
-   :Path: $GLOBALS['TCA'][$table]['ctrl']
-   :type: string (field name)
-   :Scope: Display
+    Field name, which contains the thumbnail image used to represent the record visually whenever it is shown
+    in FormEngine as a foreign reference selectable from a selector box.
 
+    This field must be a :ref:`File <columns-file>` field where icon files are selected. Since only the
+    first icon file will be used, the :ref:`maxitems <columns-inline-properties-maxitems>` option should be used to allow only
+    selecting a single icon file.
 
-   Field name, which contains the thumbnail image used to represent the record visually whenever it is shown
-   in FormEngine as a foreign reference selectable from a selector box.
-
-   This field must be a :ref:`File <columns-file>` field where icon files are selected. Since only the
-   first icon file will be used, the :ref:`maxitems <columns-inline-properties-maxitems>` option should be used to allow only
-   selecting a single icon file.
-
-   You should consider this a feature where you can attach an "icon" to a record which is typically selected as a
-   reference in other records, for example a "category". In such a case this field points out the icon image which
-   will then be shown. This feature can thus enrich the visual experience of selecting the relation in other forms.
+    You should consider this a feature where you can attach an "icon" to a record which is typically selected as a
+    reference in other records, for example a "category". In such a case this field points out the icon image which
+    will then be shown. This feature can thus enrich the visual experience of selecting the relation in other forms.
 
 ..  rubric:: Example: Select foreign records from a drop-down using selicon
 
