@@ -3,7 +3,7 @@
 ..  confval:: label_userFunc
     :name: ctrl-label-userFunc
     :TCA path: $GLOBALS['TCA'][$table]['ctrl']['label_userFunc']
-    :type: string
+    :type: string (user function reference)
     :Scope: Display
 
     Function or method reference. This can be used whenever the label or
@@ -50,6 +50,7 @@
 
 ..  confval:: label_userFunc_options
     :name: ctrl-label-userFunc-options
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['label_userFunc_options']
     :type: array
     :Scope: Display
 
