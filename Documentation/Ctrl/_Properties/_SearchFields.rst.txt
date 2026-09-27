@@ -3,7 +3,7 @@
 ..  confval:: searchFields
     :name: ctrl-searchFields
     :TCA path: $GLOBALS['TCA'][$table]['ctrl']['searchFields']
-    :type: string
+    :type: string (comma-separated list of field names)
     :Scope: Search
 
 

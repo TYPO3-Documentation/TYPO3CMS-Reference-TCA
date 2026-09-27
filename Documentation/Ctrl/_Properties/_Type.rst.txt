@@ -3,7 +3,7 @@
 .. confval:: type
    :name: ctrl-type
    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['type']
-   :type: string (field name)
+   :type: string (field name, or relation_field:foreign_type_field)
    :Scope: Display / Proc.
 
    Field name, which defines the "record type".
