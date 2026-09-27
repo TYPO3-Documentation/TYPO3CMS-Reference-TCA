@@ -5,7 +5,7 @@
 
     ..  confval:: allowLanguageSynchronization
         :name: file-allowLanguageSynchronization
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['allowLanguageSynchronization']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['allowLanguageSynchronization']
         :type: boolean
         :Scope: Proc.
 
@@ -26,7 +26,7 @@
 
     ..  confval:: disableMovingChildrenWithParent
         :name: file-disableMovingChildrenWithParent
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['disableMovingChildrenWithParent']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['disableMovingChildrenWithParent']
         :type: boolean
         :Scope: Proc.
 
@@ -40,7 +40,7 @@
 
     ..  confval:: enableCascadingDelete
         :name: file-enableCascadingDelete
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['enableCascadingDelete']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['enableCascadingDelete']
         :type: boolean
         :Scope: Proc.
         :default: true

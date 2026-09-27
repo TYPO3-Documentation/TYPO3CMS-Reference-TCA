@@ -3,21 +3,21 @@
 
     ..  confval:: defaultLanguageDifferences
         :name: select-single-fieldWizard-defaultLanguageDifferences
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
         :type: array
 
         For details see :confval:`fieldWizard-defaultLanguageDifferences`.
 
     ..  confval:: localizationStateSelector
         :name: select-single-fieldWizard-localizationStateSelector
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
         :type: array
 
         For details see :confval:`fieldWizard-localizationStateSelector`.
 
     ..  confval:: otherLanguageContent
         :name: select-single-fieldWizard-otherLanguageContent
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['otherLanguageContent']
         :type: array
 
         For details see :confval:`fieldWizard-otherLanguageContent`.
@@ -26,7 +26,7 @@
 
     ..  confval:: selectIcons
         :name: fieldWizard-selectIcons
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['selectIcons']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['selectIcons']
         :type: array
         :Scope: Display
 

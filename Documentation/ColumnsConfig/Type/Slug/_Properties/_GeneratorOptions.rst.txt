@@ -2,7 +2,7 @@
 
 ..  confval:: generatorOptions
     :name: slug-generatorOptions
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']
     :type: array
     :Scope: Display / Proc.
 
@@ -10,7 +10,7 @@
 
     ..  confval:: fields
         :name: slug-generatorOptions-fields
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['fields']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['fields']
         :type: array
         :Scope: Display / Proc.
 
@@ -45,7 +45,7 @@
 
 
     ..  confval:: fieldSeparator
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['fieldSeparator']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['fieldSeparator']
         :name: slug-generatorOptions-fieldSeparator
         :type: string
         :Scope: Display / Proc.
@@ -56,7 +56,7 @@
         <columns-slug-properties-fallbackCharacter>`.
 
     ..  confval:: prefixParentPageSlug
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['prefixParentPageSlug']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['prefixParentPageSlug']
         :name: slug-generatorOptions-prefixParentPageSlug
         :type: boolean
         :default: true
@@ -71,7 +71,7 @@
             This option is exclusively for page records. It won't have an effect on any other records.
 
     ..  confval:: regexReplacements
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['regexReplacements']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['regexReplacements']
         :name: slug-generatorOptions-regex-replacements
         :type: array
         :Scope: Display / Proc.
@@ -101,7 +101,7 @@
                be written carefully.
 
     ..  confval:: replacements
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['replacements']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['replacements']
         :name: slug-generatorOptions-replacements
         :type: array
         :Scope: Display / Proc.
@@ -126,7 +126,7 @@
         by an editor is left alone.
 
     ..  confval:: postModifiers
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['postModifiers']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['postModifiers']
         :name: slug-generatorOptions-postModifiers
         :type: array
         :Scope: Display / Proc.

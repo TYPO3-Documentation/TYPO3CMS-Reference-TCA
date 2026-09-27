@@ -2,7 +2,7 @@
 
 ..  confval:: showitem
     :name: types-showitem
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]['showitem']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['showitem']
     :required: true
     :type: string (list of field configuration sets)
     :Examples: :ref:`Display all fields on one page of the form <types-example-showitem>`

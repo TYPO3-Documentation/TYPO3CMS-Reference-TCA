@@ -2,7 +2,7 @@
 
 ..  confval:: versioningWS
     :name: ctrl-versioningWS
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['versioningWS']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['versioningWS']
     :type: boolean
     :Scope: Proc.
 

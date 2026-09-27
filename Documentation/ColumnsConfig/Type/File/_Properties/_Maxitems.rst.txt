@@ -2,7 +2,7 @@
 
 ..  confval:: maxitems
     :name: file-maxitems
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['maxitems']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['maxitems']
     :type: integer > 0
     :Scope: Display / Proc.
 

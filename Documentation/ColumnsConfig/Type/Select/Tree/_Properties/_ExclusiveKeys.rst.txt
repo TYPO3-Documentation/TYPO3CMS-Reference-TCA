@@ -1,7 +1,7 @@
 
 ..  confval:: exclusiveKeys
     :name: select-tree-exclusiveKeys
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['exclusiveKeys']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['exclusiveKeys']
     :type: string (list of)
     :Scope: Display / Proc.
 

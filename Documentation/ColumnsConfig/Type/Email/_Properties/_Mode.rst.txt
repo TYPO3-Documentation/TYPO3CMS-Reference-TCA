@@ -1,6 +1,6 @@
 ..  confval:: mode
     :name: email-mode
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['mode']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['mode']
     :type: string (keywords)
     :Scope: Display
 

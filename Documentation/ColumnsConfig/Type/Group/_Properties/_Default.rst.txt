@@ -2,7 +2,7 @@
 
 ..  confval:: default
     :name: group-default
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['default']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['default']
     :type: string
     :Scope: Display / Proc.
 

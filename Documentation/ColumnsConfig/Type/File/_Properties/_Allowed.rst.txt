@@ -2,7 +2,7 @@
 
 ..  confval:: allowed
     :name: file-allowed
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowed']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowed']
     :type: string / array
     :Scope: Display / Proc.
 

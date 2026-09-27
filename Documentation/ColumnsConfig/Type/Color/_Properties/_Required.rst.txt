@@ -1,6 +1,6 @@
 ..  confval:: required
     :name: color-required
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['required']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['required']
     :type: boolean
     :Scope: Display / Proc.
     :default: false

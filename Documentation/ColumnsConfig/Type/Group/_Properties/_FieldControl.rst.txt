@@ -11,7 +11,7 @@
 
     ..  confval:: addRecord
         :name: group-fieldControl-addRecord
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
         :type: array
         :Scope: Display
         :Types: :ref:`group <columns-group>`
@@ -36,7 +36,7 @@
         ..  confval:: renderType
             :name: group-fieldcontrol-addrecord-rendertype
             :type: string
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['renderType']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['renderType']
             :required: true
             :default: addRecord
 
@@ -45,7 +45,7 @@
 
     ..  confval:: editPopup
         :name: group-fieldControl-editPopup
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
         :type: array
         :Scope: Display
         :Types: :ref:`group <columns-group>`
@@ -68,7 +68,7 @@
         ..  confval:: renderType
             :name: group-fieldcontrol-editpopup-rendertype
             :type: string
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['renderType']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['renderType']
             :required: true
             :default: editPopup
 
@@ -77,7 +77,7 @@
 
     ..  confval:: listModule
         :name: group-fieldControl-listModule
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
         :type: array
         :Scope: Display
         :Types: :ref:`group <columns-group>`
@@ -100,7 +100,7 @@
         ..  confval:: renderType
             :name: group-fieldcontrol-listmodule-rendertype
             :type: string
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['renderType']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['renderType']
             :required: true
             :default: listModule
 
@@ -109,7 +109,7 @@
 
     ..  confval:: elementBrowser
         :name: group-fieldControl-elementBrowser
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']
         :type: array
         :Scope: Display
         :Types: :ref:`group <columns-group>`
@@ -121,7 +121,7 @@
         ..  confval:: renderType
             :name: group-fieldcontrol-elementbrowser-rendertype
             :type: string
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']['renderType']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']['renderType']
             :required: true
             :default: elementBrowser
 
@@ -131,7 +131,7 @@
 
     ..  confval:: insertClipboard
         :name: group-fieldControl-insertClipboard
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['insertClipboard']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['insertClipboard']
         :type: array
         :Scope: Display
         :Types: :ref:`group <columns-group>`
@@ -139,7 +139,7 @@
         ..  confval:: renderType
             :name: group-fieldcontrol-insertclipboard-rendertype
             :type: string
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['insertClipboard']['renderType']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['insertClipboard']['renderType']
             :required: true
             :default: insertClipboard
 

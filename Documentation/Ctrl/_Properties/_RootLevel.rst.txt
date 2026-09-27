@@ -2,7 +2,7 @@
 
 ..  confval:: rootLevel
     :name: ctrl-rootLevel
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['rootLevel']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['rootLevel']
     :type: [0, 1, -1]
     :Scope: Display / Proc.
 

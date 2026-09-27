@@ -2,7 +2,7 @@
 
 ..  confval:: enablecolumns
     :name: ctrl-enablecolumns
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['enablecolumns']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['enablecolumns']
     :type: array
     :Scope: Display / Proc.
 

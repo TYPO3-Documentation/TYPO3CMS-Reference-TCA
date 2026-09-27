@@ -2,7 +2,7 @@
 
 ..  confval:: foreign_table
     :name: select-checkbox-foreign-table
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table']
     :type: string (table name)
     :Scope: Display / Proc.
     :RenderType: all

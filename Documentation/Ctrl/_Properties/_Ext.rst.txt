@@ -2,7 +2,7 @@
 
 ..  confval:: EXT
     :name: ctrl-ext
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['EXT']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['EXT']
     :type: array
     :Scope: Special
 
