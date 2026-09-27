@@ -4,7 +4,7 @@
 
 ..  confval:: showitem
     :name: palettes-showitem
-    :Path: $GLOBALS['TCA'][$table]['palettes'][$palette]['showitem']
+    :TCA path: $GLOBALS['TCA'][$table]['palettes'][$palette]['showitem']
     :required: true
     :type: string (list of field names)
 

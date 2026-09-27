@@ -1,6 +1,6 @@
 ..  confval:: wizardSteps
     :name: types-wizardSteps
-    :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['wizardSteps']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$recordType]['wizardSteps']
     :type: array
     :Scope: Display
 

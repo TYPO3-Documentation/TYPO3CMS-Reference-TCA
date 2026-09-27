@@ -1,6 +1,6 @@
 ..  confval:: label
     :name: types-label
-    :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['label']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$recordType]['label']
     :type: string, name of a field
     :Scope: Display
 
@@ -50,7 +50,7 @@
 
 ..  confval:: label_alt
     :name: types-label-alt
-    :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['label_alt']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$recordType]['label_alt']
     :type: string, comma separated list of fields
     :Scope: Display
 
@@ -61,7 +61,7 @@
 
 ..  confval:: label_alt_force
     :name: types-label-alt-force
-    :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['label_alt_force']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$recordType]['label_alt_force']
     :type: bool
     :default: false
     :Scope: Display

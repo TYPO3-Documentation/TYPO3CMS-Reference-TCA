@@ -6,7 +6,7 @@
     ..  confval:: allowLanguageSynchronization
         :type: boolean
         :name: input-behaviour-allowLanguageSynchronization
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['allowLanguageSynchronization']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['behaviour']['allowLanguageSynchronization']
         :Scope: Proc.
         :default: false
 

@@ -1,6 +1,6 @@
 ..  confval:: readOnly
     :name: select-byside-readOnly
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['readOnly']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['readOnly']
     :type: boolean
     :Scope: Display
 

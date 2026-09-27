@@ -1,6 +1,6 @@
 ..  confval:: cols
     :name: json-cols
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['cols']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['cols']
     :type: integer
     :Scope: Display
     :default: 30

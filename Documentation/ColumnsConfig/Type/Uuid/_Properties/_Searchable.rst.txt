@@ -1,6 +1,6 @@
 ..  confval:: searchable
     :name: uuid-searchable
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['searchable']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['searchable']
     :type: boolean
     :Scope: Display
     :default: `true`

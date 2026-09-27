@@ -1,6 +1,6 @@
 ..  confval:: title
     :name: types-title
-    :Path: $GLOBALS['TCA'][$table]['types'][$recordType]['title']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$recordType]['title']
     :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
     :Scope: Display
 

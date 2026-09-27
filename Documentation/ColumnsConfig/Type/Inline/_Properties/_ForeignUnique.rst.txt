@@ -2,7 +2,7 @@
 
 ..  confval:: foreign_unique
     :name: inline-foreign-unique
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_unique']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_unique']
     :type: string
     :Scope: Display / Proc.
 

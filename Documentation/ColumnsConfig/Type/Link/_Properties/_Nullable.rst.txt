@@ -2,7 +2,7 @@
 
 ..  confval:: nullable
     :name: link-nullable
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['nullable']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['nullable']
     :type: boolean
     :default: false
     :Scope: Proc.

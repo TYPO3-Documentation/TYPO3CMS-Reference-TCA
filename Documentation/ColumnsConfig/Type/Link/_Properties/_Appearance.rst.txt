@@ -2,7 +2,7 @@
 
 ..  confval:: appearance
     :name: link-appearance
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
     :type: array
     :Scope: Display
 
@@ -10,7 +10,7 @@
 
     ..  confval:: allowedOptions
         :name: link-appearance-allowedOptions
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['allowedOptions']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['allowedOptions']
         :type: array
 
         Display certain options in the link browser.
@@ -83,7 +83,7 @@
 
     ..  confval:: allowedFileExtensions
         :name: link-appearance-allowedFileExtensions
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['allowedFileExtensions']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['allowedFileExtensions']
         :type: array
 
         An array of allowed file extensions. To allow all extensions, skip this
@@ -106,7 +106,7 @@
 
     ..  confval:: browserTitle
         :name: link-appearance-browserTitle
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['browserTitle']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['browserTitle']
         :type: string, LLL
 
         Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
@@ -127,7 +127,7 @@
 
     ..  confval:: enableBrowser
         :name: link-appearance-enableBrowser
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['enableBrowser']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['enableBrowser']
         :type: boolean
 
         The Link Browser is enabled by default.

@@ -2,7 +2,7 @@
 
 ..  confval:: displayCond
     :name: columns-displayCond
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['displayCond']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['displayCond']
     :required: false
     :type: string / array
     :Scope: Display

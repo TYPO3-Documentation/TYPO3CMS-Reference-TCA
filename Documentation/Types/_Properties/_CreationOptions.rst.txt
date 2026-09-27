@@ -2,12 +2,12 @@
 
 ..  confval:: creationOptions
     :name: types-creationOptions
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']
     :type: list of options
 
     ..  confval:: defaultValues
         :name: types-creationOptions-defaultValues
-        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['defaultValues']
+        :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['defaultValues']
         :type: array
         :Examples: :ref:`the example that creates the blog plugin at once <types-example-creation-option>`
 
@@ -19,7 +19,7 @@
 
     ..  confval:: enableDirectRecordTypeCreation
         :name: types-creationOptions-enableDirectRecordTypeCreation
-        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['enableDirectRecordTypeCreation']
+        :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['enableDirectRecordTypeCreation']
         :type: bool
         :default: true
 
@@ -41,7 +41,7 @@
 
     ..  confval:: saveAndClose
         :name: types-creationOptions-saveAndClose
-        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['saveAndClose']
+        :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['saveAndClose']
         :type: bool
         :default: false
         :Examples: :ref:`the example that creates the blog plugin at once <types-example-creation-option>`
@@ -55,7 +55,7 @@
 
     ..  confval:: title
         :name: types-creationOptions-title
-        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['title']
+        :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['title']
         :type: string | language reference
 
         ..  versionadded:: 14.0

@@ -4,7 +4,7 @@
     ..  confval:: lineWrapping
         :type: boolean
         :name: text-t3editor-appearance-lineWrapping
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['lineWrapping']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['lineWrapping']
         :Scope: Proc.
         :default: false
 

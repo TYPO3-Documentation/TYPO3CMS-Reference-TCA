@@ -1,6 +1,6 @@
 ..  confval:: size
     :name: country-size
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['size']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['size']
     :type: integer
     :Scope: Display
     :default: 1

@@ -2,7 +2,7 @@
 
 ..  confval:: readOnly
     :name: ctrl-readOnly
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['readOnly']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['readOnly']
     :type: boolean
     :Scope: Display / Proc.
 

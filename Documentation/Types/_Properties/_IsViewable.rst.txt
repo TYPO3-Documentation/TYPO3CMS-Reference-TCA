@@ -2,7 +2,7 @@
 
 ..  confval:: isViewable
     :name: types-isViewable
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]['isViewable']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['isViewable']
     :type: boolean
     :default: true
 

@@ -6,7 +6,7 @@
 
     ..  confval:: selectCheckBox
         :name: select-appearance-selectCheckBox
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['selectCheckBox']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['selectCheckBox']
         :type: array
         :Scope: Display
 

@@ -3,7 +3,7 @@
 
 ..  confval:: items
     :name: select-single-items
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['items']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['items']
     :type: array
     :Scope: Display / Proc.
     :RenderType: all

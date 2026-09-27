@@ -1,6 +1,6 @@
 ..  confval:: itemsProcessors
     :name: select-checkbox-itemsProcessors
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcessors']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcessors']
     :type: array
     :Scope: Display / Proc.
 

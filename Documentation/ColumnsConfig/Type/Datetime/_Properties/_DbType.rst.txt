@@ -3,7 +3,7 @@
 
 ..  confval:: dbType
     :name: datetime-dbType
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['dbType']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['dbType']
     :type: string
     :Scope: Proc.
 
