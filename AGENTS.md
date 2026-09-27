@@ -64,6 +64,67 @@ A role is only right where its modal says something true. `:sql:` announces
 "Code written in SQL", which fits a keyword or a column type but not the name
 of a table — a table name is an identifier, like a TCA key.
 
+## Documenting a TCA option with confval
+
+Every TCA option is a `confval` directive, and its fields follow one
+pattern across the whole manual:
+
+```rst
+..  confval:: foreign_table
+    :name: select-single-foreign-table
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table']
+    :type: string (table name)
+    :Scope: Display / Proc.
+    :RenderType: all
+
+    The item-array will be filled with records from the table defined here.
+```
+
+| Field | Rule |
+| --- | --- |
+| `:name:` | Every confval has one. A new name is prefixed with its context (`select-single-`, `group-`, `ctrl-`). Never change an existing name: it is the published anchor. |
+| `:TCA path:` | The full path, including the option's own key. Plain text, no `:php:`. Use `$table`, `$field`, `$type` and `$palette` as placeholders. |
+| `:type:`, `:default:`, `:required:` | Lowercase. These are the directive's own options, and it matches them case-sensitively: `:Default:` renders as an unrelated extra field. |
+| `:Scope:` | Only the scopes the introduction defines: `Display`, `Proc.`, `Display / Proc.`, `Database`, `Search`, `Special`. Where the option lives, such as `fieldControl`, is the path, not a scope. |
+| `:Examples:` | Plural, and `:ref:` links to the example sections. |
+
+The options follow the directive line directly. A blank line ends them, and
+every option after it renders as body text, silently. On the rendered page
+such a field shows up as a list inside the description instead of next to
+the other fields.
+
+Field names are case-sensitive and a space is part of the name, so
+`:TCA Path:` or `:tca-path:` becomes a field of its own without any
+warning. A `confval-menu` column has to use the same spelling as the field.
+
+An existing confval without a `:name:` gets its own title as name, which
+is the anchor it was published under. A prefixed name would break links.
+
+## Version directives
+
+`versionadded`, `versionchanged` and `deprecated` are removed one or two
+versions after the change. Whatever came to stay belongs in the flowing
+text, written without reference to the old behavior. The directive holds
+the link to the changelog and, at most, what only matters during the
+upgrade:
+
+```rst
+..  versionchanged:: 15.0
+    :changelog: important-110501-1787666881
+
+    Slugs of existing pages only change when they are generated anew.
+
+The `pages` table replaces a slash in the page title with `-`.
+```
+
+Link the changelog with the `:changelog:` option and the entry's
+identifier, not with a hand-written permalink. The option resolves against
+the changelog inventory, so a wrong identifier warns during rendering
+instead of leading to a 404, and the entry's title becomes the link text.
+
+Read the new text once as if the directive were already gone. Words such
+as "now", "no longer" or "instead of the previous" do not survive that.
+
 ## Commit message format
 
 Follow https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Howto/EditLocal.html:
