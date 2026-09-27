@@ -2,7 +2,7 @@
 
 ..  confval:: subtypes_excludelist
     :name: types-subtypes-excludelist
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]['subtypes_excludelist']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['subtypes_excludelist']
     :type: array
 
     ..  deprecated:: 13.4

@@ -3,7 +3,7 @@
 
 ..  confval:: symmetric_field
     :name: inline-symmetric-field
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['symmetric_field']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['symmetric_field']
     :type: string
     :Scope: Display / Proc.
 

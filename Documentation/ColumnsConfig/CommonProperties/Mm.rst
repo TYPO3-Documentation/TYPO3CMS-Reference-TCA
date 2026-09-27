@@ -7,7 +7,7 @@ MM
 
 ..  confval:: MM
     :name: MM
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['MM']
     :type: string (table name)
     :Scope: Proc.
     :Types: :ref:`group <columns-group>`, :ref:`select <columns-select>`, :ref:`inline <columns-inline>`

@@ -3,7 +3,7 @@
 
 ..  confval:: format
     :name: datetime-format
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['format']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['format']
     :type: string (keyword)
     :Scope: Display
 

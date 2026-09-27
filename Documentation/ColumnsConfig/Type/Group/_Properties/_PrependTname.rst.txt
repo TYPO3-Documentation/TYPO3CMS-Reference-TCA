@@ -2,7 +2,7 @@
 
 ..  confval:: prepend_tname
     :name: group-prepend-tname
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['prepend_tname']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['prepend_tname']
     :type: boolean
     :Scope: Proc.
 

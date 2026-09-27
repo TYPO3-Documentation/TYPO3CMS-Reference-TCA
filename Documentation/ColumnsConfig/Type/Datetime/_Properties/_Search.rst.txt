@@ -1,6 +1,6 @@
 ..  confval:: search
     :name: datetime-search
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']
     :type: array
     :Scope: Search
     :Types: :ref:`input <columns-input>`
@@ -10,7 +10,7 @@
     ..  confval:: pidonly
         :name: datetime-search-pidonly
         :type: boolean
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['pidonly']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['pidonly']
 
         Searches in the column only if search happens on the single page, does
         not search the field if searching in the whole table.
@@ -18,7 +18,7 @@
     ..  confval:: case
         :name: datetime-search-case
         :type: boolean
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['case']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['case']
 
         Makes the search case-sensitive. This requires a proper database
         collation for the field, see your database documentation.
@@ -26,7 +26,7 @@
     ..  confval:: andWhere
         :name: datetime-search-andWhere
         :type: string
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['andWhere']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['search']['andWhere']
 
         Additional SQL WHERE statement without 'AND'. With this it is possible
         to place an additional condition on the field when it is searched

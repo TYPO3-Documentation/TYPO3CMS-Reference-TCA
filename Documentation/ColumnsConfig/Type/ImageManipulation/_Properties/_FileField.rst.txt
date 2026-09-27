@@ -2,7 +2,7 @@
 
 ..  confval:: file_field
     :name: imageManipulation-file-field
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['file_field']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['file_field']
     :type: string (field name)
     :Scope: Display / Proc.
 

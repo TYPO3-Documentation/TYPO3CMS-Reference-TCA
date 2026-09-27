@@ -3,7 +3,7 @@
 
 ..  confval:: disableAgeDisplay
     :name: datetime-disableAgeDisplay
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['disableAgeDisplay']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['disableAgeDisplay']
     :type: boolean
     :Scope: Display
 

@@ -7,7 +7,7 @@ editPopup
 
 ..  confval:: editPopup
     :name: fieldControl-editPopup
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
     :type: array
     :Scope: Display
     :Types: :ref:`group <columns-group>`
@@ -29,7 +29,7 @@ disabled
 
 ..  confval:: disabled
     :name: fieldControl-editPopup-disabled
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['disabled']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['disabled']
     :type: boolean
     :Scope: Display
     :default: true
@@ -44,7 +44,7 @@ options[title]
 
 ..  confval:: options[title]
     :name: fieldControl-editPopup-options-title
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['title']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['title']
     :type: string
     :Scope: Display
     :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
@@ -59,7 +59,7 @@ options[windowOpenParameters]
 
 ..  confval:: options[windowOpenParameters]
     :name: fieldControl-editPopup-options-windowOpenParameters
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['windowOpenParameters']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['windowOpenParameters']
     :type: string
     :Scope: Display
     :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_

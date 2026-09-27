@@ -1,6 +1,6 @@
 ..  confval:: enableCodeEditor
     :name: json-enableCodeEditor
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['enableCodeEditor']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['enableCodeEditor']
     :type: boolean
     :default: true
 

@@ -2,7 +2,7 @@
 
 ..  confval:: hashed
     :name: password-hashed
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['hashed']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['hashed']
     :type: boolean
     :Scope: Proc.
     :default: true

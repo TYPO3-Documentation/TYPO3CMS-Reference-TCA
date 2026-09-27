@@ -7,7 +7,7 @@ listModule
 
 ..  confval:: listModule
     :name: fieldControl-listModule
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']
     :type: array
     :Scope: Display
     :Types: :ref:`group <columns-group>`
@@ -29,7 +29,7 @@ disabled
 
 ..  confval:: disabled
     :name: fieldControl-listModule-disabled
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['disabled']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['disabled']
     :type: boolean
     :Scope: Display
     :default: true
@@ -44,7 +44,7 @@ options[pid]
 
 ..  confval:: options[pid]
     :name: fieldControl-listModule-options-pid
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['pid']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['pid']
     :type: string
     :Scope: Display
     :Values: marker or an integer
@@ -68,7 +68,7 @@ options[table]
 
 ..  confval:: options[table]
     :name: fieldControl-listModule-options-table
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['table']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['table']
     :type: string
     :Scope: Display
     :Values: name of the table
@@ -86,7 +86,7 @@ options[title]
 
 ..  confval:: options[title]
     :name: fieldControl-listModule-options-title
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['title']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['listModule']['options']['title']
     :type: string
     :Scope: Display
     :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_

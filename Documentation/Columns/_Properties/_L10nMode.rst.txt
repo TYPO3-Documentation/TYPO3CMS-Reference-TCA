@@ -2,7 +2,7 @@
 
 ..  confval:: l10n_mode
     :name: columns-l10n-mode
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['l10n_mode']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['l10n_mode']
     :required: false
     :type: string (keyword)
     :Scope: Display / Proc.

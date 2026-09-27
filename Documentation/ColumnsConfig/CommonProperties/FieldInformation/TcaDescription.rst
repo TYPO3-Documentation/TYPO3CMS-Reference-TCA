@@ -14,7 +14,7 @@ translated output. Else it will render the text unmodified.
 
 ..  confval:: tcaDescription
     :name: fieldInformation-tcaDescription
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']['tcaDescription']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']['tcaDescription']
     :type: array
     :Scope: Display
 

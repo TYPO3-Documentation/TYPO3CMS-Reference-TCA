@@ -1,6 +1,6 @@
 ..  confval:: fieldControl
     :type: string
     :name: json-fieldControl
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']
 
     See :confval:`fieldControl` for details.

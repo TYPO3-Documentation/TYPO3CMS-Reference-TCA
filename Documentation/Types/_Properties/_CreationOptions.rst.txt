@@ -2,7 +2,7 @@
 
 ..  confval:: creationOptions
     :name: types-creationOptions
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']
     :type: list of options
 
     ..  versionadded:: 13.0
@@ -12,7 +12,7 @@
 
     ..  confval:: saveAndClose
         :name: types-creationOptions-saveAndClose
-        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['saveAndClose']
+        :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['saveAndClose']
         :type: bool
         :default: false
         :Examples: :ref:`Example: Create the blog plugin at once <types-example-creation-option>`
@@ -28,7 +28,7 @@
 
     ..  confval:: defaultValues
         :name: types-creationOptions-defaultValues
-        :Path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['defaultValues']
+        :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['defaultValues']
         :type: array
         :Examples: :ref:`Example: Create the blog plugin at once <types-example-creation-option>`
 

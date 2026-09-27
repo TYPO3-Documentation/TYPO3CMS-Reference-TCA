@@ -3,7 +3,7 @@
 
 ..  confval:: foreign_table_where
     :name: select-single-foreign-table-where
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table_where']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table_where']
     :type: string (SQL WHERE)
     :Scope: Display / Proc.
     :RenderType: all

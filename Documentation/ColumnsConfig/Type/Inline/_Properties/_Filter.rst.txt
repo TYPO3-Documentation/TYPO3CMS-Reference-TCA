@@ -2,7 +2,7 @@
 
 ..  confval:: filter
     :name: inline-filter
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']
     :type: array
     :Scope: Display / Proc.
 

@@ -1,6 +1,6 @@
 ..  confval:: placeholder
     :name: password-placeholder
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['placeholder']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['placeholder']
     :type: string, hexadecimal password representation
     :Scope: Display
 

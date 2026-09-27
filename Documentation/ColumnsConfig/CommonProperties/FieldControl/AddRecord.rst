@@ -7,7 +7,7 @@ addRecord
 
 ..  confval:: addRecord
     :name: fieldControl-addRecord
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
     :type: array
     :Scope: Display
     :Types: :ref:`group <columns-group>`
@@ -62,7 +62,7 @@ disabled
 
 ..  confval:: disabled
     :name: fieldControl-addRecord-disabled
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['disabled']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['disabled']
     :type: boolean
     :Scope: Display
     :default: true
@@ -77,7 +77,7 @@ options[pid]
 
 ..  confval:: options[pid]
     :name: fieldControl-addRecord-options-pid
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['pid']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['pid']
     :type: string
     :Scope: Display
     :Values: marker or an integer
@@ -101,7 +101,7 @@ options[table]
 
 ..  confval:: options[table]
     :name: fieldControl-addRecord-options-table
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['table']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['table']
     :type: string
     :Scope: Display
     :Values: name of the table
@@ -119,7 +119,7 @@ options[title]
 
 ..  confval:: options[title]
     :name: fieldControl-addRecord-options-title
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['title']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['title']
     :type: string
     :Scope: Display
     :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
@@ -134,7 +134,7 @@ options[setValue]
 
 ..  confval:: options[setValue]
     :name: fieldControl-addRecord-options-setValue
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['setValue']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['setValue']
     :type: string
     :Scope: Display
     :Values: string

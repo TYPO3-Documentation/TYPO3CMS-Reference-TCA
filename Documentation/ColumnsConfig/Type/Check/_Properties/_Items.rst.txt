@@ -2,7 +2,7 @@
 
 ..  confval:: items
     :name: check-items
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['items']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['items']
     :type: array
     :Scope: Display
     :Examples: :ref:`Example: Three checkboxes, two with labels, one without <tca_example_checkbox_3>`

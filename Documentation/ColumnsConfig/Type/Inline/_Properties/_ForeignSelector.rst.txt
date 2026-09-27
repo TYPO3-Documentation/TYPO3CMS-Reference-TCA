@@ -2,7 +2,7 @@
 
 ..  confval:: foreign_selector
     :name: inline-foreign-selector
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_selector']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_selector']
     :type: string
     :Scope: Display / Proc.
 

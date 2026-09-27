@@ -2,7 +2,7 @@
 
 ..  confval:: enableRichtext
     :name: text-enableRichtext
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['enableRichtext']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['enableRichtext']
     :type: boolean
     :Scope: Display / Proc.
 

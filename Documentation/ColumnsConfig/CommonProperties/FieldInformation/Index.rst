@@ -12,7 +12,7 @@ the label and the form element itself.
 
 ..  confval:: fieldInformation
     :name: fieldInformation
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldInformation']
     :type: array
     :Scope: Display
 
