@@ -35,7 +35,7 @@ Properties of TCA section `interface`
 
     ..  confval:: maxDBListItems
         :name: maxDBListItems
-        :Path: $GLOBALS['TCA'][$table]['interface']['maxDBListItems']
+        :TCA path: $GLOBALS['TCA'][$table]['interface']['maxDBListItems']
         :type: integer
         :default: 20
 
@@ -45,7 +45,7 @@ Properties of TCA section `interface`
 
     ..  confval:: maxSingleDBListItems
         :name: maxSingleDBListItems
-        :Path: $GLOBALS['TCA'][$table]['interface']['maxSingleDBListItems']
+        :TCA path: $GLOBALS['TCA'][$table]['interface']['maxSingleDBListItems']
         :type: integer
         :default: 100
 

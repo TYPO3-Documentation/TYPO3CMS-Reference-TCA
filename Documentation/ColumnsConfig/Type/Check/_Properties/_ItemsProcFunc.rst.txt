@@ -1,6 +1,6 @@
 ..  confval:: itemsProcFunc
     :name: check-itemsProcFunc
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcFunc']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcFunc']
     :type: string (class->method reference)
     :Scope: Display / Proc.
     :Examples: :ref:`Example: Checkboxes with itemsProcFunc <tca_example_checkbox_itemsProcFunc>`

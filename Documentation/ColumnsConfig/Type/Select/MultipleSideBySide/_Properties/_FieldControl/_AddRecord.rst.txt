@@ -1,6 +1,6 @@
 ..  confval:: addRecord
     :name: select-byside-fieldControl-addRecord
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']
     :type: array
     :Scope: Display
     :Types: :ref:`group <columns-group>`
@@ -15,7 +15,7 @@
 
     ..  confval:: disabled
         :name: select-byside-fieldControl-addRecord-disabled
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['disabled']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['disabled']
         :type: boolean
         :Scope: Display
         :default: true
@@ -25,11 +25,11 @@
 
     ..  confval:: options
         :name: select-byside-fieldControl-addRecord-options
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']
 
         ..  confval:: pid
             :name: select-byside-fieldControl-addRecord-options-pid
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['pid']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['pid']
             :type: string
             :Scope: Display
             :Values: marker or an integer
@@ -48,7 +48,7 @@
 
         ..  confval:: title
             :name: select-byside-fieldControl-addRecord-options-title
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['title']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['title']
             :type: string
             :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
             :default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.createNew
@@ -57,7 +57,7 @@
 
         ..  confval:: setValue
             :name: select-byside-fieldControl-addRecord-options-setValue
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['setValue']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['addRecord']['options']['setValue']
             :type: string
             :Values: string
             :default: append

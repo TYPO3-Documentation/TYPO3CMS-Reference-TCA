@@ -1,7 +1,7 @@
 
 ..  confval:: editPopup
     :name: select-byside-fieldControl-editPopup
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']
     :type: array
     :Scope: Display
 
@@ -16,7 +16,7 @@
 
     ..  confval:: disabled
         :name: select-byside-fieldControl-editPopup-disabled
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['disabled']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['disabled']
         :type: boolean
         :Scope: Display
         :default: true
@@ -26,11 +26,11 @@
 
     ..  confval:: options
         :name: select-byside-fieldControl-editPopup-options
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']
 
         ..  confval:: title
             :name: select-byside-fieldControl-editPopup-options-title
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['title']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['title']
             :type: string
             :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
             :default: LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.edit
@@ -39,7 +39,7 @@
 
         ..  confval:: windowOpenParameters
             :name: select-byside-fieldControl-editPopup-options-windowOpenParameters
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['windowOpenParameters']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['editPopup']['options']['windowOpenParameters']
             :type: string
             :Values: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
             :default: height=800,width=600,status=0,menubar=0,scrollbars=1

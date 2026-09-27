@@ -2,7 +2,7 @@
 
 ..  confval:: selicon_field
     :name: ctrl-selicon-field
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['selicon_field']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['selicon_field']
     :type: string (field name)
     :Scope: Display
 

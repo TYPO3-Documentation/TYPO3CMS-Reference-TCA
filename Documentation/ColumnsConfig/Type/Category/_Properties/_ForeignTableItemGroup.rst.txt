@@ -2,7 +2,7 @@
 
 ..  confval:: foreign_table_item_group
     :name: category-foreign-table-item-group
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table_item_group']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table_item_group']
     :type: string (column name)
     :Scope: Display / Proc.
 

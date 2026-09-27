@@ -2,7 +2,7 @@
 
 ..  confval:: autocomplete
     :name: number-autocomplete
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['autocomplete']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['autocomplete']
     :type: boolean
     :Scope: Display
     :default: false

@@ -2,7 +2,7 @@
 
 ..  confval:: is_in
     :name: text-is-in
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['is_in']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['is_in']
     :type: string
     :Scope: Display / Proc.
     :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,

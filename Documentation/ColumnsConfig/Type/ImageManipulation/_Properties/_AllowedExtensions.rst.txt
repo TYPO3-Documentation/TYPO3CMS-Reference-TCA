@@ -2,7 +2,7 @@
 
 ..  confval:: allowedExtensions
     :name: imageManipulation-allowedExtensions
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowedExtensions']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowedExtensions']
     :type: string (list of file extensions)
     :Scope: Display / Proc.
 

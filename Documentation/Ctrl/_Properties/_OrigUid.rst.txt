@@ -2,7 +2,7 @@
 
 ..  confval:: origUid
     :name: ctrl-origUid
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['origUid']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['origUid']
     :type: string (field name)
     :Scope: Proc.
 

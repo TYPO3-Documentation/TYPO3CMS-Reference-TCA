@@ -2,7 +2,7 @@
 
 ..  confval:: ds_pointerField
     :name: flex-ds-pointerField
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['ds_pointerField']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['ds_pointerField']
     :type: string
     :Scope: Display / Proc.
 

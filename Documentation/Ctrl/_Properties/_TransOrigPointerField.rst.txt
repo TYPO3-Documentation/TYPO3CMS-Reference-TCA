@@ -2,7 +2,7 @@
 
 ..  confval:: transOrigPointerField
     :name: ctrl-transOrigPointerField
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['transOrigPointerField']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['transOrigPointerField']
     :type: string (field name)
     :Scope: Display / Proc.
 

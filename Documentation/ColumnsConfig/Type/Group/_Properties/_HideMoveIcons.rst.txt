@@ -1,6 +1,6 @@
 ..  confval:: hideMoveIcons
     :name: group-hideMoveIcons
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['hideMoveIcons']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['hideMoveIcons']
     :type: boolean
     :Scope: Display
 

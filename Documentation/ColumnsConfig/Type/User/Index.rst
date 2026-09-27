@@ -160,7 +160,7 @@ Properties of the TCA column type `user`
 
 ..  confval:: renderType
     :name: user-renderType
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['renderType']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['renderType']
     :type: integer
     :Scope: Display
 

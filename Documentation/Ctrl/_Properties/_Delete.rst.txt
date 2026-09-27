@@ -2,7 +2,7 @@
 
 ..  confval:: delete
     :name: ctrl-delete
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['delete']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['delete']
     :type: string (field name)
     :Scope: Display / Proc.
 

@@ -7,7 +7,7 @@ localizationStateSelector
 
 ..  confval:: localizationStateSelector
     :name: fieldWizard-localizationStateSelector
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['localizationStateSelector']
     :type: array
     :Scope: Display
     :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
