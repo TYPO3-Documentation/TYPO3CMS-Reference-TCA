@@ -2,7 +2,7 @@
 
 ..  confval:: opacity
     :name: color-opacity
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['opacity']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['opacity']
     :type: bool
     :default: false
 

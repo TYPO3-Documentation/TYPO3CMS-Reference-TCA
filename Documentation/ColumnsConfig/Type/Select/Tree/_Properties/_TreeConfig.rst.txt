@@ -2,7 +2,7 @@
 
 ..  confval:: treeConfig
     :name: select-treeConfig
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']
     :type: array
     :Scope: Display
 
@@ -10,7 +10,7 @@
 
     ..  confval:: dataProvider
         :name: select-treeConfig-dataProvider
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['dataProvider']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['dataProvider']
         :type: string (fully qualified class name)
 
         Allows to define a custom data provider class for use cases where
@@ -20,7 +20,7 @@
 
     ..  confval:: childrenField
         :name: select-treeConfig-childrenField
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['childrenField']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['childrenField']
         :type: string
 
         Field name of the :confval:`select-tree-foreign-table` that references
@@ -28,7 +28,7 @@
 
     ..  confval:: parentField
         :name: select-treeConfig-parentField
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['parentField']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['parentField']
         :type: string
 
         Field name of the :confval:`select-tree-foreign-table` that references
@@ -36,7 +36,7 @@
 
     ..  confval:: startingPoints
         :name: select-treeConfig-startingPoints
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['startingPoints']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['startingPoints']
         :type: string (comma separated values)
 
         allows to set multiple records as roots for tree records.
@@ -72,12 +72,12 @@
 
     ..  confval:: appearance
         :name: select-treeConfig-appearance
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']
         :type: array
 
         ..  confval:: showHeader
             :name: select-treeConfig-showHeader
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['showHeader']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['showHeader']
             :type: boolean
 
             Whether to show the header of the tree that contains a field to filter the records and allows to expand or
@@ -86,21 +86,21 @@
 
         ..  confval:: expandAll
             :name: select-treeConfig-expandAll
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['expandAll']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['expandAll']
             :type: boolean
 
             Whether to show the tree with all nodes expanded
 
         ..  confval:: maxLevels
             :name: select-treeConfig-maxLevels
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['maxLevels']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['maxLevels']
             :type: integer
 
             The maximal amount of levels to be rendered (can be used to stop possible recursions)
 
         ..  confval:: nonSelectableLevels
             :name: select-treeConfig-nonSelectableLevels
-            :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['nonSelectableLevels']
+            :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['treeConfig']['appearance']['nonSelectableLevels']
             :type: string (comma separated list)
             :default: `0`
 

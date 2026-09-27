@@ -11,7 +11,7 @@
 
     ..  confval:: elementBrowser
         :name: imageManipulation-elementBrowser
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['elementBrowser']
         :type: array
         :Scope: Display
 

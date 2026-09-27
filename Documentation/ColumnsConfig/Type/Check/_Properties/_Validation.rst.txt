@@ -2,7 +2,7 @@
 
 ..  confval:: validation
     :name: check-validation
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['validation']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['validation']
     :type: array
     :Scope: Proc.
     :Examples: :ref:`Only one record can be checked <tca_example_checkbox_8>`

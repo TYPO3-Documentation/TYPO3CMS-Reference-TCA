@@ -1,10 +1,10 @@
 ..  confval:: filter
     :name: country-filter
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']
 
     ..  confval:: onlyCountries
         :name: country-filter-onlyCountries
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']['onlyCountries']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']['onlyCountries']
         :type: array of strings
         :Scope: Display
         :default: `[]`
@@ -17,7 +17,7 @@
 
     ..  confval:: excludeCountries
         :name: country-filter-excludeCountries
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']['excludeCountries']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['filter']['excludeCountries']
         :type: array of strings
         :Scope: Display
         :default: `[]`

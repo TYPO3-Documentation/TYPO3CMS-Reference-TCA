@@ -1,7 +1,7 @@
 
 ..  confval:: dbFieldLength
     :name: select-byside-dbFieldLength
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['dbFieldLength']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['dbFieldLength']
     :type: integer
     :default: 255
     :Scope: Proc.

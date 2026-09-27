@@ -2,7 +2,7 @@
 
 ..  confval:: itemGroups
     :name: category-item-groups
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemGroups']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemGroups']
     :type: array
     :Scope: Display / Proc.
     :RenderType: all

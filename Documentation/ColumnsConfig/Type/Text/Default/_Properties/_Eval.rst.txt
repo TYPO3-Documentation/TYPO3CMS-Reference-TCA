@@ -2,7 +2,7 @@
 
 ..  confval:: eval
     :name: text-eval
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['eval']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['eval']
     :type: string (list of keywords)
     :Scope: Display / Proc.
     :RenderType: :ref:`default <columns-text-renderType-default>`

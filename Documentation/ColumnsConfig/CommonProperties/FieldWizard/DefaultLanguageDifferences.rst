@@ -7,7 +7,7 @@ defaultLanguageDifferences
 
 ..  confval:: defaultLanguageDifferences
     :name: fieldWizard-defaultLanguageDifferences
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['defaultLanguageDifferences']
     :type: array
     :Scope: Display
     :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,

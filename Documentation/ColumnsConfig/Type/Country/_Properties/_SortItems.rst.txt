@@ -1,6 +1,6 @@
 ..  confval:: sortItems.label
     :name: country-sortItems-label
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['sortItems']['label']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['sortItems']['label']
     :type: string, one of `asc`, `desc`
     :Scope: Display
     :default: `asc`

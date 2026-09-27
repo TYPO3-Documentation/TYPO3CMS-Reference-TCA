@@ -2,7 +2,7 @@
 
 ..  confval:: appearance
     :name: inline-appearance
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
     :type: array
     :Scope: Display
 
@@ -10,7 +10,7 @@
 
     ..  confval:: collapseAll
         :name: inline-appearance-collapseAll
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['collapseAll']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['collapseAll']
         :type: boolean
         :Scope: Display
 
@@ -18,7 +18,7 @@
 
     ..  confval:: expandSingle
         :name: inline-appearance-expandSingle
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['expandSingle']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['expandSingle']
         :type: boolean
         :Scope: Display
 
@@ -27,7 +27,7 @@
 
     ..  confval:: showNewRecordLink
         :name: inline-appearance-showNewRecordLink
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showNewRecordLink']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showNewRecordLink']
         :type: boolean
         :Scope: Display
         :default: True
@@ -38,7 +38,7 @@
 
     ..  confval:: newRecordLinkAddTitle
         :name: inline-appearance-newRecordLinkAddTitle
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['newRecordLinkAddTitle']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['newRecordLinkAddTitle']
         :type: boolean
 
         Adds the title of the :ref:`foreign_table <columns-inline-properties-foreign-table>` to the "New record" link.
@@ -50,7 +50,7 @@
 
     ..  confval:: newRecordLinkTitle
         :name: inline-appearance-newRecordLinkTitle
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['newRecordLinkTitle']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['newRecordLinkTitle']
         :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
 
         Overrides the title of the "New record" link with a localized string. This will work only if
@@ -62,7 +62,7 @@
 
     ..  confval:: createNewRelationLinkTitle
         :name: inline-appearance-createNewRelationLinkTitle
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['createNewRelationLinkTitle']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['createNewRelationLinkTitle']
         :type: plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_
 
         Overrides the link text and title of the "Create new relation" button with a localised string.
@@ -70,7 +70,7 @@
 
     ..  confval:: levelLinksPosition
         :name: inline-appearance-levelLinksPosition
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['levelLinksPosition']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['levelLinksPosition']
         :type: string
         :Values: 'top' (default), 'bottom', 'both'.
 
@@ -80,7 +80,7 @@
 
     ..  confval:: useCombination
         :name: inline-appearance-useCombination
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['useCombination']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['useCombination']
         :type: boolean
 
         This is only useful on bidirectional relations using an intermediate table with attributes. In a "combination" it
@@ -91,7 +91,7 @@
 
     ..  confval:: suppressCombinationWarning
         :name: inline-appearance-suppressCombinationWarning
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['suppressCombinationWarning']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['suppressCombinationWarning']
         :type: boolean
         :default: false
 
@@ -109,35 +109,35 @@
 
     ..  confval:: useSortable
         :name: inline-appearance-useSortable
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['useSortable']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['useSortable']
         :type: boolean
 
         Activate drag & drop sorting.
 
     ..  confval:: showPossibleLocalizationRecords
         :name: inline-appearance-showPossibleLocalizationRecords
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleLocalizationRecords']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleLocalizationRecords']
         :type: boolean
 
         Show unlocalized records which are in the original language but not yet localized.
 
     ..  confval:: showAllLocalizationLink
         :name: inline-appearance-showAllLocalizationLink
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showAllLocalizationLink']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showAllLocalizationLink']
         :type: boolean
 
         Defines whether to show the "localize all records" link to fetch untranslated records from the original language.
 
     ..  confval:: showSynchronizationLink
         :name: inline-appearance-showSynchronizationLink
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showSynchronizationLink']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showSynchronizationLink']
         :type: boolean
 
         Defines whether to show a "synchronize" link to update to a 1:1 translation with the original language.
 
     ..  confval:: enabledControls
         :name: inline-appearance-enabledControls
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['enabledControls']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['enabledControls']
         :type: array
 
         Associative array with keys 'info', 'new', 'dragdrop', 'sort', 'hide', 'delete', 'localize'.
@@ -146,7 +146,7 @@
 
     ..  confval:: showPossibleRecordsSelector
         :name: inline-appearance-showPossibleRecordsSelector
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleRecordsSelector']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['showPossibleRecordsSelector']
         :type: boolean
 
         Can be used to hide the foreign record selector from the interface, even if you have a
@@ -157,7 +157,7 @@
 
     ..  confval:: elementBrowserEnabled
         :name: inline-appearance-elementBrowserEnabled
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['elementBrowserEnabled']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['elementBrowserEnabled']
         :type: boolean
 
         Hides or displays the element browser button in inline records

@@ -3,7 +3,7 @@
 
 ..  confval:: localizeReferencesAtParentLocalization
     :name: localizeReferencesAtParentLocalization
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['localizeReferencesAtParentLocalization']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['localizeReferencesAtParentLocalization']
     :type: boolean
     :Scope: Proc.
 

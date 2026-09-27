@@ -12,7 +12,7 @@
 
     ..  confval:: allowedExtensions
         :name: select-single-fileFolderConfig-allowedExtensions
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['allowedExtensions']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['allowedExtensions']
         :type: string
         :Scope: Display / Proc.
 
@@ -27,7 +27,7 @@
 
     ..  confval:: depth
         :name: select-single-fileFolderConfig-depth
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['depth']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['depth']
         :type: integer
         :Scope: Display / Proc.
         :RenderType: all
@@ -42,7 +42,7 @@
 
     ..  confval:: folder
         :name: select-single-fileFolderConfig-folder
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['folder']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fileFolderConfig']['folder']
         :type: string
         :Scope: Display / Proc.
 

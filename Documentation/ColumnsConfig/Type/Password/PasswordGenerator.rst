@@ -87,7 +87,7 @@ title
 
 ..  confval:: title
     :name: password-passwordGenerator-title
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']
     :type: String / localized string
     :default: `LLL:core.core:labels.generatePassword`
 
@@ -100,7 +100,7 @@ allowEdit
 
 ..  confval:: allowEdit
     :name: password-passwordGenerator-allowEdit
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['allowEdit']
     :type: boolean
     :default: :php:`true`
 
@@ -113,7 +113,7 @@ Password policy
 
 ..  confval:: passwordPolicy
     :name: password-passwordGenerator-passwordPolicy
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordPolicy']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordPolicy']
     :type: string
     :default: `default`
 
