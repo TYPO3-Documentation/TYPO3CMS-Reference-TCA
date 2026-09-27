@@ -2,7 +2,7 @@
 
 ..  confval:: config
     :name: columns-config
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']
     :required: true
     :type: array
     :Scope: Display / Proc.
@@ -17,7 +17,7 @@
 
     ..  confval:: type
         :name: columns-config-type
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['type']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['type']
         :required: true
         :type: string, one of the :ref:`column types <columns-types>`
 
@@ -26,7 +26,7 @@
 
     ..  confval:: rendertype
         :name: columns-config-rendertype
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rendertype']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['rendertype']
         :required: true
         :type: string
 

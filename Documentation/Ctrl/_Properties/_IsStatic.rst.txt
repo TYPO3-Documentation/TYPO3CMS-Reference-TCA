@@ -2,7 +2,7 @@
 
 ..  confval:: is_static
     :name: ctrl-is-static
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['is_static']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['is_static']
     :type: boolean
     :Scope: Special
 

@@ -2,7 +2,7 @@
 
 ..  confval:: exclude
     :name: columns-exclude
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['exclude']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['exclude']
     :required: false
     :type: boolean
     :Scope: Display / Proc.

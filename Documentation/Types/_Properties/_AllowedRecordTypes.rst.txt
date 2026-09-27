@@ -2,7 +2,7 @@
 
 ..  confval:: allowedRecordTypes
     :name: types-allowedRecordTypes
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]['allowedRecordTypes']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['allowedRecordTypes']
     :type: array of table names or `['*']`
     :default: `['pages', 'sys_category', 'sys_file_reference', 'sys_file_collection']`
 

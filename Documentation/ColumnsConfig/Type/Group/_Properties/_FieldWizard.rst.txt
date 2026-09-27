@@ -9,7 +9,7 @@
 
     ..  confval:: recordsOverview
         :name: group-recordsOverview
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['recordsOverview']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['recordsOverview']
         :type: array
         :Scope: Display
 
@@ -20,7 +20,7 @@
 
     ..  confval:: tableList
         :name: tableList
-        :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['tableList']
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']['tableList']
         :type: array
         :Scope: Display
 

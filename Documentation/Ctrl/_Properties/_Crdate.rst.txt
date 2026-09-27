@@ -2,7 +2,7 @@
 
 ..  confval:: crdate
     :name: ctrl-crdate
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['crdate']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['crdate']
     :type: string (field name)
     :Scope: Proc.
 

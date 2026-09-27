@@ -1,6 +1,6 @@
 ..  confval:: prioritizedCountries
     :name: country-prioritizedCountries
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['prioritizedCountries']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['prioritizedCountries']
     :type: array of strings
     :Scope: Display
     :default: `[]`

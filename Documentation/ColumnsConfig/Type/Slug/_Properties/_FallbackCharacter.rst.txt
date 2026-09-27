@@ -2,7 +2,7 @@
 
 ..  confval:: fallbackCharacter
     :name: slug-fallbackCharacter
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fallbackCharacter']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fallbackCharacter']
     :type: string
     :Scope: Display / Proc.
     :default: \-

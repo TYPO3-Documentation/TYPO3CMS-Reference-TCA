@@ -2,7 +2,7 @@
 
 ..  confval:: editlock
     :name: ctrl-editlock
-    :Path: $GLOBALS['TCA'][$table]['ctrl']['editlock']
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['editlock']
     :type: string (field name)
     :Scope: Display / Proc.
 

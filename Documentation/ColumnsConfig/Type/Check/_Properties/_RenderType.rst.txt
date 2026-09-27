@@ -2,7 +2,7 @@
 
 ..  confval:: renderType
     :name: check-renderType
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['renderType']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['renderType']
     :type: string
     :Scope: Display
     :default: check

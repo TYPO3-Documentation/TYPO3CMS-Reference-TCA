@@ -1,7 +1,7 @@
 
 ..  confval:: previewRenderer
     :name: types-previewRenderer
-    :Path: $GLOBALS['TCA'][$table]['types'][$type]['previewRenderer']
+    :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['previewRenderer']
     :type: string
     :Scope: Display
     :Examples: :ref:`PreviewRenderer examples <types-example-previewRenderer>`

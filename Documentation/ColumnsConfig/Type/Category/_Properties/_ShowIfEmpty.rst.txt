@@ -1,6 +1,6 @@
 ..  confval:: showIfEmpty
     :name: category-showIfEmpty
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['showIfEmpty']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['showIfEmpty']
     :type: boolean
     :Scope: Display
     :default: false

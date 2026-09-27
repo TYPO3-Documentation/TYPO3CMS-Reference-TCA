@@ -2,7 +2,7 @@
 
 ..  confval:: allowedTypes
     :name: link-allowedTypes
-    :Path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowedTypes']
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['allowedTypes']
     :type: array of keywords
     :Scope: Display / Proc.
 
