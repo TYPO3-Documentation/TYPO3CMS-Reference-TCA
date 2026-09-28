@@ -14,7 +14,7 @@ How to use the `styleguide` extension
 
 1.  Install the extension `styleguide`
 
-    In composer based installations it can be installed via
+    In composer based installations it can be installed via:
 
     ..  code-block:: console
 
