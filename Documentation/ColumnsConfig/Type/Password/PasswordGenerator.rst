@@ -179,8 +179,8 @@ passwordRules.length
     :name: password-passwordRules-length
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['length']
     :type: int
-    :default: :php:`16`
-    :Minimum: :php:`8`
+    :default: `16`
+    :Minimum: `8`
 
     ..  deprecated:: 14.2
 
@@ -195,17 +195,17 @@ passwordRules.random
     :name: password-passwordRules-random
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['random']
     :type: String
-    :Values: :php:`"hex"`, :php:`"base64"`
+    :Values: `"hex"`, `"base64"`
 
     ..  deprecated:: 14.2
 
     Defines the encoding of random bytes. Overrules character definitions.
 
-    :php:`"hex"`
+    `"hex"`
         Generates a random password in hexadecimal format. Example:
         `d0f4030d568ab483b8442735e9e3a7`.
 
-    :php:`"base64"`
+    `"base64"`
         Generates a random password in base64 format. Example:
         `dtbpykd4vf1hda_Ag9kG983y-_N2zyLZzof`.
 
