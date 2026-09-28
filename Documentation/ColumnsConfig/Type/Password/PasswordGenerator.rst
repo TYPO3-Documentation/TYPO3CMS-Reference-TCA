@@ -89,7 +89,7 @@ title
     :name: password-passwordGenerator-title
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['title']
     :type: String / localized string
-    :default: :php:`"LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.generatePassword"`
+    :default: `LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.generatePassword`
 
     Define a title for the control button.
 
@@ -122,8 +122,8 @@ passwordRules.length
     :name: password-passwordRules-length
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['length']
     :type: int
-    :default: :php:`16`
-    :Minimum: :php:`8`
+    :default: `16`
+    :Minimum: `8`
 
     Defines the amount of characters for the generated password.
 
@@ -136,15 +136,15 @@ passwordRules.random
     :name: password-passwordRules-random
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordRules']['random']
     :type: String
-    :Values: :php:`"hex"`, :php:`"base64"`
+    :Values: `"hex"`, `"base64"`
 
     Defines the encoding of random bytes. Overrules character definitions.
 
-    :php:`"hex"`
+    `"hex"`
         Generates a random password in hexadecimal format. Example:
         `d0f4030d568ab483b8442735e9e3a7`.
 
-    :php:`"base64"`
+    `"base64"`
         Generates a random password in base64 format. Example:
         `dtbpykd4vf1hda_Ag9kG983y-_N2zyLZzof`.
 
