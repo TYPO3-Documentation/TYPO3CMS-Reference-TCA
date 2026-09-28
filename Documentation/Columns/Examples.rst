@@ -93,7 +93,7 @@ Complete TCA definition of the field:
 Translated field without `l10n_display` definition
 ==================================================
 
-The following has no :php:`'l10n_display'` definition:
+The following has no `l10n_display` definition:
 
 ..  include:: /Images/Rst/TranslatedSelectSingle8.rst.txt
 
