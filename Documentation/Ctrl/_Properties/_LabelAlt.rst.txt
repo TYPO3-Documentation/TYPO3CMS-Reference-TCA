@@ -20,6 +20,7 @@
 ..  rubric:: Example for table `tt_content`
 
 ..  code-block:: php
+    :caption: EXT:frontend/Configuration/TCA/tt_content.php (excerpt)
 
     'ctrl' => [
         'label' => 'header',

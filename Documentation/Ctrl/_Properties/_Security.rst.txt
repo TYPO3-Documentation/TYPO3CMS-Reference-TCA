@@ -14,7 +14,7 @@
     `sys_file` table:
 
     ..  code-block:: php
-        :caption: EXT:core/Configuration/TCA/sys_file.php
+        :caption: EXT:core/Configuration/TCA/sys_file.php (excerpt)
 
         return [
             'ctrl' => [
@@ -30,7 +30,7 @@
     And `ignorePageTypeRestriction` is used for the `sys_note` table:
 
     ..  code-block:: php
-        :caption: EXT:sys_note/Configuration/TCA/sys_note.php
+        :caption: EXT:sys_note/Configuration/TCA/sys_note.php (excerpt)
 
         return [
             'ctrl' => [

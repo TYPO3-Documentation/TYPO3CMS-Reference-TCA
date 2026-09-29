@@ -2,11 +2,9 @@
 
 return [
   'ctrl' => [
-    'title' => 'Something',
+    'title' => 'Haiku',
     'label' => 'title',
-    'tstamp' => 'tstamp',
-    'crdate' => 'crdate',
-    'origUid' => 't3_origuid',
+    'iconfile' => 'EXT:my_extension/Resources/Public/Icons/Haiku.svg',
   ],
   'columns' => [
     'title' => [

@@ -10,10 +10,7 @@
 
     ..  rubric:: Example: Table `tx_myextension_mytable` is only editable by admin users:
 
-    ..  code-block:: php
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_AdminOnly.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-
-        'ctrl' => [
-            'adminOnly' => 1,
-            ...
-        ],
+        :visible-lines: 4-8
+        :emphasize-lines: 7

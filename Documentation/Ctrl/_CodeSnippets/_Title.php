@@ -2,15 +2,12 @@
 
 return [
   'ctrl' => [
-    'title' => 'Something',
+    'title' => 'LLL:my_extension.db:tx_myextension_domain_model_blog',
     'label' => 'title',
-    'tstamp' => 'tstamp',
-    'crdate' => 'crdate',
-    'origUid' => 't3_origuid',
   ],
   'columns' => [
     'title' => [
-      'label' => 'Title',
+      'label' => 'LLL:my_extension.db:tx_myextension_domain_model_blog.title',
       'config' => [
         'type' => 'input',
       ],

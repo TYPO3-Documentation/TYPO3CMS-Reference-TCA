@@ -10,11 +10,9 @@
     Pointing to the icon file to use for the table. Icons should be square SVGs. In case you cannot supply a SVG you
     can still use a PNG file of 64x64 pixels in dimension.
 
-..  rubric:: Example usage from the "examples" extension
+..  rubric:: Example: Icon of a custom table
 
-..  code-block:: php
-
-    'ctrl' => [
-        'iconfile' => 'EXT:examples/Resources/Public/Images/Haiku.svg',
-        ...
-    ],
+..  literalinclude:: /Ctrl/_CodeSnippets/_Iconfile.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_haiku.php
+    :visible-lines: 4-8
+    :emphasize-lines: 7
