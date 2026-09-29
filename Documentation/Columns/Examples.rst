@@ -72,7 +72,7 @@ be copied without a prepended string.
 ..  code-block:: php
     :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php
 
-    $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = ''
+    $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = '';
 
 ..  _tca_example_translated_select_single_13:
 
