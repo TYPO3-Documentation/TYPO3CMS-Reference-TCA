@@ -15,14 +15,9 @@
     language is chosen, like Danish, then the label "Sideindhold" is shown
     instead. This value is managed by the "title" value.
 
-    ..  code-block::
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_Title.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_blog.php
-
-        return [
-            'ctrl' => [
-                'title' => 'LLL:my_extension.db:tx_myextension_domain_model_blog',
-                // ...
-            ],
-        ];
+        :visible-lines: 4-7
+        :emphasize-lines: 5
 
     ..  include:: /_Includes/_LabelReference.rst.txt
