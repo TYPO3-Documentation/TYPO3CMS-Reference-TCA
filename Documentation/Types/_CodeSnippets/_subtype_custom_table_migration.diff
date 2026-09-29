@@ -1,0 +1,45 @@
+ return [
+   'ctrl' => [
+     'type' => 'type',
+     // ...
+   ],
+   'columns' => [
+     'type' => [
+       'config' => [
+         'type' => 'select',
+         'renderType' => 'selectSingle',
+         'items' => [
+           ['label' => 'Event', 'value' => 'event'],
++          ['label' => 'Online event', 'value' => 'online_event'],
+         ],
+       ],
+     ],
+-    'event_format' => [
+-      'config' => [
+-        'type' => 'select',
+-        'renderType' => 'selectSingle',
+-        'items' => [
+-          ['label' => 'On site', 'value' => 'on_site'],
+-          ['label' => 'Online', 'value' => 'online'],
+-        ],
+-      ],
+-    ],
+     // ...
+   ],
+   'types' => [
+     'event' => [
+-      'showitem' => 'type, event_format, title, location',
+-      'subtype_value_field' => 'event_format',
+-      'subtypes_addlist' => [
+-        'online' => 'stream_url',
+-      ],
+-      'subtypes_excludelist' => [
+-        'online' => 'location',
+-      ],
++      'showitem' => 'type, title, location',
++    ],
++    'online_event' => [
++      'showitem' => 'type, stream_url, title',
+     ],
+   ],
+ ];
