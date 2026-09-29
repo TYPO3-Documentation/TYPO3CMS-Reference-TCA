@@ -18,9 +18,9 @@
     field's TCA configuration:
 
     ..  code-block:: php
-        :caption: packages/my_extension/Configuration/TCA/Overrides/tx_my_table.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
 
-        $GLOBALS['TCA']['tx_my_table']['columns']['my_field'] = [
+        $GLOBALS['TCA']['tx_myextension_mytable']['columns']['my_field'] = [
             'label' => 'My field',
             'config' => [
                 'type' => 'flex',

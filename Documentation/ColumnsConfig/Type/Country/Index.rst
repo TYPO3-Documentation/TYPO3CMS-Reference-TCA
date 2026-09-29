@@ -39,12 +39,12 @@ as default value. The localized name is displayed to the backend users.
     ..  group-tab:: TCA
 
         ..  literalinclude:: _country-basic.php
-            :caption: packages/my_extension/Configuration/TCA/tx_myextension_domain_model_address.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_address.php
 
     ..  group-tab:: Flexform
 
         ..  literalinclude:: _country-basic-flex.xml
-            :caption: packages/my_extension/Configuration/FlexForms/Address.xml
+            :caption: EXT:my_extension/Configuration/FlexForms/Address.xml
 
 ..  _columns-country-example-extended:
 
@@ -59,12 +59,12 @@ country picker TCA type:
     ..  group-tab:: TCA
 
         ..  literalinclude:: _country-extended.php
-            :caption: packages/my_extension/Configuration/TCA/tx_myextension_domain_model_address.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_address.php
 
     ..  group-tab:: Flexform
 
         ..  literalinclude:: _country-extended-flex.xml
-            :caption: packages/my_extension/Configuration/FlexForms/Address.xml
+            :caption: EXT:my_extension/Configuration/FlexForms/Address.xml
 
 Additional countries can be added via the
 `BeforeCountriesEvaluatedEvent <https://docs.typo3.org/permalink/t3coreapi:beforecountriesevaluatedevent>`_.

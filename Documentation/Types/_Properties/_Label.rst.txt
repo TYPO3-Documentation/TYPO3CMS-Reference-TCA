@@ -21,7 +21,7 @@
     header field.
 
     ..  code-block:: php
-        :caption: EXT:my_extension/Configuration/TCA/tx_my_table.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
 
         return [
             'ctrl' => [
