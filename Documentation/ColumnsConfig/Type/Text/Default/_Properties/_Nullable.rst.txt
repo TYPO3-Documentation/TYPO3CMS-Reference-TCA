@@ -17,4 +17,4 @@
 ..  rubric:: Example: A nullable text editor
 
 ..  literalinclude:: _Snippets/_Nullable.php
-    :caption: EXT:some_extension/Configuration/TCA/tx_sometable.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php

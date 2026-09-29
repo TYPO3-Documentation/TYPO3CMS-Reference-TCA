@@ -35,7 +35,7 @@
         ..  literalinclude:: _Snippets/_AllowLanguageSynchronization.php
             :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
 
-        This means that the "my_editor" field of the "tx_mytable" table will
+        This means that the "my_editor" field of the "tx_myextension_mytable" table will
         be searched in only for elements of type X and Y. This helps making any
         search more relevant.
 

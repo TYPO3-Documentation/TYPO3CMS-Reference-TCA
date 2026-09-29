@@ -31,7 +31,7 @@
         to place an additional condition on the field when it is searched
 
         ..  code-block:: php
-            :caption: EXT:some_extension/Configuration/TCA/tx_sometable.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
 
             $temporaryColumns['some_date'] => [
                 'config' => [
