@@ -9,5 +9,5 @@ ExtensionUtility::registerPlugin(
   'my-extension-icon',
   'plugins',
   'Plugin description',
-  'FILE:EXT:myext/Configuration/FlexForm.xml'
+  'FILE:EXT:my_extension/Configuration/FlexForm.xml'
 );

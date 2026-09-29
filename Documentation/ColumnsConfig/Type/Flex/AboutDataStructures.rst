@@ -29,7 +29,7 @@ FlexForm definitions can be passed as the 7th parameter to
 `ExtensionUtility::registerPlugin()` when registering Extbase.
 
 ..  literalinclude:: _CodeSnippets/_plugin.php
-    :caption: packages/my_extension/Configuration/TCA/Overrides/tt_content.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 ..  _columns-flex-ds-one:
 
@@ -45,7 +45,7 @@ to either pass a file reference to the XML file containing the FlexForm or
 a string containing the FlexForm's XML:
 
 ..  include:: /CodeSnippets/FlexFile1.rst.txt
-    :caption: packages/my_extension/Configuration/TCA/tx_my_table.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
 
 Essentially: Whenever a record is handled that has a column field
 definition with this TCA, the data structure defined in
@@ -66,7 +66,7 @@ set, you can use `columnsOverrides  <https://docs.typo3.org/permalink/t3tca:conf
 to set different FlexForms by type.
 
 ..  literalinclude:: _CodeSnippets/_column_overrides.php
-    :caption: packages/my_extension/Configuration/TCA/tx_my_table.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
 
 In the above example, type 0 and type 3 display the default FlexForm defined in
 file `'FILE:EXT:news/Configuration/FlexFormDefault.xml'`, and type 1 and 2

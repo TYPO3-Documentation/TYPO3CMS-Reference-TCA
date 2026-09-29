@@ -127,4 +127,4 @@ saving the record.
     :caption: EXT:my_extension/ext_localconf.php
 
 ..  literalinclude:: _Snippets/_tx_example_record.php
-    :caption: EXT:extension/Configuration/TCA/tx_example_record.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_record.php

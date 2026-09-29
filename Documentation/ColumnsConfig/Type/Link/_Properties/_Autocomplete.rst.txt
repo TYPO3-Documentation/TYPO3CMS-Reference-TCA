@@ -11,4 +11,4 @@
 
 
     ..  literalinclude:: _Snippets/_autocomplete.php
-        :caption: EXT:some_extension/Configuration/TCA/Overrides/tx_sometable.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
