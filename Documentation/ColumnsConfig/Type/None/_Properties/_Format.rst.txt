@@ -107,7 +107,7 @@
         'type' => 'none',
         'format' => 'user',
         'format.' => [
-            'userFunc' => 'Evoweb\Example\Utility\MyCustomValue->getErrorMssg',
+            'userFunc' => 'MyVendor\MyExtension\Utility\MyCustomValue->getErrorMssg',
         ],
       ],
     ],

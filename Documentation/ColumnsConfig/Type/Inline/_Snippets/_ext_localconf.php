@@ -1,6 +1,6 @@
 <?php
 
-use Myvendor\Myexample\FormEngine\FieldInformation\DemoFieldInformation;
+use MyVendor\MyExtension\FormEngine\FieldInformation\DemoFieldInformation;
 
 // ...
 
