@@ -62,6 +62,23 @@ Replace any :confval:`types-subtype-value-field` configuration with dedicated re
 types. Please also consider migrating corresponding :confval:`types-subtypes-addlist`
 and :confval:`types-subtypes-excludelist` definitions accordingly.
 
+In the following example, events of table `tx_myextension_event` used the
+subtype field `event_format` to show the field `stream_url` instead of
+`location` for online events. After the migration, online events are a
+record type of their own with their own `showitem` list:
+
+..  literalinclude:: _CodeSnippets/_subtype_custom_table_migration.diff
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_event.php
+
+`subtypes_addlist` inserted its fields directly after the subtype field,
+so `stream_url` takes the place of `event_format` in the new `showitem`
+list.
+
+Existing records keep their old values. Update the type field of records
+that used the subtype, here all events with `event_format` set to
+`online`, to the new record type `online_event`. Then drop the subtype
+column.
+
 ..  _types-example-previewRenderer-for-subtype:
 ..  _migration-subtype-previewrenderer:
 
