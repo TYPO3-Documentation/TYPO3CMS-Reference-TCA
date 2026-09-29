@@ -162,16 +162,16 @@
         Hooks can be registered via:
 
         ..  code-block:: php
-            :caption: EXT:myextension/Configuration/TCA/Overrides/table.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/table.php
 
             $GLOBALS['TCA'][$tableName]['columns'][$fieldName]['config']['generatorOptions']['postModifiers'][]
                 = MyClass::class . '->method';
 
         Consider :php:`$tableName = 'pages'` and :php:`$fieldName = 'slug'`
-        inside :file:`EXT:my_extension/Configuration/TCA/Overrides/table.php`:
+        inside :file:`EXT:my_extension/Configuration/TCA/Overrides/pages.php`:
 
         ..  code-block:: php
-            :caption: EXT:myextension/Configuration/TCA/Overrides/table.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
 
             $GLOBALS['TCA']['pages']['columns']['slug']['config']['generatorOptions']['postModifiers'][] =
                 MyClass::class . '->modifySlug';

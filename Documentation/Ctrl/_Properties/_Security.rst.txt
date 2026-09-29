@@ -45,11 +45,11 @@
     You can also use it in an override file:
 
     ..  code-block:: php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/my_table.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
 
-        $GLOBALS['TCA']['my_table']['ctrl']['security']['ignoreWebMountRestriction'] = true;
-        $GLOBALS['TCA']['my_table']['ctrl']['security']['ignoreRootLevelRestriction'] = true;
-        $GLOBALS['TCA']['my_table']['ctrl']['security']['ignorePageTypeRestriction'] = true;
+        $GLOBALS['TCA']['tx_myextension_mytable']['ctrl']['security']['ignoreWebMountRestriction'] = true;
+        $GLOBALS['TCA']['tx_myextension_mytable']['ctrl']['security']['ignoreRootLevelRestriction'] = true;
+        $GLOBALS['TCA']['tx_myextension_mytable']['ctrl']['security']['ignorePageTypeRestriction'] = true;
 
     ignoreWebMountRestriction
         Allows users to access records that are not in their defined web-mount,

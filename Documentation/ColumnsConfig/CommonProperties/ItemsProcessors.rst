@@ -27,7 +27,7 @@ TCA item processor registration
 ===============================
 
 ..  literalinclude:: _codesnippets/_my_table.php
-    :caption: EXT:my_extension/Configuration/TCA/my_table.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
 
 In this example, `SpecialRelationsProcessor2` is executed before
 `SpecialRelationsProcessor`.
@@ -64,7 +64,7 @@ Add parameters via TCA or page TSconfig and access them through
 For example, the following item processor configuration:
 
 ..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/my_table.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
 
     // ...
     100 => [

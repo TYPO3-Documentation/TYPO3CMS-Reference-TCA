@@ -17,4 +17,4 @@
 ..  rubric:: Example: a nullable link field
 
 ..  literalinclude:: _Snippets/_nullable.php
-    :caption: EXT:some_extension/Configuration/TCA/Overrides/tx_sometable.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php

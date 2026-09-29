@@ -32,9 +32,9 @@
         A record type can be removed from that component via:
 
         ..  code-block:: php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/my_table.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
 
-            $GLOBALS['TCA']['my_table']['types']['my_type']['creationOptions']['enableDirectRecordTypeCreation'] = false;
+            $GLOBALS['TCA']['tx_myextension_mytable']['types']['my_type']['creationOptions']['enableDirectRecordTypeCreation'] = false;
 
         Event :php:`\TYPO3\CMS\Backend\Controller\Event\ModifyNewRecordCreationLinksEvent`
         can be used for more sophisticated modification of the dialogue.
@@ -65,7 +65,7 @@
         creation link in the "Create new record" component.
 
         ..  code-block:: php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/my_table.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
 
-            $GLOBALS['TCA']['my_table']['types']['my_type']['creationOptions']['title']
+            $GLOBALS['TCA']['tx_myextension_mytable']['types']['my_type']['creationOptions']['title']
                 = 'my_extension.db.myType:title';
