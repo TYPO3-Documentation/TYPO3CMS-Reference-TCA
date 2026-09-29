@@ -10,7 +10,7 @@ Display conditions (:confval:`$GLOBALS['TCA'][$table]['columns'][$field][display
 can be used to only display the affected field if certain other fields are set
 to certain values.
 
-Conditions can be grouped and nested using boolean operators :sql:`AND` or :sql:`OR` as
+Conditions can be grouped and nested using boolean operators `AND` or `OR` as
 array keys. See examples below.
 
 ..  contents:: Table of contents
@@ -109,12 +109,12 @@ Examples for display conditions
 Basic display condition
 ------------------------
 
-This example will require the field named "tx\_templavoila\_ds" to be true, otherwise the field for which this rule
-is set will not be displayed:
+This example will require the field named `tx_myextension_show_teaser` to be
+true, otherwise the field for which this rule is set will not be displayed:
 
 ..  code-block:: php
 
-    'displayCond' => 'FIELD:tx_templavoila_ds:REQ:true',
+    'displayCond' => 'FIELD:tx_myextension_show_teaser:REQ:true',
 
 ..  _columns-displaycond-examples-combined:
 
@@ -123,37 +123,24 @@ Combining conditions
 
 Multiple conditions can be combined:
 
-..  code-block:: php
+..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondAnd.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+    :visible-lines: 7, 16-23
+    :emphasize-lines: 19
 
-    'displayCond' => [
-        'AND' => [
-            'FIELD:tx_templavoila_ds:REQ:true',
-            'FIELD:header:=:Headline',
-        ],
-    ],
+An example with multiple values and `OR`:
 
-
-An example with multiple values and :sql:`OR`:
-
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
-
-    $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']['OR'] = [
-        'FIELD:tx_mask_otherfield:=:1',
-        'FIELD:tx_mask_otherfield:=:2',
-        'FIELD:tx_mask_otherfield:=:4',
-    ];
-
+..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondOr.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+    :visible-lines: 7-16
+    :emphasize-lines: 11
 
 This is the same as:
 
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_mask_field.php
-
-    $GLOBALS['TCA']['tx_mask_table']['columns']['tx_mask_field']['displayCond']
-        = 'FIELD:tx_mask_otherfield:IN:1,2,4';
-
+..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondIn.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+    :visible-lines: 7-10
+    :emphasize-lines: 10
 
 ..  _columns-displaycond-examples-complex:
 
@@ -165,49 +152,33 @@ Going further the next example defines the following conditions: for the
 default language. Furthermore it must be a text-type element or have the
 headline "Example" defined:
 
-..  code-block:: php
+..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondComplex.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-
-    'displayCond' => [
-        'AND' => [
-            'FIELD:sys_language_uid:=:0',
-            'OR' => [
-                'FIELD:CType:=:text',
-                'FIELD:header:=:Example'
-            ]
-        ]
-    ],
+    :visible-lines: 7-18
+    :emphasize-lines: 11, 13
 
 ..  _columns-displaycond-examples-flexform:
 
 A complex example in a FlexForm
 -------------------------------
 
-Using :sql:`OR` and :sql:`AND` within FlexForms works like this:
+Using `OR` and `AND` within FlexForms works like this:
 
-..  code-block:: xml
+..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondFlexForm.xml
     :caption: EXT:my_extension/Configuration/FlexForms/SomeFlexForm.xml
-
-    <displayCond>
-        <and>
-            <value1>FIELD:sys_language_uid:=:0</value1>
-            <or>
-                <value1>FIELD:CType:=:text</value1>
-                <value2>FIELD:header:=:Example</value2>
-            </or>
-        </and>
-    </displayCond>
-
+    :visible-lines: 8-19
+    :emphasize-lines: 11, 13
 
 ..  _columns-displaycond-examples-flexform-value:
 
 Access values in a flexform
 ---------------------------
 
-Flex form fields can access field values from various different sources:
+Flex form fields can access field values from various different sources.
+Each of the following conditions is an alternative for the `displayCond` of
+one field:
 
 ..  code-block:: xml
-    :caption: EXT:my_extension/Configuration/FlexForms/SomeFlexForm.xml
 
     <!-- Hide field if value of record field "header" is not "true" -->
     <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
