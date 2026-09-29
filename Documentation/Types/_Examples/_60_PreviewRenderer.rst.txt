@@ -6,12 +6,12 @@ PreviewRenderer examples
 
 Demonstrates property: :confval:`types-previewRenderer`.
 
-This specifies the preview renderer only for records with the c `blogexample_list`
-as determined by the field `Ctype` of the table `tt_content`.
+This specifies the preview renderer only for records with the record type `myextension_bloglist`
+as determined by the field `CType` of the table `tt_content`.
 
 This could be used to preview the blog plugin in the :guilabel:`Content > Layout` module.
 
 ..  code-block:: php
 
-    $GLOBALS['TCA']['tt_content']['types']['blogexample_list']['previewRenderer']
+    $GLOBALS['TCA']['tt_content']['types']['myextension_bloglist']['previewRenderer']
         = \MyVendor\MyExtension\Preview\PreviewRenderer::class;

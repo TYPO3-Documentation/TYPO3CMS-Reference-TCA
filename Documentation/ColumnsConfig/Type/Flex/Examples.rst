@@ -39,11 +39,11 @@ FlexForm in a plugin
 
 The data structure for a FlexForm can also be loaded in the `pi_flexform`
 field of the `tt_content` table by adding the following in the
-TCA Overrides of an extension, see this example from the extension :composer:`t3docs/blog-example`:
+TCA overrides of an extension:
 
 ..  literalinclude:: _CodeSnippets/_tt_content_plugin.php
     :linenos:
-    :caption: EXT:blog_example/Configuration/TCA/Overrides/tt_content.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 In line 18ff the field `pi_flexform` is added to the display
 of fields when the record type of the plugin is selected.

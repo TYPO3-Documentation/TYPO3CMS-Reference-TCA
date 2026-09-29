@@ -7,10 +7,10 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 defined('TYPO3') or die();
 
 $pluginKey = ExtensionUtility::registerPlugin(
-  'blog_example',
+  'my_extension',
   'BlogList',
-  'List of Blogs (BlogExample)',
-  'blog_example_icon',
+  'List of blogs',
+  'my_extension_bloglist',
   'plugins',
   'Display a list of blogs',
 );
@@ -24,6 +24,6 @@ ExtensionManagementUtility::addToAllTCAtypes(
 
 ExtensionManagementUtility::addPiFlexFormValue(
   '*',
-  'FILE:EXT:blog_example/Configuration/FlexForms/PluginSettings.xml',
+  'FILE:EXT:my_extension/Configuration/FlexForms/PluginSettings.xml',
   $pluginKey,
 );
