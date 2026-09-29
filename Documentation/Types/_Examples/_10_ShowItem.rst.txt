@@ -9,7 +9,7 @@ The table containing the blog comments does not contain many fields. So they can
 all be displayed on one page of the backend form without using tabs:
 
 ..  literalinclude:: _CodeSnippets/_tx_blogexample_comment_showitem.php
-    :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_comment.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_comment.php
 
 ..  _types-examples-required-tabs:
 ..  _types-example-showitem-2-tabs:
@@ -23,7 +23,7 @@ can improves the backend user experience. Palettes have the additional value
 that they can be reused across different record types.
 
 ..  literalinclude:: _CodeSnippets/_tx_blogexample_post_tabs.php
-    :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_post.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
 
 The syntax for tabs is:
 
