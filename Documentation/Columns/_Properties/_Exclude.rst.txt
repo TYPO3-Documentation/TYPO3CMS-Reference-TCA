@@ -16,17 +16,7 @@
 
 ..  rubric:: Example: Simple input field
 
-..  code-block:: php
-
-    [
-         'columns' => [
-              'input_2' => [
-                    'label' => 'input_2 description',
-                    'exclude' => true,
-                    'config' => [
-                         'type' => 'input',
-
-                    ],
-              ],
-         ],
-    ]
+..  literalinclude:: /Columns/_CodeSnippets/_Exclude.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 8-16
+    :emphasize-lines: 11
