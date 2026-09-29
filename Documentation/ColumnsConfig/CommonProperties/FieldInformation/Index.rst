@@ -22,69 +22,24 @@ following example.
 Example
 =======
 
-You can have a look at the extension `georgringer/news` in version 9.4 for an example:
-https://github.com/georgringer/news/blob/9.4.0/Configuration/TCA/tx_news_domain_model_news.php#L521
-(with `georgringer/news ^10.0` this was moved to a non-public extension).
+The field `tags` shows a translated information text next to its label.
+The label reference of the text is passed to the node in the `options` of
+its `fieldInformation` configuration:
 
-..  code-block:: php
-    :caption: EXT:news/Configuration/TCA/tx_news_domain_model_news.php (Excerpt)
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_FieldInformationTca.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
+    :visible-lines: 9-22
+    :emphasize-lines: 15
 
-        'tags' => [
-            'config' => [
-                // ...
-                'fieldInformation' => [
-                    'tagInformation' => [
-                        'renderType' => 'NewsStaticText',
-                        'options' => [
-                            'labels' => [
-                                [
-                                    'label' => '',
-                                    'bold' => true,
-                                    'italic' => true,
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-            ]
+The node receives the options in
+:php:`$this->data['renderData']['fieldInformationOptions']` and returns the
+HTML to show:
 
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_FieldInformationClass.php
+    :caption: EXT:my_extension/Classes/Backend/FieldInformation/TagInformation.php
 
-The implementation can be found in https://github.com/georgringer/news/blob/9.4.0/Classes/Backend/FieldInformation/StaticText.php:
+The node is registered with the name used as `renderType` in
+:file:`ext_localconf.php`:
 
-..  code-block:: php
-    :caption: EXT:news/Classes/Backend/FieldInformation/StaticText.php
-
-    <?php
-
-    declare(strict_types=1);
-
-    namespace GeorgRinger\News\Backend\FieldInformation;
-
-    use TYPO3\CMS\Backend\Form\AbstractNode;
-
-    class StaticText extends AbstractNode
-    {
-        public function render(): array
-        {
-            // ...
-
-            return [
-                'requireJsModules' => [
-                    'TYPO3/CMS/News/TagSuggestWizard',
-                ],
-                'html' => '...>',
-            ];
-        }
-    }
-
-The custom FieldInformation must be rendered in :file:`ext_localconf.php`:
-
-..  code-block:: php
-    :caption: EXT:news/ext_localconf.php
-
-
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1552726986] = [
-        'nodeName' => 'NewsStaticText',
-        'priority' => 70,
-        'class' => \GeorgRinger\News\Backend\FieldInformation\StaticText::class
-    ];
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_FieldInformationRegistration.php
+    :caption: EXT:my_extension/ext_localconf.php

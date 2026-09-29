@@ -1,0 +1,25 @@
+<T3DataStructure>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <sheetTitle>General</sheetTitle>
+        <type>array</type>
+        <el>
+          <settings.choice>
+            <label>Choice</label>
+            <config>
+              <type>select</type>
+              <renderType>selectSingle</renderType>
+              <foreign_table>tx_myextension_related</foreign_table>
+              <itemsProcessors>
+                <numIndex index="100">
+                  <class>MyVendor\MyExtension\Processors\SpecialRelationsProcessor</class>
+                </numIndex>
+              </itemsProcessors>
+            </config>
+          </settings.choice>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>
