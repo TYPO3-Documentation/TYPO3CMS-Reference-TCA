@@ -20,11 +20,11 @@
     data provider).
 
     ..  code-block::
-        :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_domain_model_post.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
 
         return [
             'ctrl' => [
-                'title' => 'LLL:blog_example.db:post.title',
+                'title' => 'LLL:my_extension.db:post.title',
                 'type' => 'record_type',
                 // ... other ctrl configuration
             ],
@@ -33,11 +33,11 @@
                     'showitem' => 'blog, title, date, author, content, comments, ',
                 ],
                 'link' => [
-                    'title' =>  'LLL:blog_example.db:link.title',
+                    'title' =>  'LLL:my_extension.db:link.title',
                     'showitem' => ' blog, title, date, author, link, ',
                 ],
                 'special' => [
-                    'title' =>  'LLL:blog_example.db:special.title',
+                    'title' =>  'LLL:my_extension.db:special.title',
                     'showitem' => 'blog, title, date, author, content, tags, comments, ',
                 ],
             ],
