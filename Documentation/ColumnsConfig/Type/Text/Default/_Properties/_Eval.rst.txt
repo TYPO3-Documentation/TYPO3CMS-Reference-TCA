@@ -17,7 +17,7 @@
     trim
         The value in the field will have white spaces around it trimmed away.
 
-    Vendor\\Extension\\*
+    `MyVendor\\MyExtension\\*`
         User defined form evaluations.
 
 ..  _tca_example_text_7:

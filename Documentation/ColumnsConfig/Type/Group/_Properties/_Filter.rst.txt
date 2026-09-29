@@ -26,13 +26,13 @@
 
         'filter' => [
             [
-                'userFunc' => \Vendor\Extension\MyClass::class . '->doFilter',
+                'userFunc' => \MyVendor\MyExtension\MyClass::class . '->doFilter',
                 'parameters' => [
                     // optional parameters for the filter go here
                 ],
             ],
             [
-                'userFunc' => \Vendor\Extension\OtherClass::class . '->myFilter',
+                'userFunc' => \MyVendor\MyExtension\OtherClass::class . '->myFilter',
                 'parameters' => [
                     // optional parameters for the filter go here
                 ],
@@ -59,7 +59,7 @@ The field configuration for the "mother" field could look like:
             'size' => 1,
             'filter' => [
                 [
-                    'userFunc' => \Vendor\Extension\MyClass::class . '->doFilter',
+                    'userFunc' => \MyVendor\MyExtension\MyClass::class . '->doFilter',
                     'parameters' => [
                         'evaluateGender' => 'female',
                     ],

@@ -118,10 +118,10 @@ saving the record.
     working example. For more information about adding JavaScript modules
     see :ref:`ES6 in the TYPO3 Backend <t3coreapi:backend-javascript-es6>`.
 
-:file:`EXT:extension/Classes/Evaluation/ExampleEvaluation.php`
+:file:`EXT:my_extension/Classes/Evaluation/ExampleEvaluation.php`
 
 ..  literalinclude:: _Snippets/_ExampleEvaluation.php
-    :caption: EXT:my_extension/Classes/EvaluationExampleEvaluation.php
+    :caption: EXT:my_extension/Classes/Evaluation/ExampleEvaluation.php
 
 ..  literalinclude:: _Snippets/_ext_localconf.php
     :caption: EXT:my_extension/ext_localconf.php
