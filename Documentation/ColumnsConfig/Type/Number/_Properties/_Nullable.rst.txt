@@ -19,4 +19,4 @@
 ..  rubric:: Example: A nullable number field
 
 ..  literalinclude:: _Properties/_Nullable.php
-    :caption: EXT:some_extension/Configuration/TCA/tx_sometable.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php

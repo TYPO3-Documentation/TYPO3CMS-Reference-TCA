@@ -13,7 +13,7 @@ Adding custom select item groups
 ================================
 
 Registration of a select item group takes place in
-:file:`Configuration/TCA/tx_mytable.php` for new TCA tables, and in
+:file:`Configuration/TCA/tx_myextension_mytable.php` for new TCA tables, and in
 :file:`Configuration/TCA/Overrides/a_random_core_table.php`
 for modifying an existing TCA definition.
 

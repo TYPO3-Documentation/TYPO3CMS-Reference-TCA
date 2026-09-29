@@ -50,7 +50,7 @@ This key has then to be defined on field level:
 
 ..  code-block:: typoscript
 
-    TCEFORM.my_table.folder_group.PAGE_TSCONFIG_ID = 1:/styleguide/subfolder
+    TCEFORM.tx_myextension_mytable.folder_group.PAGE_TSCONFIG_ID = 1:/styleguide/subfolder
 
 In case an allowed table has no entry point defined, the `_default` is used.
 In case `_default` is also not set or `elementBrowserEntryPoints` is not

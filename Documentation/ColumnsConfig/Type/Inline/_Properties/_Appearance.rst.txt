@@ -58,7 +58,7 @@
 
         Example::
 
-            'newRecordLinkTitle' => 'LLL:EXT:myext/Resources/Private/Language/locallang_db.xlf:my_new_record_label'
+            'newRecordLinkTitle' => 'LLL:EXT:my_extension/Resources/Private/Language/locallang_db.xlf:my_new_record_label'
 
     ..  confval:: createNewRelationLinkTitle
         :name: inline-appearance-createNewRelationLinkTitle

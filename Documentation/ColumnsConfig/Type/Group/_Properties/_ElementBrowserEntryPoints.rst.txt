@@ -40,7 +40,7 @@ This could then be overridden via page TSconfig:
 
 ..  code-block:: typoscript
 
-    TCEFORM.my_table.simple_group.config.elementBrowserEntryPoints.tt_content = 321
+    TCEFORM.tx_myextension_mytable.simple_group.config.elementBrowserEntryPoints.tt_content = 321
 
 Since only one table is allowed, the defined entry point is also automatically
 used for the general element browser button.
@@ -69,4 +69,4 @@ Of course, the `_default` key can also be overridden via page TSconfig:
 
 ..  code-block:: typoscript
 
-    TCEFORM.my_table.extended_group.config.elementBrowserEntryPoints._default = 122
+    TCEFORM.tx_myextension_mytable.extended_group.config.elementBrowserEntryPoints._default = 122
