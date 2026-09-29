@@ -27,6 +27,7 @@
 ..  rubric:: Example from "pages" table
 
 ..  code-block:: php
+    :caption: EXT:core/Configuration/TCA/pages.php (excerpt)
 
     'ctrl' => [
         'useColumnsForDefaultValues' => 'doktype,fe_group,hidden',

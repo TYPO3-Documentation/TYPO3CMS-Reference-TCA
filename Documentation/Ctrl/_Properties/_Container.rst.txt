@@ -19,22 +19,24 @@
     nodes, too, and if implemented correctly will automatically have their
     configuration merged with the definition provided in this TCA array.
 
-    The basic array looks like::
+    The basic array looks like:
+
+    ..  code-block:: php
 
         'ctrl' => [
-            'container' => [
-                '<containerRenderType>' => [
-                    'fieldWizard' => [
-                        '<aName>' => [
-                            'renderType' => '<aRenderType>',
-                            'before' => ['<anotherName>'],
-                            'after' => ['<yetAnotherName>'],
-                            'disabled' => false,
-                            'options' => [],
-                        ],
-                    ],
+          'container' => [
+            '<containerRenderType>' => [
+              'fieldWizard' => [
+                '<aName>' => [
+                  'renderType' => '<aRenderType>',
+                  'before' => ['<anotherName>'],
+                  'after' => ['<yetAnotherName>'],
+                  'disabled' => false,
+                  'options' => [],
                 ],
+              ],
             ],
+          ],
         ],
 
     <containerRenderType>
