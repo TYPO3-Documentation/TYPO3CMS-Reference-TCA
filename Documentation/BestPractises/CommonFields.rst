@@ -131,6 +131,8 @@ in the :ref:`columns <columns>` section of the TCA.
 
 ..  literalinclude:: /Ctrl/_CodeSnippets/_DataHandlerFields.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    :visible-lines: 4-10
+    :emphasize-lines: 7-9
 
 ..  _field_tstamp:
 

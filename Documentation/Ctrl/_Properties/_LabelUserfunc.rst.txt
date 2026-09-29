@@ -13,12 +13,14 @@
     and :ref:`label_alt_force <ctrl-reference-label-alt-force>` settings.
 
     When calling a method from a class, enter :php:`[classname]->[methodname]`. The passed argument is an array
-    which contains the following information about the record for which to get the title::
+    which contains the following information about the record for which to get the title:
 
-        $params['table'] = $table;
-        $params['row'] = $row;
+    ..  code-block:: php
 
-    The resulting title must be written to $params['title'], which is passed by reference.
+        $parameters['table'] = $table;
+        $parameters['row'] = $row;
+
+    The resulting title must be written to `$parameters['title']`, which is passed by reference.
 
     ..  warning::
 
@@ -27,24 +29,18 @@
 
     ..  rubric:: Example
 
-    The example shows the "haiku" table of an extension `my_extension`. The call
-    to the user function appears in the
-    :file:`EXT:my_extension/Configuration/TCA/tx_myextension_haiku.php` file::
+    The example shows the "haiku" table of an extension `my_extension`. The
+    TCA of the table calls the user function:
 
-        'ctrl' => [
-            'label' => 'title',
-            'label_userFunc' => \MyVendor\MyExtension\Userfuncs\Tca::class . '->haikuTitle',
-        ],
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_LabelUserfunc.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_haiku.php
+        :visible-lines: 3, 6-10
+        :emphasize-lines: 9
 
-    Class :php:`\MyVendor\MyExtension\Userfuncs\Tca` contains the code itself::
+    The class contains the code itself:
 
-        public function haikuTitle(&$parameters)
-        {
-            $record = BackendUtility::getRecord($parameters['table'], $parameters['row']['uid']);
-            $newTitle = $record['title'];
-            $newTitle .= ' (' . substr(strip_tags($record['poem']), 0, 10) . '...)';
-            $parameters['title'] = $newTitle;
-        }
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_LabelUserfuncTca.php
+        :caption: EXT:my_extension/Classes/Userfuncs/Tca.php
 
 ..  _ctrl-reference-label-userfunc-options:
 

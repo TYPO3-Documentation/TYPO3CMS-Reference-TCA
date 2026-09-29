@@ -16,9 +16,10 @@
     ..  rubric:: Example from the `tt_content` table:
 
     ..  code-block:: php
+        :caption: EXT:frontend/Configuration/TCA/tt_content.php (excerpt)
 
         'typeicon_classes' => [
-            'default' => 'mimetypes-x-content-text',
             'header' => 'mimetypes-x-content-header',
-            ...
+            'text' => 'mimetypes-x-content-text',
+            'default' => 'mimetypes-x-content-text',
         ],

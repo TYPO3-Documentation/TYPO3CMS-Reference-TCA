@@ -2,11 +2,10 @@
 
 return [
   'ctrl' => [
-    'title' => 'Something',
+    'title' => 'Product',
     'label' => 'title',
-    'tstamp' => 'tstamp',
     'crdate' => 'crdate',
-    'origUid' => 't3_origuid',
+    'default_sortby' => 'title ASC, crdate DESC',
   ],
   'columns' => [
     'title' => [
