@@ -28,7 +28,7 @@ Migrate by adding the field `pi_flexform` with the utility method
 method `addPiFlexFormValue()`:
 
 ..  literalinclude:: _CodeSnippets/_subtype_plugin_migration.diff
-    :caption: EXT:my_extension/Configuration/Overrides/tt_content.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 The fields `pages` and `recursive` used to be added
 automatically to plugins when using the now outdated subtype "list_type".
@@ -46,7 +46,7 @@ The same effect can now be used by simply not adding the fields in the first
 place:
 
 ..  literalinclude:: _CodeSnippets/_subtype_plugin_exclude_migration.diff
-    :caption: EXT:my_extension/Configuration/Overrides/tt_content.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 If any other fields have been removed with this method you can only remove
 them by overriding
@@ -62,9 +62,6 @@ Replace any :confval:`types-subtype-value-field` configuration with dedicated re
 types. Please also consider migrating corresponding :confval:`types-subtypes-addlist`
 and :confval:`types-subtypes-excludelist` definitions accordingly.
 
-..  literalinclude:: _CodeSnippets/_subtype_plugin_exclude_migration.diff
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-
 ..  _types-example-previewRenderer-for-subtype:
 ..  _migration-subtype-previewrenderer:
 
@@ -76,4 +73,4 @@ its own `CType` change the PreviewRenderer configuration to the record type as
 well:
 
 ..  literalinclude:: _CodeSnippets/_subtype_migration_preview.diff
-    :caption: EXT:my_extension/Configuration/Overrides/tt_content.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
