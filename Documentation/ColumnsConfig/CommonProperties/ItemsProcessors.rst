@@ -90,7 +90,7 @@ Registering item processors in FlexForms
 Registration of processors is also possible inside FlexForms:
 
 ..  code-block:: xml
-    :caption: EXT:my_package/Configuration/FlexForms/SomeForm.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/SomeForm.xml
 
     <some_selector>
         <label>Choice</label>
@@ -99,7 +99,7 @@ Registration of processors is also possible inside FlexForms:
             <renderType>selectSingle</renderType>
             <itemsProcessors>
                 <numIndex index="100">
-                    <class>MyVendor\MyPackage\Processors\SpecialRelationsProcessor</class>
+                    <class>MyVendor\MyExtension\Processors\SpecialRelationsProcessor</class>
                 </numIndex>
             </itemsProcessors>
         </config>

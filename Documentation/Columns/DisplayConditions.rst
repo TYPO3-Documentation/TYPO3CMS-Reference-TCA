@@ -71,7 +71,7 @@ USER
     userFunc call with a fully qualified class name.
 
     Additional parameters can be passed separated by colon:
-    :php:`USER:Evoweb\\Example\\User\\MyConditionMatcher->checkHeader:some:more:info`
+    `USER:MyVendor\\MyExtension\\User\\MyConditionMatcher->checkHeader:some:more:info`
 
     The following arguments are passed as array to the userFunc:
 
