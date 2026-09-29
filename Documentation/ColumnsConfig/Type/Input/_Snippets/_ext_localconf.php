@@ -1,6 +1,6 @@
 <?php
 
-use Vendor\Extension\Evaluation\ExampleEvaluation;
+use MyVendor\MyExtension\Evaluation\ExampleEvaluation;
 
 // ....
 

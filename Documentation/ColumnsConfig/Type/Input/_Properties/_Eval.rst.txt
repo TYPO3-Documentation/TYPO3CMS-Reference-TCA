@@ -70,5 +70,5 @@
         :ref:`range <t3tca:confval-number-range>`. This type will then already
         ensure only numbers can be picked.
 
-    Vendor\\Extension\\*
+    `MyVendor\\MyExtension\\*`
         :ref:`User defined form evaluations <columns-input-eval-custom>`.
