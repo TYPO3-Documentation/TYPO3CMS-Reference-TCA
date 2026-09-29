@@ -20,5 +20,7 @@
     The following fields are set by the DataHandler automatically on creating or
     updating records, if they are configured in the `ctrl` section of the TCA:
 
-    ..  literalinclude:: _CodeSnippets/_DataHandlerFields.php
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_DataHandlerFields.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+        :visible-lines: 4-10
+        :emphasize-lines: 8

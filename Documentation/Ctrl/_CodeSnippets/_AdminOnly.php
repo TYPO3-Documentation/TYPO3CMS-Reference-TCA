@@ -2,11 +2,9 @@
 
 return [
   'ctrl' => [
-    'title' => 'Something',
+    'title' => 'My table',
     'label' => 'title',
-    'tstamp' => 'tstamp',
-    'crdate' => 'crdate',
-    'origUid' => 't3_origuid',
+    'adminOnly' => true,
   ],
   'columns' => [
     'title' => [
