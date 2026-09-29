@@ -81,7 +81,7 @@ Example: Simple language field
 ==============================
 
 ..  literalinclude:: _languageField.php
-    :caption: EXT:myExtension/Configuration/Overrides/someTable.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
 
 ..  _columns-language-properties:
 

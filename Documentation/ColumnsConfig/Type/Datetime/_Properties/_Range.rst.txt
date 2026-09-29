@@ -21,7 +21,7 @@
     the lowest possible value is set to the date of 2014:
 
     ..  code-block:: php
-        :caption: EXT:some_extension/Configuration/TCA/tx_sometable.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
 
         $temporaryColumns['my-date']['config']['range'] => [
             'upper' => gmmktime(23, 59, 59, 12, 31, 2022),

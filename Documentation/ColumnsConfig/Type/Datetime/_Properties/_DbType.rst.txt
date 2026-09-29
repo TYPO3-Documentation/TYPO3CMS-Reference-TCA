@@ -20,21 +20,21 @@
 ..  code-block:: sql
     :caption: :file:`ext_tables.sql`
 
-    CREATE TABLE tx_example_domain_model_foo (
+    CREATE TABLE tx_myextension_domain_model_foo (
       synced_at datetime default NULL
     )
 
 ..  literalinclude:: _Properties/_DbTypeSyncedAt.php
-    :caption: EXT:some_extension/Configuration/TCA/tx_sometable.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
 
 ..  rubric:: Example: Time picker stored in a datetime field
 
 ..  code-block:: sql
    :caption: :file:`ext_tables.sql`
 
-   CREATE TABLE tx_example_domain_model_foo (
+   CREATE TABLE tx_myextension_domain_model_foo (
       synced_at time default NULL
    )
 
 ..  literalinclude:: _Properties/_DbTypeSyncedAt2.php
-    :caption: EXT:some_extension/Configuration/TCA/tx_sometable.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
