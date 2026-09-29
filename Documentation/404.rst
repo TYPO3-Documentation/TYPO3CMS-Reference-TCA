@@ -100,3 +100,20 @@ For Extbase, the proper type is inferred from the first entry
 in the `allowed  <https://docs.typo3.org/permalink/t3tca:confval-group-allowed>`_
 TCA configuration option. You should only set this option if you
 need backward compatibility to previous TYPO3 versions.
+
+..  _ctrl-reference-is-static:
+
+Remove ctrl option `is_static`
+------------------------------
+
+`Breaking: #106863 - TCA control option is_static removed <https://docs.typo3.org/permalink/changelog:breaking-106863-1749629371>`_
+the option is not evaluated anymore, and the TCA migration removes it.
+
+..  confval:: is_static
+    :name: ctrl-is-static
+    :TCA path: $GLOBALS['TCA'][$table]['ctrl']['is_static']
+
+    To keep editors from changing reference data, use the ctrl options
+    `readOnly <https://docs.typo3.org/permalink/t3tca:confval-ctrl-readonly>`_
+    or `editlock <https://docs.typo3.org/permalink/t3tca:confval-ctrl-editlock>`_,
+    or restrict access to the table.
