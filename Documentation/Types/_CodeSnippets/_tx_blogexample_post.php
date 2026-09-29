@@ -2,7 +2,7 @@
 
 return [
   'ctrl' => [
-    'title' => 'LLL:blog_example.db:tx_blogexample_domain_model_post',
+    'title' => 'LLL:my_extension.db:tx_myextension_domain_model_post',
     'label' => 'title',
     'type' => 'record_type',
     'typeicon_classes' => [
@@ -17,17 +17,17 @@ return [
       'showitem' => 'blog, title, date, author, content, comments, ',
     ],
     'link' => [
-      'title' =>  'LLL:blog_example.db:link.title',
+      'title' =>  'LLL:my_extension.db:link.title',
       'showitem' => ' blog, title, date, author, link, ',
     ],
     'special' => [
-      'title' =>  'LLL:blog_example.db:special.title',
+      'title' =>  'LLL:my_extension.db:special.title',
       'showitem' => 'blog, title, date, author, content, tags, comments, ',
     ],
   ],
   'columns' => [
     'record_type' => [
-      'label' => 'LLL:blog_example.labels:post_types',
+      'label' => 'LLL:my_extension.labels:post_types',
       'config' => [
         'type' => 'select',
         'renderType' => 'selectSingle',

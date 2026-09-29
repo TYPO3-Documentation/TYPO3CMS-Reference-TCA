@@ -16,11 +16,11 @@
     instead. This value is managed by the "title" value.
 
     ..  code-block::
-        :caption: EXT:blog_example/Configuration/TCA/tx_blogexample_domain_model_blog.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_blog.php
 
         return [
             'ctrl' => [
-                'title' => 'LLL:blog_example.db:tx_blogexample_domain_model_blog',
+                'title' => 'LLL:my_extension.db:tx_myextension_domain_model_blog',
                 // ...
             ],
         ];

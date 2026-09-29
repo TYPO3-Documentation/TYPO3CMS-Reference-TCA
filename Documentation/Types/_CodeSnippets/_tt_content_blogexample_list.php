@@ -1,3 +1,3 @@
 <?php
 
-$GLOBALS['TCA']['tt_content']['types']['blogexample_list']['creationOptions']['saveAndClose'] = true;
+$GLOBALS['TCA']['tt_content']['types']['myextension_bloglist']['creationOptions']['saveAndClose'] = true;
