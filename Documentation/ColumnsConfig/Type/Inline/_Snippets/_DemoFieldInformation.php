@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Myvendor\Myexample\FormEngine\FieldInformation;
+namespace MyVendor\MyExtension\FormEngine\FieldInformation;
 
 use TYPO3\CMS\Backend\Form\AbstractNode;
 
