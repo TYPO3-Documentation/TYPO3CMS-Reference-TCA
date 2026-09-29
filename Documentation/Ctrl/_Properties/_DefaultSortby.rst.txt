@@ -15,21 +15,20 @@
 
     ..  rubric:: Example: Sort by title
 
-    ..  code-block:: php
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_DefaultSortbyTitle.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
+        :visible-lines: 4-8
+        :emphasize-lines: 7
 
-        'ctrl' => [
-            'default_sortby' => 'title',
-            ...
-        ],
+    ..  rubric:: Example: Sort by title and then by creation date
 
-    ..  rubric:: Example:  by title and then by creation date
+    The `crdate` column can only be used for sorting if it is configured in
+    the `ctrl` section of the TCA, see :confval:`ctrl-crdate`:
 
-    ..  code-block:: php
-
-        'ctrl' => [
-            'default_sortby' => 'title ASC, crdate DESC',
-            ...
-        ],
+    ..  literalinclude:: /Ctrl/_CodeSnippets/_DefaultSortbyTitleCrdate.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
+        :visible-lines: 4-9
+        :emphasize-lines: 7-8
 
     ..  warning::
         Do not confuse this property with :ref:`sortby <ctrl-reference-sortby>`: default_sortby should be set only if there

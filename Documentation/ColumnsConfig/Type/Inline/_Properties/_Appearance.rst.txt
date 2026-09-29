@@ -98,14 +98,8 @@
         Suppresses the warning flash message that will be displayed when using **useCombination**.
         You can also override the message with your own message using the example below.
 
-        Example::
-
-            $GLOBALS['TCA']['tx_demo_domain_model_demoinline']['columns']['irre_records']['config'] = [
-                 'appearance' => [
-                    'overwriteCombinationWarningMessage' => 'LLL:EXT:demo/Resources/Private/Language/locallang_db.xlf:tx_demo_domain_model_demoinline.irre_records.useCombinationWarning',
-                    'useCombination' => TRUE
-                 ],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_overwriteCombinationWarningMessage.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
 
     ..  confval:: useSortable
         :name: inline-appearance-useSortable
