@@ -10,7 +10,7 @@
     PHP method which is called to fill or manipulate the items array.
     It is recommended to use the actual FQCN with :php:`class` and then concatenate the method:
 
-    :php:`\VENDOR\Extension\UserFunction\FormEngine\YourClass::class . '->yourMethod'`
+    :php:`\MyVendor\MyExtension\UserFunction\FormEngine\YourClass::class . '->yourMethod'`
 
     This becomes handy when using an IDE and doing operations like renaming classes.
 

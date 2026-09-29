@@ -1,6 +1,6 @@
 <?php
 
-namespace MVendor\MyExtension\Evaluation;
+namespace MyVendor\MyExtension\Evaluation;
 
 use TYPO3\CMS\Core\Page\JavaScriptModuleInstruction;
 
