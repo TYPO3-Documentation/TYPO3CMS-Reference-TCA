@@ -15,17 +15,7 @@
 
 Example, exactly one image has to be attached:
 
-..  code-block:: php
-
-    // After
-    'columns' => [
-        'image' => [
-            'label' => 'My one and only image',
-            'config' => [
-                'type' => 'file',
-                'minitems' => 1,
-                'maxitems' => 1,
-                'allowed' => 'common-image-types'
-            ],
-        ],
-    ],
+..  literalinclude:: /ColumnsConfig/Type/File/_Snippets/_Minitems.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 16-24
+    :emphasize-lines: 20
