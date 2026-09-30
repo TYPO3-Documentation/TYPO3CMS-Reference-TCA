@@ -159,23 +159,10 @@ Example
 
 The "local" side of a mm table is defined as such in TCA:
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_MmLocal.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
-    ...
-    'columns' => [
-        ...
-        'myField' => [
-            'label' => 'myField',
-            'config' => [
-                'type' => 'group',
-                'allowed' => 'tx_myextension_myfield_child',
-                'MM' => 'tx_myextension_myfield_mm',
-            ]
-        ],
-        ...
-    ],
-    ...
+    :visible-lines: 15-22
+    :emphasize-lines: 20
 
 A table like the following will be automatically created in the Database
 Analyzer:

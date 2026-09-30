@@ -26,8 +26,10 @@ both are executed. In that case, `itemsProcFunc` is executed first.
 TCA item processor registration
 ===============================
 
-..  literalinclude:: _codesnippets/_my_table.php
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_my_table.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 3-4, 12-36
+    :emphasize-lines: 24
 
 In this example, `SpecialRelationsProcessor2` is executed before
 `SpecialRelationsProcessor`.
@@ -52,7 +54,7 @@ A processor must return a
 are handled as objects, newly added items can no longer be represented as
 untyped arrays.
 
-..  literalinclude:: _codesnippets/SpecialRelationsProcessor.php
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/SpecialRelationsProcessor.php
     :caption: EXT:my_extension/Classes/Processors/SpecialRelationsProcessor.php
 
 You can add your own parameters to processors. They are exposed
@@ -63,16 +65,10 @@ Add parameters via TCA or page TSconfig and access them through
 
 For example, the following item processor configuration:
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_my_table.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-
-    // ...
-    100 => [
-        'class' => SpecialRelationsProcessor::class,
-        'parameters' => [
-            'foo' => 'bar',
-        ],
-    ],
+    :visible-lines: 24-34
+    :emphasize-lines: 27
 
 can access `$context->processorParameters['foo']`. The value can be overridden
 or extended, for example via a site setting defined in page TSconfig:
@@ -80,7 +76,7 @@ or extended, for example via a site setting defined in page TSconfig:
 ..  code-block:: typoscript
     :caption: EXT:my_extension/Configuration/Sets/MySet/page.tsconfig
 
-    TCEFORM.example_table.content.itemsProcessors.100.foo = {$myExtension.bar}
+    TCEFORM.tx_myextension_mytable.relation.itemsProcessors.100.foo = {$myExtension.bar}
 
 ..  _tca-property-items-processors-registering-item-processors:
 
@@ -89,18 +85,7 @@ Registering item processors in FlexForms
 
 Registration of processors is also possible inside FlexForms:
 
-..  code-block:: xml
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_ItemsProcessorsFlexForm.xml
     :caption: EXT:my_extension/Configuration/FlexForms/SomeForm.xml
-
-    <some_selector>
-        <label>Choice</label>
-        <config>
-            <type>select</type>
-            <renderType>selectSingle</renderType>
-            <itemsProcessors>
-                <numIndex index="100">
-                    <class>MyVendor\MyExtension\Processors\SpecialRelationsProcessor</class>
-                </numIndex>
-            </itemsProcessors>
-        </config>
-    </some_selector>
+    :visible-lines: 8-20
+    :emphasize-lines: 14
