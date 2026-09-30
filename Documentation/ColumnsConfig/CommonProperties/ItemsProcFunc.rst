@@ -53,46 +53,18 @@ The following parameters are filled if the current record has an
 Example
 =======
 
-The configuration for a custom field `select_single_2` could look like this:
+The configuration for a custom field `my_select` could look like this:
 
-..  code-block:: php
-     :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_ItemsProcFuncTca.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    :visible-lines: 3, 11-22
+    :emphasize-lines: 20
 
-    'select_single_2' => [
-        'exclude' => 1,
-        'label' => 'select_single_2 itemsProcFunc',
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                ['label' => 'foo', 'value' => 1],
-                ['label' => 'bar', 'value' => 'bar'],
-            ],
-            'itemsProcFunc' => TYPO3\CMS\Styleguide\UserFunctions\FormEngine\TypeSelect2ItemsProcFunc::class . '->itemsProcFunc',
-        ],
-    ]
+The referenced `itemsProcFunc` method should populate the items by filling
+:php:`$params['items']`:
 
-The referenced `itemsProcFunc` method should populate the items by filling :php:`$params['items']`:
-
-..  code-block:: php
-    :caption: EXT:styleguide/Classes/UserFunctions/FormEngine/TypeSelect2ItemsProcFunc.php
-
-    /**
-     * A user function used in select_2
-     */
-    class TypeSelect2ItemsProcFunc
-    {
-        /**
-         * Add two items to existing ones
-         *
-         * @param array $params
-         */
-        public function itemsProcFunc(&$params): void
-        {
-            $params['items'][] = ['label' => 'item 1 from itemProcFunc()', 'value' => 'val1'];
-            $params['items'][] = ['label' => 'item 2 from itemProcFunc()', 'value' => 'val2'];
-        }
-    }
+..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_ItemsProcFuncClass.php
+    :caption: EXT:my_extension/Classes/UserFunctions/FormEngine/ItemsProcFunc.php
 
 This results in the rendered select dropdown having four items. This is a really simple example. In the real world
 you would use the other passed parameters to dynamically generate the items.

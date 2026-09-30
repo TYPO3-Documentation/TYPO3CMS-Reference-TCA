@@ -22,7 +22,7 @@ fieldWizard
     For example, type='check' comes with this default wizards configuration:
 
     ..  code-block:: php
-        :caption: EXT:backend/Classes/Form/Element/CheckboxElement.php
+        :caption: EXT:backend/Classes/Form/Element/CheckboxElement.php (excerpt)
 
         protected $defaultFieldWizard = [
             'localizationStateSelector' => [
@@ -31,7 +31,7 @@ fieldWizard
             'otherLanguageContent' => [
                 'renderType' => 'otherLanguageContent',
                 'after' => [
-                    'localizationStateSelector'
+                    'localizationStateSelector',
                 ],
             ],
             'defaultLanguageDifferences' => [
@@ -45,18 +45,10 @@ fieldWizard
     This is be merged with the configuration from TCA, if there is any. Below example disables the default
     `localizationStateSelector` wizard.
 
-    ..  code-block:: php
+    ..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_FieldWizardDisabled.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
-        'aField' => [
-            'config' => [
-                'fieldWizard' => [
-                    'localizationStateSelector' => [
-                        'disabled' => true,
-                    ],
-                ],
-            ],
-        ],
+        :visible-lines: 9-19
+        :emphasize-lines: 15
 
     It is possible to add own wizards by adding them to the TCA of the according field and pointing to a registered
     renderType, to resort wizards by overriding the `before` and `after` keys, to hand over additional
