@@ -39,8 +39,10 @@ Example: A simple date field, stored as bigint
 
 A simple date field, stored as :sql:`bigint` in the database:
 
-..  literalinclude:: _Snippets/_datefield.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+..  literalinclude:: /ColumnsConfig/Type/Datetime/_Snippets/_Datetime.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 9-16
+    :emphasize-lines: 13
 
 
 ..  _columns-datetime-properties:
