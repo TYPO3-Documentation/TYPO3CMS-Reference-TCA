@@ -28,17 +28,17 @@
         Enables any record link handler that is defined in the :ref:`LinkHandler API <t3coreapi:linkhandler>`.
         To enable only a specific custom LinkHandler, add the defined identifier instead.
 
-        ..  code-block:: php
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 9-15
+            :emphasize-lines: 13
 
-            // 'record' will match any custom link handler
-            'allowedTypes' => ['page', 'url', 'record']
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 17-29
+            :emphasize-lines: 21
 
-        ..  code-block:: php
-
-            // 'tx_news' and 'custom_identifier' are both custom link handlers
-            'allowedTypes' => ['page', 'url', 'tx_news', 'custom_identifier']
-
-        ..  code-block:: php
-
-            // Allow all types (or skip this option).
-            'allowedTypes' => ['*']
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 31-38
+            :emphasize-lines: 36
