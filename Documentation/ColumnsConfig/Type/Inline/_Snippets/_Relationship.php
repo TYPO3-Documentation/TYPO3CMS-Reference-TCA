@@ -2,9 +2,8 @@
 
 return [
   'ctrl' => [
-    'title' => 'My workspace aware child',
+    'title' => 'Product',
     'label' => 'title',
-    'versioningWS' => true,
   ],
   'columns' => [
     'title' => [
@@ -13,15 +12,20 @@ return [
         'type' => 'input',
       ],
     ],
-    'parentid' => [
+
+    'price' => [
+      'label' => 'Price',
       'config' => [
-        'type' => 'passthrough',
+        'type' => 'inline',
+        'foreign_table' => 'tx_myextension_price',
+        'foreign_field' => 'product',
+        'relationship' => 'oneToOne',
       ],
     ],
   ],
   'types' => [
     '0' => [
-      'showitem' => 'title',
+      'showitem' => 'title, price',
     ],
   ],
 ];

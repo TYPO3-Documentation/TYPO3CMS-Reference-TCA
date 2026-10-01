@@ -165,8 +165,10 @@ Define which fields to show in the child table
 This example overrides the :ref:`showitem <types-properties-showitem>` field of
 the child table TCA:
 
-..  literalinclude:: _Snippets/_overrideChildTcaShowItems.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_OverrideChildTca.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 27-48
+    :emphasize-lines: 41
 
 Override the default value of a child tables field
 --------------------------------------------------
@@ -174,18 +176,21 @@ Override the default value of a child tables field
 This overrides the `default` columns property of a child field in an inline relation from within
 the parent if a new child is created:
 
-..  literalinclude:: _Snippets/_overrideChildTcaDefault.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_OverrideChildTca.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 27-48
+    :emphasize-lines: 37
 
 Override the foreign_selector field target
 ------------------------------------------
 
-This overrides the foreign_selector field target field config, defined in the
-:ref:`foreign_selector <columns-inline-properties-foreign-selector>` property. This is used in FAL inline relations:
+This overrides the configuration of the field the
+:ref:`foreign_selector <columns-inline-properties-foreign-selector>` property
+points to. Here, the element browser of the speakers of an event opens on page
+42:
 
-
-..  literalinclude:: _Snippets/_overrideChildTcaForeignSelector.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_overrideChildTcaForeignSelector.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_event.php
 
 ..  note::
     It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsOverrides>`
@@ -194,5 +199,7 @@ This overrides the foreign_selector field target field config, defined in the
 Example: Override by type
 -------------------------
 
-..  literalinclude:: _Snippets/_overrideChildTcaForeignSelector.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_OverrideChildTca.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 54-71
+    :emphasize-lines: 59

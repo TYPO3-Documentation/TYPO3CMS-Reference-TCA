@@ -40,14 +40,10 @@
                 root: 123
 
 
-        ..  code-block:: php
-
-            // Example TCA config
-            'config' => [
-                'treeConfig' => [
-                    'startingPoints' => '1,2,###SITE:categories.root###',
-                ],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+            :visible-lines: 7, 21-29
+            :emphasize-lines: 26
 
         This will evaluate to :php:`'startingPoints' => '1,2,123'`.
 
