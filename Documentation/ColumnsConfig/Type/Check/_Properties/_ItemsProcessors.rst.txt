@@ -19,6 +19,11 @@
     If both are configured, `itemsProcFunc` is executed first and `itemsProcessors`
     are executed afterwards.
 
+    ..  literalinclude:: /ColumnsConfig/Type/Check/_Snippets/_Check.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+        :visible-lines: 3, 40-50
+        :emphasize-lines: 44
+
     For fields of type `check`, each
     :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` must be created with
     `type: 'check'` and can use the same properties as items passed directly to
@@ -27,6 +32,6 @@
     The `value` property is ignored for `check` items and should be set to `null`.
 
     ..  literalinclude:: /ColumnsConfig/Type/Check/_Snippets/_itemsProcessors.php
-        :caption: EXT:my_extension/Classes/Processors/SomeItemProcessor.php
+        :caption: EXT:my_extension/Classes/Processors/CheckItemsProcessor.php
 
     See also `Item processor registration and implementation <https://docs.typo3.org/permalink/t3tca:tca-property-itemsprocessors>`_
