@@ -61,14 +61,10 @@
                 root: 123
 
 
-        ..  code-block:: php
-
-            // Example TCA config
-            'config' => [
-                 'treeConfig' => [
-                      'startingPoints' => '1,2,###SITE:categories.root###',
-                 ],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_TreeStartingPoints.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 16-28
+            :emphasize-lines: 24
 
         ..  rubric:: Markers in startingPoints
 
@@ -99,25 +95,15 @@
         They can be combined with static IDs and with the `###SITE:###`
         syntax.
 
-        ..  code-block:: php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php
-
-            'categories' => [
-              'config' => [
-                'type' => 'select',
-                'renderType' => 'selectTree',
-                'foreign_table' => 'tx_myextension_category',
-                'treeConfig' => [
-                  'parentField' => 'parent',
-                  'startingPoints' => '###PAGE_TSCONFIG_IDLIST###',
-                ],
-              ],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_TreeStartingPoints.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 29-41
+            :emphasize-lines: 37
 
         ..  code-block:: typoscript
             :caption: EXT:my_extension/Configuration/page.tsconfig
 
-            TCEFORM.tx_myextension_table.categories.PAGE_TSCONFIG_IDLIST = 12,34
+            TCEFORM.tx_myextension_mytable.categories.PAGE_TSCONFIG_IDLIST = 12,34
 
     ..  confval:: appearance
         :name: select-treeConfig-appearance
