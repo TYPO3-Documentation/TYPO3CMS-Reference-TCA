@@ -35,17 +35,10 @@
 
     In the following example, each course has one teacher:
 
-    ..  code-block:: php
+    ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_Relationship.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_course.php
-
-        'teacher' => [
-          'label' => 'Teacher',
-          'config' => [
-            'type' => 'group',
-            'allowed' => 'tx_myextension_teacher',
-            'relationship' => 'manyToOne',
-          ],
-        ],
+        :visible-lines: 16-23
+        :emphasize-lines: 21
 
     The teacher can then be output without a loop:
 

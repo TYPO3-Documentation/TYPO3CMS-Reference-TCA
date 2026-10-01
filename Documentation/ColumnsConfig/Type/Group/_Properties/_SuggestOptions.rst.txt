@@ -13,23 +13,10 @@
     Suggestions can be configured differently for each table. Settings in "default" are applied to all tables.
     In the example below, there is a special setting for the "pages" table to search only standard pages.
 
-    ..  code-block:: php
-
-        'related_records' => [
-            'label' => 'Related records',
-            'config' => [
-                'type' => 'group',
-                'allowed' => 'pages, tt_content',
-                'suggestOptions' => [
-                    'default' => [
-                        'searchWholePhrase' => 1
-                    ],
-                    'pages' => [
-                        'searchCondition' => 'doktype = 1'
-                    ]
-                ]
-            ]
-        ],
+    ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+        :visible-lines: 16-33
+        :emphasize-lines: 21
 
     additionalSearchFields (string)
         Comma-separated list of fields the suggest wizard should also search in. By default the wizard looks only in the
@@ -64,35 +51,20 @@
 
         **Example**
 
-        ..  code-block:: php
-
-            'storage_pid' => [
-               'config' => [
-                  'suggestOptions' => [
-                     'default' => [
-                        'pidList' => '1,2,3,45',
-                     ],
-                  ],
-               ],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 21-31
+            :emphasize-lines: 23
 
     pidDepth (integer)
         Expand pidList by this number of levels. Has an effect only if pidList has a value.
 
         **Example**
 
-        ..  code-block:: php
-
-            'storage_pid' => [
-               'config' => [
-                  'suggestOptions' => [
-                     'default' => [
-                        'pidList' => '6,7',
-                        'pidDepth' => 4
-                     ],
-                  ],
-               ],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 21-31
+            :emphasize-lines: 24
 
     receiverClass (string)
         PHP class alternative receiver class, default is :php:`TYPO3\CMS\Backend\Form\Wizard\SuggestWizardDefaultReceiver`.
@@ -109,19 +81,10 @@
 
         **Example**
 
-        ..  code-block:: php
-
-            'storage_pid' => [
-               'config' => [
-                  'suggestOptions' => [
-                     // configures the suggest wizard for the field "storage_pid"
-                     // in table "pages" to search only for pages with doktype=1
-                     'pages' => [
-                        'searchCondition' => 'doktype=1',
-                     ],
-                  ],
-               ],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 21-31
+            :emphasize-lines: 29
 
     searchWholePhrase (boolean)
         Whether to do a `LIKE=%mystring%` (searchWholePhrase = 1) or a `LIKE=mystring%`
@@ -129,17 +92,10 @@
 
         **Example**
 
-        ..  code-block:: php
-
-            'storage_pid' => [
-               'config' => [
-                  'suggestOptions' => [
-                     'default' => [
-                        'searchWholePhrase' => 1,
-                     ],
-                  ],
-               ],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 21-31
+            :emphasize-lines: 25
 
 ..  rubric:: Example: Only show pages with doktype=1 in the suggest options
 

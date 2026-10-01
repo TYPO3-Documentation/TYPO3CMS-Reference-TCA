@@ -13,18 +13,19 @@ return [
       ],
     ],
 
-    'my_image' => [
-      'label' => 'My image',
+    'image' => [
+      'label' => 'My one and only image',
       'config' => [
         'type' => 'file',
-        'maxitems' => 6,
+        'minitems' => 1,
+        'maxitems' => 1,
         'allowed' => 'common-image-types',
       ],
     ],
   ],
   'types' => [
     '0' => [
-      'showitem' => 'title, my_image',
+      'showitem' => 'title, image',
     ],
   ],
 ];
