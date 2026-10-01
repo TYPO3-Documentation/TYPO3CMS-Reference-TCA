@@ -1,4 +1,4 @@
-..  _columns-slug-properties-generatorOptions:
+..  _columns-slug-properties-generatoroptions:
 
 ..  confval:: generatorOptions
     :name: slug-generatorOptions
@@ -53,7 +53,7 @@
 
         This value will divide the slug parts. If a section value contains this
         very value, it will be replaced by the value given in :ref:`fallbackCharacter
-        <columns-slug-properties-fallbackCharacter>`.
+        <columns-slug-properties-fallbackcharacter>`.
 
     ..  confval:: prefixParentPageSlug
         :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['prefixParentPageSlug']
@@ -134,7 +134,7 @@
 
         All hooks need to return the modified slug value.
 
-..  _tca_example_slug_4:
+..  _tca-example-slug-4:
 
 ..  rubric:: Example: Generate a concatenated slug
 
@@ -142,7 +142,7 @@
 
 ..  include:: /CodeSnippets/Slug4.rst.txt
 
-..  _tca_example_slug_5:
+..  _tca-example-slug-5:
 
 ..  rubric:: Example: Generate a slug from one field with a backup field if first is empty
 
@@ -150,7 +150,7 @@
 
 ..  include:: /CodeSnippets/Slug5.rst.txt
 
-..  _tca_example_slug_6:
+..  _tca-example-slug-6:
 
 ..  rubric:: Example: remove all strings "(f/m)" from job titles
 

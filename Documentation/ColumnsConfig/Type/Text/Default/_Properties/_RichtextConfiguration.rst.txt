@@ -1,15 +1,15 @@
-..  _columns-text-properties-richtextConfiguration:
+..  _columns-text-properties-richtextconfiguration:
 
 ..  confval:: richtextConfiguration
     :name: text-richtextConfiguration
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['richtextConfiguration']
     :type: string (keyword)
     :Scope: Display / Proc.
-    :RenderType: :ref:`default <columns-text-renderType-default>`
+    :RenderType: :ref:`default <columns-text-rendertype-default>`
 
     The value is a key in :php:`$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']` array and specifies the
     YAML configuration source field used for that RTE field. It does not make sense without having property
-    :ref:`enableRichtext <columns-text-properties-enableRichtext>` set to true.
+    :ref:`enableRichtext <columns-text-properties-enablerichtext>` set to true.
 
     Extension `rte_ckeditor` registers three presets: `default`, `minimal` and `full` and points to
     YAML files with configuration details.

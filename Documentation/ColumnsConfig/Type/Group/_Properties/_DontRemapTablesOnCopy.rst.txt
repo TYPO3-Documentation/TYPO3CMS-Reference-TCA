@@ -1,6 +1,6 @@
 ..  _columns-group-properties-dontremaptablesoncopy:
 
-..  _tca_property_dontRemapTablesOnCopy:
+..  _tca-property-dontremaptablesoncopy:
 
 ..  confval:: dontRemapTablesOnCopy
     :name: group-dontRemapTablesOnCopy

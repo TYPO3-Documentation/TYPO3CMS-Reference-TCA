@@ -4,7 +4,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['previewRenderer']
     :type: string
     :Scope: Display
-    :Examples: :ref:`PreviewRenderer examples <types-example-previewRenderer>`
+    :Examples: :ref:`PreviewRenderer examples <types-example-previewrenderer>`
 
     ..  deprecated:: 13.4
         Registration of subtypes has been deprecated.  Registration of custom

@@ -1,4 +1,4 @@
-..  _columns-slug-properties-prependSlash:
+..  _columns-slug-properties-prependslash:
 
 ..  confval:: prependSlash
     :name: slug-prependSlash

@@ -15,7 +15,7 @@
     This feature is used by e.g. the "pages" table and "tt\_content" table (Content Elements) in order to output the
     pages or the content elements in the order expected by the editors. Extensions are expected to respect this field.
 
-    Typically the field name :ref:`sorting <field_sorting>` is dedicated to
+    Typically the field name :ref:`sorting <field-sorting>` is dedicated to
     this feature.
 
     ..  attention::

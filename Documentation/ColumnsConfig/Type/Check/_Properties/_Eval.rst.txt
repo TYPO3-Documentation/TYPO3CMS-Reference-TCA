@@ -5,7 +5,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['eval']
     :type: string (list of keywords)
     :Scope: Display / Proc.
-    :Examples: :ref:`Example: Checkbox limited to a maximal number of checked records <tca_example_checkbox_7>`
+    :Examples: :ref:`Example: Checkbox limited to a maximal number of checked records <tca-example-checkbox-7>`
 
     Configuration of field evaluation.
 

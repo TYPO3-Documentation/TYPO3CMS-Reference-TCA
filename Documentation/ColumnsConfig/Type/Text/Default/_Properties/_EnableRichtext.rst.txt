@@ -1,4 +1,4 @@
-..  _columns-text-properties-enableRichtext:
+..  _columns-text-properties-enablerichtext:
 
 ..  confval:: enableRichtext
     :name: text-enableRichtext

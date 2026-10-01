@@ -1,12 +1,12 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-password-properties-passwordGenerator_examples:
+..  _columns-password-properties-passwordgenerator-examples:
 
 ===========================
 Password generator examples
 ===========================
 
-..  _columns-password-properties-passwordGenerator_include_special_chars:
+..  _columns-password-properties-passwordgenerator-include-special-chars:
 
 Include special characters
 ==========================
@@ -21,7 +21,7 @@ Example: `qe8)i2W1it-msR8`
 
 ..  include:: _Snippets/_Password_6.rst.txt
 
-..  _columns-password-properties-passwordGenerator_only_digits:
+..  _columns-password-properties-passwordgenerator-only-digits:
 
 Only digits, length 8 (minimum length)
 ======================================
@@ -37,7 +37,7 @@ Example: `28233371`
 ..  include:: _Snippets/_Password_7.rst.txt
 
 
-..  _columns-password-properties-passwordGenerator_hexadecimal:
+..  _columns-password-properties-passwordgenerator-hexadecimal:
 
 Hexadecimal random bytes, length 30
 ===================================
@@ -55,7 +55,7 @@ could be used for secret tokens or similar:
 
 ..  include:: _Snippets/_Password_4.rst.txt
 
-..  _columns-password-properties-passwordGenerator_base64:
+..  _columns-password-properties-passwordgenerator-base64:
 
 Base64 random bytes, readonly
 ==============================
@@ -70,17 +70,17 @@ Example: `zrt8sJd6GiqUI_EFgjPiedOj--D0NbTVOJz`
 
 ..  include:: _Snippets/_Password_5.rst.txt
 
-..  _columns-password-properties-passwordGenerator_properties:
+..  _columns-password-properties-passwordgenerator-properties:
 
 Properties
 ==========
 
-..  _columns-password-properties-passwordGenerator_fieldControl:
+..  _columns-password-properties-passwordgenerator-fieldcontrol:
 
 Field control options
 =====================
 
-..  _columns-password-properties-passwordGenerator_fieldControl_title:
+..  _columns-password-properties-passwordgenerator-fieldcontrol-title:
 
 title
 -----
@@ -93,7 +93,7 @@ title
 
     Define a title for the control button.
 
-..  _columns-password-properties-passwordGenerator_fieldControl_allowedit:
+..  _columns-password-properties-passwordgenerator-fieldcontrol-allowedit:
 
 allowEdit
 ---------
@@ -106,14 +106,14 @@ allowEdit
 
     If set to :php:`false`, the user cannot edit the generated password.
 
-..  _columns-password-properties-passwordGenerator_passwordRules:
+..  _columns-password-properties-passwordgenerator-passwordrules:
 
 Password rules
 ==============
 
 Define rules for the password.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_length:
+..  _columns-password-properties-passwordgenerator-passwordrules-length:
 
 passwordRules.length
 --------------------
@@ -127,7 +127,7 @@ passwordRules.length
 
     Defines the amount of characters for the generated password.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_random:
+..  _columns-password-properties-passwordgenerator-passwordrules-random:
 
 passwordRules.random
 --------------------
@@ -155,7 +155,7 @@ passwordRules.random
         `passwordRules.random` is set to one
         of the available encodings: `hex` or `base64`.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_digitcharacters:
+..  _columns-password-properties-passwordgenerator-passwordrules-digitcharacters:
 
 passwordRules.digitCharacters
 -----------------------------
@@ -168,7 +168,7 @@ passwordRules.digitCharacters
 
     If set to :php:`false`, the generated password contains no digit.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_lowercasecharacters:
+..  _columns-password-properties-passwordgenerator-passwordrules-lowercasecharacters:
 
 
 passwordRules.lowerCaseCharacters
@@ -182,7 +182,7 @@ passwordRules.lowerCaseCharacters
 
     If set to :php:`false`, the generated password contains no lower case characters.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_uppercasecharacters:
+..  _columns-password-properties-passwordgenerator-passwordrules-uppercasecharacters:
 
 passwordRules.upperCaseCharacters
 ---------------------------------
@@ -195,7 +195,7 @@ passwordRules.upperCaseCharacters
 
     If set to :php:`false`, the generated password contains no upper case characters.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_specialcharacters:
+..  _columns-password-properties-passwordgenerator-passwordrules-specialcharacters:
 
 passwordRules.specialCharacters
 ---------------------------------

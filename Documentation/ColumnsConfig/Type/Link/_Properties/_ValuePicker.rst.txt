@@ -1,4 +1,4 @@
-..  _columns-link-properties-valuePicker:
+..  _columns-link-properties-valuepicker:
 
 ..  confval:: valuePicker
     :name: link-valuePicker

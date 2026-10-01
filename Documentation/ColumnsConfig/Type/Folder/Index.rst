@@ -23,7 +23,7 @@ is generated automatically.
     :depth: 1
 
 ..  _columns-folder-examples:
-..  _tca_example_group_folder_1:
+..  _tca-example-group-folder-1:
 
 Example
 =======

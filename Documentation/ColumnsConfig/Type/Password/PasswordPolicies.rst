@@ -1,13 +1,13 @@
 :navigation-title: Password policy examples
 ..  include:: /Includes.rst.txt
 
-..  _columns-password-properties-passwordPolicy-examples:
+..  _columns-password-properties-passwordpolicy-examples:
 
 =====================================================
 Examples for using different password policies in TCA
 =====================================================
 
-..  _columns-password-properties-passwordPolicy-example-default:
+..  _columns-password-properties-passwordpolicy-example-default:
 
 Use the `default` policy
 ------------------------
@@ -17,7 +17,7 @@ Use the `default` policy
     :visible-lines: 34-40
     :emphasize-lines: 38
 
-..  _columns-password-properties-passwordPolicy-example-frontend:
+..  _columns-password-properties-passwordpolicy-example-frontend:
 
 Use the globally defined policy for frontend
 --------------------------------------------
@@ -27,7 +27,7 @@ Use the globally defined policy for frontend
     :visible-lines: 42-49
     :emphasize-lines: 46
 
-..  _columns-password-properties-passwordPolicy-example-backend:
+..  _columns-password-properties-passwordpolicy-example-backend:
 
 Use the globally defined policy for backend
 -------------------------------------------

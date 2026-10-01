@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _columns-text-renderType-textTable:
+..  _columns-text-rendertype-texttable:
 
 =========
 textTable
@@ -19,7 +19,7 @@ tt_content content element.
     :local:
     :depth: 1
 
-..  _tca_example_text_17:
+..  _tca-example-text-17:
 
 Example: Text field with renderType `textTable`
 ===============================================
@@ -28,7 +28,7 @@ Example: Text field with renderType `textTable`
 
 ..  include:: /CodeSnippets/Text17.rst.txt
 
-..  _columns-text-textTable-codeEditor-properties:
+..  _columns-text-texttable-codeeditor-properties:
 
 Properties of the TCA column type `text`, render type `textTable`
 ==================================================================

@@ -1,4 +1,4 @@
-..  _columns-input-properties-valuePicker:
+..  _columns-input-properties-valuepicker:
 
 ..  confval:: valuePicker
     :name: input-valuePicker

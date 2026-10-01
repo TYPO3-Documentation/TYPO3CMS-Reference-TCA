@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldWizard_localizationStateSelector:
+..  _tca-property-fieldwizard-localizationstateselector:
 
 =========================
 localizationStateSelector
@@ -12,7 +12,7 @@ localizationStateSelector
     :Scope: Display
     :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
         :ref:`group <columns-group>`,
-        :ref:`imageManipulation <columns-imageManipulation>`,
+        :ref:`imageManipulation <columns-imagemanipulation>`,
         :ref:`input <columns-input>`
 
     The localization state selector wizard displays two or three radio buttons in localized records
@@ -24,7 +24,7 @@ localizationStateSelector
     *   The record is in "translated" (connected), but not in "copy" (free) mode
     *   The table is localization aware using the ['ctrl'] properties :ref:`languageField <ctrl-reference-languagefield>`,
         :ref:`transOrigPointerField <ctrl-reference-transorigpointerfield>`. If the optional property
-        :ref:`translationSource <ctrl-reference-translationSource>` is also set, and if the record is a translation
+        :ref:`translationSource <ctrl-reference-translationsource>` is also set, and if the record is a translation
         from another localized record, the third radio appears.
     *   The property ['config']['behaviour']['allowLanguageSynchronization'] is set to true
 

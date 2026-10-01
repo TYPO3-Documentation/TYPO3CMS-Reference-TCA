@@ -1,6 +1,6 @@
 
-..  _types-examples-columnsOverrides:
-..  _types-examples-columnsOverrides-nowrap:
+..  _types-examples-columnsoverrides:
+..  _types-examples-columnsoverrides-nowrap:
 
 Examples for columnsOverrides in type section of TCA
 ----------------------------------------------------

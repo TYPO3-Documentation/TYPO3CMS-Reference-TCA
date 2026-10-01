@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _columns-select-rendertype-selectTree:
+..  _columns-select-rendertype-selecttree:
 
 ==========
 selectTree
@@ -18,7 +18,7 @@ with database tables that have a hierarchical structure. The properties :ref:`tr
 :ref:`foreign_table <columns-select-properties-foreign-table>` are mandatory and must be provided to establish the
 connection to the relevant database table. Optionally, you can also use
 :ref:`items <columns-select-properties-items>` or :ref:`itemsProcFunc
-<tca_property_itemsProcFunc>` to pass the values, but these are not
+<tca-property-itemsprocfunc>` to pass the values, but these are not
 sufficient on their own. The top-level item in the tree will always represent
 the descriptive name of the table.
 
@@ -29,7 +29,7 @@ tables through the configuration options.
     :local:
     :depth: 1
 
-..  _tca_example_select_tree_1:
+..  _tca-example-select-tree-1:
 
 Example: A happy little tree!
 =============================
@@ -39,7 +39,7 @@ Example: A happy little tree!
 ..  include:: /CodeSnippets/SelectTree1.rst.txt
 
 
-..  _columns-select-selectTree-properties:
+..  _columns-select-selecttree-properties:
 
 Properties of the TCA column type `select` with renderType `selectTree`
 =======================================================================

@@ -1,4 +1,4 @@
-..  _columns-link-properties-allowedTypes:
+..  _columns-link-properties-allowedtypes:
 
 ..  confval:: allowedTypes
     :name: link-allowedTypes

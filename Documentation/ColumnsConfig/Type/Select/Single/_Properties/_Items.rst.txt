@@ -72,7 +72,7 @@
         the :ref:`default value <columns-select-single-properties-default>` as well in TCA: :php:`'default' => 0`. Otherwise
         issues may arise, e.g. with MySQL strict mode.
 
-..  _tca_example_select_single_1:
+..  _tca-example-select-single-1:
 
 ..  rubric:: Example: Simple items definition with label and value
 
@@ -80,7 +80,7 @@
 
 ..  include:: /CodeSnippets/SelectSingle1.rst.txt
 
-..  _tca_example_select_single_4:
+..  _tca-example-select-single-4:
 
 ..  rubric:: Example: Items definition with label, value and icon
 

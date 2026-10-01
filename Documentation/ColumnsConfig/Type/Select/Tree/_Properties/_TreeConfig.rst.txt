@@ -103,7 +103,7 @@
             Comma-separated list of levels that will not be selectable, by default the root
             node (which is "0") cannot be selected
 
-    ..  _tca_example_select_tree_2:
+    ..  _tca-example-select-tree-2:
 
     ..  rubric:: Example: Tree with non selectable levels
 

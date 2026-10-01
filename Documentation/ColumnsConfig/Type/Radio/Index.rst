@@ -23,7 +23,7 @@ is generated automatically.
     :depth: 1
 
 ..  _columns-radio-examples:
-..  _tca_example_radio_1:
+..  _tca-example-radio-1:
 
 Example: Set of radio buttons field
 ===================================

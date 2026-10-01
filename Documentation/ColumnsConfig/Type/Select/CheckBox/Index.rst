@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-select-rendertype-selectCheckBox:
+..  _columns-select-rendertype-selectcheckbox:
 
 ==============
 selectCheckBox
@@ -8,7 +8,7 @@ selectCheckBox
 
 This page describes the :ref:`select <columns-select>` type with
 renderType='selectCheckBox'. For differences to `type="check"` see
-:ref:`selectCheckBox and type check compared <selectCheckBox-check-compared>`.
+:ref:`selectCheckBox and type check compared <selectcheckbox-check-compared>`.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
@@ -22,7 +22,7 @@ is generated automatically.
 
     DifferenceSelectCheckbox
 
-..  _tca_example_select_checkbox_1:
+..  _tca-example-select-checkbox-1:
 
 Example: Simple select checkbox with 3 possible values
 ======================================================
@@ -33,7 +33,7 @@ The select checkbox stores the values as comma separated values.
 
 ..  include:: /CodeSnippets/SelectCheckbox1.rst.txt
 
-..  _tca_example_select_checkbox_7:
+..  _tca-example-select-checkbox-7:
 
 Example: Select checkbox with icons and groups
 ==============================================
@@ -45,7 +45,7 @@ The select checkbox stores the values as comma separated values.
 ..  include:: /CodeSnippets/SelectCheckbox7.rst.txt
 
 
-..  _columns-select-selectCheckBox-properties:
+..  _columns-select-selectcheckbox-properties:
 ..  _columns-select-checkbox-properties-size:
 
 Properties of the TCA column type `select` with renderType `selectCheckBox`

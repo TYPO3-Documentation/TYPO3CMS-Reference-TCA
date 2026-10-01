@@ -5,7 +5,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['eval']
     :type: string (list of keywords)
     :Scope: Display / Proc.
-    :RenderType: :ref:`default <columns-text-renderType-default>`
+    :RenderType: :ref:`default <columns-text-rendertype-default>`
 
     Configuration of field evaluation. None of these apply for RTE fields.
 
@@ -20,7 +20,7 @@
     `MyVendor\\MyExtension\\*`
         User defined form evaluations.
 
-..  _tca_example_text_7:
+..  _tca-example-text-7:
 
 ..  rubric:: Example: Trimming input
 
@@ -30,7 +30,7 @@ Trimming the value for white space before storing in the database:
 
 ..  include:: /CodeSnippets/Text7.rst.txt
 
-..  _tca_example_text_9:
+..  _tca-example-text-9:
 
 ..  rubric:: Example: Custom form evaluation
 

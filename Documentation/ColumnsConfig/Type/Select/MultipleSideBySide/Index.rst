@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-select-rendertype-selectMultipleSideBySide:
+..  _columns-select-rendertype-selectmultiplesidebyside:
 
 ========================
 selectMultipleSideBySide
@@ -24,7 +24,7 @@ All selected items are displayed in the left field.
 
     Examples
 
-..  _tca_example_select_multiplesidebyside_1:
+..  _tca-example-select-multiplesidebyside-1:
 
 Example: Basic side-by-side select field
 ========================================
@@ -33,7 +33,7 @@ Example: Basic side-by-side select field
 
 ..  include:: /CodeSnippets/SelectMultiplesidebyside1.rst.txt
 
-For more examples see also :ref:`Advanced examples for multiple side-by-side select boxes <columns-select-rendertype-selectMultipleSideBySide-examples>`.
+For more examples see also :ref:`Advanced examples for multiple side-by-side select boxes <columns-select-rendertype-selectmultiplesidebyside-examples>`.
 
 ..  _columns-select-multiplesidebyside-properties:
 

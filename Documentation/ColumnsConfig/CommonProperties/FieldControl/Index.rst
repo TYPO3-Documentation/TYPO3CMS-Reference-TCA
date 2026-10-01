@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldControl:
+..  _tca-property-fieldcontrol:
 
 ============
 fieldControl
@@ -11,7 +11,7 @@ fieldControl
     :type: array
     :Scope: Display
     :Types: :ref:`group <columns-group>`,
-        :ref:`imageManipulation <columns-imageManipulation>`,
+        :ref:`imageManipulation <columns-imagemanipulation>`,
         :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
 
     Show action buttons next to the element. This is used in various type's to
@@ -19,7 +19,7 @@ fieldControl
     switch the entire view and other things. All must provide a "button" icon
     to click on, see :ref:`FormEngine docs
     <t3coreapi:FormEngine-Rendering-NodeExpansion>` for more details.
-    See :ref:`type=group <columns-group-properties-fieldControl>` for examples.
+    See :ref:`type=group <columns-group-properties-fieldcontrol>` for examples.
 
 
     ..  include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt

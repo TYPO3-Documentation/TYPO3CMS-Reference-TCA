@@ -1,4 +1,4 @@
-..  _tca_property_readOnly:
+..  _tca-property-readonly:
 
 ..  confval:: readOnly
     :name: input-readOnly

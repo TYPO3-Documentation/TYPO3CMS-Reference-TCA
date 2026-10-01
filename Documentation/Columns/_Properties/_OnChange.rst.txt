@@ -1,4 +1,4 @@
-..  _columns-properties-onChange:
+..  _columns-properties-onchange:
 
 ..  confval:: onChange
     :name: columns-onChange

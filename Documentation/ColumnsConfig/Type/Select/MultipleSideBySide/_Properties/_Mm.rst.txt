@@ -20,7 +20,7 @@
     in the relation.
 
     Please have a look into the additional information
-    in the :ref:`MM common property description <tca_property_MM>`.
+    in the :ref:`MM common property description <tca-property-mm>`.
 
 ..  _columns-select-byside-properties-mm-match-fields:
 

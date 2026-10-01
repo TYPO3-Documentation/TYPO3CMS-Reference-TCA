@@ -150,7 +150,7 @@ This example is also described in TYPO3 Explained,
 Properties of the TCA column type `user`
 ========================================
 
-..  _columns-user-properties-renderType:
+..  _columns-user-properties-rendertype:
 
 ..  confval:: renderType
     :name: user-renderType

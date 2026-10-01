@@ -1,4 +1,4 @@
-..  _columns-imageManipulation-properties-cropVariants:
+..  _columns-imagemanipulation-properties-cropvariants:
 
 ..  confval:: cropVariants
     :name: imageManipulation-cropVariants
@@ -7,4 +7,4 @@
     :Scope: Display / Proc.
 
     Main crop, focus area and cover area configuration. For details see
-    :ref:`Image manipulation: Crop variants <columns-imageManipulation-crop-variant>`.
+    :ref:`Image manipulation: Crop variants <columns-imagemanipulation-crop-variant>`.

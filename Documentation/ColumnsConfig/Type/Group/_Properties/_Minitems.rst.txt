@@ -1,5 +1,5 @@
 ..  _columns-group-properties-minitems:
-..  _tca_property_minitems:
+..  _tca-property-minitems:
 ..  confval:: minitems
     :name: group-minitems
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['minitems']
