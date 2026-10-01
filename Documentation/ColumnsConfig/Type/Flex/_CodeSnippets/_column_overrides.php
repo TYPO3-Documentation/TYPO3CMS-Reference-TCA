@@ -8,12 +8,24 @@ return [
   ],
   'columns' => [
     'my_type_field' => [
-      // ...
+      'label' => 'Type',
+      'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'items' => [
+          ['label' => 'Default', 'value' => 0],
+          ['label' => 'Type 1', 'value' => 1],
+          ['label' => 'Type 2', 'value' => 2],
+          ['label' => 'Type 3', 'value' => 3],
+        ],
+      ],
     ],
     'pi_flexform' => [
+      'label' => 'Settings',
       'config' => [
-        // FlexFormDefault.xml is used if not overridden in the columnsOverrides
-        'ds' => 'FILE:EXT:news/Configuration/FlexFormDefault.xml',
+        'type' => 'flex',
+        // Used if not overridden in the columnsOverrides
+        'ds' => 'FILE:EXT:my_extension/Configuration/FlexForms/Default.xml',
       ],
     ],
   ],
@@ -26,7 +38,7 @@ return [
       'columnsOverrides' => [
         'pi_flexform' => [
           'config' => [
-            'ds' => 'FILE:EXT:news/Configuration/FlexForm1.xml',
+            'ds' => 'FILE:EXT:my_extension/Configuration/FlexForms/Type1.xml',
           ],
         ],
       ],
@@ -36,7 +48,7 @@ return [
       'columnsOverrides' => [
         'pi_flexform' => [
           'config' => [
-            'ds' => 'FILE:EXT:news/Configuration/FlexForm2.xml',
+            'ds' => 'FILE:EXT:my_extension/Configuration/FlexForms/Type2.xml',
           ],
         ],
       ],

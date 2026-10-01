@@ -71,14 +71,8 @@ implementing a rendering. See :ref:`FormEngine docs
 
     Add to :file:`ext_localconf.php`:
 
-    ..  code-block:: php
+    ..  literalinclude:: /ColumnsConfig/Type/User/_includes/_ext_localconf.php
         :caption: EXT:my_extension/ext_localconf.php
-
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][<current timestamp>] = [
-            'nodeName' => 'specialField',
-            'priority' => 40,
-            'class' => \MyVendor\MyExtension\Form\Element\SpecialFieldElement::class,
-        ];
 
 
 3.  Use the renderType in a TCA field definition
