@@ -7,7 +7,7 @@
     :default: true
 
     ..  versionadded:: 14.2
-        See `Feature: #97898 - TCA option isViewable for Page Types <https://docs.typo3.org/permalink/changelog:feature-97898-1737639600>`_.
+        :changelog: feature-97898-1737639600
 
     ..  note::
         This property is only interpreted in the table `pages`.

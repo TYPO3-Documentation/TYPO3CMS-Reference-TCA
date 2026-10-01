@@ -35,12 +35,11 @@ When creating the XML setup file there are some limitations:
     allowed.
 
 ..  versionchanged:: 13.0
+    :changelog: breaking-102970-1706447911
 
-    Since TYPO3 13.0, `type='select'` (if using
-    `foreign_table`) is not allowed and will raise an exception.
-    Note this only applies to FlexForm sections, not general
-    FlexForm usage. For details and migration see
-    :ref:`Breaking: #102970 - No database relations in FlexForm container sections <changelog:breaking-102970-1706447911>`.
+    Since TYPO3 13.0, `type='select'` (if using `foreign_table`) is not allowed
+    and will raise an exception. Note this only applies to FlexForm sections,
+    not general FlexForm usage. For details and migration.
 
 There are 2 types of elements in the XML setup file - array elements and value
 elements:

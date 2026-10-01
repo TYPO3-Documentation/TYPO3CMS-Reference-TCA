@@ -32,7 +32,7 @@ passwordGenerator passwordRules replaced by passwordGenerator
 =============================================================
 
 ..  deprecated:: 14.2
-    See `Deprecation: #69190 - Deprecate random password generator for frontend and backend users <https://docs.typo3.org/permalink/changelog:deprecation-69190-1770668741>`_.
+    :changelog: deprecation-69190-1770668741
 
 The passwordRules of the passwordGenerator have been replaced by the
 `passwordPolicy <https://docs.typo3.org/permalink/t3tca:confval-password-passwordgenerator-passwordpolicy>`_.

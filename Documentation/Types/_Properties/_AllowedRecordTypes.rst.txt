@@ -7,9 +7,10 @@
     :default: `['pages', 'sys_category', 'sys_file_reference', 'sys_file_collection']`
 
     ..  versionadded:: 14.2
+        :changelog: deprecation-108557-1768610680
+
         This property replaces the now deprecated method
-        :php:`PageDoktypeRegistry->addAllowedRecordTypes()`. See also
-        `Deprecation: #108557 - TCA option allowedRecordTypes for Page Types <https://docs.typo3.org/permalink/changelog:deprecation-108557-1768610680>`_
+        :php:`PageDoktypeRegistry->addAllowedRecordTypes()`.
 
     ..  note::
         This property is only interpreted in the table `pages`.
