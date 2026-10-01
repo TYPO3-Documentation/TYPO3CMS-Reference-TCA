@@ -40,26 +40,20 @@
             `buttons.link.relAttribute.enabled <https://docs.typo3.org/permalink/t3tsref:buttons-link-relattribute-enabled>`_,
             must be enabled.
 
-        ..  code-block:: php
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 40-49
+            :emphasize-lines: 46
 
-            // Display only 'class' and 'params'
-            'appearance' => [
-                'allowedOptions' => ['class', 'params'],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 51-60
+            :emphasize-lines: 57
 
-        ..  code-block:: php
-
-            // Allow all options (or skip this option).
-            'appearance' => [
-                'allowedOptions' => ['*'],
-            ],
-
-        ..  code-block:: php
-
-            // Deny all options
-            'appearance' => [
-                'allowedOptions' => [],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 62-71
+            :emphasize-lines: 68
 
         For custom email links, the options can be restricted:
 
@@ -75,11 +69,10 @@
         subject:
             The subject of an email can be pre-filled.
 
-        ..  code-block:: php
-
-            'appearance' => [
-                'allowedOptions' => ['body', 'cc'],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 73-82
+            :emphasize-lines: 79
 
     ..  confval:: allowedFileExtensions
         :name: link-appearance-allowedFileExtensions
@@ -90,19 +83,15 @@
         configuration or set it to :php:`['*']`. It's not possible to deny all
         extensions.
 
-        ..  code-block:: php
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 84-93
+            :emphasize-lines: 90
 
-            // Allow only jpg and png file extensions
-            'appearance' => [
-                'allowedFileExtensions' => ['jpg', 'png'],
-            ],
-
-        ..  code-block:: php
-
-            // Allow all file extensions (or skip this option).
-            'appearance' => [
-                'allowedFileExtensions' => ['*'],
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 95-104
+            :emphasize-lines: 101
 
     ..  confval:: browserTitle
         :name: link-appearance-browserTitle
@@ -111,19 +100,15 @@
 
         Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
 
-        ..  code-block:: php
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 106-115
+            :emphasize-lines: 112
 
-            // Either provide a LLL-reference (recommended)
-            'appearance' => [
-                'browserTitle' => 'LLL:my_extension.db:my_custom_title',
-            ],
-
-        ..  code-block:: php
-
-            // Or a simple string value
-            'appearance' => [
-                'browserTitle' => 'My custom title',
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 117-126
+            :emphasize-lines: 123
 
     ..  confval:: enableBrowser
         :name: link-appearance-enableBrowser
@@ -133,9 +118,7 @@
         The Link Browser is enabled by default.
         To disable the Link Browser altogether, set this option to :php:`false`.
 
-        ..  code-block:: php
-
-            // Disable the link browser
-            'appearance' => [
-                'enableBrowser' => false,
-            ],
+        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+            :visible-lines: 128-137
+            :emphasize-lines: 134

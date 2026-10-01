@@ -20,16 +20,7 @@
 
 ..  rubric:: Example:
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/Type/Email/_Snippets/_Email.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-
-    'columns' => [
-         'nullable_column' => [
-              'title' => 'A nullable field',
-              'config' => [
-                    'type' => 'email',
-                    'nullable' => true,
-                    'eval' => 'uniqueInPid',
-              ],
-         ],
-    ],
+    :visible-lines: 36-43
+    :emphasize-lines: 40

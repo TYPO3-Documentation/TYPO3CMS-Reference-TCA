@@ -1,10 +1,6 @@
 <?php
 
-$linkField = [
-  'config' => [
-    'type' => 'link',
-    'behaviour' => [
-      'allowLanguageSynchronization' => true,
-    ],
-  ],
-];
+defined('TYPO3') or die();
+
+$GLOBALS['TCA']['tx_myextension_mytable']['columns']['my_link']['config']
+  ['behaviour']['allowLanguageSynchronization'] = true;
