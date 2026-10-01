@@ -18,5 +18,7 @@
 
 ..  rubric:: Example: A nullable number field
 
-..  literalinclude:: _Properties/_Nullable.php
+..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 19-25
+    :emphasize-lines: 23

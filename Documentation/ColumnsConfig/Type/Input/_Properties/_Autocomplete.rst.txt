@@ -9,15 +9,7 @@
     Controls the `autocomplete` attribute of a given input field. If set to true (default false),
     adds attribute :html:`autocomplete="on"` to the input field allowing browser auto filling the field:
 
-    ..  code-block:: php
-        :emphasize-lines: 7
-
-        'title' => [
-            'label' => 'LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.title',
-            'config' => [
-                'type' => 'input',
-                'size' => 20,
-                'nullable' => true,
-                'autocomplete' => true
-            ]
-        ],
+    ..  literalinclude:: /ColumnsConfig/Type/Input/_Snippets/_Input.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+        :visible-lines: 37-45
+        :emphasize-lines: 43

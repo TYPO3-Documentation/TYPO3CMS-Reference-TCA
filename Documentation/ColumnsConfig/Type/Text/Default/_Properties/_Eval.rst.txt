@@ -34,17 +34,20 @@ Trimming the value for white space before storing in the database:
 
 ..  rubric:: Example: Custom form evaluation
 
-..  include:: /Images/Rst/Text9.rst.txt
-
-..  include:: /CodeSnippets/Text9.rst.txt
-
 You can supply own form evaluations in an extension by creating a class with two functions:
 :php:`deevaluateFieldValue()` called when opening the record and :php:`evaluateFieldValue()`
-called for validation when saving the record:
+called for validation when saving the record. The field references the class
+in `eval`:
 
-:file:`EXT:styleguide/Classes/UserFunctions/FormEngine/TypeText9Eval.php`
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 3, 30-36
+    :emphasize-lines: 34
 
-..  literalinclude:: _Snippets/_TypeText9Eval.php
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_TextEvaluation.php
+    :caption: EXT:my_extension/Classes/Evaluation/TextEvaluation.php
 
-..  literalinclude:: _Snippets/_formevals_ext_localconf.php
-    :caption: EXT:styleguide/ext_localconf.php
+The class is registered in :file:`ext_localconf.php`:
+
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_ext_localconf.php
+    :caption: EXT:my_extension/ext_localconf.php
