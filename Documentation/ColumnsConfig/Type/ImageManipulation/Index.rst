@@ -29,8 +29,10 @@ Example: A basic image manipulation field
 
 ..  include:: /Images/Rst/ImageManipulationButton.rst.txt
 
-..  literalinclude:: _Snippets/_basic.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 9-15
+    :emphasize-lines: 12
 
 ..  _columns-imageManipulation-properties:
 
@@ -54,8 +56,43 @@ Image manipulation: Crop variants
 If no :confval:`imageManipulation-cropVariants` are configured, the following
 default configuration is used:
 
-..  literalinclude:: _Snippets/_defaultCropVariants.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  code-block:: php
+    :caption: EXT:backend/Classes/Form/Element/ImageManipulationElement.php (excerpt)
+
+    'cropVariants' => [
+      'default' => [
+        'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.crop_variant.default',
+        'allowedAspectRatios' => [
+          '16:9' => [
+            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+            'value' => 16 / 9,
+          ],
+          '3:2' => [
+            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.3_2',
+            'value' => 3 / 2,
+          ],
+          '4:3' => [
+            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+            'value' => 4 / 3,
+          ],
+          '1:1' => [
+            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+            'value' => 1.0,
+          ],
+          'NaN' => [
+            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+            'value' => 0.0,
+          ],
+        ],
+        'selectedRatio' => 'NaN',
+        'cropArea' => [
+          'x' => 0.0,
+          'y' => 0.0,
+          'width' => 1.0,
+          'height' => 1.0,
+        ],
+      ],
+    ],
 
 ..  _columns-imageManipulation-crop-variants-multiple:
 
@@ -66,8 +103,10 @@ It is possible to define multiple crop variants. The array key is used as identi
 is specified with the "title" and the actual (floating point) ratio with the "value" key. The value **must** be of
 PHP type float, not only a string.
 
-..  literalinclude:: _Snippets/_multipleCropVariants.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 73-106
+    :emphasize-lines: 77
 
 ..  _columns-imageManipulation-crop-variants-initial:
 
@@ -79,8 +118,10 @@ crop area will cover the complete image. Crop areas are defined relatively with 
 coordinates and width and height must be specified for that. The below example has an initial crop area in the size
 the previous image cropper provided by default.
 
-..  literalinclude:: _Snippets/_cropAreaCropVariants.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 17-33
+    :emphasize-lines: 24
 
 ..  _columns-imageManipulation-crop-variants-focusArea:
 
@@ -94,8 +135,10 @@ attribute when using the `<f:image />` view helper.
 
 The below example adds a focus area, which is initially one third of the size of the image and centered.
 
-..  literalinclude:: _Snippets/_focusAreaCropVariants.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 35-51
+    :emphasize-lines: 42
 
 ..  _columns-imageManipulation-crop-variants-coverAreas:
 
@@ -107,8 +150,10 @@ editors a hint which area of the image is affected, when selecting a crop area, 
 so called cover areas. These areas are shown inside the crop area. The focus area cannot intersect with any of
 the cover areas.
 
-..  literalinclude:: _Snippets/_coverAreaCropVariants.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 53-71
+    :emphasize-lines: 60
 
 The above configuration examples are basically meant to add one single cropping configuration
 to sys_file_reference, which will then apply in every record, which reference images.
