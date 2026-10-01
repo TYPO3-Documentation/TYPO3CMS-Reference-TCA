@@ -18,5 +18,5 @@
         It tells the DataHandler which fields of the localization records should be kept
         in sync if the underlying default or source record changes.
 
-        ..  literalinclude:: _Properties/_AllowLanguageSynchronization.php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
+        ..  literalinclude:: /ColumnsConfig/Type/Number/_Properties/_AllowLanguageSynchronization.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
