@@ -23,13 +23,7 @@
 
     A color picker with adjustable opacity
 
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/some_table.php
-
-    $temporaryColumns['aColorField'] = [
-        'label' => 'My Color',
-        'config' => [
-            'type' => 'color',
-            'opacity' => true,
-        ],
-    ];
+..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 33-39
+    :emphasize-lines: 37

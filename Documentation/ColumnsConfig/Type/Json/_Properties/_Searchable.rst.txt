@@ -17,13 +17,5 @@
     To exclude a field from being searchable, set the following in the
     field's TCA configuration:
 
-    ..  code-block:: php
+    ..  literalinclude:: /ColumnsConfig/Type/Json/_Snippets/_Searchable.php
         :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
-
-        $GLOBALS['TCA']['tx_myextension_mytable']['columns']['my_field'] = [
-            'label' => 'My field',
-            'config' => [
-                'type' => 'json',
-                'searchable' => false,
-            ],
-        ];

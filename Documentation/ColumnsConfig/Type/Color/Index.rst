@@ -35,15 +35,10 @@ Example: Define a simple color picker in TCA
 
 A simple color picker:
 
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
-    $aColorField' = [
-        'label' => 'Color field',
-        'config' => [
-            'type' => 'color',
-        ]
-    ];
+..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 9-14
+    :emphasize-lines: 12
 
 ..  _columns-color-properties:
 
