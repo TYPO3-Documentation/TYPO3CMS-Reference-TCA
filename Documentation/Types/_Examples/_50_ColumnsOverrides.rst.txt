@@ -10,7 +10,10 @@ Demonstrates property: :confval:`types-columnsOverrides`.
 For example the special blog post type might require the author to be set and
 use a different render type and description for the content:
 
-..  literalinclude:: _CodeSnippets/_tx_blogexample_post_codeeditor.php
+..  literalinclude:: /Types/_CodeSnippets/_Post.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
+    :visible-lines: 43-59
+    :emphasize-lines: 46
 
 While the field type `type` cannot be changed in the `columnsOverrides` the
 render type `renderType` can be changed.

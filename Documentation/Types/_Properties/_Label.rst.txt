@@ -20,26 +20,10 @@
     content element could display the image caption, while a "Text" element shows the
     header field.
 
-    ..  code-block:: php
+    ..  literalinclude:: /Types/_CodeSnippets/_TypesLabel.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-
-        return [
-            'ctrl' => [
-                'label' => 'header',
-                'type' => 'record_type',
-                // ... other ctrl configuration
-            ],
-            'types' => [
-                'article' => [
-                    'label_alt' => 'teaser',
-                ],
-                'event' => [
-                    'label_alt' => 'event_date,location',
-                    'label_alt_force' => true,
-                ],
-            ],
-            // ... columns configuration
-        ];
+        :visible-lines: 4-19
+        :emphasize-lines: 12, 16-17
 
     In this example:
 
