@@ -56,9 +56,11 @@
         Overrides the title of the "New record" link with a localized string. This will work only if
         `newRecordLinkAddTitle` is **not** set to true.
 
-        Example::
+        Example:
 
-            'newRecordLinkTitle' => 'LLL:my_extension.db:my_new_record_label'
+        ..  code-block:: php
+
+            'newRecordLinkTitle' => 'LLL:my_extension.db:my_new_record_label',
 
     ..  confval:: createNewRelationLinkTitle
         :name: inline-appearance-createNewRelationLinkTitle
