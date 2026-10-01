@@ -67,7 +67,9 @@ to set different FlexForms by type.
 
 ..  literalinclude:: _CodeSnippets/_column_overrides.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 23-30, 32-59
+    :emphasize-lines: 28, 41, 51
 
 In the above example, type 0 and type 3 display the default FlexForm defined in
-file `'FILE:EXT:news/Configuration/FlexFormDefault.xml'`, and type 1 and 2
+file `'FILE:EXT:my_extension/Configuration/FlexForms/Default.xml'`, and type 1 and 2
 each display their individual FlexForms.
