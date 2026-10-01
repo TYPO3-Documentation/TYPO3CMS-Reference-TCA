@@ -86,7 +86,7 @@ Table entries (first level)
 The "first level" of the :php:`$GLOBALS['TCA']` array is made of the table names (as
 they appear in the database):
 
-..  code-block::php
+..  code-block:: php
     :caption: The array looks like this
 
     $GLOBALS['TCA']['pages'] = [
@@ -97,11 +97,11 @@ they appear in the database):
         // ...
     ];
 
-    $GLOBALS['TCA']['tx_examples_haiku'] = [
+    $GLOBALS['TCA']['tx_myextension_haiku'] = [
         // ...
     ];
 
-Here three tables, `pages`, `tt_content` and `tx_examples_haiku` are shown as examples.
+Here three tables, `pages`, `tt_content` and `tx_myextension_haiku` are shown as examples.
 
 
 ..  _tca-structure-level2:
@@ -115,26 +115,9 @@ backend. The various parts on this second level are called "sections".
 
 The general structure (looking at a single table) is as follows:
 
-..  code-block::php
-    :caption: The array looks like this
-
-    $GLOBALS['TCA']['tx_examples_haiku'] = [
-        'ctrl' => [
-            // ....
-        ],
-        'interface' => [
-            // ....
-        ],
-        'columns' => [
-            // ....
-        ],
-        'types' => [
-            // ....
-        ],
-        'palettes' => [
-            // ....
-        ],
-    ];
+..  literalinclude:: _CodeSnippets/_tx_myextension_haiku.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_haiku.php
+    :emphasize-lines: 4, 8, 28, 33
 
 The following table provides a brief description of the various
 sections of :php:`$GLOBALS['TCA']['some_table']`. Each section is covered in more details in its own
