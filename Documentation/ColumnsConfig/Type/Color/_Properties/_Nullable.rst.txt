@@ -17,5 +17,7 @@
 
 Example:
 
-..  literalinclude:: _Properties/_Nullable.php
+..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 16-22
+    :emphasize-lines: 20
