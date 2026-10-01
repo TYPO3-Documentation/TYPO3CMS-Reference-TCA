@@ -1,4 +1,4 @@
-..  _columns-file-properties-overrideChildTca:
+..  _columns-file-properties-overridechildtca:
 
 ..  confval:: overrideChildTca
     :name: file-overrideChildTca

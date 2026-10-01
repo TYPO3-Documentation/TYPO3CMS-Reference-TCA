@@ -1,4 +1,4 @@
-..  _columns-radio-properties-fieldInformation:
+..  _columns-radio-properties-fieldinformation:
 
 ..  confval:: fieldInformation
     :name: radio-fieldInformation

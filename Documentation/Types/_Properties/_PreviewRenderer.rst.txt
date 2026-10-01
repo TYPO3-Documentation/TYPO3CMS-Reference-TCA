@@ -4,7 +4,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['previewRenderer']
     :type: string
     :Scope: Display
-    :Examples: :ref:`PreviewRenderer examples <types-example-previewRenderer>`
+    :Examples: :ref:`PreviewRenderer examples <types-example-previewrenderer>`
 
     To configure a preview renderer for the whole table see
     :confval:`ctrl-previewRenderer`.

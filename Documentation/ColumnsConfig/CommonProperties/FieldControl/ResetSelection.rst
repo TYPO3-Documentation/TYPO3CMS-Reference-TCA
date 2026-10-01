@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldControl_resetSelection:
+..  _tca-property-fieldcontrol-resetselection:
 
 ==============
 resetSelection

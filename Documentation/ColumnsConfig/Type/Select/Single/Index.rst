@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _columns-select-rendertype-selectSingle:
+..  _columns-select-rendertype-selectsingle:
 
 ============
 selectSingle
@@ -20,12 +20,12 @@ from which one can be chosen.
     :local:
     :depth: 1
 
-..  _columns-select-rendertype-selectSingle-examples:
+..  _columns-select-rendertype-selectsingle-examples:
 
 Examples for select fields with renderType `selectSingle`
 =========================================================
 
-..  _tca_example_select_single_3:
+..  _tca-example-select-single-3:
 
 Simple select drop down with static and database values
 -------------------------------------------------------
@@ -35,7 +35,7 @@ Simple select drop down with static and database values
 ..  include:: /CodeSnippets/SelectSingle3.rst.txt
 
 
-..  _tca_example_select_single_12:
+..  _tca-example-select-single-12:
 
 Select foreign rows with icons
 ------------------------------
@@ -45,7 +45,7 @@ Select foreign rows with icons
 ..  include:: /CodeSnippets/SelectSingle12.rst.txt
 
 
-..  _tca_example_select_single_10:
+..  _tca-example-select-single-10:
 
 Select a single value from a list of elements
 ---------------------------------------------

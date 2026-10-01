@@ -1,4 +1,4 @@
-..  _columns-imageManipulation-properties-allowedExtensions:
+..  _columns-imagemanipulation-properties-allowedextensions:
 
 ..  confval:: allowedExtensions
     :name: imageManipulation-allowedExtensions

@@ -21,9 +21,9 @@
     in the relation.
 
     Please have a look into the additional information
-    in the :ref:`MM common property description <tca_property_MM>`.
+    in the :ref:`MM common property description <tca-property-mm>`.
 
-..  _tca_example_select_single_15:
+..  _tca-example-select-single-15:
 
 ..  rubric:: Example: Select field with foreign table via MM table
 

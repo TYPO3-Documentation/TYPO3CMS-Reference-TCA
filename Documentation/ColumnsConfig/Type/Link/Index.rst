@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-input-renderType-inputLink:
+..  _columns-input-rendertype-inputlink:
 ..  _columns-link:
 
 ====

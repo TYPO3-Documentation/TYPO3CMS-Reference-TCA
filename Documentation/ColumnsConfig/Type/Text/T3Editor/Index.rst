@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
-..  _columns-text-renderType-codeEditor:
-..  _columns-text-renderType-t3editor:
+..  _columns-text-rendertype-codeeditor:
+..  _columns-text-rendertype-t3editor:
 
 ==========
 codeEditor
@@ -23,8 +23,8 @@ add syntax highlighting to textarea fields for several languages.
     :local:
     :depth: 1
 
-..  _tca_example_codeEditor_1:
-..  _tca_example_t3editor_1:
+..  _tca-example-codeeditor-1:
+..  _tca-example-t3editor-1:
 
 Example: Code highlighting with code editor
 ===========================================
@@ -40,7 +40,7 @@ Example: Code highlighting with code editor
     :visible-lines: 11-20
     :emphasize-lines: 17
 
-..  _columns-text-renderType-codeEditor-properties:
+..  _columns-text-rendertype-codeeditor-properties:
 
 Properties of the TCA column type `text`, render type `codeEditor`
 ==================================================================

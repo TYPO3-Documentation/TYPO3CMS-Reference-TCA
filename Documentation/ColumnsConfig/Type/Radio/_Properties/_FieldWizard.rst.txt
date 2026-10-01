@@ -1,4 +1,4 @@
-..  _columns-radio-properties-fieldWizard:
+..  _columns-radio-properties-fieldwizard:
 
 ..  confval:: fieldWizard
     :name: radio-fieldWizard

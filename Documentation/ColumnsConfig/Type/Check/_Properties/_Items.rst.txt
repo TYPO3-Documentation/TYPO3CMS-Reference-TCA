@@ -5,7 +5,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['items']
     :type: array
     :Scope: Display
-    :Examples: :ref:`Three checkboxes, two with labels, one without <tca_example_checkbox_3>`
+    :Examples: :ref:`Three checkboxes, two with labels, one without <tca-example-checkbox-3>`
 
     If set, this array will create an array of checkboxes instead of just a single "on/off" checkbox.
 

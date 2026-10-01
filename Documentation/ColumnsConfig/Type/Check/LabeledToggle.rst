@@ -1,26 +1,26 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-check-checkboxLabeledToggle:
+..  _columns-check-checkboxlabeledtoggle:
 
 =======================
 Labeled toggle checkbox
 =======================
 
 The checkbox type with the
-:ref:`renderType checkboxLabeledToggle <columns-check-properties-renderType>` is
+:ref:`renderType checkboxLabeledToggle <columns-check-properties-rendertype>` is
 displayed as a toggle switch where both states can be labelled
 (:guilabel:`ON` / :guilabel:`OFF`, :guilabel:`Visible` / :guilabel:`Hidden` or alike).
 
 Its state can be inverted via :ref:`invertStateDisplay
-<columns-check-properties-invertStateDisplay>`
+<columns-check-properties-invertstatedisplay>`
 
 
-..  _columns-check-checkboxLabeledToggle-example:
+..  _columns-check-checkboxlabeledtoggle-example:
 
 Examples
 ========
 
-..  _columns-check-checkboxLabeledToggle-example-19:
+..  _columns-check-checkboxlabeledtoggle-example-19:
 
 Single checkbox with labeled toggle
 -----------------------------------
@@ -31,7 +31,7 @@ Single checkbox with labeled toggle
 
 
 
-..  _tca_example_checkbox_21:
+..  _tca-example-checkbox-21:
 
 Single checkbox with labeled toggle inverted state display
 ----------------------------------------------------------

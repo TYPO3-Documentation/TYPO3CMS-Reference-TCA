@@ -12,7 +12,7 @@
     Is used when new versions are created from elements and enables the backend
     to display a visual comparison between a new version and its original.
 
-    By convention the name :ref:`t3_origuid <field_t3_origuid>`
+    By convention the name :ref:`t3_origuid <field-t3-origuid>`
     is used for that field.
 
     ..  note::

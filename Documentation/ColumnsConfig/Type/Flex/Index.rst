@@ -66,7 +66,7 @@ which data structure should be displayed.
 
 ..  note::
     It is **not** possible to override these properties in
-    :ref:`TCA type columnsOverrides <types-properties-columnsOverrides>` or to manipulate
+    :ref:`TCA type columnsOverrides <types-properties-columnsoverrides>` or to manipulate
     them in an inline parent-child relation from the parent `TCA`.
 
 ..  _columns-flex-events:
