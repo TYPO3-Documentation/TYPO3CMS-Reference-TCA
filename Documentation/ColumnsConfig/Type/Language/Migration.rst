@@ -19,50 +19,35 @@ where code adaption has to take place. Occurrences are all columns, defined as
     type. Custom setting such as field wizards are not evaluated until the TCA
     configuration is adapted.
 
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+..  code-block:: diff
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
-    // Before
+     'config' => [
+    -  'type' => 'select',
+    -  'renderType' => 'selectSingle',
+    -  'foreign_table' => 'sys_language',
+    -  'items' => [
+    -    ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages', -1],
+    -    ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 0],
+    -  ],
+    -  'default' => 0,
+    +  'type' => 'language',
+     ],
 
-    'config' => [
-        'type' => 'select',
-        'renderType' => 'selectSingle',
-        'foreign_table' => 'sys_language',
-        'items' => [
-            ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages', -1],
-            ['LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value', 0]
-        ],
-        'default' => 0
-    ]
+..  code-block:: diff
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
 
-    // After
-
-    'config' => [
-        'type' => 'language'
-    ]
-
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
-    // Before
-
-    'config' => [
-        'type' => 'select',
-        'renderType' => 'selectSingle',
-        'special' => 'languages',
-        'items' => [
-            [
-                'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                -1,
-                'flags-multiple'
-            ],
-        ],
-        'default' => 0,
-    ]
-
-    // After
-
-    'config' => [
-        'type' => 'language'
-    ]
-
+     'config' => [
+    -  'type' => 'select',
+    -  'renderType' => 'selectSingle',
+    -  'special' => 'languages',
+    -  'items' => [
+    -    [
+    -      'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+    -      -1,
+    -      'flags-multiple',
+    -    ],
+    -  ],
+    -  'default' => 0,
+    +  'type' => 'language',
+     ],

@@ -1,8 +1,10 @@
 <?php
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3') or die();
 
-$tempColumns = [
+ExtensionManagementUtility::addTCAcolumns('fe_users', [
   'tx_myextension_special' => [
     'label' => 'My label',
     'config' => [
@@ -15,13 +17,9 @@ $tempColumns = [
       ],
     ],
   ],
-];
+]);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-  'fe_users',
-  $tempColumns
-);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+ExtensionManagementUtility::addToAllTCAtypes(
   'fe_users',
   'tx_myextension_special',
 );

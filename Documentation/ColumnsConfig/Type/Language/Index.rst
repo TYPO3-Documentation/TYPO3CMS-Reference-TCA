@@ -67,8 +67,10 @@ all languages from all site configurations are displayed in the new field.
 Example: Simple language field
 ==============================
 
-..  literalinclude:: _languageField.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
+..  literalinclude:: /ColumnsConfig/Type/Language/_languageField.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 4-8, 16-21
+    :emphasize-lines: 7, 19
 
 ..  _columns-language-properties:
 

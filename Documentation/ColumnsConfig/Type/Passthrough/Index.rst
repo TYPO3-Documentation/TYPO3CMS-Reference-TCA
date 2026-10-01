@@ -56,7 +56,7 @@ This field is found in a number of tables, for instance the "pages" table. It is
 "impexp" to store some information.
 
 ..  code-block:: php
-    :caption: EXT:impexp/Configuration/TCA/Overrides/pages.php
+    :caption: EXT:impexp/Configuration/TCA/Overrides/pages.php (excerpt)
 
     'tx_impexp_origuid' => [
         'config' => [
