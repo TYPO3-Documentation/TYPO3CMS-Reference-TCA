@@ -17,16 +17,7 @@
 
 ..  rubric:: Example: A nullable field
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/Type/Input/_Snippets/_Input.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-
-    'columns' => [
-         'nullable_column' => [
-              'title' => 'A nullable field',
-              'config' => [
-                    'type' => 'input',
-                    'nullable' => true,
-                    'eval' => 'trim',
-              ],
-         ],
-    ],
+    :visible-lines: 47-54
+    :emphasize-lines: 51

@@ -29,4 +29,7 @@
 
 ..  rubric:: Example: An input field with value picker
 
-..  literalinclude:: _Properties/_ValuePicker.php
+..  literalinclude:: /ColumnsConfig/Type/Input/_Snippets/_Input.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 65-78
+    :emphasize-lines: 69

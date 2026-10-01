@@ -19,15 +19,7 @@
 
 ..  rubric:: Example: Limit an integer to be within the range 10 to 1000
 
-..  code-block:: php
-
-    'aField' => [
-        'label' => 'aLabel',
-        'config' => [
-            'type' => 'number',
-            'range' => [
-                'lower' => 10,
-                'upper' => 1000
-            ],
-        ],
-    ],
+..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 27-36
+    :emphasize-lines: 31
