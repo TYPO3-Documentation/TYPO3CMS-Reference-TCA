@@ -9,11 +9,12 @@ Automatically added system fields to content types (`tt_content`)
 =================================================================
 
 ..  versionchanged:: 13.3
+    :changelog: feature-104814-1725444916
+
     Creating content elements has been simplified by removing the need to
     define the system fields for each element again and again. This shrinks
     down a content element's :confval:`types-showitem` to just the element
     specific fields. See also :ref:`Migration <types-content-migration>`.
-    Added with :ref:`Feature: #104814 <changelog:feature-104814-1725444916>`.
 
 The following tabs / palettes are added automatically to the :confval:`types-showitem`
 property of table `tt_content`:
