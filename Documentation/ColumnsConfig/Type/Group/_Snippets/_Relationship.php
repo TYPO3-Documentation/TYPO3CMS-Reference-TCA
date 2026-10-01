@@ -2,7 +2,7 @@
 
 return [
   'ctrl' => [
-    'title' => 'My table',
+    'title' => 'Course',
     'label' => 'title',
   ],
   'columns' => [
@@ -13,18 +13,18 @@ return [
       ],
     ],
 
-    'my_image' => [
-      'label' => 'My image',
+    'teacher' => [
+      'label' => 'Teacher',
       'config' => [
-        'type' => 'file',
-        'maxitems' => 6,
-        'allowed' => 'common-image-types',
+        'type' => 'group',
+        'allowed' => 'tx_myextension_teacher',
+        'relationship' => 'manyToOne',
       ],
     ],
   ],
   'types' => [
     '0' => [
-      'showitem' => 'title, my_image',
+      'showitem' => 'title, teacher',
     ],
   ],
 ];

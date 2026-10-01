@@ -13,18 +13,20 @@ return [
       ],
     ],
 
-    'my_image' => [
-      'label' => 'My image',
+    'simple_group' => [
+      'label' => 'Simple group field',
       'config' => [
-        'type' => 'file',
-        'maxitems' => 6,
-        'allowed' => 'common-image-types',
+        'type' => 'group',
+        'allowed' => 'tt_content',
+        'elementBrowserEntryPoints' => [
+          'tt_content' => 123,
+        ],
       ],
     ],
   ],
   'types' => [
     '0' => [
-      'showitem' => 'title, my_image',
+      'showitem' => 'title, simple_group',
     ],
   ],
 ];
