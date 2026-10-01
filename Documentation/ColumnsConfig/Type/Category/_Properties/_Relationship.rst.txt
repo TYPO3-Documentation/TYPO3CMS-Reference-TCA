@@ -40,14 +40,10 @@
     In the following example a category tree is displayed, but only one
     category can be selected.
 
-    ..  code-block:: php
-
-        $GLOBALS['TCA'][$myTable]['columns']['mainCategory'] = [
-            'config' => [
-                'type' => 'category',
-                'relationship' => 'oneToOne'
-            ]
-        ];
+    ..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+        :visible-lines: 7, 14-20
+        :emphasize-lines: 18
 
     All other relevant options, for example `maxitems=1`, are being set
     automatically.

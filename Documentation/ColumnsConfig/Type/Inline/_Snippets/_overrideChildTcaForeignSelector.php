@@ -1,22 +1,7 @@
 <?php
 
-$allowedFileExtensions = 'png,svg';
+defined('TYPO3') or die();
 
-$GLOBALS['TCA']['tt_content']['columns']['anInlineField'] = [
-  'config' => [
-    'type' => 'inline',
-    'foreign_selector' => 'uid_local',
-    'overrideChildTca' => [
-      'columns' => [
-        'uid_local' => [
-          'config' => [
-            'appearance' => [
-              'elementBrowserType' => 'file',
-              'elementBrowserAllowed' => $allowedFileExtensions,
-            ],
-          ],
-        ],
-      ],
-    ],
-  ],
-];
+$GLOBALS['TCA']['tx_myextension_event']['columns']['speakers']['config']
+  ['overrideChildTca']['columns']['speaker']['config']
+  ['elementBrowserEntryPoints']['tx_myextension_person'] = 42;
