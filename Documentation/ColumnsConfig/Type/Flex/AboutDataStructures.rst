@@ -37,8 +37,9 @@ Configuring a table with a FlexForm
 ===================================
 
 ..  versionchanged:: 14.0
-    See `Breaking: #107047 - Remove pointer field functionality of TCA flex <https://docs.typo3.org/permalink/changelog:breaking-107047-1751982363>`_
-    for migration.
+    :changelog: breaking-107047-1751982363
+
+    The changelog entry describes the migration.
 
 Use configuration option `ds  <https://docs.typo3.org/permalink/t3tca:confval-flex-ds>`_
 to either pass a file reference to the XML file containing the FlexForm or
@@ -58,8 +59,9 @@ Individual FlexForms by type
 ============================
 
 ..  versionchanged:: 14.0
-    See `Breaking: #107047 - Remove pointer field functionality of TCA flex <https://docs.typo3.org/permalink/changelog:breaking-107047-1751982363>`_
-    for migration.
+    :changelog: breaking-107047-1751982363
+
+    The changelog entry describes the migration.
 
 If the table has `$GLOBALS['TCA'][$table]['ctrl']['type']  <https://docs.typo3.org/permalink/t3tca:confval-ctrl-type>`_
 set, you can use `columnsOverrides  <https://docs.typo3.org/permalink/t3tca:confval-types-columnsoverrides>`_
