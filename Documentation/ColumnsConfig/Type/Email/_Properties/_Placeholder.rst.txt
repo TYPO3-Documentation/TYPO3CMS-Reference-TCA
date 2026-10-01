@@ -6,5 +6,7 @@
 
     Placeholder, containing a default date.
 
-    ..  literalinclude:: _Properties/_PlaceHolder.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+    ..  literalinclude:: /ColumnsConfig/Type/Email/_Snippets/_Email.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+        :visible-lines: 27-34
+        :emphasize-lines: 31

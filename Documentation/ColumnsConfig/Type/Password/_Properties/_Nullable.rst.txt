@@ -17,4 +17,7 @@
 
 ..  rubric:: Example: A nullable password field
 
-..  literalinclude:: _Snippets/_Nullable.php
+..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 18-24
+    :emphasize-lines: 22
