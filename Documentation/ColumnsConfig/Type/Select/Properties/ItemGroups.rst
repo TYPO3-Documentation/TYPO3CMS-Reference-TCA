@@ -20,16 +20,10 @@ for modifying an existing TCA definition.
 For existing select fields additional item groups can be added via the
 api method :php:`ExtensionManagementUtility::addTcaSelectItemGroup`.
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_ItemGroups.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-
-    ExtensionManagementUtility::addTcaSelectItemGroup(
-        'tt_content',
-        'CType',
-        'sliders',
-        'LLL:EXT:my_slider_mixtape/Resources/Private/Language/locallang_tca.xlf:tt_content.group.sliders',
-        'after:lists'
-    );
+    :visible-lines: 3, 7-13
+    :emphasize-lines: 7
 
 When adding a new select field, itemGroups should be added directly in the
 original TCA definition without using the API method. Use the API within
@@ -41,23 +35,13 @@ field with grouping.
 Attaching select items to item groups
 =====================================
 
-Using the API method :php:`ExtensionManagementUtility::addTcaSelectItem` a
-a fourth parameter in the array can be used to specify the id of the item
-group.
+Using the API method :php:`ExtensionManagementUtility::addTcaSelectItem`,
+the `group` key of the item specifies the id of the item group.
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_ItemGroups.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-
-    ExtensionManagementUtility::addTcaSelectItem(
-        'tt_content',
-        'CType',
-        [
-            'LLL:EXT:my_slider_mixtape/Resources/Private/Locallang/locallang_tca.xlf:tt_content.CType.slickslider',
-            'slickslider',
-            'EXT:my_slider_mixtape/Resources/Public/Icons/slickslider.png',
-            'sliders'
-        ]
-    );
+    :visible-lines: 3, 15-24
+    :emphasize-lines: 22
 
 
 ..  _columns-select-properties-item-groups-history:

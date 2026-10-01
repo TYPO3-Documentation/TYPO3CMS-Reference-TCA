@@ -16,4 +16,7 @@
 
 ..  rubric:: Example: A select field with a foreign_table_item_group
 
-..  literalinclude:: _Snippets/_ForeignFieldTableItemGroup.php
+..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_ForeignTableItemGroup.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 9-29
+    :emphasize-lines: 26

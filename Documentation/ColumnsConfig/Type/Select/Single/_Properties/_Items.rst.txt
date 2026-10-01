@@ -55,21 +55,9 @@
         :confval:`newContentElement.wizardItems <t3tsref:mod-wizards-newcontentelement-wizarditems>`,
         which still works.
 
-        ..  code-block:: php
+        ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_IconOverlay.php
             :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-
-            use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-
-            ExtensionManagementUtility::addRecordType(
-              [
-                'label' => 'my_extension.messages:my_element.title',
-                'value' => 'my_element',
-                'icon' => 'content-header',
-                'iconOverlay' => 'actions-approve',
-                'group' => 'default',
-              ],
-              '--palette--;;headers',
-            );
+            :emphasize-lines: 12
 
     group (string)
         The key of the :ref:`item group <columns-select-single-properties-item-groups>`.
