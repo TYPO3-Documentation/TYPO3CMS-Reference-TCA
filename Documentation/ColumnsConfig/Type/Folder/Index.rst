@@ -30,16 +30,10 @@ Example
 
 ..  include:: /Images/Rst/GroupFolder1.rst.txt
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/Type/Folder/_Snippets/_Folder.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
-    'columns' => [
-        'aColumn' => [
-            'config' => [
-                'type' => 'folder',
-            ],
-        ],
-    ],
+    :visible-lines: 16-21
+    :emphasize-lines: 19
 
 ..  _columns-folder-properties:
 

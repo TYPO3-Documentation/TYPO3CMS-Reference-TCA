@@ -20,37 +20,23 @@
 
 You can also define an entry point with the `_default` key:
 
-..  code-block:: php
-
-    'folder_group' => [
-        'label' => 'Folder field',
-        'config' => [
-            'type' => 'folder',
-            'elementBrowserEntryPoints' => [
-                '_default' => '1:/styleguide/'
-            ]
-        ]
-    ],
+..  literalinclude:: /ColumnsConfig/Type/Folder/_Snippets/_ElementBrowserEntryPoints.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 16-24
+    :emphasize-lines: 21
 
 It is also possible to use a special TSconfig key:
 
-..  code-block:: php
-
-    'folder_group' => [
-        'label' => 'Folder field',
-        'config' => [
-            'type' => 'folder',
-            'elementBrowserEntryPoints' => [
-                '_default' => '###PAGE_TSCONFIG_ID###'
-            ]
-        ]
-    ],
+..  literalinclude:: /ColumnsConfig/Type/Folder/_Snippets/_ElementBrowserEntryPoints.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 25-33
+    :emphasize-lines: 30
 
 This key has then to be defined on field level:
 
 ..  code-block:: typoscript
 
-    TCEFORM.tx_myextension_mytable.folder_group.PAGE_TSCONFIG_ID = 1:/styleguide/subfolder
+    TCEFORM.tx_myextension_mytable.folder_tsconfig.PAGE_TSCONFIG_ID = 1:/styleguide/subfolder
 
 In case an allowed table has no entry point defined, the `_default` is used.
 In case `_default` is also not set or `elementBrowserEntryPoints` is not

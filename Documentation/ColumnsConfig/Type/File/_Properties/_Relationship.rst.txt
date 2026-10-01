@@ -33,17 +33,10 @@
 
     In the following example, a record has exactly one image:
 
-    ..  code-block:: php
+    ..  literalinclude:: /ColumnsConfig/Type/File/_Snippets/_Relationship.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_teaser.php
-
-        'image' => [
-          'label' => 'Image',
-          'config' => [
-            'type' => 'file',
-            'allowed' => 'common-image-types',
-            'relationship' => 'manyToOne',
-          ],
-        ],
+        :visible-lines: 16-23
+        :emphasize-lines: 21
 
     The image can then be output without a loop:
 
