@@ -23,18 +23,10 @@
 
 ..  rubric:: Example: Open the element browser on page 123 for tt_content elements
 
-..  code-block:: php
-
-    'simple_group' => [
-        'label' => 'Simple group field',
-        'config' => [
-            'type' => 'group',
-            'allowed' => 'tt_content',
-            'elementBrowserEntryPoints' => [
-                'tt_content' => 123,
-            ]
-        ]
-    ],
+..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_ElementBrowserEntryPointsSimple.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 16-25
+    :emphasize-lines: 21
 
 This could then be overridden via page TSconfig:
 
@@ -45,25 +37,15 @@ This could then be overridden via page TSconfig:
 Since only one table is allowed, the defined entry point is also automatically
 used for the general element browser button.
 
-..  rubric:: Example: Open the element browser on different pages for tt_content and news records
+..  rubric:: Example: Open the element browser on different pages for tt_content and teaser records
 
 In case the group field allows more than one table, the `_default` key has to
 be set:
 
-..  code-block:: php
-
-    'extended_group' => [
-        'label' => 'Extended group field',
-        'config' => [
-            'type' => 'group',
-            'allowed' => 'tt_content,tx_news_domain_model_news',
-            'elementBrowserEntryPoints' => [
-                '_default' => '###CURRENT_PID###' // E.g. use a special marker
-                'tt_content' => 123,
-                'tx_news_domain_model_news' => 124,
-            ]
-        ]
-    ],
+..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_ElementBrowserEntryPointsExtended.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 16-28
+    :emphasize-lines: 23
 
 Of course, the `_default` key can also be overridden via page TSconfig:
 

@@ -30,8 +30,10 @@ is generated automatically.
 Example
 =======
 
-..  literalinclude:: _Snippets/_file-field.php
-    :caption: EXT:my_extension/Configuration/TCA/some_table.php
+..  literalinclude:: /ColumnsConfig/Type/File/_Snippets/_file-field.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 16-23
+    :emphasize-lines: 19
 
 ..  _columns-file-properties:
 

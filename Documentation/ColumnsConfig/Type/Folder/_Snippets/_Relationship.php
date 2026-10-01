@@ -2,7 +2,7 @@
 
 return [
   'ctrl' => [
-    'title' => 'My table',
+    'title' => 'Gallery',
     'label' => 'title',
   ],
   'columns' => [
@@ -13,18 +13,17 @@ return [
       ],
     ],
 
-    'my_image' => [
-      'label' => 'My image',
+    'folder' => [
+      'label' => 'Folder',
       'config' => [
-        'type' => 'file',
-        'maxitems' => 6,
-        'allowed' => 'common-image-types',
+        'type' => 'folder',
+        'relationship' => 'manyToOne',
       ],
     ],
   ],
   'types' => [
     '0' => [
-      'showitem' => 'title, my_image',
+      'showitem' => 'title, folder',
     ],
   ],
 ];

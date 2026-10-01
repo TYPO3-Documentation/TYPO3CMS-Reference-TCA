@@ -22,22 +22,10 @@
 
     Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied:
 
-    ..  code-block:: php
-
-        'filter' => [
-            [
-                'userFunc' => \MyVendor\MyExtension\MyClass::class . '->doFilter',
-                'parameters' => [
-                    // optional parameters for the filter go here
-                ],
-            ],
-            [
-                'userFunc' => \MyVendor\MyExtension\OtherClass::class . '->myFilter',
-                'parameters' => [
-                    // optional parameters for the filter go here
-                ],
-            ],
-        ],
+    ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_FilterMultiple.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_person.php
+        :visible-lines: 3-4, 18-38
+        :emphasize-lines: 23
 
 ..  rubric:: Example:
 
@@ -47,37 +35,13 @@ fields with relations to the same table.
 Now, in the field "mother" it should certainly only be possible to create relations to female persons. In that
 case, you could use the filter functionality to make sure only females can be selected in that field.
 
-The field configuration for the "mother" field could look like:
+..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_FilterPerson.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_person.php
+    :visible-lines: 3, 27-42
+    :emphasize-lines: 37
 
-..  code-block:: php
+The filter receives the selected values as `<table>_<uid>` strings in
+:php:`$parameters['values']` and returns the ones to keep:
 
-    'mother' => [
-        'label' => 'Mother',
-        'config' => [
-            'type' => 'group',
-            'allowed' => 'tx_myext_person',
-            'size' => 1,
-            'filter' => [
-                [
-                    'userFunc' => \MyVendor\MyExtension\MyClass::class . '->doFilter',
-                    'parameters' => [
-                        'evaluateGender' => 'female',
-                    ],
-                ],
-            ],
-        ]
-    ],
-
-The corresponding filter class would look like:
-
-..  code-block:: php
-
-    class MyClass
-    {
-        public function doFilter(array $parameters, $parentObject)
-        {
-            $fieldValues = $parameters['values'];
-            // do the filtering here
-            return $fieldValues;
-        }
-    }
+..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_FilterClass.php
+    :caption: EXT:my_extension/Classes/Filter/GenderFilter.php

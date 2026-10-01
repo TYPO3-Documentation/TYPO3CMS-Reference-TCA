@@ -34,20 +34,10 @@
 
     ..  rubric:: Example:
 
-    ..  code-block:: php
-
-        // table tx_myextension_domain_model_mymodel1
-        $fields = [
-            'relation_table1_table2' => [
-                'label' => 'Some relation from table 1 to table 2',
-                'config' => [
-                    'type' => 'group',
-                    'allowed' => 'tx_myextension_domain_model_mymodel2',
-                    'foreign_table' => 'tx_myextension_domain_model_mymodel2', // needed by Extbase
-                    'MM' => 'tx_myextension_domain_model_mymodel1_mymodel2_mm',
-                ],
-            ],
-        ];
+    ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_Mm.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_mymodel1.php
+        :visible-lines: 16-23
+        :emphasize-lines: 21
 
 ..  _columns-group-properties-mm-match-fields:
 ..  confval:: MM_match_fields
