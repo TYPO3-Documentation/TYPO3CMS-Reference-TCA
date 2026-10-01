@@ -5,9 +5,10 @@
     :Scope: Display
 
     ..  versionadded:: 14.2
-        It is possible to configure fields, steps (and their order)
-        in the page creation wizard using TCA. See
-        `Feature: #109271 - Add TCA configuration for page creation wizard steps <https://docs.typo3.org/permalink/changelog:feature-109271-1742217000>`_.
+        :changelog: feature-109271-1742217000
+
+        It is possible to configure fields, steps (and their order) in the page
+        creation wizard using TCA.
 
     Defines the steps shown in the page creation wizard for the `pages` table.
 
