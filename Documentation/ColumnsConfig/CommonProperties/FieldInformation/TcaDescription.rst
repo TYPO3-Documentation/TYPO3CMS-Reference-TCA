@@ -1,8 +1,8 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldInformation_tcaDescription:
-..  _tca_property_fieldInformation_tcaDescription_examples:
-..  _tca_property_fieldInformation_tcaDescription_examples_activateTcaDescription:
-..  _tca_property_fieldInformation_tcaDescription_examples_renderDescription:
+..  _tca-property-fieldinformation-tcadescription:
+..  _tca-property-fieldinformation-tcadescription-examples:
+..  _tca-property-fieldinformation-tcadescription-examples-activatetcadescription:
+..  _tca-property-fieldinformation-tcadescription-examples-renderdescription:
 
 ==============
 tcaDescription

@@ -131,7 +131,7 @@ Password policy
         :caption: EXT:my_extension/Configuration/TCA/Overrides/fe_users.php
 
 
-..  _columns-password-properties-passwordGenerator_passwordRules:
+..  _columns-password-properties-passwordgenerator-passwordrules:
 
 Password rules
 ==============
@@ -144,7 +144,7 @@ Password rules
 
 Define rules for the password.
 
-..  _columns-password-properties-passwordGenerator_passwordRules-migration:
+..  _columns-password-properties-passwordgenerator-passwordrules-migration:
 
 Migration from `passwordRules` to password policies
 ---------------------------------------------------
@@ -170,7 +170,7 @@ Replace the `passwordRules` option with a `Password policiy <https://docs.typo3.
          ],
      ],
 
-..  _columns-password-properties-passwordGenerator_passwordRules_length:
+..  _columns-password-properties-passwordgenerator-passwordrules-length:
 
 passwordRules.length
 --------------------
@@ -186,7 +186,7 @@ passwordRules.length
 
     Defines the amount of characters for the generated password.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_random:
+..  _columns-password-properties-passwordgenerator-passwordrules-random:
 
 passwordRules.random
 --------------------
@@ -216,7 +216,7 @@ passwordRules.random
         `passwordRules.random` is set to one
         of the available encodings: :php:`hex` or :php:`base64`.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_digitcharacters:
+..  _columns-password-properties-passwordgenerator-passwordrules-digitcharacters:
 
 passwordRules.digitCharacters
 -----------------------------
@@ -231,7 +231,7 @@ passwordRules.digitCharacters
 
     If set to :php:`false`, the generated password contains no digit.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_lowercasecharacters:
+..  _columns-password-properties-passwordgenerator-passwordrules-lowercasecharacters:
 
 
 passwordRules.lowerCaseCharacters
@@ -247,7 +247,7 @@ passwordRules.lowerCaseCharacters
 
     If set to :php:`false`, the generated password contains no lower case characters.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_uppercasecharacters:
+..  _columns-password-properties-passwordgenerator-passwordrules-uppercasecharacters:
 
 passwordRules.upperCaseCharacters
 ---------------------------------
@@ -262,7 +262,7 @@ passwordRules.upperCaseCharacters
 
     If set to :php:`false`, the generated password contains no upper case characters.
 
-..  _columns-password-properties-passwordGenerator_passwordRules_specialcharacters:
+..  _columns-password-properties-passwordgenerator-passwordrules-specialcharacters:
 
 passwordRules.specialCharacters
 ---------------------------------
