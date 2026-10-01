@@ -14,18 +14,16 @@
     :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItemCollection`, influencing
     which items are displayed.
 
+    ..  literalinclude:: /ColumnsConfig/Type/Radio/_Snippet/_ItemsProcessorsTca.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+        :visible-lines: 3, 18-31
+        :emphasize-lines: 25
+
     A :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` for a field of
     type `radio` must be of type `radio` and must provide a label and value.
     The value can be an integer or string.
 
-    ..  code-block:: php
-
-        $items->add(
-            new SelectItem(
-                type: 'radio',
-                label: 'LLL:my_extension.db:my_item',
-                value: 42,
-            )
-        );
+    ..  literalinclude:: /ColumnsConfig/Type/Radio/_Snippet/_ItemsProcessor.php
+        :caption: EXT:my_extension/Classes/Processors/RadioItemsProcessor.php
 
     See also `Item processor registration and implementation <https://docs.typo3.org/permalink/t3tca:tca-property-itemsprocessors>`_

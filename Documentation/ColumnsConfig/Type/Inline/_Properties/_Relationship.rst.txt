@@ -36,15 +36,7 @@
     In the following example, a product has exactly one inline price
     record:
 
-    ..  code-block:: php
+    ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_Relationship.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
-
-        'price' => [
-          'label' => 'Price',
-          'config' => [
-            'type' => 'inline',
-            'foreign_table' => 'tx_myextension_price',
-            'foreign_field' => 'product',
-            'relationship' => 'oneToOne',
-          ],
-        ],
+        :visible-lines: 16-24
+        :emphasize-lines: 22

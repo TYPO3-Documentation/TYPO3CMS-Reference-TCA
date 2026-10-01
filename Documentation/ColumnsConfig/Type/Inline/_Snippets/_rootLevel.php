@@ -2,20 +2,19 @@
 
 return [
   'ctrl' => [
-    'title' => 'My workspace aware child',
+    'title' => 'My metadata',
     'label' => 'title',
-    'versioningWS' => true,
+    // Can only be created at root level
+    'rootLevel' => 1,
+    'security' => [
+      'ignoreRootLevelRestriction' => true,
+    ],
   ],
   'columns' => [
     'title' => [
       'label' => 'Title',
       'config' => [
         'type' => 'input',
-      ],
-    ],
-    'parentid' => [
-      'config' => [
-        'type' => 'passthrough',
       ],
     ],
   ],
