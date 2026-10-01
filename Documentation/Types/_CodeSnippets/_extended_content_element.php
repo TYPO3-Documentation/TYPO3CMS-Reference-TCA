@@ -2,6 +2,8 @@
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
+defined('TYPO3') or die();
+
 // Add the content element to the "Type" dropdown
 ExtensionManagementUtility::addTcaSelectItem(
   'tt_content',

@@ -50,20 +50,10 @@ that is set within the 'palettes' array. It will always be displayed.
 
 Example:
 
-..  code-block:: php
-     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_table.php (Excerpt)
-
-    'types' => [
-       'myType' => [
-          'showitem' => 'aField, --palette--;;aPalette, someOtherField',
-       ],
-    ],
-    'palettes' => [
-       'aPalette' => [
-          'label' => 'LLL:EXT:myExt/Resources/Private/Language/locallang.xlf:aPaletteDescription',
-          'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
-       ],
-    ],
+..  literalinclude:: /Palettes/_CodeSnippets/_Palettes.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 8-17
+    :emphasize-lines: 10, 15
 
 ..  _palettes-properties:
 

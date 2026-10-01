@@ -8,8 +8,10 @@ Display all fields on one page of the form
 The table containing the blog comments does not contain many fields. So they can
 all be displayed on one page of the backend form without using tabs:
 
-..  literalinclude:: _CodeSnippets/_tx_blogexample_comment_showitem.php
+..  literalinclude:: /Types/_CodeSnippets/_Comment.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_comment.php
+    :visible-lines: 11-15
+    :emphasize-lines: 13
 
 ..  _types-examples-required-tabs:
 ..  _types-example-showitem-2-tabs:
@@ -22,8 +24,10 @@ If a table has a larger number of fields, grouping them into tabs and palettes
 can improves the backend user experience. Palettes have the additional value
 that they can be reused across different record types.
 
-..  literalinclude:: _CodeSnippets/_tx_blogexample_post_tabs.php
+..  literalinclude:: /Types/_CodeSnippets/_Post.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
+    :visible-lines: 22-33, 59-66
+    :emphasize-lines: 24
 
 The syntax for tabs is:
 

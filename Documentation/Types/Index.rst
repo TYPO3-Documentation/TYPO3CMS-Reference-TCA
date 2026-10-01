@@ -52,8 +52,10 @@ which fields should be displayed in the backend form for the default type.
 
 As an example, a comment on a blog post can be stored in a table as follows:
 
-..  literalinclude:: _CodeSnippets/_tx_blogexample_comment.php
+..  literalinclude:: /Types/_CodeSnippets/_Comment.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_comment.php
+    :visible-lines: 11-15
+    :emphasize-lines: 13
 
 The `types` section is mandatory.
 
@@ -72,8 +74,10 @@ The name of this field is registered in the `ctrl` section via property
 As an example, a blog post might have several types where the fields
 displayed in the backend differ:
 
-..  literalinclude:: _CodeSnippets/_tx_blogexample_post.php
+..  literalinclude:: /Types/_CodeSnippets/_Post.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
+    :visible-lines: 7, 22-58
+    :emphasize-lines: 7
 
 For each record type you can define additional
 `creationOptions  <https://docs.typo3.org/permalink/t3tca:confval-types-creationoptions>`_
