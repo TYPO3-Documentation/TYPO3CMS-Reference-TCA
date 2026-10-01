@@ -75,39 +75,17 @@
 
 ..  rubric:: Examples
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/Type/None/_Snippets/_None.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 11-21
+    :emphasize-lines: 15
 
-    'aField' => [
-      'config' => [
-         'type' => 'none',
-         'format' => 'date'
-         'format.' => [
-            'strftime' => TRUE,
-            'option' => '%x'
-         ],
-      ],
-    ],
+..  literalinclude:: /ColumnsConfig/Type/None/_Snippets/_None.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 23-32
+    :emphasize-lines: 27
 
-..  code-block:: php
-
-    'aField' => [
-      'config' => [
-         'type' => 'none',
-         'format' => 'float'
-         'format.' => [
-            'precision' => 8
-         ],
-      ],
-    ],
-
-..  code-block:: php
-
-    'aField' => [
-      'config' => [
-        'type' => 'none',
-        'format' => 'user',
-        'format.' => [
-            'userFunc' => 'MyVendor\MyExtension\Utility\MyCustomValue->getErrorMssg',
-        ],
-      ],
-    ],
+..  literalinclude:: /ColumnsConfig/Type/None/_Snippets/_None.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 3, 34-43
+    :emphasize-lines: 40
