@@ -1,10 +1,6 @@
 <?php
 
-$inputField = [
-  'config' => [
-    'type' => 'input',
-    'behaviour' => [
-      'allowLanguageSynchronization' => true,
-    ],
-  ],
-];
+defined('TYPO3') or die();
+
+$GLOBALS['TCA']['tx_myextension_mytable']['columns']['my_input']['config']
+  ['behaviour']['allowLanguageSynchronization'] = true;

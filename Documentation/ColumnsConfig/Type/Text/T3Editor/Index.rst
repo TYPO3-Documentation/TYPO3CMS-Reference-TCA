@@ -45,8 +45,10 @@ Example: Code highlighting with code editor
 
     Code editor with highlighting HTML
 
-..  literalinclude:: _Snippets/_Format.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_domain_model_mytable.php
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 11-20
+    :emphasize-lines: 17
 
 ..  _columns-text-renderType-codeEditor-properties:
 

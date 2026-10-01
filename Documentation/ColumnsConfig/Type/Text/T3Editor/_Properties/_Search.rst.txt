@@ -32,7 +32,7 @@
         to place an additional condition on the field when it is searched
 
 
-        ..  literalinclude:: _Snippets/_AllowLanguageSynchronization.php
+        ..  literalinclude:: /ColumnsConfig/Type/Text/Default/_Snippets/_Search.php
             :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
 
         This means that the "my_editor" field of the "tx_myextension_mytable" table will

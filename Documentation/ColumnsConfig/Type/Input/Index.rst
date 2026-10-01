@@ -85,8 +85,10 @@ Trim white space
 
 Trimming the value for white space before storing in the database:
 
-..  literalinclude:: _Snippets/_trimmedField.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/Input/_Snippets/_Input.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 11-17
+    :emphasize-lines: 15
 
 ..  _columns-input-eval-combined:
 
@@ -96,9 +98,10 @@ Combine eval rules
 By this configuration the field will be stripped for any space characters, converted to lowercase, only accepted
 if filled in and on the server the value is required to be unique for all records from this table:
 
-..  code-block:: php
-
-    'eval' => 'nospace,lower,unique'
+..  literalinclude:: /ColumnsConfig/Type/Input/_Snippets/_Input.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 19-26
+    :emphasize-lines: 24
 
 ..  _columns-input-eval-custom:
 
@@ -124,5 +127,7 @@ saving the record.
 ..  literalinclude:: _Snippets/_ext_localconf.php
     :caption: EXT:my_extension/ext_localconf.php
 
-..  literalinclude:: _Snippets/_tx_example_record.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_record.php
+..  literalinclude:: /ColumnsConfig/Type/Input/_Snippets/_Input.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 3, 28-35
+    :emphasize-lines: 33

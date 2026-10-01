@@ -16,5 +16,7 @@
 
 ..  rubric:: Example: A nullable text editor
 
-..  literalinclude:: _Snippets/_Nullable.php
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 22-28
+    :emphasize-lines: 26

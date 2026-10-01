@@ -98,15 +98,10 @@ Code highlight editor
 See :ref:`codeEditor <columns-text-renderType-codeEditor>` on how to configure
 such an editor.
 
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
-    [
-        // ...
-        'type' => 'text',
-        'renderType' => 'codeEditor',
-        // ...
-    ]
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 11-20
+    :emphasize-lines: 16
 
 Backend layout editor
 =====================
