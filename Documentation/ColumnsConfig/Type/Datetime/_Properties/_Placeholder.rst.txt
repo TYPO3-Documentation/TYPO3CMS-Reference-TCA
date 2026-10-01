@@ -6,8 +6,10 @@
 
     Placeholder, containing a default date.
 
-    ..  literalinclude:: _Properties/_PlaceHolder.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+    ..  literalinclude:: /ColumnsConfig/Type/Datetime/_Snippets/_Datetime.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+        :visible-lines: 45-52
+        :emphasize-lines: 49
 
     ..  note::
         As the TCA is cached it is not possible to set dynamic values such as
