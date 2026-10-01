@@ -45,7 +45,7 @@ Common enable fields
 
 ..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
 
-..  _enablefields_usage:
+..  _enablefields-usage:
 
 Enablecolumns / enablefields usage
 ==================================
@@ -53,7 +53,7 @@ Enablecolumns / enablefields usage
 Most ways of retrieving records in the frontend automatically respect the
 :php:`ctrl->enablecolumns` settings:
 
-..  _enablefields_usage-typoscript:
+..  _enablefields-usage-typoscript:
 
 Enablecolumns in TypoScript
 ---------------------------
@@ -63,7 +63,7 @@ Records retrieved in TypoScript via the objects
 automatically respect the settings in section
 :ref:`ctrl->enablecolumns <ctrl-reference-enablecolumns>`.
 
-..  _enablefields_usage-extbase:
+..  _enablefields-usage-extbase:
 
 Enablecolumns / enablefields in Extbase
 ----------------------------------------
@@ -73,7 +73,7 @@ however this behaviour can be disabled by setting
 :php:`$querySettings->setIgnoreEnableFields(true)` in the
 :ref:`repository <t3coreapi:extbase-repository>`.
 
-..  _enablefields_usage-queries:
+..  _enablefields-usage-queries:
 
 Enablecolumns in queries
 -------------------------

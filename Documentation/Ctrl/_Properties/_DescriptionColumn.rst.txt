@@ -1,4 +1,4 @@
-.. _ctrl-reference-descriptionColumn:
+.. _ctrl-reference-descriptioncolumn:
 
 ..  confval:: descriptionColumn
     :name: ctrl-descriptionColumn
@@ -19,7 +19,7 @@
 
     ..  include:: /Ctrl/_CodeSnippets/_AutoCreatedColumns/_AutoCreateWarning.rst.txt
 
-    ..  _ctrl-reference-descriptionColumn-example:
+    ..  _ctrl-reference-descriptioncolumn-example:
 
     ..  rubric:: Example: Create a table that has a description column
 

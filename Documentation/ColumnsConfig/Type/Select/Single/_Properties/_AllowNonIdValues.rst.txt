@@ -1,5 +1,5 @@
 ..  _columns-select-properties-allownonidvalues:
-..  _columns-selectSingle-properties-allownonidvalues:
+..  _columns-selectsingle-properties-allownonidvalues:
 
 ..  confval:: allowNonIdValues
     :name: select-single-allowNonIdValues

@@ -1,4 +1,4 @@
-..  _tca_property_mode:
+..  _tca-property-mode:
 
 ..  confval:: mode
     :name: input-mode

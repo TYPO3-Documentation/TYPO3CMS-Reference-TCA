@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-text-renderType-belayoutwizard:
+..  _columns-text-rendertype-belayoutwizard:
 
 ==============
 belayoutwizard
@@ -21,8 +21,8 @@ syntax representing the page layout in the database.
     :local:
     :depth: 1
 
-..  _tca_example_backend_layout:
-..  _tca_example_text_20:
+..  _tca-example-backend-layout:
+..  _tca-example-text-20:
 
 Example: Backend layout editor
 ==============================
@@ -31,7 +31,7 @@ Example: Backend layout editor
 
 ..  include:: /CodeSnippets/Text20.rst.txt
 
-..  _columns-text-renderType-belayoutwizard-properties:
+..  _columns-text-rendertype-belayoutwizard-properties:
 
 Properties of the TCA column type `text`, render type `belayoutwizard`
 ======================================================================

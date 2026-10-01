@@ -1,4 +1,4 @@
-..  _columns-group-properties-fieldInformation:
+..  _columns-group-properties-fieldinformation:
 
 ..  confval:: fieldInformation
     :name: group-fieldInformation

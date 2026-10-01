@@ -1,12 +1,12 @@
 
-..  _columns-folder-properties-fieldControl:
+..  _columns-folder-properties-fieldcontrol:
 
 
 ..  confval:: fieldControl
     :name: folder-fieldControl
 
     The field of type folder can enable all common
-    :ref:`field control options <tca_property_fieldControl>`. Furthermore the
+    :ref:`field control options <tca-property-fieldcontrol>`. Furthermore the
     following are available:
 
     ..  confval:: elementBrowser

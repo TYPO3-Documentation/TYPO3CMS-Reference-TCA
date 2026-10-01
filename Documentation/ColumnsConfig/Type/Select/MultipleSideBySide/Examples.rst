@@ -2,7 +2,7 @@
 
 ..  include:: /Includes.rst.txt
 
-..  _columns-select-rendertype-selectMultipleSideBySide-examples:
+..  _columns-select-rendertype-selectmultiplesidebyside-examples:
 
 ========================================================
 Advanced examples for multiple side-by-side select boxes
@@ -10,7 +10,7 @@ Advanced examples for multiple side-by-side select boxes
 
 See also: `tca_example_select_multiplesidebyside_1`.
 
-..  _tca_example_select_multiplesidebyside_5:
+..  _tca-example-select-multiplesidebyside-5:
 
 Side-by-side view with filter
 =============================
@@ -19,7 +19,7 @@ Side-by-side view with filter
 
 ..  include:: /CodeSnippets/SelectMultiplesidebyside5.rst.txt
 
-..  _tca_example_select_multiplesidebyside_6:
+..  _tca-example-select-multiplesidebyside-6:
 
 Side-by-side select with field controls
 =======================================
@@ -28,7 +28,7 @@ Side-by-side select with field controls
 
 ..  include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
 
-..  _tca_example_select_multiplesidebyside_8:
+..  _tca-example-select-multiplesidebyside-8:
 
 Using a MM table
 ================

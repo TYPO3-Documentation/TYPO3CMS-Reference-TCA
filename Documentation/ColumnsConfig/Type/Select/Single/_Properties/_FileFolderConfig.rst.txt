@@ -1,14 +1,14 @@
 ..  _columns-select-properties-filefolder:
-..  _columns-select-properties-fileFolderConfig:
+..  _columns-select-properties-filefolderconfig:
 ..  _columns-select-single-properties-filefolder:
-..  _columns-select-single-properties-fileFolderConfig:
-..  _columns-select-single-properties-fileFolderConfig.folder:
+..  _columns-select-single-properties-filefolderconfig:
+..  _columns-select-single-properties-filefolderconfig-folder:
 
 ..  confval:: fileFolderConfig
     :name: select-single-fileFolderConfig
 
     ..  _columns-select-single-properties-filefolder-extlist:
-    ..  _columns-select-single-properties-fileFolderConfig-allowedExtensions:
+    ..  _columns-select-single-properties-filefolderconfig-allowedextensions:
 
     ..  confval:: allowedExtensions
         :name: select-single-fileFolderConfig-allowedExtensions
@@ -23,7 +23,7 @@
         TSconfig<t3tsref:fileFolderConfig>`.
 
     ..  _columns-select-single-properties-filefolder-recursions:
-    ..  _columns-select-single-properties-fileFolderConfig-depth:
+    ..  _columns-select-single-properties-filefolderconfig-depth:
 
     ..  confval:: depth
         :name: select-single-fileFolderConfig-depth

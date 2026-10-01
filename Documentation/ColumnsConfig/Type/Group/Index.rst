@@ -22,8 +22,8 @@ For database relations however, the group field is the right and powerful choice
 with lots of re-usable child records, and if :ref:`type='inline' <columns-inline>` is not suitable.
 
 This type is very flexible in its display options with all its different
-:ref:`fieldControl <columns-group-properties-fieldControl>` and
-:ref:`fieldWizard <tca_property_fieldWizard>` options.
+:ref:`fieldControl <columns-group-properties-fieldcontrol>` and
+:ref:`fieldWizard <tca-property-fieldwizard>` options.
 A lot of them are available by default, however they must be enabled: :php:`'disabled' => 'false'`
 
 Most common usage is to model database relations (n:1 or n:m).

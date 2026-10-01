@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-input-renderType-inputDateTime:
+..  _columns-input-rendertype-inputdatetime:
 ..  _columns-datetime:
 
 ========

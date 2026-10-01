@@ -37,4 +37,4 @@
         the :ref:`default value <columns-select-byside-properties-default>` as well in TCA: :php:`'default' => 0`. Otherwise
         issues may arise, e.g. with MySQL strict mode.
 
-    For example see :ref:`Side-by-side view with filter <tca_example_select_multiplesidebyside_5>`.
+    For example see :ref:`Side-by-side view with filter <tca-example-select-multiplesidebyside-5>`.

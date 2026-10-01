@@ -41,7 +41,7 @@ group
 
 imageManipulation
     :ref:`Json array with cut / cropping information
-    <columns-imageManipulation>`. Special field for images in FAL
+    <columns-imagemanipulation>`. Special field for images in FAL
     / Resource handling.
 
 inline

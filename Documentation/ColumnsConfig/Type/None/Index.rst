@@ -42,7 +42,7 @@ The TYPO3 core makes little or no use of `none` fields itself.
     :depth: 1
 
 ..  _columns-none-examples:
-..  _tca_example_none_1:
+..  _tca-example-none-1:
 
 Example: Simple none field
 ==========================
@@ -54,7 +54,7 @@ Example: Simple none field
 
 ..  _columns-none-properties:
 ..  _columns-none-properties-type:
-..  _columns-none-properties-fieldInformation:
+..  _columns-none-properties-fieldinformation:
 
 Properties of the TCA column type `none`
 ========================================

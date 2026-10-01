@@ -1,4 +1,4 @@
-..  _columns-file-properties-readOnly:
+..  _columns-file-properties-readonly:
 
 ..  confval:: readOnly
     :name: file-readOnly

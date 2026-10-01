@@ -1,7 +1,7 @@
 :navigation-title: itemsProcessors
 
 ..  include:: /Includes.rst.txt
-..  _tca-property-itemsProcessors:
+..  _tca-property-itemsprocessors:
 
 ============================================================================
 itemsProcessors: Processing of items for select, check and radio type fields
@@ -21,7 +21,7 @@ processing steps without replacing existing logic.
 approach. If both `itemsProcFunc` and `itemsProcessors` are configured,
 both are executed. In that case, `itemsProcFunc` is executed first.
 
-..  _tca-property-itemsProcessors-registration:
+..  _tca-property-itemsprocessors-registration:
 
 TCA item processor registration
 ===============================
@@ -34,7 +34,7 @@ TCA item processor registration
 In this example, `SpecialRelationsProcessor2` is executed before
 `SpecialRelationsProcessor`.
 
-..  _tca-property-itemsProcessors-implementation:
+..  _tca-property-itemsprocessors-implementation:
 
 TCA item processor implementation
 =================================

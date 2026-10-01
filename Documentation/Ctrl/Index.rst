@@ -25,7 +25,7 @@ These properties are basically divided into two main categories:
 
     *
 
-..  _tca_example_ctrl_common:
+..  _tca-example-ctrl-common:
 
 Example: Common table control configuration
 ===========================================
