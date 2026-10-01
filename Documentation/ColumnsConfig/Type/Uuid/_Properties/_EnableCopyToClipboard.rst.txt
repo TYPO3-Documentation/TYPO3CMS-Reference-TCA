@@ -1,5 +1,5 @@
 
-..  _columns-uuid-properties-enableCopyToClipboard:
+..  _columns-uuid-properties-enablecopytoclipboard:
 
 ..  confval:: enableCopyToClipboard
     :name: uuid-enableCopyToClipboard

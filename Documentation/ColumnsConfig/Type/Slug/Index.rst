@@ -59,8 +59,8 @@ Sanitation and Validation configuration options apply when persisting a record v
 In the backend forms a validation happens by an AJAX call, which immediately checks any input and receives
 a new proposal in case the slug is already used.
 
-..  _tca_example_slug_2:
-..  _tca_example_pages_slug:
+..  _tca-example-slug-2:
+..  _tca-example-pages-slug:
 
 Example: A basic slug field
 ===========================
@@ -72,7 +72,7 @@ field `input_1` into account for generating the slug.
 
 ..  include:: /CodeSnippets/Slug2.rst.txt
 
-..  _tca_example_slug_1:
+..  _tca-example-slug-1:
 
 Example: A slug field with prefix hook
 ======================================

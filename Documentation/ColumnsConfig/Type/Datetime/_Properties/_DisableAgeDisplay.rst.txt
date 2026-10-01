@@ -1,5 +1,5 @@
-..  _columns-input-properties-disableAgeDisplay:
-..  _columns-datetime-properties-disableAgeDisplay:
+..  _columns-input-properties-disableagedisplay:
+..  _columns-datetime-properties-disableagedisplay:
 
 ..  confval:: disableAgeDisplay
     :name: datetime-disableAgeDisplay

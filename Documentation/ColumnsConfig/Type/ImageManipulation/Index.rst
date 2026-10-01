@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
-..  _columns-imageManipulation:
-..  _columns-imageManipulation-introduction:
+..  _columns-imagemanipulation:
+..  _columns-imagemanipulation-introduction:
 
 ==================
 Image manipulation
@@ -22,7 +22,7 @@ is generated automatically.
     :local:
     :depth: 2
 
-..  _columns-imageManipulation-examples:
+..  _columns-imagemanipulation-examples:
 
 Example: A basic image manipulation field
 =========================================
@@ -34,7 +34,7 @@ Example: A basic image manipulation field
     :visible-lines: 9-15
     :emphasize-lines: 12
 
-..  _columns-imageManipulation-properties:
+..  _columns-imagemanipulation-properties:
 
 Properties of the TCA column type `imageManipulation`
 =====================================================
@@ -94,7 +94,7 @@ default configuration is used:
       ],
     ],
 
-..  _columns-imageManipulation-crop-variants-multiple:
+..  _columns-imagemanipulation-crop-variants-multiple:
 
 Define multiple crop variants
 -----------------------------
@@ -108,7 +108,7 @@ PHP type float, not only a string.
     :visible-lines: 73-106
     :emphasize-lines: 77
 
-..  _columns-imageManipulation-crop-variants-initial:
+..  _columns-imagemanipulation-crop-variants-initial:
 
 Define initial crop area
 ------------------------
@@ -123,7 +123,7 @@ the previous image cropper provided by default.
     :visible-lines: 17-33
     :emphasize-lines: 24
 
-..  _columns-imageManipulation-crop-variants-focusArea:
+..  _columns-imagemanipulation-crop-variants-focusarea:
 
 Add a focus area
 ----------------
@@ -140,7 +140,7 @@ The below example adds a focus area, which is initially one third of the size of
     :visible-lines: 35-51
     :emphasize-lines: 42
 
-..  _columns-imageManipulation-crop-variants-coverAreas:
+..  _columns-imagemanipulation-crop-variants-coverareas:
 
 Define cover areas
 ------------------
@@ -158,7 +158,7 @@ the cover areas.
 The above configuration examples are basically meant to add one single cropping configuration
 to sys_file_reference, which will then apply in every record, which reference images.
 
-..  _columns-imageManipulation-crop-variants-content-element:
+..  _columns-imagemanipulation-crop-variants-content-element:
 
 Configuration per content element
 ---------------------------------
@@ -168,7 +168,7 @@ It is however also possible to provide a configuration per content element, e.g.
 ..  literalinclude:: _Snippets/_overrideCropVariants.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
-..  _columns-imageManipulation-crop-variants-specific-content-element:
+..  _columns-imagemanipulation-crop-variants-specific-content-element:
 
 Define a cropping configuration for a specific content element
 --------------------------------------------------------------
@@ -178,7 +178,7 @@ It is also possible to set the cropping configuration only for a specific conten
 ..  literalinclude:: _Snippets/_overrideCropVariantsCType.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
-..  _columns-imageManipulation-crop-variants-disable:
+..  _columns-imagemanipulation-crop-variants-disable:
 
 Disable a crop variant
 ----------------------
@@ -190,7 +190,7 @@ If however the crop variants have already been overriden in the child TCA, the c
 Because you cannot remove crop variants easily, it is possible to disable them for certain field types by setting the
 array key for a crop variant ``disabled`` to the value ``true``
 
-..  _columns-imageManipulation-crop-variants-allowedAspectRatios:
+..  _columns-imagemanipulation-crop-variants-allowedaspectratios:
 
 Disable an aspect ratio
 -----------------------
@@ -200,7 +200,7 @@ Not only cropVariants but also aspect ratios can be disabled by adding a ``disab
 ..  literalinclude:: _Snippets/_disabledAspectRatioCropVariant.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
-..  _columns-imageManipulation-crop-variants-viewHelper:
+..  _columns-imagemanipulation-crop-variants-viewhelper:
 
 Crop variants in ViewHelpers
 ----------------------------

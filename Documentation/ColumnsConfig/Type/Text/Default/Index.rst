@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-text-renderType-default:
+..  _columns-text-rendertype-default:
 
 ================
 text (multiline)
@@ -25,7 +25,7 @@ is generated automatically.
 Examples for multiline text fields
 ==================================
 
-..  _tca_example_text_4:
+..  _tca-example-text-4:
 
 Multiline plain text area
 -------------------------
@@ -34,7 +34,7 @@ Multiline plain text area
 
 ..  include:: /CodeSnippets/Text4.rst.txt
 
-..  _tca_example_rte_1:
+..  _tca-example-rte-1:
 
 Rich text editor field
 ----------------------

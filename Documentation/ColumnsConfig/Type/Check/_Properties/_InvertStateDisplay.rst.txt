@@ -1,4 +1,4 @@
-..  _columns-check-properties-invertStateDisplay:
+..  _columns-check-properties-invertstatedisplay:
 
 ..  confval:: invertStateDisplay
     :name: check-invertStateDisplay

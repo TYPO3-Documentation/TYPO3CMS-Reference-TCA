@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldInformation_tcaDescription:
+..  _tca-property-fieldinformation-tcadescription:
 
 ==============
 tcaDescription
@@ -25,12 +25,12 @@ translated output. Else it will render the text unmodified.
 
 `tcaDescription` is activated for most of the TYPO3 form elements by default.
 
-..  _tca_property_fieldInformation_tcaDescription_examples:
+..  _tca-property-fieldinformation-tcadescription-examples:
 
 Examples
 ========
 
-..  _tca_property_fieldInformation_tcaDescription_examples_activateTcaDescription:
+..  _tca-property-fieldinformation-tcadescription-examples-activatetcadescription:
 
 Activate tcaDescription
 -----------------------
@@ -43,7 +43,7 @@ rendering of `fieldInformation  <https://docs.typo3.org/permalink/t3tca:confval-
 ..  literalinclude:: /CodeSnippets/Manual/FieldInformationTcaDescription.php
     :caption: EXT:my_extkey/Configuration/TCA/Overrides/pages.php
 
-..  _tca_property_fieldInformation_tcaDescription_examples_renderDescription:
+..  _tca-property-fieldinformation-tcadescription-examples-renderdescription:
 
 Render a description
 --------------------

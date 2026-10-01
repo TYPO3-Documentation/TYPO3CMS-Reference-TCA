@@ -24,7 +24,7 @@ Here "Tu", the second bit, is active by default.
 
 ..  include:: /CodeSnippets/Checkbox16.rst.txt
 
-..  _tca_example_checkbox_7:
+..  _tca-example-checkbox-7:
 
 Example: Checkbox limited to a maximal number of checked records
 ================================================================
@@ -41,7 +41,7 @@ Example: Toggle checkbox with invertStateDisplay
 ..  include:: /CodeSnippets/Checkbox18.rst.txt
 
 
-..  _tca_example_checkbox_3:
+..  _tca-example-checkbox-3:
 
 Example: Three checkboxes, two with labels, one without
 =======================================================
@@ -50,7 +50,7 @@ Example: Three checkboxes, two with labels, one without
 ..  include:: /CodeSnippets/Checkbox3.rst.txt
 
 
-..  _tca_example_checkbox_itemsProcFunc:
+..  _tca-example-checkbox-itemsprocfunc:
 
 Example: Checkboxes with itemsProcFunc
 ======================================
@@ -72,14 +72,14 @@ by filling :php:`$params['items']`:
 In the real world you would use the other passed parameters to dynamically
 generate the items.
 
-..  _tca_example_checkbox_17:
+..  _tca-example-checkbox-17:
 
 Example: checkboxToggle
 =======================
 
 ..  include:: /Images/Rst/Checkbox17.rst.txt
 
-..  _tca_example_checkbox_19:
+..  _tca-example-checkbox-19:
 
 Example: checkboxLabeledToggle
 ==============================
@@ -87,7 +87,7 @@ Example: checkboxLabeledToggle
 ..  include:: /Images/Rst/Checkbox19.rst.txt
 
 
-..  _tca_example_checkbox_8:
+..  _tca-example-checkbox-8:
 
 Example: Only one record can be checked
 =======================================

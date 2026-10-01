@@ -65,7 +65,7 @@ This field is found in a number of tables, for instance the "pages" table. It is
     ],
 
 ..  _columns-passthrough-properties:
-..  _columns-passthrough-renderType-default:
+..  _columns-passthrough-rendertype-default:
 ..  _columns-passthrough-properties-type:
 ..  _columns-passthrough-properties-default:
 
@@ -73,4 +73,4 @@ This field is found in a number of tables, for instance the "pages" table. It is
 Properties of the TCA column type `passthrough`
 ===============================================
 
-*   :ref:`default <tca_property_default>`
+*   :ref:`default <tca-property-default>`

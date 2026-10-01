@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
-..  _columns-text-renderType-codeEditor:
-..  _columns-text-renderType-t3editor:
+..  _columns-text-rendertype-codeeditor:
+..  _columns-text-rendertype-t3editor:
 
 ==================================
 codeEditor (previously "t3editor")
@@ -14,7 +14,7 @@ codeEditor (previously "t3editor")
     `codeEditor`.
 
     A TCA migration from the old value to the new one is in place. See also
-    :ref:`Migration from render type t3editor to render type codeEditor <columns-text-renderType-codeEditor-migration>`.
+    :ref:`Migration from render type t3editor to render type codeEditor <columns-text-rendertype-codeeditor-migration>`.
 
 This page describes the :ref:`text <columns-text>` type with the
 `renderType='codeEditor'`.
@@ -33,8 +33,8 @@ add syntax highlighting to textarea fields for several languages.
     :local:
     :depth: 1
 
-..  _tca_example_codeEditor_1:
-..  _tca_example_t3editor_1:
+..  _tca-example-codeeditor-1:
+..  _tca-example-t3editor-1:
 
 Example: Code highlighting with code editor
 ===========================================
@@ -50,7 +50,7 @@ Example: Code highlighting with code editor
     :visible-lines: 11-20
     :emphasize-lines: 17
 
-..  _columns-text-renderType-codeEditor-properties:
+..  _columns-text-rendertype-codeeditor-properties:
 
 Properties of the TCA column type `text`, render type `codeEditor`
 ==================================================================
@@ -64,7 +64,7 @@ Properties of the TCA column type `text`, render type `codeEditor`
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
-..  _columns-text-renderType-codeEditor-migration:
+..  _columns-text-rendertype-codeeditor-migration:
 
 Migration from render type `t3editor` to render type `codeEditor`
 =================================================================

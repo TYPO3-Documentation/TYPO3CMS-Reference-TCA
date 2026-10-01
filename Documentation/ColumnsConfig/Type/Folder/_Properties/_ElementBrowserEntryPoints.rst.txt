@@ -1,4 +1,4 @@
-..  _columns-folder-properties-elementBrowserEntryPoints:
+..  _columns-folder-properties-elementbrowserentrypoints:
 
 ..  confval:: elementBrowserEntryPoints
     :name: folder-elementBrowserEntryPoints

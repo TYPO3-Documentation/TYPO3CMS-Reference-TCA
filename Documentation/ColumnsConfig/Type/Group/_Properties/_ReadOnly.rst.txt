@@ -1,4 +1,4 @@
-..  _columns-group-properties-readOnly:
+..  _columns-group-properties-readonly:
 
 ..  confval:: readOnly
     :name: group-readOnly

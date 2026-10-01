@@ -2,7 +2,7 @@
 
 ..  _columns-input:
 ..  _columns-input-introduction:
-..  _columns-input-renderType-default:
+..  _columns-input-rendertype-default:
 
 =====
 Input
@@ -10,7 +10,7 @@ Input
 
 `type='input'` generates a html :html:`<input>` field with the :html:`type`
 attribute set to :html:`text`. It is possible to apply additional features such
-as the :ref:`valuePicker <columns-input-properties-valuePicker>`.
+as the :ref:`valuePicker <columns-input-properties-valuepicker>`.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically. For short input fields allowing less
@@ -34,7 +34,7 @@ do so by defining something specific in :file:`ext_tables.sql`.
 Examples
 ========
 
-..  _tca_example_input_1:
+..  _tca-example-input-1:
 
 Simple input field
 ------------------
@@ -50,7 +50,7 @@ Input with placeholder and null handling
 
 ..  include:: /CodeSnippets/Input28.rst.txt
 
-..  _tca_example_input_33:
+..  _tca-example-input-33:
 
 Value picker
 ------------

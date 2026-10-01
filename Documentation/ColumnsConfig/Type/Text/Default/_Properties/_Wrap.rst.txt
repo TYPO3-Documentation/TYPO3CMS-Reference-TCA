@@ -5,8 +5,8 @@
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['wrap']
     :type: string (keyword)
     :Scope: Display
-    :RenderType: :ref:`textTable <columns-text-renderType-textTable>`,
-        :ref:`default <columns-text-renderType-default>`
+    :RenderType: :ref:`textTable <columns-text-rendertype-texttable>`,
+        :ref:`default <columns-text-rendertype-default>`
 
     Determines the wrapping of the textarea field. Does not apply to RTE fields. There are two options:
 
@@ -19,7 +19,7 @@
 
 ..  rubric:: Examples
 
-..  _tca_example_text_5:
+..  _tca-example-text-5:
 
 Textarea with no wrapping
 -------------------------
@@ -29,7 +29,7 @@ Textarea with no wrapping
 ..  include:: /CodeSnippets/Text5.rst.txt
 
 
-..  _tca_example_text_6:
+..  _tca-example-text-6:
 
 Textarea with virtual wrapping
 ------------------------------

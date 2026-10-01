@@ -1,4 +1,4 @@
-..  _columns-group-properties-hideSuggest:
+..  _columns-group-properties-hidesuggest:
 
 ..  confval:: hideSuggest
     :name: group-hideSuggest
@@ -11,11 +11,11 @@
 
     The syntax for the search is: `"multiple words" something`, so you can enclose words you want to find next to each other in double quotes.
 
-    A :ref:`set of options <columns-group-properties-suggestOptions>` is available to configure search details.
+    A :ref:`set of options <columns-group-properties-suggestoptions>` is available to configure search details.
 
     Setting this property to `true` disables the suggest wizard.
 
-..  _tca_example_group_db_11:
+..  _tca-example-group-db-11:
 
 ..  rubric:: Example: Suggest wizard is hidden
 
@@ -23,7 +23,7 @@
 
 ..  include:: /CodeSnippets/GroupDb11.rst.txt
 
-..  _tca_example_group_db_8:
+..  _tca-example-group-db-8:
 
 ..  rubric:: Example: Suggest wizard is shown
 

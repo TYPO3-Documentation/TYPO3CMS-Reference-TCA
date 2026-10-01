@@ -1,13 +1,13 @@
 ..  include:: /Includes.rst.txt
 
-..  _tca_examples:
+..  _tca-examples:
 
 ==================
 About the examples
 ==================
 
 
-..  _tca_examples_extension_styleguide:
+..  _tca-examples-extension-styleguide:
 
 Extension styleguide
 ====================
@@ -19,7 +19,7 @@ are examples with different properties set to different values.
 Read here about how to :ref:`install and use the styleguide extension
 <styleguide>`.
 
-..  _tca_examples_extension_examples:
+..  _tca-examples-extension-examples:
 
 Extension examples
 ==================
@@ -37,7 +37,7 @@ The extension :file:`examples` can be installed via composer:
 It can also be downloaded from the :t3ext:`TYPO3 extension repository <examples>`.
 
 
-..  _tca_examples_core:
+..  _tca-examples-core:
 
 Examples from the TYPO3 Core
 ============================

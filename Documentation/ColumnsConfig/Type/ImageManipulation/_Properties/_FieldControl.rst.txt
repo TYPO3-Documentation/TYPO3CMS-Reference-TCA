@@ -1,12 +1,12 @@
 
-..  _columns-imageManipulation-properties-fieldControl:
+..  _columns-imagemanipulation-properties-fieldcontrol:
 
 
 ..  confval:: fieldControl
     :name: imageManipulation-fieldControl
 
     The field of type imageManipulation can enable all common
-    :ref:`field control options <tca_property_fieldControl>`. Furthermore the
+    :ref:`field control options <tca-property-fieldcontrol>`. Furthermore the
     following are available:
 
     ..  confval:: elementBrowser

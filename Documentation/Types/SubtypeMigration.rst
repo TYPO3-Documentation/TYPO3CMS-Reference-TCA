@@ -79,7 +79,7 @@ that used the subtype, here all events with `event_format` set to
 `online`, to the new record type `online_event`. Then drop the subtype
 column.
 
-..  _types-example-previewRenderer-for-subtype:
+..  _types-example-previewrenderer-for-subtype:
 ..  _migration-subtype-previewrenderer:
 
 Migration: PreviewRenderer for subtypes

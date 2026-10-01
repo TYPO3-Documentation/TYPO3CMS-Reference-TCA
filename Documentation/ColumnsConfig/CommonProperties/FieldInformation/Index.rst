@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldInformation:
+..  _tca-property-fieldinformation:
 
 ================
 fieldInformation
@@ -23,7 +23,7 @@ Currently, TYPO3 comes with following implemented `fieldInformation` nodes:
 
     TcaDescription
 
-..  _tca_property_fieldInformation_example:
+..  _tca-property-fieldinformation-example:
 
 Example
 =======

@@ -1,4 +1,4 @@
-..  _tca_property_search:
+..  _tca-property-search:
 
 ..  confval:: search
     :name: input-search

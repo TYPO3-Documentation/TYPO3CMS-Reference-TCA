@@ -23,7 +23,7 @@
     in the relation.
 
     Please have a look into the additional information
-    in the :ref:`MM common property description <tca_property_MM>`.
+    in the :ref:`MM common property description <tca-property-mm>`.
 
     The table name used in the field `MM` should be unique. It must be a
     valid SQL table name. It is best practise to use the name of both

@@ -1,4 +1,4 @@
-..  _columns-text-properties-enableTabulator:
+..  _columns-text-properties-enabletabulator:
 
 ..  confval:: enableTabulator
     :name: text-enableTabulator
@@ -7,12 +7,12 @@
     :Scope: Display
 
     Enabling this allows to use tabs in a text field. This works well together with
-    :ref:`fixed-width fonts <columns-text-properties-fixedFont>` (monospace)
+    :ref:`fixed-width fonts <columns-text-properties-fixedfont>` (monospace)
     for code editing.
 
     Does not apply to RTE fields.
 
-..  _tca_example_text_15:
+..  _tca-example-text-15:
 
 ..  rubric:: Example: Fixed font field with tabulators enabled
 

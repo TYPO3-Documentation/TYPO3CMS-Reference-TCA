@@ -1,5 +1,5 @@
-..  _types-example-previewRenderer:
-..  _types-example-previewRenderer-for-type:
+..  _types-example-previewrenderer:
+..  _types-example-previewrenderer-for-type:
 
 PreviewRenderer examples
 ------------------------

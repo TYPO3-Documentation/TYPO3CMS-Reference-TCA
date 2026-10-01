@@ -1,4 +1,4 @@
-..  _columns-number-properties-valuePicker:
+..  _columns-number-properties-valuepicker:
 
 ..  confval:: valuePicker
     :name: number-valuePicker

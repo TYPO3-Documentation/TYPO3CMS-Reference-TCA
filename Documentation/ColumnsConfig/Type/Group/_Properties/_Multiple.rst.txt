@@ -1,5 +1,5 @@
 ..  _columns-group-properties-multiple:
-..  _tca_property_multiple:
+..  _tca-property-multiple:
 
 ..  confval:: multiple
     :name: group-multiple

@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _columns-select-rendertype-selectSingleBox:
+..  _columns-select-rendertype-selectsinglebox:
 
 ========================================
 Select multiple values (selectSingleBox)
@@ -22,7 +22,7 @@ is generated automatically.
     :local:
     :depth: 1
 
-..  _tca_example_select_singlebox_1:
+..  _tca-example-select-singlebox-1:
 
 Example: Select multiple values from a box
 ==========================================
@@ -32,7 +32,7 @@ Example: Select multiple values from a box
 ..  include:: /CodeSnippets/SelectSinglebox1.rst.txt
 
 
-..  _columns-select-selectSingleBox-properties:
+..  _columns-select-selectsinglebox-properties:
 
 Properties of the TCA column type `select` with renderType `selectSingleBox`
 ============================================================================

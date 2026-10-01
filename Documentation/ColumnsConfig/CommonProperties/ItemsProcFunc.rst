@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_itemsProcFunc:
+..  _tca-property-itemsprocfunc:
 
 =============
 itemsProcFunc
