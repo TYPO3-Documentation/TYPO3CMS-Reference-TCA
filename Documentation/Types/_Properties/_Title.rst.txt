@@ -5,9 +5,10 @@
     :Scope: Display
 
     ..  versionadded:: 14.0
-        It is now possible to define a type-specific `title` in the TCA
-        `types` section. See also
-        `Feature: #108027 - Type-specific title in TCA types section <https://docs.typo3.org/permalink/changelog:feature-108027-1762779249>`_.
+        :changelog: feature-108027-1762779249
+
+        It is now possible to define a type-specific `title` in the TCA `types`
+        section.
 
     The `title` in the TCA `types` section defines a type specific title that
     is displayed in the backend when creating or editing a record of that type.

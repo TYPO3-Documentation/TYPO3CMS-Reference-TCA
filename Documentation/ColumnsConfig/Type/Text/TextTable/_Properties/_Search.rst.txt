@@ -1,4 +1,5 @@
 ..  versionchanged:: 14.0
+    :changelog: breaking-106976-1750865819
 
     The following TCA field  level search configuration options have been
     **removed**:
@@ -8,5 +9,3 @@
     * `search.andWhere`
 
     They have not been supported by the Core or common Extensions.
-
-    See: `Breaking: #106976 - Removal of TCA search field configuration options <https://docs.typo3.org/permalink/changelog:breaking-106976-1750865819>`_

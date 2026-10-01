@@ -10,10 +10,11 @@
     item is selected, the value replaces the current input value.
 
     ..  versionchanged:: 14.0
-        The `mode` option no longer supports `append` or
-        `prepend`. Value Picker always behaves like a replace operation.
-        Any legacy `mode` setting is ignored. See also
-        `Breaking: #107677 - Drop prepend and append modes from TCA Value Picker <https://docs.typo3.org/permalink/changelog:breaking-107677-1760339783>`_.
+        :changelog: breaking-107677-1760339783
+
+        The `mode` option no longer supports `append` or `prepend`. Value Picker
+        always behaves like a replace operation. Any legacy `mode` setting is
+        ignored.
 
         It is now recommended to define associative array keys for the
         `items` configuration of the TCA configuration `valuePicker`.

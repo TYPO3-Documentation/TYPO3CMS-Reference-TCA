@@ -9,14 +9,14 @@ tcaDescription
 ==============
 
 ..  deprecated:: 14.2
+    :changelog: deprecation-109280-1742109280
+
     The `TcaDescription` field information render type has been deprecated.
     Field descriptions configured via `['columns']['my_field']['description'] <https://docs.typo3.org/permalink/t3tca:confval-columns-description>`_
     are now rendered automatically next to the field label.
 
     Remove any explicit `tcaDescription` field information configuration from
     TCA when dropping TYPO3 13.4 support.
-
-    See `Deprecation: #109280 - FormEngine TcaDescription fieldInformation <https://docs.typo3.org/permalink/changelog:deprecation-109280-1742109280>`_
 
 ..  confval:: tcaDescription
     :name: fieldInformation-tcaDescription

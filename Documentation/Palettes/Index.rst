@@ -7,14 +7,14 @@ Grouping fields (palettes)
 ==========================
 
 ..  versionchanged:: 14.0
+    :changelog: breaking-107789-1729603200
+
     TYPO3 Core TCA configurations have been updated to use short form
     translation reference formats (for example `core.form.tabs:*`) instead of
     the full `LLL:EXT:` path format in `showitem` strings.
 
     Custom extensions that programmatically manipulate TCA `showitem` strings
     from core tables and expect the full `LLL:EXT:` path format will break.
-
-    See also: `Breaking: #107789 - Core TCA showitem strings use short form references <https://docs.typo3.org/permalink/changelog:breaking-107789-1729603200>`_.
 
 If editing records in the backend, all fields are usually displayed after each
 other in single rows. Palettes provide a way to display multiple fields next
