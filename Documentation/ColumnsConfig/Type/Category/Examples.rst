@@ -14,8 +14,10 @@ Simple category field
 In the following example a category tree is displayed and multiple categories
 can be selected.
 
-..  literalinclude:: _Snippets/_CategorySimple.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
+..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+    :visible-lines: 7-13
+    :emphasize-lines: 11
 
 The relationship gets stored in the intermediate table
 `sys_category_record_mm`. Category counts are only stored on the
@@ -29,8 +31,10 @@ One to one relation category field
 In the following example a category tree is displayed, but only one
 category can be selected.
 
-..  literalinclude:: _Snippets/_CategoryOneTo.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/someTable.php
+..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+    :visible-lines: 7, 14-20
+    :emphasize-lines: 18
 
 ..  _columns-category-flexform-example:
 

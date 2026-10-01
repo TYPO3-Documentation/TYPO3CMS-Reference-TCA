@@ -2,20 +2,17 @@
 
 return [
   'ctrl' => [
-    'title' => 'My workspace aware child',
+    'title' => 'Something',
     'label' => 'title',
-    'versioningWS' => true,
+    'security' => [
+      'ignorePageTypeRestriction' => true,
+    ],
   ],
   'columns' => [
     'title' => [
       'label' => 'Title',
       'config' => [
         'type' => 'input',
-      ],
-    ],
-    'parentid' => [
-      'config' => [
-        'type' => 'passthrough',
       ],
     ],
   ],

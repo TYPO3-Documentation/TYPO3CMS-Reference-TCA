@@ -17,7 +17,10 @@ table to have two fields of type "inline", one called "employees" and one called
 "persons". Then you could use a (hidden) field called "role" on the child (person) table to keep them apart.
 The match TCA configuration of the parent table would then look like this:
 
-..  literalinclude:: _Snippets/_foreign_match_fields.php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_foreign_match_fields.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_company.php
+    :visible-lines: 16-38
+    :emphasize-lines: 22, 34
 
 If the match field is made editable, for instance as a select drop-down of two values, the the relation would
 switch between the two parent fields after change an save. Imagine a user record having "open" and "closed" issues
