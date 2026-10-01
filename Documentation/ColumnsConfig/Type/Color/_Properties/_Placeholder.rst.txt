@@ -6,4 +6,7 @@
 
     Placeholder, containing a hexadecimal color representation.
 
-    ..  literalinclude:: _Properties/_PlaceHolder.php
+    ..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+        :visible-lines: 24-31
+        :emphasize-lines: 28
