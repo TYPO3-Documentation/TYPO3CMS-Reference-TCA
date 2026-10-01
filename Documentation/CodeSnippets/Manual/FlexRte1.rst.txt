@@ -1,6 +1,6 @@
 
 .. code-block:: xml
-   :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php
+   :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php (excerpt)
 
    <rte_1>
       <label>rte_1</label>
