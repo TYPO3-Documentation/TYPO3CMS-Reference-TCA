@@ -29,5 +29,7 @@
 
 ..  rubric:: Example
 
-..  literalinclude:: _Properties/_ValuePicker.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/some_table.php
+..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 41-54
+    :emphasize-lines: 46

@@ -48,8 +48,10 @@ Example: A simple date field, stored as bigint
 
 A simple date field, stored as :sql:`bigint` in the database:
 
-..  literalinclude:: _Snippets/_datefield.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+..  literalinclude:: /ColumnsConfig/Type/Datetime/_Snippets/_Datetime.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 9-16
+    :emphasize-lines: 13
 
 
 ..  _columns-datetimesec-example:
@@ -59,8 +61,10 @@ Example: A simple date field with seconds
 
 A simple date field, formated with `datetimesec`.
 
-..  literalinclude:: _Snippets/_datetimesec.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/some-table.php
+..  literalinclude:: /ColumnsConfig/Type/Datetime/_Snippets/_Datetime.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 18-28
+    :emphasize-lines: 22
 
 
 ..  _columns-datetime-properties:

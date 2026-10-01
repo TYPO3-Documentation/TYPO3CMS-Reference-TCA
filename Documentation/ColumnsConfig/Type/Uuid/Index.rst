@@ -37,8 +37,10 @@ Example
 
 An example configuration looks like the following:
 
-..  literalinclude:: _Snippets/_basic.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/Uuid/_Snippets/_basic.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    :visible-lines: 16-22
+    :emphasize-lines: 19
 
 ..  _columns-uuid-properties:
 

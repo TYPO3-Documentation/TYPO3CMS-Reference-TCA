@@ -81,15 +81,8 @@
         A config array to provide regex based definitions for string replacement.
         Case-insensitive and wildcard replacement is possible.
 
-        ..  code-block:: php
-            :caption: Example
-
-            $GLOBALS['TCA']['mytable']['columns']['slug']['config']['generatorOptions']['regexReplacements'] = [
-                  '/foo/i' => 'bar', // case-insensitive replacement of Foo, foo, FOO,... with "bar", ignoring case
-                  '/\(.*\)/' => '',  // Remove string in parentheses
-                  '@\(.*\)@' => '',  // Remove string in parentheses with custom regex delimiter
-               ],
-            ];
+        ..  literalinclude:: /ColumnsConfig/Type/Slug/_Snippets/_RegexReplacements.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_product.php
 
             .. note::
 
@@ -133,7 +126,7 @@
         The `pages` table replaces a slash in the page title with `-`:
 
         ..  code-block:: php
-            :caption: Configuration/TCA/pages.php of EXT:core
+            :caption: EXT:core/Configuration/TCA/pages.php (excerpt)
 
             'replacements' => [
               '/' => '-',
@@ -159,39 +152,33 @@
         The "slug" TCA type includes a possibility to hook into the generation of a
         slug via custom TCA generation options.
 
-        Hooks can be registered via:
+        A hook is registered as `<class name>-><method name>`, for example for
+        the slug of the `pages` table:
 
-        ..  code-block:: php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/table.php
-
-            $GLOBALS['TCA'][$tableName]['columns'][$fieldName]['config']['generatorOptions']['postModifiers'][]
-                = MyClass::class . '->method';
-
-        Consider :php:`$tableName = 'pages'` and :php:`$fieldName = 'slug'`
-        inside :file:`EXT:my_extension/Configuration/TCA/Overrides/pages.php`:
-
-        ..  code-block:: php
+        ..  literalinclude:: /ColumnsConfig/Type/Slug/_Snippets/_PostModifiers.php
             :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
 
-            $GLOBALS['TCA']['pages']['columns']['slug']['config']['generatorOptions']['postModifiers'][] =
-                MyClass::class . '->modifySlug';
+        The method receives an array with the following keys:
 
-        The method then receives an parameter array with the following values
+        `slug`
+            The slug to be used
+        `workspaceId`
+            The workspace ID, `0` in the live workspace
+        `configuration`
+            The configuration of the TCA field
+        `record`
+            The full record to be used
+        `pid`
+            The resolved parent page ID
+        `prefix`
+            The prefix that was added
+        `tableName`
+            The table of the slug field
+        `fieldName`
+            The name of the slug field
 
-        .. todo:: the syntax is strange here?
-
-        ..  code-block:: plaintext
-
-            [
-                'slug', // ...  the slug to be used
-                'workspaceId', // ...  the workspace ID, "0" if in live workspace
-                'configuration', // ...  the configuration of the TCA field
-                'record', // ...  the full record to be used
-                'pid', // ...  the resolved parent page ID
-                'prefix', // ...  the prefix that was added
-                'tableName', // ...  the table of the slug field
-                'fieldName', // ...  the field name of the slug field
-          ];
+        ..  literalinclude:: /ColumnsConfig/Type/Slug/_Snippets/_SlugModifier.php
+            :caption: EXT:my_extension/Classes/Slug/SlugModifier.php
 
         All hooks need to return the modified slug value.
 
