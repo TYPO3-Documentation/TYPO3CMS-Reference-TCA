@@ -25,4 +25,7 @@
 
 ..  rubric:: Example: A link field with value picker
 
-..  literalinclude:: _Snippets/_valuePicker.php
+..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 166-185
+    :emphasize-lines: 171
