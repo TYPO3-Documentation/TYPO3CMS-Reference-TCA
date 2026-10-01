@@ -28,5 +28,5 @@
         This property does not tell the whole story. If set to "0" or "-1", it allows records from the table in the
         page tree, but **not** on any kind of page. By default records can be created only in "Folder"-type pages.
         To enable the creation of records on any kind of page,
-        :ref:`ignorePageTypeRestriction <ctrl-security-ignorePageTypeRestriction>`
+        :ref:`ignorePageTypeRestriction <ctrl-security-ignorepagetyperestriction>`
         must be used.

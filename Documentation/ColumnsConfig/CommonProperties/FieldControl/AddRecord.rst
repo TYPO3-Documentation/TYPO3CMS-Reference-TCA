@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldControl_addRecord:
+..  _tca-property-fieldcontrol-addrecord:
 
 =========
 addRecord

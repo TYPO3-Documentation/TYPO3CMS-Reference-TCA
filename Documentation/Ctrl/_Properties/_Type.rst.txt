@@ -27,7 +27,7 @@
 
    Only one type field can be defined. If you need to reload the record on
    changing another field, see
-   :ref:`property onchange <columns-properties-onChange>`.
+   :ref:`property onchange <columns-properties-onchange>`.
 
    It is also possible to make the type depend on the value of a related record,
    for example to switch using the type field of a

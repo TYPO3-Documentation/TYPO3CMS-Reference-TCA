@@ -25,7 +25,7 @@ is generated automatically.
     :depth: 1
 
 ..  _columns-file-examples:
-..  _tca_example_group_file_1:
+..  _tca-example-group-file-1:
 
 Example
 =======

@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-input-renderType-colorpicker:
+..  _columns-input-rendertype-colorpicker:
 ..  _columns-color:
 
 =====

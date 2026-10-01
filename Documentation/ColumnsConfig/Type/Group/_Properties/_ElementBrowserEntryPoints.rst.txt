@@ -1,4 +1,4 @@
-..  _columns-group-properties-elementBrowserEntryPoints:
+..  _columns-group-properties-elementbrowserentrypoints:
 
 ..  confval:: elementBrowserEntryPoints
     :name: group-elementBrowserEntryPoints

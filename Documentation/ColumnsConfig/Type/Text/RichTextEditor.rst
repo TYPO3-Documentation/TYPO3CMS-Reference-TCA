@@ -22,7 +22,7 @@ option :confval:`text-enableRichtext` enabled.
 Examples for Rich text editor fields in the TYPO3 Backend
 =========================================================
 
-..  _tca_example_rte_4:
+..  _tca-example-rte-4:
 
 RTE with minimal configuration
 ------------------------------
@@ -31,7 +31,7 @@ RTE with minimal configuration
 
 ..  include:: /CodeSnippets/Rte4.rst.txt
 
-..  _tca_example_rte_5:
+..  _tca-example-rte-5:
 
 RTE with full configuration
 ---------------------------
@@ -40,7 +40,7 @@ RTE with full configuration
 
 ..  include:: /CodeSnippets/Rte5.rst.txt
 
-..  _tca_example_rte_2-2:
+..  _tca-example-rte-2-2:
 
 RTE with default configuration
 ------------------------------

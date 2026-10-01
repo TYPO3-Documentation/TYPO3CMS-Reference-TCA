@@ -2,7 +2,7 @@
 ..  _ctrl-security:
 ..  _ctrl-security-ignorewebmountrestriction:
 ..  _ctrl-security-ignorerootlevelrestriction:
-..  _ctrl-security-ignorePageTypeRestriction:
+..  _ctrl-security-ignorepagetyperestriction:
 
 ..  confval:: security
     :name: ctrl-security

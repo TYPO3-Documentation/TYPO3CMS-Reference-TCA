@@ -1,12 +1,12 @@
 ..  _columns-select-checkbox-properties-filefolder:
-..  _columns-select-checkbox-properties-fileFolderConfig:
-..  _columns-select-checkbox-properties-fileFolderConfig.folder:
+..  _columns-select-checkbox-properties-filefolderconfig:
+..  _columns-select-checkbox-properties-filefolderconfig-folder:
 
 ..  confval:: fileFolderConfig
     :name: select-checkbox-fileFolderConfig
 
     ..  _columns-select-checkbox-properties-filefolder-extlist:
-    ..  _columns-select-checkbox-properties-fileFolderConfig-allowedExtensions:
+    ..  _columns-select-checkbox-properties-filefolderconfig-allowedextensions:
 
     ..  confval:: allowedExtensions
         :name: select-checkbox-fileFolderConfig-allowedExtensions
@@ -21,7 +21,7 @@
         TSconfig<t3tsref:fileFolderConfig>`.
 
     ..  _columns-select-checkbox-properties-filefolder-recursions:
-    ..  _columns-select-checkbox-properties-fileFolderConfig-depth:
+    ..  _columns-select-checkbox-properties-filefolderconfig-depth:
 
     ..  confval:: depth
         :name: select-checkbox-fileFolderConfig-depth

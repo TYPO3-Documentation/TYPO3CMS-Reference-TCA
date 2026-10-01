@@ -1,4 +1,4 @@
-..  _tca_property_placeholder:
+..  _tca-property-placeholder:
 
 ..  confval:: placeholder
     :name: input-placeholder

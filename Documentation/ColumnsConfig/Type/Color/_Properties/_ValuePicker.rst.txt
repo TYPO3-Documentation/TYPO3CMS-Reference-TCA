@@ -1,4 +1,4 @@
-..  _columns-color-properties-valuePicker:
+..  _columns-color-properties-valuepicker:
 
 ..  confval:: valuePicker
     :name: color-valuePicker

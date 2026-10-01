@@ -18,7 +18,7 @@
     ..  note::
 
         Do not confuse the filter values with the page tree selector on the left side. To change the entry page in the navigation
-        use :ref:`elementBrowserEntryPoints <columns-group-properties-elementBrowserEntryPoints>` instead.
+        use :ref:`elementBrowserEntryPoints <columns-group-properties-elementbrowserentrypoints>` instead.
 
     Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied:
 

@@ -1,12 +1,12 @@
 ..  _columns-select-byside-properties-filefolder:
-..  _columns-select-byside-properties-fileFolderConfig:
-..  _columns-select-byside-properties-fileFolderConfig.folder:
+..  _columns-select-byside-properties-filefolderconfig:
+..  _columns-select-byside-properties-filefolderconfig-folder:
 
 ..  confval:: fileFolderConfig
     :name: select-byside-fileFolderConfig
 
     ..  _columns-select-byside-properties-filefolder-extlist:
-    ..  _columns-select-byside-properties-fileFolderConfig-allowedExtensions:
+    ..  _columns-select-byside-properties-filefolderconfig-allowedextensions:
 
     ..  confval:: allowedExtensions
         :name: select-byside-fileFolderConfig-allowedExtensions
@@ -21,7 +21,7 @@
         TSconfig<t3tsref:fileFolderConfig>`.
 
     ..  _columns-select-byside-properties-filefolder-recursions:
-    ..  _columns-select-byside-properties-fileFolderConfig-depth:
+    ..  _columns-select-byside-properties-filefolderconfig-depth:
 
     ..  confval:: depth
         :name: select-byside-fileFolderConfig-depth

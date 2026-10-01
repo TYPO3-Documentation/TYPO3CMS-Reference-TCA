@@ -1,4 +1,4 @@
-..  _columns-file-properties-fieldInformation:
+..  _columns-file-properties-fieldinformation:
 
 ..  confval:: fieldInformation
     :name: file-fieldInformation

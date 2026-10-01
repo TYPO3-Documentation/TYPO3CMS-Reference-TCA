@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _fields_language:
+..  _fields-language:
 
 ===============
 Language fields
@@ -18,12 +18,12 @@ in the TCA and added to the database automatically. It is
 not recommended to define them in the TCA overrides or :file:`ext_tables.sql`. Doing so
 with incompatible settings can lead to problems later on.
 
-..  _fields_language-fields:
+..  _fields-language-fields:
 
 Language fields in detail
 =========================
 
-..  _field-sys_language_uid:
+..  _field-sys-language-uid:
 
 `sys_language_uid`
     This field gets defined in
@@ -32,7 +32,7 @@ Language fields in detail
 
     ..  include:: /Images/Rst/SysLanguageUid.rst.txt
 
-..  _field-l10n_parent:
+..  _field-l10n-parent:
 
 `l10n_parent`
     This field gets defined in
@@ -49,11 +49,11 @@ Language fields in detail
         Sometimes `l18n_parent` is used for this field in Core tables. This
         is for historic reasons.
 
-..  _field-l10n_source:
+..  _field-l10n-source:
 
 `l10n_source`
     This field gets defined in
-    :ref:`ctrl->translationSource <ctrl-reference-translationSource>`.
+    :ref:`ctrl->translationSource <ctrl-reference-translationsource>`.
 
     This field contains the uid of the record the translation was created from.
     For example if your default language is English and you already translated a
@@ -61,7 +61,7 @@ Language fields in detail
     record. In this case `l10n_parent` would contain the uid of the English
     record while `l10n_source` contains the uid of the German record.
 
-..  _field-l10n_diffsource:
+..  _field-l10n-diffsource:
 
 `l10n_diffsource`
     This field gets defined in
@@ -76,7 +76,7 @@ Language fields in detail
         Sometimes `l18n_diffsource` is used for this field in Core tables. This
         has historic reasons.
 
-..  _fields_language-example:
+..  _fields-language-example:
 
 Example: Enable table for localization and translation:
 =======================================================

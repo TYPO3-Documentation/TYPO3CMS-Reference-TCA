@@ -18,7 +18,7 @@ The following examples all can be found in the
     Styleguide; select_single_12
     pair: selectSingle; Images
 
-..  _columns-example-drop down:
+..  _columns-example-drop-down:
 
 Select drop-down for records represented by images
 ==================================================
@@ -34,7 +34,7 @@ follows:
 
 ..  include:: /CodeSnippets/Manual/SelectSingle12ForeignPart.rst.txt
 
-..  _tca_example_inline_1n1n_inline_1:
+..  _tca-example-inline-1n1n-inline-1:
 
 Inline relation (IRRE) spanning multiple tables
 ===============================================
@@ -45,7 +45,7 @@ Inline relation to a foreign table:
 
 ..  include:: /CodeSnippets/Inline1n1nInline1.rst.txt
 
-..  _tca_example_translated_text_2:
+..  _tca-example-translated-text-2:
 
 Example: prefixLangTitle
 ========================
@@ -61,7 +61,7 @@ The language mode is defined as follows:
 
 ..  include:: /CodeSnippets/TranslatedText2.rst.txt
 
-..  _tca_example_l10n_mode:
+..  _tca-example-l10n-mode:
 
 Disable the prefixLangTitle for the header field in tt_content
 ==============================================================
@@ -74,7 +74,7 @@ be copied without a prepended string.
 
     $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = '';
 
-..  _tca_example_translated_select_single_13:
+..  _tca-example-translated-select-single-13:
 
 Select field with `defaultAsReadonly`
 =====================================
@@ -88,7 +88,7 @@ Complete TCA definition of the field:
 
 ..  include:: /CodeSnippets/SelectSingle13.rst.txt
 
-..  _tca_example_translated_select_single_8:
+..  _tca-example-translated-select-single-8:
 
 Translated field without `l10n_display` definition
 ==================================================

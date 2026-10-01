@@ -6,7 +6,7 @@
 Default checkbox
 ================
 
-The checkbox with :ref:`renderType check <columns-check-properties-renderType>`
+The checkbox with :ref:`renderType check <columns-check-properties-rendertype>`
 is typically a single checkbox or a group of checkboxes.
 
 Its state can be inverted via `invertStateDisplay`.
@@ -19,9 +19,9 @@ Examples
 --------
 
 All examples listed here can be found in the :ref:`extension styleguide
-<tca_examples_extension_styleguide>`.
+<tca-examples-extension-styleguide>`.
 
-..  _tca_example_checkbox_2:
+..  _tca-example-checkbox-2:
 
 Example: Simple checkbox with label
 -----------------------------------
@@ -39,7 +39,7 @@ if unchecked, it will be 0.
 
 ..  include:: /CodeSnippets/Manual/FlexformCheckbox2.rst.txt
 
-..  _tca_example_checkbox_12:
+..  _tca-example-checkbox-12:
 
 Example: Four checkboxes in three columns
 -----------------------------------------
@@ -53,7 +53,7 @@ TCA:
 If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 | 4 | 8`).
 
 
-..  _tca_example_checkbox_16:
+..  _tca-example-checkbox-16:
 
 Example: Checkboxes with inline floating
 ----------------------------------------

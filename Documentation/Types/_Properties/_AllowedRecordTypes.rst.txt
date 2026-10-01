@@ -1,4 +1,4 @@
-..  _types-properties-allowedRecordTypes:
+..  _types-properties-allowedrecordtypes:
 
 ..  confval:: allowedRecordTypes
     :name: types-allowedRecordTypes

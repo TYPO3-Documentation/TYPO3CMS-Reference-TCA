@@ -10,8 +10,8 @@ Examples
     column type :ref:`file <columns-file>` instead.
 
 ..  _columns-inline-examples-images:
-..  _columns-inline-examples-1nRelation:
-..  _tca_example_inline_1n_inline_1:
+..  _columns-inline-examples-1nrelation:
+..  _tca-example-inline-1n-inline-1:
 
 Simple 1:n relation
 ===================
@@ -53,7 +53,7 @@ The intermediate table `tx_styleguide_inline_mn_mm` defines the following fields
 
 
 ..  _columns-inline-examples-symmetric-mm:
-..  _tca_example_inline_mn_symmetric_11_branches:
+..  _tca-example-inline-mn-symmetric-11-branches:
 
 Attributes on symmetric intermediate table
 ==========================================
@@ -91,7 +91,7 @@ both directions.
     :typoscript:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
     have special storage folders on a per-table-basis. See the :ref:`TSconfig reference <t3tsref:usertoplevelobjects>`.
 
-..  _tca_example_inline_usecombinationc_inline_1:
+..  _tca-example-inline-usecombinationc-inline-1:
 
 With a combination box
 ======================
@@ -144,9 +144,9 @@ type inline** - as it is a container.
     *   How to create custom fieldInformation, fieldControl or fieldWizard in
         :ref:`FormEngine <t3coreapi:FormEngine-Rendering-NodeExpansion>` chapter (TYPO3
         Explained)
-    *   :ref:`fieldInformation <tca_property_fieldInformation>` property
+    *   :ref:`fieldInformation <tca-property-fieldinformation>` property
 
-..  _columns-inline-properties-overrideChildTca-examples:
+..  _columns-inline-properties-overridechildtca-examples:
 
 Examples with overrideChildTca
 ==============================
@@ -201,7 +201,7 @@ points to. Here, the element browser of the speakers of an event opens on page
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_event.php
 
 ..  note::
-    It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsOverrides>`
+    It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsoverrides>`
     of an inline parent in the `['types']` section.
 
 ..  _columns-inline-properties-override-child-tca-examples-example-override:

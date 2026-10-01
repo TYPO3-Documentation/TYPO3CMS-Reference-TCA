@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldWizard:
+..  _tca-property-fieldwizard:
 
 ===========
 fieldWizard
@@ -12,7 +12,7 @@ fieldWizard
     :Scope: Display
     :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
         :ref:`group <columns-group>`,
-        :ref:`imageManipulation <columns-imageManipulation>`,
+        :ref:`imageManipulation <columns-imagemanipulation>`,
         :ref:`input <columns-input>`,
         :ref:`radio <columns-radio>`
 

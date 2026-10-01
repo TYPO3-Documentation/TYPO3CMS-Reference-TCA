@@ -6,7 +6,7 @@ Examples
 ========
 
 ..  _columns-flex-example-simple:
-..  _tca_example_flex_file_1:
+..  _tca-example-flex-file-1:
 
 Simple FlexForm
 ===============
@@ -53,7 +53,7 @@ In line 25ff the method `addPiFlexFormValue()` from class
 register the FlexForm.
 
 ..  _columns-flex-example-sheets:
-..  _tca_example_flex_1:
+..  _tca-example-flex-1:
 
 Example: FlexForm with two sheets
 =================================
@@ -72,7 +72,7 @@ field:
 Notice how the data of the two sheets are separated.
 
 
-..  _tca_example_flex_2:
+..  _tca-example-flex-2:
 
 A flex form field with two flex section containers
 ==================================================

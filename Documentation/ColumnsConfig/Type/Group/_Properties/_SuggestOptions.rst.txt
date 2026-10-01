@@ -1,4 +1,4 @@
-..  _columns-group-properties-suggestOptions:
+..  _columns-group-properties-suggestoptions:
 
 ..  confval:: suggestOptions
     :name: group-suggestOptions
@@ -7,7 +7,7 @@
     :Scope: Display
 
     Optional, additional suggest options used if the suggest wizard is not
-    :ref:`hidden <columns-group-properties-hideSuggest>`. The suggest wizard options can also be overriden
+    :ref:`hidden <columns-group-properties-hidesuggest>`. The suggest wizard options can also be overriden
     on a :ref:`page TSconfig <t3tsref:pagetceformsuggest>` level.
 
     Suggestions can be configured differently for each table. Settings in "default" are applied to all tables.

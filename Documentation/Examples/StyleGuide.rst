@@ -3,7 +3,7 @@
     Examples; Styleguide
     Styleguide; Installation
     Styleguide; Usage
-..  _tca_examples_styleguide_howto:
+..  _tca-examples-styleguide-howto:
 ..  _styleguide:
 
 =====================================

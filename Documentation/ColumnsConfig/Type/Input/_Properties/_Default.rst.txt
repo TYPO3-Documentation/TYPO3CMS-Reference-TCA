@@ -1,5 +1,5 @@
 ..  _columns-input-properties-default:
-..  _tca_property_default:
+..  _tca-property-default:
 
 ..  confval:: default
     :name: input-default

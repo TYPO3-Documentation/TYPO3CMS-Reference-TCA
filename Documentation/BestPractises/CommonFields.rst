@@ -1,12 +1,12 @@
 ..  include:: /Includes.rst.txt
 
-..  _fields_common:
+..  _fields-common:
 
 =============
 Common fields
 =============
 
-..  _fields_mandatory:
+..  _fields-mandatory:
 
 Mandatory fields
 ================
@@ -24,7 +24,7 @@ If a table has a TCA definition, TYPO3 will automatically create the following f
 These fields are not defined anywhere else in the TCA configuration. It is
 not possible to use other names for these fields.
 
-..  _fields_convention:
+..  _fields-convention:
 
 Fields used by convention
 =========================
@@ -38,7 +38,7 @@ Fields used by convention
     not need to define these fields in :file:`ext_tables.sql` and doing so may lead to
     problems later on. You only need to configure the fields in the TCA php files.
 
-..  _field_deleted:
+..  _field-deleted:
 
 Soft delete
 ===========
@@ -65,7 +65,7 @@ Soft delete
 Enablecolumns
 =============
 
-..  _field_hidden:
+..  _field-hidden:
 
 `hidden`
     This field enables soft hiding of records. Configure it
@@ -74,8 +74,8 @@ Enablecolumns
     ..  literalinclude:: /Ctrl/_CodeSnippets/_Hidden.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
-..  _field_starttime:
-..  _field_endtime:
+..  _field-starttime:
+..  _field-endtime:
 
 `starttime` and `endtime`
     These fields can enable records at a starttime and disable them at
@@ -85,7 +85,7 @@ Enablecolumns
     ..  literalinclude:: /Ctrl/_CodeSnippets/_StarttimeEndtime.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
 
-..  _field_fe_group:
+..  _field-fe-group:
 
 `fe_group`
     This field defines which field is used for access control. Configure it
@@ -97,9 +97,9 @@ Enablecolumns
 ..  warning::
     These fields that enable records ("enable fields") are only respected in the frontend if you
     use the correct queries and Extbase repository settings in your extension code.
-    See :ref:`enablecolumns usage <enablefields_usage>` for more information.
+    See :ref:`enablecolumns usage <enablefields-usage>` for more information.
 
-..  _field_sorting:
+..  _field-sorting:
 
 Manual sorting in the backend
 =============================
@@ -119,7 +119,7 @@ Manual sorting in the backend
     Use :ref:`default_sortby <ctrl-reference-default-sortby>` if you want to
     sort by a field that belongs to the domain.
 
-..  _fields_for_datahandler:
+..  _fields-for-datahandler:
 
 Fields managed by the DataHandler
 =================================
@@ -134,7 +134,7 @@ in the :ref:`columns <columns>` section of the TCA.
     :visible-lines: 4-10
     :emphasize-lines: 7-9
 
-..  _field_tstamp:
+..  _field-tstamp:
 
 `tstamp`
     This field is automatically updated to the current timestamp
@@ -142,7 +142,7 @@ in the :ref:`columns <columns>` section of the TCA.
 
     It can be configured by setting :ref:`ctrl->tstamp <ctrl-reference-tstamp>`.
 
-..  _field_crdate:
+..  _field-crdate:
 
 `crdate`
     This field is automatically set to the current timestamp
@@ -150,7 +150,7 @@ in the :ref:`columns <columns>` section of the TCA.
 
     It can be configured by setting :ref:`ctrl->crdate <ctrl-reference-crdate>`.
 
-..  _field_t3_origuid:
+..  _field-t3-origuid:
 
 `t3_origuid`
     Field name containing the uid of the original record if a

@@ -5,7 +5,7 @@
 Examples
 ========
 
-..  _tca_example_group_db_10:
+..  _tca-example-group-db-10:
 
 Group relation to a single page
 ===============================
@@ -15,7 +15,7 @@ Group relation to a single page
 ..  include:: /CodeSnippets/GroupDb10.rst.txt
 
 
-..  _tca_example_group_db_1:
+..  _tca-example-group-db-1:
 
 Group relation to be_groups and be_users
 ========================================

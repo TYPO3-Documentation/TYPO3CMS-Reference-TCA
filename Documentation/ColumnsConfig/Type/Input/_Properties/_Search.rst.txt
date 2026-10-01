@@ -1,4 +1,4 @@
-..  _tca_property_search:
+..  _tca-property-search:
 
 ..  versionchanged:: 14.0
     :changelog: breaking-106976-1750865819

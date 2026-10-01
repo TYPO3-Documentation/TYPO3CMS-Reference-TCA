@@ -49,8 +49,8 @@ Example: A password field with password generator
 ..  include:: _Snippets/_Password_6.rst.txt
 
 For more options on generating passwords see
-:ref:`Property passwordGenerator <columns-password-properties-passwordGenerator>`
-and :ref:`the password generator examples <columns-password-properties-passwordGenerator_examples>`.
+:ref:`Property passwordGenerator <columns-password-properties-passwordgenerator>`
+and :ref:`the password generator examples <columns-password-properties-passwordgenerator-examples>`.
 
 ..  _columns-password-properties:
 
