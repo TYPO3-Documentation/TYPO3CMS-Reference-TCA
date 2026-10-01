@@ -29,4 +29,7 @@
 
 Require an email address to be unique for this record type in this folder
 
-..  literalinclude:: _Properties/_Eval.php
+..  literalinclude:: /ColumnsConfig/Type/Email/_Snippets/_Email.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 19-25
+    :emphasize-lines: 23

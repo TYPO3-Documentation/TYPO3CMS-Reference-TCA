@@ -11,5 +11,7 @@
     to true, adds attribute :html:`autocomplete="on"` to the email input
     field allowing browser auto filling the field:
 
-   ..   literalinclude:: _Properties/_Autocomplete.php
-        :emphasize-lines: 9
+    ..  literalinclude:: /ColumnsConfig/Type/Email/_Snippets/_Email.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+        :visible-lines: 9-17
+        :emphasize-lines: 15
