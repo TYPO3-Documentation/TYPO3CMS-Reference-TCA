@@ -111,9 +111,11 @@ MM_table_where
 
     Additional where clause used when reading MM relations.
 
-    Example::
+    Example:
 
-       {#uid_local} = ###THIS_UID###
+    ..  code-block:: text
+
+        {#uid_local} = ###THIS_UID###
 
     The above example uses the special field quoting syntax `{#...}` around
     identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as possible.
