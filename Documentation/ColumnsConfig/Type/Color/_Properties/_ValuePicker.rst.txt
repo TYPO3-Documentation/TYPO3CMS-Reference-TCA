@@ -10,13 +10,14 @@
     item is selected, the value replaces the current input value.
 
     ..  versionchanged:: 14.0
+        :changelog: breaking-107677-1760339783
+
         It is now recommended to define associative array keys for
         `items` using `label` and `value`. Existing numeric
         arrays are automatically migrated during TCA processing.
 
         The Value Picker always behaves like a replace operation. Previous
-        `mode` variants like `append` and `prepend` were removed. See also
-        `Breaking: #107677 - Drop prepend and append modes from TCA Value Picker <https://docs.typo3.org/permalink/changelog:breaking-107677-1760339783>`_.
+        `mode` variants like `append` and `prepend` were removed.
 
 
     items (array)
