@@ -27,4 +27,7 @@
 
 ..  rubric:: Example: Number field with value picker
 
-..  literalinclude:: _Properties/_ValuePicker.php
+..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 77-90
+    :emphasize-lines: 81

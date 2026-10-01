@@ -11,5 +11,7 @@
     adds attribute :html:`autocomplete="on"` to the number input field allowing
     browser auto filling the field:
 
-    ..  literalinclude:: _Properties/_Nullable.php
-        :emphasize-lines: 8
+    ..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+        :visible-lines: 9-17
+        :emphasize-lines: 15
