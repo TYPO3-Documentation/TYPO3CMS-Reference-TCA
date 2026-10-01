@@ -19,12 +19,10 @@
 
     A basic item looks like this:
 
-    ..  code-block:: php
-
-        'items' => [
-            ['label' => 'Green tomatoes'], // Note these should be label references
-            ['label' => 'Red peppers'],
-        ],
+    ..  literalinclude:: /ColumnsConfig/Type/Check/_Snippets/_Check.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+        :visible-lines: 18-27
+        :emphasize-lines: 22
 
     Use the `label` key, instead of the numerical
     index :php:`0` which was done in previous versions.

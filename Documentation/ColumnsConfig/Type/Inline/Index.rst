@@ -93,14 +93,18 @@ A typical scenario is inline child tables attached to the
 
 Example of a workspace-aware parent table:
 
-..  literalinclude:: _Snippets/_workspace_parent.php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_workspace_parent.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_myparent.php
+    :visible-lines: 4-8, 16-23
+    :emphasize-lines: 7
 
 If the parent table is workspace-aware, `versioningWS  <https://docs.typo3.org/permalink/t3tca:confval-ctrl-versioningws>`_
 set to `true`, the child table must also be made parent-aware:
 
-..  literalinclude:: _Snippets/_workspace_child.php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_workspace_child.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mychild.php
+    :visible-lines: 4-8, 16-20
+    :emphasize-lines: 7
 
 The same applies if an inline field is used inside a
 `FlexForm field <https://docs.typo3.org/permalink/t3tca:columns-flex>`_.
@@ -122,17 +126,10 @@ To allow the child table on regular pages, set
 `$GLOBALS['TCA'][$table]['ctrl']['security']['ignorePageTypeRestriction'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-security>`_
 to true:
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_ignorePageTypeRestriction.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
-    return [
-        'ctrl' => [
-            // ...
-            'security' => [
-               'ignorePageTypeRestriction' => true,
-            ],
-        ],
-    ];
+    :visible-lines: 4-10
+    :emphasize-lines: 8
 
 ..  _columns-inline-rootlevel-restrictions:
 
@@ -150,16 +147,7 @@ to `-1` to allow on both root level and regular pages or set to `1` to allow onl
 If regular non-admin backend users need to be able to edit the table, add
 `$GLOBALS['TCA'][$table]['ctrl']['security']['ignoreRootLevelRestriction'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-security>`_
 
-..  code-block:: php
+..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_rootLevel.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mymetadata.php
-
-    return [
-        'ctrl' => [
-            // Can only be created at root level
-            'rootLevel' => 1
-            'security' => [
-               'ignoreRootLevelRestriction' => true,
-            ],
-        ],
-    ];
-
+    :visible-lines: 4-12
+    :emphasize-lines: 8, 10
