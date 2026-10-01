@@ -8,7 +8,7 @@ Demonstrates property: :confval:`types-creationOptions-saveAndClose`.
 When editors create a new blog plugin in the plugin is automatically saved and
 the user returned to the :guilabel:`Content > Layout` module:
 
-..  literalinclude:: /Types/_CodeSnippets/_tt_content_blogexample_list.php
+..  literalinclude:: /Types/_CodeSnippets/_tt_content_saveAndClose.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
 
 ..  note::

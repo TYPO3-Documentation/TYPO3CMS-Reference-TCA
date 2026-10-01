@@ -20,29 +20,9 @@
     (:php-short:`\TYPO3\CMS\Backend\Form\FormDataProvider\TcaTypesCtrlOverrides`
     data provider).
 
-    ..  code-block::
+    ..  literalinclude:: /Types/_CodeSnippets/_Post.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
-
-        return [
-            'ctrl' => [
-                'title' => 'LLL:my_extension.db:post.title',
-                'type' => 'record_type',
-                // ... other ctrl configuration
-            ],
-            'types' => [
-                '0' => [
-                    'showitem' => 'blog, title, date, author, content, comments, ',
-                ],
-                'link' => [
-                    'title' =>  'LLL:my_extension.db:link.title',
-                    'showitem' => ' blog, title, date, author, link, ',
-                ],
-                'special' => [
-                    'title' =>  'LLL:my_extension.db:special.title',
-                    'showitem' => 'blog, title, date, author, content, tags, comments, ',
-                ],
-            ],
-            // ... columns configuration
-        ];
+        :visible-lines: 5, 22-60
+        :emphasize-lines: 35, 44
 
     ..  include:: /_Includes/_LabelReference.rst.txt

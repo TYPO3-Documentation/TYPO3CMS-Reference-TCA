@@ -7,5 +7,7 @@ Override default values by type
 A blog post of type link should have a different default value for the author
 field then other blog post types:
 
-..  literalinclude:: _CodeSnippets/_tx_blogexample_post_linkauthor.php
+..  literalinclude:: /Types/_CodeSnippets/_Post.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
+    :visible-lines: 34-42
+    :emphasize-lines: 37

@@ -1,5 +1,7 @@
 <?php
 
+defined('TYPO3') or die();
+
 $GLOBALS['TCA']['pages']['types']['123']['wizardSteps'] = [
   'setup' => [
     'title' => 'backend.wizards.page:step.setup',
