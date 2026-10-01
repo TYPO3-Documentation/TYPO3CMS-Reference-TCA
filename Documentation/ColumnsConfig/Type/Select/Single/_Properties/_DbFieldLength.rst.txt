@@ -1,4 +1,4 @@
-..  _columns-select-properties-dbFieldLength:
+..  _columns-select-properties-dbfieldlength:
 
 ..  confval:: dbFieldLength
     :name: select-single-dbFieldLength

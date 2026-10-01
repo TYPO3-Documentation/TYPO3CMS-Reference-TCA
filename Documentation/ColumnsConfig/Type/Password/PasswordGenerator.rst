@@ -1,12 +1,12 @@
 ..  include:: /Includes.rst.txt
 
-..  _columns-password-properties-passwordGenerator_examples:
+..  _columns-password-properties-passwordgenerator-examples:
 
 ===========================
 Password generator examples
 ===========================
 
-..  _columns-password-properties-passwordGenerator_include_special_chars:
+..  _columns-password-properties-passwordgenerator-include-special-chars:
 
 Include special characters
 ==========================
@@ -21,7 +21,7 @@ Example: `qe8)i2W1it-msR8`
 
 ..  include:: _Snippets/_Password_6.rst.txt
 
-..  _columns-password-properties-passwordGenerator_only_digits:
+..  _columns-password-properties-passwordgenerator-only-digits:
 
 Only digits, length 8 (minimum length)
 ======================================
@@ -37,7 +37,7 @@ Example: `28233371`
 ..  include:: _Snippets/_Password_7.rst.txt
 
 
-..  _columns-password-properties-passwordGenerator_hexadecimal:
+..  _columns-password-properties-passwordgenerator-hexadecimal:
 
 Hexadecimal random bytes, length 30
 ===================================
@@ -55,7 +55,7 @@ could be used for secret tokens or similar:
 
 ..  include:: _Snippets/_Password_4.rst.txt
 
-..  _columns-password-properties-passwordGenerator_base64:
+..  _columns-password-properties-passwordgenerator-base64:
 
 Base64 random bytes, readonly
 ==============================
@@ -70,17 +70,17 @@ Example: `zrt8sJd6GiqUI_EFgjPiedOj--D0NbTVOJz`
 
 ..  include:: _Snippets/_Password_5.rst.txt
 
-..  _columns-password-properties-passwordGenerator_properties:
+..  _columns-password-properties-passwordgenerator-properties:
 
 Properties
 ==========
 
-..  _columns-password-properties-passwordGenerator_fieldControl:
+..  _columns-password-properties-passwordgenerator-fieldcontrol:
 
 Field control options
 =====================
 
-..  _columns-password-properties-passwordGenerator_fieldControl_title:
+..  _columns-password-properties-passwordgenerator-fieldcontrol-title:
 
 title
 -----
@@ -93,7 +93,7 @@ title
 
     Define a title for the control button.
 
-..  _columns-password-properties-passwordGenerator_fieldControl_allowedit:
+..  _columns-password-properties-passwordgenerator-fieldcontrol-allowedit:
 
 allowEdit
 ---------
@@ -106,7 +106,7 @@ allowEdit
 
     If set to :php:`false`, the user cannot edit the generated password.
 
-..  _columns-password-properties-passwordGenerator-passwordPolicy:
+..  _columns-password-properties-passwordgenerator-passwordpolicy:
 
 Password policy
 ===============

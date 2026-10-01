@@ -11,7 +11,7 @@ Select fields
     :ref:`generating the according database field <t3coreapi:auto-generated-db-structure>`.
     A developer does not need to define this field in an extension's
     :file:`ext_tables.sql` file. The field length can be adjusted with the
-    option :ref:`dbFieldLength <columns-select-properties-dbFieldLength>`.
+    option :ref:`dbFieldLength <columns-select-properties-dbfieldlength>`.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 for all render types of select boxes fields are generated automatically.
@@ -43,16 +43,16 @@ be displayed.
 
 The following renderTypes are available:
 
-*   :ref:`selectSingle <columns-select-rendertype-selectSingle>`: Select one
+*   :ref:`selectSingle <columns-select-rendertype-selectsingle>`: Select one
     element from a list of elements
-*   :ref:`selectSingleBox <columns-select-rendertype-selectSingleBox>`: Select
+*   :ref:`selectSingleBox <columns-select-rendertype-selectsinglebox>`: Select
     one or more elements from a list of elements
-*   :ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`: One or
+*   :ref:`selectCheckBox <columns-select-rendertype-selectcheckbox>`: One or
     more checkboxes are displayed instead of a select list.
-*   :ref:`selectMultipleSideBySide <columns-select-rendertype-selectMultipleSideBySide>`:
+*   :ref:`selectMultipleSideBySide <columns-select-rendertype-selectmultiplesidebyside>`:
     Two select fields, items can be selected from the right field, selected
     items are displayed in the left select.
-*   :ref:`selectTree <columns-select-rendertype-selectTree>`: A tree for
+*   :ref:`selectTree <columns-select-rendertype-selecttree>`: A tree for
     selecting hierarchical data items.
 
 ..  toctree::

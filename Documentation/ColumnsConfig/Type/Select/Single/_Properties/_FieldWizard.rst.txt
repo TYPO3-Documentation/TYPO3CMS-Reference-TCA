@@ -22,7 +22,7 @@
 
         For details see :confval:`fieldWizard-otherLanguageContent`.
 
-    ..  _tca_property_fieldWizard_selectIcons:
+    ..  _tca-property-fieldwizard-selecticons:
 
     ..  confval:: selectIcons
         :name: fieldWizard-selectIcons

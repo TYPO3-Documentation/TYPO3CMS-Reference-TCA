@@ -44,8 +44,8 @@ Each checkbox corresponds to a single bit of the integer value, even if there is
 
 There is a subtle difference between fields of the type `check` and select
 fields with the render type
-:ref:`selectCheckBox <columns-select-rendertype-selectCheckBox>`. For the
-details please see: :ref:`selectCheckBox and type check compared <selectCheckBox-check-compared>`.
+:ref:`selectCheckBox <columns-select-rendertype-selectcheckbox>`. For the
+details please see: :ref:`selectCheckBox and type check compared <selectcheckbox-check-compared>`.
 
 
 ..  include:: /Images/Rst/Checkbox2.rst.txt
@@ -60,9 +60,9 @@ details please see: :ref:`selectCheckBox and type check compared <selectCheckBox
 The following renderTypes are available:
 
 *   :ref:`default <columns-check-default>`: One or more checkboxes are displayed.
-*   :ref:`checkboxToggle <columns-check-checkboxToggle>`: Instead of checkboxes,
+*   :ref:`checkboxToggle <columns-check-checkboxtoggle>`: Instead of checkboxes,
     a toggle item is displayed.
-*   :ref:`checkboxLabeledToggle <columns-check-checkboxLabeledToggle>`: A toggle
+*   :ref:`checkboxLabeledToggle <columns-check-checkboxlabeledtoggle>`: A toggle
     switch where both states can be labelled (ON/OFF, Visible / Hidden or alike).
     Its state can be inverted via `invertStateDisplay`
 

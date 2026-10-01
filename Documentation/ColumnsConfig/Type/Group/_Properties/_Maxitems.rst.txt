@@ -1,5 +1,5 @@
 ..  _columns-group-properties-maxitems:
-..  _tca_property_maxitems:
+..  _tca-property-maxitems:
 
 ..  confval:: maxitems
     :name: group-maxitems

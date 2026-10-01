@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _selectCheckBox-check-compared:
+..  _selectcheckbox-check-compared:
 
 =============================================
 selectCheckBox and type check fields compared

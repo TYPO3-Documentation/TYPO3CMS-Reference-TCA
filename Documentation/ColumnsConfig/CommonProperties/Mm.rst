@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_MM:
+..  _tca-property-mm:
 
 ==
 MM
@@ -21,7 +21,7 @@ MM
     <columns-inline-properties-foreign-table>` for `inline` fields.
 
     The table defined in this property is :ref:`automatically created by the
-    Database Analyzer <tca_property_MM_auto_creation_mm_table>`.
+    Database Analyzer <tca-property-mm-auto-creation-mm-table>`.
 
     The field for which an MM configuration exists stores the number of records
     in the relation on each update, so the field should be an integer.
@@ -118,7 +118,7 @@ MM_table_where
     The above example uses the special field quoting syntax `{#...}` around
     identifiers to be as :ref:`DBAL <t3coreapi:database>`-compatible as possible.
 
-..  _tca_property_MM_auto_creation_mm_table:
+..  _tca-property-mm-auto-creation-mm-table:
 
 Auto creation of intermediate MM tables from TCA
 ================================================

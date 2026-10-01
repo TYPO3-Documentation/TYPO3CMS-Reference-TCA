@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldInformation:
+..  _tca-property-fieldinformation:
 
 ================
 fieldInformation
@@ -17,7 +17,7 @@ the label and the form element itself.
 Extensions can register their own field information nodes, as shown in the
 following example.
 
-..  _tca_property_fieldInformation_example:
+..  _tca-property-fieldinformation-example:
 
 Example
 =======

@@ -1,4 +1,4 @@
-..  _tca_property_softref:
+..  _tca-property-softref:
 
 ..  confval:: softref
     :name: input-softref

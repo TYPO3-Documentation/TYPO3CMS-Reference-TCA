@@ -9,7 +9,7 @@
     Field name, which is automatically set to the current timestamp when
     the record is created. Is never modified again.
 
-    By convention the name :ref:`crdate <field_crdate>` is used for that field.
+    By convention the name :ref:`crdate <field-crdate>` is used for that field.
 
     ..  note::
         The database field configured in this property is created automatically.

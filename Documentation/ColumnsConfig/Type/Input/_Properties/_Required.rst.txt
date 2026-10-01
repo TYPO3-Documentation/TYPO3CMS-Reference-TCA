@@ -1,4 +1,4 @@
-..  _tca_property_required:
+..  _tca-property-required:
 
 ..  confval:: required
     :name: input-required

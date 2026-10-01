@@ -19,7 +19,7 @@
     in the relation.
 
     Please have a look into the additional information
-    in the :ref:`MM common property description <tca_property_MM>`.
+    in the :ref:`MM common property description <tca-property-mm>`.
 
     ..  warning::
         Copying with MM relations will not create a copy of the value. Thus
@@ -50,7 +50,7 @@
         `sys_refindex`.
 
 
-..  _tca_example_inline_mm_inline_1:
+..  _tca-example-inline-mm-inline-1:
 
 ..  rubric:: Example: Inline field with MM table configured
 
@@ -58,7 +58,7 @@
 
 ..  include:: /CodeSnippets/InlineMmInline1.rst.txt
 
-..  _tca_example_inline_mm_child_parents:
+..  _tca-example-inline-mm-child-parents:
 
 ..  rubric:: Example: Opposite field to display MM relations two ways
 

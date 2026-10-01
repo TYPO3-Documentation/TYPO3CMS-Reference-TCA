@@ -1,11 +1,11 @@
-..  _group-fieldWizard:
+..  _group-fieldwizard:
 
 ..  confval:: fieldWizard
     :name: group-fieldWizard
 
-    For general fieldWizard documentation see :ref:`here <tca_property_fieldWizard>`.
+    For general fieldWizard documentation see :ref:`here <tca-property-fieldwizard>`.
 
-    ..  _tca_property_fieldWizard_recordsOverview:
+    ..  _tca-property-fieldwizard-recordsoverview:
 
     ..  confval:: recordsOverview
         :name: group-recordsOverview
@@ -16,7 +16,7 @@
         Render an overview of the selected records with correct icon and click menu and title. Allows to
         perform actions on the selected records directly. Links the record title to a direct editing form.
 
-    ..  _tca_property_fieldWizard_tableList:
+    ..  _tca-property-fieldwizard-tablelist:
 
     ..  confval:: tableList
         :name: tableList

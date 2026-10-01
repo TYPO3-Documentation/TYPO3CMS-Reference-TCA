@@ -11,7 +11,7 @@ A common table has a configuration such as this:
 
 ..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
 
-..  _tca_example_ctrl_minimal:
+..  _tca-example-ctrl-minimal:
 
 Minimal table configuration
 ===========================
@@ -28,7 +28,7 @@ possible, and much more. In the database, only columns `uid`, `pid` and `title` 
 in :file:`ext_tables.sql` with this setup.
 
 
-..  _tca_example_ctrl_tt_content:
+..  _tca-example-ctrl-tt-content:
 
 Core table tt_content
 =====================
@@ -59,12 +59,12 @@ A few remarks:
     :ref:`Icon API <t3coreapi:icon>` to visually represent that type in the TYPO3 backend.
 
 
-..  _tca_example_ctrl_container:
+..  _tca-example-ctrl-container:
 
 Extended container examples
 ===========================
 
-..  _tca_example_ctrl_container-disable:
+..  _tca-example-ctrl-container-disable:
 
 Disable a built-in wizard
 -------------------------
@@ -75,7 +75,7 @@ Disable a built-in wizard
 This disables the default `localizationStateSelector` fieldWizard of
 `inlineControlContainer`.
 
-..  _tca_example_ctrl_container-cusotm:
+..  _tca-example-ctrl-container-cusotm:
 
 Add your own wizard
 -------------------
@@ -97,7 +97,7 @@ record:
 
 ..  include:: /Images/ManualScreenshots/OuterFieldWizard.rst.txt
 
-..  _tca_example_ctrl_container-inline:
+..  _tca-example-ctrl-container-inline:
 
 Add fieldInformation to field of type inline
 --------------------------------------------

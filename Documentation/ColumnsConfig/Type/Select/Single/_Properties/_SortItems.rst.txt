@@ -19,7 +19,7 @@
     group ordering is preserved.
 
 
-..  _tca_example_select_single_18:
+..  _tca-example-select-single-18:
 
 ..  rubric:: Example: Sort items by label
 
@@ -28,7 +28,7 @@
 ..  include:: /CodeSnippets/SelectSingle18.rst.txt
 
 
-..  _tca_example_select_single_19:
+..  _tca-example-select-single-19:
 
 ..  rubric:: Example: Sort items by value
 
@@ -37,7 +37,7 @@
 ..  include:: /CodeSnippets/SelectSingle19.rst.txt
 
 
-..  _tca_example_select_single_20:
+..  _tca-example-select-single-20:
 
 ..  rubric:: Example: Sort items by a custom method
 

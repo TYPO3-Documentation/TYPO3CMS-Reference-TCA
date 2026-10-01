@@ -1,4 +1,4 @@
-..  _columns-check-properties-renderType:
+..  _columns-check-properties-rendertype:
 
 ..  confval:: renderType
     :name: check-renderType
@@ -6,10 +6,10 @@
     :type: string
     :Scope: Display
     :default: check
-    :Examples: :ref:`default <columns-checkbox-examples-2>`, :ref:`checkboxToggle <tca_example_checkbox_17>`, :ref:`checkboxLabeledToggle <tca_example_checkbox_19>`
+    :Examples: :ref:`default <columns-checkbox-examples-2>`, :ref:`checkboxToggle <tca-example-checkbox-17>`, :ref:`checkboxLabeledToggle <tca-example-checkbox-19>`
 
     Three different render types are currently available for the check box field:
 
     *  :ref:`check <columns-check-default>`
-    *  :ref:`checkboxToggle <columns-check-checkboxToggle>`
-    *  :ref:`checkboxLabeledToggle <columns-check-checkboxLabeledToggle>`
+    *  :ref:`checkboxToggle <columns-check-checkboxtoggle>`
+    *  :ref:`checkboxLabeledToggle <columns-check-checkboxlabeledtoggle>`

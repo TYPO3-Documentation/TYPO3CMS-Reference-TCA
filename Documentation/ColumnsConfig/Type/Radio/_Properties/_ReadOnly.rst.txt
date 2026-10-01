@@ -1,4 +1,4 @@
-..  _columns-radio-properties-readOnly:
+..  _columns-radio-properties-readonly:
 
 ..  confval:: readOnly
     :name: radio-readOnly

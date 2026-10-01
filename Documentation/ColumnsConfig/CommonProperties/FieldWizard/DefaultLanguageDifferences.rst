@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..  _tca_property_fieldWizard_defaultLanguageDifferences:
+..  _tca-property-fieldwizard-defaultlanguagedifferences:
 
 ==========================
 defaultLanguageDifferences
@@ -12,7 +12,7 @@ defaultLanguageDifferences
     :Scope: Display
     :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
         :ref:`group <columns-group>`,
-        :ref:`imageManipulation <columns-imageManipulation>`,
+        :ref:`imageManipulation <columns-imagemanipulation>`,
         :ref:`input <columns-input>`, :ref:`radio <columns-radio>`
 
     Show a "diff-view" if the content of the default language record has been changed after the

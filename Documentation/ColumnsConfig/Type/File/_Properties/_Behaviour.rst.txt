@@ -1,4 +1,4 @@
-..  _columns-file-properties-behaviour-allowLanguageSynchronization:
+..  _columns-file-properties-behaviour-allowlanguagesynchronization:
 
 ..  confval:: behaviour
     :name: file-behaviour
@@ -13,7 +13,7 @@
         over from default or source language record, or if the field has an own value
         in the localization. If set to true and if the table supports localization
         and if a localized record is edited, this setting enables FieldWizard
-        :ref:`LocalizationStateSelector <columns-input-properties-fieldWizard-localizationStateSelector>`:
+        :ref:`LocalizationStateSelector <columns-input-properties-fieldwizard-localizationstateselector>`:
         Two or three radio buttons shown below the field input. The state of this is
         stored in a json encoded array in the database table called `l10n_state`.
         It tells the DataHandler which fields of the localization records should be kept
@@ -21,7 +21,7 @@
 
         This property can also be overridden by page TSconfig.
 
-    ..  _columns-file-properties-behaviour-disableMovingChildrenWithParent:
+    ..  _columns-file-properties-behaviour-disablemovingchildrenwithparent:
     ..  todo:: Does this make sense? sys_file_references are always stored on the root level...
 
     ..  confval:: disableMovingChildrenWithParent
@@ -36,7 +36,7 @@
 
         This property can also be overridden by page TSconfig.
 
-    ..  _columns-file-properties-behaviour-enableCascadingDelete:
+    ..  _columns-file-properties-behaviour-enablecascadingdelete:
 
     ..  confval:: enableCascadingDelete
         :name: file-enableCascadingDelete
