@@ -1,5 +1,5 @@
 .. code-block:: xml
-   :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_flex.php
+   :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_flex.php (excerpt)
 
    <checkbox_2>
       <label>checkbox_2 cols=3</label>
