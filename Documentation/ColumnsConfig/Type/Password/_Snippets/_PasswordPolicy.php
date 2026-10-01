@@ -1,11 +1,6 @@
 <?php
 
-$GLOBALS['TCA']['fe_users']['columns']['password']['config']['fieldControl']['passwordGenerator'] =
-    [
-      'passwordGenerator' => [
-        'renderType' => 'passwordGenerator',
-        'options' => [
-          'passwordPolicy' => 'myCustomPolicy',
-        ],
-      ],
-    ];
+defined('TYPO3') or die();
+
+$GLOBALS['TCA']['fe_users']['columns']['password']['config']['fieldControl']
+  ['passwordGenerator']['options']['passwordPolicy'] = 'myCustomPolicy';

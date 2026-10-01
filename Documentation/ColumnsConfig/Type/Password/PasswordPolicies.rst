@@ -12,21 +12,27 @@ Examples for using different password policies in TCA
 Use the `default` policy
 ------------------------
 
-..  literalinclude:: _Snippets/_PasswordPolicyDefault.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 34-40
+    :emphasize-lines: 38
 
 ..  _columns-password-properties-passwordPolicy-example-frontend:
 
 Use the globally defined policy for frontend
 --------------------------------------------
 
-..  literalinclude:: _Snippets/_PasswordPolicyFE.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 42-49
+    :emphasize-lines: 46
 
 ..  _columns-password-properties-passwordPolicy-example-backend:
 
 Use the globally defined policy for backend
 -------------------------------------------
 
-..  literalinclude:: _Snippets/_PasswordPolicyBE.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 51-58
+    :emphasize-lines: 55
