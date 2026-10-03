@@ -25,4 +25,7 @@
 
     ..  include:: /Images/Rst/CtrlDescriptionColumn.rst.txt
 
-    ..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 7

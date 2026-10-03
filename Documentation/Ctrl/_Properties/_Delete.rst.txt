@@ -18,5 +18,7 @@
 
     ..  rubric:: Example: Enable soft delete for the following table
 
-    ..  literalinclude:: _CodeSnippets/_Delete.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 11

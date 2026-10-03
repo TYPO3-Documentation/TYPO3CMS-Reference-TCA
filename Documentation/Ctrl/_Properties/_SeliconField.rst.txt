@@ -17,22 +17,28 @@
     reference in other records, for example a "category". In such a case this field points out the icon image which
     will then be shown. This feature can thus enrich the visual experience of selecting the relation in other forms.
 
-..  rubric:: Example: Select foreign records from a drop-down using selicon
+..  rubric:: Example: Show the image of a location when selecting it
 
 ..  include:: /Images/Rst/SelectSingle12.rst.txt
 
+The location table names its field `image` as `selicon_field`:
 
-The table `tx_styleguide_elements_select_single_12_foreign` is defined as
-follows:
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
+    :visible-lines: 4-18
+    :emphasize-lines: 9
 
+The field `image` allows a single image:
 
-.. include:: /CodeSnippets/Manual/SelectSingle12ForeignPart.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
+    :visible-lines: 33-41
+    :emphasize-lines: 37
 
+The conference table selects its location with render type `selectSingle`.
+The field wizard `selectIcons` shows the images of the locations below the
+drop-down:
 
-It can be used in another table as a foreign relation, for example in a field
-with render type `singleSelect`:
-
-.. include:: /CodeSnippets/SelectSingle12.rst.txt
-
-
-You can find this example in the :ref:`extension styleguide <styleguide>`.
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :emphasize-lines: 18

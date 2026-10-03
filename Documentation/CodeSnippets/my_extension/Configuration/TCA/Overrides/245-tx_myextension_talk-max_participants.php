@@ -7,7 +7,6 @@ defined('TYPO3') or die();
 ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
   'max_participants' => [
     'label' => 'my_extension.db:talk.max_participants',
-    'displayCond' => 'FIELD:talk_type:=:workshop',
     'config' => [
       'type' => 'number',
       'range' => [

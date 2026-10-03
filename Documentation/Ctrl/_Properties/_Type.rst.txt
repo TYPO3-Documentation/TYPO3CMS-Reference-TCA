@@ -44,16 +44,31 @@ The type stored in a field
 
 .. include:: /Images/Rst/CtrlType0.rst.txt
 
-The table `tx_styleguide_type` table from the "examples" extension defines different types. The field used for differentiating
-the types is the "record\_type" field. Hence we have the following in the `['ctrl']` section
-of the tx\_examples\_dummy table:
+A talk of the conference extension can be a regular talk, a workshop or a
+keynote. The field `talk_type` stores which one it is, so the `ctrl` section
+of the talk table names it as `type`:
 
-.. include:: /CodeSnippets/CtrlTypeCtrl.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+    :visible-lines: 4-49
+    :emphasize-lines: 7,36,40,44
 
-The "record\_type" field can take values ranging from 0 to 2. Accordingly we define types for the same values.
-Each type defines which fields will be displayed in the BE form:
+Each value of `talk_type` has its own entry in the `types` section, which
+defines the fields shown in the backend form. All three types start with the
+same fields:
 
-.. include:: /CodeSnippets/CtrlTypeTypes.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+    :visible-lines: 71-90
+    :emphasize-lines: 72,78,84
+
+A field that only some types show is added to those types alone: the third
+argument of :php:`ExtensionManagementUtility::addToAllTCAtypes()` lists them.
+Only a workshop asks for the maximum number of participants:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/245-tx_myextension_talk-max_participants.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/245-tx_myextension_talk-max_participants.php
+    :emphasize-lines: 21
 
 See the :ref:`section about types <types>` for more details.
 

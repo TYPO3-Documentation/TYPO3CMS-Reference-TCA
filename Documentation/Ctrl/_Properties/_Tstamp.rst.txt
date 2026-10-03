@@ -22,7 +22,7 @@
 The following fields are set by the DataHandler automatically on creating or
 updating records, if they are configured in the `ctrl` section of the TCA:
 
-..  literalinclude:: /Ctrl/_CodeSnippets/_DataHandlerFields.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-    :visible-lines: 4-10
-    :emphasize-lines: 7
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
+    :emphasize-lines: 9

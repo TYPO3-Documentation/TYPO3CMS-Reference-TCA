@@ -29,18 +29,18 @@
 
     ..  rubric:: Example
 
-    The example shows the "haiku" table of an extension `my_extension`. The
-    TCA of the table calls the user function:
+    Comments are listed with the name of the commenter and the date of the
+    comment. The TCA of the comment table calls the user function:
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_LabelUserfunc.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_haiku.php
-        :visible-lines: 3, 6-10
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_comment.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_comment.php
+        :visible-lines: 3, 6-19
         :emphasize-lines: 9
 
     The class contains the code itself:
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_LabelUserfuncTca.php
-        :caption: EXT:my_extension/Classes/Userfuncs/Tca.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Classes/Backend/CommentLabel.php
+        :caption: EXT:my_extension/Classes/Backend/CommentLabel.php
 
 ..  _ctrl-reference-label-userfunc-options:
 

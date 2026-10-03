@@ -34,7 +34,11 @@ For advanced examples see :ref:`ctrl examples <ctrl-examples>`.
 
 ..  include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
 
-..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+The `ctrl` section of the conference table:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
 
 ..  _ctrl-reference:
 

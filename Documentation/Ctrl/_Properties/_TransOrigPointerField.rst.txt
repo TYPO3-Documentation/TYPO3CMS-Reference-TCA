@@ -35,5 +35,7 @@
 
     ..  include:: /Images/Rst/TranslatedText2.rst.txt
 
-    ..  literalinclude:: _CodeSnippets/_Language.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 20

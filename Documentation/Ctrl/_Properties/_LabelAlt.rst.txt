@@ -17,12 +17,9 @@
         :ref:`label_userFunc <ctrl-reference-label-userfunc>` overrides this property, also
         see :ref:`label_alt_force <ctrl-reference-label-alt-force>`.
 
-..  rubric:: Example for table `tt_content`
+..  rubric:: Example: Show the city next to the name of a location
 
-..  code-block:: php
-    :caption: EXT:frontend/Configuration/TCA/tt_content.php (excerpt)
-
-    'ctrl' => [
-        'label' => 'header',
-        'label_alt' => 'subheader,bodytext',
-    ],
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
+    :visible-lines: 4-18
+    :emphasize-lines: 7, 8
