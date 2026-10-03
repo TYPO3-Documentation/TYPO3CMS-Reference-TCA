@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:my_extension/Resources/Private/Language/locallang_db.xlf" product-name="my_extension">
+    <header/>
+    <body>
+      <trans-unit id="comment" resname="comment">
+        <source>Comment</source>
+      </trans-unit>
+      <trans-unit id="comment.approved" resname="comment.approved">
+        <source>Approved</source>
+      </trans-unit>
+      <trans-unit id="comment.content" resname="comment.content">
+        <source>Comment</source>
+      </trans-unit>
+      <trans-unit id="comment.email" resname="comment.email">
+        <source>Email</source>
+      </trans-unit>
+      <trans-unit id="comment.name" resname="comment.name">
+        <source>Name</source>
+      </trans-unit>
+      <trans-unit id="conference" resname="conference">
+        <source>Conference</source>
+      </trans-unit>
+      <trans-unit id="conference.categories" resname="conference.categories">
+        <source>Categories</source>
+      </trans-unit>
+      <trans-unit id="conference.color" resname="conference.color">
+        <source>Color</source>
+      </trans-unit>
+      <trans-unit id="conference.comments" resname="conference.comments">
+        <source>Comments</source>
+      </trans-unit>
+      <trans-unit id="conference.conference_date" resname="conference.conference_date">
+        <source>Date</source>
+      </trans-unit>
+      <trans-unit id="conference.contact_email" resname="conference.contact_email">
+        <source>Contact email</source>
+      </trans-unit>
+      <trans-unit id="conference.description" resname="conference.description">
+        <source>Description</source>
+      </trans-unit>
+      <trans-unit id="conference.impressions" resname="conference.impressions">
+        <source>Impressions</source>
+      </trans-unit>
+      <trans-unit id="conference.internal_notes" resname="conference.internal_notes">
+        <source>Internal notes</source>
+      </trans-unit>
+      <trans-unit id="conference.location" resname="conference.location">
+        <source>Location</source>
+      </trans-unit>
+      <trans-unit id="conference.logo" resname="conference.logo">
+        <source>Logo</source>
+      </trans-unit>
+      <trans-unit id="conference.published" resname="conference.published">
+        <source>Published</source>
+      </trans-unit>
+      <trans-unit id="conference.seats" resname="conference.seats">
+        <source>Seats</source>
+      </trans-unit>
+      <trans-unit id="conference.slug" resname="conference.slug">
+        <source>URL segment</source>
+      </trans-unit>
+      <trans-unit id="conference.speakers" resname="conference.speakers">
+        <source>Speakers</source>
+      </trans-unit>
+      <trans-unit id="conference.talks" resname="conference.talks">
+        <source>Talks</source>
+      </trans-unit>
+      <trans-unit id="conference.title" resname="conference.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="conference.website" resname="conference.website">
+        <source>Website</source>
+      </trans-unit>
+      <trans-unit id="location" resname="location">
+        <source>Location</source>
+      </trans-unit>
+      <trans-unit id="location.city" resname="location.city">
+        <source>City</source>
+      </trans-unit>
+      <trans-unit id="location.country" resname="location.country">
+        <source>Country</source>
+      </trans-unit>
+      <trans-unit id="location.directions" resname="location.directions">
+        <source>Directions</source>
+      </trans-unit>
+      <trans-unit id="location.image" resname="location.image">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="location.latitude" resname="location.latitude">
+        <source>Latitude</source>
+      </trans-unit>
+      <trans-unit id="location.longitude" resname="location.longitude">
+        <source>Longitude</source>
+      </trans-unit>
+      <trans-unit id="location.name" resname="location.name">
+        <source>Name</source>
+      </trans-unit>
+      <trans-unit id="location.palette.address" resname="location.palette.address">
+        <source>Address</source>
+      </trans-unit>
+      <trans-unit id="location.palette.coordinates" resname="location.palette.coordinates">
+        <source>Coordinates</source>
+      </trans-unit>
+      <trans-unit id="location.street" resname="location.street">
+        <source>Street</source>
+      </trans-unit>
+      <trans-unit id="location.zip" resname="location.zip">
+        <source>ZIP code</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.categories" resname="plugin.conferencelist.categories">
+        <source>Categories</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.conferences" resname="plugin.conferencelist.conferences">
+        <source>Conferences</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.description" resname="plugin.conferencelist.description">
+        <source>Shows a list of conferences</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.limit" resname="plugin.conferencelist.limit">
+        <source>Maximum number of conferences</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.mode" resname="plugin.conferencelist.mode">
+        <source>Conferences to show</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.mode.selected" resname="plugin.conferencelist.mode.selected">
+        <source>Selected conferences</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.mode.upcoming" resname="plugin.conferencelist.mode.upcoming">
+        <source>Upcoming conferences</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.sheet.general" resname="plugin.conferencelist.sheet.general">
+        <source>General</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.title" resname="plugin.conferencelist.title">
+        <source>Conference list</source>
+      </trans-unit>
+      <trans-unit id="speaker" resname="speaker">
+        <source>Speaker</source>
+      </trans-unit>
+      <trans-unit id="speaker.bio" resname="speaker.bio">
+        <source>Biography</source>
+      </trans-unit>
+      <trans-unit id="speaker.company" resname="speaker.company">
+        <source>Company</source>
+      </trans-unit>
+      <trans-unit id="speaker.country" resname="speaker.country">
+        <source>Country</source>
+      </trans-unit>
+      <trans-unit id="speaker.email" resname="speaker.email">
+        <source>Email</source>
+      </trans-unit>
+      <trans-unit id="speaker.identifier" resname="speaker.identifier">
+        <source>Identifier</source>
+      </trans-unit>
+      <trans-unit id="speaker.name" resname="speaker.name">
+        <source>Name</source>
+      </trans-unit>
+      <trans-unit id="speaker.photo" resname="speaker.photo">
+        <source>Photo</source>
+      </trans-unit>
+      <trans-unit id="speaker.photo.square" resname="speaker.photo.square">
+        <source>Square</source>
+      </trans-unit>
+      <trans-unit id="speaker.salutation" resname="speaker.salutation">
+        <source>Salutation</source>
+      </trans-unit>
+      <trans-unit id="speaker.salutation.mr" resname="speaker.salutation.mr">
+        <source>Mr</source>
+      </trans-unit>
+      <trans-unit id="speaker.salutation.ms" resname="speaker.salutation.ms">
+        <source>Ms</source>
+      </trans-unit>
+      <trans-unit id="speaker.salutation.mx" resname="speaker.salutation.mx">
+        <source>Mx</source>
+      </trans-unit>
+      <trans-unit id="speaker.social_links" resname="speaker.social_links">
+        <source>Social links</source>
+      </trans-unit>
+      <trans-unit id="speaker.website" resname="speaker.website">
+        <source>Website</source>
+      </trans-unit>
+      <trans-unit id="tab.comments" resname="tab.comments">
+        <source>Comments</source>
+      </trans-unit>
+      <trans-unit id="tab.details" resname="tab.details">
+        <source>Details</source>
+      </trans-unit>
+      <trans-unit id="tab.integration" resname="tab.integration">
+        <source>Integration</source>
+      </trans-unit>
+      <trans-unit id="tab.program" resname="tab.program">
+        <source>Program</source>
+      </trans-unit>
+      <trans-unit id="talk" resname="talk">
+        <source>Talk</source>
+      </trans-unit>
+      <trans-unit id="talk.abstract" resname="talk.abstract">
+        <source>Abstract</source>
+      </trans-unit>
+      <trans-unit id="talk.duration" resname="talk.duration">
+        <source>Duration (minutes)</source>
+      </trans-unit>
+      <trans-unit id="talk.level" resname="talk.level">
+        <source>Level</source>
+      </trans-unit>
+      <trans-unit id="talk.level.advanced" resname="talk.level.advanced">
+        <source>Advanced</source>
+      </trans-unit>
+      <trans-unit id="talk.level.beginner" resname="talk.level.beginner">
+        <source>Beginner</source>
+      </trans-unit>
+      <trans-unit id="talk.level.expert" resname="talk.level.expert">
+        <source>Expert</source>
+      </trans-unit>
+      <trans-unit id="talk.max_participants" resname="talk.max_participants">
+        <source>Maximum number of participants</source>
+      </trans-unit>
+      <trans-unit id="talk.recording" resname="talk.recording">
+        <source>Recording</source>
+      </trans-unit>
+      <trans-unit id="talk.requirements" resname="talk.requirements">
+        <source>Requirements</source>
+      </trans-unit>
+      <trans-unit id="talk.room" resname="talk.room">
+        <source>Room</source>
+      </trans-unit>
+      <trans-unit id="talk.slides" resname="talk.slides">
+        <source>Slides</source>
+      </trans-unit>
+      <trans-unit id="talk.slug" resname="talk.slug">
+        <source>URL segment</source>
+      </trans-unit>
+      <trans-unit id="talk.speaker" resname="talk.speaker">
+        <source>Speaker</source>
+      </trans-unit>
+      <trans-unit id="talk.start_time" resname="talk.start_time">
+        <source>Start</source>
+      </trans-unit>
+      <trans-unit id="talk.talk_type" resname="talk.talk_type">
+        <source>Type</source>
+      </trans-unit>
+      <trans-unit id="talk.talk_type.keynote" resname="talk.talk_type.keynote">
+        <source>Keynote</source>
+      </trans-unit>
+      <trans-unit id="talk.talk_type.talk" resname="talk.talk_type.talk">
+        <source>Talk</source>
+      </trans-unit>
+      <trans-unit id="talk.talk_type.workshop" resname="talk.talk_type.workshop">
+        <source>Workshop</source>
+      </trans-unit>
+      <trans-unit id="talk.title" resname="talk.title">
+        <source>Title</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

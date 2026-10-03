@@ -14,11 +14,15 @@ test-docs: ## Test the documentation rendering
 	docker run --user $(shell id -u):$(shell id -g) --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --minimal-test
 
 .PHONY: test
-test: test-docs test-lint test-cgl ## Run all test suites
+test: test-docs test-lint test-cgl test-extension ## Run all test suites
 
 .PHONY: test-lint
 test-lint: ## Lint the included PHP files
 	Build/Scripts/runTests.sh -s lint
+
+.PHONY: test-extension
+test-extension: ## Test that the example extension installs and needs no TCA migration
+	Build/Scripts/runTests.sh -s functional
 
 .PHONY: test-cgl
 test-cgl: ## Check the TYPO3 coding guidelines (dry-run)

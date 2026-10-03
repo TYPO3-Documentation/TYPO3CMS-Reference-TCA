@@ -1,0 +1,32 @@
+<?php
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') or die();
+
+ExtensionManagementUtility::addTCAcolumns('tx_myextension_location', [
+  'latitude' => [
+    'label' => 'my_extension.db:location.latitude',
+    'config' => [
+      'type' => 'number',
+      'format' => 'decimal',
+    ],
+  ],
+  'longitude' => [
+    'label' => 'my_extension.db:location.longitude',
+    'config' => [
+      'type' => 'number',
+      'format' => 'decimal',
+    ],
+  ],
+]);
+$GLOBALS['TCA']['tx_myextension_location']['palettes']['coordinates'] = [
+  'label' => 'my_extension.db:location.palette.coordinates',
+  'showitem' => 'latitude, longitude',
+];
+ExtensionManagementUtility::addToAllTCAtypes(
+  'tx_myextension_location',
+  '--palette--;;coordinates',
+  '',
+  'after:country',
+);

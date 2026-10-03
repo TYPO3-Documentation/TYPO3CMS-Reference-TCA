@@ -3,11 +3,18 @@
   "description": "Complete reference to the Table Configuration Array $GLOBALS['TCA']",
   "license": "OPL-1.0",
   "type": "typo3-cms-documentation",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "Documentation/CodeSnippets/my_extension"
+    }
+  ],
   "require": {
     "typo3/cms-core": "^14.3"
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^3.46",
+    "myvendor/my-extension": "@dev",
     "t3docs/codesnippet": "dev-main",
     "t3docs/examples": "^14.1",
     "t3docs/site-package": "dev-main",
@@ -46,7 +53,8 @@
     "typo3/cms-tstemplate": "^14.3",
     "typo3/cms-viewpage": "^14.3",
     "typo3/cms-webhooks": "^14.3",
-    "typo3/cms-workspaces": "^14.3"
+    "typo3/cms-workspaces": "^14.3",
+    "typo3/testing-framework": "^9"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -72,5 +80,10 @@
     "generate:codesnippets": [
       ".Build/bin/typo3 codesnippet:create Documentation/"
     ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "T3docs\\ReferenceTca\\Tests\\": "Tests/"
+    }
   }
 }
