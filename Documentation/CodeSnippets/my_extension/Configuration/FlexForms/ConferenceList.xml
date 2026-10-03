@@ -1,0 +1,51 @@
+<T3DataStructure>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <sheetTitle>my_extension.db:plugin.conferencelist.sheet.general</sheetTitle>
+        <type>array</type>
+        <el>
+          <settings.mode>
+            <label>my_extension.db:plugin.conferencelist.mode</label>
+            <onChange>reload</onChange>
+            <config>
+              <type>select</type>
+              <renderType>selectSingle</renderType>
+              <items>
+                <numIndex index="0">
+                  <label>my_extension.db:plugin.conferencelist.mode.upcoming</label>
+                  <value>upcoming</value>
+                </numIndex>
+                <numIndex index="1">
+                  <label>my_extension.db:plugin.conferencelist.mode.selected</label>
+                  <value>selected</value>
+                </numIndex>
+              </items>
+            </config>
+          </settings.mode>
+          <settings.conferences>
+            <label>my_extension.db:plugin.conferencelist.conferences</label>
+            <displayCond>FIELD:settings.mode:=:selected</displayCond>
+            <config>
+              <type>group</type>
+              <allowed>tx_myextension_conference</allowed>
+            </config>
+          </settings.conferences>
+          <settings.categories>
+            <label>my_extension.db:plugin.conferencelist.categories</label>
+            <config>
+              <type>category</type>
+            </config>
+          </settings.categories>
+          <settings.limit>
+            <label>my_extension.db:plugin.conferencelist.limit</label>
+            <config>
+              <type>number</type>
+              <default>10</default>
+            </config>
+          </settings.limit>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>
