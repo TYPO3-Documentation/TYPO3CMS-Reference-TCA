@@ -38,7 +38,3 @@ fix-cgl: ## Fix TYPO3 coding guidelines violations
 .PHONY: install
 install: ## Install/update the Composer dependencies
 	Build/Scripts/runTests.sh -s composerUpdate
-
-.PHONY: codesnippets
-codesnippets: ## Regenerate automatic code snippets
-	.Build/bin/typo3 codesnippet:create Documentation/
