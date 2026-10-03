@@ -24,5 +24,7 @@
         DataHandler will write these integers into that field, which is most likely *not* what you want. Use `default_sortby`
         in this case.
 
-    ..  literalinclude:: _CodeSnippets/_Sorting.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+        :visible-lines: 4-26
+        :emphasize-lines: 14

@@ -123,7 +123,7 @@ $data['tx_myextension_comment'] = [
 ];
 $data['tx_myextension_conference'] = [
     'NEWconfdev' => [
-        'pid' => $pid, 'title' => 'Extension Developer Days 2027',
+        'pid' => $pid, 'title' => 'TYPO3 Developer Days 2027',
         'conference_date' => strtotime('2027-05-12'), 'location' => 'NEWbasel', 'published' => 1,
         'seats' => 350, 'website' => 'https://example.org', 'contact_email' => 'team@example.org',
         'color' => '#ff8700', 'description' => '<p>Three days about building TYPO3 extensions.</p>',
@@ -157,7 +157,7 @@ $dataHandler = $process([], [
 $process([
     'tx_myextension_conference' => [
         $dataHandler->copyMappingArray_merged['tx_myextension_conference'][$conference] => [
-            'title' => 'Extension-Entwicklertage 2027',
+            'title' => 'TYPO3-Entwicklertage 2027',
         ],
     ],
 ]);
@@ -192,7 +192,7 @@ function createImages(string $folder): array
         'basel.png' => [[47, 153, 164], 'Congress Center'],
         'leipzig.png' => [[96, 125, 139], 'Kongresshalle'],
         'ada.png' => [[255, 135, 0], 'Ada'],
-        'logo.png' => [[41, 37, 69], 'EDD 2027'],
+        'logo.png' => [[41, 37, 69], 'T3DD 2027'],
     ];
     foreach ($images as $name => [$color, $label]) {
         $image = imagecreatetruecolor(800, 600);

@@ -13,22 +13,19 @@
     It is possible to have multiple field names in here, and each can have an ASC or DESC keyword. Note that the value
     *should not* be prefixed with 'ORDER BY' in itself.
 
-    ..  rubric:: Example: Sort by title
+    ..  rubric:: Example: Sort speakers by name
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_DefaultSortbyTitle.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
-        :visible-lines: 4-8
-        :emphasize-lines: 7
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_speaker.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_speaker.php
+        :visible-lines: 4-17
+        :emphasize-lines: 8
 
-    ..  rubric:: Example: Sort by title and then by creation date
+    ..  rubric:: Example: Sort conferences by date, newest first
 
-    The `crdate` column can only be used for sorting if it is configured in
-    the `ctrl` section of the TCA, see :confval:`ctrl-crdate`:
-
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_DefaultSortbyTitleCrdate.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
-        :visible-lines: 4-9
-        :emphasize-lines: 7-8
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 8
 
     ..  warning::
         Do not confuse this property with :ref:`sortby <ctrl-reference-sortby>`: default_sortby should be set only if there
