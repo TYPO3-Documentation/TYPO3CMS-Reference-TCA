@@ -4,6 +4,7 @@
 // Usage: node screenshots.mjs [name ...]
 // Without names, all screenshots are taken.
 
+import { readFileSync } from 'node:fs';
 import { chromium } from 'playwright';
 
 const baseUrl = process.env.TYPO3_BASE_URL ?? 'http://localhost:8080';
@@ -17,12 +18,9 @@ const margin = 12;
 // The innermost form group with the field name, which debug mode shows
 const field = (name) => `.form-group:has(code:text-is("[${name}]"))`;
 
-// uids as created by create-records.php
-const conference = 1;
-const conferenceTranslation = 3;
-const talk = 1;
-const workshop = 2;
-const storageFolder = 2;
+// The uids of the records that create-records.php created
+const { storageFolder, contentElement, conference, conferenceTranslation, talk, workshop } =
+  JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 const screenshots = {
   CtrlRecordList: {
@@ -37,7 +35,7 @@ const screenshots = {
     element: '.recordlist',
   },
   CtrlTypeContentElement: {
-    url: editUrl('tt_content', 1),
+    url: editUrl('tt_content', contentElement),
     element: field('CType'),
   },
   CtrlTypeWorkshop: {
@@ -48,7 +46,7 @@ const screenshots = {
   CtrlTypeChangeModal: {
     url: editUrl('tx_myextension_talk', talk),
     prepare: async (frame) => {
-      await frame.selectOption('select[name="data[tx_myextension_talk][1][talk_type]"]', 'workshop');
+      await frame.selectOption(`select[name="data[tx_myextension_talk][${talk}][talk_type]"]`, 'workshop');
     },
     modal: true,
   },
