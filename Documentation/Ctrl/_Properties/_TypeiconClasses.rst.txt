@@ -13,13 +13,9 @@
     "Create new record" dialog from the :guilabel:`Content > Records` module. For using and configuring `typeicon_classes`
     for custom page types, please see :ref:`Create a new Page Type<t3coreapi:page-types-example>`.
 
-    ..  rubric:: Example from the `tt_content` table:
+    ..  rubric:: Example: Icons for the types of talks
 
-    ..  code-block:: php
-        :caption: EXT:frontend/Configuration/TCA/tt_content.php (excerpt)
-
-        'typeicon_classes' => [
-            'header' => 'mimetypes-x-content-header',
-            'text' => 'mimetypes-x-content-text',
-            'default' => 'mimetypes-x-content-text',
-        ],
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+        :visible-lines: 4-26
+        :emphasize-lines: 9

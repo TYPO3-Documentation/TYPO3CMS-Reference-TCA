@@ -24,12 +24,9 @@
 
    See :php:`\TYPO3\CMS\Backend\Form\FormDataProvider\DatabaseRowInitializeNew->DatabaseRowInitializeNew()`
 
-..  rubric:: Example from "pages" table
+..  rubric:: Example: New talks take over the type and the room
 
-..  code-block:: php
-    :caption: EXT:core/Configuration/TCA/pages.php (excerpt)
-
-    'ctrl' => [
-        'useColumnsForDefaultValues' => 'doktype,fe_group,hidden',
-        // ...
-    ],
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+    :visible-lines: 4-26
+    :emphasize-lines: 15

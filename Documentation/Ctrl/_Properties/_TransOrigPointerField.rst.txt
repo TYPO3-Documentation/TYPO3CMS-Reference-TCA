@@ -33,7 +33,13 @@
 
     ..  rubric:: Example: Define a translation origin
 
-    ..  include:: /Images/Rst/TranslatedText2.rst.txt
+    ..  figure:: /Images/Conference/CtrlTransOrigPointerField.png
+        :alt: A translated title, with the title of the original record below
+        :class: with-shadow
 
-    ..  literalinclude:: _CodeSnippets/_Language.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+        A translated title, with the title of the original record below
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 20
