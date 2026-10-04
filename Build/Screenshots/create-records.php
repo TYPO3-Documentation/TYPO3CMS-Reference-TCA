@@ -146,23 +146,33 @@ $data['sys_file_reference'] = [
     'NEWimglogo' => $reference('logo.png', 'tx_myextension_conference', 'logo', 'NEWconfdev'),
 ];
 $dataHandler = $process($data);
-$conference = $dataHandler->substNEWwithIDs['NEWconfdev'];
-$talk = $dataHandler->substNEWwithIDs['NEWtalktca'];
+$uids = [
+    'storageFolder' => $pid,
+    'contentElement' => $dataHandler->substNEWwithIDs['NEWwelcome'],
+    'conference' => $dataHandler->substNEWwithIDs['NEWconfdev'],
+    'talk' => $dataHandler->substNEWwithIDs['NEWtalktca'],
+    'workshop' => $dataHandler->substNEWwithIDs['NEWtalkworkshop'],
+];
+$conference = $uids['conference'];
 
 // German translations of the storage folder and of the first conference
 $dataHandler = $process([], [
     'pages' => [$pid => ['localize' => 1]],
     'tx_myextension_conference' => [$conference => ['localize' => 1]],
 ]);
+$uids['conferenceTranslation'] = $dataHandler->copyMappingArray_merged['tx_myextension_conference'][$conference];
 $process([
     'tx_myextension_conference' => [
-        $dataHandler->copyMappingArray_merged['tx_myextension_conference'][$conference] => [
+        $uids['conferenceTranslation'] => [
             'title' => 'Extension-Entwicklertage 2027',
         ],
     ],
 ]);
 
-echo 'Created the example records in page ' . $pid . ', conference ' . $conference . ', talk ' . $talk . "\n";
+// The uids depend on the records that "typo3 setup" creates, which differ
+// between TYPO3 versions, so the screenshots read them from this file
+file_put_contents(Environment::getVarPath() . '/screenshot-records.json', json_encode($uids));
+echo 'Created the example records: ' . json_encode($uids) . "\n";
 
 function addGermanToSite(SiteFinder $siteFinder, SiteWriter $siteWriter): void
 {
