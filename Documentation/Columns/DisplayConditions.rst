@@ -32,27 +32,27 @@ FIELD
 
     -   Part 2 is the evaluation type. These are the possible options:
 
-         REQ
-             Requires the field to have a "true" value. False values are "" (blank string) and 0 (zero).
-             Everything else is true. For the REQ evaluation type Part 3 of the rules string must be the string "true"
-             or "false". If "true" then the rule returns "true" if the evaluation is true. If "false" then the rule
-             returns "true" if the evaluation is false.
+        REQ
+            Requires the field to have a "true" value. False values are "" (blank string) and 0 (zero).
+            Everything else is true. For the REQ evaluation type Part 3 of the rules string must be the string "true"
+            or "false". If "true" then the rule returns "true" if the evaluation is true. If "false" then the rule
+            returns "true" if the evaluation is false.
 
-         **> / < / >= / <=**
-             Evaluates if the field value is greater than, less than the value in "Part 3"
+        **> / < / >= / <=**
+            Evaluates if the field value is greater than, less than the value in "Part 3"
 
-         **= / !=**
-             Evaluates if the field value is equal to value in "Part 3"
+        **= / !=**
+            Evaluates if the field value is equal to value in "Part 3"
 
-         **IN / !IN**
-             Evaluates if the field value is in the comma list equal to value in "Part 3"
+        **IN / !IN**
+            Evaluates if the field value is in the comma list equal to value in "Part 3"
 
-         **- / !-**
-             Evaluates if the field value is in the range specified by value in "Part 3" ([min] - [max])
+        **- / !-**
+            Evaluates if the field value is in the range specified by value in "Part 3" ([min] - [max])
 
-         **BIT / !BIT**
-             Evaluates if the bit specified by the value in "Part 3" is set in the field's value
-             (considered as an integer)
+        **BIT / !BIT**
+            Evaluates if the bit specified by the value in "Part 3" is set in the field's value
+            (considered as an integer)
 
     -   Part 3 is a comma separated list of string or numeric values
 
@@ -87,9 +87,9 @@ VERSION:IS
 
     -   Part 1 is the type:
 
-         IS
-             Part 2 is "true" or "false": If true, the field is shown only if the record is a version (pid == -1).
-             Example to show a field in "Live" workspace only: :php:`VERSION:IS:false`
+        IS
+            Part 2 is "true" or "false": If true, the field is shown only if the record is a version (pid == -1).
+            Example to show a field in "Live" workspace only: :php:`VERSION:IS:false`
 
 In FlexForm, display conditions can be attached to single fields in sheets, to sheets itself, to flex section fields
 and to flex section container element fields. `FIELD` references can be prefixed with a sheet name to
