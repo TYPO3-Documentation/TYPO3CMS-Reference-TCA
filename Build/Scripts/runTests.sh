@@ -48,6 +48,8 @@ Options:
             - functional: functional tests of the example extension, on SQLite
             - lint: PHP linting
             - renderDocumentation
+            - screenshots: screenshots from a TYPO3 instance with the example
+              extension, optionally only the ones named as arguments
             - testRenderDocumentation
 
     -b <docker|podman>
@@ -198,6 +200,7 @@ fi
 IMAGE_PHP="${TYPO3_IMAGE_PREFIX}core-testing-$(echo "php${PHP_VERSION}" | sed -e 's/\.//'):latest"
 IMAGE_ALPINE="${IMAGE_PREFIX}alpine:3.8"
 IMAGE_DOCS="ghcr.io/typo3-documentation/render-guides:latest"
+IMAGE_PLAYWRIGHT="mcr.microsoft.com/playwright:v1.63.0-noble"
 
 # Set $1 to first mass argument, this is the optional test file or test directory to execute
 shift $((OPTIND - 1))
@@ -285,6 +288,19 @@ case ${TEST_SUITE} in
     lint)
         COMMAND="find . -name \\*.php ! -path "./.Build/\\*" -print0 | xargs -0 -n1 -P4 php -dxdebug.mode=off -l >/dev/null"
         ${CONTAINER_BIN} run ${CONTAINER_COMMON_PARAMS} --name composer-command-${SUFFIX} -e COMPOSER_CACHE_DIR=.Build/.cache/composer -e COMPOSER_ROOT_VERSION=${COMPOSER_ROOT_VERSION} ${IMAGE_PHP} /bin/sh -c "${COMMAND}"
+        SUITE_EXIT_CODE=$?
+        ;;
+    screenshots)
+        export PHP_RUN="${CONTAINER_BIN} run ${CONTAINER_COMMON_PARAMS} ${IMAGE_PHP}"
+        export WEB_START="${CONTAINER_BIN} run -d ${CONTAINER_COMMON_PARAMS} --name screenshots-web-${SUFFIX} ${IMAGE_PHP} php -S 0.0.0.0:8080 -t .Build/public Build/Screenshots/router.php"
+        export WEB_STOP="${CONTAINER_BIN} rm -f screenshots-web-${SUFFIX}"
+        # Like CONTAINER_COMMON_PARAMS, only docker needs the user to be set
+        BROWSER_USER=""
+        if [ ${CONTAINER_BIN} = "docker" ]; then
+            BROWSER_USER="${USERSET}"
+        fi
+        export BROWSER_RUN="${CONTAINER_BIN} run --rm --network container:screenshots-web-${SUFFIX} ${BROWSER_USER} -e HOME=/tmp -v ${ROOT_DIR}:${ROOT_DIR} -w ${ROOT_DIR}/Build/Screenshots ${IMAGE_PLAYWRIGHT}"
+        Build/Screenshots/run.sh "$@"
         SUITE_EXIT_CODE=$?
         ;;
     renderDocumentation)

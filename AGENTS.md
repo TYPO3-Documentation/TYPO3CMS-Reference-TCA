@@ -11,7 +11,14 @@ CONTRIBUTING.md                  # how to contribute
 
 - `make docs` — render the manual locally with Docker
 - `make test-docs` — render in minimal-test mode (the same validation CI runs); use this to validate any change before committing
-- `make test` — full test suite (`test-docs`, `test-lint`, `test-cgl`)
+- `make test` — full test suite (`test-docs`, `test-lint`, `test-cgl`,
+  `test-extension`)
+- `make test-extension` — install the example extension in
+  `Documentation/CodeSnippets/my_extension/` and check it with functional tests
+- `make screenshots` — set up a TYPO3 instance with the example extension and
+  its records, and take the screenshots into `Documentation/Images/Conference/`;
+  `Build/Scripts/runTests.sh -s screenshots CtrlRecordList` takes only the
+  named ones. Run it on each branch, so the screenshots show that version
 
 ## Documentation writing rules
 
