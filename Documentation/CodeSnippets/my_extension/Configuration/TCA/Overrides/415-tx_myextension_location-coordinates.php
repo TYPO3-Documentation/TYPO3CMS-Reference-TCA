@@ -9,14 +9,14 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_location', [
     'label' => 'my_extension.db:location.latitude',
     'config' => [
       'type' => 'number',
-      'format' => 'decimal',
+      'scale' => 6,
     ],
   ],
   'longitude' => [
     'label' => 'my_extension.db:location.longitude',
     'config' => [
       'type' => 'number',
-      'format' => 'decimal',
+      'scale' => 6,
     ],
   ],
 ]);
