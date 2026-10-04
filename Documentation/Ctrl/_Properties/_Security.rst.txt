@@ -10,37 +10,20 @@
     :type: array
     :Scope: Display
 
-    Array of sub-properties. This is used, for example, in the Core for the
-    `sys_file` table:
+    Array of sub-properties. Conferences may also be stored on standard pages:
 
-    ..  code-block:: php
-        :caption: EXT:core/Configuration/TCA/sys_file.php (excerpt)
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 27
 
-        return [
-            'ctrl' => [
-                // ...
-                'security' => [
-                    'ignoreWebMountRestriction' => true,
-                    'ignoreRootLevelRestriction' => true,
-                ],
-                // ...
-            ],
-        ];
+    The locations are shared by all sites and are stored on the root page, so
+    non-admin users need `ignoreRootLevelRestriction` to edit them:
 
-    And `ignorePageTypeRestriction` is used for the `sys_note` table:
-
-    ..  code-block:: php
-        :caption: EXT:sys_note/Configuration/TCA/sys_note.php (excerpt)
-
-        return [
-            'ctrl' => [
-                // ...
-                'security' => [
-                    'ignorePageTypeRestriction' => true,
-                ],
-                // ...
-            ],
-        ];
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
+        :visible-lines: 4-18
+        :emphasize-lines: 13
 
     You can also use it in an override file:
 

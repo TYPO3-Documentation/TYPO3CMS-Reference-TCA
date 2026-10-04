@@ -32,9 +32,17 @@ Example: Common table control configuration
 
 For advanced examples see :ref:`ctrl examples <ctrl-examples>`.
 
-..  include:: /Images/Rst/TxStyleguideCtrlCommon.rst.txt
+..  figure:: /Images/Conference/CtrlRecordList.png
+    :alt: The conferences in the Records module, with a German translation
+    :class: with-shadow
 
-..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+    The conferences in the Records module, with a German translation
+
+The `ctrl` section of the conference table:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
 
 ..  _ctrl-reference:
 

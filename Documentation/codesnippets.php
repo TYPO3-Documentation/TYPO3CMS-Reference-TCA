@@ -650,18 +650,6 @@ return [
     'fields' => ['columns/record_type'],
     'targetFileName' => 'CodeSnippets/RecordType.rst.txt',
   ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_type.php',
-    'fields' => ['ctrl'],
-    'targetFileName' => 'CodeSnippets/CtrlTypeCtrl.rst.txt',
-  ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_type.php',
-    'fields' => ['types'],
-    'targetFileName' => 'CodeSnippets/CtrlTypeTypes.rst.txt',
-  ],
 
   [
     'action' => 'createPhpArrayCodeSnippet',
@@ -674,13 +662,6 @@ return [
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_typeforeign.php',
     'fields' => ['ctrl'],
     'targetFileName' => 'CodeSnippets/TypeForeignTableCtrl.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_ctrl_common.php',
-    'fields' => ['ctrl'],
-    'targetFileName' => 'CodeSnippets/TxStyleguideCtrlCommon.rst.txt',
   ],
 
   [
