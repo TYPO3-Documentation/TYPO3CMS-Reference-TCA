@@ -28,6 +28,10 @@ test-extension: ## Test that the example extension installs and needs no TCA mig
 test-cgl: ## Check the TYPO3 coding guidelines (dry-run)
 	Build/Scripts/runTests.sh -s cgl -n
 
+.PHONY: screenshots
+screenshots: ## Take the screenshots from a TYPO3 instance with the example extension
+	Build/Scripts/runTests.sh -s screenshots
+
 .PHONY: fix
 fix: fix-cgl ## Apply all automatic fixes
 
