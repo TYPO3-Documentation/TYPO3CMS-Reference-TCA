@@ -35,7 +35,11 @@
         related to the frontend. However the icon of records having these features enabled will
         normally change as these examples show:
 
-    ..  include:: /Images/Rst/CtrlEnableFields.rst.txt
+    ..  figure:: /Images/Conference/CtrlEnableColumns.png
+        :alt: The enable columns of a conference in the Access tab
+        :class: with-shadow
+
+        The enable columns of a conference in the Access tab
 
     ..  include:: /Ctrl/_CodeSnippets/_AutoCreatedColumns/_AutoCreateWarning.rst.txt
 

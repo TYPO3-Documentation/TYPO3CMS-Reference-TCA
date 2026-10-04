@@ -20,30 +20,58 @@ the also have to be added to the :ref:`types <types>` definitions.
 Examples of column enable configurations
 ========================================
 
-..  literalinclude:: _CodeSnippets/_Enablecolumns.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
 ..  _ctrl-reference-enablecolumns-examples-all:
 
 Define all enablecolumn fields
-==============================
+------------------------------
+
+The conference table uses all enable columns:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
+    :emphasize-lines: 13
+
+The `access` tab of its form shows the fields, `starttime` and `endtime`
+in a palette:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 57-82
+    :emphasize-lines: 65,77
 
 ..  _ctrl-reference-enablecolumns-examples-hidden:
 
 Make table hideable
-===================
+-------------------
 
-..  literalinclude:: _CodeSnippets/_Hidden.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+A talk can only be hidden:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+    :visible-lines: 4-26
+    :emphasize-lines: 21
+
+Each type of talk shows the field in the `access` tab:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+    :visible-lines: 71-90
+    :emphasize-lines: 75,81,87
 
 ..  _ctrl-reference-enablecolumns-examples-common:
 
 Common enable fields
-====================
+--------------------
 
-..  include:: /Images/Rst/CtrlEnableFields.rst.txt
+Most tables use the fields `hidden`, `starttime` and `endtime`. The backend
+shows them in the record information:
 
-..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+..  figure:: /Images/Conference/CtrlEnableColumns.png
+    :alt: The enable columns of a conference in the Access tab
+    :class: with-shadow
+
+    The enable columns of a conference in the Access tab
 
 ..  _enablefields-usage:
 

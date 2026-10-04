@@ -30,7 +30,13 @@
 
 ..  rubric:: Example: A table with localization support
 
-..  include:: /Images/Rst/SysLanguageUid.rst.txt
+..  figure:: /Images/Conference/CtrlLanguageField.png
+    :alt: The language field of a conference
+    :class: with-shadow
 
-..  literalinclude:: _CodeSnippets/_Language.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    The language field of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
+    :emphasize-lines: 19

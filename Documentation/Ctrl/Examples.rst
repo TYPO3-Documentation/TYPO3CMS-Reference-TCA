@@ -7,9 +7,12 @@
 Examples demonstrating the ctrl section of TCA
 ==============================================
 
-A common table has a configuration such as this:
+The conference table of the conference extension has a configuration
+such as this:
 
-..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
 
 ..  _tca-example-ctrl-minimal:
 

@@ -16,14 +16,22 @@
    where the :guilabel:`Type:` selector is defined as the "CType" field and when you
    change that selector you will also get another rendering of the form:
 
-   .. include:: /Images/Rst/CtrlType.rst.txt
+   ..  figure:: /Images/Conference/CtrlTypeContentElement.png
+       :alt: The type field of a content element
+       :class: with-shadow
+
+       The type field of a content element
 
    It is used for example by the "doktype" field in the "pages" table.
 
    On changing the value of the field defined in `type` the user gets prompted
    to reload the record.
 
-   .. include:: /Images/Rst/CtrlTypeChangeModal.rst.txt
+   ..  figure:: /Images/Conference/CtrlTypeChangeModal.png
+       :alt: Changing the type asks to save the record and reload the form
+       :class: with-shadow
+
+       Changing the type asks to save the record and reload the form
 
    Only one type field can be defined. If you need to reload the record on
    changing another field, see
@@ -42,18 +50,37 @@ Examples
 The type stored in a field
 --------------------------
 
-.. include:: /Images/Rst/CtrlType0.rst.txt
+..  figure:: /Images/Conference/CtrlTypeWorkshop.png
+    :alt: A talk of the type workshop
+    :class: with-shadow
 
-The table `tx_styleguide_type` table from the "examples" extension defines different types. The field used for differentiating
-the types is the "record\_type" field. Hence we have the following in the `['ctrl']` section
-of the tx\_examples\_dummy table:
+    A talk of the type workshop
 
-.. include:: /CodeSnippets/CtrlTypeCtrl.rst.txt
+A talk of the conference extension can be a regular talk, a workshop or a
+keynote. The field `talk_type` stores which one it is, so the `ctrl` section
+of the talk table names it as `type`:
 
-The "record\_type" field can take values ranging from 0 to 2. Accordingly we define types for the same values.
-Each type defines which fields will be displayed in the BE form:
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+    :visible-lines: 4-49
+    :emphasize-lines: 7,36,40,44
 
-.. include:: /CodeSnippets/CtrlTypeTypes.rst.txt
+Each value of `talk_type` has its own entry in the `types` section, which
+defines the fields shown in the backend form. All three types start with the
+same fields:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+    :visible-lines: 71-90
+    :emphasize-lines: 72,78,84
+
+A field that only some types show is added to those types alone: the third
+argument of :php:`ExtensionManagementUtility::addToAllTCAtypes()` lists them.
+Only a workshop asks for the maximum number of participants:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/245-tx_myextension_talk-max_participants.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/245-tx_myextension_talk-max_participants.php
+    :emphasize-lines: 21
 
 See the :ref:`section about types <types>` for more details.
 

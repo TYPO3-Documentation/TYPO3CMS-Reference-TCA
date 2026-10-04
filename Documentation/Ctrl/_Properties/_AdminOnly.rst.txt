@@ -8,9 +8,9 @@
 
     Records can be changed  *only* by "admin"-users (having the "admin" flag set).
 
-    ..  rubric:: Example: Table `tx_myextension_mytable` is only editable by admin users:
+    ..  rubric:: Example: Only admins moderate the comments
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_AdminOnly.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 4-8
-        :emphasize-lines: 7
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_comment.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_comment.php
+        :visible-lines: 6-19
+        :emphasize-lines: 12

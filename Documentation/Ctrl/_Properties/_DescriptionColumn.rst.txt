@@ -23,6 +23,13 @@
 
     ..  rubric:: Example: Create a table that has a description column
 
-    ..  include:: /Images/Rst/CtrlDescriptionColumn.rst.txt
+    ..  figure:: /Images/Conference/CtrlDescriptionColumn.png
+        :alt: The internal notes of a conference, shown above the form
+        :class: with-shadow
 
-    ..  include:: /CodeSnippets/TxStyleguideCtrlCommon.rst.txt
+        The internal notes of a conference, shown above the form
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 7
