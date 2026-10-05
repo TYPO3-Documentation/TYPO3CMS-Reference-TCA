@@ -243,7 +243,7 @@ the description of the property itself.
 Glossary
 ========
 
-Before you read on, let's just refresh the meaning of a few concepts
+Before you read on, let's refresh the meaning of a few concepts
 mentioned on the next pages:
 
 TCE
