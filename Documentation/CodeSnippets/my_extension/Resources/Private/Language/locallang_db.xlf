@@ -21,6 +21,21 @@
       <trans-unit id="conference" resname="conference">
         <source>Conference</source>
       </trans-unit>
+      <trans-unit id="conference.amenities" resname="conference.amenities">
+        <source>Amenities</source>
+      </trans-unit>
+      <trans-unit id="conference.amenities.catering" resname="conference.amenities.catering">
+        <source>Catering</source>
+      </trans-unit>
+      <trans-unit id="conference.amenities.childcare" resname="conference.amenities.childcare">
+        <source>Childcare</source>
+      </trans-unit>
+      <trans-unit id="conference.amenities.live_stream" resname="conference.amenities.live_stream">
+        <source>Live stream</source>
+      </trans-unit>
+      <trans-unit id="conference.amenities.wheelchair_access" resname="conference.amenities.wheelchair_access">
+        <source>Wheelchair access</source>
+      </trans-unit>
       <trans-unit id="conference.categories" resname="conference.categories">
         <source>Categories</source>
       </trans-unit>
@@ -102,6 +117,12 @@
       <trans-unit id="conference.registration_open" resname="conference.registration_open">
         <source>Registration open</source>
       </trans-unit>
+      <trans-unit id="conference.registration_open.closed" resname="conference.registration_open.closed">
+        <source>Closed</source>
+      </trans-unit>
+      <trans-unit id="conference.registration_open.open" resname="conference.registration_open.open">
+        <source>Open</source>
+      </trans-unit>
       <trans-unit id="conference.seats" resname="conference.seats">
         <source>Seats</source>
       </trans-unit>
@@ -159,8 +180,38 @@
       <trans-unit id="location.longitude" resname="location.longitude">
         <source>Longitude</source>
       </trans-unit>
+      <trans-unit id="location.main_venue" resname="location.main_venue">
+        <source>Main venue</source>
+      </trans-unit>
+      <trans-unit id="location.main_venue.item" resname="location.main_venue.item">
+        <source>The main venue of all conferences</source>
+      </trans-unit>
       <trans-unit id="location.name" resname="location.name">
         <source>Name</source>
+      </trans-unit>
+      <trans-unit id="location.open_days" resname="location.open_days">
+        <source>Open on</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.friday" resname="location.open_days.friday">
+        <source>Fr</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.monday" resname="location.open_days.monday">
+        <source>Mo</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.saturday" resname="location.open_days.saturday">
+        <source>Sa</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.sunday" resname="location.open_days.sunday">
+        <source>Su</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.thursday" resname="location.open_days.thursday">
+        <source>Th</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.tuesday" resname="location.open_days.tuesday">
+        <source>Tu</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.wednesday" resname="location.open_days.wednesday">
+        <source>We</source>
       </trans-unit>
       <trans-unit id="location.palette.address" resname="location.palette.address">
         <source>Address</source>
@@ -182,6 +233,21 @@
       </trans-unit>
       <trans-unit id="plugin.conferencelist.description" resname="plugin.conferencelist.description">
         <source>Shows a list of conferences</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display" resname="plugin.conferencelist.display">
+        <source>Show</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display.date" resname="plugin.conferencelist.display.date">
+        <source>Date</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display.location" resname="plugin.conferencelist.display.location">
+        <source>Location</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display.logo" resname="plugin.conferencelist.display.logo">
+        <source>Logo</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display.speakers" resname="plugin.conferencelist.display.speakers">
+        <source>Speakers</source>
       </trans-unit>
       <trans-unit id="plugin.conferencelist.limit" resname="plugin.conferencelist.limit">
         <source>Maximum number of conferences</source>
@@ -273,6 +339,12 @@
       <trans-unit id="talk.comments" resname="talk.comments">
         <source>Comments</source>
       </trans-unit>
+      <trans-unit id="talk.days" resname="talk.days">
+        <source>Days</source>
+      </trans-unit>
+      <trans-unit id="talk.days.description" resname="talk.days.description">
+        <source>The days of the conference on which the workshop takes place</source>
+      </trans-unit>
       <trans-unit id="talk.duration" resname="talk.duration">
         <source>Duration (minutes)</source>
       </trans-unit>
@@ -294,6 +366,12 @@
       <trans-unit id="talk.recording" resname="talk.recording">
         <source>Recording</source>
       </trans-unit>
+      <trans-unit id="talk.recording_allowed" resname="talk.recording_allowed">
+        <source>Recording</source>
+      </trans-unit>
+      <trans-unit id="talk.recording_allowed.item" resname="talk.recording_allowed.item">
+        <source>The speaker agrees to be recorded</source>
+      </trans-unit>
       <trans-unit id="talk.requirements" resname="talk.requirements">
         <source>Requirements</source>
       </trans-unit>
@@ -308,6 +386,9 @@
       </trans-unit>
       <trans-unit id="talk.speaker" resname="talk.speaker">
         <source>Speaker</source>
+      </trans-unit>
+      <trans-unit id="talk.spoken_language" resname="talk.spoken_language">
+        <source>Spoken language</source>
       </trans-unit>
       <trans-unit id="talk.start_time" resname="talk.start_time">
         <source>Start</source>

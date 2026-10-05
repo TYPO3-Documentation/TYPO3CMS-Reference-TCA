@@ -41,6 +41,28 @@
               <type>category</type>
             </config>
           </settings.categories>
+          <settings.display>
+            <label>my_extension.db:plugin.conferencelist.display</label>
+            <config>
+              <type>check</type>
+              <items>
+                <numIndex index="0">
+                  <label>my_extension.db:plugin.conferencelist.display.logo</label>
+                </numIndex>
+                <numIndex index="1">
+                  <label>my_extension.db:plugin.conferencelist.display.location</label>
+                </numIndex>
+                <numIndex index="2">
+                  <label>my_extension.db:plugin.conferencelist.display.speakers</label>
+                </numIndex>
+                <numIndex index="3">
+                  <label>my_extension.db:plugin.conferencelist.display.date</label>
+                </numIndex>
+              </items>
+              <cols>3</cols>
+              <default>15</default>
+            </config>
+          </settings.display>
           <settings.limit>
             <label>my_extension.db:plugin.conferencelist.limit</label>
             <displayCond>

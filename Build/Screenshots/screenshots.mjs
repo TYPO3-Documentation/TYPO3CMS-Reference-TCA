@@ -207,6 +207,43 @@ const screenshots = {
     tab: 'Details',
     element: field('ticketing_secret'),
   },
+  CheckSingle: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('recording_allowed'),
+  },
+  CheckColumns: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('amenities'),
+  },
+  CheckInline: {
+    url: editUrl('tx_myextension_location', location),
+    element: field('open_days'),
+  },
+  CheckMaximumRecordsChecked: {
+    url: editUrl('tx_myextension_location', location),
+    element: field('main_venue'),
+  },
+  CheckToggle: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('published'),
+  },
+  CheckLabeledToggle: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('registration_open'),
+  },
+  CheckItemsProcessors: {
+    url: editUrl('tx_myextension_talk', workshop),
+    element: field('days'),
+  },
+  RadioLevel: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('level'),
+  },
+  RadioItemsProcessors: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('spoken_language'),
+  },
 };
 
 // Tall, so that most forms fit without scrolling
@@ -256,7 +293,7 @@ for (const name of names) {
     const end = await frame.locator(screenshot.to ?? screenshot.element).last().boundingBox();
     if (end.y + end.height + margin > viewportHeight) {
       await frame.locator(screenshot.to ?? screenshot.element).last()
-        .evaluate((element) => element.scrollIntoView({ block: 'end' }));
+        .evaluate((element) => element.scrollIntoView({ block: 'center' }));
       await page.waitForTimeout(300);
     }
     // Bounding boxes are relative to the page, also for elements in the frame

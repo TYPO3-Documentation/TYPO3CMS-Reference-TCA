@@ -81,6 +81,7 @@ $data['tx_myextension_location'] = [
         'zip' => '4058', 'city' => 'Basel', 'country' => 'CH',
         'latitude' => '47.563167', 'longitude' => '7.600833', 'image' => 'NEWimgbasel',
         'directions' => 'Tram 2 or 6 to the stop Messeplatz.', 'capacity' => 1000,
+        'main_venue' => 1,
     ],
     'NEWleipzig' => [
         'pid' => $pid, 'name' => 'Kongresshalle', 'street' => 'Pfaffendorfer Strasse 31',
@@ -110,7 +111,7 @@ $data['tx_myextension_talk'] = [
         'speaker' => 'NEWspada', 'start_time' => strtotime('2027-05-12 10:00'), 'duration' => 45,
         'room' => 'Main hall', 'level' => 1,
         'abstract' => "How the table configuration array turns a database table into a backend form.\n\n\n\nWith examples from a real extension.",
-        'comments' => 'NEWcommenttalk',
+        'comments' => 'NEWcommenttalk', 'recording_allowed' => 1, 'spoken_language' => 'en',
     ],
     'NEWtalkworkshop' => [
         'pid' => $pid, 'talk_type' => 'workshop', 'title' => 'Write your first form element',
@@ -143,7 +144,7 @@ $data['tx_myextension_conference'] = [
         'ticket_link' => 'https://example.org/tickets',
         'seats' => 350, 'website' => 'https://example.org', 'contact_email' => 'team@example.org',
         'color' => '#ff8700', 'description' => '<p>Three days about building TYPO3 extensions.</p>',
-        'hashtag' => '#T3DD27',
+        'hashtag' => '#T3DD27', 'amenities' => 9,
         'end_date' => strtotime('2027-05-14'), 'doors_open' => '2027-05-12T08:30:00',
         'overlay_color' => '#29254580', 'livestream_password' => 'Stream-Basel-2027',
         'ticketing_secret' => 'a3f1c9e07b5d4e2f8c6a1b0d9e7f3c5a2b4d6e8f',
@@ -180,6 +181,10 @@ $uids = [
     'backendLayout' => $dataHandler->substNEWwithIDs['NEWlayout'],
 ];
 $conference = $uids['conference'];
+
+// The days of a workshop come from its conference, which has to exist when
+// the value is saved: the first two days of the conference
+$process(['tx_myextension_talk' => [$uids['workshop'] => ['days' => 3]]]);
 
 // German translations of the storage folder, the first conference and a speaker
 $dataHandler = $process([], [

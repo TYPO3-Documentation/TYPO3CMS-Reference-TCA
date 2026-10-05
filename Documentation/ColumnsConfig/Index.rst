@@ -26,10 +26,29 @@ An overview of available types:
 check
     :ref:`One or multiple check boxes <columns-check>`
 
-    ..  include:: /Images/Rst/Checkbox2.rst.txt
-    ..  include:: /Images/Rst/Checkbox16.rst.txt
-    ..  include:: /Images/Rst/Checkbox19.rst.txt
-    ..  include:: /Images/Rst/Checkbox17.rst.txt
+    ..  figure:: /Images/Conference/CheckSingle.png
+        :alt: A single checkbox with a label
+        :class: with-shadow
+
+        A single checkbox with a label
+
+    ..  figure:: /Images/Conference/CheckInline.png
+        :alt: The weekdays of a location, Monday to Friday checked by default
+        :class: with-shadow
+
+        The weekdays of a location, Monday to Friday checked by default
+
+    ..  figure:: /Images/Conference/CheckLabeledToggle.png
+        :alt: A toggle with the labels Open and Closed
+        :class: with-shadow
+
+        A toggle with the labels Open and Closed
+
+    ..  figure:: /Images/Conference/CheckToggle.png
+        :alt: A toggle
+        :class: with-shadow
+
+        A toggle
 
 flex
     :ref:`Form elements stored in an XML structure in one field <columns-flex>`.
@@ -85,7 +104,11 @@ passthrough
 radio
     :ref:`One or multiple radio buttons <columns-radio>`.
 
-    ..  include:: /Images/Rst/Radio1.rst.txt
+    ..  figure:: /Images/Conference/RadioLevel.png
+        :alt: The level of a talk
+        :class: with-shadow
+
+        The level of a talk
 
 select
     :ref:`Select one or more items from a list <columns-select>`.
