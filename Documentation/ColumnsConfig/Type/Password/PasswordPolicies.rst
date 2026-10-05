@@ -12,27 +12,24 @@ Examples for using different password policies in TCA
 Use the `default` policy
 ------------------------
 
-..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 34-40
-    :emphasize-lines: 38
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/119-tx_myextension_conference-livestream_password.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/119-tx_myextension_conference-livestream_password.php
+    :emphasize-lines: 14
 
 ..  _columns-password-properties-passwordpolicy-example-frontend:
 
 Use the globally defined policy for frontend
 --------------------------------------------
 
-..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 42-49
-    :emphasize-lines: 46
+..  code-block:: php
+
+    'passwordPolicy' => $GLOBALS['TYPO3_CONF_VARS']['FE']['passwordPolicy'] ?? '',
 
 ..  _columns-password-properties-passwordpolicy-example-backend:
 
 Use the globally defined policy for backend
 -------------------------------------------
 
-..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 51-58
-    :emphasize-lines: 55
+..  code-block:: php
+
+    'passwordPolicy' => $GLOBALS['TYPO3_CONF_VARS']['BE']['passwordPolicy'] ?? '',

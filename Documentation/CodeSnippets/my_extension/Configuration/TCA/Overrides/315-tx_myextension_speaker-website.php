@@ -9,6 +9,12 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_speaker', [
     'label' => 'my_extension.db:speaker.website',
     'config' => [
       'type' => 'link',
+      'valuePicker' => [
+        'items' => [
+          ['label' => 'Profile page', 'value' => 'https://example.org/profile/'],
+          ['label' => 'Code repository', 'value' => 'https://example.org/code/'],
+        ],
+      ],
       'allowedTypes' => ['url'],
     ],
   ],

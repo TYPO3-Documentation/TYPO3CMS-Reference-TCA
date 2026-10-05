@@ -5,20 +5,18 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 defined('TYPO3') or die();
 
 ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
-  'registration_deadline' => [
-    'label' => 'my_extension.db:conference.registration_deadline',
-    'displayCond' => 'FIELD:registration_open:REQ:true',
+  'overlay_color' => [
+    'label' => 'my_extension.db:conference.overlay_color',
     'config' => [
-      'type' => 'datetime',
-      'dbType' => 'datetime',
+      'type' => 'color',
+      'opacity' => true,
       'nullable' => true,
-      'searchable' => false,
     ],
   ],
 ]);
 ExtensionManagementUtility::addToAllTCAtypes(
   'tx_myextension_conference',
-  'registration_deadline',
+  'overlay_color',
   '',
-  'after:registration_open',
+  'after:color',
 );

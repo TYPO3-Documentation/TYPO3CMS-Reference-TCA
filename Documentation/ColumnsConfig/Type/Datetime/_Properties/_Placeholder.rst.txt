@@ -6,10 +6,11 @@
 
     Placeholder, containing a default date.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Datetime/_Snippets/_Datetime.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 57-64
-        :emphasize-lines: 61
+    ..  code-block:: php
+
+        'placeholder' => '2027-05-12',
+        'nullable' => true,
+        'mode' => 'useOrOverridePlaceholder',
 
     ..  note::
         As the TCA is cached it is not possible to set dynamic values such as

@@ -167,6 +167,46 @@ const screenshots = {
     from: field('capacity'),
     to: valuePickerList('capacity'),
   },
+  DatetimeDate: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('conference_date'),
+  },
+  DatetimeTime: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('doors_open'),
+  },
+  ColorField: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('color'),
+  },
+  ColorOpacity: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('overlay_color'),
+  },
+  EmailContact: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('contact_email'),
+  },
+  LinkTickets: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('ticket_link'),
+  },
+  LinkValuePicker: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    element: field('website'),
+  },
+  PasswordGenerator: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('livestream_password'),
+  },
+  PasswordSecretToken: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('ticketing_secret'),
+  },
 };
 
 // Tall, so that most forms fit without scrolling

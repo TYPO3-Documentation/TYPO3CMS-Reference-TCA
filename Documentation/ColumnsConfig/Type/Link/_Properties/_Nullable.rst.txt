@@ -14,9 +14,8 @@
 
     The database field must allow the :sql:`NULL` value.
 
-..  rubric:: Example: a nullable link field
+..  rubric:: Example: A nullable link field
 
-..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 149-155
-    :emphasize-lines: 153
+..  code-block:: php
+
+    'nullable' => true,

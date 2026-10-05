@@ -16,6 +16,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
     'config' => [
       'type' => 'link',
       'allowedTypes' => ['page', 'url'],
+      'appearance' => [
+        'browserTitle' => 'my_extension.db:conference.ticket_link.browser_title',
+      ],
     ],
   ],
 ]);

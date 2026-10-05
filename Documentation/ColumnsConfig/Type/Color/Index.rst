@@ -33,12 +33,16 @@ colors defined in a corporate design can be selected by a simple click.
 Example: Define a simple color picker in TCA
 ============================================
 
-A simple color picker:
+The color of a conference:
 
-..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 9-14
-    :emphasize-lines: 12
+..  figure:: /Images/Conference/ColorField.png
+    :alt: The color of a conference
+    :class: with-shadow
+
+    The color of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/150-tx_myextension_conference-color.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/150-tx_myextension_conference-color.php
 
 ..  _columns-color-properties:
 
