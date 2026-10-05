@@ -40,10 +40,9 @@
     In the following example a category tree is displayed, but only one
     category can be selected.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
-        :visible-lines: 7, 14-20
-        :emphasize-lines: 18
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/285-tx_myextension_talk-topic.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/285-tx_myextension_talk-topic.php
+        :emphasize-lines: 12
 
     All other relevant options, for example `maxitems=1`, are being set
     automatically.

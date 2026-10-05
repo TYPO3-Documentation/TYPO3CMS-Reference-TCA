@@ -13,15 +13,20 @@
     Suggestions can be configured differently for each table. Settings in "default" are applied to all tables.
     In the example below, there is a special setting for the "pages" table to search only standard pages.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 16-33
-        :emphasize-lines: 21
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+        :emphasize-lines: 16-27
 
     additionalSearchFields (string)
         Comma-separated list of fields the suggest wizard should also search in. By default the wizard looks only in the
         fields listed in the :ref:`label <ctrl-reference-label>` and :ref:`label_alt <ctrl-reference-label-alt>`
         of TCA :ref:`ctrl properties <ctrl-reference>`.
+
+        **Example**
+
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+            :emphasize-lines: 25
 
     addWhere (string)
         Allows to define an additional where clause for the searchquery. It supplies a marker for ###THIS_UID###
@@ -51,20 +56,18 @@
 
         **Example**
 
-        ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 21-31
-            :emphasize-lines: 23
+        ..  code-block:: php
+
+            'suggestOptions' => [
+                'default' => [
+                    'pidList' => '6,7',
+                    'pidDepth' => 4,
+                ],
+            ],
 
     pidDepth (integer)
         Expand pidList by this number of levels. Has an effect only if pidList has a value.
-
-        **Example**
-
-        ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 21-31
-            :emphasize-lines: 24
+        See the example of `pidList`.
 
     receiverClass (string)
         PHP class alternative receiver class, default is :php:`TYPO3\CMS\Backend\Form\Wizard\SuggestWizardDefaultReceiver`.
@@ -81,10 +84,9 @@
 
         **Example**
 
-        ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 21-31
-            :emphasize-lines: 29
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+            :emphasize-lines: 22
 
     searchWholePhrase (boolean)
         Whether to do a `LIKE=%mystring%` (searchWholePhrase = 1) or a `LIKE=mystring%`
@@ -92,13 +94,18 @@
 
         **Example**
 
-        ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_SuggestOptions.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 21-31
-            :emphasize-lines: 25
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+            :emphasize-lines: 18
 
 ..  rubric:: Example: Only show pages with doktype=1 in the suggest options
 
-..  include:: /Images/Rst/GroupDb10.rst.txt
+..  figure:: /Images/Conference/GroupRelatedContent.png
+    :alt: The related pages and content of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/GroupDb10.rst.txt
+    The related pages and content of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+    :emphasize-lines: 21-23

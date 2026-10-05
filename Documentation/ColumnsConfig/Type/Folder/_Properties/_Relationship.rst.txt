@@ -25,7 +25,6 @@
     It contains each selected folder followed by all of its subfolders,
     recursively.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Folder/_Snippets/_Relationship.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_gallery.php
-        :visible-lines: 16-22
-        :emphasize-lines: 20
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/280-tx_myextension_talk-materials.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/280-tx_myextension_talk-materials.php
+        :emphasize-lines: 12

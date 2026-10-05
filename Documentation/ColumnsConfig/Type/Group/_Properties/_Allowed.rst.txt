@@ -19,8 +19,14 @@
         :ref:`allowed <columns-group-properties-allowed>` property
         (but with just one table name).
 
-..  rubric:: Example: Group relation to be_groups and be_users
+..  rubric:: Example: Group relation to pages and content elements
 
-..  include:: /Images/Rst/GroupDb1.rst.txt
+..  figure:: /Images/Conference/GroupRelatedContent.png
+    :alt: The related pages and content of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/GroupDb1.rst.txt
+    The related pages and content of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+    :emphasize-lines: 12

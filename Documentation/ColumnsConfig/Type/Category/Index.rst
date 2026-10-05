@@ -30,9 +30,14 @@ is generated automatically.
 Example: Simple category field
 ==============================
 
-..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
-    :visible-lines: 7-13
+..  figure:: /Images/Conference/CategoryConference.png
+    :alt: The categories of a conference
+    :class: with-shadow
+
+    The categories of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/160-tx_myextension_conference-categories.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/160-tx_myextension_conference-categories.php
     :emphasize-lines: 11
 
 The following options can be overridden via :ref:`page TSconfig, TCE form

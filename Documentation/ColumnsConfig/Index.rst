@@ -56,7 +56,11 @@ flex
 group
     :ref:`Relations to other table rows or files <columns-group>`.
 
-    ..  include:: /Images/Rst/GroupDb1.rst.txt
+    ..  figure:: /Images/Conference/GroupSpeaker.png
+        :alt: The speaker of a talk
+        :class: with-shadow
+
+        The speaker of a talk
 
 imageManipulation
     :ref:`Json array with cut / cropping information
