@@ -30,9 +30,14 @@ Examples for select fields with renderType `selectSingle`
 Simple select drop down with static and database values
 -------------------------------------------------------
 
-..  include:: /Images/Rst/SelectSingle3.rst.txt
+..  figure:: /Images/Conference/CtrlSeliconField.png
+    :alt: The location of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle3.rst.txt
+    The location of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
 
 
 ..  _tca-example-select-single-12:
@@ -40,9 +45,15 @@ Simple select drop down with static and database values
 Select foreign rows with icons
 ------------------------------
 
-..  include:: /Images/Rst/SelectSingle12.rst.txt
+..  figure:: /Images/Conference/CtrlSeliconField.png
+    :alt: The location of a conference, with the images of the locations
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle12.rst.txt
+    The location of a conference, with the images of the locations
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :emphasize-lines: 18
 
 
 ..  _tca-example-select-single-10:
@@ -50,9 +61,10 @@ Select foreign rows with icons
 Select a single value from a list of elements
 ---------------------------------------------
 
-..  include:: /Images/Rst/SelectSingle10.rst.txt
 
-..  include:: /CodeSnippets/SelectSingle10.rst.txt
+..  code-block:: php
+
+    'size' => 6,
 
 
 ..  _columns-select-properties:

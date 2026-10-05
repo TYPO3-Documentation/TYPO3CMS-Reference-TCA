@@ -18,12 +18,24 @@
 
 ..  rubric:: Example: Select singe field with enabled selectIcons
 
-..  include:: /Images/Rst/SelectSingle12.rst.txt
+..  figure:: /Images/Conference/CtrlSeliconField.png
+    :alt: The location of a conference, with the images of the locations
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle12.rst.txt
+    The location of a conference, with the images of the locations
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :emphasize-lines: 13
 
 ..  rubric:: Example: Select field with foreign table via MM table
 
-..  include:: /Images/Rst/SelectSingle15.rst.txt
+..  figure:: /Images/Conference/SelectMultipleSideBySideFieldControl.png
+    :alt: The speakers of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle15.rst.txt
+    The speakers of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :emphasize-lines: 14

@@ -113,10 +113,29 @@ radio
 select
     :ref:`Select one or more items from a list <columns-select>`.
 
-    ..  include:: /Images/Rst/SelectSingle12.rst.txt
-    ..  include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
-    ..  include:: /Images/Rst/SelectSinglebox1.rst.txt
-    ..  include:: /Images/Rst/SelectTree1.rst.txt
+    ..  figure:: /Images/Conference/CtrlSeliconField.png
+        :alt: The location of a conference, with the images of the locations
+        :class: with-shadow
+
+        The location of a conference, with the images of the locations
+
+    ..  figure:: /Images/Conference/SelectMultipleSideBySide.png
+        :alt: The equipment of a talk
+        :class: with-shadow
+
+        The equipment of a talk
+
+    ..  figure:: /Images/Conference/SelectSingleBox.png
+        :alt: The audience of a talk
+        :class: with-shadow
+
+        The audience of a talk
+
+    ..  figure:: /Images/Conference/SelectTree.png
+        :alt: The location a hall is part of
+        :class: with-shadow
+
+        The location a hall is part of
 
 slug
     :ref:`Define parts of a URL path<columns-slug>`

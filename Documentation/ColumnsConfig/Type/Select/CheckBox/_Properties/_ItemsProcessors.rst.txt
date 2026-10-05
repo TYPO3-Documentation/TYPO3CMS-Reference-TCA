@@ -19,10 +19,9 @@
     If both are configured, `itemsProcFunc` is executed first and `itemsProcessors`
     are executed afterwards.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_ItemsProcessorsTca.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 3, 43-57
-        :emphasize-lines: 51
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+        :emphasize-lines: 17
 
     For fields of type `select`, each
     :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` must be created with
@@ -35,8 +34,7 @@
     `items <https://docs.typo3.org/permalink/t3tca:confval-select-checkbox-items>`_
     array, including `group`, `icon` and `description`.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_ItemsProcessor.php
-        :caption: EXT:my_extension/Classes/Processors/SomeItemProcessor.php
-        :visible-lines: 12-69
+    ..  literalinclude:: /CodeSnippets/my_extension/Classes/Backend/ItemsProcessor/TimezoneItemsProcessor.php
+        :caption: EXT:my_extension/Classes/Backend/ItemsProcessor/TimezoneItemsProcessor.php
 
     See also `Item processor registration and implementation <https://docs.typo3.org/permalink/t3tca:tca-property-itemsprocessors>`_

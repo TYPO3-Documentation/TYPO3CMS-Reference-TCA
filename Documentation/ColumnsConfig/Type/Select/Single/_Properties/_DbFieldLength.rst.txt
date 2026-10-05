@@ -20,9 +20,8 @@
     use `dbFieldLength` for `type=select` fields to increase or
     decrease the default length.
 
-..  rubric:: Example: Increase the dbFieldLength for a select field
+..  rubric:: Example: A shorter column for the identifier of a time zone
 
-..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_RenderTypes.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 9-23
-    :emphasize-lines: 18
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :emphasize-lines: 32

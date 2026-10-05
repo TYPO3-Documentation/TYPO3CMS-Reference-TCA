@@ -27,9 +27,14 @@ is generated automatically.
 Example: Select multiple values from a box
 ==========================================
 
-..  include:: /Images/Rst/SelectSinglebox1.rst.txt
+..  figure:: /Images/Conference/SelectSingleBox.png
+    :alt: The audience of a talk
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSinglebox1.rst.txt
+    The audience of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/265-tx_myextension_talk-audience.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/265-tx_myextension_talk-audience.php
 
 
 ..  _columns-select-selectsinglebox-properties:

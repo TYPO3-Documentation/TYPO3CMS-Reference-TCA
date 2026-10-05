@@ -20,7 +20,10 @@ const field = (name) => `.form-group:has(code:text-is("[${name}]"))`;
 
 // Opens the value picker of a field, which shows its choices in a list
 const openValuePicker = async (frame, name) => {
-  await frame.locator(`${field(name)} typo3-backend-combobox input`).last().focus();
+  const input = frame.locator(`${field(name)} typo3-backend-combobox input`).last();
+  // Near the bottom of the window, the list would open upwards
+  await input.evaluate((element) => element.scrollIntoView({ block: 'center' }));
+  await input.focus();
   await frame.page().keyboard.press('ArrowDown');
 };
 const valuePickerList = (name) => `${field(name)} typo3-backend-combobox [role="listbox"]`;
@@ -28,7 +31,7 @@ const valuePickerList = (name) => `${field(name)} typo3-backend-combobox [role="
 // The uids of the records that create-records.php created
 const {
   storageFolder, contentElement, conference, conferenceTranslation, talk, workshop,
-  speaker, speakerTranslation, location, backendLayout,
+  speaker, speakerTranslation, location, hall, backendLayout,
 } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
@@ -243,6 +246,39 @@ const screenshots = {
   RadioItemsProcessors: {
     url: editUrl('tx_myextension_talk', talk),
     element: field('spoken_language'),
+  },
+  SelectSingleTimezone: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('timezone'),
+  },
+  SelectSingleSalutation: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    element: field('salutation'),
+  },
+  SelectSingleFileFolder: {
+    url: editUrl('tx_myextension_location', location),
+    element: field('marker'),
+  },
+  SelectSingleBox: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('audience'),
+  },
+  SelectCheckBox: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    element: field('topics'),
+  },
+  SelectMultipleSideBySide: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('equipment'),
+  },
+  SelectMultipleSideBySideFieldControl: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Program',
+    element: field('speakers'),
+  },
+  SelectTree: {
+    url: editUrl('tx_myextension_location', hall),
+    element: field('parent'),
   },
 };
 
