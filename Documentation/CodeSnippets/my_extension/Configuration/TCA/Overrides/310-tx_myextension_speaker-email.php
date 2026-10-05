@@ -10,7 +10,7 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_speaker', [
     'l10n_mode' => 'exclude',
     'config' => [
       'type' => 'email',
-      'eval' => 'unique',
+      'eval' => 'uniqueInPid',
     ],
   ],
 ]);

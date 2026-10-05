@@ -13,13 +13,15 @@ Include special characters
 
 Example: `qe8)i2W1it-msR8`
 
-..  figure:: /Images/ManualScreenshots/PasswordGeneratorAllChars.png
-    :alt: A password generator using special chars.
+..  figure:: /Images/Conference/PasswordGenerator.png
+    :alt: The password of the live stream with its generator
     :class: with-shadow
 
-    A password generator using special chars.
+    The password of the live stream with its generator
 
-..  include:: _Snippets/_Password_6.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/119-tx_myextension_conference-livestream_password.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/119-tx_myextension_conference-livestream_password.php
+    :emphasize-lines: 19
 
 ..  _columns-password-properties-passwordgenerator-only-digits:
 
@@ -28,32 +30,40 @@ Only digits, length 8 (minimum length)
 
 Example: `28233371`
 
-..  figure:: /Images/ManualScreenshots/PasswordGeneratorDigits.png
-    :alt: A generated 8 digit number
-    :class: with-shadow
 
-    A generated 8 digit number
+..  code-block:: php
 
-..  include:: _Snippets/_Password_7.rst.txt
+    'fieldControl' => [
+      'passwordGenerator' => [
+        'renderType' => 'passwordGenerator',
+        'options' => [
+          // A policy in $GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']
+          // whose generator creates 8 digits
+          'passwordPolicy' => 'myExtensionDigits',
+        ],
+      ],
+    ],
 
 
 ..  _columns-password-properties-passwordgenerator-hexadecimal:
 
-Hexadecimal random bytes, length 30
+Hexadecimal random bytes, length 40
 ===================================
 
-Example: `0d95c0936c54b97bf908a3c963b508`.
+Example: `a3f1c9e07b5d4e2f8c6a1b0d9e7f3c5a2b4d6e8f`
 
-..  figure:: /Images/ManualScreenshots/PasswordGeneratorHexadecimal.png
-    :alt: A generated 30 characters long random hex string
+..  figure:: /Images/Conference/PasswordSecretToken.png
+    :alt: The secret of the ticket shop, generated as a hex string
     :class: with-shadow
 
-    A generated 30 characters long random hex string
+    The secret of the ticket shop, generated as a hex string
 
-The following example will generate a 30 characters long random hex string, which
-could be used for secret tokens or similar:
+The secret of the ticket shop uses the policy `secretToken` of the core. Its
+generator creates a random hex string with 40 characters:
 
-..  include:: _Snippets/_Password_4.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/134-tx_myextension_conference-ticketing_secret.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/134-tx_myextension_conference-ticketing_secret.php
+    :emphasize-lines: 17
 
 ..  _columns-password-properties-passwordgenerator-base64:
 
@@ -62,13 +72,19 @@ Base64 random bytes, readonly
 
 Example: `zrt8sJd6GiqUI_EFgjPiedOj--D0NbTVOJz`
 
-..  figure:: /Images/ManualScreenshots/PasswordGeneratorBase64Readonly.png
-    :alt: A password generator using base64 random bytes, readonly
-    :class: with-shadow
 
-    A password generator using base64 random bytes, readonly.
+..  code-block:: php
 
-..  include:: _Snippets/_Password_5.rst.txt
+    'fieldControl' => [
+      'passwordGenerator' => [
+        'renderType' => 'passwordGenerator',
+        'options' => [
+          // A policy whose generator creates base64 random bytes
+          'passwordPolicy' => 'myExtensionBase64',
+          'allowEdit' => false,
+        ],
+      ],
+    ],
 
 ..  _columns-password-properties-passwordgenerator-properties:
 
@@ -115,7 +131,6 @@ Password policy
     :name: password-passwordGenerator-passwordPolicy
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordPolicy']
     :type: string
-    :default: `default`
 
     ..  versionadded:: 14.2
 
@@ -124,8 +139,9 @@ Password policy
     should be used for the password field. Use the key of the policy as
     defined in :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']`.
 
-    If the policy defines a `generator`
-    section, the field control uses that generator.
+    The field control uses the `generator` section of the policy. If the
+    option is missing, or the policy has no generator, the field shows no
+    password generator.
 
     ..  literalinclude:: _Snippets/_PasswordPolicy.php
         :caption: EXT:my_extension/Configuration/TCA/Overrides/fe_users.php

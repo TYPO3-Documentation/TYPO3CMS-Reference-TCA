@@ -6,7 +6,6 @@
 
     Placeholder, containing a default date.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Email/_Snippets/_Email.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 27-34
-        :emphasize-lines: 31
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/140-tx_myextension_conference-contact_email.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/140-tx_myextension_conference-contact_email.php
+        :emphasize-lines: 12

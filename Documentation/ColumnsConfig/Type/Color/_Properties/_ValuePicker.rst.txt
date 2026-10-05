@@ -30,7 +30,6 @@
 
 ..  rubric:: Example
 
-..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 41-54
-    :emphasize-lines: 46
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/150-tx_myextension_conference-color.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/150-tx_myextension_conference-color.php
+    :emphasize-lines: 12

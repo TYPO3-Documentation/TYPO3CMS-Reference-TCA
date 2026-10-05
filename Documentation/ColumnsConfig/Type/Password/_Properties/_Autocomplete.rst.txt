@@ -11,7 +11,6 @@
     resulting input field. If :php:`autocomplete=true` is configured in TCA, a
     :php:`autocomplete=current-password` attribute will be added to the element.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 9-16
-        :emphasize-lines: 14
+    ..  code-block:: php
+
+        'autocomplete' => true,

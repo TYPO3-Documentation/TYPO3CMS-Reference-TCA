@@ -40,20 +40,23 @@
             `buttons.link.relAttribute.enabled <https://docs.typo3.org/permalink/t3tsref:buttons-link-relattribute-enabled>`_,
             must be enabled.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 40-49
-            :emphasize-lines: 46
+        ..  code-block:: php
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 51-60
-            :emphasize-lines: 57
+            'appearance' => [
+              // Display only 'class' and 'params'
+              'allowedOptions' => ['class', 'params'],
+            ],
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 62-71
-            :emphasize-lines: 68
+        ..  code-block:: php
+
+            'appearance' => [
+              // Allow all options (or skip this option)
+              'allowedOptions' => ['*'],
+            ],
+
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/240-tx_myextension_talk-recording.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/240-tx_myextension_talk-recording.php
+            :emphasize-lines: 14
 
         For custom email links, the options can be restricted:
 
@@ -69,10 +72,12 @@
         subject:
             The subject of an email can be pre-filled.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 73-82
-            :emphasize-lines: 79
+        ..  code-block:: php
+
+            'allowedTypes' => ['email'],
+            'appearance' => [
+              'allowedOptions' => ['body', 'cc'],
+            ],
 
     ..  confval:: allowedFileExtensions
         :name: link-appearance-allowedFileExtensions
@@ -83,15 +88,19 @@
         configuration or set it to :php:`['*']`. It's not possible to deny all
         extensions.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 84-93
-            :emphasize-lines: 90
+        ..  code-block:: php
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 95-104
-            :emphasize-lines: 101
+            'appearance' => [
+              // Allow only jpg and png file extensions
+              'allowedFileExtensions' => ['jpg', 'png'],
+            ],
+
+        ..  code-block:: php
+
+            'appearance' => [
+              // Allow all file extensions (or skip this option)
+              'allowedFileExtensions' => ['*'],
+            ],
 
     ..  confval:: browserTitle
         :name: link-appearance-browserTitle
@@ -100,15 +109,16 @@
 
         Allows to set a different `title` attribute for the Link Browser icon, defaults to `Link`.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 106-115
-            :emphasize-lines: 112
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/118-tx_myextension_conference-ticket_link.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/118-tx_myextension_conference-ticket_link.php
+            :emphasize-lines: 20
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 117-126
-            :emphasize-lines: 123
+        ..  code-block:: php
+
+            'appearance' => [
+              // Or a plain string
+              'browserTitle' => 'Link to the tickets',
+            ],
 
     ..  confval:: enableBrowser
         :name: link-appearance-enableBrowser
@@ -118,7 +128,6 @@
         The Link Browser is enabled by default.
         To disable the Link Browser altogether, set this option to :php:`false`.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 128-137
-            :emphasize-lines: 134
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/240-tx_myextension_talk-recording.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/240-tx_myextension_talk-recording.php
+            :emphasize-lines: 15
