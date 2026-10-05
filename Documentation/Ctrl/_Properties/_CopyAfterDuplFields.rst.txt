@@ -10,11 +10,18 @@
     from the "previous" record transferred when they are *copied* to the
     position *after* another record from same table.
 
-    ..  rubric:: Example from `tt_content` table:
+    ..  versionchanged:: 15.0
+        :changelog: important-110864-1790781786
 
-    ..  code-block:: php
+        The table `tt_content` no longer lists `sys_language_uid`. A copy
+        keeps its own language.
 
-        'ctrl' => [
-            'copyAfterDuplFields' => 'colPos, sys_language_uid',
-            // ...
-        ],
+    The table `tt_content` lists `colPos`, so a content element that is
+    copied after another one is placed in the same column.
+
+    ..  rubric:: Example: A copied talk takes over the room
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+        :visible-lines: 4-27
+        :emphasize-lines: 16

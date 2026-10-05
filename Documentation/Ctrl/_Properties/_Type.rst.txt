@@ -62,8 +62,8 @@ of the talk table names it as `type`:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
-    :visible-lines: 4-49
-    :emphasize-lines: 7,36,40,44
+    :visible-lines: 4-50
+    :emphasize-lines: 7,37,41,45
 
 Each value of `talk_type` has its own entry in the `types` section, which
 defines the fields shown in the backend form. All three types start with the
@@ -71,8 +71,8 @@ same fields:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
-    :visible-lines: 71-90
-    :emphasize-lines: 72,78,84
+    :visible-lines: 72-91
+    :emphasize-lines: 73,79,85
 
 A field that only some types show is added to those types alone: the third
 argument of :php:`ExtensionManagementUtility::addToAllTCAtypes()` lists them.

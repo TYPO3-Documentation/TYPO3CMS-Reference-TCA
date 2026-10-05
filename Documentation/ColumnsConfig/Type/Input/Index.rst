@@ -82,8 +82,8 @@ The room of a talk offers the rooms of the venue to choose from:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
-    :visible-lines: 57-69
-    :emphasize-lines: 61
+    :visible-lines: 58-70
+    :emphasize-lines: 62
 
 ..  _columns-input-properties:
 

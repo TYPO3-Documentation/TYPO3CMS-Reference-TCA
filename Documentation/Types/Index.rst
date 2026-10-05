@@ -75,8 +75,8 @@ As an example, a talk can be a talk, a workshop, or a keynote:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
-    :visible-lines: 4-8, 71-90
-    :emphasize-lines: 7, 72, 78, 84
+    :visible-lines: 4-8, 72-91
+    :emphasize-lines: 7, 73, 79, 85
 
 For each record type you can define additional
 `creationOptions  <https://docs.typo3.org/permalink/t3tca:confval-types-creationoptions>`_

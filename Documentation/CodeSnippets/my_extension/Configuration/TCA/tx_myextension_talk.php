@@ -13,6 +13,7 @@ return [
     ],
     'sortby' => 'sorting',
     'useColumnsForDefaultValues' => 'talk_type,room',
+    'copyAfterDuplFields' => 'room',
     'hideTable' => true,
     'tstamp' => 'tstamp',
     'crdate' => 'crdate',

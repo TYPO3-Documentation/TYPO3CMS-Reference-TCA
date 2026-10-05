@@ -49,15 +49,15 @@ A talk can only be hidden:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
-    :visible-lines: 4-26
-    :emphasize-lines: 21
+    :visible-lines: 4-27
+    :emphasize-lines: 22
 
 Each type of talk shows the field in the `access` tab:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
-    :visible-lines: 71-90
-    :emphasize-lines: 75,81,87
+    :visible-lines: 72-91
+    :emphasize-lines: 76,82,88
 
 ..  _ctrl-reference-enablecolumns-examples-common:
 
