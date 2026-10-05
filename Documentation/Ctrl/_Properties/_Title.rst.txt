@@ -9,7 +9,7 @@
     Contains the *system name* of the table. Is used for display in the
     backend.
 
-    For instance the "tt\_content" table is of course named "tt\_content"
+    For instance the "tt\_content" table is named "tt\_content"
     technically. However in the backend display it will be shown as
     "Page Content" when the backend language is English. When another
     language is chosen, like Danish, then the label "Sideindhold" is shown

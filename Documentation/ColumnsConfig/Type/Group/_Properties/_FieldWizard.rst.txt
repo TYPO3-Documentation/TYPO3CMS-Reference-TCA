@@ -25,4 +25,4 @@
         :Scope: Display
 
         Render a list of allowed tables and link to element browser. This field wizard is enabled by default.
-        This wizard allows to easily select records from a popup.
+        This wizard lets you select records from a popup.
