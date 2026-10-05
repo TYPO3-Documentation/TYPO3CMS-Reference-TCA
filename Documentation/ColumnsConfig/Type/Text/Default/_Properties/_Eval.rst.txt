@@ -26,9 +26,15 @@
 
 Trimming the value for white space before storing in the database:
 
-..  include:: /Images/Rst/Text7.rst.txt
+..  figure:: /Images/Conference/TextAbstract.png
+    :alt: The abstract of a talk
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Text7.rst.txt
+    The abstract of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
+    :emphasize-lines: 15
 
 ..  _tca-example-text-9:
 
@@ -39,15 +45,15 @@ You can supply own form evaluations in an extension by creating a class with two
 called for validation when saving the record. The field references the class
 in `eval`:
 
-..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 3, 42-48
-    :emphasize-lines: 46
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
+    :emphasize-lines: 15
 
-..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_TextEvaluation.php
-    :caption: EXT:my_extension/Classes/Evaluation/TextEvaluation.php
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Evaluation/AbstractEvaluation.php
+    :caption: EXT:my_extension/Classes/Evaluation/AbstractEvaluation.php
 
 The class is registered in :file:`ext_localconf.php`:
 
-..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_ext_localconf.php
+..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
     :caption: EXT:my_extension/ext_localconf.php
+    :emphasize-lines: 18

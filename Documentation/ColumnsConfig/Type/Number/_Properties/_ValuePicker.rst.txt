@@ -26,9 +26,14 @@
         The label can be plain text or a
         `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_.
 
-..  rubric:: Example: Number field with value picker
+..  rubric:: Example: Typical capacities to choose from
 
-..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 77-90
-    :emphasize-lines: 81
+..  figure:: /Images/Conference/NumberValuePicker.png
+    :alt: The capacity of a location with its value picker opened
+    :class: with-shadow
+
+    The capacity of a location with its value picker opened
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/425-tx_myextension_location-capacity.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/425-tx_myextension_location-capacity.php
+    :emphasize-lines: 15

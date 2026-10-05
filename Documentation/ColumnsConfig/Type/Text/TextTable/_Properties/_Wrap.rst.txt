@@ -16,12 +16,19 @@
 
 ..  rubric:: Example: Textarea with no wrapping
 
-..  include:: /Images/Rst/Text5.rst.txt
+..  figure:: /Images/Conference/TextFixedFont.png
+    :alt: The requirements of a workshop without wrapping
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Text5.rst.txt
+    The requirements of a workshop without wrapping
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/250-tx_myextension_talk-requirements.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/250-tx_myextension_talk-requirements.php
+    :emphasize-lines: 15
 
 ..  rubric:: Example: Textarea with virtual wrapping
 
-..  include:: /Images/Rst/Text6.rst.txt
 
-..  include:: /CodeSnippets/Text6.rst.txt
+..  code-block:: php
+
+    'wrap' => 'virtual',

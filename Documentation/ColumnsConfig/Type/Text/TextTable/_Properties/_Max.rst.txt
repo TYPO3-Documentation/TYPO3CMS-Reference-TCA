@@ -14,6 +14,12 @@
 
 ..  rubric:: Example: Textarea with a maximum of 30 characters
 
-..  include:: /Images/Rst/Text11.rst.txt
+..  figure:: /Images/Conference/TextMax.png
+    :alt: The short biography of a speaker
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Text11.rst.txt
+    The short biography of a speaker
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/331-tx_myextension_speaker-short_bio.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/331-tx_myextension_speaker-short_bio.php
+    :emphasize-lines: 13

@@ -17,6 +17,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
         'step' => 5,
       ],
       'default' => 45,
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
     ],
   ],
 ]);

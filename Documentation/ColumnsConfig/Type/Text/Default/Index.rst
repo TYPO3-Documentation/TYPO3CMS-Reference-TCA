@@ -30,18 +30,29 @@ Examples for multiline text fields
 Multiline plain text area
 -------------------------
 
-..  include:: /Images/Rst/Text4.rst.txt
+..  figure:: /Images/Conference/TextAbstract.png
+    :alt: The abstract of a talk
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Text4.rst.txt
+    The abstract of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
 
 ..  _tca-example-rte-1:
 
 Rich text editor field
 ----------------------
 
-..  include:: /Images/Rst/Rte1.rst.txt
+..  figure:: /Images/Conference/TextRichtext.png
+    :alt: The description of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Rte1.rst.txt
+    The description of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :emphasize-lines: 13
 
 ..  _columns-text-properties:
 ..  _columns-text-properties-default:

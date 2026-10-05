@@ -55,9 +55,23 @@ input
     :ref:`Single line text input <columns-input>`. Used for a various different
     single line outputs like head lines, links, color pickers.
 
-    ..  include:: /Images/Rst/Input1.rst.txt
-    ..  include:: /Images/Rst/Input28.rst.txt
-    ..  include:: /Images/Rst/Input33.rst.txt
+    ..  figure:: /Images/Conference/ColumnsBasicField.png
+        :alt: The title of a conference
+        :class: with-shadow
+
+        The title of a conference
+
+    ..  figure:: /Images/Conference/InputPlaceholder.png
+        :alt: A short title with the title as placeholder
+        :class: with-shadow
+
+        A short title with the title as placeholder
+
+    ..  figure:: /Images/Conference/InputValuePicker.png
+        :alt: A room with value picker
+        :class: with-shadow
+
+        A room with value picker
 
 none
     :ref:`Read only, virtual field <columns-none>`. No DataHandler processing.
@@ -88,8 +102,17 @@ text
     :ref:`A multiline text field <columns-text>`. Used for RTE display,
     code editor and some more.
 
-    ..  include:: /Images/Rst/Text4.rst.txt
-    ..  include:: /Images/Rst/Rte1.rst.txt
+    ..  figure:: /Images/Conference/TextAbstract.png
+        :alt: The abstract of a talk
+        :class: with-shadow
+
+        The abstract of a talk
+
+    ..  figure:: /Images/Conference/TextRichtext.png
+        :alt: A rich text field
+        :class: with-shadow
+
+        A rich text field
 
 user
     :ref:`Special rendering and evaluation defined by an additional

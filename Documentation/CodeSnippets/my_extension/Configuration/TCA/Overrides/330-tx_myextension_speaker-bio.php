@@ -10,6 +10,7 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_speaker', [
     'config' => [
       'type' => 'text',
       'enableRichtext' => true,
+      'richtextConfiguration' => 'minimal',
     ],
   ],
 ]);
