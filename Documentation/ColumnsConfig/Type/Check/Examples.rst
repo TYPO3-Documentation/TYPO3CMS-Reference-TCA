@@ -10,35 +10,76 @@ Examples
 Example: Default checkboxes with fixed columns
 ==============================================
 
-..  include:: /Images/Rst/Checkbox2.rst.txt
-..  include:: /CodeSnippets/Checkbox2.rst.txt
+..  figure:: /Images/Conference/CheckSingle.png
+    :alt: A single checkbox with a label
+    :class: with-shadow
+
+    A single checkbox with a label
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/241-tx_myextension_talk-recording_allowed.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/241-tx_myextension_talk-recording_allowed.php
+    :emphasize-lines: 12
 
 ..  _columns-checkbox-examples-16:
 
 Example: Checkboxes with Inline columns and default value
 =========================================================
 
-..  include:: /Images/Rst/Checkbox16.rst.txt
+..  figure:: /Images/Conference/CheckInline.png
+    :alt: The weekdays of a location, Monday to Friday checked by default
+    :class: with-shadow
 
-Here "Tu", the second bit, is active by default.
+    The weekdays of a location, Monday to Friday checked by default
 
-..  include:: /CodeSnippets/Checkbox16.rst.txt
+Monday to Friday, the first five bits, are active by default.
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/430-tx_myextension_location-open_days.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/430-tx_myextension_location-open_days.php
+    :emphasize-lines: 21, 23
 
 ..  _tca-example-checkbox-7:
 
 Example: Checkbox limited to a maximal number of checked records
 ================================================================
 
-..  include:: /Images/Rst/Checkbox7.rst.txt
-..  include:: /CodeSnippets/Checkbox7.rst.txt
+..  figure:: /Images/Conference/CheckMaximumRecordsChecked.png
+    :alt: Only one location can be the main venue
+    :class: with-shadow
+
+    Only one location can be the main venue
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/435-tx_myextension_location-main_venue.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/435-tx_myextension_location-main_venue.php
+    :emphasize-lines: 15
+
+..  note::
+    The check counts the translations of a record as well. In a table with
+    translations, translating a record with the checkbox set therefore
+    fails. The locations of the conference extension have no translations.
 
 ..  _columns-checkbox-examples-18:
 
 Example: Toggle checkbox with invertStateDisplay
 ================================================
 
-..  include:: /Images/Rst/Checkbox18.rst.txt
-..  include:: /CodeSnippets/Checkbox18.rst.txt
+..  code-block:: php
+    :caption: The field hidden that TYPO3 adds for ctrl > enablecolumns > disabled
+
+    'hidden' => [
+      'label' => 'core.db.general:enabled',
+      'exclude' => true,
+      'config' => [
+        'type' => 'check',
+        'renderType' => 'checkboxToggle',
+        'default' => 0,
+        'items' => [
+          [
+            'label' => '',
+            'invertStateDisplay' => true,
+          ],
+        ],
+      ],
+    ],
 
 
 ..  _tca-example-checkbox-3:
@@ -46,8 +87,12 @@ Example: Toggle checkbox with invertStateDisplay
 Example: Three checkboxes, two with labels, one without
 =======================================================
 
-..  include:: /Images/Rst/Checkbox3.rst.txt
-..  include:: /CodeSnippets/Checkbox3.rst.txt
+..  code-block:: php
+
+    'items' => [
+      ['label' => 'Recorded', 'iconIdentifierChecked' => 'actions-check'],
+      ['label' => ''],
+    ],
 
 
 ..  _tca-example-checkbox-itemsprocfunc:
@@ -55,36 +100,47 @@ Example: Three checkboxes, two with labels, one without
 Example: Checkboxes with itemsProcFunc
 ======================================
 
-The configuration for a custom field `checkbox_items_proc_func` could look like
-this:
+The days of a workshop could be added by an `itemsProcFunc`:
 
-..  literalinclude:: /ColumnsConfig/Type/Check/_Snippets/_Check.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-    :visible-lines: 3-4, 29-39
-    :emphasize-lines: 37
+..  code-block:: php
+
+    'itemsProcFunc' => ConferenceDays::class . '->addDays',
 
 The referenced `itemsProcFunc` method should populate the items
 by filling :php:`$params['items']`:
 
-..  literalinclude:: _Snippets/_MyItemsProcFunc.php
-    :caption: EXT:my_extension/Classes/UserFunctions/MyItemsProcFunc.php
+..  code-block:: php
 
-In the real world you would use the other passed parameters to dynamically
-generate the items.
+    public function addDays(array &$params): void
+    {
+      $params['items'][] = ['label' => 'Wed, 12 May'];
+    }
+
+The conference extension adds the days with the newer
+:confval:`itemsProcessors <check-itemsProcessors>` instead, which read the
+dates of the conference.
 
 ..  _tca-example-checkbox-17:
 
 Example: checkboxToggle
 =======================
 
-..  include:: /Images/Rst/Checkbox17.rst.txt
+..  figure:: /Images/Conference/CheckToggle.png
+    :alt: A toggle
+    :class: with-shadow
+
+    A toggle
 
 ..  _tca-example-checkbox-19:
 
 Example: checkboxLabeledToggle
 ==============================
 
-..  include:: /Images/Rst/Checkbox19.rst.txt
+..  figure:: /Images/Conference/CheckLabeledToggle.png
+    :alt: A toggle with the labels Open and Closed
+    :class: with-shadow
+
+    A toggle with the labels Open and Closed
 
 
 ..  _tca-example-checkbox-8:
@@ -95,6 +151,10 @@ Example: Only one record can be checked
 In the example below, only one record from the same table will be allowed
 to have that particular box checked.
 
-..  include:: /Images/Rst/Checkbox8.rst.txt
 
-..  include:: /CodeSnippets/Checkbox8.rst.txt
+..  code-block:: php
+
+    'eval' => 'maximumRecordsCheckedInPid',
+    'validation' => [
+      'maximumRecordsCheckedInPid' => 1,
+    ],

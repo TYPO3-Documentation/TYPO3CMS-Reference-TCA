@@ -20,10 +20,9 @@ for modifying an existing TCA definition.
 For existing select fields additional item groups can be added via the
 api method :php:`ExtensionManagementUtility::addTcaSelectItemGroup`.
 
-..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_ItemGroups.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-    :visible-lines: 3, 7-13
-    :emphasize-lines: 7
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :emphasize-lines: 9
 
 When adding a new select field, itemGroups should be added directly in the
 original TCA definition without using the API method. Use the API within

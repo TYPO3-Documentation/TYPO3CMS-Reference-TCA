@@ -10,7 +10,14 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
     'onChange' => 'reload',
     'config' => [
       'type' => 'check',
-      'renderType' => 'checkboxToggle',
+      'renderType' => 'checkboxLabeledToggle',
+      'items' => [
+        [
+          'label' => 'my_extension.db:conference.registration_open',
+          'labelChecked' => 'my_extension.db:conference.registration_open.open',
+          'labelUnchecked' => 'my_extension.db:conference.registration_open.closed',
+        ],
+      ],
     ],
   ],
 ]);

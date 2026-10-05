@@ -66,6 +66,12 @@
 
     ..  rubric:: Examples: Select SVGs recursively from a folder
 
-    ..  include:: /Images/Rst/SelectSingle7.rst.txt
+    ..  figure:: /Images/Conference/SelectSingleFileFolder.png
+        :alt: A marker icon from a folder
+        :class: with-shadow
 
-    ..  include:: /CodeSnippets/SelectSingle7.rst.txt
+        A marker icon from a folder
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/440-tx_myextension_location-marker.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/440-tx_myextension_location-marker.php
+        :emphasize-lines: 16

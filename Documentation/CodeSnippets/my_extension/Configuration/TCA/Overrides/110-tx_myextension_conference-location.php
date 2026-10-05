@@ -20,6 +20,8 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
         ],
       ],
       'relationship' => 'manyToOne',
+      // Venues only, not their halls
+      'foreign_table_where' => 'AND {#tx_myextension_location}.{#parent} = 0 ORDER BY tx_myextension_location.name',
     ],
   ],
 ]);

@@ -26,29 +26,44 @@ All examples listed here can be found in the :ref:`extension styleguide
 Example: Simple checkbox with label
 -----------------------------------
 
-..  include:: /Images/Rst/Checkbox2.rst.txt
+..  figure:: /Images/Conference/CheckSingle.png
+    :alt: A single checkbox with a label
+    :class: with-shadow
+
+    A single checkbox with a label
 
 TCA:
 
-..  include:: /CodeSnippets/Checkbox2.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/241-tx_myextension_talk-recording_allowed.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/241-tx_myextension_talk-recording_allowed.php
+    :emphasize-lines: 12
 
 If the checkbox is checked, the value for the field will be 1,
 if unchecked, it will be 0.
 
 :ref:`FlexForm <t3coreapi:flexforms>`:
 
-..  include:: /CodeSnippets/Manual/FlexformCheckbox2.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+    :visible-lines: 44-65
+    :emphasize-lines: 62
 
 ..  _tca-example-checkbox-12:
 
 Example: Four checkboxes in three columns
 -----------------------------------------
 
-..  include:: /Images/Rst/Checkbox12.rst.txt
+..  figure:: /Images/Conference/CheckColumns.png
+    :alt: Four checkboxes in three columns
+    :class: with-shadow
+
+    Four checkboxes in three columns
 
 TCA:
 
-..  include:: /CodeSnippets/Checkbox12.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/136-tx_myextension_conference-amenities.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/136-tx_myextension_conference-amenities.php
+    :emphasize-lines: 18
 
 If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 | 4 | 8`).
 
@@ -58,8 +73,15 @@ If all checkboxes are checked, the value for the field will be 15 (:php:`1 | 2 |
 Example: Checkboxes with inline floating
 ----------------------------------------
 
-..  include:: /Images/Rst/Checkbox16.rst.txt
-..  include:: /CodeSnippets/Checkbox16.rst.txt
+..  figure:: /Images/Conference/CheckInline.png
+    :alt: The weekdays of a location, Monday to Friday checked by default
+    :class: with-shadow
+
+    The weekdays of a location, Monday to Friday checked by default
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/430-tx_myextension_location-open_days.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/430-tx_myextension_location-open_days.php
+    :emphasize-lines: 21, 23
 
 This will display as many checkbox items as will fit in one row. Without inline,
 each checkbox would be displayed in a separate row.

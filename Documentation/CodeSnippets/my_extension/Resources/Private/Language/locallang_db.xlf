@@ -21,6 +21,21 @@
       <trans-unit id="conference" resname="conference">
         <source>Conference</source>
       </trans-unit>
+      <trans-unit id="conference.amenities" resname="conference.amenities">
+        <source>Amenities</source>
+      </trans-unit>
+      <trans-unit id="conference.amenities.catering" resname="conference.amenities.catering">
+        <source>Catering</source>
+      </trans-unit>
+      <trans-unit id="conference.amenities.childcare" resname="conference.amenities.childcare">
+        <source>Childcare</source>
+      </trans-unit>
+      <trans-unit id="conference.amenities.live_stream" resname="conference.amenities.live_stream">
+        <source>Live stream</source>
+      </trans-unit>
+      <trans-unit id="conference.amenities.wheelchair_access" resname="conference.amenities.wheelchair_access">
+        <source>Wheelchair access</source>
+      </trans-unit>
       <trans-unit id="conference.categories" resname="conference.categories">
         <source>Categories</source>
       </trans-unit>
@@ -102,6 +117,12 @@
       <trans-unit id="conference.registration_open" resname="conference.registration_open">
         <source>Registration open</source>
       </trans-unit>
+      <trans-unit id="conference.registration_open.closed" resname="conference.registration_open.closed">
+        <source>Closed</source>
+      </trans-unit>
+      <trans-unit id="conference.registration_open.open" resname="conference.registration_open.open">
+        <source>Open</source>
+      </trans-unit>
       <trans-unit id="conference.seats" resname="conference.seats">
         <source>Seats</source>
       </trans-unit>
@@ -128,6 +149,15 @@
       </trans-unit>
       <trans-unit id="conference.ticketing_secret" resname="conference.ticketing_secret">
         <source>Secret of the ticket shop</source>
+      </trans-unit>
+      <trans-unit id="conference.timezone" resname="conference.timezone">
+        <source>Time zone</source>
+      </trans-unit>
+      <trans-unit id="conference.timezone.america" resname="conference.timezone.america">
+        <source>America</source>
+      </trans-unit>
+      <trans-unit id="conference.timezone.europe" resname="conference.timezone.europe">
+        <source>Europe</source>
       </trans-unit>
       <trans-unit id="conference.title" resname="conference.title">
         <source>Title</source>
@@ -159,14 +189,50 @@
       <trans-unit id="location.longitude" resname="location.longitude">
         <source>Longitude</source>
       </trans-unit>
+      <trans-unit id="location.main_venue" resname="location.main_venue">
+        <source>Main venue</source>
+      </trans-unit>
+      <trans-unit id="location.main_venue.item" resname="location.main_venue.item">
+        <source>The main venue of all conferences</source>
+      </trans-unit>
+      <trans-unit id="location.marker" resname="location.marker">
+        <source>Marker on the map</source>
+      </trans-unit>
       <trans-unit id="location.name" resname="location.name">
         <source>Name</source>
+      </trans-unit>
+      <trans-unit id="location.open_days" resname="location.open_days">
+        <source>Open on</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.friday" resname="location.open_days.friday">
+        <source>Fr</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.monday" resname="location.open_days.monday">
+        <source>Mo</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.saturday" resname="location.open_days.saturday">
+        <source>Sa</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.sunday" resname="location.open_days.sunday">
+        <source>Su</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.thursday" resname="location.open_days.thursday">
+        <source>Th</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.tuesday" resname="location.open_days.tuesday">
+        <source>Tu</source>
+      </trans-unit>
+      <trans-unit id="location.open_days.wednesday" resname="location.open_days.wednesday">
+        <source>We</source>
       </trans-unit>
       <trans-unit id="location.palette.address" resname="location.palette.address">
         <source>Address</source>
       </trans-unit>
       <trans-unit id="location.palette.coordinates" resname="location.palette.coordinates">
         <source>Coordinates</source>
+      </trans-unit>
+      <trans-unit id="location.parent" resname="location.parent">
+        <source>Part of</source>
       </trans-unit>
       <trans-unit id="location.street" resname="location.street">
         <source>Street</source>
@@ -182,6 +248,21 @@
       </trans-unit>
       <trans-unit id="plugin.conferencelist.description" resname="plugin.conferencelist.description">
         <source>Shows a list of conferences</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display" resname="plugin.conferencelist.display">
+        <source>Show</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display.date" resname="plugin.conferencelist.display.date">
+        <source>Date</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display.location" resname="plugin.conferencelist.display.location">
+        <source>Location</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display.logo" resname="plugin.conferencelist.display.logo">
+        <source>Logo</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.display.speakers" resname="plugin.conferencelist.display.speakers">
+        <source>Speakers</source>
       </trans-unit>
       <trans-unit id="plugin.conferencelist.limit" resname="plugin.conferencelist.limit">
         <source>Maximum number of conferences</source>
@@ -249,6 +330,33 @@
       <trans-unit id="speaker.social_links" resname="speaker.social_links">
         <source>Social links</source>
       </trans-unit>
+      <trans-unit id="speaker.topics" resname="speaker.topics">
+        <source>Topics</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.accessibility" resname="speaker.topics.accessibility">
+        <source>Accessibility</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.extbase" resname="speaker.topics.extbase">
+        <source>Extbase</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.fluid" resname="speaker.topics.fluid">
+        <source>Fluid</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.group.backend" resname="speaker.topics.group.backend">
+        <source>Backend</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.group.frontend" resname="speaker.topics.group.frontend">
+        <source>Frontend</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.tca" resname="speaker.topics.tca">
+        <source>TCA</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.tca.description" resname="speaker.topics.tca.description">
+        <source>Table configuration for the backend</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.typoscript" resname="speaker.topics.typoscript">
+        <source>TypoScript</source>
+      </trans-unit>
       <trans-unit id="speaker.website" resname="speaker.website">
         <source>Website</source>
       </trans-unit>
@@ -270,11 +378,62 @@
       <trans-unit id="talk.abstract" resname="talk.abstract">
         <source>Abstract</source>
       </trans-unit>
+      <trans-unit id="talk.audience" resname="talk.audience">
+        <source>Audience</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.business" resname="talk.audience.business">
+        <source>Business</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.decision_makers" resname="talk.audience.decision_makers">
+        <source>Decision makers</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.developers" resname="talk.audience.developers">
+        <source>Developers</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.editors" resname="talk.audience.editors">
+        <source>Editors</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.integrators" resname="talk.audience.integrators">
+        <source>Integrators</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.technical" resname="talk.audience.technical">
+        <source>Technical</source>
+      </trans-unit>
       <trans-unit id="talk.comments" resname="talk.comments">
         <source>Comments</source>
       </trans-unit>
+      <trans-unit id="talk.days" resname="talk.days">
+        <source>Days</source>
+      </trans-unit>
+      <trans-unit id="talk.days.description" resname="talk.days.description">
+        <source>The days of the conference on which the workshop takes place</source>
+      </trans-unit>
       <trans-unit id="talk.duration" resname="talk.duration">
         <source>Duration (minutes)</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment" resname="talk.equipment">
+        <source>Equipment</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.audio" resname="talk.equipment.audio">
+        <source>Audio</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.handheld_microphone" resname="talk.equipment.handheld_microphone">
+        <source>Handheld microphone</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.headset" resname="talk.equipment.headset">
+        <source>Headset microphone</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.microphone" resname="talk.equipment.microphone">
+        <source>Microphone</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.projector" resname="talk.equipment.projector">
+        <source>Projector</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.video" resname="talk.equipment.video">
+        <source>Video</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.video_recording" resname="talk.equipment.video_recording">
+        <source>Video recording</source>
       </trans-unit>
       <trans-unit id="talk.level" resname="talk.level">
         <source>Level</source>
@@ -294,6 +453,12 @@
       <trans-unit id="talk.recording" resname="talk.recording">
         <source>Recording</source>
       </trans-unit>
+      <trans-unit id="talk.recording_allowed" resname="talk.recording_allowed">
+        <source>Recording</source>
+      </trans-unit>
+      <trans-unit id="talk.recording_allowed.item" resname="talk.recording_allowed.item">
+        <source>The speaker agrees to be recorded</source>
+      </trans-unit>
       <trans-unit id="talk.requirements" resname="talk.requirements">
         <source>Requirements</source>
       </trans-unit>
@@ -308,6 +473,9 @@
       </trans-unit>
       <trans-unit id="talk.speaker" resname="talk.speaker">
         <source>Speaker</source>
+      </trans-unit>
+      <trans-unit id="talk.spoken_language" resname="talk.spoken_language">
+        <source>Spoken language</source>
       </trans-unit>
       <trans-unit id="talk.start_time" resname="talk.start_time">
         <source>Start</source>
@@ -326,6 +494,9 @@
       </trans-unit>
       <trans-unit id="talk.title" resname="talk.title">
         <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tt_content.group.conference" resname="tt_content.group.conference">
+        <source>Conferences</source>
       </trans-unit>
     </body>
   </file>

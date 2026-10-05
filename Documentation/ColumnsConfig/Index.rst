@@ -26,10 +26,29 @@ An overview of available types:
 check
     :ref:`One or multiple check boxes <columns-check>`
 
-    ..  include:: /Images/Rst/Checkbox2.rst.txt
-    ..  include:: /Images/Rst/Checkbox16.rst.txt
-    ..  include:: /Images/Rst/Checkbox19.rst.txt
-    ..  include:: /Images/Rst/Checkbox17.rst.txt
+    ..  figure:: /Images/Conference/CheckSingle.png
+        :alt: A single checkbox with a label
+        :class: with-shadow
+
+        A single checkbox with a label
+
+    ..  figure:: /Images/Conference/CheckInline.png
+        :alt: The weekdays of a location, Monday to Friday checked by default
+        :class: with-shadow
+
+        The weekdays of a location, Monday to Friday checked by default
+
+    ..  figure:: /Images/Conference/CheckLabeledToggle.png
+        :alt: A toggle with the labels Open and Closed
+        :class: with-shadow
+
+        A toggle with the labels Open and Closed
+
+    ..  figure:: /Images/Conference/CheckToggle.png
+        :alt: A toggle
+        :class: with-shadow
+
+        A toggle
 
 flex
     :ref:`Form elements stored in an XML structure in one field <columns-flex>`.
@@ -85,15 +104,38 @@ passthrough
 radio
     :ref:`One or multiple radio buttons <columns-radio>`.
 
-    ..  include:: /Images/Rst/Radio1.rst.txt
+    ..  figure:: /Images/Conference/RadioLevel.png
+        :alt: The level of a talk
+        :class: with-shadow
+
+        The level of a talk
 
 select
     :ref:`Select one or more items from a list <columns-select>`.
 
-    ..  include:: /Images/Rst/SelectSingle12.rst.txt
-    ..  include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
-    ..  include:: /Images/Rst/SelectSinglebox1.rst.txt
-    ..  include:: /Images/Rst/SelectTree1.rst.txt
+    ..  figure:: /Images/Conference/CtrlSeliconField.png
+        :alt: The location of a conference, with the images of the locations
+        :class: with-shadow
+
+        The location of a conference, with the images of the locations
+
+    ..  figure:: /Images/Conference/SelectMultipleSideBySide.png
+        :alt: The equipment of a talk
+        :class: with-shadow
+
+        The equipment of a talk
+
+    ..  figure:: /Images/Conference/SelectSingleBox.png
+        :alt: The audience of a talk
+        :class: with-shadow
+
+        The audience of a talk
+
+    ..  figure:: /Images/Conference/SelectTree.png
+        :alt: The location a hall is part of
+        :class: with-shadow
+
+        The location a hall is part of
 
 slug
     :ref:`Define parts of a URL path<columns-slug>`

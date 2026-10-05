@@ -28,9 +28,15 @@ is generated automatically.
 Example: Set of radio buttons field
 ===================================
 
-..  include:: /Images/Rst/Radio1.rst.txt
+..  figure:: /Images/Conference/RadioLevel.png
+    :alt: The level of a talk
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Radio1.rst.txt
+    The level of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/230-tx_myextension_talk-level.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/230-tx_myextension_talk-level.php
+    :emphasize-lines: 12
 
 ..  _columns-radio-properties:
 

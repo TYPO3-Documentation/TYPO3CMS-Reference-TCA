@@ -29,9 +29,14 @@ All selected items are displayed in the left field.
 Example: Basic side-by-side select field
 ========================================
 
-..  include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
+..  figure:: /Images/Conference/SelectMultipleSideBySide.png
+    :alt: The equipment of a talk
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectMultiplesidebyside1.rst.txt
+    The equipment of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/270-tx_myextension_talk-equipment.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/270-tx_myextension_talk-equipment.php
 
 For more examples see also :ref:`the advanced examples <columns-select-rendertype-selectmultiplesidebyside-examples>`.
 
