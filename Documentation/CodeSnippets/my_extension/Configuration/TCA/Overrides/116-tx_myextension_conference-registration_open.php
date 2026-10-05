@@ -5,18 +5,18 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 defined('TYPO3') or die();
 
 ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
-  'description' => [
-    'label' => 'my_extension.db:conference.description',
-    'l10n_mode' => 'prefixLangTitle',
+  'registration_open' => [
+    'label' => 'my_extension.db:conference.registration_open',
+    'onChange' => 'reload',
     'config' => [
-      'type' => 'text',
-      'enableRichtext' => true,
+      'type' => 'check',
+      'renderType' => 'checkboxToggle',
     ],
   ],
 ]);
 ExtensionManagementUtility::addToAllTCAtypes(
   'tx_myextension_conference',
-  'description',
+  'registration_open',
   '',
-  'before:--div--;core.form.tabs:categories',
+  'after:published',
 );

@@ -14,6 +14,7 @@ return [
     ],
     'languageField' => 'sys_language_uid',
     'transOrigPointerField' => 'l10n_parent',
+    'iconfile' => 'EXT:my_extension/Resources/Public/Icons/Speaker.svg',
   ],
   'columns' => [
     'name' => [

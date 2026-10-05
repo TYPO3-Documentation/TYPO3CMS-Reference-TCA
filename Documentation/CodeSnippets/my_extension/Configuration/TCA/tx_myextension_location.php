@@ -15,6 +15,7 @@ return [
     'tstamp' => 'tstamp',
     'crdate' => 'crdate',
     'delete' => 'deleted',
+    'iconfile' => 'EXT:my_extension/Resources/Public/Icons/Location.svg',
   ],
   'columns' => [
     'name' => [

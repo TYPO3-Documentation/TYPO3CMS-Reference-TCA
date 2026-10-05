@@ -17,6 +17,10 @@
                   <value>upcoming</value>
                 </numIndex>
                 <numIndex index="1">
+                  <label>my_extension.db:plugin.conferencelist.mode.past</label>
+                  <value>past</value>
+                </numIndex>
+                <numIndex index="2">
                   <label>my_extension.db:plugin.conferencelist.mode.selected</label>
                   <value>selected</value>
                 </numIndex>
@@ -39,6 +43,12 @@
           </settings.categories>
           <settings.limit>
             <label>my_extension.db:plugin.conferencelist.limit</label>
+            <displayCond>
+              <or>
+                <value1>FIELD:settings.mode:=:upcoming</value1>
+                <value2>FIELD:settings.mode:=:past</value2>
+              </or>
+            </displayCond>
             <config>
               <type>number</type>
               <default>10</default>

@@ -6,16 +6,11 @@
 Examples
 ========
 
-Some examples from extension styleguide to get an idea on what the
-field definition is capable of: An input field
-with slider, a select drop-down for images, an inline relation spanning multiple tables.
-
-
-The following examples all can be found in the
-:ref:`extension styleguide <styleguide>`.
+Some examples from the conference extension to get an idea of what the field
+definition is capable of: a select drop-down with images, an inline relation
+used by two tables, and the options for translated records.
 
 ..  index::
-    Styleguide; select_single_12
     pair: selectSingle; Images
 
 ..  _columns-example-drop-down:
@@ -23,43 +18,66 @@ The following examples all can be found in the
 Select drop-down for records represented by images
 ==================================================
 
-..  include:: /Images/Rst/SelectSingle12.rst.txt
+..  figure:: /Images/Conference/CtrlSeliconField.png
+    :alt: The images of the locations below the location field of a conference
+    :class: with-shadow
 
-Select field with foreign table relation and field wizard:
+    The images of the locations below the location field of a conference
 
-..  include:: /CodeSnippets/SelectSingle12.rst.txt
+The location of a conference is a select field with a relation to the
+location table and the field wizard `selectIcons`:
 
-The table `tx_styleguide_elements_select_single_12_foreign` is defined as
-follows:
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :emphasize-lines: 18
 
-..  include:: /CodeSnippets/Manual/SelectSingle12ForeignPart.rst.txt
+The location table names its field with the image as
+:ref:`selicon_field <ctrl-reference-selicon-field>`:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
+    :visible-lines: 4-19
+    :emphasize-lines: 9
 
 ..  _tca-example-inline-1n1n-inline-1:
 
 Inline relation (IRRE) spanning multiple tables
 ===============================================
 
-..  include:: /Images/Rst/Inline1n1nInline1.rst.txt
+..  figure:: /Images/Conference/ColumnsInlineComments.png
+    :alt: The comments of a talk
+    :class: with-shadow
 
-Inline relation to a foreign table:
+    The comments of a talk
 
-..  include:: /CodeSnippets/Inline1n1nInline1.rst.txt
+Visitors comment on conferences and on talks. Both tables use the same
+comment table: the comment stores the uid of its parent record in `parent`,
+and the table of the parent in `parent_table`:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/255-tx_myextension_talk-comments.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/255-tx_myextension_talk-comments.php
+    :emphasize-lines: 14
 
 ..  _tca-example-translated-text-2:
 
 Example: prefixLangTitle
 ========================
 
-The following example can be found in the :ref:`extension styleguide
-<styleguide>`. On translating a record in a new language the content of the
-field gets copied to the target language. It get prefixed with
-`[Translate to <language name>:]`.
+On translating a record in a new language the content of the field gets
+copied to the target language. It gets prefixed with
+`[Translate to <language name>:]`, here in the description of a conference:
 
-..  include:: /Images/Rst/TranslatedText2.rst.txt
+..  figure:: /Images/Conference/ColumnsPrefixLangTitle.png
+    :alt: The description of a translated conference
+    :class: with-shadow
+
+    The description of a translated conference
 
 The language mode is defined as follows:
 
-..  include:: /CodeSnippets/TranslatedText2.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :emphasize-lines: 10
 
 ..  _tca-example-l10n-mode:
 
@@ -79,24 +97,33 @@ be copied without a prepended string.
 Select field with `defaultAsReadonly`
 =====================================
 
-The following field has the option :php:`'l10n_display' => 'defaultAsReadonly'`
-set:
+The format of a conference is the same in all languages. The field has the
+option :php:`'l10n_display' => 'defaultAsReadonly'` set, so a translation shows
+the value of the default language, which cannot be changed:
 
-..  include:: /Images/Rst/TranslatedSelectSingle13.rst.txt
+..  figure:: /Images/Conference/ColumnsDefaultAsReadonly.png
+    :alt: The format of a translated conference
+    :class: with-shadow
 
-Complete TCA definition of the field:
+    The format of a translated conference
 
-..  include:: /CodeSnippets/SelectSingle13.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/111-tx_myextension_conference-event_format.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/111-tx_myextension_conference-event_format.php
+    :emphasize-lines: 12
 
 ..  _tca-example-translated-select-single-8:
 
 Translated field without `l10n_display` definition
 ==================================================
 
-The following has no `l10n_display` definition:
+The salutation of a speaker has no `l10n_display` definition, so it can be
+changed in a translation:
 
-..  include:: /Images/Rst/TranslatedSelectSingle8.rst.txt
+..  figure:: /Images/Conference/ColumnsTranslatedSelect.png
+    :alt: The salutation of a translated speaker
+    :class: with-shadow
 
-Complete TCA definition of the field:
+    The salutation of a translated speaker
 
-..  include:: /CodeSnippets/SelectSingle8.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/305-tx_myextension_speaker-salutation.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/305-tx_myextension_speaker-salutation.php

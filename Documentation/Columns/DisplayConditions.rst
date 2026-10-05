@@ -109,52 +109,56 @@ Examples for display conditions
 Basic display condition
 ------------------------
 
-This example will require the field named `tx_myextension_show_teaser` to be
-true, otherwise the field for which this rule is set will not be displayed:
+The registration deadline of a conference is only shown while the field
+`registration_open` is set:
 
-..  code-block:: php
-
-    'displayCond' => 'FIELD:tx_myextension_show_teaser:REQ:true',
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/117-tx_myextension_conference-registration_deadline.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/117-tx_myextension_conference-registration_deadline.php
+    :emphasize-lines: 10
 
 ..  _columns-displaycond-examples-combined:
 
 Combining conditions
 --------------------
 
-Multiple conditions can be combined:
+Multiple conditions can be combined. The link to the tickets is only shown
+while the registration is open and the conference has seats:
 
-..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondAnd.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-    :visible-lines: 7, 16-23
-    :emphasize-lines: 19
-
-An example with multiple values and `OR`:
-
-..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondOr.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-    :visible-lines: 7-16
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/118-tx_myextension_conference-ticket_link.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/118-tx_myextension_conference-ticket_link.php
     :emphasize-lines: 11
 
-This is the same as:
+A condition with several values: the live stream is only shown for
+conferences that take place online or hybrid:
 
-..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondIn.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-    :visible-lines: 7-10
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/112-tx_myextension_conference-stream_url.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/112-tx_myextension_conference-stream_url.php
     :emphasize-lines: 10
+
+This is the same as a combination with `OR`:
+
+..  code-block:: diff
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/112-tx_myextension_conference-stream_url.php
+
+    -    'displayCond' => 'FIELD:event_format:IN:online,hybrid',
+    +    'displayCond' => [
+    +      'OR' => [
+    +        'FIELD:event_format:=:online',
+    +        'FIELD:event_format:=:hybrid',
+    +      ],
+    +    ],
 
 ..  _columns-displaycond-examples-complex:
 
 A complex example
 -----------------
 
-Going further the next example defines the following conditions: for the
-"example_field" field to be displayed, the content element must be in the
-default language. Furthermore it must be a text-type element or have the
-headline "Example" defined:
+Conditions can be nested. The number of seats of a conference is only shown
+in the default language, and only if the conference takes place on site or
+hybrid:
 
-..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondComplex.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-    :visible-lines: 7-18
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/145-tx_myextension_conference-seats.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/145-tx_myextension_conference-seats.php
     :emphasize-lines: 11, 13
 
 ..  _columns-displaycond-examples-flexform:
@@ -162,12 +166,14 @@ headline "Example" defined:
 A complex example in a FlexForm
 -------------------------------
 
-Using `OR` and `AND` within FlexForms works like this:
+In a FlexForm, `OR` and `AND` are XML elements. The plugin of the conference
+extension only asks for the number of conferences if it lists the upcoming or
+the past ones:
 
-..  literalinclude:: /Columns/_CodeSnippets/_DisplayCondFlexForm.xml
-    :caption: EXT:my_extension/Configuration/FlexForms/SomeFlexForm.xml
-    :visible-lines: 8-19
-    :emphasize-lines: 11, 13
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+    :visible-lines: 44-56
+    :emphasize-lines: 47
 
 ..  _columns-displaycond-examples-flexform-value:
 
@@ -182,12 +188,12 @@ one field:
 
     <!-- Hide field if value of record field "header" is not "true" -->
     <displayCond>FIELD:parentRec.header:REQ:true</displayCond>
-    <!-- Hide field if value of parent record field "field_1" is not "foo" -->
-    <displayCond>FIELD:parentRec.field_1:!=:foo</displayCond>
-    <!-- Hide field if value of neighbour field "flexField_1 on same sheet is not "foo" -->
-    <displayCond>FIELD:flexField_1:!=:foo</displayCond>
-    <!-- Hide field if value of field "flexField_1" from sheet "sheet_1" is not "foo" -->
-    <displayCond>FIELD:sheet_1.flexField_1:!=:foo</displayCond>
+    <!-- Hide field if value of parent record field "layout" is not "1" -->
+    <displayCond>FIELD:parentRec.layout:=:1</displayCond>
+    <!-- Hide field if value of neighbour field "settings.mode" on same sheet is not "selected" -->
+    <displayCond>FIELD:settings.mode:=:selected</displayCond>
+    <!-- Hide field if value of field "settings.mode" from sheet "sDEF" is not "selected" -->
+    <displayCond>FIELD:sDEF.settings.mode:=:selected</displayCond>
 
 
 ..  _columns-displaycond-technical:
