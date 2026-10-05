@@ -10,6 +10,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
     'config' => [
       'type' => 'text',
       'rows' => 3,
+      'fixedFont' => true,
+      'enableTabulator' => true,
+      'wrap' => 'off',
     ],
   ],
 ]);

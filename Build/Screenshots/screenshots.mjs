@@ -18,8 +18,18 @@ const margin = 12;
 // The innermost form group with the field name, which debug mode shows
 const field = (name) => `.form-group:has(code:text-is("[${name}]"))`;
 
+// Opens the value picker of a field, which shows its choices in a list
+const openValuePicker = async (frame, name) => {
+  await frame.locator(`${field(name)} typo3-backend-combobox input`).last().focus();
+  await frame.page().keyboard.press('ArrowDown');
+};
+const valuePickerList = (name) => `${field(name)} typo3-backend-combobox [role="listbox"]`;
+
 // The uids of the records that create-records.php created
-const { storageFolder, contentElement, conference, conferenceTranslation, talk, workshop, speakerTranslation } =
+const {
+  storageFolder, contentElement, conference, conferenceTranslation, talk, workshop,
+  speaker, speakerTranslation, location, backendLayout,
+} =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 const screenshots = {
@@ -105,6 +115,57 @@ const screenshots = {
   ColumnsTranslatedSelect: {
     url: editUrl('tx_myextension_speaker', speakerTranslation),
     element: field('salutation'),
+  },
+  InputPlaceholder: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('short_title'),
+  },
+  InputValuePicker: {
+    url: editUrl('tx_myextension_talk', talk),
+    prepare: (frame) => openValuePicker(frame, 'room'),
+    from: field('room'),
+    to: valuePickerList('room'),
+  },
+  TextAbstract: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('abstract'),
+  },
+  TextRichtext: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('description'),
+  },
+  TextCodeEditor: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('embed_code'),
+  },
+  TextTable: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('prices'),
+  },
+  TextFixedFont: {
+    url: editUrl('tx_myextension_talk', workshop),
+    element: field('requirements'),
+  },
+  TextMax: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    element: field('short_bio'),
+  },
+  TextRichtextMinimal: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    element: field('bio'),
+  },
+  TextBackendLayoutWizard: {
+    url: editUrl('backend_layout', backendLayout),
+    element: field('config'),
+  },
+  NumberValuePicker: {
+    url: editUrl('tx_myextension_location', location),
+    prepare: (frame) => openValuePicker(frame, 'capacity'),
+    from: field('capacity'),
+    to: valuePickerList('capacity'),
   },
 };
 

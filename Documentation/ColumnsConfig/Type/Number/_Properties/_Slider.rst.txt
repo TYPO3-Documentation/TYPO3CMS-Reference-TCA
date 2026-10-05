@@ -19,23 +19,29 @@
     width (integer, pixels)
         Define the width of the slider.
 
-..  rubric:: Example: Integer slider between 0 and 100
+..  rubric:: Example: A duration between 5 and 240 minutes in steps of 5
 
-..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 38-50
-    :emphasize-lines: 46
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/220-tx_myextension_talk-duration.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/220-tx_myextension_talk-duration.php
+    :emphasize-lines: 16
 
-..  rubric:: Example: Integer slider between 0 and 10 000
+..  rubric:: Example: Slider without a range, between 0 and 10 000
 
-..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 52-60
-    :emphasize-lines: 56
+..  code-block:: php
+
+    'slider' => [
+      'step' => 1,
+    ],
 
 ..  rubric:: Example: Decimal slider between 0 and 1
 
-..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 62-75
-    :emphasize-lines: 71
+..  code-block:: php
+
+    'format' => 'decimal',
+    'range' => [
+      'lower' => 0,
+      'upper' => 1,
+    ],
+    'slider' => [
+      'step' => 0.1,
+    ],

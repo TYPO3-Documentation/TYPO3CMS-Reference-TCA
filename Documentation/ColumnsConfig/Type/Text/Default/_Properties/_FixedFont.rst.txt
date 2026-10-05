@@ -14,6 +14,12 @@
 
 ..  rubric:: Example: Fixed font field with tabulators enabled
 
-..  include:: /Images/Rst/Text15.rst.txt
+..  figure:: /Images/Conference/TextFixedFont.png
+    :alt: The requirements of a workshop in a fixed font
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Text15.rst.txt
+    The requirements of a workshop in a fixed font
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/250-tx_myextension_talk-requirements.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/250-tx_myextension_talk-requirements.php
+    :emphasize-lines: 13

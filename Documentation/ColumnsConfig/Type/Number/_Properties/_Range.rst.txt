@@ -17,9 +17,8 @@
     It is allowed to specify only one of both of them.
 
 
-..  rubric:: Example: Limit an integer to be within the range 10 to 1000
+..  rubric:: Example: A conference has between 1 and 5000 seats
 
-..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 27-36
-    :emphasize-lines: 31
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/145-tx_myextension_conference-seats.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/145-tx_myextension_conference-seats.php
+    :emphasize-lines: 21

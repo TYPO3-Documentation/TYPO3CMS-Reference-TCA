@@ -13,7 +13,6 @@
         When enabled, long lines are wrapped within the editor instead of
         requiring horizontal scrolling.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 22-32
-            :emphasize-lines: 29
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/132-tx_myextension_conference-embed_code.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/132-tx_myextension_conference-embed_code.php
+            :emphasize-lines: 16

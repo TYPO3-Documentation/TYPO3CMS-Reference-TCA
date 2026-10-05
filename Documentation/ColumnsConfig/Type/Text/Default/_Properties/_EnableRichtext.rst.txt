@@ -13,6 +13,12 @@
 
 ..  rubric:: Example: Rich text editor (RTE)
 
-..  include:: /Images/Rst/Rte1.rst.txt
+..  figure:: /Images/Conference/TextRichtext.png
+    :alt: The description of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Rte1.rst.txt
+    The description of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :emphasize-lines: 13

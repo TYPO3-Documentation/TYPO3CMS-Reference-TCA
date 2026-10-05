@@ -39,6 +39,9 @@
       <trans-unit id="conference.description" resname="conference.description">
         <source>Description</source>
       </trans-unit>
+      <trans-unit id="conference.embed_code" resname="conference.embed_code">
+        <source>Embed code of the live stream</source>
+      </trans-unit>
       <trans-unit id="conference.event_format" resname="conference.event_format">
         <source>Format</source>
       </trans-unit>
@@ -50,6 +53,9 @@
       </trans-unit>
       <trans-unit id="conference.event_format.onsite" resname="conference.event_format.onsite">
         <source>On site</source>
+      </trans-unit>
+      <trans-unit id="conference.hashtag" resname="conference.hashtag">
+        <source>Hashtag</source>
       </trans-unit>
       <trans-unit id="conference.impressions" resname="conference.impressions">
         <source>Impressions</source>
@@ -63,6 +69,9 @@
       <trans-unit id="conference.logo" resname="conference.logo">
         <source>Logo</source>
       </trans-unit>
+      <trans-unit id="conference.prices" resname="conference.prices">
+        <source>Ticket prices</source>
+      </trans-unit>
       <trans-unit id="conference.published" resname="conference.published">
         <source>Published</source>
       </trans-unit>
@@ -74,6 +83,9 @@
       </trans-unit>
       <trans-unit id="conference.seats" resname="conference.seats">
         <source>Seats</source>
+      </trans-unit>
+      <trans-unit id="conference.short_title" resname="conference.short_title">
+        <source>Short title</source>
       </trans-unit>
       <trans-unit id="conference.slug" resname="conference.slug">
         <source>URL segment</source>
@@ -98,6 +110,9 @@
       </trans-unit>
       <trans-unit id="location" resname="location">
         <source>Location</source>
+      </trans-unit>
+      <trans-unit id="location.capacity" resname="location.capacity">
+        <source>Capacity</source>
       </trans-unit>
       <trans-unit id="location.city" resname="location.city">
         <source>City</source>
@@ -200,6 +215,9 @@
       </trans-unit>
       <trans-unit id="speaker.salutation.mx" resname="speaker.salutation.mx">
         <source>Mx</source>
+      </trans-unit>
+      <trans-unit id="speaker.short_bio" resname="speaker.short_bio">
+        <source>Short biography</source>
       </trans-unit>
       <trans-unit id="speaker.social_links" resname="speaker.social_links">
         <source>Social links</source>
