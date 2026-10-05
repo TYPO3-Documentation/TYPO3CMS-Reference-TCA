@@ -201,13 +201,6 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_2'],
-    'targetFileName' => 'CodeSnippets/TranslatedText2.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
     'fields' => ['columns/none_1'],
     'targetFileName' => 'CodeSnippets/None1.rst.txt',
   ],
@@ -351,12 +344,6 @@ return [
     'fields' => ['columns/select_single_7'],
     'targetFileName' => 'CodeSnippets/SelectSingle7.rst.txt',
   ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_8'],
-    'targetFileName' => 'CodeSnippets/SelectSingle8.rst.txt',
-  ],
 
   [
     'action' => 'createPhpArrayCodeSnippet',
@@ -370,12 +357,6 @@ return [
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
     'fields' => ['columns/select_single_12'],
     'targetFileName' => 'CodeSnippets/SelectSingle12.rst.txt',
-  ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_13'],
-    'targetFileName' => 'CodeSnippets/SelectSingle13.rst.txt',
   ],
 
   [
@@ -453,13 +434,6 @@ return [
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
     'fields' => ['columns/select_tree_6'],
     'targetFileName' => 'CodeSnippets/SelectTree6.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_requestUpdate_1'],
-    'targetFileName' => 'CodeSnippets/SelectRequestupdate1.rst.txt',
   ],
 
   [
@@ -593,13 +567,6 @@ return [
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_1n.php',
     'fields' => ['columns/inline_1'],
     'targetFileName' => 'CodeSnippets/Inline1nInline1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_1n1n.php',
-    'fields' => ['columns/inline_1'],
-    'targetFileName' => 'CodeSnippets/Inline1n1nInline1.rst.txt',
   ],
 
   [

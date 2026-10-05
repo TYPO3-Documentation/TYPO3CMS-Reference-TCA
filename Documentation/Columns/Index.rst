@@ -28,13 +28,18 @@ database relation selector box. Each type allows a set of additional "renderType
 Example: A basic input field
 ============================
 
-The basic structure of a field definition in TCA looks like this:
+The basic structure of a field definition in TCA looks like this, here the
+title of a conference:
 
-..  include:: /Images/Rst/Input1.rst.txt
+..  figure:: /Images/Conference/ColumnsBasicField.png
+    :alt: The title field of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Input1.rst.txt
+    The title field of a conference
 
-You can find this example in the :ref:`extension styleguide <styleguide>`.
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 31-39
 
 Properties on the level parallel to :confval:`label <t3tca:columns-label>`
 are valid for all "type" and "renderType" combinations.

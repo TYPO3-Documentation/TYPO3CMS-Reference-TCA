@@ -29,15 +29,15 @@ The location table names its field `image` as `selicon_field`:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
-    :visible-lines: 4-18
+    :visible-lines: 4-19
     :emphasize-lines: 9
 
 The field `image` allows a single image:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
-    :visible-lines: 33-41
-    :emphasize-lines: 37
+    :visible-lines: 34-42
+    :emphasize-lines: 38
 
 The conference table selects its location with render type `selectSingle`.
 The field wizard `selectIcons` shows the images of the locations below the

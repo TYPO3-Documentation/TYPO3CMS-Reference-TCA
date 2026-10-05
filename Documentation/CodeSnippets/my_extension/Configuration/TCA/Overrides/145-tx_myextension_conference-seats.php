@@ -7,6 +7,15 @@ defined('TYPO3') or die();
 ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
   'seats' => [
     'label' => 'my_extension.db:conference.seats',
+    'displayCond' => [
+      'AND' => [
+        'FIELD:sys_language_uid:=:0',
+        'OR' => [
+          'FIELD:event_format:=:onsite',
+          'FIELD:event_format:=:hybrid',
+        ],
+      ],
+    ],
     'config' => [
       'type' => 'number',
       'range' => [

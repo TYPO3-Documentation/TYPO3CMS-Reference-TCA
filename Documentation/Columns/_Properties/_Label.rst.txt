@@ -10,7 +10,11 @@
 
     The name of the field as shown in the form:
 
-    ..  include:: /Images/Rst/Label.rst.txt
+    ..  figure:: /Images/Conference/ColumnsBasicField.png
+        :alt: The label of the title field, followed by the field name in debug mode
+        :class: with-shadow
+
+        The label of the title field, followed by the field name in debug mode
 
     ..  note::
         Labels can be overridden in the
