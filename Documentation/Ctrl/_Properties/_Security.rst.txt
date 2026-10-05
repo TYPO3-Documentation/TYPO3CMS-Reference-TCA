@@ -22,7 +22,7 @@
 
     ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
-        :visible-lines: 4-18
+        :visible-lines: 4-19
         :emphasize-lines: 13
 
     You can also use it in an override file:

@@ -16,6 +16,7 @@ return [
       'disabled' => 'hidden',
     ],
     'versioningWS' => true,
+    'iconfile' => 'EXT:my_extension/Resources/Public/Icons/Comment.svg',
   ],
   'columns' => [
     'name' => [
