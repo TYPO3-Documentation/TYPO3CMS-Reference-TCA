@@ -150,6 +150,15 @@
       <trans-unit id="conference.ticketing_secret" resname="conference.ticketing_secret">
         <source>Secret of the ticket shop</source>
       </trans-unit>
+      <trans-unit id="conference.timezone" resname="conference.timezone">
+        <source>Time zone</source>
+      </trans-unit>
+      <trans-unit id="conference.timezone.america" resname="conference.timezone.america">
+        <source>America</source>
+      </trans-unit>
+      <trans-unit id="conference.timezone.europe" resname="conference.timezone.europe">
+        <source>Europe</source>
+      </trans-unit>
       <trans-unit id="conference.title" resname="conference.title">
         <source>Title</source>
       </trans-unit>
@@ -186,6 +195,9 @@
       <trans-unit id="location.main_venue.item" resname="location.main_venue.item">
         <source>The main venue of all conferences</source>
       </trans-unit>
+      <trans-unit id="location.marker" resname="location.marker">
+        <source>Marker on the map</source>
+      </trans-unit>
       <trans-unit id="location.name" resname="location.name">
         <source>Name</source>
       </trans-unit>
@@ -218,6 +230,9 @@
       </trans-unit>
       <trans-unit id="location.palette.coordinates" resname="location.palette.coordinates">
         <source>Coordinates</source>
+      </trans-unit>
+      <trans-unit id="location.parent" resname="location.parent">
+        <source>Part of</source>
       </trans-unit>
       <trans-unit id="location.street" resname="location.street">
         <source>Street</source>
@@ -315,6 +330,33 @@
       <trans-unit id="speaker.social_links" resname="speaker.social_links">
         <source>Social links</source>
       </trans-unit>
+      <trans-unit id="speaker.topics" resname="speaker.topics">
+        <source>Topics</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.accessibility" resname="speaker.topics.accessibility">
+        <source>Accessibility</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.extbase" resname="speaker.topics.extbase">
+        <source>Extbase</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.fluid" resname="speaker.topics.fluid">
+        <source>Fluid</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.group.backend" resname="speaker.topics.group.backend">
+        <source>Backend</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.group.frontend" resname="speaker.topics.group.frontend">
+        <source>Frontend</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.tca" resname="speaker.topics.tca">
+        <source>TCA</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.tca.description" resname="speaker.topics.tca.description">
+        <source>Table configuration for the backend</source>
+      </trans-unit>
+      <trans-unit id="speaker.topics.typoscript" resname="speaker.topics.typoscript">
+        <source>TypoScript</source>
+      </trans-unit>
       <trans-unit id="speaker.website" resname="speaker.website">
         <source>Website</source>
       </trans-unit>
@@ -336,6 +378,27 @@
       <trans-unit id="talk.abstract" resname="talk.abstract">
         <source>Abstract</source>
       </trans-unit>
+      <trans-unit id="talk.audience" resname="talk.audience">
+        <source>Audience</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.business" resname="talk.audience.business">
+        <source>Business</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.decision_makers" resname="talk.audience.decision_makers">
+        <source>Decision makers</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.developers" resname="talk.audience.developers">
+        <source>Developers</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.editors" resname="talk.audience.editors">
+        <source>Editors</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.integrators" resname="talk.audience.integrators">
+        <source>Integrators</source>
+      </trans-unit>
+      <trans-unit id="talk.audience.technical" resname="talk.audience.technical">
+        <source>Technical</source>
+      </trans-unit>
       <trans-unit id="talk.comments" resname="talk.comments">
         <source>Comments</source>
       </trans-unit>
@@ -347,6 +410,30 @@
       </trans-unit>
       <trans-unit id="talk.duration" resname="talk.duration">
         <source>Duration (minutes)</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment" resname="talk.equipment">
+        <source>Equipment</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.audio" resname="talk.equipment.audio">
+        <source>Audio</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.handheld_microphone" resname="talk.equipment.handheld_microphone">
+        <source>Handheld microphone</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.headset" resname="talk.equipment.headset">
+        <source>Headset microphone</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.microphone" resname="talk.equipment.microphone">
+        <source>Microphone</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.projector" resname="talk.equipment.projector">
+        <source>Projector</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.video" resname="talk.equipment.video">
+        <source>Video</source>
+      </trans-unit>
+      <trans-unit id="talk.equipment.video_recording" resname="talk.equipment.video_recording">
+        <source>Video recording</source>
       </trans-unit>
       <trans-unit id="talk.level" resname="talk.level">
         <source>Level</source>
@@ -407,6 +494,9 @@
       </trans-unit>
       <trans-unit id="talk.title" resname="talk.title">
         <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tt_content.group.conference" resname="tt_content.group.conference">
+        <source>Conferences</source>
       </trans-unit>
     </body>
   </file>

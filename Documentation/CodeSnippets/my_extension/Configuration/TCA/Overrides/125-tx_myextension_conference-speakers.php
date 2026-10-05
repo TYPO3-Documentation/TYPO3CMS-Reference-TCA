@@ -12,6 +12,21 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
       'renderType' => 'selectMultipleSideBySide',
       'foreign_table' => 'tx_myextension_speaker',
       'MM' => 'tx_myextension_conference_speaker_mm',
+      // Speakers in the default language, not their translations
+      'foreign_table_where' => 'AND {#tx_myextension_speaker}.{#sys_language_uid} IN (-1, 0) ORDER BY tx_myextension_speaker.name',
+      'size' => 5,
+      'autoSizeMax' => 20,
+      'fieldControl' => [
+        'editPopup' => [
+          'disabled' => false,
+        ],
+        'addRecord' => [
+          'disabled' => false,
+        ],
+        'listModule' => [
+          'disabled' => false,
+        ],
+      ],
     ],
   ],
 ]);

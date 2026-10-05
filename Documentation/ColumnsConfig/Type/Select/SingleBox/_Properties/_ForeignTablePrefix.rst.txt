@@ -11,6 +11,12 @@
 
 ..  rubric:: Example: Select single field with foreign_prefix and foreign_where
 
-..  include:: /Images/Rst/SelectSingle3.rst.txt
+..  figure:: /Images/Conference/CtrlSeliconField.png
+    :alt: The location of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle3.rst.txt
+    The location of a conference
+
+..  code-block:: php
+
+    'foreign_table_prefix' => 'Venue: ',
