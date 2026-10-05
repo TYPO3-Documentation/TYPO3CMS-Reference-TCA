@@ -14,9 +14,8 @@
     See :ref:`Access lists <t3coreapi:access-options-access-lists>` for more
     about permissions.
 
-..  rubric:: Example: Simple input field
+..  rubric:: Example: Only some editors may publish a conference
 
-..  literalinclude:: /Columns/_CodeSnippets/_Exclude.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 8-16
-    :emphasize-lines: 11
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/115-tx_myextension_conference-published.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/115-tx_myextension_conference-published.php
+    :emphasize-lines: 10

@@ -1,4 +1,0 @@
-..  literalinclude:: /CodeSnippets/Manual/_tx_styleguide_elements_select_single_12_foreign.php
-    :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select_single_12_foreign.php
-    :visible-lines: 4-34
-    :emphasize-lines: 12

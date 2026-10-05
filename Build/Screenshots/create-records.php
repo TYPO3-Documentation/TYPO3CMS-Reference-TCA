@@ -15,6 +15,7 @@ use TYPO3\CMS\Core\Configuration\SiteWriter;
 use TYPO3\CMS\Core\Core\Bootstrap;
 use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Core\SystemEnvironmentBuilder;
+use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\DataHandling\DataHandler;
 use TYPO3\CMS\Core\Localization\LanguageServiceFactory;
 use TYPO3\CMS\Core\Resource\StorageRepository;
@@ -102,6 +103,7 @@ $data['tx_myextension_talk'] = [
         'speaker' => 'NEWspada', 'start_time' => strtotime('2027-05-12 10:00'), 'duration' => 45,
         'room' => 'Main hall', 'level' => 1,
         'abstract' => 'How the table configuration array turns a database table into a backend form.',
+        'comments' => 'NEWcommenttalk',
     ],
     'NEWtalkworkshop' => [
         'pid' => $pid, 'talk_type' => 'workshop', 'title' => 'Write your first form element',
@@ -120,11 +122,18 @@ $data['tx_myextension_comment'] = [
         'pid' => $pid, 'name' => 'Chris Visitor', 'email' => 'chris@example.org',
         'content' => 'Will the talks be recorded?', 'approved' => 1,
     ],
+    'NEWcommenttalk' => [
+        'pid' => $pid, 'name' => 'Sam Listener', 'email' => 'sam@example.org',
+        'content' => 'Are the slides available after the talk?', 'approved' => 0,
+    ],
 ];
 $data['tx_myextension_conference'] = [
     'NEWconfdev' => [
         'pid' => $pid, 'title' => 'TYPO3 Developer Days 2027',
         'conference_date' => strtotime('2027-05-12'), 'location' => 'NEWbasel', 'published' => 1,
+        'event_format' => 'hybrid', 'stream_url' => 'https://example.org/live',
+        'registration_open' => 1, 'registration_deadline' => strtotime('2027-04-30 23:59'),
+        'ticket_link' => 'https://example.org/tickets',
         'seats' => 350, 'website' => 'https://example.org', 'contact_email' => 'team@example.org',
         'color' => '#ff8700', 'description' => '<p>Three days about building TYPO3 extensions.</p>',
         'internal_notes' => 'Catering confirmed for 350 people.',
@@ -135,6 +144,7 @@ $data['tx_myextension_conference'] = [
     'NEWconfeditors' => [
         'pid' => $pid, 'title' => 'Editors Day 2027',
         'conference_date' => strtotime('2027-09-23'), 'location' => 'NEWleipzig', 'published' => 0,
+        'event_format' => 'onsite',
         'seats' => 120, 'contact_email' => 'editors@example.org', 'color' => '#2f99a4',
         'speakers' => 'NEWspada',
     ],
@@ -152,15 +162,18 @@ $uids = [
     'conference' => $dataHandler->substNEWwithIDs['NEWconfdev'],
     'talk' => $dataHandler->substNEWwithIDs['NEWtalktca'],
     'workshop' => $dataHandler->substNEWwithIDs['NEWtalkworkshop'],
+    'speaker' => $dataHandler->substNEWwithIDs['NEWspada'],
 ];
 $conference = $uids['conference'];
 
-// German translations of the storage folder and of the first conference
+// German translations of the storage folder, the first conference and a speaker
 $dataHandler = $process([], [
     'pages' => [$pid => ['localize' => 1]],
     'tx_myextension_conference' => [$conference => ['localize' => 1]],
+    'tx_myextension_speaker' => [$uids['speaker'] => ['localize' => 1]],
 ]);
 $uids['conferenceTranslation'] = $dataHandler->copyMappingArray_merged['tx_myextension_conference'][$conference];
+$uids['speakerTranslation'] = $dataHandler->copyMappingArray_merged['tx_myextension_speaker'][$uids['speaker']];
 $process([
     'tx_myextension_conference' => [
         $uids['conferenceTranslation'] => [
@@ -168,6 +181,12 @@ $process([
         ],
     ],
 ]);
+
+// The label of a comment shows its creation date, which must not change
+// with every run
+GeneralUtility::makeInstance(ConnectionPool::class)
+    ->getConnectionForTable('tx_myextension_comment')
+    ->update('tx_myextension_comment', ['crdate' => strtotime('2027-05-12 18:30')], ['pid' => $pid]);
 
 // The uids depend on the records that "typo3 setup" creates, which differ
 // between TYPO3 versions, so the screenshots read them from this file

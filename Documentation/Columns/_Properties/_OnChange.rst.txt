@@ -16,9 +16,22 @@
 
     On changing the field a modal gets displayed prompting to reload the record.
 
-    ..  include:: /Images/Rst/CtrlTypeChangeModal.rst.txt
+    ..  figure:: /Images/Conference/ColumnsOnChangeModal.png
+        :alt: Changing the format of a conference asks to save and reload the form
+        :class: with-shadow
+
+        Changing the format of a conference asks to save and reload the form
 
 ..  rubric:: Example: Select field triggering reload
 
-..  include:: /Images/Rst/SelectRequestupdate1.rst.txt
-..  include:: /CodeSnippets/SelectRequestupdate1.rst.txt
+The format of a conference decides whether its live stream is shown:
+
+..  figure:: /Images/Conference/ColumnsOnChange.png
+    :alt: The format of a conference
+    :class: with-shadow
+
+    The format of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/111-tx_myextension_conference-event_format.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/111-tx_myextension_conference-event_format.php
+    :emphasize-lines: 10

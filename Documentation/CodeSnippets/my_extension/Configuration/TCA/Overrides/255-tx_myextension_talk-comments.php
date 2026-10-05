@@ -4,9 +4,9 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
-ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
+ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
   'comments' => [
-    'label' => 'my_extension.db:conference.comments',
+    'label' => 'my_extension.db:talk.comments',
     'config' => [
       'type' => 'inline',
       'foreign_table' => 'tx_myextension_comment',
@@ -21,8 +21,8 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
   ],
 ]);
 ExtensionManagementUtility::addToAllTCAtypes(
-  'tx_myextension_conference',
+  'tx_myextension_talk',
   'comments',
   '',
-  'before:--div--;core.form.tabs:notes',
+  'before:--div--;core.form.tabs:access',
 );

@@ -34,7 +34,7 @@
 
     ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_comment.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_comment.php
-        :visible-lines: 3, 6-19
+        :visible-lines: 3, 6-20
         :emphasize-lines: 9
 
     The class contains the code itself:

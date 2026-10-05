@@ -19,7 +19,7 @@ const margin = 12;
 const field = (name) => `.form-group:has(code:text-is("[${name}]"))`;
 
 // The uids of the records that create-records.php created
-const { storageFolder, contentElement, conference, conferenceTranslation, talk, workshop } =
+const { storageFolder, contentElement, conference, conferenceTranslation, talk, workshop, speakerTranslation } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 const screenshots = {
@@ -74,10 +74,45 @@ const screenshots = {
     url: editUrl('tx_myextension_conference', conference),
     element: field('location'),
   },
+  ColumnsBasicField: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('title'),
+  },
+  ColumnsOnChange: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('event_format'),
+  },
+  ColumnsOnChangeModal: {
+    url: editUrl('tx_myextension_conference', conference),
+    prepare: async (frame) => {
+      await frame.selectOption(`select[name="data[tx_myextension_conference][${conference}][event_format]"]`, 'online');
+    },
+    modal: true,
+  },
+  ColumnsInlineComments: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('comments'),
+  },
+  ColumnsPrefixLangTitle: {
+    url: editUrl('tx_myextension_conference', conferenceTranslation),
+    tab: 'Details',
+    element: field('description'),
+  },
+  ColumnsDefaultAsReadonly: {
+    url: editUrl('tx_myextension_conference', conferenceTranslation),
+    element: field('event_format'),
+  },
+  ColumnsTranslatedSelect: {
+    url: editUrl('tx_myextension_speaker', speakerTranslation),
+    element: field('salutation'),
+  },
 };
 
+// Tall, so that most forms fit without scrolling
+const viewportHeight = 2000;
+
 const browser = await chromium.launch();
-const page = await browser.newPage({ viewport: { width: 1280, height: 1000 } });
+const page = await browser.newPage({ viewport: { width: 1280, height: viewportHeight } });
 await page.goto(`${baseUrl}/typo3/`);
 await page.fill('#t3-username', username);
 await page.fill('#t3-password', password);
@@ -90,7 +125,8 @@ for (const name of names) {
   if (screenshot === undefined) {
     throw new Error(`Unknown screenshot "${name}"`);
   }
-  await page.setViewportSize({ width: screenshot.width ?? 1280, height: 1000 });
+  // A modal is centered in the window, which would be far down in a tall one
+  await page.setViewportSize({ width: screenshot.width ?? 1280, height: screenshot.modal ? 1000 : viewportHeight });
   await page.goto(screenshot.url);
   await page.waitForLoadState('networkidle');
   const frame = page.frame({ name: 'list_frame' });
@@ -114,6 +150,14 @@ for (const name of names) {
     await page.waitForTimeout(500);
     await page.screenshot({ path, clip: await page.locator('iframe[name="list_frame"]').boundingBox() });
   } else {
+    // Only the visible part of the page can be cut out. The window is tall
+    // enough for most forms; an area further down is scrolled into view.
+    const end = await frame.locator(screenshot.to ?? screenshot.element).last().boundingBox();
+    if (end.y + end.height + margin > viewportHeight) {
+      await frame.locator(screenshot.to ?? screenshot.element).last()
+        .evaluate((element) => element.scrollIntoView({ block: 'end' }));
+      await page.waitForTimeout(300);
+    }
     // Bounding boxes are relative to the page, also for elements in the frame
     const from = await frame.locator(screenshot.from ?? screenshot.element).last().boundingBox();
     const to = await frame.locator(screenshot.to ?? screenshot.element).last().boundingBox();
