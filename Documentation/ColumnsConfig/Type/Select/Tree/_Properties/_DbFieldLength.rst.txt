@@ -21,7 +21,6 @@
 
 ..  rubric:: Example: Increase the dbFieldLength for a select field
 
-..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_RenderTypes.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 73-87
-    :emphasize-lines: 82
+..  code-block:: php
+
+    'dbFieldLength' => 1000,

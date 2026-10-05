@@ -15,24 +15,42 @@ See also: `tca_example_select_multiplesidebyside_1`.
 Side-by-side view with filter
 =============================
 
-..  include:: /Images/Rst/SelectMultiplesidebyside5.rst.txt
+..  figure:: /Images/Conference/SelectMultipleSideBySide.png
+    :alt: The equipment of a talk with its filter
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectMultiplesidebyside5.rst.txt
+    The equipment of a talk with its filter
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/270-tx_myextension_talk-equipment.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/270-tx_myextension_talk-equipment.php
+    :emphasize-lines: 24
 
 ..  _tca-example-select-multiplesidebyside-6:
 
 Side-by-side select with field controls
 =======================================
 
-..  include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
+..  figure:: /Images/Conference/SelectMultipleSideBySideFieldControl.png
+    :alt: The speakers of a conference with field controls
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
+    The speakers of a conference with field controls
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :emphasize-lines: 19
 
 ..  _tca-example-select-multiplesidebyside-8:
 
 Using a MM table
 ================
 
-..  include:: /Images/Rst/SelectMultiplesidebyside8.rst.txt
+..  figure:: /Images/Conference/SelectMultipleSideBySideFieldControl.png
+    :alt: The speakers of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectMultiplesidebyside8.rst.txt
+    The speakers of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :emphasize-lines: 14

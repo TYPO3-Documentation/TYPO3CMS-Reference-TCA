@@ -27,22 +27,33 @@ is generated automatically.
 Example: Simple select checkbox with 3 possible values
 ======================================================
 
-..  include:: /Images/Rst/SelectCheckbox1.rst.txt
+..  figure:: /Images/Conference/SelectCheckBox.png
+    :alt: The topics of a speaker
+    :class: with-shadow
+
+    The topics of a speaker
 
 The select checkbox stores the values as comma separated values.
 
-..  include:: /CodeSnippets/SelectCheckbox1.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
 
 ..  _tca-example-select-checkbox-7:
 
 Example: Select checkbox with icons and groups
 ==============================================
 
-..  include:: /Images/Rst/SelectCheckbox7.rst.txt
+..  figure:: /Images/Conference/SelectCheckBox.png
+    :alt: The topics of a speaker in two groups
+    :class: with-shadow
+
+    The topics of a speaker in two groups
 
 The select checkbox stores the values as comma separated values.
 
-..  include:: /CodeSnippets/SelectCheckbox7.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+    :emphasize-lines: 26
 
 
 ..  _columns-select-selectcheckbox-properties:

@@ -107,6 +107,12 @@
 
     ..  rubric:: Example: Tree with non selectable levels
 
-    ..  include:: /Images/Rst/SelectTree2.rst.txt
+    ..  figure:: /Images/Conference/SelectTree.png
+        :alt: The location a hall is part of
+        :class: with-shadow
 
-    ..  include:: /CodeSnippets/SelectTree2.rst.txt
+        The location a hall is part of
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/403-tx_myextension_location-parent.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/403-tx_myextension_location-parent.php
+        :emphasize-lines: 17

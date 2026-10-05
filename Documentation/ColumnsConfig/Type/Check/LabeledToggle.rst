@@ -25,9 +25,15 @@ Examples
 Single checkbox with labeled toggle
 -----------------------------------
 
-..  include:: /Images/Rst/Checkbox19.rst.txt
+..  figure:: /Images/Conference/CheckLabeledToggle.png
+    :alt: A toggle with the labels Open and Closed
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Checkbox19.rst.txt
+    A toggle with the labels Open and Closed
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/116-tx_myextension_conference-registration_open.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/116-tx_myextension_conference-registration_open.php
+    :emphasize-lines: 13
 
 
 
@@ -36,6 +42,14 @@ Single checkbox with labeled toggle
 Single checkbox with labeled toggle inverted state display
 ----------------------------------------------------------
 
-..  include:: /Images/Rst/Checkbox21.rst.txt
 
-..  include:: /CodeSnippets/Checkbox21.rst.txt
+..  code-block:: php
+
+    'items' => [
+      [
+        'label' => 'Registration closed',
+        'invertStateDisplay' => true,
+        'labelChecked' => 'Closed',
+        'labelUnchecked' => 'Open',
+      ],
+    ],

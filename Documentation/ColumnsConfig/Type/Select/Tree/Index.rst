@@ -34,9 +34,14 @@ tables through the configuration options.
 Example: A happy little tree!
 =============================
 
-..  include:: /Images/Rst/SelectTree1.rst.txt
+..  figure:: /Images/Conference/SelectTree.png
+    :alt: The location a hall is part of
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectTree1.rst.txt
+    The location a hall is part of
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/403-tx_myextension_location-parent.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/403-tx_myextension_location-parent.php
 
 
 ..  _columns-select-selecttree-properties:

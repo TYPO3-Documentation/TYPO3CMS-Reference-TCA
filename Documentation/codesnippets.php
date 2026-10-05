@@ -20,83 +20,6 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/radio_1'],
-    'targetFileName' => 'CodeSnippets/Radio1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_2'],
-    'targetFileName' => 'CodeSnippets/Checkbox2.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_3'],
-    'targetFileName' => 'CodeSnippets/Checkbox3.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_7'],
-    'targetFileName' => 'CodeSnippets/Checkbox7.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_8'],
-    'targetFileName' => 'CodeSnippets/Checkbox8.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_12'],
-    'targetFileName' => 'CodeSnippets/Checkbox12.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_16'],
-    'targetFileName' => 'CodeSnippets/Checkbox16.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_17'],
-    'targetFileName' => 'CodeSnippets/Checkbox17.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_18'],
-    'targetFileName' => 'CodeSnippets/Checkbox18.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_19'],
-    'targetFileName' => 'CodeSnippets/Checkbox19.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/checkbox_21'],
-    'targetFileName' => 'CodeSnippets/Checkbox21.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
     'fields' => ['columns/text_9'],
     'targetFileName' => 'CodeSnippets/Text9.rst.txt',
   ],
@@ -164,46 +87,12 @@ return [
     'fields' => ['columns/password_7'],
     'targetFileName' => 'ColumnsConfig/Type/Password/_Snippets/_Password_7.rst.txt',
   ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_checkbox_1'],
-    'targetFileName' => 'CodeSnippets/SelectCheckbox1.rst.txt',
-  ],
 
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
     'fields' => ['columns/select_checkbox_2'],
     'targetFileName' => 'CodeSnippets/SelectCheckbox2.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_checkbox_3'],
-    'targetFileName' => 'CodeSnippets/SelectCheckbox3.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_checkbox_5'],
-    'targetFileName' => 'CodeSnippets/SelectCheckbox5.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_checkbox_7'],
-    'targetFileName' => 'CodeSnippets/SelectCheckbox7.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_multiplesidebyside_1'],
-    'targetFileName' => 'CodeSnippets/SelectMultiplesidebyside1.rst.txt',
   ],
 
   [
@@ -216,22 +105,8 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_multiplesidebyside_5'],
-    'targetFileName' => 'CodeSnippets/SelectMultiplesidebyside5.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
     'fields' => ['columns/select_multiplesidebyside_6'],
     'targetFileName' => 'CodeSnippets/SelectMultiplesidebyside6.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_multiplesidebyside_8'],
-    'targetFileName' => 'CodeSnippets/SelectMultiplesidebyside8.rst.txt',
   ],
 
   [
@@ -244,113 +119,8 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_1'],
-    'targetFileName' => 'CodeSnippets/SelectSingle1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_3'],
-    'targetFileName' => 'CodeSnippets/SelectSingle3.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_4'],
-    'targetFileName' => 'CodeSnippets/SelectSingle4.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_7'],
-    'targetFileName' => 'CodeSnippets/SelectSingle7.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_10'],
-    'targetFileName' => 'CodeSnippets/SelectSingle10.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_12'],
-    'targetFileName' => 'CodeSnippets/SelectSingle12.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_15'],
-    'targetFileName' => 'CodeSnippets/SelectSingle15.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_16'],
-    'targetFileName' => 'CodeSnippets/SelectSingle16.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_17'],
-    'targetFileName' => 'CodeSnippets/SelectSingle17.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_18'],
-    'targetFileName' => 'CodeSnippets/SelectSingle18.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_19'],
-    'targetFileName' => 'CodeSnippets/SelectSingle19.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_20'],
-    'targetFileName' => 'CodeSnippets/SelectSingle20.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_singlebox_1'],
-    'targetFileName' => 'CodeSnippets/SelectSinglebox1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
     'fields' => ['columns/select_singlebox_3'],
     'targetFileName' => 'CodeSnippets/SelectSinglebox3.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_tree_1'],
-    'targetFileName' => 'CodeSnippets/SelectTree1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_tree_2'],
-    'targetFileName' => 'CodeSnippets/SelectTree2.rst.txt',
   ],
 
   [
@@ -556,11 +326,6 @@ return [
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_palette.php',
     'fields' => ['types'],
     'targetFileName' => 'CodeSnippets/PalettesTypes.rst.txt',
-  ],
-  [
-    'action' => 'createCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Classes/UserFunctions/FormEngine/SelectItemSorter.php',
-    'targetFileName' => 'CodeSnippets/SelectItemSorter.rst.txt',
   ],
 
   [

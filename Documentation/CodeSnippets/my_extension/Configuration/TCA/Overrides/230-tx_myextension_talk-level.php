@@ -15,6 +15,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
         ['label' => 'my_extension.db:talk.level.expert', 'value' => 3],
       ],
       'default' => 1,
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
     ],
   ],
 ]);
