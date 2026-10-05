@@ -17,7 +17,7 @@ is generated automatically. For short input fields allowing less
 than 255 chars :sql:`VARCHAR()` is used, :sql:`TEXT` for larger input fields.
 
 Extension authors who need or want to override default
-TCA schema details for whatever reason, can of course
+TCA schema details for whatever reason, can
 do so by defining something specific in :file:`ext_tables.sql`.
 
 ..  versionchanged:: 13.2
