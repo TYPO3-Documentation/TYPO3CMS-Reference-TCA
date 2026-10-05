@@ -27,6 +27,15 @@
       <trans-unit id="conference.color" resname="conference.color">
         <source>Color</source>
       </trans-unit>
+      <trans-unit id="conference.color.night" resname="conference.color.night">
+        <source>Night blue</source>
+      </trans-unit>
+      <trans-unit id="conference.color.orange" resname="conference.color.orange">
+        <source>Orange</source>
+      </trans-unit>
+      <trans-unit id="conference.color.teal" resname="conference.color.teal">
+        <source>Teal</source>
+      </trans-unit>
       <trans-unit id="conference.comments" resname="conference.comments">
         <source>Comments</source>
       </trans-unit>
@@ -39,8 +48,14 @@
       <trans-unit id="conference.description" resname="conference.description">
         <source>Description</source>
       </trans-unit>
+      <trans-unit id="conference.doors_open" resname="conference.doors_open">
+        <source>Doors open</source>
+      </trans-unit>
       <trans-unit id="conference.embed_code" resname="conference.embed_code">
         <source>Embed code of the live stream</source>
+      </trans-unit>
+      <trans-unit id="conference.end_date" resname="conference.end_date">
+        <source>Last day</source>
       </trans-unit>
       <trans-unit id="conference.event_format" resname="conference.event_format">
         <source>Format</source>
@@ -63,11 +78,17 @@
       <trans-unit id="conference.internal_notes" resname="conference.internal_notes">
         <source>Internal notes</source>
       </trans-unit>
+      <trans-unit id="conference.livestream_password" resname="conference.livestream_password">
+        <source>Password of the live stream</source>
+      </trans-unit>
       <trans-unit id="conference.location" resname="conference.location">
         <source>Location</source>
       </trans-unit>
       <trans-unit id="conference.logo" resname="conference.logo">
         <source>Logo</source>
+      </trans-unit>
+      <trans-unit id="conference.overlay_color" resname="conference.overlay_color">
+        <source>Overlay color</source>
       </trans-unit>
       <trans-unit id="conference.prices" resname="conference.prices">
         <source>Ticket prices</source>
@@ -101,6 +122,12 @@
       </trans-unit>
       <trans-unit id="conference.ticket_link" resname="conference.ticket_link">
         <source>Tickets</source>
+      </trans-unit>
+      <trans-unit id="conference.ticket_link.browser_title" resname="conference.ticket_link.browser_title">
+        <source>Link to the tickets</source>
+      </trans-unit>
+      <trans-unit id="conference.ticketing_secret" resname="conference.ticketing_secret">
+        <source>Secret of the ticket shop</source>
       </trans-unit>
       <trans-unit id="conference.title" resname="conference.title">
         <source>Title</source>

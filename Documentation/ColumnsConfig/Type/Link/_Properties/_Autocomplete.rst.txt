@@ -10,7 +10,6 @@
     adds attribute :html:`autocomplete="on"` to the email input field allowing browser auto filling the field:
 
 
-    ..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 139-147
-        :emphasize-lines: 145
+    ..  code-block:: php
+
+        'autocomplete' => true,

@@ -6,7 +6,8 @@
 
     Placeholder, containing a hexadecimal color representation.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 24-31
-        :emphasize-lines: 28
+    ..  code-block:: php
+
+        'placeholder' => '#ff8700',
+        'nullable' => true,
+        'mode' => 'useOrOverridePlaceholder',

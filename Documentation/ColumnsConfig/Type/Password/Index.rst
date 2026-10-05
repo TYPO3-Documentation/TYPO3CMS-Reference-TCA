@@ -33,20 +33,26 @@ is generated automatically.
 Example: A basic password field:
 ================================
 
-..  include:: _Snippets/_Password_1.rst.txt
+..  code-block:: php
+
+    'config' => [
+      'type' => 'password',
+    ],
 
 ..  _columns-password-example-generator:
 
 Example: A password field with password generator
 =================================================
 
-..  figure:: /Images/ManualScreenshots/PasswordGeneratorAllChars.png
-    :alt: A password generator using special chars.
+..  figure:: /Images/Conference/PasswordGenerator.png
+    :alt: The password of the live stream with its generator
     :class: with-shadow
 
-    A password generator using special chars.
+    The password of the live stream with its generator
 
-..  include:: _Snippets/_Password_6.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/119-tx_myextension_conference-livestream_password.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/119-tx_myextension_conference-livestream_password.php
+    :emphasize-lines: 16
 
 For more options on generating passwords see
 :ref:`Property passwordGenerator <columns-password-properties-passwordgenerator>`

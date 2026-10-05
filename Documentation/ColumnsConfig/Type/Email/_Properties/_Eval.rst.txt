@@ -25,11 +25,10 @@
         Evaluated on the server only.
 
 
-..  rubric:: Example: Email field unique on the storage page
+..  rubric:: Example: The email address of a speaker is unique in the storage folder
 
-Require an email address to be unique for this record type in this folder
+Two speakers in the same storage folder cannot have the same email address:
 
-..  literalinclude:: /ColumnsConfig/Type/Email/_Snippets/_Email.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 19-25
-    :emphasize-lines: 23
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/310-tx_myextension_speaker-email.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/310-tx_myextension_speaker-email.php
+    :emphasize-lines: 13

@@ -23,11 +23,10 @@
     ..  code-block:: sql
         :caption: Nullable datetime schema after this change
 
-        `mydatefield` bigint(20) DEFAULT NULL
+        `end_date` bigint(20) DEFAULT NULL
 
-..  rubric:: Example:
+..  rubric:: Example: The last day of a conference that may last one day only
 
-..  literalinclude:: /ColumnsConfig/Type/Datetime/_Snippets/_Datetime.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 49-55
-    :emphasize-lines: 53
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/113-tx_myextension_conference-end_date.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/113-tx_myextension_conference-end_date.php
+    :emphasize-lines: 13

@@ -46,12 +46,18 @@ future.
 Example: A simple date field, stored as bigint
 ==============================================
 
-A simple date field, stored as :sql:`bigint` in the database:
+The date of a conference, stored as :sql:`bigint` in the database:
 
-..  literalinclude:: /ColumnsConfig/Type/Datetime/_Snippets/_Datetime.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 9-16
-    :emphasize-lines: 13
+..  figure:: /Images/Conference/DatetimeDate.png
+    :alt: The date of a conference
+    :class: with-shadow
+
+    The date of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 40-47
+    :emphasize-lines: 44
 
 
 ..  _columns-datetimesec-example:
@@ -59,12 +65,11 @@ A simple date field, stored as :sql:`bigint` in the database:
 Example: A simple date field with seconds
 ==============================================
 
-A simple date field, formated with `datetimesec`.
+A date field that also shows the seconds, formatted with `datetimesec`:
 
-..  literalinclude:: /ColumnsConfig/Type/Datetime/_Snippets/_Datetime.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 18-28
-    :emphasize-lines: 22
+..  code-block:: php
+
+    'format' => 'datetimesec',
 
 
 ..  _columns-datetime-properties:

@@ -27,10 +27,15 @@ is generated automatically.
 Example: A basic link field
 ===========================
 
-..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 9-15
-    :emphasize-lines: 13
+..  figure:: /Images/Conference/LinkTickets.png
+    :alt: The link to the tickets of a conference
+    :class: with-shadow
+
+    The link to the tickets of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/118-tx_myextension_conference-ticket_link.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/118-tx_myextension_conference-ticket_link.php
+    :emphasize-lines: 18
 
 ..  _columns-link-properties:
 

@@ -39,9 +39,14 @@
         :ref:`FormEngine element <t3coreapi:FormEngine-Rendering>` or a small
         JavaScript hook that modifies the input value after selection.
 
-..  rubric:: Example: A link field with value picker
+..  rubric:: Example: Common profile addresses as a start for the website
 
-..  literalinclude:: /ColumnsConfig/Type/Link/_Snippets/_Link.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 166-185
-    :emphasize-lines: 171
+..  figure:: /Images/Conference/LinkValuePicker.png
+    :alt: The website of a speaker with its value picker
+    :class: with-shadow
+
+    The website of a speaker with its value picker
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/315-tx_myextension_speaker-website.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/315-tx_myextension_speaker-website.php
+    :emphasize-lines: 12

@@ -6,7 +6,6 @@
 
     Placeholder, containing a hexadecimal password representation.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Password/_Snippets/_Password.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 26-32
-        :emphasize-lines: 30
+    ..  code-block:: php
+
+        'placeholder' => 'Choose a password',

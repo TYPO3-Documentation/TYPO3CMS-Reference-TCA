@@ -91,7 +91,7 @@ $data['tx_myextension_location'] = [
 $data['tx_myextension_speaker'] = [
     'NEWspada' => [
         'pid' => $pid, 'salutation' => 'ms', 'name' => 'Ada Example', 'company' => 'Example Agency',
-        'email' => 'ada@example.org', 'website' => 'https://example.org', 'country' => 'DE',
+        'email' => 'ada@example.org', 'website' => 'https://example.org/profile/ada', 'country' => 'DE',
         'bio' => '<p>Ada builds extensions for <strong>public institutions</strong>.</p>', 'photo' => 'NEWimgada',
         'short_bio' => 'Ada builds TYPO3 extensions for public institutions.',
     ],
@@ -144,6 +144,9 @@ $data['tx_myextension_conference'] = [
         'seats' => 350, 'website' => 'https://example.org', 'contact_email' => 'team@example.org',
         'color' => '#ff8700', 'description' => '<p>Three days about building TYPO3 extensions.</p>',
         'hashtag' => '#T3DD27',
+        'end_date' => strtotime('2027-05-14'), 'doors_open' => '2027-05-12T08:30:00',
+        'overlay_color' => '#29254580', 'livestream_password' => 'Stream-Basel-2027',
+        'ticketing_secret' => 'a3f1c9e07b5d4e2f8c6a1b0d9e7f3c5a2b4d6e8f',
         'embed_code' => '<iframe src="https://example.org/live/embed" title="Live stream"></iframe>',
         'prices' => "Regular ticket|450 EUR\nStudent ticket|150 EUR\nSpeaker|free",
         'internal_notes' => 'Catering confirmed for 350 people.',
