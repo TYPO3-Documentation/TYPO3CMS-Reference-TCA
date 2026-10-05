@@ -13,6 +13,12 @@
 
 ..  rubric:: Example: A simple text editor with 2 rows
 
-..  include:: /Images/Rst/Text4.rst.txt
+..  figure:: /Images/Conference/TextAbstract.png
+    :alt: The abstract of a talk
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Text4.rst.txt
+    The abstract of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
+    :emphasize-lines: 13

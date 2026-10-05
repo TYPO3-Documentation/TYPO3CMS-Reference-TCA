@@ -17,5 +17,6 @@
     To exclude a field from being searchable, set the following in the
     field's TCA configuration:
 
-    ..  literalinclude:: /ColumnsConfig/Type/Input/_Snippets/_Searchable.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+    ..  code-block:: php
+
+        'searchable' => false,

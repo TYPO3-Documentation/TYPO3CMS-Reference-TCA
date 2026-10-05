@@ -9,6 +9,7 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
     'label' => 'my_extension.db:talk.max_participants',
     'config' => [
       'type' => 'number',
+      'nullable' => true,
       'range' => [
         'lower' => 1,
       ],

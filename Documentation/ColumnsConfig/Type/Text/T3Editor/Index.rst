@@ -29,16 +29,15 @@ add syntax highlighting to textarea fields for several languages.
 Example: Code highlighting with code editor
 ===========================================
 
-..  figure:: /Images/ManualScreenshots/Codeeditor.png
-    :alt: Code editor with highlighting HTML
+..  figure:: /Images/Conference/TextCodeEditor.png
+    :alt: The embed code of a conference in the code editor
     :class: with-shadow
 
-    Code editor with highlighting HTML
+    The embed code of a conference in the code editor
 
-..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 11-20
-    :emphasize-lines: 17
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/132-tx_myextension_conference-embed_code.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/132-tx_myextension_conference-embed_code.php
+    :emphasize-lines: 12
 
 ..  _columns-text-rendertype-codeeditor-properties:
 

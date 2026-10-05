@@ -16,26 +16,6 @@ return [
     'fields' => ['ctrl'],
     'targetFileName' => 'CodeSnippets/TtContentCtrl.rst.txt',
   ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/input_1'],
-    'targetFileName' => 'CodeSnippets/Input1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/input_28'],
-    'targetFileName' => 'CodeSnippets/Input28.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/input_33'],
-    'targetFileName' => 'CodeSnippets/Input33.rst.txt',
-  ],
 
   [
     'action' => 'createPhpArrayCodeSnippet',
@@ -117,34 +97,6 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_4'],
-    'targetFileName' => 'CodeSnippets/Text4.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_5'],
-    'targetFileName' => 'CodeSnippets/Text5.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_6'],
-    'targetFileName' => 'CodeSnippets/Text6.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_7'],
-    'targetFileName' => 'CodeSnippets/Text7.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
     'fields' => ['columns/text_9'],
     'targetFileName' => 'CodeSnippets/Text9.rst.txt',
   ],
@@ -152,29 +104,8 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_11'],
-    'targetFileName' => 'CodeSnippets/Text11.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
     'fields' => ['columns/text_14'],
     'targetFileName' => 'CodeSnippets/Text14.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_15'],
-    'targetFileName' => 'CodeSnippets/Text15.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_17'],
-    'targetFileName' => 'CodeSnippets/Text17.rst.txt',
   ],
 
   [
@@ -189,13 +120,6 @@ return [
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
     'fields' => ['columns/text_19'],
     'targetFileName' => 'CodeSnippets/Text19.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/text_20'],
-    'targetFileName' => 'CodeSnippets/Text20.rst.txt',
   ],
 
   [
@@ -439,36 +363,8 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php',
-    'fields' => ['columns/rte_1'],
-    'targetFileName' => 'CodeSnippets/Rte1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php',
-    'fields' => ['columns/rte_2'],
-    'targetFileName' => 'CodeSnippets/Rte2.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php',
     'fields' => ['columns/rte_3'],
     'targetFileName' => 'CodeSnippets/Rte3.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php',
-    'fields' => ['columns/rte_4'],
-    'targetFileName' => 'CodeSnippets/Rte4.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php',
-    'fields' => ['columns/rte_5'],
-    'targetFileName' => 'CodeSnippets/Rte5.rst.txt',
   ],
 
   [

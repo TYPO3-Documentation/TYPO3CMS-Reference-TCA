@@ -70,24 +70,35 @@ Simple text area
 A simple text area or a rich text field is rendered, if no renderType is
 specified.
 
-..  include:: /Images/Rst/Text4.rst.txt
+..  figure:: /Images/Conference/TextAbstract.png
+    :alt: The abstract of a talk
+    :class: with-shadow
+
+    The abstract of a talk
 
 See :ref:`render type "default" <columns-text-rendertype-default>`
 on how to configure such an editor.
 
-..  include:: /CodeSnippets/Text4.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/225-tx_myextension_talk-abstract.php
 
 ..  _columns-text-rich-text-editor:
 
 Rich text editor field
 ======================
 
-..  include:: /Images/Rst/Rte1.rst.txt
+..  figure:: /Images/Conference/TextRichtext.png
+    :alt: The description of a conference
+    :class: with-shadow
+
+    The description of a conference
 
 See :ref:`property "enableRichtext" <columns-text-properties-enablerichtext>`
 on how to configure such an editor.
 
-..  include:: /CodeSnippets/Rte1.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :emphasize-lines: 13
 
 
 ..  _columns-text-code-highlight-editor:
@@ -95,19 +106,18 @@ on how to configure such an editor.
 Code highlight editor
 =====================
 
-..  figure:: /Images/ManualScreenshots/Codeeditor.png
-    :alt: Code editor with highlighting HTML
+..  figure:: /Images/Conference/TextCodeEditor.png
+    :alt: The embed code of a conference in the code editor
     :class: with-shadow
 
-    Code editor with highlighting HTML
+    The embed code of a conference in the code editor
 
 See :ref:`codeEditor <columns-text-rendertype-codeeditor>` on how to configure
 such an editor.
 
-..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 11-20
-    :emphasize-lines: 16
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/132-tx_myextension_conference-embed_code.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/132-tx_myextension_conference-embed_code.php
+    :emphasize-lines: 12
 
 ..  _columns-text-backend-layout-editor:
 
@@ -117,21 +127,34 @@ Backend layout editor
 The backend layout wizard is displayed in order to edit records of table
 `backend_layout` in the backend.
 
-..  include:: /Images/Rst/Text20.rst.txt
+..  figure:: /Images/Conference/TextBackendLayoutWizard.png
+    :alt: The backend layout wizard
+    :class: with-shadow
+
+    The backend layout wizard
 
 See :ref:`render type belayoutwizard <columns-text-rendertype-belayoutwizard>`
 on how to configure such an editor.
 
-..  include:: /CodeSnippets/Text20.rst.txt
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_backend_layout.php
+    :caption: EXT:frontend/Configuration/TCA/backend_layout.php
+    :visible-lines: 35-41
+    :emphasize-lines: 39
 
 ..  _columns-text-text-field-rendertype:
 
 Text field with renderType textTable
 ====================================
 
-..  include:: /Images/Rst/Text17.rst.txt
+..  figure:: /Images/Conference/TextTable.png
+    :alt: The ticket prices of a conference
+    :class: with-shadow
+
+    The ticket prices of a conference
 
 See :ref:`render type textTable <columns-text-rendertype-texttable>`
 on how to configure such an editor.
 
-..  include:: /CodeSnippets/Text17.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/133-tx_myextension_conference-prices.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/133-tx_myextension_conference-prices.php
+    :emphasize-lines: 12

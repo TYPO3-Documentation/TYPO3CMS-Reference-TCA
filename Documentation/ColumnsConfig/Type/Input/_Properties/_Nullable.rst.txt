@@ -15,9 +15,8 @@
     The database field must allow the :sql:`NULL` value.
 
 
-..  rubric:: Example: A nullable field
+..  rubric:: Example: A short title that is NULL unless set
 
-..  literalinclude:: /ColumnsConfig/Type/Input/_Snippets/_Input.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 47-54
-    :emphasize-lines: 51
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/106-tx_myextension_conference-short_title.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/106-tx_myextension_conference-short_title.php
+    :emphasize-lines: 14
