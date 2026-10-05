@@ -47,7 +47,7 @@ be set:
     :visible-lines: 16-28
     :emphasize-lines: 23
 
-Of course, the `_default` key can also be overridden via page TSconfig:
+The `_default` key can also be overridden via page TSconfig:
 
 ..  code-block:: typoscript
 

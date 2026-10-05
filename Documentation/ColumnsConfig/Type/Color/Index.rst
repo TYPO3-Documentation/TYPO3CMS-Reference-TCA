@@ -23,7 +23,7 @@ is generated automatically.
 
 :ref:`Color palettes <t3tsref:pagecolorpalettes>` can be defined via
 :ref:`page TSconfig <t3tsref:setting-page-tsconfig>`. This way, for example,
-colors defined in a corporate design can be selected by a simple click.
+colors defined in a corporate design can be selected with one click.
 
 ..  contents:: Table of contents:
     :depth: 1
