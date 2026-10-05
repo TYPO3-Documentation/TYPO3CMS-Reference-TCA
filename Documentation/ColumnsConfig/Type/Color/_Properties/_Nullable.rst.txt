@@ -17,7 +17,6 @@
 
 Example:
 
-..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 16-22
-    :emphasize-lines: 20
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/151-tx_myextension_conference-overlay_color.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/151-tx_myextension_conference-overlay_color.php
+    :emphasize-lines: 13

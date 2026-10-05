@@ -10,6 +10,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
     'config' => [
       'type' => 'datetime',
       'format' => 'datetime',
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
     ],
   ],
 ]);

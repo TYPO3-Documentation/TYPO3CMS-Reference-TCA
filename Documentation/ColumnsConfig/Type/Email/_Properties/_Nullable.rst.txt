@@ -20,7 +20,6 @@
 
 ..  rubric:: Example:
 
-..  literalinclude:: /ColumnsConfig/Type/Email/_Snippets/_Email.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 36-43
-    :emphasize-lines: 40
+..  code-block:: php
+
+    'nullable' => true,

@@ -16,6 +16,8 @@
         the tables `be_users` and `fe_users`. In general it is not
         recommended to save passwords as plain text to the database.
 
-..  rubric:: Example: The password will be saved as plain text:
+..  rubric:: Example: A password that must stay readable to be sent to the ticket holders
 
-..  include:: _Snippets/_Password_2.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/119-tx_myextension_conference-livestream_password.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/119-tx_myextension_conference-livestream_password.php
+    :emphasize-lines: 13

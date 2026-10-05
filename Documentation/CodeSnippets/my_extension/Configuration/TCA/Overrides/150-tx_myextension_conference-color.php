@@ -9,6 +9,17 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
     'label' => 'my_extension.db:conference.color',
     'config' => [
       'type' => 'color',
+      'valuePicker' => [
+        'items' => [
+          ['label' => 'my_extension.db:conference.color.orange', 'value' => '#ff8700'],
+          ['label' => 'my_extension.db:conference.color.teal', 'value' => '#2f99a4'],
+          ['label' => 'my_extension.db:conference.color.night', 'value' => '#292545'],
+        ],
+      ],
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
+      'searchable' => false,
     ],
   ],
 ]);

@@ -10,6 +10,14 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
     'config' => [
       'type' => 'link',
       'allowedTypes' => ['url'],
+      'appearance' => [
+        'allowedOptions' => [],
+        'enableBrowser' => false,
+      ],
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
+      'searchable' => false,
     ],
   ],
 ]);

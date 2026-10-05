@@ -16,14 +16,14 @@
 
 ..  _columns-color-properties-opacity-example:
 
-..  rubric:: Example: Allow adjustment of opacity in a color picker
+..  rubric:: Example: An overlay color with opacity
 
-..  figure:: /Images/ManualScreenshots/ColorOpacity.png
-    :alt: A color picker with adjustable opacity
+..  figure:: /Images/Conference/ColorOpacity.png
+    :alt: The overlay color of a conference, half transparent
+    :class: with-shadow
 
-    A color picker with adjustable opacity
+    The overlay color of a conference, half transparent
 
-..  literalinclude:: /ColumnsConfig/Type/Color/_Snippets/_Color.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 33-39
-    :emphasize-lines: 37
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/151-tx_myextension_conference-overlay_color.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/151-tx_myextension_conference-overlay_color.php
+    :emphasize-lines: 12

@@ -9,6 +9,10 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
     'label' => 'my_extension.db:conference.contact_email',
     'config' => [
       'type' => 'email',
+      'placeholder' => 'info@example.org',
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
     ],
   ],
 ]);
