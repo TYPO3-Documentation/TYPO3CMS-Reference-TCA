@@ -13,9 +13,8 @@
 
     This property can also be overridden by page TSconfig.
 
-Example, exactly one image has to be attached:
+Example, a sponsor has exactly one logo:
 
-..  literalinclude:: /ColumnsConfig/Type/File/_Snippets/_Minitems.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 16-24
-    :emphasize-lines: 20
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/710-tx_myextension_sponsor-logo.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/710-tx_myextension_sponsor-logo.php
+    :emphasize-lines: 13-14

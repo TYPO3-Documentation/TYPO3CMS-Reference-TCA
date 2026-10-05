@@ -21,34 +21,32 @@
 
     Each `table => id` pair can also be overridden via page TSconfig.
 
-..  rubric:: Example: Open the element browser on page 123 for tt_content elements
+..  rubric:: Example: Open the element browser on the folder of the talk for speakers
 
-..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_ElementBrowserEntryPointsSimple.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 16-25
-    :emphasize-lines: 21
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+    :emphasize-lines: 16-18
 
 This could then be overridden via page TSconfig:
 
 ..  code-block:: typoscript
 
-    TCEFORM.tx_myextension_mytable.simple_group.config.elementBrowserEntryPoints.tt_content = 321
+    TCEFORM.tx_myextension_talk.speaker.config.elementBrowserEntryPoints.tx_myextension_speaker = 321
 
 Since only one table is allowed, the defined entry point is also automatically
 used for the general element browser button.
 
-..  rubric:: Example: Open the element browser on different pages for tt_content and teaser records
+..  rubric:: Example: Open the element browser on the root page of the site for pages and content elements
 
 In case the group field allows more than one table, the `_default` key has to
 be set:
 
-..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_ElementBrowserEntryPointsExtended.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 16-28
-    :emphasize-lines: 23
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/157-tx_myextension_conference-related_content.php
+    :emphasize-lines: 13-15
 
 The `_default` key can also be overridden via page TSconfig:
 
 ..  code-block:: typoscript
 
-    TCEFORM.tx_myextension_mytable.extended_group.config.elementBrowserEntryPoints._default = 122
+    TCEFORM.tx_myextension_conference.related_content.config.elementBrowserEntryPoints._default = 122
