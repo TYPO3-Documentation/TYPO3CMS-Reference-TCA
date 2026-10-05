@@ -63,6 +63,12 @@ $reference = static fn(string $file, string $table, string $field, string $recor
 ];
 
 $data = [];
+$data['backend_layout'] = [
+    'NEWlayout' => [
+        'pid' => 1, 'title' => 'Two columns',
+        'config' => "backend_layout {\n  colCount = 2\n  rowCount = 1\n  rows {\n    1 {\n      columns {\n        1 {\n          name = Main\n          colPos = 0\n        }\n        2 {\n          name = Sidebar\n          colPos = 1\n        }\n      }\n    }\n  }\n}\n",
+    ],
+];
 $data['tt_content'] = [
     'NEWwelcome' => [
         'pid' => 1, 'CType' => 'text', 'header' => 'Welcome',
@@ -74,7 +80,7 @@ $data['tx_myextension_location'] = [
         'pid' => $pid, 'name' => 'Congress Center', 'street' => 'Messeplatz 21',
         'zip' => '4058', 'city' => 'Basel', 'country' => 'CH',
         'latitude' => '47.563167', 'longitude' => '7.600833', 'image' => 'NEWimgbasel',
-        'directions' => 'Tram 2 or 6 to the stop Messeplatz.',
+        'directions' => 'Tram 2 or 6 to the stop Messeplatz.', 'capacity' => 1000,
     ],
     'NEWleipzig' => [
         'pid' => $pid, 'name' => 'Kongresshalle', 'street' => 'Pfaffendorfer Strasse 31',
@@ -86,7 +92,8 @@ $data['tx_myextension_speaker'] = [
     'NEWspada' => [
         'pid' => $pid, 'salutation' => 'ms', 'name' => 'Ada Example', 'company' => 'Example Agency',
         'email' => 'ada@example.org', 'website' => 'https://example.org', 'country' => 'DE',
-        'bio' => '<p>Ada builds extensions for public institutions.</p>', 'photo' => 'NEWimgada',
+        'bio' => '<p>Ada builds extensions for <strong>public institutions</strong>.</p>', 'photo' => 'NEWimgada',
+        'short_bio' => 'Ada builds TYPO3 extensions for public institutions.',
     ],
     'NEWspben' => [
         'pid' => $pid, 'salutation' => 'mr', 'name' => 'Ben Sample', 'company' => 'Sample Ltd.',
@@ -102,14 +109,14 @@ $data['tx_myextension_talk'] = [
         'pid' => $pid, 'talk_type' => 'talk', 'title' => 'TCA for extension developers',
         'speaker' => 'NEWspada', 'start_time' => strtotime('2027-05-12 10:00'), 'duration' => 45,
         'room' => 'Main hall', 'level' => 1,
-        'abstract' => 'How the table configuration array turns a database table into a backend form.',
+        'abstract' => "How the table configuration array turns a database table into a backend form.\n\n\n\nWith examples from a real extension.",
         'comments' => 'NEWcommenttalk',
     ],
     'NEWtalkworkshop' => [
         'pid' => $pid, 'talk_type' => 'workshop', 'title' => 'Write your first form element',
         'speaker' => 'NEWspben', 'start_time' => strtotime('2027-05-12 14:00'), 'duration' => 180,
         'room' => 'Room A', 'level' => 2, 'max_participants' => 20,
-        'requirements' => 'A laptop with DDEV installed.',
+        'requirements' => "A laptop with DDEV installed:\n\n\tddev config --project-type=typo3\n\tddev start",
     ],
     'NEWtalkkeynote' => [
         'pid' => $pid, 'talk_type' => 'keynote', 'title' => 'Twenty years of TCA',
@@ -136,6 +143,9 @@ $data['tx_myextension_conference'] = [
         'ticket_link' => 'https://example.org/tickets',
         'seats' => 350, 'website' => 'https://example.org', 'contact_email' => 'team@example.org',
         'color' => '#ff8700', 'description' => '<p>Three days about building TYPO3 extensions.</p>',
+        'hashtag' => '#T3DD27',
+        'embed_code' => '<iframe src="https://example.org/live/embed" title="Live stream"></iframe>',
+        'prices' => "Regular ticket|450 EUR\nStudent ticket|150 EUR\nSpeaker|free",
         'internal_notes' => 'Catering confirmed for 350 people.',
         'speakers' => 'NEWspada,NEWspben,NEWspkim',
         'talks' => 'NEWtalkkeynote,NEWtalktca,NEWtalkworkshop',
@@ -163,6 +173,8 @@ $uids = [
     'talk' => $dataHandler->substNEWwithIDs['NEWtalktca'],
     'workshop' => $dataHandler->substNEWwithIDs['NEWtalkworkshop'],
     'speaker' => $dataHandler->substNEWwithIDs['NEWspada'],
+    'location' => $dataHandler->substNEWwithIDs['NEWbasel'],
+    'backendLayout' => $dataHandler->substNEWwithIDs['NEWlayout'],
 ];
 $conference = $uids['conference'];
 

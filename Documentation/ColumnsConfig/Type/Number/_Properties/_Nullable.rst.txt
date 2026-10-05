@@ -16,9 +16,8 @@
     The if database field is created automatically, it allow the :sql:`NULL`
     value.
 
-..  rubric:: Example: A nullable number field
+..  rubric:: Example: No limit for the participants unless one is set
 
-..  literalinclude:: /ColumnsConfig/Type/Number/_Snippets/_Number.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 19-25
-    :emphasize-lines: 23
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/245-tx_myextension_talk-max_participants.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/245-tx_myextension_talk-max_participants.php
+    :emphasize-lines: 12

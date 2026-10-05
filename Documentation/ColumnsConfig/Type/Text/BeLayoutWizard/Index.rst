@@ -27,9 +27,16 @@ syntax representing the page layout in the database.
 Example: Backend layout editor
 ==============================
 
-..  include:: /Images/Rst/Text20.rst.txt
+..  figure:: /Images/Conference/TextBackendLayoutWizard.png
+    :alt: The backend layout wizard
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Text20.rst.txt
+    The backend layout wizard
+
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_backend_layout.php
+    :caption: EXT:frontend/Configuration/TCA/backend_layout.php
+    :visible-lines: 35-41
+    :emphasize-lines: 39
 
 ..  _columns-text-rendertype-belayoutwizard-properties:
 

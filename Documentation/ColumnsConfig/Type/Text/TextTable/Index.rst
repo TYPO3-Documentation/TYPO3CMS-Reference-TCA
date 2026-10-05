@@ -24,9 +24,15 @@ tt_content content element.
 Example: Text field with renderType `textTable`
 ===============================================
 
-..  include:: /Images/Rst/Text17.rst.txt
+..  figure:: /Images/Conference/TextTable.png
+    :alt: The ticket prices of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Text17.rst.txt
+    The ticket prices of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/133-tx_myextension_conference-prices.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/133-tx_myextension_conference-prices.php
+    :emphasize-lines: 12
 
 ..  _columns-text-texttable-codeeditor-properties:
 

@@ -27,27 +27,41 @@ Examples for Rich text editor fields in the TYPO3 Backend
 RTE with minimal configuration
 ------------------------------
 
-..  include:: /Images/Rst/Rte4.rst.txt
+..  figure:: /Images/Conference/TextRichtextMinimal.png
+    :alt: The biography of a speaker with the minimal configuration
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Rte4.rst.txt
+    The biography of a speaker with the minimal configuration
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/330-tx_myextension_speaker-bio.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/330-tx_myextension_speaker-bio.php
+    :emphasize-lines: 13
 
 ..  _tca-example-rte-5:
 
 RTE with full configuration
 ---------------------------
 
-..  include:: /Images/Rst/Rte5.rst.txt
 
-..  include:: /CodeSnippets/Rte5.rst.txt
+..  code-block:: diff
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+
+           'enableRichtext' => true,
+    +      'richtextConfiguration' => 'full',
 
 ..  _tca-example-rte-2-2:
 
 RTE with default configuration
 ------------------------------
 
-..  include:: /Images/Rst/Rte2.rst.txt
+..  figure:: /Images/Conference/TextRichtext.png
+    :alt: The description of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Rte2.rst.txt
+    The description of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/130-tx_myextension_conference-description.php
 
 
 ..  _rich-text-editor-properties:
