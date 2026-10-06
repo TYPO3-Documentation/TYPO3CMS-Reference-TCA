@@ -79,15 +79,27 @@ Examples
 Select field
 ------------
 
-..  include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
+..  figure:: /Images/Conference/SelectMultipleSideBySideFieldControl.png
+    :alt: The speakers of a conference with field controls
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectMultiplesidebyside6.rst.txt
+    The speakers of a conference with field controls
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :emphasize-lines: 20-22
 
 ..  _tca-property-field-control-edit-popup-examples-group-field:
 
 Group field
 -----------
 
-..  include:: /Images/Rst/GroupDb1.rst.txt
+..  figure:: /Images/Conference/GroupSpeaker.png
+    :alt: The speaker of a talk with field controls
+    :class: with-shadow
 
-..  include:: /CodeSnippets/GroupDb1.rst.txt
+    The speaker of a talk with field controls
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+    :emphasize-lines: 20-22

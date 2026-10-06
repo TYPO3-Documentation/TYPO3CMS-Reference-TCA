@@ -216,7 +216,7 @@ $data['tx_myextension_conference'] = [
         'ticket_link' => 'https://example.org/tickets',
         'seats' => 350, 'website' => 'https://example.org', 'contact_email' => 'team@example.org',
         'color' => '#ff8700', 'description' => '<p>Three days about building TYPO3 extensions.</p>',
-        'hashtag' => '#T3DD27', 'amenities' => 9, 'timezone' => 'Europe/Zurich',
+        'hashtag' => '#T3DD27', 'tracks' => "Backend\nFrontend\nEditing", 'amenities' => 9, 'timezone' => 'Europe/Zurich',
         'end_date' => strtotime('2027-05-14'), 'doors_open' => '2027-05-12T08:30:00',
         'overlay_color' => '#29254580', 'livestream_password' => 'Stream-Basel-2027',
         'ticketing_secret' => 'a3f1c9e07b5d4e2f8c6a1b0d9e7f3c5a2b4d6e8f',
@@ -279,6 +279,8 @@ $process([
     'tx_myextension_talk' => [$uids['talk'] => [
         'related_talks' => 'tx_myextension_talk_' . $uids['workshop'] . ',tx_myextension_talk_' . $dataHandler->substNEWwithIDs['NEWtalkkeynote'],
         'topic' => $dataHandler->substNEWwithIDs['NEWcatbackend'],
+        // The items of the track come from the tracks of the conference
+        'track' => 'Backend',
     ]],
 ]);
 configureSite($container->get(SiteFinder::class), $container->get(SiteWriter::class), $dataHandler->substNEWwithIDs['NEWcattopics']);

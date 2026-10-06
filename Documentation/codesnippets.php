@@ -99,13 +99,6 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_multiplesidebyside_6'],
-    'targetFileName' => 'CodeSnippets/SelectMultiplesidebyside6.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
     'fields' => ['columns/select_multiplesidebyside_10'],
     'targetFileName' => 'CodeSnippets/SelectMultiplesidebyside10.rst.txt',
   ],
@@ -129,13 +122,6 @@ return [
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_rte.php',
     'fields' => ['columns/rte_3'],
     'targetFileName' => 'CodeSnippets/Rte3.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_group.php',
-    'fields' => ['columns/group_db_1'],
-    'targetFileName' => 'CodeSnippets/GroupDb1.rst.txt',
   ],
 
   [

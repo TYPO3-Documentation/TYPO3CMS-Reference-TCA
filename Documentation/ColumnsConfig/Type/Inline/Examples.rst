@@ -154,7 +154,7 @@ type inline** - as it is a container.
 
     ..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
         :caption: EXT:my_extension/ext_localconf.php
-        :emphasize-lines: 24-28
+        :emphasize-lines: 25-29
 
 #.  Add the fieldInformation to the container for containerRenderType inline
 

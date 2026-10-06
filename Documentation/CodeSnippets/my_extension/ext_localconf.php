@@ -4,6 +4,7 @@ use MyVendor\MyExtension\Controller\ConferenceController;
 use MyVendor\MyExtension\Evaluation\AbstractEvaluation;
 use MyVendor\MyExtension\Evaluation\HashtagEvaluation;
 use MyVendor\MyExtension\Form\Element\BadgeNameElement;
+use MyVendor\MyExtension\Form\FieldInformation\InformationText;
 use MyVendor\MyExtension\Form\FieldInformation\TalkOrderInformation;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
@@ -33,4 +34,12 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1791300000] = [
   'nodeName' => 'badgeName',
   'priority' => 40,
   'class' => BadgeNameElement::class,
+];
+
+// The information text of fields, see for example
+// Configuration/TCA/Overrides/310-tx_myextension_speaker-email.php
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1791310000] = [
+  'nodeName' => 'informationText',
+  'priority' => 30,
+  'class' => InformationText::class,
 ];

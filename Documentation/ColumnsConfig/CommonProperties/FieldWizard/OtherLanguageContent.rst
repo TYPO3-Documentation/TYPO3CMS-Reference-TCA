@@ -24,4 +24,8 @@ otherLanguageContent
     and if the field is set to `readOnly`. Additionally, the table has to be language aware by setting up the
     according fields in ['ctrl'] section.
 
-    ..  include:: /Images/ManualScreenshots/OtherLanguageContent.rst.txt
+    ..  figure:: /Images/Conference/FieldWizardLocalizationState.png
+        :alt: The contact email of a translated conference with the localization state and the value of the default language
+        :class: with-shadow
+
+        The contact email of a translated conference with the localization state and the value of the default language
