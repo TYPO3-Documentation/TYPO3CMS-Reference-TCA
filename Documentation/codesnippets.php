@@ -133,27 +133,6 @@ return [
 
   [
     'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_flex.php',
-    'fields' => ['columns/flex_1'],
-    'targetFileName' => 'CodeSnippets/Flex1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_flex.php',
-    'fields' => ['columns/flex_2'],
-    'targetFileName' => 'CodeSnippets/Flex2.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_flex.php',
-    'fields' => ['columns/flex_file_1'],
-    'targetFileName' => 'CodeSnippets/FlexFile1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_group.php',
     'fields' => ['columns/group_db_1'],
     'targetFileName' => 'CodeSnippets/GroupDb1.rst.txt',
@@ -208,12 +187,6 @@ return [
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_palette.php',
     'fields' => ['types'],
     'targetFileName' => 'CodeSnippets/PalettesTypes.rst.txt',
-  ],
-
-  [
-    'action' => 'createCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/FlexForms/Simple.xml',
-    'targetFileName' => 'CodeSnippets/FlexFormFile1.rst.txt',
   ],
 
   [

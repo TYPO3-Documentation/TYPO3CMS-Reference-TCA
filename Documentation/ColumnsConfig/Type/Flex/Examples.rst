@@ -11,25 +11,28 @@ Examples
 Simple FlexForm
 ===============
 
-The extension :ref:`styleguide <styleguide>` provides some sample FlexForms.
-The "simple FlexForm" field provides a very basic
-configuration with just a select-type field to choose a page from the
-table `pages`.
+The plugin of the conference extension has settings in a FlexForm:
 
-..  include:: /Images/Rst/FlexFile1.rst.txt
+..  figure:: /Images/Conference/FlexPlugin.png
+    :alt: The settings of the conference list plugin
+    :class: with-shadow
 
-The corresponding TCA column loads the DataStructure (`ds`) form an
-external XML file:
+    The settings of the conference list plugin
 
-..  include:: /CodeSnippets/FlexFile1.rst.txt
+The plugin loads the DataStructure from an external XML file:
 
-The DataStructure used to render this field is found in the file
-"Simple.xml" inside the :file:`styleguide` extension.
-Notice the :xml:`<input_1>` tag:
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :emphasize-lines: 24
 
-..  include:: /CodeSnippets/FlexFormFile1.rst.txt
+Notice the :xml:`<settings.mode>` tag in the DataStructure:
 
-It's clear that the contents of :xml:`<input_1>` is a direct reflection of
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+    :visible-lines: 1-29, 91-93, 135-136
+    :emphasize-lines: 8
+
+It's clear that the contents of :xml:`<settings.mode>` is a direct reflection of
 the field configurations we normally set up in the :php:`$GLOBALS['TCA']` array.
 
 ..  _columns-flex-example-plugin:
@@ -41,16 +44,13 @@ The data structure for a FlexForm can also be loaded in the `pi_flexform`
 field of the `tt_content` table by adding the following in the
 TCA overrides of an extension:
 
-..  literalinclude:: _CodeSnippets/_tt_content_plugin.php
-    :linenos:
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :emphasize-lines: 17-25
 
-In line 18ff the field `pi_flexform` is added to the display
-of fields when the record type of the plugin is selected.
-
-In line 25ff the method `addPiFlexFormValue()` from class
-:php-short:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility` is used to
-register the FlexForm.
+The 7th parameter of :php:`ExtensionUtility::registerPlugin()` registers the
+FlexForm. TYPO3 shows the field `pi_flexform` when the record type of the
+plugin is selected.
 
 ..  _columns-flex-example-sheets:
 ..  _tca-example-flex-1:
@@ -62,12 +62,19 @@ This example provides a FlexForm field with two "sheets". Each sheet
 can contain a separate FlexForm structure. Each sheet can also have a
 sheet descriptions:
 
-..  include:: /Images/Rst/Flex1.rst.txt
+..  figure:: /Images/Conference/FlexSheetHighlights.png
+    :alt: The second sheet of the plugin settings
+    :class: with-shadow
 
-In this example the FlexForm data structure is saved directly into the TCA
-field:
+    The second sheet of the plugin settings
 
-..  include:: /CodeSnippets/Flex1.rst.txt
+The plugin of the conference extension has a second sheet with a
+description:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+    :visible-lines: 1-7, 91-99, 133-136
+    :emphasize-lines: 3, 94, 96-97
 
 Notice how the data of the two sheets are separated.
 
@@ -77,12 +84,19 @@ Notice how the data of the two sheets are separated.
 A flex form field with two flex section containers
 ==================================================
 
-..  include:: /Images/Rst/Flex2.rst.txt
+..  figure:: /Images/Conference/FlexSheetHighlights.png
+    :alt: The highlights of the plugin settings
+    :class: with-shadow
 
-In this example the FlexForm data structure is saved directly into the TCA
-field:
+    The highlights of the plugin settings
 
-..  include:: /CodeSnippets/Flex2.rst.txt
+The highlights of the plugin are a section. An editor can add any number of
+highlights, each with a title and a link:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+    :visible-lines: 107-131
+    :emphasize-lines: 110, 112
 
 ..  _columns-flex-example-rte:
 
@@ -92,4 +106,7 @@ Example: Rich Text Editor in FlexForms
 Creating a RTE in FlexForms is done by enabling `enableRichtext` content to the
 tag of the field:
 
-..  include:: /CodeSnippets/Manual/FlexRte1.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+    :visible-lines: 100-106
+    :emphasize-lines: 104
