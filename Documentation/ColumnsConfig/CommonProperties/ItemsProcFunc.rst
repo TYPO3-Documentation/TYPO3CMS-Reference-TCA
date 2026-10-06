@@ -57,18 +57,31 @@ The following parameters are filled if the current record has an
 Example
 =======
 
-The configuration for a custom field `my_select` could look like this:
+A talk belongs to one track of its conference. The conference lists its
+tracks in a text field, one per line:
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_ItemsProcFuncTca.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-    :visible-lines: 3, 11-22
-    :emphasize-lines: 20
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/129-tx_myextension_conference-tracks.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/129-tx_myextension_conference-tracks.php
+    :emphasize-lines: 9-16
+
+The field `track` of the talk adds these tracks as items:
+
+..  figure:: /Images/Conference/ItemsProcFuncTrack.png
+    :alt: The track of a talk
+    :class: with-shadow
+
+    The track of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/290-tx_myextension_talk-track.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/290-tx_myextension_talk-track.php
+    :emphasize-lines: 18
 
 The referenced `itemsProcFunc` method should populate the items by filling
 :php:`$params['items']`:
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_ItemsProcFuncClass.php
-    :caption: EXT:my_extension/Classes/UserFunctions/FormEngine/ItemsProcFunc.php
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Backend/TrackItems.php
+    :caption: EXT:my_extension/Classes/Backend/TrackItems.php
 
-This results in the rendered select dropdown having four items. This is a really simple example. In the real world
-you would use the other passed parameters to dynamically generate the items.
+The method uses the passed parameter `row` to find the conference of the
+talk. A new talk is not stored yet, so its conference is the inline parent
+in `inlineParentUid`.
