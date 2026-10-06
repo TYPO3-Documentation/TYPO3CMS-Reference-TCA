@@ -19,6 +19,12 @@
 
 ..  rubric:: Example
 
-..  include:: /Images/Rst/PaletteDescription.rst.txt
+..  figure:: /Images/Conference/PaletteDescription.png
+    :alt: The coordinates of a location with a description
+    :class: with-shadow
 
-..  include:: /CodeSnippets/PaletteDescription.rst.txt
+    The coordinates of a location with a description
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/415-tx_myextension_location-coordinates.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/415-tx_myextension_location-coordinates.php
+    :emphasize-lines: 24-25

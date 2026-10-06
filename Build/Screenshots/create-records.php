@@ -90,6 +90,14 @@ $data['tt_content'] = [
             ]],
         ]],
     ],
+    'NEWcallforpapers' => [
+        'pid' => 1, 'CType' => 'myextension_callforpapers', 'header' => 'Call for papers',
+        'bodytext' => '<p>Submit your talk until the end of February.</p>',
+    ],
+    'NEWteaser' => [
+        'pid' => 1, 'CType' => 'myextension_conferenceteaser', 'header' => 'Join us in Basel',
+        'tx_myextension_teaser_link_text' => 'Register now',
+    ],
     'NEWgettingthere' => [
         'pid' => $pid, 'CType' => 'text', 'header' => 'Getting there',
         'bodytext' => '<p>The congress center is next to the main station.</p>',
@@ -261,12 +269,17 @@ $uids = [
     'comment' => $dataHandler->substNEWwithIDs['NEWcomment'],
     'plugin' => $dataHandler->substNEWwithIDs['NEWplugin'],
     'feUser' => $dataHandler->substNEWwithIDs['NEWfechris'],
+    'callForPapers' => $dataHandler->substNEWwithIDs['NEWcallforpapers'],
+    'teaser' => $dataHandler->substNEWwithIDs['NEWteaser'],
 ];
 $conference = $uids['conference'];
 
 // The days of a workshop come from its conference, which has to exist when
 // the value is saved: the first two days of the conference
 $process(['tx_myextension_talk' => [$uids['workshop'] => ['days' => 3]]]);
+
+// The conference of the teaser
+$process(['tt_content' => [$uids['teaser'] => ['tx_myextension_teaser_conference' => $conference]]]);
 
 // Relations that need the final uids: the filter of the main sponsor reads
 // the sponsor from the database

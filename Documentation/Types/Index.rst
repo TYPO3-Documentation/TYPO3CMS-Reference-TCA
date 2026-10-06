@@ -50,12 +50,12 @@ A basic table without distinct types
 A table record supporting only one type defines
 which fields should be displayed in the backend form for the default type.
 
-As an example, a comment on a blog post can be stored in a table as follows:
+As an example, the comments of the conference extension have only one type:
 
-..  literalinclude:: /Types/_CodeSnippets/_Comment.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_comment.php
-    :visible-lines: 11-15
-    :emphasize-lines: 13
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_comment.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_comment.php
+    :visible-lines: 30-34
+    :emphasize-lines: 32
 
 The `types` section is mandatory.
 
@@ -71,13 +71,12 @@ Usually a select field is used for that purpose.
 The name of this field is registered in the `ctrl` section via property
 `type <https://docs.typo3.org/permalink/t3tca:confval-ctrl-type>`_.
 
-As an example, a blog post might have several types where the fields
-displayed in the backend differ:
+As an example, a talk can be a talk, a workshop, or a keynote:
 
-..  literalinclude:: /Types/_CodeSnippets/_Post.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
-    :visible-lines: 7, 22-60
-    :emphasize-lines: 7
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+    :visible-lines: 4-8, 71-90
+    :emphasize-lines: 7, 72, 78, 84
 
 For each record type you can define additional
 `creationOptions  <https://docs.typo3.org/permalink/t3tca:confval-types-creationoptions>`_

@@ -36,19 +36,26 @@ To modify existing palettes you can use the utility functions
 Examples
 ========
 
-The TCA of the styleguide extension provides palettes with different properties.
+A location groups its address and its coordinates in palettes:
 
-..  include:: /Images/Rst/Palette.rst.txt
+..  figure:: /Images/Conference/PaletteLocation.png
+    :alt: The address and the coordinates of a location
+    :class: with-shadow
 
-Palettes get defined in the section `palettes` of the tables TCA array.
+    The address and the coordinates of a location
 
-The following TCA section specifies the different palettes.
+Palettes get defined in the section `palettes` of the tables TCA array. The
+address palette puts the ZIP code and the city on a line of their own:
 
-..  include:: /CodeSnippets/Palettes.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/405-tx_myextension_location-address.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/405-tx_myextension_location-address.php
+    :emphasize-lines: 22-25
 
 The palettes then get referenced in the `types` section:
 
-..  include:: /CodeSnippets/PalettesTypes.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/405-tx_myextension_location-address.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/405-tx_myextension_location-address.php
+    :emphasize-lines: 26-31
 
 It is also possible to define the label of a palette directly in the palette
 definition. Declaring the label in an 'palettes' array can reduce boilerplate

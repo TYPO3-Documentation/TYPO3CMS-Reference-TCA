@@ -17,6 +17,8 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 // The innermost form group with the field name, which debug mode shows
 const field = (name) => `.form-group:has(code:text-is("[${name}]"))`;
+// The palette that contains the field with this name
+const palette = (name) => `fieldset.form-section:has(code:text-is("[${name}]"))`;
 
 // Opens the value picker of a field, which shows its choices in a list
 const openValuePicker = async (frame, name) => {
@@ -31,7 +33,7 @@ const valuePickerList = (name) => `${field(name)} typo3-backend-combobox [role="
 // The uids of the records that create-records.php created
 const {
   storageFolder, contentElement, conference, conferenceTranslation, talk, workshop,
-  speaker, speakerTranslation, location, hall, backendLayout, hotel, comment, plugin, feUser,
+  speaker, speakerTranslation, location, hall, backendLayout, hotel, comment, plugin, feUser, callForPapers, teaser,
 } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
@@ -429,6 +431,25 @@ const screenshots = {
     url: editUrl('tx_myextension_conference', conferenceTranslation),
     tab: 'Details',
     element: field('contact_email'),
+  },
+  PaletteLocation: {
+    url: editUrl('tx_myextension_location', location),
+    from: palette('street'),
+    to: palette('latitude'),
+  },
+  PaletteDescription: {
+    url: editUrl('tx_myextension_location', location),
+    element: palette('latitude'),
+  },
+  TypesContentBasic: {
+    url: editUrl('tt_content', callForPapers),
+    from: 'h1',
+    to: field('bodytext'),
+  },
+  TypesContentExtended: {
+    url: editUrl('tt_content', teaser),
+    from: 'h1',
+    to: field('tx_myextension_teaser_conference'),
   },
   CategoryConference: {
     url: editUrl('tx_myextension_conference', conference),
