@@ -1,4 +1,0 @@
-..  literalinclude:: /CodeSnippets/Manual/_tx_styleguide_inline_mnsymmetric.php
-    :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_inline_mnsymmetric.php
-    :visible-lines: 25-55
-    :emphasize-lines: 43

@@ -54,14 +54,30 @@
 
 ..  rubric:: Example: Inline field with MM table configured
 
-..  include:: /Images/ManualScreenshots/InlineMmInline1.rst.txt
+The hotels that a conference recommends are stored in an intermediate table:
 
-..  include:: /CodeSnippets/InlineMmInline1.rst.txt
+..  figure:: /Images/Conference/InlineHotels.png
+    :alt: The hotels of a conference
+    :class: with-shadow
+
+    The hotels of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/158-tx_myextension_conference-hotels.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/158-tx_myextension_conference-hotels.php
+    :emphasize-lines: 13
 
 ..  _tca-example-inline-mm-child-parents:
 
 ..  rubric:: Example: Opposite field to display MM relations two ways
 
-..  include:: /Images/ManualScreenshots/InlineMmChildParents.rst.txt
+A hotel shows the conferences that recommend it:
 
-..  include:: /CodeSnippets/InlineMmChildParents.rst.txt
+..  figure:: /Images/Conference/InlineHotelConferences.png
+    :alt: The conferences that recommend a hotel
+    :class: with-shadow
+
+    The conferences that recommend a hotel
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/950-tx_myextension_hotel-conferences.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/950-tx_myextension_hotel-conferences.php
+    :emphasize-lines: 13-15

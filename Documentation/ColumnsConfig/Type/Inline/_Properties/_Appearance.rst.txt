@@ -100,8 +100,9 @@
         Suppresses the warning flash message that will be displayed when using **useCombination**.
         You can also override the message with your own message using the example below.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_overwriteCombinationWarningMessage.php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+            :emphasize-lines: 21
 
     ..  confval:: useSortable
         :name: inline-appearance-useSortable
