@@ -16,10 +16,11 @@ property of table `tt_content`:
 *   The :guilabel:`Access` tab with the `hidden` and `access` palettes
 *   The :guilabel:`Notes` tab with the `rowDescription` field
 
-..  figure:: /Images/ManualScreenshots/tt_content_automatic_tabs.png
-    :alt: The edit form of a slider with its tabs. The above mentioned ones are underlined.
+..  figure:: /Images/Conference/TypesContentExtended.png
+    :alt: The edit form of a conference teaser with its tabs
+    :class: with-shadow
 
-    The underlined tabs are added automatically.
+    The tabs General, Language, Access, and Notes are added automatically.
 
 See :ref:`an extended content element with custom fields <types-content-examples-extended>` for an example.
 
@@ -60,31 +61,41 @@ Examples for the `showitems` TCA section in content elements
 Basic custom content element with header and bodytext
 -----------------------------------------------------
 
-..  literalinclude:: _CodeSnippets/_basic_content_element.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+The content element "Call for papers" has a header and a text:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/610-tt_content-call_for_papers.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/610-tt_content-call_for_papers.php
+    :emphasize-lines: 9-17
 
 The following tabs are shown, the header palette and bodytext field are shown
-in palette general:
+on the tab :guilabel:`General`:
 
-..  figure:: /Images/ManualScreenshots/tt_content_basic.png
-    :alt: Screenshot of the content element form created by the code
+..  figure:: /Images/Conference/TypesContentBasic.png
+    :alt: The edit form of a call for papers
+    :class: with-shadow
 
-    Screenshot of the content element form created by the code
+    The edit form of a call for papers
 
 ..  _types-content-examples-extended:
 
 Extended content element with custom fields
 -------------------------------------------
 
-..  literalinclude:: _CodeSnippets/_extended_content_element.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+The content element "Conference teaser" has fields of its own and a tab of
+its own. :php:`ExtensionManagementUtility::addRecordType()` adds the tab
+:guilabel:`Extended` at the end:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/615-tt_content-conference_teaser.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/615-tt_content-conference_teaser.php
+    :emphasize-lines: 35-51, 54-58
 
 The following tabs are shown:
 
-..  figure:: /Images/ManualScreenshots/tt_content_extended.png
-    :alt: Screenshot of the content element form created by the code
+..  figure:: /Images/Conference/TypesContentExtended.png
+    :alt: The edit form of a conference teaser
+    :class: with-shadow
 
-    Screenshot of the content element form created by the code
+    The edit form of a conference teaser
 
 Additional fields that are subsequently added to the end of the table using
 :php:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTcaTypes()`

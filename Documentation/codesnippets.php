@@ -158,25 +158,6 @@ return [
 
   [
     'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_palette.php',
-    'fields' => ['palettes'],
-    'targetFileName' => 'CodeSnippets/Palettes.rst.txt',
-  ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_palette.php',
-    'fields' => ['palettes/palette_1'],
-    'targetFileName' => 'CodeSnippets/PaletteDescription.rst.txt',
-  ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_palette.php',
-    'fields' => ['types'],
-    'targetFileName' => 'CodeSnippets/PalettesTypes.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:webhooks/Configuration/TCA/sys_webhook.php',
     'fields' => ['columns/additional_headers'],
     'targetFileName' => 'ColumnsConfig/Type/Json/_Examples/SysWebHook.rst.php',

@@ -23,3 +23,12 @@ ExtensionUtility::registerPlugin(
   'my_extension.db:plugin.conferencelist.description',
   'FILE:EXT:my_extension/Configuration/FlexForms/ConferenceList.xml',
 );
+
+// The plugin lists the upcoming conferences without further settings, so
+// a new plugin is saved at once, with its header hidden
+$GLOBALS['TCA']['tt_content']['types']['myextension_conferencelist']['creationOptions'] = [
+  'defaultValues' => [
+    'header_layout' => '100',
+  ],
+  'saveAndClose' => true,
+];

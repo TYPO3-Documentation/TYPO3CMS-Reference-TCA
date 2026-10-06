@@ -5,13 +5,13 @@
 Display all fields on one page of the form
 ------------------------------------------
 
-The table containing the blog comments does not contain many fields. So they can
-all be displayed on one page of the backend form without using tabs:
+The table of the comments does not contain many fields. So they can all be
+displayed on one page of the backend form without using tabs:
 
-..  literalinclude:: /Types/_CodeSnippets/_Comment.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_comment.php
-    :visible-lines: 11-15
-    :emphasize-lines: 13
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_comment.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_comment.php
+    :visible-lines: 30-34
+    :emphasize-lines: 32
 
 ..  _types-examples-required-tabs:
 ..  _types-example-showitem-2-tabs:
@@ -24,10 +24,19 @@ If a table has a larger number of fields, grouping them into tabs and palettes
 can improves the backend user experience. Palettes have the additional value
 that they can be reused across different record types.
 
-..  literalinclude:: /Types/_CodeSnippets/_Post.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
-    :visible-lines: 22-33, 61-68
-    :emphasize-lines: 24
+The conferences have many fields in several tabs. The fields of the tabs are
+added in the overrides of the extension:
+
+..  figure:: /Images/Conference/CtrlDescriptionColumn.png
+    :alt: The tabs of a conference
+    :class: with-shadow
+
+    The tabs of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 57-82
+    :emphasize-lines: 61-69, 75, 79
 
 The syntax for tabs is:
 

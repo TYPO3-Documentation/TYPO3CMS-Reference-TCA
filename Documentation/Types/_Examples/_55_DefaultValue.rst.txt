@@ -4,10 +4,12 @@
 Override default values by type
 -------------------------------
 
-A blog post of type link should have a different default value for the author
-field then other blog post types:
+A new conference list plugin hides its header by default:
 
-..  literalinclude:: /Types/_CodeSnippets/_Post.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
-    :visible-lines: 34-42
-    :emphasize-lines: 37
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :emphasize-lines: 30-32
+
+..  note::
+    The default values only take effect in the table `tt_content`, when an
+    editor creates a content element with the "New Content Element" wizard.
