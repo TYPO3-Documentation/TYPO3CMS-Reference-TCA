@@ -173,4 +173,3 @@ The field names the class in `eval`:
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/107-tx_myextension_conference-hashtag.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/107-tx_myextension_conference-hashtag.php
     :emphasize-lines: 15
-
