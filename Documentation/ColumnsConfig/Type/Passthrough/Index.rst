@@ -52,6 +52,16 @@ Since there is no rendering mode for this field type it is specifically fitted f
 Examples
 ========
 
+A content element that belongs to a conference stores the uid of the
+conference in a field of type `passthrough`. As the field is the
+`foreign_field` of the inline field
+`content_elements <https://docs.typo3.org/permalink/t3tca:columns-inline>`_
+of the conference, TYPO3 creates its column. The backend form does not show it:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/605-tt_content-tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/605-tt_content-tx_myextension_conference.php
+    :emphasize-lines: 12
+
 This field is found in a number of tables, for instance the "pages" table. It is used by the system extension
 "impexp" to store some information.
 

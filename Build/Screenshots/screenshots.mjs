@@ -31,7 +31,7 @@ const valuePickerList = (name) => `${field(name)} typo3-backend-combobox [role="
 // The uids of the records that create-records.php created
 const {
   storageFolder, contentElement, conference, conferenceTranslation, talk, workshop,
-  speaker, speakerTranslation, location, hall, backendLayout, hotel,
+  speaker, speakerTranslation, location, hall, backendLayout, hotel, comment,
 } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
@@ -72,7 +72,8 @@ const screenshots = {
   CtrlDescriptionColumn: {
     url: editUrl('tx_myextension_conference', conference),
     from: 'h1',
-    to: '.nav-tabs',
+    // The record information, without the tabs, which change with the fields
+    to: '.callout-notice >> nth=0',
   },
   CtrlLanguageField: {
     url: editUrl('tx_myextension_conference', conference),
@@ -349,6 +350,36 @@ const screenshots = {
     tab: 'Details',
     element: field('content_elements'),
   },
+  SlugConference: {
+    url: editUrl('tx_myextension_conference', conference),
+    element: field('slug'),
+  },
+  SlugTalk: {
+    url: editUrl('tx_myextension_talk', workshop),
+    element: field('slug'),
+  },
+  UuidSpeaker: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    tab: 'Integration',
+    element: field('identifier'),
+  },
+  JsonSocialLinks: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    tab: 'Integration',
+    element: field('social_links'),
+  },
+  CountrySpeaker: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    element: field('country'),
+  },
+  CountryLocation: {
+    url: editUrl('tx_myextension_location', location),
+    element: field('country'),
+  },
+  NoneComment: {
+    url: editUrl('tx_myextension_comment', comment),
+    element: field('crdate'),
+  },
   CategoryConference: {
     url: editUrl('tx_myextension_conference', conference),
     tab: 'Categories',
@@ -396,7 +427,9 @@ for (const name of names) {
   if (screenshot.modal) {
     await page.locator('typo3-backend-modal dialog[open]').waitFor();
     await page.waitForTimeout(500);
-    await page.screenshot({ path, clip: await page.locator('iframe[name="list_frame"]').boundingBox() });
+    // Only the dialog, without margin: the form behind it changes with
+    // every new field
+    await page.locator('typo3-backend-modal dialog[open]').screenshot({ path });
   } else {
     // Only the visible part of the page can be cut out. The window is tall
     // enough for most forms; an area further down is scrolled into view.

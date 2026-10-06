@@ -103,7 +103,11 @@ input
 none
     :ref:`Read only, virtual field <columns-none>`. No DataHandler processing.
 
-    ..  include:: /Images/Rst/None1.rst.txt
+    ..  figure:: /Images/Conference/NoneComment.png
+        :alt: The time a comment was written
+        :class: with-shadow
+
+        The time a comment was written
 
 passthrough
     :ref:`Not displayed, only send as hidden field to DataHandler

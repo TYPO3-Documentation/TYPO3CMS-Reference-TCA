@@ -9,6 +9,8 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_speaker', [
     'label' => 'my_extension.db:speaker.identifier',
     'config' => [
       'type' => 'uuid',
+      // Time-ordered, so new speakers sort after older ones
+      'version' => 7,
     ],
   ],
 ]);
