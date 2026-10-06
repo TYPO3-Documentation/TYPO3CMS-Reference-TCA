@@ -15,6 +15,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
       'appearance' => [
         'collapseAll' => true,
         'useSortable' => true,
+        'showPossibleLocalizationRecords' => true,
+        'showAllLocalizationLink' => true,
+        'showSynchronizationLink' => true,
       ],
     ],
   ],
@@ -25,3 +28,10 @@ ExtensionManagementUtility::addToAllTCAtypes(
   '',
   'before:--div--;my_extension.db:tab.details',
 );
+
+// An inline field has no fieldInformation of its own. The container of all
+// inline fields of the table shows it, see TalkOrderInformation.
+$GLOBALS['TCA']['tx_myextension_conference']['ctrl']['container']['inline']
+  ['fieldInformation']['talkOrder'] = [
+    'renderType' => 'talkOrderInformation',
+  ];

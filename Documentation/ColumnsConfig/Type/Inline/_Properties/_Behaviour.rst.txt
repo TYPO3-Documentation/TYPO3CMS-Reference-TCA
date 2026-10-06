@@ -20,8 +20,9 @@
         It tells the DataHandler which fields of the localization records should be kept
         in sync if the underlying default or source record changes.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Inline/_Properties/_AllowLanguageSynchronization.php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/159-tx_myextension_conference-content_elements.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/159-tx_myextension_conference-content_elements.php
+            :emphasize-lines: 14-16
 
     ..  confval:: disableMovingChildrenWithParent
         :name: inline-behaviour-disableMovingChildrenWithParent

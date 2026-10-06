@@ -26,23 +26,27 @@
     option. Only **one table** is supported here: if `allowed` lists several
     tables, only the first one is used.
 
-    An event lists its speakers. Each speaker is a person, and the
-    intermediate table stores the role the person has at this event. The
-    group field `speaker` of the intermediate table is the selector: an
-    editor picks a person, and a new intermediate record is created for it:
+    A conference lists its registrations. Each registration refers to a
+    frontend user, and the intermediate table stores the ticket of this
+    user. The group field `attendee` of the intermediate table is the
+    selector: an editor picks a frontend user, and a new registration is
+    created for it:
 
-    ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_foreignSelectorGroupEvent.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_event.php
-        :visible-lines: 17-27
-        :emphasize-lines: 24
+    ..  figure:: /Images/Conference/InlineRegistrations.png
+        :alt: The registrations of a conference
+        :class: with-shadow
 
-    ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_foreignSelectorGroupEventSpeaker.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_event_speaker.php
-        :visible-lines: 19-39
-        :emphasize-lines: 23
+        The registrations of a conference
 
-    The person table `tx_myextension_person` needs no field for the
-    relation.
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+        :emphasize-lines: 14
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_registration.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_registration.php
+        :emphasize-lines: 20-21
+
+    The table `fe_users` needs no field for the relation.
 
     Without an attribute such as the role, an intermediate table is not
     needed: a :ref:`group <columns-group>` or :ref:`select <columns-select>`
@@ -50,5 +54,6 @@
     does the job.
 
     With :confval:`useCombination <inline-appearance-useCombination>`, the
-    person itself can be edited inside each intermediate record. Such an
-    edit changes the person everywhere it is used, not only for this event.
+    frontend user itself can be edited inside each registration. Such an
+    edit changes the frontend user everywhere it is used, not only for this
+    conference.
