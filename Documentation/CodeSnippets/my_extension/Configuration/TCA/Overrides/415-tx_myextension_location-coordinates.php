@@ -22,6 +22,7 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_location', [
 ]);
 $GLOBALS['TCA']['tx_myextension_location']['palettes']['coordinates'] = [
   'label' => 'my_extension.db:location.palette.coordinates',
+  'description' => 'my_extension.db:location.palette.coordinates.description',
   'showitem' => 'latitude, longitude',
 ];
 ExtensionManagementUtility::addToAllTCAtypes(

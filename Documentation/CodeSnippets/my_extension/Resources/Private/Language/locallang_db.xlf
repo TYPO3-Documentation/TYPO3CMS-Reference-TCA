@@ -288,6 +288,9 @@
       <trans-unit id="location.palette.coordinates" resname="location.palette.coordinates">
         <source>Coordinates</source>
       </trans-unit>
+      <trans-unit id="location.palette.coordinates.description" resname="location.palette.coordinates.description">
+        <source>Decimal degrees, for example 47.563167 and 7.600833</source>
+      </trans-unit>
       <trans-unit id="location.parent" resname="location.parent">
         <source>Part of</source>
       </trans-unit>
@@ -522,6 +525,9 @@
       <trans-unit id="tab.registrations" resname="tab.registrations">
         <source>Registrations</source>
       </trans-unit>
+      <trans-unit id="tab.teaser" resname="tab.teaser">
+        <source>Teaser</source>
+      </trans-unit>
       <trans-unit id="talk" resname="talk">
         <source>Talk</source>
       </trans-unit>
@@ -657,8 +663,26 @@
       <trans-unit id="talk.track" resname="talk.track">
         <source>Track</source>
       </trans-unit>
+      <trans-unit id="tt_content.call_for_papers" resname="tt_content.call_for_papers">
+        <source>Call for papers</source>
+      </trans-unit>
+      <trans-unit id="tt_content.conference_teaser" resname="tt_content.conference_teaser">
+        <source>Conference teaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.conference_teaser.description" resname="tt_content.conference_teaser.description">
+        <source>A short teaser with a link to a conference</source>
+      </trans-unit>
       <trans-unit id="tt_content.group.conference" resname="tt_content.group.conference">
         <source>Conferences</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_myextension_teaser_conference" resname="tt_content.tx_myextension_teaser_conference">
+        <source>Conference</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_myextension_teaser_link_text" resname="tt_content.tx_myextension_teaser_link_text">
+        <source>Link text</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_myextension_teaser_note" resname="tt_content.tx_myextension_teaser_note">
+        <source>Internal note</source>
       </trans-unit>
     </body>
   </file>

@@ -1,15 +1,18 @@
 ..  _types-example-creation-option:
 
-Example: Create the blog plugin at once
----------------------------------------
+Example: Create the conference list plugin at once
+---------------------------------------------------
 
 Demonstrates property: :confval:`types-creationOptions-saveAndClose`.
 
-When editors create a new blog plugin in the plugin is automatically saved and
-the user returned to the :guilabel:`Content > Layout` module:
+The conference list plugin shows the upcoming conferences without further
+settings. When editors create a new conference list plugin, it is
+automatically saved and the user returned to the
+:guilabel:`Content > Layout` module:
 
-..  literalinclude:: /Types/_CodeSnippets/_tt_content_saveAndClose.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :emphasize-lines: 33
 
 ..  note::
     This property only takes effect in the table `tt_content`.
