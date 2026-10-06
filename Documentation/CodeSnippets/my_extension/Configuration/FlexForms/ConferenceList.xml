@@ -76,6 +76,18 @@
               <default>10</default>
             </config>
           </settings.limit>
+          <settings.country>
+            <label>my_extension.db:plugin.conferencelist.country</label>
+            <config>
+              <type>country</type>
+              <labelField>localizedName</labelField>
+              <prioritizedCountries>
+                <numIndex index="0">CH</numIndex>
+                <numIndex index="1">DE</numIndex>
+                <numIndex index="2">AT</numIndex>
+              </prioritizedCountries>
+            </config>
+          </settings.country>
         </el>
       </ROOT>
     </sDEF>

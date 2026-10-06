@@ -30,6 +30,12 @@
 
 ..  rubric:: Example: eval = uniqueInSite
 
-..  include:: /Images/Rst/Slug2.rst.txt
+..  figure:: /Images/Conference/SlugConference.png
+    :alt: The slug of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Slug2.rst.txt
+    The slug of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+    :emphasize-lines: 28

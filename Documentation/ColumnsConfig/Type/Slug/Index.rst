@@ -65,12 +65,17 @@ a new proposal in case the slug is already used.
 Example: A basic slug field
 ===========================
 
-This example limits the length of the slug to 50 characters. It takes only the
-field `input_1` into account for generating the slug.
+The slug of a talk is generated from its type and its title:
 
-..  include:: /Images/Rst/Slug2.rst.txt
+..  figure:: /Images/Conference/SlugTalk.png
+    :alt: The slug of a workshop
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Slug2.rst.txt
+    The slug of a workshop
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/205-tx_myextension_talk-slug.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/205-tx_myextension_talk-slug.php
+    :emphasize-lines: 12-16
 
 ..  _tca-example-slug-1:
 
@@ -78,13 +83,18 @@ Example: A slug field with prefix hook
 ======================================
 
 This example uses a custom slug prefix hook via
-:php:`config['appearance']['prefix']` to adapt the displayed prefix. It takes
-the two fields `input_1` and `input_2` into account for generating
-the slug.
+:php:`config['appearance']['prefix']` to show the path of the program in
+front of the slug of a talk:
 
-..  include:: /Images/Rst/Slug1.rst.txt
+..  figure:: /Images/Conference/SlugTalk.png
+    :alt: The slug of a workshop with the path of the program in front
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Slug1.rst.txt
+    The slug of a workshop with the path of the program in front
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/205-tx_myextension_talk-slug.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/205-tx_myextension_talk-slug.php
+    :emphasize-lines: 17-19
 
 ..  _columns-slug-properties:
 ..  _columns-slug-properties-type:

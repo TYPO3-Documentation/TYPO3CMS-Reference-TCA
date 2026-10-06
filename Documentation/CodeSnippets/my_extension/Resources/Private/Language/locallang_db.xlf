@@ -12,6 +12,9 @@
       <trans-unit id="comment.content" resname="comment.content">
         <source>Comment</source>
       </trans-unit>
+      <trans-unit id="comment.crdate" resname="comment.crdate">
+        <source>Written at</source>
+      </trans-unit>
       <trans-unit id="comment.email" resname="comment.email">
         <source>Email</source>
       </trans-unit>
@@ -296,6 +299,9 @@
       </trans-unit>
       <trans-unit id="plugin.conferencelist.conferences" resname="plugin.conferencelist.conferences">
         <source>Conferences</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.country" resname="plugin.conferencelist.country">
+        <source>Only conferences in this country</source>
       </trans-unit>
       <trans-unit id="plugin.conferencelist.description" resname="plugin.conferencelist.description">
         <source>Shows a list of conferences</source>
