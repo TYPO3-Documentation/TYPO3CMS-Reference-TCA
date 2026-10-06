@@ -26,24 +26,30 @@ Currently, TYPO3 comes with following implemented `fieldInformation` nodes:
 Example
 =======
 
-The field `tags` shows a translated information text next to its label.
-The label reference of the text is passed to the node in the `options` of
-its `fieldInformation` configuration:
+The email address of a speaker shows a translated information text below
+its label. The label reference of the text is passed to the node in the
+`options` of its `fieldInformation` configuration:
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_FieldInformationTca.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
-    :visible-lines: 9-22
-    :emphasize-lines: 15
+..  figure:: /Images/Conference/FieldInformationEmail.png
+    :alt: The email address of a speaker with an information text
+    :class: with-shadow
+
+    The email address of a speaker with an information text
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/310-tx_myextension_speaker-email.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/310-tx_myextension_speaker-email.php
+    :emphasize-lines: 14-22
 
 The node receives the options in
 :php:`$this->data['renderData']['fieldInformationOptions']` and returns the
 HTML to show:
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_FieldInformationClass.php
-    :caption: EXT:my_extension/Classes/Backend/FieldInformation/TagInformation.php
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Form/FieldInformation/InformationText.php
+    :caption: EXT:my_extension/Classes/Form/FieldInformation/InformationText.php
 
 The node is registered with the name used as `renderType` in
 :file:`ext_localconf.php`:
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_FieldInformationRegistration.php
+..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
     :caption: EXT:my_extension/ext_localconf.php
+    :emphasize-lines: 41-45

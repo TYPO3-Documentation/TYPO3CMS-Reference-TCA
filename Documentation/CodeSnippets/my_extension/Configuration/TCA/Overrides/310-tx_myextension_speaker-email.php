@@ -11,6 +11,15 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_speaker', [
     'config' => [
       'type' => 'email',
       'eval' => 'uniqueInPid',
+      'fieldInformation' => [
+        'informationText' => [
+          // Registered in ext_localconf.php
+          'renderType' => 'informationText',
+          'options' => [
+            'text' => 'my_extension.db:speaker.email.information',
+          ],
+        ],
+      ],
     ],
   ],
 ]);
