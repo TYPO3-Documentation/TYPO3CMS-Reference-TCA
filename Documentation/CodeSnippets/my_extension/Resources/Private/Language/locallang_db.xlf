@@ -99,6 +99,12 @@
       <trans-unit id="conference.impressions" resname="conference.impressions">
         <source>Impressions</source>
       </trans-unit>
+      <trans-unit id="conference.impressions.desktop" resname="conference.impressions.desktop">
+        <source>Desktop</source>
+      </trans-unit>
+      <trans-unit id="conference.impressions.mobile" resname="conference.impressions.mobile">
+        <source>Mobile</source>
+      </trans-unit>
       <trans-unit id="conference.internal_notes" resname="conference.internal_notes">
         <source>Internal notes</source>
       </trans-unit>
@@ -194,6 +200,9 @@
       </trans-unit>
       <trans-unit id="conference.website" resname="conference.website">
         <source>Website</source>
+      </trans-unit>
+      <trans-unit id="fe_users.tx_myextension_badge_name" resname="fe_users.tx_myextension_badge_name">
+        <source>Name on the badge</source>
       </trans-unit>
       <trans-unit id="hotel" resname="hotel">
         <source>Hotel</source>
@@ -321,6 +330,21 @@
       <trans-unit id="plugin.conferencelist.display.speakers" resname="plugin.conferencelist.display.speakers">
         <source>Speakers</source>
       </trans-unit>
+      <trans-unit id="plugin.conferencelist.highlight" resname="plugin.conferencelist.highlight">
+        <source>Highlight</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.highlight.link" resname="plugin.conferencelist.highlight.link">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.highlight.title" resname="plugin.conferencelist.highlight.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.highlights" resname="plugin.conferencelist.highlights">
+        <source>Highlights</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.introduction" resname="plugin.conferencelist.introduction">
+        <source>Introduction</source>
+      </trans-unit>
       <trans-unit id="plugin.conferencelist.limit" resname="plugin.conferencelist.limit">
         <source>Maximum number of conferences</source>
       </trans-unit>
@@ -338,6 +362,12 @@
       </trans-unit>
       <trans-unit id="plugin.conferencelist.sheet.general" resname="plugin.conferencelist.sheet.general">
         <source>General</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.sheet.highlights" resname="plugin.conferencelist.sheet.highlights">
+        <source>Highlights</source>
+      </trans-unit>
+      <trans-unit id="plugin.conferencelist.sheet.highlights.description" resname="plugin.conferencelist.sheet.highlights.description">
+        <source>Shown above the list of conferences</source>
       </trans-unit>
       <trans-unit id="plugin.conferencelist.title" resname="plugin.conferencelist.title">
         <source>Conference list</source>

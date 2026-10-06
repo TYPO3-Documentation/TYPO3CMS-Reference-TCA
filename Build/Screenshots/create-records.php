@@ -75,6 +75,21 @@ $data['tt_content'] = [
         'pid' => 1, 'CType' => 'text', 'header' => 'Welcome',
         'bodytext' => '<p>The conferences of this year.</p>',
     ],
+    'NEWplugin' => [
+        'pid' => 1, 'CType' => 'myextension_conferencelist', 'header' => 'Upcoming conferences',
+        'pi_flexform' => ['data' => [
+            'sDEF' => ['lDEF' => ['settings.mode' => ['vDEF' => 'upcoming']]],
+            'sHighlights' => ['lDEF' => [
+                'settings.introduction' => ['vDEF' => '<p>Meet the community in Basel and Leipzig.</p>'],
+                'settings.highlights' => ['el' => [
+                    '1' => ['highlight' => ['el' => [
+                        'title' => ['vDEF' => 'Twenty years of TCA'],
+                        'link' => ['vDEF' => 'https://example.org/keynote'],
+                    ]]],
+                ]],
+            ]],
+        ]],
+    ],
     'NEWgettingthere' => [
         'pid' => $pid, 'CType' => 'text', 'header' => 'Getting there',
         'bodytext' => '<p>The congress center is next to the main station.</p>',
@@ -159,7 +174,7 @@ $data['fe_groups'] = [
 $data['fe_users'] = [
     'NEWfechris' => [
         'pid' => $pid, 'username' => 'chris', 'name' => 'Chris Visitor',
-        'password' => 'Attendee-2027!', 'usergroup' => 'NEWfegroup',
+        'password' => 'Attendee-2027!', 'usergroup' => 'NEWfegroup', 'tx_myextension_badge_name' => 'Chris',
     ],
     'NEWfesam' => [
         'pid' => $pid, 'username' => 'sam', 'name' => 'Sam Listener',
@@ -244,6 +259,8 @@ $uids = [
     'backendLayout' => $dataHandler->substNEWwithIDs['NEWlayout'],
     'hotel' => $dataHandler->substNEWwithIDs['NEWhotelfair'],
     'comment' => $dataHandler->substNEWwithIDs['NEWcomment'],
+    'plugin' => $dataHandler->substNEWwithIDs['NEWplugin'],
+    'feUser' => $dataHandler->substNEWwithIDs['NEWfechris'],
 ];
 $conference = $uids['conference'];
 

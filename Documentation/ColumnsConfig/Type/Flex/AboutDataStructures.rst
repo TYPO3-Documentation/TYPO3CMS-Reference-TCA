@@ -28,8 +28,9 @@ FlexForms are commonly used in the `tt_content` table to register plugins.
 FlexForm definitions can be passed as the 7th parameter to
 `ExtensionUtility::registerPlugin()` when registering Extbase.
 
-..  literalinclude:: _CodeSnippets/_plugin.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+    :emphasize-lines: 24
 
 ..  _columns-flex-ds-one:
 
@@ -45,12 +46,17 @@ Use configuration option `ds  <https://docs.typo3.org/permalink/t3tca:confval-fl
 to either pass a file reference to the XML file containing the FlexForm or
 a string containing the FlexForm's XML:
 
-..  include:: /CodeSnippets/FlexFile1.rst.txt
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+..  code-block:: php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php (excerpt)
+
+    'config' => [
+        'type' => 'flex',
+        'ds' => 'FILE:EXT:my_extension/Configuration/FlexForms/ConferenceList.xml',
+    ],
 
 Essentially: Whenever a record is handled that has a column field
 definition with this TCA, the data structure defined in
-:file:`FILE:EXT:styleguide/Configuration/FlexForms/Simple.xml`
+:file:`FILE:EXT:my_extension/Configuration/FlexForms/ConferenceList.xml`
 is parsed and the flex form defined in there is displayed.
 
 ..  _columns-flex-ds-by-type:
