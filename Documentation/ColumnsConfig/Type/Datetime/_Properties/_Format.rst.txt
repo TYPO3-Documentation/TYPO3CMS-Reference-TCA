@@ -20,8 +20,8 @@
 
     The format `datetimesec` is only allowed for:
 
-    *   empty :php:`['config']['dbType']` (defaults to integer-based storage type)
-    *   :php:`['config']['dbType'] = 'datetime'` (native date and time storage type)
+    *   empty `['config']['dbType']` (defaults to integer-based storage type)
+    *   `['config']['dbType'] = 'datetime'` (native date and time storage type)
 
     Other types (`date`, `time`, `timesec`) do not support both components and would yield unconsistent data.
 

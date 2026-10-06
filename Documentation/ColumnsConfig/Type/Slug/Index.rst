@@ -83,7 +83,7 @@ Example: A slug field with prefix hook
 ======================================
 
 This example uses a custom slug prefix hook via
-:php:`config['appearance']['prefix']` to show the path of the program in
+`config['appearance']['prefix']` to show the path of the program in
 front of the slug of a talk:
 
 ..  figure:: /Images/Conference/SlugTalk.png

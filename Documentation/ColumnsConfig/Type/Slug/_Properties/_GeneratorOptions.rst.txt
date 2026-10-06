@@ -91,7 +91,7 @@
 
             Pattern replacement operates on original, unsanitized field values —
             values are not converted to lowercase or processed. Replacement applies only to fields
-            defined in :php:`['generatorOptions']['fields']`.
+            defined in `['generatorOptions']['fields']`.
 
             Automatic character detection or escaping is not performed, so patterns must
             be written carefully.

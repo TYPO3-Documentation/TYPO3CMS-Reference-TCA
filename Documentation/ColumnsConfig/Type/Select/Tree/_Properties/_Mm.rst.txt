@@ -1,7 +1,7 @@
 ..  _columns-select-tree-properties-mm:
 
 ..  note::
-    TCA table column fields that define :php:`['config']['MM']` can omit the
+    TCA table column fields that define `['config']['MM']` can omit the
     specification of the intermediate MM table layout in
     :ref:`ext_tables.sql <t3coreapi:ext_tables-sql>`. The TYPO3 database
     analyzer takes care of proper schema definition.

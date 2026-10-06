@@ -126,10 +126,10 @@ Auto creation of intermediate MM tables from TCA
 ================================================
 
 ..  note::
-    The intermediate mm tables defined in :php:`['config']['MM']`
+    The intermediate mm tables defined in `['config']['MM']`
     are created automatically.
 
-TCA table column fields that define :php:`['config']['MM']` can
+TCA table column fields that define `['config']['MM']` can
 drop specification of the intermediate mm table layout in:
 :file:`ext_tables.sql`. The TYPO3 database analyzer
 takes care of proper schema definition.
