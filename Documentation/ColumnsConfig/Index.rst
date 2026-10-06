@@ -6,7 +6,7 @@
 Field types (config > type)
 ===========================
 
-The field types get defined in the TCA of a field in :php:`['config']['type']`.
+The field types get defined in the TCA of a field in `['config']['type']`.
 The field type influences the rendering of the form field in the backend. It
 also influences the processing of data on saving the values. Those behaviour can
 be influenced by further properties.
