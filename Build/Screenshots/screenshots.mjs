@@ -401,6 +401,9 @@ const screenshots = {
     prepare: async (frame) => {
       await frame.locator(field('photo')).getByText('ada.png').first().click();
       await frame.waitForLoadState('networkidle');
+      // The file reference opens with an animation
+      await frame.locator(`${field('crop')} img`).first().waitFor();
+      await frame.page().waitForTimeout(1000);
     },
     element: field('crop'),
   },
