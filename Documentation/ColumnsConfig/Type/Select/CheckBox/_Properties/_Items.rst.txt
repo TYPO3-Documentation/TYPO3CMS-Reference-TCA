@@ -45,6 +45,12 @@
 
     ..  rubric:: Select checkbox field with icons and descriptions
 
-    ..  include:: /Images/Rst/SelectCheckbox3.rst.txt
+    ..  figure:: /Images/Conference/SelectCheckBox.png
+        :alt: The topics of a speaker
+        :class: with-shadow
 
-    ..  include:: /CodeSnippets/SelectCheckbox3.rst.txt
+        The topics of a speaker
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+        :emphasize-lines: 13

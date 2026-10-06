@@ -68,11 +68,17 @@
 
 ..  _tca-example-select-single-1:
 
-..  rubric:: Example: Simple items definition with label and value
+..  rubric:: Example: Items with label and value
 
-..  include:: /Images/Rst/SelectSingle1.rst.txt
+..  figure:: /Images/Conference/SelectSingleSalutation.png
+    :alt: The salutation of a speaker
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle1.rst.txt
+    The salutation of a speaker
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/305-tx_myextension_speaker-salutation.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/305-tx_myextension_speaker-salutation.php
+    :emphasize-lines: 13
 
 ..  _tca-example-select-single-4:
 
@@ -80,14 +86,27 @@
 
 A more complex example could be this (includes icons):
 
-..  include:: /Images/Rst/SelectSingle4.rst.txt
 
-..  include:: /CodeSnippets/SelectSingle4.rst.txt
+..  code-block:: php
+
+    'items' => [
+      [
+        'label' => 'Talk',
+        'value' => 'talk',
+        'icon' => 'my-extension-talk',
+      ],
+    ],
 
 ..  rubric:: Example: SelectSingle field with itemGroups
 
 A select single field of size 6 with 3 item groups and one item without group.
 
-..  include:: /Images/Rst/SelectSingle17.rst.txt
+..  figure:: /Images/Conference/SelectSingleBox.png
+    :alt: The audience of a talk in two groups
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle17.rst.txt
+    The audience of a talk in two groups
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/265-tx_myextension_talk-audience.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/265-tx_myextension_talk-audience.php
+    :emphasize-lines: 19

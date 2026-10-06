@@ -19,6 +19,12 @@
 
     ..  rubric:: Example: Select checkbox, all divs expanded
 
-    ..  include:: /Images/Rst/SelectCheckbox5.rst.txt
+    ..  figure:: /Images/Conference/SelectCheckBox.png
+        :alt: The topics of a speaker, all groups expanded
+        :class: with-shadow
 
-    ..  include:: /CodeSnippets/SelectCheckbox5.rst.txt
+        The topics of a speaker, all groups expanded
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+        :emphasize-lines: 31

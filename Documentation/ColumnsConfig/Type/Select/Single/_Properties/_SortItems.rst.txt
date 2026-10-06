@@ -23,18 +23,27 @@
 
 ..  rubric:: Example: Sort items by label
 
-..  include:: /Images/Rst/SelectSingle18.rst.txt
+..  figure:: /Images/Conference/SelectSingleTimezone.png
+    :alt: The time zone of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle18.rst.txt
+    The time zone of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :emphasize-lines: 29
 
 
 ..  _tca-example-select-single-19:
 
 ..  rubric:: Example: Sort items by value
 
-..  include:: /Images/Rst/SelectSingle19.rst.txt
 
-..  include:: /CodeSnippets/SelectSingle19.rst.txt
+..  code-block:: php
+
+    'sortItems' => [
+      'value' => 'desc',
+    ],
 
 
 ..  _tca-example-select-single-20:
@@ -43,8 +52,16 @@
 
 The following custom method sorts the items by their reversed labels:
 
-..  include:: /Images/Rst/SelectSingle20.rst.txt
 
-..  include:: /CodeSnippets/SelectSingle20.rst.txt
+..  code-block:: php
 
-..  include:: /CodeSnippets/SelectItemSorter.rst.txt
+    'sortItems' => [
+      'tx_myextension' => MyItemSorter::class . '->sortReverseTitles',
+    ],
+
+..  code-block:: php
+
+    public function sortReverseTitles(array &$items, string $tableName, string $fieldName): void
+    {
+      usort($items, static fn(array $a, array $b): int => strcmp($b['label'], $a['label']));
+    }

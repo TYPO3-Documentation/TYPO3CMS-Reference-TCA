@@ -68,9 +68,15 @@
 
 ..  rubric:: Example: Multiple sidebyside select field with "Add record" enabled
 
-..  include:: /Images/Rst/SelectMultiplesidebyside1.rst.txt
+..  figure:: /Images/Conference/SelectMultipleSideBySide.png
+    :alt: The equipment of a talk
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectMultiplesidebyside1.rst.txt
+    The equipment of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :emphasize-lines: 23
 
 ..  rubric:: Example: Select field with options
 

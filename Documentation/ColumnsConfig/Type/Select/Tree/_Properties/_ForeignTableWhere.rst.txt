@@ -63,6 +63,12 @@ the :ref:`TSconfig reference <t3tsref:pagetceformconfobj>`.
 
 ..  rubric:: Example: Select single field with foreign_prefix and foreign_where
 
-..  include:: /Images/Rst/SelectSingle3.rst.txt
+..  figure:: /Images/Conference/CtrlSeliconField.png
+    :alt: The location of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle3.rst.txt
+    The location of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+    :emphasize-lines: 24

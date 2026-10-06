@@ -18,7 +18,6 @@
         It tells the DataHandler which fields of the localization records should be kept
         in sync if the underlying default or source record changes.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_RenderTypes.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 41-55
-            :emphasize-lines: 52
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/332-tx_myextension_speaker-topics.php
+            :emphasize-lines: 34

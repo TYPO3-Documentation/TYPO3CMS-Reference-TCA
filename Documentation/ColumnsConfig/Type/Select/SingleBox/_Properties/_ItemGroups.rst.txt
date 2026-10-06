@@ -24,12 +24,24 @@
 
 ..  rubric:: Example: SelectSingle field with itemGroups
 
-..  include:: /Images/Rst/SelectSingle16.rst.txt
+..  figure:: /Images/Conference/SelectSingleBox.png
+    :alt: The audience of a talk in two groups
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle16.rst.txt
+    The audience of a talk in two groups
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/265-tx_myextension_talk-audience.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/265-tx_myextension_talk-audience.php
+    :emphasize-lines: 19
 
 ..  rubric:: Example: SelectSingle field with itemGroups, size=6
 
-..  include:: /Images/Rst/SelectSingle17.rst.txt
+..  figure:: /Images/Conference/SelectSingleBox.png
+    :alt: The audience of a talk in two groups
+    :class: with-shadow
 
-..  include:: /CodeSnippets/SelectSingle17.rst.txt
+    The audience of a talk in two groups
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/265-tx_myextension_talk-audience.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/265-tx_myextension_talk-audience.php
+    :emphasize-lines: 19
