@@ -67,7 +67,8 @@ them made the pages noisy for nothing.
 | Database table or column (`tt_content`, `CType`) | plain backticks |
 | A bare number or quoted string (`0`, `"hex"`) | plain backticks |
 | Actual SQL (`WHERE`, `NULL`, `varchar`, `ORDER BY`) | `:sql:` |
-| PHP class, variable, array fragment, `true`, `int` | `:php:` |
+| A key path that does not start at a PHP variable (`['config']['MM']`, `ctrl['label']`) | plain backticks |
+| PHP class, variable, array value (`['jpg', 'png']`), `true`, `int` | `:php:` |
 | An HTML element or attribute (`<input>`, `autocomplete="on"`) | `:html:` |
 | A file path | `:file:` |
 

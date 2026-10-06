@@ -57,7 +57,7 @@ The "MM" method
 ---------------
 
 ..  note::
-    The intermediate mm tables defined in :php:`['config']['MM']`
+    The intermediate mm tables defined in `['config']['MM']`
     are created automatically.
 
 Using the MM method the Database Analyzer creates an intermediate MM table to
