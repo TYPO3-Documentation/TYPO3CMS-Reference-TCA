@@ -99,6 +99,7 @@ the :file:`ext_tables.sql` file:
 ..  literalinclude:: /CodeSnippets/my_extension/ext_tables.sql
     :caption: EXT:my_extension/ext_tables.sql
     :language: sql
+    :visible-lines: 1-6
 
 ..  note::
     :typoscript:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
@@ -153,7 +154,7 @@ type inline** - as it is a container.
 
     ..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
         :caption: EXT:my_extension/ext_localconf.php
-        :emphasize-lines: 23-27
+        :emphasize-lines: 24-28
 
 #.  Add the fieldInformation to the container for containerRenderType inline
 
@@ -184,7 +185,7 @@ photo can only be cropped to a square:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/320-tx_myextension_speaker-photo.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/320-tx_myextension_speaker-photo.php
-    :emphasize-lines: 15-33
+    :emphasize-lines: 15-40
 
 ..  _columns-inline-properties-override-child-tca-examples-define-fields:
 

@@ -27,12 +27,25 @@ is generated automatically.
 Example: A basic image manipulation field
 =========================================
 
-..  include:: /Images/Rst/ImageManipulationButton.rst.txt
+The file references of the core have a field of type `imageManipulation`.
+Every image in a field of type `file <https://docs.typo3.org/permalink/t3tca:columns-file>`_ shows it, for
+example the photo of a speaker:
 
-..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 9-15
-    :emphasize-lines: 12
+..  figure:: /Images/Conference/ImageManipulationButton.png
+    :alt: The button that opens the image editor for the photo of a speaker
+    :class: with-shadow
+
+    The button that opens the image editor for the photo of a speaker
+
+..  code-block:: php
+    :caption: EXT:core/Configuration/TCA/sys_file_reference.php (excerpt)
+
+    'crop' => [
+        'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.crop',
+        'config' => [
+            'type' => 'imageManipulation',
+        ],
+    ],
 
 ..  _columns-imagemanipulation-properties:
 
@@ -104,10 +117,12 @@ It is possible to define multiple crop variants. The array key is used as identi
 is specified with the "title" and the actual (floating point) ratio with the "value" key. The value **must** be of
 PHP type float, not only a string.
 
-..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 73-106
-    :emphasize-lines: 77
+The impressions of a conference can be cropped for the desktop and for
+mobile devices:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+    :emphasize-lines: 26-27, 40
 
 ..  _columns-imagemanipulation-crop-variants-initial:
 
@@ -119,10 +134,9 @@ crop area will cover the complete image. Crop areas are defined relatively with 
 coordinates and width and height must be specified for that. The below example has an initial crop area in the size
 the previous image cropper provided by default.
 
-..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 17-33
-    :emphasize-lines: 24
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+    :emphasize-lines: 48-54
 
 ..  _columns-imagemanipulation-crop-variants-focusarea:
 
@@ -134,12 +148,18 @@ area in the image which must be visible for the image to transport its meaning. 
 the database but will have no effect on image processing. The data points are however made available as data
 attribute when using the `<f:image />` view helper.
 
-The below example adds a focus area, which is initially one third of the size of the image and centered.
+The below example adds a focus area to the photo of a speaker, which is
+initially one third of the size of the image and centered.
 
-..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 35-51
-    :emphasize-lines: 42
+..  figure:: /Images/Conference/ImageManipulationEditor.png
+    :alt: The image editor with the square crop and the focus area of the photo of a speaker
+    :class: with-shadow
+
+    The image editor with the square crop and the focus area of the photo of a speaker
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/320-tx_myextension_speaker-photo.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/320-tx_myextension_speaker-photo.php
+    :emphasize-lines: 28-34
 
 ..  _columns-imagemanipulation-crop-variants-coverareas:
 
@@ -151,13 +171,14 @@ editors a hint which area of the image is affected, when selecting a crop area, 
 so called cover areas. These areas are shown inside the crop area. The focus area cannot intersect with any of
 the cover areas.
 
-..  literalinclude:: /ColumnsConfig/Type/ImageManipulation/_Snippets/_ImageManipulation.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 53-71
-    :emphasize-lines: 60
+The name of a location is shown on top of the lower part of its image:
 
-The above configuration examples are basically meant to add one single cropping configuration
-to sys_file_reference, which will then apply in every record, which reference images.
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/401-tx_myextension_location-image.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/401-tx_myextension_location-image.php
+    :emphasize-lines: 16-23
+
+The above configuration examples override the crop variants for one field of
+type `file` with `overrideChildTca <https://docs.typo3.org/permalink/t3tca:confval-inline-overridechildtca>`_.
 
 ..  _columns-imagemanipulation-crop-variants-content-element:
 

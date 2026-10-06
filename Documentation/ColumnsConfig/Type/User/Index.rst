@@ -45,7 +45,8 @@ The `user` field can be useful, if:
 Examples
 ========
 
-This example is part of the TYPO3 Documentation Team extension :composer:`t3docs/examples`.
+A frontend user can have a name of their own for the badge of a conference.
+The field shows a preview of the badge.
 
 The example registers an own node element, a TCA field using it and a class
 implementing a rendering. See :ref:`FormEngine docs
@@ -71,26 +72,38 @@ implementing a rendering. See :ref:`FormEngine docs
 
     Add to :file:`ext_localconf.php`:
 
-    ..  literalinclude:: /ColumnsConfig/Type/User/_includes/_ext_localconf.php
+    ..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
         :caption: EXT:my_extension/ext_localconf.php
+        :emphasize-lines: 30-36
 
 
 3.  Use the renderType in a TCA field definition
 
-    Add the field to the TCA definition, here in
-    :file:`Configuration/TCA/Overrides/fe_users.php`:
+    Add the field to the TCA definition, here in an override of the table
+    `fe_users`:
 
-    ..  literalinclude:: _includes/_fe_users.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/fe_users.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/650-fe_users-tx_myextension_badge_name.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/650-fe_users-tx_myextension_badge_name.php
+        :emphasize-lines: 13-18
 
-4.  Implement the FormElement class
+4.  Define the database column
+
+    TYPO3 does not create the column of a field of type `user`. Define it
+    in the :file:`ext_tables.sql` file:
+
+    ..  literalinclude:: /CodeSnippets/my_extension/ext_tables.sql
+        :caption: EXT:my_extension/ext_tables.sql
+        :language: sql
+        :emphasize-lines: 9-11
+
+5.  Implement the FormElement class
 
     The `renderType` can be implemented by extending the class
     :php-short:`\TYPO3\CMS\Backend\Form\Element\AbstractFormElement` and
     overriding the function :php:`render()`:
 
-    ..  literalinclude:: _includes/_SpecialFieldElement.php
-        :caption: EXT:my_extension/Classes/Form/Element/SpecialFieldElement.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Classes/Form/Element/BadgeNameElement.php
+        :caption: EXT:my_extension/Classes/Form/Element/BadgeNameElement.php
 
     The label of a custom field does not get rendered automatically
     but must be rendered with :php:`$this->renderLabel($fieldId)` or
@@ -125,10 +138,11 @@ implementing a rendering. See :ref:`FormEngine docs
 
 The field would then look like this in the backend:
 
-..  include:: /Images/Rst/ExtendingTcaFeUsers.rst.txt
+..  figure:: /Images/Conference/UserBadgeName.png
+    :alt: The name on the badge of a frontend user, with a preview of the badge
+    :class: with-shadow
 
-This example is also described in TYPO3 Explained,
-:ref:`Extending TCA example <t3coreapi:extending-examples-feusers>`.
+    The name on the badge of a frontend user, with a preview of the badge
 
 ..  _columns-user-properties-notablewrapping:
 ..  _columns-user-properties-parameters:

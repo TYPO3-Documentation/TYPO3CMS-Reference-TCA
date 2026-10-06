@@ -20,12 +20,40 @@
 
     ..  rubric:: Example with XML in external file
 
-    ..  include:: /CodeSnippets/FlexFile1.rst.txt
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php (excerpt)
+
+        'config' => [
+            'type' => 'flex',
+            'ds' => 'FILE:EXT:my_extension/Configuration/FlexForms/ConferenceList.xml',
+        ],
 
     The included file:
 
-    ..  include:: /CodeSnippets/FlexFormFile1.rst.txt
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+        :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+        :visible-lines: 1-29, 91-93, 135-136
 
     ..  rubric:: Example with XML directly entered
 
-    ..  include:: /CodeSnippets/Flex2.rst.txt
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php (excerpt)
+
+        'config' => [
+            'type' => 'flex',
+            'ds' => '
+                <T3DataStructure>
+                    <ROOT>
+                        <type>array</type>
+                        <el>
+                            <settings.limit>
+                                <label>Maximum number of conferences</label>
+                                <config>
+                                    <type>number</type>
+                                </config>
+                            </settings.limit>
+                        </el>
+                    </ROOT>
+                </T3DataStructure>
+            ',
+        ],

@@ -25,6 +25,13 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_speaker', [
                       'value' => 1.0,
                     ],
                   ],
+                  // The face of the speaker, initially in the middle
+                  'focusArea' => [
+                    'x' => 1 / 3,
+                    'y' => 1 / 3,
+                    'width' => 1 / 3,
+                    'height' => 1 / 3,
+                  ],
                 ],
               ],
             ],

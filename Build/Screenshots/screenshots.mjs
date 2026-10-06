@@ -31,7 +31,7 @@ const valuePickerList = (name) => `${field(name)} typo3-backend-combobox [role="
 // The uids of the records that create-records.php created
 const {
   storageFolder, contentElement, conference, conferenceTranslation, talk, workshop,
-  speaker, speakerTranslation, location, hall, backendLayout, hotel, comment,
+  speaker, speakerTranslation, location, hall, backendLayout, hotel, comment, plugin, feUser,
 } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
@@ -379,6 +379,40 @@ const screenshots = {
   NoneComment: {
     url: editUrl('tx_myextension_comment', comment),
     element: field('crdate'),
+  },
+  UserBadgeName: {
+    url: editUrl('fe_users', feUser),
+    tab: 'Personal Data',
+    element: field('tx_myextension_badge_name'),
+  },
+  FlexPlugin: {
+    url: editUrl('tt_content', plugin),
+    tab: 'Plugin',
+    element: field('pi_flexform'),
+  },
+  FlexSheetHighlights: {
+    url: editUrl('tt_content', plugin),
+    tab: 'Plugin',
+    prepare: (frame) => frame.getByRole('tab', { name: 'Highlights', exact: true }).click(),
+    element: field('pi_flexform'),
+  },
+  ImageManipulationButton: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    prepare: async (frame) => {
+      await frame.locator(field('photo')).getByText('ada.png').first().click();
+      await frame.waitForLoadState('networkidle');
+    },
+    element: field('crop'),
+  },
+  ImageManipulationEditor: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    prepare: async (frame) => {
+      await frame.locator(field('photo')).getByText('ada.png').first().click();
+      await frame.waitForLoadState('networkidle');
+      await frame.locator(field('crop')).getByRole('button', { name: 'Open Editor' }).click();
+      await frame.page().waitForTimeout(1500);
+    },
+    modal: true,
   },
   CategoryConference: {
     url: editUrl('tx_myextension_conference', conference),
