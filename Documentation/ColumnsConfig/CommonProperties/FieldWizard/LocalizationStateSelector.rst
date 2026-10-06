@@ -28,4 +28,12 @@ localizationStateSelector
         from another localized record, the third radio appears.
     *   The property ['config']['behaviour']['allowLanguageSynchronization'] is set to true
 
-    ..  include:: /Images/ManualScreenshots/LocalizationStateSelector.rst.txt
+    ..  figure:: /Images/Conference/FieldWizardLocalizationState.png
+        :alt: The contact email of a translated conference with the localization state and the value of the default language
+        :class: with-shadow
+
+        The contact email of a translated conference with the localization state and the value of the default language
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/140-tx_myextension_conference-contact_email.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/140-tx_myextension_conference-contact_email.php
+        :emphasize-lines: 13-15

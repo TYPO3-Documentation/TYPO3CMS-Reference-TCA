@@ -414,6 +414,19 @@ const screenshots = {
     },
     modal: true,
   },
+  FieldInformationEmail: {
+    url: editUrl('tx_myextension_speaker', speaker),
+    element: field('email'),
+  },
+  ItemsProcFuncTrack: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('track'),
+  },
+  FieldWizardLocalizationState: {
+    url: editUrl('tx_myextension_conference', conferenceTranslation),
+    tab: 'Details',
+    element: field('contact_email'),
+  },
   CategoryConference: {
     url: editUrl('tx_myextension_conference', conference),
     tab: 'Categories',

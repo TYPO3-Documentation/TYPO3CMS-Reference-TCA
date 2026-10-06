@@ -56,4 +56,4 @@ The class is registered in :file:`ext_localconf.php`:
 
 ..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
     :caption: EXT:my_extension/ext_localconf.php
-    :emphasize-lines: 18
+    :emphasize-lines: 21

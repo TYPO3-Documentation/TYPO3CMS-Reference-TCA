@@ -26,13 +26,13 @@ both are executed. In that case, `itemsProcFunc` is executed first.
 TCA item processor registration
 ===============================
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_my_table.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 3-4, 12-36
-    :emphasize-lines: 24
+The time zone of a conference gets its items from a processor:
 
-In this example, `SpecialRelationsProcessor2` is executed before
-`SpecialRelationsProcessor`.
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :emphasize-lines: 17-24
+
+A further processor with a key lower than `100` would run before it.
 
 ..  _tca-property-itemsprocessors-implementation:
 
@@ -54,8 +54,8 @@ A processor must return a
 are handled as objects, newly added items can no longer be represented as
 untyped arrays.
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/SpecialRelationsProcessor.php
-    :caption: EXT:my_extension/Classes/Processors/SpecialRelationsProcessor.php
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Backend/ItemsProcessor/TimezoneItemsProcessor.php
+    :caption: EXT:my_extension/Classes/Backend/ItemsProcessor/TimezoneItemsProcessor.php
 
 You can add your own parameters to processors. They are exposed
 via the processor context.
@@ -63,20 +63,21 @@ via the processor context.
 Add parameters via TCA or page TSconfig and access them through
 `$context->processorParameters`.
 
-For example, the following item processor configuration:
+For example, the time zone processor reads the regions from its
+parameters:
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_my_table.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 24-34
-    :emphasize-lines: 27
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :emphasize-lines: 20-22
 
-can access `$context->processorParameters['foo']`. The value can be overridden
-or extended, for example via a site setting defined in page TSconfig:
+The processor accesses `$context->processorParameters['regions']`. The value
+can be overridden or extended, for example via a site setting defined in
+page TSconfig:
 
 ..  code-block:: typoscript
     :caption: EXT:my_extension/Configuration/Sets/MySet/page.tsconfig
 
-    TCEFORM.tx_myextension_mytable.relation.itemsProcessors.100.foo = {$myExtension.bar}
+    TCEFORM.tx_myextension_conference.timezone.itemsProcessors.100.regions = {$myExtension.regions}
 
 ..  _tca-property-items-processors-registering-item-processors:
 
@@ -85,7 +86,7 @@ Registering item processors in FlexForms
 
 Registration of processors is also possible inside FlexForms:
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_ItemsProcessorsFlexForm.xml
-    :caption: EXT:my_extension/Configuration/FlexForms/SomeForm.xml
-    :visible-lines: 8-20
-    :emphasize-lines: 14
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+    :visible-lines: 91-111
+    :emphasize-lines: 102-109

@@ -161,10 +161,9 @@ Example
 
 The "local" side of a mm table is defined as such in TCA:
 
-..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_MmLocal.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-    :visible-lines: 15-22
-    :emphasize-lines: 20
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/275-tx_myextension_talk-related_talks.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/275-tx_myextension_talk-related_talks.php
+    :emphasize-lines: 13
 
 A table like the following will be automatically created in the Database
 Analyzer:
@@ -172,7 +171,7 @@ Analyzer:
 ..  code-block:: sql
     :caption: Table created automatically by the Database Analyzer
 
-    CREATE TABLE tx_myextension_myfield_mm (
+    CREATE TABLE tx_myextension_talk_related_mm (
         uid_local int(11) DEFAULT '0' NOT NULL,
         uid_foreign int(11) DEFAULT '0' NOT NULL,
         sorting int(11) DEFAULT '0' NOT NULL,
