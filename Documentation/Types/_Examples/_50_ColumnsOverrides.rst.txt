@@ -7,13 +7,11 @@ Examples for columnsOverrides in type section of TCA
 
 Demonstrates property: :confval:`types-columnsOverrides`.
 
-For example the special blog post type might require the author to be set and
-use a different render type and description for the content:
+For example a keynote requires a speaker, unlike the other types of talks:
 
-..  literalinclude:: /Types/_CodeSnippets/_Post.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
-    :visible-lines: 43-59
-    :emphasize-lines: 46
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+    :emphasize-lines: 36
 
 While the field type `type` cannot be changed in the `columnsOverrides` the
 render type `renderType` can be changed.

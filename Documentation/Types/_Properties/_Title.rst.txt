@@ -20,9 +20,8 @@
     (:php-short:`\TYPO3\CMS\Backend\Form\FormDataProvider\TcaTypesCtrlOverrides`
     data provider).
 
-    ..  literalinclude:: /Types/_CodeSnippets/_Post.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_post.php
-        :visible-lines: 5, 22-60
-        :emphasize-lines: 35, 44
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/201-tx_myextension_talk-types.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/201-tx_myextension_talk-types.php
+        :emphasize-lines: 6-7
 
     ..  include:: /_Includes/_LabelReference.rst.txt
