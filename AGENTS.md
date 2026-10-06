@@ -30,8 +30,14 @@ https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-HowToDocument):
    anchors are never removed once published; see
    `Documentation/Reference/ReStructuredText/Links/Anchors.rst` in the
    how-to-document guide.
-6. **Validate before committing** — run `make test-docs`.
-7. **Never commit or push without being asked.**
+6. **Link TYPO3 documentation with permalinks**, also inside this manual,
+   and give every link its own link text; see
+   `Documentation/Reference/ReStructuredText/Links/Documentation.rst` in the
+   how-to-document guide. Do not suggest replacing a permalink with
+   `:ref:`. A changelog entry is the exception: link it with the
+   `:changelog:` option (see Version directives).
+7. **Validate before committing** — run `make test-docs`.
+8. **Never commit or push without being asked.**
 
 ## Which role for a TCA key
 
