@@ -60,6 +60,9 @@
       <trans-unit id="conference.contact_email" resname="conference.contact_email">
         <source>Contact email</source>
       </trans-unit>
+      <trans-unit id="conference.content_elements" resname="conference.content_elements">
+        <source>Content elements</source>
+      </trans-unit>
       <trans-unit id="conference.description" resname="conference.description">
         <source>Description</source>
       </trans-unit>
@@ -87,6 +90,9 @@
       <trans-unit id="conference.hashtag" resname="conference.hashtag">
         <source>Hashtag</source>
       </trans-unit>
+      <trans-unit id="conference.hotels" resname="conference.hotels">
+        <source>Hotels</source>
+      </trans-unit>
       <trans-unit id="conference.impressions" resname="conference.impressions">
         <source>Impressions</source>
       </trans-unit>
@@ -108,6 +114,9 @@
       <trans-unit id="conference.overlay_color" resname="conference.overlay_color">
         <source>Overlay color</source>
       </trans-unit>
+      <trans-unit id="conference.partners" resname="conference.partners">
+        <source>Partner conferences</source>
+      </trans-unit>
       <trans-unit id="conference.prices" resname="conference.prices">
         <source>Ticket prices</source>
       </trans-unit>
@@ -125,6 +134,12 @@
       </trans-unit>
       <trans-unit id="conference.registration_open.open" resname="conference.registration_open.open">
         <source>Open</source>
+      </trans-unit>
+      <trans-unit id="conference.registrations" resname="conference.registrations">
+        <source>Registrations</source>
+      </trans-unit>
+      <trans-unit id="conference.registrations.combinationWarning" resname="conference.registrations.combinationWarning">
+        <source>Changes to the attendee apply to all registrations of this frontend user.</source>
       </trans-unit>
       <trans-unit id="conference.related_content" resname="conference.related_content">
         <source>Related pages and content</source>
@@ -147,6 +162,9 @@
       <trans-unit id="conference.talks" resname="conference.talks">
         <source>Talks</source>
       </trans-unit>
+      <trans-unit id="conference.talks.order" resname="conference.talks.order">
+        <source>Drag the talks into the order of the program.</source>
+      </trans-unit>
       <trans-unit id="conference.ticket_link" resname="conference.ticket_link">
         <source>Tickets</source>
       </trans-unit>
@@ -168,8 +186,23 @@
       <trans-unit id="conference.title" resname="conference.title">
         <source>Title</source>
       </trans-unit>
+      <trans-unit id="conference.waiting_list" resname="conference.waiting_list">
+        <source>Waiting list</source>
+      </trans-unit>
       <trans-unit id="conference.website" resname="conference.website">
         <source>Website</source>
+      </trans-unit>
+      <trans-unit id="hotel" resname="hotel">
+        <source>Hotel</source>
+      </trans-unit>
+      <trans-unit id="hotel.city" resname="hotel.city">
+        <source>City</source>
+      </trans-unit>
+      <trans-unit id="hotel.conferences" resname="hotel.conferences">
+        <source>Conferences that recommend this hotel</source>
+      </trans-unit>
+      <trans-unit id="hotel.name" resname="hotel.name">
+        <source>Name</source>
       </trans-unit>
       <trans-unit id="location" resname="location">
         <source>Location</source>
@@ -246,6 +279,18 @@
       <trans-unit id="location.zip" resname="location.zip">
         <source>ZIP code</source>
       </trans-unit>
+      <trans-unit id="partnership" resname="partnership">
+        <source>Partnership</source>
+      </trans-unit>
+      <trans-unit id="partnership.conference" resname="partnership.conference">
+        <source>Conference</source>
+      </trans-unit>
+      <trans-unit id="partnership.discount" resname="partnership.discount">
+        <source>Discount for attendees of the partner conference in percent</source>
+      </trans-unit>
+      <trans-unit id="partnership.partner" resname="partnership.partner">
+        <source>Partner conference</source>
+      </trans-unit>
       <trans-unit id="plugin.conferencelist.categories" resname="plugin.conferencelist.categories">
         <source>Categories</source>
       </trans-unit>
@@ -290,6 +335,33 @@
       </trans-unit>
       <trans-unit id="plugin.conferencelist.title" resname="plugin.conferencelist.title">
         <source>Conference list</source>
+      </trans-unit>
+      <trans-unit id="registration" resname="registration">
+        <source>Registration</source>
+      </trans-unit>
+      <trans-unit id="registration.attendee" resname="registration.attendee">
+        <source>Attendee</source>
+      </trans-unit>
+      <trans-unit id="registration.status" resname="registration.status">
+        <source>Status</source>
+      </trans-unit>
+      <trans-unit id="registration.status.confirmed" resname="registration.status.confirmed">
+        <source>Confirmed</source>
+      </trans-unit>
+      <trans-unit id="registration.status.waiting" resname="registration.status.waiting">
+        <source>Waiting list</source>
+      </trans-unit>
+      <trans-unit id="registration.ticket" resname="registration.ticket">
+        <source>Ticket</source>
+      </trans-unit>
+      <trans-unit id="registration.ticket.regular" resname="registration.ticket.regular">
+        <source>Regular</source>
+      </trans-unit>
+      <trans-unit id="registration.ticket.speaker" resname="registration.ticket.speaker">
+        <source>Speaker</source>
+      </trans-unit>
+      <trans-unit id="registration.ticket.student" resname="registration.ticket.student">
+        <source>Student</source>
       </trans-unit>
       <trans-unit id="speaker" resname="speaker">
         <source>Speaker</source>
@@ -398,6 +470,9 @@
       </trans-unit>
       <trans-unit id="tab.program" resname="tab.program">
         <source>Program</source>
+      </trans-unit>
+      <trans-unit id="tab.registrations" resname="tab.registrations">
+        <source>Registrations</source>
       </trans-unit>
       <trans-unit id="talk" resname="talk">
         <source>Talk</source>

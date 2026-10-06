@@ -96,20 +96,21 @@ relationship must be declared workspace-aware if the parent table is workspace-a
 A typical scenario is inline child tables attached to the
 `tt_content` table as `tt_content` is workspace-aware by default.
 
-Example of a workspace-aware parent table:
+The conferences are workspace-aware:
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_workspace_parent.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_myparent.php
-    :visible-lines: 4-8, 16-23
-    :emphasize-lines: 7
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
+    :emphasize-lines: 23
 
 If the parent table is workspace-aware, `versioningWS  <https://docs.typo3.org/permalink/t3tca:confval-ctrl-versioningws>`_
-set to `true`, the child table must also be made parent-aware:
+set to `true`, the child table must also be made workspace-aware. The hotels
+are inline children of the conferences:
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_workspace_child.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mychild.php
-    :visible-lines: 4-8, 16-20
-    :emphasize-lines: 7
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_hotel.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_hotel.php
+    :visible-lines: 4-16
+    :emphasize-lines: 14
 
 The same applies if an inline field is used inside a
 `FlexForm field <https://docs.typo3.org/permalink/t3tca:columns-flex>`_.
@@ -125,16 +126,16 @@ created in table `tt_content`, the child table must also be allowed on regular p
 Otherwise you will see the following error on saving:
 
 ..  warning::
-    Attempt to insert record on pages:42 where table "tx_myextension_domain_model_something" is not allowed.
+    Attempt to insert record on pages:42 where table "tx_myextension_registration" is not allowed.
 
 To allow the child table on regular pages, set
 `$GLOBALS['TCA'][$table]['ctrl']['security']['ignorePageTypeRestriction'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-security>`_
 to true:
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_ignorePageTypeRestriction.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-    :visible-lines: 4-10
-    :emphasize-lines: 8
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
+    :emphasize-lines: 26-28
 
 ..  _columns-inline-rootlevel-restrictions:
 
@@ -152,7 +153,7 @@ to `-1` to allow on both root level and regular pages or set to `1` to allow onl
 If regular non-admin backend users need to be able to edit the table, add
 `$GLOBALS['TCA'][$table]['ctrl']['security']['ignoreRootLevelRestriction'] <https://docs.typo3.org/permalink/t3tca:confval-ctrl-security>`_
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_rootLevel.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mymetadata.php
-    :visible-lines: 4-12
-    :emphasize-lines: 8, 10
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_location.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_location.php
+    :visible-lines: 4-19
+    :emphasize-lines: 11-14

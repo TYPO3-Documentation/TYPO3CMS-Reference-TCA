@@ -31,7 +31,7 @@ const valuePickerList = (name) => `${field(name)} typo3-backend-combobox [role="
 // The uids of the records that create-records.php created
 const {
   storageFolder, contentElement, conference, conferenceTranslation, talk, workshop,
-  speaker, speakerTranslation, location, hall, backendLayout,
+  speaker, speakerTranslation, location, hall, backendLayout, hotel,
 } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
@@ -305,6 +305,49 @@ const screenshots = {
   CategoryTopic: {
     url: editUrl('tx_myextension_talk', talk),
     element: field('topic'),
+  },
+  InlineTalks: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Program',
+    element: field('talks'),
+  },
+  InlinePartners: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Program',
+    element: field('partners'),
+  },
+  InlineRegistrations: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Registrations',
+    element: field('registrations'),
+  },
+  InlineRegistrationCombination: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Registrations',
+    prepare: async (frame) => {
+      await frame.locator(field('registrations')).getByText('chris, Regular').click();
+      await frame.waitForLoadState('networkidle');
+    },
+    element: field('registrations'),
+  },
+  InlineWaitingList: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Registrations',
+    element: field('waiting_list'),
+  },
+  InlineHotels: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('hotels'),
+  },
+  InlineHotelConferences: {
+    url: editUrl('tx_myextension_hotel', hotel),
+    element: field('conferences'),
+  },
+  InlineContentElements: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('content_elements'),
   },
   CategoryConference: {
     url: editUrl('tx_myextension_conference', conference),

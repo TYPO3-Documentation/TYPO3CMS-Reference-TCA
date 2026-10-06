@@ -16,40 +16,46 @@ Examples
 Simple 1:n relation
 ===================
 
-..  include:: /Images/Rst/Inline1nInline1.rst.txt
+A conference has talks, and each talk belongs to one conference:
 
-This combines a table (for example companies) with a child table (for example
-employees).
+..  figure:: /Images/Conference/InlineTalks.png
+    :alt: The talks of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Inline1nInline1.rst.txt
+    The talks of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/120-tx_myextension_conference-talks.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/120-tx_myextension_conference-talks.php
+    :emphasize-lines: 11-14
 
 ..  _columns-inline-examples-asymmetric-mm:
 
 Attributes on anti-symmetric intermediate table
 ===============================================
 
-..  include:: /Images/Rst/Inline1n1nInline1.rst.txt
+..  figure:: /Images/Conference/InlineRegistrations.png
+    :alt: The registrations of a conference
+    :class: with-shadow
 
-The record has two child records displayed inline.
+    The registrations of a conference
 
-This example combines records from a parent table
-`tx_styleguide_inline_mn` with records from the child table
-`tx_styleguide_inline_mn_child` using the intermediate table
-`tx_styleguide_inline_mn_mm`. It is also possible to add
-attributes to every relation – in this example a checkbox.
 
-The parent table `tx_styleguide_inline_mn` contains the following column:
+This example combines conferences with frontend users, using the
+intermediate table `tx_myextension_registration`. Each registration has an
+attribute of its own: the ticket of the attendee.
 
-..  include:: /CodeSnippets/InlineMnInline1.rst.txt
+The conference contains the following column:
 
-If the child table `tx_styleguide_inline_mn_child` wants to display its parents also it needs to define a
-column like in this example:
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+    :emphasize-lines: 12-15
 
-..  include:: /CodeSnippets/InlineMnChildParents.rst.txt
+The intermediate table `tx_myextension_registration` defines the following
+fields:
 
-The intermediate table `tx_styleguide_inline_mn_mm` defines the following fields:
-
-..  include:: /CodeSnippets/Manual/InlineMnMm.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_registration.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_registration.php
+    :emphasize-lines: 17,20-21,26
 
 
 ..  _columns-inline-examples-symmetric-mm:
@@ -58,34 +64,41 @@ The intermediate table `tx_styleguide_inline_mn_mm` defines the following fields
 Attributes on symmetric intermediate table
 ==========================================
 
-..  include:: /Images/Rst/InlineMnSymmetric11Branches.rst.txt
+..  figure:: /Images/Conference/InlinePartners.png
+    :alt: The partner conferences of a conference
+    :class: with-shadow
 
-Record 1 is related to records 6 and 11 of the same table
-
-This example combines records of the same table with each other. Image we want
-to store relationships between hotels. Symmetric relations combine records of
-one table with each other. If record A is related to record B then record B is
-also related to record A. However, the records are not stored in groups. If
-record A is related to B and C, B doesn't have to be related to C.
+    The partner conferences of a conference
 
 
-..  include:: /Images/Rst/InlineMnSymmetric11Branches.rst.txt
+This example combines records of the same table with each other: a
+conference has partner conferences, whose attendees get a discount.
+Symmetric relations combine records of one table with each other. If
+record A is related to record B, then record B is also related to record A.
+However, the records are not stored in groups. If record A is related to B
+and C, B does not have to be related to C.
 
-Record 11 is symmetrically related to record 1 but not to 6
+The conference has a field storing the inline relation, here: `partners`.
 
-The main table `tx_styleguide_inline_mnsymmetric` has a field storing the
-inline relation, here: `branches`.
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/128-tx_myextension_conference-partners.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/128-tx_myextension_conference-partners.php
+    :emphasize-lines: 13-18
 
-..  include:: /CodeSnippets/InlineMnSymmetricBranches.rst.txt
+The conferences are related to each other with the intermediate table
+`tx_myextension_partnership`. It stores the uids of both sides of the
+relation in `conference` and `partner`:
 
-Records of the main table can than have a symmetric relationship to each other
-using the intermediate table `tx_styleguide_inline_mnsymmetric_mm`.
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_partnership.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_partnership.php
+    :emphasize-lines: 15,24
 
-The intermediate table stores the uids of both sides of the relation in
-`hotelid` and `branchid`. Furthermore custom sorting can be defined in
-both directions.
+Each side of the relation has its own sorting. TYPO3 does not create the
+columns of `foreign_sortby` and `symmetric_sortby`, so they are defined in
+the :file:`ext_tables.sql` file:
 
-..  include:: /CodeSnippets/Manual/InlineMnSymetricMm.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/ext_tables.sql
+    :caption: EXT:my_extension/ext_tables.sql
+    :language: sql
 
 ..  note::
     :typoscript:`TCAdefaults.<table>.pid = <page id>` can be used to define the pid of new child records. Thus, it's possible to
@@ -96,21 +109,34 @@ both directions.
 With a combination box
 ======================
 
-..  include:: /Images/Rst/InlineUsecombinationcInline1.rst.txt
+The registrations of a conference show the registration and the frontend
+user together. A message warns that changes to the frontend user apply to
+all registrations of this user:
 
-The combination box shows available records. On clicking one entry it gets
-added to the parent record.
+..  figure:: /Images/Conference/InlineRegistrationCombination.png
+    :alt: A registration with its frontend user
+    :class: with-shadow
 
+    A registration with its frontend user
 
-..  include:: /CodeSnippets/InlineUsecombinationcInline1.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+    :emphasize-lines: 19-22
 
 ..  _inline-example-field-information:
 
 Add a custom fieldInformation
 =============================
 
-We show a very minimal example which adds a custom fieldInformation for the
-inline type in tt_content. Adding a fieldWizard is done in a similar way.
+The following example adds a custom fieldInformation above the talks of a
+conference. Adding a fieldWizard is done in a similar way.
+
+..  figure:: /Images/Conference/InlineTalks.png
+    :alt: The talks of a conference with the information about their order
+    :class: with-shadow
+
+    The talks of a conference with the information about their order
+
 
 As explained in the :ref:`description <columns-inline>`, `fieldInformation`
 or `fieldWizard` must be configured within the `ctrl` **for the field
@@ -120,23 +146,20 @@ type inline** - as it is a container.
 
 #.  Create a custom fieldInformation
 
-    ..  literalinclude:: _Snippets/_DemoFieldInformation.php
-        :caption: EXT:my_extension/Classes/FormEngine/FieldInformation/DemoFieldInformation.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Classes/Form/FieldInformation/TalkOrderInformation.php
+        :caption: EXT:my_extension/Classes/Form/FieldInformation/TalkOrderInformation.php
 
 #.  Register this node type
 
-    ..  literalinclude:: _Snippets/_ext_localconf.php
+    ..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
         :caption: EXT:my_extension/ext_localconf.php
+        :emphasize-lines: 23-27
 
 #.  Add the fieldInformation to the container for containerRenderType inline
 
-    ..  literalinclude:: _Snippets/_tt_content.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-
-#.  A field my_new_field is created in the tt_content TCA:
-
-    ..  literalinclude:: _Snippets/_tt_content2.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/120-tx_myextension_conference-talks.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/120-tx_myextension_conference-talks.php
+        :emphasize-lines: 34-37
 
 ..  seealso::
 
@@ -156,10 +179,12 @@ Examples with overrideChildTca
 Overrides the crop variants
 ---------------------------
 
-This example overrides the crop variants in a configured fal relation:
+This example overrides the crop variants of the photo of a speaker. The
+photo can only be cropped to a square:
 
-..  literalinclude:: _Snippets/_overrideChildTcaCropVariants.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/320-tx_myextension_speaker-photo.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/320-tx_myextension_speaker-photo.php
+    :emphasize-lines: 15-33
 
 ..  _columns-inline-properties-override-child-tca-examples-define-fields:
 
@@ -169,10 +194,15 @@ Define which fields to show in the child table
 This example overrides the :ref:`showitem <types-properties-showitem>` field of
 the child table TCA:
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_OverrideChildTca.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 27-48
-    :emphasize-lines: 41
+..  figure:: /Images/Conference/InlineContentElements.png
+    :alt: The content elements of a conference
+    :class: with-shadow
+
+    The content elements of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/159-tx_myextension_conference-content_elements.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/159-tx_myextension_conference-content_elements.php
+    :emphasize-lines: 25-29
 
 ..  _columns-inline-properties-override-child-tca-examples-override-default:
 
@@ -182,10 +212,9 @@ Override the default value of a child tables field
 This overrides the `default` columns property of a child field in an inline relation from within
 the parent if a new child is created:
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_OverrideChildTca.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 27-48
-    :emphasize-lines: 37
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/159-tx_myextension_conference-content_elements.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/159-tx_myextension_conference-content_elements.php
+    :emphasize-lines: 19-23
 
 ..  _columns-inline-properties-override-child-tca-examples-override-foreign:
 
@@ -194,11 +223,12 @@ Override the foreign_selector field target
 
 This overrides the configuration of the field the
 :ref:`foreign_selector <columns-inline-properties-foreign-selector>` property
-points to. Here, the element browser of the speakers of an event opens on page
-42:
+points to. Here, the element browser of the attendees of a conference opens on
+the folder of the conference:
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_overrideChildTcaForeignSelector.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_event.php
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+    :emphasize-lines: 23-34
 
 ..  note::
     It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsoverrides>`
@@ -209,7 +239,30 @@ points to. Here, the element browser of the speakers of an event opens on page
 Example: Override by type
 -------------------------
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_OverrideChildTca.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 54-71
-    :emphasize-lines: 59
+A record type can change the `overrideChildTca` of an inline field with
+:ref:`columnsOverrides <types-properties-columnsoverrides>`. Here, the
+content elements of a record type `gallery` are of the type `textmedia` by
+default:
+
+..  code-block:: php
+
+    'types' => [
+        'gallery' => [
+            'showitem' => 'title, content_elements',
+            'columnsOverrides' => [
+                'content_elements' => [
+                    'config' => [
+                        'overrideChildTca' => [
+                            'columns' => [
+                                'CType' => [
+                                    'config' => [
+                                        'default' => 'textmedia',
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],

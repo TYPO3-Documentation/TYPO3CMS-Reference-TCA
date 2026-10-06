@@ -202,55 +202,6 @@ return [
 
   [
     'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_1n.php',
-    'fields' => ['columns/inline_1'],
-    'targetFileName' => 'CodeSnippets/Inline1nInline1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_mm.php',
-    'fields' => ['columns/inline_1'],
-    'targetFileName' => 'CodeSnippets/InlineMmInline1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_mm_child.php',
-    'fields' => ['columns/parents'],
-    'targetFileName' => 'CodeSnippets/InlineMmChildParents.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_mn.php',
-    'fields' => ['columns/inline_1'],
-    'targetFileName' => 'CodeSnippets/InlineMnInline1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_mn_child.php',
-    'fields' => ['columns/parents'],
-    'targetFileName' => 'CodeSnippets/InlineMnChildParents.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_mnsymmetric.php',
-    'fields' => ['columns/branches'],
-    'targetFileName' => 'CodeSnippets/InlineMnSymmetricBranches.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_usecombination.php',
-    'fields' => ['columns/inline_1'],
-    'targetFileName' => 'CodeSnippets/InlineUsecombinationcInline1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_type.php',
     'fields' => ['columns/record_type'],
     'targetFileName' => 'CodeSnippets/RecordType.rst.txt',

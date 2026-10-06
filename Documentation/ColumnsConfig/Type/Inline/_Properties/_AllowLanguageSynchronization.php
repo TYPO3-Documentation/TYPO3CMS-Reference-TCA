@@ -1,6 +1,0 @@
-<?php
-
-defined('TYPO3') or die();
-
-$GLOBALS['TCA']['tx_myextension_mytable']['columns']['my_inline']['config']
-  ['behaviour']['allowLanguageSynchronization'] = true;
