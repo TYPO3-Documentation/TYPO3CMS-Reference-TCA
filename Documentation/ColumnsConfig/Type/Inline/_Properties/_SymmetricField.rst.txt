@@ -13,4 +13,6 @@
 
 ..  rubric:: Example
 
-..  include:: /CodeSnippets/InlineMnSymmetricBranches.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/128-tx_myextension_conference-partners.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/128-tx_myextension_conference-partners.php
+    :emphasize-lines: 16

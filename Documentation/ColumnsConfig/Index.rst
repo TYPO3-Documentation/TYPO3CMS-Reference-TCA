@@ -72,7 +72,11 @@ inline
     <columns-inline>`. Also used for file resources via `sys_file_reference`
     table.
 
-    ..  include:: /Images/Rst/Inline1nInline1.rst.txt
+    ..  figure:: /Images/Conference/InlineTalks.png
+        :alt: The talks of a conference
+        :class: with-shadow
+
+        The talks of a conference
 
 input
     :ref:`Single line text input <columns-input>`. Used for a various different

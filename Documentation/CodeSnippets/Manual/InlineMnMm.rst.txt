@@ -1,4 +1,0 @@
-..  literalinclude:: /CodeSnippets/Manual/_tx_styleguide_inline_mn_mm.php
-    :caption: EXT:styleguide/Configuration/TCA/tx_styleguide_inline_mn_mm.php
-    :visible-lines: 24-54
-    :emphasize-lines: 30, 40

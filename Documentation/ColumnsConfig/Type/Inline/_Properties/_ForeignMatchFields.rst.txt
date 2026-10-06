@@ -12,17 +12,25 @@
 
 ..  rubric:: Examples
 
-Imagine you have a parent table called "company" and a child table called "persons". Now, if you want the company
-table to have two fields of type "inline", one called "employees" and one called "customers", both containing
-"persons". Then you could use a (hidden) field called "role" on the child (person) table to keep them apart.
-The match TCA configuration of the parent table would then look like this:
+A conference has two fields of type "inline", `registrations` and
+`waiting_list`. Both contain registrations. The field `status` of the
+registration, which the form does not show, keeps them apart:
 
-..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_foreign_match_fields.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_company.php
-    :visible-lines: 16-38
-    :emphasize-lines: 22, 34
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
+    :emphasize-lines: 16-18
 
-If the match field is made editable, for instance as a select drop-down of two values, the the relation would
-switch between the two parent fields after change an save. Imagine a user record having "open" and "closed" issues
-assigned, both pointing to the same table. The user then switches the status of an issue from "open" to "closed".
-On save, the issue would "move over" to the "closed" section in his view.
+..  figure:: /Images/Conference/InlineWaitingList.png
+    :alt: The waiting list of a conference
+    :class: with-shadow
+
+    The waiting list of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/127-tx_myextension_conference-waiting_list.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/127-tx_myextension_conference-waiting_list.php
+    :emphasize-lines: 17-19
+
+If the match field is made editable, for instance as a select drop-down of two values, the relation would
+switch between the two parent fields after change and save. If an editor changed the status of a
+registration from "waiting" to "confirmed", the registration would move from the waiting list to the
+registrations on save.

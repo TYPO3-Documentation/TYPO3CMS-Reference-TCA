@@ -75,6 +75,10 @@ $data['tt_content'] = [
         'pid' => 1, 'CType' => 'text', 'header' => 'Welcome',
         'bodytext' => '<p>The conferences of this year.</p>',
     ],
+    'NEWgettingthere' => [
+        'pid' => $pid, 'CType' => 'text', 'header' => 'Getting there',
+        'bodytext' => '<p>The congress center is next to the main station.</p>',
+    ],
 ];
 $data['tx_myextension_location'] = [
     'NEWbasel' => [
@@ -146,6 +150,35 @@ $data['sys_category'] = [
     'NEWcatfrontend' => ['pid' => $pid, 'title' => 'Frontend', 'parent' => 'NEWcattopics'],
     'NEWcatediting' => ['pid' => $pid, 'title' => 'Editing', 'parent' => 'NEWcattopics'],
 ];
+$data['fe_groups'] = [
+    'NEWfegroup' => ['pid' => $pid, 'title' => 'Attendees'],
+];
+$data['fe_users'] = [
+    'NEWfechris' => [
+        'pid' => $pid, 'username' => 'chris', 'name' => 'Chris Visitor',
+        'password' => 'Attendee-2027!', 'usergroup' => 'NEWfegroup',
+    ],
+    'NEWfesam' => [
+        'pid' => $pid, 'username' => 'sam', 'name' => 'Sam Listener',
+        'password' => 'Attendee-2027!', 'usergroup' => 'NEWfegroup',
+    ],
+    'NEWferobin' => [
+        'pid' => $pid, 'username' => 'robin', 'name' => 'Robin Example',
+        'password' => 'Attendee-2027!', 'usergroup' => 'NEWfegroup',
+    ],
+];
+$data['tx_myextension_registration'] = [
+    'NEWregchris' => ['pid' => $pid, 'attendee' => 'fe_users_NEWfechris', 'ticket' => 'regular', 'status' => 'confirmed'],
+    'NEWregsam' => ['pid' => $pid, 'attendee' => 'fe_users_NEWfesam', 'ticket' => 'student', 'status' => 'confirmed'],
+    'NEWregrobin' => ['pid' => $pid, 'attendee' => 'fe_users_NEWferobin', 'ticket' => 'regular', 'status' => 'waiting'],
+];
+$data['tx_myextension_hotel'] = [
+    'NEWhotelfair' => ['pid' => $pid, 'name' => 'Hotel at the Fair', 'city' => 'Basel'],
+    'NEWhotelriver' => ['pid' => $pid, 'name' => 'River Hotel', 'city' => 'Basel'],
+];
+$data['tx_myextension_partnership'] = [
+    'NEWpartnership' => ['pid' => $pid, 'partner' => 'NEWconfeditors', 'discount' => 20],
+];
 $data['tx_myextension_comment'] = [
     'NEWcomment' => [
         'pid' => $pid, 'name' => 'Chris Visitor', 'email' => 'chris@example.org',
@@ -175,6 +208,9 @@ $data['tx_myextension_conference'] = [
         'speakers' => 'NEWspada,NEWspben,NEWspkim',
         'talks' => 'NEWtalkkeynote,NEWtalktca,NEWtalkworkshop',
         'comments' => 'NEWcomment', 'logo' => 'NEWimglogo',
+        'registrations' => 'NEWregchris,NEWregsam', 'waiting_list' => 'NEWregrobin',
+        'hotels' => 'NEWhotelfair,NEWhotelriver', 'content_elements' => 'NEWgettingthere',
+        'partners' => 'NEWpartnership',
     ],
     'NEWconfeditors' => [
         'pid' => $pid, 'title' => 'Editors Day 2027',
@@ -203,6 +239,7 @@ $uids = [
     'location' => $dataHandler->substNEWwithIDs['NEWbasel'],
     'hall' => $dataHandler->substNEWwithIDs['NEWhall'],
     'backendLayout' => $dataHandler->substNEWwithIDs['NEWlayout'],
+    'hotel' => $dataHandler->substNEWwithIDs['NEWhotelfair'],
 ];
 $conference = $uids['conference'];
 
