@@ -195,6 +195,12 @@
       <trans-unit id="conference.title" resname="conference.title">
         <source>Title</source>
       </trans-unit>
+      <trans-unit id="conference.tracks" resname="conference.tracks">
+        <source>Tracks</source>
+      </trans-unit>
+      <trans-unit id="conference.tracks.description" resname="conference.tracks.description">
+        <source>One track per line. Each talk belongs to one of them.</source>
+      </trans-unit>
       <trans-unit id="conference.waiting_list" resname="conference.waiting_list">
         <source>Waiting list</source>
       </trans-unit>
@@ -369,6 +375,9 @@
       <trans-unit id="plugin.conferencelist.sheet.highlights.description" resname="plugin.conferencelist.sheet.highlights.description">
         <source>Shown above the list of conferences</source>
       </trans-unit>
+      <trans-unit id="plugin.conferencelist.timezone" resname="plugin.conferencelist.timezone">
+        <source>Show the times in this time zone</source>
+      </trans-unit>
       <trans-unit id="plugin.conferencelist.title" resname="plugin.conferencelist.title">
         <source>Conference list</source>
       </trans-unit>
@@ -413,6 +422,9 @@
       </trans-unit>
       <trans-unit id="speaker.email" resname="speaker.email">
         <source>Email</source>
+      </trans-unit>
+      <trans-unit id="speaker.email.information" resname="speaker.email.information">
+        <source>Only the organizers see the email address.</source>
       </trans-unit>
       <trans-unit id="speaker.identifier" resname="speaker.identifier">
         <source>Identifier</source>
@@ -641,6 +653,9 @@
       </trans-unit>
       <trans-unit id="talk.topic" resname="talk.topic">
         <source>Topic</source>
+      </trans-unit>
+      <trans-unit id="talk.track" resname="talk.track">
+        <source>Track</source>
       </trans-unit>
       <trans-unit id="tt_content.group.conference" resname="tt_content.group.conference">
         <source>Conferences</source>

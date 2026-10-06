@@ -22,7 +22,11 @@ fieldControl
     See :ref:`type=group <columns-group-properties-fieldcontrol>` for examples.
 
 
-    ..  include:: /Images/Rst/SelectMultiplesidebyside6.rst.txt
+    ..  figure:: /Images/Conference/SelectMultipleSideBySideFieldControl.png
+        :alt: The speakers of a conference with field controls
+        :class: with-shadow
+
+        The speakers of a conference with field controls
 
 ..  toctree::
     AddRecord

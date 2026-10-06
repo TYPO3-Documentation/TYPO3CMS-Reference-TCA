@@ -29,7 +29,7 @@ Notice the :xml:`<settings.mode>` tag in the DataStructure:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
     :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-    :visible-lines: 1-29, 91-93, 135-136
+    :visible-lines: 1-29, 112-114, 156-157
     :emphasize-lines: 8
 
 It's clear that the contents of :xml:`<settings.mode>` is a direct reflection of
@@ -73,8 +73,8 @@ description:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
     :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-    :visible-lines: 1-7, 91-99, 133-136
-    :emphasize-lines: 3, 94, 96-97
+    :visible-lines: 1-7, 112-120, 154-157
+    :emphasize-lines: 3, 115, 117-118
 
 Notice how the data of the two sheets are separated.
 
@@ -95,8 +95,8 @@ highlights, each with a title and a link:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
     :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-    :visible-lines: 107-131
-    :emphasize-lines: 110, 112
+    :visible-lines: 128-152
+    :emphasize-lines: 131, 133
 
 ..  _columns-flex-example-rte:
 
@@ -108,5 +108,5 @@ tag of the field:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
     :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-    :visible-lines: 100-106
-    :emphasize-lines: 104
+    :visible-lines: 121-127
+    :emphasize-lines: 125

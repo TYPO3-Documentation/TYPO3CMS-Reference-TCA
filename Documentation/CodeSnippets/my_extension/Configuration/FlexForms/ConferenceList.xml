@@ -88,6 +88,27 @@
               </prioritizedCountries>
             </config>
           </settings.country>
+          <settings.timezone>
+            <label>my_extension.db:plugin.conferencelist.timezone</label>
+            <config>
+              <type>select</type>
+              <renderType>selectSingle</renderType>
+              <items>
+                <numIndex index="0">
+                  <label></label>
+                  <value></value>
+                </numIndex>
+              </items>
+              <itemsProcessors>
+                <numIndex index="100">
+                  <class>MyVendor\MyExtension\Backend\ItemsProcessor\TimezoneItemsProcessor</class>
+                  <parameters>
+                    <regions>Europe</regions>
+                  </parameters>
+                </numIndex>
+              </itemsProcessors>
+            </config>
+          </settings.timezone>
         </el>
       </ROOT>
     </sDEF>
