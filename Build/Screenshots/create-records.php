@@ -104,6 +104,9 @@ $data['tx_myextension_speaker'] = [
         'bio' => '<p>Ada builds extensions for <strong>public institutions</strong>.</p>', 'photo' => 'NEWimgada',
         'short_bio' => 'Ada builds TYPO3 extensions for public institutions.',
         'topics' => 'tca,fluid',
+        'social_links' => '{"mastodon": "https://example.org/@ada", "code": "https://example.org/ada"}',
+        // Fixed, as a generated identifier would change every screenshot
+        'identifier' => '01999b10-6c00-7d2a-9a3e-2f1b8c4d5e6f',
     ],
     'NEWspben' => [
         'pid' => $pid, 'salutation' => 'mr', 'name' => 'Ben Sample', 'company' => 'Sample Ltd.',
@@ -240,6 +243,7 @@ $uids = [
     'hall' => $dataHandler->substNEWwithIDs['NEWhall'],
     'backendLayout' => $dataHandler->substNEWwithIDs['NEWlayout'],
     'hotel' => $dataHandler->substNEWwithIDs['NEWhotelfair'],
+    'comment' => $dataHandler->substNEWwithIDs['NEWcomment'],
 ];
 $conference = $uids['conference'];
 

@@ -28,23 +28,29 @@ or TypoScript output.
 Example: Define a basic country picker
 ======================================
 
-..  figure:: /Images/ManualScreenshots/CountryBasic.png
-    :alt: A country picker in the TYPO3 backend, displaying the ISO2 Code, here 'CH' and the flag of the country
+..  figure:: /Images/Conference/CountrySpeaker.png
+    :alt: The country of a speaker
+    :class: with-shadow
 
-The following code displays a basic country picker with Suisse (Iso code `CH`)
-as default value. The localized name is displayed to the backend users.
+    The country of a speaker
+
+The following code displays a basic country picker for the country of a
+speaker. The localized name is displayed to the backend users.
 
 ..  tabs::
 
     ..  group-tab:: TCA
 
-        ..  literalinclude:: _country-basic.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_address.php
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/325-tx_myextension_speaker-country.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/325-tx_myextension_speaker-country.php
+            :emphasize-lines: 11-12
 
     ..  group-tab:: Flexform
 
-        ..  literalinclude:: _country-basic-flex.xml
-            :caption: EXT:my_extension/Configuration/FlexForms/Address.xml
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+            :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+            :visible-lines: 1-7, 79-95
+            :emphasize-lines: 82-83
 
 ..  _columns-country-example-extended:
 
@@ -52,19 +58,29 @@ Extended country picker example
 ===============================
 
 The following example demonstrates most of the properties of the
-country picker TCA type:
+country picker TCA type. A location can only be in one of a few countries,
+and Switzerland, Germany, and Austria are listed first:
+
+..  figure:: /Images/Conference/CountryLocation.png
+    :alt: The country of a location
+    :class: with-shadow
+
+    The country of a location
 
 ..  tabs::
 
     ..  group-tab:: TCA
 
-        ..  literalinclude:: _country-extended.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_address.php
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/410-tx_myextension_location-country.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/410-tx_myextension_location-country.php
+            :emphasize-lines: 12-22
 
     ..  group-tab:: Flexform
 
-        ..  literalinclude:: _country-extended-flex.xml
-            :caption: EXT:my_extension/Configuration/FlexForms/Address.xml
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+            :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+            :visible-lines: 1-7, 79-95
+            :emphasize-lines: 84-88
 
 Additional countries can be added via the
 `BeforeCountriesEvaluatedEvent <https://docs.typo3.org/permalink/t3coreapi:beforecountriesevaluatedevent>`_.

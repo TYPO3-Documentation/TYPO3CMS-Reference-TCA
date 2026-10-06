@@ -81,17 +81,20 @@
         A config array to provide regex based definitions for string replacement.
         Case-insensitive and wildcard replacement is possible.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Slug/_Snippets/_RegexReplacements.php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_product.php
+        The slug of a conference leaves out a year at the end of the title:
 
-            .. note::
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+            :emphasize-lines: 19-22
 
-               Pattern replacement operates on original, unsanitized field values —
-               values are not converted to lowercase or processed. Replacement applies only to fields
-               defined in :php:`['generatorOptions']['fields']`.
+        ..  note::
 
-               Automatic character detection or escaping is not performed, so patterns must
-               be written carefully.
+            Pattern replacement operates on original, unsanitized field values —
+            values are not converted to lowercase or processed. Replacement applies only to fields
+            defined in :php:`['generatorOptions']['fields']`.
+
+            Automatic character detection or escaping is not performed, so patterns must
+            be written carefully.
 
     ..  confval:: replacements
         :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['replacements']
@@ -103,13 +106,12 @@
         with the key being the string to replace and the value being the replacement
         string.
 
-        ..  literalinclude:: _Snippets/_Replacements.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
-            :visible-lines: 20-33
-            :emphasize-lines: 26-28
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+            :emphasize-lines: 16-18
 
-        A product titled `Fish & Chips` is given the slug `fish-and-chips`
-        instead of `fish-chips`.
+        A conference titled `Tips & Tricks Day` is given a slug ending in
+        `tips-and-tricks-day` instead of `tips-tricks-day`.
 
         The replacements are applied to each field of
         :confval:`fields <slug-generatorOptions-fields>` on its own, before the
@@ -153,10 +155,11 @@
         slug via custom TCA generation options.
 
         A hook is registered as `<class name>-><method name>`, for example for
-        the slug of the `pages` table:
+        the slug of a conference:
 
-        ..  literalinclude:: /ColumnsConfig/Type/Slug/_Snippets/_PostModifiers.php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+            :emphasize-lines: 23-25
 
         The method receives an array with the following keys:
 
@@ -177,8 +180,10 @@
         `fieldName`
             The name of the slug field
 
-        ..  literalinclude:: /ColumnsConfig/Type/Slug/_Snippets/_SlugModifier.php
-            :caption: EXT:my_extension/Classes/Slug/SlugModifier.php
+        The modifier puts the year of the conference in front of the slug:
+
+        ..  literalinclude:: /CodeSnippets/my_extension/Classes/Slug/ConferenceSlugModifier.php
+            :caption: EXT:my_extension/Classes/Slug/ConferenceSlugModifier.php
 
         All hooks need to return the modified slug value.
 
@@ -186,25 +191,50 @@
 
 ..  rubric:: Example: Generate a concatenated slug
 
-..  include:: /Images/Rst/Slug4.rst.txt
+The slug of a talk joins its type and its title with the field separator `/`:
 
-..  include:: /CodeSnippets/Slug4.rst.txt
+..  figure:: /Images/Conference/SlugTalk.png
+    :alt: The slug of a workshop
+    :class: with-shadow
+
+    The slug of a workshop
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/205-tx_myextension_talk-slug.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/205-tx_myextension_talk-slug.php
+    :emphasize-lines: 15
 
 ..  _tca-example-slug-5:
 
 ..  rubric:: Example: Generate a slug from one field with a backup field if first is empty
 
-..  include:: /Images/Rst/Slug5.rst.txt
+The slug of a conference uses the short title. If the short title is empty,
+it uses the title:
 
-..  include:: /CodeSnippets/Slug5.rst.txt
+..  figure:: /Images/Conference/SlugConference.png
+    :alt: The slug of a conference
+    :class: with-shadow
+
+    The slug of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+    :emphasize-lines: 15
 
 ..  _tca-example-slug-6:
 
-..  rubric:: Example: remove all strings "(f/m)" from job titles
+..  rubric:: Example: Move the year of a conference to the front
 
-This will change the provided slug **'Some Job in city1/city2 (f/m)'**
-to **'some-job-in-city1-city2'**.
+The title **'TYPO3 Developer Days 2027'** is given the slug
+**'2027/typo3-developer-days'**. The regular expression removes the year at
+the end of the title, and the modifier adds the year of the conference date
+in front:
 
-..  include:: /Images/Rst/Slug3.rst.txt
+..  figure:: /Images/Conference/SlugConference.png
+    :alt: The slug of a conference
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Slug3.rst.txt
+    The slug of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+    :emphasize-lines: 19-25

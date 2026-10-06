@@ -9,6 +9,10 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_speaker', [
     'label' => 'my_extension.db:speaker.social_links',
     'config' => [
       'type' => 'json',
+      'searchable' => false,
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
     ],
   ],
 ]);

@@ -41,10 +41,17 @@
 
 ..  rubric:: Example: Set a slug field prefix
 
-..  include:: /Images/Rst/Slug1.rst.txt
+..  figure:: /Images/Conference/SlugTalk.png
+    :alt: The slug of a workshop with the path of the program in front
+    :class: with-shadow
 
-..  include:: /CodeSnippets/Slug1.rst.txt
+    The slug of a workshop with the path of the program in front
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/205-tx_myextension_talk-slug.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/205-tx_myextension_talk-slug.php
+    :emphasize-lines: 17-19
 
 The user function can be implemented like this:
 
-..  include:: /CodeSnippets/SlugPrefix.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Slug/TalkSlugPrefix.php
+    :caption: EXT:my_extension/Classes/Slug/TalkSlugPrefix.php

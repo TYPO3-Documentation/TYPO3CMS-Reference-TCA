@@ -13,6 +13,6 @@
 
 ..  rubric:: Example: fallbackCharacter and fieldSeparator set
 
-..  include:: /Images/Rst/Slug2.rst.txt
-
-..  include:: /CodeSnippets/Slug2.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/105-tx_myextension_conference-slug.php
+    :emphasize-lines: 27
