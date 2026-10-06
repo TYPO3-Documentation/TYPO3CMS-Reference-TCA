@@ -40,12 +40,11 @@
                 root: 123
 
 
-        ..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
-            :visible-lines: 7, 21-29
-            :emphasize-lines: 26
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/285-tx_myextension_talk-topic.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/285-tx_myextension_talk-topic.php
+            :emphasize-lines: 15
 
-        This will evaluate to :php:`'startingPoints' => '1,2,123'`.
+        This will evaluate to :php:`'startingPoints' => '123'`.
 
     appearance (array, optional)
         showHeader (boolean)

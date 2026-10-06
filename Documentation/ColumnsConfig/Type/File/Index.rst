@@ -30,10 +30,11 @@ is generated automatically.
 Example
 =======
 
-..  literalinclude:: /ColumnsConfig/Type/File/_Snippets/_file-field.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 16-23
-    :emphasize-lines: 19
+A conference has one logo and any number of impressions:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+    :emphasize-lines: 11,13,20-21
 
 ..  _columns-file-properties:
 

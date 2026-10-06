@@ -32,12 +32,11 @@
     This way uniqueness can be ensured and it is possible to find the field
     where the table is used quickly.
 
-    ..  rubric:: Example:
+    ..  rubric:: Example: Related talks in an intermediate table
 
-    ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_Mm.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_mymodel1.php
-        :visible-lines: 16-23
-        :emphasize-lines: 21
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/275-tx_myextension_talk-related_talks.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/275-tx_myextension_talk-related_talks.php
+        :emphasize-lines: 13
 
 ..  _columns-group-properties-mm-match-fields:
 ..  confval:: MM_match_fields

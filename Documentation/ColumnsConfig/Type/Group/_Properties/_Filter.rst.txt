@@ -20,28 +20,20 @@
         Do not confuse the filter values with the page tree selector on the left side. To change the entry page in the navigation
         use :ref:`elementBrowserEntryPoints <columns-group-properties-elementbrowserentrypoints>` instead.
 
-    Multiple filters can be defined, and an array of configuration data for each of the filters can be supplied:
+    `filter` is a list of filters. Each filter has a `userFunc` and optional
+    `parameters`. The filters are applied one after the other.
 
-    ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_FilterMultiple.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_person.php
-        :visible-lines: 3-4, 18-38
-        :emphasize-lines: 23
+..  rubric:: Example: Only gold sponsors as main sponsor
 
-..  rubric:: Example:
+The main sponsor of a conference is one of the sponsors of the tier
+"gold". The filter checks the tier of each selected sponsor:
 
-Say you have a "person" table with fields "gender" (radio buttons) as well as "mother" and "father", both group
-fields with relations to the same table.
-
-Now, in the field "mother" it should certainly only be possible to create relations to female persons. In that
-case, you could use the filter functionality to make sure only females can be selected in that field.
-
-..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_FilterPerson.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_person.php
-    :visible-lines: 3, 27-42
-    :emphasize-lines: 37
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/156-tx_myextension_conference-main_sponsor.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/156-tx_myextension_conference-main_sponsor.php
+    :emphasize-lines: 17-24
 
 The filter receives the selected values as `<table>_<uid>` strings in
 :php:`$parameters['values']` and returns the ones to keep:
 
-..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_FilterClass.php
-    :caption: EXT:my_extension/Classes/Filter/GenderFilter.php
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Backend/Filter/SponsorTierFilter.php
+    :caption: EXT:my_extension/Classes/Backend/Filter/SponsorTierFilter.php

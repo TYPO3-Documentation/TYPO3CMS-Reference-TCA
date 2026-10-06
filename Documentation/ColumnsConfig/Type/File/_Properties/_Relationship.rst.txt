@@ -31,16 +31,15 @@
     without `relationship` still provides a collection, even if `maxitems`
     is `1`.
 
-    In the following example, a record has exactly one image:
+    In the following example, a conference has one logo:
 
-    ..  literalinclude:: /ColumnsConfig/Type/File/_Snippets/_Relationship.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_teaser.php
-        :visible-lines: 16-23
-        :emphasize-lines: 21
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+        :emphasize-lines: 14
 
-    The image can then be output without a loop:
+    The logo can then be output without a loop:
 
     ..  code-block:: html
-        :caption: EXT:my_extension/Resources/Private/Templates/Teaser.html
+        :caption: EXT:my_extension/Resources/Private/Templates/Conference.html
 
-        <f:image image="{teaser.image}" />
+        <f:image image="{conference.logo}" />

@@ -14,9 +14,14 @@ Simple category field
 In the following example a category tree is displayed and multiple categories
 can be selected.
 
-..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
-    :visible-lines: 7-13
+..  figure:: /Images/Conference/CategoryConference.png
+    :alt: The categories of a conference
+    :class: with-shadow
+
+    The categories of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/160-tx_myextension_conference-categories.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/160-tx_myextension_conference-categories.php
     :emphasize-lines: 11
 
 The relationship gets stored in the intermediate table
@@ -31,10 +36,15 @@ One to one relation category field
 In the following example a category tree is displayed, but only one
 category can be selected.
 
-..  literalinclude:: /ColumnsConfig/Type/Category/_Snippets/_Category.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
-    :visible-lines: 7, 14-20
-    :emphasize-lines: 18
+..  figure:: /Images/Conference/CategoryTopic.png
+    :alt: The topic of a talk
+    :class: with-shadow
+
+    The topic of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/285-tx_myextension_talk-topic.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/285-tx_myextension_talk-topic.php
+    :emphasize-lines: 12
 
 ..  _columns-category-flexform-example:
 
@@ -46,8 +56,10 @@ Due to some limitations in FlexForm, the `manyToMany` relationship is not
 supported. Therefore, the default relationship - used if none is defined -
 is `oneToMany`.
 
-An example of the "oneToMany" use case is EXT:news,
-which allows to only display news of specific categories in the list view:
+The plugin of the conference extension uses the "oneToMany" use case. It
+lists only the conferences of the selected categories:
 
-..  literalinclude:: _Snippets/_CategoryFlexform.xml
-    :caption: EXT:my_extension/Configuration/FlexForm/SomeFlexForm.xml
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
+    :visible-lines: 1-7, 38-43, 79-83
+    :emphasize-lines: 41

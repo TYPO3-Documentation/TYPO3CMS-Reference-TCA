@@ -33,16 +33,15 @@
     without `relationship` still provides a collection, even if `maxitems`
     is `1`.
 
-    In the following example, each course has one teacher:
+    In the following example, each talk has one speaker:
 
-    ..  literalinclude:: /ColumnsConfig/Type/Group/_Snippets/_Relationship.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_course.php
-        :visible-lines: 16-23
-        :emphasize-lines: 21
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+        :emphasize-lines: 14
 
-    The teacher can then be output without a loop:
+    The speaker can then be output without a loop:
 
     ..  code-block:: html
-        :caption: EXT:my_extension/Resources/Private/Templates/Course.html
+        :caption: EXT:my_extension/Resources/Private/Templates/Talk.html
 
-        Teacher: {course.teacher.name}
+        Speaker: {talk.speaker.name}
