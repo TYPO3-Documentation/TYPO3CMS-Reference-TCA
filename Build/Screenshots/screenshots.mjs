@@ -280,6 +280,37 @@ const screenshots = {
     url: editUrl('tx_myextension_location', hall),
     element: field('parent'),
   },
+  GroupSpeaker: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('speaker'),
+  },
+  GroupRelatedTalks: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('related_talks'),
+  },
+  GroupMainSponsor: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('main_sponsor'),
+  },
+  GroupRelatedContent: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    element: field('related_content'),
+  },
+  FolderMaterials: {
+    url: editUrl('tx_myextension_talk', workshop),
+    element: field('materials'),
+  },
+  CategoryTopic: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('topic'),
+  },
+  CategoryConference: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Categories',
+    element: field('categories'),
+  },
 };
 
 // Tall, so that most forms fit without scrolling

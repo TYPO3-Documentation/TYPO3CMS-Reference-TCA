@@ -12,6 +12,24 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
       'allowed' => 'tx_myextension_speaker',
       'maxitems' => 1,
       'relationship' => 'manyToOne',
+      // The speakers are stored in the same folder as the talks
+      'elementBrowserEntryPoints' => [
+        'tx_myextension_speaker' => '###CURRENT_PID###',
+      ],
+      'fieldControl' => [
+        'editPopup' => [
+          'disabled' => false,
+        ],
+        'addRecord' => [
+          'disabled' => false,
+        ],
+        'listModule' => [
+          'disabled' => false,
+        ],
+      ],
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
     ],
   ],
 ]);

@@ -202,34 +202,6 @@ return [
 
   [
     'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_group.php',
-    'fields' => ['columns/group_db_3'],
-    'targetFileName' => 'CodeSnippets/GroupDb3.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_group.php',
-    'fields' => ['columns/group_db_8'],
-    'targetFileName' => 'CodeSnippets/GroupDb8.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_group.php',
-    'fields' => ['columns/group_db_10'],
-    'targetFileName' => 'CodeSnippets/GroupDb10.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_group.php',
-    'fields' => ['columns/group_db_11'],
-    'targetFileName' => 'CodeSnippets/GroupDb11.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_inline_1n.php',
     'fields' => ['columns/inline_1'],
     'targetFileName' => 'CodeSnippets/Inline1nInline1.rst.txt',

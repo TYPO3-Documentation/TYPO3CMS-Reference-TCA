@@ -30,8 +30,9 @@ $GLOBALS['BE_USER']->authenticate();
 $GLOBALS['LANG'] = $container->get(LanguageServiceFactory::class)
     ->createFromUserPreferences($GLOBALS['BE_USER']);
 
-addGermanToSite($container->get(SiteFinder::class), $container->get(SiteWriter::class));
 $images = createImages(Environment::getPublicPath() . '/fileadmin/conference/');
+// The folder with the materials of the workshop
+GeneralUtility::mkdir_deep(Environment::getPublicPath() . '/fileadmin/workshops/first-form-element/');
 
 $process = static function (array $data, array $commands = []): DataHandler {
     $dataHandler = GeneralUtility::makeInstance(DataHandler::class);
@@ -123,12 +124,27 @@ $data['tx_myextension_talk'] = [
         'speaker' => 'NEWspben', 'start_time' => strtotime('2027-05-12 14:00'), 'duration' => 180,
         'room' => 'Room A', 'level' => 2, 'max_participants' => 20,
         'requirements' => "A laptop with DDEV installed:\n\n\tddev config --project-type=typo3\n\tddev start",
+        'materials' => '1:/workshops/first-form-element/',
     ],
     'NEWtalkkeynote' => [
         'pid' => $pid, 'talk_type' => 'keynote', 'title' => 'Twenty years of TCA',
         'speaker' => 'NEWspkim', 'start_time' => strtotime('2027-05-12 09:00'), 'duration' => 60,
         'room' => 'Main hall',
     ],
+];
+$data['tx_myextension_sponsor'] = [
+    'NEWsphosting' => [
+        'pid' => $pid, 'name' => 'Example Hosting', 'tier' => 'gold', 'logo' => 'NEWimghosting',
+    ],
+    'NEWspagency' => [
+        'pid' => $pid, 'name' => 'Sample Agency', 'tier' => 'silver', 'logo' => 'NEWimgagency',
+    ],
+];
+$data['sys_category'] = [
+    'NEWcattopics' => ['pid' => $pid, 'title' => 'Topics'],
+    'NEWcatbackend' => ['pid' => $pid, 'title' => 'Backend', 'parent' => 'NEWcattopics'],
+    'NEWcatfrontend' => ['pid' => $pid, 'title' => 'Frontend', 'parent' => 'NEWcattopics'],
+    'NEWcatediting' => ['pid' => $pid, 'title' => 'Editing', 'parent' => 'NEWcattopics'],
 ];
 $data['tx_myextension_comment'] = [
     'NEWcomment' => [
@@ -173,6 +189,8 @@ $data['sys_file_reference'] = [
     'NEWimgleipzig' => $reference('leipzig.png', 'tx_myextension_location', 'image', 'NEWleipzig'),
     'NEWimgada' => $reference('ada.png', 'tx_myextension_speaker', 'photo', 'NEWspada'),
     'NEWimglogo' => $reference('logo.png', 'tx_myextension_conference', 'logo', 'NEWconfdev'),
+    'NEWimghosting' => $reference('hosting.png', 'tx_myextension_sponsor', 'logo', 'NEWsphosting'),
+    'NEWimgagency' => $reference('agency.png', 'tx_myextension_sponsor', 'logo', 'NEWspagency'),
 ];
 $dataHandler = $process($data);
 $uids = [
@@ -191,6 +209,21 @@ $conference = $uids['conference'];
 // The days of a workshop come from its conference, which has to exist when
 // the value is saved: the first two days of the conference
 $process(['tx_myextension_talk' => [$uids['workshop'] => ['days' => 3]]]);
+
+// Relations that need the final uids: the filter of the main sponsor reads
+// the sponsor from the database
+$process([
+    'tx_myextension_conference' => [$conference => [
+        'main_sponsor' => 'tx_myextension_sponsor_' . $dataHandler->substNEWwithIDs['NEWsphosting'],
+        'related_content' => 'pages_1,tt_content_' . $uids['contentElement'],
+        'categories' => $dataHandler->substNEWwithIDs['NEWcatbackend'],
+    ]],
+    'tx_myextension_talk' => [$uids['talk'] => [
+        'related_talks' => 'tx_myextension_talk_' . $uids['workshop'] . ',tx_myextension_talk_' . $dataHandler->substNEWwithIDs['NEWtalkkeynote'],
+        'topic' => $dataHandler->substNEWwithIDs['NEWcatbackend'],
+    ]],
+]);
+configureSite($container->get(SiteFinder::class), $container->get(SiteWriter::class), $dataHandler->substNEWwithIDs['NEWcattopics']);
 
 // German translations of the storage folder, the first conference and a speaker
 $dataHandler = $process([], [
@@ -219,9 +252,14 @@ GeneralUtility::makeInstance(ConnectionPool::class)
 file_put_contents(Environment::getVarPath() . '/screenshot-records.json', json_encode($uids));
 echo 'Created the example records: ' . json_encode($uids) . "\n";
 
-function addGermanToSite(SiteFinder $siteFinder, SiteWriter $siteWriter): void
+/**
+ * Adds German to the site, and the root category that the topic of a talk
+ * starts from
+ */
+function configureSite(SiteFinder $siteFinder, SiteWriter $siteWriter, int $rootCategory): void
 {
     $site = $siteFinder->getSiteByIdentifier('main')->getConfiguration();
+    $site['categories']['root'] = $rootCategory;
     $site['languages'][1] = [
         'title' => 'Deutsch',
         'enabled' => true,
@@ -248,6 +286,8 @@ function createImages(string $folder): array
         'leipzig.png' => [[96, 125, 139], 'Kongresshalle'],
         'ada.png' => [[255, 135, 0], 'Ada'],
         'logo.png' => [[41, 37, 69], 'T3DD 2027'],
+        'hosting.png' => [[200, 164, 0], 'Example Hosting'],
+        'agency.png' => [[120, 120, 120], 'Sample Agency'],
     ];
     foreach ($images as $name => [$color, $label]) {
         $image = imagecreatetruecolor(800, 600);

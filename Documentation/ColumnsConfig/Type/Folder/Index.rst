@@ -28,12 +28,17 @@ is generated automatically.
 Example
 =======
 
-..  include:: /Images/Rst/GroupFolder1.rst.txt
+A workshop refers to the folder with its materials:
 
-..  literalinclude:: /ColumnsConfig/Type/Folder/_Snippets/_Folder.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-    :visible-lines: 16-21
-    :emphasize-lines: 19
+..  figure:: /Images/Conference/FolderMaterials.png
+    :alt: The folder with the materials of a workshop
+    :class: with-shadow
+
+    The folder with the materials of a workshop
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/280-tx_myextension_talk-materials.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/280-tx_myextension_talk-materials.php
+    :emphasize-lines: 11
 
 ..  _columns-folder-properties:
 

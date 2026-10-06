@@ -29,9 +29,15 @@
 
         ..  rubric:: Example: Group field with add popup enabled
 
-        ..  include:: /Images/Rst/GroupDb1.rst.txt
+        ..  figure:: /Images/Conference/GroupSpeaker.png
+            :alt: The speaker of a talk with field controls
+            :class: with-shadow
 
-        ..  include:: /CodeSnippets/GroupDb1.rst.txt
+            The speaker of a talk with field controls
+
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+            :emphasize-lines: 23-25
 
         ..  confval:: renderType
             :name: group-fieldcontrol-addrecord-rendertype
@@ -61,9 +67,15 @@
 
         ..  rubric:: Example: Group field with edit popup enabled
 
-        ..  include:: /Images/Rst/GroupDb1.rst.txt
+        ..  figure:: /Images/Conference/GroupSpeaker.png
+            :alt: The speaker of a talk with field controls
+            :class: with-shadow
 
-        ..  include:: /CodeSnippets/GroupDb1.rst.txt
+            The speaker of a talk with field controls
+
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+            :emphasize-lines: 20-22
 
         ..  confval:: renderType
             :name: group-fieldcontrol-editpopup-rendertype
@@ -91,11 +103,17 @@
             The :guilabel:`Content > Records` module control is disabled by default, enable it if needed. It is shown below the `add record`
             control if not changed by `below` or `after` settings.
 
-        ..  rubric:: Example: Group field with add list module enabled
+        ..  rubric:: Example: Group field with the list module enabled
 
-        ..  include:: /Images/Rst/GroupDb1.rst.txt
+        ..  figure:: /Images/Conference/GroupSpeaker.png
+            :alt: The speaker of a talk with field controls
+            :class: with-shadow
 
-        ..  include:: /CodeSnippets/GroupDb1.rst.txt
+            The speaker of a talk with field controls
+
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/210-tx_myextension_talk-speaker.php
+            :emphasize-lines: 26-28
 
         ..  confval:: renderType
             :name: group-fieldcontrol-listmodule-rendertype
@@ -154,14 +172,28 @@
 
     ..  rubric:: Example: Group field with element browser enabled
 
-    ..  include:: /Images/Rst/GroupDb1.rst.txt
+    The element browser is enabled by default. The speaker of a talk shows it
+    as the folder button:
 
-    ..  include:: /CodeSnippets/GroupDb1.rst.txt
+    ..  figure:: /Images/Conference/GroupSpeaker.png
+        :alt: The speaker of a talk with the element browser button
+        :class: with-shadow
+
+        The speaker of a talk with the element browser button
 
     ..  rubric:: Example: Group field with element browser disabled
 
-    The element browser control can be disabled by setting :php:`disabled = true`:
+    The element browser control can be disabled by setting :php:`disabled = true`.
+    The element browser does not list the records of a table with
+    :confval:`hideTable <ctrl-hideTable>`, such as the talks. A related talk
+    is found with the search field instead:
 
-    ..  include:: /Images/Rst/GroupDb3.rst.txt
+    ..  figure:: /Images/Conference/GroupRelatedTalks.png
+        :alt: The related talks of a talk without the element browser button
+        :class: with-shadow
 
-    ..  include:: /CodeSnippets/GroupDb3.rst.txt
+        The related talks of a talk without the element browser button
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/275-tx_myextension_talk-related_talks.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/275-tx_myextension_talk-related_talks.php
+        :emphasize-lines: 14-20

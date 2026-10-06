@@ -102,6 +102,9 @@
       <trans-unit id="conference.logo" resname="conference.logo">
         <source>Logo</source>
       </trans-unit>
+      <trans-unit id="conference.main_sponsor" resname="conference.main_sponsor">
+        <source>Main sponsor</source>
+      </trans-unit>
       <trans-unit id="conference.overlay_color" resname="conference.overlay_color">
         <source>Overlay color</source>
       </trans-unit>
@@ -122,6 +125,9 @@
       </trans-unit>
       <trans-unit id="conference.registration_open.open" resname="conference.registration_open.open">
         <source>Open</source>
+      </trans-unit>
+      <trans-unit id="conference.related_content" resname="conference.related_content">
+        <source>Related pages and content</source>
       </trans-unit>
       <trans-unit id="conference.seats" resname="conference.seats">
         <source>Seats</source>
@@ -360,6 +366,27 @@
       <trans-unit id="speaker.website" resname="speaker.website">
         <source>Website</source>
       </trans-unit>
+      <trans-unit id="sponsor" resname="sponsor">
+        <source>Sponsor</source>
+      </trans-unit>
+      <trans-unit id="sponsor.logo" resname="sponsor.logo">
+        <source>Logo</source>
+      </trans-unit>
+      <trans-unit id="sponsor.name" resname="sponsor.name">
+        <source>Name</source>
+      </trans-unit>
+      <trans-unit id="sponsor.tier" resname="sponsor.tier">
+        <source>Tier</source>
+      </trans-unit>
+      <trans-unit id="sponsor.tier.bronze" resname="sponsor.tier.bronze">
+        <source>Bronze</source>
+      </trans-unit>
+      <trans-unit id="sponsor.tier.gold" resname="sponsor.tier.gold">
+        <source>Gold</source>
+      </trans-unit>
+      <trans-unit id="sponsor.tier.silver" resname="sponsor.tier.silver">
+        <source>Silver</source>
+      </trans-unit>
       <trans-unit id="tab.comments" resname="tab.comments">
         <source>Comments</source>
       </trans-unit>
@@ -447,6 +474,9 @@
       <trans-unit id="talk.level.expert" resname="talk.level.expert">
         <source>Expert</source>
       </trans-unit>
+      <trans-unit id="talk.materials" resname="talk.materials">
+        <source>Materials</source>
+      </trans-unit>
       <trans-unit id="talk.max_participants" resname="talk.max_participants">
         <source>Maximum number of participants</source>
       </trans-unit>
@@ -458,6 +488,9 @@
       </trans-unit>
       <trans-unit id="talk.recording_allowed.item" resname="talk.recording_allowed.item">
         <source>The speaker agrees to be recorded</source>
+      </trans-unit>
+      <trans-unit id="talk.related_talks" resname="talk.related_talks">
+        <source>Related talks</source>
       </trans-unit>
       <trans-unit id="talk.requirements" resname="talk.requirements">
         <source>Requirements</source>
@@ -494,6 +527,9 @@
       </trans-unit>
       <trans-unit id="talk.title" resname="talk.title">
         <source>Title</source>
+      </trans-unit>
+      <trans-unit id="talk.topic" resname="talk.topic">
+        <source>Topic</source>
       </trans-unit>
       <trans-unit id="tt_content.group.conference" resname="tt_content.group.conference">
         <source>Conferences</source>
