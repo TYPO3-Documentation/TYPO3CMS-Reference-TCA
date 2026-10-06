@@ -30,7 +30,11 @@ Language fields in detail
     :ref:`ctrl->languageField <ctrl-reference-languagefield>`. If this field is
     defined a record in this table can be translated into another language.
 
-    ..  include:: /Images/Rst/SysLanguageUid.rst.txt
+    ..  figure:: /Images/Conference/CtrlLanguageField.png
+        :alt: The language of a conference
+        :class: with-shadow
+
+        The language of a conference
 
 ..  _field-l10n-parent:
 
@@ -43,7 +47,11 @@ Language fields in detail
     FormEngine will show the default translation value under the fields in
     the main form.
 
-    ..  include:: /Images/ManualScreenshots/OtherLanguageContent.rst.txt
+    ..  figure:: /Images/Conference/FieldWizardLocalizationState.png
+        :alt: The contact email of a translated conference with the value of the default language
+        :class: with-shadow
+
+        The contact email of a translated conference with the value of the default language
 
     ..  note::
         Sometimes `l18n_parent` is used for this field in Core tables. This
@@ -81,5 +89,7 @@ Language fields in detail
 Example: Enable table for localization and translation:
 =======================================================
 
-..  literalinclude:: /Ctrl/_CodeSnippets/_Language.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29, 57-83
+    :emphasize-lines: 19-22, 66-67, 79-81
