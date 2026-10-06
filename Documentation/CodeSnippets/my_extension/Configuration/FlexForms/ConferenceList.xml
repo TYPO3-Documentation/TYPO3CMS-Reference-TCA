@@ -91,5 +91,46 @@
         </el>
       </ROOT>
     </sDEF>
+    <sHighlights>
+      <ROOT>
+        <sheetTitle>my_extension.db:plugin.conferencelist.sheet.highlights</sheetTitle>
+        <sheetDescription>my_extension.db:plugin.conferencelist.sheet.highlights.description</sheetDescription>
+        <type>array</type>
+        <el>
+          <settings.introduction>
+            <label>my_extension.db:plugin.conferencelist.introduction</label>
+            <config>
+              <type>text</type>
+              <enableRichtext>1</enableRichtext>
+            </config>
+          </settings.introduction>
+          <settings.highlights>
+            <title>my_extension.db:plugin.conferencelist.highlights</title>
+            <type>array</type>
+            <section>1</section>
+            <el>
+              <highlight>
+                <title>my_extension.db:plugin.conferencelist.highlight</title>
+                <type>array</type>
+                <el>
+                  <title>
+                    <label>my_extension.db:plugin.conferencelist.highlight.title</label>
+                    <config>
+                      <type>input</type>
+                    </config>
+                  </title>
+                  <link>
+                    <label>my_extension.db:plugin.conferencelist.highlight.link</label>
+                    <config>
+                      <type>link</type>
+                    </config>
+                  </link>
+                </el>
+              </highlight>
+            </el>
+          </settings.highlights>
+        </el>
+      </ROOT>
+    </sHighlights>
   </sheets>
 </T3DataStructure>

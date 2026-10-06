@@ -49,7 +49,7 @@ speaker. The localized name is displayed to the backend users.
 
         ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
             :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-            :visible-lines: 1-7, 79-95
+            :visible-lines: 1-7, 79-93, 135-136
             :emphasize-lines: 82-83
 
 ..  _columns-country-example-extended:
@@ -79,7 +79,7 @@ and Switzerland, Germany, and Austria are listed first:
 
         ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
             :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-            :visible-lines: 1-7, 79-95
+            :visible-lines: 1-7, 79-93, 135-136
             :emphasize-lines: 84-88
 
 Additional countries can be added via the

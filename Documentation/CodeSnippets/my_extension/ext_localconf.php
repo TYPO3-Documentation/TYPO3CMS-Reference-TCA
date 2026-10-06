@@ -3,6 +3,7 @@
 use MyVendor\MyExtension\Controller\ConferenceController;
 use MyVendor\MyExtension\Evaluation\AbstractEvaluation;
 use MyVendor\MyExtension\Evaluation\HashtagEvaluation;
+use MyVendor\MyExtension\Form\Element\BadgeNameElement;
 use MyVendor\MyExtension\Form\FieldInformation\TalkOrderInformation;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
@@ -24,4 +25,12 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1791234567] = [
   'nodeName' => 'talkOrderInformation',
   'priority' => 30,
   'class' => TalkOrderInformation::class,
+];
+
+// The badge name of a frontend user, see
+// Configuration/TCA/Overrides/650-fe_users-tx_myextension_badge_name.php
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1791300000] = [
+  'nodeName' => 'badgeName',
+  'priority' => 40,
+  'class' => BadgeNameElement::class,
 ];
