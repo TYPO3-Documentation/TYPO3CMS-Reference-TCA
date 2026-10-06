@@ -48,12 +48,6 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
-    'fields' => ['columns/none_1'],
-    'targetFileName' => 'CodeSnippets/None1.rst.txt',
-  ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_basic.php',
     'fields' => ['columns/password_1'],
     'targetFileName' => 'ColumnsConfig/Type/Password/_Snippets/_Password_1.rst.txt',
   ],
@@ -160,41 +154,6 @@ return [
 
   [
     'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_slugs.php',
-    'fields' => ['columns/slug_1'],
-    'targetFileName' => 'CodeSnippets/Slug1.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_slugs.php',
-    'fields' => ['columns/slug_2'],
-    'targetFileName' => 'CodeSnippets/Slug2.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_slugs.php',
-    'fields' => ['columns/slug_3'],
-    'targetFileName' => 'CodeSnippets/Slug3.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_slugs.php',
-    'fields' => ['columns/slug_4'],
-    'targetFileName' => 'CodeSnippets/Slug4.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_slugs.php',
-    'fields' => ['columns/slug_5'],
-    'targetFileName' => 'CodeSnippets/Slug5.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_group.php',
     'fields' => ['columns/group_db_1'],
     'targetFileName' => 'CodeSnippets/GroupDb1.rst.txt',
@@ -257,11 +216,6 @@ return [
     'targetFileName' => 'CodeSnippets/FlexFormFile1.rst.txt',
   ],
 
-  [
-    'action' => 'createCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Classes/UserFunctions/FormEngine/SlugPrefix.php',
-    'targetFileName' => 'CodeSnippets/SlugPrefix.rst.txt',
-  ],
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:webhooks/Configuration/TCA/sys_webhook.php',

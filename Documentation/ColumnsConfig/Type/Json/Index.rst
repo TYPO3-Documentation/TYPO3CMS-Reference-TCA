@@ -20,13 +20,17 @@ is generated automatically.
 Example: Simple JSON field
 ==========================
 
-The system extension :composer:`typo3/cms-webhooks` uses a TCA field of type
-JSON for the input of additional HTTP request header data:
+The social links of a speaker are stored as JSON:
 
-..  figure:: _Images/SimpleJson.png
-    :alt: The additional header field with some example input
+..  figure:: /Images/Conference/JsonSocialLinks.png
+    :alt: The social links of a speaker
+    :class: with-shadow
 
-..  include:: _Examples/SysWebHook.rst.php
+    The social links of a speaker
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/340-tx_myextension_speaker-social_links.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/340-tx_myextension_speaker-social_links.php
+    :emphasize-lines: 11
 
 ..  _columns-json-properties:
 

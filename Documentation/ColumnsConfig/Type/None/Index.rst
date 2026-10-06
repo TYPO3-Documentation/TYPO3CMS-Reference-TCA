@@ -47,9 +47,19 @@ The TYPO3 core makes little or no use of `none` fields itself.
 Example: Simple none field
 ==========================
 
-..  include:: /Images/Rst/None1.rst.txt
+A comment shows when it was written. The column `crdate` exists, as the
+`ctrl` section of the comments names it, and TYPO3 sets its value. The
+field of type `none` only displays it:
 
-..  include:: /CodeSnippets/None1.rst.txt
+..  figure:: /Images/Conference/NoneComment.png
+    :alt: The time a comment was written
+    :class: with-shadow
+
+    The time a comment was written
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/520-tx_myextension_comment-crdate.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/520-tx_myextension_comment-crdate.php
+    :emphasize-lines: 13-14
 
 
 ..  _columns-none-properties:

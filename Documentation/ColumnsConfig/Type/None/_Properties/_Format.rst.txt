@@ -75,6 +75,14 @@
 
 ..  rubric:: Examples
 
+The time a comment was written:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/520-tx_myextension_comment-crdate.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/520-tx_myextension_comment-crdate.php
+    :emphasize-lines: 14
+
+Further formats:
+
 ..  literalinclude:: /ColumnsConfig/Type/None/_Snippets/_None.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
     :visible-lines: 11-21

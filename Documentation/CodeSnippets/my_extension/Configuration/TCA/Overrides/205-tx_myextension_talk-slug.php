@@ -1,5 +1,6 @@
 <?php
 
+use MyVendor\MyExtension\Slug\TalkSlugPrefix;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
@@ -10,7 +11,11 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
     'config' => [
       'type' => 'slug',
       'generatorOptions' => [
-        'fields' => ['title'],
+        // For example "workshop/write-your-first-form-element"
+        'fields' => ['talk_type', 'title'],
+      ],
+      'appearance' => [
+        'prefix' => TalkSlugPrefix::class . '->getPrefix',
       ],
       'eval' => 'uniqueInPid',
     ],

@@ -35,12 +35,17 @@ is generated automatically.
 Example
 =======
 
-An example configuration looks like the following:
+Each speaker has an identifier that does not depend on the database:
 
-..  literalinclude:: /ColumnsConfig/Type/Uuid/_Snippets/_basic.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-    :visible-lines: 16-22
-    :emphasize-lines: 19
+..  figure:: /Images/Conference/UuidSpeaker.png
+    :alt: The identifier of a speaker
+    :class: with-shadow
+
+    The identifier of a speaker
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/335-tx_myextension_speaker-identifier.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/335-tx_myextension_speaker-identifier.php
+    :emphasize-lines: 11-13
 
 ..  _columns-uuid-properties:
 

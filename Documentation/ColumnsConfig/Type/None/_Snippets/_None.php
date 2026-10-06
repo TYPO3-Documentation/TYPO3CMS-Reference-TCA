@@ -37,7 +37,7 @@ return [
         'type' => 'none',
         'format' => 'user',
         'format.' => [
-          'userFunc' => MyCustomValue::class . '->getErrorMssg',
+          'userFunc' => MyCustomValue::class . '->getValue',
         ],
       ],
     ],

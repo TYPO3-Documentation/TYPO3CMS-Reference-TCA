@@ -80,10 +80,20 @@ Reasons why only one language is available include:
 Example: Simple language field
 ==============================
 
-..  literalinclude:: /ColumnsConfig/Type/Language/_languageField.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 4-8, 16-21
-    :emphasize-lines: 7, 19
+The conferences have a language field. TYPO3 creates the column
+`sys_language_uid` of type `language` from the `languageField` in the `ctrl`
+section, and the palette shows it:
+
+..  figure:: /Images/Conference/CtrlLanguageField.png
+    :alt: The language of a conference
+    :class: with-shadow
+
+    The language of a conference
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29, 74-83
+    :emphasize-lines: 19, 80
 
 ..  _columns-language-properties:
 
