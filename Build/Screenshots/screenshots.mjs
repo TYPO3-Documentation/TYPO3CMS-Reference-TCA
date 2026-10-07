@@ -33,7 +33,7 @@ const valuePickerList = (name) => `${field(name)} typo3-backend-combobox [role="
 // The uids of the records that create-records.php created
 const {
   storageFolder, contentElement, conference, conferenceTranslation, talk, workshop,
-  speaker, speakerTranslation, location, hall, backendLayout, hotel, comment, plugin, feUser, callForPapers, teaser, backendGroup,
+  speaker, speakerTranslation, location, hall, backendLayout, hotel, comment, plugin, feUser, callForPapers, teaser,
 } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
@@ -471,11 +471,6 @@ const screenshots = {
     url: editUrl('tt_content', teaser),
     from: 'h1',
     to: field('tx_myextension_teaser_conference'),
-  },
-  FieldControlFileMountpoints: {
-    url: editUrl('be_groups', backendGroup),
-    tab: 'Mounts',
-    element: field('file_mountpoints'),
   },
   CtrlMinimalRecordList: {
     url: `${baseUrl}/typo3/module/content/records?id=${storageFolder}&table=tx_myextension_sponsor`,

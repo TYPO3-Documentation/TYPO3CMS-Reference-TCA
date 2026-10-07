@@ -87,7 +87,7 @@ Select field
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
-    :emphasize-lines: 20-22
+    :emphasize-lines: 20-25
 
 ..  _tca-property-field-control-edit-popup-examples-group-field:
 
