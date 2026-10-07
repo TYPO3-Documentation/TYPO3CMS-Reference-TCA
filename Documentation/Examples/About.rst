@@ -1,65 +1,38 @@
 ..  include:: /Includes.rst.txt
 
 ..  _tca-examples:
-
-==================
-About the examples
-==================
-
-
 ..  _tca-examples-extension-styleguide:
-
-Extension styleguide
-====================
-
-Many of the examples are part of the TYPO3 extension :file:`styleguide`. This
-extension offers numbered examples for any field type. Furthermore there
-are examples with different properties set to different values.
-
-Read here about how to :ref:`install and use the styleguide extension
-<styleguide>`.
-
+..  _tca-examples-styleguide-howto:
+..  _styleguide:
 ..  _tca-examples-extension-examples:
-
-Extension examples
-==================
-
-Some examples can also be found in the TYPO3 extension :file:`examples`. This
-extension contains special configurations that have not been used in the
-extension :file:`stylguide` nor in the TYPO3 Core.
-
-The extension :file:`examples` can be installed via composer:
-
-..  code-block:: console
-
-    composer require --dev t3docs/examples
-
-It can also be downloaded from the :t3ext:`TYPO3 extension repository <examples>`.
-
-
 ..  _tca-examples-core:
 
-Examples from the TYPO3 Core
-============================
+=================================
+Exploring TCA with the styleguide
+=================================
 
-Some examples are taken from the TYPO3 Core and some come from
-different system extensions. You can open their TCA definitions in the
-corresponding file in the system extension.
+The TYPO3 extension :composer:`typo3/cms-styleguide` offers an example
+record for each field type, with many variants of their options. It is a
+good place to see a field in a backend before you configure it:
 
-Common examples are taken from the following tables:
+#.  Install the extension:
 
-`pages`
-    :file:`public/typo3/sysext/core/Configuration/TCA/pages.php`
+    ..  code-block:: console
 
-`sys_category`
-    :file:`public/typo3/sysext/core/Configuration/TCA/sys_category.php`
+        composer require --dev typo3/cms-styleguide
 
-`sys_file`
-    :file:`public/typo3/sysext/core/Configuration/TCA/sys_file.php`
+#.  Open the module :guilabel:`Administration > Styleguide`, select
+    :guilabel:`Manage example page trees`, and create the page tree with
+    the TCA demo records.
 
-`sys_template`
-    :file:`public/typo3/sysext/frontend/Configuration/TCA/sys_template.php`
+#.  Open the records in the new page tree :guilabel:`styleguide TCA demo`
+    with the :guilabel:`Content > Records` module.
 
+#.  Find the TCA of a field in the folder :file:`Configuration/TCA/` of the
+    extension. The table `tx_styleguide_elements_basic` holds the records of
+    the page :guilabel:`elements basic`, for example.
 
-`tt_content`
-    :file:`public/typo3/sysext/frontend/Configuration/TCA/tt_content.php`
+..  tip::
+    With the backend debug mode, the backend form shows the name of each
+    field next to its label. Turn it on in
+    :guilabel:`System > Settings > Configuration Presets > Debug`.
