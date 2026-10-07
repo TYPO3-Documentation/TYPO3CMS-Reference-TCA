@@ -61,5 +61,5 @@ lists only the conferences of the selected categories:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
     :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-    :visible-lines: 1-7, 38-43, 112-114, 156-157
+    :visible-lines: 1-7, 38-43, 113-115, 157-158
     :emphasize-lines: 41

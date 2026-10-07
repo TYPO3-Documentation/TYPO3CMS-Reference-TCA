@@ -49,7 +49,7 @@ speaker. The localized name is displayed to the backend users.
 
         ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
             :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-            :visible-lines: 1-7, 79-90, 112-114, 156-157
+            :visible-lines: 1-7, 79-91, 113-115, 157-158
             :emphasize-lines: 82-83
 
 ..  _columns-country-example-extended:
@@ -79,8 +79,8 @@ and Switzerland, Germany, and Austria are listed first:
 
         ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
             :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-            :visible-lines: 1-7, 79-90, 112-114, 156-157
-            :emphasize-lines: 84-88
+            :visible-lines: 1-7, 79-91, 113-115, 157-158
+            :emphasize-lines: 85-89
 
 Additional countries can be added via the
 `BeforeCountriesEvaluatedEvent <https://docs.typo3.org/permalink/t3coreapi:beforecountriesevaluatedevent>`_.

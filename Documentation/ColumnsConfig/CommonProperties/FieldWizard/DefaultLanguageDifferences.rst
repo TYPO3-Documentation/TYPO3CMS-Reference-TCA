@@ -23,4 +23,8 @@ defaultLanguageDifferences
     This wizard is important for editors who maintain translated records: They can see what has been
     changed in their localization parent between the last save operation of the overlay.
 
-    ..  include:: /Images/ManualScreenshots/DefaultLanguageDifferences.rst.txt
+    ..  figure:: /Images/Conference/FieldWizardDefaultLanguageDifferences.png
+        :alt: The tracks of a translated conference with the track that was added to the default language
+        :class: with-shadow
+
+        The track "Community" was added to the default language after the translation

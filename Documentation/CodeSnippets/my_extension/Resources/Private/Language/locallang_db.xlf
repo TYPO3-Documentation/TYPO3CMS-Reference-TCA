@@ -384,6 +384,9 @@
       <trans-unit id="plugin.conferencelist.title" resname="plugin.conferencelist.title">
         <source>Conference list</source>
       </trans-unit>
+      <trans-unit id="references" resname="references">
+        <source>Records that refer to this record: %d</source>
+      </trans-unit>
       <trans-unit id="registration" resname="registration">
         <source>Registration</source>
       </trans-unit>
