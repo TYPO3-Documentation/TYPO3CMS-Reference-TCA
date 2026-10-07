@@ -155,7 +155,7 @@ Register the class in :file:`ext_localconf.php`:
 
 ..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
     :caption: EXT:my_extension/ext_localconf.php
-    :emphasize-lines: 20
+    :emphasize-lines: 21
 
 `returnFieldJS()` names a JavaScript module, which removes the `#` already
 while the editor types:

@@ -95,21 +95,30 @@ This disables the default `localizationStateSelector` fieldWizard of
 Add your own wizard
 -------------------
 
-Register an own node in a :file:`ext_localconf.php`:
+The form of a conference shows how many records refer to the conference.
+The `FormWrapContainer` renders this wizard above the fields:
 
-..  literalinclude:: _CodeSnippets/_WizardRegistration/_ext_localconf.php
+..  figure:: /Images/Conference/FieldWizardReferences.png
+    :alt: The number of records that refer to a conference above its form
+    :class: with-shadow
+
+    The number of records that refer to a conference above its form
+
+Register the node in the file :file:`ext_localconf.php`:
+
+..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
     :caption: EXT:my_extension/ext_localconf.php
+    :emphasize-lines: 9,50-54
 
-Register the new node as `fieldWizard` of `tt_content` table in an
-:file:`Configuration/TCA/Overrides/tt_content.php` file:
+Add the node as a `fieldWizard` of the `formWrapContainer`:
 
-..  literalinclude:: _CodeSnippets/_WizardRegistration/_tca_overrides.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/101-tx_myextension_conference-references.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/101-tx_myextension_conference-references.php
 
-In PHP, the node has to implement an interface, but can return any additional HTML which is rendered in the
-"OuterWrapContainer" between the record title and the field body when editing a record:
+The node extends `AbstractNode` and returns its HTML in the result array:
 
-..  include:: /Images/ManualScreenshots/OuterFieldWizard.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Form/FieldWizard/ReferencesToThisRecordWizard.php
+    :caption: EXT:my_extension/Classes/Form/FieldWizard/ReferencesToThisRecordWizard.php
 
 ..  _tca-example-ctrl-container-inline:
 

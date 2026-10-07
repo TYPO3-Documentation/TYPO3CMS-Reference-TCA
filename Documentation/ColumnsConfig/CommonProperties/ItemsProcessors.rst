@@ -88,5 +88,5 @@ Registration of processors is also possible inside FlexForms:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
     :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-    :visible-lines: 91-111
-    :emphasize-lines: 102-109
+    :visible-lines: 92-112
+    :emphasize-lines: 103-110
