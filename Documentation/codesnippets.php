@@ -17,17 +17,4 @@ return [
     'targetFileName' => 'CodeSnippets/TtContentCtrl.rst.txt',
   ],
 
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_typeforeign.php',
-    'fields' => ['columns/foreign_table'],
-    'targetFileName' => 'CodeSnippets/TypeForeignForeignTable.rst.txt',
-  ],
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_typeforeign.php',
-    'fields' => ['ctrl'],
-    'targetFileName' => 'CodeSnippets/TypeForeignTableCtrl.rst.txt',
-  ],
-
 ];
