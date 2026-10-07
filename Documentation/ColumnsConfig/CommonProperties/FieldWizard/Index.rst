@@ -10,11 +10,19 @@ fieldWizard
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldWizard']
     :type: array
     :Scope: Display
-    :Types: :ref:`check <columns-check>`, :ref:`flex <columns-flex>`,
-        :ref:`group <columns-group>`,
+    :Types: :ref:`category <columns-category>`, :ref:`check <columns-check>`,
+        :ref:`color <columns-input-rendertype-colorpicker>`,
+        :ref:`country <columns-country>`,
+        :ref:`datetime <columns-input-rendertype-inputdatetime>`,
+        :ref:`email <columns-email>`, :ref:`file <columns-file>`,
+        :ref:`folder <columns-folder>`, :ref:`group <columns-group>`,
         :ref:`imageManipulation <columns-imagemanipulation>`,
-        :ref:`input <columns-input>`,
-        :ref:`radio <columns-radio>`
+        :ref:`inline <columns-inline>`, :ref:`input <columns-input>`,
+        :ref:`json <columns-json>`,
+        :ref:`link <columns-input-rendertype-inputlink>`,
+        :ref:`number <columns-number>`, :ref:`radio <columns-radio>`,
+        :ref:`select <columns-select>`, :ref:`slug <columns-slug>`,
+        :ref:`text <columns-text>`
 
     Specifies wizards rendered below the main input area of an element. Single type / renderType elements
     can register default wizards which are merged with this property.
