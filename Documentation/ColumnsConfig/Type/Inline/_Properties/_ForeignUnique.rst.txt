@@ -17,4 +17,3 @@ cannot be selected twice:
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/126-tx_myextension_conference-registrations.php
     :emphasize-lines: 15
-
