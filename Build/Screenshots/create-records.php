@@ -179,13 +179,6 @@ $data['sys_category'] = [
     'NEWcatfrontend' => ['pid' => $pid, 'title' => 'Frontend', 'parent' => 'NEWcattopics'],
     'NEWcatediting' => ['pid' => $pid, 'title' => 'Editing', 'parent' => 'NEWcattopics'],
 ];
-// A backend group with a file mount, for the field controls of the core
-$data['sys_filemounts'] = [
-    'NEWfilemount' => ['pid' => 0, 'title' => 'Conference files', 'identifier' => '1:/conference/'],
-];
-$data['be_groups'] = [
-    'NEWbegroup' => ['pid' => 0, 'title' => 'Conference editors', 'file_mountpoints' => 'NEWfilemount'],
-];
 $data['fe_groups'] = [
     'NEWfegroup' => ['pid' => $pid, 'title' => 'Attendees'],
 ];
@@ -288,7 +281,6 @@ $uids = [
     'feUser' => $dataHandler->substNEWwithIDs['NEWfechris'],
     'callForPapers' => $dataHandler->substNEWwithIDs['NEWcallforpapers'],
     'teaser' => $dataHandler->substNEWwithIDs['NEWteaser'],
-    'backendGroup' => $dataHandler->substNEWwithIDs['NEWbegroup'],
 ];
 $conference = $uids['conference'];
 

@@ -19,12 +19,23 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
       'fieldControl' => [
         'editPopup' => [
           'disabled' => false,
+          'options' => [
+            'title' => 'my_extension.db:conference.speakers.edit',
+          ],
         ],
         'addRecord' => [
           'disabled' => false,
+          'options' => [
+            'title' => 'my_extension.db:conference.speakers.add',
+            // A new speaker comes first in the list of selected speakers
+            'setValue' => 'prepend',
+          ],
         ],
         'listModule' => [
           'disabled' => false,
+          'options' => [
+            'title' => 'my_extension.db:conference.speakers.list',
+          ],
         ],
       ],
     ],
