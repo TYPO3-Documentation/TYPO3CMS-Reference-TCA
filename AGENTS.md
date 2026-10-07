@@ -19,6 +19,58 @@ CONTRIBUTING.md                  # how to contribute
   its records, and take the screenshots into `Documentation/Images/Conference/`;
   `Build/Scripts/runTests.sh -s screenshots CtrlRecordList` takes only the
   named ones. Run it on each branch, so the screenshots show that version
+- `Build/Scripts/checkIncludes.py [file name …]` — print the lines that each
+  `literalinclude` emphasizes; exits with 1 for a line beyond the end of the
+  file or an emphasized line that is not visible
+
+## The example extension and its screenshots
+
+`Documentation/CodeSnippets/my_extension/` is an internal example
+extension. It exists only to provide code snippets and screenshots;
+the manual never tells readers to install it.
+
+Each field or change lives in an override file of its own, numbered by
+table: conference 1xx, talk 2xx, speaker 3xx, location 4xx, comment
+5xx, tt_content 6xx, fe_users 650, sponsor 7xx, registration 8xx,
+partnership 9xx, hotel 950.
+
+### Adding a screenshot
+
+1.  Add the records it needs to `Build/Screenshots/create-records.php`.
+    Use fixed values, no dates relative to today and no random values,
+    and use `example.org` for URLs. If a screenshot needs the uid of a
+    record, export it in the list at the end of the file.
+2.  Add an entry to `Build/Screenshots/screenshots.mjs`: the `url`,
+    the `tab`, and either `element` or a `from`/`to` pair. Use the
+    helpers `field('name')` and `palette('name')`. Crop to the part
+    that the page documents. Use `prepare` for clicks before the
+    screenshot, and `modal: true` for a dialog.
+3.  Take only that screenshot:
+    `Build/Scripts/runTests.sh -s screenshots MyScreenshot`.
+    Then run all of them once. New records can change other
+    screenshots, and the backend remembers state between them, such
+    as the last tab of a FlexForm.
+4.  Commit only the images that really changed. A full run also
+    changes many images by a few pixels. Check each changed image
+    and restore the ones that only show this noise.
+5.  On the 14.3 branch, take the screenshots again with
+    `make screenshots`. Do not copy them from main.
+
+### Changing an existing snippet
+
+Pages include the files of the example extension with
+`:emphasize-lines:` and `:visible-lines:`. Both use absolute line
+numbers. A line added to a file moves every number below it on every
+page that includes the file.
+
+-   Prefer a new override file to changing a shared file.
+-   In a shared file such as `ext_localconf.php`,
+    `ConferenceList.xml`, or the base TCA files, add at the end.
+-   Before committing, run `Build/Scripts/checkIncludes.py` with the
+    name of the changed file. It lists every page that includes the
+    file, with the content of each emphasized line. Move the numbers
+    until each line is the intended one. The rendering does not warn
+    about a number that points to the wrong line.
 
 ## Documentation writing rules
 
