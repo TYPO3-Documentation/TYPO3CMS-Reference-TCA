@@ -206,6 +206,16 @@ const screenshots = {
   },
   PasswordGenerator: {
     url: editUrl('tx_myextension_conference', conference),
+    prepare: async (frame) => {
+      await frame.locator(`${field('livestream_password')} [id^="t3js-formengine-fieldcontrol-"]`).click();
+      const input = frame.locator(`${field('livestream_password')} input[type="text"].form-control`);
+      // A fixed value instead of the random one keeps the screenshot stable
+      await input.fill('k7#Qm2!vTz9pLw4R');
+    },
+    element: field('livestream_password'),
+  },
+  PasswordAfterSaving: {
+    url: editUrl('tx_myextension_conference', conference),
     element: field('livestream_password'),
   },
   PasswordSecretToken: {
@@ -470,6 +480,23 @@ const screenshots = {
   CtrlMinimalRecordList: {
     url: `${baseUrl}/typo3/module/content/records?id=${storageFolder}&table=tx_myextension_sponsor`,
     element: '.recordlist',
+  },
+  FieldWizardReferences: {
+    url: editUrl('tx_myextension_conference', conference),
+    from: 'h1',
+    to: 'p:has-text("Records that refer to this record")',
+  },
+  FieldWizardDefaultLanguageDifferences: {
+    url: editUrl('tx_myextension_conference', conferenceTranslation),
+    tab: 'Program',
+    element: field('tracks'),
+  },
+  CountrySize: {
+    url: editUrl('tt_content', plugin),
+    tab: 'Plugin',
+    // The backend remembers the last sheet, which can be Highlights
+    prepare: (frame) => frame.locator(field('pi_flexform')).getByRole('tab', { name: 'General', exact: true }).click(),
+    element: field('settings.country'),
   },
   CategoryConference: {
     url: editUrl('tx_myextension_conference', conference),

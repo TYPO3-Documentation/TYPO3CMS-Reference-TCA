@@ -6,6 +6,7 @@ use MyVendor\MyExtension\Evaluation\HashtagEvaluation;
 use MyVendor\MyExtension\Form\Element\BadgeNameElement;
 use MyVendor\MyExtension\Form\FieldInformation\InformationText;
 use MyVendor\MyExtension\Form\FieldInformation\TalkOrderInformation;
+use MyVendor\MyExtension\Form\FieldWizard\ReferencesToThisRecordWizard;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3') or die();
@@ -42,4 +43,12 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1791310000] = [
   'nodeName' => 'informationText',
   'priority' => 30,
   'class' => InformationText::class,
+];
+
+// The references to a conference above its form, see
+// Configuration/TCA/Overrides/101-tx_myextension_conference-references.php
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1791320000] = [
+  'nodeName' => 'referencesToThisRecord',
+  'priority' => 30,
+  'class' => ReferencesToThisRecordWizard::class,
 ];

@@ -74,7 +74,7 @@ implementing a rendering. See :ref:`FormEngine docs
 
     ..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
         :caption: EXT:my_extension/ext_localconf.php
-        :emphasize-lines: 31-37
+        :emphasize-lines: 32-38
 
 
 3.  Use the renderType in a TCA field definition

@@ -48,4 +48,4 @@ The node is registered with the name used as `renderType` in
 
 ..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
     :caption: EXT:my_extension/ext_localconf.php
-    :emphasize-lines: 41-45
+    :emphasize-lines: 42-46

@@ -78,7 +78,10 @@ $data['tt_content'] = [
     'NEWplugin' => [
         'pid' => 1, 'CType' => 'myextension_conferencelist', 'header' => 'Upcoming conferences',
         'pi_flexform' => ['data' => [
-            'sDEF' => ['lDEF' => ['settings.mode' => ['vDEF' => 'upcoming']]],
+            'sDEF' => ['lDEF' => [
+                'settings.mode' => ['vDEF' => 'upcoming'],
+                'settings.country' => ['vDEF' => 'CH'],
+            ]],
             'sHighlights' => ['lDEF' => [
                 'settings.introduction' => ['vDEF' => '<p>Meet the community in Basel and Leipzig.</p>'],
                 'settings.highlights' => ['el' => [
@@ -328,6 +331,12 @@ $process([
         ],
     ],
 ]);
+
+// A change of the default language after the translation, which the
+// translation shows as a difference
+$process(['tx_myextension_conference' => [$conference => [
+    'tracks' => "Backend\nFrontend\nCommunity\nEditing",
+]]]);
 
 // The label of a comment shows its creation date, which must not change
 // with every run
