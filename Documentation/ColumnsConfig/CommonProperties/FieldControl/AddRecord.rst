@@ -68,7 +68,11 @@ Select field with options
 The field controls are also used in the core. The following example is from
 the table `be_groups`:
 
-..  include:: /Images/Rst/FileMountpoints.rst.txt
+..  figure:: /Images/Conference/FieldControlFileMountpoints.png
+    :alt: The file mounts of a backend group with field controls
+    :class: with-shadow
+
+    The file mounts of a backend group with field controls
 
 ..  include:: /CodeSnippets/FileMountpoints.rst.txt
 
