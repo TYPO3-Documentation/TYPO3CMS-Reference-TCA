@@ -47,8 +47,10 @@ Soft delete
     This field enables soft delete in records. Configure it
     by setting :ref:`ctrl->delete <ctrl-reference-delete>`:
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_Delete.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 11
 
 
     ..  warning::
@@ -71,8 +73,10 @@ Enablecolumns
     This field enables soft hiding of records. Configure it
     by setting :ref:`ctrl->enablecolumns->disabled <ctrl-reference-enablecolumns>`:
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_Hidden.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 13-14
 
 ..  _field-starttime:
 ..  _field-endtime:
@@ -82,8 +86,10 @@ Enablecolumns
     an endtime. Configure them
     by setting :ref:`ctrl->enablecolumns->starttime or endtime <ctrl-reference-enablecolumns>`:
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_StarttimeEndtime.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 13, 15-16
 
 ..  _field-fe-group:
 
@@ -91,8 +97,10 @@ Enablecolumns
     This field defines which field is used for access control. Configure it
     by setting :ref:`ctrl->enablecolumns->fe_group <ctrl-reference-enablecolumns>`:
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_FeGroup.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 4-29
+        :emphasize-lines: 13, 17
 
 ..  warning::
     These fields that enable records ("enable fields") are only respected in the frontend if you
@@ -108,8 +116,10 @@ Manual sorting in the backend
     This field is used to sort records in the backend. Configure it
     by setting :ref:`ctrl->sortby <ctrl-reference-sortby>`:
 
-    ..  literalinclude:: /Ctrl/_CodeSnippets/_Sorting.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
+        :visible-lines: 4-26
+        :emphasize-lines: 14
 
 ..  attention::
     The sortby field contains an integer and is managed by the DataHandler. It
@@ -129,10 +139,10 @@ The following fields are automatically set when a record is written by the
 displayed in backend forms or explicitly set. They do not need to be defined
 in the :ref:`columns <columns>` section of the TCA.
 
-..  literalinclude:: /Ctrl/_CodeSnippets/_DataHandlerFields.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-    :visible-lines: 4-10
-    :emphasize-lines: 7-9
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
+    :emphasize-lines: 9-10, 24
 
 ..  _field-tstamp:
 
