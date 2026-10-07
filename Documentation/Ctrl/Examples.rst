@@ -19,16 +19,28 @@ such as this:
 Minimal table configuration
 ===========================
 
-..  include:: /Images/Rst/TxStyleguideCtrlMinimal.rst.txt
+The sponsors of the conference extension have a small `ctrl` section:
 
-..  include:: /CodeSnippets/TxStyleguideCtrlMinimal.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_sponsor.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_sponsor.php
+    :emphasize-lines: 5-6, 11
 
-Property `label` is a mandatory setting, but the above properties are a recommended
-minimum. The :guilabel:`Content > Records` module shows an icon and a translated title of the table, and it uses the value of
-field `title` as title for single rows. Single record administration however is limited with this setup: This
-table does not implement soft delete, record rows can not be sorted between each other, record localization is not
-possible, and much more. In the database, only columns `uid`, `pid` and `title` are needed
-in :file:`ext_tables.sql` with this setup.
+Property `label` is a mandatory setting, `title` and `iconfile` are a
+recommended minimum. The :guilabel:`Content > Records` module shows the icon
+and the translated title of the table, and it uses the value of the field
+`name` as title for single rows:
+
+..  figure:: /Images/Conference/CtrlMinimalRecordList.png
+    :alt: The sponsors in the Content > Records module
+    :class: with-shadow
+
+    The sponsors in the Content > Records module
+
+The sponsors additionally sort by name, keep deleted records in the database,
+and store when a record was created and changed. Single record
+administration is still limited with this setup: The sponsors can not be
+sorted manually, hidden, or translated. TYPO3 creates all database columns
+from the TCA.
 
 
 ..  _tca-example-ctrl-tt-content:
