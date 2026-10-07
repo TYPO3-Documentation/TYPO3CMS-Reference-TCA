@@ -41,7 +41,7 @@ Select field
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
-    :emphasize-lines: 23-25
+    :emphasize-lines: 26-27
 
 
 ..  _tca-property-field-control-add-record-examples-group-field:
@@ -65,16 +65,14 @@ Group field
 Select field with options
 -------------------------
 
-The field controls are also used in the core. The following example is from
-the table `be_groups`:
+The `addRecord` control of the speakers of a conference also sets
+options. The `title` option changes the title of the button. With
+`setValue` set to `prepend`, a new speaker comes first in the list of
+selected speakers:
 
-..  figure:: /Images/Conference/FieldControlFileMountpoints.png
-    :alt: The file mounts of a backend group with field controls
-    :class: with-shadow
-
-    The file mounts of a backend group with field controls
-
-..  include:: /CodeSnippets/FileMountpoints.rst.txt
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/125-tx_myextension_conference-speakers.php
+    :emphasize-lines: 28-32
 
 ..  _tca-property-field-control-add-record-options:
 
