@@ -88,22 +88,30 @@ See the :ref:`section about types <types>` for more details.
 Type in relation to a foreign table's field
 -------------------------------------------
 
-.. include:: /Images/Rst/CtrlTypeForeign.rst.txt
+..  figure:: /Images/Conference/CtrlTypeForeign.png
+    :alt: Two partnerships of a conference, each with other fields
+    :class: with-shadow
 
-The following table `tx_styleguide_type_foreign` stores its relation to
-the table `tx_styleguide_type` in the field `foreign_table`.
+    The partnership with an online conference shows other fields
 
-The type of the table `tx_styleguide_type_foreign` comes from the content
-of the field `tx_styleguide_type:record_type` of the related field.
+A partnership relates a conference to a partner conference. The format of
+the partner conference decides which fields the partnership shows. An
+on-site partner conference gives a discount. An online partner conference
+shares its live stream.
 
-The type is therefore defined via :php:`type = 'foreign_table:record_type'`.
+The `select` field `partner` points to the partner conference. The `type`
+in the `ctrl` section names this field and the field `event_format` of the
+conference, separated by a colon:
 
-The control section of the table `tx_styleguide_type_foreign` looks like
-this:
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/910-tx_myextension_partnership-type.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/910-tx_myextension_partnership-type.php
+    :emphasize-lines: 10,13,27-29
 
-.. include:: /CodeSnippets/TypeForeignTableCtrl.rst.txt
+The field that points to the other record must be of the type `select`,
+`category`, or `group`. A `group` field takes the first table of its
+`allowed` list.
 
-The field `foreign_table` in the same table is a normal singleSelect field.
-It can be any kind of 1 - 1 or 1 - n relation.
-
-.. include:: /CodeSnippets/TypeForeignForeignTable.rst.txt
+The value `online` has its own entry in the `types` section. On-site and
+hybrid partner conferences have no entry of their own, so these
+partnerships use the type `0`. When an editor selects another partner
+conference, the form reloads and shows the fields of the new type.
