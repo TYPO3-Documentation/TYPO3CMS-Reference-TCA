@@ -50,7 +50,7 @@ Core table tt_content
 
 Table `tt_content` makes much more excessive use of the `['ctrl']` section.
 Find its current configuration in the file
-`EXT:frontend/Configuration/TCA/tt_content.php <https://github.com/TYPO3/typo3/blob/main/typo3/sysext/frontend/Configuration/TCA/tt_content.php>`__.
+`EXT:frontend/Configuration/TCA/tt_content.php <https://github.com/TYPO3/typo3/blob/14.3/typo3/sysext/frontend/Configuration/TCA/tt_content.php>`__.
 
 A few remarks:
 
