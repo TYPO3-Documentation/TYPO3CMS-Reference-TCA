@@ -165,6 +165,15 @@
       <trans-unit id="conference.speakers" resname="conference.speakers">
         <source>Speakers</source>
       </trans-unit>
+      <trans-unit id="conference.speakers.add" resname="conference.speakers.add">
+        <source>Create a new speaker</source>
+      </trans-unit>
+      <trans-unit id="conference.speakers.edit" resname="conference.speakers.edit">
+        <source>Edit the selected speaker</source>
+      </trans-unit>
+      <trans-unit id="conference.speakers.list" resname="conference.speakers.list">
+        <source>Show all speakers</source>
+      </trans-unit>
       <trans-unit id="conference.stream_url" resname="conference.stream_url">
         <source>Live stream</source>
       </trans-unit>
