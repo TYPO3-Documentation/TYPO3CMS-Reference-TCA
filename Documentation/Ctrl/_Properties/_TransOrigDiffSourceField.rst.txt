@@ -36,9 +36,13 @@
 
     ..  _ctrl-reference-transorigdiffsourcefield-example:
 
-    ..  rubric:: Example: Display changes in from the original language
+    ..  rubric:: Example: Display changes from the original language
 
-    ..  include:: /Images/ManualScreenshots/OtherLanguageContent.rst.txt
+    ..  figure:: /Images/Conference/FieldWizardDefaultLanguageDifferences.png
+        :alt: The tracks of a translated conference with the track that was added to the default language
+        :class: with-shadow
+
+        The track "Community" was added to the default language after the translation
 
     ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php

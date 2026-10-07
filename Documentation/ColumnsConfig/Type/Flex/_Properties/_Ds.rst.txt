@@ -32,7 +32,7 @@
 
     ..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/ConferenceList.xml
         :caption: EXT:my_extension/Configuration/FlexForms/ConferenceList.xml
-        :visible-lines: 1-29, 112-114, 156-157
+        :visible-lines: 1-29, 113-115, 157-158
 
     ..  rubric:: Example with XML directly entered
 

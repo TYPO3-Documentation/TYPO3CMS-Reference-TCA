@@ -81,6 +81,7 @@
             <config>
               <type>country</type>
               <labelField>localizedName</labelField>
+              <size>4</size>
               <prioritizedCountries>
                 <numIndex index="0">CH</numIndex>
                 <numIndex index="1">DE</numIndex>
