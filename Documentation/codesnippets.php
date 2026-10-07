@@ -30,10 +30,4 @@ return [
     'targetFileName' => 'CodeSnippets/TypeForeignTableCtrl.rst.txt',
   ],
 
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_ctrl_minimal.php',
-    'targetFileName' => 'CodeSnippets/TxStyleguideCtrlMinimal.rst.txt',
-  ],
-
 ];

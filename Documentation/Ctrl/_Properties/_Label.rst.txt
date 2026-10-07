@@ -28,4 +28,3 @@
         :visible-lines: 4-29
         :emphasize-lines: 6
 
-    ..  include:: /CodeSnippets/TxStyleguideCtrlMinimal.rst.txt
