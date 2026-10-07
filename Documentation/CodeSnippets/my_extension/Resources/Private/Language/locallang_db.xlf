@@ -312,6 +312,9 @@
       <trans-unit id="partnership.partner" resname="partnership.partner">
         <source>Partner conference</source>
       </trans-unit>
+      <trans-unit id="partnership.shared_livestream" resname="partnership.shared_livestream">
+        <source>Share the live stream of the partner</source>
+      </trans-unit>
       <trans-unit id="plugin.conferencelist.categories" resname="plugin.conferencelist.categories">
         <source>Categories</source>
       </trans-unit>
