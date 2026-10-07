@@ -211,6 +211,7 @@ $data['tx_myextension_hotel'] = [
 ];
 $data['tx_myextension_partnership'] = [
     'NEWpartnership' => ['pid' => $pid, 'partner' => 'NEWconfeditors', 'discount' => 20],
+    'NEWpartnershiponline' => ['pid' => $pid, 'partner' => 'NEWconfonline', 'shared_livestream' => 1],
 ];
 $data['tx_myextension_comment'] = [
     'NEWcomment' => [
@@ -243,7 +244,7 @@ $data['tx_myextension_conference'] = [
         'comments' => 'NEWcomment', 'logo' => 'NEWimglogo',
         'registrations' => 'NEWregchris,NEWregsam', 'waiting_list' => 'NEWregrobin',
         'hotels' => 'NEWhotelfair,NEWhotelriver', 'content_elements' => 'NEWgettingthere',
-        'partners' => 'NEWpartnership',
+        'partners' => 'NEWpartnership,NEWpartnershiponline',
     ],
     'NEWconfeditors' => [
         'pid' => $pid, 'title' => 'Editors Day 2027',
@@ -251,6 +252,12 @@ $data['tx_myextension_conference'] = [
         'event_format' => 'onsite',
         'seats' => 120, 'contact_email' => 'editors@example.org', 'color' => '#2f99a4',
         'speakers' => 'NEWspada',
+    ],
+    'NEWconfonline' => [
+        'pid' => $pid, 'title' => 'TYPO3 Online Days 2027',
+        'conference_date' => strtotime('2027-11-17'), 'published' => 0,
+        'event_format' => 'online', 'stream_url' => 'https://example.org/online',
+        'contact_email' => 'online@example.org', 'color' => '#6c4ef5',
     ],
 ];
 $data['sys_file_reference'] = [

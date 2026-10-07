@@ -319,6 +319,17 @@ const screenshots = {
     tab: 'Program',
     element: field('partners'),
   },
+  CtrlTypeForeign: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Program',
+    prepare: async (frame) => {
+      for (const partner of ['Editors Day 2027', 'TYPO3 Online Days 2027']) {
+        await frame.locator(field('partners')).getByText(partner).first().click();
+        await frame.waitForLoadState('networkidle');
+      }
+    },
+    element: field('partners'),
+  },
   InlineRegistrations: {
     url: editUrl('tx_myextension_conference', conference),
     tab: 'Registrations',
