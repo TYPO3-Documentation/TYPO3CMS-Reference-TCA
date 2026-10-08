@@ -151,6 +151,8 @@ type inline** - as it is a container.
 Examples with overrideChildTca
 ==============================
 
+..  _columns-inline-properties-override-child-tca-examples-overrides-crop:
+
 Overrides the crop variants
 ---------------------------
 
@@ -158,6 +160,8 @@ This example overrides the crop variants in a configured fal relation:
 
 ..  literalinclude:: _Snippets/_overrideChildTcaCropVariants.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+
+..  _columns-inline-properties-override-child-tca-examples-define-fields:
 
 Define which fields to show in the child table
 ----------------------------------------------
@@ -170,6 +174,8 @@ the child table TCA:
     :visible-lines: 27-48
     :emphasize-lines: 41
 
+..  _columns-inline-properties-override-child-tca-examples-override-default:
+
 Override the default value of a child tables field
 --------------------------------------------------
 
@@ -180,6 +186,8 @@ the parent if a new child is created:
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
     :visible-lines: 27-48
     :emphasize-lines: 37
+
+..  _columns-inline-properties-override-child-tca-examples-override-foreign:
 
 Override the foreign_selector field target
 ------------------------------------------
@@ -195,6 +203,8 @@ points to. Here, the element browser of the speakers of an event opens on page
 ..  note::
     It is allowed to use this property within the :ref:`columnsOverrides property <types-properties-columnsoverrides>`
     of an inline parent in the `['types']` section.
+
+..  _columns-inline-properties-override-child-tca-examples-example-override:
 
 Example: Override by type
 -------------------------

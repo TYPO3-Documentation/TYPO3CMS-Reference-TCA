@@ -10,6 +10,8 @@ There is a subtle difference between select fields with the
 **render type selectCheckBox** and fields of the **type check**:
 
 
+..  _selectcheckbox-check-compared-select-values-from-a-checkbox-list:
+
 Select values from a checkbox list
 ==================================
 
@@ -23,6 +25,8 @@ The field in the database is of type text or varchar.
 
 ..  include:: /CodeSnippets/Manual/SqlSelectCheckbox3.rst.txt
 
+
+..  _select-check-box-check-compared-select-values-checkbox:
 
 Select values from a checkbox list
 ==================================

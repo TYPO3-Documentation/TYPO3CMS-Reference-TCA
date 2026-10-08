@@ -15,6 +15,8 @@
             check-link-text="true"
             interlink-shortcode="t3tca"
             confval-default="TCA"
+            check-headline-anchors="true"
+            confval-fields="TCA path, Scope, RenderType, Types, Examples, Values, Minimum, added, changed, deprecated, removed"
     />
     <project title="TCA Reference"
              release="13.4"

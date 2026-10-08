@@ -17,6 +17,8 @@ but they allow powerful combinations to specify which data structure should be
 used in different scenarios.
 
 
+..  _columns-flex-ds-pointer-one-data-structure-only:
+
 One data structure only
 =======================
 
@@ -34,6 +36,8 @@ definition with this TCA, the data structure defined in
 :file:`FILE:EXT:my_extension/Configuration/FlexForms/Main.xml`
 is parsed and the flex form defined in there is displayed.
 
+
+..  _columns-flex-ds-pointer-data-structure-selection-depends-on-a-field-value:
 
 Data structure selection depends on a field value
 =================================================
