@@ -7,8 +7,7 @@
         :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['lineWrapping']
         :Scope: Proc.
         :default: false
-
-        ..  versionadded:: 14.2
+        :added: 14.2
 
         When enabled, long lines are wrapped within the editor instead of
         requiring horizontal scrolling.

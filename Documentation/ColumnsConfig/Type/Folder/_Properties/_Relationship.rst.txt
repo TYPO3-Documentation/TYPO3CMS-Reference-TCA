@@ -5,8 +5,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['relationship']
     :type: string
     :Scope: Proc.
-
-    ..  versionadded:: 13.3
+    :added: 13.3
 
     Defines whether the field holds one folder or several. This decides
     which value a

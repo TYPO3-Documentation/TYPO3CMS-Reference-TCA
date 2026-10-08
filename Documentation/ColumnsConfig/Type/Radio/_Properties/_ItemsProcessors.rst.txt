@@ -3,8 +3,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['itemsProcessors']
     :type: array
     :Scope: Display / Proc.
-
-    ..  versionadded:: 14.0
+    :added: 14.0
 
     An array with numerical keys that can contain item processors implementing
     :php-short:`\TYPO3\CMS\Core\DataHandling\ItemsProcessorInterface`.
