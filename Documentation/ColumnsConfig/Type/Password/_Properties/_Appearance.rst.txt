@@ -1,0 +1,43 @@
+..  _columns-password-properties-appearance:
+
+..  confval:: appearance
+    :name: password-appearance
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
+    :type: array
+    :Scope: Display
+    :added: 15.0 feature-110851-1790717834
+
+    Has information about the appearance, namely:
+
+    ..  confval:: copyToClipboard
+        :name: password-appearance-copyToClipboard
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['copyToClipboard']
+        :type: boolean
+        :default: false
+        :added: 15.0 feature-110851-1790717834
+
+        Shows a button next to the input field. The button copies the
+        password to the clipboard of the operating system.
+
+        The backend form shows a stored password only obfuscated, also when
+        it is not :ref:`hashed <confval-password-hashed>`. The button
+        therefore appears only when the field holds a new value: a password
+        that is typed or generated. When the record is saved, the button is
+        hidden again.
+
+        Enable the option for a generated password that editors cannot edit,
+        see :ref:`allowEdit <confval-password-passwordgenerator-allowedit>`.
+        Editors cannot select the text of such a field, so the button is the
+        only way to copy the password before the record is saved.
+
+        ..  figure:: /Images/Conference/PasswordCopyToClipboard.png
+            :alt: The generated secret of the ticket shop with a button to copy it
+            :class: with-shadow
+
+            The generated secret of the ticket shop with a button to copy it
+
+        ..  rubric:: Example: Copy the generated secret of the ticket shop
+
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/134-tx_myextension_conference-ticketing_secret.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/134-tx_myextension_conference-ticketing_secret.php
+            :emphasize-lines: 13-15

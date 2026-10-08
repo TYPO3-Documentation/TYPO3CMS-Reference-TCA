@@ -10,6 +10,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
     'config' => [
       'type' => 'password',
       'hashed' => false,
+      'appearance' => [
+        'copyToClipboard' => true,
+      ],
       'fieldControl' => [
         'passwordGenerator' => [
           'renderType' => 'passwordGenerator',
