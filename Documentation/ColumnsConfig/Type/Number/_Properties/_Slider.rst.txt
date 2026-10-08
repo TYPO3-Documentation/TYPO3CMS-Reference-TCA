@@ -37,7 +37,7 @@
 
 ..  code-block:: php
 
-    'format' => 'decimal',
+    'scale' => 2,
     'range' => [
       'lower' => 0,
       'upper' => 1,
