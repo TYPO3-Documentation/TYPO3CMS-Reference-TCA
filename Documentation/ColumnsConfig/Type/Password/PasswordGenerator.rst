@@ -63,7 +63,7 @@ generator creates a random hex string with 40 characters:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/134-tx_myextension_conference-ticketing_secret.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/134-tx_myextension_conference-ticketing_secret.php
-    :emphasize-lines: 17
+    :emphasize-lines: 20
 
 ..  _columns-password-properties-passwordgenerator-base64:
 
