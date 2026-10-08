@@ -6,6 +6,8 @@
 Content was removed
 ===================
 
+..  _not-found-typo3-14-0:
+
 TYPO3 14.0
 ==========
 
