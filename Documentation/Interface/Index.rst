@@ -31,7 +31,7 @@ Properties of TCA section `interface`
     :name: interface
     :display: table
     :type:
-    :Default:
+    :default:
 
     ..  confval:: maxDBListItems
         :name: maxDBListItems

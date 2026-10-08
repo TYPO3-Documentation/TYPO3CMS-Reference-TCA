@@ -124,6 +124,8 @@ sections of :php:`$GLOBALS['TCA']['some_table']`. Each section is covered in mor
 chapter.
 
 
+..  _tca-structure-level2-ctrl-table:
+
 ['ctrl'] The table
 ~~~~~~~~~~~~~~~~~~
 
@@ -146,6 +148,8 @@ For all tables configured in :php:`$GLOBALS['TCA']` this section must exist.
 :ref:`Full reference <ctrl>`
 
 
+..  _introduction-interface-backend-interface-handling:
+
 ['interface'] Backend interface handling
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -154,6 +158,8 @@ display in the backend, mostly the Web > List module.
 
 :ref:`Full reference <interface>`
 
+
+..  _tca-structure-level2-columns-individual-fields:
 
 ['columns'] Individual fields
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -173,6 +179,8 @@ type.
 :ref:`Full reference <columns>` and :ref:`['config'] section <columns-types>`.
 
 
+..  _tca-structure-level2-types-form-layout:
+
 ['types'] Form layout for editing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -183,6 +191,8 @@ additional features applied.
 
 :ref:`Full reference <types>`
 
+
+..  _tca-structure-level2-palettes-palette-fields:
 
 ['palettes'] Palette fields order
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

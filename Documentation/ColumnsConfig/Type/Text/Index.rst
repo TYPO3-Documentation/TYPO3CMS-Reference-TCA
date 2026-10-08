@@ -62,6 +62,8 @@ The following `renderTypes` are available:
     element.
 
 
+..  _columns-text-simple-text-area:
+
 Simple text area
 ================
 
@@ -75,6 +77,8 @@ on how to configure such an editor.
 
 ..  include:: /CodeSnippets/Text4.rst.txt
 
+..  _columns-text-rich-text-editor:
+
 Rich text editor field
 ======================
 
@@ -85,6 +89,8 @@ on how to configure such an editor.
 
 ..  include:: /CodeSnippets/Rte1.rst.txt
 
+
+..  _columns-text-code-highlight-editor:
 
 Code highlight editor
 =====================
@@ -103,6 +109,8 @@ such an editor.
     :visible-lines: 11-20
     :emphasize-lines: 16
 
+..  _columns-text-backend-layout-editor:
+
 Backend layout editor
 =====================
 
@@ -115,6 +123,8 @@ See :ref:`render type belayoutwizard <columns-text-rendertype-belayoutwizard>`
 on how to configure such an editor.
 
 ..  include:: /CodeSnippets/Text20.rst.txt
+
+..  _columns-text-text-field-rendertype:
 
 Text field with renderType textTable
 ====================================
