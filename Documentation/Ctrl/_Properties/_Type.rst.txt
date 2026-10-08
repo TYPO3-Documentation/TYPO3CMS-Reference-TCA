@@ -44,8 +44,12 @@
    `sys_file` table.
 
 
+..  _ctrl-reference-type-examples:
+
 Examples
 ========
+
+..  _ctrl-reference-type-stored-in-field:
 
 The type stored in a field
 --------------------------
@@ -84,6 +88,8 @@ Only a workshop asks for the maximum number of participants:
 
 See the :ref:`section about types <types>` for more details.
 
+
+..  _ctrl-reference-type-foreign-table-field:
 
 Type in relation to a foreign table's field
 -------------------------------------------
