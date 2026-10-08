@@ -1,0 +1,28 @@
+..  _columns-uuid-properties-appearance:
+
+..  confval:: appearance
+    :name: uuid-appearance
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']
+    :type: array
+    :Scope: Display
+    :added: 15.0
+
+    Has information about the appearance, namely:
+
+    ..  confval:: copyToClipboard
+        :name: uuid-appearance-copyToClipboard
+        :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['copyToClipboard']
+        :type: boolean
+        :default: true
+        :changed: 15.0 deprecation-110865-1790803661
+
+        Shows a button next to the input field. The button copies the UUID
+        to the clipboard of the operating system.
+
+        Page TSconfig can override the option for a field, see
+        `TCEFORM config <https://docs.typo3.org/permalink/t3tsref:confval-tceform-config>`_:
+
+        ..  code-block:: typoscript
+            :caption: EXT:my_extension/Configuration/page.tsconfig
+
+            TCEFORM.tx_myextension_speaker.identifier.config.appearance.copyToClipboard = 0
