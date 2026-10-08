@@ -13,6 +13,8 @@ Number
     :file:`ext_tables.sql` file.
 
 The TCA type `number` should be used to input values representing numbers.
+It holds integers, or decimal numbers with the number of decimal digits
+set in :ref:`scale <columns-number-properties-scale>`.
 
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically.
