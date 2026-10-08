@@ -10,20 +10,9 @@
     By using the explicit label entry, code duplication upon reusing existing palettes can be reduced. The label is
     always shown with the palette, no matter where it is referenced.
 
-    Moving the label from the types to the palette:
+    The palette with the coordinates of a location has its own label, so the
+    types reference it with `--palette--;;coordinates`, without a label:
 
-    ..  code-block:: diff
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php (excerpt)
-
-         'types' => [
-           'myType' => [
-        -    'showitem' => 'aField, --palette--;LLL:my_extension.db:aPaletteDescription;aPalette, someOtherField',
-        +    'showitem' => 'aField, --palette--;;aPalette, someOtherField',
-           ],
-         ],
-         'palettes' => [
-           'aPalette' => [
-        +    'label' => 'LLL:my_extension.db:aPaletteDescription',
-             'showitem' => 'aFieldInAPalette, anotherFieldInPalette',
-           ],
-         ],
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/415-tx_myextension_location-coordinates.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/415-tx_myextension_location-coordinates.php
+        :emphasize-lines: 24,30
