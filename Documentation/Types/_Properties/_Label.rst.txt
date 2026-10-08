@@ -3,9 +3,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['types'][$recordType]['label']
     :type: string, name of a field
     :Scope: Display
-
-    ..  versionadded:: 14.2
-        :changelog: feature-108581-1735479000
+    :added: 14.2 feature-108581-1735479000
 
     Defines the primary field used as a type-specific label for a record type,
     overriding the label defined in
@@ -41,9 +39,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['types'][$recordType]['label_alt']
     :type: string, comma separated list of fields
     :Scope: Display
-
-    ..  versionadded:: 14.2
-        :changelog: feature-108581-1735479000
+    :added: 14.2 feature-108581-1735479000
 
     Alternative field(s) used when label is empty (or as additional fields)
 
@@ -53,8 +49,6 @@
     :type: bool
     :default: false
     :Scope: Display
-
-    ..  versionadded:: 14.2
-        :changelog: feature-108581-1735479000
+    :added: 14.2 feature-108581-1735479000
 
     Force display of alternative fields alongside the primary label
