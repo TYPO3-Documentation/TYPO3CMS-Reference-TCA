@@ -118,7 +118,7 @@ Manual sorting in the backend
 
     ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_talk.php
         :caption: EXT:my_extension/Configuration/TCA/tx_myextension_talk.php
-        :visible-lines: 4-26
+        :visible-lines: 4-27
         :emphasize-lines: 14
 
 ..  attention::
