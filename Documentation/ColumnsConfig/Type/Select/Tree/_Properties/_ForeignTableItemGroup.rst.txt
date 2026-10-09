@@ -3,8 +3,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['foreign_table_item_group']
     :type: string (column name)
     :Scope: Display / Proc.
-
-    ..  versionadded:: 13.0
+    :added: 13.0
 
     This property references a specific field in the
     :ref:`foreign table <columns-select-properties-foreign-table>`, which

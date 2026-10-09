@@ -22,8 +22,7 @@
         :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['enableDirectRecordTypeCreation']
         :type: bool
         :default: true
-
-        ..  versionadded:: 14.0
+        :added: 14.0
 
         Record types registered via TCA are automatically displayed in the
         "Create new record" component in the backend module
@@ -57,8 +56,7 @@
         :name: types-creationOptions-title
         :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['creationOptions']['title']
         :type: string | language reference
-
-        ..  versionadded:: 14.0
+        :added: 14.0
 
         With this option it is possible to set an
         individual title for the record type, to be used as label on the

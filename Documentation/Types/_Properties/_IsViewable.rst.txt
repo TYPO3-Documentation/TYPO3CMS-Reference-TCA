@@ -5,9 +5,7 @@
     :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['isViewable']
     :type: boolean
     :default: true
-
-    ..  versionadded:: 14.2
-        :changelog: feature-97898-1737639600
+    :added: 14.2 feature-97898-1737639600
 
     ..  note::
         This property is only interpreted in the table `pages`.

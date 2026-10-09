@@ -75,8 +75,7 @@
         :name: slug-generatorOptions-regex-replacements
         :type: array
         :Scope: Display / Proc.
-
-        ..  versionadded:: 14.0
+        :added: 14.0
 
         A config array to provide regex based definitions for string replacement.
         Case-insensitive and wildcard replacement is possible.

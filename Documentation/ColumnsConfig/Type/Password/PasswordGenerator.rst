@@ -131,8 +131,7 @@ Password policy
     :name: password-passwordGenerator-passwordPolicy
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordPolicy']
     :type: string
-
-    ..  versionadded:: 14.2
+    :added: 14.2
 
     This option can be used to configure which
     `Password policy <https://docs.typo3.org/permalink/t3coreapi:password-policies>`_
