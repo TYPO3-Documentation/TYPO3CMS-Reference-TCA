@@ -84,18 +84,13 @@
 
 ..  rubric:: Example: Items definition with label, value and icon
 
-A more complex example could be this (includes icons):
+Each content element type is an item of the field `CType` of the table
+`tt_content`. The API method `addRecordType()` adds the item with a label, a
+value, and an icon:
 
-
-..  code-block:: php
-
-    'items' => [
-      [
-        'label' => 'Talk',
-        'value' => 'talk',
-        'icon' => 'my-extension-talk',
-      ],
-    ],
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/610-tt_content-call_for_papers.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/610-tt_content-call_for_papers.php
+    :emphasize-lines: 13
 
 ..  rubric:: Example: SelectSingle field with itemGroups
 
