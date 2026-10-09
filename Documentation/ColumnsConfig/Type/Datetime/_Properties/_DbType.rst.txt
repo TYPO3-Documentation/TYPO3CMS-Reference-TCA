@@ -11,31 +11,21 @@
     `date`, `time` or `datetime` field in the database. Keep in mind that no
     timezone conversion will happen.
 
+    TYPO3 creates the
+    :ref:`database column <t3coreapi:auto-generated-db-structure>` with
+    the native type, so it does not need an entry in :file:`ext_tables.sql`.
+
     ..  note::
         When this property is *not set* the datetime value is automatically
         converted to an :php:`int`.
 
 ..  rubric:: Example: The registration deadline stored in a datetime field
 
-..  code-block:: sql
-    :caption: :file:`ext_tables.sql`
-
-    CREATE TABLE tx_myextension_conference (
-      registration_deadline datetime default NULL
-    );
-
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/117-tx_myextension_conference-registration_deadline.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/117-tx_myextension_conference-registration_deadline.php
     :emphasize-lines: 13
 
 ..  rubric:: Example: The time the doors open, stored in a time field
-
-..  code-block:: sql
-    :caption: :file:`ext_tables.sql`
-
-    CREATE TABLE tx_myextension_conference (
-      doors_open time default NULL
-    );
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/114-tx_myextension_conference-doors_open.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/114-tx_myextension_conference-doors_open.php
