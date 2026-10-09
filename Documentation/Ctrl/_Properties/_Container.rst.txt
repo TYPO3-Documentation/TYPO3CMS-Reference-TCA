@@ -20,25 +20,15 @@
     nodes, too, and if implemented correctly will automatically have their
     configuration merged with the definition provided in this TCA array.
 
-    The basic array looks like:
+    The form of a conference shows above its fields how many records refer to
+    it. A field wizard of the `formWrapContainer` adds this:
 
-    ..  code-block:: php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/101-tx_myextension_conference-references.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/101-tx_myextension_conference-references.php
+        :emphasize-lines: 6
 
-        'ctrl' => [
-          'container' => [
-            '<containerRenderType>' => [
-              'fieldWizard' => [
-                '<aName>' => [
-                  'renderType' => '<aRenderType>',
-                  'before' => ['<anotherName>'],
-                  'after' => ['<yetAnotherName>'],
-                  'disabled' => false,
-                  'options' => [],
-                ],
-              ],
-            ],
-          ],
-        ],
+    The path is `container.<containerRenderType>.fieldWizard.<aName>`, with
+    these keys:
 
     <containerRenderType>
         should be a defined container render type.
