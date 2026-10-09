@@ -43,7 +43,6 @@
     "typo3/cms-rte-ckeditor": "^15.0",
     "typo3/cms-scheduler": "^15.0",
     "typo3/cms-seo": "^15.0",
-    "typo3/cms-styleguide": "^15.0",
     "typo3/cms-sys-note": "^15.0",
     "typo3/cms-tstemplate": "^15.0",
     "typo3/cms-viewpage": "^15.0",
