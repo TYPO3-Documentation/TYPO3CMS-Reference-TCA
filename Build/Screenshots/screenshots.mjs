@@ -248,6 +248,10 @@ const screenshots = {
     url: editUrl('tx_myextension_conference', conference),
     element: field('registration_open'),
   },
+  CheckLabeledToggleInverted: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('comments_closed'),
+  },
   CheckItemsProcessors: {
     url: editUrl('tx_myextension_talk', workshop),
     element: field('days'),

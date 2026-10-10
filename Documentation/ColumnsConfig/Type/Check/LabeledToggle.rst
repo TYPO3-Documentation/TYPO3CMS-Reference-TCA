@@ -42,14 +42,17 @@ Single checkbox with labeled toggle
 Single checkbox with labeled toggle inverted state display
 ----------------------------------------------------------
 
+The field stores `1` when the comments on a talk are closed. With
+`invertStateDisplay`, the toggle is on while the comments are open. The
+labels `labelChecked` and `labelUnchecked` follow the displayed state of the
+toggle, not the stored value:
 
-..  code-block:: php
+..  figure:: /Images/Conference/CheckLabeledToggleInverted.png
+    :alt: A toggle that is switched on and shows the label Open
+    :class: with-shadow
 
-    'items' => [
-      [
-        'label' => 'Registration closed',
-        'invertStateDisplay' => true,
-        'labelChecked' => 'Closed',
-        'labelUnchecked' => 'Open',
-      ],
-    ],
+    The toggle is on, and the comments are open
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/256-tx_myextension_talk-comments_closed.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/256-tx_myextension_talk-comments_closed.php
+    :emphasize-lines: 16-19
