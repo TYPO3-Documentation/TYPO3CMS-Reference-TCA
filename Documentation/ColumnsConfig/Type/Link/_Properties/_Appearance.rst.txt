@@ -40,19 +40,7 @@
             `buttons.link.relAttribute.enabled <https://docs.typo3.org/permalink/t3tsref:buttons-link-relattribute-enabled>`_,
             must be enabled.
 
-        ..  code-block:: php
-
-            'appearance' => [
-              // Display only 'class' and 'params'
-              'allowedOptions' => ['class', 'params'],
-            ],
-
-        ..  code-block:: php
-
-            'appearance' => [
-              // Allow all options (or skip this option)
-              'allowedOptions' => ['*'],
-            ],
+        The link to the recording of a talk shows no options:
 
         ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/240-tx_myextension_talk-recording.php
             :caption: EXT:my_extension/Configuration/TCA/Overrides/240-tx_myextension_talk-recording.php
@@ -72,12 +60,11 @@
         subject:
             The subject of an email can be pre-filled.
 
-        ..  code-block:: php
+        The email for feedback on a talk can have a subject and a text:
 
-            'allowedTypes' => ['email'],
-            'appearance' => [
-              'allowedOptions' => ['body', 'cc'],
-            ],
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/257-tx_myextension_talk-feedback_email.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/257-tx_myextension_talk-feedback_email.php
+            :emphasize-lines: 13-16
 
     ..  confval:: allowedFileExtensions
         :name: link-appearance-allowedFileExtensions
@@ -88,19 +75,11 @@
         configuration or set it to :php:`['*']`. It's not possible to deny all
         extensions.
 
-        ..  code-block:: php
+        The program of a conference links to a PDF file:
 
-            'appearance' => [
-              // Allow only jpg and png file extensions
-              'allowedFileExtensions' => ['jpg', 'png'],
-            ],
-
-        ..  code-block:: php
-
-            'appearance' => [
-              // Allow all file extensions (or skip this option)
-              'allowedFileExtensions' => ['*'],
-            ],
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/137-tx_myextension_conference-program.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/137-tx_myextension_conference-program.php
+            :emphasize-lines: 13-16
 
     ..  confval:: browserTitle
         :name: link-appearance-browserTitle
