@@ -75,7 +75,7 @@ can be overridden or extended, for example via a site setting defined in
 page TSconfig:
 
 ..  code-block:: typoscript
-    :caption: EXT:my_extension/Configuration/Sets/MySet/page.tsconfig
+    :caption: EXT:my_extension/Configuration/Sets/Main/page.tsconfig
 
     TCEFORM.tx_myextension_conference.timezone.itemsProcessors.100.regions = {$myExtension.regions}
 
