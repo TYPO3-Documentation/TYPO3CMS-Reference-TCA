@@ -13,8 +13,9 @@ use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
 /**
  * Checks that the example extension in Documentation/CodeSnippets/my_extension
- * installs and that its TCA needs no migration, so the examples
- * shown in the manual are valid for the current TYPO3 version.
+ * and the site package in Documentation/CodeSnippets/my_sitepackage install
+ * and that their TCA needs no migration, so the examples shown in the manual
+ * are valid for the current TYPO3 version.
  */
 final class MyExtensionTest extends FunctionalTestCase
 {
@@ -22,6 +23,7 @@ final class MyExtensionTest extends FunctionalTestCase
 
     protected array $testExtensionsToLoad = [
         'myvendor/my-extension',
+        'myvendor/my-sitepackage',
     ];
 
     #[Test]
@@ -47,6 +49,16 @@ final class MyExtensionTest extends FunctionalTestCase
         $tca = $this->get(TcaFactory::class)->createNotMigrated();
         $messages = $this->get(TcaMigration::class)->migrate($tca)->getMessages();
         self::assertSame([], $messages);
+    }
+
+    #[Test]
+    public function sitePackageOverridesTheExtension(): void
+    {
+        $suggestOptions = $GLOBALS['TCA']['tx_myextension_conference']['columns']['related_content']['config']['suggestOptions'];
+        // Set by the extension
+        self::assertTrue($suggestOptions['default']['searchWholePhrase']);
+        // Added by the site package
+        self::assertSame('6,7', $suggestOptions['default']['pidList']);
     }
 
     #[Test]
