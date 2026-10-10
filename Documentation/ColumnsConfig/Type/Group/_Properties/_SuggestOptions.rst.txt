@@ -54,16 +54,14 @@
         Limit the search to certain pages (and their sub pages). When pidList is empty all pages will be included in the
         search (as long as the be\_user is allowed to see them).
 
+        The page IDs differ from one installation to the next. An extension
+        therefore does not set them. The site package of the installation
+        can set them in its TCA overrides:
+
         **Example**
 
-        ..  code-block:: php
-
-            'suggestOptions' => [
-                'default' => [
-                    'pidList' => '6,7',
-                    'pidDepth' => 4,
-                ],
-            ],
+        ..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/tx_myextension_conference.php
+            :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tx_myextension_conference.php
 
     pidDepth (integer)
         Expand pidList by this number of levels. Has an effect only if pidList has a value.
