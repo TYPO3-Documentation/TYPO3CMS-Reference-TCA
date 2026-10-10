@@ -7,6 +7,10 @@
     {
       "type": "path",
       "url": "Documentation/CodeSnippets/my_extension"
+    },
+    {
+      "type": "path",
+      "url": "Documentation/CodeSnippets/my_sitepackage"
     }
   ],
   "require": {
@@ -15,6 +19,7 @@
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^3.46",
     "myvendor/my-extension": "@dev",
+    "myvendor/my-sitepackage": "@dev",
     "typo3/cms-adminpanel": "^15.0",
     "typo3/cms-backend": "^15.0",
     "typo3/cms-belog": "^15.0",

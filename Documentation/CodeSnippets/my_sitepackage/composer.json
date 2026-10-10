@@ -1,0 +1,19 @@
+{
+  "name": "myvendor/my-sitepackage",
+  "description": "Site package of a conference website, an example of the TCA Reference",
+  "license": "GPL-2.0-or-later",
+  "type": "typo3-cms-extension",
+  "require": {
+    "myvendor/my-extension": "*",
+    "typo3/cms-core": "^15.0"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "my_sitepackage",
+      "version": "1.0.0",
+      "Package": {
+        "providesPackages": {}
+      }
+    }
+  }
+}
