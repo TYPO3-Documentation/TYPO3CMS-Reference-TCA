@@ -573,6 +573,15 @@
       <trans-unit id="talk.comments" resname="talk.comments">
         <source>Comments</source>
       </trans-unit>
+      <trans-unit id="talk.comments_closed" resname="talk.comments_closed">
+        <source>Comments on the website</source>
+      </trans-unit>
+      <trans-unit id="talk.comments_closed.closed" resname="talk.comments_closed.closed">
+        <source>Closed</source>
+      </trans-unit>
+      <trans-unit id="talk.comments_closed.open" resname="talk.comments_closed.open">
+        <source>Open</source>
+      </trans-unit>
       <trans-unit id="talk.days" resname="talk.days">
         <source>Days</source>
       </trans-unit>
