@@ -53,18 +53,16 @@
         Example:
 
         ..  code-block:: yaml
+            :caption: config/sites/conference/config.yaml
 
-            # Site config
-            base: /
+            base: 'https://conference.example.org/'
             rootPageId: 1
-            categories:
-                root: 123
+            conference:
+              venue: 12
 
-
-        ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_TreeStartingPoints.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 16-28
-            :emphasize-lines: 24
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/715-tx_myextension_sponsor-booth_hall.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/715-tx_myextension_sponsor-booth_hall.php
+            :emphasize-lines: 21
 
         ..  rubric:: Markers in startingPoints
 
