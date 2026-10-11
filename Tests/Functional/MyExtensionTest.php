@@ -59,6 +59,8 @@ final class MyExtensionTest extends FunctionalTestCase
         self::assertTrue($suggestOptions['default']['searchWholePhrase']);
         // The option of the site package
         self::assertSame('6,7', $suggestOptions['default']['pidList']);
+        // The site package also changes a table of the Core
+        self::assertSame('', $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode']);
     }
 
     #[Test]
