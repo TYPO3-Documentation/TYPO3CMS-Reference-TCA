@@ -246,6 +246,12 @@
       <trans-unit id="hotel.name" resname="hotel.name">
         <source>Name</source>
       </trans-unit>
+      <trans-unit id="hotel.recommended" resname="hotel.recommended">
+        <source>Recommended</source>
+      </trans-unit>
+      <trans-unit id="hotel.recommended.item" resname="hotel.recommended.item">
+        <source>Recommend this hotel to the attendees</source>
+      </trans-unit>
       <trans-unit id="location" resname="location">
         <source>Location</source>
       </trans-unit>
@@ -590,6 +596,18 @@
       </trans-unit>
       <trans-unit id="talk.audience.technical" resname="talk.audience.technical">
         <source>Technical</source>
+      </trans-unit>
+      <trans-unit id="talk.checklist" resname="talk.checklist">
+        <source>Preparation</source>
+      </trans-unit>
+      <trans-unit id="talk.checklist.recording" resname="talk.checklist.recording">
+        <source>Recording approved by the speaker</source>
+      </trans-unit>
+      <trans-unit id="talk.checklist.slides" resname="talk.checklist.slides">
+        <source>Slides received</source>
+      </trans-unit>
+      <trans-unit id="talk.checklist.technical_check" resname="talk.checklist.technical_check">
+        <source>Technical check done</source>
       </trans-unit>
       <trans-unit id="talk.comments" resname="talk.comments">
         <source>Comments</source>

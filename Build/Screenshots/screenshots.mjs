@@ -236,6 +236,10 @@ const screenshots = {
     url: editUrl('tx_myextension_location', location),
     element: field('open_days'),
   },
+  CheckIcons: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('checklist'),
+  },
   CheckMaximumRecordsChecked: {
     url: editUrl('tx_myextension_location', location),
     element: field('main_venue'),
