@@ -246,6 +246,9 @@
       <trans-unit id="hotel.name" resname="hotel.name">
         <source>Name</source>
       </trans-unit>
+      <trans-unit id="hotel.nearest_venue" resname="hotel.nearest_venue">
+        <source>Nearest venue</source>
+      </trans-unit>
       <trans-unit id="hotel.recommended" resname="hotel.recommended">
         <source>Recommended</source>
       </trans-unit>
