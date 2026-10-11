@@ -84,15 +84,21 @@ Example: Toggle checkbox with invertStateDisplay
 
 ..  _tca-example-checkbox-3:
 
-Example: Three checkboxes, two with labels, one without
-=======================================================
+Example: Checkboxes with icons
+==============================
 
-..  code-block:: php
+..  figure:: /Images/Conference/CheckIcons.png
+    :alt: Three tasks of a talk, two with a tick and one with a clock
+    :class: with-shadow
 
-    'items' => [
-      ['label' => 'Recorded', 'iconIdentifierChecked' => 'actions-check'],
-      ['label' => ''],
-    ],
+    Two tasks are finished, one is still open
+
+Each checkbox of the preparation of a talk shows a tick in a circle when it
+is checked, and a clock when it is not:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/295-tx_myextension_talk-checklist.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/295-tx_myextension_talk-checklist.php
+    :emphasize-lines: 16-17,21-22,26-27
 
 
 ..  _tca-example-checkbox-itemsprocfunc:
@@ -133,16 +139,12 @@ Example: checkboxLabeledToggle
 
 ..  _tca-example-checkbox-8:
 
-Example: Only one record can be checked
-=======================================
+Example: Only one record on a page can be checked
+=================================================
 
-In the example below, only one record from the same table will be allowed
-to have that particular box checked.
+Each conference keeps its hotels in a folder of its own. Only one hotel in
+a folder can be the recommended hotel:
 
-
-..  code-block:: php
-
-    'eval' => 'maximumRecordsCheckedInPid',
-    'validation' => [
-      'maximumRecordsCheckedInPid' => 1,
-    ],
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/955-tx_myextension_hotel-recommended.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/955-tx_myextension_hotel-recommended.php
+    :emphasize-lines: 17-20
