@@ -171,6 +171,9 @@
       <trans-unit id="conference.short_title" resname="conference.short_title">
         <source>Short title</source>
       </trans-unit>
+      <trans-unit id="conference.sitemap_priority" resname="conference.sitemap_priority">
+        <source>Priority in the XML sitemap</source>
+      </trans-unit>
       <trans-unit id="conference.slug" resname="conference.slug">
         <source>URL segment</source>
       </trans-unit>

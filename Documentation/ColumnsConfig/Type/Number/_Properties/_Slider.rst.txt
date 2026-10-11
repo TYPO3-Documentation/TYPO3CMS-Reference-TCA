@@ -35,13 +35,9 @@
 
 ..  rubric:: Example: Decimal slider between 0 and 1
 
-..  code-block:: php
+The priority of a conference in the XML sitemap goes from 0.0 to 1.0 in
+steps of 0.1:
 
-    'format' => 'decimal',
-    'range' => [
-      'lower' => 0,
-      'upper' => 1,
-    ],
-    'slider' => [
-      'step' => 0.1,
-    ],
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/108-tx_myextension_conference-sitemap_priority.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/108-tx_myextension_conference-sitemap_priority.php
+    :emphasize-lines: 12-20
