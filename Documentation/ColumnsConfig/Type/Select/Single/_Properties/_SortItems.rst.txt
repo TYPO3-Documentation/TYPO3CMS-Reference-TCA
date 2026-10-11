@@ -31,7 +31,7 @@
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
-    :emphasize-lines: 29
+    :emphasize-lines: 31
 
 
 ..  _tca-example-select-single-19:
@@ -50,18 +50,18 @@
 
 ..  rubric:: Example: Sort items by a custom method
 
-The following custom method sorts the items by their reversed labels:
+The time zones of a conference are sorted by label first, and then by their
+offset to UTC. A key other than `label` and `value` names a method in the
+form `ClassName->methodName`:
 
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
+    :emphasize-lines: 30-35
 
-..  code-block:: php
+The method receives the items as :php:`SelectItem` objects by reference.
+The orderings run one after the other, and :php:`usort()` keeps the order
+of equal items. Time zones with the same offset therefore stay sorted by
+label:
 
-    'sortItems' => [
-      'tx_myextension' => MyItemSorter::class . '->sortReverseTitles',
-    ],
-
-..  code-block:: php
-
-    public function sortReverseTitles(array &$items, string $tableName, string $fieldName): void
-    {
-      usort($items, static fn(array $a, array $b): int => strcmp($b['label'], $a['label']));
-    }
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Backend/TimezoneSorter.php
+    :caption: EXT:my_extension/Classes/Backend/TimezoneSorter.php

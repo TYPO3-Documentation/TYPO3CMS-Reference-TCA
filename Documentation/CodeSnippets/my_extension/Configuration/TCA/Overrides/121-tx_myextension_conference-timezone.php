@@ -1,6 +1,7 @@
 <?php
 
 use MyVendor\MyExtension\Backend\ItemsProcessor\TimezoneItemsProcessor;
+use MyVendor\MyExtension\Backend\TimezoneSorter;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
@@ -28,6 +29,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
       ],
       'sortItems' => [
         'label' => 'asc',
+        // Then by the offset to UTC, the time zones with the same offset
+        // stay sorted by label
+        'offset' => TimezoneSorter::class . '->sortByOffset',
       ],
       'dbFieldLength' => 64,
       'behaviour' => [

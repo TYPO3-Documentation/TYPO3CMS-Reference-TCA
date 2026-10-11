@@ -24,4 +24,4 @@
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
-    :emphasize-lines: 32
+    :emphasize-lines: 36

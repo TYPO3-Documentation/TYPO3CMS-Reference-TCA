@@ -20,7 +20,7 @@
 
     ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
         :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
-        :emphasize-lines: 17
+        :emphasize-lines: 18
 
     For fields of type `select`, each
     :php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` must be created with

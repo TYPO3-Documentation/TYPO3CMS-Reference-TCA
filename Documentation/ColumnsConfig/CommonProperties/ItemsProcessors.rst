@@ -30,7 +30,7 @@ The time zone of a conference gets its items from a processor:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
-    :emphasize-lines: 17-24
+    :emphasize-lines: 18-25
 
 A further processor with a key lower than `100` would run before it.
 
@@ -68,7 +68,7 @@ parameters:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
-    :emphasize-lines: 20-22
+    :emphasize-lines: 21-23
 
 The processor accesses `$context->processorParameters['regions']`. The value
 can be overridden or extended, for example via a site setting defined in
