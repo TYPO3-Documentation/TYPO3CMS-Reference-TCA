@@ -534,6 +534,9 @@
       <trans-unit id="sponsor" resname="sponsor">
         <source>Sponsor</source>
       </trans-unit>
+      <trans-unit id="sponsor.booth_hall" resname="sponsor.booth_hall">
+        <source>Hall of the booth</source>
+      </trans-unit>
       <trans-unit id="sponsor.logo" resname="sponsor.logo">
         <source>Logo</source>
       </trans-unit>
