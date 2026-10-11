@@ -20,13 +20,13 @@
 
     ..  rubric:: Example with XML in external file
 
-    ..  code-block:: php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php (excerpt)
+    A plugin of the extension has its settings in a FlexForm file. The plugin
+    registration sets `ds` of the field `pi_flexform` for the record type of
+    the plugin, with `columnsOverrides`:
 
-        'config' => [
-            'type' => 'flex',
-            'ds' => 'FILE:EXT:my_extension/Configuration/FlexForms/ConferenceList.xml',
-        ],
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/600-tt_content-conference_list.php
+        :emphasize-lines: 24
 
     The included file:
 
@@ -36,24 +36,9 @@
 
     ..  rubric:: Example with XML directly entered
 
-    ..  code-block:: php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php (excerpt)
+    The two settings of the live stream player of a conference are in its
+    TCA:
 
-        'config' => [
-            'type' => 'flex',
-            'ds' => '
-                <T3DataStructure>
-                    <ROOT>
-                        <type>array</type>
-                        <el>
-                            <settings.limit>
-                                <label>Maximum number of conferences</label>
-                                <config>
-                                    <type>number</type>
-                                </config>
-                            </settings.limit>
-                        </el>
-                    </ROOT>
-                </T3DataStructure>
-            ',
-        ],
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/122-tx_myextension_conference-livestream_player.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/122-tx_myextension_conference-livestream_player.php
+        :emphasize-lines: 13-36
