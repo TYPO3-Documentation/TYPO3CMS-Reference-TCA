@@ -151,6 +151,8 @@ $data['tx_myextension_talk'] = [
         'abstract' => "How the table configuration array turns a database table into a backend form.\n\n\n\nWith examples from a real extension.",
         'comments' => 'NEWcommenttalk', 'recording_allowed' => 1, 'spoken_language' => 'en',
         'audience' => 'developers,integrators', 'equipment' => 'handheld_microphone,projector',
+        // Slides received and recording approved, technical check open
+        'checklist' => 3,
     ],
     'NEWtalkworkshop' => [
         'pid' => $pid, 'talk_type' => 'workshop', 'title' => 'Write your first form element',
