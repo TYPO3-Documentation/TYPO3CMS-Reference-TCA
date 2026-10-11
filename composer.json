@@ -7,6 +7,10 @@
     {
       "type": "path",
       "url": "Documentation/CodeSnippets/my_extension"
+    },
+    {
+      "type": "path",
+      "url": "Documentation/CodeSnippets/my_sitepackage"
     }
   ],
   "require": {
@@ -15,6 +19,7 @@
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^3.46",
     "myvendor/my-extension": "@dev",
+    "myvendor/my-sitepackage": "@dev",
     "t3docs/codesnippet": "dev-main",
     "t3docs/examples": "^14.1",
     "t3docs/site-package": "dev-main",
