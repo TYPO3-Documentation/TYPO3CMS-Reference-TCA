@@ -44,20 +44,15 @@ Configuring a table with a FlexForm
 
 Use configuration option `ds  <https://docs.typo3.org/permalink/t3tca:confval-flex-ds>`_
 to either pass a file reference to the XML file containing the FlexForm or
-a string containing the FlexForm's XML:
+a string containing the FlexForm's XML. The live stream player of a
+conference has its two settings as a string:
 
-..  code-block:: php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php (excerpt)
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/122-tx_myextension_conference-livestream_player.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/122-tx_myextension_conference-livestream_player.php
+    :emphasize-lines: 12-36
 
-    'config' => [
-        'type' => 'flex',
-        'ds' => 'FILE:EXT:my_extension/Configuration/FlexForms/ConferenceList.xml',
-    ],
-
-Essentially: Whenever a record is handled that has a column field
-definition with this TCA, the data structure defined in
-:file:`FILE:EXT:my_extension/Configuration/FlexForms/ConferenceList.xml`
-is parsed and the flex form defined in there is displayed.
+When a record with this field is edited, the backend parses the data
+structure and shows the form that it defines.
 
 ..  _columns-flex-ds-by-type:
 
@@ -73,11 +68,21 @@ If the table has `$GLOBALS['TCA'][$table]['ctrl']['type']  <https://docs.typo3.o
 set, you can use `columnsOverrides  <https://docs.typo3.org/permalink/t3tca:confval-types-columnsoverrides>`_
 to set different FlexForms by type.
 
-..  literalinclude:: _CodeSnippets/_column_overrides.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 23-30, 32-59
-    :emphasize-lines: 28, 41, 51
+The room setup of a talk uses the FlexForm file :file:`RoomSetup.xml` for
+all record types. A workshop overrides it with
+:file:`WorkshopRoomSetup.xml`:
 
-In the above example, type 0 and type 3 display the default FlexForm defined in
-file `'FILE:EXT:my_extension/Configuration/FlexForms/Default.xml'`, and type 1 and 2
-each display their individual FlexForms.
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/296-tx_myextension_talk-room_setup.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/296-tx_myextension_talk-room_setup.php
+    :emphasize-lines: 13,19
+
+The talks of the types `talk` and `keynote` show the seating and the
+lectern:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/RoomSetup.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/RoomSetup.xml
+
+A workshop shows the size of the groups and the power outlets instead:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/FlexForms/WorkshopRoomSetup.xml
+    :caption: EXT:my_extension/Configuration/FlexForms/WorkshopRoomSetup.xml
