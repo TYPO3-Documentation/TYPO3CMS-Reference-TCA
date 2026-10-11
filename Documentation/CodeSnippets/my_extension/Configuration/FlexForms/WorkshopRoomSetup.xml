@@ -1,0 +1,26 @@
+<T3DataStructure>
+  <ROOT>
+    <type>array</type>
+    <el>
+      <group_size>
+        <label>my_extension.db:talk.room_setup.group_size</label>
+        <config>
+          <type>number</type>
+          <range>
+            <lower>1</lower>
+            <upper>10</upper>
+          </range>
+          <default>4</default>
+        </config>
+      </group_size>
+      <power_outlets>
+        <label>my_extension.db:talk.room_setup.power_outlets</label>
+        <config>
+          <type>check</type>
+          <renderType>checkboxToggle</renderType>
+          <default>1</default>
+        </config>
+      </power_outlets>
+    </el>
+  </ROOT>
+</T3DataStructure>
