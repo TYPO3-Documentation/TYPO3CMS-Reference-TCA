@@ -1,0 +1,43 @@
+..  _columns-number-properties-scale:
+
+..  confval:: scale
+    :name: number-scale
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['scale']
+    :type: integer
+    :default: 0
+    :Scope: Display / Proc.
+    :added: 15.0 feature-102217-1787855070
+
+    The number of decimal digits. With the default `0`, the field holds an
+    integer. The scale is between `0` and `30`. A value outside this range
+    is set to the nearest limit.
+
+    The scale applies wherever the value is handled:
+
+    *   The automatically generated database column is an :sql:`int` for a
+        scale of `0`. For a higher scale, it is a :sql:`decimal` with eight
+        digits in front of the decimal point, plus the scale. A scale of `6`
+        gives a :sql:`decimal(14,6)`.
+    *   The :php-short:`\TYPO3\CMS\Core\DataHandling\DataHandler` rounds
+        every value it saves to the scale. A column declared with more
+        decimal digits in :file:`ext_tables.sql` loses them on the next save.
+    *   The input field in the backend form uses the scale as its
+        :html:`step` attribute, for example :html:`step="0.000001"` for a
+        scale of `6`. Browsers cannot check a step below :html:`1e-18`. For a
+        scale above `18`, the field has :html:`step="any"`, and the browser
+        does not restrict the value.
+
+    When you lower the scale of an existing field, stored values can have
+    more decimal digits than the scale. The backend form shows such a value
+    rounded, and the next save of the record stores it rounded. MySQL and
+    PostgreSQL round the stored values when the column is changed. SQLite
+    keeps decimal values as strings and does not round them.
+
+..  rubric:: Example: Coordinates with six decimal digits
+
+Six decimal digits put a geographic position on a grid of about ten
+centimetres:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/415-tx_myextension_location-coordinates.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/415-tx_myextension_location-coordinates.php
+    :emphasize-lines: 12,19

@@ -66,6 +66,23 @@ information has to be configured for them.
 
 Remove any `tcaDescription` entry from the `fieldInformation` of your TCA.
 
+..  _columns-number-properties-format:
+
+Number format replaced by scale
+===============================
+
+..  confval:: format
+    :name: number-format
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['format']
+    :type: string (keyword)
+    :removed: 15.0 feature-102217-1787855070
+
+    The `format` option of the TCA type `number` was replaced by
+    `scale <https://docs.typo3.org/permalink/t3tca:confval-number-scale>`_.
+    The TCA migration converts `'format' => 'integer'` to `'scale' => 0` and
+    `'format' => 'decimal'` to `'scale' => 2`. When a field has both options,
+    the migration removes `format`.
+
 ..  _not-found-14:
 
 TYPO3 v14
