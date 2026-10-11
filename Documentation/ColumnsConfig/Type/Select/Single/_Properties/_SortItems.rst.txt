@@ -58,7 +58,8 @@ form `ClassName->methodName`:
     :caption: EXT:my_extension/Configuration/TCA/Overrides/121-tx_myextension_conference-timezone.php
     :emphasize-lines: 30-35
 
-The method receives the items as :php:`SelectItem` objects by reference.
+The method receives the items as
+:php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` objects by reference.
 The orderings run one after the other, and :php:`usort()` keeps the order
 of equal items. Time zones with the same offset therefore stay sorted by
 label:

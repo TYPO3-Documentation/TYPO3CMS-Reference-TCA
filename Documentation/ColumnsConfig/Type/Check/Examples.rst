@@ -101,8 +101,8 @@ Example: Checkboxes with itemsProcFunc
 ======================================
 
 An `itemsProcFunc` adds items to the checkboxes. See the
-:ref:`example of itemsProcFunc <tca-property-items-proc-func-example>`, which
-adds the tracks of a conference to a select field.
+`example of itemsProcFunc <https://docs.typo3.org/permalink/t3tca:tca-property-items-proc-func-example>`_,
+which adds the tracks of a conference to a select field.
 
 The conference extension adds the days of a talk with the newer
 :confval:`itemsProcessors <check-itemsProcessors>` instead, which read the
