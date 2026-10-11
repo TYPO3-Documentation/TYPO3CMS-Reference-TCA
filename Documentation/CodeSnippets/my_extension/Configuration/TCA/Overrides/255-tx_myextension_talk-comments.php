@@ -20,6 +20,9 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
     ],
   ],
 ]);
+// The website quotes the comments on a keynote: the editors approve them,
+// but they cannot change their text
+$GLOBALS['TCA']['tx_myextension_talk']['types']['keynote']['columnsOverrides']['comments']['config']['overrideChildTca']['columns']['content']['config']['readOnly'] = true;
 ExtensionManagementUtility::addToAllTCAtypes(
   'tx_myextension_talk',
   'comments',
