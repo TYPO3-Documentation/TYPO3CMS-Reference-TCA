@@ -30,20 +30,17 @@ Only digits, length 8 (minimum length)
 
 Example: `28233371`
 
+The door code of a room uses the policy `myExtensionDigits`. The extension
+defines it in its :file:`ext_localconf.php`, and its generator creates
+8 digits:
 
-..  code-block:: php
+..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
+    :caption: EXT:my_extension/ext_localconf.php (excerpt)
+    :lines: 1-2,11-14,57-71
 
-    'fieldControl' => [
-      'passwordGenerator' => [
-        'renderType' => 'passwordGenerator',
-        'options' => [
-          // A policy in $GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']
-          // whose generator creates 8 digits
-          'passwordPolicy' => 'myExtensionDigits',
-        ],
-      ],
-    ],
-
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/445-tx_myextension_location-door_code.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/445-tx_myextension_location-door_code.php
+    :emphasize-lines: 17-18
 
 ..  _columns-password-properties-passwordgenerator-hexadecimal:
 
@@ -72,19 +69,17 @@ Base64 random bytes, readonly
 
 Example: `zrt8sJd6GiqUI_EFgjPiedOj--D0NbTVOJz`
 
+The token of the upload link of a speaker uses the policy
+`myExtensionBase64` of the extension. Its generator creates a random base64
+string with 35 characters, and the editors cannot change it:
 
-..  code-block:: php
+..  literalinclude:: /CodeSnippets/my_extension/ext_localconf.php
+    :caption: EXT:my_extension/ext_localconf.php (excerpt)
+    :lines: 1-2,11-14,72-81
 
-    'fieldControl' => [
-      'passwordGenerator' => [
-        'renderType' => 'passwordGenerator',
-        'options' => [
-          // A policy whose generator creates base64 random bytes
-          'passwordPolicy' => 'myExtensionBase64',
-          'allowEdit' => false,
-        ],
-      ],
-    ],
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/345-tx_myextension_speaker-upload_token.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/345-tx_myextension_speaker-upload_token.php
+    :emphasize-lines: 17-20
 
 ..  _columns-password-properties-passwordgenerator-properties:
 
