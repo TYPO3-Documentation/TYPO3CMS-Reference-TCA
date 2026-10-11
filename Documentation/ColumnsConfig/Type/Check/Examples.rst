@@ -100,23 +100,11 @@ Example: Three checkboxes, two with labels, one without
 Example: Checkboxes with itemsProcFunc
 ======================================
 
-The days of a workshop could be added by an `itemsProcFunc`:
+An `itemsProcFunc` adds items to the checkboxes. See the
+:ref:`example of itemsProcFunc <tca-property-items-proc-func-example>`, which
+adds the tracks of a conference to a select field.
 
-..  code-block:: php
-
-    'itemsProcFunc' => ConferenceDays::class . '->addDays',
-
-The referenced `itemsProcFunc` method should populate the items
-by filling :php:`$params['items']`:
-
-..  code-block:: php
-
-    public function addDays(array &$params): void
-    {
-      $params['items'][] = ['label' => 'Wed, 12 May'];
-    }
-
-The conference extension adds the days with the newer
+The conference extension adds the days of a talk with the newer
 :confval:`itemsProcessors <check-itemsProcessors>` instead, which read the
 dates of the conference.
 
