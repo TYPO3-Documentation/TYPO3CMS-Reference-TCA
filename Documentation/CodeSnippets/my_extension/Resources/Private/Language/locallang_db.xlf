@@ -129,6 +129,9 @@
       <trans-unit id="conference.prices" resname="conference.prices">
         <source>Ticket prices</source>
       </trans-unit>
+      <trans-unit id="conference.program" resname="conference.program">
+        <source>Program (PDF)</source>
+      </trans-unit>
       <trans-unit id="conference.published" resname="conference.published">
         <source>Published</source>
       </trans-unit>
@@ -614,6 +617,9 @@
       </trans-unit>
       <trans-unit id="talk.equipment.video_recording" resname="talk.equipment.video_recording">
         <source>Video recording</source>
+      </trans-unit>
+      <trans-unit id="talk.feedback_email" resname="talk.feedback_email">
+        <source>Feedback by email</source>
       </trans-unit>
       <trans-unit id="talk.level" resname="talk.level">
         <source>Level</source>
