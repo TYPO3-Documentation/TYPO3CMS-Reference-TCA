@@ -111,6 +111,15 @@
       <trans-unit id="conference.livestream_password" resname="conference.livestream_password">
         <source>Password of the live stream</source>
       </trans-unit>
+      <trans-unit id="conference.livestream_player" resname="conference.livestream_player">
+        <source>Live stream player</source>
+      </trans-unit>
+      <trans-unit id="conference.livestream_player.autoplay" resname="conference.livestream_player.autoplay">
+        <source>Start automatically</source>
+      </trans-unit>
+      <trans-unit id="conference.livestream_player.muted" resname="conference.livestream_player.muted">
+        <source>Start without sound</source>
+      </trans-unit>
       <trans-unit id="conference.location" resname="conference.location">
         <source>Location</source>
       </trans-unit>
