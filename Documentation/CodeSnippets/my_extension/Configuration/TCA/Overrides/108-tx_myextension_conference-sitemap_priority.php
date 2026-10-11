@@ -10,7 +10,7 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
     'config' => [
       'type' => 'number',
       // The priority in an XML sitemap goes from 0.0 to 1.0
-      'scale' => 1,
+      'format' => 'decimal',
       'range' => [
         'lower' => 0,
         'upper' => 1,
