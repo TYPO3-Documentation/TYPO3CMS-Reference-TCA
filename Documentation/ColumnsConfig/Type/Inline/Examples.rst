@@ -242,28 +242,9 @@ Example: Override by type
 
 A record type can change the `overrideChildTca` of an inline field with
 :ref:`columnsOverrides <types-properties-columnsoverrides>`. Here, the
-content elements of a record type `gallery` are of the type `textmedia` by
-default:
+editors cannot change the text of a comment on a talk of the record type
+`keynote`:
 
-..  code-block:: php
-
-    'types' => [
-        'gallery' => [
-            'showitem' => 'title, content_elements',
-            'columnsOverrides' => [
-                'content_elements' => [
-                    'config' => [
-                        'overrideChildTca' => [
-                            'columns' => [
-                                'CType' => [
-                                    'config' => [
-                                        'default' => 'textmedia',
-                                    ],
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-            ],
-        ],
-    ],
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/255-tx_myextension_talk-comments.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/255-tx_myextension_talk-comments.php
+    :emphasize-lines: 23-25
