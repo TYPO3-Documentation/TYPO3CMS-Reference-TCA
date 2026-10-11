@@ -693,6 +693,27 @@
       <trans-unit id="talk.room" resname="talk.room">
         <source>Room</source>
       </trans-unit>
+      <trans-unit id="talk.room_setup" resname="talk.room_setup">
+        <source>Room setup</source>
+      </trans-unit>
+      <trans-unit id="talk.room_setup.group_size" resname="talk.room_setup.group_size">
+        <source>Participants per table</source>
+      </trans-unit>
+      <trans-unit id="talk.room_setup.lectern" resname="talk.room_setup.lectern">
+        <source>Lectern on the stage</source>
+      </trans-unit>
+      <trans-unit id="talk.room_setup.power_outlets" resname="talk.room_setup.power_outlets">
+        <source>Power outlets at every table</source>
+      </trans-unit>
+      <trans-unit id="talk.room_setup.seating" resname="talk.room_setup.seating">
+        <source>Seating</source>
+      </trans-unit>
+      <trans-unit id="talk.room_setup.seating.classroom" resname="talk.room_setup.seating.classroom">
+        <source>Classroom</source>
+      </trans-unit>
+      <trans-unit id="talk.room_setup.seating.theatre" resname="talk.room_setup.seating.theatre">
+        <source>Theatre</source>
+      </trans-unit>
       <trans-unit id="talk.slides" resname="talk.slides">
         <source>Slides</source>
       </trans-unit>

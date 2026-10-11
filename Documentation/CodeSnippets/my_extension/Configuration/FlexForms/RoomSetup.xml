@@ -1,0 +1,31 @@
+<T3DataStructure>
+  <ROOT>
+    <type>array</type>
+    <el>
+      <seating>
+        <label>my_extension.db:talk.room_setup.seating</label>
+        <config>
+          <type>select</type>
+          <renderType>selectSingle</renderType>
+          <items>
+            <numIndex index="0">
+              <label>my_extension.db:talk.room_setup.seating.theatre</label>
+              <value>theatre</value>
+            </numIndex>
+            <numIndex index="1">
+              <label>my_extension.db:talk.room_setup.seating.classroom</label>
+              <value>classroom</value>
+            </numIndex>
+          </items>
+        </config>
+      </seating>
+      <lectern>
+        <label>my_extension.db:talk.room_setup.lectern</label>
+        <config>
+          <type>check</type>
+          <renderType>checkboxToggle</renderType>
+        </config>
+      </lectern>
+    </el>
+  </ROOT>
+</T3DataStructure>
