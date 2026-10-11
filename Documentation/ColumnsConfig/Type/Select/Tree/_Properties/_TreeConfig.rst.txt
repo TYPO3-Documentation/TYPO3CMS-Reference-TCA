@@ -93,15 +93,14 @@
         They can be combined with static IDs and with the `###SITE:###`
         syntax.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_TreeStartingPoints.php
-            :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-            :visible-lines: 29-41
-            :emphasize-lines: 37
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/960-tx_myextension_hotel-nearest_venue.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/960-tx_myextension_hotel-nearest_venue.php
+            :emphasize-lines: 21
 
         ..  code-block:: typoscript
-            :caption: EXT:my_extension/Configuration/page.tsconfig
+            :caption: EXT:my_sitepackage/Configuration/Sets/Main/page.tsconfig
 
-            TCEFORM.tx_myextension_mytable.categories.PAGE_TSCONFIG_IDLIST = 12,34
+            TCEFORM.tx_myextension_hotel.nearest_venue.PAGE_TSCONFIG_IDLIST = 12,34
 
     ..  confval:: appearance
         :name: select-treeConfig-appearance
