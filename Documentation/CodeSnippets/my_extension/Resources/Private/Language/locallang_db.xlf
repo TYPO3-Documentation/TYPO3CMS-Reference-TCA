@@ -249,6 +249,9 @@
       <trans-unit id="location.directions" resname="location.directions">
         <source>Directions</source>
       </trans-unit>
+      <trans-unit id="location.door_code" resname="location.door_code">
+        <source>Door code</source>
+      </trans-unit>
       <trans-unit id="location.image" resname="location.image">
         <source>Image</source>
       </trans-unit>
@@ -503,6 +506,9 @@
       </trans-unit>
       <trans-unit id="speaker.topics.typoscript" resname="speaker.topics.typoscript">
         <source>TypoScript</source>
+      </trans-unit>
+      <trans-unit id="speaker.upload_token" resname="speaker.upload_token">
+        <source>Token of the upload link</source>
       </trans-unit>
       <trans-unit id="speaker.website" resname="speaker.website">
         <source>Website</source>

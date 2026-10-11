@@ -7,6 +7,7 @@ use MyVendor\MyExtension\Form\Element\BadgeNameElement;
 use MyVendor\MyExtension\Form\FieldInformation\InformationText;
 use MyVendor\MyExtension\Form\FieldInformation\TalkOrderInformation;
 use MyVendor\MyExtension\Form\FieldWizard\ReferencesToThisRecordWizard;
+use TYPO3\CMS\Core\PasswordPolicy\Generator\PasswordGenerator;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3') or die();
@@ -51,4 +52,30 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1791320000] = [
   'nodeName' => 'referencesToThisRecord',
   'priority' => 30,
   'class' => ReferencesToThisRecordWizard::class,
+];
+
+// The password policies of the password generators, see
+// Configuration/TCA/Overrides/445-tx_myextension_location-door_code.php and
+// Configuration/TCA/Overrides/345-tx_myextension_speaker-upload_token.php
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']['myExtensionDigits'] = [
+  'generator' => [
+    'className' => PasswordGenerator::class,
+    'options' => [
+      'length' => 8,
+      'lowerCaseCharacters' => false,
+      'upperCaseCharacters' => false,
+      'digitCharacters' => true,
+    ],
+  ],
+  'validators' => [],
+];
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']['myExtensionBase64'] = [
+  'generator' => [
+    'className' => PasswordGenerator::class,
+    'options' => [
+      'length' => 35,
+      'random' => 'base64',
+    ],
+  ],
+  'validators' => [],
 ];
