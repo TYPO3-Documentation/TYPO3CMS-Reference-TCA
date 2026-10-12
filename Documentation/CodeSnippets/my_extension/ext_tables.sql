@@ -9,3 +9,10 @@ CREATE TABLE tx_myextension_partnership (
 CREATE TABLE fe_users (
   tx_myextension_badge_name varchar(255) DEFAULT '' NOT NULL
 );
+
+-- TYPO3 does not create columns for fields of type none
+CREATE TABLE tx_myextension_talk (
+  feedback_opened int(11) DEFAULT '0' NOT NULL,
+  rating decimal(2,1) DEFAULT '0.0' NOT NULL,
+  feedback_count int(11) unsigned DEFAULT '0' NOT NULL
+);

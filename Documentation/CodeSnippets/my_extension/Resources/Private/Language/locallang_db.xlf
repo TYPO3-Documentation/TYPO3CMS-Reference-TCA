@@ -660,8 +660,23 @@
       <trans-unit id="talk.equipment.video_recording" resname="talk.equipment.video_recording">
         <source>Video recording</source>
       </trans-unit>
+      <trans-unit id="talk.feedback" resname="talk.feedback">
+        <source>Feedback</source>
+      </trans-unit>
+      <trans-unit id="talk.feedback_count" resname="talk.feedback_count">
+        <source>Feedback forms</source>
+      </trans-unit>
+      <trans-unit id="talk.feedback_count.one" resname="talk.feedback_count.one">
+        <source>%d attendee</source>
+      </trans-unit>
+      <trans-unit id="talk.feedback_count.other" resname="talk.feedback_count.other">
+        <source>%d attendees</source>
+      </trans-unit>
       <trans-unit id="talk.feedback_email" resname="talk.feedback_email">
         <source>Feedback by email</source>
+      </trans-unit>
+      <trans-unit id="talk.feedback_opened" resname="talk.feedback_opened">
+        <source>Feedback form opened</source>
       </trans-unit>
       <trans-unit id="talk.level" resname="talk.level">
         <source>Level</source>
@@ -680,6 +695,9 @@
       </trans-unit>
       <trans-unit id="talk.max_participants" resname="talk.max_participants">
         <source>Maximum number of participants</source>
+      </trans-unit>
+      <trans-unit id="talk.rating" resname="talk.rating">
+        <source>Average rating</source>
       </trans-unit>
       <trans-unit id="talk.recording" resname="talk.recording">
         <source>Recording</source>
