@@ -18,6 +18,8 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_talk', [
         'prefix' => TalkSlugPrefix::class . '->getPrefix',
       ],
       'eval' => 'uniqueInPid',
+      // The slug repeats the title, which the search finds already
+      'searchable' => false,
     ],
   ],
 ]);
