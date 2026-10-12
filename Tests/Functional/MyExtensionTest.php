@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace T3docs\ReferenceTca\Tests\Functional;
 
+use MyVendor\MyExtension\Backend\FeedbackCountFormatter;
 use PHPUnit\Framework\Attributes\Test;
 use TYPO3\CMS\Core\Configuration\Tca\TcaFactory;
 use TYPO3\CMS\Core\Configuration\Tca\TcaMigration;
@@ -68,6 +69,15 @@ final class MyExtensionTest extends FunctionalTestCase
         self::assertSame('business', $audienceItems[array_search('agencies', $values, true)]['group']);
         $languageService = $this->get(LanguageServiceFactory::class)->create('default');
         self::assertSame('Agencies', $languageService->sL('LLL:my_sitepackage.db:talk.audience.agencies'));
+    }
+
+    #[Test]
+    public function feedbackCountIsShownAsText(): void
+    {
+        $GLOBALS['LANG'] = $this->get(LanguageServiceFactory::class)->create('default');
+        $formatter = new FeedbackCountFormatter();
+        self::assertSame('1 attendee', $formatter->format(['value' => 1]));
+        self::assertSame('12 attendees', $formatter->format(['value' => '12']));
     }
 
     #[Test]

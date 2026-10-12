@@ -81,19 +81,25 @@ The time a comment was written:
     :caption: EXT:my_extension/Configuration/TCA/Overrides/520-tx_myextension_comment-crdate.php
     :emphasize-lines: 14
 
-Further formats:
+The feedback form of the website stores when it opened for a talk, the
+average rating, and the number of feedback forms. The editors only read them:
 
-..  literalinclude:: /ColumnsConfig/Type/None/_Snippets/_None.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 11-21
-    :emphasize-lines: 15
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/298-tx_myextension_talk-feedback.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/298-tx_myextension_talk-feedback.php
+    :visible-lines: 11-23
+    :emphasize-lines: 16-21
 
-..  literalinclude:: /ColumnsConfig/Type/None/_Snippets/_None.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 23-32
-    :emphasize-lines: 27
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/298-tx_myextension_talk-feedback.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/298-tx_myextension_talk-feedback.php
+    :visible-lines: 24-34
+    :emphasize-lines: 29-32
 
-..  literalinclude:: /ColumnsConfig/Type/None/_Snippets/_None.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 3, 34-43
-    :emphasize-lines: 40
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/298-tx_myextension_talk-feedback.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/298-tx_myextension_talk-feedback.php
+    :visible-lines: 3, 35-45
+    :emphasize-lines: 40-43
+
+The user function receives the value of the field:
+
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Backend/FeedbackCountFormatter.php
+    :caption: EXT:my_extension/Classes/Backend/FeedbackCountFormatter.php
