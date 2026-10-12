@@ -11,6 +11,9 @@ ExtensionManagementUtility::addRecordType(
     'label' => 'my_extension.db:tt_content.call_for_papers',
     'value' => 'myextension_callforpapers',
     'icon' => 'content-text',
+    // In the "New content element" wizard, the overlay shows that a call
+    // for papers has a deadline
+    'iconOverlay' => 'overlay-endtime',
     'group' => 'conference',
   ],
   '--palette--;;headers, bodytext',
