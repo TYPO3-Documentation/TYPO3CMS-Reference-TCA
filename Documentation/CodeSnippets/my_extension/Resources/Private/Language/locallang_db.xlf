@@ -732,6 +732,9 @@
       <trans-unit id="talk.spoken_language" resname="talk.spoken_language">
         <source>Spoken language</source>
       </trans-unit>
+      <trans-unit id="talk.sponsor" resname="talk.sponsor">
+        <source>Sponsored by</source>
+      </trans-unit>
       <trans-unit id="talk.start_time" resname="talk.start_time">
         <source>Start</source>
       </trans-unit>
