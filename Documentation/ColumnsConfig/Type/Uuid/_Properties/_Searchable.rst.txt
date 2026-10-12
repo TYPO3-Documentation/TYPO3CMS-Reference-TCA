@@ -17,5 +17,6 @@
     To exclude a field from being searchable, set the following in the
     field's TCA configuration:
 
-    ..  literalinclude:: /ColumnsConfig/Type/Uuid/_Snippets/_Searchable.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/335-tx_myextension_speaker-identifier.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/335-tx_myextension_speaker-identifier.php
+        :emphasize-lines: 14-15

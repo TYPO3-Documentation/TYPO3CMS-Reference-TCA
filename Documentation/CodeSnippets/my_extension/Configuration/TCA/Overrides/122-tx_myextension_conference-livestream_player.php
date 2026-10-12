@@ -34,6 +34,8 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
           </ROOT>
         </T3DataStructure>
       ',
+      // The two toggles hold no text to search for
+      'searchable' => false,
     ],
   ],
 ]);
