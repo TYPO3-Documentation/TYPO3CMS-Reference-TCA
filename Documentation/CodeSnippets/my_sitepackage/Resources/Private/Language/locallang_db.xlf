@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:my_sitepackage/Resources/Private/Language/locallang_db.xlf" product-name="my_sitepackage">
+    <header/>
+    <body>
+      <trans-unit id="talk.audience.agencies" resname="talk.audience.agencies">
+        <source>Agencies</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
