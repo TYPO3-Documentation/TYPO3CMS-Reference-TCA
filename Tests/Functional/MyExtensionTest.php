@@ -61,6 +61,13 @@ final class MyExtensionTest extends FunctionalTestCase
         self::assertSame('6,7', $suggestOptions['default']['pidList']);
         // The site package also changes a table of the Core
         self::assertSame('', $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode']);
+        // The item of the site package follows the item it is placed after
+        $audienceItems = $GLOBALS['TCA']['tx_myextension_talk']['columns']['audience']['config']['items'];
+        $values = array_column($audienceItems, 'value');
+        self::assertSame('agencies', $values[array_search('decision_makers', $values, true) + 1]);
+        self::assertSame('business', $audienceItems[array_search('agencies', $values, true)]['group']);
+        $languageService = $this->get(LanguageServiceFactory::class)->create('default');
+        self::assertSame('Agencies', $languageService->sL('LLL:my_sitepackage.db:talk.audience.agencies'));
     }
 
     #[Test]

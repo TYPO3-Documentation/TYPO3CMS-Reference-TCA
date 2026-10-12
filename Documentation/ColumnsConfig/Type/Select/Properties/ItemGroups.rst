@@ -37,10 +37,9 @@ Attaching select items to item groups
 Using the API method :php:`ExtensionManagementUtility::addTcaSelectItem`,
 the `group` key of the item specifies the id of the item group.
 
-..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_ItemGroups.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-    :visible-lines: 3, 15-24
-    :emphasize-lines: 22
+..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/tx_myextension_talk.php
+    :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tx_myextension_talk.php
+    :emphasize-lines: 15
 
 
 ..  _columns-select-properties-item-groups-history:
