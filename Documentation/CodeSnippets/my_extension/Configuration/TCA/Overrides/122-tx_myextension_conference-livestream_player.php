@@ -36,6 +36,11 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
       ',
       // The two toggles hold no text to search for
       'searchable' => false,
+      // Translations play the stream like the default language, unless the
+      // editors change the settings of a translation
+      'behaviour' => [
+        'allowLanguageSynchronization' => true,
+      ],
     ],
   ],
 ]);
