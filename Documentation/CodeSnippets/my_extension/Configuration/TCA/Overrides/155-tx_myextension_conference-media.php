@@ -54,6 +54,11 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
                   ],
                 ],
               ],
+              // A translated image keeps the crop of the default language,
+              // unless the editors crop it anew
+              'behaviour' => [
+                'allowLanguageSynchronization' => true,
+              ],
             ],
           ],
         ],
