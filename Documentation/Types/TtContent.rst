@@ -65,7 +65,7 @@ The content element "Call for papers" has a header and a text:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/610-tt_content-call_for_papers.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/610-tt_content-call_for_papers.php
-    :emphasize-lines: 9-17
+    :emphasize-lines: 9-20
 
 The following tabs are shown, the header palette and bodytext field are shown
 on the tab :guilabel:`General`:

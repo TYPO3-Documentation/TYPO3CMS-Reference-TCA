@@ -49,9 +49,9 @@
         :confval:`newContentElement.wizardItems <t3tsref:mod-wizards-newcontentelement-wizarditems>`,
         which still works.
 
-        ..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_IconOverlay.php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
-            :emphasize-lines: 12
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/610-tt_content-call_for_papers.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/610-tt_content-call_for_papers.php
+            :emphasize-lines: 16
 
     group (string)
         The key of the :ref:`item group <columns-select-single-properties-item-groups>`.
