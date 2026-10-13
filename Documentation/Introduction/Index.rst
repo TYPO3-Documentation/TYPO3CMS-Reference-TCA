@@ -97,11 +97,12 @@ they appear in the database):
         // ...
     ];
 
-    $GLOBALS['TCA']['tx_myextension_haiku'] = [
+    $GLOBALS['TCA']['tx_myextension_conference'] = [
         // ...
     ];
 
-Here three tables, `pages`, `tt_content` and `tx_myextension_haiku` are shown as examples.
+Here three tables, `pages`, `tt_content`, and `tx_myextension_conference`, are
+shown as examples.
 
 
 ..  _tca-structure-level2:
@@ -115,9 +116,9 @@ backend. The various parts on this second level are called "sections".
 
 The general structure (looking at a single table) is as follows:
 
-..  literalinclude:: _CodeSnippets/_tx_myextension_haiku.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_haiku.php
-    :emphasize-lines: 4, 8, 28, 33
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :emphasize-lines: 4, 30, 57, 74
 
 The following table provides a brief description of the various
 sections of :php:`$GLOBALS['TCA']['some_table']`. Each section is covered in more details in its own
