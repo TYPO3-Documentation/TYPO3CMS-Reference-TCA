@@ -50,13 +50,27 @@ fieldWizard
             ],
         ];
 
-    This is be merged with the configuration from TCA, if there is any. Below example disables the default
-    `localizationStateSelector` wizard.
+    TYPO3 merges this configuration with the configuration from TCA. To
+    switch off a default wizard, set its `disabled` key to :php:`true`. To
+    switch on a wizard that is disabled by default, set `disabled` to
+    :php:`false`.
 
-    ..  literalinclude:: /ColumnsConfig/CommonProperties/_codesnippets/_FieldWizardDisabled.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-        :visible-lines: 9-19
-        :emphasize-lines: 15
+    The render type `selectSingle` comes with the wizard `selectIcons`
+    disabled. The location field of a conference switches it on, so it
+    shows the images of the locations:
+
+    ..  figure:: /Images/Conference/CtrlSeliconField.png
+        :alt: The field "Location" with "Congress Center, Basel [1]"
+            selected and the images of the locations "Congress Center" and
+            "Kongresshalle" below it, the image of the selected location
+            framed
+        :class: with-shadow
+
+        The images of the locations below the location field of a conference
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/110-tx_myextension_conference-location.php
+        :emphasize-lines: 17-21
 
     It is possible to add own wizards by adding them to the TCA of the according field and pointing to a registered
     renderType, to resort wizards by overriding the `before` and `after` keys, to hand over additional
