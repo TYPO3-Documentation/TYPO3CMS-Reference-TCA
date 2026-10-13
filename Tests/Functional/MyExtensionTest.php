@@ -9,7 +9,9 @@ use PHPUnit\Framework\Attributes\Test;
 use TYPO3\CMS\Core\Configuration\Tca\TcaFactory;
 use TYPO3\CMS\Core\Configuration\Tca\TcaMigration;
 use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Domain\Repository\PageRepository;
 use TYPO3\CMS\Core\Localization\LanguageServiceFactory;
+use TYPO3\CMS\Core\Schema\TcaSchemaFactory;
 use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
 /**
@@ -116,6 +118,15 @@ final class MyExtensionTest extends FunctionalTestCase
         foreach ($GLOBALS['TCA']['tx_myextension_partnership']['types'] as $type => $configuration) {
             self::assertFalse($configuration['creationOptions']['enableDirectRecordTypeCreation'], 'type ' . $type);
         }
+    }
+
+    #[Test]
+    public function pageWizardShowsTheStepOfTheSitePackageAfterTheStepOfTheCore(): void
+    {
+        $schema = $this->get(TcaSchemaFactory::class)->get('pages')->getSubSchema((string)PageRepository::DOKTYPE_DEFAULT);
+        self::assertSame(['setup', 'summary'], array_keys($schema->getWizardSteps()));
+        $languageService = $this->get(LanguageServiceFactory::class)->create('default');
+        self::assertSame('Summary', $languageService->sL('LLL:my_sitepackage.db:pages.wizard_step.summary'));
     }
 
     #[Test]
