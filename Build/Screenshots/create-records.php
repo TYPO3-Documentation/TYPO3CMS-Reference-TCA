@@ -221,9 +221,10 @@ $data['tx_myextension_comment'] = [
         'content' => 'Are the slides available after the talk?', 'approved' => 0,
     ],
 ];
+// A new conference is hidden by default, these conferences are visible
 $data['tx_myextension_conference'] = [
     'NEWconfdev' => [
-        'pid' => $pid, 'title' => 'TYPO3 Developer Days 2027',
+        'pid' => $pid, 'hidden' => 0, 'title' => 'TYPO3 Developer Days 2027',
         'conference_date' => strtotime('2027-05-12'), 'location' => 'NEWbasel', 'published' => 1,
         'event_format' => 'hybrid', 'stream_url' => 'https://example.org/live',
         'registration_open' => 1, 'registration_deadline' => strtotime('2027-04-30 23:59'),
@@ -245,14 +246,14 @@ $data['tx_myextension_conference'] = [
         'partners' => 'NEWpartnership,NEWpartnershiponline',
     ],
     'NEWconfeditors' => [
-        'pid' => $pid, 'title' => 'Editors Day 2027',
+        'pid' => $pid, 'hidden' => 0, 'title' => 'Editors Day 2027',
         'conference_date' => strtotime('2027-09-23'), 'location' => 'NEWleipzig', 'published' => 0,
         'event_format' => 'onsite',
         'seats' => 120, 'contact_email' => 'editors@example.org', 'color' => '#2f99a4',
         'speakers' => 'NEWspada',
     ],
     'NEWconfonline' => [
-        'pid' => $pid, 'title' => 'TYPO3 Online Days 2027',
+        'pid' => $pid, 'hidden' => 0, 'title' => 'TYPO3 Online Days 2027',
         'conference_date' => strtotime('2027-11-17'), 'published' => 0,
         'event_format' => 'online', 'stream_url' => 'https://example.org/online',
         'contact_email' => 'online@example.org', 'color' => '#6c4ef5',
