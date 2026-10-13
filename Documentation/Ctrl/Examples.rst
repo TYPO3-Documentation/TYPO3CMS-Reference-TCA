@@ -84,11 +84,14 @@ Extended container examples
 Disable a built-in wizard
 -------------------------
 
-..  literalinclude:: _CodeSnippets/_disableFieldWizard.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php
-
-This disables the default `localizationStateSelector` fieldWizard of
-`inlineControlContainer`.
+The `inlineControlContainer` renders the field wizard
+`localizationStateSelector` by default. In a translation, it lets editors
+choose whether an inline field with
+:confval:`allowLanguageSynchronization <inline-behaviour-allowLanguageSynchronization>`
+follows the default language. Set
+`container.inlineControlContainer.fieldWizard.localizationStateSelector.disabled`
+to `true` in the `ctrl` section of a table to hide the wizard for all inline
+fields of that table.
 
 ..  _tca-example-ctrl-container-cusotm:
 
