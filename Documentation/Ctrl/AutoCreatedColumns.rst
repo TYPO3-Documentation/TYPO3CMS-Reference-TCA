@@ -59,19 +59,22 @@ a column in a "base" TCA file (:file:`Configuration/TCA`) - the Core will not ov
 Or, a developer can decide to let the Core auto-create a column, but
 then override single properties in :file:`Configuration/TCA/Overrides` files.
 
-For example, if this is a `pages` "base" file (loading step 1):
+For example, the "base" file of the conference table names the field `hidden`
+in `enablecolumns` (loading step 1):
 
-..  literalinclude:: _CodeSnippets/_AutoCreatedColumns/_pages.php
-    :caption: EXT:core/Configuration/TCA/pages.php (Excerpt)
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+    :visible-lines: 4-29
+    :emphasize-lines: 14
 
-the Core creates this `columns` definition (loading step 2):
+The Core creates this `columns` definition (loading step 2):
 
-..  literalinclude:: _CodeSnippets/_AutoCreatedColumns/_autoCreatePages.php
-    :caption: Column entries created by the Core
+..  literalinclude:: _CodeSnippets/_AutoCreatedColumns/_autoCreateConference.php
+    :caption: Column entry created by the Core
 
-When an editor creates a new page, it should be "disabled" by default
-so that the new page does not go online before it is properly set up.
-Add the following in the :file:`Configuration/TCA/Overrides/pages.php` file:
+A new conference should stay hidden until its program is complete. An
+override file changes the default value of the auto-created column:
 
-..  literalinclude:: _CodeSnippets/_AutoCreatedColumns/_OverrideHiddenDefault.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/102-tx_myextension_conference-hidden.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/102-tx_myextension_conference-hidden.php
+    :emphasize-lines: 7
