@@ -23,7 +23,10 @@
     Required fields that are not assigned to any configured wizard step are added
     automatically to a fallback step, which is appended at the end of the wizard.
 
-    ..  literalinclude:: /Types/_CodeSnippets/_page_wizardSteps.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/pages.php
+    The site package adds a step to the wizard of standard pages. The step
+    follows the step `setup` of the Core:
+
+    ..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/pages.php
+        :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/pages.php
 
     For a complete example see `TYPO3 Explained, Create new page type <https://docs.typo3.org/permalink/t3coreapi:page-types-example>`_.
