@@ -45,9 +45,9 @@ return [
         'required' => true,
         'valuePicker' => [
           'items' => [
-            ['label' => 'TYPO3 orange', 'value' => '#FF8700'],
-            ['label' => 'Black', 'value' => '#000000'],
-            ['label' => 'White', 'value' => '#FFFFFF'],
+            ['TYPO3 orange', '#FF8700'],
+            ['Black', '#000000'],
+            ['White', '#FFFFFF'],
           ],
         ],
       ],

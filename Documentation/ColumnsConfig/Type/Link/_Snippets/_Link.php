@@ -170,14 +170,14 @@ return [
         'mode' => 'prepend',
         'valuePicker' => [
           'items' => [
-            ['label' => 'TYPO3.org', 'value' => 'https://typo3.org'],
+            ['TYPO3.org', 'https://typo3.org'],
             [
-              'label' => 'TYPO3 Documentation',
-              'value' => 'https://docs.typo3.org',
+              'TYPO3 Documentation',
+              'https://docs.typo3.org',
             ],
             [
-              'label' => 'TYPO3 Ticket System',
-              'value' => 'https://forge.typo3.org',
+              'TYPO3 Ticket System',
+              'https://forge.typo3.org',
             ],
           ],
         ],
