@@ -480,6 +480,10 @@ const screenshots = {
     from: 'h1',
     to: field('tx_myextension_teaser_conference'),
   },
+  TypesPreviewRenderer: {
+    url: `${baseUrl}/typo3/module/web/layout?id=1`,
+    element: `#element-tt_content-${teaser} .t3-page-ce-element`,
+  },
   CtrlMinimalRecordList: {
     url: `${baseUrl}/typo3/module/content/records?id=${storageFolder}&table=tx_myextension_sponsor`,
     element: '.recordlist',
