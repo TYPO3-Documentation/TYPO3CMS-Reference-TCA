@@ -95,6 +95,37 @@ section, and the palette shows it:
     :visible-lines: 4-29, 74-87
     :emphasize-lines: 19, 84
 
+..  _columns-language-example-subtitles:
+
+Example: Language of the subtitles
+==================================
+
+A field of type `language` can also hold other information about a
+language. The recording of a talk has subtitles in one language of the
+site:
+
+..  figure:: /Images/Conference/LanguageSubtitles.png
+    :alt: The field "Subtitles of the recording" with the language
+        "Deutsch [1]" selected
+    :class: with-shadow
+
+    The language of the subtitles of a talk
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/242-tx_myextension_talk-subtitles.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/242-tx_myextension_talk-subtitles.php
+    :emphasize-lines: 15
+
+TYPO3 treats such a field differently from the language of the record:
+
+*   The field lists all languages of the site. On a translated page, the
+    language of the record lists only the default language and the
+    languages of the page translations.
+*   TYPO3 does not check whether the editor has access to the selected
+    language.
+*   The field also offers the item :guilabel:`[All]` with the value `-1`.
+    For the subtitles, this item means that the recording has subtitles in
+    every language of the site.
+
 ..  _columns-language-properties:
 
 Language field properties
