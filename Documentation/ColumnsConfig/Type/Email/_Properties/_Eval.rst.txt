@@ -5,11 +5,24 @@
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['eval']
     :type: string (list of keywords)
     :Scope: Display / Proc.
+    :changed: 15.0 feature-109846-1788965266
 
     Configuration of field evaluation.
 
     Some of these evaluation keywords will trigger a JavaScript pre- evaluation in the form. Other evaluations will be
     performed in the backend. The evaluation functions will be executed in the list-order. Keywords:
+
+    lower
+        Converts the email address to lowercase. The backend form converts
+        it while the record is edited, and :php:`DataHandler` converts it
+        again when the record is saved.
+
+        The conversion happens before `unique` and `uniqueInPid` are
+        evaluated. Two addresses that differ only in the case of their
+        letters are therefore the same value.
+
+        Unlike `unique` and `uniqueInPid`, `lower` also works in FlexForm
+        fields.
 
     unique
         Requires the field to be unique for the *whole* table. Evaluated on the server only.
