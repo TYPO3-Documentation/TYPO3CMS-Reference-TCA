@@ -55,7 +55,7 @@ Example: `a3f1c9e07b5d4e2f8c6a1b0d9e7f3c5a2b4d6e8f`
 
     The secret of the ticket shop, generated as a hex string
 
-The secret of the ticket shop uses the policy `secretToken` of the core. Its
+The secret of the ticket shop uses the policy `secretToken` of the Core. Its
 generator creates a random hex string with 40 characters:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/134-tx_myextension_conference-ticketing_secret.php
@@ -127,6 +127,12 @@ Password policy
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['fieldControl']['passwordGenerator']['options']['passwordPolicy']
     :type: string
     :added: 14.2
+    :Examples: :ref:`Digits for a door code
+        <columns-password-properties-passwordgenerator-only-digits>`,
+        :ref:`Hex string for a secret
+        <columns-password-properties-passwordgenerator-hexadecimal>`,
+        :ref:`Base64 string for a token
+        <columns-password-properties-passwordgenerator-base64>`
 
     This option can be used to configure which
     `Password policy <https://docs.typo3.org/permalink/t3coreapi:password-policies>`_
@@ -136,9 +142,6 @@ Password policy
     The field control uses the `generator` section of the policy. If the
     option is missing, or the policy has no generator, the field shows no
     password generator.
-
-    ..  literalinclude:: _Snippets/_PasswordPolicy.php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/fe_users.php
 
 
 ..  _columns-password-properties-passwordgenerator-passwordrules:
