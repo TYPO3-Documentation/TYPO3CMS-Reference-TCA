@@ -27,3 +27,8 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_partnership', [
 $GLOBALS['TCA']['tx_myextension_partnership']['types']['online'] = [
   'showitem' => 'conference, partner, shared_livestream',
 ];
+
+// The partner conference decides the type, so the "Create new record"
+// dialog shows no link of its own for each type
+$GLOBALS['TCA']['tx_myextension_partnership']['types']['0']['creationOptions']['enableDirectRecordTypeCreation'] = false;
+$GLOBALS['TCA']['tx_myextension_partnership']['types']['online']['creationOptions']['enableDirectRecordTypeCreation'] = false;

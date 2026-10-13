@@ -28,12 +28,13 @@
         "Create new record" component in the backend module
         :guilabel:`Content > Records`.
 
-        A record type can be removed from that component via:
+        A record type can be removed from that component. The type of a
+        partnership comes from the partner conference, so the component shows
+        no link for the types of a partnership:
 
-        ..  code-block:: php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
-
-            $GLOBALS['TCA']['tx_myextension_mytable']['types']['my_type']['creationOptions']['enableDirectRecordTypeCreation'] = false;
+        ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/910-tx_myextension_partnership-type.php
+            :caption: EXT:my_extension/Configuration/TCA/Overrides/910-tx_myextension_partnership-type.php
+            :emphasize-lines: 33-34
 
         Event :php:`\TYPO3\CMS\Backend\Controller\Event\ModifyNewRecordCreationLinksEvent`
         can be used for more sophisticated modification of the dialogue.
@@ -58,12 +59,15 @@
         :type: string | language reference
         :added: 14.0
 
-        With this option it is possible to set an
-        individual title for the record type, to be used as label on the
-        creation link in the "Create new record" component.
+        The title of the content element in the "New content element" wizard.
+        By default, the wizard shows the label of the item in the field
+        `CType`. This option only takes effect in the table `tt_content`. The
+        "Create new record" component takes the label of a record type from
+        :confval:`types-title`.
 
-        ..  code-block:: php
-            :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
+        A site package can give a content element of an extension another
+        title in the wizard:
 
-            $GLOBALS['TCA']['tx_myextension_mytable']['types']['my_type']['creationOptions']['title']
-                = 'my_extension.db.myType:title';
+        ..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/tt_content.php
+            :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php
+            :emphasize-lines: 12-13
