@@ -6,6 +6,9 @@
       <trans-unit id="crop_variant.mobile" resname="crop_variant.mobile">
         <source>Mobile</source>
       </trans-unit>
+      <trans-unit id="pages.wizard_step.summary" resname="pages.wizard_step.summary">
+        <source>Summary</source>
+      </trans-unit>
       <trans-unit id="talk.audience.agencies" resname="talk.audience.agencies">
         <source>Agencies</source>
       </trans-unit>
