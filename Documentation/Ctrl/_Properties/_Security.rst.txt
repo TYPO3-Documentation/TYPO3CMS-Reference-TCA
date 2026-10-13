@@ -25,14 +25,12 @@
         :visible-lines: 4-19
         :emphasize-lines: 13
 
-    You can also use it in an override file:
+    A site package can set the sub-properties for a table of another
+    extension in an override file:
 
-    ..  code-block:: php
-        :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_mytable.php
-
-        $GLOBALS['TCA']['tx_myextension_mytable']['ctrl']['security']['ignoreWebMountRestriction'] = true;
-        $GLOBALS['TCA']['tx_myextension_mytable']['ctrl']['security']['ignoreRootLevelRestriction'] = true;
-        $GLOBALS['TCA']['tx_myextension_mytable']['ctrl']['security']['ignorePageTypeRestriction'] = true;
+    ..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/tx_myextension_hotel.php
+        :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tx_myextension_hotel.php
+        :emphasize-lines: 7
 
     ignoreWebMountRestriction
         Allows users to access records that are not in their defined web-mount,
