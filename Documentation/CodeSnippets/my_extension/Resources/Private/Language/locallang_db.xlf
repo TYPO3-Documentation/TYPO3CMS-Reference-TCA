@@ -768,6 +768,9 @@
       <trans-unit id="talk.start_time" resname="talk.start_time">
         <source>Start</source>
       </trans-unit>
+      <trans-unit id="talk.subtitles" resname="talk.subtitles">
+        <source>Subtitles of the recording</source>
+      </trans-unit>
       <trans-unit id="talk.talk_type" resname="talk.talk_type">
         <source>Type</source>
       </trans-unit>
