@@ -223,6 +223,25 @@ const screenshots = {
     tab: 'Details',
     element: field('ticketing_secret'),
   },
+  PasswordCopyToClipboard: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    prepare: async (frame) => {
+      await frame.locator(`${field('ticketing_secret')} [id^="t3js-formengine-fieldcontrol-"]`).click();
+      await frame.locator(`${field('ticketing_secret')} typo3-copy-to-clipboard`).waitFor();
+      // A fixed value instead of the random one keeps the screenshot stable,
+      // the field cannot be edited, so fill() does not work
+      await frame.locator(`${field('ticketing_secret')} input[type="text"].form-control`).evaluate((input) => {
+        input.value = '9b2e4f7a1c6d3e8f0a5b2c7d4e1f6a3b8c5d0e7f';
+      });
+      // The generator removes the clear button of a field that cannot be
+      // edited, but the button is sometimes added only after that
+      await frame.locator(`${field('ticketing_secret')} button.close`).evaluateAll((buttons) => {
+        buttons.forEach((button) => button.remove());
+      });
+    },
+    element: field('ticketing_secret'),
+  },
   CheckSingle: {
     url: editUrl('tx_myextension_talk', talk),
     element: field('recording_allowed'),
