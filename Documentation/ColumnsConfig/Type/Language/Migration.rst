@@ -19,8 +19,15 @@ where code adaption has to take place. Occurrences are all columns, defined as
     type. Custom setting such as field wizards are not evaluated until the TCA
     configuration is adapted.
 
+The language of the record, the field that
+:confval:`languageField <ctrl-languageField>` names, needs no column
+definition at all. TYPO3 creates it. Remove the column of this field
+instead of changing it.
+
+Change the other language fields to the type `language`:
+
 ..  code-block:: diff
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/242-tx_myextension_talk-subtitles.php (excerpt)
 
      'config' => [
     -  'type' => 'select',
@@ -35,7 +42,7 @@ where code adaption has to take place. Occurrences are all columns, defined as
      ],
 
 ..  code-block:: diff
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_domain_model_something.php (excerpt)
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/242-tx_myextension_talk-subtitles.php (excerpt)
 
      'config' => [
     -  'type' => 'select',

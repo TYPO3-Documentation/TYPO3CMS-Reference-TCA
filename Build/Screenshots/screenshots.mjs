@@ -268,6 +268,10 @@ const screenshots = {
     url: editUrl('tx_myextension_talk', talk),
     element: field('spoken_language'),
   },
+  LanguageSubtitles: {
+    url: editUrl('tx_myextension_talk', talk),
+    element: field('subtitles'),
+  },
   SelectSingleTimezone: {
     url: editUrl('tx_myextension_conference', conference),
     element: field('timezone'),

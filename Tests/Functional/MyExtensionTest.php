@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace T3docs\ReferenceTca\Tests\Functional;
 
+use Doctrine\DBAL\Types\IntegerType;
 use MyVendor\MyExtension\Backend\FeedbackCountFormatter;
 use MyVendor\MyExtension\Frontend\TicketUriBuilder;
 use PHPUnit\Framework\Attributes\Test;
@@ -154,6 +155,18 @@ final class MyExtensionTest extends FunctionalTestCase
         // The Core limits a relationship to one record to one item
         self::assertSame('oneToOne', $config['relationship']);
         self::assertSame(1, $config['maxitems']);
+    }
+
+    #[Test]
+    public function subtitlesAreALanguageFieldBesidesTheLanguageOfTheRecord(): void
+    {
+        $schema = $this->get(TcaSchemaFactory::class)->get('tx_myextension_talk');
+        self::assertSame('language', $schema->getField('subtitles')->getType());
+        // The language of the record stays the field of the Core
+        self::assertSame('sys_language_uid', $GLOBALS['TCA']['tx_myextension_talk']['ctrl']['languageField']);
+        $columns = $this->get(ConnectionPool::class)->getConnectionForTable('tx_myextension_talk')
+            ->createSchemaManager()->listTableColumns('tx_myextension_talk');
+        self::assertInstanceOf(IntegerType::class, $columns['subtitles']->getType());
     }
 
     #[Test]
