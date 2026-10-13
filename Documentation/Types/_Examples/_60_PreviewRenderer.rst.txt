@@ -6,14 +6,24 @@ PreviewRenderer examples
 
 Demonstrates property: :confval:`types-previewRenderer`.
 
-This specifies the preview renderer only for records with the record type
-`myextension_conferencelist` as determined by the field `CType` of the
-table `tt_content`.
+In the :guilabel:`Content > Layout` module, a conference teaser shows the
+teased conference and the link text:
 
-This could be used to preview the conference list plugin in the
-:guilabel:`Content > Layout` module.
+..  figure:: /Images/Conference/TypesPreviewRenderer.png
+    :alt: The preview of a conference teaser in the page module
+    :class: with-shadow
 
-..  code-block:: php
+    The preview of a conference teaser in the page module
 
-    $GLOBALS['TCA']['tt_content']['types']['myextension_conferencelist']['previewRenderer']
-        = \MyVendor\MyExtension\Preview\ConferenceListPreviewRenderer::class;
+The record type `myextension_conferenceteaser` of the table `tt_content`
+gets its own preview renderer:
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/615-tt_content-conference_teaser.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/615-tt_content-conference_teaser.php
+    :emphasize-lines: 51-54
+
+The preview renderer shows the content of the preview itself. The standard
+preview renderer of the Core renders the header, the footer, and the wrap:
+
+..  literalinclude:: /CodeSnippets/my_extension/Classes/Preview/ConferenceTeaserPreviewRenderer.php
+    :caption: EXT:my_extension/Classes/Preview/ConferenceTeaserPreviewRenderer.php

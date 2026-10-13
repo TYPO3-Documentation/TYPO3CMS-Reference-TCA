@@ -13,12 +13,16 @@
     Use :confval:`property previewRenderer of section types <types-previewRenderer>`
     to configure the preview for a certain type only.
 
-    ..  rubric:: Example: Use for any record in a table
-
-    This specifies the preview renderer to be used for any record in
-    `tx_myextension_domain_model_mytable`:
+    The :guilabel:`Content > Layout` module renders the previews, so the
+    option only takes effect in the table `tt_content`. The Core sets the
+    standard preview renderer for all content elements:
 
     ..  code-block:: php
+        :caption: EXT:frontend/Configuration/TCA/tt_content.php (excerpt)
 
-        $GLOBALS['TCA']['tx_myextension_domain_model_mytable']['ctrl']['previewRenderer']
-            = \MyVendor\MyExtension\Preview\PreviewRenderer::class;
+        'ctrl' => [
+          'previewRenderer' => \TYPO3\CMS\Backend\Preview\StandardContentPreviewRenderer::class,
+        ],
+
+    The conference teaser of the example extension has a
+    :ref:`preview renderer of its own <types-example-previewrenderer>`.
