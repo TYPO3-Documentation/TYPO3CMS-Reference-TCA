@@ -3,6 +3,9 @@
   <file source-language="en" datatype="plaintext" original="EXT:my_sitepackage/Resources/Private/Language/locallang_db.xlf" product-name="my_sitepackage">
     <header/>
     <body>
+      <trans-unit id="crop_variant.mobile" resname="crop_variant.mobile">
+        <source>Mobile</source>
+      </trans-unit>
       <trans-unit id="talk.audience.agencies" resname="talk.audience.agencies">
         <source>Agencies</source>
       </trans-unit>

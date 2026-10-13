@@ -64,6 +64,10 @@ final class MyExtensionTest extends FunctionalTestCase
         self::assertSame('', $GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode']);
         // The site package changes the ctrl section of a table of the extension
         self::assertTrue($GLOBALS['TCA']['tx_myextension_hotel']['ctrl']['security']['ignoreWebMountRestriction']);
+        // The site package disables an aspect ratio of the extension and keeps the others
+        $desktopRatios = $GLOBALS['TCA']['tx_myextension_conference']['columns']['impressions']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['desktop']['allowedAspectRatios'];
+        self::assertTrue($desktopRatios['NaN']['disabled']);
+        self::assertSame(16 / 9, $desktopRatios['16:9']['value']);
         // The item of the site package follows the item it is placed after
         $audienceItems = $GLOBALS['TCA']['tx_myextension_talk']['columns']['audience']['config']['items'];
         $values = array_column($audienceItems, 'value');

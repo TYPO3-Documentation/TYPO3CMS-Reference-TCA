@@ -187,8 +187,9 @@ Configuration per content element
 
 It is however also possible to provide a configuration per content element, e.g. for tt_content images:
 
-..  literalinclude:: _Snippets/_overrideCropVariants.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/tt_content.php
+    :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php (excerpt)
+    :lines: 1-4,15-31
 
 ..  _columns-imagemanipulation-crop-variants-specific-content-element:
 
@@ -197,8 +198,9 @@ Define a cropping configuration for a specific content element
 
 It is also possible to set the cropping configuration only for a specific content element type:
 
-..  literalinclude:: _Snippets/_overrideCropVariantsCType.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/tt_content.php
+    :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tt_content.php (excerpt)
+    :lines: 1-4,33-51
 
 ..  _columns-imagemanipulation-crop-variants-disable:
 
@@ -219,8 +221,9 @@ Disable an aspect ratio
 
 Not only cropVariants but also aspect ratios can be disabled by adding a ``disabled`` key to the array.
 
-..  literalinclude:: _Snippets/_disabledAspectRatioCropVariant.php
-    :caption: EXT:my_extension/Configuration/TCA/Overrides/tt_content.php
+..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/tx_myextension_conference.php
+    :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tx_myextension_conference.php (excerpt)
+    :lines: 1-4,10-14
 
 ..  _columns-imagemanipulation-crop-variants-viewhelper:
 
