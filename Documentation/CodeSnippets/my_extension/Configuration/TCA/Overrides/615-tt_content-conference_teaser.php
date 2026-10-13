@@ -1,5 +1,6 @@
 <?php
 
+use MyVendor\MyExtension\Preview\ConferenceTeaserPreviewRenderer;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
@@ -13,6 +14,7 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
       'renderType' => 'selectSingle',
       'foreign_table' => 'tx_myextension_conference',
       'foreign_table_where' => 'AND {#tx_myextension_conference}.{#sys_language_uid} IN (-1, 0)',
+      'relationship' => 'manyToOne',
     ],
   ],
   'tx_myextension_teaser_link_text' => [
@@ -46,7 +48,10 @@ ExtensionManagementUtility::addRecordType(
     --div--;my_extension.db:tab.teaser,
       tx_myextension_teaser_link_text,
   ',
-  [],
+  [
+    // The page module shows the teased conference
+    'previewRenderer' => ConferenceTeaserPreviewRenderer::class,
+  ],
   'after:myextension_callforpapers',
 );
 

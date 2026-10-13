@@ -87,7 +87,7 @@ its own. :php:`ExtensionManagementUtility::addRecordType()` adds the tab
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/615-tt_content-conference_teaser.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/615-tt_content-conference_teaser.php
-    :emphasize-lines: 35-51, 54-58
+    :emphasize-lines: 37-56, 59-63
 
 The following tabs are shown:
 
