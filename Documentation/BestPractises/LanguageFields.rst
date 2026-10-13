@@ -91,5 +91,5 @@ Example: Enable table for localization and translation:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
-    :visible-lines: 4-29, 57-83
-    :emphasize-lines: 19-22, 66-67, 79-81
+    :visible-lines: 4-29, 57-87
+    :emphasize-lines: 19-22, 66-67, 83-85

@@ -74,7 +74,11 @@ return [
   'palettes' => [
     'access' => [
       'label' => 'core.form.palettes:access',
-      'showitem' => 'starttime, endtime',
+      // The labels of the fields tell the editors what the dates are for
+      'showitem' => '
+        starttime;my_extension.db:conference.starttime,
+        endtime;my_extension.db:conference.endtime,
+      ',
     ],
     'language' => [
       'showitem' => 'sys_language_uid, l10n_parent',

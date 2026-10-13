@@ -51,6 +51,13 @@ $GLOBALS['TCA']['tx_myextension_talk']['palettes']['feedback'] = [
 ExtensionManagementUtility::addToAllTCAtypes(
   'tx_myextension_talk',
   '--palette--;;feedback',
-  '',
+  'talk,keynote',
+  'after:comments_closed',
+);
+// In a workshop, the participants give the feedback
+ExtensionManagementUtility::addToAllTCAtypes(
+  'tx_myextension_talk',
+  '--palette--;my_extension.db:talk.feedback.workshop;feedback',
+  'workshop',
   'after:comments_closed',
 );
