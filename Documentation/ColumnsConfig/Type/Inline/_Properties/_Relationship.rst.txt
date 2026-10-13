@@ -32,10 +32,17 @@
     without `relationship` still provides a collection, even if `maxitems`
     is `1`.
 
-    In the following example, a product has exactly one inline price
-    record:
+    The organizers answer a comment once. Their reply is a comment, too,
+    so a comment holds one inline comment:
 
-    ..  literalinclude:: /ColumnsConfig/Type/Inline/_Snippets/_Relationship.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_product.php
-        :visible-lines: 16-24
-        :emphasize-lines: 22
+    ..  figure:: /Images/Conference/InlineRelationship.png
+        :alt: The field "Reply of the organizers" with one collapsed comment
+            "The organizers (2027-05-12)" and the counter "1/1 Reply of the
+            organizers"
+        :class: with-shadow
+
+        A comment with the reply of the organizers
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/525-tx_myextension_comment-reply.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/525-tx_myextension_comment-reply.php
+        :emphasize-lines: 17-18

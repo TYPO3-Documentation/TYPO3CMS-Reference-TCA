@@ -21,6 +21,9 @@
       <trans-unit id="comment.name" resname="comment.name">
         <source>Name</source>
       </trans-unit>
+      <trans-unit id="comment.reply" resname="comment.reply">
+        <source>Reply of the organizers</source>
+      </trans-unit>
       <trans-unit id="conference" resname="conference">
         <source>Conference</source>
       </trans-unit>
