@@ -71,6 +71,9 @@ final class MyExtensionTest extends FunctionalTestCase
         self::assertSame('business', $audienceItems[array_search('agencies', $values, true)]['group']);
         $languageService = $this->get(LanguageServiceFactory::class)->create('default');
         self::assertSame('Agencies', $languageService->sL('LLL:my_sitepackage.db:talk.audience.agencies'));
+        // The site package renames a content element of the extension in the wizard
+        $creationOptions = $GLOBALS['TCA']['tt_content']['types']['myextension_conferenceteaser']['creationOptions'];
+        self::assertSame('Event teaser', $languageService->sL('LLL:' . $creationOptions['title']));
     }
 
     #[Test]
@@ -101,6 +104,14 @@ final class MyExtensionTest extends FunctionalTestCase
         require __DIR__ . '/../../Documentation/Ctrl/_CodeSnippets/_AutoCreatedColumns/_autoCreateConference.php';
         $column['config']['default'] = 0;
         self::assertSame($column, $GLOBALS['TCA']['tx_myextension_conference']['columns']['hidden']);
+    }
+
+    #[Test]
+    public function partnershipTypesHaveNoCreationLinkOfTheirOwn(): void
+    {
+        foreach ($GLOBALS['TCA']['tx_myextension_partnership']['types'] as $type => $configuration) {
+            self::assertFalse($configuration['creationOptions']['enableDirectRecordTypeCreation'], 'type ' . $type);
+        }
     }
 
     #[Test]
