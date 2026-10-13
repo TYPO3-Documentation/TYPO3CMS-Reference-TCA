@@ -37,8 +37,8 @@ in a palette:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
-    :visible-lines: 57-82
-    :emphasize-lines: 65,77
+    :visible-lines: 57-86
+    :emphasize-lines: 65, 78-81
 
 ..  _ctrl-reference-enablecolumns-examples-hidden:
 

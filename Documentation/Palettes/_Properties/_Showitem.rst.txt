@@ -8,21 +8,30 @@
     :required: true
     :type: string (list of field names)
 
-    Specifies which fields are displayed in which order in the palette,
-    examples:
-
-    ..  literalinclude:: /Palettes/_CodeSnippets/_Palettes.php
-        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-        :visible-lines: 18-27
-        :emphasize-lines: 19, 22, 25
+    Specifies which fields are displayed in which order in the palette.
 
     This string is a comma separated list of field names from :ref:`['columns'] section <columns>`, each field can
     optionally have a second, semicolon separated field to override the default :ref:`label <columns-properties-label>`
     property of the field.
 
+    The access palette of a conference gives the fields `starttime` and
+    `endtime` labels of their own:
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
+        :visible-lines: 3, 74-87
+        :emphasize-lines: 78-81
+
     Instead of a field name, the special keyword `--linebreak--` can be used to place groups of fields on
     single lines. Note this line grouping only works well if the browser window size allows multiple fields
     next to each other, if the width is not sufficient the fields will wrap below each other anyways.
+
+    The address palette of a location shows the street on a line of its
+    own:
+
+    ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/405-tx_myextension_location-address.php
+        :caption: EXT:my_extension/Configuration/TCA/Overrides/405-tx_myextension_location-address.php
+        :emphasize-lines: 24
 
     ..  caution::
         A field name must only appear once in the entire record. Do not reference

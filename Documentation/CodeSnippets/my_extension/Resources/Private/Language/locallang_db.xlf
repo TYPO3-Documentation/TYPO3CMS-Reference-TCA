@@ -78,6 +78,9 @@
       <trans-unit id="conference.end_date" resname="conference.end_date">
         <source>Last day</source>
       </trans-unit>
+      <trans-unit id="conference.endtime" resname="conference.endtime">
+        <source>Show on the website until</source>
+      </trans-unit>
       <trans-unit id="conference.event_format" resname="conference.event_format">
         <source>Format</source>
       </trans-unit>
@@ -188,6 +191,9 @@
       </trans-unit>
       <trans-unit id="conference.speakers.list" resname="conference.speakers.list">
         <source>Show all speakers</source>
+      </trans-unit>
+      <trans-unit id="conference.starttime" resname="conference.starttime">
+        <source>Show on the website from</source>
       </trans-unit>
       <trans-unit id="conference.stream_url" resname="conference.stream_url">
         <source>Live stream</source>
@@ -659,6 +665,9 @@
       </trans-unit>
       <trans-unit id="talk.feedback" resname="talk.feedback">
         <source>Feedback</source>
+      </trans-unit>
+      <trans-unit id="talk.feedback.workshop" resname="talk.feedback.workshop">
+        <source>Feedback of the participants</source>
       </trans-unit>
       <trans-unit id="talk.feedback_count" resname="talk.feedback_count">
         <source>Feedback forms</source>

@@ -92,8 +92,8 @@ section, and the palette shows it:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
-    :visible-lines: 4-29, 74-83
-    :emphasize-lines: 19, 80
+    :visible-lines: 4-29, 74-87
+    :emphasize-lines: 19, 84
 
 ..  _columns-language-properties:
 
