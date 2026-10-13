@@ -6,6 +6,9 @@
       <trans-unit id="talk.audience.agencies" resname="talk.audience.agencies">
         <source>Agencies</source>
       </trans-unit>
+      <trans-unit id="tt_content.conference_teaser.wizard_title" resname="tt_content.conference_teaser.wizard_title">
+        <source>Event teaser</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
