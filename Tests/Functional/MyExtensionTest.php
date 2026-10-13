@@ -5,13 +5,19 @@ declare(strict_types=1);
 namespace T3docs\ReferenceTca\Tests\Functional;
 
 use MyVendor\MyExtension\Backend\FeedbackCountFormatter;
+use MyVendor\MyExtension\Frontend\TicketUriBuilder;
 use PHPUnit\Framework\Attributes\Test;
 use TYPO3\CMS\Core\Configuration\Tca\TcaFactory;
 use TYPO3\CMS\Core\Configuration\Tca\TcaMigration;
+use TYPO3\CMS\Core\Core\SystemEnvironmentBuilder;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Domain\Repository\PageRepository;
+use TYPO3\CMS\Core\Http\ServerRequest;
 use TYPO3\CMS\Core\Localization\LanguageServiceFactory;
 use TYPO3\CMS\Core\Schema\TcaSchemaFactory;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
+use TYPO3\CMS\Frontend\Typolink\LinkFactory;
 use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
 /**
@@ -127,6 +133,18 @@ final class MyExtensionTest extends FunctionalTestCase
         self::assertSame(['setup', 'summary'], array_keys($schema->getWizardSteps()));
         $languageService = $this->get(LanguageServiceFactory::class)->create('default');
         self::assertSame('Summary', $languageService->sL('LLL:my_sitepackage.db:pages.wizard_step.summary'));
+    }
+
+    #[Test]
+    public function ticketLinkBecomesAUrl(): void
+    {
+        $request = (new ServerRequest('https://example.org/'))
+            ->withAttribute('applicationType', SystemEnvironmentBuilder::REQUESTTYPE_FE);
+        $contentObjectRenderer = GeneralUtility::makeInstance(ContentObjectRenderer::class);
+        $contentObjectRenderer->setRequest($request);
+        $ticketUriBuilder = new TicketUriBuilder($this->get(LinkFactory::class));
+        $conference = ['ticket_link' => 'https://tickets.example.org/developer-days-2027'];
+        self::assertSame('https://tickets.example.org/developer-days-2027', $ticketUriBuilder->getUri($conference, $contentObjectRenderer));
     }
 
     #[Test]
