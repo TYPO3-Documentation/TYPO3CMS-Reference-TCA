@@ -148,6 +148,15 @@ final class MyExtensionTest extends FunctionalTestCase
     }
 
     #[Test]
+    public function commentHoldsOneReply(): void
+    {
+        $config = $GLOBALS['TCA']['tx_myextension_comment']['columns']['reply']['config'];
+        // The Core limits a relationship to one record to one item
+        self::assertSame('oneToOne', $config['relationship']);
+        self::assertSame(1, $config['maxitems']);
+    }
+
+    #[Test]
     public function allLabelsAreTranslated(): void
     {
         $languageService = $this->get(LanguageServiceFactory::class)->create('default');

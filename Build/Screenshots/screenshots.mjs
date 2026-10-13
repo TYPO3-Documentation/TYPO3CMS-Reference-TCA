@@ -411,6 +411,10 @@ const screenshots = {
     url: editUrl('tx_myextension_comment', comment),
     element: field('crdate'),
   },
+  InlineRelationship: {
+    url: editUrl('tx_myextension_comment', comment),
+    element: field('reply'),
+  },
   UserBadgeName: {
     url: editUrl('fe_users', feUser),
     tab: 'Personal Data',

@@ -215,6 +215,11 @@ $data['tx_myextension_comment'] = [
     'NEWcomment' => [
         'pid' => $pid, 'name' => 'Chris Visitor', 'email' => 'chris@example.org',
         'content' => 'Will the talks be recorded?', 'approved' => 1,
+        'reply' => 'NEWcommentreply',
+    ],
+    'NEWcommentreply' => [
+        'pid' => $pid, 'name' => 'The organizers',
+        'content' => 'Yes, the recordings are online one week after the conference.',
     ],
     'NEWcommenttalk' => [
         'pid' => $pid, 'name' => 'Sam Listener', 'email' => 'sam@example.org',
