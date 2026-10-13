@@ -93,6 +93,17 @@ final class MyExtensionTest extends FunctionalTestCase
     }
 
     #[Test]
+    public function overrideChangesTheDefaultOfTheAutoCreatedColumn(): void
+    {
+        $column = $GLOBALS['TCA']['tx_myextension_conference']['columns']['hidden'];
+        self::assertSame(1, $column['config']['default']);
+        // The manual shows the column as the Core creates it, before the override
+        require __DIR__ . '/../../Documentation/Ctrl/_CodeSnippets/_AutoCreatedColumns/_autoCreateConference.php';
+        $column['config']['default'] = 0;
+        self::assertSame($column, $GLOBALS['TCA']['tx_myextension_conference']['columns']['hidden']);
+    }
+
+    #[Test]
     public function allLabelsAreTranslated(): void
     {
         $languageService = $this->get(LanguageServiceFactory::class)->create('default');

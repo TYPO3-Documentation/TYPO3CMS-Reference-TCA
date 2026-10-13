@@ -1,7 +1,7 @@
 <?php
 
-$GLOBALS['TCA']['pages']['columns']['disabled'] = [
-  'label' => 'LLL:core.general:LGL.enabled',
+$GLOBALS['TCA']['tx_myextension_conference']['columns']['hidden'] = [
+  'label' => 'core.db.general:enabled',
   'exclude' => true,
   'config' => [
     'type' => 'check',
