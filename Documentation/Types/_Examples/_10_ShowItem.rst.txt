@@ -35,8 +35,8 @@ added in the overrides of the extension:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/tx_myextension_conference.php
     :caption: EXT:my_extension/Configuration/TCA/tx_myextension_conference.php
-    :visible-lines: 57-82
-    :emphasize-lines: 61-69, 75, 79
+    :visible-lines: 57-86
+    :emphasize-lines: 61-69, 75, 83
 
 The syntax for tabs is:
 

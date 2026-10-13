@@ -83,6 +83,16 @@ final class MyExtensionTest extends FunctionalTestCase
     }
 
     #[Test]
+    public function workshopsShowTheFeedbackPaletteWithALabelOfTheirOwn(): void
+    {
+        $types = $GLOBALS['TCA']['tx_myextension_talk']['types'];
+        self::assertStringContainsString('--palette--;;feedback', $types['talk']['showitem']);
+        self::assertStringContainsString('--palette--;;feedback', $types['keynote']['showitem']);
+        self::assertStringContainsString('--palette--;my_extension.db:talk.feedback.workshop;feedback', $types['workshop']['showitem']);
+        self::assertStringNotContainsString('--palette--;;feedback', $types['workshop']['showitem']);
+    }
+
+    #[Test]
     public function allLabelsAreTranslated(): void
     {
         $languageService = $this->get(LanguageServiceFactory::class)->create('default');

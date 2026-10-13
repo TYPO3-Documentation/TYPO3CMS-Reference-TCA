@@ -65,12 +65,13 @@ specific label in the 'types' array for a palette overrides the default label
 that was defined within the 'palettes' array. There is no way to unset a label
 that is set within the 'palettes' array. It will always be displayed.
 
-Example:
+The feedback palette of a talk has the label "Feedback". The record type
+`workshop` shows the palette with a label of its own:
 
-..  literalinclude:: /Palettes/_CodeSnippets/_Palettes.php
-    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
-    :visible-lines: 8-17
-    :emphasize-lines: 10, 15
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/298-tx_myextension_talk-feedback.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/298-tx_myextension_talk-feedback.php
+    :visible-lines: 3, 47-63
+    :emphasize-lines: 48, 60
 
 ..  _palettes-properties:
 
