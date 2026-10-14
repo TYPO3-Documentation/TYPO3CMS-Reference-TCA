@@ -170,6 +170,15 @@ final class MyExtensionTest extends FunctionalTestCase
     }
 
     #[Test]
+    public function onlyTheReplyOffersPreparedAnswers(): void
+    {
+        $columns = $GLOBALS['TCA']['tx_myextension_comment']['columns'];
+        self::assertArrayNotHasKey('valuePicker', $columns['content']['config']);
+        $items = $columns['reply']['config']['overrideChildTca']['columns']['content']['config']['valuePicker']['items'];
+        self::assertSame('Thank you for your feedback.', $items[0]['value']);
+    }
+
+    #[Test]
     public function allLabelsAreTranslated(): void
     {
         $languageService = $this->get(LanguageServiceFactory::class)->create('default');
