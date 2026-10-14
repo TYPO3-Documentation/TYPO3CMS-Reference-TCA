@@ -1,0 +1,37 @@
+..  _columns-email-properties-valuepicker:
+
+..  confval:: valuePicker
+    :name: email-valuePicker
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['valuePicker']
+    :type: array
+    :Scope: Display
+    :changed: 14.0 breaking-107677-1760339783
+
+    Renders a list of email addresses to choose from below the field. The
+    editor can still type another address. When the editor selects an item,
+    its value replaces the current value of the field.
+
+    ..  versionchanged:: 14.0
+        The modes `append` and `prepend` were removed, and TYPO3 ignores the
+        option `mode`. TYPO3 migrates items with numeric keys to the keys
+        `label` and `value`.
+
+    items (array)
+        A list of selectable items. Each item is an associative array:
+        :php:`['label' => 'Shown label', 'value' => 'info@example.org']`.
+        The label can be plain text or a
+        `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_.
+
+..  rubric:: Example: The addresses of the organizers to choose from
+
+..  figure:: /Images/Conference/EmailValuePicker.png
+    :alt: The field "Contact email" with the value "team@example.org" and
+        its list opened: "General questions (info@example.org)", "Program
+        (program@example.org)", and "Sponsoring (sponsoring@example.org)"
+    :class: with-shadow
+
+    The contact email of a conference with its value picker opened
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/140-tx_myextension_conference-contact_email.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/140-tx_myextension_conference-contact_email.php
+    :emphasize-lines: 13-29

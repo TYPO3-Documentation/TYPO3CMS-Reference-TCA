@@ -196,6 +196,13 @@ const screenshots = {
     tab: 'Details',
     element: field('contact_email'),
   },
+  EmailValuePicker: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    prepare: (frame) => openValuePicker(frame, 'contact_email'),
+    from: field('contact_email'),
+    to: valuePickerList('contact_email'),
+  },
   LinkTickets: {
     url: editUrl('tx_myextension_conference', conference),
     element: field('ticket_link'),
@@ -418,6 +425,17 @@ const screenshots = {
   InlineRelationship: {
     url: editUrl('tx_myextension_comment', comment),
     element: field('reply'),
+  },
+  TextValuePicker: {
+    url: editUrl('tx_myextension_comment', comment),
+    prepare: async (frame) => {
+      // The header of the reply, not the label of the field
+      await frame.locator(field('reply')).getByText('The organizers (2027-05-12)').click();
+      await frame.locator(`${field('reply')} ${field('content')}`).waitFor();
+      await frame.waitForLoadState('networkidle');
+    },
+    // The content field of the reply, after the one of the comment
+    element: field('content'),
   },
   UserBadgeName: {
     url: editUrl('fe_users', feUser),
