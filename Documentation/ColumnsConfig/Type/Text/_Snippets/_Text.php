@@ -34,6 +34,33 @@ return [
         'eval' => TextEvaluation::class,
       ],
     ],
+
+    'with_value_picker' => [
+      'label' => 'Text field with value picker',
+      'config' => [
+        'type' => 'text',
+        'valuePicker' => [
+          'items' => [
+            [
+              'Lorem ipsum',
+              'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+            ],
+            [
+              'Brown fox',
+              'The quick brown fox jumps over the lazy dog',
+            ],
+            [
+              'Old story',
+              'It\'s the same old story everywhere. The layout is done, but the text is taking forever to come.',
+            ],
+            [
+              'Li Europan lingues',
+              "Li Europan lingues es membres del sam familie.\nLor separat existentie es un myth.\nPor scientie, musica, sport etc, litot Europa usa li sam vocabular.",
+            ],
+          ],
+        ],
+      ],
+    ],
   ],
   'types' => [
     '0' => [

@@ -1,0 +1,30 @@
+..  _columns-text-properties-valuepicker:
+
+..  confval:: valuePicker
+    :name: text-valuePicker
+    :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['valuePicker']
+    :type: array
+    :Scope: Display
+
+    Renders a select box with static values next to the field. When a value is selected in the box,
+    the value is transferred to the field. Keys:
+
+    mode (keyword)
+        blank (or not set)
+            The selected value substitutes the value in the field
+        append
+            The selected value is appended to an existing value of the field
+        prepend
+            The selected value is prepended to an existing value of the field
+
+    items (array)
+        An array with selectable items. Each item is an array with the first value being the label in the select
+        drop-down (plain text label or `label reference <https://docs.typo3.org/permalink/t3coreapi:label-reference>`_)
+        the second being the value transferred to the field.
+
+..  rubric:: Example: A text field with value picker
+
+..  literalinclude:: /ColumnsConfig/Type/Text/_Snippets/_Text.php
+    :caption: EXT:my_extension/Configuration/TCA/tx_myextension_mytable.php
+    :visible-lines: 38-60
+    :emphasize-lines: 42

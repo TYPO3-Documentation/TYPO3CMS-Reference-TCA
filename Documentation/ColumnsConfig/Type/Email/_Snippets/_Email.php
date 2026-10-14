@@ -41,6 +41,21 @@ return [
         'eval' => 'uniqueInPid',
       ],
     ],
+
+    'with_value_picker' => [
+      'label' => 'Email field with value picker',
+      'config' => [
+        'type' => 'email',
+        'valuePicker' => [
+          'items' => [
+            ['no-reply', 'no-reply@example.org'],
+            ['mail', 'mail@example.org'],
+            ['abuse', 'abuse@example.org'],
+            ['postmaster', 'postmaster@example.org'],
+          ],
+        ],
+      ],
+    ],
   ],
   'types' => [
     '0' => [
