@@ -474,6 +474,17 @@ const screenshots = {
     },
     modal: true,
   },
+  ImageManipulationSync: {
+    url: editUrl('tx_myextension_conference', conference),
+    tab: 'Details',
+    prepare: async (frame) => {
+      await frame.locator(field('impressions')).getByText('tomasz-anusiewicz-g2f1raDTczU-unsplash.webp').first().click();
+      await frame.waitForLoadState('networkidle');
+      await frame.locator(field('crop')).getByRole('button', { name: 'Open Editor' }).click();
+      await frame.page().waitForTimeout(1500);
+    },
+    modal: true,
+  },
   FieldInformationEmail: {
     url: editUrl('tx_myextension_speaker', speaker),
     element: field('email'),
