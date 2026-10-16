@@ -22,6 +22,25 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_comment', [
             'showitem' => 'name, content',
           ],
         ],
+        // Only a reply offers the prepared answers
+        'columns' => [
+          'content' => [
+            'config' => [
+              'valuePicker' => [
+                'items' => [
+                  [
+                    'label' => 'my_extension.db:comment.reply.thanks',
+                    'value' => 'Thank you for your feedback.',
+                  ],
+                  [
+                    'label' => 'my_extension.db:comment.reply.recordings',
+                    'value' => 'The recordings are online one week after the conference.',
+                  ],
+                ],
+              ],
+            ],
+          ],
+        ],
       ],
     ],
   ],

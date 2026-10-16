@@ -45,4 +45,4 @@ localizationStateSelector
 
     ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/140-tx_myextension_conference-contact_email.php
         :caption: EXT:my_extension/Configuration/TCA/Overrides/140-tx_myextension_conference-contact_email.php
-        :emphasize-lines: 13-15
+        :emphasize-lines: 30-32
