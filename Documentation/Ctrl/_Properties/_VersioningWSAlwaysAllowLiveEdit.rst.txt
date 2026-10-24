@@ -5,9 +5,16 @@
     :TCA path: $GLOBALS['TCA'][$table]['ctrl']['versioningWS_alwaysAllowLiveEdit']
     :type: boolean
     :Scope: Special
+    :changed: 14.3 important-106077-1789503919
 
     If set, this table can always be edited live even in a workspace and
     even if "live editing" is not enabled in a custom workspace. For
     instance this is set by default for Backend user and group records
     since it is assumed that administrators like the flexibility of
     editing backend users without having to go to the Live workspace.
+
+    The option applies only to tables without
+    :ref:`versioningWS <confval-ctrl-versioningws>`. In a workspace, records
+    of a workspace aware table are always versioned. The TCA migration
+    removes the option from a table with `versioningWS`, also from an inline
+    child table that is made workspace aware automatically.
