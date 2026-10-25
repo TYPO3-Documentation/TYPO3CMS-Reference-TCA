@@ -53,16 +53,30 @@ options[pid]
     :Values: marker or an integer
     :default: ###CURRENT_PID###
 
-    List records from this pid. Can be an hard pid setting, or one of
-    these markers, see :ref:`select foreign_table_where
-    <columns-select-properties-foreign-table-where>`.
+    The pid of the page whose records the list shows, as a number or as one
+    of these markers:
 
-    Falls back to "current pid" if not set, forces pid=0 if records of this
-    table are only allowed on root level.
+    `###CURRENT_PID###`
+        The pid of the record that is edited.
 
-    -   `###CURRENT_PID###`
-    -   `###THIS_UID###`
-    -   `###SITEROOT###`
+    `###THIS_UID###`
+        The uid of the record that is edited.
+
+    `###PAGE_TSCONFIG_ID###`
+        The value of
+        `TCEFORM.<table>.<field>.PAGE_TSCONFIG_ID <https://docs.typo3.org/permalink/t3tsref:tceform-page-tsconfig-id>`_
+        in the page TSconfig.
+
+    The control resolves no other marker, and an unknown marker becomes the
+    pid 0. `###SITEROOT###` is one of them: it works in
+    `the pid of the addRecord control <https://docs.typo3.org/permalink/t3tca:confval-fieldcontrol-addrecord-options-pid>`_,
+    not here. The markers of
+    `foreign_table_where <https://docs.typo3.org/permalink/t3tca:confval-select-single-foreign-table-where>`_
+    are a different set as well.
+
+    Without this option the list shows the records of the current pid. If
+    the table is allowed on the root level only, the list shows the records
+    with the pid 0.
 
 ..  _tca-property-field-control-list-module-options-table:
 
