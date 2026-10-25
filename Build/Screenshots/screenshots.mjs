@@ -496,6 +496,12 @@ const screenshots = {
     url: editUrl('tx_myextension_location', location),
     element: palette('latitude'),
   },
+  TypesShowitemTabs: {
+    url: editUrl('tx_myextension_conference', conference),
+    // Only the tab bar of the form, not the fields of a tab, which change
+    // whenever an example adds a field
+    element: '.nav-tabs >> nth=0',
+  },
   TypesContentBasic: {
     url: editUrl('tt_content', callForPapers),
     from: 'h1',
