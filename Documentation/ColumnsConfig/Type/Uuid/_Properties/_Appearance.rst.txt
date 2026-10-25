@@ -14,7 +14,7 @@
         :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['appearance']['copyToClipboard']
         :type: boolean
         :default: true
-        :changed: 15.0 deprecation-110865-1790803661
+        :added: 15.0 deprecation-110865-1790803661
 
         Shows a button next to the input field. The button copies the UUID
         to the clipboard of the operating system.
