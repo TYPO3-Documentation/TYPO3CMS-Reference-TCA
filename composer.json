@@ -20,7 +20,6 @@
     "friendsofphp/php-cs-fixer": "^3.46",
     "myvendor/my-extension": "@dev",
     "myvendor/my-sitepackage": "@dev",
-    "t3docs/codesnippet": "dev-main",
     "t3docs/examples": "^14.1",
     "t3docs/site-package": "dev-main",
     "typo3/cms-adminpanel": "^14.3",
@@ -76,14 +75,6 @@
       "extension-key": "t3docs-reference-tca",
       "web-dir": ".Build/public"
     }
-  },
-  "scripts": {
-    "generate": [
-      "@generate:codesnippets"
-    ],
-    "generate:codesnippets": [
-      ".Build/bin/typo3 codesnippet:create Documentation/"
-    ]
   },
   "autoload-dev": {
     "psr-4": {
