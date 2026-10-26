@@ -8,7 +8,6 @@
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "*",
-    "t3docs/codesnippet": "dev-main",
     "t3docs/examples": "*",
     "t3docs/site-package": "*",
     "typo3/cms-adminpanel": "^13.4",
@@ -64,13 +63,5 @@
       "extension-key": "t3docs-reference-tca",
       "web-dir": ".Build/public"
     }
-  },
-  "scripts": {
-    "generate": [
-      "@generate:codesnippets"
-    ],
-    "generate:codesnippets": [
-      ".Build/bin/typo3 codesnippet:create Documentation/"
-    ]
   }
 }

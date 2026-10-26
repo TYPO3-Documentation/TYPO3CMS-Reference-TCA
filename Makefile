@@ -15,10 +15,6 @@ test-docs: ## Test the documentation rendering
 
 	docker run --user $(shell id -u):$(shell id -g) --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --minimal-test
 
-.PHONY: codesnippets
-codesnippets: ## Regenerate automatic code snippets
-	.Build/bin/typo3 codesnippet:create Documentation/
-
 .PHONY: test
 test: test-lint test-cgl test-docs ## Runs all test suites
 
