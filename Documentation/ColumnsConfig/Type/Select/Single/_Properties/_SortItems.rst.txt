@@ -41,10 +41,19 @@
 
 ..  rubric:: Example: Sort items by a custom method
 
-The following custom method sorts the items by their reversed labels:
+The time zones of a conference are sorted by label first, and then by their
+offset to UTC. A key other than `label` and `value` names a method in the
+form `ClassName->methodName`:
 
-..  include:: /Images/Rst/SelectSingle20.rst.txt
+..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_SortItemsCustom.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/tx_myextension_conference.php
+    :emphasize-lines: 21-26
 
-..  include:: /CodeSnippets/SelectSingle20.rst.txt
+The method receives the items as
+:php-short:`\TYPO3\CMS\Core\Schema\Struct\SelectItem` objects by reference.
+The orderings run one after the other, and :php:`usort()` keeps the order
+of equal items. Time zones with the same offset therefore stay sorted by
+label:
 
-..  include:: /CodeSnippets/SelectItemSorter.rst.txt
+..  literalinclude:: /ColumnsConfig/Type/Select/_Snippets/_TimezoneSorter.php
+    :caption: EXT:my_extension/Classes/UserFunctions/FormEngine/TimezoneSorter.php

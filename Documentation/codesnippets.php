@@ -380,13 +380,6 @@ return [
   [
     'action' => 'createPhpArrayCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
-    'fields' => ['columns/select_single_20'],
-    'targetFileName' => 'CodeSnippets/SelectSingle20.rst.txt',
-  ],
-
-  [
-    'action' => 'createPhpArrayCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Configuration/TCA/tx_styleguide_elements_select.php',
     'fields' => ['columns/select_singlebox_1'],
     'targetFileName' => 'CodeSnippets/SelectSinglebox1.rst.txt',
   ],
@@ -677,12 +670,6 @@ return [
     'fields' => ['types'],
     'targetFileName' => 'CodeSnippets/PalettesTypes.rst.txt',
   ],
-  [
-    'action' => 'createCodeSnippet',
-    'sourceFile' => 'EXT:styleguide/Classes/UserFunctions/FormEngine/SelectItemSorter.php',
-    'targetFileName' => 'CodeSnippets/SelectItemSorter.rst.txt',
-  ],
-
   [
     'action' => 'createCodeSnippet',
     'sourceFile' => 'EXT:styleguide/Configuration/FlexForms/Simple.xml',
