@@ -10,6 +10,11 @@
     fields, it is possible to re-use the same child table in more than one field of the parent table by using a match
     field with different values for each of the use cases.
 
+    Match values are written to the child records; they are not only display
+    filters. In particular, a fixed `sys_language_uid = 0` match is not a
+    general safeguard for translated children. See
+    `Inline relations, language and ownership <https://docs.typo3.org/permalink/t3tca:columns-inline-language-and-ownership>`_.
+
 ..  rubric:: Examples
 
 A conference has two fields of type "inline", `registrations` and

@@ -80,6 +80,62 @@ Properties of the TCA column type `inline`
     ..  include:: _Properties/_*.rst.txt
         :show-buttons:
 
+..  _columns-inline-language-and-ownership:
+
+Inline relations, language and ownership
+========================================
+
+An inline field manages its child records through the
+`DataHandler <https://docs.typo3.org/permalink/t3coreapi:datahandler-basics>`_.
+It is more than a view of related records: saving the parent can update the
+children, even if their own fields were not edited.
+
+..  versionchanged:: 14.3.10
+    :changelog: important-103970-1792102654
+
+    DataHandler aligns the language of inline children with their parent.
+
+For language-aware parent and child tables, DataHandler aligns the language
+of children in relations without `MM` when the parent is created, its
+language changes, or new inline children are submitted. Adding one child
+also aligns its existing siblings. Nested children follow their aligned
+parent. Alignment to the default language (`0`) or "All languages" (`-1`)
+also resets a child's translation parent and translation source.
+
+Relations stored in an `MM` table are excluded from this alignment. They can
+be shared by parents in different languages and can be edited from both
+sides using
+`MM_opposite_field <https://docs.typo3.org/permalink/t3tca:confval-inline-mm-opposite-field>`_.
+
+..  warning::
+    Check secondary inline relations that use `foreign_field` on a
+    translatable child table. If the child column named by `foreign_field`
+    has
+    `l10n_mode = exclude <https://docs.typo3.org/permalink/t3tca:confval-columns-l10n-mode>`_,
+    translations retain the reference to the default-language parent.
+    Its inline list can therefore contain children in different languages.
+
+    Creating that parent or adding a child to its list can align the
+    translations to the default language and clear their translation
+    pointers. This case is tracked in `TYPO3 issue 111248
+    <https://forge.typo3.org/issues/111248>`_.
+
+For a read-only reverse view of a relation managed elsewhere, use a virtual
+`none field <https://docs.typo3.org/permalink/t3tca:columns-none>`_ with a
+custom
+`renderType <https://docs.typo3.org/permalink/t3coreapi:formengine-rendering-nodeexpansion>`_
+to query and display the related records. DataHandler discards submitted
+values of type `none`. Hiding inline editing controls or using `readOnly`
+only changes the form display; it does not remove the relation from
+DataHandler's processing.
+
+Do not add a fixed `sys_language_uid = 0` constraint to all inline
+definitions as a translation safeguard.
+`foreign_match_fields <https://docs.typo3.org/permalink/t3tca:confval-inline-foreign-match-fields>`_
+affects writes as well as reads. A fixed match is only suitable for a list
+deliberately restricted to the default language; it must not be used for
+the relation through which a parent localizes its children.
+
 ..  _columns-inline-workspaces:
 
 Inline fields and workspaces
