@@ -87,8 +87,8 @@ Inline relations, language and ownership
 
 An inline field manages its child records through the
 `DataHandler <https://docs.typo3.org/permalink/t3coreapi:datahandler-basics>`_.
-It is more than a view of related records: saving the parent can update the
-children, even if their own fields were not edited.
+It is more than just a view of related records: saving the parent can update the
+children, even if their own fields have not been edited.
 
 ..  versionchanged:: 14.3.10
     :changelog: important-103970-1792102654
@@ -96,7 +96,7 @@ children, even if their own fields were not edited.
     DataHandler aligns the language of inline children with their parent.
 
 For language-aware parent and child tables, DataHandler aligns the language
-of children in relations without `MM` when the parent is created, its
+of children in relations without `MM` when:  the parent is created, its
 language changes, or new inline children are submitted. Adding one child
 also aligns its existing siblings. Nested children follow their aligned
 parent. Alignment to the default language (`0`) or "All languages" (`-1`)
@@ -120,20 +120,20 @@ sides using
     pointers. This case is tracked in `TYPO3 issue 111248
     <https://forge.typo3.org/issues/111248>`_.
 
-For a read-only reverse view of a relation managed elsewhere, use a virtual
+For a read-only reverse view of a relation that is held elsewhere, use a virtual
 `none field <https://docs.typo3.org/permalink/t3tca:columns-none>`_ with a
 custom
 `renderType <https://docs.typo3.org/permalink/t3coreapi:formengine-rendering-nodeexpansion>`_
 to query and display the related records. DataHandler discards submitted
 values of type `none`. Hiding inline editing controls or using `readOnly`
-only changes the form display; it does not remove the relation from
+only changes the form display. It does not remove the relation from
 DataHandler's processing.
 
 Do not add a fixed `sys_language_uid = 0` constraint to all inline
 definitions as a translation safeguard.
 `foreign_match_fields <https://docs.typo3.org/permalink/t3tca:confval-inline-foreign-match-fields>`_
-affects writes as well as reads. A fixed match is only suitable for a list
-deliberately restricted to the default language; it must not be used for
+affect writes as well as reads. A fixed match is only suitable for a list
+deliberately restricted to the default language. It must not be used for
 the relation through which a parent localizes its children.
 
 ..  _columns-inline-workspaces:
