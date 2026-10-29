@@ -36,6 +36,7 @@ This document is the complete reference of the *Table Configuration Array*
     :titlesonly:
 
     Introduction/Index
+    DatabaseColumns
     Examples/Index
     BestPractises/Index
 
