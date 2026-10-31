@@ -179,6 +179,17 @@ final class MyExtensionTest extends FunctionalTestCase
     }
 
     #[Test]
+    public function impressionsOfferSynchronizedCroppingForDesktopAndTablet(): void
+    {
+        $cropVariants = $GLOBALS['TCA']['tx_myextension_conference']['columns']['impressions']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'];
+        // The image editor compares the crop variants without their title,
+        // also after the site package disabled an aspect ratio
+        unset($cropVariants['desktop']['title'], $cropVariants['tablet']['title']);
+        self::assertSame($cropVariants['desktop'], $cropVariants['tablet']);
+        self::assertTrue($cropVariants['mobile']['excludeFromSync']);
+    }
+
+    #[Test]
     public function allLabelsAreTranslated(): void
     {
         $languageService = $this->get(LanguageServiceFactory::class)->create('default');

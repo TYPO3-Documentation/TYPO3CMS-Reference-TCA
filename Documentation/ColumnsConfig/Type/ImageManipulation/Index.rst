@@ -117,12 +117,44 @@ It is possible to define multiple crop variants. The array key is used as identi
 is specified with the "title" and the actual (floating point) ratio with the "value" key. The value **must** be of
 PHP type float, not only a string.
 
-The impressions of a conference can be cropped for the desktop and for
-mobile devices:
+The impressions of a conference can be cropped for the desktop, for
+tablets, and for mobile devices:
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
-    :emphasize-lines: 26-27, 40
+    :emphasize-lines: 26-27, 40, 53
+
+..  _columns-imagemanipulation-crop-variants-exclude-from-sync:
+
+Exclude a crop variant from synchronized cropping
+-------------------------------------------------
+
+..  versionadded:: 14.2
+    :changelog: feature-105742-1755084132
+
+If all crop variants have the same configuration apart from their title,
+the image editor shows the checkbox
+:guilabel:`Apply changes to all crop variants`. While an editor keeps it
+checked, each change of the crop applies to all of these crop variants.
+
+Set `excludeFromSync` to `true` to leave a crop variant out. The image
+editor then compares only the other crop variants. While the checkbox is
+checked, the image editor disables the excluded crop variant. Editors crop
+it on its own, with the checkbox unchecked.
+
+The desktop and tablet variants of the impressions have the same aspect
+ratios. The mobile variant has an aspect ratio of its own, and
+`excludeFromSync` leaves it out:
+
+..  figure:: /Images/Conference/ImageManipulationSync.png
+    :alt: The image editor of a photo of two pilgrims with the unchecked checkbox "Apply changes to all crop variants" above the crop variants "Desktop" with the aspect ratio 16:9, "Tablet", and "Mobile"
+    :class: with-shadow
+
+    The image editor offers to crop the desktop and tablet variants together
+
+..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+    :caption: EXT:my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
+    :emphasize-lines: 27, 40, 55-57
 
 ..  _columns-imagemanipulation-crop-variants-initial:
 
@@ -136,7 +168,7 @@ the previous image cropper provided by default.
 
 ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
     :caption: EXT:my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
-    :emphasize-lines: 48-54
+    :emphasize-lines: 64-70
 
 ..  _columns-imagemanipulation-crop-variants-focusarea:
 
@@ -223,7 +255,7 @@ Not only cropVariants but also aspect ratios can be disabled by adding a ``disab
 
 ..  literalinclude:: /CodeSnippets/my_sitepackage/Configuration/TCA/Overrides/tx_myextension_conference.php
     :caption: EXT:my_sitepackage/Configuration/TCA/Overrides/tx_myextension_conference.php (excerpt)
-    :lines: 1-4,10-14
+    :lines: 1-4,10-17
 
 ..  _columns-imagemanipulation-crop-variants-viewhelper:
 
