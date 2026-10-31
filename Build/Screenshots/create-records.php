@@ -247,7 +247,7 @@ $data['tx_myextension_conference'] = [
         'internal_notes' => 'Catering confirmed for 350 people.',
         'speakers' => 'NEWspada,NEWspben,NEWspkim',
         'talks' => 'NEWtalkkeynote,NEWtalktca,NEWtalkworkshop',
-        'comments' => 'NEWcomment', 'logo' => 'NEWimglogo',
+        'comments' => 'NEWcomment', 'logo' => 'NEWimglogo', 'impressions' => 'NEWimgpilgrims',
         'registrations' => 'NEWregchris,NEWregsam', 'waiting_list' => 'NEWregrobin',
         'hotels' => 'NEWhotelfair,NEWhotelriver', 'content_elements' => 'NEWgettingthere',
         'partners' => 'NEWpartnership,NEWpartnershiponline',
@@ -271,6 +271,7 @@ $data['sys_file_reference'] = [
     'NEWimgleipzig' => $reference('leipzig.png', 'tx_myextension_location', 'image', 'NEWleipzig'),
     'NEWimgada' => $reference('ada.png', 'tx_myextension_speaker', 'photo', 'NEWspada'),
     'NEWimglogo' => $reference('logo.png', 'tx_myextension_conference', 'logo', 'NEWconfdev'),
+    'NEWimgpilgrims' => $reference('tomasz-anusiewicz-g2f1raDTczU-unsplash.webp', 'tx_myextension_conference', 'impressions', 'NEWconfdev'),
     'NEWimghosting' => $reference('hosting.png', 'tx_myextension_sponsor', 'logo', 'NEWsphosting'),
     'NEWimgagency' => $reference('agency.png', 'tx_myextension_sponsor', 'logo', 'NEWspagency'),
 ];
@@ -373,7 +374,7 @@ function configureSite(SiteFinder $siteFinder, SiteWriter $siteWriter, int $root
 }
 
 /**
- * Placeholder images with a label, so no image files have to be stored
+ * Placeholder images with a label, so only one photo has to be stored
  *
  * @return list<string>
  */
@@ -394,5 +395,9 @@ function createImages(string $folder): array
         imagestring($image, 5, 40, 280, $label, imagecolorallocate($image, 255, 255, 255));
         imagepng($image, $folder . $name);
     }
-    return array_keys($images);
+    // A photo of the Camino theme of the Core, so the crop variants of the
+    // impressions cut off something visible
+    $photo = 'tomasz-anusiewicz-g2f1raDTczU-unsplash.webp';
+    copy(__DIR__ . '/' . $photo, $folder . $photo);
+    return [...array_keys($images), $photo];
 }

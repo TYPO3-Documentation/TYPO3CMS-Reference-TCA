@@ -12,3 +12,6 @@ $GLOBALS['TCA']['tx_myextension_conference']['columns']['related_content']['conf
 $GLOBALS['TCA']['tx_myextension_conference']['columns']['impressions']['config']
   ['overrideChildTca']['columns']['crop']['config']['cropVariants']['desktop']
   ['allowedAspectRatios']['NaN']['disabled'] = true;
+$GLOBALS['TCA']['tx_myextension_conference']['columns']['impressions']['config']
+  ['overrideChildTca']['columns']['crop']['config']['cropVariants']['tablet']
+  ['allowedAspectRatios']['NaN']['disabled'] = true;

@@ -126,6 +126,9 @@
       <trans-unit id="conference.impressions.mobile" resname="conference.impressions.mobile">
         <source>Mobile</source>
       </trans-unit>
+      <trans-unit id="conference.impressions.tablet" resname="conference.impressions.tablet">
+        <source>Tablet</source>
+      </trans-unit>
       <trans-unit id="conference.internal_notes" resname="conference.internal_notes">
         <source>Internal notes</source>
       </trans-unit>

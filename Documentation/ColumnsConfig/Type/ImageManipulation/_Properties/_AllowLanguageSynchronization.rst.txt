@@ -20,4 +20,4 @@
 
         ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
             :caption: EXT:my_extension/Configuration/TCA/Overrides/155-tx_myextension_conference-media.php
-            :emphasize-lines: 57-61
+            :emphasize-lines: 73-77
