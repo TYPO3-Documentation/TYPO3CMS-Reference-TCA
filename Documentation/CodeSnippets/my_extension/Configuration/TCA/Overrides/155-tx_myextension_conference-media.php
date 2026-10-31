@@ -37,8 +37,24 @@ ExtensionManagementUtility::addTCAcolumns('tx_myextension_conference', [
                     ],
                   ],
                 ],
+                'tablet' => [
+                  'title' => 'my_extension.db:conference.impressions.tablet',
+                  'allowedAspectRatios' => [
+                    '16:9' => [
+                      'title' => 'core.wizards:imwizard.ratio.16_9',
+                      'value' => 16 / 9,
+                    ],
+                    'NaN' => [
+                      'title' => 'core.wizards:imwizard.ratio.free',
+                      'value' => 0.0,
+                    ],
+                  ],
+                ],
                 'mobile' => [
                   'title' => 'my_extension.db:conference.impressions.mobile',
+                  // Editors crop the desktop and tablet variants together,
+                  // and this variant on its own
+                  'excludeFromSync' => true,
                   'allowedAspectRatios' => [
                     '4:3' => [
                       'title' => 'core.wizards:imwizard.ratio.4_3',
