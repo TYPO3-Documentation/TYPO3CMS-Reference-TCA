@@ -6,9 +6,14 @@
     :type: array
     :Scope: Proc.
 
-    Array of field-value pairs to both insert and match against when writing/reading IRRE relations. Using the match
-    fields, it is possible to re-use the same child table in more than one field of the parent table by using a match
-    field with different values for each of the use cases.
+    Array of field-value pairs to insert and match against when writing/reading IRRE relations. Using the match
+    fields, it is possible to use the same child table for more than one field in the parent table by using a match
+    field with different values for each case.
+
+    Match values are written to the child records; they are not just display
+    filters. In particular, setting a `sys_language_uid = 0` match is not a
+    general safeguard for translated children. See
+    `Inline relations, language and ownership <https://docs.typo3.org/permalink/t3tca:columns-inline-language-and-ownership>`_.
 
 ..  rubric:: Examples
 
