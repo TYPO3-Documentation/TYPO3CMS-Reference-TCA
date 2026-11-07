@@ -5,11 +5,17 @@
     :name: uuid-enableCopyToClipboard
     :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['enableCopyToClipboard']
     :type: boolean
+    :default: true
     :Scope: Display
+    :deprecated: 15.0 deprecation-110865-1790803661
 
-    In case `enableCopyToClipboard` is set to :php:`true`, which is the
-    default, a button is rendered next to the input field, which allows to copy
-    the UUID to the clipboard of the operating system.
+    Shows a button next to the input field. The button copies the UUID to
+    the clipboard of the operating system.
 
-    This column configuration can be overwritten by
-    :ref:`page TSconfig <t3tsref:tceform>`.
+    Use :ref:`appearance.copyToClipboard <confval-uuid-appearance-copytoclipboard>`
+    instead. The TCA migration converts this option, also in
+    `columnsOverrides` and in FlexForm fields.
+
+    The page TSconfig `TCEFORM.<table>.<field>.config.enableCopyToClipboard`
+    works until TYPO3 v16.0. Use
+    `TCEFORM.<table>.<field>.config.appearance.copyToClipboard` instead.
