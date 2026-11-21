@@ -26,7 +26,7 @@ date time or datetime.
 The :ref:`according database field <t3coreapi:auto-generated-db-structure>`
 is generated automatically as :sql:`bigint signed` (with the exception of the columns
 `tstamp`, `crdate`, `starttime`, `endtime` that
-still use :sql:`int signed`).
+use :sql:`int unsigned`).
 This allows to store dates from some million years ago to far into the
 future.
 
