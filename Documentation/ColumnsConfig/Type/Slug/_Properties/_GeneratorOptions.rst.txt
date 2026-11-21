@@ -59,12 +59,13 @@
         :TCA path: $GLOBALS['TCA'][$table]['columns'][$field]['config']['generatorOptions']['prefixParentPageSlug']
         :name: slug-generatorOptions-prefixParentPageSlug
         :type: boolean
-        :default: true
+        :default: false
         :Scope: Display / Proc.
 
         The slugs of parent pages will be prefixed to the slug for the page itself.
-        Disable it for shorter URLs, but take the higher chance of collision into
-        consideration.
+        The `slug` field of the `pages` table sets this option to `true`. A slug
+        field that does not set it gets no prefix. Disable it for shorter URLs,
+        but take the higher chance of collision into consideration.
 
         ..  note::
 

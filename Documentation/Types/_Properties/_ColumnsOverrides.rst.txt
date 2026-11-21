@@ -4,13 +4,13 @@
     :name: types-columnsOverrides
     :TCA path: $GLOBALS['TCA'][$table]['types'][$type]['columnsOverrides']
     :type: array (columns fields overrides)
-    :Scope: Display
+    :Scope: Display / Proc.
     :Examples: :ref:`Examples for columnsOverrides <types-examples-columnsoverrides>`
 
     Changed or added ['columns'] field display definitions.
 
-    This allows different field column definitions to be applied when a record of this type is edited. Currently,
-    only the display of form fields is affected, not data handling.
+    This allows different field column definitions to be applied when a record of this type is edited. The
+    form and the DataHandler both use the merged configuration of the record type.
 
     A typical property that can be changed is `renderType`.
 
@@ -22,6 +22,7 @@
     has been determined.
 
     ..  attention::
-        It is not possible to override any properties in "Proc." scope: The DataHandler does not take "columnsOverrides"
-        into account. Only pure "Display" related properties can be overridden. This especially means that
-        columns config 'type' must **not** be set to a different value.
+        The DataHandler checks the values of a record with the merged configuration of its record type, so
+        properties in "Proc." scope, such as `eval` or `required`, can be overridden too. The column config
+        `type` must **not** be set to a different value: the database column is created from the base
+        configuration of the field.
