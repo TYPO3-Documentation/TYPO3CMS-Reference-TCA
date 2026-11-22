@@ -19,6 +19,37 @@
         The database field configured in this property is created automatically.
         It does not have to be added to the :file:`ext_tables.sql`.
 
+    ..  _ctrl-origuid-child-tables:
+
+    ..  versionchanged:: 15.0
+        :changelog: important-88452-1792470512
+
+    A table without a
+    `languageField <https://docs.typo3.org/permalink/t3tca:confval-ctrl-languagefield>`_
+    needs `origUid` if it is the child table of an inline field that is kept
+    in sync with the default language, with `'l10n_mode' => 'exclude'` or
+    `allowLanguageSynchronization <https://docs.typo3.org/permalink/t3tca:confval-inline-behaviour-allowlanguagesynchronization>`_.
+    Each translation of the parent record gets copies of the child records,
+    and the DataHandler finds these copies through `origUid`.
+
+    If `origUid` is missing in such a child table, TYPO3 sets it to
+    `t3_origuid` while it builds the TCA. Use the
+    `Database analyzer <https://docs.typo3.org/permalink/t3coreapi:database-upgrade>`_
+    to add the column, otherwise copying or localizing records of the table
+    fails. To make the configuration explicit, set `origUid` in the `ctrl`
+    section of the child table:
+
+    ..  code-block:: php
+        :caption: EXT:my_extension/Configuration/TCA/tx_myextension_child.php
+
+        return [
+            'ctrl' => [
+                // ...
+                'origUid' => 't3_origuid',
+            ],
+            // ...
+        ];
+
     ..  rubric:: Example
 
     The following fields are set by the DataHandler automatically on creating or

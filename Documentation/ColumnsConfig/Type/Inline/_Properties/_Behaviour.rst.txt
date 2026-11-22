@@ -20,6 +20,9 @@
         It tells the DataHandler which fields of the localization records should be kept
         in sync if the underlying default or source record changes.
 
+        If the child table has no `languageField`, it needs
+        `origUid <https://docs.typo3.org/permalink/t3tca:ctrl-origuid-child-tables>`_.
+
         ..  literalinclude:: /CodeSnippets/my_extension/Configuration/TCA/Overrides/159-tx_myextension_conference-content_elements.php
             :caption: EXT:my_extension/Configuration/TCA/Overrides/159-tx_myextension_conference-content_elements.php
             :emphasize-lines: 14-16
