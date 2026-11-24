@@ -31,8 +31,8 @@ When creating the XML setup file there are some limitations:
 *   The charset will be the same as the current backend UTF-8. Make sure that the
     files use UTF-8.
 
-*   `type='inline'` and types that point to other database tables are not
-    allowed.
+*   In FlexForm sections, `type='inline'` and other types that point to
+    database tables are not allowed. Outside sections, they can be used.
 
 ..  versionchanged:: 13.0
     :changelog: breaking-102970-1706447911
