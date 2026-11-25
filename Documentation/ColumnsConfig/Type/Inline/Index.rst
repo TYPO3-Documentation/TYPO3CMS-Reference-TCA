@@ -107,23 +107,25 @@ be shared by parents in different languages and can be edited from both
 sides using
 `MM_opposite_field <https://docs.typo3.org/permalink/t3tca:confval-inline-mm-opposite-field>`_.
 
+A child table can have several parent tables. The inline field of each
+parent table uses its own `foreign_field` in the child table.
+
+A child table can synchronize such a `foreign_field` column from the default
+language record, with
+`l10n_mode = exclude <https://docs.typo3.org/permalink/t3tca:confval-columns-l10n-mode>`_
+or `allowLanguageSynchronization`. Then all translations of a child point to
+the same parent: the parent of the default language record.
+
+DataHandler does not change the language of a translated child to the
+language of this parent. The child keeps the language of its other parent.
+
 ..  versionchanged:: 14.3.11
     :changelog: important-103970-1792102654
 
-    Up to TYPO3 14.3.10, a second parent could break the translations of its
-    children. When such a parent was created, or a child was added to its
-    list, DataHandler moved the translated children to the default language.
-    It also cleared their translation pointers.
-
-A child table can be used in inline relations of several parent tables, each
-with its own `foreign_field`. If such a parent pointer is synchronized from the
-default language record, by
-`l10n_mode = exclude <https://docs.typo3.org/permalink/t3tca:confval-columns-l10n-mode>`_
-or by `allowLanguageSynchronization`, every translation of the child points to
-the parent of its default language record. DataHandler does not align a
-translated child to the language of a parent that it is only related to
-through such a synchronized pointer. The child keeps the language of the
-parent it belongs to.
+    Up to TYPO3 14.3.10, DataHandler changed the language of these translated
+    children to the default language. This happened when you created this
+    parent or added a child to its list. DataHandler also removed the
+    translation pointers of the children.
 
 For a read-only reverse view of a relation that is held elsewhere, use a virtual
 `none field <https://docs.typo3.org/permalink/t3tca:columns-none>`_ with a
