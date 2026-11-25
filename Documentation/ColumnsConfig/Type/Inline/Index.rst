@@ -110,10 +110,10 @@ sides using
 ..  versionchanged:: 14.3.11
     :changelog: important-103970-1792102654
 
-    Before, a second parent with a synchronized parent pointer could align
-    the translations of its children to the default language, when it was
-    created or a child was added to its list. This cleared their translation
-    pointers.
+    Up to TYPO3 14.3.10, a second parent could break the translations of its
+    children. When such a parent was created, or a child was added to its
+    list, DataHandler moved the translated children to the default language.
+    It also cleared their translation pointers.
 
 A child table can be used in inline relations of several parent tables, each
 with its own `foreign_field`. If such a parent pointer is synchronized from the
