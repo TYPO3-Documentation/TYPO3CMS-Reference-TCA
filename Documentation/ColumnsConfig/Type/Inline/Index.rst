@@ -107,18 +107,25 @@ be shared by parents in different languages and can be edited from both
 sides using
 `MM_opposite_field <https://docs.typo3.org/permalink/t3tca:confval-inline-mm-opposite-field>`_.
 
-..  warning::
-    Check secondary inline relations that use `foreign_field` on a
-    translatable child table. If the child column named by `foreign_field`
-    has
-    `l10n_mode = exclude <https://docs.typo3.org/permalink/t3tca:confval-columns-l10n-mode>`_,
-    translations retain the reference to the default-language parent.
-    Its inline list can therefore contain children in different languages.
+A child table can have several parent tables. The inline field of each
+parent table uses its own `foreign_field` in the child table.
 
-    Creating that parent or adding a child to its list can align the
-    translations to the default language and clear their translation
-    pointers. This case is tracked in `TYPO3 issue 111248
-    <https://forge.typo3.org/issues/111248>`_.
+A child table can synchronize such a `foreign_field` column from the default
+language record, with
+`l10n_mode = exclude <https://docs.typo3.org/permalink/t3tca:confval-columns-l10n-mode>`_
+or `allowLanguageSynchronization`. Then all translations of a child point to
+the same parent: the parent of the default language record.
+
+DataHandler does not change the language of a translated child to the
+language of this parent. The child keeps the language of its other parent.
+
+..  versionchanged:: 14.3.11
+    :changelog: important-103970-1792102654
+
+    Up to TYPO3 14.3.10, DataHandler changed the language of these translated
+    children to the default language. This happened when you created this
+    parent or added a child to its list. DataHandler also removed the
+    translation pointers of the children.
 
 For a read-only reverse view of a relation that is held elsewhere, use a virtual
 `none field <https://docs.typo3.org/permalink/t3tca:columns-none>`_ with a
