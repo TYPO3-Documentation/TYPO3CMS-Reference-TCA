@@ -11,7 +11,8 @@
     automatically be increased if the content in the field is found to be of a certain length, thus the
     field will automatically fit the content. Default is 5. Max value is 20.
 
-    Does not apply to RTE fields.
+    Does not apply to RTE fields, is only applied to their initial
+    unrendered state.
 
 ..  rubric:: Example: A simple text editor with 20 width
 
